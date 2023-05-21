@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Архив сайта ponics.ru | </title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="b3" href="http://0.0.0.0:4000/feed.xml">
+
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:?subject= feedback&body=I have some feedback about the Архив сайта ponics.ru page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Архив сайта ponics.ru">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Новости Ponics" href="#">Новости Ponics</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="С миру по нитке" href="#">С миру по нитке</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Теория" href="#">Теория</a>
+      <ul>
+          
+          
+          
+          <li><a title="бывает ли такое?" href="b3_t8_byvaet_li_takoe.html">бывает ли такое?</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Свет." href="test.html">Свет.</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Аэропоника" href="test.html">Аэропоника</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Autopot что за система?" href="test.html">Autopot что за система?</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Минеральная вата «Гродан»" href="test.html">Минеральная вата «Гродан»</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Строительство зимней теплицы. Что , Зачем и как..." href="test.html">Строительство зимней теплицы. Что , Зачем и как...</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Капитальное культивационное сооружение." href="test.html">Капитальное культивационное сооружение.</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Для всех кто что то продает!" href="test.html">Для всех кто что то продает!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Обсуждение самодельной вертикальной трех-уровневой гидропонной установки на 160" href="test.html">Обсуждение самодельной вертикальной трех-уровневой гидропонной установки на 160</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Мицелий грибов" href="test.html">Мицелий грибов</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Букварь для начинающих" href="test.html">Букварь для начинающих</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Совместимость растений" href="test.html">Совместимость растений</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Анекдот о семейной жизни" href="test.html">Анекдот о семейной жизни</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="О производительности" href="test.html">О производительности</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Глобальный вопрос о жизнедеятельности растений" href="test.html">Глобальный вопрос о жизнедеятельности растений</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="дополнительные технологии" href="test.html">дополнительные технологии</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Тюльпаны на гидропонике." href="test.html">Тюльпаны на гидропонике.</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="How-To_Hydroponics" href="test.html">How-To_Hydroponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Солнечный вегитарий- работает или нет?" href="test.html">Солнечный вегитарий- работает или нет?</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Овощной бизнес - выгодно или нет?" href="test.html">Овощной бизнес - выгодно или нет?</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Бамбук на гидропонике" href="test.html">Бамбук на гидропонике</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Помогите" href="#">Помогите</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Питательные растворы" href="#">Питательные растворы</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Субстраты" href="#">Субстраты</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Теплицы" href="#">Теплицы</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Узлы, агрегаты, установки" href="#">Узлы, агрегаты, установки</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Реализованные установки" href="#">Реализованные установки</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Отчеты о выращивании" href="#">Отчеты о выращивании</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Горе луковое!" href="#">Горе луковое!</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Видео" href="#">Видео</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Домики пользователей" href="#">Домики пользователей</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Видео по теме" href="#">Видео по теме</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Общение" href="#">Общение</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Рецепты" href="#">Рецепты</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Экономика ЛПХ" href="#">Экономика ЛПХ</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Куплю/Продам" href="#">Куплю/Продам</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Семена/растения/саженцы" href="#">Семена/растения/саженцы</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Оборудование для гидропоники" href="#">Оборудование для гидропоники</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Работа" href="#">Работа</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Требуются" href="#">Требуются</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Ищу работу" href="#">Ищу работу</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Магазин Ponics.ru" href="#">Магазин Ponics.ru</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Материалы и наработки" href="#">Материалы и наработки</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Журналы" href="#">Журналы</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Настоящий Хозяин" href="#">Настоящий Хозяин</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Сад/Огород/Дача" href="#">Сад/Огород/Дача</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Рыбоводство" href="#">Рыбоводство</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Водоросли" href="#">Водоросли</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Грибы" href="#">Грибы</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Пасека" href="#">Пасека</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Птица" href="#">Птица</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Кролики" href="#">Кролики</a>
+      <ul>
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Архив сайта ponics.ru</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p>Здесь будет текст</p>
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: May 21, 2023 <br />
+<p><img src="images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+
