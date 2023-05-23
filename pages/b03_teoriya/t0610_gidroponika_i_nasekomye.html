@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Гидропоника и насекомые. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:?subject= feedback&body=I have some feedback about the Гидропоника и насекомые. page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Гидропоника и насекомые.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Гидропоника и насекомые.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Dontworrybehappy</strong> 03-09-2010</p>
+
+<p>Добрый день. Я занимаюсь насекомыми, а именно продаю муравьиные фермы. Как бы всегда хотелось совместить живую природу ( какое-нибудь растение) и самих насекомых. Но была проблема, муравьи закапываются в землю и часто растение погибает.   Так вот мне кинули на ваш сайт. Я конечно новичек,но понял что Вы выращиваете растения без почвы, а это самое главное для меня:) Теперь вопрос различные разстворы,что используются в гидропонике вредны ли для человека, насекомых? Особенно интересно про насекомых или это пока не прооверить не извесно? Спасибо за внимание,очень жду ответов.</p>
+
+<p><strong>Садовник</strong> 03-09-2010</p>
+
+<p>Если раствор специально не пить - то он не вреден для человека. Для муравьёв по-видимому тоже.<br />Плюс к тому при безпочвенном выращивании меньше вероятность поражения вредителями и поэтому меньше применяются инсектициды.<br /><br />Муравьи занимаются выращиванием тли &gt;:D , это для них как корова для человека. Поэтому я их недолюбливаю последнее время  &gt;:(<br /><br />А вообще - очень интересные насекомые. Можно узнать подробнее о Вашем бизнесе?</p>
+
+<p><strong>Dontworrybehappy</strong> 03-09-2010</p>
+
+<p>[quote author=Садовник link=topic=610.msg20920#msg20920 date=1283527226]<br />Если раствор специально не пить - то он не вреден для человека. Для муравьёв по-видимому тоже.<br />Плюс к тому при безпочвенном выращивании меньше вероятность поражения вредителями и поэтому меньше применяются инсектициды.<br />[/quote]<br />А раствором опрыскивают растение правильно ж? Просто мы можем и не пить, а вот муравьи 100 процентов попробуют.<br />[quote author=Садовник link=topic=610.msg20920#msg20920 date=1283527226]<br />Муравьи занимаются выращиванием тли &gt;:D , это для них как корова для человека. Поэтому я их недолюбливаю последнее время  &gt;:(<br />[/quote]<br /><br />А это мой последний этап, вначале растение, а потом и тля на растении ( представте наблюдать такой симбиоз дома?) Вообщем это моя мечта….<br /><br />[quote author=Садовник link=topic=610.msg20920#msg20920 date=1283527226]<br />А вообще - очень интересные насекомые. Можно узнать подробнее о Вашем бизнесе?<br />[/quote]<br />Очень- это слабо сказано:)  <br />Вообщем основной товар это формикарий ( тонкий аквариум) , куда засыпается песок и запускается муравьиная колония. Они начинают копать, развиватся и у вас на столе целая цивилизация:)<br /><br />[url=http://shop.allforpets.com.ua/index.php?option=com_virtuemart&amp;page=shop.browse&amp;category_id=1&amp;Itemid=53]Кому интересно можете глянуть на магазин[/url]<br /></p>
+
+<p><strong>Садовник</strong> 03-09-2010</p>
+
+<p>[quote author=Dontworrybehappy link=topic=610.msg20921#msg20921 date=1283527611]<br />А это мой последний этап, вначале растение, а потом и тля на растении ( представте наблюдать такой симбиоз дома?) Вообщем это моя мечта….<br />[/quote]<br /><br />Наблюдал я такой симбиоз и не раз, только не дома, а в теплице, как они пригоняют их на "пастбище", пасут, охраняют, доят…  <br />поубивав бы!</p>
+
+<p><strong>Mole_Garden</strong> 03-09-2010</p>
+
+<p>[quote author=Dontworrybehappy link=topic=610.msg20919#msg20919 date=1283526666]<br />  Так вот мне кинули на ваш сайт. <br />[/quote]А можно узнать кто и откуда вас отправил к нам?<br /><br />[quote]А раствором опрыскивают растение правильно ж? Просто мы можем и не пить, а вот муравьи 100 процентов попробуют.<br />[/quote]Раствор подается в корневую зону. Мне кажется, что там где сыро муравьи не полезут, они же особо не любят воду и слишком влажные места? Закапываться в керамзит или вату они точно не будут, слой маловат да и как говорил, там очень мокро. Так что можно попробовать, кто знает, может и приживутся.</p>
+
+<p><strong>Dontworrybehappy</strong> 03-09-2010</p>
+
+<p>[quote author=Mole_Garden link=topic=610.msg20923#msg20923 date=1283528466]<br />[quote author=Dontworrybehappy link=topic=610.msg20919#msg20919 date=1283526666]<br />  Так вот мне кинули на ваш сайт. <br />[/quote]А можно узнать кто и откуда вас отправил к нам?<br />[/quote]<br />Можно:) НА форуме про аквариумистику, заговорили с девушкой про тлю и она мне кинула ссылку на вас.<br /><br />[quote]А раствором опрыскивают растение правильно ж? Просто мы можем и не пить, а вот муравьи 100 процентов попробуют.<br />[/quote]<br />[quote author=Dontworrybehappy link=topic=610.msg20919#msg20919 date=1283526666]Раствор подается в корневую зону. Мне кажется, что там где сыро муравьи не полезут, они же особо не любят воду и слишком влажные места? Закапываться в керамзит или вату они точно не будут, слой маловат да и как говорил, там очень мокро. Так что можно попробовать, кто знает, может и приживутся.<br />[/quote]<br />К сожалению, муравьи наоборот очень любят влагу ( 80 % для них это норма), поэто вполне вероятно,что еще и полезут туда:)<br />Ну вообщем нам никто не мешает попробывать.<br /><br />Сразу ,что б не засорять форум с какого растения порекомендуете начять?</p>
+
+<p><strong>Dontworrybehappy</strong> 03-09-2010</p>
+
+<p>Забыл добавить,что растение должно быть легким в содержании. красивым ( не салат там какой-то ;))  и что б было как можно меньше по размерам.</p>
+
+<p><strong>Mole_Garden</strong> 03-09-2010</p>
+
+<p>[quote author=Dontworrybehappy link=topic=610.msg20925#msg20925 date=1283528941]<br />Сразу ,что б не засорять форум с какого растения порекомендуете начять?<br />[/quote]Им все равно? Самое простое это наверно томат, может быть перец, но перед началом лучше по изучать теорию о гидропонике<br />Теоретически материалы собраны здесь [url=http://www.ponics.ru/2009/06/lib/]http://www.ponics.ru/2009/06/lib/[/url]</p>
+
+<p><strong>caiman</strong> 03-09-2010</p>
+
+<p>Прочитал, посмотрел магазин. <em>???</em><br /><br />В чем точки соприкосновения муравья и гидропоники? В чем его полезность для развития растений?<br /><br />Как прикольную красоту - можно пробовать, а вот практического применения пока не вижу, извините.<br /><br />Может я чего не понял? <em>???</em> Но тля вроде бы не очень приветствуется растюхами <em>???</em></p>
+
+<p><strong>Dontworrybehappy</strong> 03-09-2010</p>
+
+<p>[quote author=Mole_Garden link=topic=610.msg20927#msg20927 date=1283529232]<br />[quote author=Dontworrybehappy link=topic=610.msg20925#msg20925 date=1283528941]<br />Сразу ,что б не засорять форум с какого растения порекомендуете начять?<br />[/quote]Им все равно? Самое простое это наверно томат, может быть перец, но перед началом лучше по изучать теорию о гидропонике<br />Теоретически материалы собраны здесь [url=http://www.ponics.ru/2009/06/lib/]http://www.ponics.ru/2009/06/lib/[/url]<br />[/quote]<br /><br />Конечно я теоритически еще не подкован, просто хотел узнать некоторые ответы, что б знать лезть мне сбда или нет. Уже узнал , надо лезть:)</p>
+
+<p><strong>Dontworrybehappy</strong> 03-09-2010</p>
+
+<p>[quote author=caiman link=topic=610.msg20928#msg20928 date=1283529367]<br />Прочитал, посмотрел магазин. <em>???</em><br /><br />В чем точки соприкосновения муравья и гидропоники? В чем его полезность для развития растений?<br />[/quote]<br />Для растения полезности нету. Скажем так у муравьиные фермы подразделяются на  два подтипа:<br />1 Это дом, где находится сама колония<br />2 Арена, где грубо говорья муравьи питаются,охотятся, прогуливаются :D<br />Так вот до сегодня арены надо было украшать всем искусственным, так как муравьи закапываются в землю или тащят ее в дом…Вот тут гидропоника и поможет, мурахам нечего будет утащить, а арену украсить чем-то живым,мне каккажется намного приятнее…<br />[quote author=caiman link=topic=610.msg20928#msg20928 date=1283529367]<br />Как прикольную красоту - можно пробовать, а вот практического применения пока не вижу, извините.<br />[/quote]<br />А это именно для красоты и задумывается<br />[quote author=caiman link=topic=610.msg20928#msg20928 date=1283529367]<br />Может я чего не понял? <em>???</em> Но тля вроде бы не очень приветствуется растюхами <em>???</em><br />[/quote]<br />Согласен, но она очень приветствуется муравьями…<br /><br />Лично я хочу  наблюдать примерно такое у себя дома…<br />[url=http://www.youtube.com/watch?v=mHBp2F9y1No&amp;feature=player_embedded#]Тля и муравьи - Plant-louse and ants[/url]</p>
+
+<p><strong>Dontworrybehappy</strong> 03-09-2010</p>
+
+<p>Так же,кто находится в Киеве и разбирается в гидропонике приглашаю к сотрудничеству:) В долгу не останусь:)<br />связь по аське 400017296</p>
+
+<p><strong>Mole_Garden</strong> 03-09-2010</p>
+
+<p>Так понимаю растение должно расти прямо в аквариуме, где и живут муравьи. В таком случае высота аквариума должна быть не менее 50-60 см. А как устроены аквариумы для насекомых? Есть ли крышка? Как осуществлена вентиляция? <br />А вообще, я думаю, что это все вполне реально сделать.</p>
+
+<p><strong>Dontworrybehappy</strong> 03-09-2010</p>
+
+<p>[quote author=Mole_Garden link=topic=610.msg20934#msg20934 date=1283533211]<br />Так понимаю растение должно расти прямо в аквариуме, где и живут муравьи. В таком случае высота аквариума должна быть не менее 50-60 см. А как устроены аквариумы для насекомых? Есть ли крышка? Как осуществлена вентиляция? <br />А вообще, я думаю, что это все вполне реально сделать.<br />[/quote]<br />Где будет расти растение это обычный аквариум , к которому по трубочке подсоединяется основной формик( песочный или гипсовый).  Поэтому с этим аквариумом можно делать все что захочешь и любых размеров,но желательно по меньше.<br />Вентиляция осуществленна методом просверливания дырок, которые закрываются мелкой сеточкой.</p>
+
+<p><strong>Oxy</strong> 13-09-2010</p>
+
+<p>Тогда получается -  растение соответственно должно быть таким, которое очень любит Тля. А это несложно пробить в нете и подобрать какое нибудь низкорослое быстрорастущее. Я думаю если томат, то "Балконное чудо". Это отличный вазонный сорт. Для тли может пройти. И такой томатик можно на лампах ЭСЛ выгонять.</p>
+
+<p><strong>Садовник</strong> 14-09-2010</p>
+
+<p>Тля очень любит [b]салат[/b], как не странно :D.<br />А ещё петунию.<br />А вот пеларгонию (герань) не любит.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: May 23, 2023 <br />
+<p><img src="/images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

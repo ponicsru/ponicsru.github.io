@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>F.A.Q. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:?subject= feedback&body=I have some feedback about the F.A.Q. page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="F.A.Q.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">F.A.Q.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Mole_Garden</strong> 21-02-2010</p>
+
+<p>И так, по многочисленным просьбам началось составление F.A.Q.<br /><br />[b]F.A.Q.[/b]-[i] (акроним от англ. Frequently Asked Question(s) — часто задаваемые вопросы, произносится «фак», «фэк», «фэкс», «эф-эй-кью») — собрание часто задаваемых вопросов по какой-либо теме и ответов на них.[/i]<br /><br />По мере возможности буду наполнять тему и буду благодарен всем, кто в этом будет помогать. <br /><br />[b]Что требуется.[/b] А требуется совсем не много, просто по возможности отмечайте вопросы постояльцев, которые кажутся вам интересными и необходимые для рассмотрения и занесения в эту тему. В теме можно писать Вопрос-Ответ. Возможны обсуждения и дополнения уже написанных вопросов и ответов. По итогам обсуждения конкретных вопросов первый пост буду пополнять и дополнять. По результатам формирования фака здесь, потом он будет опубликован на главной странице.<br />——————————————————————————————————————-<br /><br />1. [url=http://forum.ponics.ru/index.php?topic=430.msg12435#msg12435]Чем отличается минеральная вата для растений от минеральной ваты, которую используют на стройке и можно ли выращивать растения в этой вате?[/url]<br />2. [url=http://forum.ponics.ru/index.php?topic=430.msg16597#msg16597]Как рассчитать сколько будет того или иного элемента при добавлении различных удобрений. Как рассчитать NPK если на этикетке указаны оксиды элементов(к примеру K2O 14% P2O5 8% )[/url]<br />3. [url=http://forum.ponics.ru/index.php?topic=430.msg16598#msg16598]Как, зная состав раствора и зная насколько упал PPM в растворе, а так же зная сколько его осталось, рассчитать сколько необходимо добавить каждого компонента, чтобы снова количество PPM поднялось до нужного нам уровня?[/url]<br />4. [url=http://forum.ponics.ru/index.php?topic=430.msg16599#msg16599]Какую лампу лучше всего использовать для выращивания растений? Какой мощности выбрать лампу и как далеко ее вешать от растений? Сколько квадратных метров сможет осветить лампа той или иной мощности?[/url]<br />5. [url=http://forum.ponics.ru/index.php?topic=430.msg16600#msg16600]Какое количество растений огурца, томата, перца можно высаживать на квадратный метр. Какие особенности.[/url]<br />6. [url=http://forum.ponics.ru/index.php?topic=430.msg16601#msg16601]Чем отличается детерминантный сорт от индетерминантный, какой лучше выращивать.[/url]<br />7. [url=http://forum.ponics.ru/index.php?topic=430.msg16603#msg16603]Можно ли заменить весы TDS метром ? Если нет то почему?[/url]<br />8. [url=http://forum.ponics.ru/index.php?topic=430.msg19529#msg19529]Как сделать правильно сифон? Как рассчитать какой нужен диаметр трубы, для того что бы сифон работал должным образом? Как рассчитать скорость слива воды через сифон?[/url]<br />9. [url=http://forum.ponics.ru/index.php?topic=430.msg24580#msg24580]В какой последовательности лучше начинать добавлять удобрения при составление раствора для растений?[/url]<br />10. [url=http://forum.ponics.ru/index.php?topic=430.msg25097#msg25097]Все наверно пользовались или пользуются программой под названием NPKMg калькулятор. Понятно, что большинство людей сидят под widows и проблем с работой этой программы не возникает. А вот как быть тем, кто использует Unix системы? Как можно заставить работать эту программу, например, под Ubuntu?[/url]<br />11. [url=http://forum.ponics.ru/index.php?topic=430.msg25452#msg25452]Я только планирую (начинаю) заниматься выращиванием растений на гидропонике в полной светокультуре, что мне необходимо приобрести для получения более менее приличных результатов? А так же, что поможет мне в будущем избежать ошибок и проблем?[/url]<br />12. [url=http://forum.ponics.ru/index.php?topic=430.msg37796#msg37796]Хочу сделать маточный раствор, который будет состоять из двух баков, А и Б. Какие удобрения можно смешивать между собой, что бы получился маточный раствор и при этом не выпал осадок?[/url]<br />13. [url=http://forum.ponics.ru/index.php?topic=430.msg47406#msg47406]Как использовать аммоний для контроля рН?[/url]<br /><br /><br /><br />[b]1) Вопрос:[/b]<br /> Чем отличается минеральная вата для растений от минеральной ваты, которую используют на стройке и можно ли выращивать растения в этой вате?<br /><br />[b]Ответ: [/b]<br />Минеральная вата для растений сделана специально для них, она способно хорошо впитывать воду, удерживать и отдавать ее растениям. При этом она абсолютно нейтральна и не содержит вредных добавок. <br /><br />Строительная минеральная вата наполняется все возможными пропитками, в том числе возможно и фенолом, по этому она отталкивает воду и не предназначена для выращивания растений. Настоятельно [b]НЕ РЕКОМЕНДУЕМ[/b] использовать строительную вату в качестве субстрата для растений. На данный момент очень популярными марками минеральной ваты для растения является: Grodan, Агрос, Культилен. <br /><br /></p>
+
+<p><strong>Mole_Garden</strong> 21-05-2010</p>
+
+<p>[b]2) Вопрос:[/b]<br /> Как рассчитать сколько будет того или иного элемента при добавлении различных удобрений. Как рассчитать NPK если на этикетке указаны оксиды элементов(к примеру K2O 14% P2O5 8% )<br /><br />[b]Ответ: [/b]<br />Для расчета или как говориться пересчета оксидов в чистые элемнты можно использовать несколько вариантов. <br /><br />[i]Вариант первый. [/i]Есть специальные калькуляторы, в которых уже прописаны все данные, требуется лишь забить новое удобрение, указать из чего состоит то или иное удобрение и прописать процентное соотношение элементов.<br /><br />[i]Второй вариант.[/i] Рассчитать содержание элементов в ручную. К примеру у вас есть килограмм удобрения, которое содержит следующие элементы N - 15%, P2O5 - 10%, K2O - 14%. Для этого нам потребуется таблица Менделеева и калькулятор. И так рассчитаем содержание Калия в килограмме этого удобрения. Для этого открываем таблицу Менделеева и находим атомный вес всех элементов в оксиде K2O: 39 атомная масса калия, так как перед калием стоит 2 умножаем 39 на 2. 39<em>2+16=94 общий вес. Находим вес калия в от общего 78/94=0,83. И так, теперь возвращаемся к начальным данным K2O 14%. Переводим 14% в число, получается 0,14. Считаем дальше <br /><br />0,83</em>0,14*1000=116 грамм Калия в килограмме. Если мы возьмем один грамм этого удобрения и добавим его в литр воды, то в литре воды будет содержаться 116 мгл.<br /><br />p.s. еще один вариант объяснения как рассчитать  NPK - [url]http://forum.ponics.ru/index.php?topic=982.msg61243#msg61243[/url]</p>
+
+<p><strong>Mole_Garden</strong> 21-05-2010</p>
+
+<p><br />[b]3) Вопрос: [/b]<br />Как, зная состав раствора и зная насколько упал PPM в растворе, а так же зная сколько его осталось, рассчитать сколько необходимо добавить каждого компонента, чтобы снова количество PPM поднялось до нужного нам уровня?<br /><br />[b]Ответ: [/b]<br />Для того, что бы поднять в растворе количество PPM необходимо знать на сколько ppm поднимает тот или иной грамм соли или мл жидкого удобрения. Здесь можно пойти несколькими путями. <br /><br />Первый. Если вы используете специальные удобрения для гидропоники и они двух или трех компонентные и для составления раствора их добавляют в одинаковом количестве, то тут все просто. Берем шприц и ориентируясь на объем вашего раствора добавляем удобрения, т.е. если у вас литр раствора, то добавляем по 1-2 мл удобрения, если у вас объем 10 литров, то можно увеличить объем добавляемых удобрений, к примеру добавлять по 7-10мл, так вы быстрее достигните необходимого значения PPM<br /><br />Второй. Берете, к примеру, литр воды и делаем в этой бутылке полноценный раствор в соотношение опять же, к примеру 1 к 10, т.е. воды в 10 раз меньше, а удобрений столько же и у вас получится некий концентрат сбалансированного раствора и уже добавляя его в систему доводите концентрацию в основном баке до нужного значения. Обратите внимание, что количество воды для концентрата должно быть такое, что бы не выпадал осадок солей. <br /></p>
+
+<p><strong>Mole_Garden</strong> 21-05-2010</p>
+
+<p><br />[b]4) Вопрос:[/b]<br /><br />Какую лампу лучше всего использовать для выращивания растений? Какой мощности выбрать лампу и как далеко ее вешать от растений? Сколько квадратных метров сможет осветить лампа той или иной мощности?<br /><br />[b]Ответ: [/b]<br />На наш взгляд самой идеальной лампой для досветки и выращивания растений без естественного света на данный момент является ДНАТ или ДНАЗ. Лучше всего выбирать лампу исходя из того, что вы будете выращивать и какая возможна удаленность лампы от растений. Так, к примеру, для выращивания рассады в рассаднике лучше брать 250 ваттную лампу, для растений более взрослых уже побольше от 400 ватт и выше. Оптимальную удаленность лампы от растений можете рассчитать опираясь на следующую таблицу -[url=http://www.ponics.ru/wp-content/uploads/2010/01/lamps_24.jpg][b]Таблица Эффективность ламп на разном расстоянии[/b][/url]. Лампа на 400 ватт может осветить порядка 2 квадратных метров, лампа на 600 ватт освещает порядка 3-4 квадратных метров. Но это примерные цифры, так как многое еще зависит от конкретной культуры и конкретного сорта. К примеру, 400 ваттная лампа вполне справится с досветкой 2 квадратных метров теневыносливых помидор размер плода которых не более 100-120 грамм, а вот уже с сортами у которых плоды больше и сорт более требователен к свету, скорей всего на такой площади не справится<br /><br /></p>
+
+<p><strong>Mole_Garden</strong> 21-05-2010</p>
+
+<p>[b]5) Вопрос:[/b]<br />Какое количество растений огурца, томата, перца можно высаживать на квадратный метр. Какие особенности.<br /><br />[b]Ответ: [/b]<br />Как правило справедливы следующие цифры на квадратный метр:<br />[b]Для огурца<br />Короткоплодных гибридов  - 3-3,2 шт/кв.метр<br />Среднеплодные 2-2,5 шт/кв.метр<br />Длинноплодные 1,5-1,8 шт/кв.метр<br />Томат - 2,2-2,5  шт/кв.метр<br />Перец - 2-4  шт/кв.метр [/b]<br />В свою очередь освещенность тоже влияет на густоту посадки,  если света много, то можно сделать плотность чуть выше. Подчеркиваю, чуть-чуть. <br /></p>
+
+<p><strong>Mole_Garden</strong> 21-05-2010</p>
+
+<p>[b]6) Вопрос:[/b]<br />Чем отличается детерминантный сорт от индетерминантный, какой лучше выращивать.<br /><br />[b]Ответ: [/b]<br />[b]ДЕТ (детерминантный)[/b] - с ограниченым ростом стебля (низкорослые) <br />[b]ИНДЕТ (индетерминантный)[/b] - с неограниченым рост стебля (и пасынков) естественно эти томаты принято называть высокорослыми <br />Т.е. если вы выращиваете в высокой теплице то вам лучше использовать индетерминантный сорта и гибриды. Так же стоить помнить о том, что есть еще и супер деты (штамбовые) и супер индеты (лианы).</p>
+
+<p><strong>Mole_Garden</strong> 21-05-2010</p>
+
+<p>[b]7) Вопрос[/b]<br />Можно ли заменить весы TDS метром ? Если нет то почему?<br /><br />[b]Ответ:[/b]<br />Нет- весы нельзя заменить TDS метром. Потому что, чем дальше соль от нейтральной, тем она сильнее меняет тдс.<br />Так как TDS рассчитан по NaCl(поваренная соль) - вот ее "взвешивать" при помощи TDS метра  можно без проблем. А если пытаться взвешивать, какой-нибудь кислый монофосфат, то ничего не выйдет.</p>
+
+<p><strong>Mole_Garden</strong> 13-07-2010</p>
+
+<p>[b]8 ) Вопрос[/b]<br />Как сделать правильно сифон? Как рассчитать какой нужен диаметр трубы, для того что бы сифон работал должным образом? Как рассчитать скорость слива воды через сифон?<br /><br />[b]Ответ[/b]<br />Скорость вытекания воды (в м[sup]3[/sup]/мин) из сифонной трубки рассчитывается по следующей формуле:<br />[b]V=k<em>Sqrt(2gH)</em>S<em>60<br />[/b]<br />k = 0,6 (коэфф. вязкость воды)<br />g = 9.8 (ускорение свободного падения)<br />H = расстояние между (верхним и нижним концом сифона, в метрах)<br />S = площадь поперечного сечения трубки сифона (в метрах)<br /><br />[i]Пример[/i]<br />На слив сифона имеем шланг 1/2 дюйма длинной 0,5 метра<br />S = 3.14</em>0,00635[sup]2[/sup]=0,0001266 м[sup]2[/sup]<br />V = 0.6<em>Sqrt(2</em>9.8<em>0.5)</em>0,0001266*60=0,01427 м[sup]3[/sup]/мин<br />или 14,27 литра в минуту<br /><br />[i]p.s. Спасибо [b]maxsoft[/b] за предоставленный расчет и пример.[/i]</p>
+
+<p><strong>Mole_Garden</strong> 10-12-2010</p>
+
+<p>[b]9 ) Вопрос[/b]<br />В какой последовательности лучше начинать добавлять удобрения при составление раствора для растений?<br /><br />[b] Ответ[/b]<br />Комплексным удобрением или монофосфатом калия - выставляйте нужный уровень [b]фосфора[/b], потом кальциевой селитрой - [b]кальций[/b], потом - нужный уровень [b]калия[/b] - если превышения по [b]азоту[/b] нет, то калиевой селитрой, если по азоту уже - перебор, пробуйте сульфатом калия. Ну и [b]магний[/b] - сульфатом магния, он на "остальные" элементы уже не повлияет.<br /><br />p.s. Спасибо за детальное описание пользователю [b]Valery[/b]</p>
+
+<p><strong>Mole_Garden</strong> 19-12-2010</p>
+
+<p>[b]10 ) Вопрос[/b]<br />Все наверно пользовались или пользуются программой под названием NPKMg калькулятор. Понятно, что большинство людей сидят под widows и проблем с работой этой программы не возникает. А вот как быть тем, кто использует Unix системы? Как можно заставить работать эту программу, например, под Ubuntu?<br /><br />[b]Ответ[/b]<br />Все очень просто. Для начала вам необходимо скачать себе эту программу и поместить ее на свой рабочий стол или в папку на любом жестком диске.<br />Затем поставить программу под названием Wine. Она необходима для запуска windows приложений под Unix. <br />Для этого необходимо открыть приложения и выбрать пункт Центр приложений Ubuntu<br />набрать в поле поиск - wine и нажать установить. После установки Wine обязательно проверьте какой она у вас версии. Если ниже чем 1.3, то перед следующим шагом обязательно обновитесь. Обновление можно поставить с официального сайта [url]http://www.winehq.org/download/deb[/url] <br />Тут возможно два варианта обновления: 1 - скачав установочный пакет и запустить его 2 - через консоль(терминал)<br />для обновления через терминал нужно выполнить следующие команды<br />[i]sudo add-apt-repository ppa:ubuntu-wine/ppa<br />sudo apt-get update<br />sudo apt-get install wine1.3[/i]<br /><br />Затем в консоли набрать следующую команду:<br />[i]wget [url]http://www.kegel.com/wine/winetricks[/url][/i]<br /><br />Если все пройдет удачно, набрать следующую команду:<br />[i]sh winetricks corefonts mdac28 jet40 vb6run[/i]<br /><br />На все вопросы ответить да или далее. <br />Ну вот установка вспомогательных программ завершена.<br /><br />Теперь можно пробовать запустить калькулятор.<br /><br />[i]p.s. Большое спасибо Orgail за помощь в решение проблемы с работой калькулятора под Unix.[/i] <br /></p>
+
+<p><strong>Mole_Garden</strong> 27-12-2010</p>
+
+<p>[b]11) Вопрос[/b]<br />Я только планирую (начинаю) заниматься выращиванием растений на гидропонике в полной светокультуре, что мне необходимо приобрести для получения более менее приличных результатов? А так же, что поможет мне в будущем избежать ошибок и проблем?<br /><br />[b]Ответ[/b]<br />[i]На этот вопрос отвечает [b]Профессиональный Агроном[/b] под ником [b]Coccinella[/b]:<br />[/i]Если заниматься только гидропоникой по готовым проверенным рецептам при известном составе воды, то достаточно хороших весов с дискретностью 0,01 или 0,1. Если пытаться экспериментировать или состав воды неизвестен (как это очень часто бывает), то необходимы еще [b]рН-метр[/b] и [b]кондуктометр[/b] (который по моему личному мнению ТДС-метром полностью заменить нельзя. Но это мнение мое, я его не навязываю).<br />При желании экспериментировать с освещением, необходим [b]люксметр[/b].<br />Каким бы путем ни выращивали растения, необходим контроль температуры воздуха и субстрата (раствора), то есть [b]термометр[/b] (-ы). Лучше с функцией мин-макс, (в идеальном варианте - круглосуточные самописцы, но это дорого).<br />Точно так же необходимы измерители влажности воздуха - [b]гигрометры[/b], особенно при выращивании в гроубоксах и фитотронах. <br />Ну и конечно, необходима ежедневное документирование (запись) показаний этих приборов.<br />Кстати, если в теплице применять вентиляторы, то пригодятся и [b]анемометры[/b] - большинство растений плохо переносят слишком высокую скорость воздуха (опт. - 3-4 м/сек).<br /><br />[i]p.s. Большое спасибо Coccinella за проявленную инициативность и предоставленную информацию для новичков! [/i]</p>
+
+<p><strong>Mole_Garden</strong> 27-07-2011</p>
+
+<p>[b]12) Вопрос[/b]<br />Хочу сделать маточный раствор, который будет состоять из двух баков, А и Б. Какие удобрения можно смешивать между собой, что бы получился маточный раствор и при этом не выпал осадок?<br /><br />[b]Ответ:[/b]<br />Для получения маточного раствора и для того, что бы не выпал осадок делают так:<br />[table]<br />[tr]<br />[td][center][b]Бак А[/b][/center][/td]<br />[td][center][b]Бак Б[/b][/center][/td]<br />[/tr]<br />[tr]<br />[td]Азотная кислота, либо азотсодержащее удобрение[/td]<br />[td]Азотная кислота, либо азотсодержащее удобрение[/td]<br />[/tr]<br />[tr]<br />[td]Кальциевая селитра[/td]<br />[td]Сульфат магния[/td]<br />[/tr]<br />[tr]<br />[td]Калийная селитра[/td]<br />[td]Монофосфат калия[/td]<br />[/tr]<br />[tr]<br />[td]Аммиачная селитра(если необходима)[/td]<br />[td]Сульфат калия[/td]<br />[/tr]<br />[tr]<br />[td]Железо[/td]<br />[td]Калийная селитра[/td]<br />[/tr]<br />[tr]<br />[td][center]—–[/center][/td]<br />[td]Микро([size=8pt]бор, медь, цинк, молибден, марганец, ОЭДФ[/size])[/td]<br />[/tr]<br />[/table]<br /><br />[b]Образец расчета[/b]<br />[url=http://forum.ponics.ru/imagehost/?v=fitoraschet.jpg] [img]http://forum.ponics.ru/imagehost/thumbs/fitoraschet.jpg[/img][/url]<br /></p>
+
+<p><strong>ProRus</strong> 05-03-2012</p>
+
+<p>Как использовать аммоний для контроля рН?<br /><br /></p>
+
+<p><strong>а-ну-ка</strong> 10-08-2012</p>
+
+<p>Питание растений,вернее процесс…<br />Из агрохимии.<br /></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: May 23, 2023 <br />
+<p><img src="/images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

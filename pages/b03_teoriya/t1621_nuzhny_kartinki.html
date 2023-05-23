@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Нужны картинки | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:?subject= feedback&body=I have some feedback about the Нужны картинки page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Нужны картинки">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Нужны картинки</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Coccinella</strong> 12-01-2013</p>
+
+<p>Дамы и господа! У меня периодически возникает соблазн "стянуть" фотографии то в одной, то в другой теме. Они мне бывают нужны для лекций и (иногда) для статей. До сих пор я спрашивала разрешения каждый раз отдельно, но последнее время некоторые авторы стали реже появляться на форуме. Поэтому, кому не жалко, пожалуйста, ответьте здесь или в личке. Без разрешения я их использовать не стану, обещаю.</p>
+
+<p><strong>Vad</strong> 12-01-2013</p>
+
+<p>$)<br />Мои, можете использовать по своему усмотрению.<br />Если, они .. пригодны конечно :-[<br /><br />Можно облегчить  поиск нужной фотки.<br />Если Вы станете сдесь выкладывать "заказы" на конкретные снимки, - думаю никто не откажет :)<br /><br />Ведь никто не откажет? ;)<br />А!? &gt;:( <br />- единоглассно!  :)</p>
+
+<p><strong>artmaximus</strong> 12-01-2013</p>
+
+<p>конечно не откажут!!! :D<br />…благославляю… :-[<br />…аминь :D<br />так тому и быть :D</p>
+
+<p><strong>mav</strong> 12-01-2013</p>
+
+<p>Почему бы и нет.<br />Чем сможем тем поможем.<br />Как говорится от нашего стола к Вашему столу. :D</p>
+
+<p><strong>Юка</strong> 12-01-2013</p>
+
+<p>Как тут откажешь, если три года назад и слово "гидропоника" впервые услышал, а сегодня на столе помидорки, огурцы, салат, лук и даже клубника появилась и всё это благодаря данному сайту и в первую очередь его терпеливым учителям…. СПАСИБО Вам Coccinella $). Какие ракурсы нужны??</p>
+
+<p><strong>Coccinella</strong> 12-01-2013</p>
+
+<p>Джентльмены, спасибо за отзывчивость  $) В настоящий момент требуется пара-тройка картинок общего плана растений на лоджии. Чтобы было видно, что это именно лоджия. Ведра, трубы и прочие технические устройства могут быть, но в данном случае не главное. Мои читатели гидропоникой баловаться так скоро не начнут.</p>
+
+<p><strong>Vad</strong> 12-01-2013</p>
+
+<p>Я могу свою пофоткать. Никаких проблемм.<br />Только вот.. состояние моих растений :-[ <br />Не убъёт желание, вообще, что-либо выращивать? :-[<br /></p>
+
+<p><strong>artmaximus</strong> 12-01-2013</p>
+
+<p><br />[url=http://forum.ponics.ru/imagehost/?v=sam7395.jpg] [img]http://forum.ponics.ru/imagehost/thumbs/sam7395.jpg[/img][/url]<br /><br /></p>
+
+<p><strong>artmaximus</strong> 12-01-2013</p>
+
+<p>вот это да :o<br />в первый раз попробовал фотку залить <em>crazy</em><br />другая чего-то …того… <em>crazy</em> <em>Wall</em>не залилась…не понял куда жмакать :D</p>
+
+<p><strong>artmaximus</strong> 12-01-2013</p>
+
+<p><br />[url=http://forum.ponics.ru/imagehost/?v=sam7372rlr.jpg] [img]http://forum.ponics.ru/imagehost/thumbs/sam7372rlr.jpg[/img][/url]<br /></p>
+
+<p><strong>artmaximus</strong> 12-01-2013</p>
+
+<p>не получается…почему-то , добавить вторую фотку :o<br />Только по отдельности… :-[<br />…куда бы жмакнуть… <em>Wall</em> :-[<br /></p>
+
+<p><strong>mitrotech</strong> 12-01-2013</p>
+
+<p>У меня вот правовой вопрос возник - а разве фото, размещённые на ресурсах с открытым доступом не теряют авторства? <br />Порядочность и принципиальность - это хорошо, но в данном случае данный материал является общим и его использование разрешается всем. Это как линукс. <br />Другое дело придти на выставку и начать фотографировать без спроса. Вот там от авторства никто не отказывался.</p>
+
+<p><strong>artmaximus</strong> 12-01-2013</p>
+
+<p>[url]http://forum.ponics.ru/imagehost/?v=sam7373kck.jpg[/url]<br />…чего-то… <em>Wall</em><br />…ничего не понимаю…(с)<br />не получается вставить фотку :o</p>
+
+<p><strong>artmaximus</strong> 12-01-2013</p>
+
+<p>[url]http://forum.ponics.ru/imagehost/?v=sam7374eke.jpg[/url]<br />…короче …не получается :(</p>
+
+<p><strong>Vad</strong> 12-01-2013</p>
+
+<p>[quote author=artmaximus link=topic=1621.msg57378#msg57378 date=1358008923]<br />не получается…почему-то , добавить вторую фотку :o<br />[/quote]<br />давно заметил..  что только одна самовставляется ))<br />остальные надо ручками<br /><br />после загрузки картинки жмем:<br />[url=http://forum.ponics.ru/imagehost/?v=razmesti.jpg] [img]http://forum.ponics.ru/imagehost/thumbs/razmesti.jpg[/img][/url]<br /><br />копируем эту строчку:<br />[url=http://forum.ponics.ru/imagehost/?v=vstavlyay.jpg] [img]http://forum.ponics.ru/imagehost/thumbs/vstavlyay.jpg[/img][/url]<br />и вставляем сюда ))<br /><br />а то, окно с фотками можно просто закрыть.</p>
+
+<p><strong>Coccinella</strong> 12-01-2013</p>
+
+<p>У каждого фото или иного материала есть автор и факт, что этот материал выложен в интернете, авторских прав не отменяет. Технически не так уж сложно своровать, но я просто не люблю, когда у меня самой воруют. Уж лучше спрошу разрешения. Кстати, если не разрешат, то не обижусь :) Это личное дело каждого автора.</p>
+
+<p><strong>artmaximus</strong> 12-01-2013</p>
+
+<p>[quote author=Vad link=topic=1621.msg57383#msg57383 date=1358012037]<br />[quote author=artmaximus link=topic=1621.msg57378#msg57378 date=1358008923]<br />не получается…почему-то , добавить вторую фотку :o<br />[/quote]<br />давно заметил..  что только одна самовставляется ))<br />остальные надо ручками<br /><br />после загрузки картинки жмем:<br />[url=http://forum.ponics.ru/imagehost/?v=razmesti.jpg] [img]http://forum.ponics.ru/imagehost/thumbs/razmesti.jpg[/img][/url]<br /><br />копируем эту строчку:<br />[url=http://forum.ponics.ru/imagehost/?v=vstavlyay.jpg] [img]http://forum.ponics.ru/imagehost/thumbs/vstavlyay.jpg[/img][/url]<br />и вставляем сюда ))<br /><br />а то, окно с фотками можно просто закрыть.<br />[/quote]<br />данке, как говорится, шон <em>8)</em> <em>8)</em> <em>8)</em> <em>crazy</em></p>
+
+<p><strong>Tony_85</strong> 12-01-2013</p>
+
+<p>У меня не лоджия, но мои фотки все можно использовать  :)</p>
+
+<p><strong>Alex123</strong> 13-01-2013</p>
+
+<p>В принципе, если написать в правилах форума мол согласен, что мои фото будут в свободном доступе, то все будущие вопросы автоматически отпадают.<br /><br />Я считаю так - если выложил свои фото для всеобщего обозрения на общественном ресурсе, то авторство похеривается. А вот если на своем личном сайте, то авторство без вопросов.<br />Ну в крайнем случае можно всем говорить - где фотки взял.<br /><br />И вообще авторство должно подразумевать хоть какие-то индивидуальные особенности, а если это просто укроп на подоконнике, то таких фоток миллионы. И кстати разрешение надо спрашивать у укропа. А то вообще беспредел какой-то - кошечек/собачек фотографируют, а разрешения у них не спрашивают… &gt;:D &gt;:D &gt;:D :o :o :o</p>
+
+<p><strong>Shamilich</strong> 13-01-2013</p>
+
+<p>[quote author=Tony_85 link=topic=1621.msg57395#msg57395 date=1358022062]<br />У меня не лоджия, но мои фотки все можно использовать  :)<br />[/quote]<br />У меня на лоджии - ради бога, пользуйтесь.<br />С оговоркой о катастрофических последствиях для растений при переводе на зимние квартиры без искусственного освещения и в условия минимальной влажности воздуха при температуре до 28 градусов.</p>
+
+<p><strong>Kobleve</strong> 05-06-2013</p>
+
+<p>Я Вам свои специально и сфоткать смогу<br />даже под микроскопом <em>8)</em></p>
+
+<p><strong>maikl25</strong> 06-06-2013</p>
+
+<p>[quote author=Coccinella link=topic=1621.msg57358#msg57358 date=1357989492]<br />Дамы и господа! У меня периодически возникает соблазн "стянуть" фотографии то в одной, то в другой теме. Они мне бывают нужны для лекций и (иногда) для статей. До сих пор я спрашивала разрешения каждый раз отдельно, но последнее время некоторые авторы стали реже появляться на форуме. Поэтому, кому не жалко, пожалуйста, ответьте здесь или в личке. Без разрешения я их использовать не стану, обещаю.<br />[/quote]<br /><br />Мои пожалуйста :). даже можете заказать я по красивше что нибудь сфотографирую…<br />Р.S. просьба только одна если можно ссылки где Ваши статьи можно увидеть :-X</p>
+
+<p><strong>Coccinella</strong> 06-06-2013</p>
+
+<p>Михаил, спасибо, буду иметь в виду. Мои статьи обычно посвящены не гидропонике, а просто выращиванию овощей - в промышленном производстве или в любительских огородах, в зависимости от направленности журнала. Пишу я не на русском языке, в интернете мои статьи есть, но обычно без картинок. <br /><br />Чаще всего мне картинки нужны для лекций, для презентаций.<br /><br />Та статья, что здесь светится, была первой (пока) о гидропонике. Я сейчас вижу определенную перспективу в развитии "городского садоводства" (но не у нас), возможно, со временем появятся и еще статьи на эту тему.</p>
+
+<p><strong>artmaximus</strong> 06-06-2013</p>
+
+<p>Будем ждать $)<br />"Не у нас" это "постпространство"? :D</p>
+
+<p><strong>Coccinella</strong> 06-06-2013</p>
+
+<p>[quote author=artmaximus link=topic=1621.msg65254#msg65254 date=1370543841]<br /><br />"Не у нас" это "постпространство"? :D<br />[/quote]<br />Латвия</p>
+
+<p><strong>Oxy</strong> 25-06-2013</p>
+
+<p>[quote author=Coccinella link=topic=1621.msg65247#msg65247 date=1370535525]<br />Я сейчас вижу определенную перспективу в развитии "городского садоводства" (но не у нас)<br />[/quote]<br />да куда уж, загнивающему прогрессивному западу, до передовых инновационных решений нечерноземных районов матери городов украинских  ;D ;D ;D <br /><br /><br />Пока мы тут о перспективах - особо продвинутые уже юзают в полный рост  :P <br /><br /><br />зацените и обзавидуйтесь: [font=Verdana][size=78%][url]http://vz.ua/stolitsa/raiony/kievlyane_stroyat_dachi_na_kryshakh[/url][/size][/font]<br /><br /><br />Пы.сы. В обращении "вы" я имею ввиду не отдельно взятого человека, а всех читателей, включая и себя. А вообще это бы наверное в ветку юмора надо. Что-то ржачное в этой новости есть :)</p>
+
+<p><strong>Oxy</strong> 25-06-2013</p>
+
+<p>[quote author=Coccinella link=topic=1621.msg57386#msg57386 date=1358013682]<br />У каждого фото или иного материала есть автор и факт, что этот материал выложен в интернете, авторских прав не отменяет. Технически не так уж сложно своровать, но я просто не люблю, когда у меня самой воруют. Уж лучше спрошу разрешения. Кстати, если не разрешат, то не обижусь :) Это личное дело каждого автора.<br />[/quote]<br /><br /><br />А возможно ли более широко развернуть этот вопрос? Я вот считаю, что интернет - это помойка. Если чего туда выбросил - о каких авторских правах может идти речь? это во первых. А во вторых, вопрос воровства. Например приехал человек на велике, пристегнул его к бамперу чьей-то машины и пошел в магазин. По возврату - ни машины, ни велика - чеши турист пешком. Это значит, что велик украли. А если чкопировали материал в нете - оригинал ведь на месте остается, какое тут воровство? Это простое заболевание мозга, называется "жаба давящая, обычная забугорная".  <br /><br /><br />Потому что, тот чью фотку или материал скопировали, начинает себя накручивать, вот мол тот чувак начнет торговать копиями моей фотки, заработает мульен денег, а я как изобретатель тетриса останусь простым рядовым лохом. Не хочу быть лохом, мол хочу общего признания от других лохов! <br /><br /><br />А если сделать шаг в сторону, и посмотреть на этот вопрос с точки зрения социализма - "моделист конструктор", "Техника молодежи", и десятки других изданий пестрели различными человеческими идеями, которые читатели присылали без всякой мысли к наживе или публичности. Вопрос стоял так: Нравится? делай и пользуйся.  <br /><br /><br />Меня всегда до коликов смешила ситуация, когда по своей работе я придумаю какую-то идею, внедрю ее, а потом мне говорят - вот, мол, тот чувак или организация стырили твою разработку и вовсю у себя используют.<br /><br /><br />Я всегда отвечал и отвечаю: это означает только то, что мои идеи признаны, работоспособны и приносят людям пользу. Опасности для себя я не вижу никакой. Это моя идея, и мне ее не жалко - я ее придумал, и в день могу придумывать их сотнями. А человек, который копирует, всего лишь признает мое над ним превосходство в этом вопросе, а значит - он мой ученик. А учится - всегда было нужное и полезное дело. <br /><br /><br />Человек, который копирует чужие статьи - невольно учится их писать, копируя фотки - невольно учишься делать фотографии. Тот, кто копирует разработку - невольно обучается конструкторскому ремеслу. <br /><br /><br />А эта капиталистическая истерия с авторским правом мне понятна: К примеру, один бездарь купил песню, спел, причесал на компе, прикрутил еще десяток откровенного порожняка и выпустил диск. А какие-то наглые рожи, пособирали с таких дисков топовых песен и выложили в нете нормальный сборник. Конечно истерия авторов понятна - бабла не поимеют, и мусор не продадут.<br /> То есть, я считаю, что авторским правом заморачиваются только бездари и люди с самыми грязными чертами характера - жлобы, хамы, истерики, жмоты, тупые и т.д.  Когда пришел капитализм, для всего этого слоя человеческих отбросов открылся громадный портал некоего "авторского права", куда можно выплескивать все свои негативы.  Дело в том, что настоящий талант, или дар, или проф.умения не скопируешь, и не украдешь. им можно только наслаждаться и учится.<br /><br /><br />Чето прорвало меня. наболело это "авторское право", сорри  :-[ [font=Verdana][size=78%].[/size][/font]</p>
+
+<p><strong>Coccinella</strong> 25-06-2013</p>
+
+<p>Вот-вот, как раз киевские спальные районы и сподвигнули меня на мысль, что "urban farming" пойдет в жизнь раньше, чем может показаться :)</p>
+
+<p><strong>Coccinella</strong> 25-06-2013</p>
+
+<p>Да нет, Оху, это несколько сложнее. В принципе, я с Вами во многом согласна, но… был у нас один… спец… тому назад… до кризиса… Копировал чужие статьи, мои в том числе, абзацами, без ссылок (как в культурном обществе принято) и даже без согласования фраз друг с другом. А ведь кто-то это читал, пытался понять (трудно было!) и использовать на практике. И ведь речь не о паре томатных растений на подоконнике, о гектарах и благополучии многих семей… Мне людей жалко.<br /><br />А что касается фото, то по нашему налоговому законодательству, гонорары за фото облагаются меньшими налогами, чем за тексты. (Мне иной раз фотография погрызенной гусеницами капусты приносит больше монеты, чем урожай со всего ряда этой капусты :)) Поэтому, если уж я с авторами гонорарами не делюсь (и сама за чужие работы их не получаю, "наживается" издательство), то автор должен быть согласен, что его работу использовали.<br /><br />Но очень забавно отношение научных работников к этому делу. Они на бюджетные деньги, то есть на наши налоги, что-то там "исследуют", а потом годами молчат, ожидая публикации в каких-то там рейтинговых изданиях. За это время потенциальные пользователи их исканий покупают готовое буржуйское ноу-хау и пользуют его с радостью :) и с прибылью для себя :). А научники (ну какие они ученые?) все плачутся, что "темные крестьяне" не интересуются их разработками :). Было бы чем!</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: May 23, 2023 <br />
+<p><img src="/images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

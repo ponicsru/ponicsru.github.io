@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Как калибровать PH метр? | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:?subject= feedback&body=I have some feedback about the Как калибровать PH метр? page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Как калибровать PH метр?">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Как калибровать PH метр?</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>medium</strong> 14-07-2011</p>
+
+<p>Как калибровать PHметр?<br />У меня сомнения, раньше вода из-под крана была 7.5, сейчас 6.5. Может расстроился?<br />Куда бы его сунуть чтоб сверку устроить? Где всегда ПШ известен?<br /><br />Может кто коку-колу померит и скажет? :) По идеи производители жидкости должны делать точно по рецептам с определенной кислотностью. <br />Даешь калибровку PH по коко-коле!<br /></p>
+
+<p><strong>андрей п</strong> 15-07-2011</p>
+
+<p>Для калибровки нужны калибровочные растворы, это должно быть в инструкции к прибору,если он не левый. $)</p>
+
+<p><strong>medium</strong> 17-07-2011</p>
+
+<p>Если нет этих растворов?</p>
+
+<p><strong>nadnab</strong> 17-07-2011</p>
+
+<p>Нужно было изначально побеспокоиться о калибровке…<br /><br />Взять бидистиллированную воду, 1 и более литра, довести пш кислотами до 6 (использовать откалиброванный  пш метр), поставить в темное место в непрозрачной пищевой пластиковой посуде - вот вам много литров калибровочного раствора.<br /><br />Если у вашего прибора калибровка производиться по 1 точке, то вам нужно искать то, что имеет ПШ ближе к 6. Колла кажись не подойдет - правда даже представить себе не могу, какой там у нее ПШ  :-[ <br /><br />А еще, вроде нужны не только калибровочные но и очищающие растворы…</p>
+
+<p><strong>андрей п</strong> 18-07-2011</p>
+
+<p>[quote author=medium link=topic=1109.msg37512#msg37512 date=1310897908]<br />Если нет этих растворов?<br />[/quote]<br />Найти ближайшую химлабораторию и заказать, думаю,будет недорого. $)</p>
+
+<p><strong>nonpro</strong> 18-07-2011</p>
+
+<p>Или отдать туда на калибровку :)</p>
+
+<p><strong>Юрий Иваныч</strong> 18-07-2011</p>
+
+<p>Самый верный способ - купить калибровочные растворы. Все остальное, кола - шмола, это от лукавого. Например вот - [url]http://www.greenmarkt.ru/kalibrovki.html[/url] <br />Гугл Вам поможет.  :)</p>
+
+<p><strong>medium</strong> 25-07-2011</p>
+
+<p>Решил все-таки эксперимент с коко-колой провести тк она во всех странах по одному рецепту делается и в любой палатке продается. И вообще, все что можно выпить всегда лучше того, что нельзя :)<br /><br />Купил три бутылки 500мг. Одну в Москве в палатке, вторую - в 100км от Москвы, третью в крупном супермаркете. Этикетки показали, что две сделаны в Питере, одна в Минске.<br /><br />РЕЗУЛЬТАТЫ:<br />Все имеют PH 2, PPM 660!!!<br />На ппм сильно влияет гизированность. Поэтому перед замерами лучше выпить полбутылки, остальную часть трясти пока газы не выйдут. <br />На РШ влияние газа маленькое, где-то разброс 0,1ppm.<br /><br />ПОСТУЛИРУЮ: :)<br />Из-за маленького разброса в характеристиках PH и PPM, коку-колу можно использовать как калибровочный раствор на любительском уровне.<br /><br /><br />PS: Для чистоты эксперимента,кому не лень, купите в своем регионе бутылочку и протестите! </p>
+
+<p><strong>gena1</strong> 25-07-2011</p>
+
+<p>[quote author=medium link=topic=1109.msg37718#msg37718 date=1311626136]<br />ПОСТУЛИРУЮ: :)<br />Из-за маленького разброса в характеристиках PH и PPM, коку-колу можно использовать как калибровочный раствор на любительском уровне.<br />[/quote]<br /><br />А мне кажется, что всё же неприемлимо, из-за значения ph=2, хоть и постоянного.<br />Когда я изучал pH электрод (с химико-электрической точки зрения :) ), то у них есть эккккк..потенциальная точка (названиние не помню) в которой этот електрод "меняет" полярность (с щелочной на кислотную "батарейку"). И именно относительно неё и делают все измерения (прибор пересчитывает). Т.е. через эту точку проходит линейная прямая (при постоянной температуре) с определенным "наклоном". <br /> И эта точка у электродов обычно находится в пределах 4.5-7.5 (взависимости от применения) (в ней 100% точность). А если вы "откалибруете" вместо этой точки по pH=2, то … вобщем сильный бред получится. Т.е. сильно +- уедет наклон этой прямой относительно "точки" электрода.<br /><br /> Но это теоретически, как на практике, может и не так уж и сильно изменится наклон…</p>
+
+<p><strong>Юрий Иваныч</strong> 26-07-2011</p>
+
+<p>[quote author=gena1 link=topic=1109.msg37719#msg37719 date=1311633743]<br />[quote author=medium link=topic=1109.msg37718#msg37718 date=1311626136]<br />ПОСТУЛИРУЮ: :)<br />Из-за маленького разброса в характеристиках PH и PPM, коку-колу можно использовать как калибровочный раствор на любительском уровне.<br />[/quote]<br /><br />А мне кажется, что всё же неприемлимо, из-за значения ph=2, хоть и постоянного.<br />Когда я изучал pH электрод (с химико-электрической точки зрения :) ), то у них есть эккккк..потенциальная точка (названиние не помню) в которой этот електрод "меняет" полярность (с щелочной на кислотную "батарейку"). И именно относительно неё и делают все измерения (прибор пересчитывает). Т.е. через эту точку проходит линейная прямая (при постоянной температуре) с определенным "наклоном". <br /> И эта точка у электродов обычно находится в пределах 4.5-7.5 (взависимости от применения) (в ней 100% точность). А если вы "откалибруете" вместо этой точки по pH=2, то … вобщем сильный бред получится. Т.е. сильно +- уедет наклон этой прямой относительно "точки" электрода.<br /><br /> Но это теоретически, как на практике, может и не так уж и сильно изменится наклон…<br />[/quote]<br />Согласен с gena1. Если ради эксперимента, то всегда пожалуйста. Если для работы, но не желательно пользоваться всякими колами, квасами и т.п. Обидно потом будет смотреть как растюхи умирают  :'( (тьфу-тьфу) и все лишь из за того, что прибор показывал неправильные значания.  На главной странице форума Константин разместил объявление. Если не читали, прочтите. Там среди всего прочего имеются Стандарт титры (для калибровки ПШ метра) - ампула 70 рублей. Правда там сумма указана: заказ от 500 руб. Но это как один из вариантов.  :)</p>
+
+<p><strong>Coccinella</strong> 26-07-2011</p>
+
+<p>Господа, рН не изменяется линейно, это вообще очень забавная величина. Ведь по определению, рН это отрицательный десятичный логарифм концентрации ионов Н в растворе. Десятичный логарифм, во-первых, может быть только целым числом, все эти 5,5 и 7,2 - от лукавого (хотя я и сама ими пользуюсь), а во-вторых, он изменяется скачкообразно, как только концентрация изменяется в 10 раз, рН изменяется на единицу. <br /><br />Это очень хорошо заметно при определении рН методом титрования. <br /><br />Ведь до появления дигитальных рН метров все определение велось по графикам. Сначала по калибровочным растворам строился график на миллиметровой бумаге, а потом по показаниям амперметра (если не путаю) на этом графике искали нужную точку. Та еще работенка была :)!<br />Так что и сегодня по одному раствору откалибровать вряд ли возможно.</p>
+
+<p><strong>medium</strong> 26-07-2011</p>
+
+<p>В википедии сказано, что pH кока-колы равен 2,8 ([url]http://ru.wikipedia.org/wiki/Кока-кола[/url] Ортофосфорная кислота там.<br /><br />Значит мой ПШ метр все-таки раскалибровался. Надо раствор калибровочный покупать.<br /><br />PS: Пока искал инфу о коле, нашел по чему еще можно калиброватся :) <br /><br />Аккумуляторная кислота (опасна даже при попадании на кожу) pH &lt;1.0<br />Желудочный сок рН=1,6-1,8.<br />Лимонный сок pH~2-2,5<br />Кока-кола pH=2,8<br />Дистиллированная вода pH=5,5<br />Человеческая слюна и моча pH~6,4-6,5<br />Чистая вода (нейтральная среда) pH=7 (меньше - кислотная среда, больше - щелочная)<br />Родниковая вода ph~6,5-8,5<br />Океаническая вода pH=8<br />Прибрежные воды pH~9</p>
+
+<p><strong>cpf</strong> 26-07-2011</p>
+
+<p>Вы же, вроде, в Москве живете - закажите калибровочных растворов (и не только) в интернет-магазине и втечение пары дней получите их. Цена вопроса 50руб за порцию нужного раствора + доставка (или, чтобы сэкономить на доставке 170 руб, можно съездить и забрать самому), в чем проблема? Например, этот:<br />[url]http://www.moemgorod.com/index.php?productID=500[/url]</p>
+
+<p><strong>gena1</strong> 26-07-2011</p>
+
+<p>[quote author=Coccinella link=topic=1109.msg37727#msg37727 date=1311660722]<br />Господа, рН не изменяется линейно, это вообще очень забавная величина. Ведь по определению, рН это отрицательный десятичный логарифм концентрации ионов Н в растворе. Десятичный логарифм, во-первых, может быть только целым числом, все эти 5,5 и 7,2 - от лукавого (хотя я и сама ими пользуюсь), а во-вторых, он изменяется скачкообразно, как только концентрация <br />[/quote]<br /> $) Только сами электроды этого не знают :)<br /><br /> Серьезно - определяют по ЭДС электрода относительно [b]изопотенциальной точки[/b] по таблице. (Для каждого типа электрода это своя таблица (ph,температура, эдс, с определенным шагом.))<br /><br />нужна калибровка по "эталону" ,  который должен быть близок по параметрам к изопотенциальной точке электрода.<br /><br />Значения э.д.с. при любой температуре в диапазоне от 0 до 80 оС определяются следующим уравнением: Е=Еи - (54,197 + 0,1984 х Тр) х (pH - pHи), где Тр - температура раствора, оС. (Для каждого типа электрода это свое уравнение и свои с координаты изопотенциальной точки  (pHи=6,70; Еи=18 мВ.) - вот это для моего электрода)<br /><br />А все электронные  пх метры считают по линейной прямой + изменение "угла наклона" относительно изопотенциальной точки взависимости от т-ры р-ра (это только пх метры с "термоконпенсацией", дешевые это не учитывают)</p>
+
+<p><strong>valery</strong> 26-07-2011</p>
+
+<p>[quote author=medium link=topic=1109.msg37732#msg37732 date=1311668049]<br />Человеческая слюна и моча pH~6,4-6,5<br />[/quote]<br /><br />А ведь похоже слюнями калиброваться гораздо приятнее …  :-\ <br />Да и температура постоянная, если электрод изо рта не вынимать … ну и если ангины нету … <br /><br />Надо покумекать на эту тему … Если правильно поставить дело, можно ведь и у населения электроды принимать. На калибровку.<br />Или на поверку …<br /><br />Так, так, так …    А ведь и впрямь …<br /><br />Хотя, с другой стороны, при нашей власти … Еще лицензию какую заставят покупать … <br />Или там какой вмененный налог платить …  С наших - станется  :-\ они ж спят и видят, как бы с "нефтяной" иглы соскочить …<br /></p>
+
+<p><strong>medium</strong> 27-07-2011</p>
+
+<p>Да нее.  Бизнес не получится, я по всем пунктам прошелся, везде расхождения. Дурят нашего брата…<br /><br /> :)</p>
+
+<p><strong>sprut</strong> 03-09-2011</p>
+
+<p>[quote author=medium link=topic=1109.msg37718#msg37718 date=1311626136]Купил три бутылки 500мг. Одну в Москве в палатке, вторую - в 100км от Москвы, третью в крупном супермаркете. Этикетки показали, что две сделаны в Питере, одна в Минске.<br />РЕЗУЛЬТАТЫ:<br />Все имеют PH 2, PPM 660!!!<br />[/quote]<br />Модавская (Кишинев) кола: рН=2,7; TDS показал 859.<br />Все газы вытряхнул, пиаш тестер откалиброван раствором.</p>
+
+<p><strong>Acc</strong> 03-09-2011</p>
+
+<p>ЗачОтная тема получилась,  <em>8)</em>познавательная, веселая  ;D ;D ;D</p>
+
+<p><strong>k15313v</strong> 15-01-2015</p>
+
+<p>Как считаете, если откалибровать Ph-метр только по дистиллированной воде (выставить на 5.5), погрешность будет большая?</p>
+
+<p><strong>k15313v</strong> 15-01-2015</p>
+
+<p>Или лучше кока-колой?  :D</p>
+
+<p><strong>Coccinella</strong> 15-01-2015</p>
+
+<p>А какая рН у Колы?<br />У дистиллированной воды по ГОСТу рН 5,5-5,7, не такая маленькая погрешность получается…</p>
+
+<p><strong>k15313v</strong> 15-01-2015</p>
+
+<p>[quote author=Coccinella link=topic=1109.msg86551#msg86551 date=1421345913]<br />А какая рН у Колы?<br />У дистиллированной воды по ГОСТу рН 5,5-5,7, не такая маленькая погрешность получается…<br />[/quote]<br /><br />Здесь писали, что должен быть 2,8. Я конечно понимаю, что нужны калибровочные растворы, просто нет времени на поиски/доставку, салат нужно пересаживать срочно, а то он скоро меня съест   :)</p>
+
+<p><strong>Ru7tam</strong> 15-01-2015</p>
+
+<p>[quote author=Coccinella link=topic=1109.msg86551#msg86551 date=1421345913]<br />А какая рН у Колы?<br />[/quote]<br />По китайскому pH-метру - у меня получилось 2.7-2.8</p>
+
+<p><strong>Strangeman</strong> 16-01-2015</p>
+
+<p>[quote author=Coccinella link=topic=1109.msg86551#msg86551 date=1421345913]<br />У дистиллированной воды по ГОСТу рН 5,5-5,7, не такая маленькая погрешность получается…<br />[/quote]<br />У нее буферность отсутствует чуть более, чем полностью. На нее дыхнешь и pH уедет вниз, а ведь на инструментах и посуде могут быть частицы…</p>
+
+<p><strong>k15313v</strong> 16-01-2015</p>
+
+<p>[quote author=Strangeman link=topic=1109.msg86555#msg86555 date=1421384751]<br />[quote author=Coccinella link=topic=1109.msg86551#msg86551 date=1421345913]<br />У дистиллированной воды по ГОСТу рН 5,5-5,7, не такая маленькая погрешность получается…<br />[/quote]<br />У нее буферность отсутствует чуть более, чем полностью. На нее дыхнешь и pH уедет вниз, а ведь на инструментах и посуде могут быть частицы…<br />[/quote]<br /><br />Вот оно что… А я уже грешил на Китай, потому что измеряю в бутылке - один показатель, а переливают в чистый, сухой стакан - совсем другой.</p>
+
+<p><strong>pavel_s</strong> 13-02-2015</p>
+
+<p>А что по поводу хранения? На ponics.ru написано хранить в дистиллированной воде, в других местах пишут наооборот не хранить в дистиллированной, а хранить в подкисленной ph=4.<br />Кому верить?</p>
+
+<p><strong>Gnevko</strong> 13-02-2015</p>
+
+<p>Смотря, в каком смысле "хранить". Если "хранить" в смысле хранить долго, то для этого спец жидкость есть (все забываю как она называется, Бородач точно подскажет), а если хранить просто между каждодневными использованиями, то просто в обычной воде. Если РН метр идет с колпочком, на дне которого проложен поролон, то и вообще ни в чем хранить не нужно, поролон намокнет от мокрого датчика и не даст ему высохнуть (если конечно колпачек плотно закрывается). В любом случае, как бы вы не его не хранили, калибровать прийдется каждый месяц.</p>
+
+<p><strong>Gnevko</strong> 13-02-2015</p>
+
+<p>[quote author=Gnevko link=topic=1109.msg87982#msg87982 date=1423826160]<br />то для этого спец жидкость есть <br />[/quote]<br /><br />раствор КCl - [url]http://moemgorod.com/product/hm-digital-ph-storage-solution-60/[/url]</p>
+
+<p><strong>Borodach1</strong> 13-02-2015</p>
+
+<p>Я уже старый становлюсь. Склероз одолевает. :D То что давно было хорошо помню. То что недавно штудировал уже не так ясно вспоминается.  :'(<br />Но в общем смысл правильный. Хранить нужно в спец растворе который стОит бешенных денег. Хотя на самом деле он стОит 5 копеек. :D<br />Если память не изменяет то это раствор сколькототам моль KCl в литре воды. Сколько не помню. Помоему ещё и для разных электродов это сколькототам разное.</p>
+
+<p><strong>Ru7tam</strong> 13-02-2015</p>
+
+<p>[quote author=Borodach1 link=topic=1109.msg87991#msg87991 date=1423834940]Хранить нужно в спец растворе который стОит бешенных денег. Хотя на самом деле он стОит 5 копеек.[/quote]<br />Ну, не "пять". :) Раствор должен быть на двойном дистилляте и сам KCl -  [url=http://www.donetsk-reaktiv.ru/prod/kalii-khloristyi]"хч" или "ч.д.а."[/url], т.е. с минимальным присутствием посторонних примесей, а не просто "для удобрений", иначе отравите электрод.</p>
+
+<p><strong>Borodach1</strong> 13-02-2015</p>
+
+<p>По сравнению со стоимостью фирмОвых растворов именно  5 копеек. )))))<br />У меня свои 5 копеек.  )))<br />Это сейчас 5 копеек ничего. Но я то помню совсем другие  5 копеек. 5 копеек стоил бублик,  проезд в автобусе и метро.</p>
+
+<p><strong>Ru7tam</strong> 13-02-2015</p>
+
+<p>[quote author=Borodach1 link=topic=1109.msg87994#msg87994 date=1423838793]<br />5 копеек стоил бублик,  проезд в автобусе и метро.<br />[/quote]<br />Не, бублик стоил 6 копеек, а вот проезд в троллейбусе = 4 коп, и в трамвае = 3 коп. :)<br /><br />А растворы/электроды - бывают не только на KCl.</p>
+
+<p><strong>Borodach1</strong> 13-02-2015</p>
+
+<p>Да. троллейбус и трамвай  так и стоили.  А бублик у нас стоил все-таки 5 копеек. С маком.)  Позже ещё и с кунжутом стали делать. Но всё равно по пять… А вчера вечером район, рядом с хлебным магазином в котором я в детстве покупал эти бублики, обстреляли из града… ((((((((<br />Пардон…  Уже молчу…</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: May 23, 2023 <br />
+<p><img src="/images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

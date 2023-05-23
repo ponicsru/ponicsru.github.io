@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>контроль роста растения в реальном времени | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:?subject= feedback&body=I have some feedback about the контроль роста растения в реальном времени page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="контроль роста растения в реальном времени">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">контроль роста растения в реальном времени</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>otec</strong> 24-11-2010</p>
+
+<p>Походил по форумам ,народ спорит какой свет,раствор,температура,влажность , для растений лучше.Ну я и подумал а может "спросить у растения"<br />И так давайте обсудим, так сказать объективные методы контроля за ростом растения.С вашего позволения я начну ,а вы добавите: <br />-измерение рН  <br />-измерение TDS<br />-измерение температуры<br />-измерение содержания СО2<br />-измерение содержания О2<br />по этим параметрам при определенном опыте (я надеюсь форумчане поделятся) можно определить косвенно что растение делает ("кушает" "пьет воду" "спит" и т.д.)<br />добавлю еще несколько менее известных<br />-измерение транспирации (сокодвижения)<br />-измерение биопотенциала растения<br />собственно с последнего начну см. вложение<br /></p>
+
+<p><strong>valery</strong> 25-11-2010</p>
+
+<p><em>8)</em><br /><br />Олег, если будут попадаться описания/данные современных фитомониторов (вроде Вы довольно активно ищите разные "материалы") - выкладывайте, пожалуйста.<br /><br />Собственно, очень интересует, можно ли реализовать подобный ФитоМонитор, в любительский условиях.<br /><br />Пусть менее "точный", упрощенный, без "излишеств" …<br /><br />Не знаю, что там может быть …  Возможно, "температура" листа, "концентрация" (ЕС) - сока (немножко наобум …)<br /><br />В принципе, здесь особо выяснять "мнения" и высказывать "предположения" - может быть даже и не очень-то нужно …<br /><br />Все это - исследовано, отработано - нужно только найти и посоображать над упрощенным "воплощением" …</p>
+
+<p><strong>valery</strong> 25-11-2010</p>
+
+<p>Кстати, спасибо за "поднятую" тему  :)<br /><br />Давно собираюсь выяснить, что такое "поток" и никак не соберусь. В общем - хотел было спросить, и "случайно" - выяснил  :D<br /><br />Короче нас интересует "относительная скорость ксилеммного потока" ( хорошо бы …)<br /><br />Кроме этого - температура и влажность субстрата (влажность можно "влагомерами" отслеживать, а можно пытаться - весами)<br /><br />Изменение толщины стебля, черешка листа и листовой пластины.<br /><br />(Насчет, ЕС межклеточного сока, я возможно "загнул", не знаю)<br /><br />Концентрация кислорода - может быть принципиально и не важна. (О2 и СО2 днем при фотосинтезе "конкурируют" за одни и те же ферменты, но не слышал, чтобы О2 - измеряли, контролировали …)<br /><br />Приход ФАР нужен. (мне кажется, если все очень аккуратно и кропотливо "просчитать" - возможно и удастся обойтись "люксметрами", без дорогущих "сенсоров фотонов или квантов". Ну хотя бы - в первом приближении).<br /><br />Газо-обмен и водо-обмен листа …<br /><br />Остальные - влажность, температура - о "контроле" за оптимальным, наверное, все же неправильно говорить. Они тесно увязаны с ОСВЕЩЕНИЕМ (ну и видом, возрастом, состоянием растения и "задач", стоящих на данный момент) - здесь скорее нужно говорить о "тесно-увязанном УПРАВЛЕНИИ".<br /><br />Ну в общем, все равно нужно плясать от ФАР, как ни крути.<br /></p>
+
+<p><strong>otec</strong> 25-11-2010</p>
+
+<p>[quote author=valery link=topic=658.msg23880#msg23880 date=1290678024]<br /> <em>8)</em><br /><br />Олег, если будут попадаться описания/данные современных фитомониторов (вроде Вы довольно активно ищите разные "материалы") - выкладывайте, пожалуйста.<br /><br />Собственно, очень интересует, можно ли реализовать подобный ФитоМонитор, в любительский условиях.<br /><br />Пусть менее "точный", упрощенный, без "излишеств" …<br /><br />Не знаю, что там может быть …  Возможно, "температура" листа, "концентрация" (ЕС) - сока (немножко наобум …)<br /><br />В принципе, здесь особо выяснять "мнения" и высказывать "предположения" - может быть даже и не очень-то нужно …<br /><br />Все это - исследовано, отработано - нужно только найти и посоображать над упрощенным "воплощением" …<br />[/quote]<br />Валерий темой фитомонитора интересовался пару лет назад.Информации много ,я поменял компьютер старый под столом ,постараюсь в ближайшее время перетащить инфориацию.Фитомониторы дорогие,понравились простые опыты в московском лицее все с картинками .Я даже ходил общался с преподавателями в сельхозакадемии.Грамотные ребята, но с оборудованием совсем плохо.Датчики транспирации я нашел в европе,сейчас не помню сколько стоят.Можно попробовать найти разработчиков (статья помойму на этом сайте Молдавия) если не уехали. Все приборы с медленно меняющимися параметрами сделаны по одному принципу : электронный вольтметр (откалиброван под конкретное применение) т.е измерение температуры,освещенности ,цвета,рН,влажности,TDS .Ну или для дома для семьи это выглядит так,покупаете на базаре какой нибудь микроамперметр <br />60-х годов (рабочий разумеется) калибруете по эталонному прибору,рисуете новую шкалу и у вас в итоге будет один индикатор на все случаи жизни.В зависимости от чувствительности датчиков возможно прийдется использовать разные предварительные усилители.Может я через чур упрощенно (электронщикам меня не пинать) но это так.С сигналами импульсными и короткими по времени немножко сложнее.Нужно что то типа цифрового осциллографа.Но опять же если вы уже знаете параметры сигнала,и вам достаточно знать есть он или нет,то это тоже решается довольно просто.Пример: приходите на базар (базу) прикупить тонну лука для выгонки если лук "живой" втыкаете две иголки присоединеные к прибору в луковицу и у вас на приборе загорается светодиод .Можно покупать.</p>
+
+<p><strong>otec</strong> 25-11-2010</p>
+
+<p>Да… :-.За два года многое изменилось.Смотри ссылку http://www.phyto-sensor.com/documentation.ru<br />http://www.phyto-sensor.com/sensors-M.ru походите по сайту.</p>
+
+<p><strong>Mole_Garden</strong> 27-11-2010</p>
+
+<p>Как и просили, файл залил<br /><br />[url=https://docs.google.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0ByT98IObPsIBZDE0NDY0ODktYjg2NS00ZjE1LTkyOTctZTViNDI2MjZkZTVj&amp;hl=ru][b]Механизмы генерации и функциональная роль потенциалов возбуждения у высших растений[/b]<br />[/url]</p>
+
+<p><strong>otec</strong> 03-12-2010</p>
+
+<p>Валерий вот информация по датчику потока http://www.cens.ucla.edu/pub/EnvironmentalSolutions/Sapflow_Tutorial.html</p>
+
+<p><strong>otec</strong> 22-01-2011</p>
+
+<p>Дипломный проект двух студентов.[url=http://www.joaomelo.hydroimprovement.com/index.php?option=com_content&amp;view=article&amp;id=46&amp;Itemid=65&amp;lang=en]http://www.joaomelo.hydroimprovement.com/index.php?option=com_content&amp;view=article&amp;id=46&amp;Itemid=65&amp;lang=en[/url]</p>
+
+<p><strong>mdima</strong> 22-01-2011</p>
+
+<p>Ну вот, пока я тут разрабатываю контроллер они уже почти все сделали, правда у меня есть еще интересная задумка….</p>
+
+<p><strong>valery</strong> 22-01-2011</p>
+
+<p>Столько интересных ссылок в самых разных темах …  Ну когда ж их все то, можно прочитать, просмотреть и "вникнуть" …<br /><br />Может быть хотя бы в 2-3 словах излагать упрощенно "суть" идеи ?<br /><br />Кому интересно - прочтет подробней и в "деталях", кто не заинтересуется - хоть полить чего успеет  :)</p>
+
+<p><strong>otec</strong> 22-01-2011</p>
+
+<p>[quote author=valery link=topic=658.msg27193#msg27193 date=1295706655]<br />Столько интересных ссылок в самых разных темах …  Ну когда ж их все то, можно прочитать, просмотреть и "вникнуть" …<br /><br />Может быть хотя бы в 2-3 словах излагать упрощенно "суть" идеи ?<br /><br />Кому интересно - прочтет подробней и в "деталях", кто не заинтересуется - хоть полить чего успеет  :)<br />[/quote]<br />Да там есть видео.В двух словах: контроллер управляет гидропонной системой (СО2,РН,влажность ,температура и т.д.) причем параметры управления можно изменять дистанционно через интернет.<br />для mdima [url=http://aktiniy.narod.ru/project/index.htm]http://aktiniy.narod.ru/project/index.htm[/url] <br /></p>
+
+<p><strong>otec</strong> 22-01-2011</p>
+
+<p>[quote author=mdima link=topic=658.msg27191#msg27191 date=1295705901]<br />Ну вот, пока я тут разрабатываю контроллер они уже почти все сделали, правда у меня есть еще интересная задумка….<br />[/quote]<br />А не поделитесь?</p>
+
+<p><strong>mdima</strong> 22-01-2011</p>
+
+<p>[quote]для mdima [url=http://aktiniy.narod.ru/project/index.htm]http://aktiniy.narod.ru/project/index.htm[/url][/quote]<br />это не страшно ;) у меня интереснее (если все получится)</p>
+
+<p><strong>Mole_Garden</strong> 22-01-2011</p>
+
+<p>[quote author=otec link=topic=658.msg27197#msg27197 date=1295709980]<br />А не поделитесь?<br />[/quote]Всему свое время!</p>
+
+<p><strong>valery</strong> 22-01-2011</p>
+
+<p>Ну что ж … Подождать, так подождем …  :)<br /> <br />:'(<br /></p>
+
+<p><strong>otec</strong> 07-02-2011</p>
+
+<p>Ссылочка ,даю главную т.к всего много [url]http://www.surechem.com.my/home.htm[/url]</p>
+
+<p><strong>WERDNA</strong> 08-02-2011</p>
+
+<p>Я тоже увлекся контроллерами. Сейчас разбираюсь. Задумка пока автоматически замешивать раствор и поддерживать EC и PH. Теоретически все понятно, а вот практически впервые пришлось столкнуться со схемотехникой и микроконтроллерами - сложновато. Хотя и жутко уинтересно - захватывает, почти как гидропоника )</p>
+
+<p><strong>mochalygin</strong> 12-02-2011</p>
+
+<p>[quote author=otec link=topic=658.msg23903#msg23903 date=1290710937]<br />[quote author=valery link=topic=658.msg23880#msg23880 date=1290678024]<br /> <em>8)</em><br /><br />Олег, если будут попадаться описания/данные современных фитомониторов (вроде Вы довольно активно ищите разные "материалы") - выкладывайте, пожалуйста.<br /><br />Собственно, очень интересует, можно ли реализовать подобный ФитоМонитор, в любительский условиях.<br /><br />Пусть менее "точный", упрощенный, без "излишеств" …<br /><br />Не знаю, что там может быть …  Возможно, "температура" листа, "концентрация" (ЕС) - сока (немножко наобум …)<br /><br />В принципе, здесь особо выяснять "мнения" и высказывать "предположения" - может быть даже и не очень-то нужно …<br /><br />Все это - исследовано, отработано - нужно только найти и посоображать над упрощенным "воплощением" …<br />[/quote]<br />Валерий темой фитомонитора интересовался пару лет назад.Информации много ,я поменял компьютер старый под столом ,постараюсь в ближайшее время перетащить инфориацию.Фитомониторы дорогие,понравились простые опыты в московском лицее все с картинками .Я даже ходил общался с преподавателями в сельхозакадемии.Грамотные ребята, но с оборудованием совсем плохо.Датчики транспирации я нашел в европе,сейчас не помню сколько стоят.Можно попробовать найти разработчиков (статья помойму на этом сайте Молдавия) если не уехали. Все приборы с медленно меняющимися параметрами сделаны по одному принципу : электронный вольтметр (откалиброван под конкретное применение) т.е измерение температуры,освещенности ,цвета,рН,влажности,TDS .Ну или для дома для семьи это выглядит так,покупаете на базаре какой нибудь микроамперметр <br />60-х годов (рабочий разумеется) калибруете по эталонному прибору,рисуете новую шкалу и у вас в итоге будет один индикатор на все случаи жизни.В зависимости от чувствительности датчиков возможно прийдется использовать разные предварительные усилители.Может я через чур упрощенно (электронщикам меня не пинать) но это так.С сигналами импульсными и короткими по времени немножко сложнее.Нужно что то типа цифрового осциллографа.Но опять же если вы уже знаете параметры сигнала,и вам достаточно знать есть он или нет,то это тоже решается довольно просто.Пример: приходите на базар (базу) прикупить тонну лука для выгонки если лук "живой" втыкаете две иголки присоединеные к прибору в луковицу и у вас на приборе загорается светодиод .Можно покупать.<br />[/quote]<br /><br />А не проще ли это сделать при помощи микроконтроллера? о.О<br /><br />А уж если такая тяга к извращениям и миллиамперметрам :) – можно купить и современный стрелочный за 30-50 рублей, либо мультиметр за 200-300 рублей.</p>
+
+<p><strong>otec</strong> 12-02-2011</p>
+
+<p>[quote author=mochalygin link=topic=658.msg28586#msg28586 date=1297484284]<br />[quote author=otec link=topic=658.msg23903#msg23903 date=1290710937]<br />[quote author=valery link=topic=658.msg23880#msg23880 date=1290678024]<br /> <em>8)</em><br /><br />Олег, если будут попадаться описания/данные современных фитомониторов (вроде Вы довольно активно ищите разные "материалы") - выкладывайте, пожалуйста.<br /><br />Собственно, очень интересует, можно ли реализовать подобный ФитоМонитор, в любительский условиях.<br /><br />Пусть менее "точный", упрощенный, без "излишеств" …<br /><br />Не знаю, что там может быть …  Возможно, "температура" листа, "концентрация" (ЕС) - сока (немножко наобум …)<br /><br />В принципе, здесь особо выяснять "мнения" и высказывать "предположения" - может быть даже и не очень-то нужно …<br /><br />Все это - исследовано, отработано - нужно только найти и посоображать над упрощенным "воплощением" …<br />[/quote]<br />Валерий темой фитомонитора интересовался пару лет назад.Информации много ,я поменял компьютер старый под столом ,постараюсь в ближайшее время перетащить инфориацию.Фитомониторы дорогие,понравились простые опыты в московском лицее все с картинками .Я даже ходил общался с преподавателями в сельхозакадемии.Грамотные ребята, но с оборудованием совсем плохо.Датчики транспирации я нашел в европе,сейчас не помню сколько стоят.Можно попробовать найти разработчиков (статья помойму на этом сайте Молдавия) если не уехали. Все приборы с медленно меняющимися параметрами сделаны по одному принципу : электронный вольтметр (откалиброван под конкретное применение) т.е измерение температуры,освещенности ,цвета,рН,влажности,TDS .Ну или для дома для семьи это выглядит так,покупаете на базаре какой нибудь микроамперметр <br />60-х годов (рабочий разумеется) калибруете по эталонному прибору,рисуете новую шкалу и у вас в итоге будет один индикатор на все случаи жизни.В зависимости от чувствительности датчиков возможно прийдется использовать разные предварительные усилители.Может я через чур упрощенно (электронщикам меня не пинать) но это так.С сигналами импульсными и короткими по времени немножко сложнее.Нужно что то типа цифрового осциллографа.Но опять же если вы уже знаете параметры сигнала,и вам достаточно знать есть он или нет,то это тоже решается довольно просто.Пример: приходите на базар (базу) прикупить тонну лука для выгонки если лук "живой" втыкаете две иголки присоединеные к прибору в луковицу и у вас на приборе загорается светодиод .Можно покупать.<br />[/quote]<br /><br />А не проще ли это сделать при помощи микроконтроллера? о.О<br /><br />А уж если такая тяга к извращениям и миллиамперметрам :) – можно купить и современный стрелочный за 30-50 рублей, либо мультиметр за 200-300 рублей.<br />[/quote]<br />Это не форум электронщиков,поэтому примеры привожу попроще.На стрелочном можно приклеить любую шкалу ,с любой зависимостью (линейная логарифмическая и т.д)</p>
+
+<p><strong>Coccinella</strong> 15-03-2011</p>
+
+<p>Я очередной раз несколько не по теме, но посмотрите, какие интересные вещи предлагают в России и в Украине<br /><br />[url]http://agroanaliz.info/fitomonitoring[/url]<br /><br />Конечно, это не любительский вариант, да и не каждому крестьянскому хозяйству по карману, но ведь именно крестьяне и используют! А не только какие-то заморские университеты :)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: May 23, 2023 <br />
+<p><img src="/images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

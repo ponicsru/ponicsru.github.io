@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Дневная и ночная температура. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:?subject= feedback&body=I have some feedback about the Дневная и ночная температура. page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Дневная и ночная температура.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Дневная и ночная температура.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Юрий.E.</strong> 13-03-2011</p>
+
+<p>Всем привет. Уважаемые форумчане,почему ночная температура для растюх должна быть ниже,чем дневная? Это обусловлено физиологией растений? Я к тому,что стоит ли при выращивании в помещении пытаться "делать" температуру ночной и дневной.Коряво написал,но думаю,что все вопрос поняли!</p>
+
+<p><strong>Aleksey Kurenin</strong> 13-03-2011</p>
+
+<p>Скорость физиологических процессов в растении зависит от температуры. Выше температуры - выше скорость. (пусть грубо, но примерно так)<br />Днём - свет - фотосинтез - производство сахаров. (дахание тоже есть, но фотосинтез преобладает над дыханием).<br />Ночью - темно - дыхание - использование сахаров. (фотосинтеза нет, дыхание есть - чистые потери).<br /><br /> :)</p>
+
+<p><strong>Юрий.E.</strong> 13-03-2011</p>
+
+<p>Спасибо,Алексей. А если день длится 20 часов, за 4 часа на сколько можно снизить температуру? Я имею ввиду розы. У меня сейчас и день и ночь 20 градусов. Может посоветуете температурный режим? Где-то читал здесь на форуме, что температуру нужно снижать и поднимать не более 1 градуса в час.</p>
+
+<p><strong>Aleksey Kurenin</strong> 13-03-2011</p>
+
+<p>Оо Юрий. Розы это несколько другая история. Хотя и конечно только "несколько".<br /><br />Кроме всяких мыслей по поводу нетто фотосинтеза, разница температур оказывает сильное влияние на путь" которым идёт развитие растений.<br /><br />ВОт несколько "глабальных" утверждений по этому поводу. ТОЛЬКО ДЛЯ РОЗ!!!<br /><br />1) "Плоский" режим. (Близкие день \ ночь)<br />- Ускорение процессов роста. Период созревания становится короче.<br />- Мера направлена прежде всего на увеличение урожайности.<br />- Более выровненная продукция (стебли более одинаковые).<br /><br />2) Положительная разница (День выше чем ночь)<br />-  Дольше период созревания (НО стебли, соответсвенно будут длинее по сравнению с №1).<br />- Меньшая равномерность продукции.<br />- Мера больше направлена на улучшение качества продукции. <br /><br />3) Отрицательная разница (Ночь выше дня)<br />- Сахара лучше перераспределяются по растению (ночью в основном)<br />- Получаются более цилиндрические бутоны (выше и меньше в диаметре)<br />- Усиливается открытие почек.<br />- Может служить для экономии энергии  :) (Если применяются энергетические экраны). Но это так, просто мысь интересная.<br /><br />Это всё очень примерно и относительно, но всё же. <br />Так что какие температуры держать надо я вам не скажу, я не знаю. Они разные могут быть с разными эффектами на кльтуру.<br />СНижать можно быстрее чем 1 град в час. поднимать лучше медленее. :) Ночную температуру часто используют для компенсирования высокой дневной, чтобы среднесуточная была адекватная.</p>
+
+<p><strong>андрей п</strong> 14-03-2011</p>
+
+<p>Очень важно контролировать влажность параллельно с температурой, иначе могут возникнуть проблемы.Удачи Вам!</p>
+
+<p><strong>Юрий.E.</strong> 14-03-2011</p>
+
+<p>Спасибо,Алексей,за такой развёрнутый ответ. Пусть наверное розы у меня растут в "плоском" режиме.<br /><br />андрей п, Влажность я контролирую. Колеблется от 70 до 80 процентов. Спасибо за удачу,она мне не помешает!</p>
+
+<p><strong>valery</strong> 14-03-2011</p>
+
+<p>Спасибо!<br /><br />Пополнил компьютерную папочку "Алексей Куренин"  :)  Папочка довольно "пухленькая"  :-\</p>
+
+<p><strong>о-льга</strong> 30-11-2016</p>
+
+<p>Наконец то нашла тему, где спросить. Немного запуталась в физиологии. Хотела у Валерия спросить, знаю, что на Гринталке пишет. <br />Попробую свою мысль. Несколько раз прочитала статью перевод Марите - про баланс ассимилятов в томатах. [url]http://greentalk.ru/topic/2563/#comment-33612,[/url] и другие темы связанные с температурой. <br /><br /> Основная суть -  при фотосинтезе из простых веществ  образуются в сложные - ассимиляты, а при дыхании эти ассимиляты расщепляются/окисляются до более простых выделяя энергию, которую растение тратит на рост и развитие - вроде понятно. Но - почему пишут - что энергия на дыхание - это потери урожая? Ассимиляты могут без процесса дыхания пойти туда, где они нужны? Или только посредством процесса дыхания? И если они расщепляются при дыхании, то это уже не ассимиляты?<br />И еще - если дыхание - это потери - тогда насколько можно снижать температуру ночью, чтобы минимизировать потери? <br />Вот например  за солнечный день растение выработало N количество ассимилятов. Как я поняла, если ночью тепло, активно идет дыхание - то ассимиляты тратятся полностью? Или какая то доля? А если ночью температура низкая, куда идут излишки? Помогите пожалуйста разобраться….<br /> Может я вообще не в ту степь?<br /><br /><br /><br /><br /><br /></p>
+
+<p><strong>Coccinella</strong> 04-12-2016</p>
+
+<p>Произведенные листом ассимиляты - сахара и не только - либо расходуются на рост растения, плодов и корней, либо на дыхание. То есть все, что ушло на дыхание, не досталось урожаю. Совсем отключить дыхание невозможно, растение умрет. Но управлять балансом ассимилятов можно именно с помощью температуры. Почему капусту и морковь хранят в промышленных холодильниках? Чтобы снизить потери урожая за счет процесса дыхания. Почему так нельзя делать с томатами? Потому что при дыхании образуются кислоты, а оптимальное соотношение сахаров и кислот обеспечивает вкус (там, правда, еще и образование многих других соединений нарушается при низкой температуре). Вот голландцы пишут, что при хранении рассады земляники при 0оС потери потенциального урожая достигают 30% по сравнению с хранением при -2оС, а все только за счет дыхания. Почитайте на Гринтолке тему "Температурный ликбез Томат. Общая информация по разным вопросам" Там как раз говорится о температурном графике и управлении балансом ассимилятов.</p>
+
+<p><strong>о-льга</strong> 04-12-2016</p>
+
+<p>[quote author=Coccinella link=topic=785.msg104685#msg104685 date=1480852526]<br />Произведенные листом ассимиляты - сахара и не только - либо расходуются на рост растения, плодов и корней, либо на дыхание. То есть все, что ушло на дыхание, не досталось урожаю. [/quote]<br /><br />Спасибо большое. Еще про дыхание не совсем разобралась. Пишут, что есть "ростовое " дыхание и "поддерживающее". Я правильно понимаю, что при снижении  ночной температуры ассимиляты накапливаются в листьях, плодах и т.д. - но растение не растет (очень медленно растет)? Ведь энергии то для роста - нет…. Я к чему - снижение ночных температур наверное можно применять тогда, когда растение уже сформировалось и нам нужны плоды, а не листья (если это томат, например)…</p>
+
+<p><strong>Coccinella</strong> 05-12-2016</p>
+
+<p>Ночью растение не растет в прямом смысле слова. При высокой температуре оно может вытягиваться.<br />Насчет "ростовое" и "поддерживающее" дыхание - это народное творчество в физиологии растений таких терминов нет.<br />Растение дышит круглые сутки, но в зависимости от температуры интенсивность дыхания может быть разной. При высокой ночной температуре больше ассимилятов расходуется на дыхания, чем при пониженной. Это иногда используют в декоративном цветоводстве, чтобы получить компактное растение - держат относительно высокую ночную температуру, а рано утром ее резко снижают, в результате образуются укороченные междоузлия и пышный такой кустик. :)</p>
+
+<p><strong>о-льга</strong> 05-12-2016</p>
+
+<p>[quote author=Coccinella link=topic=785.msg104694#msg104694 date=1480941510]<br />Ночью растение не растет в прямом смысле слова. При высокой температуре оно может вытягиваться.<br />Насчет "ростовое" и "поддерживающее" дыхание - это народное творчество в физиологии растений таких терминов нет.[/quote]<br /><br />Еще больше запуталась. Ведь Марите про это пишет в статье - баланс ассимилятов в томатах.. 70% ростовое дыхание и 30% поддерживающее…<br />Может быть вы мне подскажете, какую литературу почитать - на что ориентироваться, буду очень благодарна</p>
+
+<p><strong>о-льга</strong> 05-12-2016</p>
+
+<p>Про высокую ночную температуру читала тоже - но совсем не пойму… Зачем тратить ассимиляты? Почему нельзя ночную сделать низкой….  Вроде как при низкой температуре - генеративное развитие растения - а тут наоборот что ли?</p>
+
+<p><strong>о-льга</strong> 06-12-2016</p>
+
+<p>Меня как раз больше цветоводство интересует - может есть какая то литература, другие источники, где можно почитать… Буду премного благодарна.</p>
+
+<p><strong>Coccinella</strong> 06-12-2016</p>
+
+<p>Да все там же, на ГТ :)</p>
+
+<p><strong>о-льга</strong> 07-12-2016</p>
+
+<p>Кое что нашла почитать по этой теме, если интересно.  <br />[url]http://www.ggspro.com/new/pdfs/updated/Controlling[/url] Plant Stretch Through the Morning Temperature Dip.pdf<br />[url]http://www.ag.auburn.edu/landscape/temperature.html[/url]</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: May 23, 2023 <br />
+<p><img src="/images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

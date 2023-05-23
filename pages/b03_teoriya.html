@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Теория | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:?subject= feedback&body=I have some feedback about the Теория page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Теория">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Теория</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><a href="b03_teoriya/t0008_byvaet_li_takoe.html">бывает ли такое?</a></p>
+
+<p><a href="b03_teoriya/t0012_svet.html">Свет.</a></p>
+
+<p><a href="b03_teoriya/t0019_aeroponika.html">Аэропоника</a></p>
+
+<p><a href="b03_teoriya/t0022_autopot_chto_za_sistema.html">“Autopot” что за система?</a></p>
+
+<p><a href="b03_teoriya/t0083_obsuzhdenie_samodelnoi_vertikalnoi_trehurovnevoi_gidroponnoi_ustanovki_na_160.html">Обсуждение самодельной вертикальной трех-уровневой гидропонной установки на 160</a></p>
+
+<p><a href="b03_teoriya/t0131_bukvar_dlya_nachinayushih.html">Букварь для начинающих</a></p>
+
+<p><a href="b03_teoriya/t0152_sovmestimost_rastenii.html">Совместимость растений</a></p>
+
+<p><a href="b03_teoriya/t0201_o_proizvoditelnosti.html">О производительности</a></p>
+
+<p><a href="b03_teoriya/t0225_globalnyi_vopros_o_zhiznedeyatelnosti_rastenii.html">Глобальный вопрос о жизнедеятельности растений</a></p>
+
+<p><a href="b03_teoriya/t0226_dopolnitelnye_tehnologii.html">дополнительные технологии</a></p>
+
+<p><a href="b03_teoriya/t0262_tyulpany_na_gidroponike.html">Тюльпаны на гидропонике.</a></p>
+
+<p><a href="b03_teoriya/t0267_howtohydroponics.html">How-To_Hydroponics</a></p>
+
+<p><a href="b03_teoriya/t0270_solnechnyi_vegitarii_rabotaet_ili_net.html">Солнечный вегитарий- работает или нет?</a></p>
+
+<p><a href="b03_teoriya/t0272_ovoshnoi_biznes__vygodno_ili_net.html">Овощной бизнес - выгодно или нет?</a></p>
+
+<p><a href="b03_teoriya/t0274_bambuk_na_gidroponike.html">Бамбук на гидропонике</a></p>
+
+<p><a href="b03_teoriya/t0276_biblioteka.html">Библиотека</a></p>
+
+<p><a href="b03_teoriya/t0284_kakoi_svet_nuzhen_zeleni.html">Какой свет нужен зелени?</a></p>
+
+<p><a href="b03_teoriya/t0303_klonirovanie_rastenii.html">Клонирование растений</a></p>
+
+<p><a href="b03_teoriya/t0410_selekciya.html">Селекция</a></p>
+
+<p><a href="b03_teoriya/t0430_faq.html">F.A.Q.</a></p>
+
+<p><a href="b03_teoriya/t0435_kakaya_gidroponnaya_ustanovka_yavlyaetsya_naibolee_universalnoi.html">Какая гидропонная установка является наиболее универсальной ?</a></p>
+
+<p><a href="b03_teoriya/t0441_gidroponika_dlya_zeleni.html">Гидропоника для зелени</a></p>
+
+<p><a href="b03_teoriya/t0443_ceny_na_ovoshnuyu_produkciyu_v_magazinah.html">Цены на овощную продукцию в магазинах!</a></p>
+
+<p><a href="b03_teoriya/t0453_literatura_dlya_agronoma.html">Литература для агронома</a></p>
+
+<p><a href="b03_teoriya/t0466_chto_effektivnei_dwc_ili_periodika.html">Что эффективней DWC или периодика</a></p>
+
+<p><a href="b03_teoriya/t0468_chema_temperaturnogo_grafika_dlya_tomata.html">Cхема температурного графика для томата</a></p>
+
+<p><a href="b03_teoriya/t0536_lekarstvennye_rasteniya_na_gidroponike.html">Лекарственные растения на гидропонике</a></p>
+
+<p><a href="b03_teoriya/t0543_gorod_budushego.html">Город будущего</a></p>
+
+<p><a href="b03_teoriya/t0548_otkrytie_kfh__chem_ono_mozhet_nam_pomoch.html">Открытие КФХ - чем оно может нам помочь?</a></p>
+
+<p><a href="b03_teoriya/t0574_proroshennaya_pshenica.html">пророшенная пшеница</a></p>
+
+<p><a href="b03_teoriya/t0577_semena.html">семена</a></p>
+
+<p><a href="b03_teoriya/t0583_sorta_tomata.html">сорта томата .</a></p>
+
+<p><a href="b03_teoriya/t0595_dva_varianata_ustanovki_kakaya_luchshe.html">Два варианата установки, какая лучше?</a></p>
+
+<p><a href="b03_teoriya/t0596_ammiachnaya_selitra.html">Аммиачная селитра</a></p>
+
+<p><a href="b03_teoriya/t0600_pro_koncentraciyu_strannosti.html">Про концентрацию, странности.</a></p>
+
+<p><a href="b03_teoriya/t0608_svet__hps_protiv_mh_vernee_ne_protiv_a_vmeste.html">Свет - HPS против MH. Вернее, не против, а вместе …</a></p>
+
+<p><a href="b03_teoriya/t0610_gidroponika_i_nasekomye.html">Гидропоника и насекомые.</a></p>
+
+<p><a href="b03_teoriya/t0633_v_planah_maloshumnaya_ustanovka_dlya_zemlyaniki.html">В планах малошумная установка для земляники…</a></p>
+
+<p><a href="b03_teoriya/t0634_gidroponnoe_vyrashivanie_orhidei.html">Гидропонное выращивание орхидей</a></p>
+
+<p><a href="b03_teoriya/t0650_dwc_korrekciya_ph_uglekislym_gazom.html">DWC коррекция PH углекислым газом</a></p>
+
+<p><a href="b03_teoriya/t0651_prorashivanie_semyan_pod_svetom.html">проращивание семян под светом</a></p>
+
+<p><a href="b03_teoriya/t0652_dmso_on_zhe_dimetilsulfokksiddimeksidi_td.html">ДМСО он же диметилсульфокксид,димексид,и т.д.</a></p>
+
+<p><a href="b03_teoriya/t0653_preparat_dlya_gidroponnogo_vyrashivaniya_rastenii.html">ПРЕПАРАТ ДЛЯ ГИДРОПОННОГО ВЫРАЩИВАНИЯ РАСТЕНИЙ</a></p>
+
+<p><a href="b03_teoriya/t0658_kontrol_rosta_rasteniya_v_realnom_vremeni.html">контроль роста растения в реальном времени</a></p>
+
+<p><a href="b03_teoriya/t0661_programmy_dlya_gidroponshika_poleznye_i_ne_ochen.html">Программы для гидропонщика, полезные и не очень.</a></p>
+
+<p><a href="b03_teoriya/t0708_trihoderma_v_svetokulture.html">Триходерма в светокультуре</a></p>
+
+<p><a href="b03_teoriya/t0713_osveshenie_roz.html">Освещение роз</a></p>
+
+<p><a href="b03_teoriya/t0721_vyrashivanie_v_rezhime_dennoch12.html">выращивание в режиме день+ночь=12</a></p>
+
+<p><a href="b03_teoriya/t0724_vyrashivaniya_kartofelya_na_gidroponike.html">Выращивания картофеля на гидропонике</a></p>
+
+<p><a href="b03_teoriya/t0744_elektrostimulyaciya_rastenii.html">Электростимуляция растений</a></p>
+
+<p><a href="b03_teoriya/t0763_tykva.html">Тыква</a></p>
+
+<p><a href="b03_teoriya/t0785_dnevnaya_i_nochnaya_temperatura.html">Дневная и ночная температура.</a></p>
+
+<p><a href="b03_teoriya/t0798_spektr_istochnikov_sveta_v_mikromolyah.html">Спектр источников света в микромолях</a></p>
+
+<p><a href="b03_teoriya/t0962_plavayushaya_platforma_protiv_protochki_i_podtopleniya.html">Плавающая платформа против проточки и подтопления</a></p>
+
+<p><a href="b03_teoriya/t0983_bezopasnost_gidroponiki.html">Безопасность гидропоники</a></p>
+
+<p><a href="b03_teoriya/t0988_korni_v_temnote.html">Корни в темноте?</a></p>
+
+<p><a href="b03_teoriya/t0996_nft_ili_periodika.html">NFT или периодика?</a></p>
+
+<p><a href="b03_teoriya/t1000_chto_osazhdayut_rasteniya.html">Что осаждают растения?</a></p>
+
+<p><a href="b03_teoriya/t1009_penoponika.html">Пенопоника!?</a></p>
+
+<p><a href="b03_teoriya/t1041_f1_protiv_open_pollinated.html">F1 против Open Pollinated</a></p>
+
+<p><a href="b03_teoriya/t1044_puteshestviya_ph.html">путешествия pH</a></p>
+
+<p><a href="b03_teoriya/t1052_co2_i_ventilyaciya.html">CO2 и вентиляция</a></p>
+
+<p><a href="b03_teoriya/t1109_kak_kalibrovat_ph_metr.html">Как калибровать PH метр?</a></p>
+
+<p><a href="b03_teoriya/t1123_gladiolusy_na_gidroponike.html">Гладиолусы на гидропонике?</a></p>
+
+<p><a href="b03_teoriya/t1165_chisto_teoreticheski_mozhet_li.html">Чисто теоретически может ли ?</a></p>
+
+<p><a href="b03_teoriya/t1194_koncetraciya_rastvora_na_stadiyah_rosta.html">% Концетрация раствора на стадиях роста</a></p>
+
+<p><a href="b03_teoriya/t1201_priminenie_ugleamoniinoi_soli.html">Приминение Углеамонийной соли</a></p>
+
+<p><a href="b03_teoriya/t1206_hlorirovannaya_voda.html">Хлорированная вода</a></p>
+
+<p><a href="b03_teoriya/t1218_so2_i_temperatura.html">СО2 и температура</a></p>
+
+<p><a href="b03_teoriya/t1233_knigi_po_gidroponike.html">Книги по гидропонике</a></p>
+
+<p><a href="b03_teoriya/t1259_naskolko_vredna_med_kontaktiruyushaya_s_pit_rrom.html">Насколько вредна медь, контактирующая с пит. р-ром</a></p>
+
+<p><a href="b03_teoriya/t1289_ishu_knizhku.html">Ищу книжку</a></p>
+
+<p><a href="b03_teoriya/t1291_kak_ne_nado_delat.html">Как не надо делать!</a></p>
+
+<p><a href="b03_teoriya/t1293_preparaty_dlya_ukoreneniya.html">Препараты для укоренения</a></p>
+
+<p><a href="b03_teoriya/t1313_svet.html">свет</a></p>
+
+<p><a href="b03_teoriya/t1314_udvoenie_dnya.html">Удвоение дня</a></p>
+
+<p><a href="b03_teoriya/t1321_ananas.html">Ананас</a></p>
+
+<p><a href="b03_teoriya/t1346_ogurec_interesnye_fakty.html">Огурец. Интересные факты…</a></p>
+
+<p><a href="b03_teoriya/t1365_defficity_i_bolezni_u_rastenii_s_foto_i_opisaniyami.html">Деффициты и болезни у растений с фото и описаниями</a></p>
+
+<p><a href="b03_teoriya/t1418_glubokovodnyi_metod.html">Глубоководный метод</a></p>
+
+<p><a href="b03_teoriya/t1421_cvety_klubniki.html">Цветы клубники</a></p>
+
+<p><a href="b03_teoriya/t1422_tomaty_na_gidroponike.html">Томаты на Гидропонике</a></p>
+
+<p><a href="b03_teoriya/t1432_natrievaya_lampa_i_indukcionnaya_lampa.html">Натриевая лампа и индукционная лампа</a></p>
+
+<p><a href="b03_teoriya/t1445_voprosy_po_teorii_vyrashivaniya_sazhencev_dlya_gidroponiki.html">Вопросы по теории выращивания саженцев для гидропоники.</a></p>
+
+<p><a href="b03_teoriya/t1493_kak_ponizhat_ec.html">Как понижать EC</a></p>
+
+<p><a href="b03_teoriya/t1499_kak_otkalibrovat_ec_izmeritelnyi_pribor_tipa_cd303.html">Как откалибровать EC измерительный прибор типа CD-303 ?</a></p>
+
+<p><a href="b03_teoriya/t1558_rost_rastenii_ne_v_sezon.html">рост растений не в сезон</a></p>
+
+<p><a href="b03_teoriya/t1587_oedfk_kak_stabilizator_kislotnosti.html">ОЭДФК как стабилизатор кислотности</a></p>
+
+<p><a href="b03_teoriya/t1613_klonirovaniecherenkovanie.html">клонирование/черенкование</a></p>
+
+<p><a href="b03_teoriya/t1621_nuzhny_kartinki.html">Нужны картинки</a></p>
+
+<p><a href="b03_teoriya/t1693_vliyanie_rn_na_usvoenie_bora_rasteniyami.html">Влияние рН на усвоение бора растениями</a></p>
+
+<p><a href="b03_teoriya/t1728_v_kakih_edinicah_izmeryaetsya_vlazhnost_grunta.html">в каких единицах измеряется влажность грунта ?</a></p>
+
+<p><a href="b03_teoriya/t1747_kak_bolee_effektivnee_bystree_vyrastit_rassadu.html">Как более эффективнее, быстрее вырастить рассаду?</a></p>
+
+<p><a href="b03_teoriya/t1773_kakie_imenno_marki_semyan_luchshe_vsego_i_po_chemu_imenno.html">Какие именно марки семян лучше всего и по чему именно</a></p>
+
+<p><a href="b03_teoriya/t1782_proverka_informacii.html">проверка информации</a></p>
+
+<p><a href="b03_teoriya/t1794_organika_ili_neorganika.html">Органика или неорганика?</a></p>
+
+<p><a href="b03_teoriya/t1806_regulirovanie_razmera_kornevoi.html">Регулирование размера корневой</a></p>
+
+<p><a href="b03_teoriya/t1822_selskoe_hozyaistvo_v_gorode.html">Сельское хозяйство в городе.</a></p>
+
+<p><a href="b03_teoriya/t1841_tomat_na_ulice__realno.html">Томат на улице - реально?</a></p>
+
+<p><a href="b03_teoriya/t1879_mikrorazmnozhenie_kallyusnaya_tkan.html">Микроразмножение- каллюсная ткань</a></p>
+
+<p><a href="b03_teoriya/t1884_mozhno_li_vyrastit_kartofel_iz_botanicheskih_semyan_za_zimu.html">можно ли вырастить картофель из ботанических семян за зиму?</a></p>
+
+<p><a href="b03_teoriya/t1919_rastvor_dlya_vygonki_luka.html">Раствор для выгонки лука</a></p>
+
+<p><a href="b03_teoriya/t1961_izmerenie_intensivnosti_fotosinteza_seriya_eksperimentov.html">Измерение интенсивности фотосинтеза (серия экспериментов)</a></p>
+
+<p><a href="b03_teoriya/t1964_svet_i_raschet_poliva.html">свет и расчет полива</a></p>
+
+<p><a href="b03_teoriya/t1978_razlichye_periody_svetovyh_sutok.html">Различые периоды световых суток</a></p>
+
+<p><a href="b03_teoriya/t2047_kak_nazyvaetsya_sposob_vyrashivaniya.html">как называется способ выращивания?</a></p>
+
+<p><a href="b03_teoriya/t2050_kak_zatormozit_rost.html">Как затормозить рост?</a></p>
+
+<p><a href="b03_teoriya/t2065_pervalka_rasteniya__v_otkrytom_grunte_posredi_leta.html">первалка растения  в открытом грунте посреди лета</a></p>
+
+<p><a href="b03_teoriya/t2070_naskolko_effektivna_stimulyaciya_rosta_pridatochnyh_kornei_klubnenosnyh_rastenii.html">Насколько эффективна стимуляция роста придаточных корней клубненосных растений?</a></p>
+
+<p><a href="b03_teoriya/t2102_kakoi_svet_nuzhen_dlya_obrazovaniya_hlorofilla.html">Какой свет нужен для образования хлорофилла?</a></p>
+
+<p><a href="b03_teoriya/t2119_naskolko_effektivna_sistema.html">Насколько эффективна система?</a></p>
+
+<p><a href="b03_teoriya/t2120_skolko_kushayut_rasteniya.html">сколько кушают растения</a></p>
+
+<p><a href="b03_teoriya/t2138_kontrol_temperatury_v_boksah_ili_v_malenkih_pomesheniyah.html">Контроль температуры в боксах или в маленьких помещениях</a></p>
+
+<p><a href="b03_teoriya/t2163_peremennaya_osveshennost.html">Переменная освещенность</a></p>
+
+<p><a href="b03_teoriya/t2171_kak_svetovoi_den_vosprinimaetsya_rasteniyami.html">Как световой день воспринимается растениями?</a></p>
+
+<p><a href="b03_teoriya/t2184_kontaktnoe_osveshenie_svetodiodami.html">Контактное освещение светодиодами</a></p>
+
+<p><a href="b03_teoriya/t2206_upravlenie_vlazhnostyu_vozduha_v_zakrytyh_pomesheniyah.html">Управление влажностью воздуха в закрытых помещениях</a></p>
+
+<p><a href="b03_teoriya/t2248_universalnyi_drossel_dnatdri_vossloh_schwabe.html">Универсальный дроссель ДНАТ/ДРИ Vossloh Schwabe</a></p>
+
+<p><a href="b03_teoriya/t2260_mikroklonalnoe_razmnozhenie.html">Микроклональное размножение</a></p>
+
+<p><a href="b03_teoriya/t2308_aeroponika_voprosy_novichka.html">Аэропоника. Вопросы новичка.</a></p>
+
+<p><a href="b03_teoriya/t2312_svet_dlya_luka.html">свет для лука</a></p>
+
+<p><a href="b03_teoriya/t2324_smena_rastvora_flora_series.html">Смена раствора Flora Series</a></p>
+
+<p><a href="b03_teoriya/t2361_bioponika.html">Биопоника</a></p>
+
+<p><a href="b03_teoriya/t2432_vliyanie_k_i_na.html">Влияние K и Na</a></p>
+
+<p><a href="b03_teoriya/t2524_klubenkovye_bakterii_na_gidre.html">Клубеньковые бактерии на гидре</a></p>
+
+<p><a href="b03_teoriya/t2566_kak_rasschityvaetsya_obem_baka_dlya_sistem.html">Как рассчитывается объем бака для систем?</a></p>
+
+<p><a href="b03_teoriya/t2594_vopros_po_proporciyam_pitatelnyh_veshestv_v_rastvore.html">Вопрос по пропорциям питательных веществ в растворе.</a></p>
+
+<p><a href="b03_teoriya/t2596_teoreticheskie_razmysheniya_o_zime_i_vlazhnosti.html">Теоретические размышения о зиме и влажности</a></p>
+
+<p><a href="b03_teoriya/t2778_effekt_teplogo_polya.html">Эффект Теплого Поля</a></p>
+
+<p><a href="b03_teoriya/t2788_vybor_ph_metra.html">Выбор Ph- метра</a></p>
+
+<p><a href="b03_teoriya/t2834_standart_dlya_svetodiodnyh_fitosvetilnikov.html">стандарт для светодиодных фитосветильников</a></p>
+
+<p><a href="b03_teoriya/t2853_kak_vliyaet_aeraciya_na_rastenie.html">Как влияет аэрация на растение?</a></p>
+
+<p><a href="b03_teoriya/t2900_drenazh_v_zamknutyh_sistemah.html">“Дренаж” в замкнутых системах</a></p>
+
+<p><a href="b03_teoriya/t2901_bezsubstrat.html">Безсубстрат</a></p>
+
+<p><a href="b03_teoriya/t2913_sterzhnevyi_koren.html">Стержневый корень</a></p>
+
+<p><a href="b03_teoriya/t2914_uvelichenie_kolichestva_ustic.html">Увеличение количества устиц</a></p>
+
+<p><a href="b03_teoriya/t2923_himicheskie_mutageny.html">Химические мутагены</a></p>
+
+<p><a href="b03_teoriya/t2948_kachestvo_urozhaya.html">Качество урожая</a></p>
+
+<p><a href="b03_teoriya/t2977_faq_gidroponika_dlya_chainikov.html">FAQ: гидропоника для чайников</a></p>
+
+<p><a href="b03_teoriya/t2979_programmy_pitaniya.html">программы питания</a></p>
+
+<p><a href="b03_teoriya/t3024_nuzhen_li_substrat.html">Нужен ли субстрат?</a></p>
+
+<p><a href="b03_teoriya/t3034_uf_dlya_rastenii.html">УФ для растений</a></p>
+
+<p><a href="b03_teoriya/t4704_pravilno_li_ya_ponyal_po_processu_vyrashivaniya.html">Правильно ли я понял по процессу выращивания?</a></p>
+
+<p><a href="b03_teoriya/t5120_snova_klubnika.html">Снова клубника</a></p>
+
+<p><a href="b03_teoriya/t5317_stimulyatory_rosta.html">Стимуляторы роста</a></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: May 23, 2023 <br />
+<p><img src="/images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

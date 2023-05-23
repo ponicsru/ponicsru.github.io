@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Как откалибровать EC измерительный прибор типа CD-303 ? | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:?subject= feedback&body=I have some feedback about the Как откалибровать EC измерительный прибор типа CD-303 ? page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Как откалибровать EC измерительный прибор типа CD-303 ?">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Как откалибровать EC измерительный прибор типа CD-303 ?</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>nickla</strong> 05-07-2012</p>
+
+<p>Как откалибровать EC измерительный прибор типа CD-303 ?<br />Кто нибудь может описать что надо брать и как это сделать? Меня не интересует приобретение с ebay калибровочных растворов, так как уже заказал и они будут идти месяц. Мне надо срочно и сейчас. Буду бегать по городу и искать что скажете…</p>
+
+<p><strong>Oxy</strong> 05-07-2012</p>
+
+<p>Теоретически в дистиллированной/деионизированной воде нет солей, значит на 0 можно калибровать. Найди знакомых у кого есть установка обратного осмоса со свежепоменяным фильтром, или обратись в аптеку, купи 250мл дистилята для приготовления иньекций - тот точно с нулевым Ес.</p>
+
+<p><strong>nickla</strong> 05-07-2012</p>
+
+<p>Осматическая система не дает 0 EC, так как после осмоса у всех стоит минерализатор. Хотя у меня есть возможность слить минуя этот блок.</p>
+
+<p><strong>Oxy</strong> 05-07-2012</p>
+
+<p>Сколько я видел этих минерализаторов  :D это по большому счету маркетинговый прием. Мне однажды матерый врач со стажем заявила что пить дистиллированную воду вредно потому что она выводит соли из организма. Я дико заржал и затроллил ее до плинтуса за 5 минут. <br /><br />Но попытка не пытка, слей и проверь - может не в калибровке дело, может он просто сломался. это ж жизнь, бывает всякое.</p>
+
+<p><strong>nickla</strong> 08-07-2012</p>
+
+<p>Вопрос был не в том сломался или нет мой измерительный прибор. Вопрос в том как откалибровать его.<br /><br />Если слушать некоторых "врачей" так вообще полезно мочу пить и молится на выздоровление… Врачей нынче толковых маловато… Дистиллированную естественно пить не желательно - например, кальций вымывается на ура. Осмос не равно дистиллированная вода.</p>
+
+<p><strong>Vad</strong> 08-07-2012</p>
+
+<p>[quote author=nickla link=topic=1499.msg52416#msg52416 date=1341491962]<br />Осматическая система не дает 0 EC, так как после осмоса у всех стоит минерализатор. Хотя у меня есть возможность слить минуя этот блок.<br />[/quote]<br />не дает… это  только какойнить промышленый осмос.. размером с ДОМ ))<br />домашняя дает 0.09-0.07<br /><br />[quote author=Oxy link=topic=1499.msg52421#msg52421 date=1341493992]<br />Сколько я видел этих минерализаторов  :D это по большому счету маркетинговый прием. [/quote]<br />не правда ваша :) <br />смотря сколько этот реминерализатор  юзать.. если год.. то конечно)) от него толку нет ))<br />первые 3 месяца стабильное EC = 0.15  -  чета там минерализует.. :)<br /><br />но бывает и подделка.. тогда конечно..  :-\</p>
+
+<p><strong>nickla</strong> 08-07-2012</p>
+
+<p>Стоит Аквафор Кристал 50. Предфильтр меняю раз в месяц, 3 блока (2 предварительная и 1 минерализатор) меняю 1 раз в 3 месяца, мембрана меняется 1 раз в 9-12 месяцев. EC = 0.2 на протяжении последних 2 месяцев как купил измерительный прибор. Из крана 3,5-3,7 постоянно. Прибор не калибровал и есть подозрения что он врет. А вообще если постоянно употребляешь воду из фильтра то замечаешь сразу когда фильтры начинают засорятся. Вода резко приобретает вкус, появляется накипь.<br /><br />По теме - нашел вот такое [url]http://www.ebay.com/itm/EC-CONDUCTIVITY-METER-BUFFER-CALIBRATION-SOLUTION-SACHET-HANNA-HI-70031-1413-uS-/220913470224?pt=UK_BOI_Electrical_Test_Measurement_Equipment_ET&amp;hash=item336f780b10#ht_500wt_1202[/url], но вопрос в голове стоит - это же должно быть чтото банальное что я могу купить у себя в городе уже сейчас а не ждать месяц посылки. Вопрос - что это?<br /><br />Сейчас есть на мой взгляд не совсем хороший план калибровки. Пойду в аптеку и куплю там дистиллированной воды (надеюсь что это она и будет, а не из под крана). EC=0 у меня уже есть. Потом в литр этой воды помещу 1 грамм поваренной соли - и таким образом попробую откалибровать прибор. Единственная проблема  - правильно взвесить соль, так как есть весы с точностью до грамма.</p>
+
+<p><strong>Vad</strong> 08-07-2012</p>
+
+<p>[quote author=nickla link=topic=1499.msg52551#msg52551 date=1341738018]<br /> Из крана 3,5-3,7 постоянно. [/quote]<br />не верю.<br /><br />в аптеке можно купить например.. хлористый кальций…  или сульфат магния.. уже отмерено и разбавлено как надо..<br /><br />остается в инете найти удельную проводимость .. и калибрануть</p>
+
+<p><strong>nickla</strong> 08-07-2012</p>
+
+<p>Да я тоже, как Станиславский, не верю прибору. Многовато для водопроводной воды. Тогда у жителей города давно уже шахты по добыче солей в почках открывать начали бы.<br /><br />За наводку спасибо. Через пару часов пойду закуплюсь, попробую провернуть сие мероприятие. Отпишусь по результату. Думаю, после того как приедет калибровочный раствор, заказанный с ebay.com то будет возможность проверить точность подобной калибровки. Если все отлично - готов мануал по калибровке в домашних условиях доступными средствами. Гугл по этой теме ничего не знает, как оказалось.</p>
+
+<p><strong>Vad</strong> 08-07-2012</p>
+
+<p>В емкость помещу 10 грамм поваренной соли доведу до 1000грамм(на весах) дистилятом<br />потом дальше можно титровать как хочешь.. 1 кубик на  100грамм.. итд</p>
+
+<p><strong>Vad</strong> 08-07-2012</p>
+
+<p>яндекс знает<br />[url]http://aquacontrol.narod.ru/samodel/electro.htm[/url]</p>
+
+<p><strong>nickla</strong> 08-07-2012</p>
+
+<p>Вот это вам огромное спасибо. Вообще я, обладая большими способностями в программировании, хочу собрать автономную систему. Подобные статьи были бы мне очень кстати.</p>
+
+<p><strong>Vad</strong> 08-07-2012</p>
+
+<p>[quote author=nickla link=topic=1499.msg52559#msg52559 date=1341743782]<br />обладая большими способностями в программировании, хочу собрать автономную систему.[/quote]<br /><br />сильно! <br />чисто программная реализация? ;D  Эму томат.. Эму огурец… :)<br />не хочу обидеть, тут пол форума.. программисты, админы, рядовые ИТшники…<br />агрономов поди меньше :)<br /><br />надо сперва "ручками", чтоб знать, что и как можно возложить на технику :)</p>
+
+<p><strong>nickla</strong> 09-07-2012</p>
+
+<p>А я чем по вашему сейчас занимаюсь? Изучаю предметную область.</p>
+
+<p><strong>Аронка</strong> 04-01-2013</p>
+
+<p>[quote author=Vad link=topic=1499.msg52557#msg52557 date=1341739641]<br />яндекс знает [url]http://aquacontrol.narod.ru/samodel/electro.htm[/url]<br />[/quote]<br /> Я не стал мутить генератор 1кГц на МС, как тут описал  Jusupoff.<br />Для измерений вполне сгодилось 50Гц из сети. Можно взять с трансформатора <br />какого-то блока питания на ~30в, ток ячейки небольшой 0..20мА<br />Или как тут уменя ~ 220в через биполярный конденсатор 1,0мкф на 300в.<br />И два стабилитрона Д816Б на 28.8v<br />[u]Но тут надо осторожно[/u]!  фаза присутствует на электродах, хоть и через конденсатор. <em>crazy</em><br />Ячейка у меня также как у Jusupoff, из ПЭ стаканчика 25мл.<br />Только электроды сверху в крышке. Геометрию ячейки учесть трудно, поэтому<br />просто откалибровал её на растворе NaCl 1,0г/л  (у него 500 Ом, 2000 µS, 1000 ppm)<br />График для такой ячейки сам нарисовал. Работает нормально. <br />Токо никакой чип тут вычислений делать не будет, всё ручками. :D<br />В зависимости от проводимости раствора, ток через   ячейку создаёт падение напряжения <br />на резисторое 2,2кОм! Осюда всё и вычисляю. U, Ом, µS, ppm, ЕС.<br /><br />[URL=http://radikal.ru/F/s006.radikal.ru/i214/1210/06/469f22869d7b.jpg.html][IMG]http://s006.radikal.ru/i214/1210/06/469f22869d7bt.jpg[/img][/URL]<br /><br />[URL=http://www.radikal.ru][IMG]http://s45.radikal.ru/i110/1301/30/06b3eae5a756.jpg[/img][/URL]<br /></p>
+
+<p><strong>cpf</strong> 04-01-2013</p>
+
+<p>[quote author=Аронка link=topic=1499.msg57196#msg57196 date=1357305857]<br />….<br />просто откалибровал её на растворе HCl 1,0г/л  (у него 500 Ом, 2000 µS, 1000 ppm)<br />…..<br />[/quote]<br />пишете HCl, а на фотографии NaCl (немного разные вещи ;))<br />кроме того, вообще для меня не совсем понятно, на "растворе чего" надо калибровать EC датчики (ибо в большинстве гидропонных растворов Na почти отсутствует, из-за вредности для растений) <em>???</em><br /><br />[quote author=Аронка link=topic=1499.msg57196#msg57196 date=1357305857]<br />В зависимости от проводимости раствора, ток через   ячейку создаёт падение напряжения <br />на резисторое 2,2кОм! Осюда всё и вычисляю. U, Ом, µS, ppm, ЕС.<br />[/quote]<br />чет мне кажется, что при переменном напряжении дело вовсе не в проводимости  (точнее не столько в проводимости) раствора, сколько в емкости  ячейки-ёмкостного датчика. Соотвественно, надо учитывать кучу параметров, которые могут на нее повлиять: изменение температуры, частоты, уровня раствора, чистоты электродов. При постоянном напряжении - на электродах тоже творится черти чё  :D (точнее электролиз), поэтому показания = температуре на Марсе  :D</p>
+
+<p><strong>Strangeman</strong> 06-01-2013</p>
+
+<p>А Вы бы взяли и посчитали, какая емкость между электродами и каково сопротивления этой емкости для частоты 50 Гц. И таким образом выяснили бы насчет температуры на Марсе.</p>
+
+<p><strong>cpf</strong> 07-01-2013</p>
+
+<p>Для этого надо знать размеры (в т.ч. расстояние между электродами) и параметры раствора. Я - не экстрасенс (и потом - кому эти расчеты нужны?)  :)</p>
+
+<p><strong>Strangeman</strong> 30-01-2013</p>
+
+<p>Тоже верно, но согласитесь, что получить более, чем десятые доли пФ не получится при любом конструктиве электродов.<br />Электроды, приведенные на фото и тысячных долей пФ не наберут.<br />При 0,1 пФ и частоте 50 Гц получим 32 ГОм, что на много порядков выше, чем сопротивление утечки. В проводе, правда, наберется несколько пикушек, но на такой частоте, опять же, не имеет смысла обсуждать их вклад.</p>
+
+<p><strong>cpf</strong> 30-01-2013</p>
+
+<p>Здесь дело не значении емкости, а в ТКЕ (для Вашего "конденсатора", - он может быть существенен)… <br />Кроме того, раствор - "занятный" диэлектрик, со свойствами, которые могут кардинально меняться при незначительном изменении внешних факторов (например, при протекании слабого эл. тока или тот же ТКС). Ваши расчеты - это вряд ли учитывают  ;) </p>
+
+<p><strong>Аронка</strong> 01-02-2013</p>
+
+<p>Es mucho trabajo, no basta dinero  :D  <br />Девиз cpf, -  Очень много работы, не хватит денегЁ!!<br />Как центурии Нострадамуса,  ключ к глубокому пониманию многих процессов!</p>
+
+<p><strong>cpf</strong> 03-02-2013</p>
+
+<p>[quote author=Аронка link=topic=1499.msg57845#msg57845 date=1359745773]<br />Как центурии Нострадамуса,  ключ к глубокому пониманию многих процессов!<br />[/quote]<br />Точно! А я то думаю: "Что ж так все тяжело дается?!" :)<br />Может надо изменить на: [b]un montón de dinero, no hay trabajo[/b],- и все пойдет нормально? :D</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: May 23, 2023 <br />
+<p><img src="/images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

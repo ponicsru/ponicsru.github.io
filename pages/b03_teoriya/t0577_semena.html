@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>семена | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:?subject= feedback&body=I have some feedback about the семена page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="семена">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">семена</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>травка</strong> 08-07-2010</p>
+
+<p>здраствуйте .предлагаю здесь писать отзывы о производителях семян и о самих сортах.<br />с уважением Юнат.</p>
+
+<p><strong>андрей воронеж</strong> 08-07-2010</p>
+
+<p>[quote author=юнат link=topic=577.msg19236#msg19236 date=1278591569]<br />здраствуйте .предлагаю здесь писать отзывы о производителях семян и о самих сортах.<br />с уважением Юнат.<br />[/quote]<br /><br />А какие есть хорошие производители? Например, сейчас ищу семена лука для зелени. Некоторые из форумчан советуют отказаться от голландских, поскольку их обработка различными составами снижает скорость всхожести. Вот бы найти где-то семена, чтобы растения из них прямо "выстреливали"))))))))))))))</p>
+
+<p><strong>valery</strong> 08-07-2010</p>
+
+<p>[quote author=андрей воронеж link=topic=577.msg19237#msg19237 date=1278592251]<br />Некоторые из форумчан советуют отказаться от голландских, поскольку их обработка различными составами снижает скорость всхожести. Вот бы найти где-то семена, чтобы растения из них прямо "выстреливали"))))))))))))))<br />[/quote]<br /><br />Выбор семян - дело абсолютно личное, что тут можно посоветовать … И не обязательно голландские выбирать - они довольно дорогие …<br /><br />Но вот чтобы СНИЖАЛИ СКОРОСТЬ ВСХОЖЕСТИ ?   Ну, ручаться не буду, наверное есть и такие …<br /><br />Хотя обычно голландские семена как раз с ВЫСОКОЙ скоростью всхожести, ВЫСТРЕЛИВАЮТ как сумасшедшие и дружно.<br /><br />Обработанные - пилированные, дражированные и прочие всякие - делаются и из других соображений, но и из ВСХОЖЕСТИ - тоже. Иногда их даже особым образом, как бы это сказать -   <br />наполовину будят, что ли … Не помню правильный термин. Чего-то читал такое, точно не помню. Но смысл примерно такой …<br /><br />Типа "слегка" пробуживают (почти проращивают) - и тормозят, затем "заворачивают" в драже из "питательных" элементов или протравителей или еще чего …<br /><br />Такие вот "полупророщенные" (вот забыл как правильно называются) - стреляют вообще мгновенно, но хранятся менее долго и при более строгих условиях хранения …<br /><br />Ну может и правда бывают, чтоб "тормозили", но как-то - сомнительно.<br /><br />В дорогой ведь теплице на счету не только каждые сутки пустого "простоя", но иногда даже и часы …</p>
+
+<p><strong>valery</strong> 08-07-2010</p>
+
+<p>Хотя - это я про "огуречные" семена …</p>
+
+<p><strong>андрей воронеж</strong> 08-07-2010</p>
+
+<p>[quote]<br />Выбор семян - дело абсолютно личное, что тут можно посоветовать … И не обязательно голландские выбирать - они довольно дорогие …<br /><br />Но вот чтобы СНИЖАЛИ СКОРОСТЬ ВСХОЖЕСТИ ?   Ну, ручаться не буду, наверное есть и такие …<br /><br />Хотя обычно голландские семена как раз с ВЫСОКОЙ скоростью всхожести, ВЫСТРЕЛИВАЮТ как сумасшедшие и дружно.<br /><br />Обработанные - пилированные, дражированные и прочие всякие - делаются и из других соображений, но и из ВСХОЖЕСТИ - тоже. Иногда их даже особым образом, как бы это сказать -   <br />наполовину будят, что ли … Не помню правильный термин. Чего-то читал такое, точно не помню. Но смысл примерно такой …<br /><br />Типа "слегка" пробуживают (почти проращивают) - и тормозят, затем "заворачивают" в драже из "питательных" элементов или протравителей или еще чего …<br /><br />Такие вот "полупророщенные" (вот забыл как правильно называются) - стреляют вообще мгновенно, но хранятся менее долго и при более строгих условиях хранения …<br /><br />Ну может и правда бывают, чтоб "тормозили", но как-то - сомнительно.<br /><br />В дорогой ведь теплице на счету не только каждые сутки пустого "простоя", но иногда даже и часы …[/quote]<br /><br /><br />Да, тоже слышал про такую технологию… Но одни говорят одно, другие говорят другое. В общем в любом случае выбор остается за самим человеком. А уж о промышленных теплицах и говорить не приходится - полностью с вами согласен, Валерий!</p>
+
+<p><strong>valery</strong> 08-07-2010</p>
+
+<p>Андрей, отчасти с Вами согласен, но лучше, конечно, пробовать самому.<br /><br />Я за свою "сознательную" жизнь только три семечка в руках держал, и все - огуречные  :) :) :)<br /><br />Три года назад первое семечко которое попало в руки - был голландский корнишон "Герман", компании "Ройял Слайз" (нормальный, не "левый") …<br /><br />Проращивал в кассетках с торфяными стаканчиками, чего-то там "чудо … не пойми чего" …   Ни разу не видел, чтобы с такой скоростью вылетала проклевка из субстрата …<br /><br />Засунул семечко в стаканчик вечером при высокой влажности (точно не помню какая была и не записано) и температуре 28С. Уже утром - была "проклевка", а к исходу третьих суток - уже кроме семядольных был и первый настоящий лист размером около 5 см.<br /><br />Скажешь - и не поверят …   Я теперь и сам - не верю  :D :D :D<br /><br />Рос, правда, неважно … Я его довольно быстренько "ухайдокал", хотя два-три огурчика он дать умудрился.<br /><br />Второе семечко - голландия "Райк Цваан" - "Медия". Как правило - на третьи сутки они все одновременно вылазят как штыки и очень ровненькие, один к одному …<br /><br />Третье - наш Зозуля (кажется ВАСХНИЛ, но не уверен) - всходят довольно как попало - и на 4-е и на 5-е и даже на 7-е сутки. Растут также - кто довольно буйно, кто - отстает …<br /><br />Но в результате получается, что (именно у меня, как при "правильном" выращивании - не знаю) Зозуля все-таки урожай больше дает, чем Медия.</p>
+
+<p><strong>Mole_Garden</strong> 08-07-2010</p>
+
+<p>причем очень часто, если не сказать всегда, проигранные часы на старте это урожай на пару недель позже.</p>
+
+<p><strong>андрей воронеж</strong> 08-07-2010</p>
+
+<p>[quote author=valery link=topic=577.msg19248#msg19248 date=1278600307]<br />Андрей, отчасти с Вами согласен, но лучше, конечно, пробовать самому.<br /><br />Я за свою "сознательную" жизнь только три семечка в руках держал, и все - огуречные  :) :) :)<br /><br />Три года назад первое семечко которое попало в руки - был голландский корнишон "Герман", компании "Ройял Слайз" (нормальный, не "левый") …<br /><br />Проращивал в кассетках с торфяными стаканчиками, чего-то там "чудо … не пойми чего" …   Ни разу не видел, чтобы с такой скоростью вылетала проклевка из субстрата …<br /><br />Засунул семечко в стаканчик вечером при высокой влажности (точно не помню какая была и не записано) и температуре 28С. Уже утром - была "проклевка", а к исходу третьих суток - уже кроме семядольных был и первый настоящий лист размером около 5 см.<br /><br />Скажешь - и не поверят …   Я теперь и сам - не верю  :D :D :D<br /><br />Рос, правда, неважно … Я его довольно быстренько "ухайдокал", хотя два-три огурчика он дать умудрился.<br /><br />Второе семечко - голландия "Райк Цваан" - "Медия". Как правило - на третьи сутки они все одновременно вылазят как штыки и очень ровненькие, один к одному …<br /><br />Третье - наш Зозуля (кажется ВАСХНИЛ, но не уверен) - всходят довольно как попало - и на 4-е и на 5-е и даже на 7-е сутки. Растут также - кто довольно буйно, кто - отстает …<br /><br />Но в результате получается, что (именно у меня, как при "правильном" выращивании - не знаю) Зозуля все-таки урожай больше дает, чем Медия.<br />[/quote]<br /><br />Валерий, а есть ли сайты дистрибьюторов и дилеров этих голландец в России, как на них выйти можно? И можно ли чуть подробнее как Вы"ухайдокали" эти семечки - какие именно параметры не соблюдали?</p>
+
+<p><strong>андрей воронеж</strong> 08-07-2010</p>
+
+<p>[quote author=Mole_Garden link=topic=577.msg19249#msg19249 date=1278600392]<br />причем очень часто, если не сказать всегда, проигранные часы на старте это урожай на пару недель позже.<br />[/quote]<br /><br />Дааа….и надо с этим как-то бороться….Эх!(((</p>
+
+<p><strong>андрей воронеж</strong> 08-07-2010</p>
+
+<p>Например: какие семена для посадки лука на зелень лучше всего использовать? У кого какие есть мнения? Где купить, как подготовить или совсем не готовить, если они голландские, например…Кто и что думает?</p>
+
+<p><strong>valery</strong> 08-07-2010</p>
+
+<p>[quote author=андрей воронеж link=topic=577.msg19259#msg19259 date=1278604988]<br /><br />Валерий, а есть ли сайты дистрибьюторов и дилеров этих голландец в России, как на них выйти можно? И можно ли чуть подробнее как Вы"ухайдокали" эти семечки - какие именно параметры не соблюдали?<br />[/quote]<br /><br />Есть, выйти - несложно, зайти на сайт и позвонить по телефону. В Воронеже - тоже есть. Чуть позже отвечу, из дома. Я пока еще на работе.</p>
+
+<p><strong>андрей воронеж</strong> 08-07-2010</p>
+
+<p><br />Есть, выйти - несложно, зайти на сайт и позвонить по телефону. В Воронеже - тоже есть. Чуть позже отвечу, из дома. Я пока еще на работе.<br />[/quote]<br /><br />Обалдеть! И в Воронеже есть??? Очень интересно, буду ждать Вашего ответа и завтра же с ними свяжусь.<br />Спасибо Вам за наводку, Валерий!</p>
+
+<p><strong>valery</strong> 09-07-2010</p>
+
+<p>Что-то у меня получилось очень сильно "вечером", часикам только к 3-м …<br /><br />Так что - извиняюсь.<br /><br /><br />Ну прямо таки «голландских» представителей в Воронеже вероятно и нет (а там кто его знает), но по югу России – Краснодар, Ростов, иногда и Воронеж-Белгород некоторые крупные фирмы имеют либо прямые «подразделения», либо – дилеров/дистрибьютеров.<br /><br />Из зубастных монстров это скорее всего «Сингента» [url=http://www.syngenta.ru/]http://www.syngenta.ru/[/url] и «Райк Цваан» [url=http://www.rijkzwaan.ru/]http://www.rijkzwaan.ru/[/url] (правда специалисты и те кто Голландии посещает ее по другому произносят, но у нас в стране они сами – такое произношение зарегистрировали/написали)<br /><br />Сингента – это «защита растений» (почти все, что на «слуху» - актеллики, актары, квадрисы и вермитеки всякие) и семена.<br /><br />Райк Цваан – в основном семена.<br /><br />Телефоны – на сайтах.<br /><br />У Сингенты в Воронеже есть «дистрибьютер» (точнее в Лисках)<br /><br />OOO «Семком» / ИП Семченко<br />397900, Воронежская обл., г. Лиски, ул. Трудовые резервы, 7<br />тел.: (47391) 47555, 46904, 46377<br />e-mail: semkom@list.ru<br /><br /><br />Кроме этого некоторые крупные агрокомпании сами завозят семена отдельных голландских семеноводческих «друзей». Например на майской выставке видел в «Агропром MTD» (Террафлексами торгуют и прочим разным) семена от известных голландцев – «Бейо Заден». Или нет…  Или наверное «Энца Заден». Точно не помню, потерял прайсик. Показывали интересные томаты.<br /><br />[url=http://www.agromtd.ru]www.agromtd.ru[/url]<br /><br />У них в Воронеже – есть «телефон» … (4732) 47-55-81, 96-03-36.<br /><br />Про «остальных» не знаю ничего, но наверное и у «остальных» всего «другого» достаточно.<br /></p>
+
+<p><strong>андрей воронеж</strong> 09-07-2010</p>
+
+<p>Валерий, спасибо Вам большое за адреса диллеров! <br />Нашел в Воронеже то, что мне было нужно. <br />В частности, заинтересовали семена сортов Байа Верде и Грин Баннер - это кроссы между луком репчатым и луком-батуном. Вроде как продукция получается гораздо раньше, чем у того же батуна. Никто не сталкивался с такими сортами???<br />И еще раз публичная благодарность Валерию! 8)</p>
+
+<p><strong>valery</strong> 09-07-2010</p>
+
+<p><em>Dance</em></p>
+
+<p><strong>Svyatoy_nv</strong> 02-10-2010</p>
+
+<p>Даже не знаю куда спросить. Кто-нибудь пробовал выращивать Спрут F1? На гидропонике, конечно.</p>
+
+<p><strong>orgail</strong> 02-10-2010</p>
+
+<p>Потяните индетерминатный под зиму?</p>
+
+<p><strong>Svyatoy_nv</strong> 02-10-2010</p>
+
+<p>Нет конечно, я наоборот супернизкий посажу (через недельку посею). Я же новис полный. Хочу спробовать хоть один кустик для начала вырастить, дабы разобраться с растворами (для меня это самое слабое место по части организации процесса). А это я из любопытства спрашиваю (увидел фотку, где весь потолок томатами увешан <em>8)</em>)<br /><br />Погорячился, надо было сюда спросить :) [url=http://forum.ponics.ru/index.php/topic,583.0.html]http://forum.ponics.ru/index.php/topic,583.0.html[/url]</p>
+
+<p><strong>Artur</strong> 20-10-2010</p>
+
+<p>Ищу семена салата<br />Вот прайс [url=http://www.syngenta.ru/pdf/doc/26/000_sg_price.pdf]http://www.syngenta.ru/pdf/doc/26/000_sg_price.pdf[/url]<br />Семена есть в семенах и в драже, кто знает что такое драже? Семена салата Фанли, Фантайм, Фанвей и Челлендж, кто сталкивался?</p>
+
+<p><strong>Rossich</strong> 20-10-2010</p>
+
+<p>[quote author=Artur link=topic=577.msg22422#msg22422 date=1287597034]<br />Ищу семена салата<br />Вот прайс [url=http://www.syngenta.ru/pdf/doc/26/000_sg_price.pdf]http://www.syngenta.ru/pdf/doc/26/000_sg_price.pdf[/url]<br />Семена есть в семенах и в драже, кто знает что такое драже? Семена салата Фанли, Фантайм, Фанвей и Челлендж, кто сталкивался?<br />[/quote]<br />Нормальные семена, драже это специальная оболочка на семени с питательными веществами для старта и сохранения семени, их замачивать не надо, сеять сухими потом полить.</p>
+
+<p><strong>Mole_Garden</strong> 20-10-2010</p>
+
+<p>[quote author=Artur link=topic=577.msg22422#msg22422 date=1287597034]<br />Ищу семена салата<br />Вот прайс [url=http://www.syngenta.ru/pdf/doc/26/000_sg_price.pdf]http://www.syngenta.ru/pdf/doc/26/000_sg_price.pdf[/url]<br />Семена есть в семенах и в драже, кто знает что такое драже? Семена салата Фанли, Фантайм, Фанвей и Челлендж, кто сталкивался?<br />[/quote]Про драже я уже писал, точнее приводит ответ специалиста Райк Цваана. <br />Повторюсь. Драже использую чаще всего для посева в открытый грунт или при использовании автоматических сеялок. Дражированные семена на 5% лучше всходят, НО стоят они как правило намного дороже обычных. Большинство тепличных комплексов сажает обычные семена.</p>
+
+<p><strong>Artur</strong> 20-10-2010</p>
+
+<p>Спасибо!  <em>Dance</em> А по этим сортам никто не подскажет? Что лучше брать?<br />Я нашел упомянание про сорта Фанли и Фантайм тут [url=http://www.agrotip.ru/literature/literature2/,]http://www.agrotip.ru/literature/literature2/,[/url] тут говорилось о семенах голландской селекции, в том числе  эти семена "хорошо отзывались на выращивание в проточной гидропонике"</p>
+
+<p><strong>ProRus</strong> 14-11-2010</p>
+
+<p>Я использую Голландские семена всем известной фирмы SEMINIS. А покупаю их в Новосибирске в фирме "Агрос" ([color=blue]_http://www.agrosnsk.ru[/color]). У них есть интернет-магазин, но он не все продает малым количеством. :(<br />Сейчас взял салатиков, редисочки буду пробовать.<br />Я использовал томаты Флорида 47 F1 и огурцы Торнадо F1. Все семена обработаны.<br />Всхожесть 100% и очень хорошая. Урожайность тоже на высоте и самое приятно, что было написано на упаковке, то и оказалось на самом деле.<br /></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: May 23, 2023 <br />
+<p><img src="/images/company_logo.png" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+
