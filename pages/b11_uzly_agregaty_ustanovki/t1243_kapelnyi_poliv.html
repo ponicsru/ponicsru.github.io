@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>капельный полив | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="капельный полив">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">капельный полив</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>ALB</strong> 16-11-2011</p>
+
+<p>Раствор для капельного полива фильтровать надо ?</p>
+
+<p>Собрал на пробу из капельницы медицинской и бутылки поливалку - воду отстоянную из под крана налил - поставил капать - литр вылился через капельницу нормально , а потом фильтр встроенный в капельницу забился и теперь еле капает <em>???</em> .</p>
+
+<p>Если не будет этого фильтра то будет забиваться узел регулировки скорости подачи - тоже проблема .</p>
+
+<p>И если фильтровать то чем ?</p>
+
+<p><a href="https://t.me/ponics_ru_files/6664" target="_blank"><img src="/attachimages/8989_IMG_20111116_122521-1.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6665" target="_blank"><img src="/attachimages/8991_IMG_20111116_122903-1.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 16-11-2011</p>
+
+<p>А рН какая?</p>
+
+<p><strong>gena1</strong> 16-11-2011</p>
+
+<p>Никак, для этого медсестры и бегают присматривать за капельницами, чтобы вручную скорость регулировать по мере опустошения ёмкости.</p>
+
+<p>Да, фильтр от вашей воды после литра забиться не мог (я через него месяцами гоняю обратку пит. р-ра с гнилыми корнями:) и всё ок). Скорее всего у вас проблема с “воздушкой”, хотя на фотке вроде открыта.</p>
+
+<p><strong>ALB</strong> 16-11-2011</p>
+
+<p>а Рн тут причём ? пока только механику тестирую, будет работать или нет, вода из крана - отстаивалась несколько дней и всё.</p>
+
+<p>и с воздушкой всё в порядке, на второй фотке ржавый осадок на фильтре видно - в нём проблема <em>Wall</em></p>
+
+<p><strong>gena1</strong> 16-11-2011</p>
+
+<p>Используйте тогда российский фильтр от капельниц, у него другая конструкция, он вечный :) Но воздушку отдельно ковырять.</p>
+
+<p><strong>Coccinella</strong> 16-11-2011</p>
+
+<p>У водопроводной воды рН бывает довольно высокой, поэтому многие примеси выпадают в осадок. А вообще в производстве воду для капельного фильтруют целой системой фильтров еще до приготовления раствора.</p>
+
+<p><strong>ALB</strong> 16-11-2011</p>
+
+<p>Рн 7-7,5</p>
+
+<ol>
+  <li>
+    <p>в аптеке нету советских.</p>
+  </li>
+  <li>
+    <p>если не фильтр забьётся то забьётся регулировка подачи .</p>
+  </li>
+</ol>
+
+<p>мда , проблема аднако</p>
+
+<p><strong>gena1</strong> 16-11-2011</p>
+
+<blockquote>
+  <ol>
+    <li>в аптеке нету советских.</li>
+  </ol>
+</blockquote>
+
+<p>Надо искать по разным аптекам.</p>
+
+<blockquote>
+  <ol>
+    <li>если не фильтр забьётся то забьётся регулировка подачи .</li>
+  </ol>
+</blockquote>
+
+<p>В честь чего это ? Он для того и фильтр чтобы в кровь человеку никаких механических частиц не попало, не то что через “регулировку” :)</p>
+
+<p>И вообще, если честно, мне кажется вы на первой же неделе передумаете использовать такой метод полива :) Очень ненадежна такая “регулировка”.</p>
+
+<p><strong>ALB</strong> 16-11-2011</p>
+
+<p>пока додумался :-\ только до установки автомобильного топливного фильтра , что бы вся бяка в нём оставалась, но в автомобильном фильтре есть части из обычного железа.</p>
+
+<p>а как ещё можно регулировать подачу ? надо примерно три капли в минуту - первое время всё отлично работало - примерно час оно капало по три капли как и настроил , потом решил посмотреть как изменится скорость потока с уменьшением уровня - открыл краник на полную - литр вытек и фильтр забился .</p>
+
+<p><strong>Zmey</strong> 16-11-2011</p>
+
+<blockquote>
+  <p>А рН какая?</p>
+</blockquote>
+
+<p>Привет.Такую каплю проверил на личном опыте субстрат был какос.1. Фильтр надо удолять ,2.Кантроль должен быть постоянный ,3. На свету в трубках растут водрасли.Для капли лутше использовать вот это</p>
+
+<p><a href="https://t.me/ponics_ru_files/6666" target="_blank"><img src="/attachimages/8997_SAM_1763.jpg" alt="" /></a></p>
+
+<p><strong>ALB</strong> 16-11-2011</p>
+
+<blockquote>
+  <p>А вообще в производстве воду для капельного фильтруют целой системой фильтров еще до приготовления раствора.</p>
+</blockquote>
+
+<p>пойду завтра смотреть какие фильтры в продаже есть - для воды, наверное, фильтров тонкой очистки нету , а вот автомобильные для бензина точно есть.</p>
+
+<p><strong>ALB</strong> 17-11-2011</p>
+
+<p>Прочесал три сети аптек – капельницы только импортные .</p>
+
+<p>Прочесал магазины автозапчастей – нашёл фильтр полностью пластмассовый :D</p>
+
+<p>Ещё прикупил трубку силиконовую толстостенную (от вакумного корректора зажигания ;) )</p>
+
+<p>Уберу фильтр из счётчика капель , а перед регулятором поставлю этот фильтр - оставлю на ночь капать - посмотрим что утром будет.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6667" target="_blank"><img src="/attachimages/9003_IMG_20111117_174000.jpg" alt="" /></a></p>
+
+<p><strong>ALB</strong> 17-11-2011</p>
+
+<p>Капает уже часа три с интервалом 5,5 секунды между каплями - вроде скорость не меняется.</p>
+
+<p>Ещё нарыл в интернете у того же производителя фильтры без использования железа - только пластик и клей:</p>
+
+<p><a href="http://www.bigfilter.com" target="_blank">http://www.bigfilter.com</a> (дурацкая система каталога не позволяет сделать ссылку на один продукт - пользуйтесь поиском по каталогу)</p>
+
+<p>для тонкой очистки - топливный фильтр - GB-202 Carburetor in plastic case (</p>
+
+<p><a href="https://t.me/ponics_ru_files/6668" target="_blank"><img src="/imagehost/thumbs/gb202.jpg" alt="" /></a></p>
+
+<p>для грубой очистки - топливный фильтр - GB-609 Diesel in plastic case</p>
+
+<p><a href="https://t.me/ponics_ru_files/6669" target="_blank"><img src="/imagehost/thumbs/gb609aia.jpg" alt="" /></a></p>
+
+<p>его наверное можно промывать обратным потоком - там просто тонкая сетка в качестве фильтрующего элемента.</p>
+
+<p>Страшная :D цитата с сайта - “Карбюраторные и дизельные фильтры изготавливаются из высокопрочной негорючей, нерастворимой в бензине пластмассы. Каждый фильтр проходит испытание на герметичность и прочность. Прозрачный корпус позволяет следить за загрязненностью. Фильтры не пропускают воду, обеспечивая эффективную защиту всех систем двигателя от коррозии.” - это если их в сухом виде заправить бензином или дизельным топливом, а если их сразу наполнить водой то они её замечательно пропускают и фильтруют <em>8)</em> - тут главное чем в первую очередь пропитается фильтрующий элемент.</p>
+
+<p>это те что мне понравились по внешнему виду - сравнительно маленькие и аккуратные.</p>
+
+<p>Для фильтрации раствора, наверное, подойдут любые в которых не используется железо или другой метал - спрашивайте в магазинах автозапчастей.</p>
+
+<p>Если скорость потока в текущей конфигурации не изменится за сутки, то буду себе искать на капельницы GB-202 или аналог.</p>
+
+<p>PS хм, много нафлудил - если оно тут не надо можете удалить.</p>
+
+<p><strong>ALB</strong> 18-11-2011</p>
+
+<p>Со вчерашнего вечера интервал между каплями увеличился на 0,2 секунды - было 5,5 между каплями , теперь 5,7 - предпологаю это в большей степени из-за конструкции дросселя - трубочкая зажатая зажимом постепенно сжимается сильнее (трогать регулировку пока не хочется) :-\ .</p>
+
+<p>Где взять нормальный дроссель ? С пневматическимим дросселями проблем нет , но там корпус алюминиевый, винт с иглой и седлом латунные :( .</p>
+
+<p><strong>gena1</strong> 18-11-2011</p>
+
+<p>Ну как же может быть постоянное давление при постоянно снижающемся уровне воды в бутылке ? Конечно поток со временем будет уменьшаться. Проблема в конструкции, а не в зажиме. Более того плю к этому при уменьшении давления напора столба воды из полторашки будет увеличиваться и сопротивление фильтра (это если вы поставили тонкой очистки (если его цена 20 руб., то он бумажный:) ). Если поставили грубой очистки для солярки, то там слишком большие дыры(отверстия:) ) и для капельницы смысла внем нет, он защитит только от сравнительно крупных металлических частиц.</p>
+
+<p><strong>ALB</strong> 18-11-2011</p>
+
+<ol>
+  <li>
+    <p>Давление будет снижаться если бутылка/ёмкость открыта сверху, а если закрыта и воздух туда поступает через штатный воздуховод медицинской капельницы то давление постоянное (позже попробую проиллюстрировать - сейчас расход не хочу менять)</p>
+  </li>
+  <li>
+    <p>Заметное увеличение сопротивления фильтра, при той площади фильтрующего элемента что есть сейчас, будет заметно если бы вода была не просто грязная (а у нас она прозрачная и примеси не вооружённым глазом не обнаруживаются) , а совсем не прозрачная - расход то, примерно за 18 часов, составил всего 1,5 литра.</p>
+  </li>
+</ol>
+
+<p><strong>gena1</strong> 18-11-2011</p>
+
+<blockquote>
+  <ol>
+    <li>Давление будет снижаться если бутылка/ёмкость открыта сверху, а если закрыта и воздух туда поступает через штатный воздуховод медицинской капельницы то давление постоянное (позже попробую проиллюстрировать - сейчас расход не хочу менять)</li>
+  </ol>
+</blockquote>
+
+<p>:o</p>
+
+<p>Для чего же тогда медсестры бегают и по мере уменьшения жидкости в капельнице регулируют зажим ? Вот дурочки, давление же постоянное оказывается :)</p>
+
+<p>У меня дома ванна, в неё налита вода, а сверху потолок, значит если ванную комнату перевернуть кверх ногами , то вода из самой ванны не выльется :) Аж плакать хочется :(</p>
+
+<p><strong>ALB</strong> 18-11-2011</p>
+
+<p>Гена с номером :) можете начинать плакать.</p>
+
+<p>Бутылка заполнена водой примерно на половину - и не смотря на то что конец трубки ниже “уровня жидкости” почему то вода не вытекает - почему ищите сами.</p>
+
+<p>А медсёстры бегают к пациенту :</p>
+
+<ol>
+  <li>
+    <p>скорость подачи медицинской капельницы зависит ещё и от кровяного давления пациента.</p>
+  </li>
+  <li>
+    <p>сначало подают мееедлено - а вдруг пациент подыхать начнёт :)</p>
+  </li>
+  <li>
+    <p>бегают постоянно - смотри пункты 1 и 2</p>
+  </li>
+</ol>
+
+<p><a href="https://t.me/ponics_ru_files/6670" target="_blank"><img src="/attachimages/9016_IMG_20111118_142310-1.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6671" target="_blank"><img src="/attachimages/9018_IMG_20111118_141736.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6672" target="_blank"><img src="/attachimages/9020_IMG_20111118_141720.jpg" alt="" /></a></p>
+
+<p><strong>gena1</strong> 18-11-2011</p>
+
+<p>Опустите ниже, господин физик :)</p>
+
+<p>И опустошите фильтр, чтобы на дне было около 1 см, не более (иначе воздушка не работает).</p>
+
+<p>!!!Что то я про это в первом посте упустил, у вас фильтр скорее всего не забился, а воздушка на работает из-за неправильного использования, проверьте. Пузырьки должны наполнять воздушную полость верхней части бутылки. Если этого нет, то у вас рано или поздно вообще течь прекратится и состема установится в равновесие :) Воздушный пузырь наразрыв=силе тяжести водяного объема.</p>
+
+<p>Не возьмут вас в медсестры или в медбраты :)</p>
+
+<p><strong>ALB</strong> 18-11-2011</p>
+
+<p>с чего воздушка не работает то - она в счётчик капель не заходит - она сразу в бутылку идёт. И если ниже опустить то и ежу понятно что побежит - фотки иллюстрируют что гидростатический уровень данной системы не зависит от уровня жидкости в бутылке.</p>
+
+<p>И в донышке стакана тоже дырку проковырять ? :D</p>
+
+<p><strong>gena1</strong> 18-11-2011</p>
+
+<blockquote>
+  <p>И в донышке стакана тоже дырку проковырять ? :D</p>
+</blockquote>
+
+<p>Да вы мега физик :) Только лучше в голове проковырять в данном случае :) (шутка конечно)</p>
+
+<p>Разберите фильтр и посмотрите устройство - там 2 канала, один для воздуха, второй для жидкости. Просто сделано в едином исполнении. Либо в поисковике наберите, а то ещё год промучаетесь с такими открытиями :)</p>
+
+<p><strong>андрей п</strong> 18-11-2011</p>
+
+<p>Вроде как бензиновые фильтры вообще не должны воду пропускать, или как? :-X</p>
+
+<p><strong>gena1</strong> 18-11-2011</p>
+
+<blockquote>
+  <p>Вроде как бензиновые фильтры вообще не должны воду пропускать, или как? :-X</p>
+</blockquote>
+
+<p>Судя по фото это бумажные фильтры, им всё равно что пропускать :)</p>
+
+<p><strong>ALB</strong> 18-11-2011</p>
+
+<p>Ну в общем ответы на свои вопросы я получил.</p>
+
+<p>Спасибо</p>
+<blockquote>
+  <p>… А вообще в производстве воду для капельного фильтруют целой системой фильтров еще до приготовления раствора.</p>
+</blockquote>
+
+<p>У меня не производство , а потому буду фильтровать там где это необходимо прямо перед употреблением растениями.</p>
+
+<p>Изменение скорости потока теперь не такое страшное как было без фильтра.</p>
+
+<p>Прикуплю фильтр поменьше чем то чудовище которое сейчас вкрячено и буду собирать уже с растениями систему, может со временем и дроссель нормальный найду или сделаю.</p>
+
+<p><strong>valery</strong> 18-11-2011</p>
+
+<blockquote>
+  <p>У меня не производство , а потому буду фильтровать там где это необходимо</p>
+</blockquote>
+
+<p>Да ведь вся штука в том, что именно “на производстве” это делают там, где это НЕОБХОДИМО … а не там “где придется”.</p>
+
+<p>Есть смысл смотреть как это делается “имеено ТАМ” и пытаться соорудить у себя нечто “упрощенное”, но подобное - “малыми средствами/силами”, но</p>
+
+<p>используя ПРАВИЛЬНЫЕ подходы и принципы.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

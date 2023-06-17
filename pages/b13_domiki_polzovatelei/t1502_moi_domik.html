@@ -1,0 +1,4199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>мой домик | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="мой домик">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">мой домик</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Geus</strong> 06-07-2012</p>
+
+<p>всех приветствую в своем домике.</p>
+
+<p>постараюсь провести опыт с Led панелью на салате и результаты выложить здесь.</p>
+
+<p>панель купил, поведясь на уговоры в магазине что панель на 175 ват подобна по мощьности 400 Днату.</p>
+
+<p>оказалось враки.</p>
+
+<p>но выбрасывать её не хочу поэтому и поэксперементирую с ней, что б бестолку не валялась.</p>
+
+<p><strong>Geus</strong> 06-07-2012</p>
+
+<p>опыт первый дано</p>
+
+<p>панель Led 175ват</p>
+
+<p>система DWS</p>
+
+<p>растение салат ( с сортом еще не определился) если кому интересно посоветуйте какой взять.</p>
+
+<p>первый фото отчет будет через неделю</p>
+
+<p><strong>Al-nikoly</strong> 06-07-2012</p>
+
+<p>Ура <em>Dance</em>, буду наблюдать очень внимательно, если эксперимент удастся, то буду тоже заказывать панель! :)</p>
+
+<p>Удачи Вам много раз! <em>Dance</em></p>
+
+<p><strong>pinkinni</strong> 07-07-2012</p>
+
+<blockquote>
+  <p>панель купил, поведясь на уговоры в магазине что панель на 175 ват подобна по мощьности 400 Днату.</p>
+
+  <p>оказалось враки.</p>
+</blockquote>
+
+<p>А как определили,что это “враки” если только планируете выращивать?</p>
+
+<p><strong>Geus</strong> 07-07-2012</p>
+
+<p>повесил 400 Днат и замерил</p>
+
+<p>а рядом повесил Led и тоже замерил</p>
+
+<p>Днат правда с рефлектором на высоте 80 см прямо под лампой дает 14-15кл</p>
+
+<p>а Led всего 3-4 кл</p>
+
+<p><strong>pinkinni</strong> 07-07-2012</p>
+
+<p>Такое сравнение явно не корректно,продавец скорее всего имел ввиду КПД при сравнении с Днат'ом.Но это только опытным путем можно будет проверить.Буду ждать Ваших отчетов.</p>
+
+<p><strong>Geus</strong> 07-07-2012</p>
+
+<p>день добрый</p>
+
+<p>сегодня прикупил немного удобрений. ассортимент не богат, но все же.</p>
+
+<ol>
+  <li>
+    <p>Аммиачная селитра Фаско N-34.4%</p>
+  </li>
+  <li>
+    <p>Гомельское удобрение Фаско NPK 15/15/15</p>
+  </li>
+  <li>
+    <p>Суперфосфат Фаско N-6 P2O5-26%</p>
+  </li>
+  <li>
+    <p>Калиевая селитра буйские N13.6 K2O 46</p>
+  </li>
+  <li>
+    <p>Растворин для овощей Фаско NPK 17/17/17 плюс кучка микро</p>
+  </li>
+  <li>
+    <p>Кальциевая селитра буйская N11.6 Ca 16.6</p>
+  </li>
+  <li>
+    <p>Унифлор Рост</p>
+  </li>
+  <li>
+    <p>Унифлор Микро</p>
+  </li>
+</ol>
+
+<p><strong>Geus</strong> 07-07-2012</p>
+
+<p>так вот теперь из всего этого нужно раствор состряпать для салата</p>
+
+<p>посчитал и чето не получается вечный перебор по азоту</p>
+
+<p><a href="http://SSMaker.ru/e3256745/" target="_blank">http://SSMaker.ru/e3256745/</a></p>
+
+<p>помогите с коректировкой раствора или подскажите что дополнительно поискать в магазине</p>
+
+<p><strong>maikl25</strong> 07-07-2012</p>
+
+<blockquote>
+  <p>так вот теперь из всего этого нужно раствор состряпать для салата</p>
+
+  <p>посчитал и чето не получается вечный перебор по азоту</p>
+
+  <p><a href="http://SSMaker.ru/e3256745/" target="_blank">http://SSMaker.ru/e3256745/</a></p>
+
+  <p>помогите с коректировкой раствора или подскажите что дополнительно поискать в магазине</p>
+</blockquote>
+
+<p>поищите в городе магазины капельного полива (у нас например их намного больше чем магазинов гидропоники) удобрения прекрасно подходят для гидропоники… :)</p>
+
+<p><strong>Geus</strong> 08-07-2012</p>
+
+<p>У меня в городе нет вообще магазинов гидропоники или заточенных под неё</p>
+
+<p>максимум что удалось найти в обычных садоводческих магазинах</p>
+
+<p><strong>Geus</strong> 09-07-2012</p>
+
+<p>пересчитал рецеп раствора</p>
+
+<p><a href="http://SSMaker.ru/00a22924/" target="_blank">http://SSMaker.ru/00a22924/</a></p>
+
+<p>посмотрите и прокоментируйте чего добавить чего убрать</p>
+
+<p><strong>Rossich</strong> 10-07-2012</p>
+
+<blockquote>
+  <p>пересчитал рецеп раствора</p>
+
+  <p><a href="http://SSMaker.ru/00a22924/" target="_blank">http://SSMaker.ru/00a22924/</a></p>
+
+  <p>посмотрите и прокоментируйте чего добавить чего убрать</p>
+</blockquote>
+
+<p>А где такую програмку скачать? Дай ссылку плз.</p>
+
+<p><strong>sbastrikov</strong> 10-07-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>пересчитал рецеп раствора</p>
+
+    <p><a href="http://SSMaker.ru/00a22924/" target="_blank">http://SSMaker.ru/00a22924/</a></p>
+
+    <p>посмотрите и прокоментируйте чего добавить чего убрать</p>
+  </blockquote>
+
+  <p>А где такую програмку скачать? Дай ссылку плз.</p>
+</blockquote>
+
+<p>Извиняюсь у автора за то, что самовольно располагаю здесь ссылки…</p>
+
+<p>Калькутятор можно скачать здесь: <a href="http://hydroodo.googlecode.com/files/hydroodo18.rar" target="_blank">http://hydroodo.googlecode.com/files/hydroodo18.rar</a></p>
+
+<p><strong>Geus</strong> 12-07-2012</p>
+
+<p>ну что начинаю отчет</p>
+
+<p>установку собрал простенькую на 12 мест</p>
+
+<p>лед висит в 42 см показания по люксам выложу</p>
+
+<p>посадил три вида салата 11.07</p>
+
+<p>12.07 семена уже проклюнулись</p>
+
+<p>в каждую пробку посадил по два - три семечка</p>
+
+<p><strong>Geus</strong> 12-07-2012</p>
+
+<p>фото установки</p>
+
+<p>в комплекте</p>
+
+<p>ящик для овощей</p>
+
+<p>12 стаканчиков</p>
+
+<p>помпа аквариумная самая маленькая что нашол для перемешивания раствора</p>
+
+<p>аэратор на 100 литров</p>
+
+<p><a href="https://t.me/ponics_ru_files/9086" target="_blank"><img src="/attachimages/11304_IMG_1817.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9087" target="_blank"><img src="/attachimages/11306_IMG_1818.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9088" target="_blank"><img src="/attachimages/11308_IMG_1819.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 12-07-2012</p>
+
+<p>показания люксометра в разных частях установки</p>
+
+<p><a href="https://t.me/ponics_ru_files/9089" target="_blank"><img src="/attachimages/11310_2012-07-11 17.35.27.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9090" target="_blank"><img src="/attachimages/11312_2012-07-11 17.37.06.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9091" target="_blank"><img src="/attachimages/11314_2012-07-11 17.36.04.jpg" alt="" /></a></p>
+
+<p><strong>AlexKg</strong> 12-07-2012</p>
+
+<p>Насколько я понимаю, люксметром показания от таких LEDов показания снимать абсолютно бессмысленно. Нужен квантовый датчик для измерения ФАР, кстати может кто-то подскажет где купить такой, желательно в Москве</p>
+
+<p><strong>Geus</strong> 14-07-2012</p>
+
+<p>я нашол единственный спектрофотометр в городе и попытаюсь договориться на проведения испытаний с моей панелью.</p>
+
+<p>результаты выложу на всеобщее обозрение</p>
+
+<p><strong>Geus</strong> 19-07-2012</p>
+
+<p>фото салата 18/07/12</p>
+
+<p><a href="https://t.me/ponics_ru_files/9092" target="_blank"><img src="/attachimages/11356_2012-07-18 20.02.48.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9093" target="_blank"><img src="/attachimages/11358_2012-07-18 20.02.52.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 19-07-2012</p>
+
+<p>фото от 19/07/12</p>
+
+<p><a href="https://t.me/ponics_ru_files/9094" target="_blank"><img src="/attachimages/11360_2012-07-19 18.40.51.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9095" target="_blank"><img src="/attachimages/11362_2012-07-19 18.41.17.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 19-07-2012</p>
+
+<p>один из салатов должен быть бордовым.</p>
+
+<p>на фото видно как листики начинают менять окрас</p>
+
+<p><a href="https://t.me/ponics_ru_files/9096" target="_blank"><img src="/attachimages/11364_2012-07-19 18.41.10.jpg" alt="" /></a></p>
+
+<p><strong>Rtyti</strong> 19-07-2012</p>
+
+<p>супер, молодец. :)</p>
+
+<p>а им тесно не будет, или вы их будете рассаживать?</p>
+
+<p><strong>Geus</strong> 19-07-2012</p>
+
+<p>нет не будет</p>
+
+<p>это касета для проращивания</p>
+
+<p>а жить они будут в установке фото которой найдете выше</p>
+
+<p><strong>Geus</strong> 19-07-2012</p>
+
+<p>а вот фото одного интересного растения</p>
+
+<p><a href="https://t.me/ponics_ru_files/9097" target="_blank"><img src="/attachimages/11366_морковка.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 19-07-2012</p>
+
+<p>если верить производителю семян то из него скоро должно вырасти вот это</p>
+
+<p><strong>AlexKg</strong> 19-07-2012</p>
+
+<p>Очень симпатичные салатики, если позволите несколько вопросов</p>
+
+<ol>
+  <li>
+    <p>Сколько дней салатам на последнем фото</p>
+  </li>
+  <li>
+    <p>Я так понимаю что рассада растет тоже под LED, подскажите какая высота подвеса для рассады, и какую площадь освещает лампа (а также какую может освещать как максимум)</p>
+  </li>
+  <li>
+    <p>какие сорта?</p>
+  </li>
+  <li>
+    <p>Какое соотношение диодов в лампе? (количество и длинна волны)</p>
+  </li>
+</ol>
+
+<p>жду не дождусь когда уже придут мои лампочки, чтобы тоже начать ))</p>
+
+<p><strong>maikl25</strong> 19-07-2012</p>
+
+<blockquote>
+  <p>один из салатов должен быть бордовым.</p>
+
+  <p>на фото видно как листики начинают менять окрас</p>
+</blockquote>
+
+<p>добротный салатик видно что света им в достатке, если не ошибаюсь им дней 5-7.</p>
+
+<p><strong>Al-nikoly</strong> 19-07-2012</p>
+
+<blockquote>
+  <p>Очень симпатичные салатики, если позволите несколько</p>
+
+  <p>жду не дождусь когда уже придут мои лампочки, чтобы тоже начать ))</p>
+</blockquote>
+
+<p>Alex, а Вы какие лампочки заказали? И что собираетесь под ними выращивать?</p>
+
+<p><strong>AlexKg</strong> 19-07-2012</p>
+
+<p>Заказал LED 120W. Выращивать планирую салат на стеллажах, вообще хотелось бы выращивать весь ассортимент зелени, но пока хорошие результаты были только по салату и базилику. Я обязательно опишу все, как только у меня пойдет процесс (ориентировочно в начале августа планирую )</p>
+
+<p><strong>Geus</strong> 20-07-2012</p>
+
+<blockquote>
+  <p>Очень симпатичные салатики, если позволите несколько вопросов</p>
+
+  <ol>
+    <li>
+      <p>Сколько дней салатам на последнем фото</p>
+    </li>
+    <li>
+      <p>Я так понимаю что рассада растет тоже под LED, подскажите какая высота подвеса для рассады, и какую площадь освещает лампа (а также какую может освещать как максимум)</p>
+    </li>
+    <li>
+      <p>какие сорта?</p>
+    </li>
+    <li>
+      <p>Какое соотношение диодов в лампе? (количество и длинна волны)</p>
+    </li>
+  </ol>
+
+  <p>жду не дождусь когда уже придут мои лампочки, чтобы тоже начать ))</p>
+</blockquote>
+
+<p>по вашим вопросам ответы увидите выше в посте там и про сорта (фото упаковок)</p>
+
+<p>фото лампы тоже есть а по спектрам и соотношению ламп не подскажу в анатации этого небыло но если надо могу кинуть ссылку на магазин где купил у них можете все уточнить кстати там и выбор есть цены так себе но на вопросы отвечают, если заитересовать будующей покупкой</p>
+
+<p><strong>Geus</strong> 20-07-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>один из салатов должен быть бордовым.</p>
+
+    <p>на фото видно как листики начинают менять окрас</p>
+  </blockquote>
+
+  <p>добротный салатик видно что света им в достатке, если не ошибаюсь им дней 5-7.</p>
+</blockquote>
+
+<p>салатам на последнем фото 7 дней</p>
+
+<p>и это мой второй опыт в гидропонике и надеюсь он будет более удачным.</p>
+
+<p>предыдущий оказался провальным :'( хотя растения и не выбросил, они все мечтают сдохнуть но я им не даю.</p>
+
+<p><strong>Geus</strong> 21-07-2012</p>
+
+<p>по сортам извините вышла неувязочка</p>
+
+<p>фото семян ниже</p>
+
+<p>подвес лампы 42 см от установки</p>
+
+<p><a href="https://t.me/ponics_ru_files/9098" target="_blank"><img src="/attachimages/11373_2012-07-11 16.55.26.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 21-07-2012</p>
+
+<p>свжие фото салата</p>
+
+<p><a href="https://t.me/ponics_ru_files/9099" target="_blank"><img src="/attachimages/11375_IMG_1823.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9100" target="_blank"><img src="/attachimages/11377_IMG_1824.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9101" target="_blank"><img src="/attachimages/11379_IMG_1825.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 21-07-2012</p>
+
+<p>в давесок к салатам.</p>
+
+<p>8 дней назат была посажена клубника всходы уже 8 из 10 семян</p>
+
+<p>сорт клубники очень интересный…</p>
+
+<p><a href="https://t.me/ponics_ru_files/9102" target="_blank"><img src="/attachimages/11381_IMG_1835.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9103" target="_blank"><img src="/attachimages/11383_IMG_1836.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9104" target="_blank"><img src="/attachimages/11385_IMG_1837.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 21-07-2012</p>
+
+<p>выдержка из википедия по данному сорту</p>
+
+<p>Пайнберри — сорт садовой земляники, созданный Хансом де Йонгом и культивируемый компанией VitalBerry BV. Выведен в Нидерландах, в первой публикации на немецком языке в апреле 2009 года назван Ananaserdbeeren или ананасовая клубника. Представляет собой гибрид чилийской земляники, произрастающей в Южной Америке, и виргинской земляники (англ.), произрастающей в Северной Америке. Мякоть плода может варьироваться от белого до оранжевого цвета, имеет сильный аромат и вкус ананаса. К болезням эти ягоды устойчивы.</p>
+
+<p>Для рынка Великобритании ягоды были названы «пайнберри» (англ. pineberry. Белая клубника не являются редкостью, другие белые сорта клубники продаются в Великобритании под названиями white soul (белая душа) и white delight (белое наслаждение).</p>
+
+<p>Пайнберри выведены из дикой земляники, происходящей из Южной Америки, где она была на грани исчезновения до 2003 года, когда группа голландских фермеров объединила усилия по сохранению вида. Зрелые ягоды почти полностью белые, но с красными семенами. Пайнберри меньше, чем обычная клубника, размером от 15 до 23 мм. Она выращивается в теплицах, как и другие сорта. Незрелые ягоды имеют зеленый цвет, затем белеют. Когда на ягодах появляется множество тёмно-красных семян, они считаются спелыми</p>
+
+<p><strong>artmaximus</strong> 21-07-2012</p>
+
+<p>откуда эти семена? из-за “бугра”? :D</p>
+
+<p>или здесь можно приобрести? :D 3 бакса или дороже?</p>
+
+<p><strong>Geus</strong> 22-07-2012</p>
+
+<p>семена и США</p>
+
+<p><strong>Geus</strong> 22-07-2012</p>
+
+<p>да и за бугром можно много чего интересного приобрести.</p>
+
+<p>черные помидоры, цветная кукуруза, морковь четырех цветов, черный картофель, белый баклажан да еще много чего</p>
+
+<p><strong>Geus</strong> 26-07-2012</p>
+
+<p>свежие фото салатика.</p>
+
+<p>скоро будем готовится к переезду</p>
+
+<p><a href="https://t.me/ponics_ru_files/9105" target="_blank"><img src="/attachimages/11454_2012-07-25 20.35.39.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 26-07-2012</p>
+
+<p>Уважаемые господа подскажите как бороться с зацветанием раствора.</p>
+
+<p>а то приходится каждый день раствор обновлять в рассаде</p>
+
+<p><strong>caiman</strong> 26-07-2012</p>
+
+<p>Продезинфицировать все емкости и соединительные трубки(слив при этом раствор), отсечь прямое попадание света на раствор, увеличить аэрацию раствора, снизить до нижнего предела температуру р-ра. Вот как-то так.</p>
+
+<p>У кого еще какие мысли есть в эту сторону???</p>
+
+<p><strong>maikl25</strong> 26-07-2012</p>
+
+<blockquote>
+  <p>Продезинфицировать все емкости и соединительные трубки(слив при этом раствор), отсечь прямое попадание света на раствор, увеличить аэрацию раствора, снизить до нижнего предела температуру р-ра. Вот как-то так.</p>
+</blockquote>
+
+<p>меньше света и температуры все правильно, поддерживаю <em>Bos</em></p>
+
+<p><strong>AlexKg</strong> 26-07-2012</p>
+
+<p>если я правильно понял, то раствор в рассадное просто наливается? тогда никак не поборешь, да и зачем, салат уже пересаживать пора, а потом просто емкость помыть хорошо и всё</p>
+
+<p><strong>Geus</strong> 27-07-2012</p>
+
+<p>все ясно.</p>
+
+<p>а по пересадке то буду это действо осуществлять завтра.</p>
+
+<p>подскажите по воде..</p>
+
+<p>какую лучше взять есть из скважины с ppm 350 и из под крана(городское водоснабжение) ppm 80</p>
+
+<p><strong>pinkinni</strong> 27-07-2012</p>
+
+<p>Очень интересно это где такая городская вода с таким низким содержанием солей?Естественно 80ррм лучше.</p>
+
+<p><strong>Suhov</strong> 27-07-2012</p>
+
+<blockquote>
+  <p>из под крана(городское водоснабжение) ppm 80</p>
+</blockquote>
+
+<p>Бывает же такое <em>8)</em></p>
+
+<p><strong>gena1</strong> 27-07-2012</p>
+
+<blockquote>
+  <p>выдержка из википедия по данному сорту</p>
+
+  <p>Пайнберри — сорт садовой земляники,</p>
+</blockquote>
+
+<p>А причем тут pineberry ? “White Soul” - обычная белоплодная земляника.</p>
+
+<p><strong>Geus</strong> 28-07-2012</p>
+
+<blockquote>
+  <p>Очень интересно это где такая городская вода с таким низким содержанием солей?Естественно 80ррм лучше.</p>
+</blockquote>
+
+<p>вода такая во Владивостоке.</p>
+
+<p>у нас тут самит АТЭС намечается в сентябре так весь город переделали в том числе и очистные сооружения</p>
+
+<p><strong>Geus</strong> 28-07-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>выдержка из википедия по данному сорту</p>
+
+    <p>Пайнберри — сорт садовой земляники,</p>
+  </blockquote>
+
+  <p>А причем тут pineberry ? “White Soul” - обычная белоплодная земляника.</p>
+</blockquote>
+
+<p>в общем не причем просто посадил паралельно с салатом</p>
+
+<p>а обычная, наврятли этот гибрит совсем недавно выведен. да и россии он практически не растет.</p>
+
+<p>у нас есть подобные сорта типо Альпийской но это совсем другое</p>
+
+<p><strong>orgail</strong> 28-07-2012</p>
+
+<p>О, я во Владике учился в ДВГМА, тогда так называлась :)</p>
+
+<p><strong>Geus</strong> 29-07-2012</p>
+
+<p>люди успокойте меня или разачаруйте</p>
+
+<p>сегодня сутки после переезда</p>
+
+<p>на корнях появился налет черного цвета</p>
+
+<p>корни белые а налет черный что это может быть…</p>
+
+<p><strong>Geus</strong> 29-07-2012</p>
+
+<p>вот фото</p>
+
+<p><a href="https://t.me/ponics_ru_files/9106" target="_blank"><img src="/attachimages/11475_2012-07-29 18.27.51.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9107" target="_blank"><img src="/attachimages/11477_2012-07-29 18.27.55.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9108" target="_blank"><img src="/attachimages/11479_2012-07-29 18.27.55.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 29-07-2012</p>
+
+<p>может недостаток аэрации</p>
+
+<p>объем 30 литров</p>
+
+<p>стоит две воздушные помпы на 100л сиера и 300л тетра</p>
+
+<p><strong>Geus</strong> 29-07-2012</p>
+
+<p>единственное что радует</p>
+
+<p>клубника викинула первые настоящие листочки</p>
+
+<p>и на большой установке пока все впорядке с салатом</p>
+
+<p>единственное света пока маловато но завтра добавлю еще один ДНАт на 400</p>
+
+<p><a href="https://t.me/ponics_ru_files/9109" target="_blank"><img src="/attachimages/11481_2012-07-29 18.28.24.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 29-07-2012</p>
+
+<blockquote>
+  <p>люди успокойте меня или разачаруйте</p>
+
+  <p>сегодня сутки после переезда</p>
+
+  <p>на корнях появился налет черного цвета</p>
+
+  <p>корни белые а налет черный что это может быть…</p>
+</blockquote>
+
+<p>Если не грязь, то возможно, ризоктония. Последнее предположение ничего хорошего не сулит, есть смысл добавить в раствор Превикур, какие-нибудь 0,15-0,2%. И аэрация само собой!</p>
+
+<p><strong>Al-nikoly</strong> 29-07-2012</p>
+
+<blockquote>
+  <p>единственное что радует</p>
+
+  <p>клубника викинула первые настоящие листочки</p>
+
+  <p>и на большой установке пока все впорядке с салатом</p>
+
+  <p>единственное света пока маловато но завтра добавлю еще один ДНАт на 400</p>
+</blockquote>
+
+<p>А сейчас что стоит Led, или Днат?</p>
+
+<p><strong>Geus</strong> 30-07-2012</p>
+
+<p>у меня две установки</p>
+
+<p>на одной стоит Led а на второй ДНАт 400</p>
+
+<p><strong>Geus</strong> 31-07-2012</p>
+
+<p>лазил по нету и наткнулся на интересное видео. у кого то в блоге видел предмет разговора по выращиванию травы на гидропонике для домашних питомцев.</p>
+
+<p>так вот есть фермы где это применяют вот <a href="http://www.youtube.com/watch?v=9ZTikdxj8AI#ws" target="_blank">http://www.youtube.com/watch?v=9ZTikdxj8AI#ws</a></p>
+
+<p><strong>artmaximus</strong> 31-07-2012</p>
+
+<p>клёво…особенно скотине…“буржуйской” :D</p>
+
+<p>когда и наши будут такое есть…?!!! :D</p>
+
+<p><strong>Vad</strong> 31-07-2012</p>
+
+<p>не, ну я кошке постоянно выращиваю так… :)</p>
+
+<p>тока одно осталось не ясным… оно растет без света? <em>???</em></p>
+
+<p>это грибы! :o</p>
+
+<p><strong>Coccinella</strong> 31-07-2012</p>
+
+<p>Мне больше всего понравился пиджак у дяденьки в растильне :) Как-то не вяжется пиджак с такой работой :) Правда, без галстука…а то бы и вовсе на рекламного агента был похож…</p>
+
+<p>А вообще, интересно, ячмень в несколько ярусов и растет этот газон практически без досветки.</p>
+
+<p><strong>ALB</strong> 31-07-2012</p>
+
+<p>Мало того что без досветки , так ещё и не тянется к свету – скорее всего его выращивают в другом месте , а передача просто пропоганда как при советском союзе. :-\</p>
+
+<p><strong>AlexKg</strong> 31-07-2012</p>
+
+<p>Ну кстати, вполне возможно что растет и без света, обратите внимание в начале ролика, где коровка ест траву. Так вот там трава желтоватая, явно выращенная при очень скудном освещении. Я один раз лоток с пшеницей забыл в ванной, так вот он там все равно вырос, цветом был примерно как та травка, которую ест корова</p>
+
+<p><strong>Geus</strong> 31-07-2012</p>
+
+<p>я нашол контору которая поставляет эти установки</p>
+
+<p>и полазил по их сайту, трава реально без света растет.</p>
+
+<p>а установки стоят в передвижных модулях типа контейнера.</p>
+
+<p>и свет чисто технический для людей.</p>
+
+<p><strong>begunok</strong> 01-08-2012</p>
+
+<p>а как клубничка?</p>
+
+<p><strong>Geus</strong> 01-08-2012</p>
+
+<p>клубника впорядке развивается, хотя есть и аутсайдеры два семени не проклюнулось и еще два отстают в развитии</p>
+
+<p><a href="https://t.me/ponics_ru_files/9110" target="_blank"><img src="/attachimages/11495_1,08,12.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 01-08-2012</p>
+
+<p>салат тоже неплохо растет правда некоторые растюхи собираются в стрелку уйти</p>
+
+<p><a href="https://t.me/ponics_ru_files/9111" target="_blank"><img src="/attachimages/11505_2012-08-01 15.48.59.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 01-08-2012</p>
+
+<p>а основная масса растет и радует</p>
+
+<p>причем под Led кажется даже лучше чем под ДНАт</p>
+
+<p><a href="https://t.me/ponics_ru_files/9112" target="_blank"><img src="/attachimages/11507_2012-08-01 15.47.56.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9113" target="_blank"><img src="/attachimages/11509_2012-08-01 15.49.08.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9114" target="_blank"><img src="/attachimages/11511_2012-08-01 15.49.14.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 01-08-2012</p>
+
+<p>А с какой радости-горести они собрались в стрелку? ЕС высокое? Или световой день зашкалил?</p>
+
+<p><strong>Geus</strong> 01-08-2012</p>
+
+<p>ЕС 800 а первоначальное было 350 (из под крана)</p>
+
+<p>световой день 15 часов</p>
+
+<p>температура стандарт 24 градуса</p>
+
+<p>причем в одном помещении две установки DWS и ТNF в одинаковых условиях одна под ДНАт другая под LED световой день одинаковый</p>
+
+<p>ДНАт на салат дает от 10 до 15 клюксов</p>
+
+<p><strong>Coccinella</strong> 01-08-2012</p>
+
+<p>ЕС в ппм или в мСм/см? LED и ДНАТ одинаковое количество света дают в люксах или в молях? И какой сорт салата?</p>
+
+<p>Меня любопытство гложет, почему он зацвел?</p>
+
+<p><strong>Geus</strong> 02-08-2012</p>
+
+<ol>
+  <li>
+    <p>ЕС в ппм</p>
+  </li>
+  <li>
+    <p>LED дает меньше в люксах максимум порядка 10кл а ДНАт в в пике 15кл а минимум на крае 9 кл</p>
+  </li>
+  <li>
+    <p>сорт можно увидеть на фотовыше там три сорта</p>
+  </li>
+</ol>
+
+<p>и под ДНАт цыетной салат (должен быть бордоым) теряет свой окрас полученый в процесе выгонки рассады под LED</p>
+
+<p>а салат растущий под LED не теряет хотя тоже не весь бордовый.</p>
+
+<p>мое мнение касательно меня мне пока не удается вырастить порядочный салат с бордовым окрасом он весь становится зеленым.</p>
+
+<p>так что в ближайшее будущее сконцентрируюсь на обычных зеленых</p>
+
+<p>единственное хочу всетаки не только посадить но и вырастить порядочный качанный салат типа айсберг</p>
+
+<p>попробую посадку числа 20 августа к тому времени мне пришлют две панели LED по 100 вет на 6 спектров.</p>
+
+<p>продовец убеждает что на этих панелях можно растить растюхи при полной светокультуре.</p>
+
+<p>напомню у меня в комнате где растут все подопечные два окна и те на северную сторону.</p>
+
+<p>от ДНАт хочу отказаться черезчур сильно греет температуру даже кондиционером не могу ниже 23 сбить, а висит всего один 400 ДНАт</p>
+
+<p>а на всю площадь надо еще как минимум один а то и два</p>
+
+<p><strong>андрей п</strong> 02-08-2012</p>
+
+<p>А у LED-ов как с нагревом. Слышал, что они тоже порядочно нагреваются? :-\</p>
+
+<p><strong>Nikolai</strong> 02-08-2012</p>
+
+<blockquote>
+  <p>А у LED-ов как с нагревом. Слышал, что они тоже порядочно нагреваются? :-\</p>
+</blockquote>
+
+<p>LED-ам нельзя порядочно нагреваться. Поэтому их надо порядочно охлаждать.</p>
+
+<p><strong>Geus</strong> 03-08-2012</p>
+
+<p>у LED рабочая температура 40 грудусов</p>
+
+<p>а у ДНАт 270 градусов</p>
+
+<p><strong>Geus</strong> 06-08-2012</p>
+
+<p>люди добрый подскажите что с салатом</p>
+
+<p><a href="https://t.me/ponics_ru_files/9115" target="_blank"><img src="/attachimages/11521_IMG_1841.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9116" target="_blank"><img src="/attachimages/11523_IMG_1842.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 06-08-2012</p>
+
+<p>хоть салат и не шибко радует зато клубничка растет и пахнет</p>
+
+<p><a href="https://t.me/ponics_ru_files/9117" target="_blank"><img src="/attachimages/11525_IMG_1846.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 06-08-2012</p>
+
+<p>и еще по удобрениям</p>
+
+<p>подскажите сталкивался кто с такой штукой</p>
+
+<p>производитель буйский завод</p>
+
+<p>в магазине сказали что спешиал для гидропоники, хотя слабо верится в это</p>
+
+<p><a href="https://t.me/ponics_ru_files/9118" target="_blank"><img src="/attachimages/11527_IMG_1848.jpg" alt="" /></a></p>
+
+<p><strong>а-ну-ка</strong> 06-08-2012</p>
+
+<p>Явных причин непригодности этого Акварина для поники нет.</p>
+
+<p><strong>Nikolai</strong> 06-08-2012</p>
+
+<p>А кальций в нем есть?</p>
+
+<p><strong>Geus</strong> 06-08-2012</p>
+
+<p>вот перечень внутринностей</p>
+
+<p><a href="https://t.me/ponics_ru_files/9119" target="_blank"><img src="/attachimages/11529_IMG_1849.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 06-08-2012</p>
+
+<p>На салате классический дефицит кальция в листьях. Либо отсутствует в растворе, либо не поступает.</p>
+
+<p><strong>Geus</strong> 06-08-2012</p>
+
+<p>кислотность падает регулярно до 4,5</p>
+
+<p><strong>Geus</strong> 06-08-2012</p>
+
+<p>раствор на основе флоры серии трех компонентный плюс даймонд</p>
+
+<p><strong>Nikolai</strong> 06-08-2012</p>
+
+<p>Во флоре сериез кальция очень мало, про даймонд не знаю.</p>
+
+<p><strong>Geus</strong> 06-08-2012</p>
+
+<p>завтра кальция значит добавлю</p>
+
+<p><strong>Geus</strong> 08-08-2012</p>
+
+<p>добавил кальция (кальций азотно кислый) производства буйского завода</p>
+
+<p>внес из расчета 8гр на литр.</p>
+
+<p>через пару дней посмотрим</p>
+
+<p><strong>Geus</strong> 08-08-2012</p>
+
+<p>еще один нюанс</p>
+
+<p>каждый день ph падает с 6.0 -5,8 до 4.0-4.3</p>
+
+<p>и каждый день поднимаю с помощью ph up Flora</p>
+
+<p>подскажите чего происходит с раствором</p>
+
+<p><strong>Coccinella</strong> 08-08-2012</p>
+
+<p>Происходит не с раствором, а с растениям - они интенсивно растут, значит интенсивно поглощают катионы (K, Mg, Ca, NH4+, Fe…), а анионы при этом (сульфаты в основном) остаются, вот рН и падает.</p>
+
+<p><strong>Geus</strong> 08-08-2012</p>
+
+<p>еще замерил ppm чуть не сплохело 1600</p>
+
+<p><strong>Geus</strong> 08-08-2012</p>
+
+<p>но раствора литра на три меньше стало. видно выпили</p>
+
+<p><strong>Nikolai</strong> 08-08-2012</p>
+
+<blockquote>
+  <p>добавил кальция (кальций азотно кислый) производства буйского завода</p>
+
+  <p>внес из расчета 8гр на литр.</p>
+
+  <p>через пару дней посмотрим</p>
+</blockquote>
+
+<p>а не многовато 8 г/литр?</p>
+
+<p>может я не прав, но 1г/литр ближе к норме</p>
+
+<p><strong>Coccinella</strong> 08-08-2012</p>
+
+<p>Конечно, правы.</p>
+
+<p><strong>Geus</strong> 08-08-2012</p>
+
+<p>да вы правы промахнулся</p>
+
+<p>надеюсь до конца недели доживут салаты</p>
+
+<p>на выходных планирую сбор урожая</p>
+
+<p><strong>IXBT</strong> 08-08-2012</p>
+
+<blockquote>
+  <p>добавил кальция (кальций азотно кислый) производства буйского завода</p>
+
+  <p>внес из расчета 8гр на литр.</p>
+
+  <p>через пару дней посмотрим</p>
+</blockquote>
+
+<p>а кушать-то можно, то что вырастет на одних нитратах? Кальциевая селитра вроде содержит 11,6% азота х 8гр\л = итого в одном литре N= 928мг\л не считая остальных удобрений. Я бы не стал кушать такой салат. Как вообще что-то растёт в таком компоте…</p>
+
+<p><strong>valery</strong> 08-08-2012</p>
+
+<p>Да … действительно… промашка - не слабая.</p>
+
+<p>ТДС-метр - явно врет, ЕС подобного раствора должен быть весьма велик.</p>
+
+<p>рН, как было сказано, быстро падает в результате более быстрого и активного поглощения катионов, а в особенности и в основном - аммонийного азота, Во Флоре его большой излишек. “Повысителем” рН от Флоры - Вы проблему не решаете, напротив, ежедневно вносите в раствор нечнто “нерасчетное” - постоянно вностите существенное искажение в Ваш исходный состав. Нужно пытатья решить проблему аммонийного азота (снизить).</p>
+
+<p><strong>Geus</strong> 09-08-2012</p>
+
+<p>ДТС метр не врет.</p>
+
+<p>а вот то что концентрация бешеная это точно.</p>
+
+<p>приходилось три дня поднимать ph а для этого приходилось добавлять по 2,5 мл ph up на 30 литров.</p>
+
+<p>в начале недели ppm был в районе 850.</p>
+
+<p>если есть другой вариант поднимать кислотность подскажите как и чем. с удовольствием прислушаюсь к каждому предложению и каждый постараюсь испробовать. а на нитраты проверим в понедельник у меня нач. лаборатории на рынке хорошая знакомая. схожу к ней отдам на проверку</p>
+
+<p><strong>Geus</strong> 09-08-2012</p>
+
+<p>флорой пользуюсь предпоследний раз.</p>
+
+<p>жалко выбрасывать оставшиеся запасы.</p>
+
+<p>а для последующего составления растворов почти все есть в сухих солях.</p>
+
+<p>да и кислотами запасся, размахнулся и взял серную, азотную и фосфорную.</p>
+
+<p>а из солей нехватает только пары вещей но их получу через пару недель.</p>
+
+<p>растворы росича буду использовать ( у него в блоге про клубнику указанны).</p>
+
+<p><strong>Coccinella</strong> 09-08-2012</p>
+
+<p>Да дались вам всем эти нитраты! Вон сейчас на Олимпийских играх сборные англоязычных стран - Англии, США, Канады, Новой Зеландии, Австралии и голландцы, бельгийцы специально пьют свекольный сок с повышенным содержанием нитратов в качестве естественного допинга :)</p>
+
+<p>“Свекольный сок поддержит спортсменов-олимпийцев</p>
+
+<p>Накануне Олимпиады 2012 английская фирма «James White Drinks» выпустила на рынок концентрированный свекольный сок под названием «Beet-it Sports». В этом соке содержание натуральных нитратов на 33% выше, чем в предыдущем продукте этой фирмы «Organic shot». Это натуральный продукт, содержащий 90% свекольного и 10% яблочного сока. С тех пор, как недавними исследованиями университетов в Эксетере (Англия), Маастрихте (Нидерланды) и Мид Сведен (Швеция) установлено, что свекольный сок повышает выносливость на 15-20%, улучшает скорость велогонщиков и помогает на более долгий срок задерживать дыхание, мировая спортивная элита начала усиленно использовать этот природный допинг. Фирма «James White Drinks» впервые выпустила свекольный сок восемь лет тому назад, как расширение своей линейки фруктовых и овощных соков, а в 2009 году после того, как стало известно о способности свекольного сока понижать кровяное давление, был создан брэнд «Beet It» (а впоследствии и сайт <a href="http://www.beet-it.com" target="_blank">http://www.beet-it.com</a>). Новый продукт «Beat-it Sport» производится из конвенционально выращенной свеклы, поскольку она содержит больше нитратов, чем выращенная органическим способом. Это было сделано по заказу спортсменов. Уже известно, что свекольный сок «Beat-it Sport» во время тренировок и соревнований будут регулярно пить спортсмены Англии, США, Канады, Австралии, Голландии, Новой Зеландии, Ирландии, Бельгии и Норвегии. Свеклу для производства сока выращивает группа фермеров в Восточной Англии. В этом году фирма «James White Drinks» ввела в эксплуатацию первый в Англии соковый пресс для производства свекольного сока производительностью 1200 т свеклы в год. Во время Олимпийских игр планируется продажа 50 тысяч бутылочек сока в месяц в Англии и во многих странах мира, куда он уже широко экспортируется.”</p>
+
+<p>АПК-Информ</p>
+
+<p><strong>Geus</strong> 09-08-2012</p>
+
+<p>пару часов назат добавил 3 литра воды с ppm 70 и понизил общую концентрацию до 1200 с 1600</p>
+
+<p>и ph сегодня боле менее стабильно держится с 6.0 упала до 5.8</p>
+
+<p><strong>valery</strong> 09-08-2012</p>
+
+<p>Если жаль выбрасывать Флору … ( ну, конечно, жаль… ее ж за деньги продают, а не наливают бесплатно… зачем же выбрасывать) - посмотрите по составу - в котором из этих трех компонентов содержится наибольшее количество аммония. Ну и уполовиньте именно эту составляющую. А недостающие элементы - добавьте имеющимися солями, но уже избегая аммония.</p>
+
+<p><strong>Geus</strong> 09-08-2012</p>
+
+<p>с удовольствием сделал бы это да там по составу ноль указано только NPK и то в виде х-х-х и все</p>
+
+<p><strong>Nikolai</strong> 09-08-2012</p>
+
+<p>На этих картинках написано какой азот у Флоры:</p>
+
+<p><a href="http://generalhydroponics.com/site/gh/docs/prod_labels/floragro.pdf" target="_blank">http://generalhydroponics.com/site/gh/docs/prod_labels/floragro.pdf</a></p>
+
+<p><a href="http://generalhydroponics.com/site/gh/docs/prod_labels/floramicro.pdf" target="_blank">http://generalhydroponics.com/site/gh/docs/prod_labels/floramicro.pdf</a></p>
+
+<p>Немного там аммонийного , примерно одна восьмая от всего азота и в гро и в микре, в блуме азота нету</p>
+
+<p><strong>Coccinella</strong> 09-08-2012</p>
+
+<p>В Гро 0,25%, в Микро 0,3% аммонийного азота, там же написано точно.</p>
+
+<p><strong>Geus</strong> 09-08-2012</p>
+
+<p>класно, а у меня руссофицированая там такого нет</p>
+
+<p><strong>Nikolai</strong> 09-08-2012</p>
+
+<p>Flora Gro</p>
+
+<p>Total Nitrogen (N)………………………………………….2.0%</p>
+
+<p>0.25% Ammoniacal Nitrogen</p>
+
+<p>1.75% Nitrate Nitrogen</p>
+
+<p>Available Phosphate (P2O5)……………………………..1.0%</p>
+
+<p>Soluble Potash (K2O)………………………………………6.0%</p>
+
+<p>Magnesium (Mg)……………………………………………0.5%</p>
+
+<p>0.5% Water Soluble Magnesium (Mg)</p>
+
+<p>Derived from: Ammonium Phosphate, Magnesium Carbonate,</p>
+
+<p>Magnesium Nitrate, Magnesium Sulfate, Potassium Carbonate, Potassium</p>
+
+<p>Nitrate, Potassium Phosphate, and Potassium Sulfate.</p>
+
+<p>Flora Micro</p>
+
+<p>Total Nitrogen (N)………………………………………….5.0%</p>
+
+<p>0.3% Ammoniacal Nitrogen</p>
+
+<p>4.7% Nitrate Nitrogen</p>
+
+<p>Soluble Potash (K2O)………………………………………1.0%</p>
+
+<p>Calcium (Ca)…………………………………………………..5.0%</p>
+
+<p>Boron (B) …………………………………………………….0.01%</p>
+
+<p>Cobalt (Co)……………………………………………….0.0005%</p>
+
+<p>Copper (Cu) …………………………………………………0.01%</p>
+
+<p>0.01% Chelated Copper (Cu)</p>
+
+<p>Iron (Fe)………………………………………………………..0.1%</p>
+
+<p>0.1% Chelated Iron (Fe)</p>
+
+<p>Manganese (Mn)…………………………………………..0.05%</p>
+
+<p>0.05% Chelated Manganese (Mn)</p>
+
+<p>Molybdenum (Mo)…………………………………….0.0008%</p>
+
+<p>Zinc (Zn) …………………………………………………..0.015%</p>
+
+<p>0.015% Chelated Zinc (Zn)</p>
+
+<p>Derived from: Ammonium Molybdate, Ammonium Nitrate, Calcium</p>
+
+<p>Carbonate, Calcium Nitrate, Cobalt Nitrate, Copper EDTA, Iron DTPA, Iron</p>
+
+<p>EDDHA, Iron EDTA, Manganese EDTA, Potassium Borate, Potassium Nitrate,</p>
+
+<p>and Zinc EDTA.</p>
+
+<p><strong>Nikolai</strong> 09-08-2012</p>
+
+<p>Ну и Flora Bloom</p>
+
+<p>Available Phosphate (P 2O5)……………………………..5.0%</p>
+
+<p>Soluble Potash (K2O)………………………………………4.0%</p>
+
+<p>Magnesium (Mg)……………………………………………1.5%</p>
+
+<p>1.5% Water Soluble Magnesium (Mg)</p>
+
+<p>Sulfur (S)……………………………………………………….1.0%</p>
+
+<p>1.0% Combined Sulfur (S)</p>
+
+<p>Derived from: Magnesium Carbonate, Magnesium Phosphate,</p>
+
+<p>Magnesium Sulfate, Phosphoric Acid, Potassium Carbonate,</p>
+
+<p>Potassium Phosphate, and Potassium Sulfate.</p>
+
+<p><strong>Geus</strong> 10-08-2012</p>
+
+<p>Огромное спасибо за инфу. теперь буду знать чего там есть и сколько</p>
+
+<p><strong>begunok</strong> 11-08-2012</p>
+
+<p>я вот что не понимаю -почему все-таки все пробуют флору. Я, кстати, тоже в первый раз налил флору. Хорошо, сразу перестал ею пользоваться.</p>
+
+<p><strong>Geus</strong> 12-08-2012</p>
+
+<p>продавцы в магазине, вот мое мнение почему</p>
+
+<p>я когда первый раз дошол до заказа удобрений, позвонил в интернет магазин и спросил чего лучше, где золотая середина цены и качества.</p>
+
+<p>мне четко сказали Flora.</p>
+
+<p>хотя я думал раньше что Hesi такой эталон совершенства. пока не узнал об этом сайте и не прочитал кучку стотей про то что можно и самому все это делать.</p>
+
+<p><strong>Geus</strong> 14-08-2012</p>
+
+<p>отчет о результатах:</p>
+
+<p>салат растет под LED великолепно, как ни странно. даже цветной салат дал хорошие показатели по окраске, единственное посадка оказалась плотной и лучше всего развивались крайние растения.</p>
+
+<p>вес в среднем был 70 -100 гр</p>
+
+<p>причина такого веса кроется по моему мнению в двух моментах</p>
+
+<ol>
+  <li>
+    <p>как у казал выше плотная посадка 5см между растениями, но это исправлю при будующих посадках.</p>
+  </li>
+  <li>
+    <p>и проблема с Азотом в один момент его стало нехватать продолжалось это днея 3-4, потом добавил тройную дозу и траванул растения.</p>
+  </li>
+</ol>
+
+<p>но не смотря на это салат был вкусным, сочным и большинство листьев были товарного вида. всего порядка 1/3 были с краевым ожогом.</p>
+
+<p><strong>Geus</strong> 14-08-2012</p>
+
+<p>сегодня оплачиваю две LED панели и установлю их вместо ДНАт.</p>
+
+<p>решился на это т.к. не могу спаравится с температурой. ниже 24 опустить не могу даже кондер не справляется.</p>
+
+<p>и 14.08 посадил Айсбер, на пачке стоит срок созревания 60 дней</p>
+
+<p>посмотрим что получится и как получится.</p>
+
+<p>в этот раз учту все предыдущие огрехи и исправлю их.</p>
+
+<p><strong>Geus</strong> 17-08-2012</p>
+
+<p>Клубника растет и радует.</p>
+
+<p>Скоро переедет на постоянное место жительства в лотки с кокосом.</p>
+
+<p>питается 30% раствором (рецепт от росича)</p>
+
+<p>раствор нравится в день выпивают по 15 мл, кормлю через шпритц.</p>
+
+<p><a href="https://t.me/ponics_ru_files/9120" target="_blank"><img src="/attachimages/11556_2012-08-14 18.02.08.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 17-08-2012</p>
+
+<p>люди добрые подскажите по Калию фосфорнокислому однозамещенному(KH7PO4)</p>
+
+<p>правильно ли я расчитал содержание К и Р <em>???</em></p>
+
+<p>по паспорту массовая доля основного вещества не менее 99,5%</p>
+
+<p>по моим расчетам получается молекула вещества весит 141,09</p>
+
+<p>для получения P2O5 и K2O нужно две молекулы вещеста тоесть 282.18</p>
+
+<p>Р2О5 = 141,94/282,18= 50,3%</p>
+
+<p>К2О = 94,18/282,18 = 33,37%</p>
+
+<p><strong>а-ну-ка</strong> 17-08-2012</p>
+
+<p>Почему Н7</p>
+
+<p><strong>Geus</strong> 18-08-2012</p>
+
+<p>так в паспорте написано</p>
+
+<p><strong>а-ну-ка</strong> 18-08-2012</p>
+
+<p>На заборах тоже многое пишут.</p>
+
+<p>И зачем в оксидах мудренных?даже абстрактных?и никому не нужных,и Вам тоже.</p>
+
+<p><strong>Geus</strong> 18-08-2012</p>
+
+<p>я понимаю что на заборах много что пишут, но это в официальном документе от производителя на данную партию продукции</p>
+
+<p><strong>а-ну-ка</strong> 18-08-2012</p>
+
+<p>фосфат подразумевает соль ортофосфорной кислоты Н3РО4,моно-однозамещенный.Других вариантов быть не может.</p>
+
+<p>А вот так маркирует состав один из официальных импортеров продукции Валагро</p>
+
+<p><a href="https://t.me/ponics_ru_files/9121" target="_blank"><img src="/attachimages/11562_PIC-0174.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 19-08-2012</p>
+
+<p>у меня не из магазина удобрений, а из магазина хим реактивов.</p>
+
+<p><strong>valery</strong> 19-08-2012</p>
+
+<p>Совершенно неважно откуда и из какого магазина - такого соединения нет в природе. Электрический заряд любой молекулы - нейтрален, как и алгебраическая сумма “степеней окисления” ( в “полной” молекуле всегда равна нулю). У Вас - 5 лишних атомов водорода.</p>
+
+<p>Кислота - это такая штука, которая может “обменивать” атом водорода на атом металла.</p>
+
+<p>Кислоты бывают “одно-“, “двух-“, “трехосновные” (по количеству атомов водорода - или по количеству “простых оснований” нужных для “нейтрализации” молекулы кислоты).</p>
+
+<p>Например азотная кислота НNO3 - “одноосновная” (один атом водорода) - его она и может “обменять” на атом металла (образуя “соль”). Например, на атом калия - КNO3 - получаем нитрат калия или “калий азотнокислый”. ( не корректно, но для “примера” можно сказать “калий азотнокислый ОДНОЗАМЕЩЕННЫЙ” или (так же некорректно, но пусть будет … ) МОНОнитрат калия.</p>
+
+<p>Фосфорная кислота (она же ОРТОфосфорная) - H3PO4. - ТРЕХосновная (три атома водорода).</p>
+
+<p>Замещаем один водород калием - получаем МОНОфосфат калия КH2PO4 - он же калий фосфорнокислый ОДНОЗАМЕЩЕННЫЙ !!! - он же “дигидрофосфат калия”.</p>
+
+<p>Замещаем 2 водорода 2 калиями - получаем К2НРO4 - гидрофосфат калия ( условно можно сказать - калий фосфорнокислый 2-замещенный - или “дифосфат калия” - хотя тоже “некорректно”).</p>
+
+<p>Замещаем 3 водорода - полуяаем ФОСФАТ калий K3PO4. Все. Больше водорода не осталось, замещать некого и нечем.</p>
+
+<p>Опечатка там. Или просто нечетко читаете 7 вместо 2.</p>
+
+<p>Сложим “заряды” или “степени окисления” -</p>
+
+<p>КH2PO4 - должен быть равен 0.</p>
+
+<p>К ( +1) + 2<em>H ( +1) + P (+5) + 4</em>O (-2) = 1+2+5+(-8)=8-8=0</p>
+
+<p>КH7PO4</p>
+
+<p>К ( +1) + 7<em>H ( +1) + P (+5) + 4</em>O (-2) = 1+7+5+(-8) = 13-8=-5 5 “водородов” ( или электронов) - лишних.</p>
+
+<p><strong>valery</strong> 19-08-2012</p>
+
+<p>А про “оксиды” - Вам совершенно справедливо подсказываеют - это ОЧЕНЬ НЕУДОБНАЯ “историческая традиция” от которой в силу разных причин СЛОЖНО избавиться. Так зачем же Вы САМИ СЕБЯ запутываете ?</p>
+
+<p>В наших странах - легче в граммах/килограммах. Фунтами/пудами - да еще не “тамбовскими”, а какими-нибудь “майя-ацтекскими” - ОЧЕНЬ неудобно.</p>
+
+<p>Это просто лишнее телодвижение от которого у Вас будут плодиться ошибки. Не нужно.</p>
+
+<p>Вес “молекулы” Вашей соли - 136. Калия 29% (290 мг в грамме соли), фосфора - 23% (230 мг в грамме), или с учетом “чистоты” - 28 и 22 соответственно.</p>
+
+<p><strong>valery</strong> 19-08-2012</p>
+
+<blockquote>
+  <p>Flora Gro</p>
+
+  <p>Total Nitrogen (N)………………………………………….2.0%</p>
+
+  <p>0.25% Ammoniacal Nitrogen</p>
+
+  <p>1.75% Nitrate Nitrogen</p>
+
+  <p>Available Phosphate (P2O5)……………………………..1.0%</p>
+
+  <p>Soluble Potash (K2O)………………………………………6.0%</p>
+</blockquote>
+
+<p>:D</p>
+
+<blockquote>
+  <p>Огромное спасибо за инфу. теперь буду знать чего там есть и сколько</p>
+</blockquote>
+
+<p>:D :D :D</p>
+
+<p>Скорее всего, Ваша радость - преждевременна. Скорее всего - Вы НЕ БУДЕТЕ знать реального состава.</p>
+
+<p>Попытаюсь объяснить “почему”.</p>
+
+<p>Приведенные данные - с “этикетки” на американском сайте. Продукт - постоянно обновляется (по утверждениям “производителей”) (сильно сомневаюсь :-\, скорее всего просто “переписывают” этикетку в связи с “разными” требованиями в разных регионах), но пусть - обновляется.</p>
+
+<p>На этикетках американских бутылок - один состав, в сертификате - другой, в европейском подразделении - третий.</p>
+
+<p>Россия получает исходную “бурду” из Франции (европейское подразделение), с НПК не 2-1-6, а 3-1-7 - где 1,75 нитрат, 1- аммоний, 0,25 - и вовсе - амид.</p>
+
+<p>Далее этот кисель из пластиковых контейнеров ВРУЧНУЮ разливается по БУТЫЛКАМ для розничного покупателя (вверху контейнера - водичка с низким ЕС, у дна контейнера - осадок и водичка с ДРУГИМ ЕС).</p>
+
+<p>Кроме этого Вы же представляете КАК У НАС НА РОДИНЕ умеют бодяжить ? Сколько из контейнера в бутылку пошло “исходного концентрата”, а сколько “добавили” … водички из под крана (пока начальство водку пьет) - остается только догадываться.</p>
+
+<p>По-крайней мере “коноплянщики” из любителей Флоры - давно отмечают - в бутылках идет ПРОСТО КРАСКА ! с низким ЕС и непонятным содержимым, в частности, те кто помнят “импортные” бутылки - говорят о “кристаллах” соли на горлышке бутылки при высыхании концентрата … сейчас у многих этого НЕ наблюдается (подкрашеная вода). Поищите на форуме “Дзаги”.</p>
+
+<p><strong>Geus</strong> 27-08-2012</p>
+
+<p>клубника переехала на новое место жительства</p>
+
+<p>в кокос и под люмки( сумарно 80 ват)</p>
+
+<p><a href="https://t.me/ponics_ru_files/9122" target="_blank"><img src="/attachimages/11575_2012-08-21 15.18.04.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9123" target="_blank"><img src="/attachimages/11577_2012-08-21 15.18.11.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 27-08-2012</p>
+
+<p>попробовал вырастить овес как в промо ролике у буржуев.</p>
+
+<p>выросло только за 12 дней, а не за 6-7 как у них.</p>
+
+<p>эксперимент удался со второго раза.</p>
+
+<p>в первый раз семена не отбраковывались, а во второй раз отбраковал.</p>
+
+<p>каково было мое удивление когда почти 50-60% семян оказалось шелухой.</p>
+
+<p><a href="https://t.me/ponics_ru_files/9124" target="_blank"><img src="/attachimages/11579_1.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9125" target="_blank"><img src="/attachimages/11581_2.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 27-08-2012</p>
+
+<p>Джентльмены, а почему при посадке растений в балконные ящики их в большинстве случаев так глубоко сажают? Из боязни, что раствор через край польется? Или субстрат экономите? Или это какое-то специфично гидропонное действо, типа “раствора Чеснокова”?</p>
+
+<p>Меня смущают относительно (к высоте растений) высокие бортики ящика в таком случае. Во-первых, они все же затеняют растения (даже если нам кажется, что все в порядке), во-вторых, препятствуют циркуляции воздуха и потенциально повышают риск развития инфекций.</p>
+
+<p><strong>Geus</strong> 27-08-2012</p>
+
+<p>намек понял</p>
+
+<p>на днях подниму высоту</p>
+
+<p>а так получилось потому что купил два брикета по 7 литров и и три ящика в одном месте и продовец уверял что брикетов хватит с головой и еще останется.</p>
+
+<p><strong>Geus</strong> 04-09-2012</p>
+
+<p>у меня радость</p>
+
+<p>пришол домой и увидел что земляника которой вот только два месяца будет уже первые цветочки дала.</p>
+
+<p>так что скоро первый урожай будет</p>
+
+<p><a href="https://t.me/ponics_ru_files/9126" target="_blank"><img src="/attachimages/11595_IMG_1882.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 04-09-2012</p>
+
+<p>в связи с эти вопрос к знающим подскажите по опылению</p>
+
+<p>кисточка с натуральным ворсом уже лежит.</p>
+
+<p>интересует с какого момента начинать опылять и сколько дней подрять повторять процедуру.</p>
+
+<p><strong>Geus</strong> 04-09-2012</p>
+
+<p>томаты подрастают.</p>
+
+<p>живут в DWS ведро 12 литров ( раствора 8 литров)</p>
+
+<p><a href="https://t.me/ponics_ru_files/9127" target="_blank"><img src="/attachimages/11597_IMG_1880.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9128" target="_blank"><img src="/attachimages/11599_IMG_1879.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 05-09-2012</p>
+
+<p>А почему они так глубоко посажены? Керамзита не хватило?</p>
+
+<p><strong>Geus</strong> 05-09-2012</p>
+
+<p>не керамзита хватает</p>
+
+<p>когда переезжал корневая была объемная но короткая вот и пришлось почти на дно его садить</p>
+
+<p>керамзита подсыпаю по степени подростания</p>
+
+<p><strong>Coccinella</strong> 05-09-2012</p>
+
+<p>То есть у них корни вверх растут? Логичнее было бы посадить с такой корневой, как есть и дать корням возможность расти вниз и осваивать весь объем.</p>
+
+<p><strong>Geus</strong> 06-09-2012</p>
+
+<p>не корну не вверх растут. они были короткими но их было много (фото не сделал) и если б посадил выше в стаканчике та раствор мог не добраться до корней.</p>
+
+<p><strong>Geus</strong> 06-09-2012</p>
+
+<p>Знающие и владеющие химией</p>
+
+<p>прокоментируйте табличку</p>
+
+<p>и поправте если в чем не прав</p>
+
+<p><a href="https://t.me/ponics_ru_files/9129" target="_blank">таблица удобрений и элементов.xlsx</a></p>
+
+<p><strong>Coccinella</strong> 06-09-2012</p>
+
+<p>Не “полезных веществ”, а “элементов” и что подразумевается под “содержание в частях”? Тогда уж считайте в молях, непривычно, но все профессиональные растворы в них составлены.</p>
+
+<p>Вот здесь у Алексея Куренина полезная таблица</p>
+
+<p><a href="http://www.greentalk.ru/v/111_003/111/img019_001.jpg.html" target="_blank">http://www.greentalk.ru/v/111_003/111/img019_001.jpg.html</a></p>
+
+<p><strong>а-ну-ка</strong> 06-09-2012</p>
+
+<blockquote>
+  <p>Не “полезных веществ”, а “элементов” и что подразумевается под “содержание в частях”? Тогда уж считайте в молях, непривычно, но все профессиональные растворы в них составлены.</p>
+
+  <p>Вот здесь у Алексея Куренина полезная таблица</p>
+
+  <p><a href="http://www.greentalk.ru/v/111_003/111/img019_001.jpg.html" target="_blank">http://www.greentalk.ru/v/111_003/111/img019_001.jpg.html</a></p>
+</blockquote>
+
+<p>И ещё одна Ваша здесь-</p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=665.msg45006#msg45006" target="_blank">http://forum.ponics.ru/index.php?topic=665.msg45006#msg45006</a></p>
+
+<p><strong>а-ну-ка</strong> 06-09-2012</p>
+
+<blockquote>
+  <p>Знающие и владеющие химией</p>
+
+  <p>прокоментируйте табличку</p>
+
+  <p>и поправте если в чем не прав</p>
+</blockquote>
+
+<p>Забудте это…</p>
+
+<p>табличку в смысле.</p>
+
+<p><strong>Geus</strong> 06-09-2012</p>
+
+<blockquote>
+  <p>Не “полезных веществ”, а “элементов” и что подразумевается под “содержание в частях”? Тогда уж считайте в молях, непривычно, но все профессиональные растворы в них составлены.</p>
+
+  <p>Вот здесь у Алексея Куренина полезная таблица</p>
+
+  <p><a href="http://www.greentalk.ru/v/111_003/111/img019_001.jpg.html" target="_blank">http://www.greentalk.ru/v/111_003/111/img019_001.jpg.html</a></p>
+</blockquote>
+
+<p>Спасибо большое за ссылку</p>
+
+<p>правда я эту табличку уже видел и скачал себе.</p>
+
+<p>а по названию столбиков, да переправлю что б понятней было</p>
+
+<p>но в указанной у Алексея Куренина не все удобрения указанны</p>
+
+<p>поэтому и решил попробовать разобраться что к чему и выставить на общий суд, для определения правильно я понял как считать чего и сколько в том или ином удобрении</p>
+
+<p>если у меня чего неправильно посчитано скажите</p>
+
+<p>я её не для похвастаться выставил что мол вот глядите.</p>
+
+<p>а для самоопределния насколько я понял так сказать предмет</p>
+
+<p>ведь за меня другие люди растворы для моих растюх делать не будут</p>
+
+<p>а без понимания я ничего дельного не составлю</p>
+
+<p>и буду кажды раз в тему ПОМОГИТЕ писать типа посмотрите на мои салатики что с ними не так</p>
+
+<p>я сам должен понимать что с ними не так и знать как это исправить</p>
+
+<p>вначале с вашей помощью а потом сам</p>
+
+<p><strong>а-ну-ка</strong> 06-09-2012</p>
+
+<p>Давайте Вы подправите из того что нашли,а мы финишную…</p>
+
+<p>и названия столбцов,как бы общепринято,чтоб и мы знали чего считать …</p>
+
+<p><strong>Geus</strong> 06-09-2012</p>
+
+<p>спасибо за понимание и помощь</p>
+
+<p><a href="https://t.me/ponics_ru_files/9130" target="_blank">таблица удобрений и элементов.xlsx</a></p>
+
+<p><strong>valery</strong> 06-09-2012</p>
+
+<blockquote>
+  <p>спасибо за понимание и помощь</p>
+</blockquote>
+
+<p>Уловили, Вы, похоже, правильно … Но или чуть “не до конца” или наделали “механических” ошибок.</p>
+
+<p>кальцый азотнокислый	Ca(NO3)2	164,088	8,5			24,4</p>
+
+<p>Например. Первая строка. Кальций азотнокислый. Содержание кальция Вы получили верно - 24,4, а азота - нет, у Вас</p>
+
+<p>получилось в два раза меньше. Вы не умножили азот (N=14) на 2. Видите в формуле скобочка обводит ( NO3)2 …</p>
+
+<p>То есть там два азота N<em>2=14</em>2=28 и шесть кислорода O3<em>2=16</em>3<em>2=16</em>6=108</p>
+
+<p>Отсюда азота N будет не 8,5 %, а 17 % (164=100% … 28=х% … х=28*100/164=17 )</p>
+
+<p>То есть в грамме азотнокислого кальция 1г (1000 мг) у Вас будет 17% азота ( 0,17 г или 170 мг)</p>
+
+<p>И растворив это в литре чистой воды Вы и получите раствор с</p>
+
+<p>N=171</p>
+
+<p>Ca=244</p>
+
+<p>ну и добавляя что-то еще - будете получать и остальные элементы. Оксиды - не нужны.</p>
+
+<p>Далее в таблице … калий азотнокислый посчитан верно, а ниже - повторяется упомянутая ошибка.</p>
+
+<p>Магний сернокислый … молярную массу не до конца посчитали</p>
+
+<p>магний сернокислый 7 водн	MgSO4<em>7H2O	120,37</em>126,106					20,19	26,63</p>
+
+<p>120+126=246 То есть молярная масса этой соли = 246, а стало быть в грамме соли и магния и серы будет меньше - 9,86 (грубо 10) и 13 % соответственно.</p>
+
+<p>Кроме этого нужно учесть что “химически” чистым “кальцием азотнокислым” Вы вряд ли будете пользоваться, скорее всего “четырехводным” - формула (и молярная масса) будет несколько другой, соответственно кальция и азота там будет “по другому”. В случае с “импортной” кальциевой селитрой - формула будет еще более сложной (Алексей К. и Coccinella несколько раз оставляли точную формулу, где - не помню) - но пересчитывать ее точно - не обязательно. Достаточно взять данные по составу с упаковки - столько-то азота и столько-то кальция …</p>
+
+<p>Описаны и разжеваны эти расчеты довольно подробно и много-много-многократно. Полистайте форум.</p>
+
+<p><strong>valery</strong> 06-09-2012</p>
+
+<p>Увидел “ошибку” … кальцый … Сообразил, что это не “моя”. Так в исходной таблице, оттуда и скопировал.</p>
+
+<p><strong>Geus</strong> 06-09-2012</p>
+
+<p>Валерий спасибо за объяеснение</p>
+
+<p>на форумах видел и читал, но прочитать не значить понять</p>
+
+<p>а здесь вы меня порадовали что я не безнадежен и нужно быть чуть внимательнее и тогда сделанные мной ошибки не повторятся.</p>
+
+<p>еще рас спасибо</p>
+
+<p><strong>а-ну-ка</strong> 06-09-2012</p>
+
+<p>Все же рановато составлять таблицы-в формулах ошибки,порой форммулы не отражают вещество с которым работаете,а бывает -под одно название несколько вариаций составов…Пользуйтесь готовым.</p>
+
+<p><strong>Geus</strong> 26-09-2012</p>
+
+<p>прозьба к знающим и использующим Трилон Б</p>
+
+<p>просветите как им пользоваться</p>
+
+<p>в нете читал что порядка 3 г на литр надо использовать</p>
+
+<p><strong>valery</strong> 26-09-2012</p>
+
+<p>На один ммоль “железа” (или что именно Вы собираетесь “хелатировать”) один ммоль трилона.</p>
+
+<ul>
+  <li>Коротко.</li>
+</ul>
+
+<p>Подробно - в ветке (домике) mdima.</p>
+
+<p><strong>Geus</strong> 29-09-2012</p>
+
+<p>уточняю</p>
+
+<p>в нете читал тему что на 1 литр раствора можно использовать порядка 3 гр Трилона для улучшения доступности элементов для растений</p>
+
+<p><strong>Geus</strong> 29-09-2012</p>
+
+<p>немного фото</p>
+
+<p>моих подопечных</p>
+
+<p><a href="https://t.me/ponics_ru_files/9131" target="_blank"><img src="/attachimages/11710_2012-09-29 20.31.32.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9132" target="_blank"><img src="/attachimages/11712_IMG_1900.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 29-09-2012</p>
+
+<p>завяязи на помидорках</p>
+
+<p><a href="https://t.me/ponics_ru_files/9133" target="_blank"><img src="/attachimages/11714_IMG_1904.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 30-09-2012</p>
+
+<p>Это не завязи еще, это бутоны, но все равно - трогательно…</p>
+
+<p><strong>Geus</strong> 23-10-2012</p>
+
+<p>уезжал в командировку на три дня по возвпащению</p>
+
+<p>увидел что помидор бъется в предсмертных конвульсиях</p>
+
+<p>подскажите чего это сним</p>
+
+<p>мое мнение что он замерз он стоит на балконе ночью температура доходила до 7 градусов а днем до 30 и окошечко открывали пока меня небыло, что создавало сковзняк.</p>
+
+<p>или причина в другом к примеру нехватка магния</p>
+
+<p>а спустя еще два дня один помидор из четырех засох, еще один готовится засохнуть</p>
+
+<p><a href="https://t.me/ponics_ru_files/9134" target="_blank"><img src="/attachimages/11801_2012-10-19 17.35.09.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9135" target="_blank"><img src="/attachimages/11803_2012-10-19 17.35.32.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9136" target="_blank"><img src="/attachimages/11805_2012-10-19 17.37.16.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9137" target="_blank"><img src="/attachimages/11807_2012-10-19 17.37.29.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 23-10-2012</p>
+
+<p>Это не магний, это, похоже, инфекция. Эти пятнистые листья лучше удалить, а самому растению нормализовать влажность воздуха. Часть некрозов похожа на те, что бывают вследствие резкого падения влажности воздуха. Завяли - отпились, а пятна остались.</p>
+
+<p><strong>pinkinni</strong> 08-11-2012</p>
+
+<p>У меня летом такая же беда стреслась,за неделю абсолютна здоровые томаты в стадии активного плодоношения все засохли.Я грешил на две беды,прямое очень жаркое солнце и косяк с раствором.Незадолго до этого перевел томаты на другой раствор в котором существенно повысил калий.Но как мне потом объяснили повышение калия не могло привести к таким результатам.Возможно как и говорит многоуважаемая Coccinella проблема именно в инфекции.</p>
+
+<p>P.S.</p>
+
+<p>Мне свои томаты выходить не удалось :(</p>
+
+<p><strong>Geus</strong> 08-11-2012</p>
+
+<p>мне свои тоже</p>
+
+<p>но на этом не остановился посадил новых подопытных</p>
+
+<p>на днях буду переводить на установку уже.</p>
+
+<p><strong>Geus</strong> 08-11-2012</p>
+
+<p>если кто пользовался сульфатом кальция подскажите как его вносить в раствор</p>
+
+<p>а то уже раз пять по разному сделал а все равно чегото в осадок выпадает. совсем чуть чуть но выпадает</p>
+
+<p><strong>Geus</strong> 08-11-2012</p>
+
+<p>немного свежих фото земляники</p>
+
+<p>пока это единственное что растет у меня боле менее</p>
+
+<p><a href="https://t.me/ponics_ru_files/9138" target="_blank"><img src="/attachimages/11851_2012-11-01 18.47.51.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9139" target="_blank"><img src="/attachimages/11853_2012-11-01 18.47.58.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9140" target="_blank"><img src="/attachimages/11855_2012-11-01 18.48.11.jpg" alt="" /></a></p>
+
+<p><strong>orgail</strong> 08-11-2012</p>
+
+<p>уверены, что сульфат кальция? этож гипс</p>
+
+<p><strong>Geus</strong> 08-11-2012</p>
+
+<p>кальций сернокислый</p>
+
+<p><strong>Vad</strong> 08-11-2012</p>
+
+<p>ну да.. гипс… или селенит…</p>
+
+<p>оно не растворяется в воде.. <em>???</em></p>
+
+<p>ну почти не растворяется.. :-[</p>
+
+<p><strong>Geus</strong> 08-11-2012</p>
+
+<p>в рецепте у росича для салата эта штука присуисивует в рецепте для салатов</p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=534.0" target="_blank">http://forum.ponics.ru/index.php?topic=534.0</a></p>
+
+<p><strong>Geus</strong> 08-11-2012</p>
+
+<p>растворимость порядка 0,2г на 100 мл</p>
+
+<p><strong>Coccinella</strong> 08-11-2012</p>
+
+<p>А другого кальция у Вас нет? Нитрата, например? Или хоть хлорида? Ну, монокальцийфосфата?</p>
+
+<p>Гипс, как и мел, растворить можно, но сколько кальция из этого … хм, … раствором назвать нельзя… суспензии?… короче, получившейся болтушки будет в доступной растению форме, судить очень трудно.</p>
+
+<p><strong>Geus</strong> 08-11-2012</p>
+
+<p>есть много чего</p>
+
+<p>кальций азотнокислый</p>
+
+<p>кальций сернокислый</p>
+
+<p>калий сернокислай</p>
+
+<p>калий азотнокислый</p>
+
+<p>монокилий фосфат</p>
+
+<p>амоний сернокислый</p>
+
+<p>магний сернокислый</p>
+
+<p>азотная кмслота</p>
+
+<p>ортофосфорка</p>
+
+<p>серная кислота</p>
+
+<p>и полный набор для микро в солях</p>
+
+<p>использую почти все для составления растворов для более точной подгонки по количеству необходимых элементов</p>
+
+<p>сульфат кальция использую почти всегда что б небыло зашкала по азоту</p>
+
+<p><strong>valery</strong> 08-11-2012</p>
+
+<p>:-\</p>
+
+<p><strong>Vad</strong> 08-11-2012</p>
+
+<p>хлористый еще… он растворимее чем серный ))</p>
+
+<p><strong>Geus</strong> 09-11-2012</p>
+
+<p>а проблем с хлором не будет при его использовании</p>
+
+<p><strong>Vad</strong> 09-11-2012</p>
+
+<p>В разумных пределах… не будет.. наоборот только польза..</p>
+
+<p>почитайте у Валерия в домике… кажется..</p>
+
+<p>и у меня в ветке.. “Посмотрите пожалуйста опытным взглядом на мой помидор”</p>
+
+<p>тоже был разговор про хлор..</p>
+
+<p>от серы больше проблемм… :-[</p>
+
+<p><strong>Rossich</strong> 12-11-2012</p>
+
+<blockquote>
+  <p>в рецепте у росича для салата эта штука присуисивует в рецепте для салатов</p>
+
+  <p><a href="http://forum.ponics.ru/index.php?topic=534.0" target="_blank">http://forum.ponics.ru/index.php?topic=534.0</a></p>
+</blockquote>
+
+<p>В растворе я давал Кальций Азотнокислый, ну никак не сульфат… :-\</p>
+
+<p><strong>Geus</strong> 12-11-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>в рецепте у росича для салата эта штука присуисивует в рецепте для салатов</p>
+
+    <p><a href="http://forum.ponics.ru/index.php?topic=534.0" target="_blank">http://forum.ponics.ru/index.php?topic=534.0</a></p>
+  </blockquote>
+
+  <p>В растворе я давал Кальций Азотнокислый, ну никак не сульфат… :-\</p>
+</blockquote>
+
+<p>Уважаемый Rossich я не вкоем мене не ставлю под сомнение ваши авторитет</p>
+
+<p>но в рецепте для салатов под номером 6 у вас стоял именно кальций сернокислый.</p>
+
+<p>практически все рецепты с данного ресурса у меня в бумажном варианте и они переписанны не от руки, а просто скопированны из блога и перенесены в Word и потом распечатаны без внесения каких либо исправлений</p>
+
+<p><strong>Geus</strong> 12-11-2012</p>
+
+<p>если в этот рецепт вкралась тех ошибка значит переправлю на правильный вариант и буду пользоваться им адаптируя под свои условия.</p>
+
+<p>А Вам огромное спасибо за информацию и рецепты на первых парах они меня очень выручали</p>
+
+<p><strong>Geus</strong> 12-11-2012</p>
+
+<p>еще одно Rossich я могу задать вам вопрос по поводу технологии выращивания мяты</p>
+
+<p>если не ошибаюсь Вы имеете опыт в её выращивании</p>
+
+<p><strong>orgail</strong> 12-11-2012</p>
+
+<p>напомнило знаменитое.. “у меня все ходы записаны!” :D :D :D</p>
+
+<p>ну ответ все помнят :D</p>
+
+<p><strong>valery</strong> 15-11-2012</p>
+
+<blockquote>
+  <p>кальций сернокислый</p>
+</blockquote>
+
+<p>Скорее всего “механическая” опечатка. Вероятно, имелся в виду калий сернокислый.</p>
+
+<p>Кальций азотнокислый, калий азотнокислый, калий сернокислый … ну и все остальное.</p>
+
+<p><strong>Geus</strong> 08-01-2013</p>
+
+<p>после первого неудачного опыта с томатами</p>
+
+<p>повторил попытку получить что то стоящее</p>
+
+<p>однако с связи с праздниками прозевал время и томаты два дня стояли на DWS без воды и я чуть не повторил печальный опыт.</p>
+
+<p>однако удалось их реанимировать и томаты меня отблагодарили и завязали первые помидорчики</p>
+
+<p><a href="https://t.me/ponics_ru_files/9141" target="_blank"><img src="/attachimages/12228_2013-01-07 16.09.06.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9142" target="_blank"><img src="/attachimages/12230_2013-01-07 16.09.24.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 08-01-2013</p>
+
+<p>Малыши всегда … классные ! <em>8)</em> <em>8)</em> <em>8)</em></p>
+
+<p><strong>Geus</strong> 23-01-2013</p>
+
+<p>Помидорки подрастают и начали приобретать специфическую раскраску характерную для данного сорта</p>
+
+<p><a href="https://t.me/ponics_ru_files/9143" target="_blank"><img src="/attachimages/12324_20130122_145615.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9144" target="_blank"><img src="/attachimages/12326_20130122_145619.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 23-01-2013</p>
+
+<p><em>8)</em></p>
+
+<p>а что за сорт\гибрид такой?</p>
+
+<p>и я такой хочу.. :-[</p>
+
+<p><strong>Geus</strong> 24-01-2013</p>
+
+<p><a href="http://viewitem.eim.ebay.ru/SEEDS-VEGETABLE-TM-TOMATO-TIGERELLA-MR-STRIPEY-SEED-RRP-209/150984761331/item" target="_blank">http://viewitem.eim.ebay.ru/SEEDS-VEGETABLE-TM-TOMATO-TIGERELLA-MR-STRIPEY-SEED-RRP-209/150984761331/item</a></p>
+
+<p><strong>artmaximus</strong> 24-01-2013</p>
+
+<p>класс!!!</p>
+
+<p>вот я тормоз <em>Wall</em></p>
+
+<p>в Испании видел этих тигров и не купил, а когда приехал домой …пожалел <em>Wall</em></p>
+
+<p><a href="http://www.tomatetigreverde.com/principal.html" target="_blank">http://www.tomatetigreverde.com/principal.html</a></p>
+
+<p><strong>artmaximus</strong> 24-01-2013</p>
+
+<p><a href="http://www.saboresnaturales.es/producto/tomate-tigre-verde-4-kg" target="_blank">http://www.saboresnaturales.es/producto/tomate-tigre-verde-4-kg</a></p>
+
+<p><strong>Geus</strong> 24-01-2013</p>
+
+<p>планирую заказать еще парочку экстравагантных помидорчиков</p>
+
+<p>первый сливового цвета второй чери черного цвета</p>
+
+<p><strong>Geus</strong> 24-01-2013</p>
+
+<p>вчера собрал урожай базилика и отнес в ресторан шеф повару (друг познакомил)</p>
+
+<p>после опробации получил заказ постоянный на базилик на 10 кг в неделю. сейчас переоборудованием установки занимаюсь.</p>
+
+<p>ко всему прочему шеф повар из этого ресторана заказал мяты 500 кг месяц и гарантирует такой объем к закупу. так что серьезно озадачился его заказом и подумываю о более серьезном производстве.</p>
+
+<p><strong>valery</strong> 24-01-2013</p>
+
+<p><em>8)</em></p>
+
+<p><strong>Mastodont</strong> 24-01-2013</p>
+
+<blockquote>
+  <p>вчера собрал урожай базилика и отнес в ресторан шеф повару (друг познакомил)</p>
+
+  <p>после опробации получил заказ постоянный на базилик на 10 кг в неделю. сейчас переоборудованием установки занимаюсь.</p>
+
+  <p>ко всему прочему шеф повар из этого ресторана заказал мяты 500 кг месяц и гарантирует такой объем к закупу. так что серьезно озадачился его заказом и подумываю о более серьезном производстве.</p>
+</blockquote>
+
+<p>Какой базилик выращиваете и по чем собираетесь продавать…</p>
+
+<p><strong>orgail</strong> 24-01-2013</p>
+
+<p>Блин, класс!</p>
+
+<p>Хорошо иметь шеф-повара знакомого :)</p>
+
+<p><strong>Geus</strong> 24-01-2013</p>
+
+<p>базилик зеленый широколистный</p>
+
+<p>цена за кг 850-900 руб</p>
+
+<p><strong>Geus</strong> 24-01-2013</p>
+
+<p>средний вес растения составляет у меня 45-50 гр</p>
+
+<p>при моих затратах на свет, а у меня полная светокультура с одной установки получается около 2000руб заработать</p>
+
+<p><a href="https://t.me/ponics_ru_files/9145" target="_blank"><img src="/attachimages/12328_20130122_183859.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9146" target="_blank"><img src="/attachimages/12330_20130122_145808.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 24-01-2013</p>
+
+<p>а в общем это где то вот так будет выглядеть</p>
+
+<p><a href="https://t.me/ponics_ru_files/9147" target="_blank"><img src="/attachimages/12332_20130122_145821.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 24-01-2013</p>
+
+<p>на дальней стенке оставил место под НФТ систему или подтопление там планирую мяту посадить около 100 кустов ну свет провести дополнительный</p>
+
+<p><strong>artmaximus</strong> 24-01-2013</p>
+
+<p><em>8)</em> <em>8)</em> <em>8)</em></p>
+
+<p>хорошо <em>8)</em></p>
+
+<p>В любом деле “конвертация” продукции в деньги… <em>8)</em> это самое главное для развития <em>8)</em> $) $) $)</p>
+
+<p>…ну и стимул :D</p>
+
+<p>…но 500 кг. в месяц…сильно <em>8)</em> <em>crazy</em></p>
+
+<p>Удачи и роста во всём!!!</p>
+
+<p><strong>artmaximus</strong> 24-01-2013</p>
+
+<p>Сейчас все побегут искать знакомых поваров и рестораторов :D</p>
+
+<p><strong>Geus</strong> 24-01-2013</p>
+
+<p>заказ этот просто супер. осталось место найти под это</p>
+
+<p>а площадка не маленькая должна быть</p>
+
+<p><strong>artmaximus</strong> 24-01-2013</p>
+
+<p>Представляю…какого масштаба должна быть плантация :o…ходишь и косой…косишь :D</p>
+
+<p><em>8)</em> <em>8)</em> <em>8)</em></p>
+
+<p>…сенокос <em>8)</em></p>
+
+<p>Чего он делает-то с 500кг…?</p>
+
+<p>…мохито <em>crazy</em></p>
+
+<p><a href="https://t.me/ponics_ru_files/9148" target="_blank"><img src="/imagehost/thumbs/mohito.jpg" alt="" /></a></p>
+
+<p><strong>artmaximus</strong> 24-01-2013</p>
+
+<p>Ждать будет?</p>
+
+<p>Пока вырастет?</p>
+
+<p><strong>Geus</strong> 24-01-2013</p>
+
+<p>да готов ждать но пока закупает в другом месте</p>
+
+<p>а у них сеть ресторанов и баров</p>
+
+<p>да и друзей шеф поваров из других ресторанов хватает</p>
+
+<p>а им только за радость такое производство</p>
+
+<p>у нас в городе всего две фирмы кто поставляет из Голландии и Израиля</p>
+
+<p>и часто у них либо уже подвядшее или за бешеные деньги</p>
+
+<p><strong>Geus</strong> 24-01-2013</p>
+
+<p>я разговаривал с ребятами из этих компаний товар к ним на склад попадает как минимум 7 дневный</p>
+
+<p>против моего свежака срезанного несколько часов назад</p>
+
+<p><strong>artmaximus</strong> 24-01-2013</p>
+
+<p>хорошо!!!</p>
+
+<p>Теперь только отработать технологию $) $) $)</p>
+
+<p><strong>Coccinella</strong> 24-01-2013</p>
+
+<p>Здорово! 500 кг мяты в неделю- это очень хороший объем продажи. Осталось вырастить. Успеха!</p>
+
+<p><strong>Vad</strong> 24-01-2013</p>
+
+<p>500 кг в неделю.. это 71 кг в день! :o</p>
+
+<p>куда девать 70 кило мяты в день?? :-\</p>
+
+<p><strong>Coccinella</strong> 24-01-2013</p>
+
+<p>А какая разница? Лишь бы платили вовремя!</p>
+
+<p><strong>Vad</strong> 24-01-2013</p>
+
+<p>да ради бога.. конечно!</p>
+
+<p>и чтоб росло и продавалось…</p>
+
+<p>но куда они будут девать - просто интересно ))</p>
+
+<p><strong>SergF</strong> 25-01-2013</p>
+
+<p>500 кг в месяц… но тож немало… интересно сколько квадратных метров нужно для производства 500кг мяты?! :-\</p>
+
+<p><strong>cpf</strong> 25-01-2013</p>
+
+<blockquote>
+  <p>но куда они будут девать - просто интересно ))</p>
+</blockquote>
+
+<p>…перепродавать по цепочке (как гербалайф и цептер) :D</p>
+
+<p><strong>artmaximus</strong> 25-01-2013</p>
+
+<p>А о какой мяте речь идёт?</p>
+
+<p>Какие-то предпочтения или любой вид хочет заказчик?</p>
+
+<p>Дома на ДВС перечную посадил, чего-то она медленно растёт. :)</p>
+
+<p>Правда , не досвечиваю…растёт на окне “сама по себе” … с перчиком “на пару”:D</p>
+
+<p><a href="https://t.me/ponics_ru_files/9149" target="_blank"><img src="/imagehost/thumbs/sam7807.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 25-01-2013</p>
+
+<p>мяты 500 кг в месяц</p>
+
+<p>площадь сейчас рассчитываю</p>
+
+<p>мята - мелиса лимонная</p>
+
+<p>а девать есть куда у нас молодежи порядка 300 тыс чел</p>
+
+<p>и почти все живут в городе так что чай с мятой и мохито в ходу</p>
+
+<p>выращивать пока не собираюсь в пром моштабах пока планирую кустов 100 посадить при разных условиях и провести экзекучию им чтоб проверить что лучше для мяты</p>
+
+<p>да и семена заказал вчера из Италии для этого дела через ebay.</p>
+
+<p>обещают что листвы будет много на кустах</p>
+
+<p>так же в планах провести эксперименты с розмарином и рядом помидор цветных (черные чери и фиолетовые типа сорта новичок)</p>
+
+<p>правда площади на все не хватит сразу так что буду по очереди все это растить а там посмотрим на чем остановлюсь</p>
+
+<p><strong>Geus</strong> 25-01-2013</p>
+
+<p>если кому надо могу поделится семенами когда придут</p>
+
+<p>будет 1000 семян розмарина и</p>
+
+<p>порядка 2000 тыс семян базилика</p>
+
+<p>семян томата заказал мало если кому интересно могу скинуть ссылки на семена которые зуаказал</p>
+
+<p><strong>Al-nikoly</strong> 25-01-2013</p>
+
+<blockquote>
+  <p>если кому надо могу поделится семенами когда придут</p>
+
+  <p>будет 1000 семян розмарина и</p>
+
+  <p>порядка 2000 тыс семян базилика</p>
+
+  <p>семян томата заказал мало если кому интересно могу скинуть ссылки на семена которые зуаказал</p>
+</blockquote>
+
+<p>А мне можно ссылку пожалуйста на фиолетовые томаты черри? И на черные. :-[</p>
+
+<p><strong>Geus</strong> 26-01-2013</p>
+
+<p><a href="http://viewitem.eim.ebay.ru/TOMATO-CHERRY--BROWN-BERRY--75-FINEST-SEEDS/390530177522/item?transId=247179355026" target="_blank">http://viewitem.eim.ebay.ru/TOMATO-CHERRY–BROWN-BERRY–75-FINEST-SEEDS/390530177522/item?transId=247179355026</a></p>
+
+<p><a href="http://viewitem.eim.ebay.ru/1-Pack-20-Seeds-Mini-Black-Dark-Tomato-Seed-Vegetable-Seed-Healthy-Green-C095/290722697386/item?transId=806284813019" target="_blank">http://viewitem.eim.ebay.ru/1-Pack-20-Seeds-Mini-Black-Dark-Tomato-Seed-Vegetable-Seed-Healthy-Green-C095/290722697386/item?transId=806284813019</a></p>
+
+<p><a href="http://viewitem.eim.ebay.ru/1-Pack-20-Vegetables-Seeds-Purple-Tomato-Seeds-Heirloom-Organic-Fruit--HOT/110955763284/item?transId=970087593001" target="_blank">http://viewitem.eim.ebay.ru/1-Pack-20-Vegetables-Seeds-Purple-Tomato-Seeds-Heirloom-Organic-Fruit–HOT/110955763284/item?transId=970087593001</a></p>
+
+<p><strong>Al-nikoly</strong> 26-01-2013</p>
+
+<blockquote>
+  <p><a href="http://viewitem.eim.ebay.ru/TOMATO-CHERRY--BROWN-BERRY--75-FINEST-SEEDS/390530177522/item?transId=247179355026" target="_blank">http://viewitem.eim.ebay.ru/TOMATO-CHERRY–BROWN-BERRY–75-FINEST-SEEDS/390530177522/item?transId=247179355026</a></p>
+
+  <p><a href="http://viewitem.eim.ebay.ru/1-Pack-20-Seeds-Mini-Black-Dark-Tomato-Seed-Vegetable-Seed-Healthy-Green-C095/290722697386/item?transId=806284813019" target="_blank">http://viewitem.eim.ebay.ru/1-Pack-20-Seeds-Mini-Black-Dark-Tomato-Seed-Vegetable-Seed-Healthy-Green-C095/290722697386/item?transId=806284813019</a></p>
+
+  <p><a href="http://viewitem.eim.ebay.ru/1-Pack-20-Vegetables-Seeds-Purple-Tomato-Seeds-Heirloom-Organic-Fruit--HOT/110955763284/item?transId=970087593001" target="_blank">http://viewitem.eim.ebay.ru/1-Pack-20-Vegetables-Seeds-Purple-Tomato-Seeds-Heirloom-Organic-Fruit–HOT/110955763284/item?transId=970087593001</a></p>
+</blockquote>
+
+<p>Спасибо $)</p>
+
+<p><strong>valery</strong> 26-01-2013</p>
+
+<p>:o :o :o</p>
+
+<p>Черные и пурпурные … интересные какие :o :-\</p>
+
+<p><strong>иванстародубцев</strong> 27-01-2013</p>
+
+<p>viewitem.eim.ebay.ru/…Id=970087593001</p>
+
+<p>Насчет вот этих могу сказать, что цвет на картинке сильно отличается от созревших плодов, в прошлом году сажал такие.</p>
+
+<p><strong>Geus</strong> 27-01-2013</p>
+
+<blockquote>
+  <p>viewitem.eim.ebay.ru/…Id=970087593001</p>
+
+  <p>Насчет вот этих могу сказать, что цвет на картинке сильно отличается от созревших плодов, в прошлом году сажал такие.</p>
+</blockquote>
+
+<p>а какой цвет получился</p>
+
+<p>если есть фото покажите</p>
+
+<p><strong>Geus</strong> 05-02-2013</p>
+
+<p>помидорки подрастают :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/9150" target="_blank"><img src="/attachimages/12370_20130129_174544.jpg" alt="" /></a></p>
+
+<p><strong>orgail</strong> 05-02-2013</p>
+
+<p>Красавцы!</p>
+
+<p><strong>cpf</strong> 05-02-2013</p>
+
+<blockquote>
+  <p>помидорки подрастают :)</p>
+</blockquote>
+
+<p><em>8)</em> “МикроАрбузики” <em>Bravo</em></p>
+
+<p><strong>valery</strong> 05-02-2013</p>
+
+<p><em>8)</em></p>
+
+<p><strong>Geus</strong> 05-02-2013</p>
+
+<p>подскажите а промышленных теплицах миркоэлементы чем вносят?</p>
+
+<p>сами делают из к примеру из железного купороса и медного купороса или же пользуются готовыми к примеру валагро</p>
+
+<p><strong>Coccinella</strong> 05-02-2013</p>
+
+<p>Пользуются хелатами и иногда химически чистыми солями из химреактивов.</p>
+
+<p><strong>Geus</strong> 05-02-2013</p>
+
+<p>а хелаты где берут? сами делают или их продают уже готовыми</p>
+
+<p><strong>Coccinella</strong> 05-02-2013</p>
+
+<p>Покупают.</p>
+
+<p><strong>artmaximus</strong> 14-02-2013</p>
+
+<p>Ну как там “мятные дела”?</p>
+
+<p><strong>Geus</strong> 17-02-2013</p>
+
+<p>заканчиваю установку для мяты</p>
+
+<p>в первую очередь все же базилик выращивать собираюсь</p>
+
+<p>мята хлопотно пока</p>
+
+<p>денег пока не хватает на нее</p>
+
+<p><strong>artmaximus</strong> 17-02-2013</p>
+
+<p><em>8)</em> дорогу осилит идущий…</p>
+
+<p>Главное не останавливаться и довести дело до конца.</p>
+
+<p><strong>Geus</strong> 18-02-2013</p>
+
+<p>это точно.</p>
+
+<p>сейчас плотненько занимаюсь базиликом надо до ума довести.</p>
+
+<p>жду лампы из китая. сейчас из шести площадок только одна работает.</p>
+
+<p>как запущусь в полном объеме так займусь мятой.</p>
+
+<p>думаю к началу лета уже буду в работе и в приготовлении собирать первый урожай мяты (надеюсь)</p>
+
+<p><strong>pinkinni</strong> 21-02-2013</p>
+
+<p>А что за лампы если не секрет?Я тоже несколько штук заказал для эксперимента на 3-х дидные 6вт и 5-тидиодные 10Вт на 220В с цоколем и пару на 80 диодов.</p>
+
+<p><strong>maikl25</strong> 21-02-2013</p>
+
+<blockquote>
+  <p>если кому надо могу поделится семенами когда придут</p>
+
+  <p>будет 1000 семян розмарина и</p>
+
+  <p>порядка 2000 тыс семян базилика</p>
+
+  <p>семян томата заказал мало если кому интересно могу скинуть ссылки на семена которые зуаказал</p>
+</blockquote>
+
+<p>мне интересна информация о семенах, я установку уже собрал для мяты, с семенами напряг порой, выращу расскажу что выросло.</p>
+
+<p>Пока что у меня вот так вот…</p>
+
+<p><a href="https://t.me/ponics_ru_files/9151" target="_blank"><img src="/attachimages/12431_DSC05451 - копия.jpg" alt="" /></a></p>
+
+<p><strong>artmaximus</strong> 22-02-2013</p>
+
+<p><em>8)</em></p>
+
+<p>Если б я так размахнулся на окне, меня жена со всем хозяйством отправила куда-нибудь :D</p>
+
+<p>У меня скромнее и компактнее.</p>
+
+<p>Тоже хочу мелиссу лимонную вырастить.Мята растёт. Но вчера был в Леруа и там в горшочках продают всё это.</p>
+
+<p>Мелисса понравилась больше, чем мята (по запаху). <em>8)</em></p>
+
+<p>Так что я теперь фанат мелиссы (лимонной) :D</p>
+
+<p>Действительно “заграничных” семян мелиссы и мяты нет.</p>
+
+<p>Только местные. Вот и не понятно что там с семенами. Вырастет что то путное или нет <em>???</em></p>
+
+<p>Я уже выращивал томаты “местные”. …и все разные из одной пачки <em>crazy</em></p>
+
+<p><strong>Geus</strong> 22-02-2013</p>
+
+<p>по лампам следующее</p>
+
+<p>3-х ватные диоды, лампа на 25 диодов (мини панель) на 6 спектров стоимость с доставкой порядка 90$</p>
+
+<p>заказал 18 штук</p>
+
+<p><a href="https://t.me/ponics_ru_files/9152" target="_blank"><img src="/attachimages/12435_25x3w.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 22-02-2013</p>
+
+<p>касательно семян иностранной мелисы то я купил вот эту</p>
+
+<p><a href="http://viewitem.eim.ebay.ru/Lemon-Balm--Melissa-Officinalis--Appx-1500-seeds--Herb--Vegetable/251174592792/item?transId=1170240521015" target="_blank">http://viewitem.eim.ebay.ru/Lemon-Balm–Melissa-Officinalis–Appx-1500-seeds–Herb–Vegetable/251174592792/item?transId=1170240521015</a></p>
+
+<p><strong>maikl25</strong> 22-02-2013</p>
+
+<blockquote>
+  <p><em>8)</em></p>
+
+  <p>Если б я так размахнулся на окне, меня жена со всем хозяйством отправила куда-нибудь :D</p>
+
+  <p>У меня скромнее и компактнее.</p>
+
+  <p>Тоже хочу мелиссу лимонную вырастить.Мята растёт. Но вчера был в Леруа и там в горшочках продают всё это.</p>
+
+  <p>Мелисса понравилась больше, чем мята (по запаху). <em>8)</em></p>
+
+  <p>Так что я теперь фанат мелиссы (лимонной) :D</p>
+
+  <p>Действительно “заграничных” семян мелиссы и мяты нет.</p>
+
+  <p>Только местные. Вот и не понятно что там с семенами. Вырастет что то путное или нет <em>???</em></p>
+
+  <p>Я уже выращивал томаты “местные”. …и все разные из одной пачки <em>crazy</em></p>
+</blockquote>
+
+<p>жена у меня золото что и говорить, долго искал и Слава Создателю, нашел, родной человечек который меня во всем поддерживает, даже учитывая что львиная доля доходов уходит на мои эксперименты. все понимает и помогает на сколько ей это позволяют сыновья.</p>
+
+<p><strong>maikl25</strong> 22-02-2013</p>
+
+<blockquote>
+  <p><em>8)</em></p>
+
+  <p>Если б я так размахнулся на окне, меня жена со всем хозяйством отправила куда-нибудь :D</p>
+
+  <p>У меня скромнее и компактнее.</p>
+
+  <p>Тоже хочу мелиссу лимонную вырастить.Мята растёт. Но вчера был в Леруа и там в горшочках продают всё это.</p>
+
+  <p>Мелисса понравилась больше, чем мята (по запаху). <em>8)</em></p>
+
+  <p>Так что я теперь фанат мелиссы (лимонной) :D</p>
+
+  <p>Действительно “заграничных” семян мелиссы и мяты нет.</p>
+
+  <p>Только местные. Вот и не понятно что там с семенами. Вырастет что то путное или нет <em>???</em></p>
+
+  <p>Я уже выращивал томаты “местные”. …и все разные из одной пачки <em>crazy</em></p>
+</blockquote>
+
+<p>зря говорить не буду семена брал отечественные взошли просто шикарно процентов 98, дружно и быстро уже на третий день стояли и радовали. просто их мало и найти их доставило хлопот.</p>
+
+<p><strong>artmaximus</strong> 22-02-2013</p>
+
+<blockquote>
+  <p>по лампам следующее</p>
+
+  <p>3-х ватные диоды, лампа на 25 диодов (мини панель) на 6 спектров стоимость с доставкой порядка 90$</p>
+
+  <p>заказал 18 штук</p>
+</blockquote>
+
+<p>…18 шт. :o</p>
+
+<p>класс <em>8)</em> <em>8)</em> <em>8)</em></p>
+
+<p>я тоже когда нибудь стану <del>космонавтом</del> “плантатором” со своей плантацией :D</p>
+
+<p>жаба душит …белая :D :D :D</p>
+
+<p><strong>artmaximus</strong> 22-02-2013</p>
+
+<blockquote>
+  <p>касательно семян иностранной мелисы то я купил вот эту</p>
+
+  <p><a href="http://viewitem.eim.ebay.ru/Lemon-Balm--Melissa-Officinalis--Appx-1500-seeds--Herb--Vegetable/251174592792/item?transId=1170240521015" target="_blank">http://viewitem.eim.ebay.ru/Lemon-Balm–Melissa-Officinalis–Appx-1500-seeds–Herb–Vegetable/251174592792/item?transId=1170240521015</a></p>
+</blockquote>
+
+<p><em>8)</em> <em>8)</em> <em>8)</em></p>
+
+<p><strong>artmaximus</strong> 22-02-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p><em>8)</em></p>
+
+    <p>Если б я так размахнулся на окне, меня жена со всем хозяйством отправила куда-нибудь :D</p>
+
+    <p>У меня скромнее и компактнее.</p>
+
+    <p>Тоже хочу мелиссу лимонную вырастить.Мята растёт. Но вчера был в Леруа и там в горшочках продают всё это.</p>
+
+    <p>Мелисса понравилась больше, чем мята (по запаху). <em>8)</em></p>
+
+    <p>Так что я теперь фанат мелиссы (лимонной) :D</p>
+
+    <p>Действительно “заграничных” семян мелиссы и мяты нет.</p>
+
+    <p>Только местные. Вот и не понятно что там с семенами. Вырастет что то путное или нет <em>???</em></p>
+
+    <p>Я уже выращивал томаты “местные”. …и все разные из одной пачки <em>crazy</em></p>
+  </blockquote>
+
+  <p>зря говорить не буду семена брал отечественные взошли просто шикарно процентов 98, дружно и быстро уже на третий день стояли и радовали. просто их мало и найти их доставило хлопот.</p>
+</blockquote>
+
+<p>у меня тоже сегодня взошла мелисса (местная) <em>Dance</em>,</p>
+
+<p>Душица (Фея) британская (заграничная)</p>
+
+<p>Всё за 2 дня… :o (рядом с батареей , а там жара :o)</p>
+
+<p><strong>Geus</strong> 23-02-2013</p>
+
+<p>ребята а вы на каких установках планируете мелису растить?</p>
+
+<p>мне это очень интересно. т.к. как уже говорил есть огромное желание занятся ей как только разберусь с установками под базилик.</p>
+
+<p>Мелиса многолетнее растение и с этим ряд сложностей. если салат или любое другое растение однолетнее быстро входит в стадию созревания и выдачи готовой продукции то мелиса не тот вариант (дай бог ошибаюсь и её можно собирать уже через несколько месяцев после посадки)</p>
+
+<p>я сейчас в раздумьях что лучше подойдет капля или ДВС</p>
+
+<p>если есть возможность подскажите плюсы или минусы того или иного варианта.</p>
+
+<p><strong>Geus</strong> 23-02-2013</p>
+
+<p>первый урожай помидорок</p>
+
+<p>хоть они и не большие но достаточно сладкие</p>
+
+<p><a href="https://t.me/ponics_ru_files/9153" target="_blank"><img src="/attachimages/12437_20130219_221649.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9154" target="_blank"><img src="/attachimages/12439_20130219_221726.jpg" alt="" /></a></p>
+
+<p><strong>maikl25</strong> 23-02-2013</p>
+
+<blockquote>
+  <p>ребята а вы на каких установках планируете мелису растить?</p>
+
+  <p>мне это очень интересно. т.к. как уже говорил есть огромное желание занятся ей как только разберусь с установками под базилик.</p>
+
+  <p>Мелиса многолетнее растение и с этим ряд сложностей. если салат или любое другое растение однолетнее быстро входит в стадию созревания и выдачи готовой продукции то мелиса не тот вариант (дай бог ошибаюсь и её можно собирать уже через несколько месяцев после посадки)</p>
+
+  <p>я сейчас в раздумьях что лучше подойдет капля или ДВС</p>
+
+  <p>если есть возможность подскажите плюсы или минусы того или иного варианта.</p>
+</blockquote>
+
+<p>у меня информации мало по этому поводу видел, что большинство хозяйств на проточке растят. У меня периодическое затопление, субстрат торф средний, раствор салатный.</p>
+
+<p>P.S. Я по образованию механик и для меня до сих пор ДВС это Двигатель Внутреннего Сгорания ни как привыкнуть не могу… <em>???</em></p>
+
+<p><strong>maikl25</strong> 23-02-2013</p>
+
+<blockquote>
+  <p>первый урожай помидорок</p>
+
+  <p>хоть они и не большие но достаточно сладкие</p>
+</blockquote>
+
+<p>красавцы!!! а у меня засохли не дождались автоматики, просто забыл полить :-X…</p>
+
+<p>памяти совсем нет, привык что все само поливается…</p>
+
+<p><strong>maikl25</strong> 23-02-2013</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p><em>8)</em></p>
+
+      <p>Если б я так размахнулся на окне, меня жена со всем хозяйством отправила куда-нибудь :D</p>
+
+      <p>У меня скромнее и компактнее.</p>
+
+      <p>Тоже хочу мелиссу лимонную вырастить.Мята растёт. Но вчера был в Леруа и там в горшочках продают всё это.</p>
+
+      <p>Мелисса понравилась больше, чем мята (по запаху). <em>8)</em></p>
+
+      <p>Так что я теперь фанат мелиссы (лимонной) :D</p>
+
+      <p>Действительно “заграничных” семян мелиссы и мяты нет.</p>
+
+      <p>Только местные. Вот и не понятно что там с семенами. Вырастет что то путное или нет <em>???</em></p>
+
+      <p>Я уже выращивал томаты “местные”. …и все разные из одной пачки <em>crazy</em></p>
+    </blockquote>
+
+    <p>зря говорить не буду семена брал отечественные взошли просто шикарно процентов 98, дружно и быстро уже на третий день стояли и радовали. просто их мало и найти их доставило хлопот.</p>
+  </blockquote>
+
+  <p>у меня тоже сегодня взошла мелисса (местная) <em>Dance</em>,</p>
+
+  <p>Душица (Фея) британская (заграничная)</p>
+
+  <p>Всё за 2 дня… :o (рядом с батареей , а там жара :o)</p>
+</blockquote>
+
+<p>ну если верить написанному на семенах то мелиса, она же лимонная мята, любит свет, тепло и обильный полив.</p>
+
+<p><strong>gena1</strong> 25-02-2013</p>
+
+<blockquote>
+  <p>по лампам следующее</p>
+
+  <p>3-х ватные диоды, лампа на 25 диодов (мини панель) на 6 спектров стоимость с доставкой порядка 90$</p>
+
+  <p>заказал 18 штук</p>
+</blockquote>
+
+<p>Сорри, я пропустил как-то, диоды там 2-х ваттные (китайцы недоговаривают, 3W - это название, а не реальная мощность), поэтому до 100 долл. с доставкой. Но 50 Вт “чистых” будет.</p>
+
+<p><strong>artmaximus</strong> 25-02-2013</p>
+
+<p>Я лично для себя под мелиссу ДВЦ планирую.Сделал из ящичков балконных.</p>
+
+<p>Проверил для себя- мне годится.Пока малыши “пьют” мало…не злоупотребляют :-[ <em>crazy</em></p>
+
+<p>Потом чуток побольше. Таймер включает аэрацию в 9.00, а выключает в 23.00 - ночью тихо , а питомцы не жалуются. :D</p>
+
+<p>Ничего не цветёт и нормально…тьфу, тьфу, тьфу…тук -тук-тук об дерево, пока клещ паутинный не услышал. Зараза ещё та &gt;:D</p>
+
+<p><strong>Al-nikoly</strong> 25-02-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>по лампам следующее</p>
+
+    <p>3-х ватные диоды, лампа на 25 диодов (мини панель) на 6 спектров стоимость с доставкой порядка 90$</p>
+
+    <p>заказал 18 штук</p>
+  </blockquote>
+
+  <p>Сорри, я пропустил как-то, диоды там 2-х ваттные (китайцы недоговаривают, 3W - это название, а не реальная мощность), поэтому до 100 долл. с доставкой. Но 50 Вт “чистых” будет.</p>
+</blockquote>
+
+<p><a href="https://t.me/ponics_ru_files/9155" target="_blank"><img src="/attachimages/12474_image.jpg" alt="" /></a></p>
+
+<p><strong>gena1</strong> 26-02-2013</p>
+
+<p>На этом фото вообще 1 ваттные светодиоды. Но у них отношение лм/вт больше, чем у 3-х вт-ных.</p>
+
+<p><strong>Geus</strong> 26-02-2013</p>
+
+<p>так значит дурят китайцы нашего брата :o.</p>
+
+<p>и как результаты по такой панелью кто пробовал растить и чего и какие результаты?</p>
+
+<p><strong>gena1</strong> 26-02-2013</p>
+
+<p>Нет не дурят, они пишут реальную мощность - 50 Вт . 50 светодиодов по 1 вт, а в предыдущем (первом) тоже 50 Вт, но 25 светодиодов по 2вт. А 3W - это НАЗВАНИЕ , а не реальная мощность . Тоже и с 5W Для маркетологов это нормально, это мы “мелочные” :)</p>
+
+<p><strong>Al-nikoly</strong> 26-02-2013</p>
+
+<p>Получается, что название 3W очень хитрое, ведь не знающий человек принимает это название за реальную мощность, и считает, что лампа будет на 75 Вт, а не на 50… <em>???</em></p>
+
+<p><strong>Al-nikoly</strong> 26-02-2013</p>
+
+<blockquote>
+  <p>кто пробовал растить и чего и какие результаты?</p>
+</blockquote>
+
+<p>Насчет трав и зелени не знаю, а маленький перец очень хорошо растет <em>8)</em> и помидорки, пока конечно совсем дети, но растут… ( только мощность лампы 100 Вт)</p>
+
+<p><strong>Al-nikoly</strong> 26-02-2013</p>
+
+<blockquote>
+  <p>На этом фото вообще 1 ваттные светодиоды. Но у них отношение лм/вт больше, чем у 3-х вт-ных.</p>
+</blockquote>
+
+<p>Извиняюсь за ошибочное фото :(</p>
+
+<p><strong>gena1</strong> 26-02-2013</p>
+
+<p>Всё отлично растёт, только расстояние в 20 см, не более, надо выдерживать и тепло отводить. А про мощность - китайцы хоть и пишут 3W, но общую мощность светильника указывают верную. Это наши горе-продавцы пересчитавают её обратно в свои Ватты, умножая “название” на кол-во :)</p>
+
+<p><strong>artmaximus</strong> 07-03-2013</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Geus
+</code></pre></div></div>
+
+<p>Как там “вести с полей”? Я про Мелиссу?</p>
+
+<p>Оптовик ещё ждёт? (я в хорошем смысле)</p>
+
+<p>Ото я посадил Мелиссу пимонную, но она чего-то уж больно медленно растёт :-...может так надо <em>???</em></p>
+
+<p>Я вот что подумал, может её клонировать…чем из семян проращивать?</p>
+
+<p>Ведь такой объём :-...надо побыстрее рестораторам делать.</p>
+
+<p><strong>maikl25</strong> 07-03-2013</p>
+
+<blockquote>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Geus
+</code></pre></div>  </div>
+
+  <p>Как там “вести с полей”? Я про Мелиссу?</p>
+
+  <p>Оптовик ещё ждёт? (я в хорошем смысле)</p>
+
+  <p>Ото я посадил Мелиссу пимонную, но она чего-то уж больно медленно растёт :-...может так надо <em>???</em></p>
+
+  <p>Я вот что подумал, может её клонировать…чем из семян проращивать?</p>
+
+  <p>Ведь такой объём :-...надо побыстрее рестораторам делать.</p>
+</blockquote>
+
+<p>хвались фото artmaximus будем <del>пиписьками</del> ну тоесть кустиками мериться :D</p>
+
+<p><strong>artmaximus</strong> 08-03-2013</p>
+
+<blockquote>
+  <blockquote>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Geus
+</code></pre></div>    </div>
+
+    <p>Как там “вести с полей”? Я про Мелиссу?</p>
+
+    <p>Оптовик ещё ждёт? (я в хорошем смысле)</p>
+
+    <p>Ото я посадил Мелиссу пимонную, но она чего-то уж больно медленно растёт :-...может так надо <em>???</em></p>
+
+    <p>Я вот что подумал, может её клонировать…чем из семян проращивать?</p>
+
+    <p>Ведь такой объём :-...надо побыстрее рестораторам делать.</p>
+  </blockquote>
+
+  <p>хвались фото artmaximus будем <del>пиписьками</del> ну тоесть кустиками мериться :D</p>
+</blockquote>
+
+<p>…да там смотреть то не на чего ещё :D</p>
+
+<p>В таблетке ещё торфяной, как ещё чуток подрастёт, то на ДВЦ пересажу :-[…вот перчик (у меня)…молодец :D только он и радует , пока.По краям перечная мята-совсем вверх не растёт <em>???</em>.</p>
+
+<p><a href="https://t.me/ponics_ru_files/9156" target="_blank"><img src="/imagehost/thumbs/sam7889.jpg" alt="" /></a></p>
+
+<p><strong>artmaximus</strong> 08-03-2013</p>
+
+<p>Вот какая крохотулька :-[</p>
+
+<p><a href="http://forum.ponics.ru/imagehost/images/sam7896nqn.jpg" target="_blank">http://forum.ponics.ru/imagehost/images/sam7896nqn.jpg</a></p>
+
+<p>чего то не вставляется фотка… :-\</p>
+
+<p><strong>artmaximus</strong> 08-03-2013</p>
+
+<p>Майкл…хвались ;)</p>
+
+<p><strong>Coccinella</strong> 09-03-2013</p>
+
+<p>Может, мяту пересадить в другую таблетку? Впечатление, будто ей азота мало или перелита. Менять состав раствора боязно, так как точная причина все же не известна, а раствор все же не с потолка брался.</p>
+
+<p><strong>maikl25</strong> 09-03-2013</p>
+
+<blockquote>
+  <p>Майкл…хвались ;)</p>
+</blockquote>
+
+<p>ага уже начал :P</p>
+
+<p>ну если понравилось заходите в гости <a href="http://forum.hydo.ru/showthread.php?t=276" target="_blank">http://forum.hydo.ru/showthread.php?t=276</a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9157" target="_blank"><img src="/attachimages/12620_DSC05617 - копия.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9158" target="_blank"><img src="/attachimages/12622_DSC05587 - копия.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9159" target="_blank"><img src="/attachimages/12624_DSC05595 - копия.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 11-03-2013</p>
+
+<p>да хорошая мелиса.</p>
+
+<p>а мне пока показывать особо нечего :-[</p>
+
+<p>моя еще масенькая только проклюнулась</p>
+
+<p><a href="https://t.me/ponics_ru_files/9160" target="_blank"><img src="/attachimages/12634_20130310_183149.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 11-03-2013</p>
+
+<p>вот немного фоток свежих с моих балконных грядок</p>
+
+<ol>
+  <li>
+    <p>огурчик на двс посажен недавно ему около недели всего от посадки</p>
+  </li>
+  <li>
+    <p>морковка, решил попробовать вырастить. субстрат кокос, поливаю раствором для редиски надеюсь подойдет.</p>
+  </li>
+</ol>
+
+<p>3.гроздь томатиков</p>
+
+<ol>
+  <li>фото моих томатиков. низы уже оработали теперь пытаюсь постепенно опустить стебель на пол.</li>
+</ol>
+
+<p><a href="https://t.me/ponics_ru_files/9161" target="_blank"><img src="/attachimages/12636_20130310_183140.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9162" target="_blank"><img src="/attachimages/12638_20130310_183145.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9163" target="_blank"><img src="/attachimages/12640_20130310_183209.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9164" target="_blank"><img src="/attachimages/12642_20130310_183230.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 11-03-2013</p>
+
+<p>И правда морковка :o</p>
+
+<p>Ничего себе :-\</p>
+
+<p><strong>Vad</strong> 11-03-2013</p>
+
+<blockquote>
+  <p>вот немного фоток свежих с моих балконных грядок</p>
+
+  <ol>
+    <li>фото моих томатиков. низы уже оработали теперь пытаюсь постепенно опустить стебель на пол.</li>
+  </ol>
+</blockquote>
+
+<p>:'( :'( :'( :'( :'( :'(</p>
+
+<p><strong>Oxy</strong> 11-03-2013</p>
+
+<p>Очень впечатляет!</p>
+
+<p><strong>hanurik</strong> 11-03-2013</p>
+
+<p>Эхх мне бы балкончик, катастрофическая нехватка места(</p>
+
+<p><strong>artmaximus</strong> 11-03-2013</p>
+
+<blockquote>
+  <p>Может, мяту пересадить в другую таблетку? Впечатление, будто ей азота мало или перелита. Менять состав раствора боязно, так как точная причина все же не известна, а раствор все же не с потолка брался.</p>
+</blockquote>
+
+<p>…пересадил :-[</p>
+
+<p><strong>artmaximus</strong> 11-03-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>Майкл…хвались ;)</p>
+  </blockquote>
+
+  <p>ага уже начал :P</p>
+
+  <p>ну если понравилось заходите в гости <a href="http://forum.hydo.ru/showthread.php?t=276" target="_blank">http://forum.hydo.ru/showthread.php?t=276</a></p>
+</blockquote>
+
+<p>Классно <em>8)</em> А как ты в этом “лесу” :D не заблудился? :D</p>
+
+<p>…как ты их отделяешь? Или они так и будут?</p>
+
+<p>Супер, а я в единичном экземпляре рощу …или ростю, короче места нет… :(</p>
+
+<p>Всё в единичных экземплярах.</p>
+
+<p><strong>artmaximus</strong> 11-03-2013</p>
+
+<blockquote>
+  <p>вот немного фоток свежих с моих балконных грядок</p>
+
+  <ol>
+    <li>
+      <p>огурчик на двс посажен недавно ему около недели всего от посадки</p>
+    </li>
+    <li>
+      <p>морковка, решил попробовать вырастить. субстрат кокос, поливаю раствором для редиски надеюсь подойдет.</p>
+    </li>
+  </ol>
+
+  <p>3.гроздь томатиков</p>
+
+  <ol>
+    <li>фото моих томатиков. низы уже оработали теперь пытаюсь постепенно опустить стебель на пол.</li>
+  </ol>
+</blockquote>
+
+<p>Клёво всё. <em>8)</em></p>
+
+<p>А я вот и не представлял, что так можно…тоже попробую (я про морковку) <em>8)</em> $) $) $)</p>
+
+<p><strong>artmaximus</strong> 11-03-2013</p>
+
+<p>Купил в прошлом году в Икее кокосовый брикет…так и валяется.</p>
+
+<p>Вот теперь то я его размочу :o…в смысле , в дело употреблю. Попробую.</p>
+
+<p><strong>artmaximus</strong> 11-03-2013</p>
+
+<blockquote>
+  <p>Эхх мне бы балкончик, катастрофическая нехватка места(</p>
+</blockquote>
+
+<p>Аналогичная история :'(… хоть в подвал уходи…</p>
+
+<p><strong>maikl25</strong> 11-03-2013</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>Майкл…хвались ;)</p>
+    </blockquote>
+
+    <p>ага уже начал :P</p>
+
+    <p>ну если понравилось заходите в гости <a href="http://forum.hydo.ru/showthread.php?t=276" target="_blank">http://forum.hydo.ru/showthread.php?t=276</a></p>
+  </blockquote>
+
+  <p>Классно <em>8)</em> А как ты в этом “лесу” :D не заблудился? :D</p>
+
+  <p>…как ты их отделяешь? Или они так и будут?</p>
+
+  <p>Супер, а я в единичном экземпляре рощу …или ростю, короче места нет… :(</p>
+
+  <p>Всё в единичных экземплярах.</p>
+</blockquote>
+
+<p>Нет у них свои домики даже периодически их меняю местами :D чтобы не скучали.</p>
+
+<p>Зачем мне их отделять…они и так не плохо растут, я просто со временем между мини расстояние увеличиваю, а рассаживать мяту дело не благодарное, ровно так же как и сажать по одному, мороки много, семена не такие дорогие и окупаются с лихвой на 9 посадочных мест в касете у меня уходит пачка по 10р. штука а продать через 3 месяца я могу, это же количество за 500-800р. при веерной посадке прожиточный минимум обеспечен ;)при наличии постоянного спроса и места конечно же. намного проще насыпать в касету и забыть про них, раз в неделю проверять раствор труда не составит, а естественный отбор сам выберет сколько их останется более слабые сохнут, сильные растут дальше и все. :)</p>
+
+<p><strong>Geus</strong> 12-03-2013</p>
+
+<p>вчера забрал свои лампы. наконецто из китая привезли.</p>
+
+<p>сделал первичные замеры люксометром, на дистанции 30-40 см около 13-14 клюкс получается</p>
+
+<p>завтра смантирую первый подвес и еще раз протестирую.</p>
+
+<p><a href="https://t.me/ponics_ru_files/9165" target="_blank"><img src="/attachimages/12651_20130311_175829.jpg" alt="" /></a></p>
+
+<p><strong>hanurik</strong> 12-03-2013</p>
+
+<p>Глобальные закупки <em>8)</em>, надо будет потом на экскурсию напроситься, на гидропонную фабрику по выращиванию салата, базилика и мяты :)</p>
+
+<p><strong>maikl25</strong> 12-03-2013</p>
+
+<blockquote>
+  <p>Глобальные закупки <em>8)</em>, надо будет потом на экскурсию напроситься, на гидропонную фабрику по выращиванию салата, базилика и мяты :)</p>
+</blockquote>
+
+<p>Гидропоника интересное хобби, но дОвольно дорогое… Хорошо когда это плавно перетекает в сторону основного занятия, но для этого ОгО гО сколько нужно сделать и узнать!!! :-\</p>
+
+<p><strong>hanurik</strong> 12-03-2013</p>
+
+<p>Да уж, очень интересное хобби, вчера пришёл pH метр из Китая, а я до этого делал раствор по Чеснокову, pH с помощью лакмусовых бумажек проверял :) (хочу лимон на гидропонике попробовать помучить), ну и решил раствор на салатике проверить, хорошо хоть разбавил раза в 2-3, а вчера с помощью pH метра измерил аж испугался pH был 2.8(не разбавленный раствор), и главное бумажки даже небыли розовыми по шкале цвета pH ближе к 6, но салат рос потихоньку на кокосовом субстрате.</p>
+
+<p>Сейчас жду весы (более точные), Es-метр, диоды с драйверами питания, может тоже домик сделаю, будете у меня флудить. :-[</p>
+
+<p><strong>maikl25</strong> 12-03-2013</p>
+
+<blockquote>
+  <p>Да уж, очень интересное хобби, вчера пришёл pH метр из Китая, а я до этого делал раствор по Чеснокову, pH с помощью лакмусовых бумажек проверял :) (хочу лимон на гидропонике попробовать помучить), ну и решил раствор на салатике проверить, хорошо хоть разбавил раза в 2-3, а вчера с помощью pH метра измерил аж испугался pH был 2.8(не разбавленный раствор), и главное бумажки даже небыли розовыми по шкале цвета pH ближе к 6, но салат рос потихоньку на кокосовом субстрате.</p>
+
+  <p>Сейчас жду весы (более точные), Es-метр, диоды с драйверами питания, может тоже домик сделаю, будете у меня флудить. :-[</p>
+</blockquote>
+
+<p>не знаю меня бумажки не разу не подводили (покупаю у разных производителей и пробую каждого для верности) а вот приборы частенько врут !!!</p>
+
+<p><strong>hanurik</strong> 12-03-2013</p>
+
+<p>Я его сразу откалибровал, в комплекте был буфер, и он на воде показывал 6,9-7.</p>
+
+<p><strong>Al-nikoly</strong> 12-03-2013</p>
+
+<blockquote>
+  <p>на дистанции 30-40 см около 13-14 клюкс получается</p>
+</blockquote>
+
+<blockquote>
+  <p>светодиодные лампы не возможно замерить люксметром, потому что данный прибор замеряет только белый свет,а при цветном показывает не понятно что.</p>
+</blockquote>
+
+<p><strong>Geus</strong> 12-03-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>на дистанции 30-40 см около 13-14 клюкс получается</p>
+  </blockquote>
+
+  <blockquote>
+    <p>светодиодные лампы не возможно замерить люксметром, потому что данный прибор замеряет только белый свет,а при цветном показывает не понятно что.</p>
+  </blockquote>
+</blockquote>
+
+<p>Я это рпекрасно знаю. Но у меня везде диоды стоят я другими лампами почти не пользуюсь.</p>
+
+<p>К томуже белый свет это смешение других цветов. Мы это все прекрасно знаем.</p>
+
+<p>Я надеюсь люксометр показывает в данном случае минимальную освещенность. А на деле она выге.</p>
+
+<p><strong>Geus</strong> 18-03-2013</p>
+
+<p>люди добрые подскажите, что с редисом ему меньше недели от всходов :'(</p>
+
+<p>поливаю каждый день по 10-15 мл обычной водой, на раствор пока не перешел, а листочки завяли и в чем проблема понять не могу.</p>
+
+<p>с нижней стороны отверстие для корней там все влажно и корни хорошие беленькие и влажные.</p>
+
+<p>посажены в кокосе единственное кокос не промыт после покупки</p>
+
+<p>температура день 20-25 ночь 10-15</p>
+
+<p>подскажите в чем ошибка <em>Wall</em></p>
+
+<p>рядом растет морковь и чувствует себя прекрасно на тех же условиях</p>
+
+<p><a href="https://t.me/ponics_ru_files/9166" target="_blank"><img src="/attachimages/12700_20130318_162553.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 18-03-2013</p>
+
+<p>Жарко ему. Высокая температура.</p>
+
+<p>И почему же “обычной водой” ? Что за привычка такая ?</p>
+
+<p><strong>valery</strong> 18-03-2013</p>
+
+<p>Субстрат выглядит достаточно “сухим”, тем более для высокой температуры …</p>
+
+<p><strong>Geus</strong> 18-03-2013</p>
+
+<p>то есть чаще и обильнее поливать?</p>
+
+<p>я всегда поливаю обычной водой пока первые настоящие листики не появятся.</p>
+
+<p>видать редиска не тот вариант.</p>
+
+<p>учту при следующей посадке.</p>
+
+<p><strong>Coccinella</strong> 18-03-2013</p>
+
+<p>Надо бы картинку более крупным планом, но очень похоже на ложную мучнистую росу. При такой температуре и недостаточном проветривании - самая распространенная инфекция. Они же еще ничего не испаряют такими крохотными листьями, зачем их каждый день поливать? Один раз промочить субстрат и несколько дней не суетиться. Проверено на практике, при более редких поливах болеют меньше. И понизьте им температуру до 18-20оС днем в солнечную погоду.</p>
+
+<p><strong>Geus</strong> 03-04-2013</p>
+
+<p>день добрый уважаемые форумчане.</p>
+
+<p>нужна помощь.</p>
+
+<p>базилик растет в ширь.</p>
+
+<p>уже три настоящих листа причем больших а в высоту растение не привышает и 5 см</p>
+
+<p>фото ниже</p>
+
+<p>подскажите это нормально или чего не то</p>
+
+<p>до этого такого не видел чтоб между листами растояние около 1-2 см было</p>
+
+<p>раствор вроде нормальный уже опробованный несколько покалений базилика на нем вырастил.</p>
+
+<p>свет 4 леда по 50ват</p>
+
+<p>до этого было 2 леда по 100 ват</p>
+
+<p><a href="https://t.me/ponics_ru_files/9167" target="_blank"><img src="/attachimages/12932_20130402_190434.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9168" target="_blank"><img src="/attachimages/12934_20130402_190445.jpg" alt="" /></a></p>
+
+<p><strong>mav</strong> 03-04-2013</p>
+
+<p>Да красавцы маловаты только. Может света еще уменьшить и они потянутся</p>
+
+<p><strong>Geus</strong> 03-04-2013</p>
+
+<p>ладно попробую выключить одну лампу на пару дней</p>
+
+<p><strong>Al-nikoly</strong> 03-04-2013</p>
+
+<p>Наверное это от большого количества красного света,и от маленького количества синего, под светодиодной лампой было так же, но в итоге всё равно вырос.</p>
+
+<p><strong>Geus</strong> 03-04-2013</p>
+
+<p>Если суммарно то в лампе 5 синих и 17 красных светодиодов</p>
+
+<p><strong>hanurik</strong> 03-04-2013</p>
+
+<p>Да кстати, такое же получается у салата если много красного и не хватает синего - большие листья, сниженное содержание моносахаридов, ухудшается питательная ценность :) Правда для салата хватает 10% синего.</p>
+
+<p><a href="http://ledway.ru/resources/file/2469" target="_blank">http://ledway.ru/resources/file/2469</a> вот про базилик статья.</p>
+
+<p><strong>Geus</strong> 03-04-2013</p>
+
+<p>статья супер, а как получить остальные страницы</p>
+
+<p><strong>hanurik</strong> 03-04-2013</p>
+
+<p>Можно попробовать на мыло просилку отправить и вообще поболтать может чего расскажут, там в начале статьи есть. У меня знакомый из ТИБОХа отправил около 500 просилок по всему миру, ему потом каждый месяц кипа писем с копиями статей шло. Даже вещество (лектин) прислали из Бразилии для опытов, выделенное из из нескольких сотен кг исходного (не помню из чего) продукта, до сих пор наверно где-нибудь в холодильнике валяется :D</p>
+
+<p><strong>Geus</strong> 04-04-2013</p>
+
+<p>со светом решил сделать следующее</p>
+
+<p>заклеить канцелярским скотчем пару красных диодов, свет будет проходить но не накой интенсивности и надеюсь положение дел изменится</p>
+
+<p><strong>valery</strong> 04-04-2013</p>
+
+<p>А зачем же “клеить” красный ? Если растения чрезмерно прижаты - логичнее “заклеивать” синий.</p>
+
+<p>А еще проще - добавить немного “общего”. Желтого, зеленого, а лучше - “белого”.</p>
+
+<p>В статье ведь, которую Вы прочли, вполне наглядно демонстрируется преимущество более “широкополосных” источников</p>
+
+<p>над узкими “уколами” …</p>
+
+<p><strong>artmaximus</strong> 04-04-2013</p>
+
+<p>У меня на подоконнике перечная мята (свет естественный, без досветки) и такая же история. <em>???</em></p>
+
+<p>Я уже листья с чаем по употреблял, а она всё вширь да в ширь :-[ Никак не хочет вверх.</p>
+
+<p>Вот такая вот печалька :-[</p>
+
+<p><strong>Vad</strong> 04-04-2013</p>
+
+<p>окно красной пленкой заклеить надо ))</p>
+
+<p><strong>Geus</strong> 11-04-2013</p>
+
+<p>сегодня сделал обрезку базилика.</p>
+
+<p>высажены 13 марта на установку в стадии двух настаящих листов.</p>
+
+<p>результат 1000гр чистой листвы с 68 растений</p>
+
+<p><a href="https://t.me/ponics_ru_files/9169" target="_blank"><img src="/attachimages/12970_20130411_104338.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 11-04-2013</p>
+
+<p>Еще раз перечитал статью и посмотрел на свою лампу</p>
+
+<p>по расчетам получается надо закрыть 3 диода на 660nm</p>
+
+<p>тогда будет баланс 450/630/660 22,2/22,2/55,5%</p>
+
+<p>базовая составляет 13-660, 4-630, 4 -450nm</p>
+
+<p><strong>hanurik</strong> 11-04-2013</p>
+
+<p>Интересно как этот сорт в оригинале (под солнцем выращенный ) выглядит? :)</p>
+
+<p><strong>Geus</strong> 11-04-2013</p>
+
+<p>Лето начнется. Могу на даче попробовать вырастить</p>
+
+<p><strong>maikl25</strong> 11-04-2013</p>
+
+<blockquote>
+  <p>сегодня сделал обрезку базилика.</p>
+
+  <p>высажены 13 марта на установку в стадии двух настаящих листов.</p>
+
+  <p>результат 1000гр чистой листвы с 68 растений</p>
+</blockquote>
+
+<p>Супер!!! <em>8)</em>он зеленый или фиолетовый непонятно… <em>???</em></p>
+
+<p>Что за сорт?</p>
+
+<p><strong>Geus</strong> 11-04-2013</p>
+
+<p>сорт обычный зеленый широколистный базилик</p>
+
+<p><strong>Geus</strong> 11-04-2013</p>
+
+<p>вчера заклеил три диода 660nm, теперь состав спектра близок к необходимому. посмотрим через недельку что получится.</p>
+
+<p><strong>Mastodont</strong> 12-04-2013</p>
+
+<p><em>8)</em></p>
+
+<p>Какой длины световой день и минерализация раствора и сколько прошло от момента посадки семян до первой срезки?</p>
+
+<p>Сколько люкс освещение?</p>
+
+<p><strong>Geus</strong> 12-04-2013</p>
+
+<p>День 12 часов. Минерализация 1500 из них 330 базовая вода(скважина).</p>
+
+<p>От посева до переезда на установку 15 дней. От переезда до первой срезки 30 дней.</p>
+
+<p>Люксов от 7к до 11к. Но у меня диодные лампы стоят. На установку 60*120см 3 светильника по 50 ват.</p>
+
+<p>Высота подвеса регулируется в среднем 30смот лампы до растюх.это при переезде потом во время роста лампа поднимается и на финале растюхи достают до лампы.</p>
+
+<p>Высота яруса 1метр из них 23см короб снизу и 10см сверху для водухообмена. Так что рабоче пространство около 67 см</p>
+
+<p><strong>valery</strong> 12-04-2013</p>
+
+<p>150 ватт на 0,7 квадратных метра … этого вполне изрядно.</p>
+
+<p>Сильно сомневаюсь, что “заклейка” красного приведет к какому-то эффекту ( совершенно нелогичное действие), хотя</p>
+
+<p>“удачи” конечно …</p>
+
+<p>Я бы на <del>этом свету</del> при такой интенсивности освещения снизил ЕС вдвое, и проверил бы температуру. Глядишь, базилик и пошел бы в рост …</p>
+
+<p>Если измеряете ТДС-ом и Ваши 1500 минерализации, это показания ТДС в ppm …, скорее всего Ваш раствор ЕС=3,0 …</p>
+
+<p>Для базилика - многовато. Ставьте в районе ЕС=1,5-1,8 ( … ну … до 2-х максимум) и будет ему “щастье” …</p>
+
+<p><strong>Coccinella</strong> 12-04-2013</p>
+
+<p>Валерий, извините, не удержалась…, просто мне такое словосочетание глаз режет :-[</p>
+
+<p><strong>valery</strong> 12-04-2013</p>
+
+<p>Напротив, спасибо $) ( я помню, что там есть “закавыка” и это “неправильно” … но иногда забываю, а как “правильно” :-[ )</p>
+
+<p><strong>artmaximus</strong> 13-04-2013</p>
+
+<blockquote>
+  <p>150 ватт на 0,7 квадратных метра … этого вполне изрядно.</p>
+
+  <p>Сильно сомневаюсь, что “заклейка” красного приведет к какому-то эффекту ( совершенно нелогичное действие), хотя</p>
+
+  <p>“удачи” конечно …</p>
+
+  <p>Я бы на <del>этом свету</del> при такой интенсивности освещения снизил ЕС вдвое, и проверил бы температуру. Глядишь, базилик и пошел бы в рост …</p>
+
+  <p>Если измеряете ТДС-ом и Ваши 1500 минерализации, это показания ТДС в ppm …, скорее всего Ваш раствор ЕС=3,0 …</p>
+
+  <p>Для базилика - многовато. Ставьте в районе ЕС=1,5-1,8 ( … ну … до 2-х максимум) и будет ему “щастье” …</p>
+</blockquote>
+
+<p>Вот спасибо <em>8)</em></p>
+
+<p>Возьму “на заметку”.</p>
+
+<p>Перечная мята …тоже страдает “низкорослостью” :D</p>
+
+<p><strong>Geus</strong> 15-04-2013</p>
+
+<p>вчера снизил ЕС до 2200-2300 водопроводной водой</p>
+
+<p>температуру замерил держится в районе 23-25 днем и 20-19 ночью</p>
+
+<p>посмотрим что будет через неделю</p>
+
+<p><strong>Geus</strong> 18-04-2013</p>
+
+<p>немного новых фото с грядок</p>
+
+<p>морковка</p>
+
+<p><a href="https://t.me/ponics_ru_files/9170" target="_blank"><img src="/attachimages/13036_20130416_192036.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9171" target="_blank"><img src="/attachimages/13038_20130416_192043.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 18-04-2013</p>
+
+<p>огурчики</p>
+
+<p><a href="https://t.me/ponics_ru_files/9172" target="_blank"><img src="/attachimages/13040_20130417_195526.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9173" target="_blank"><img src="/attachimages/13042_20130417_195459.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9174" target="_blank"><img src="/attachimages/13044_20130417_195516.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9175" target="_blank"><img src="/attachimages/13046_20130418_185542.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9176" target="_blank"><img src="/attachimages/13048_20130418_185549.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 18-04-2013</p>
+
+<p>картошечка</p>
+
+<p>из семян прорастил</p>
+
+<p>посмотрим что получится</p>
+
+<p><a href="https://t.me/ponics_ru_files/9177" target="_blank"><img src="/attachimages/13050_20130416_192053.jpg" alt="" /></a></p>
+
+<p><strong>maikl25</strong> 18-04-2013</p>
+
+<blockquote>
+  <p>картошечка</p>
+
+  <p>из семян прорастил</p>
+
+  <p>посмотрим что получится</p>
+</blockquote>
+
+<p>Вот это интересненько я тоже загорелся такой идеей… держите в курсе пожалуйста <em>8)</em></p>
+
+<p><strong>Geus</strong> 18-04-2013</p>
+
+<p>у меня глобальный вопрос, который меня интересует</p>
+
+<p>подскажите или дайте наводку где поискать</p>
+
+<p>состав светового спектра для светодиодных ламп</p>
+
+<p>те которые я недавно купил оказались непригодны для выращивания базилика да и другой зелени в них через чур много красного спектра</p>
+
+<p>по основным соотношения красного и синего я определился</p>
+
+<p>интересуют объемы зеленого, фиолетового, инфракрасного, оранжевого</p>
+
+<p>буду рад любой информации</p>
+
+<p><strong>valery</strong> 18-04-2013</p>
+
+<p>:-\</p>
+
+<p>А что показала “заклейка” ? Были какие-нибудь “перемены” в самочувствии растений ?</p>
+
+<p><strong>Geus</strong> 18-04-2013</p>
+
+<p>пока не видно срок еще маленький, хотя общие показатели не изменились</p>
+
+<p><strong>Geus</strong> 18-04-2013</p>
+
+<p>попробую добавить по две лампы диодные по 3,5 вата обычные белые может поможет кто знает.</p>
+
+<p>если кто знает говорите я буду рад слышать</p>
+
+<p><strong>valery</strong> 18-04-2013</p>
+
+<p>:-\</p>
+
+<blockquote>
+  <p>А еще проще - добавить немного “общего”. Желтого, зеленого, а лучше - “белого”.</p>
+</blockquote>
+
+<p><strong>hanurik</strong> 18-04-2013</p>
+
+<p>Белый если добавлять, мне кажется лучше с цветовой температурой ближе к 5500-6500К, так как в 2700-3000К будет опять избыток красного.</p>
+
+<p><strong>valery</strong> 18-04-2013</p>
+
+<p>Любой “белый” диод или “фонарик”. Можно “теплого”, можно “холодного”. Совершенно без разницы.</p>
+
+<p>И по прежнему сомневаюсь, что причина в “избыточном” ( на Ваш взгляд) красном.</p>
+
+<p>Закавыка где-то в другом. Например в отсутствии инфракрасного … (наобум).</p>
+
+<p>По “идее” именно избыток СИНЕГО должен подавлять фотосинтез, “давить” рост, делать растение компактным-коренастым …</p>
+
+<p>По той же “идее” - именно ИЗЛИШЕК красного (инфракрасный в том числе, а также “последовательность” их “прихода”) должен приводить к некоторому “вытягиванию”, удлинению междоузлий и прочим … вегетативным эффектам.</p>
+
+<p>Так же сомневаюсь в эффективности некоего “подбора” оптимальных сочетаний, маловероятно, что дело в них.</p>
+
+<p>В частности. Обратите внимание. Парой дней раньше L.Coccinella давала ссылку на “тихвинский” опыт с огурцами …</p>
+
+<p>Огурец ТРАДИЦИОННО относят к “любителям” синего (меньше красного) - в сравнении с томатом, к примеру.</p>
+
+<p>Обратите внимание на используемые в том “опыте” светодиодные лампы - 1 синий на 4 красных ( не “золотой стандарт”, естественно, но как “пример” - годится).</p>
+
+<p>То есть, исходя из Вашего поста - 5 синих 17 красных … даже “синелюбивому” (якобы) огурцу пропорции 5 синих 20 красных НИКАК не мешают расти “вверх” и неплохо плодоносить … :-\</p>
+
+<p>Кроме того, неизвестно какими именно диодами Вы воспользовались … вполне вероятно (часто бывает в силу “специфики” светодиодных технологий) - световой выход ( казалось бы равных по “мощности” синего и красного ) в случае с Вашими синими диодами в “молярном” выражении существенно выше, чем красных…</p>
+
+<p>Не знаете, случаем, какие потоки дают Ваши диоды ?</p>
+
+<p><strong>valery</strong> 18-04-2013</p>
+
+<blockquote>
+  <p>Белый если добавлять, мне кажется лучше с цветовой температурой ближе к 5500-6500К, так как в 2700-3000К будет опять избыток красного.</p>
+</blockquote>
+
+<p>Без “существенной” разницы. ( но я бы действительно ставил “холодный”, хотя это никакого отношения к “избытку” красного - не имеет. Опять же, “на мой взгляд”, возможно, и ошибаюсь).</p>
+
+<p>Естественно, выращивал не ВСЕ ПОДРЯД, но из того, что “попадалось в руки” не встретил никого, кому помешал бы красный.</p>
+
+<p><strong>hanurik</strong> 18-04-2013</p>
+
+<p>Я тоже думаю дело не в избытке, а в соотношении и возможной нехватки какой либо части спектра (хотя у меня росла лиана одна с Мадагаскара под диодами, очень близко под достаточно мощным красно-синим светом, у неё листья очень сильно корежились, но возможно это так же из за неверного соотношения).</p>
+
+<p>Так как синий свет достаточно сильно влияет на морфологию, для разных растений, мне кажется, есть разный необходимый минимум синего света и возможно других спектров, для правильного развития.</p>
+
+<p><strong>Vad</strong> 18-04-2013</p>
+
+<blockquote>
+  <p>свет достаточно сильно влияет на морфологию,</p>
+</blockquote>
+
+<p>:o</p>
+
+<p>то есть… как?</p>
+
+<p>не совсем ясно что вы имеете в виду под морфологией :-\ <em>???</em></p>
+
+<p><strong>Coccinella</strong> 18-04-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>свет достаточно сильно влияет на морфологию,</p>
+  </blockquote>
+
+  <p>:o</p>
+
+  <p>то есть… как?</p>
+
+  <p>не совсем ясно что вы имеете в виду под морфологией :-\ <em>???</em></p>
+</blockquote>
+
+<p>Видимо, строение растения. :)</p>
+
+<p>Люди, выращивание под светодиодами дает очень большие возможности, но мы - агрономы - сегодня не готовы ими воспользоваться. В норме, сначала наука что-то там изучит-откроет-придумает-проверит, затем эти наработки идут в производство. С диодами этого не было. Пока не было диодов, у науки не было возможности исследовать рецепты спектра по видам (и сортам, как это видно на розах) растений.</p>
+
+<p>Все уверения в инет-шопах “наши светильники пригодны для растений” - грязный “гербалайф”. Недаром Филлипс уже несколько лет содержит штат своих физиологов растений плюс сотрудничает с университетом в Вагенингене, но пока что-то известно только для некоторых сортов роз, для томатов, что-то для земляники… и все! <em>???</em> Не зря в конце мая в Голландии (сегодня читала) все в том же Вагенингене будет открыт демо-центр по применению ледов в теплице.</p>
+
+<p>Если человеку хочется экспериментировать - это прекрасно $) Но надо отдавать себе отчет, что для корректных (репрезентативных) экспериментов нужны как знания, так и материально-техническая база. Это примерно, как коллайдер в духовке строить, пока жена противень моет :)</p>
+
+<p>Но! :) Насчет коллайдера в духовке не уверена (а пироги где печь? :-), а экспериментировать надо! Просто полученные результаты надо воспринимать с… коэффициентом, что ли…</p>
+
+<p>И да, ссылку приводила не я, а Юка, но за Тихвинским экспериментом я тоже слежу с большим интересом :)</p>
+
+<p><strong>valery</strong> 18-04-2013</p>
+
+<blockquote>
+  <p>И да, ссылку приводила не я, а Юка, но за Тихвинским экспериментом я тоже слежу с большим интересом :)</p>
+</blockquote>
+
+<p>Да, верно, “поправка” принимается … Обратил внимание, что Вы отзывались и А.Куренин … Склероз ( что б ему <em>crazy</em> )</p>
+
+<p>Да и голова другим забита … жена с дочкой принесли вчера собачонку … с полгода. Месяцев 8 от силы.</p>
+
+<p>Какой-то человеческий объедок пнул ногой в живот. Помрет, наверное … неживым пластилином на улице валялась …</p>
+
+<p>Сегодня первый раз голову приподняла … ( может и не помрет … :-\ )</p>
+
+<p><strong>Coccinella</strong> 18-04-2013</p>
+
+<p>Бедная животинка! У добрых людей выживет! Я надеюсь… собачки живучие…</p>
+
+<p><strong>SergF</strong> 18-04-2013</p>
+
+<blockquote>
+  <p>попробую добавить по две лампы диодные по 3,5 вата обычные белые может поможет кто знает.</p>
+
+  <p>если кто знает говорите я буду рад слышать</p>
+</blockquote>
+
+<p>Не думаю что спектр причина проблем, замечательно у меня рос базилик лимонный и ереванский под сине-красными диодами, белых было совсем малость…</p>
+
+<p>причем разного соотношения синий-красный, от 1:1 до 1:4, разницы не заметил ваще никакой…</p>
+
+<p><strong>artmaximus</strong> 18-04-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>И да, ссылку приводила не я, а Юка, но за Тихвинским экспериментом я тоже слежу с большим интересом :)</p>
+  </blockquote>
+
+  <p>Да, верно, “поправка” принимается … Обратил внимание, что Вы отзывались и А.Куренин … Склероз ( что б ему <em>crazy</em> )</p>
+
+  <p>Да и голова другим забита … жена с дочкой принесли вчера собачонку … с полгода. Месяцев 8 от силы.</p>
+
+  <p>Какой-то человеческий объедок пнул ногой в живот. Помрет, наверное … неживым пластилином на улице валялась …</p>
+
+  <p>Сегодня первый раз голову приподняла … ( может и не помрет … :-\ )</p>
+</blockquote>
+
+<p>Бедолага :'(</p>
+
+<p>Надеюсь, что всё будет хорошо.</p>
+
+<p><strong>maikl25</strong> 18-04-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>И да, ссылку приводила не я, а Юка, но за Тихвинским экспериментом я тоже слежу с большим интересом :)</p>
+  </blockquote>
+
+  <p>Да, верно, “поправка” принимается … Обратил внимание, что Вы отзывались и А.Куренин … Склероз ( что б ему <em>crazy</em> )</p>
+
+  <p>Да и голова другим забита … жена с дочкой принесли вчера собачонку … с полгода. Месяцев 8 от силы.</p>
+
+  <p>Какой-то человеческий объедок пнул ногой в живот. Помрет, наверное … неживым пластилином на улице валялась …</p>
+
+  <p>Сегодня первый раз голову приподняла … ( может и не помрет … :-\ )</p>
+</blockquote>
+
+<p>уколите пиницилином и витаминами будет шустрее приходить в себя, сто грамм водки тоже не лишнее только не все в один день, по опыту скажу лучше начинать с водки <em>???</em></p>
+
+<p><strong>Geus</strong> 19-04-2013</p>
+
+<p>касательно колайдера я был бы не против, но до этого пока еще не добрался</p>
+
+<p>а по поводу базилика и диодов поэксперементировать могу.</p>
+
+<p>есть 6 площадок изолированных</p>
+
+<p>и есть в наличии 3 разных варианта диодных панелей и планирую еще 2 варианта прикупить</p>
+
+<p><strong>Geus</strong> 19-04-2013</p>
+
+<p>по моим скромным результатам опытов могу сказать, что когда одна площадка была задействована я использовал две панели по 100ват и под ними базилик рос просто как на дрожах. потом пришли новые панели и я их поставил на все шесть площадок. в работе на данный момент две и результаты практически одинаковые растет в ширь а высота не более 10 см и что самое главное у всех явные признаки нехватки кальция.</p>
+
+<p>хотя по расчетам в растворе его придостаточно да и в базовой воде он присутствует(вода из скважины).</p>
+
+<p>раствор был опрабирован на три раза и кажды раз на нем результаты были достойные, а последние две посадки просто хоть возьми и выкинь и причем все первые три были под диодами выращены.</p>
+
+<p><strong>Geus</strong> 19-04-2013</p>
+
+<p>варианты имеющихся панелей выложу сегодня вечером с фото и описанием</p>
+
+<p><strong>Coccinella</strong> 19-04-2013</p>
+
+<p>Geus, а температуру и влажность воздуха Вы измеряете?</p>
+
+<p><strong>valery</strong> 19-04-2013</p>
+
+<p>И все же …</p>
+
+<p>Скорее всего, приход новых панелей просто совпал по времени с неким иным “сменившимся” фактором (факторами).</p>
+
+<p>И “повторюсь” в очередной раз и с мнением SergF заодно соглашусь … крайне маловероятно, что Вы действительно столкнулись с</p>
+
+<p>таким явным и ярковыраженным “спектральным” эффектом …</p>
+
+<p>Если на растения падает “сторонний” свет - общего освещения, из окна, а то и “прямой” солнечный - о спектре можно практически не думать вовсе.</p>
+
+<p>Если ПОЛНОСТЬЮ закрытый изолированный бокс … все равно. Для таких “искажений” … ну уж не знаю как сильно нужно постараться … :-\</p>
+
+<p>Что могло измениться … чуть Выше Coccinella спрашивает о температуре/влажности …</p>
+
+<p>Могут и очень заметно. Весна - световые условия меняются. Теплосети - заканчивают отопительный сезон (или снижают давление, в помещениях прохладней) или напротив - кочегарят до сумасшедшего угара, несмотря на весну … Влажность-температура в квартире, в районе батарей или иных местах могли измениться значительно …</p>
+
+<p>Вода. Талые воды идут, водоканал может “совать” в воду что попало … ( в наших краях … расход азотной кислоты для растворов в 2 раза скачет :o )</p>
+
+<p>Кальций … а каким образом определили его нехватку, по каким симптомам-признакам ?</p>
+
+<p>И как много раз уже говорилось - часто ( очень и очень часто ) - непоступление кальция НЕ связано прямо с его наличием в растворе …</p>
+
+<p>Избыток кальция в растворе вовсе НЕ гарантирует его достаточное поступление … более серьезно могли сказаться все те же (возможные) изменения влажности ( к примеру) …</p>
+
+<p>И так далее.</p>
+
+<p>Просто нужно найти ( творческим размышлением :) или тупым перебором вариантов :) ) этот самый “вреднющий” фактор, который у Вас проявился одновременно с получением новых панелей …</p>
+
+<p>Может … раствор заметно меняли. Или стали готовить его из “иных” компонентов … может с бором … экспериментировали … еще чего :-\</p>
+
+<p>Что еще менялось, вместе с освещением ?</p>
+
+<p><strong>valery</strong> 19-04-2013</p>
+
+<p>Не стал просматривать предыдущие посты, “разыскивать” …</p>
+
+<p>Напомните, а что за субстрат используете ? Нет ли вероятности, что используете вновь и вновь предыдущий (старый) и “накопили” там чего-нибудь чрезмерного … ?</p>
+
+<p><strong>Geus</strong> 19-04-2013</p>
+
+<p>начну с начала</p>
+
+<p>выращиваю базилик зеленый широколистный</p>
+
+<p><a href="https://t.me/ponics_ru_files/9178" target="_blank"><img src="/attachimages/13054_20130419_192515.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 19-04-2013</p>
+
+<p>семена высаживаю в торфяные таблетки</p>
+
+<p>таблетки ставлю на подушку из керамзита</p>
+
+<p>сверху присыпаю вермикулитом</p>
+
+<p>и выдерживаю до появления и развития двух первых настоящих листов и хорошей корневой</p>
+
+<p><a href="https://t.me/ponics_ru_files/9179" target="_blank"><img src="/attachimages/13056_20130419_192326.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9180" target="_blank"><img src="/attachimages/13058_20130419_192309.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 19-04-2013</p>
+
+<p>потом пересаживаю на установку ДВС</p>
+
+<p>размером 60 на 120 см</p>
+
+<p>72 растения на установку</p>
+
+<p>бокс закрыт со всех сторон</p>
+
+<p>освещение только искусственное</p>
+
+<p><a href="https://t.me/ponics_ru_files/9181" target="_blank"><img src="/attachimages/13060_20130419_192127.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 19-04-2013</p>
+
+<p>раствор делаю из</p>
+
+<p>наименование удобрения	г/л	название элемента	мг/л</p>
+
+<p>Кальцевая селитра 	1,15	N	 208,44</p>
+
+<p>Калий Азотнокислый	0,37	K	 300,31</p>
+
+<p>калий сернокислый 	0,12	P	 81,9</p>
+
+<p>Монокалий фосфат 	0,36	Ca	 190,9</p>
+
+<p>Магний сернокислый	0,68	S	 110,6</p>
+
+<p>Амиачная селитра 	0,07	Mg	 67,18</p>
+
+<p>базовая вода из крана</p>
+
+<p><a href="https://t.me/ponics_ru_files/9182" target="_blank"><img src="/attachimages/13062_20130419_192632.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9183" target="_blank"><img src="/attachimages/13064_20130419_192642.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9184" target="_blank"><img src="/attachimages/13066_20130419_192721.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 19-04-2013</p>
+
+<p>освещение</p>
+
+<p>первые три были выращены под лампами</p>
+
+<p>лед 175 ват</p>
+
+<p>два леда по 100 ват</p>
+
+<p>результат хорощий</p>
+
+<p><a href="https://t.me/ponics_ru_files/9185" target="_blank"><img src="/attachimages/13068_20130419_191055.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9186" target="_blank"><img src="/attachimages/13070_20130419_191457.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9187" target="_blank"><img src="/attachimages/13072_20130313_195327.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9188" target="_blank"><img src="/attachimages/13074_20130313_195344.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 19-04-2013</p>
+
+<p>недавно приобрел лед светильники по 50 ват, на установку три светильника</p>
+
+<p>две посадки показывают ужасный результат</p>
+
+<p>растения на фото почти два месяца</p>
+
+<p>высота не больше 12см</p>
+
+<p>и лист диформирован</p>
+
+<p><a href="https://t.me/ponics_ru_files/9189" target="_blank"><img src="/attachimages/13076_20130419_191130.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9190" target="_blank"><img src="/attachimages/13078_20130419_191145.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9191" target="_blank"><img src="/attachimages/13080_20130419_191204.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9192" target="_blank"><img src="/attachimages/13082_20130419_191212.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 19-04-2013</p>
+
+<p>касательно микроклимота</p>
+
+<p>влажность порядка 80-85%, измеряется прибором на фото</p>
+
+<p>температура измеряется тремя термометрами</p>
+
+<p>один электронный, он с блоком управления климатом и вентилятор-вытяжка и нагрев</p>
+
+<p>другой измеряет температуру и влажность</p>
+
+<p>третий находится в каждой установке и показывает температуру внутри установки. их шесть и находятся постоянно в установках</p>
+
+<p><a href="https://t.me/ponics_ru_files/9193" target="_blank"><img src="/attachimages/13084_20130419_192027.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9194" target="_blank"><img src="/attachimages/13086_20130419_192034.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9195" target="_blank"><img src="/attachimages/13088_20130419_191437.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9196" target="_blank"><img src="/attachimages/13090_20130419_192831.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 19-04-2013</p>
+
+<p>на данный момент в установке 100% концентрации раствор, по совету опытных людей был немного разбавлен водой до показателей на фото</p>
+
+<p>PH практически не изменяется</p>
+
+<p><a href="https://t.me/ponics_ru_files/9197" target="_blank"><img src="/attachimages/13092_20130419_191902.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9198" target="_blank"><img src="/attachimages/13094_20130419_191912.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9199" target="_blank"><img src="/attachimages/13096_20130419_191943.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 19-04-2013</p>
+
+<p>А микроэлементы только те, что в таблетках изначально были?</p>
+
+<p>И если не трудно, сообщите, пожалуйста, фактические параметры температуры и влажности.</p>
+
+<p><strong>Geus</strong> 19-04-2013</p>
+
+<p>у меня есть мнение что приобретенные панели не подходят по спектру для выращивания базилика. много красного. но это мое мнение.</p>
+
+<p>дабы его опровергнуть одна из установок была разбита на две подопытные части. на одной половине оставлены новые панели суммарно 150 ват и на другую половину установлена старая панель на 100 ват.</p>
+
+<p>подопытные растения в возрасте 2-х месяцев на фото выше в посте их можно видеть.</p>
+
+<p>планирую выдержать их минимум 10 дней без обрезки и замены раствора. единственное буду производить корректировку Ph и доливку обычной воды.</p>
+
+<p>разделительный экран установлен таким образом, что б свет от панелей не попадал на вторую половину установки.</p>
+
+<p><a href="https://t.me/ponics_ru_files/9200" target="_blank"><img src="/attachimages/13098_20130419_194037.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9201" target="_blank"><img src="/attachimages/13100_20130419_194047.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 19-04-2013</p>
+
+<p>микроэлементы вносятся унифлором микро из расчета 1 мл на 1 литр</p>
+
+<p><strong>Geus</strong> 19-04-2013</p>
+
+<p>сегодня температура в помещении порядка 22-23 градусов в установке 21-22 градуса там принудительное охлаждение стоит</p>
+
+<p>влажность по прибору порядка 82%</p>
+
+<p><strong>hanurik</strong> 19-04-2013</p>
+
+<p>Я тут решил показать подобный эффект влияния СД света на листья, я писал тут про лиану которую я под диодами пытался растить. Растет она в обычной земле поливается водой, иногда подкармливается.</p>
+
+<p>Лиана называется Cryptostegia Madagascariensis <a href="http://en.wikipedia.org/wiki/Cryptostegia" target="_blank">http://en.wikipedia.org/wiki/Cryptostegia</a></p>
+
+<p>1 Это листья выросшие под светильником 4 синих 3Вт + 13 красных 3Вт в боксе, полная светокультура.</p>
+
+<p><a href="https://t.me/ponics_ru_files/9202" target="_blank"><img src="/imagehost/thumbs/igp5365.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9203" target="_blank"><img src="/imagehost/thumbs/igp5366wzw.jpg" alt="" /></a></p>
+
+<p>2 Это я убрал из бокса и он вырос уже на окне</p>
+
+<p><a href="https://t.me/ponics_ru_files/9204" target="_blank"><img src="/imagehost/thumbs/igp5368.jpg" alt="" /></a></p>
+
+<p><strong>hanurik</strong> 19-04-2013</p>
+
+<p>А светильники на 50Вт со вторичной оптикой и если да сколько градусов?</p>
+
+<p><strong>valery</strong> 19-04-2013</p>
+
+<blockquote>
+  <p>Я тут решил показать подобный эффект влияния СД света на листья,</p>
+</blockquote>
+
+<p>Очень даже может быть <em>8)</em></p>
+
+<p>Но не факт. Похожие эффекты легко получить и на близко расположенном ДНАТ … По большей части они возникают из-за очень</p>
+
+<p>серьезной неравномерности освещения листа.</p>
+
+<p>Хотя и спектральных “огрехов” исключать нельзя, не настаиваю … Но подобная скрученность, завернутые краешки, бугристость - очень часто встречается</p>
+
+<p>на искусственном освещении.</p>
+
+<p>Стоит отнести источник света подальше (на разумное расстояние) … и листья - хоть вместо зеркала смотрись :) (если амальгамой какой покрыть …)</p>
+
+<p>Возможно (и скорее всего) так же и на LED.</p>
+
+<p><strong>hanurik</strong> 19-04-2013</p>
+
+<blockquote>
+  <p>Похожие эффекты легко получить и на близко расположенном ДНАТ</p>
+</blockquote>
+
+<p>Я думаю из за оптики на 50вт светильниках, судя по фото она там установлена, возможно ошибаюсь, получился более концентрированный свет, который похож на свет от близко расположенного ДНАТ, а на старых светильниках такой оптики не было.</p>
+
+<p>Я и не думал что ДНАТ может корежить листья, думал воткнешь его над растюхами и все само расти будет :D, век живи век учись.</p>
+
+<p><strong>valery</strong> 19-04-2013</p>
+
+<p>Может … гад такой.</p>
+
+<p><strong>Coccinella</strong> 19-04-2013</p>
+
+<p>Вы бы видели, как у моего гибискуса листья обгорели вблизи оконного стекла :) Свет внезапно появился, тучи пропали :) Не выдержала и частично обкорнала:) Через месяц у меня вместо трех гибискусов будет десяток :) Кому бы подарить?</p>
+
+<p><strong>Coccinella</strong> 20-04-2013</p>
+
+<p>Я тут вспомнила о таком агроприеме, который именуется “отрицательный (негативный) DIF”. Имеется в виду, что ночные температуры выше дневных. Применяется в промышленном цветоводстве для выращивания компактных горшечных растений. Ретарданты (химические средства, замедляющие рост) не всегда доступны, дороги, да и их применение связано с рядом ограничений (противопоказаний)… приходится управлять микроклиматом.</p>
+
+<p>И еще есть понятие “холодного утра”. Это, когда накануне рассвета (за пару часов) температура воздуха сильно понижается, а форточки открывают. Низкая температура вкупе с высокой освещенностью тормозит рост растений. Это в апреле-мае на одуванчиках хорошо видно - распластают листья по земле, в середке цветонос 4 см и цветок. А в июне и листья кустом и цветонос до 30 см :)</p>
+
+<p>В Вашем случае ничего подобного быть не могло?</p>
+
+<p><strong>pinkinni</strong> 23-04-2013</p>
+
+<p>Вообще тема с диодным освещением очень полезна,особенно от таких новаторов,которые готовы вложить круглую сумму денег в неизвестные китайские светильники с неизвестным спектром.Может все же стоит спектр разбавлять,добавлять скажем белые диоды,ораньжевые?Стремиться не к узконоправленному спектру,а наоборот,к расширенному,похожему на солнечный свет?!Конечно экономичность диодного освещения очень подкупает,но вот к какому метаболизму растений это привед одному только Богу известно.</p>
+
+<p>Geus, респект за стольк интересный отчет <em>8)</em></p>
+
+<p><strong>Vad</strong> 23-04-2013</p>
+
+<blockquote>
+  <p>И еще есть понятие “холодного утра”. Это, когда накануне рассвета (за пару часов) температура воздуха сильно понижается, а форточки открывают. Низкая температура вкупе с высокой освещенностью тормозит рост растений. Это в апреле-мае на одуванчиках хорошо видно - распластают листья по земле, в середке цветонос 4 см и цветок. А в июне и листья кустом и цветонос до 30 см :)</p>
+</blockquote>
+
+<p>записал в блокнот! <em>8)</em></p>
+
+<p><strong>Geus</strong> 23-04-2013</p>
+
+<p>я б с удовольствием брал Филипс, но с ними пока тяжко, найти почти не реально, а стряпать самому панели из отдельных к сожалению не умею.</p>
+
+<p>вот и приходится китай брать.</p>
+
+<p><strong>Geus</strong> 23-04-2013</p>
+
+<p>возил свои 50 ват панели знакомому он профи в освещении диодном. реклама и все такое. говорит хорошие диоды качественные</p>
+
+<p><strong>Geus</strong> 23-04-2013</p>
+
+<p>сегодня третий день как две разных панели повесил</p>
+
+<p><a href="https://t.me/ponics_ru_files/9205" target="_blank"><img src="/attachimages/13141_20130419_194047.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 23-04-2013</p>
+
+<p>походу как сказал один из гуру дело в воде.</p>
+
+<p>т.к. за эти дни разницы никакой не зарегистрированно</p>
+
+<p><strong>Geus</strong> 24-04-2013</p>
+
+<p>вчера снял первый огурчик.</p>
+
+<p>думал будет горьким однако мои опасения не оправдались.</p>
+
+<p>он оказался достаточно сочным и нехуже тех что продают на рынке</p>
+
+<p><a href="https://t.me/ponics_ru_files/9206" target="_blank"><img src="/attachimages/13143_20130423_195513.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 24-04-2013</p>
+
+<p>Так же вчера сорвал первую морковку для пробы и проверки. сразу говорю вытащил одну из самых маленьких.</p>
+
+<p>с редиской у меня ничего не получается вянет через неделю после всходов. видно климат у меня не для редиски.</p>
+
+<p><a href="https://t.me/ponics_ru_files/9207" target="_blank"><img src="/attachimages/13145_20130422_200525.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9208" target="_blank"><img src="/attachimages/13147_20130422_200528.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 25-04-2013</p>
+
+<p><em>8)</em></p>
+
+<p><strong>artmaximus</strong> 25-04-2013</p>
+
+<p>Морковка-самое “то”! <em>8)</em> Маленькая вкусней.</p>
+
+<p>Я тоже посадил морковку в кокос (только цветную).</p>
+
+<p>После того как увидел у тебя.</p>
+
+<p><strong>Coccinella</strong> 27-04-2013</p>
+
+<p>Если редис вянет через неделю после всходов, то Вы его или перелили, или недостаточно проветриваете. При случае покажите картинку пострадавшего.</p>
+
+<p><strong>maikl25</strong> 30-04-2013</p>
+
+<blockquote>
+  <p>Если редис вянет через неделю после всходов, то Вы его или перелили, или недостаточно проветриваете. При случае покажите картинку пострадавшего.</p>
+</blockquote>
+
+<p>да я свой редис тоже залил насмерть, раньше были сомнения теперь уверен что это именно так.</p>
+
+<p><strong>Geus</strong> 10-09-2014</p>
+
+<p>Всем привет давно не заходил в свой домик.</p>
+
+<p>был слегка занят…. :)</p>
+
+<p>начинаем переходить на новый уровень</p>
+
+<p>площадка ниже на фото в собственности</p>
+
+<p>граница с места фото и до кромки леса</p>
+
+<p><a href="https://t.me/ponics_ru_files/9209" target="_blank"><img src="/attachimages/16986_20140604_202434.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9210" target="_blank"><img src="/attachimages/16988_20140604_202449.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 10-09-2014</p>
+
+<p>в этом году сил на разработку не хватило</p>
+
+<p>так что весь урожай свелся к кабочкам</p>
+
+<p><a href="https://t.me/ponics_ru_files/9211" target="_blank"><img src="/attachimages/16990_20140809_153611.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9212" target="_blank"><img src="/attachimages/16992_20140831_103135.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 10-09-2014</p>
+
+<p>к следующему сезону планирую тепличку</p>
+
+<p>экстерьер и интерьер ниже</p>
+
+<p><a href="https://t.me/ponics_ru_files/9213" target="_blank"><img src="/attachimages/16994_&#1489;&#1494;&#1497;&#1500;&#1497;&#1511;&#1493;&#1501;.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9214" target="_blank">Doc1.docx</a></p>
+
+<p><strong>chip</strong> 16-09-2014</p>
+
+<p>Ого сколько земли!!! Вот где раздолье для выращивания! У Вас замечательно все растет! А не пробовали на чисто белых диодах выращивать? Я этой весной на белых 1вт диодах петунии выращивал для дачи. И что удивительно они не вытягивались от недостатка света. Хотя считается что им много света нужно. у меня полки были 50см на 25. И висели две планки по 10 диодов каждая. Щас попробую фото полки вставить.</p>
+
+<p><strong>chip</strong> 16-09-2014</p>
+
+<p><a href="https://t.me/ponics_ru_files/9215" target="_blank"><img src="/imagehost2/thumbs/imag0426.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9216" target="_blank"><img src="/imagehost2/thumbs/imag0427.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9217" target="_blank"><img src="/imagehost2/thumbs/imag0428.jpg" alt="" /></a></p>
+
+<p><strong>Geus</strong> 16-09-2014</p>
+
+<p>растет не всегда как хочется.</p>
+
+<p>но я думаю при полной светокультуре диоды не плохо себя показывают</p>
+
+<p>и еще мне кажется что если бы пользовался ДНАТ то при такой густой посадке все сгорело бы. да и отведение тепла было проблематично.</p>
+
+<p>что касается земли то там 3Га. это бывшие поля совхоза, уже лет 15 не обрабатывались, так что земля отдохнувшая.</p>
+
+<p>но для меня это не главное планы зелень на капле в кокосе выращивать.</p>
+
+<p><strong>Geus</strong> 16-09-2014</p>
+
+<p>Чисто белые диоды не пробовал.</p>
+
+<p>у меня все лампы фито серии так что там основная масса красные и синие диоды хотя на каждой есть и обычные белые.</p>
+
+<p>Я думаю что на обычных белых расти будет не хуже ведь белый свет в себе содержит и красный и синий да и все остальные спектры.</p>
+
+<p>вопрос только холодное белое или тепло белое свечение диодов.</p>
+
+<p>мне кажется под тепло белым лучшие показатели будут.</p>
+
+<p>какие у вас стоят?</p>
+
+<p><strong>taram</strong> 16-09-2014</p>
+
+<blockquote>
+  <p>но для меня это не главное планы зелень на капле в кокосе выращивать.</p>
+</blockquote>
+
+<p>Поподробнее, поподробнее пожалуйста :)…</p>
+
+<p><strong>Geus</strong> 17-09-2014</p>
+
+<p>фото выше</p>
+
+<p>черные каналы Mapal + кокос+ капельная лента</p>
+
+<p>культуры пока две базилик и мята</p>
+
+<p>мята 70% площади</p>
+
+<p>базилик 30% площади</p>
+
+<p>пока так планирую начать потом посмотрим по пропорциям</p>
+
+<p>первая теплица на 5000м2 по предварительным расчетам посадочная площадь будет в районе 2944м2</p>
+
+<p>64 линии по 46 метров</p>
+
+<p><strong>chip</strong> 17-09-2014</p>
+
+<blockquote>
+  <p>Чисто белые диоды не пробовал.</p>
+
+  <p>у меня все лампы фито серии так что там основная масса красные и синие диоды хотя на каждой есть и обычные белые.</p>
+
+  <p>Я думаю что на обычных белых расти будет не хуже ведь белый свет в себе содержит и красный и синий да и все остальные спектры.</p>
+
+  <p>вопрос только холодное белое или тепло белое свечение диодов.</p>
+
+  <p>мне кажется под тепло белым лучшие показатели будут.</p>
+
+  <p>какие у вас стоят?</p>
+</blockquote>
+
+<p>У меня вроде 6500к. Правда брал давно. Светят белым.</p>
+
+<p><strong>Geus</strong> 18-09-2014</p>
+
+<p>определить холодное или теплое просто если светит как лампочка накаливания и привычно для глаза то это теплое если светит непривычно белым как в кино морги показывают то это холодное</p>
+
+<p><strong>taram</strong> 18-09-2014</p>
+
+<p>А почему базилик и мята? Чем они вам так интересны?</p>
+
+<p><strong>Geus</strong> 18-09-2014</p>
+
+<p>с базиликом и мятой опыт небольшой есть</p>
+
+<p>эти культуры в нашем регионе не возделываются в пром маштабах и все привозятся с москвы</p>
+
+<p><strong>Ru7tam</strong> 23-09-2014</p>
+
+<blockquote>
+  <p>с базиликом и мятой опыт небольшой есть эти культуры в нашем регионе не возделываются в пром маштабах и все привозятся с москвы</p>
+</blockquote>
+
+<p>Под СПб мята растет на садовых участках в виде ползучего сорняка… В этом году рубил тяпкой траву в одном из углов участка - в результате привез на работу охапку мяты.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

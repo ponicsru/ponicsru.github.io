@@ -1,0 +1,2339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Самый скучный домик. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Самый скучный домик.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Самый скучный домик.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>z200</strong> 26-12-2013</p>
+
+<p>Это будет скорее всего самый скучный домик. Опыта нет, целей великих тоже. Если я не добавлю сюда сообщение три месяца, прошу модераторов удалить всё т.к. это означает, что я снова сменил хобби. А пока…</p>
+
+<ul>
+  <li>
+    <p>Папа, скажи мне, что ты читаешь с утра до вечера три дня подряд?</p>
+  </li>
+  <li>
+    <p>Читаю про гидропонику, метод выращивания растений без грунта.</p>
+  </li>
+</ul>
+
+<p>Вот зачем сказал? Нужно было придумать, что-то не интересное. А детям интересно всё, и в моем случае нужно радоваться, что теперь вместе с сыном придется всего лишь, что-то вырастить. Хуже было бы, если бы я читал про андронный коллайдер.</p>
+
+<p>Самое быстрое – купить готовую установку, коих сейчас продается не мало, но конечно не в нашем городе. В Гадюкино ничего нет, и я сделал заказ в интернет-магазине. В понедельник, 23-го декабря, из магазина пришел ответ: «Спасибо за заказ, мы сегодня работаем последний день, а потом отдыхаем…. до 20-го января». Ну что же, искренне желаю вам отдыхать и после 20-го числа, долго.</p>
+
+<p>Это же почти целый месяц! За месяц можно уже урожай собрать. Конец года, у самого работы куча, а времени ноль. Ничего сложного собрать не получится, поэтому ради эксперимента вырастим лук. Мне всё равно, но отцовский долг выполню. В местных магазинах удалось купить какое-то корыто, воздушный компрессор для аквариума, некоторую электрику и детали. Остальное сделал на работе.</p>
+
+<p>Выбрали с сыном 10 луковиц пяти разных сортов, положили на бурбуляцию )) Вечером высадим, тогда и сфотографирую.</p>
+
+<p><strong>Coccinella</strong> 26-12-2013</p>
+
+<p>А сын-то большой? В любом случае - успеха! Воспитание детей - единственное хобби, которое не удается бросить даже тогда, когда что-то не получается :)</p>
+
+<p><strong>z200</strong> 26-12-2013</p>
+
+<p>Спасибо. 10 лет сыну, самое то для познаний мира )))</p>
+
+<p><strong>Vad</strong> 26-12-2013</p>
+
+<p>во!</p>
+
+<p>Мой в 10 лет.. как раз.. заставил меня рапечатать вот эту книжку…</p>
+
+<p>после прочтения спросил.. -почему сейчас нет таких книг?</p>
+
+<p><a href="https://t.me/ponics_ru_files/11254" target="_blank">Растения без почвы Д.Вахмистров 1965-600M.djvu</a></p>
+
+<p><strong>z200</strong> 26-12-2013</p>
+
+<p>Посадили! <em>8)</em></p>
+
+<p><a href="https://t.me/ponics_ru_files/11255" target="_blank"><img src="/attachimages/14437_IMG_3433.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11256" target="_blank"><img src="/attachimages/14439_IMG_3435.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11257" target="_blank"><img src="/attachimages/14441_IMG_3439.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11258" target="_blank"><img src="/attachimages/14443_IMG_3443.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 26-12-2013</p>
+
+<p>GoPro detected :D</p>
+
+<p><strong>z200</strong> 26-12-2013</p>
+
+<blockquote>
+  <p>GoPro detected :D</p>
+</blockquote>
+
+<p>Лежит без дела второй год. Уже продать задумал, да уж слишком полный комплект у меня, никто не покупает. А тут на тебе, пригодилась! ))))</p>
+
+<p><strong>Vad</strong> 26-12-2013</p>
+
+<p>нужно докупить к ней квадрокоптер.. и</p>
+
+<p><a href="http://www.youtube.com/watch?v=dZAz6OawNB0#" target="_blank">http://www.youtube.com/watch?v=dZAz6OawNB0#</a></p>
+
+<p><strong>z200</strong> 26-12-2013</p>
+
+<p>видел я уже. Там кроме леталки стэдикам нужен специальный, и там управляют два человека - оператор и пилот. Пилотом быть не просто, нужен опыт. Я бы давно купил этот четырехголовый вертолет, но уверен на 100% что рано или поздно он упадет, и сломает все что к нему привязали.</p>
+
+<p>Ну и еще один нюанс - это не законно. Года два назад был принят закон (или хотели принять) о запрете фото-видео аппаратуры на летательных аппаратах.</p>
+
+<p><strong>Vad</strong> 26-12-2013</p>
+
+<p>глава города сам участвовал.. ;)</p>
+
+<p>снимает мой товарищь..</p>
+
+<p>вот этот.. :D</p>
+
+<p><a href="http://www.youtube.com/watch?v=BBQ-ulqXr_0#ws" target="_blank">http://www.youtube.com/watch?v=BBQ-ulqXr_0#ws</a></p>
+
+<p>5 утра.. 2 мес до сьемки сроки.. сроки..</p>
+
+<p>моделисты мы.. “летуны”))</p>
+
+<p><strong>z200</strong> 26-12-2013</p>
+
+<p>я ничего не понял. Стэдикам вижу, где купить не вижу ))) и про главу города не понял.</p>
+
+<p><strong>Vad</strong> 26-12-2013</p>
+
+<p>Это я есть хотел.. спешил :D</p>
+
+<p>подвес - самодельный в яндексогугле искать его как Simple AlexMos brushless gimbal</p>
+
+<p>С Вашими возможностями и доступу к станкам - проблемм нет.. нарезать его детали из карбона <em>8)</em></p>
+
+<p>глава города… у нас самый главный разрешительно-запретительный “орган”</p>
+
+<p>он и разрешил :D</p>
+
+<p><strong>Coccinella</strong> 26-12-2013</p>
+
+<p>Я все размышляю, как бы такое чудо техники приспособить к выпуску трихограммы на не очень больших гектарах… ?</p>
+
+<p><strong>z200</strong> 26-12-2013</p>
+
+<p>я не знаю что такое трихограмма, но профессиональная леталка стоит около миллиона руб. ))))</p>
+
+<p><strong>Vad</strong> 26-12-2013</p>
+
+<p>:D</p>
+
+<p><strong>Alex777</strong> 26-12-2013</p>
+
+<blockquote>
+  <p>я не знаю что такое трихограмма, но профессиональная леталка стоит около миллиона руб. ))))</p>
+</blockquote>
+
+<p>Можно и дешевле найти… :D</p>
+
+<p><a href="http://www.youtube.com/watch?v=_dPlkFPowCc#ws" target="_blank">http://www.youtube.com/watch?v=_dPlkFPowCc#ws</a></p>
+
+<p><strong>z200</strong> 26-12-2013</p>
+
+<p>Боюсь даже спросить в каком месте у курицы гироскоп )))</p>
+
+<p><strong>Vad</strong> 26-12-2013</p>
+
+<p>это очевидно же..</p>
+
+<p>в голове!</p>
+
+<p>;D</p>
+
+<p><strong>Coccinella</strong> 26-12-2013</p>
+
+<p>Бедные птички :( :'(</p>
+
+<p><strong>z200</strong> 30-12-2013</p>
+
+<p>Не видать лучку к новому году :( Медленно растёт. За четыре дня всего пять сантиметров, и только Шалот, остальные проклёвываются. А красный совсем мертвый, ни корней, ни побегов.</p>
+
+<p><strong>Coccinella</strong> 30-12-2013</p>
+
+<p>А Вам на рынок? Срежьте эти 5 см и в салат, все радость созидания :) Зато к Старому Новому году все остальные воспрянут… возможно :)</p>
+
+<p><strong>z200</strong> 30-12-2013</p>
+
+<p>Выросло чуть чуть ))</p>
+
+<p><a href="http://www.youtube.com/watch?v=l4543F7Ahhg#ws" target="_blank">http://www.youtube.com/watch?v=l4543F7Ahhg#ws</a></p>
+
+<p><strong>Strangeman</strong> 31-12-2013</p>
+
+<p>Совсем чуть-чуть :)</p>
+
+<p>Однако, с Новым Годом!</p>
+
+<p><strong>z200</strong> 06-01-2014</p>
+
+<p>Возникла небольшая накладка. Оказалось что камера снимая 1 кадр в минуту не так мало записывает как казалось. Флэшка на 32 гб. заполняется за 4 дня. А я по глупости проверил только сегодня. Поэтому, лук у меня уже 20 см. вырос, но на видео - утро второго января.</p>
+
+<p><a href="http://www.youtube.com/watch?v=YLNXcxRmFIU#ws" target="_blank">http://www.youtube.com/watch?v=YLNXcxRmFIU#ws</a></p>
+
+<p><strong>z200</strong> 06-01-2014</p>
+
+<p>Это сегодняшнее фото. Красный лук так и не пророс. Закончу эксперимент и высажу один Шалот.</p>
+
+<p><a href="https://t.me/ponics_ru_files/11259" target="_blank"><img src="/attachimages/14521_IMG_3564.jpg" alt="" /></a></p>
+
+<p><strong>taram</strong> 06-01-2014</p>
+
+<p>Кстати, вот такой способ выращивания есть <em>8)</em> :D!</p>
+
+<blockquote>
+  <p><img src="/imagehost/thumbs/0007kgk.jpg" alt="" /></p>
+
+  <p><img src="/imagehost/thumbs/0008.jpg" alt="" /></p>
+
+  <p>Надеюсь понятно, что в дне растительного поддона присутствуют отверстия.</p>
+
+  <p>Лук посажен на керамзит слоем 4-5см. Полив обмакиванием.</p>
+</blockquote>
+
+<p><strong>z200</strong> 06-01-2014</p>
+
+<p>у меня керамзита нет, и купить мне его негде в нашем городе. Так что пока интернет-магазины не проснутся я и не мечтаю.</p>
+
+<p><strong>taram</strong> 06-01-2014</p>
+
+<p>Вместо керамзита, можно и другие субстраты использовать.</p>
+
+<p><strong>z200</strong> 06-01-2014</p>
+
+<blockquote>
+  <p>Вместо керамзита, можно и другие субстраты использовать.</p>
+</blockquote>
+
+<p>понимаю, но у нас ничего нет, ни кокоса, ни вертику… вобщем ничего. Мнивата есть, но только строительная.</p>
+
+<p><strong>mitrotech</strong> 06-01-2014</p>
+
+<p>Да блин - галька, песок, керамические мелкие штучки, пластиковые шарики. Я на работе вообще хочу накусать трубку ПВХ на 5мм отрезки и на них растить.</p>
+
+<p>Кстати, далеко ли живёшь? Может керамзита выслать?</p>
+
+<p><strong>z200</strong> 06-01-2014</p>
+
+<blockquote>
+  <p>Да блин - галька, песок, керамические мелкие штучки, пластиковые шарики.</p>
+</blockquote>
+
+<p>Вот оно, давно мысль ходит. Летом на работе нарезал обрезков цветного оргстекла на кубики 3х3 мм. Думал потом ими что-нибудь украсить, в горшки с цветами насыпать. Пока лежат в пакете. Но они же не гигроскопичные совсем и влагу держать не будут.</p>
+
+<blockquote>
+  <p>Кстати, далеко ли живёшь? Может керамзита выслать?</p>
+</blockquote>
+
+<p>Вятка.</p>
+
+<p>У нас конечно строительный керамзит есть, но у него фракция крупная.</p>
+
+<p><strong>Vad</strong> 06-01-2014</p>
+
+<p>в крупной фракции есть и мелкая.</p>
+
+<p>в любом цветочно-горшочном магазине все это торгуется тоннами <em>8)</em></p>
+
+<p><strong>z200</strong> 06-01-2014</p>
+
+<p>а какая фракция нужна? сколько мм.?</p>
+
+<p><strong>taram</strong> 06-01-2014</p>
+
+<blockquote>
+  <p>У нас конечно строительный керамзит есть, но у него фракция крупная.</p>
+</blockquote>
+
+<p>Просейте! Фракция желательна 5-10мм. Cетка 10мм.</p>
+
+<p><strong>mitrotech</strong> 06-01-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>Кстати, далеко ли живёшь? Может керамзита выслать?</p>
+  </blockquote>
+
+  <p>Вятка.</p>
+</blockquote>
+
+<p>Свят свят, я в Кирове, ЮЗР, Московская-Строителей. Чтоб тему незакакать, могу в привате рассказать где керамзит и песок есть, и фоты своего “точтополучилось” показать.</p>
+
+<p><strong>z200</strong> 07-01-2014</p>
+
+<blockquote>
+  <p>Свят свят, я в Кирове, ЮЗР, Московская-Строителей. Чтоб тему незакакать, могу в привате рассказать где керамзит и песок есть, и фоты своего “точтополучилось” показать.</p>
+</blockquote>
+
+<p>А вы какой ответ ждёте? Типа: не надо мне ничего рассказывать т.к. я презираю людей с перекрестка улиц Московской и Строителей в Кирове?</p>
+
+<p>Земляк!!! УРА!!! Жду в личку! <em>Dance</em></p>
+
+<p><strong>z200</strong> 09-01-2014</p>
+
+<p>Говорят что семена таможня не пускает. У меня всё пропустили, сегодня получил.</p>
+
+<p>Кресс салат. 16000 шт. 105 руб.</p>
+
+<p>![](http://i.ebayimg.com/t/Salad-Cress-Curled-40g-Approx-16000-Seeds-Easy-to-grow-Vegetable-/00/s/MTA2MlgxNTM2/z/fwIAAOxy2d9SYPME/$(KGrHqJHJDgFJRy8fC+oBSYPMEFJEQ~~60_1.JPG)</p>
+
+<p>Салат Rocket. 750 шт. 132 руб.</p>
+
+<p>![](http://i.ebayimg.com/t/Organic-Seed-Vegetable-Suffolk-Herbs-Salad-Rocket-Pictorial-Pack-/00/s/MjUwWDI1MA==/$(KGrHqZHJC4E7BcviTwoBO2+hqDTFg~~60_35.JPG)</p>
+
+<p>Салат Tatsoi. 150 шт. 130 руб.</p>
+
+<p><img src="http://i.ebayimg.com/t/Suffolk-Herbs-Pictorial-Pack-Salad-Leaves-Tatsoi-150-Seed-/00/s/MTI3MVgxNjAw/z/ZKcAAMXQVT9Ss4bx/$_1.JPG" alt="" /></p>
+
+<p>Салат Roselee. 300 шт. 137 руб.</p>
+
+<p><img src="http://i.ebayimg.com/t/Roselee-Lettuce-300-10-5g-Pelleted-Quality-Seeds-also-use-as-Baby-Salad-Leaf-/00/s/MzAwWDMwMA==/z/LLoAAOxy0QtSA12C/$T2eC16VHJG!FFmq3tTnLBS!12CSCdQ~~60_35.JPG" alt="" /></p>
+
+<p>И еще микс из трех салатов: Artic King, Winter Density, Wintercrop. По 150 семян, на сумму 105 руб.</p>
+
+<p>![](http://i.ebayimg.com/t/Vegetable-Winter-Lettuce-Collection-3-Varieties-x-150-Seed-Salad-/00/s/ODY4WDY2Ng==/z/CToAAOxye2lSXZPk/$(KGrHqJ,!l4FJY5nFSbEBS(ZPj7jtw~~60_1.JPG)</p>
+
+<p><strong>z200</strong> 09-01-2014</p>
+
+<p>Мы всё еще растем, уже веселее )))</p>
+
+<p><a href="http://www.youtube.com/watch?v=M-XEF_qahVI#ws" target="_blank">http://www.youtube.com/watch?v=M-XEF_qahVI#ws</a></p>
+
+<p><strong>z200</strong> 12-01-2014</p>
+
+<p>Господа, ломаю голову над последними деталями. На какую глубину погрузить стаканчик с керамзитом в проточной установке?</p>
+
+<p><strong>z200</strong> 19-01-2014</p>
+
+<p>прототип</p>
+
+<p><a href="https://t.me/ponics_ru_files/11260" target="_blank"><img src="/attachimages/14656_IMG_3586.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11261" target="_blank"><img src="/attachimages/14658_IMG_3587.jpg" alt="" /></a></p>
+
+<p><strong>z200</strong> 20-01-2014</p>
+
+<p>Vad, спасибо за помощь. Напряжение на помпе уменьшил. На 9 вольт - журчит, на 7,5 тоже, а на 6 - нормально. Струйка стала в два раза тоньше и слив справляется бесшумно. Вечером получил хитрые фитинги для регулировки уровня, но еще кое-каких деталей не хватает. Завтра докуплю и покажу, что в итоге получилось.</p>
+
+<p><strong>Vad</strong> 20-01-2014</p>
+
+<p>ждем результатов )) <em>8)</em></p>
+
+<p><strong>z200</strong> 21-01-2014</p>
+
+<p>Все на так просто с этой водой ((( Физика, химия… эх, где вы мои знания отличника (((</p>
+
+<p>Вобщем не журчит она, потому, что на 6 вольт мотор вообще не запускается, потому и не слышно. А на 7,5 вода пошла и снова забулькало, но не сильно.</p>
+
+<p>Для чего два хитрых черных фитинга? Они поворотные на 360 градусов. С их помощью я могу регулировать уровнь раствора в трубах. Пока семена прорастают - поставил на маскимум, чтобы вода была ближе к семенам. Потом уменьшу. Фитинги буржуйске, ничего в них не вкручивается кроме фитингов от труб пластиковых, у которых резьба идет на конус. Пришлось сделать переходники.</p>
+
+<p>Программа идет круглосуточно, циклами по 2 часа:</p>
+
+<p>1 час 45 мин работает воздушная помпа в емкости с раствором</p>
+
+<p>2 мин перерыв</p>
+
+<p>10 мин вторая помпа качает раствор по трубам</p>
+
+<p>3 мин перерыв</p>
+
+<p>Свет работает с 6 утра до 12 ночи</p>
+
+<p>Слушаю критику и советы.</p>
+
+<p>P.S. Это прототип большой пирамиды, 5 прямых труб по 4 метра. Я на нем хочу отработать все нюансы.</p>
+
+<p><a href="https://t.me/ponics_ru_files/11262" target="_blank"><img src="/attachimages/14662_IMG_3617.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11263" target="_blank"><img src="/attachimages/14664_IMG_3618.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11264" target="_blank"><img src="/attachimages/14666_IMG_3619.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11265" target="_blank"><img src="/attachimages/14668_IMG_3620.jpg" alt="" /></a></p>
+
+<p><strong>z200</strong> 21-01-2014</p>
+
+<p>Опять неудача, не помогли фитинги, вся жидкость вытекла. Сообщающиеся сосуды ((( Ну ничего, используем вариант Б - регулирую уровень раствора поворотом торцевой заглушки.</p>
+
+<p><strong>z200</strong> 21-01-2014</p>
+
+<p>сам процесс посадки я профукал. Посадил в губку и пакеты, как плохие парни. Нужно было через сутки достать, а у меня установка не готова. Я достал через два дня, а салат уже в губку корни по 3 см пустил. Вобщем губки у меня отобрали жена с сыном и просто положили их в стаканы с раствором. Растет, уже 3 см на верху. А я посадил семена заново, без замачивания, прямо в керамзит два дня назад. Один сорт сегодня вылез наружу.</p>
+
+<p><strong>z200</strong> 21-01-2014</p>
+
+<p>Семена я показывал выше, сейчас пронумерую, и дальше буду называть только по номерам</p>
+
+<p>1 Roselee</p>
+
+<p>2 Tatsoi</p>
+
+<p>3 Rocket</p>
+
+<p>4 Cress</p>
+
+<p>5 Arctic King</p>
+
+<p>6 Winter Density</p>
+
+<p>7 Wintercrop</p>
+
+<p>В стакане пророс №4, в керамзите №6</p>
+
+<p><strong>Gnevko</strong> 21-01-2014</p>
+
+<p>Это весьма опрометчиво … по номерам, не успеете оглянуться как эти номера затеряются на страницах темы и никто их уже не вспомнит.</p>
+
+<p><strong>z200</strong> 21-01-2014</p>
+
+<p>Хоршо, для вас буду писать имена, а у меня конечно не затеряются. Стаканчики жена с сыном пронумеровали, аккуратно всё записали в тетрадку. Пакетики с семенами тоже пронумерованы. Везде дисциплина и порядок ))) Это я их приучаю. А у самого всё в Excel в облаке на шести устройствах)))</p>
+
+<p><strong>z200</strong> 23-01-2014</p>
+
+<p>Вот и настало волшебное утро - во всех семи стаканчиках появились зеленые точки, а у кресс-салата даже меленькие заросли )))</p>
+
+<p><strong>Coccinella</strong> 23-01-2014</p>
+
+<p>Поздравляю с новорожденными !!! :)</p>
+
+<p><strong>diman73rus</strong> 23-01-2014</p>
+
+<p>кресс-салат у нас дома в контейнерах 10см x 6см x 5см на поролоне выращивается. на воде. 20 контейнеров. за 5 дней вырастают. поедается домашними на раз. опустевший контейнет засевается заново. такой круговорот. :)</p>
+
+<p><strong>z200</strong> 23-01-2014</p>
+
+<blockquote>
+  <p>кресс-салат у нас дома в контейнерах 10см x 6см x 5см на поролоне выращивается</p>
+</blockquote>
+
+<p>А можно фотку?</p>
+
+<blockquote>
+  <p>поедается домашними на раз.</p>
+</blockquote>
+
+<p>Вкусно? )))</p>
+
+<p><strong>z200</strong> 23-01-2014</p>
+
+<blockquote>
+  <p>Поздравляю с новорожденными !!! :)</p>
+</blockquote>
+
+<p>Спасибо. Прям как дети. Не думал, что у меня будет такое сентиментальное отношение к траве )))</p>
+
+<p><strong>taram</strong> 23-01-2014</p>
+
+<blockquote>
+  <p>кресс-салат у нас дома в контейнерах 10см x 6см x 5см на поролоне выращивается. на воде.</p>
+</blockquote>
+
+<p>Вода и всё? :o</p>
+
+<p><strong>diman73rus</strong> 23-01-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>кресс-салат у нас дома в контейнерах 10см x 6см x 5см на поролоне выращивается. на воде.</p>
+  </blockquote>
+
+  <p>Вода и всё? :o</p>
+</blockquote>
+
+<p>угу. вырастает на 8-10см. и беспощадно срезается.</p>
+
+<p><strong>diman73rus</strong> 23-01-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>кресс-салат у нас дома в контейнерах 10см x 6см x 5см на поролоне выращивается</p>
+  </blockquote>
+
+  <p>А можно фотку?</p>
+</blockquote>
+
+<p>сфоткую вечером.</p>
+
+<blockquote>
+  <blockquote>
+    <p>поедается домашними на раз.</p>
+  </blockquote>
+
+  <p>Вкусно? )))</p>
+</blockquote>
+
+<p>на любителя. главное - полезно.</p>
+
+<blockquote>
+  <p>Кресс-салат оказывает общеукрепляющее действие, снижает артериальное давление, повышает аппетит, улучшает сон. Такое полезное воздействие обусловлено богатым содержанием в салате витамина C, рутина, микроэлементов, каротина. Используется как добавка к салату, соусу или супу, а также как компонент салата.</p>
+</blockquote>
+
+<p><strong>Borodach1</strong> 23-01-2014</p>
+
+<blockquote>
+  <p>кресс-салат у нас дома в контейнерах 10см x 6см x 5см на поролоне выращивается. на воде. 20 контейнеров. за 5 дней вырастают. поедается домашними на раз. опустевший контейнет засевается заново. такой круговорот. :)</p>
+</blockquote>
+
+<p>Ого! :o</p>
+
+<p>Получается, что семья в день съедает по 4 контейнера? И не надоедает? А сколько это в объёме получается? А какая частота посева, ну или сколько семян на контейнер?</p>
+
+<p>Тоже фоток хочу на разных стадиях. :-[ ;)</p>
+
+<p><strong>diman73rus</strong> 23-01-2014</p>
+
+<p>как вас зацепило-то.</p>
+
+<p>микрозелень бывает не только “кресс-салат”:</p>
+
+<p>свекла (растет плохо)</p>
+
+<p>редис</p>
+
+<p>дайкон</p>
+
+<p>базилик</p>
+
+<p>брокколи</p>
+
+<p>горчица</p>
+
+<p>рукола</p>
+
+<p>кинза (плохо проращивается)</p>
+
+<p>капуста красная</p>
+
+<p>луковый кресс (сильно воняет луком)</p>
+
+<p>мицуна</p>
+
+<p><a href="http://seedspost.ru/search/?q=%EC%E8%EA%F0%EE%E7%E5%EB%E5%ED%FC&amp;how=r&amp;where=iblock_catalog_semena" target="_blank">http://seedspost.ru/search/?q=%EC%E8%EA%F0%EE%E7%E5%EB%E5%ED%FC&amp;how=r&amp;where=iblock_catalog_semena</a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11266" target="_blank"><img src="/attachimages/14670_kart-kozura (2).jpg" alt="" /></a></p>
+
+<p><strong>z200</strong> 23-01-2014</p>
+
+<p>а я не удержался. Взял контейнер 10х30 см. насыпал керамзита до половины, потом положил кусок поролона, сантиметра 3-4 тощиной. В нем сделал три надреза продольных, 3-4 мм. глубиной, и раздвинув поролон посадил туда семена кресс-салата. Поролона не хватило немного, оставшееся место заполнил искусственной ватой для подушек, и туда тоже высадил. Всё полил, замотал пленкой и поставил на подоконник. )))</p>
+
+<p><strong>diman73rus</strong> 23-01-2014</p>
+
+<p>я просто на мокрый поролон сверху сыплю семена. и закрываю крышкой. через 36 часов они сами крышку сдвигают и рвутся к свету. <em>Bos</em></p>
+
+<p><strong>z200</strong> 23-01-2014</p>
+
+<blockquote>
+  <p>через 36 часов они сами крышку сдвигают и рвутся к свету. <em>Bos</em></p>
+</blockquote>
+
+<p>Ура!!! <em>8)</em> Даешь микрозелень в массы!!!</p>
+
+<p>Ждем фото.</p>
+
+<p><strong>z200</strong> 23-01-2014</p>
+
+<p>А семена микрозелени которые продают чем-то отличаются от обычных? вот например <a href="http://1semena.ru/category/mikrozelen/" target="_blank">http://1semena.ru/category/mikrozelen/</a></p>
+
+<p><strong>diman73rus</strong> 23-01-2014</p>
+
+<p>по виду - семена как семена. обычные.</p>
+
+<p><strong>z200</strong> 23-01-2014</p>
+
+<blockquote>
+  <p>по виду - семена как семена. обычные.</p>
+</blockquote>
+
+<p>мне тоже так показалось, просто отнесли в отдельный раздел то что можно есть недоросшим</p>
+
+<p><strong>Borodach1</strong> 23-01-2014</p>
+
+<blockquote>
+  <p>как вас зацепило-то.</p>
+</blockquote>
+
+<p>:)</p>
+
+<p>Да я ещё год назад купил семян кресс салата и китайской горчицы, но всё никак не решусь. <em>???</em></p>
+
+<p>Как то не знаю с чего и как начать. Да и чего ожидать. До каких размеров растить? Вот хоть на фотки посмотреть бы в разных стадиях, и уже хоть чуть понятней стало бы. :)</p>
+
+<p><strong>taram</strong> 23-01-2014</p>
+
+<p>Я тоже приобрёл семена кресс салата, когда покупал семена томатов.</p>
+
+<p><strong>z200</strong> 23-01-2014</p>
+
+<p>вот у буржуев прочитал что еще шпинат можно как микрозелень.</p>
+
+<p>Давайте полный список сделаем, кто что сможет добавить</p>
+
+<p>01.Базилик</p>
+
+<p>02.Брокколи</p>
+
+<p>03.Горчица</p>
+
+<p>04.Дайкон</p>
+
+<p>05.Капуста красная</p>
+
+<p>06.Кинза</p>
+
+<p>07.Кресс-салат</p>
+
+<p>08.Мицуна</p>
+
+<p>09.Редис</p>
+
+<p>10.Свекла</p>
+
+<p>11.Руколла</p>
+
+<p>12.Шпинат</p>
+
+<p>13.Луковый кресс</p>
+
+<p>14.Пшеница</p>
+
+<p>16.Ячмень</p>
+
+<p>17.Огурец</p>
+
+<p>18.Кольраби</p>
+
+<p>19.Подсолнечник</p>
+
+<p>20.Фенхель</p>
+
+<p>21.Пекинская капуста</p>
+
+<p>22.Горох, маш(мунг)</p>
+
+<p>23.Люцерна</p>
+
+<p>24.Лен коричневый</p>
+
+<p>25.Пажитник</p>
+
+<p>26.Амарант</p>
+
+<p>27.Капуста белокачанная</p>
+
+<p>28.Клевер</p>
+
+<p>29.Мизуна (Мицуна)</p>
+
+<p>30.Фасоль золотистая</p>
+
+<p>31.Кольраби</p>
+
+<p>32.Чечевица</p>
+
+<p>33.Соя</p>
+
+<p>34.Щавель</p>
+
+<p>35.Мята</p>
+
+<p><strong>Vad</strong> 23-01-2014</p>
+
+<p>пшеница</p>
+
+<p>ячмень</p>
+
+<p>огурец</p>
+
+<p><strong>z200</strong> 23-01-2014</p>
+
+<blockquote>
+  <p>пшеница</p>
+
+  <p>ячмень</p>
+
+  <p>огурец</p>
+</blockquote>
+
+<p>Добавил. Vad, а огурец тоже быстро растет? Если я правильно понял к микрозелени относят только быстрорастущие культуры, иначе тут был бы и укроп и петрушка… я просто огурцы не растил никогда.</p>
+
+<p><strong>Vad</strong> 23-01-2014</p>
+
+<p>огурец за сутки выскакивает.. <em>8)</em></p>
+
+<p>укроп, тоже можно быстро прорастить.. но он не имеет вкуса :D</p>
+
+<p>там есть нечего <em>???</em></p>
+
+<p>а огурчик ого.. там “мяса” много..</p>
+
+<p>не знаю как на счет тыквы.. её не ел.. и не проращивал</p>
+
+<p><strong>diman73rus</strong> 23-01-2014</p>
+
+<p>идея еще в том, чтобы посеять кучно и было удобно срезать.</p>
+
+<p>подсолнечник долго держит чешую от семечки. её отчищать надо. луковый кресс тоже, но семечко мелкое её можно скушать и не подавиться.</p>
+
+<p>пшеница и ячмень мне не понравились на вкус. :)</p>
+
+<p><strong>Coccinella</strong> 23-01-2014</p>
+
+<blockquote>
+  <p>А семена микрозелени которые продают чем-то отличаются от обычных? вот например <a href="http://1semena.ru/category/mikrozelen/" target="_blank">http://1semena.ru/category/mikrozelen/</a></p>
+</blockquote>
+
+<p>Отличаются! Они не протравлены, а обычные семена для выращивания овощей чаще всего протравлены фунгицидами для защиты проростка от почвенных патогенов. Поэтому для этого дела надежнее приобретать семена, маркированные “для микрозелени” или подобным образом.</p>
+
+<p><strong>z200</strong> 23-01-2014</p>
+
+<blockquote>
+  <p>Отличаются! Они не протравленым</p>
+</blockquote>
+
+<p>уже вычитал ((( купил немецкие, завтра вышлют</p>
+
+<p><strong>diman73rus</strong> 23-01-2014</p>
+
+<p>как и обещал фотки :P</p>
+
+<p><a href="https://t.me/ponics_ru_files/11267" target="_blank"><img src="/attachimages/14674_IMG_20140123_210531 (1).jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11268" target="_blank"><img src="/attachimages/14676_IMG_20140123_210542.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11269" target="_blank"><img src="/attachimages/14678_IMG_20140123_210650.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11270" target="_blank"><img src="/attachimages/14680_IMG_20140123_210737.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11271" target="_blank"><img src="/attachimages/14682_IMG_20140123_210753.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11272" target="_blank"><img src="/attachimages/14684_IMG_20140123_210853.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11273" target="_blank"><img src="/attachimages/14686_IMG_20140123_210910.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11274" target="_blank"><img src="/attachimages/14688_IMG_20140123_211016.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11275" target="_blank"><img src="/attachimages/14690_IMG_20140123_211818.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11276" target="_blank"><img src="/attachimages/14692_IMG_20140123_212900.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11277" target="_blank"><img src="/attachimages/14694_IMG_20140123_213016.jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 23-01-2014</p>
+
+<p>крессолес.</p>
+
+<p>первая фотка - контейнер на 4 губки. почти съели. сейчас доем. <em>Bos</em></p>
+
+<p>третья фотка - плохо закрыл крышку при начальном проращивании</p>
+
+<p>последняя фотка - свекла. :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/11278" target="_blank"><img src="/attachimages/14696_IMG_20140123_210106.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11279" target="_blank"><img src="/attachimages/14698_IMG_20140123_210121.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11280" target="_blank"><img src="/attachimages/14700_IMG_20140123_210132.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11281" target="_blank"><img src="/attachimages/14702_IMG_20140123_210141.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11282" target="_blank"><img src="/attachimages/14704_IMG_20140123_210154.jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 23-01-2014</p>
+
+<p>кинза плохо всходит:</p>
+
+<p><a href="https://t.me/ponics_ru_files/11283" target="_blank"><img src="/attachimages/14706_IMG_20140123_210147.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 23-01-2014</p>
+
+<p>Всходит хорошо, а вот соотношение свет-температура ни к черту не годится! Моя бы воля - потребовала бы административную ответственность за издевательство над “братьями нашими меньшими”</p>
+
+<p><strong>z200</strong> 23-01-2014</p>
+
+<p>diman73rus - спасибо за фотки. У вас целая микро-грин-корпорация )))</p>
+
+<p><strong>diman73rus</strong> 23-01-2014</p>
+
+<blockquote>
+  <p>Всходит хорошо, а вот соотношение свет-температура ни к черту не годится! Моя бы воля - потребовала бы административную ответственность за издевательство над “братьями нашими меньшими”</p>
+</blockquote>
+
+<p>немного в других условиях (установка “здоровья клад”) семена ведут себя так же:</p>
+
+<p><a href="https://t.me/ponics_ru_files/11284" target="_blank"><img src="/attachimages/14718_IMG_20140124_000941.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11285" target="_blank"><img src="/attachimages/14720_IMG_20140124_001008.jpg" alt="" /></a></p>
+
+<p><strong>z200</strong> 23-01-2014</p>
+
+<p>а чего там в здоровоклад насыпано? там же вроде на салфетке всё должно расти?</p>
+
+<p><strong>diman73rus</strong> 23-01-2014</p>
+
+<p>кстати, “луковый кресс” был отправлен на лоджию (там +6 поддерживается “теплым полом”). уж больно воняет луком. пусть там растет. или не растет… законсервирован короче. :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/11286" target="_blank"><img src="/attachimages/14724_IMG_20140124_001030 (1).jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 23-01-2014</p>
+
+<blockquote>
+  <p>а чего там в здоровоклад насыпано? там же вроде на салфетке всё должно расти?</p>
+</blockquote>
+
+<p>семена кинзы там насыпаны. только не все проклюнулись.</p>
+
+<p>ps: мусор рядом - от перца. сорит гад не переставая …</p>
+
+<p><strong>z200</strong> 23-01-2014</p>
+
+<p>совсем мало проклюнулось ((( может семена плохие?</p>
+
+<p><strong>diman73rus</strong> 23-01-2014</p>
+
+<blockquote>
+  <p>Всходит хорошо, а вот соотношение свет-температура ни к черту не годится! Моя бы воля - потребовала бы административную ответственность за издевательство над “братьями нашими меньшими”</p>
+</blockquote>
+
+<p>не надо! мы только учимся.</p>
+
+<p>температура +26-28 круглосуточно. свет - LED 14,4W тёплый белый.</p>
+
+<p>но не всходят они на этапе проращивания (когда крышечка контейнера еще закрыта).</p>
+
+<p>попробую подержать семена в холодильнике пару дней и повторю попытку прорастить. посмотрю процент всхожести. :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/11287" target="_blank"><img src="/attachimages/14726_IMG_20140124_002629.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 23-01-2014</p>
+
+<p>А кому-то в голову приходило, что дальний красный свет (крышечка пресловутая) тормозит прорастание семян :-[? Что температура 26-27оС вовсе не идеальна для многих растений :-[? А Википедию почитать :-X? Я уж об учебниках по овощеводству умалчиваю, тоже вполне доступны… бывшим старшеклассникам… :-[</p>
+
+<p><strong>Borodach1</strong> 24-01-2014</p>
+
+<blockquote>
+  <p>как и обещал фотки :P</p>
+</blockquote>
+
+<p>Ага! Спасибо! Теперь появились новые вопросы. :D</p>
+
+<p>А что это за зелёная жидкость в которой лежит губка? ;) Не моющее ли стедство? :D</p>
+
+<p>После “стрижки” оно дальше растёт? Или новый цикл? Если говый цикл, то какой смысл стричь? Повыдёргивал и <del>в рот</del> съел. :)</p>
+
+<p>Корни в губку вростают? Как их тогда выковыривать? А если не вростают, может можно и с корнями есть?</p>
+
+<p><strong>diman73rus</strong> 24-01-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>как и обещал фотки :P</p>
+  </blockquote>
+
+  <p>Ага! Спасибо! Теперь появились новые вопросы. :D</p>
+
+  <p>А что это за зелёная жидкость в которой лежит губка? ;) Не моющее ли стедство? :D</p>
+
+  <p>После “стрижки” оно дальше растёт? Или новый цикл? Если говый цикл, то какой смысл стричь? Повыдёргивал и <del>в рот</del> съел. :)</p>
+
+  <p>Корни в губку вростают? Как их тогда выковыривать? А если не вростают, может можно и с корнями есть?</p>
+</blockquote>
+
+<p>это чистейшая вода из под крана обычного фильтра. губка зеленая отсвечивает зеленым.</p>
+
+<p>после стрижки не растет, новый цикл.</p>
+
+<p>корни врастают, но не сильно. можно есть с корнями, но в прикорневой зоне много шелухи от семян. эстеты против. :)</p>
+
+<p>и отмывать шелуху лениво.</p>
+
+<p>контейнер моется, губка отмывается от корней сколько получится и опять в работу.</p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<p>Хочу насчет семян поразмыслить. Купил сегодня такие-же как на фото. БИО, Русский огород. Немецкие выслали, придут на след. неделе. Мне кажется это БИО ничего не дает. Когда речь идет о проращивании, тогда понятно, люди едят семена с ростками. Тут желательно экологически чистые, без обработки. Мы же в микрозелени семена не едим? А едим побеги, такие же как у обычных семян, только маленькие. Как всегда могу ошибаться.</p>
+
+<p>Ну я сегодня развернусь! ))) Скорей бы домой с работы. 11 контейнеров с губками уже в сумке, у меня столько подоконников нету. Кстати биоогурцов нет, поэтому купил обычные )))</p>
+
+<p><strong>diman73rus</strong> 24-01-2014</p>
+
+<blockquote>
+  <p>А кому-то в голову приходило, что дальний красный свет (крышечка пресловутая) тормозит прорастание семян :-[? Что температура 26-27оС вовсе не идеальна для многих растений :-[? А Википедию почитать :-X? Я уж об учебниках по овощеводству умалчиваю, тоже вполне доступны… бывшим старшеклассникам… :-[</p>
+</blockquote>
+
+<p>в темную комнату ставить ? вообще без света ? или синими ледами светить ?</p>
+
+<p>угу, почитал, что кинза прорастает при 8-10C. но это же экстремально. типа, если температура ниже, то не прорастет ? а мы даём им сразу лето (26-28C) <em>Dance</em></p>
+
+<p><strong>Coccinella</strong> 24-01-2014</p>
+
+<p>Для большинства растений свет стимулирует прорастание, очень немного культур требуют темноту для прорастания семян (с ходу только порей могу назвать), большинство ее терпит, но из-за дальнего красного света всходит очень долго.</p>
+
+<p>А температура 26-28оС хороша только для огурца, томата, перца, баклажан, дыни, арбуза… да и все, кажется…</p>
+
+<p>Всем остальным лучше 18-22оС</p>
+
+<p><strong>diman73rus</strong> 24-01-2014</p>
+
+<p>пойду ка посею я кинзу в своем подвальчике. там в дальнем углу как раз +16-18C. и света довольно много.. посмотрим… <em>Bos</em></p>
+
+<p><strong>Coccinella</strong> 24-01-2014</p>
+
+<blockquote>
+  <p>. Когда речь идет о проращивании, тогда понятно, люди едят семена с ростками. Тут желательно экологически чистые, без обработки. Мы же в микрозелени семена не едим?</p>
+</blockquote>
+
+<p>Дело в том, что при использовании протравленных семян фунгицид присутствует не только на поверхности семени, но и в самом проростке, причем в довольно высокой концентрации в пересчете на 100 г продукта. Едим, конечно, по щепотке, но лучше не рисковать без необходимости.</p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<p>Высадил. Все. ;D</p>
+
+<p><strong>diman73rus</strong> 24-01-2014</p>
+
+<blockquote>
+  <p>Высадил. Все. ;D</p>
+</blockquote>
+
+<p>с тебя фотки. ;D</p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<p>конечно. смысла нет контейнер с паралоном фотографировать, подождем когда прорастут )))</p>
+
+<p><strong>diman73rus</strong> 24-01-2014</p>
+
+<blockquote>
+  <p>конечно. смысла нет контейнер с паралоном фотографировать, подождем когда прорастут )))</p>
+</blockquote>
+
+<p>как это нет смысла ? :)</p>
+
+<p>а процесс подготовки субстрата и метод высевания семян ? <em>8)</em></p>
+
+<p>я ж вчера всё сфоткал. :D</p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<p>смочил поролон водой, положил в контейнер, насыпал семена, закрыл крышкой.</p>
+
+<p><a href="https://t.me/ponics_ru_files/11288" target="_blank"><img src="/attachimages/14728_IMG_3632.jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 24-01-2014</p>
+
+<p>я поролон смачиваю весь, вода в контейнере не доходит до верха поролона примерно 3мм.</p>
+
+<p>долей воды сбоку аккуратно, чтоб семена не потревожить. ну и погуще можно.</p>
+
+<p>поролон лучше использовать крупнопористый. в мелкопористом мало воздуха для корней.</p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<p>… кому я вру. (((( Хотите правду - читайте.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Пришел на работу, разгреб косяки сотрудников, выяснил судьбу последнего заказа, поговорил с генеральным подрядчиком, выпил чай. Успокоил VIP-клиента лично пообещав, что его смесители для кухни будут покрыты четырьмя слоями золота 999 пробы ровно к обеду, и что я позвоню лично. Потом вызвал водителя и поехал в магазин одноразовой посуды.
+
+Купил контейнеры, опять не те которые надо, а те которые продаются, после чего поехал за семенами. Спросил в магазие есть ли семена «Био»? Получил обычный ответ на любой СВОЙ вопрос в наших магазинах: Нет, и никогда не было. Скушал привычный ответ и попросил обычные семена. Подвели к стойке с травами, на которой в самом центре висит вся линейка «Био». Ткнул продавца носом, получил просьбу: Вы пожалуйста не говорите ни кому, что мы вам с первого раза эти семена не дали. Не понял зачем мне это, но на всякий случай обещать не стал. Забрал семена, пошел на кассу, на последок спросил у кассира: У вас в продаже проращиватели бывают? Думаю, что ответ вы уже поняли. В третьем магазине купил лист поролона 20 мм., и вернулся на работу.
+
+Пришел в сувенирный цех, выгнал Данилу (сотрудник) из-за компьютера, и сел рисовать чертеж поролоновых вставок. Я конечно тоже начинал с Корела, лет 20 назад, но уже давно не практиковался, сейчас только Иллюстратор и Автокад. А там, в Кореле, всё через одно место делается. Ругался, матерился, но… руки-то помнят. Иллюстраторы стоят у дизайнеров, а на второй этаж идти было не охота. Накидал наброски, и оставил Данилу доделывать.
+
+Когда чертежи были готовы, спросил у начальника склада где лежит фоам-нож для плоттера Mimaki CF2-1218? Оказывается - нигде!!! Единственный ножик с углом 2 градуса, для резки поролона, стоимостью дофига евро, которым конечно никто никогда не пользовался, т.к. поролон не режем, наш друг Данила давно сломал, попробовав им резать пластик.
+
+Высказал Даниле-мастеру всё, что я о нем думаю, но про себя, после этого стали резать тем, что есть. А этим нифига не выходит, всё криво, и только на пару миллиметров в глубь. Так, что логотип форума вырезать не получилось, нарезал каких-то полосок и кривых, и уехал домой. Дома попытался в эти полоски засунуть семена - да в гробу я это видел, не благодарная работа. Поэтому зарядив несколько рисунков, остальные семена просто насыпал.
+
+Это так, в кратце. А ножик всё-равно купить нужно.
+</code></pre></div></div>
+
+<p><strong>diman73rus</strong> 24-01-2014</p>
+
+<p>ножик - да. :D</p>
+
+<p>я тоже сначала резал поролон. и запихивал как можно плотнее, чтобы сбоку не было щелей. а то семена всё время норовили туда упасть и прощай урожай. :)</p>
+
+<p>потом нашел в магазине губки для мытья посуды подходящего размера (примерно 9.5x6.5см). вот с ними и выращиваю.</p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<p>Вообще это конечно всё не правильно с поролоном. Семена располагаются как попало, без системы, и не экономно. В специальном проращивателе есть ячейки разного размера. Одна я чейка - одно семечко. Но как и из чего сделать пока не придумал.</p>
+
+<p><img src="http://ic.pics.livejournal.com/positiveview/32326402/184935/184935_original.jpg" alt="" /></p>
+
+<p><strong>Borodach1</strong> 24-01-2014</p>
+
+<blockquote>
+  <p>Одна я чейка - одно семечко. Но как и из чего сделать пока не придумал.</p>
+</blockquote>
+
+<p>Дык! Дык! Это… А может ленту серпянку к губке как нибудь приторочить? Семян сверху насыпать, а что мимо ячеек попадёт кмсточкой смахивать.</p>
+
+<p>Или на CNC-шном станке пазы в поролоне вырезать или сеткой или спиралью. Только вот не знаю, не завернёт ли фреза на себя весь поролон. Хотя… можно пропитать губку водой, заморозить, а затем спокойно резать. :D</p>
+
+<p>Во блин идеи в голову полезли. :D</p>
+
+<p><strong>Strangeman</strong> 24-01-2014</p>
+
+<p>а что, идея с кондуктором хорошая - прям, как шарики на BGA корпуса :)</p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<p>нельзя фрезой поролон резать, вот как раз Мимаки планшетный для него и сделан в том числе. Осциллирующий нож с углом 2 градуса, это такая пила в виде иглы ))) Но он только бороздки прорежет. Думал лазером оргстекло подырявить, да времени сегодня не было. Но оно хрупкое станет после такого кол-ва дыр. Если с семенами свеклы или редиса более-менее понятно, то как быть с кресс-салатом остается загадкой ))) Хотя самые “четкие” семена которые я садил это конечно “Мшанка шиловидная” )))))</p>
+
+<p><strong>Borodach1</strong> 24-01-2014</p>
+
+<blockquote>
+  <p>а что, идея с кондуктором хорошая - прям, как шарики на BGA корпуса :)</p>
+</blockquote>
+
+<p>Я как фотку с котом увидел, так сразу перед глазами и встал процесс намазывания пасты. :D :D :D</p>
+
+<p>И тут же про серпянку вспомнил. :D</p>
+
+<blockquote>
+  <p>нельзя фрезой поролон резать, вот как раз Мимаки планшетный для него и сделан в том числе. Осциллирующий нож с углом 2 градуса, это такая пила в виде иглы ))) Но он только бороздки прорежет.</p>
+</blockquote>
+
+<p>Я ж предлагал пока ещё зима на улице фрезеровать замороженый поролон. ;) :D</p>
+
+<p>А пилу-иглу можно градусов на 30 повернуть относительно плоскости составленной вертикалью и направлением движения? Если можно, то тогда за 2 прохода вырежется 60-ти градусная канавка.</p>
+
+<p><strong>Borodach1</strong> 24-01-2014</p>
+
+<p>Да, а раз он режет бороздки, то пусть их и нарежет. Сжимаем губку так чтоб бороздки раскрылись веером, берём щепотку семян, обильно “солим” и отпускаем губку. “веер” зажимает только то, что попало в канавки, остальное стряхиваем.</p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<p>повернуть нельзя, строго вертикально</p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<blockquote>
+  <p>Да, а раз он режет бороздки, то пусть их и нарежет. Сжимаем губку так чтоб бороздки раскрылись веером, берём щепотку семян, обильно “солим” и отпускаем губку. “веер” зажимает только то, что попало в канавки, остальное стряхиваем.</p>
+</blockquote>
+
+<p>Я так и пробовал, на фото видно пару контейнеров с “полосками”. Проблема в том, что он много “соли” зажимает, даже боюсь момента когда она прорастет ))</p>
+
+<p><strong>Borodach1</strong> 24-01-2014</p>
+
+<blockquote>
+  <p>повернуть нельзя, строго вертикально</p>
+</blockquote>
+
+<p>Ну тогда наоборот. Поворачивать на 30 градусов заготовку. Или длинны пилы-иглы не хватит?</p>
+
+<p><strong>Vad</strong> 24-01-2014</p>
+
+<blockquote>
+  <p>а что, идея с кондуктором хорошая - прям, как шарики на BGA корпуса :)</p>
+</blockquote>
+
+<p>все поняли о чем вы ;)</p>
+
+<p><strong>Strangeman</strong> 24-01-2014</p>
+
+<p>Ну, я это… В общем… :-[</p>
+
+<p>Я не знаю, как объяснить тем, кто не понял. Это ж долго будет.</p>
+
+<p>А мысль возникла, я ее и написал. Я ж, как… в общем, пишу про то, что вижу. Или думаю.</p>
+
+<p>Что взбрело в голову, то и пишу. Вот.</p>
+
+<p><strong>Vad</strong> 24-01-2014</p>
+
+<blockquote>
+  <p>Если с семенами свеклы или редиса более-менее понятно, то как быть с кресс-салатом остается загадкой )))</p>
+</blockquote>
+
+<p>Это просто .. если есть лезер или водорез .. в люминьке, или нержавейке тонкой(0.8-1мм) дырок “набить”</p>
+
+<p>так чтоб только 1 семачка ложилась в гнездо..</p>
+
+<p>и все..</p>
+
+<p>приложил к губке, наклонил, присолил… в каждой ячейке по 1 семачку встряло… шаблон снял.. и жди.. :D</p>
+
+<p>вот.. прям как шарики.. БГА ;)</p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<blockquote>
+  <p>Ну тогда наоборот. Поворачивать на 30 градусов заготовку. Или длинны пилы-иглы не хватит?</p>
+</blockquote>
+
+<p>не хватит, нож всего 2 см.</p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<p>шарики БГА микросхем действительно все знают, тот кто не знает наберет в яндексе. Дырок млжно набить в чем угодно, любого размера, но семечка в дырке не застрянет. Я уже голову сломал, нужно типа вакуума, чтоб её туда засасывало. В общем бред это, перебор, не стоит того. А уж если дальше идти, то:</p>
+
+<p>Уважаемые буржуи, которые следят за моими идеями много лет, и тырят их, вот вам еще одна: нужен принтер печатающий семечками. Причем разными культурами разного цвета ростков. На поролон (к примеру) наносится питательный быстрорастворимый (дня за три) гель, на который принтер наносит семечки. Потом всё прорастает и получается живая картина из микрозелени, на вип-подарок. Чтобы не было битых пикселей - используйте только качественные чернила.</p>
+
+<p><strong>Vad</strong> 24-01-2014</p>
+
+<p><a href="http://www.youtube.com/watch?v=pOqr0KZ8qRg#" target="_blank">http://www.youtube.com/watch?v=pOqr0KZ8qRg#</a></p>
+
+<p>:D ;D</p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<p>Vad, со стороны это конечно не привычно, но в действительности крупные глобальные корпорации ищут идеи везде, и интернет один из основных источников, скорее всего на втором месте после патентных бюро. Я и вправду много чего придумал в своей жизни, некоторыми моими изобретениями вы пользуйтесь и сейчас. Но запатентовал только одно, да и то, потому-что друзья и коллеги заставили )))</p>
+
+<p><strong>Vad</strong> 24-01-2014</p>
+
+<p>Я знааюю.. сам такой.. только патентовать смысла нет.. болт перемести в другое место.. назови по другому и все..</p>
+
+<p>патент он как замок на двери.. для честных воров <em>???</em></p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<blockquote>
+  <p>патент он как замок на двери.. для честных воров <em>???</em></p>
+</blockquote>
+
+<p>Согласен. Поэтому патентовать идеи бесполезно, да и не совсем честно с моральной стороны как мне кажется. Идею ещё нужно в жизнь воплотить, а чаще это намного сложнее самой идеи. Поэтому я сначала придумал, потом год делал десятки образцов, потом создал готовый красивый продукт, по конкурентной цене, и только после этого запатентовал, когда уже сам был доволен результатом. Хотя патент конечно для красоты, пользы от него никакой )))))</p>
+
+<p><strong>diman73rus</strong> 24-01-2014</p>
+
+<p>прошло 24 часа</p>
+
+<p><a href="https://t.me/ponics_ru_files/11289" target="_blank"><img src="/attachimages/14736_IMG_20140124_193615.jpg" alt="" /></a></p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<blockquote>
+  <p>прошло 24 часа</p>
+</blockquote>
+
+<p>это кто посеян?</p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<p>а у меня дела не очень. Сухо им. Изначально не правильно сделал, нужно было кусок минваты положить. А сейчас семечки почитай на голом керемзите, и я их просто поливаю раз пять за день. И так будет пока корни ниже уровня раствора в трубе не вырастут</p>
+
+<p><a href="https://t.me/ponics_ru_files/11290" target="_blank"><img src="/attachimages/14738_IMG_3634.jpg" alt="" /></a></p>
+
+<p><strong>mitrotech</strong> 24-01-2014</p>
+
+<p>Пока времени мало прошло переделай как у меня. Потом просто намного обиднее будет.</p>
+
+<p><a href="https://t.me/ponics_ru_files/11291" target="_blank"><img src="/imagehost/thumbs/img0366.jpg" alt="" /></a></p>
+
+<p>Салфетки вискозные продаются в Магните или в хозтоварах по 16-20 рублей за пакетик - там три или четыре или шесть - от размера зависит. Нарежь на полоски по сантиметру, кончики пусть болтаются под стаканом, а петля в керамзите. У меня сделано две петли, поэтому на фото четыре кончика болтаются. Будешь засыпать керамзит - придерживай петли. Уровень, до которого я поднял петли - сантиметр вниз от поверхности керамзита.</p>
+
+<p><strong>z200</strong> 24-01-2014</p>
+
+<p>я обязательно так сделаю, в следующий раз. Сейчас живые особи трогать не буду. У меня один салатик со страха корень через весь стакан пустил, до дна )) Второй тоже воды касается. Потерплю уж, пополиваю пока.</p>
+
+<p><strong>diman73rus</strong> 24-01-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>прошло 24 часа</p>
+  </blockquote>
+
+  <p>это кто посеян?</p>
+</blockquote>
+
+<p>кресс-салат :)</p>
+
+<p><strong>z200</strong> 25-01-2014</p>
+
+<blockquote>
+  <p>кресс-салат :)</p>
+</blockquote>
+
+<p>что-то у нас разное растет. у моего кресс-салата семечки размером с маковые</p>
+
+<p><strong>mitrotech</strong> 25-01-2014</p>
+
+<p>Маковый кресс-салат. Потом аккуратно головку надрезать и росу собрать. :-X</p>
+
+<p><strong>Vad</strong> 25-01-2014</p>
+
+<p>уууу…. :o</p>
+
+<p>а потом что делать? :-\ куда применять росу?.. салат заправлять?</p>
+
+<p><a href="http://www.youtube.com/watch?v=rpIDyTMu01g#" target="_blank">http://www.youtube.com/watch?v=rpIDyTMu01g#</a></p>
+
+<p><strong>Strangeman</strong> 25-01-2014</p>
+
+<p><em>8)</em></p>
+
+<p><strong>diman73rus</strong> 25-01-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>кресс-салат :)</p>
+  </blockquote>
+
+  <p>что-то у нас разное растет. у моего кресс-салата семечки размером с маковые</p>
+</blockquote>
+
+<p>у меня - кресс-салат “весенний”.</p>
+
+<p>есть еще кресс-салат “забава”. разницы не заметил.</p>
+
+<p><strong>Vad</strong> 25-01-2014</p>
+
+<p>;D забава ;D</p>
+
+<p><strong>mitrotech</strong> 25-01-2014</p>
+
+<p>Вот вы раздразнили меня на микрозелень. Завтра пойду в магазин, посмотрю что есть в продаже.</p>
+
+<p>По поводу кресс-салата и вообще микрозелени - как её размножать? Вот как кресс-салат размножается, который как микрозелень? Также вырастить 50-60 см как обычный кресс? Тогда возникает вопрос о сорте, так как я не нашёл в интернете семена кресс-салата как микрозелени с указанием сорта.</p>
+
+<p>И вообще путаница какая-то возникает иногда - разные источники пишут об одном и том же сорте разные, порой диаметрально противоположные, описания: у одних базилик такого-то сорта однолетний, у других такой же базилик того же сорта - многолетник. Это кажется Русский огород у меня был и какая-то фирма, там плазмой семена обрабатывали.</p>
+
+<p><strong>Coccinella</strong> 25-01-2014</p>
+
+<blockquote>
+  <p>По поводу кресс-салата и вообще микрозелени - как её размножать? Вот как кресс-салат размножается, который как микрозелень? Также вырастить 50-60 см как обычный кресс? Тогда возникает вопрос о сорте, так как я не нашёл в интернете семена кресс-салата как микрозелени с указанием сорта.</p>
+</blockquote>
+
+<p>Да нет у кресс-салата (жерухи Nasturtium ooficinalis) сортов. Размножают, как все капустные, семенами. Растение многолетнее, значит, зацветает, как минимум, на второй год. Никогда сама его семян не выращивала, точно не знаю. Для домашнего употребления проще всего размножать :) покупкой семян в магазине или у иных надежных поставщиков :)</p>
+
+<p><strong>z200</strong> 25-01-2014</p>
+
+<p>у меня проросли все, за день. Именно за сегодняшний световой день, а не за сутки, т.к. утром почти ничего не было.</p>
+
+<p>Хуже всех - кресс-салат, лучше всех - редис и дайкон (на первом фото)</p>
+
+<p>Ну и с базиликом что-то странное, он в какие-то капсулы спрятался.</p>
+
+<p><a href="https://t.me/ponics_ru_files/11292" target="_blank"><img src="/attachimages/14740_IMG_3640.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11293" target="_blank"><img src="/attachimages/14742_IMG_3641.jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 25-01-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>По поводу кресс-салата и вообще микрозелени - как её размножать? Вот как кресс-салат размножается, который как микрозелень? Также вырастить 50-60 см как обычный кресс? Тогда возникает вопрос о сорте, так как я не нашёл в интернете семена кресс-салата как микрозелени с указанием сорта.</p>
+  </blockquote>
+
+  <p>Да нет у кресс-салата (жерухи Nasturtium ooficinalis) сортов. Размножают, как все капустные, семенами. Растение многолетнее, значит, зацветает, как минимум, на второй год. Никогда сама его семян не выращивала, точно не знаю. Для домашнего употребления проще всего размножать :) покупкой семян в магазине или у иных надежных поставщиков :)</p>
+</blockquote>
+
+<p>угу. я нашел у местного оптового поставщика кресс по 400р за 1кг. пришел такой к ним. говорю продайте кило на пробу… а они типа у нас только 300гр осталось. я такой скривился, фу, говорю, тоже мне оптовая… ну давайте… дал им свой телефон, чтоб позвонили, когда будет… так и не позвонили. :)</p>
+
+<p><strong>z200</strong> 25-01-2014</p>
+
+<p>Блин, точно, у нас же оптовка есть! Летом у них брал в два раза дешевле )) mitrotech поедешь к оптовикам? Там у них от 2000 руб. можно, купим пополам по 1000 )))</p>
+
+<p><strong>diman73rus</strong> 25-01-2014</p>
+
+<blockquote>
+  <p>у меня проросли все, за день. Именно за сегодняшний световой день, а не за сутки, т.к. утром почти ничего не было.</p>
+
+  <p>Хуже всех - кресс-салат, лучше всех - редис и дайкон (на первом фото)</p>
+
+  <p>Ну и с базиликом что-то странное, он в какие-то капсулы спрятался.</p>
+</blockquote>
+
+<p>базилик норм.</p>
+
+<p><strong>mitrotech</strong> 25-01-2014</p>
+
+<blockquote>
+  <p>Ну и с базиликом что-то странное, он в какие-то капсулы спрятался.</p>
+</blockquote>
+
+<p>Так и должно быть - слизкие шарики белого матового цвета.</p>
+
+<blockquote>
+  <p>Блин, точно, у нас же оптовка есть! Летом у них брал в два раза дешевле )) mitrotech поедешь к оптовикам? Там у них от 2000 руб. можно, купим пополам по 1000 )))</p>
+</blockquote>
+
+<p>Да, было бы здорово посмотреть что у них есть. В зависимости от цены надо пересчитать план расходов, ибо кредит за квартиру. В данный момент даже тысяча напрягает. Хорошо хоть не долго терпеть.</p>
+
+<p>А какой адрес?</p>
+
+<p><strong>z200</strong> 25-01-2014</p>
+
+<p>Ул. Нагорная, 6 <a href="http://maps.yandex.ru/?text=SV-57207-B&amp;sll=49.68259510999999%2C58.5776373599914&amp;sspn=0.009731054306037379%2C0.000969430866575749&amp;z=17&amp;results=20&amp;sctx=BQAAAAEAJV0z%2BWbVSEAjTbwDPE1NQNWuCWmNQcU%2FX0Av3Lkwvj8AAAAA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8AAAAAAAAAAAAuAAAAAQ%3D%3D&amp;ll=49.682595%2C58.577637&amp;spn=0.009731%2C0.000969&amp;l=map%2Cstv&amp;ol=stv&amp;oll=49.68189285%2C58.577631659999994&amp;ost=dir%3A152.8410127877046%2C0~spn%3A89.99999987427145%2C37.059304933164995" target="_blank">http://maps.yandex.ru/?text=SV-57207-B&amp;sll=49.68259510999999%2C58.5776373599914&amp;sspn=0.009731054306037379%2C0.000969430866575749&amp;z=17&amp;results=20&amp;sctx=BQAAAAEAJV0z%2BWbVSEAjTbwDPE1NQNWuCWmNQcU%2FX0Av3Lkwvj8AAAAA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8AAAAAAAAAAAAuAAAAAQ%3D%3D&amp;ll=49.682595%2C58.577637&amp;spn=0.009731%2C0.000969&amp;l=map%2Cstv&amp;ol=stv&amp;oll=49.68189285%2C58.577631659999994&amp;ost=dir%3A152.8410127877046%2C0~spn%3A89.99999987427145%2C37.059304933164995</a></p>
+
+<p><strong>z200</strong> 26-01-2014</p>
+
+<p>Хочу вот чего спросить. Открыл контейнеры, дал подышать несколько часов, потом снова закрыл. Когда крышки открывать навсегда?</p>
+
+<p><strong>diman73rus</strong> 26-01-2014</p>
+
+<blockquote>
+  <p>Хочу вот чего спросить. Открыл контейнеры, дал подышать несколько часов, потом снова закрыл. Когда крышки открывать навсегда?</p>
+</blockquote>
+
+<p>я открываю через 36 часов. иначе у них крышу сносит:</p>
+
+<p><a href="https://t.me/ponics_ru_files/11294" target="_blank"><img src="/attachimages/14750_IMG_20140125_092136.jpg" alt="" /></a></p>
+
+<p><strong>z200</strong> 26-01-2014</p>
+
+<p>а днем подышать даёшь?</p>
+
+<p><strong>diman73rus</strong> 26-01-2014</p>
+
+<blockquote>
+  <p>а днем подышать даёшь?</p>
+</blockquote>
+
+<p>нет. 36 часов дышат тем, что было при закрытии крышки.</p>
+
+<p><strong>z200</strong> 26-01-2014</p>
+
+<p>там какой-то белый пух-мох появляется местами :(</p>
+
+<p><strong>diman73rus</strong> 26-01-2014</p>
+
+<blockquote>
+  <p>там какой-то белый пух-мох появляется местами :(</p>
+</blockquote>
+
+<p>ну открывай тогда, если думаешь, что это плесень.</p>
+
+<p>поролон слишком плотный.</p>
+
+<p>в идеале надо такой, который используют в фильтрах для воды.</p>
+
+<p><a href="https://t.me/ponics_ru_files/11295" target="_blank"><img src="/imagehost/thumbs/jfof.jpg" alt="" /></a></p>
+
+<p>но я не нашел в магазинах местных. посему использую что было по рукой.</p>
+
+<p><strong>z200</strong> 26-01-2014</p>
+
+<p>где-то я такой видел, и даже в руках держал, но не помню где</p>
+
+<p><strong>Rossich</strong> 27-01-2014</p>
+
+<blockquote>
+  <p>… кому я вру. (((( Хотите правду - читайте………</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>....................Это так, в кратце. А ножик всё-равно купить нужно.
+</code></pre></div>  </div>
+</blockquote>
+
+<p>Ей Богу в Вас талант писателя пропадает, попробуйте!</p>
+
+<p><strong>z200</strong> 27-01-2014</p>
+
+<blockquote>
+  <p>Ей Богу в Вас талант писателя пропадает, попробуйте!</p>
+</blockquote>
+
+<p>А кто сказал, что он пропадает? ))) Он просто ждет свободного времени. Эх молодость, когда-то я был главным редактором пяти изданий ))))</p>
+
+<p><strong>Borodach1</strong> 27-01-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>Ей Богу в Вас талант писателя пропадает, попробуйте!</p>
+  </blockquote>
+
+  <p>А кто сказал, что он пропадает? ))) Он просто ждет свободного времени. Эх молодость, когда-то я был главным редактором пяти изданий ))))</p>
+</blockquote>
+
+<p>Тоже было хобби? ;)</p>
+
+<p><strong>z200</strong> 27-01-2014</p>
+
+<blockquote>
+  <p>Тоже было хобби? ;)</p>
+</blockquote>
+
+<p>)))) Работа. Хотя в начале 90-х многие работы можно было назвать хобби. )))</p>
+
+<p><strong>Coccinella</strong> 27-01-2014</p>
+
+<p>Я как-то говорила уже, что здесь собираются не только гидропонщики, но и литературные таланты :)</p>
+
+<p><strong>z200</strong> 27-01-2014</p>
+
+<p>Получил сегодня проращиватель</p>
+
+<p><a href="http://www.hlebomoli.ru/collection/plastikovye/product/proraschivatel-biosnacky-avogel" target="_blank">http://www.hlebomoli.ru/collection/plastikovye/product/proraschivatel-biosnacky-avogel</a></p>
+
+<p><img src="http://static2.insales.ru/images/products/1/2546/27019762/large_BioSnacky-proraschivatel-1.jpg" alt="" /></p>
+
+<p>и немецкие семена</p>
+
+<p><a href="http://www.hlebomoli.ru/collection/semena" target="_blank">http://www.hlebomoli.ru/collection/semena</a></p>
+
+<p>Замочил по инструкции, вечером высажу.</p>
+
+<p>А по прежним посадкам ситуация такая - в одном контейнере была плесень, и запах соответствующий. Все контейнеры я открыл вчера, а сейчас пересмотрел и перенюхал - ни плесени, ни запаха нет. Зато горчица пахнет! ))) Сейчас сделаю фотки.</p>
+
+<p><strong>z200</strong> 27-01-2014</p>
+
+<p>прошло три дня</p>
+
+<p><a href="https://t.me/ponics_ru_files/11296" target="_blank"><img src="/attachimages/14770_базилик.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11297" target="_blank"><img src="/attachimages/14772_горчица.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11298" target="_blank"><img src="/attachimages/14774_дайкон.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11299" target="_blank"><img src="/attachimages/14776_капуста красная.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11300" target="_blank"><img src="/attachimages/14778_кинза.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11301" target="_blank"><img src="/attachimages/14780_кресс.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11302" target="_blank"><img src="/attachimages/14782_огурцы.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11303" target="_blank"><img src="/attachimages/14784_редис.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11304" target="_blank"><img src="/attachimages/14786_руколла.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11305" target="_blank"><img src="/attachimages/14788_свекла.jpg" alt="" /></a></p>
+
+<p><strong>z200</strong> 27-01-2014</p>
+
+<p>не удержались, попробовали первый раз в жизни микрозелень на вкус. Дайкон и горчицу. Это очень интересно. Я понял фразу “насыщенный пряный вкус”, это у дайкона. А горчица - пощипывает, причем ощутимо )))</p>
+
+<p><strong>Coccinella</strong> 27-01-2014</p>
+
+<blockquote>
+  <p>Все контейнеры я открыл вчера, а сейчас пересмотрел и перенюхал - ни плесени, ни запаха нет.</p>
+</blockquote>
+
+<p>Сегодня утром моя мама ворчит на мою дочку : “почему носок на столе валяется?” - “Да он, бабушка, чистый, Ты понюхай!” :)</p>
+
+<p><strong>z200</strong> 27-01-2014</p>
+
+<p>проращиватель буржуйский, инструкция переведена, там написано что при недостатке кислорода на микрозелени может появиться плесень, что сопровождается характерным запахом. Вот я и пошел нюхать. Там еще умные вещи есть, например кресс-салат поливать нужно только два дня а потом лишь опрыскивать. Надо потом инструкцию сфоткать и сюда выложить, если интересно.</p>
+
+<p><strong>diman73rus</strong> 27-01-2014</p>
+
+<p>вот 3 дня</p>
+
+<p><a href="https://t.me/ponics_ru_files/11306" target="_blank"><img src="/imagehost/thumbs/2701141.jpg" alt="" /></a></p>
+
+<p>а это 4 дня</p>
+
+<p><a href="https://t.me/ponics_ru_files/11307" target="_blank"><img src="/imagehost/thumbs/2701142.jpg" alt="" /></a></p>
+
+<p>свет выключился в 23:00, фоткал сотиком со вспышкой.</p>
+
+<p><strong>z200</strong> 27-01-2014</p>
+
+<p>Чегой-то у нас с тобой не сходится. То-ли салаты разные, то-ли еще чего.</p>
+
+<p><strong>z200</strong> 28-01-2014</p>
+
+<p>Ну в общем человек я упертый и трудолюбивый. Нашел то что нам нужно.</p>
+
+<p>Polinazell – это ретикулированный пенополиуретан на основе простых полиэфиров. Его характерными особенностями являются высокая устойчивость к любым механическим воздействиям, старению, воздуху (не разрушается при контакте с озоном и кислородом). Polinazell способен смягчать удары, поэтому его применяют для упаковки или в товарах народного потребления. Кроме того, он используется для звукоизоляции и различных фильтров: воздушных, водных, пылевых, пенокерамических. Производится этот материал без использования фреона, не содержит пластификаторов. Polinazell устойчив к едким растворам и кислотам, высоким температурам.</p>
+
+<p>Также нашел где это купить, в Питере <a href="http://porolon.biz" target="_blank">http://porolon.biz</a></p>
+
+<p>Сейчас хочу послушать ваше мнение насчет плотности. Думаю 2-3 вида взять для пробы.</p>
+
+<p><img src="http://www.energomet.ru/UserFiles/Image/img/poli/polinazell20blue.jpg" alt="" /></p>
+
+<p><strong>Borodach1</strong> 28-01-2014</p>
+
+<p>Хорошо б его перед покупкой пошшупать. ;)</p>
+
+<p>А это не та фигня которую используют для упаковки мониторов и другой оргтехники? Если такой, то он воду вроде не впитывает.</p>
+
+<p><strong>z200</strong> 28-01-2014</p>
+
+<blockquote>
+  <p>Хорошо б его перед покупкой пошшупать. ;)</p>
+
+  <p>А это не та фигня которую используют для упаковки мониторов и другой оргтехники? Если такой, то он воду вроде не впитывает.</p>
+</blockquote>
+
+<p>Не знаю. Чтобы пощупать нужно кого-нибудь в Питере. А зачем нам воду впитывать? Нам нужны дырки чтобы было куда корням расти, а воду наливать по верхнему уровню до семечек, а потом можно и меньше</p>
+
+<p><strong>mitrotech</strong> 28-01-2014</p>
+
+<p>Да, кажется это тот поролон, который с дырками, который можно встретить в губках для обуви, судя по описанию на их сайте. И корням есть куда расти, и вытаскивать корни легче. Но минимальный заказ от 6к рублей :-\</p>
+
+<p><strong>z200</strong> 28-01-2014</p>
+
+<p>6 тыс. не проблема, я куплю, а тебе отрежу сколько надо. Вопрос первый, какую минимальную толщину взять? 10-15-20 мм.? А по дыркам думаю надо брать и 10 и 20 и 30 для пробы</p>
+
+<p><strong>taram</strong> 28-01-2014</p>
+
+<p>Я тоже подобный поролон ищу ( ну как ищу, жду когда ктонибуть найдёт ,то что нужно и скажет где купить :D ). Мне подобный поролон для МАпито нужен, субстрат такой. Хочу попробывать. Такой субстрат для горшечного выращивания хорошо подходит.</p>
+
+<p>Вот тока подходит ли такой поролон для мапито <em>???</em> :-\ ?</p>
+
+<p><strong>z200</strong> 28-01-2014</p>
+
+<blockquote>
+  <p>Мне подобный поролон для МАпито нужен</p>
+</blockquote>
+
+<p>это матерное слово даже яндекс переварить не может :-[ Что это???</p>
+
+<p><strong>Vad</strong> 28-01-2014</p>
+
+<p>это что-то от “канабиодных типов”…</p>
+
+<p>;)</p>
+
+<p><strong>Vad</strong> 28-01-2014</p>
+
+<p><a href="http://www.growlight.ru/substrates/364-rfx-1-10-.html" target="_blank">http://www.growlight.ru/substrates/364-rfx-1-10-.html</a></p>
+
+<p><strong>z200</strong> 28-01-2014</p>
+
+<blockquote>
+  <p><a href="http://www.growlight.ru/substrates/364-rfx-1-10-.html" target="_blank">http://www.growlight.ru/substrates/364-rfx-1-10-.html</a></p>
+</blockquote>
+
+<p>это вы к чему?</p>
+
+<p><strong>taram</strong> 28-01-2014</p>
+
+<p>Мапито - это смесь кусочков 1на1 см. минваты и поролона.</p>
+
+<p>Если в горшок насыпаить одни кусочки минваты, то они после полива слипнутся и получится один большой кусок минваты, без доступа воздуха корням. Чтобы такого не происходило, вату разбавляют такими же по размеру кусками поролона. Получается субстр с большой влагоёмкостью и с хорошей аэрацией. Причём многоразовый.</p>
+
+<p><strong>z200</strong> 28-01-2014</p>
+
+<p>Теперь всё понятно</p>
+
+<p><strong>taram</strong> 28-01-2014</p>
+
+<blockquote>
+  <p>это что-то от “канабиодных типов”…</p>
+</blockquote>
+
+<p>Да кака разница . Но в магазах готовое мапито лучше не покупать, там~~ ложат~~ <del>покладают</del> :) (КЛАДУТ) поролон, какой придется, проще самому сделать с подобраным поролоном, от него зависит аэрация и неслипаемость ваты. А МИНВАТА. отдельно, в виде таких кусочков, вроде имеется в продаже.</p>
+
+<p><strong>Dezero</strong> 28-01-2014</p>
+
+<p>сдрасьте… взял поролон от мамки…пока растюхи мелкие совсем, но растут вроде. dwc, вода…</p>
+
+<p><strong>z200</strong> 28-01-2014</p>
+
+<p>время идет, зелень растет. Пора наверное делиться рецептами. Если наберем некоторое кол-во - размещу на первой странице. А пока…</p>
+
+<p>я добавил ростки горчицы в винегрет, штук 10-15 на тарелку - ничео особенного, им там не место. Мкрозелень как мне кажется должна попадать на язык сразу, т.е. лежать сверху бутерброда например и т.д. К выходным подрастем и устроим пир.</p>
+
+<p><strong>Nikolai</strong> 28-01-2014</p>
+
+<p>синтепон можно попробовать</p>
+
+<p><strong>z200</strong> 28-01-2014</p>
+
+<p>я в синтепон высадил три дня назад - не растет ничего, три раза в день поливаю (((</p>
+
+<p><strong>z200</strong> 29-01-2014</p>
+
+<p>съел дайкон - вкусно, съел редис - очень остро, обжигает. Жду новый поролон чтобы по-уму высадить.</p>
+
+<p><strong>z200</strong> 31-01-2014</p>
+
+<p>съел красную капусту - вкусно, огурец - горький, больше не буду. На подходе базилик и кресс-салат.</p>
+
+<p><strong>z200</strong> 31-01-2014</p>
+
+<p>В моей установке всё не очень хорошо. Напомню что там растут 7 видов салата. Растут плохо и медленно. У меня нет пока никаких приборов, поэтому состояние раствора я сказать не могу.</p>
+
+<p><a href="https://t.me/ponics_ru_files/11308" target="_blank"><img src="/attachimages/14823_IMG_3699.jpg" alt="" /></a></p>
+
+<p><strong>z200</strong> 31-01-2014</p>
+
+<p>В проращивателе проросли пшеница, горох, и салатная смесь.</p>
+
+<p><a href="https://t.me/ponics_ru_files/11309" target="_blank"><img src="/attachimages/14825_IMG_3701.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11310" target="_blank"><img src="/attachimages/14827_IMG_3706.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11311" target="_blank"><img src="/attachimages/14829_IMG_3703.jpg" alt="" /></a></p>
+
+<p><strong>z200</strong> 31-01-2014</p>
+
+<p>В поролоне остался базилик, кресс-салат, и дайкон из которого торчит стебелёк явно не дайконовского происхождения ))</p>
+
+<p><a href="https://t.me/ponics_ru_files/11312" target="_blank"><img src="/attachimages/14831_IMG_3708.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11313" target="_blank"><img src="/attachimages/14833_IMG_3709.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11314" target="_blank"><img src="/attachimages/14835_IMG_3713.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 31-01-2014</p>
+
+<p>:)</p>
+
+<p><strong>valery</strong> 31-01-2014</p>
+
+<blockquote>
+  <p>В моей установке всё не очень хорошо. Напомню что там растут 7 видов салата. Растут плохо и медленно. У меня нет пока никаких приборов, поэтому состояние раствора я сказать не могу.</p>
+</blockquote>
+
+<p>Если исходный раствор сделан нормально, то в данной ситуации никакой спешки с приборами для “отслеживания состояния раствора” - нет.</p>
+
+<p>Такие маленькие муси-пуси не оказывают на него (раствор) никакого влияния. Пока еще.</p>
+
+<p><strong>z200</strong> 31-01-2014</p>
+
+<p>Дак у меня и раствор-то…. чистая вода в которую добавил жидкое комплексное удобрение для рассады. А эти муси-пуси конечно миленькие, но за две недели уж очень малы.</p>
+
+<p>Приборы где-то едут-летят с разных концов мира. ((</p>
+
+<p><strong>z200</strong> 31-01-2014</p>
+
+<p>Кстати, сейчас мыл поролон после редиса. Корни проросли насквозь, и дальше размещались на дне контейнера. Длинные, не менее 7-8 см. Так что плотный поролон не помеха, по крайней мере для редиски.</p>
+
+<p><strong>diman73rus</strong> 31-01-2014</p>
+
+<p>этот поролон не айс… корням воздуха не хватает.</p>
+
+<p><strong>z200</strong> 31-01-2014</p>
+
+<blockquote>
+  <p>этот поролон не айс… корням воздуха не хватает.</p>
+</blockquote>
+
+<p>скоро будет другой ))) Ждемс.</p>
+
+<p><strong>z200</strong> 03-02-2014</p>
+
+<p>Пришли приборчики. Теперь понятно чем я поливаю свой салат.</p>
+
+<p>Ph в системе - 8, причем Ph из фильтра водяного на кухне - 7</p>
+
+<p>TDS - 202</p>
+
+<p>EC - 387</p>
+
+<p>А теперь более опытные товарищи, основываясь на эти непонятные цифры, скажут как мне жить дальше. Ну пожалуйста…. $)</p>
+
+<p><strong>Coccinella</strong> 03-02-2014</p>
+
+<p>Подкислять раствор до рН 5,5-6,0 и повышать ЕС до 1,8-2,2 мСм/см2</p>
+
+<p><strong>Coccinella</strong> 03-02-2014</p>
+
+<p>Мнится мне, что у Вас ЕС в иных единицах измерения, запятая где-то заблудилась…</p>
+
+<p><strong>z200</strong> 03-02-2014</p>
+
+<blockquote>
+  <p>Подкислять раствор до рН 5,5-6,0 и повышать ЕС до 1,8-2,2 мСм/см2</p>
+</blockquote>
+
+<p>Отлично!!! Именно этого ответа я и ждал.</p>
+
+<p>Не понял ничего (((( Ни как раствор подкислять, ни единицы измерения минерализации тоже, у меня буржуйские (((</p>
+
+<p><strong>diman73rus</strong> 03-02-2014</p>
+
+<blockquote>
+  <p>Мнится мне, что у Вас ЕС в иных единицах измерения, запятая где-то заблудилась…</p>
+</blockquote>
+
+<p>мкСм (микросименсы) показывает (µS)</p>
+
+<p>в мСм (миллисименсах) это будет 0.4 mS</p>
+
+<p>или наоборот ? :D</p>
+
+<p><strong>z200</strong> 03-02-2014</p>
+
+<p>µS - это латинизированная сокращенная запись единицы измерения удельной электрической проводимости — микросименс на сантиметр (мкСм/см; сименс — См; сантиметр — cm). Знак µ (происходит от греческой строчной буквы „мю“) является аналогом применяемой в России десятичной приставки микро- (мк) в системе СИ.</p>
+
+<p>Осталось понять сколько мне этих µS надо.</p>
+
+<p><strong>Coccinella</strong> 03-02-2014</p>
+
+<p>Микросименсов Вам надо в 100 раз больше, чем миллисименсов.</p>
+
+<p>Сколько надо миллисименсов, я уже сказала.</p>
+
+<p>Как и чем подкислять и как регулировать ЕС десятки раз обсуждалось в теме “Питательные растворы”</p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=336.0" target="_blank">http://forum.ponics.ru/index.php?topic=336.0</a></p>
+
+<p>Всего-то 206 страниц :) и множество полезнейшей информации.</p>
+
+<p>Читайте, читайте и … делайте:)</p>
+
+<p>Успеха!</p>
+
+<p><strong>Vad</strong> 03-02-2014</p>
+
+<p>Надо 1800-2200мюкрасименсов… это 1.8-2.2 mS</p>
+
+<p><strong>z200</strong> 03-02-2014</p>
+
+<blockquote>
+  <p>Всего-то 206 страниц :) и множество полезнейшей информации.</p>
+
+  <p>Читайте, читайте и … делайте:)</p>
+</blockquote>
+
+<p>Нет уж, это слишком. Не рационально. ((( Я уверен, что все эти 200 страниц можно уложить в одну-две действительно полезной и понятной информации. Но у нас же так не принято, мы читали - и ты читай! Не буду, найду другой способ.</p>
+
+<p><strong>Vad</strong> 03-02-2014</p>
+
+<blockquote>
+  <p>Я уверен, что все эти 200 страниц можно уложить в одну-две действительно полезной и понятной информации.</p>
+</blockquote>
+
+<p>конечно.. <em>8)</em> можно..</p>
+
+<p>Вобще..</p>
+
+<p>куда рациональнее, купить в магазине все, что хотел вырастить :D</p>
+
+<p>и читать ничего не надо ;)</p>
+
+<p>ваще не напрягает :D</p>
+
+<p>и результат 100%ный :-\</p>
+
+<p><strong>z200</strong> 03-02-2014</p>
+
+<p>Меня не напрягает. Просто времени нет. Вы даже представить не можете сколько я читаю каждый день, и ночь. Просто мне в отличие от Вас приходится развиваться в десятках направлений одновременно, поэтому слово “рационально” играет важную роль.</p>
+
+<p>Ни к кому никаких претензий не имею, вы и так тратите на меня достаточно времени. )) Спасибо. Я обязательно разберусь сам, чуть позже.</p>
+
+<p><strong>Vad</strong> 03-02-2014</p>
+
+<p>Ну да :-\ Вы же один так трудитесь.. остальные “балду гоняют” ;)</p>
+
+<p><strong>z200</strong> 03-02-2014</p>
+
+<p>Поднял я уровень минерализации до 1440. Пошел систему проверять и увидел что помпа сдохла, за месяц. Отсюда вопрос, где и какие купить водяные помпы, надежные, брендовые, вечные? Китайский хлам на ибее больше не хочу.</p>
+
+<p><strong>diman73rus</strong> 03-02-2014</p>
+
+<blockquote>
+  <p>Микросименсов Вам надо в 100 раз больше, чем миллисименсов.</p>
+</blockquote>
+
+<p>может 1000 ? :D</p>
+
+<p><strong>Coccinella</strong> 03-02-2014</p>
+
+<p>Пожалуй :)</p>
+
+<p><strong>z200</strong> 03-02-2014</p>
+
+<blockquote>
+  <p>может 1000 ? :D</p>
+</blockquote>
+
+<p>Дмитрий, конечно 1000 ))))</p>
+
+<p><strong>z200</strong> 03-02-2014</p>
+
+<p>Про помпы продолжу. EHEIM (Германия), JBL (Германия), AQUAEL (Польша), DENNERLE (Германия) ???? Скажите что-нибудь про них?</p>
+
+<p>Но это всё аквариумные. Может еще промышленные есть, чтобы качали мало, 100-300 литров в час?</p>
+
+<p><strong>Borodach1</strong> 03-02-2014</p>
+
+<blockquote>
+  <p>Про помпы продолжу. EHEIM (Германия), JBL (Германия), AQUAEL (Польша), DENNERLE (Германия) ???? Скажите что-нибудь про них?</p>
+
+  <p>Но это всё аквариумные. Может еще промышленные есть, чтобы качали мало, 100-300 литров в час?</p>
+</blockquote>
+
+<p>Определитесь ещё с установкой.</p>
+
+<p>Кроме литров в час обратите внимание на высоту подъёма. Одно дело качать в аквариуме на месте, и совсем другой поднять на 1,5 - 2 метра.</p>
+
+<p><strong>z200</strong> 03-02-2014</p>
+
+<p>я определился. сейчас мне нужно поднять на 1-1,5 метра, а летом на 2,5</p>
+
+<p><strong>z200</strong> 07-02-2014</p>
+
+<p>Получил я этот хитрый поролон, это действительно то, что нужно. Жаль, что с нового года минимальная партия - 10000 руб.</p>
+
+<p>Марку 45 даже резать не стал, это обычный поролон, только мягкий. В 30-й идеально провалились семена кресс-салата. В 20-м утонула горчица, а в 10-м - дайкон. 10-й конечно хорош, но он самый дорогой, с доставкой будет 1000 руб. кв.м. при толщине 15 мм.</p>
+
+<p>Купил низкий лоток 3 см. т.к. для микрозелени он удобнее, и накрыл сверху листом оргстекла.</p>
+
+<p><a href="https://t.me/ponics_ru_files/11315" target="_blank"><img src="/attachimages/14867_IMG_3716.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11316" target="_blank"><img src="/attachimages/14869_IMG_3722.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11317" target="_blank"><img src="/attachimages/14871_IMG_3726.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11318" target="_blank"><img src="/attachimages/14873_IMG_3732.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11319" target="_blank"><img src="/attachimages/14875_IMG_3733.jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 07-02-2014</p>
+
+<p>завидую :-\</p>
+
+<p><strong>taram</strong> 07-02-2014</p>
+
+<p>А чё это за поролон? И с чем его едят? :)</p>
+
+<p>А на сколько мягок поролон?</p>
+
+<p>А по жёсткости-упругости поролоны различаются?</p>
+
+<p><strong>z200</strong> 07-02-2014</p>
+
+<blockquote>
+  <p>А чё это за поролон? И с чем его едят? :)</p>
+</blockquote>
+
+<p>Ответ 157 в этой ветке на 11 странице.</p>
+
+<p><strong>z200</strong> 07-02-2014</p>
+
+<blockquote>
+  <p>завидую :-\</p>
+</blockquote>
+
+<p>Тебе выслать? :)</p>
+
+<p><strong>taram</strong> 07-02-2014</p>
+
+<blockquote>
+  <p>Ответ 157 в этой ветке на 11 странице.</p>
+</blockquote>
+
+<p>Убейте меня ссылкой, пожалуйста! :D</p>
+
+<p><strong>z200</strong> 07-02-2014</p>
+
+<blockquote>
+  <p>Убейте меня ссылкой, пожалуйста! :D</p>
+</blockquote>
+
+<p>Стреляю! - <a href="http://porolon.biz" target="_blank">http://porolon.biz</a></p>
+
+<p><strong>taram</strong> 07-02-2014</p>
+
+<p>Огромное Благодарю!</p>
+
+<p><strong>diman73rus</strong> 07-02-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>завидую :-\</p>
+  </blockquote>
+
+  <p>Тебе выслать? :)</p>
+</blockquote>
+
+<p>а что, можно ?!</p>
+
+<p>:o</p>
+
+<p><strong>z200</strong> 07-02-2014</p>
+
+<blockquote>
+  <p>а что, можно ?!</p>
+</blockquote>
+
+<p>почему нет? тебе же не много нужно? я купил по 2 кв.м. каждого. До почты дойти смогу, только не быстро )))) Определись с размерами, нарежу и пришлю.</p>
+
+<p><strong>diman73rus</strong> 07-02-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>а что, можно ?!</p>
+  </blockquote>
+
+  <p>почему нет? тебе же не много нужно? я купил по 2 кв.м. каждого. До почты дойти смогу, только не быстро )))) Определись с размерами, нарежу и пришлю.</p>
+</blockquote>
+
+<p>да. сколько не жалко. компенсировать затраты могу пополнением сотового телефона, например. или еще как договоримся.</p>
+
+<p><strong>z200</strong> 08-02-2014</p>
+
+<p>сотовый мне пополнять не нужно, у меня корпорация. Пиши в личку размеры и кол-во</p>
+
+<p><strong>z200</strong> 08-02-2014</p>
+
+<p>не подскажет ли модератор почему я перестал получать уведомления на емейл о новых личных сообщениях, и сообщениях в темах?</p>
+
+<p><strong>mitrotech</strong> 08-02-2014</p>
+
+<blockquote>
+  <p>не подскажет ли модератор почему я перестал получать уведомления на емейл о новых личных сообщениях, и сообщениях в темах?</p>
+</blockquote>
+
+<p>Вот ведь как. А мне раз через три-четыре приходят по два одинаковых письма о личных сообщениях одного времени отправления. Я думал у меня одного проблема с почтой. Хотя у меня не совсем проблема - письма то приходят.</p>
+
+<p><strong>Borodach1</strong> 08-02-2014</p>
+
+<p><em>???</em></p>
+
+<p>Месяца 2 назад такая же беда была. Потом заработало.</p>
+
+<p>Сейчас тоже уже дня 2 - 3 письмо совсем не приходят. :( :'(</p>
+
+<p><strong>z200</strong> 09-02-2014</p>
+
+<p>Беда :'(</p>
+
+<p>Бывает хуже. Ездите аккуратнее и медленнее, как я сегодня.</p>
+
+<p><a href="http://www.youtube.com/watch?v=3m2VaTIH4E8#ws" target="_blank">http://www.youtube.com/watch?v=3m2VaTIH4E8#ws</a></p>
+
+<p><strong>Gnevko</strong> 09-02-2014</p>
+
+<p>Что называется - повезло, так повезло.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

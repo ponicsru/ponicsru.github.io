@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Домик у Волги | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Домик у Волги">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Домик у Волги</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Андрей М.</strong> 06-08-2010</p>
+
+<p>Всем здравствуйте! Уже примерно полгода читаю этот форум и дочитался до того, что построил свой домик для салатиков.</p>
+
+<p><a href="http://s3.postimage.org/AqhRA.jpg" target="_blank"><img src="http://s3.postimage.org/AqhRA.jpg" alt="" /></a></p>
+
+<p>И вот уже почти месяц в этом домике ведется война за каждый градус. И, к сожалению, градусы эти не алкогольные, а градусы Андерса Цельсия. Лето в Ярославской губернии, как и во всей европейской части России, выдалось аномально жарким и бороться с этим, в отдельно взятой теплице (блин, надо было не теплицу строить, а ледник) совсем не просто :о(. Если ограничиться солнцезащитными шторками (типа как у взрослых), то температура останавливается ровно на 50 градусах. К шторкам были добавлены радиатор от МТЗ с вентилятором (воздушный поток чуть больше 290 кубов в час). Через радиатор идет вода с температурой 18 градусов, температура воздушного потока 24 градуса. Общая “температура по больнице” снизилась до 36-40 градусов. Далее пошла борьба за влажность. При 50 градусах влажность была не более 35%. С трудом подняли ее до 55% (с помощью бытового увлажнителя). Температура немного снизилась, но все еще остается значительно выше нормы. Суть данной темы не только рассказать о своем домике, но и спросить совета у почтенной публики: -“Как жить дальше, или чем бюджетно снизить температуру?”. Можно конечно тупо ждать “у моря погоды”, но бездействие морально угнетает. Можно купить что нибудь бытовое и климатическое, но тут много факторов против этого. Пока остановился на способе снижения температуры с помощью повышения влажности. Теоретически потенциал у этого метода большой, да и практически до 70-80% есть куда расти. Вот только как ее поднять? Уже даже устраивал болото под ногами, благо конструкция теплицы позволяет - результат нулевой. Вот такая у меня битва за урожай :о)</p>
+
+<p><a href="http://s3.postimage.org/BcsP0.jpg" target="_blank"><img src="http://s3.postimage.org/BcsP0.jpg" alt="" /></a></p>
+
+<p><a href="http://s3.postimage.org/BcAir.jpg" target="_blank"><img src="http://s3.postimage.org/BcAir.jpg" alt="" /></a></p>
+
+<p><strong>Batat</strong> 06-08-2010</p>
+
+<p>Добрый день, Андрей М.!</p>
+
+<p>С новосельем Вас!</p>
+
+<p>Войну с природой (погодой) ведут все.</p>
+
+<p>Правда, пока без особых успехов.</p>
+
+<p>В Вашей теплице не видно вентиляционных проемов (форточек).</p>
+
+<p>Если конструктивно они не предусмотрены, то нужно их сделать, иначе слишком сложно будет добиться результата.</p>
+
+<p>Проветривание - основной прием для снижения температуры в теплице.</p>
+
+<p>На ряду с зашториванием, можно применить орошение - мелкодисперстное распыление воды с помощью брызгал, сплинкеров, фоггеров. Арсенал подобных устройств достаточно велик.</p>
+
+<p>Учитывая то, что у Вас есть доступ к воде с температурой 18 градусов, этот прием будет очень эффективным.</p>
+
+<p>Тем более, что одновременно решается задача и повышения влажности.</p>
+
+<p>Распыление, будет значительно эффективнее и менее затратное по электроэнергии, чем применение радиатора от МТЗ.</p>
+
+<p>Хотя, можно и этот прием не исключать.</p>
+
+<p>Скажите, белые трубы, которые Вы использовали, что это за трубы?</p>
+
+<p>Где покупали, какая у них маркировка, чье производство?</p>
+
+<p>Удачи Вам!</p>
+
+<p><strong>Rossich</strong> 06-08-2010</p>
+
+<p>Привет, с новосельем.</p>
+
+<p>Прекрасное новое, это хорошо забытое старое. Я вернулся к дедовским методам, экономичный вариант -это градирни, только в обратном порядке: охлаждаем не воду, а отбираемый воздух из теплицы, возвращая его охлажденным в среднем на 7 градусов и еще увлажненным. Подумайте.. себестоимость самоделки.. на 4м3-воды получается около 6тыс.</p>
+
+<p><strong>Андрей М.</strong> 06-08-2010</p>
+
+<blockquote>
+  <p>В Вашей теплице не видно вентиляционных проемов (форточек).</p>
+</blockquote>
+
+<p>Да, форточки не предусмотрены (посчитал слишком сложным для меня конструктив теплицы с боковыми форточками). Но ИМХО они эффективны когда на улице температура ниже необходимой, а у нас она этим летом 36-38. Уже проверил, расти при такой температуре салатики не хотят :о). И потом нужно производительное оборудование для микроклимата чтоб тот воздух который идет из форточек, довести до нормы.</p>
+
+<p>Сегодня тоже пришел к выводу что всяческие фоггеры и сплинкеры могут помочь. Буду думать в этом направлении.</p>
+
+<blockquote>
+  <p>Скажите, белые трубы, которые Вы использовали, что это за трубы?</p>
+
+  <p>Где покупали, какая у них маркировка, чье производство?</p>
+</blockquote>
+
+<p>Отвечая на этот вопрос, вспоминается замечательная поговорка (которую я, к сожалению, забыл на момент установки труб): “Кроилово ведет к попадалову”</p>
+
+<p>По своей природе это труба ПНД диаметром 90 мм, а белая потому что покрашенная. В торцах заглушки из поликарбоната, приклеенные на силикон. Так вот, хоть диаметр у них подходящий и цена приятная (мне ее подарили, потому и остановился на этом варианте), это такой геморройный вариант. Они совершенно не хотят быть ровными (мне пришлось их к доске притягивать) да после прогревания паяльной лампой. А уж как в них отверстия сверлятся, это вообще песня, правда очень грустная :о) В общем к середине работы я очень сильно пожалел о выборе этого варианта.</p>
+
+<blockquote>
+  <p>Я вернулся к дедовским методам, экономичный вариант - это градирни, только в обратном порядке: охлаждаем не воду, а отбираемый воздух из теплицы, возвращая его охлажденным в среднем на 7 градусов и еще увлажненным.</p>
+</blockquote>
+
+<p>Теоретически понятно, а практические как это выглядит? Т.е. в каком то объеме стоит сплинкер или фоггер и распыляет воду которая и охлаждает воздух?</p>
+
+<p>А еще я для экономии моторесурса насоса и электроэнергии, поднял емкость с раствором под потолок. При этом насос включается на 2 минуты через 21 минуту. Вот, типа похвастался :о)</p>
+
+<p><strong>Rossich</strong> 07-08-2010</p>
+
+<blockquote>
+  <p>Теоретически понятно, а практические как это выглядит? Т.е. в каком то объеме стоит сплинкер или фоггер и распыляет воду которая и охлаждает воздух?</p>
+</blockquote>
+
+<p>На фото представлен общий принцип. На распылители подается холодная вода, вентилятор забирая воздух из теплицы, прогоняет его через водяной поток и плиты(радиаторы). Охлажденный и увлажненный воздух возвращается в теплицу.</p>
+
+<p>4м3 градирня имеет 57кВт по воздуху, охлаждая его в среднем на 7-10 градусов при температуре воды в 30С. Эл-мотор 0,5кВт.</p>
+
+<p><a href="http://s1.postimage.org/BZDKS.jpg" target="_blank"><img src="http://s1.postimage.org/BZDKS.jpg" alt="" /></a></p>
+
+<p><strong>Андрей М.</strong> 18-08-2010</p>
+
+<blockquote>
+  <p>На фото представлен общий принцип. На распылители подается холодная вода, вентилятор забирая воздух из теплицы, прогоняет его через водяной поток и плиты(радиаторы). Охлажденный и увлажненный воздух возвращается в теплицу.</p>
+
+  <p>4м3 градирня имеет 57кВт по воздуху, охлаждая его в среднем на 7-10 градусов при температуре воды в 30С. Эл-мотор 0,5кВт.</p>
+</blockquote>
+
+<p>Идея интересная, надо будет попробовать сделать.</p>
+
+<p>У меня вот появился вопрос (чтоб не плодить новые темы, спрошу здесь). В чистой воде кондуктометр у меня показывает 0,3 ЕС (340 микроСименс), после добавления химии (Флора) ЕС поднялась до 0,5 (540 микроСименс), т.е. концентрация раствора 0,2 ЕС? Или так считать неправильно?</p>
+
+<p><strong>Batat</strong> 18-08-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>На фото представлен общий принцип. На распылители подается холодная вода, вентилятор забирая воздух из теплицы, прогоняет его через водяной поток и плиты(радиаторы). Охлажденный и увлажненный воздух возвращается в теплицу.</p>
+
+    <p>4м3 градирня имеет 57кВт по воздуху, охлаждая его в среднем на 7-10 градусов при температуре воды в 30С. Эл-мотор 0,5кВт.</p>
+  </blockquote>
+
+  <p>Идея интересная, надо будет попробовать сделать.</p>
+
+  <p>У меня вот появился вопрос (чтоб не плодить новые темы, спрошу здесь). В чистой воде кондуктометр у меня показывает 0,3 ЕС (340 микроСименс), после добавления химии (Флора) ЕС поднялась до 0,5 (540 микроСименс), т.е. концентрация раствора 0,2 ЕС? Или так считать неправильно?</p>
+</blockquote>
+
+<p>Концентрация раствора (содержание растворенных солей) - это то, что показывает кондуктомер.</p>
+
+<p>Если бы Вы взяли воду изначально с ЕС - 1,5 msm (предположим), а после добавления химии (Флора) ЕС поднялось до 2 msm, Вы бы не стали вычитать показания? Действительная концентрация раствора, выраженная через электропроводность, в итоге составляет 2 msm! Раствор с этими показателями и будут потреблять растения. Всегда нужно учитывать соли содержащиеся в исходной воде, на основе которой, будут готовится пит. р-ры.</p>
+
+<p><strong>Андрей М.</strong> 18-08-2010</p>
+
+<p>Ну так то да, растения потребляют все что есть в воде. ИМХО растения на чистой воде проживут не долго, а значит полезных для растений веществ там не много, следовательно начальную концентрацию можно либо не учитывать совсем, либо в большей степени. Как Вам такая логика?</p>
+
+<p><strong>Batat</strong> 18-08-2010</p>
+
+<blockquote>
+  <p>Ну так то да, растения потребляют все что есть в воде. ИМХО растения на чистой воде проживут не долго, а значит полезных для растений веществ там не много, следовательно начальную концентрацию можно либо не учитывать совсем, либо в большей степени. Как Вам такая логика?</p>
+</blockquote>
+
+<p>Никак!</p>
+
+<p><strong>Андрей М.</strong> 18-08-2010</p>
+
+<p>Почему? :о) Разве в этой логической цепочке есть изъян?</p>
+
+<p><strong>maxsoft</strong> 18-08-2010</p>
+
+<blockquote>
+  <p>Почему? :о) Разве в этой логической цепочке есть изъян?</p>
+</blockquote>
+
+<p>не известно чего и сколько в этой воде</p>
+
+<p><strong>Андрей М.</strong> 22-08-2010</p>
+
+<p>Ну вот на улице стало прохладнее и первая партия салатиков уже радует глаз :о)</p>
+
+<p><a href="http://s4.postimage.org/iMMcA.jpg" target="_blank"><img src="http://s4.postimage.org/iMMcA.jpg" alt="" /></a></p>
+
+<p>Один из восьми посаженных сортов принципиально не хочет всходить, однако подождем еще пару дней и выселим его за неподобающее поведение.</p>
+
+<p><a href="http://s4.postimage.org/iNhDr.jpg" target="_blank"><img src="http://s4.postimage.org/iNhDr.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 22-08-2010</p>
+
+<p><em>8)</em> <em>8)</em> <em>8)</em></p>
+
+<p>Только что-то фотки - увеличиваться не хотят.</p>
+
+<p><strong>Андрей М.</strong> 22-08-2010</p>
+
+<p>Я пока не разобрался как так вставить фотки, чтоб они прям тут увеличивались :о( Но если, кликнув на фотку, перейти по ссылке на Яндекс фотки, то там можно выбрать размер побольше.</p>
+
+<p><strong>Mole_Garden</strong> 22-08-2010</p>
+
+<blockquote>
+  <p>Я пока не разобрался как так вставить фотки, чтоб они прям тут увеличивались :о( Но если, кликнув на фотку, перейти по ссылке на Яндекс фотки, то там можно выбрать размер побольше.</p>
+</blockquote>
+
+<p>фотку можно вставить несколькими способами:</p>
+
+<p>1) выбрать пункт “Добавить изображение, который находится между смайлами и полем для сообщения</p>
+
+<p>2)выбрать снизу поле под сообщением под названием “Вложение:”, а там уже выбрать файл с компьютера</p>
+
+<p>3) Либо еще вариант, на вашей странице яндекс фоток выбрать пункт “Код для вставки на сайт или в блог” и скопировать его в поле для сообщения.</p>
+
+<p><strong>Андрей М.</strong> 22-08-2010</p>
+
+<blockquote>
+  <p>фотку можно вставить несколькими способами:</p>
+
+  <p>1) выбрать пункт “Добавить изображение, который находится между смайлами и полем для сообщения</p>
+
+  <p>2)выбрать снизу поле под сообщением под названием “Вложение:”, а там уже выбрать файл с компьютера</p>
+
+  <p>3) Либо еще вариант, на вашей странице яндекс фоток выбрать пункт “Код для вставки на сайт или в блог” и скопировать его в поле для сообщения.</p>
+</blockquote>
+
+<p>С пунктом 3 почему то не получилось, зато получилось с пунктом 1.</p>
+
+<p>Спасибо за подсказку.</p>
+
+<p><strong>Андрей М.</strong> 23-08-2010</p>
+
+<p>На просторах интернета нашел такую штуку: <a href="http://enontek.ru/produkciya/CO2_Enrichment_of_Greenhouses" target="_blank">http://enontek.ru/produkciya/CO2_Enrichment_of_Greenhouses</a></p>
+
+<p>Я чего то не понял, как она так абсорбирует СО2 чтоб потом его отдавать в теплицу? Может кто в курсе?</p>
+
+<p><strong>Batat</strong> 23-08-2010</p>
+
+<blockquote>
+  <p>На просторах интернета нашел такую штуку: <a href="http://enontek.ru/produkciya/CO2_Enrichment_of_Greenhouses" target="_blank">http://enontek.ru/produkciya/CO2_Enrichment_of_Greenhouses</a></p>
+
+  <p>Я чего то не понял, как она так абсорбирует СО2 чтоб потом его отдавать в теплицу? Может кто в курсе?</p>
+</blockquote>
+
+<p>Андрей М., спасибо, за ссылку!</p>
+
+<p>Пока не совсем понятно, что за штука.</p>
+
+<p>Нужно связываться, выяснять.</p>
+
+<p><strong>Андрей М.</strong> 23-08-2010</p>
+
+<p>Отправил им запрос по почте. Посмотрим что ответят.</p>
+
+<p><strong>Batat</strong> 24-08-2010</p>
+
+<blockquote>
+  <p>Отправил им запрос по почте. Посмотрим что ответят.</p>
+</blockquote>
+
+<p>О.К!</p>
+
+<p>Будем ждать.</p>
+
+<p><strong>Андрей М.</strong> 24-08-2010</p>
+
+<p>Вот, типа ответили:</p>
+
+<p>Добрый день, Андрей,</p>
+
+<p>Стоимость устройства для генерации СО2 в теплицу 40м3 - 14 632 евро.</p>
+
+<p>генерация 0,303м3 углекислого газа за 9 часов работы. (световой день)</p>
+
+<p>Принцип действия - абсорбция СО2 из атмосферы специальным веществом и выдача его в теплицу при регенерации.</p>
+
+<p>С уважением</p>
+
+<p>ООО”ЭНОНТЕК”</p>
+
+<p>После такого описания принципа работы становится все ясно и понятно :о)</p>
+
+<p><strong>caiman</strong> 24-08-2010</p>
+
+<p>Даааааааааааааааааа, :D А для промышленной теплицы стоимость генератора СО2 будет стоить как сама теплица :D</p>
+
+<p>Дешевле и полезнее бидоны с брагой поставить <em>8)</em></p>
+
+<p><strong>Садовник</strong> 24-08-2010</p>
+
+<blockquote>
+  <p>Дешевле и полезнее бидоны с брагой поставить <em>8)</em></p>
+</blockquote>
+
+<p>Кстати, очень перспективный био-цикл вырисовывается:</p>
+
+<p>Растительные остатки &gt; брага &gt; СО2 + спирт &gt; биодизель &gt; генератор электроэнергии для досветки. <em>8)</em></p>
+
+<p><strong>Андрей М.</strong> 24-08-2010</p>
+
+<p>Для себя пока определился на такой очень полезной цепочке:</p>
+
+<p>коровкины+птичкины какашки+ растительные остатки &gt; биореактор &gt; СО2 и природный газ, который подается в маленькую когенерационную установку…и вот оно счастье - свет, тепло и СО2 из какашек :о) думаю что экономия будет приятной.</p>
+
+<p><strong>Андрей М.</strong> 25-08-2010</p>
+
+<p>Уж не знаю, нужно это кому нибудь или нет, но пока буду выкладывать фотки из жизни моих кустиков :о)</p>
+
+<p>Итак, кустики растут, правда не так быстро как хотелось бы…</p>
+
+<p><a href="http://s4.postimage.org/udUXA.jpg" target="_blank"><img src="http://s4.postimage.org/udUXA.jpg" alt="" /></a></p>
+
+<p>И вот чтоб они росли быстрее, на досуге собрал любимую игрушку всех гидропонщиков :о), т.е. бродилку. Решил пока начать с химического способа - мел и уксусная кислота (9%).</p>
+
+<p><a href="http://s4.postimage.org/ufEHS.jpg" target="_blank"><img src="http://s4.postimage.org/ufEHS.jpg" alt="" /></a></p>
+
+<p>Кислота капает, пузырьки булькают…и собственно это весь видимый результат :о( Пока я стоял и думал над тем, как бы это все проверить не покупая газоанализатор, у меня заболела голова. Надеюсь что от CO2, а не от раздумий.</p>
+
+<p>Сегодня уже шестой день со дня посадки.</p>
+
+<p><a href="http://s4.postimage.org/ugY0A.jpg" target="_blank"><img src="http://s4.postimage.org/ugY0A.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 25-08-2010</p>
+
+<p>Неплохо получается !</p>
+
+<p>А бродилка - вещь хорошая … только …</p>
+
+<p>Вот тут-то мы скорее - за “органику” :D :D :D</p>
+
+<p>(Диалектика, однако).</p>
+
+<p><strong>Андрей М.</strong> 25-08-2010</p>
+
+<blockquote>
+  <p>Вот тут-то мы скорее - за “органику” :D :D :D</p>
+</blockquote>
+
+<p>Да я не то чтобы против органики, просто в данном случае химия дешевле выходит. А чем органика предпочтительнее?</p>
+
+<p><strong>valery</strong> 25-08-2010</p>
+
+<p>Ну как же …</p>
+
+<p>Там же “отход производства” получается… Кхм … Как “профилактика от ревматизма”…</p>
+
+<p>:D</p>
+
+<p><strong>Андрей М.</strong> 25-08-2010</p>
+
+<p>А, ну да. Про эту сторону я как то забыл :о)</p>
+
+<p><strong>caiman</strong> 25-08-2010</p>
+
+<p>И опять же, если ревматизм отпустил, можно к помидоркам поставить, что б краснели :D</p>
+
+<p><strong>Андрей М.</strong> 27-08-2010</p>
+
+<p>Вот смотрю я на свои кустики, и вроде бы все в них прекрасно, но мучают сомнения - не маловаты ли они для своего возраста?</p>
+
+<p>вот так они выглядят на восьмой день:</p>
+
+<p><a href="http://s4.postimage.org/BahPJ.jpg" target="_blank"><img src="http://s4.postimage.org/BahPJ.jpg" alt="" /></a></p>
+
+<p>или так и надо?</p>
+
+<p><strong>Mole_Garden</strong> 27-08-2010</p>
+
+<blockquote>
+  <p>Вот смотрю я на свои кустики, и вроде бы все в них прекрасно, но мучают сомнения - не маловаты ли они для своего возраста?</p>
+
+  <p>вот так они выглядят на восьмой день:</p>
+</blockquote>
+
+<p>А вы читали мой репорт по выращиванию салата? Я там рассказывал, о том, что почти все сорта салата до 15-20 дня очень медленно растут, а потом начинается очень активный рост, если конечно все в порядке с условиями.</p>
+
+<p>Вот фото <a href="http://forum.ponics.ru/index.php/topic,295.msg6807.html#msg6807" target="_blank">http://forum.ponics.ru/index.php/topic,295.msg6807.html#msg6807</a></p>
+
+<p>Там же репорт <a href="http://forum.ponics.ru/index.php/topic,295.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,295.0.html</a></p>
+
+<p><strong>Андрей М.</strong> 27-08-2010</p>
+
+<p>Да, читал. Но как то этот момент прошел мимо сознания :о). Пойду перечитаю.</p>
+
+<p><strong>Андрей М.</strong> 01-09-2010</p>
+
+<p>После нескольких дней тестирования химического CO2 генератора, пришел к однозначному выводу - хрень полная, в утиль! Завтра начну тестирование биологического генератора. В теплице уже стоят две фляги с яблоками от которых будет и искомый газ и прекрасное вино :о), благо технология по получению вина отработана годами.</p>
+
+<p>Завтра или послезавтра буду пересаживать кустики в систему…страшно, но думаю что все получится.</p>
+
+<p><strong>Mole_Garden</strong> 02-09-2010</p>
+
+<p>Ждем фото и желаем удачи.</p>
+
+<p><strong>Андрей М.</strong> 09-09-2010</p>
+
+<p>“завтра или послезавтра” немного затянулись. За это время был произведен апгрейд установки и теперь она как у всех основана на кабель каналах :о) Трубы заняли свое место - на помойке. Кустики посажены и думаю будут счастливы.</p>
+
+<p><a href="http://s4.postimage.org/AapRr.jpg" target="_blank"><img src="http://s4.postimage.org/AapRr.jpg" alt="" /></a></p>
+
+<p><a href="http://s4.postimage.org/Abpd0.jpg" target="_blank"><img src="http://s4.postimage.org/Abpd0.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 09-09-2010</p>
+
+<p>Так понимаю длина каналов 2 метра. А не часто ли посажен салат? Расстояние между центрами горшков какое?</p>
+
+<p><strong>Андрей М.</strong> 09-09-2010</p>
+
+<p>Да, каналы 2 метра. Между центрами 158 мм, но т.к. они посажены в шахматном порядке, то думаю что им хватит. А если не хватит, то в остальные секции придется вносить поправки.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

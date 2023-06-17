@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>генератор тумана | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="генератор тумана">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">генератор тумана</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Alexandr</strong> 28-04-2011</p>
+
+<p>Здравствуйте !</p>
+
+<p>Хочу сделать установку на генераторе тумана.Кто нибудь уже пробовал такое ?</p>
+
+<p><strong>VVS_</strong> 28-04-2011</p>
+
+<p>Периодическое затопление надежнее, лучше смачивает. Смысл тот же.</p>
+
+<p><strong>valery</strong> 28-04-2011</p>
+
+<p>Не … Никто и никогда. Будете первооткрывателем.</p>
+
+<p><strong>VVS_</strong> 28-04-2011</p>
+
+<p>Вспомнил, видел какой-то отчет о выращивании в сети, если мне память не изменяет - не пошло с туманом. Загнулись растишки.</p>
+
+<p>Если рассудить трезво, туман создается за счет ультразвука, его мощность не менее 40-50 ватт сосредоточена в малом объеме. Это как минимум “очень громко”, полагаю что и корням не хорошо. Если уж вода испаряется от процесса кавитации, думаю корням тоже будет не сладко т.к. они на 90% состоят из воды:)</p>
+
+<p><strong>Mole_Garden</strong> 28-04-2011</p>
+
+<blockquote>
+  <p>Здравствуйте !</p>
+
+  <p>Хочу сделать установку на генераторе тумана.Кто нибудь уже пробовал такое ?</p>
+</blockquote>
+
+<blockquote>
+  <p>Не … Никто и никогда. Будете первооткрывателем.</p>
+</blockquote>
+
+<p>:D</p>
+
+<p>Валерий лукавит, конечно же!</p>
+
+<p>Затея на самом деле не очень хорошая, хотя для начала надо понять смысл затеи.</p>
+
+<p><strong>valery</strong> 28-04-2011</p>
+
+<p>Кавитация, и связанные с этим “побочные” эффекты - основная, но только часть проблем …</p>
+
+<p>В чем там дело, в какой физике-химии - не знаю, но “кавитацией” в туманогенераторе не удается поднять с “сухим паром” нужного количества солей …</p>
+
+<p>Максимум, что удается - около 500 ppm, что достаточно для “клонирования”, но не достаточно для полноценного выращивания.</p>
+
+<p>Причем остальные соли, кальций в частности, очень быстро оседают и выводят из строя “пластину”. Сейчас пробуют (любители, конечно) пластины с тефлоновым покрытием - дорогущие, конечно. Эффект - тот же самый (то есть никакой), зато хоть пластина служит несколько дольше …</p>
+
+<p>Для охлаждения тумана - пытаются делать “морозильные” установки, через которые предварительно проходит питательный раствор … ну и так далее …</p>
+
+<p>Нарастающие корни быстро укрывают “источник” тумана - часть переувлажнены и гниют (это под шарманку о куче кислорода), части - нечего не достается …</p>
+
+<p>Развитие плесени, грибковые заболевания, вроде бы Питиум …</p>
+
+<p>Кроме того, отмечают ГИПЕРтрофированное развитие корней в длину и почти полное отсутствие “боковых” ветвлений …</p>
+
+<p>В общем - та еще песня …</p>
+
+<p><strong>VVS_</strong> 28-04-2011</p>
+
+<p>То есть корни тянутся на ультразвук?:)</p>
+
+<p>Вообще, как средство смачивания корней пузырьки от активной аэрации хорошо идут. Для огцрца, замечательно шло в прошлом сезоне. в DWC уровень раствора был на 1/5 от дна емкости.</p>
+
+<p><strong>orgail</strong> 28-04-2011</p>
+
+<p>вы меня конечно извините, но при тумане никакие корни не гниют, гниль не от переувлажнений, гниль это анаэробный процесс, для трудящихся понятнее- как раз когда движения воздуха и кислорода практически нет</p>
+
+<p>питиум не от переувлажнений бывает, а скорее от температурных “плясок” в сторону повышения в области корневой а также отсутствия доступа кислорода как раз</p>
+
+<p>полное отсутствие “боковых” ветвлений (не такое уж и полное) - говорит лишь о том, что корням нет необходимости искать “на стороне” :D шучу, однако процессы роста и функционирования корневой системы в субстратах и без оного достаточно различаются, сравнивать их как-то неуместно</p>
+
+<p>генераторы тумана если и применяют где любители, то организуют отдельную “ванну” из которой уже туман идет в область корневой, никакого попадания корней на генератор в таком случае нет. хотя можно его засунуть и в корни, кто мешает :) у нас везде все суют куда ни попадя :)</p>
+
+<p>к слову “докладов” о практической полезности в кг урожая от действия оного механизма в российских и забугорных источниках не видел</p>
+
+<p>единственное что австралийская AGS использует ультразвук, но это так, “для игрушек”</p>
+
+<p><strong>valery</strong> 28-04-2011</p>
+
+<blockquote>
+  <p>вы меня конечно извините, но при тумане никакие корни не гниют, гниль не от переувлажнений, гниль это анаэробный процесс, для трудящихся понятнее- как раз когда движения воздуха и кислорода практически нет</p>
+</blockquote>
+
+<p>Североамериканские энтузиасты аэропонных методов (точнее ультразвука) именно эту проблему и отмечают - слеживающиеся, “склеивающиеся” косы корневой - слизи и гнили. Возможно, что в слежавшейся массе “как раз движения воздуха и кислорода практически нет”</p>
+
+<blockquote>
+  <p>питиум не от переувлажнений бывает, а скорее от температурных “плясок” в сторону повышения в области корневой а также отсутствия доступа кислорода как раз</p>
+</blockquote>
+
+<p>А где Вы прочитали, что питиум именно от “переувлажнения” ?</p>
+
+<p>Перечислены “проблемы присущие “ультразвуку”, которые пытются решить. Не очень успешно. Одно из направлений “решения” - сложнокомбинированные системы - “тонкий ДВС”, спринклерное распыление, ультразвуковой туман - попеременно и в разных сочетаниях.</p>
+
+<blockquote>
+  <p>полное отсутствие “боковых” ветвлений (не такое уж и полное)</p>
+</blockquote>
+
+<blockquote>
+  <p>и почти полное отсутствие “боковых” ветвлений …</p>
+</blockquote>
+
+<p>Видите принципиальную разницу между “почти полным отсутствием” и “не таким уж и полным” ?</p>
+
+<p>Активно работающая корневая система с хорошо развитой, “ветвистой” системой - важна на ряде клонируемых культур.</p>
+
+<p>Клонирование - одно из наиболее активно развивающихся “аэропонных” направлений.</p>
+
+<p>Клон требует дальнейшей пересадки.</p>
+
+<p>Группы занимающиеся клонированием отмечают “почти полное” или “не такое уж и полное”, но отсутствие (и так далее) - как трудноискоренимый недостаток.</p>
+
+<p>С “Австралией” - согласен. Для игрушек.</p>
+
+<p><strong>orgail</strong> 28-04-2011</p>
+
+<p>Североамериканские энтузиасты аэропонных методов (точнее ультразвука) именно эту проблему и отмечают - слеживающиеся, “склеивающиеся” косы корневой - слизи и гнили. Возможно, что в слежавшейся массе “как раз движения воздуха и кислорода практически нет”</p>
+
+<p>тоже самое будет и в субстрате, если не избавляться от дренажа</p>
+
+<p>Увы, от застойных анаэробных процессов на 100% может быть защищена разве только глубоководная культура</p>
+
+<p>Ну а североамериканские энтузиасты они как это утверждают, так и полностью противоположное ;)</p>
+
+<p>Переувлажнение вообще понятие “неправильное”. Это скорее так люди хотят сказать о недостатке кислорода. А получается что говорят - “вот видите свет светит - это от того, что темноты мало” :D</p>
+
+<p>По корневой вопрос расплывчатый - если у клона судьба расти в субстрате, то да, конечно ему там понадобится значительно развитая именно “по объему” корневая система, если нет - то посмотрите сами на фото - то, что вам кажется гипертрофированным развитием на самом деле для растения естественный рост корней в культуре без “опоры” в виде субстрата.</p>
+
+<p>К чему так настойчиво критиковать аэропонные методы. Думаю те дядьки, кто их изучает и пытается приспособить к жизни не только этим способом урожай выращивали. Если они все стремятся добиться чего-то, значит что-то им кажется в этом пути многообещающим?</p>
+
+<p>Я вот сейчас Мураша читаю :) Интересное было время однако, но дядька с энтузиазмом к делу подходил :) и это в далеких 60-тых, а не как там щас - типа “в далеком будущем” Кстати советую почитать</p>
+
+<p><strong>valery</strong> 28-04-2011</p>
+
+<p>Это Вы к чему ?</p>
+
+<p>Человек собирается выращивать на “генераторе тумана”.</p>
+
+<p>На сегодняшний день практически никому этого толком сделать не удается.</p>
+
+<p>Спринлерное орошение в этом плане - надежней, хотя ему присущи другие недостатки.</p>
+
+<p>А кто мне мешает критиковать ? Никто.</p>
+
+<p>Так же как никто не помешает новичку выращивать на “генераторе”, как бы его кто-то не критиковал или не расхваливал.</p>
+
+<p>Про избытки света при недостатке темноты - пока еще не читал, не знаю.</p>
+
+<p>А о многократных потерях урожаев клона - при переходе со спринклеров на “туман” попадается часто.</p>
+
+<p><strong>valery</strong> 28-04-2011</p>
+
+<p>Где Вы прочитали, что корни попадают на генератор ?</p>
+
+<p><strong>orgail</strong> 28-04-2011</p>
+
+<p>Вообщем Alexandr если Вы поняли из этого диалога :D выращивайте на чем хотите, хоть на генераторе, хоть на спринклерах, хоть на капельницах, хоть в матах :D хоть в трубах, хоть в мешках, хоть в пакетах</p>
+
+<p>Однакож читайте и изучайте чужой опыт! остальному научат свои ошибки :D</p>
+
+<p><strong>orgail</strong> 28-04-2011</p>
+
+<p>Где Вы прочитали, что корни попадают на генератор ?</p>
+
+<p>Наверное у североамериканских энтузиастов, Валерий :D</p>
+
+<p><strong>valery</strong> 28-04-2011</p>
+
+<p>А …</p>
+
+<p>Ну так подскажите им, что “никакие корни в тумане не гниют”, а то они мучаются.</p>
+
+<p><strong>orgail</strong> 28-04-2011</p>
+
+<p>Валерий, я не понимаю каким образов Вы связываете туман и анаэробные процессы.</p>
+
+<p>Если у людей что-то гниет и они при этом выращивают на тумане совсем не значит что виноват туман</p>
+
+<p>Думаю тема исчерпана, остальное человек сам придумает</p>
+
+<p><strong>valery</strong> 28-04-2011</p>
+
+<blockquote>
+  <p>Валерий, я не понимаю</p>
+</blockquote>
+
+<p>Я понимаю, что не понимаете. Только не могу понять - чего именно. В постах выше - часть проблем перечислена-обозначена.</p>
+
+<blockquote>
+  <p>каким образов Вы связываете туман и анаэробные процессы.</p>
+</blockquote>
+
+<p>Я никаким образом не связываю. Люди, занимающиеся клонированием профессионально (возможно они и не ВЫСОКИЕ профессионалы, но ЗАРАБАТЫВАЮТ выращиванием клонов на продажу) - отмечают эту проблему, которую получают с переходом от спринклерного орошения к “туманогенераторному” …</p>
+
+<p>“Я потерял три поколения клонов”, “Я в бешенстве” - это их реплики в адрес авторов “туманогенераторных методик” …</p>
+
+<blockquote>
+  <p>Если у людей что-то гниет и они при этом выращивают на тумане совсем не значит что виноват туман</p>
+</blockquote>
+
+<p>Согласен. Во всем виноват Чубайс. А корни в тумане - не гниют.</p>
+
+<blockquote>
+  <p>Думаю тема исчерпана, остальное человек сам придумает</p>
+</blockquote>
+
+<p>Действительно. Отрицательные моменты о которых читал - перечислил, а смысла “препираться” не вижу, да и “сути Ваших возражений” не уловил …</p>
+
+<p><strong>Coccinella</strong> 29-04-2011</p>
+
+<p>Господа, дайте, пожалуйста, ссылочку на картинки, меня эти корни заинтересовали.</p>
+
+<p><strong>valery</strong> 29-04-2011</p>
+
+<p>У меня подобных ссылок с картинками нет.</p>
+
+<p>Серьезных статей и ссылок на эту тему попадается немного, как правило “без изображений” …</p>
+
+<p>А “недостатки” …</p>
+
+<p>Поскольку заметная часть аэропоники это “микроклонирование и лекарственные растения”, заглядываю иногда на разные форумы одного из “лекарственных растений” …</p>
+
+<p>Там обычно после очередной победной реляции об успехах “ультразвука” и разворачивается длинный шлейф возражений от тех, кто “обжегся” …</p>
+
+<p>Возражающие - никаких снимков не выкладывают, напротив, как правило указывают на несоответствие снимков “у докладчика” - расчеты одни, схемы (рисованные в основном) - другие, а снимки “урожаев” как правило взяты неизвестно откуда …</p>
+
+<p>Сам корневых поражений не видел - ни в живую, ни на снимках.</p>
+
+<p>Одно из замечательных устройств - <a href="http://www.hydroponicsonline.com/store/TreeFrog-Hydroponic-Growing-System-by-Multiponics-_320687761169.html" target="_blank">http://www.hydroponicsonline.com/store/TreeFrog-Hydroponic-Growing-System-by-Multiponics-_320687761169.html</a></p>
+
+<p>Одно из подобных многочисленных обсуждений - ***** (здесь была ссылка на “неприличный” форум)</p>
+
+<p>Просто любопытный снимок “корневой” у перчика</p>
+
+<p><a href="https://t.me/ponics_ru_files/5305" target="_blank"><img src="/attachimages/6735_Чили.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 29-04-2011</p>
+
+<p>Наверное, эту ссылку позже лучше удалить …</p>
+
+<p><strong>valery</strong> 29-04-2011</p>
+
+<p>p.s. “Мало серьезных материалов” - я имел в виду с “ультразвуком”.</p>
+
+<p>Просто “аэропоники” достаточно и на АктаХорте, например <a href="http://www.actahort.org/members/search?session=2734" target="_blank">http://www.actahort.org/members/search?session=2734</a></p>
+
+<p>И довольно много на сайте Аризонского университета. Кстати, любопытная статья с ФОТО - можно обратить внимание на прекрасно развитые БОКОВЫЕ корни (“обычная” аэропоника).</p>
+
+<p><a href="http://ag.arizona.edu/ceac/sites/ag.arizona.edu.ceac/files/Aeroponic-Hydroponic%20Systems(Hayden)." target="_blank">http://ag.arizona.edu/ceac/sites/ag.arizona.edu.ceac/files/Aeroponic-Hydroponic%20Systems(Hayden).</a></p>
+
+<p><a href="http://ag.arizona.edu/ceac/sites/ag.arizona.edu.ceac/files/reviewed%20manuscript%20prior%20to%20publishing.pdf" target="_blank">http://ag.arizona.edu/ceac/sites/ag.arizona.edu.ceac/files/reviewed%20manuscript%20prior%20to%20publishing.pdf</a></p>
+
+<p>Небольшая статья о двудомной крапиве … На АктаХорте почему-то стоит 12 евро.</p>
+
+<p><a href="http://ag.arizona.edu/ceac/sites/ag.arizona.edu.ceac/files/Pagliarulo%20et%20al%20Nettles%20paper.pdf" target="_blank">http://ag.arizona.edu/ceac/sites/ag.arizona.edu.ceac/files/Pagliarulo%20et%20al%20Nettles%20paper.pdf</a></p>
+
+<p><strong>Coccinella</strong> 29-04-2011</p>
+
+<p>Спасибо, обязательно посмотрю, как только минутка появится. Сссылки на каннабис лучше удалить, вот туда я из вредности не пойду :)</p>
+
+<p>А корни упомянутого перчика наводят на подозрение о болезни “бешеных корней” (crazy roots). Бывает на гидропонике, страшное дело. Возбудителя (бактерия) наизусть не помню, искать недосуг, где-то на гринтоуке уже об этом говорилось. При этом разрастается настолько много длинных, гладких корней, что вода из капельницы стекает поверху и растение гибнет от голода и жажды. Страшное дело!</p>
+
+<p><strong>Coccinella</strong> 29-04-2011</p>
+
+<p>Интересно, каким вырастают корни растения с забавным названием burdock на аэропонике? Я его как-то выращивала - лопух, как лопух, листья большие, серые, мягкие, а корень, как петрушка - длинный, конический, серый, по вкусу как не очень сладкая морковь. Вполне съедобен :) А как это выглядит на аэропонике даже представить не могу :)</p>
+
+<p><strong>valery</strong> 29-04-2011</p>
+
+<p>Удалил, действительно, не нужна …</p>
+
+<p>“Приличные” обсуждения культурных растений тоже иногда встречаются … но, “специально” не собираю и в данный момент не попались.</p>
+
+<p>Тут и в “полезных” ссылках много раз запутаешься.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

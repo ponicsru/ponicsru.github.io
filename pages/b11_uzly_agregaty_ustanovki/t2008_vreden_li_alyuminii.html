@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Вреден ли алюминий? | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Вреден ли алюминий?">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Вреден ли алюминий?</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>NorthStar</strong> 04-04-2014</p>
+
+<p>Добрый день!</p>
+
+<p>Хочу салат выращивать, а по описанию он требует прохладного раствора. Если больше 25'C то цвести будет.</p>
+
+<p>Для решения проблемы решил сделать на элементе пельтье охлодитель. Вроде все сделал, а запускать боюсь, так как теплообменник оказался алюминиевый.</p>
+
+<p>Не вреден ли контакт раствора с аллюминием для будущих растений и тех, кто будет это есть?</p>
+
+<p>Может быть медный элемент будет лучше?</p>
+
+<p><strong>Coccinella</strong> 04-04-2014</p>
+
+<p>И алюминий вреден, и медь потенциально опасна. В разумных количествах медь в раствор вносят и даже с ее помощью раствор дезинфицируют, но тут расчетами не обойтись, надо измерять, а это не так просто. У Вас знакомых студентов-химиков или преподавателей нет?</p>
+
+<p><strong>NorthStar</strong> 04-04-2014</p>
+
+<p>Химиков знакомых нет ((</p>
+
+<p>Вроде в сети нарыл, что алюминий быстро окисляется и уже становится не вреден. Вреден он при попадании в организм, например в виде порошка.</p>
+
+<p>Может есть какие-нибудь индикаторы или приборы для быстрого анализа?</p>
+
+<p><strong>Vad</strong> 04-04-2014</p>
+
+<blockquote>
+  <p>Если больше 25'C то цвести будет.</p>
+</blockquote>
+
+<p>вероятно это среднесуточная температура воздуха.. а не раствора ;)</p>
+
+<p>Раствор будет иметь температуру окружающий среды, минус какой-то градус.. в зависимости от влажности воздуха.. и возможности испаряться.</p>
+
+<p>если есть опасения, что у вас раствор прогреется выше 25 градусов.. то какая температура окружающей среды?</p>
+
+<p><strong>NorthStar</strong> 04-04-2014</p>
+
+<p>К сожалению у меня сейчас работает установка с погружным насосом, который добавляет 2-3 градуса к окружающей среде. Дома примерно 24-25' а раствор 26-27'</p>
+
+<p>Так как салатик уже растет - надо что-то делать, а то не съедобным вырастит.</p>
+
+<p><strong>Coccinella</strong> 04-04-2014</p>
+
+<p>Он вырастет съедобным, но может преждевременно зацвести :(</p>
+
+<p><strong>Vad</strong> 04-04-2014</p>
+
+<blockquote>
+  <p>К сожалению у меня сейчас работает установка с погружным насосом, который добавляет 2-3 градуса к окружающей среде.</p>
+</blockquote>
+
+<p>“окружающая среда” это воздух.</p>
+
+<p>нужно сбрасывать температуру окружающий среды.</p>
+
+<p>так что самое время.. задуматься о кондиционере и 18 градусах воздуха.</p>
+
+<p>ну.. а раствор сам остынет.. до 20.. <em>8)</em></p>
+
+<p><strong>NorthStar</strong> 04-04-2014</p>
+
+<p>При 18' я сам завяну. Я думал как раз охладить раствор, а он заодно и вокруг растения прохладу создаст.</p>
+
+<p><strong>Vad</strong> 04-04-2014</p>
+
+<p>вы тоже на балконе живете?</p>
+
+<p>к сожалению, у нас и у растений.. сильно разные требования по температуре :D</p>
+
+<p>то, что нам хорошо - им смерть</p>
+
+<p>им ништяк 15-17 ночь 20-22 день..</p>
+
+<p>и влажность(воздуха, а не воды) 60% минимум.. (хорошо… по влажности у нас почти одинаковые требовани)</p>
+
+<p><strong>NorthStar</strong> 04-04-2014</p>
+
+<p>Установка на кухне, а не на балконе стоит.</p>
+
+<p>Хотя на балконе еще хуже было бы - там летом больше 40' может быть.</p>
+
+<p><strong>Vad</strong> 04-04-2014</p>
+
+<p>:-\</p>
+
+<p>и вы собрались “пельтьями” охладить кухню вокруг растений с помощью раствора???</p>
+
+<p>сколько у вас пельтьёв.. и какая у них мощьность ;)</p>
+
+<p><strong>NorthStar</strong> 04-04-2014</p>
+
+<p>Там общая мощность до 140Вт. 2 элемента 12В 5А.</p>
+
+<p>Охлаждают 2л раствора на 10' меньше комнатной. В моей установке всего 4,5л.</p>
+
+<p>Так что нет проблемы сделать раствор 18' а грунт и вокруг будет до 25</p>
+
+<p><strong>Vad</strong> 04-04-2014</p>
+
+<blockquote>
+  <p>мощность до 140Вт. 2 элемента 12В 5А</p>
+</blockquote>
+
+<p>(12<em>5)</em>2 = 120ватт.. :-\</p>
+
+<blockquote>
+  <p>Охлаждают 2л раствора на 10' меньше комнатной. В моей установке всего 4,5л.</p>
+
+  <p>Так что нет проблемы сделать раствор 18' а грунт и вокруг будет до 25</p>
+</blockquote>
+
+<p>не факт .. точнее нифига не будет там ДО25 <em>???</em></p>
+
+<p>попробуйте сами.. расскажите ;)</p>
+
+<p><strong>NorthStar</strong> 04-04-2014</p>
+
+<p>Там вообще максимум до 78w на элемент при 15В, но при этих условиях через 1 день элемент сгорел.</p>
+
+<p>Буду пробовать.</p>
+
+<p><strong>Strangeman</strong> 05-04-2014</p>
+
+<p>А второй теплообменник какой? Тоже водяной?</p>
+
+<p>Если воздушный - на него придется бешено дуть и получится у Вас калорифер мощностью 140 Вт. Не много, но будет добавлять температуру в кухне. Если водяной - откуда вода? Проточная из водопровода? А если отключат воду? Защита предусмотрена?</p>
+
+<p><strong>Vad</strong> 05-04-2014</p>
+
+<blockquote>
+  <p>получится у Вас калорифер мощностью 140 Вт.</p>
+</blockquote>
+
+<p>поболее получится.. это же тепловой насос.. 140 ватт есть.. а перекачивает не помню сколько.. около 100%.. так что.. 140 ватт + “тепло пельтье” итого, тепловыдления ватт ~240 :-\</p>
+
+<p>у меня теплый пол 250 ватт на лоджии.. поддерживает в “лютые морозы” температуру воздуха на уровне +18 :-\</p>
+
+<p><strong>Strangeman</strong> 05-04-2014</p>
+
+<p>Не, Пельтье, увы, такого COP не имеют. 1,8 абсолютный максимум при нулевой дельте температур. А если у него ТН вода - воздух - там совсем все грустно будет. На радиаторе приемлемых размеров 50-80 градусов. Выходит, потратив 150 Вт он может 50 и откачает из раствора, если элементы фирменные.</p>
+
+<p><strong>NorthStar</strong> 05-04-2014</p>
+
+<p>Второй обменник - современный кулер от компьютера. Работает очень эффективно - по ощущениям не греется. Установка где-то 500мл воды превращает в лед где-то за час.</p>
+
+<p>Не знаю - как общая температура на кухне, но 4.5 литров раствора охладить до 18' реально, вопрос только в том - не загнется ли салат от алюминия и те, кто будут его есть.</p>
+
+<p>Сейчас проблема только в насосе - нет подходящего, вот жду с ебэя жду.</p>
+
+<p>Пробовал временно мини-погружной, но оказалось что в нем невозможно мощность регулировать. При подаче PWM он не работает. только если чистый +12.</p>
+
+<p>И поток слишком мощный получается и нагрев от него дополнительный. ( так что пока жду помпу, чтоб запустить в эксплуатацию.</p>
+
+<p><strong>Vad</strong> 05-04-2014</p>
+
+<p>оставьте раствор в покое.</p>
+
+<p>нужно охлаждать ВОЗДУХ</p>
+
+<p><strong>taram</strong> 05-04-2014</p>
+
+<blockquote>
+  <p>оставьте раствор в покое.</p>
+
+  <p>нужно охлаждать ВОЗДУХ</p>
+</blockquote>
+
+<p>В некоторых теплицах, где салат выращивают на плотах, тоже стараются бороться с повышенной темпой охлаждением раствора. Это экономнее.</p>
+
+<p><strong>alexxx</strong> 05-04-2014</p>
+
+<p>А что общего у теплицы и балкона?</p>
+
+<p>Салат на плотах - там раствора море. Море, и 4.5 литра… почувствуйте разницу.</p>
+
+<p>Не, ну если конечно там на балконе обувная коробка с лампочкой от фонарика, то охлаждение 4.5 литров может сработать.. :D</p>
+
+<p><strong>Vad</strong> 05-04-2014</p>
+
+<blockquote>
+  <p>А что общего у теплицы и балкона?</p>
+</blockquote>
+
+<p>с кухней :-\</p>
+
+<p><strong>taram</strong> 05-04-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>К сожалению у меня сейчас работает установка с погружным насосом, который добавляет 2-3 градуса к окружающей среде.</p>
+  </blockquote>
+
+  <p>“окружающая среда” это воздух.</p>
+
+  <p>нужно сбрасывать температуру окружающий среды.</p>
+
+  <p>так что самое время.. задуматься о кондиционере и 18 градусах воздуха.</p>
+
+  <p>ну.. а раствор сам остынет.. до 20.. <em>8)</em></p>
+</blockquote>
+
+<p>Вобщето у погружных насосов окружащая среда- это вода :-. Хотя, может Вад, чегото новое изобрёл :-\ :D .</p>
+
+<p>О! Погружной кондиционер ;D!</p>
+
+<p><strong>taram</strong> 05-04-2014</p>
+
+<p>Если остужать раствор, то растение легче перенесёт высокую темпу воздуха.</p>
+
+<p>А остужать воздух, чтобы остудить раствор, канечно можно, но целесобразно ли?</p>
+
+<p>Сколько там ватт расходует пельте, а сколько израсходует кондиционер?</p>
+
+<p><strong>Vad</strong> 05-04-2014</p>
+
+<p>Тарам, читай сообщения выше.. буквы.. вроде знакомые :-\</p>
+
+<blockquote>
+  <p>Хочу салат выращивать, а по описанию он требует прохладного раствора. Если больше 25'C то цвести будет.</p>
+</blockquote>
+
+<p>Товарисчь не насосы хочет выращивать.. а салат.. а для салата окружающая среда - воздух.. ну разве что.. это не морской салат какой-нить.. :-\ “глубоководный” ;D</p>
+
+<p>Не помню чтоб было: “при температуре раствора более 25 градусов, салат начинает цвести” :D</p>
+
+<p>везде речь идет о температуре воздуха..</p>
+
+<p>Вобще, хочу посмотреть на салат выращеный при +30 при влажности 30-40% и температуре корневой 18</p>
+
+<p>Тарам.. проведет “экспикримент” и нам доложит :D</p>
+
+<p><strong>taram</strong> 05-04-2014</p>
+
+<blockquote>
+  <p>К сожалению у меня сейчас работает установка с погружным насосом, который добавляет 2-3 градуса к окружающей среде. Дома примерно 24-25' а раствор 26-27'</p>
+</blockquote>
+
+<p>Вад, у человека небольшая проблема, погружной насос подогревает окружающую среду, тоесть раствор (а не воздух, как ты домыслил).</p>
+
+<p>Темпа в помещении 24-25', не такая уж и высокыя. Поэтому использование пельтье, если есть такая возможность, для охлаждения подогревшегося раствора вполне целесообразно так как</p>
+
+<blockquote>
+  <p>Если остужать раствор, то растение легче перенесёт высокую темпу воздуха.</p>
+</blockquote>
+
+<blockquote>
+  <p>везде речь идет о температуре воздуха..</p>
+</blockquote>
+
+<p>Речь идёт именно об темпе раствора.</p>
+
+<p>Вад, читай сообщения внимательнее, буквы.. вроде знакомые :P . Хы-ы :D</p>
+
+<p><strong>Vad</strong> 05-04-2014</p>
+
+<p>Читай хауту по салату.</p>
+
+<p>Светокультуру в массы!</p>
+
+<p>Аминь.</p>
+
+<p><strong>taram</strong> 05-04-2014</p>
+
+<p>Вад, Не будь Хаутом!!! <a href="http://vk.com/club23291640" target="_blank">http://vk.com/club23291640</a> :D</p>
+
+<p><strong>Vad</strong> 05-04-2014</p>
+
+<p>у вас талант нести пургу <em>8)</em> ;D</p>
+
+<p><strong>taram</strong> 05-04-2014</p>
+
+<p>Аминь!</p>
+
+<p><strong>Strangeman</strong> 06-04-2014</p>
+
+<p>А ведь разговор, кажется, не о политике был…</p>
+
+<p><strong>taram</strong> 06-04-2014</p>
+
+<blockquote>
+  <p>А ведь разговор, кажется, не о политике был…</p>
+</blockquote>
+
+<p>Лично я поддерживаю тему с охлаждением раствора.</p>
+
+<p>Зачем охлаждать воздух , чтоб он охладил раствор, если можно охлаждать сам раствор <em>???</em> ?</p>
+
+<p>Если есть возможность охлаждать раствор пельтьями, то мне такой вариант интересен, возьму способ на заметку.</p>
+
+<p>Топикстартер давай ещё <em>8)</em>!</p>
+
+<p>Так чё там с люминием? Вреден или нет? :)</p>
+
+<p><strong>mikkke</strong> 06-04-2014</p>
+
+<p>Я давеча боялся чугуния в растворе, так вспомнил один способ интересный. Эпоксидную смолу развести ацетоном и ополоснуть. Получается весьма тонкая прочная пленка.</p>
+
+<p><strong>Strangeman</strong> 06-04-2014</p>
+
+<p>Алюминий на воздухе быстро покрывается оксидной пленкой и не взаимодействует с водой. Что касается взаимодействия с раствором - не все однозначно. В растворе CuSO4 идет бурная реакция, вытесняется водород. Возможно, с питательным раствором будет реагировать, хоть и не бурно из за малой концентрации. Возможно нарушение баланса микроэлементов. Полагаю, покрытие не помешает.</p>
+
+<p><strong>NorthStar</strong> 06-04-2014</p>
+
+<p>да тут пробовать надо. Только вот похоже салат ждать не хочет. Вымахал уже гад до приличных размеров. Если покрытие на радиатор делать, то сильно ухудшится теплообмен. Я думаю, что лучше салат скушать, а посадить цветы какие-нибудь и на них эксперимент поставить. Если за пару недель радиатор сильно покушает коррозия, то идея была плохая. В аквариумных охладителях используют титановые теплообменники, но я не смог такой найти. ((</p>
+
+<p>Еще раз напомню, что в моей установке ситуация не стандартная получается - там раствор теплее воздуха на 2 градуса! Выше 26 в квартире вроде не поднимается температура даже летом, так что если t раствора будет 19, то это должно решить проблему и с самим раствором и с охлаждением воздуха вокруг салата на 1-2 градуса.</p>
+
+<p>Вообще установка в любом случае интересная, так как если бы был гроубокс, то можно было бы и воздух в нем охлаждать.</p>
+
+<p>Вот пример установочки на 6 элементов.</p>
+
+<p><a href="http://www.aliexpress.com/item/Ks112-water-cooled-air-conditioner-movement-refrigeration-and-air-conditioning-air-cooling-fan-water-air-conditioner/925868446.html" target="_blank">http://www.aliexpress.com/item/Ks112-water-cooled-air-conditioner-movement-refrigeration-and-air-conditioning-air-cooling-fan-water-air-conditioner/925868446.html</a></p>
+
+<p>Одной стороной элементы повернул - кондиционер, а если другой, то холодильник для воды.</p>
+
+<p><strong>taram</strong> 06-04-2014</p>
+
+<blockquote>
+  <p>и на них эксперимент поставить. Если за пару недель радиатор сильно покушает коррозия, то идея была плохая.</p>
+</blockquote>
+
+<p>Да, похоже, только методом проб и ошибок. Если появятся явные следы корозии, тогда и будете другой радиатор искать.</p>
+
+<blockquote>
+  <p>Вообще установка в любом случае интересная, так как если бы был гроубокс, то можно было бы и воздух в нем охлаждать.</p>
+</blockquote>
+
+<p>Канечно интересная! <em>8)</em></p>
+
+<p><strong>Vad</strong> 06-04-2014</p>
+
+<blockquote>
+  <p>Одной стороной элементы повернул - кондиционер, а если другой, то холодильник для воды.</p>
+</blockquote>
+
+<p>можно просто + и - на пельтьях местами поменять <em>8)</em> они не полярные</p>
+
+<p><strong>Borodach1</strong> 07-04-2014</p>
+
+<p>Чего то я не понял. А нафига пельтье в растворе замачивать?</p>
+
+<p>Может лучше охлаждать стенки сосуда с раствором? <em>???</em></p>
+
+<p><strong>NorthStar</strong> 07-04-2014</p>
+
+<p>Да их никто и не замачивает. Пельтье к теплообменнику прижимается, а внутри теплообменника вода течет.</p>
+
+<p>А вот теплообменники все из вредных материалов. Так что, если что-то крупное делать, то для воды лучше за 20тр купить аквариумный холодильник. Там обменник титановый и принцип работы как у большого холодильника, те выше КПД.</p>
+
+<p>По поводу воздуха - тоже большой вопрос - он же будет на себе очень много влаги конденсировать, а следовательно осушать внутренности бокса и течь на пол где-то за его пределами, так что тоже вариант сомнительный.</p>
+
+<p><strong>Vad</strong> 07-04-2014</p>
+
+<p>конденсат можно возвращать в раствор <em>8)</em></p>
+
+<p><strong>Borodach1</strong> 07-04-2014</p>
+
+<blockquote>
+  <p>Да их никто и не замачивает. Пельтье к теплообменнику прижимается, а внутри теплообменника вода течет.</p>
+
+  <p>А вот теплообменники все из вредных материалов…</p>
+</blockquote>
+
+<p>Ну так сделайте теплообменник не из вредного материала. <em>???</em></p>
+
+<p>Хоть из оргстекла склейте токую коробУшку. Чтоб вода протекала тонким, но широким слоем. <em>???</em></p>
+
+<p><strong>Strangeman</strong> 07-04-2014</p>
+
+<p>Из оргстекла не пойдет - придется слишком большую площадь использовать, а вот тонкое покрытие на алюминии существенного теплового сопротивления не внесет. Лучше, однако, заказать из нержавейки.</p>
+
+<p><strong>Borodach1</strong> 07-04-2014</p>
+
+<p>Задача ведь не стоит понизить температуру градусов на 30 - 40. Нужно снизить температуру совсем на чуть чуть. Градусов на пять.</p>
+
+<p>Оргстекло - это как пример. Можно и просто стекло. Стеклотекстолит. Гетинакс. Да мало ли ещё какой тонкой листовой пластмассы можно найти? <em>???</em></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

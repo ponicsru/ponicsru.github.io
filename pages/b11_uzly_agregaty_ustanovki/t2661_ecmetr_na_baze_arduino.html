@@ -1,0 +1,3746 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>EC-метр на базе ардуино | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="EC-метр на базе ардуино">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">EC-метр на базе ардуино</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><em>**</em> 28-06-2017</p>
+
+<p>Не выдержала душа поэта.. Не могу я зырить на потуги некоторых гениев.</p>
+
+<p>Итак, готовое простое устройство для измерения электропроводности. С экранчиком, термокомпенсацией и калибровкой.</p>
+
+<p>Поскольку в качестве электрода все дружно ненавидят вилку шнура, то её и будем использовать :D</p>
+
+<p>Схема подключения:</p>
+
+<p><a href="https://t.me/ponics_ru_files/18576" target="_blank"><img src="/imagehost2/thumbs/5klk.jpg" alt="" /></a></p>
+
+<p>Номиналы и запчасти:</p>
+
+<p>R1 = 510 Ом</p>
+
+<p>R2 = 510 Ом</p>
+
+<p>R3 = 4,7 Ком</p>
+
+<p>S1 - обычная кнопка без фиксатора.</p>
+
+<p>Ардуино Про Мини.</p>
+
+<p>Экран с I2C шиной.</p>
+
+<p>Датчик DS18b20.</p>
+
+<p>Провода всякие :)</p>
+
+<p>Шнур с американской вилкой с дырочками на электродах(бывают и без дырочек, и они сделаны из крутой нержавки!).</p>
+
+<p>Код:</p>
+
+<p>[code]</p>
+
+<p>#include &lt;OneWire.h&gt; //данная библиотека отредактирована для подключения температурного датчика ds18b20 напрямую(без резисторов). Ссылка на скачивание: <a href="https://yadi.sk/d/osXYOMSI3KEThp" target="_blank">https://yadi.sk/d/osXYOMSI3KEThp</a></p>
+
+<p>#include &lt;DallasTemperature.h&gt;</p>
+
+<p>#include &lt;EEPROM.h&gt;</p>
+
+<p>#include &lt;LiquidCrystal_I2C.h&gt;</p>
+
+<p>LiquidCrystal_I2C lcd(0x3f,16,2); //У меня адрес экрана на кв.шине 0x3f, но бывает еще и 0x27, т.е. строка будет выглядеть так 'LiquidCrystal_I2C lcd(0x27,16,2);'</p>
+
+<p>int button = 5;// пин кнопки</p>
+
+<p>int buttonState = 0;</p>
+
+<p>int R1 = 510; // R1=510 ом</p>
+
+<p>int R2 = 510;// R2=510 ом</p>
+
+<p>int Ra = 25; //Даже не спрашивайте! Rа=V/I(замеряйте, если хотите, сами)</p>
+
+<p>int ECPin = A0;</p>
+
+<p>float TemperatureCoef = 0.019;//темп.коэфф. ~ 2% на градус.</p>
+
+<p>float K = 1.88;//константа первоначальной работы(для американской вилки с дырочками)</p>
+
+<p>float CalibrationEC=2.19; // Здесь Вы задаете EC калибровочного раствора. У меня вода равна 0.19. плюс 1гр соли на 1 литр воды =2ЕС, итого = 2.19</p>
+
+<p>//<strong>**</strong><strong>**</strong><strong>**</strong><strong>**<em>Остальные переменные</em></strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>*//</p>
+
+<p>int i = 0;</p>
+
+<p>int j = 0;</p>
+
+<p>int buf[140],temp;</p>
+
+<p>unsigned long int avgValue;</p>
+
+<p>float Temperature=10;</p>
+
+<p>float EC = 0;</p>
+
+<p>float EC25 = 0;</p>
+
+<p>int ppm = 0;</p>
+
+<p>float raw = 0;</p>
+
+<p>float Vin = 5;</p>
+
+<p>float Vdrop = 0;</p>
+
+<p>float Rc = 0;</p>
+
+<p>//<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>Переменные для Калибровки **</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>**//</p>
+
+<p>float TemperatureFinish=0;</p>
+
+<p>float TemperatureStart=0;</p>
+
+<p>float Kt=0;</p>
+
+<p>//<strong>**</strong><strong>**</strong><strong>**</strong><strong>*** Настройки eeprom **</strong><strong>**</strong><strong>**</strong>**//</p>
+
+<p>int value;</p>
+
+<p>int addresCalibration=0;</p>
+
+<p>float PPMconversion=0.5;</p>
+
+<p>#define ONE_WIRE_BUS 9 // Сигнальный провод темп. датчика на 9 пине</p>
+
+<p>const int TempProbePossitive =8; // Плюсовой провод темп.датчика на пине 8</p>
+
+<p>const int TempProbeNegative=7; //Минусовой провод темп.датчика на пине 7</p>
+
+<p>OneWire oneWire(ONE_WIRE_BUS);// Настраиваем шину</p>
+
+<p>DallasTemperature sensors(&amp;oneWire);//</p>
+
+<p>void setup() {</p>
+
+<p>Serial.begin(9600);</p>
+
+<p>ADCSRA &amp;= B11111000; //Ускоряем АЦП до 1мГц</p>
+
+<p>ADCSRA = B00000100; //————-//—————</p>
+
+<p>pinMode(2, OUTPUT);</p>
+
+<p>pinMode(3, OUTPUT);</p>
+
+<p>pinMode(button, INPUT);</p>
+
+<p>pinMode(ECPin, INPUT);</p>
+
+<p>pinMode(TempProbeNegative , OUTPUT );</p>
+
+<p>digitalWrite(TempProbeNegative , LOW );</p>
+
+<p>pinMode(TempProbePossitive , OUTPUT );</p>
+
+<p>digitalWrite(TempProbePossitive , HIGH );</p>
+
+<p>delay(100);// даем сенсору время на активацию</p>
+
+<p>sensors.begin();</p>
+
+<p>delay(100);</p>
+
+<p>R1=(R1+Ra);</p>
+
+<p>value = EEPROM.read(addresCalibration);</p>
+
+<p>if (value &lt;=254) K=value*0.02;</p>
+
+<p>lcd.init();</p>
+
+<p>lcd.backlight();</p>
+
+<p>}</p>
+
+<p>void loop() {</p>
+
+<p>GetEC();</p>
+
+<p>Calibration();</p>
+
+<p>}</p>
+
+<p>void GetEC(){</p>
+
+<p>sensors.requestTemperatures();// Запрос от датчика температуры</p>
+
+<p>Temperature=sensors.getTempCByIndex(0); //Запись значений в переменные</p>
+
+<p>for(int i=0;i&lt;140;i++) //берем 140 значений с АЦП</p>
+
+<p>{</p>
+
+<p>PORTD = B00000100;</p>
+
+<p>delayMicroseconds(83); // 83 микросекунды+ускоренный analoread() в течении 17 микросекунд=100микросекунд, что означает 10кГц работы устройства.</p>
+
+<p>raw = analogRead(ECPin);</p>
+
+<p>buf = raw;</p>
+
+<p>PORTD = B00001000;</p>
+
+<p>delayMicroseconds(100); //Противофаза, дабы исключить поляризацию.</p>
+
+<p>}</p>
+
+<p>PORTD = B00000000;</p>
+
+<p>for(int i=0;i&lt;130;i++)</p>
+
+<p>{</p>
+
+<p>for(int j=i+1;j&lt;140;j++)</p>
+
+<p>{</p>
+
+<p>if(buf&gt;buf[j])</p>
+
+<p>{</p>
+
+<p>temp=buf;</p>
+
+<p>buf=buf[j];</p>
+
+<p>buf[j]=temp;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>avgValue=0;</p>
+
+<p>for(int i=20;i&lt;100;i++) // 80 средних значений</p>
+
+<p>avgValue+=buf;</p>
+
+<p>float ECValue=(float)avgValue/80;</p>
+
+<p>Vdrop = (Vin*ECValue)/1024.0; // перевод аналог.значений в милливольты</p>
+
+<p>Rc = (Vdrop*R1)/(Vin-Vdrop); //Вычисляем сопротивление воды</p>
+
+<p>Rc = Rc-Ra-R2; // вычитаем лишнее</p>
+
+<p>EC = 1000/(Rc*K); //получение чистого ЕС</p>
+
+<p>//<strong>**</strong><strong>**</strong><em>Компенсация температуры</em><strong>**</strong><strong>**</strong><strong>**</strong>*//</p>
+
+<p>EC25 = EC/ (1+ TemperatureCoef*(Temperature-25.0));</p>
+
+<p>ppm = (EC25)<em>(PPMconversion</em>1000); // Переводим получившийся EC в ppm@0,5</p>
+
+<p>//<strong>**</strong><strong>**</strong><strong>**</strong>Вывод на Экран<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>//</p>
+
+<p>lcd.setCursor(0,0);</p>
+
+<p>lcd.print(“Arduino EC-PPM “);</p>
+
+<p>lcd.setCursor(0,1);</p>
+
+<p>lcd.print(“EC: “);</p>
+
+<p>lcd.setCursor(3,1);</p>
+
+<p>lcd.print(EC25);</p>
+
+<p>lcd.setCursor(9,1);</p>
+
+<p>lcd.print(Temperature);</p>
+
+<p>lcd.print(“'C”);</p>
+
+<p>//<strong>**</strong><strong>**</strong><strong>**<em>Информация для отладки</em></strong><strong>**</strong><strong>**</strong>***//</p>
+
+<p>Serial.print(“EC: “);</p>
+
+<p>Serial.print(EC);</p>
+
+<p>Serial.print(“ raw: “);</p>
+
+<p>Serial.print(raw);</p>
+
+<p>Serial.print(“ Rc: “);</p>
+
+<p>Serial.print(Rc);</p>
+
+<p>Serial.print(“ EC: “);</p>
+
+<p>Serial.print(EC25);</p>
+
+<p>Serial.print(“ Simens “);</p>
+
+<p>Serial.print(ppm);</p>
+
+<p>Serial.print(“ ppm “);</p>
+
+<p>Serial.print(Temperature);</p>
+
+<p>Serial.println(“ *C “);</p>
+
+<p>//}</p>
+
+<p>}</p>
+
+<p>void Calibration(){</p>
+
+<p>buttonState = digitalRead(button);</p>
+
+<p>if(buttonState!=HIGH) return;</p>
+
+<p>lcd.setCursor(0,0);</p>
+
+<p>lcd.print(“Calibrating “);</p>
+
+<p>lcd.setCursor(0,1);</p>
+
+<p>lcd.print(“EC: “);</p>
+
+<p>lcd.setCursor(3,1);</p>
+
+<p>lcd.print(CalibrationEC);</p>
+
+<p>sensors.requestTemperatures();</p>
+
+<p>TemperatureStart=sensors.getTempCByIndex(0);</p>
+
+<p>i = 0;</p>
+
+<p>j= 0;</p>
+
+<p>for(int i=0;i&lt;140;i++)</p>
+
+<p>{</p>
+
+<p>PORTD = B00000100;</p>
+
+<p>delayMicroseconds(83); // 83 микросекунды+ускоренный analoread() в течении 17 микросекунд=100микросекунд, что означает 10кГц работы устройства.</p>
+
+<p>raw = analogRead(ECPin);</p>
+
+<p>buf = raw;</p>
+
+<p>PORTD = B00001000;</p>
+
+<p>delayMicroseconds(100); //Противофаза, дабы исключить поляризацию.</p>
+
+<p>}</p>
+
+<p>PORTD = B00000000;</p>
+
+<p>for(int i=0;i&lt;130;i++) //Сортируем аналоговые значения от меньшего к бОльшему.</p>
+
+<p>{</p>
+
+<p>for(int j=i+1;j&lt;140;j++)</p>
+
+<p>{</p>
+
+<p>if(buf&gt;buf[j])</p>
+
+<p>{</p>
+
+<p>temp=buf;</p>
+
+<p>buf=buf[j];</p>
+
+<p>buf[j]=temp;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>avgValue=0;</p>
+
+<p>for(int i=20;i&lt;100;i++)</p>
+
+<p>avgValue+=buf;</p>
+
+<p>float ECValue=(float)avgValue/80;</p>
+
+<p>sensors.requestTemperatures();</p>
+
+<p>TemperatureFinish=sensors.getTempCByIndex(0);</p>
+
+<p>//<strong>**</strong><strong>**</strong><em>Компенсация температуры</em><strong>**</strong><strong>**</strong><strong>**</strong>*//</p>
+
+<p>EC = CalibrationEC<em>(1+(TemperatureCoef</em>(TemperatureFinish-25.0))) ;</p>
+
+<p>//<strong>**</strong><strong>**</strong><strong>*** Вычисление Сопротивления Калибровочного раствора **</strong><strong>**</strong><strong>**</strong><strong>**</strong><em>**</em>//</p>
+
+<p>Vdrop= (((Vin)*(ECValue))/1024.0);</p>
+
+<p>Rc=(Vdrop*R1)/(Vin-Vdrop);</p>
+
+<p>Rc=Rc-Ra-R2; // вычитаем лишнее</p>
+
+<p>Kt= 1000/(Rc*EC);</p>
+
+<p>if (TemperatureStart==TemperatureFinish){</p>
+
+<p>Serial.println(“ Results are Trustworthy”);</p>
+
+<p>Serial.print(“Calibration Fluid EC: “);</p>
+
+<p>Serial.print(CalibrationEC);</p>
+
+<p>Serial.print(“ S “); //add units here</p>
+
+<p>Serial.print(“Cell Constant K”);</p>
+
+<p>Serial.print(K);</p>
+
+<p>lcd.setCursor(0,0);</p>
+
+<p>lcd.print(“GoodResults “);</p>
+
+<p>lcd.setCursor(0,1);</p>
+
+<p>lcd.print(“EC: “);</p>
+
+<p>lcd.setCursor(3,1);</p>
+
+<p>lcd.print(CalibrationEC);</p>
+
+<p>lcd.setCursor(9,1);</p>
+
+<p>lcd.print(“K:”);</p>
+
+<p>lcd.setCursor(11,1);</p>
+
+<p>lcd.print(Kt);</p>
+
+<p>while (1) {</p>
+
+<p>if (buttonState==HIGH){</p>
+
+<p>K=Kt; //записываем новую константу</p>
+
+<p>//<strong>**</strong><strong>Запись нового значения в EEPROM</strong><strong>**</strong>**//</p>
+
+<p>value=K/0.02;</p>
+
+<p>EEPROM.write(addresCalibration, value);</p>
+
+<p>lcd.setCursor(0,0);</p>
+
+<p>lcd.print(“Saved Calibration “);</p>
+
+<p>lcd.setCursor(0,1);</p>
+
+<p>lcd.print(“K: “);</p>
+
+<p>lcd.setCursor(3,1);</p>
+
+<p>lcd.print(Kt);</p>
+
+<p>delay(5000);</p>
+
+<p>return;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>else{</p>
+
+<p>Serial.println(“ Error Wait For Temperature To settle”);</p>
+
+<p>lcd.setCursor(0,0);</p>
+
+<p>lcd.print(“Bad Results “);</p>
+
+<p>delay(5000);</p>
+
+<p>Calibration();</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>[/code]</p>
+
+<p>Электрод можно использовать любой двухконтактный.(Любой!!1111)</p>
+
+<p>Калибруется просто. В коде находите строчку “float CalibrationEC=”, и после знака “равно” прописываете цифрами ваш калибровочный раствор(например: 1.14, 1.38 или 2), далее после заливки скетча в ардуину нажимаете большую красную кнопку(предварительно макнув электрод с датчиком температуры в калибровочный раствор), и всё.</p>
+
+<p>При надписи “Bad result” нажимаем кнопку повторно, и так до тех пор, пока экранчик Вас не поздравит с тем, что все прошло удачно и записалось в eeprom.</p>
+
+<p>Вот.</p>
+
+<p>И теперь живите с этим как хотите.</p>
+
+<p>:P</p>
+
+<p>P.s. Тех кого мучает вопрос телеметрии - флаг в руки. Делается все элементарно на уровне 5-го класса среднеобразовательной школы.</p>
+
+<p>P.p.s. Устройство ваще никак не претендует на суперточность. Для домашней гидропоники. Не более.</p>
+
+<p><strong>Borodach1</strong> 28-06-2017</p>
+
+<p>Схема подключения порадовала.)))</p>
+
+<p>Интересно, сколько человек воткнёт вилку в розетку? ;)</p>
+
+<p>))))))))))))))))))))))))))</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 28-06-2017</p>
+
+<p>Ай мля. Забыл питание к экрану пририсовать.</p>
+
+<p>Да и пофиг. Кто знает - разберётся.</p>
+
+<p>А чё со схемой не так? :D ;D ;D</p>
+
+<p><strong>Vad</strong> 28-06-2017</p>
+
+<blockquote>
+  <p>Схема подключения порадовала.)))</p>
+
+  <p>Интересно, сколько человек воткнёт вилку в розетку? ;)</p>
+
+  <p>))))))))))))))))))))))))))</p>
+</blockquote>
+
+<p>спецом плоская вилка!</p>
+
+<p>чеб не втыкнули :D</p>
+
+<p>Пресвятой_ДжимБим, наведи порядок с переменными, нельзя так жестоко разбрасываться памятью..</p>
+
+<p>всю статику загоняй в #define (номера кнопок, пинов, коэффициенты, резисторы )</p>
+
+<p>какого черта он будет всю жизьнь держать в голове то, что требовалось 1 раз при старте.. и то для удобства писателю! ;)</p>
+
+<p>это что за переменные?</p>
+
+<p>int i = 0;</p>
+
+<p>int j = 0;</p>
+
+<p>они нигде не используются</p>
+
+<p>да и вообще, все временные переменные объявляй внутри функции…</p>
+
+<p>меньше путаницы будет..</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 28-06-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Схема подключения порадовала.)))</p>
+
+    <p>Интересно, сколько человек воткнёт вилку в розетку? ;)</p>
+
+    <p>))))))))))))))))))))))))))</p>
+  </blockquote>
+
+  <p>спецом плоская вилка!</p>
+
+  <p>чеб не втыкнули :D</p>
+
+  <p>Пресвятой_ДжимБим, наведи порядок с переменными, нельзя так жестоко разбрасываться памятью..</p>
+
+  <p>всю статику загоняй в #define (номера кнопок, пинов, коэффициенты, резисторы )</p>
+
+  <p>какого черта он будет всю жизьнь держать в голове то, что требовалось 1 раз при старте.. и то для удобства писателю! ;)</p>
+
+  <p>это что за переменные?</p>
+
+  <p>int i = 0;</p>
+
+  <p>int j = 0;</p>
+
+  <p>они нигде не используются</p>
+
+  <p>да и вообще, все временные переменные объявляй внутри функции…</p>
+
+  <p>меньше путаницы будет..</p>
+</blockquote>
+
+<p>Переменные i и j используются. В операторе for, и далее.</p>
+
+<p>А код такой сделал, Штобе чайникам понятнее было.</p>
+
+<p>Да и не интересен мне данный код в целом.. это просто работающий пример.</p>
+
+<p>Эдакая фиговина с меандром в 10кГц.</p>
+
+<p>Просто Сив устал уже это устройство рожать. Я в роли акушера..</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 28-06-2017</p>
+
+<p>Ой, да. i и j объявлены внутри for))))</p>
+
+<p>Исправлю))</p>
+
+<p><strong>Vad</strong> 28-06-2017</p>
+
+<blockquote>
+  <p>Исправлю))</p>
+</blockquote>
+
+<p>Приучай чайников к основным правилам..</p>
+
+<p>ведь чайники до сих пор не знают очень много ;)</p>
+
+<p>должны начинать учиться <em>???</em></p>
+
+<p><strong>Vad</strong> 28-06-2017</p>
+
+<p>int buttonState = 0;</p>
+
+<p>обьявлена как целая, а используется как булева</p>
+
+<p>обьяви ее boolean</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 28-06-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Исправлю))</p>
+  </blockquote>
+
+  <p>Приучай чайников к основным правилам..</p>
+
+  <p>ведь чайники до сих пор не знают очень много ;)</p>
+
+  <p>должны начинать учиться <em>???</em></p>
+</blockquote>
+
+<p>Да по большому счету я и сам чайник ещё. Ничо. Учусь потихоньку.</p>
+
+<p>Устройство работает, как ни странно. И даже показывает что-то :D</p>
+
+<p>Так-что обычному пользователю только останется повторить схему и залить скетч в дуину.</p>
+
+<p>Но опять же.</p>
+
+<p>И даже этот вариант я читаю микроскопом для забивания гвоздей.</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 28-06-2017</p>
+
+<blockquote>
+  <p>int buttonState = 0;</p>
+
+  <p>обьявлена как целая, а используется как булева</p>
+
+  <p>обьяви ее boolean</p>
+</blockquote>
+
+<p>Оу.. точно. На автомате воткнул. Можно было и без этой переменной обойтись..</p>
+
+<p><strong>Vad</strong> 28-06-2017</p>
+
+<blockquote>
+  <p>И даже этот вариант я читаю микроскопом для забивания гвоздей.</p>
+</blockquote>
+
+<p>кто-то решит к этому микроскопу ручку деревянную приделать, обточить до удобной формы, и тут.. неожиданно закончится память :D</p>
+
+<p>она всегда неожиданно заканчивается :D</p>
+
+<p>особенно когда вот так, int buf[140],temp; “глобально” выкинули 140 байт ;)</p>
+
+<p><strong>allex_step</strong> 28-06-2017</p>
+
+<p>а как ЭТО интегрировать в Mega2560 для добавления в автоматизацию функции контроля ЕС? (а дальше - регулирование)</p>
+
+<p><em>**</em> 28-06-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>И даже этот вариант я читаю микроскопом для забивания гвоздей.</p>
+  </blockquote>
+
+  <p>кто-то решит к этому микроскопу ручку деревянную приделать, обточить до удобной формы, и тут.. неожиданно закончится память :D</p>
+
+  <p>она всегда неожиданно заканчивается :D</p>
+
+  <p>особенно когда вот так, int buf[140],temp; “глобально” выкинули 140 байт ;)</p>
+</blockquote>
+
+<p>А 140 значений - это жЫрный троллинг ващет))</p>
+
+<p>Кому нужно 140 значений?))) Хватило бы и 10-ти.</p>
+
+<p>Но так веселее. Этож микроскоп и гвозди.</p>
+
+<p><strong>Vad</strong> 28-06-2017</p>
+
+<p>лучше никак, это стендалон версия..</p>
+
+<p>гальванически не развязано.. по сути игрушечно-настольный вариант <em>???</em></p>
+
+<p><strong>…Andrew…</strong> 28-06-2017</p>
+
+<p>А какая повторяемость показаний получилась?</p>
+
+<p>raw-замеров и очищенных с помощью медианного фильтра?</p>
+
+<p><strong>Vad</strong> 28-06-2017</p>
+
+<blockquote>
+  <p>А 140 значений - это жЫрный троллинг ващет))</p>
+
+  <p>Кому нужно 140 значений?))) Хватило бы и 10-ти.</p>
+
+  <p>Но так веселее.</p>
+</blockquote>
+
+<p>троллинг обьявлять 140 байт темп в глобальных переменных ))</p>
+
+<p>объяви его внутри функции, сразу за void</p>
+
+<p>пока функция не исполняется, память свободна..</p>
+
+<p>как только попадем в функцию память будет выделена, а после выхода освобождена..</p>
+
+<p>всего то <em>???</em></p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 28-06-2017</p>
+
+<blockquote>
+  <p>а как ЭТО интегрировать в Mega2560 для добавления в автоматизацию функции контроля ЕС? (а дальше - регулирование)</p>
+</blockquote>
+
+<p>Никак. Это для уно, про мини, микро.</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 28-06-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>А 140 значений - это жЫрный троллинг ващет))</p>
+
+    <p>Кому нужно 140 значений?))) Хватило бы и 10-ти.</p>
+
+    <p>Но так веселее.</p>
+  </blockquote>
+
+  <p>троллинг обьявлять 140 байт темп в глобальных переменных ))</p>
+
+  <p>объяви его внутри функции, сразу за void</p>
+
+  <p>пока функция не исполняется, память свободна..</p>
+
+  <p>как только попадем в функцию память будет выделена, а после выхода освобождена..</p>
+
+  <p>всего то <em>???</em></p>
+</blockquote>
+
+<p>Тоже верно. Чет я не додумался)) Перепишу, да.</p>
+
+<p><strong>allex_step</strong> 28-06-2017</p>
+
+<blockquote>
+  <p>это стендалон версия..</p>
+
+  <p>гальванически не развязано.. по сути игрушечно-настольный вариант <em>???</em></p>
+</blockquote>
+
+<p>пичалько… начит бум смареть в другой бок</p>
+
+<p><strong>Vad</strong> 28-06-2017</p>
+
+<p>и так ли нужен медианный фильтер? :-\</p>
+
+<p>среднеарифметического недостаточно?</p>
+
+<p>дисперсия большая?</p>
+
+<p><strong>…Andrew…</strong> 28-06-2017</p>
+
+<blockquote>
+  <p>и так ли нужен медианный фильтер? :-\</p>
+
+  <p>среднеарифметического недостаточно?</p>
+
+  <p>дисперсия большая?</p>
+</blockquote>
+
+<p>Я как-то делал примерно то же самое, вот такая картина получилась (верх-raw сигнал, посредине-медианный фильтр из 10 значений, снизу-среднеарифметический из 10 значений)</p>
+
+<p>[img height=400]http://img10.lostpic.net/2016/08/04/bda78e7d8347923a2e0f98749fc2a111.png[/img]</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 28-06-2017</p>
+
+<blockquote>
+  <p>и так ли нужен медианный фильтер? :-\</p>
+
+  <p>среднеарифметического недостаточно?</p>
+
+  <p>дисперсия большая?</p>
+</blockquote>
+
+<p>Я от вилки шнура ожидал большей дисперсии, поэтому подстраховался.</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 28-06-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>и так ли нужен медианный фильтер? :-\</p>
+
+    <p>среднеарифметического недостаточно?</p>
+
+    <p>дисперсия большая?</p>
+  </blockquote>
+
+  <p>Я как-то делал примерно то же самое, вот такая картина получилась (верх-raw сигнал, посредине-медианный фильтр из 10 значений, снизу-среднеарифметический из 10 значений)</p>
+
+  <p>[img height=400]http://img10.lostpic.net/2016/08/04/bda78e7d8347923a2e0f98749fc2a111.png[/img]</p>
+</blockquote>
+
+<p>Спасибо за картинко! Очень наглядно.</p>
+
+<p><strong>Vad</strong> 28-06-2017</p>
+
+<p>вот для чего нужна синусоида и гальваническая развязка ;)</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 28-06-2017</p>
+
+<blockquote>
+  <p>вот для чего нужна синусоида и гальваническая развязка ;)</p>
+</blockquote>
+
+<p>Можно развязать саму ардуину, и использовать ее только в качестве ЕС. Но это вообще за гранью микроскопов.</p>
+
+<p><strong>Vad</strong> 28-06-2017</p>
+
+<p>на переменке получается вот такая дисперсия :-\</p>
+
+<p>если это вообще можно дисперсией назвать</p>
+
+<p>на графике одни сутки</p>
+
+<p><img src="http://grow.wxinfo.ru/vad/EC_mag.png" alt="" /></p>
+
+<p><strong>gena1</strong> 29-06-2017</p>
+
+<p>&gt;ускоренный analoread() в течении 17 микросекунд</p>
+
+<p>А как это рассчитано ? Чисто теоретически ?</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 29-06-2017</p>
+
+<blockquote>
+  <p>&gt;ускоренный analoread() в течении 17 микросекунд</p>
+
+  <p>А как это рассчитано ? Чисто теоретически ?</p>
+</blockquote>
+
+<p>Вообще-то есть масса скетчей для замеров длительности выполнения команд.</p>
+
+<p><strong>gena1</strong> 29-06-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>&gt;ускоренный analoread() в течении 17 микросекунд</p>
+
+    <p>А как это рассчитано ? Чисто теоретически ?</p>
+  </blockquote>
+
+  <p>Вообще-то есть масса скетчей для замеров длительности выполнения команд.</p>
+</blockquote>
+
+<p>А , да , что-то я протупил, не подумал о снятии разницы до и после ) . Почему-то асм вспомнился с расчётом времени на каждый шаг ))</p>
+
+<p><strong>Cyclamech</strong> 29-06-2017</p>
+
+<p>Критика по коду нада? Или нет планов исправлять? Ведь какбэ работает - и ладно!</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 29-06-2017</p>
+
+<p>Нет пределов совершенству!</p>
+
+<p>Этот код лишь отправная точка. Дальше можно нарастить все, что угодно. И оптимизировать как угодно.</p>
+
+<p>Но явные ошибки готов выслушать.</p>
+
+<p><strong>Cyclamech</strong> 29-06-2017</p>
+
+<blockquote>
+  <p>Но явные ошибки готов выслушать.</p>
+</blockquote>
+
+<p>Не могу сказать, явные ли это ошибки ли нет. Для кого как. Попробуем на примере.</p>
+
+<p>Предупрежу: для меня нет разницы между функцией и процедурой, я использую единое понятие - метод. Просто метод может не возвращать ничего (void-метод кагбэ становится процедурой).</p>
+
+<p>Я читаю у Вас: getEC(). Но никакого гетЕС (дай мне значение ЕС!) мы не видим, ибо этот метод возвращает void. <em>???</em></p>
+
+<p>Читаем код метода и встречаем:</p>
+
+<blockquote>
+  <p>EC = 1000/(Rc*K); //получение чистого ЕС</p>
+
+  <p>//<strong>**</strong><strong>**</strong><em>Компенсация температуры</em><strong>**</strong><strong>**</strong><strong>**</strong>*//</p>
+
+  <p>EC25 = EC/ (1+ TemperatureCoef*(Temperature-25.0));</p>
+
+  <p>ppm = (EC25)<em>(PPMconversion</em>1000); // Переводим получившийся EC в ppm@0,5</p>
+
+  <p>//<strong>**</strong><strong>**</strong><strong>**</strong>Вывод на Экран<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>//</p>
+
+  <p>lcd.setCursor(0,0);</p>
+</blockquote>
+
+<p>Да, заметно: Вы сами чувствовали, что выходит каша и использовали звёздочки. <em>crazy</em></p>
+
+<p>Надо было просто вернуть “чистое ЕС”. Сделать метод терпокомпенсации и метод конвертации ЕС в ппм. Вывод на экран - вообще отдельная тема, м.б., библиотека.</p>
+
+<p>…</p>
+
+<p>Метод конвертации лучше сразу сделать “универсальным”: если язык допускает перегрузку методов, то сделать один метод без параметров, а второй с параметром (коэффициент пересчёта). Из метода без параметра просто вызвать перегруженный, передав параметром константу, в которой “зашито” значение коэффициента перевода по умолчанию - 500. Если перегрузка методов недопустима, сделать 2 метода.</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 29-06-2017</p>
+
+<p>Насчет каши категорически не согласен. Всё идёт своим чередом.</p>
+
+<p>Возможно неверно откомментировал. Надо было не “Чистый ЕС”, а “Первичный ЕС” назвать.</p>
+
+<p>Конвертацию в ppm изначально делать не хотел. Не особо он и нужен. Но сделал. Без вывода на экран(но с выводом в дебаг).</p>
+
+<p><strong>Cyclamech</strong> 29-06-2017</p>
+
+<blockquote>
+  <p>Насчет каши категорически не согласен.</p>
+</blockquote>
+
+<p>Как угодно. <em>???</em></p>
+
+<p>Но звёздочки всё равно легко “палят” с потрохами код, стремящийся в кашу. Впрочем, думаю понятно, дело совсем не в звёздочках, а в мысли кодера.</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 29-06-2017</p>
+
+<p>Смишной цикламех))) подержи в руках ардуину-то)</p>
+
+<p><strong>Cyclamech</strong> 29-06-2017</p>
+
+<blockquote>
+  <p>Смишной цикламех))) подержи в руках ардуину-то)</p>
+</blockquote>
+
+<p>Ммм… Эта “кинестетика” точно позволит мне грамотнее писать код?</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 29-06-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Смишной цикламех))) подержи в руках ардуину-то)</p>
+  </blockquote>
+
+  <p>Ммм… Эта “кинестетика” точно позволит мне грамотнее писать код?</p>
+</blockquote>
+
+<p>Тебе не дано.. <em>???</em></p>
+
+<p><strong>vladindre</strong> 29-06-2017</p>
+
+<blockquote>
+  <p>масса скетчей для замеров длительности выполнения команд</p>
+</blockquote>
+
+<p>Хм. Вроде как тривиальный отладчик типа AVR Studio легко указует в боковой панели время выполнения любого куска программы. Хоть в микросекундах , хоть в тактах.</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 29-06-2017</p>
+
+<p>Отредактировал код с учетом справедливых замечаний Vad'a. Действительно немалая экономия памяти получается. В define переводить не стал, т.к. теряется читаемость кода.</p>
+
+<p>ВСЁ! Больше редакций не будет.</p>
+
+<p>Есть желание - делайте, а нет, то х<em>й с ним *crazy</em></p>
+
+<p><a href="https://t.me/ponics_ru_files/18577" target="_blank"><img src="/imagehost2/thumbs/5ksk.jpg" alt="" /></a></p>
+
+<p>[code]</p>
+
+<p>#include &lt;OneWire.h&gt; //данная библиотека отредактирована для подключения температурного датчика ds18b20 напрямую(без резисторов). Ссылка на скачивание: <a href="https://yadi.sk/d/osXYOMSI3KEThp" target="_blank">https://yadi.sk/d/osXYOMSI3KEThp</a></p>
+
+<p>#include &lt;DallasTemperature.h&gt;</p>
+
+<p>#include &lt;EEPROM.h&gt;</p>
+
+<p>#include &lt;LiquidCrystal_I2C.h&gt;</p>
+
+<p>LiquidCrystal_I2C lcd(0x3f,16,2); //У меня адрес экрана на кв.шине 0x3f, но бывает еще и 0x27, т.е. строка будет выглядеть так 'LiquidCrystal_I2C lcd(0x27,16,2);'</p>
+
+<p>int button = 5;// пин кнопки</p>
+
+<p>boolean buttonState = 0;</p>
+
+<p>int R1 = 510; // R1=510 ом</p>
+
+<p>int R2 = 510;// R2=510 ом</p>
+
+<p>int Ra = 25; //Даже не спрашивайте! Это сопротивление Output цифрового пина на другой цифровой пин, который в состоянии LOW. Rа=V/I(замеряйте, если хотите, сами)</p>
+
+<p>int ECPin = A0;</p>
+
+<p>float TemperatureCoef = 0.019;//темп.коэфф. ~ 2% на градус.</p>
+
+<p>float K = 1.88;//константа первоначальной работы(для американской вилки с дырочками)</p>
+
+<p>float CalibrationEC=2.19; // Здесь Вы задаете EC калибровочного раствора. У меня вода равна 0.19. плюс 1гр соли на 1 литр воды =2ЕС, итого = 2.19</p>
+
+<p>//<strong>**</strong><strong>**</strong><strong>**</strong><strong>**<em>Остальные переменные</em></strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>*//</p>
+
+<p>unsigned long int avgValue;</p>
+
+<p>float Temperature=10;</p>
+
+<p>float EC = 0;</p>
+
+<p>float EC25 = 0;</p>
+
+<p>int ppm = 0;</p>
+
+<p>float raw = 0;</p>
+
+<p>float Vin = 5;</p>
+
+<p>float Vdrop = 0;</p>
+
+<p>float Rc = 0;</p>
+
+<p>//<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>Переменные для Калибровки **</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>**//</p>
+
+<p>float TemperatureFinish=0;</p>
+
+<p>float TemperatureStart=0;</p>
+
+<p>float Kt=0;</p>
+
+<p>//<strong>**</strong><strong>**</strong><strong>**</strong><strong>*** Настройки eeprom **</strong><strong>**</strong><strong>**</strong>**//</p>
+
+<p>int value;</p>
+
+<p>int addresCalibration=0;</p>
+
+<p>float PPMconversion=0.5;</p>
+
+<p>#define ONE_WIRE_BUS 9 // Сигнальный провод темп. датчика на 9 пине</p>
+
+<p>const int TempProbePossitive =8; // Плюсовой провод темп.датчика на пине 8</p>
+
+<p>const int TempProbeNegative=7; //Минусовой провод темп.датчика на пине 7</p>
+
+<p>OneWire oneWire(ONE_WIRE_BUS);// Настраиваем шину</p>
+
+<p>DallasTemperature sensors(&amp;oneWire);//</p>
+
+<p>void setup() {</p>
+
+<p>Serial.begin(9600);</p>
+
+<p>ADCSRA &amp;= B11111000; //Ускоряем АЦП до 1мГц</p>
+
+<p>ADCSRA = B00000100; //————-//—————</p>
+
+<p>pinMode(2, OUTPUT);</p>
+
+<p>pinMode(3, OUTPUT);</p>
+
+<p>pinMode(button, INPUT);</p>
+
+<p>pinMode(ECPin, INPUT);</p>
+
+<p>pinMode(TempProbeNegative , OUTPUT );</p>
+
+<p>digitalWrite(TempProbeNegative , LOW );</p>
+
+<p>pinMode(TempProbePossitive , OUTPUT );</p>
+
+<p>digitalWrite(TempProbePossitive , HIGH );</p>
+
+<p>delay(100);// даем сенсору время на активацию</p>
+
+<p>sensors.begin();</p>
+
+<p>delay(100);</p>
+
+<p>R1=(R1+Ra);</p>
+
+<p>value = EEPROM.read(addresCalibration);</p>
+
+<p>if (value &lt;=254) K=value*0.02;</p>
+
+<p>lcd.init();</p>
+
+<p>lcd.backlight();</p>
+
+<p>}</p>
+
+<p>void loop() {</p>
+
+<p>GetEC();</p>
+
+<p>Calibration();</p>
+
+<p>}</p>
+
+<p>void GetEC(){</p>
+
+<p>int buf[140],temp;</p>
+
+<p>sensors.requestTemperatures();// Запрос от датчика температуры</p>
+
+<p>Temperature=sensors.getTempCByIndex(0); //Запись значений в переменные</p>
+
+<p>for(int i=0;i&lt;140;i++) //берем 140 значений с АЦП</p>
+
+<p>{</p>
+
+<p>PORTD = B00000100;</p>
+
+<p>delayMicroseconds(83); // 83 микросекунды+ускоренный analoread() в течении 17 микросекунд=100микросекунд, что означает 10кГц работы устройства.</p>
+
+<p>raw = analogRead(ECPin);</p>
+
+<p>buf = raw;</p>
+
+<p>PORTD = B00001000;</p>
+
+<p>delayMicroseconds(100); //Противофаза, дабы исключить поляризацию.</p>
+
+<p>}</p>
+
+<p>PORTD = B00000000;</p>
+
+<p>for(int i=0;i&lt;130;i++)</p>
+
+<p>{</p>
+
+<p>for(int j=i+1;j&lt;140;j++)</p>
+
+<p>{</p>
+
+<p>if(buf&gt;buf[j])</p>
+
+<p>{</p>
+
+<p>temp=buf;</p>
+
+<p>buf=buf[j];</p>
+
+<p>buf[j]=temp;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>avgValue=0;</p>
+
+<p>for(int i=20;i&lt;100;i++) // 80 средних значений</p>
+
+<p>avgValue+=buf;</p>
+
+<p>float ECValue=(float)avgValue/80;</p>
+
+<p>Vdrop = (Vin*ECValue)/1024.0; // перевод аналог.значений в милливольты</p>
+
+<p>Rc = (Vdrop*R1)/(Vin-Vdrop); //Вычисляем сопротивление воды</p>
+
+<p>Rc = Rc-Ra-R2; // вычитаем лишнее</p>
+
+<p>EC = 1000/(Rc*K); //получение чистого ЕС</p>
+
+<p>//<strong>**</strong><strong>**</strong><em>Компенсация температуры</em><strong>**</strong><strong>**</strong><strong>**</strong>*//</p>
+
+<p>EC25 = EC/ (1+ TemperatureCoef*(Temperature-25.0));</p>
+
+<p>ppm = (EC25)<em>(PPMconversion</em>1000); // Переводим получившийся EC в ppm@0,5</p>
+
+<p>//<strong>**</strong><strong>**</strong><strong>**</strong>Вывод на Экран<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>//</p>
+
+<p>lcd.setCursor(0,0);</p>
+
+<p>lcd.print(“Arduino EC-PPM “);</p>
+
+<p>lcd.setCursor(0,1);</p>
+
+<p>lcd.print(“EC: “);</p>
+
+<p>lcd.setCursor(3,1);</p>
+
+<p>lcd.print(EC25);</p>
+
+<p>lcd.setCursor(9,1);</p>
+
+<p>lcd.print(Temperature);</p>
+
+<p>lcd.print(“'C”);</p>
+
+<p>//<strong>**</strong><strong>**</strong><strong>**<em>Информация для отладки</em></strong><strong>**</strong><strong>**</strong>***//</p>
+
+<p>Serial.print(“EC: “);</p>
+
+<p>Serial.print(EC);</p>
+
+<p>Serial.print(“ raw: “);</p>
+
+<p>Serial.print(raw);</p>
+
+<p>Serial.print(“ Rc: “);</p>
+
+<p>Serial.print(Rc);</p>
+
+<p>Serial.print(“ EC: “);</p>
+
+<p>Serial.print(EC25);</p>
+
+<p>Serial.print(“ Simens “);</p>
+
+<p>Serial.print(ppm);</p>
+
+<p>Serial.print(“ ppm “);</p>
+
+<p>Serial.print(Temperature);</p>
+
+<p>Serial.println(“ *C “);</p>
+
+<p>//}</p>
+
+<p>}</p>
+
+<p>void Calibration(){</p>
+
+<p>int buf[140],temp;</p>
+
+<p>buttonState = digitalRead(button);</p>
+
+<p>if(buttonState!=HIGH) return;</p>
+
+<p>lcd.setCursor(0,0);</p>
+
+<p>lcd.print(“Calibrating “);</p>
+
+<p>lcd.setCursor(0,1);</p>
+
+<p>lcd.print(“EC: “);</p>
+
+<p>lcd.setCursor(3,1);</p>
+
+<p>lcd.print(CalibrationEC);</p>
+
+<p>sensors.requestTemperatures();</p>
+
+<p>TemperatureStart=sensors.getTempCByIndex(0);</p>
+
+<p>//<strong>**</strong><strong>**</strong>Estimates Resistance of Liquid <strong>**</strong><strong>**</strong><em>**</em>//</p>
+
+<p>for(int i=0;i&lt;140;i++)</p>
+
+<p>{</p>
+
+<p>PORTD = B00000100;</p>
+
+<p>delayMicroseconds(83); // 83 микросекунды+ускоренный analoread() в течении 17 микросекунд=100микросекунд, что означает 10кГц работы устройства.</p>
+
+<p>raw = analogRead(ECPin);</p>
+
+<p>buf = raw;</p>
+
+<p>PORTD = B00001000;</p>
+
+<p>delayMicroseconds(100); //Противофаза, дабы исключить поляризацию.</p>
+
+<p>}</p>
+
+<p>PORTD = B00000000;</p>
+
+<p>for(int i=0;i&lt;130;i++) //Сортируем аналоговые значения от меньшего к бОльшему.</p>
+
+<p>{</p>
+
+<p>for(int j=i+1;j&lt;140;j++)</p>
+
+<p>{</p>
+
+<p>if(buf&gt;buf[j])</p>
+
+<p>{</p>
+
+<p>temp=buf;</p>
+
+<p>buf=buf[j];</p>
+
+<p>buf[j]=temp;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>avgValue=0;</p>
+
+<p>for(int i=20;i&lt;100;i++)</p>
+
+<p>avgValue+=buf;</p>
+
+<p>float ECValue=(float)avgValue/80;</p>
+
+<p>sensors.requestTemperatures();</p>
+
+<p>TemperatureFinish=sensors.getTempCByIndex(0);</p>
+
+<p>//<strong>**</strong><strong>**</strong><em>Компенсация температуры</em><strong>**</strong><strong>**</strong><strong>**</strong>*//</p>
+
+<p>EC = CalibrationEC<em>(1+(TemperatureCoef</em>(TemperatureFinish-25.0))) ;</p>
+
+<p>//<strong>**</strong><strong>**</strong><strong>*** Вычисление Сопротивления Калибровочного раствора **</strong><strong>**</strong><strong>**</strong><strong>**</strong><em>**</em>//</p>
+
+<p>Vdrop= (((Vin)*(ECValue))/1024.0);</p>
+
+<p>Rc=(Vdrop*R1)/(Vin-Vdrop);</p>
+
+<p>Rc=Rc-Ra-R2; // вычитаем лишнее</p>
+
+<p>Kt= 1000/(Rc*EC);</p>
+
+<p>if (TemperatureStart==TemperatureFinish){</p>
+
+<p>Serial.println(“ Results are Trustworthy”);</p>
+
+<p>Serial.print(“Calibration Fluid EC: “);</p>
+
+<p>Serial.print(CalibrationEC);</p>
+
+<p>Serial.print(“ S “); //add units here</p>
+
+<p>Serial.print(“Cell Constant K”);</p>
+
+<p>Serial.print(K);</p>
+
+<p>lcd.setCursor(0,0);</p>
+
+<p>lcd.print(“GoodResults “);</p>
+
+<p>lcd.setCursor(0,1);</p>
+
+<p>lcd.print(“EC: “);</p>
+
+<p>lcd.setCursor(3,1);</p>
+
+<p>lcd.print(CalibrationEC);</p>
+
+<p>lcd.setCursor(9,1);</p>
+
+<p>lcd.print(“K:”);</p>
+
+<p>lcd.setCursor(11,1);</p>
+
+<p>lcd.print(Kt);</p>
+
+<p>while (1) {</p>
+
+<p>if (buttonState==HIGH){</p>
+
+<p>K=Kt; //записываем новую константу</p>
+
+<p>//<strong>**</strong><strong>Запись нового значения в EEPROM</strong><strong>**</strong>**//</p>
+
+<p>value=K/0.02;</p>
+
+<p>EEPROM.write(addresCalibration, value);</p>
+
+<p>lcd.setCursor(0,0);</p>
+
+<p>lcd.print(“Saved Calibration “);</p>
+
+<p>lcd.setCursor(0,1);</p>
+
+<p>lcd.print(“K: “);</p>
+
+<p>lcd.setCursor(3,1);</p>
+
+<p>lcd.print(Kt);</p>
+
+<p>delay(5000);</p>
+
+<p>return;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>else{</p>
+
+<p>Serial.println(“ Error Wait For Temperature To settle”);</p>
+
+<p>lcd.setCursor(0,0);</p>
+
+<p>lcd.print(“Bad Results “);</p>
+
+<p>delay(5000);</p>
+
+<p>Calibration();</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>[/code]</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 29-06-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>масса скетчей для замеров длительности выполнения команд</p>
+  </blockquote>
+
+  <p>Хм. Вроде как тривиальный отладчик типа AVR Studio легко указует в боковой панели время выполнения любого куска программы. Хоть в микросекундах , хоть в тактах.</p>
+</blockquote>
+
+<p>есть) Вот тока я не пользуюсь AVR Studio))</p>
+
+<p>Обычный IDE.</p>
+
+<p>Ради такой фигни ставить AVR Studio считаю нецелесообразным. Код писался на коленке. Аж целый вечер)))</p>
+
+<p><strong>vladindre</strong> 29-06-2017</p>
+
+<blockquote>
+  <p>Ради такой фигни ставить AVR Studio считаю нецелесообразным</p>
+</blockquote>
+
+<p>Ну если не занимаетесь постоянно. Хотя весчь очень сильная.</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 29-06-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Ради такой фигни ставить AVR Studio считаю нецелесообразным</p>
+  </blockquote>
+
+  <p>Ну если не занимаетесь постоянно. Хотя весчь очень сильная.</p>
+</blockquote>
+
+<p>Я знаю. Вещь сильная. Изучал мельком.</p>
+
+<p>Но вот не горю я ардуиной. И вообще в последнее время абстрагировался от цифровой техники. Разве только смартфоном и пользуюсь.</p>
+
+<p><strong>vladindre</strong> 29-06-2017</p>
+
+<blockquote>
+  <p>Разве только смартфоном и пользуюсь.</p>
+</blockquote>
+
+<p>Страшная вещь. Сверление мозга электромагнитным излучением. Держусь от всего этого за километр.</p>
+
+<p>На работе пытались всучить для работы забесплатно. Отбрыкался таки. Говорю здоровье дороже. Сами сверлитесь.</p>
+
+<p>Посчитайте плотность потока ЭМП в районе мозга. Результат сильно неприятно удивит.</p>
+
+<p><strong>allex_step</strong> 29-06-2017</p>
+
+<p>зависит от частоты-активности пользования…</p>
+
+<p>или уходим в холивар?: дышать - вредно, кушать - вредно, да и жить вредно - от этого умирают…</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 29-06-2017</p>
+
+<p>А вчем плох смартфон? В интернете полазить, книжку почитать, музычку послушать. Да и по работе..</p>
+
+<p>А поговорить - через блютуз-наушники, или громкую связь в машине.</p>
+
+<p>Этож телефон сотовый..</p>
+
+<p><strong>allex_step</strong> 29-06-2017</p>
+
+<p>коллега к тому что носить его нужно в свинцовом чумадане, а не в кармане - ибо либо близко к сердцу, либо близко к… междуног</p>
+
+<p>я помню примерно в 2000г. когда еще носил такой</p>
+
+<p><img src="http://i.piccy.info/i9/e2ac921670123c148480fc17a3e04510/1498766734/35618/1149857/439687_500.jpg" alt="" /><img src="http://i.piccy.info/a3/2017-06-29-20-05/i9-11332888/280x500-r/i.gif" alt="" />[font=verdana]</p>
+
+<p>то один дохтур рекомендовал носить как минимум в заднем кармане штанов - хоть ближе к &gt;&lt;опе, а не к бэйцам…[/font]</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 29-06-2017</p>
+
+<blockquote>
+  <p>коллега к тому что носить его нужно в свинцовом чумадане, а не в кармане - ибо либо близко к сердцу, либо близко к… междуног</p>
+
+  <p>я помню примерно в 2000г. когда еще носил такой</p>
+
+  <p><img src="http://i.piccy.info/i9/e2ac921670123c148480fc17a3e04510/1498766734/35618/1149857/439687_500.jpg" alt="" /><img src="http://i.piccy.info/a3/2017-06-29-20-05/i9-11332888/280x500-r/i.gif" alt="" />[font=verdana]</p>
+
+  <p>то один дохтур рекомендовал носить как минимум в заднем кармане штанов - хоть ближе к &gt;&lt;опе, а не к бэйцам…[/font]</p>
+</blockquote>
+
+<p>У меня такой же был)) в 99году.</p>
+
+<p><strong>Vad</strong> 29-06-2017</p>
+
+<blockquote>
+  <p>Я читаю у Вас: getEC(). Но никакого гетЕС</p>
+</blockquote>
+
+<p>:) есть.. я вижу, есть! :D</p>
+
+<p>Вообще, это не критика, это до столба решено было доепариться :D</p>
+
+<p>други, какая разница как назвать функцию или процедуру, метод.. да хоть “сущностью” назовите :D</p>
+
+<p>Оно может и void возвращать, не обязано оно что-то возвращать и точка.</p>
+
+<p>В данном случае, правильно назвать “подпрограмма”, процессе работы “поковырялась в памяти” и этого достаточно.</p>
+
+<p>результат сложила в укромном месте :D</p>
+
+<p>кто знает где он - найдет и возьмет ;)</p>
+
+<blockquote>
+  <p>Вывод на экран - вообще отдельная тема, м.б., библиотека.</p>
+</blockquote>
+
+<p>там и так библиотека :D куда еще более ее библиотечить? ;D</p>
+
+<p><strong>Vad</strong> 29-06-2017</p>
+
+<blockquote>
+  <p>Отредактировал код с учетом справедливых замечаний Vad'a. Действительно немалая экономия памяти получается. В define переводить не стал, т.к. теряется читаемость кода.</p>
+</blockquote>
+
+<p>пашему?</p>
+
+<p>все остается как есть, только, (очень грубо) не имя переменной и ее значение используется а “псевдоним числа”, (число “Пи” например… - классический дефайн)</p>
+
+<p>а компилятор, при сборке все псевдонимы подменит на значения… и все..</p>
+
+<p>так что не стесняйся… ;)</p>
+
+<p><strong>Cyclamech</strong> 29-06-2017</p>
+
+<blockquote>
+  <p>Вообще, это не критика, это до столба решено было доепариться :D</p>
+</blockquote>
+
+<p>Неправда: я “честно” читал код сверху вниз и просто встретил звёздочки… <em>???</em></p>
+
+<p><strong>Vad</strong> 29-06-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Вообще, это не критика, это до столба решено было доепариться :D</p>
+  </blockquote>
+
+  <p>Неправда: я “честно” читал код сверху вниз и просто встретил звёздочки… <em>???</em></p>
+</blockquote>
+
+<p>и ?</p>
+
+<p>чем октоторпы, минусы или равно лучше них :D</p>
+
+<hr />
+
+<p><strong>__</strong> я так люблю делать <strong>__</strong>_</p>
+
+<hr />
+
+<p>тут тело сущности</p>
+
+<p>================================= &lt; - это конец сущности</p>
+
+<p>просто, когда сущностный под сотню, а них фигурных скобочек по паре десятков, не понятно… что где закончилось, где началось…</p>
+
+<p>это же дело вкуса..</p>
+
+<p>кто-то переменные называет</p>
+
+<p>Это_коэффициент_температурной_коррекции_сенсора = 1</p>
+
+<p>Это_значение_временной_переменной_содержащей_предыдущее_значение_сенсора = 5</p>
+
+<p>а потом перемножает :D</p>
+
+<p>Это_результат_перемножения_коэффициента_температурной_коррекции_сенсора_и_значения_временной_переменной_содержащей_редыдущее_значение_сенсора = Это_коэффициент_температурной_коррекции_сенсора * Это_значение_временной_переменной_содержащей_предыдущее_значение_сенсора</p>
+
+<p>Вот это КАША! ;D</p>
+
+<p>а звездочки… ну звездочки ))</p>
+
+<p>коменты же</p>
+
+<p><strong>vladindre</strong> 30-06-2017</p>
+
+<blockquote>
+  <p>тут тело сущности</p>
+
+  <p>================================= &lt; - это конец сущности</p>
+</blockquote>
+
+<p>Кстати да. Я так давно делаю. Намного легче ориентироваться в однородномутной куче операторов. <em>8)</em></p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 30-06-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Отредактировал код с учетом справедливых замечаний Vad'a. Действительно немалая экономия памяти получается. В define переводить не стал, т.к. теряется читаемость кода.</p>
+  </blockquote>
+
+  <p>пашему?</p>
+
+  <p>все остается как есть, только, (очень грубо) не имя переменной и ее значение используется а “псевдоним числа”, (число “Пи” например… - классический дефайн)</p>
+
+  <p>а компилятор, при сборке все псевдонимы подменит на значения… и все..</p>
+
+  <p>так что не стесняйся… ;)</p>
+</blockquote>
+
+<p>Согласен. Но не для этого кода. Уже не хочу этим кодом заниматься. Смысла в нем не вижу))</p>
+
+<p><strong>…Andrew…</strong> 04-07-2017</p>
+
+<p>У меня пара вопросов по коду. Может это помарки, может было так задумано, но я не понимаю, почему.</p>
+
+<p>У Вас массив из 140 RAW-замеров. Вы к нему применяете медианный фильтр.</p>
+
+<ol>
+  <li>Но почему тогда при сортировке массива по возрастанию во внешнем цикле берете только 130 значений</li>
+</ol>
+
+<p>for(int i=0;i&lt;130;i++)</p>
+
+<ol>
+  <li>Далее, берете, как указано в комментариях, 80 средних значений</li>
+</ol>
+
+<p>for(int i=20;i&lt;100;i++)</p>
+
+<p>Но получается, не средних, отсекаете 20 низших и 40 высших. Нужно было, наверное, так?</p>
+
+<p>for(int i=30;i&lt;110;i++)</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 05-07-2017</p>
+
+<blockquote>
+  <p>У меня пара вопросов по коду. Может это помарки, может было так задумано, но я не понимаю, почему.</p>
+
+  <p>У Вас массив из 140 RAW-замеров. Вы к нему применяете медианный фильтр.</p>
+
+  <ol>
+    <li>Но почему тогда при сортировке массива по возрастанию во внешнем цикле берете только 130 значений</li>
+  </ol>
+
+  <p>for(int i=0;i&lt;130;i++)</p>
+
+  <ol>
+    <li>Далее, берете, как указано в комментариях, 80 средних значений</li>
+  </ol>
+
+  <p>for(int i=20;i&lt;100;i++)</p>
+
+  <p>Но получается, не средних, отсекаете 20 низших и 40 высших. Нужно было, наверное, так?</p>
+
+  <p>for(int i=30;i&lt;110;i++)</p>
+</blockquote>
+
+<p>По первому пункту ошибка. Там нужно 139. Все верно подметили.</p>
+
+<p>По второму тоже недогляд. Вы также все верно подметили.</p>
+
+<p>Писал на коленке за один вечер, повторюсь. Вот и мелкие недочёты повыскакивали. Ну не программер я. Я деньги зарабатываю на торговле…</p>
+
+<p><em>**</em> 05-07-2017</p>
+
+<p>Господа(и наверное дамы), а кто-нибудь вообще пробовал этот код и эту схему?</p>
+
+<p>Теоретически должно работать :D <em>crazy</em></p>
+
+<p>А на практике - хз ;D <em>crazy</em></p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 05-07-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>У меня пара вопросов по коду. Может это помарки, может было так задумано, но я не понимаю, почему.</p>
+
+    <p>У Вас массив из 140 RAW-замеров. Вы к нему применяете медианный фильтр.</p>
+
+    <ol>
+      <li>Но почему тогда при сортировке массива по возрастанию во внешнем цикле берете только 130 значений</li>
+    </ol>
+
+    <p>for(int i=0;i&lt;130;i++)</p>
+
+    <ol>
+      <li>Далее, берете, как указано в комментариях, 80 средних значений</li>
+    </ol>
+
+    <p>for(int i=20;i&lt;100;i++)</p>
+
+    <p>Но получается, не средних, отсекаете 20 низших и 40 высших. Нужно было, наверное, так?</p>
+
+    <p>for(int i=30;i&lt;110;i++)</p>
+  </blockquote>
+
+  <p>По первому пункту ошибка. Там нужно 139. Все верно подметили.</p>
+
+  <p>По второму тоже недогляд. Вы также все верно подметили.</p>
+
+  <p>Писал на коленке за один вечер, повторюсь. Вот и мелкие недочёты повыскакивали. Ну не программер я. Я деньги зарабатываю на торговле…</p>
+</blockquote>
+
+<p>Хотя по второму пункту вообще пофигу. Хоть от 50 до 100.</p>
+
+<p><strong>siv237</strong> 05-07-2017</p>
+
+<blockquote>
+  <p>Господа(и наверное дамы), а кто-нибудь вообще пробовал этот код и эту схему?</p>
+
+  <p>Теоретически должно работать :D <em>crazy</em></p>
+
+  <p>А на практике - хз ;D <em>crazy</em></p>
+</blockquote>
+
+<p>Ты сам то проверил свою схему и ПО?</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 05-07-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Господа(и наверное дамы), а кто-нибудь вообще пробовал этот код и эту схему?</p>
+
+    <p>Теоретически должно работать :D <em>crazy</em></p>
+
+    <p>А на практике - хз ;D <em>crazy</em></p>
+  </blockquote>
+
+  <p>Ты сам то проверил свою схему и ПО?</p>
+</blockquote>
+
+<p>А сам как думаешь!? :D</p>
+
+<p><strong>siv237</strong> 05-07-2017</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>Господа(и наверное дамы), а кто-нибудь вообще пробовал этот код и эту схему?</p>
+
+      <p>Теоретически должно работать :D <em>crazy</em></p>
+
+      <p>А на практике - хз ;D <em>crazy</em></p>
+    </blockquote>
+
+    <p>Ты сам то проверил свою схему и ПО?</p>
+  </blockquote>
+
+  <p>А сам как думаешь!? :D</p>
+</blockquote>
+
+<p>Ну нет конечно, раз пишешь</p>
+
+<blockquote>
+  <p>Теоретически должно работать :D <em>crazy</em></p>
+
+  <p>А на практике - хз ;D <em>crazy</em></p>
+</blockquote>
+
+<p>если я правильно понял сокращение хз.</p>
+
+<p>При измерении на 1 ацп как по твоей схеме учтена изначальная поляризация раствора?</p>
+
+<p>Если вместо вилки в растворе измерять батарейку, получишь ли ты идентичные значения её внутреннего сопротивления если подключать её сперва одной полярностью, потом другой?</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 05-07-2017</p>
+
+<p>Моя твая непонимай..</p>
+
+<p>Йа не водка-бинт <em>crazy</em></p>
+
+<p>Попробуй лучше сам. Потом свой опыт и опишешь.</p>
+
+<p><strong>siv237</strong> 07-07-2017</p>
+
+<blockquote>
+  <p>Моя твая непонимай..</p>
+
+  <p>Йа не водка-бинт <em>crazy</em></p>
+
+  <p>Попробуй лучше сам. Потом свой опыт и опишешь.</p>
+</blockquote>
+
+<p>Измерь батарейку и поймешь.</p>
+
+<p>В твоем по вообще поляризацию раствора не учитывается.</p>
+
+<p>И зачем ты занижаешь точность АЦП, ради скорости?</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 07-07-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Моя твая непонимай..</p>
+
+    <p>Йа не водка-бинт <em>crazy</em></p>
+
+    <p>Попробуй лучше сам. Потом свой опыт и опишешь.</p>
+  </blockquote>
+
+  <p>Измерь батарейку и поймешь.</p>
+
+  <p>В твоем по вообще поляризацию раствора не учитывается.</p>
+
+  <p>И зачем ты занижаешь точность АЦП, ради скорости?</p>
+</blockquote>
+
+<p>Ты наркоман штоле? Тебе надо, ты и замеряй батарейки.</p>
+
+<p>И ваще, кто тебе в ухо насрал, что точность АЦП понижается? Пруф в студию!</p>
+
+<p>И даже если понижается, то специально для слабовидящих: Кусок кода, который называется медианный фильтр, призван повысить точность.</p>
+
+<p><strong>siv237</strong> 07-07-2017</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>Моя твая непонимай..</p>
+
+      <p>Йа не водка-бинт <em>crazy</em></p>
+
+      <p>Попробуй лучше сам. Потом свой опыт и опишешь.</p>
+    </blockquote>
+
+    <p>Измерь батарейку и поймешь.</p>
+
+    <p>В твоем по вообще поляризацию раствора не учитывается.</p>
+
+    <p>И зачем ты занижаешь точность АЦП, ради скорости?</p>
+  </blockquote>
+
+  <p>Ты наркоман штоле? Тебе надо, ты и замеряй батарейки.</p>
+
+  <p>И ваще, кто тебе в ухо насрал, что точность АЦП понижается? Пруф в студию!</p>
+
+  <p>И даже если понижается, то специально для слабовидящих: Кусок кода, который называется медианный фильтр, призван повысить точность.</p>
+</blockquote>
+
+<p>Ты даже не представляешь как глупо все твои слова выглядят и каким дураком ты себя выставляешь. Ты вообще не понимаешь в принципе что именно ты делаешь и зачем.</p>
+
+<p>Я тебе два раза намекнул про батарейку. Человек хоть немного понимающий в теме бы сразу смекнул к чему был вопрос.</p>
+
+<p>Про снижение точности ацп вообще рука лицо сплошная. На хрена ты перевел ацп на мегагерц и при этом вставляешь искусственные задержки?</p>
+
+<p>Внести паразитные резюки в цепь измерения ты лишил себя шанса простого измерения поляризации раствора. Но это понятно, ты ведь вообще нихрена не понимаешь что делаешь. Зато экранчик приспособил.</p>
+
+<p>Медианный фильтр он сделал ;D ;D ;D.</p>
+
+<p>Хватит копипастить чужие кривые решения, попробуй понять как и что работает и зачем.</p>
+
+<p>Хотя кому я говорю. Человеку с вилкой в растворе. Который месяц не мог понять как полярность менять.</p>
+
+<p>По твоей формуле “калибровки” можно легко получить отрицательные значения, да еще и в каких-то ppm.</p>
+
+<p>Для кого ты это делал, для тех, кто EC в ppm измеряет?</p>
+
+<p>Вот видит бог не хотел хаять твое решение, а мягко намекнул на принципиальные ошибки, но ты вместо благодарности начал хамить мурло.</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 07-07-2017</p>
+
+<p>Наркоман Сиф разродился.</p>
+
+<p>Иди в пень со своей батарейкой. Можешь засунуть себе в попец и измерить сопротивление своих полупопий.</p>
+
+<p>Человек с батарейкой в заднице, который не понимает и не принимает ничьих советов, который даёт решения, ни к чему не применимые.</p>
+
+<p>Рассуждатель-теоретик, млин. Даже библу Киберлиб умудрился обговнять. Не зная, в принципе, как она работает.</p>
+
+<p>Иди туда-же, где у тебя батарейка!</p>
+
+<p>Заодно подучишь матчасть.</p>
+
+<p><strong>siv237</strong> 07-07-2017</p>
+
+<blockquote>
+  <p>Заодно подучишь матчасть.</p>
+</blockquote>
+
+<p>Это ты мне говоришь, про матчасть?! ;D ;D ;D ;D</p>
+
+<p>Очень иронично.</p>
+
+<blockquote>
+  <p>Рассуждатель-теоретик, млин</p>
+</blockquote>
+
+<p>Ты мое рабочее устройство не сумел скопировать, что-бы оно заработало, а меня теоретиком называешь?</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 07-07-2017</p>
+
+<p>;D ;D ;D</p>
+
+<p>:D</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 07-07-2017</p>
+
+<p>Рабочее устройство!!! ;D</p>
+
+<p>Где ты там копию то увидел? Очки протри. :D</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 07-07-2017</p>
+
+<p>Дабы прекратить пустой трёп, объявляю:</p>
+
+<ol>
+  <li>
+    <p>Устройство полностью рабочее, проверено.</p>
+  </li>
+  <li>
+    <p>Уважаемые новички форума: Никогда. Никогда не слушайте Сифа. Проклянете гидропонику в итоге навечно.</p>
+  </li>
+</ol>
+
+<p><strong>siv237</strong> 07-07-2017</p>
+
+<blockquote>
+  <p>Дабы прекратить пустой трёп, объявляю:</p>
+
+  <ol>
+    <li>
+      <p>Устройство полностью рабочее, проверено.</p>
+    </li>
+    <li>
+      <p>Уважаемые новички форума: Никогда. Никогда не слушайте Сифа. Проклянете гидропонику в итоге навечно.</p>
+    </li>
+  </ol>
+</blockquote>
+
+<p>Да давайте тебя послушаем. Все слушайте джима. Вот он точно все знает и умеет :)</p>
+
+<p>Что ты там вырастил? Напомни? Какие у тебя достижения?</p>
+
+<p>То что ты тут ваду пытаешься лизать, это и так видно но поверь он вряд ли тебе предложит выйти за себя за муж ;D ;D ;D</p>
+
+<p>У вас любовь неравнозначная, ты никто, один из недоучек с 6 классами, который случайно мог подумать, что что-то значит в жизни раз читать научился и потому, что мама называла тебя умненьким?</p>
+
+<p>С чего ты решил, что можешь кому-то советы давать?</p>
+
+<p>В общем разговор считаю законченным. Спорить с тобой смысла нет пока не поумнеешь.</p>
+
+<p><strong>Vad</strong> 07-07-2017</p>
+
+<p>Вафелка, не упоминай имя Вада всуе. <em>8)</em></p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 07-07-2017</p>
+
+<p>Чё, Сифа, попутал чето по жизни?</p>
+
+<p>Давно тебя сапогом по лицу не пинали видать.</p>
+
+<p>Небось ещё и армии не был. Откосил небось по плоскостопию.</p>
+
+<p>Там истеричек не любят, и лечат быстро.</p>
+
+<p>Теперь по теме.</p>
+
+<p>Все, кто в этой ветке писал. Все писали по делу. Но разве что кроме Цикломеха. Но он странный, ему простительно.</p>
+
+<p>Ты же какую-то непотребную куйню стал писать. А у меня аллергия на куйню, и на тех кто ее пишет.</p>
+
+<p>Возьми осцилограф, замерь. Потом убери ускорение АЦП и задержки, и ещё раз замерь.</p>
+
+<p>А потом засунь осцилограф(целиком) себе в гланды(да-да, через жопу), и ещё раз замерь.</p>
+
+<p>Ну а потом тихо самоубейся со стремянки головой вниз. Дабы не калечить психику своей ущербностью у окружающих.</p>
+
+<p>“Сказочный долбоеб..зря его из психушки выпустили”(с).</p>
+
+<p><strong>siv237</strong> 07-07-2017</p>
+
+<blockquote>
+  <p>Чё, Сифа, попутал чето по жизни?</p>
+
+  <p>Давно тебя сапогом по лицу не пинали видать.</p>
+
+  <p>Небось ещё и армии не был. Откосил небось по плоскостопию.</p>
+
+  <p>Там истеричек не любят, и лечат быстро.</p>
+
+  <p>Теперь по теме.</p>
+
+  <p>Все, кто в этой ветке писал. Все писали по делу. Но разве что кроме Цикломеха. Но он странный, ему простительно.</p>
+
+  <p>Ты же какую-то непотребную куйню стал писать. А у меня аллергия на куйню, и на тех кто ее пишет.</p>
+
+  <p>Возьми осцилограф, замерь. Потом убери ускорение АЦП и задержки, и ещё раз замерь.</p>
+
+  <p>А потом засунь осцилограф(целиком) себе в гланды(да-да, через жопу), и ещё раз замерь.</p>
+
+  <p>Ну а потом тихо самоубейся со стремянки головой вниз. Дабы не калечить психику своей ущербностью у окружающих.</p>
+
+  <p>“Сказочный долбоеб..зря его из психушки выпустили”(с).</p>
+</blockquote>
+
+<p>Я смотрю тебя пролечили в армии, истеришь то тут ты. Вспомни какой бред ты в моей теме писал? Как кричал, что скоро родишь вещь и что ты родил?</p>
+
+<p>По сути я тебе уже сказал да ты не понял.</p>
+
+<p>Точность в разы хуже чем у меня, поляризация вообще не учитывается (для тех кто не в курсе, раствор электролита создает разность потенциалов на электродах, на этом принципе батарейки работают). Даже в самой моей первой версии этот момент был учтен, а ты даже понять не можешь о чем речь. Хорошо хоть дошло, что нужно переменку использовать. Хотя уверен, ты все еще не понимаешь почему.</p>
+
+<p>Линейная калибровка это это просто песня. Я тебе лично вывел формулу нелинейной калибровки по двум точкам с третьей в нуле. Даже дал тебе в виде кода для ардуины.</p>
+
+<p>Медианный фильтр присобачил, а измерений чуть больше 100. Даже первая версия моего кода большее 5 тысяч измерений на двух АЦП выполняет в режиме повышенной точности.</p>
+
+<p>А текущая измеряет 3 независимых раствора да еще и с определением уровня.</p>
+
+<p>Иди узри и успагойся уже, программист недоучка. Если нет понимания, что ты делаешь, его не скомпенсируешь усердием.</p>
+
+<p>Еще скажи, я тебе не по сути написал :)</p>
+
+<p><strong>siv237</strong> 07-07-2017</p>
+
+<blockquote>
+  <p>Вафелка, не упоминай имя Вада всуе. <em>8)</em></p>
+</blockquote>
+
+<p>Хватит использовать гейский сленг.</p>
+
+<p>Я понимаю, что теперь всё всем дозволено но не всем тут приятно, когда ты тычешь своей ориентацией.</p>
+
+<p>Вам с джимом надо пожениться, и в гейропу. Там таких любят. Вы же вроде с одной местности родом, южные парнишки :)</p>
+
+<p><strong>Vad</strong> 07-07-2017</p>
+
+<p>Пресвятой_ДжимБим.</p>
+
+<p>Закрой тему. внизу страницы кнопка “ЗАБЛОКИРОВАТЬ ТЕМУ”</p>
+
+<p>а то засерит ее наш друх.</p>
+
+<p>его цель на форуме - засрать все. :D</p>
+
+<p><strong>orgail</strong> 07-07-2017</p>
+
+<p><a href="https://t.me/ponics_ru_files/18578" target="_blank"><img src="/imagehost2/thumbs/13726897973363rfr.jpg" alt="" /></a></p>
+
+<p>это я то злодей? )))</p>
+
+<p>:D :D :D ;D ;D ;D</p>
+
+<p><em>**</em> 07-07-2017</p>
+
+<p>У Сифа какое-то нездоровое словоблудие нащет геев и прочей гомосятины.</p>
+
+<p>Значит что-то у него в жизни не так.. в задницу штоле отымели в своё время? Вот ему везде злые гомосеки мерещятся.</p>
+
+<p>А аргументы смешные:</p>
+
+<p>Типа, мол я пи<em>**</em>ый, и решение у меня круче, а ты херовый, и недоучка, и ваще))</p>
+
+<p>А по делу - ноль.</p>
+
+<p><strong>orgail</strong> 11-07-2017</p>
+
+<p>Всем хорошего настроения.</p>
+
+<p><strong>serge mat</strong> 14-10-2017</p>
+
+<p>А давайте я помучаю вопросами, а?!</p>
+
+<p>Во-первых, зачем нам нужен температурный датчик? Если это только для гидропоники и ни на какую точность не претендует, то может быть можно обойтись? Каково влияние температуры в реальном диапазоне? Предположим, мой раствор почти всегда находится от 20° до 25°С, насколько большой окажется погрешность измерений если я не стану отслеживать температуру?</p>
+
+<p>Второе. Зачем мы пишем в EEPROM? Как я понял, это память с ограниченным числом циклов записи. Использование ее, получается, изнашивает ресурс ардуинки. Какая надобность ее использовать?</p>
+
+<p>Третье. Вы читаете только один пин (ECPin), но переписываете PORTD, т.е. восемь пинов за раз. Их нельзя использовать? Я не предполагал отдельную ардуинку отдавать на измерение ЕС, я хочу повесить на нее же и другие функции, контролировать и полив, и освещение, и, возможно, обновление раствора. В конце концов, зачем мне ЕС? Для того, чтобы принять решение что доливать: раствор или воду. Мне нужен пин на запуск насоса, пин на контроль объема прошедшей жидкости… Там набегает… Если для одного только измерения ЕС нужно задействовать столько пинов, то может быть проще купить датчик и задействовать один пин?</p>
+
+<p><strong>Vad</strong> 14-10-2017</p>
+
+<blockquote>
+  <p>Предположим, мой раствор почти всегда находится от 20° до 25°С, насколько большой окажется погрешность измерений если я не стану отслеживать температуру?</p>
+</blockquote>
+
+<p>приблизительно, от 0.03 до 0.5% :D в зависимости от состава раствора и его электропроводности.</p>
+
+<p>это меньше инструментальной погрешности.. нормального ЕС измерителя.. с платиновым электродом :D</p>
+
+<p>к тому же, у всех солей температурные кривые - очень разные :D</p>
+
+<p>я, мм.. :-\ да нет, нет, мы все ему это дооолго объясняли.. :D</p>
+
+<p>но он “прочитал в интернетах” ;D</p>
+
+<p><strong>vladindre</strong> 14-10-2017</p>
+
+<blockquote>
+  <p>Вы читаете только один пин (ECPin), но переписываете PORTD, т.е. восемь пинов за раз. Их нельзя использовать?</p>
+</blockquote>
+
+<p>Хм. Ничто не мешает при чтении настроить вход на чтение , а потом восстановить прежнее состояние. Маской прочитать нужный бит. Аналогично на вывод маскируем биты , которые не требуется менять и выводим что нужно. Это ж обычный заурядный программный метод.</p>
+
+<p><strong>PAA</strong> 14-10-2017</p>
+
+<blockquote>
+  <p>Вы читаете только один пин (ECPin), но переписываете PORTD, т.е. восемь пинов за раз. Их нельзя использовать?</p>
+</blockquote>
+
+<p>Их можно использовать, просто применить маску, для каждого пина (входа). Прием чтения/записи в порт и из порта по байтно применяется для повышения быстродействия (на несколько порядков) по сравнению с обычной командой digitalRead/digitalWrite. Кроме того, прием чтения/записи в порт и из порта по байтно позволяет значительно экономить внутреннюю память программ микропроцессора, что в конечном итоге оптимизирует программный код и расширяет возможности МП.</p>
+
+<p><strong>serge mat</strong> 14-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Вы читаете только один пин (ECPin), но переписываете PORTD, т.е. восемь пинов за раз. Их нельзя использовать?</p>
+  </blockquote>
+
+  <p>Их можно использовать, просто применить маску, для каждого пина (входа). Прием чтения/записи в порт и из порта по байтно применяется для повышения быстродействия (на несколько порядков) по сравнению с обычной командой digitalRead/digitalWrite. Кроме того, прием чтения/записи в порт и из порта по байтно позволяет значительно экономить внутреннюю память программ микропроцессора, что в конечном итоге оптимизирует программный код и расширяет возможности МП.</p>
+</blockquote>
+
+<p>Маска это когда</p>
+
+<p>PORTD = …</p>
+
+<p>или когда</p>
+
+<p>PORTD &amp;= …</p>
+
+<p>Но если я вижу</p>
+
+<p>PORTD = B00001000;</p>
+
+<p>то это же не маска! Это все восемь портов переписываются. Или я чего-то не понял?</p>
+
+<p><strong>Vad</strong> 14-10-2017</p>
+
+<p>порт один, и это порт D</p>
+
+<p><strong>vladindre</strong> 15-10-2017</p>
+
+<blockquote>
+  <p>то это же не маска!</p>
+</blockquote>
+
+<p>Разумеется не маска. Маска нужна при работе с одним , двумя и.т.д. битами.</p>
+
+<p><strong>siv237</strong> 15-10-2017</p>
+
+<p>Управление скоростью цифровых портов с помощью битовых масок практически не имеет смысла, так как основной ограничивающий фактор в измерении ЕС, это ограничение скорости АЦП. Приходится переводить АЦП на скоростной опрос с потерей точности, а затем увеличить точность усреднением большого числа измерений (десятки тысяч).</p>
+
+<p><strong>PAA</strong> 15-10-2017</p>
+
+<blockquote>
+  <p>Управление скоростью цифровых портов с помощью битовых масок практически не имеет смысла, …</p>
+</blockquote>
+
+<p>Ну не скажите, команда digitalWrite() залитая через компилятор IDE исполняется на три порядка медленнее нежели битовая операция.</p>
+
+<p><strong>siv237</strong> 15-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Управление скоростью цифровых портов с помощью битовых масок практически не имеет смысла, …</p>
+  </blockquote>
+
+  <p>Ну не скажите, команда digitalWrite() залитая через компилятор IDE исполняется на три порядка медленнее нежели битовая операция.</p>
+</blockquote>
+
+<p>Все верно и тем не менее это малозначимо для задачи.</p>
+
+<p><strong>PAA</strong> 15-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>Вы читаете только один пин (ECPin), но переписываете PORTD, т.е. восемь пинов за раз. Их нельзя использовать?</p>
+    </blockquote>
+
+    <p>Их можно использовать, просто применить маску, для каждого пина (входа). Прием чтения/записи в порт и из порта по байтно применяется для повышения быстродействия (на несколько порядков) по сравнению с обычной командой digitalRead/digitalWrite. Кроме того, прием чтения/записи в порт и из порта по байтно позволяет значительно экономить внутреннюю память программ микропроцессора, что в конечном итоге оптимизирует программный код и расширяет возможности МП.</p>
+  </blockquote>
+
+  <p>Маска это когда</p>
+
+  <p>PORTD = …</p>
+
+  <p>или когда</p>
+
+  <p>PORTD &amp;= …</p>
+
+  <p>Но если я вижу</p>
+
+  <p>PORTD = B00001000;</p>
+
+  <p>то это же не маска! Это все восемь портов переписываются. Или я чего-то не понял?</p>
+</blockquote>
+
+<p>Здесь вы записываете байт в порт D, но при этом вам важен только 4-й бит. Если вам нужно активировать другой пин в этом порту, то пишите в порт допустим В00010000, если нужно активировать сразу оба пина, то выводите В00011000 и тд. и тп. А при чтении с порта D применяете соответствующие маски для выделения значения нужных вам пинов.</p>
+
+<p><strong>PAA</strong> 15-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>Управление скоростью цифровых портов с помощью битовых масок практически не имеет смысла, …</p>
+    </blockquote>
+
+    <p>Ну не скажите, команда digitalWrite() залитая через компилятор IDE исполняется на три порядка медленнее нежели битовая операция.</p>
+  </blockquote>
+
+  <p>Все верно и тем не менее это малозначимо для задачи.</p>
+</blockquote>
+
+<p>Конкретно для этой задачи -да. Но ужимая общее время исполнения кода и его объем, можно запихнуть в ардуину ещё какие нибудь задачи.</p>
+
+<p><strong>siv237</strong> 15-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <p>Управление скоростью цифровых портов с помощью битовых масок практически не имеет смысла, …</p>
+      </blockquote>
+
+      <p>Ну не скажите, команда digitalWrite() залитая через компилятор IDE исполняется на три порядка медленнее нежели битовая операция.</p>
+    </blockquote>
+
+    <p>Все верно и тем не менее это малозначимо для задачи.</p>
+  </blockquote>
+
+  <p>Конкретно для этой задачи -да. Но ужимая общее время исполнения кода и его объем, можно запихнуть в ардуину ещё какие нибудь задачи.</p>
+</blockquote>
+
+<p>Теряется возможность использовать номера портов как переменные, а это сильно ограничивает гибкость. Например код опроса не запихнуть в функцию.</p>
+
+<p><strong>PAA</strong> 15-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <p>Управление скоростью цифровых портов с помощью битовых масок практически не имеет смысла, …</p>
+        </blockquote>
+
+        <p>Ну не скажите, команда digitalWrite() залитая через компилятор IDE исполняется на три порядка медленнее нежели битовая операция.</p>
+      </blockquote>
+
+      <p>Все верно и тем не менее это малозначимо для задачи.</p>
+    </blockquote>
+
+    <p>Конкретно для этой задачи -да. Но ужимая общее время исполнения кода и его объем, можно запихнуть в ардуину ещё какие нибудь задачи.</p>
+  </blockquote>
+
+  <p>Теряется возможность использовать номера портов как переменные, а это сильно ограничивает гибкость. Например код опроса не запихнуть в функцию.</p>
+</blockquote>
+
+<p>Ограничивается лишь квалификацией и опытом программиста. Спор не имеет смысла, т.к. задача не формализована. Человек просто хотел узнать для чего были использованы битовые операции, я объяснил как мог. Использовать их или нет дело вкуса или привычки, я самолично их не использую (если не нужно экономить память или поднять скорость работы).</p>
+
+<p><strong>vladindre</strong> 15-10-2017</p>
+
+<blockquote>
+  <p>затем увеличить точность усреднением большого числа измерений (десятки тысяч).</p>
+</blockquote>
+
+<p>На фик стока ? В промышленных датчиках самое большее видел усреднение по 1024 измерениям. Сам как-то в одном проекте , с жиру бесясь , сделал 4096 , хотя нафик не надо было. Для измерения ЕС 16-64 за глаза и за уши.</p>
+
+<p>К тому же уменьшая точность измерения на АЦП бессмысленно усреднять , если сами отсчеты становятся грубее.</p>
+
+<p><strong>Vad</strong> 15-10-2017</p>
+
+<p>там еще один булыжник подводный..</p>
+
+<p>от 1024 значений ацп осталось только 100 :D</p>
+
+<p>вот он усредняет и усредняет… усредняет и усредняет.. :D</p>
+
+<p><strong>siv237</strong> 15-10-2017</p>
+
+<blockquote>
+  <p>там еще один булыжник подводный..</p>
+
+  <p>от 1024 значений ацп осталось только 100 :D</p>
+
+  <p>вот он усредняет и усредняет… усредняет и усредняет.. :D</p>
+</blockquote>
+
+<p>Именно так, слишком сильное загрубление АЦП при переходе на высокую частоту опроса требует значительно большего числа округлений. Если не загрублять АЦП, то скорости не достаточно для избежания окисления электродов.</p>
+
+<p><strong>vladindre</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>слишком сильное загрубление АЦП</p>
+</blockquote>
+
+<p>Именно сильное загрубление и не даст нужной точности. Поэтому бессмысленно делать большое усреднение.Несколько младших разрядов все равно теряются.</p>
+
+<p><strong>serge mat</strong> 16-10-2017</p>
+
+<p>То есть мы опять подходим к выбору материала.</p>
+
+<p>Во избежание окисления электродов мы оказались вынуждены 1.) делать множество измерений и усреднять их, 2.) часто менять полярность электродов чтобы избежать их разрушения, 3.) ускорять ардуину в ущерб точности, 4.) переходить на низкий уровень программирования, чтобы ускорить выполнение кода…</p>
+
+<p>Может быть лучше попробовать другой материал электродов?</p>
+
+<p>Я еще раз задам вопрос, который спрашивал в другой теме, убедившись, что электрод не разрушается, проверили ли вы, что все микроэлементы остались? И прежде всего медь, она легко оседает на электродах…</p>
+
+<p><strong>serge mat</strong> 16-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>слишком сильное загрубление АЦП</p>
+  </blockquote>
+
+  <p>Именно сильное загрубление и не даст нужной точности. Поэтому бессмысленно делать большое усреднение.Несколько младших разрядов все равно теряются.</p>
+</blockquote>
+
+<p>Строго говоря это не так. Для ученых это вполне приемлемый подход: когда точность датчика очень мала повышать точность с помощью большого количества измерений.</p>
+
+<p>Здесь хорошо бы проверить на контрольных растворах с близкими значениями ЕС.</p>
+
+<p><strong>siv237</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>То есть мы опять подходим к выбору материала.</p>
+
+  <p>Во избежание окисления электродов мы оказались вынуждены 1.) делать множество измерений и усреднять их, 2.) часто менять полярность электродов чтобы избежать их разрушения, 3.) ускорять ардуину в ущерб точности, 4.) переходить на низкий уровень программирования, чтобы ускорить выполнение кода…</p>
+
+  <p>Может быть лучше попробовать другой материал электродов?</p>
+
+  <p>Я еще раз задам вопрос, который спрашивал в другой теме, убедившись, что электрод не разрушается, проверили ли вы, что все микроэлементы остались? И прежде всего медь, она легко оседает на электродах…</p>
+</blockquote>
+
+<p>Дело не в материале электродов, а в продуктах электролиза. При недостаточной частоте измерений на электродах любого состава будут образовываться продукты электролиза (из состава раствора), которые будут вызывать постепенное “уплывание” измерений. При частоте ниже 2-3 кГц можно зрительно увидеть мелкие пузырьки при работе электродов. Чем выше “соленость” тем более высокую частоту нужно использовать.</p>
+
+<p>Разница между “хорошим” и “плохим” электродами в таком случае сводятся к тому, что хороший можно вынуть и протереть, а плохой нужно будет чистить снимая пленку, частью которой стал материал самого электрода.</p>
+
+<p>Усреднение показаний повышает реальную точность. Главное условие, не пытаться выделить медиану и прочие штуки с отсеиванием. Именно выбросы в системах с низкой битностью позволяют построить пятно вероятности. По сути АЦП ардуины на низкой частоте и занимается усреднением, а на высокой мы делаем это сами.</p>
+
+<p>Предложите методику проверки выпадения микроэлементов. Я могу судить только по состоянию растений и внешнему виду контактов электродов. И то и другое никаких нареканий не вызывает.</p>
+
+<p><strong>orgail</strong> 16-10-2017</p>
+
+<p>уверены, что эти пузырьки - результат электролиза?</p>
+
+<p><strong>siv237</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>уверены, что эти пузырьки - результат электролиза?</p>
+</blockquote>
+
+<p>Они самые (кислород, водород и дихлор если не ошибаюсь). Они медленно поднимаются тоненькими дорожками к поверхности. Чем ниже частота, тем сильнее процесс газообразования.</p>
+
+<p>Причем если искусственно вносить перекос фазы, изменяя время между сменой полярности, делая его неравномерным, можно заметить, как выделение газов смещается на один или второй электрод.</p>
+
+<p><strong>serge mat</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>Предложите методику проверки выпадения микроэлементов. Я могу судить только по состоянию растений и внешнему виду контактов электродов. И то и другое никаких нареканий не вызывает.</p>
+</blockquote>
+
+<p>Не думаю, что анализ раствора на микроэлементы окажется легкой задачей. Проще всего судить по состоянию растений, обращая особое внимание ни симптомы недостатка меди, марганца и железа. Если, например, Вы можете утверждать, что все время вегетации у Вас работал электрод и симптомов не обнаружилось, то это и будет ИМХО лучшим ответом.</p>
+
+<p><strong>serge mat</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>Они самые (кислород, водород и дихлор если не ошибаюсь). Они медленно поднимаются тоненькими дорожками к поверхности. Чем ниже частота, тем сильнее процесс газообразования.</p>
+
+  <p>Причем если искусственно вносить перекос фазы, изменяя время между сменой полярности, делая его неравномерным, можно заметить, как выделение газов смещается на один или второй электрод.</p>
+</blockquote>
+
+<p>Ну хлору-то у нас вроде бы не откуда взяться…</p>
+
+<p>Да, кислород и водород.</p>
+
+<p>Кстати, они могут не только образовываться, но и растворяться обратно тоже (если не успеют всплыть). Собственно смена фаз нужна не для того, чтобы не было электролиза, а для того, чтобы запустить обратный процесс. В нашем случае будет обратное растворение газообразного водорода вместо выделения кислорода.</p>
+
+<p><strong>orgail</strong> 16-10-2017</p>
+
+<p>На частоте 2-3 кГц вы по идее не должны успевать видеть формирование пузырьков.</p>
+
+<p>Что значит искусственно вносить? Или вы подаете на один электрод + а на другой - просто импульсы частотой 2-3 кГц?</p>
+
+<p>Должна же быть смена полярности электродов с частотой 2-3 кГц, а не просто условие “импульсы”?</p>
+
+<p><strong>siv237</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>Ну хлору-то у нас вроде бы не откуда взяться…</p>
+</blockquote>
+
+<p>Ну отлаживал то я ПО на прозрачной банке с раствором хлорида натрия.</p>
+
+<blockquote>
+  <p>Если, например, Вы можете утверждать, что все время вегетации у Вас работал электрод и симптомов не обнаружилось, то это и будет ИМХО лучшим ответом.</p>
+</blockquote>
+
+<p>Ну с середины лета как минимум. Томат, огурцы, клубника. Томаты и огурцы убрал с балкона (первый слишком сильно зарастил балкон, я нарезал его на черенки и в качестве подвоя использовал его мощный стебель для получения штамбового томата привоем редробин на ствол бычьего сердца. Выглядит прикольно :)</p>
+
+<p>Огурцы попортил грибок и преждевременные холода. А вот клубника досихпор вегетирует, цветет и плодоносит несмотря на около нулевые ночные температуры:</p>
+
+<p><a href="https://t.me/ponics_ru_files/18579" target="_blank"><img src="/imagehost2/thumbs/img6352.jpg" alt="" /></a></p>
+
+<p>На вид нехватки микры не заметно :)</p>
+
+<p><strong>siv237</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>На частоте 2-3 кГц вы по идее не должны успевать видеть формирование пузырьков.</p>
+
+  <p>Что значит искусственно вносить? Или вы подаете на один электрод + а на другой - просто импульсы частотой 2-3 кГц?</p>
+
+  <p>Должна же быть смена полярности электродов с частотой 2-3 кГц, а не просто условие “импульсы”?</p>
+</blockquote>
+
+<p>Видно. Я могу управлять программно сменой полярности просто внося дополнительную задержку при переходе от минуса к плюсу например.</p>
+
+<p>Ну и проверял я на довольно крутом растворе хлорида натрия с ЕС=10 мСи/см.</p>
+
+<p><strong>Borodach1</strong> 16-10-2017</p>
+
+<p>Возьмите два стакана. В один налейте раствор кислоты, а в другой раствор щёлочи. Бросьте в каждый из стаканов по куску алюминиевого провода. Электричество подключать никуда не надо.</p>
+
+<p>На обоих кусках провода появятся пузырьки. Это в обоих случаях водород.</p>
+
+<p>Под воздействием кислот и щелочей разрушается знаменитая оксидная плёнка и алюминий уже без всяких кислот и щелочей начинает тупо реагировать с водой с выделением того же самого водорода.</p>
+
+<p>Вывод.</p>
+
+<p>Хватит тупить!!!</p>
+
+<p>Алюминий очень активный металл. Пассивен только на воздухе и то из за образования оксидной плёнки. В растворах реагирует со всем подряд даже без воздействия электрического тока.</p>
+
+<p>Для электродов не пригоден!!!</p>
+
+<p><strong>siv237</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>Возьмите два стакана. В один налейте раствор кислоты, а в другой раствор щёлочи. Бросьте в каждый из стаканов по куску алюминиевого провода. Электричество подключать никуда не надо.</p>
+
+  <p>На обоих кусках провода появятся пузырьки. Это в обоих случаях водород.</p>
+
+  <p>Под воздействием кислот и щелочей разрушается знаменитая оксидная плёнка и алюминий уже без всяких кислот и щелочей начинает тупо реагировать с водой с выделением того же самого водорода.</p>
+
+  <p>Вывод.</p>
+
+  <p>Хватит тупить!!!</p>
+
+  <p>Алюминий очень активный металл. Пассивен только на воздухе и то из за образования оксидной плёнки. В растворах реагирует со всем подряд даже без воздействия электрического тока.</p>
+
+  <p>Для электродов не пригоден!!!</p>
+</blockquote>
+
+<p>Давайте возьмем тапки и бросим в грязную лужу. Вот видите какая это плохая обувь, вся мокрая и грязные следы оставляет. Нет будем ходить только в болотниках по квартире.</p>
+
+<p>Вы хоть прочитайте внимательно, перед тем как умничать, процесс образования управляемый!</p>
+
+<p>Я понимаю, что вам обидно что потратились на платиновые электроды начитавшись таких же умных теоретиков и никак вот это все покоя не дает. Жаба душит. Все ваши аргументы против алюминия давно разбиты в темах выше, разбиты реальной практикой, а не вашими бла бла, но вам доказывать бесполезно.</p>
+
+<p>Так что ответственно заявляю</p>
+
+<p>хватит тупить!!!</p>
+
+<p>, ваше мнение не подкреплено практикой и теорией. Это только ваше мнение не несущее никакой продуктивности.</p>
+
+<p><strong>Vad</strong> 16-10-2017</p>
+
+<p>вообще хватит тупить :D</p>
+
+<p>берем один корпус счетверенного ОУ.. и делаем полнодиапазонный, совершенно аналоговый, биполярный, измеритель EC :D</p>
+
+<p>скармливаем его в ардуину… которая при этом может делать что угодно, с какой угодно скоростью.. иногда(раз в час например) отвлекаясь на 2-3 чтения аналогового пина :D</p>
+
+<p>все ваши споры о “пузырьках и электродах” покажутся смешным :D</p>
+
+<p><strong>veresk</strong> 16-10-2017</p>
+
+<p>Вот тоже решил сделать EC метр, расширяюсь :). Вчера на симуляторе собрал такую схемку, мостовую. Ну как бы начало. Двуполярное питание тоже с оу будет.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18580" target="_blank"><img src="/imagehost2/thumbs/22uhu.jpg" alt="" /></a></p>
+
+<p><strong>vladindre</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>Для электродов не пригоден!!!</p>
+</blockquote>
+
+<p>Алюминий , конечно , сомнителен в качестве электрода. Несмотря на очень прочную оксидную пленку она все-таки пористая даже тонкая плотная. Контакт с алюминием все равно будет.Графитовые щетки совершенно надежный вариант.И по поводу самих измерений .</p>
+
+<p>Независимо от материала ток надо держать на уровне не более 0,1ма. Уже сообщал раньше , что на работе было задание по изготовлению датчика. Перерыл кучу материала пока нашел данные по измерению. И частоту советуют профессиональные измеряльщики не 2-3 кгц , а десятки кгц.</p>
+
+<p>Видимо при такой частоте все атомы или большая часть успевают рекомбинировать около электрода до воды. Не бойтесь поднять частоту. Это не мешки таскать.</p>
+
+<p><strong>vladindre</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>все ваши споры о “пузырьках и электродах” покажутся смешным :D</p>
+</blockquote>
+
+<p>Кстати на форуме аквариумистов видел схему на одном сдвоенном ОУ(кажись 157УД2). Один ОУ генерит , другой измеряет без всяких лишних наворотов. И ничо - рыбки живы. Материал ранее выкладывал по этому измерителю.</p>
+
+<p><strong>veresk</strong> 16-10-2017</p>
+
+<p>Кстати, ес пива 1.7, если бы пленка постоянно разрушалась банки бы взорвались :)</p>
+
+<p><strong>Vad</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>Вот тоже решил сделать EC метр, расширяюсь :). Вчера на симуляторе собрал такую схемку, мостовую. Ну как бы начало. Двуполярное питание тоже с оу будет.</p>
+
+  <p><img src="/imagehost2/thumbs/22uhu.jpg" alt="" /></p>
+</blockquote>
+
+<p>мост не нужен, он только усложняет жизнь.</p>
+
+<p>с выходе генчика на делитель из электродов и резистора…</p>
+
+<p>стабилизатор тоже можно упростить до двух встречно-параллельно включенных диодов..</p>
+
+<p><strong>Vad</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>Кстати, ес пива 1.7, если бы пленка постоянно разрушалась банки бы взорвались :)</p>
+</blockquote>
+
+<p>они покрыты лаком изнутри)) и снаружи</p>
+
+<p><strong>PAA</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>Кстати, ес пива 1.7, если бы пленка постоянно разрушалась банки бы взорвались :)</p>
+</blockquote>
+
+<p>А вы попробуйте не баночный алюминий закинуть в пиво на несколько дней.</p>
+
+<p><strong>cpf</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>Кстати, ес пива 1.7, если бы пленка постоянно разрушалась банки бы взорвались :)</p>
+</blockquote>
+
+<p>ph важнее (“в этом деле” :D)</p>
+
+<p><strong>Borodach1</strong> 16-10-2017</p>
+
+<p>Пардон ребята! Я в отпуске! Картинок в телефоне не вижу.</p>
+
+<p>Специально для Сивки-бурки:</p>
+
+<p>Я не теоретизирую! Всё о чём я писал, не только теория, но и практика. Всё это я пробовал лет 30 назад.. Ой вру… уже больше. Года 33 назад.)))</p>
+
+<p>Химия абсолютно простая наука. Всё уже придумано до нас. Челоаек с образованием дворника, кулинара и даже программиста ничего нового в химиии придумать не может. Может только выдумать очередное шнобелевское изыскание.)))</p>
+
+<p><strong>siv237</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>И частоту советуют профессиональные измеряльщики не 2-3 кгц , а десятки кгц.</p>
+</blockquote>
+
+<p>И правильно советуют, 2-3 гКц не достаточно, я же написал что на такой частоте даже процесс электролиза глазками видно и показания плавно убегают, а электроды покрываются белым налетом. Потому частоты должны быть от 20 кГц и выше.</p>
+
+<p><strong>siv237</strong> 16-10-2017</p>
+
+<blockquote>
+  <p>Вот тоже решил сделать EC метр, расширяюсь :). Вчера на симуляторе собрал такую схемку, мостовую. Ну как бы начало. Двуполярное питание тоже с оу будет.</p>
+
+  <p><img src="/imagehost2/thumbs/22uhu.jpg" alt="" /></p>
+</blockquote>
+
+<p>Какое преимущество имеет эта схема в сравнении с двумя прямыми проводками в растворе? Хоть одно?</p>
+
+<p><strong>siv237</strong> 16-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Для электродов не пригоден!!!</p>
+  </blockquote>
+
+  <p>Алюминий , конечно , сомнителен в качестве электрода. Несмотря на очень прочную оксидную пленку она все-таки пористая даже тонкая плотная. Контакт с алюминием все равно будет.Графитовые щетки совершенно надежный вариант.И по поводу самих измерений .</p>
+
+  <p>.</p>
+</blockquote>
+
+<p>Рассуждая о том или ином материале электродов нужно не забывать о технологичности конструкции в целом. Как эти электроды будут крепиться, как изолировать место стыка от раствора, как сохранить стабильность положения электродов относительно друг друга при эксплуатации и обслуживании.</p>
+
+<p>Какое преимущество будет у такого решения относительно куска проволоки уже имеющей плотную изоляцию и достаточную упругость?</p>
+
+<p><strong>Vad</strong> 16-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Вот тоже решил сделать EC метр, расширяюсь :). Вчера на симуляторе собрал такую схемку, мостовую. Ну как бы начало. Двуполярное питание тоже с оу будет.</p>
+
+    <p><img src="/imagehost2/thumbs/22uhu.jpg" alt="" /></p>
+  </blockquote>
+
+  <p>Какое преимущество имеет эта схема в сравнении с двумя прямыми проводками в растворе? Хоть одно?</p>
+</blockquote>
+
+<p>точность, стабильность, повторяемость измерений, широченный диапазон, и тд и тп.. и тк</p>
+
+<p><strong>siv237</strong> 17-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>Вот тоже решил сделать EC метр, расширяюсь :). Вчера на симуляторе собрал такую схемку, мостовую. Ну как бы начало. Двуполярное питание тоже с оу будет.</p>
+
+      <p><img src="/imagehost2/thumbs/22uhu.jpg" alt="" /></p>
+    </blockquote>
+
+    <p>Какое преимущество имеет эта схема в сравнении с двумя прямыми проводками в растворе? Хоть одно?</p>
+  </blockquote>
+
+  <p>точность, стабильность, повторяемость измерений, широченный диапазон, и тд и тп.. и тк</p>
+</blockquote>
+
+<p>Каждый аналоговый элемент вроде конденсаторов и резисторов скорее уменьшают точность, стабильность и повторяемость относительно двух проводков. Широченный диапазон - как тут участвует, если АЦП все та-же ардуиновская 10 битная?</p>
+
+<p>Например, если растянуть этот диапазон допустим от 0 до 8 мСи/см, то предельная точность будет 0,008 мСи/см на 1 бит, при этом тупой ацп с двумя проводками дает ту же точность и выше но в диапазоне от 0 хоть до одного сименса. Диапазон при этом легко растягивается (точнее смещается в нужную зону точности) за счет изменения площади электродов и их расположения в растворе относительно друг друга.</p>
+
+<p>Оправдание отдельного блока измерения я вижу только в случае, если этот блок будет содержать в себе помимо собственно блока измерения, логику калибровки, более точное АЦП вроде вроде ADS1115 и уметь отдавать значения в цифровом виде по шине i2c например уже в виде mS.</p>
+
+<p>Вся остальная возня чистый оверхед и усложнение ради усложнения, никаких реальных преимуществ не несущее. кроме разве что потешить самолюбие сумевшего собрать и отладить эту вундерфафлю.</p>
+
+<p>Не нужно плодить сущности без нужды, их нужно сокращать.</p>
+
+<p><strong>Vad</strong> 17-10-2017</p>
+
+<blockquote>
+  <p>Каждый аналоговый элемент вроде конденсаторов и резисторов скорее уменьшают точность</p>
+</blockquote>
+
+<p>все, дальше не читал. прости, у мне аллергия на глупый апломб.</p>
+
+<p>Но “по дороге” понял, что какие-то дураки насовали уменьшающих точность деталек, во все мои инструменты…</p>
+
+<p>действительно, какую точность может иметь прибор, если в нем список конденсаторов заканчивается на С1012, а список резисторов на R2072 :D ;D</p>
+
+<p>мало того, эти идиоты не просто насовали везде их… но и насовали аж в щупы! в измерительные головки!</p>
+
+<p>как дальше жить - даже не представляю :(</p>
+
+<p>ты глаза мне открыл! :o</p>
+
+<p>;D ;D ;D ;D ;D ;D</p>
+
+<p>конечно, 10битному АЦП никак не тягаться в точности с 3-5х битным (коим ты его сделал, ограничив диапазон с 1024 до 10-100 <em>Dance</em> )</p>
+
+<p>и в разрешении совсем не тягаться..</p>
+
+<p>ты путаешь не только относительную и абсолютную влажность, но и разрешение с точностью… чувак, я в шоке!</p>
+
+<p>Как ты до сих пор жив? :D</p>
+
+<p><strong>vladindre</strong> 17-10-2017</p>
+
+<blockquote>
+  <p>Какое преимущество будет у такого решения относительно куска проволоки уже имеющей плотную изоляцию и достаточную упругость?</p>
+</blockquote>
+
+<p>Ну , например точность, стабильность, повторяемость измерений, широченный диапазон, и тд и тп</p>
+
+<p>“Достаточная упругость” тоже под вопросом - чуть подвинул , не так взял и расстояние между достаточно упругими проводами уже не то. Замоноличенная пара щеток имеет стабильное измеряемое расстояние , ну и абсолютная уверенность в нейтральности материала.</p>
+
+<p>Понятно , что пара проводов это халява - куснул провод , зачистил и готово. Все-таки предпочитаю надежность в проделанной работе. Лучше раз повозиться , покорпеть над приблудой , но зато это будет хорошая и надежная вещь.</p>
+
+<p>В данном случае преимущества халявы мизерны по сравнению с упущенным урожаем в связи с сомнительными результатами измерений. Лучше не рисковать.</p>
+
+<p>Изготовить монолитный измерительный блочок это смехотворные трудозатраты.</p>
+
+<p>Соглашусь в той части , что лепить навороченную специальную схему измерений это перебор. Пары входов ардуины , атмеги более чем достаточно.</p>
+
+<blockquote>
+  <p>Вся остальная возня чистый оверхед и усложнение ради усложнения, никаких реальных преимуществ не несущее. кроме разве что потешить самолюбие сумевшего собрать и отладить эту вундерфафлю.</p>
+
+  <p>Не нужно плодить сущности без нужды, их нужно сокращать.</p>
+</blockquote>
+
+<p><strong>siv237</strong> 17-10-2017</p>
+
+<blockquote>
+  <p>“Достаточная упругость” тоже под вопросом - чуть подвинул , не так взял и расстояние между достаточно упругими проводами уже не то.</p>
+</blockquote>
+
+<p>Достаточно обеспечить изгиб провода таким образом, чтобы контакты никогда не касались дна или стен при любых работах с выниманием и перемещением электрода. На фотке из первой ссылки видно, как изогнут щуп.</p>
+
+<p>Правда наличие в растворе корней не приемлемо для такого похода.</p>
+
+<blockquote>
+  <p>Соглашусь в той части , что лепить навороченную специальную схему измерений это перебор. Пары входов ардуины , атмеги более чем достаточно.</p>
+</blockquote>
+
+<p>Именно, особенно с учетом того, что эта схема находится между, измерителем и все тем-же АЦП ардуины <em>Wall</em></p>
+
+<p>Все забыли, что вообще то достаточно точности в 0.5 мСи/см и тупые два проводка в течении 5 месяцев эту точность обеспечивают гарантированно при почти нулевой стоимости и времени на изготовление в сравнении с другими решениями. Принцип минимальной достаточности тут к сожалению далек большинству тут рассуждающих.</p>
+
+<p>Простая экономика процесса 6 емкостей с раствором смета:</p>
+
+<p>1 ардуина 100 рублей</p>
+
+<p>1 ЖК дисплей 1602 с i2c - 100 Рублей</p>
+
+<p>1 метр АВВГ провода 5 рублей</p>
+
+<p>6 18b20 в водонепроницаемом корпусе 60 х 6 = 360 рублей</p>
+
+<p>1 USB блок питания на 5 вольт ~100 руб.</p>
+
+<p>прочая мелочь типа соединительных клемников, проводков, коробки корпуса, стяжек и болтов ~ 300</p>
+
+<p>Таким образом бюджет до 1000 рублей.</p>
+
+<p>Время на сборку не дольше пары часов.</p>
+
+<p>Квалификация - электромонтаж начального уровня без пайки</p>
+
+<p>Дешевле и проще не думаю, что можно придумать, да и в плане надежности и точности соперничать могут только решения на несколько порядков дороже и сложнее.</p>
+
+<p><strong>siv237</strong> 17-10-2017</p>
+
+<blockquote>
+  <p>действительно, какую точность может иметь прибор, если в нем список конденсаторов заканчивается на С1012, а список резисторов на R2072 :D ;D</p>
+
+  <p>мало того, эти идиоты не просто насовали везде их… но и насовали аж в щупы! в измерительные головки!</p>
+
+  <p>как дальше жить - даже не представляю :(</p>
+</blockquote>
+
+<p>Этот спор похож на спор с адудиафилами, доказывающими важность качественных проводов и ламповости усилителей, при этом в качестве источника использующих mp3 с битрейтом 128</p>
+
+<p>Не нужна в этой задаче точность домашнего растениевода от слова совсем. +- пол ЕС-а уже прорыв к звёздам в плане контроля и понимания процесса выращивания.</p>
+
+<p>Никто в зравом уме такое решение не будет предлагать в промышленной теплице (я надеюсь). :)</p>
+
+<p><strong>Vad</strong> 17-10-2017</p>
+
+<p>этот спор похож на спор чувака который собрал детекторный приемник… с остальным миром..</p>
+
+<p>1v1 ему уже кажется излишне навороченным ;D</p>
+
+<p>а ЧМ с ФАПЧ - вообще запредельно сложным для того чтоб о нем даже думать ;D</p>
+
+<p>но это от твоего глубокого невежества :D</p>
+
+<p>и не желания учиться..</p>
+
+<p>сам себе опять противоречишь</p>
+
+<blockquote>
+  <p>Не нужна в этой задаче точность домашнего растениевода от слова совсем. +- пол ЕС-а уже прорыв к звёздам в плане контроля и понимания процесса выращивания.</p>
+</blockquote>
+
+<p>и тут же рассуждаешь о</p>
+
+<blockquote>
+  <p>предельная точность будет 0,008 мСи/см на 1 бит, при этом тупой ацп с двумя проводками дает ту же точность и выше но в диапазоне от 0 хоть до одного сименса.</p>
+</blockquote>
+
+<p>ацп не тупой :D</p>
+
+<p>это ты тупо его применяешь. по незнанию.. ведь… любое высокотехнологичное устройство в руках каменного человека по любому превращается в каменный топор :D</p>
+
+<p>ему что кусок камня, что ардуина.. он привяжет его к палке и будет размахивать :D</p>
+
+<p>размахивать палкой - это все, что он(каменный siv) умеет ;D</p>
+
+<p><strong>siv237</strong> 17-10-2017</p>
+
+<blockquote>
+  <p>сам себе опять противоречишь</p>
+</blockquote>
+
+<p>Не передергивай смысл. Я написал о том, что хватило бы и значительно меньшей точности, а она эта самая точность даже зашкаливает используя примитивные два проводка из куска проволоки.</p>
+
+<p>В общем я повторю, по моему мнению отдельный блок измерения имеет смысл только в случае самостоятельного калиброванного устройства отдающего готовый результат в цифровой форме с возможностью подключения их пачками.</p>
+
+<p><strong>Vad</strong> 17-10-2017</p>
+
+<p>Чувак, ты запутался в своих словах.</p>
+
+<p>Ты написал то, что написал.. это агония в бреду, натягивание твоих ограниченных возможностей на действительность… :)</p>
+
+<p>тебе хочется во все это верить, и ты веришь..</p>
+
+<p>при этом, твои рассказы, чуть более подкованному человеку, кажутся смешными :D</p>
+
+<p>Дальнейшее обсуждение твоего детекторного приемника и возможности на него слушать МП3 и принимать DVB-х считаю бессмысленным.</p>
+
+<p>Учись, это интересно.. там, за пределами твоих знаний, есть масса интересного..</p>
+
+<p>и не обижай конденсаторы и резисторы…</p>
+
+<p>они не виноваты, что ты с ними не знаком :D</p>
+
+<p><strong>allex_step</strong> 17-10-2017</p>
+
+<blockquote>
+  <p>считаю бессмысленным</p>
+</blockquote>
+
+<p>ну так сиди себе считай… тебя ж никто не заставляет, и даже не просит тут твое мнение по этому вопросу высказывать</p>
+
+<p><strong>Vad</strong> 17-10-2017</p>
+
+<p>Хорек отдуплился :D</p>
+
+<p>Твоего мнения, относительно моего мнения, никто тоже не спрашивал.. :D</p>
+
+<p>иди огурцы продувай.. задохнутся окончательно ;D</p>
+
+<p><strong>allex_step</strong> 17-10-2017</p>
+
+<p>я ведь тоже могу на огурец послать &gt;:(</p>
+
+<p>моё мнение относительно твоего мнения тут озвучено не было - цензура не пропустит</p>
+
+<p><strong>orgail</strong> 18-10-2017</p>
+
+<p>&gt;:D</p>
+
+<p><strong>serge mat</strong> 22-10-2017</p>
+
+<p>Вчера и сегодня поставил серию экспериментов на тему измерения ЕС с помощью ардуино.</p>
+
+<p>Пробовал электроды из медной проволоки и карандашных грифелей.</p>
+
+<p>Схема подключения ардуины взята из этого форума позволяет быстро менять полярность электродов:</p>
+
+<p><img src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/22688380_2020118458219244_2739869777711216426_n.png?oh=78b50091dd47053a134d77627f87eb5a&amp;oe=5A6A9885" alt="" /></p>
+
+<p>Пробовал разгонять и замедлять ардуину, в результате частота измерений была от 1 до 20 кГц.</p>
+
+<p>Пробовал единичные измерения и серии различной длительности, до нескольких секунд.</p>
+
+<p>Выводы такие.</p>
+
+<p>Измерения не зависят от материала электрода.</p>
+
+<p>Результаты не зависят от частоты измерений, но при частоте выше 10 кГц уменьшается стабильность результатов, требуется большее число измерений для усреднения.</p>
+
+<p>Для получения стабильного результата достаточно отбросить первые 7 измерений и усреднить последующие. Достаточно 10 измерений для усреднения, таким образом можно сделать всего 17 замеров со сменой полярности.</p>
+
+<p><strong>Vad</strong> 22-10-2017</p>
+
+<blockquote>
+  <p>Измерения не зависят от материала электрода.</p>
+</blockquote>
+
+<p>первые два дня <em>???</em></p>
+
+<p><strong>allex_step</strong> 22-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Измерения не зависят от материала электрода.</p>
+  </blockquote>
+
+  <p>первые два дня <em>???</em></p>
+</blockquote>
+
+<p>здравое рассуждение…</p>
+
+<p>[size=1em][font=verdana]<a href="http://forum.ponics.ru/index.php?action=profile;u=10446" target="_blank">serge mat</a>[/font], [font=verdana]пусть электроды помокнут в растворе с недельку (лучше конечно в активном применении), а потом снова повторите икзпиримент[/font][/size]</p>
+
+<p><strong>vladindre</strong> 22-10-2017</p>
+
+<blockquote>
+  <p>пусть электроды помокнут в растворе с недельку</p>
+</blockquote>
+
+<p>Точно так же хотел предложить. Но только не покиснут , а желательно имитировать реальную деятельность.</p>
+
+<p>Нагружать их ежедневно хоть немного - измерять.</p>
+
+<p>Предполагаю , что на меди образуется р-п переход и измерения будут нехило искажаться. В этом смысле даже алюминий выглядит более кошерно , хотя в электролите тоже у него образуется переход. Ну а графит вне конкуренции - полный пассив.</p>
+
+<p><strong>PAA</strong> 22-10-2017</p>
+
+<p>….” но при частоте выше 10 кГц уменьшается стабильность результатов, требуется большее число измерений для усреднения.”…</p>
+
+<ul>
+  <li>скорее всего на частотах выше 10 кГц не справляется АЦП (ИМХО). Нужно проверить замкнув электроды постоянным резистором и плавно увеличивая частоту замеров и т.о. установить частоту среза (загиба характеристики) внутреннего АЦП контроллера. Исходя из этих данных выбрать частоту переключения электродов. Уважаемый serge mat, вы можете проделать такой эксперимент и поделится результатом?</li>
+</ul>
+
+<p><strong>serge mat</strong> 22-10-2017</p>
+
+<blockquote>
+  <p>….” но при частоте выше 10 кГц уменьшается стабильность результатов, требуется большее число измерений для усреднения.”…</p>
+
+  <ul>
+    <li>скорее всего на частотах выше 10 кГц не справляется АЦП (ИМХО). Нужно проверить замкнув электроды постоянным резистором и плавно увеличивая частоту замеров и т.о. установить частоту среза (загиба характеристики) внутреннего АЦП контроллера. Исходя из этих данных выбрать частоту переключения электродов. Уважаемый serge mat, вы можете проделать такой эксперимент и поделится результатом?</li>
+  </ul>
+</blockquote>
+
+<p>Я наблюдаю не перегиб, а разброс точек. При малых частотах после первых 5-9 измерений все следующие точки отличаются от среднего значения не более чем на 3 единицы, обычно на 1-2. При высоких частотах измерений точки прыгают на десятки единиц, доходит даже до сотни. А среднее значение остается прежним.</p>
+
+<p>Я пробовал давать задержку после подачи напряжения на электроды (думал не успевает стабилизироваться), но это ничего не изменило.</p>
+
+<p><strong>serge mat</strong> 22-10-2017</p>
+
+<p>Проверил, заменив электроды резистором. (Хорошо, что скетчи записывал на каждом этапе.) Погрешность измерений перестала зависеть от частоты. от 1 до 30 кГц одинаково +-3 единицы при любом количестве измерений.</p>
+
+<p>Оставил медные электроды в растворе. Посмотрю динамику.</p>
+
+<p>Я не планировал в реальной ситуации измерять чаще чем пару раз в день. Думаю, и с этими электродами пару раз за день получится погонять их.</p>
+
+<p><strong>Vad</strong> 22-10-2017</p>
+
+<p>вы же не уровень раствора измеряете..</p>
+
+<p>типа “он есть” или “он кончился”</p>
+
+<p>вы замаетесь калибровать это “произведение лени”</p>
+
+<p>вчерашние 2.5 mS завтра не будет ими :D</p>
+
+<p>кратковременный, одноразовый результат - типа “работает и показывает ок!” никого не интересует…</p>
+
+<p>представьте линейку из резинки для трусов :D</p>
+
+<p>вот это то же самое :D</p>
+
+<p><strong>siv237</strong> 22-10-2017</p>
+
+<p>Измерять нужно в обе стороны, а не просто переключать частотой. Потому резистор в топку, только прямое включение. Разница в измерениях при положительной и отрицательной фазе есть поляризация и её нужно убирать из расчетов. Без снятия данных АЦП в обеих фазах, поляризацию не исключить. Разница в показаниях плывущая при изменении частоты как раз и вытекает из-за поляризации.</p>
+
+<p>Соберите ПО и схему из моей темы.</p>
+
+<p>Отличный пример, возьмите батарейку 3 вольта и измерьте её контактами электрода. Правильное измеренное значение будет стабильным вне зависимости от полярности её подключения к электродам. А вот значение поляризации сменит знак (в моем ПО).</p>
+
+<p>Моя схема работает уже полгода и результат стабилен (пока корешки в электроды не врастают :)</p>
+
+<p><strong>PAA</strong> 23-10-2017</p>
+
+<blockquote>
+  <p>Проверил, заменив электроды резистором. (Хорошо, что скетчи записывал на каждом этапе.) Погрешность измерений перестала зависеть от частоты. от 1 до 30 кГц одинаково +-3 единицы при любом количестве измерений.</p>
+</blockquote>
+
+<p>Вы немного не поняли. Вы обращаете внимание только на величину отклонения измерения (дисперсию) от среднего значения (математического ожидания). Дисперсия это очень важный параметр, но не менее важным является и частота появления ошибки (спектральная плотность). Т.е. допустим при 1кГц отклонения возникают в среднем на каждом десятом измерении, на 5кГц на каждом третьем, на 10кГц на каждом пятом и т.д.. Тогда из дисперсии и спектральной плотности ошибок можно установить доверительный интервал и выбрать оптимальную частоту и алгоритм усреднения.</p>
+
+<p>…”+-3 единицы при любом количестве измерений.” - это скорее всего похоже на шумы преобразования в АЦП, их можно исключить применив операцию сдвига на 1-2 разряда, можно попытаться их уменьшить хорошим источником питания. Вы чем питаете Ардуину?</p>
+
+<p><strong>serge mat</strong> 24-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Проверил, заменив электроды резистором. (Хорошо, что скетчи записывал на каждом этапе.) Погрешность измерений перестала зависеть от частоты. от 1 до 30 кГц одинаково +-3 единицы при любом количестве измерений.</p>
+  </blockquote>
+
+  <p>Вы немного не поняли. Вы обращаете внимание только на величину отклонения измерения (дисперсию) от среднего значения (математического ожидания). Дисперсия это очень важный параметр, но не менее важным является и частота появления ошибки (спектральная плотность). Т.е. допустим при 1кГц отклонения возникают в среднем на каждом десятом измерении, на 5кГц на каждом третьем, на 10кГц на каждом пятом и т.д.. Тогда из дисперсии и спектральной плотности ошибок можно установить доверительный интервал и выбрать оптимальную частоту и алгоритм усреднения.</p>
+
+  <p>…”+-3 единицы при любом количестве измерений.” - это скорее всего похоже на шумы преобразования в АЦП, их можно исключить применив операцию сдвига на 1-2 разряда, можно попытаться их уменьшить хорошим источником питания. Вы чем питаете Ардуину?</p>
+</blockquote>
+
+<p>Сейчас ардуина работает от ноутбука, питается по USB.</p>
+
+<p>Как лучше считать частоту появления ошибки? Допустим, я рассчитал среднее отклонение от математического ожидания. Могу теперь я просто сосчитать точки с большим отклонением и поделить на общее число измерений?</p>
+
+<p><strong>PAA</strong> 24-10-2017</p>
+
+<p>Я сейчас тоже взялся за реализацию ЕС метра на Ардуино. Я не видел вашего кода уважаемый serge mat, но вот производители рекомендуют встроенное АЦП для 328 МК гонять на частотах 50-200 кГц, при этих частотах ошибки преобразования минимальны. Кроме того в качестве ИОН для АЦП использовать внешний AREF (выбирается настройками регистра ADMUX). В этом же регистре настройки позволяют отбрасывать два младших разряда ADC value которые шумят. Настройки делителя по умолчанию дают коэф. деления 128, что для 16 МГЦ составляет 125 кГц тактовой частоты. Максимальное время преобразования (для полной шкалы)-13 тактов или 13/125*103 = 0.1056ms = 8.13 кГц - это в теории, на практике частота переключения электродов д.б. ещё меньше процентов на 20. Siv и Vad используют настройки регистра ADCSRA так что у них тактовая частота 1мГц, что позволяет получит время преобразования 13 мкс или 77кГц на электродах, но при такой частоте производитель не гарантирует заявленную точность. Кроме того, межэлектродный промежуток в растворе представляет собой параллельно включенную емкость (паразитная) и сопротивление (раствор). Емкость при переключении создает переходные процессы, которые влияют на уровень ошибок. Разработчики рекомендуют первое измерение вообще отбрасывать и не учитывать в обработке, т.е. на каждом электроде производить в одном такте минимум два измерения, т.е. по сравнению с расчетной, частота должна быть снижена в два раза. Вот где то так.</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 24-10-2017</p>
+
+<p>Привет))</p>
+
+<p>Давно не виделись :)</p>
+
+<p>Смотрю тема разрослась. Не ожидал.</p>
+
+<p>Создавал-то ради прикола. А оно вона как))</p>
+
+<p><strong>serge mat</strong> 24-10-2017</p>
+
+<p>Измерения производятся следующим кодом:</p>
+
+<p>[font=courier] PORTB = B00000100; // digitalWrite (10, HIGH);</p>
+
+<p>m1 [c] = analogRead (ECpin);</p>
+
+<p>PORTB &amp;= B11110011; // digitalWrite (10, LOW);</p>
+
+<p>PORTB = B00001000; // digitalWrite (11, HIGH);</p>
+
+<p>m2 [c] = analogRead (ECpin);</p>
+
+<p>PORTB &amp;= B11110011; // digitalWrite (11, LOW);</p>
+
+<p>[/font]</p>
+
+<p>Для ускорения процесса команды digitalWrite заменены записью в PORTB. Ускорение команд analogRead делается путем изменения трех бит в системных переменных. К сожалению, не смог до конца понять этот механизм. Код взят из интернета и немного переделан для возможности менять скорость непосредственно по ходу измерений. Он состоит из двух участков. Первый заголовочный:</p>
+
+<p>[font=courier]#define FASTADC 1</p>
+
+<p>// defines for setting and clearing register bits</p>
+
+<p>#ifndef cbi</p>
+
+<p>#define cbi(sfr, bit) (_SFR_BYTE(sfr) &amp;= ~_BV(bit))</p>
+
+<p>#endif</p>
+
+<p>#ifndef sbi</p>
+
+<p>#define sbi(sfr, bit) (_SFR_BYTE(sfr) = _BV(bit))</p>
+
+<p>#endif[/font]</p>
+
+<p>Второй представляет собой функцию для изменения скорости, которая принимает в качестве аргумента число от 0 до 7, т.е. имеет 8 вариантов скорости. Реально два верхних значения я не использовал, поскольку результаты замеров при той скорости не выглядели нисколько похожими на правду.</p>
+
+<p>[font=courier]void setSpeed (int n) {</p>
+
+<p>#if FASTADC</p>
+
+<p>if (n &amp; 4) cbi(ADCSRA,ADPS2) ;</p>
+
+<p>else sbi(ADCSRA,ADPS2) ;</p>
+
+<p>if (n &amp; 2) cbi(ADCSRA,ADPS1) ;</p>
+
+<p>else sbi(ADCSRA,ADPS1) ;</p>
+
+<p>if (n &amp; 1) cbi(ADCSRA,ADPS0) ;</p>
+
+<p>else sbi(ADCSRA,ADPS0) ;</p>
+
+<p>#endif</p>
+
+<p>}[/font]</p>
+
+<p>Результаты измерений предлагаю посмотреть в виде таблицы Excel. В ней в колонке kHz измеренная частота смены полярности, ЕС - усредненный результат измерений, Summ - контрольная сумма (измерения положительной и отрицательной полярности усредняются независимо и складываются, теоретически должно получится число 1023, отклонения показывают достоверность измерений), ~n~ - число пропущенных (холостых) измерений, т.е. код выполнялся, но результаты не сохранялись. Далее идут усредненные отклонения от среднего значения для определенного количества измерений (d10 означает, что было взято 10 измерений, d320 - 320 измерений.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18581" target="_blank">Измерения ЕС.xlsx</a></p>
+
+<p><strong>serge mat</strong> 24-10-2017</p>
+
+<blockquote>
+  <p>Разработчики рекомендуют первое измерение вообще отбрасывать и не учитывать в обработке, т.е. на каждом электроде производить в одном такте минимум два измерения, т.е. по сравнению с расчетной, частота должна быть снижена в два раза. Вот где то так.</p>
+</blockquote>
+
+<p>Не вижу смысла делать по два измерения. Сам факт работы АЦП никак не должен влиять на ситуацию в растворе. Если надо подождать, то лучше использовать команду delayMicroseconds непосредственно перед измерением. Так есть возможность выбрать задержку максимально плавно. Но я не заметил влияния задержки даже на самых высоких частотах.</p>
+
+<p>Я пока не пробовал менять тактовую частоту, видимо это будет следующей темой… ;)</p>
+
+<p><strong>Vad</strong> 24-10-2017</p>
+
+<blockquote>
+  <p>….. Vad используют настройки регистра ADCSRA так что у них тактовая частота 1мГц, что позволяет получит время преобразования 13 мкс или 77кГц на электродах, но при такой частоте производитель не гарантирует заявленную точность.</p>
+
+  <p>….</p>
+</blockquote>
+
+<p>не-не..</p>
+
+<p>Вад, использует встроенный ИОН, измеряет всего 10 раз.. на каждом из 4х ЕС метрах, медленно и методично, не подгоняя АЦП, использует всю шкалу, все 10 бит, включая 2 младших, которые у него не шумят “потому что” Вад никуда не спешит.</p>
+
+<p>Ардуина у Вада производит замеры ЕС между делом, между тем.. как обслуживаются HTTP запросы, отдаются страницы, сливается статистика на сервер, между прерыванями по таймеру, для отсчета времени работы многочисленных помп, ламп, нагревателей, отслеживания состояния датчиков уровня, света, влажности….</p>
+
+<p>В общем моя ардуина работает за всех :D</p>
+
+<p>она полностью автономна… если это требуется</p>
+
+<p><strong>Vad</strong> 24-10-2017</p>
+
+<blockquote>
+  <p>delayMicroseconds</p>
+</blockquote>
+
+<p>нужно застрелить того пионера, который написал дилэй для арду..</p>
+
+<p>даже не застрелить.. а четвертовать! &gt;:D</p>
+
+<p><strong>serge mat</strong> 25-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>delayMicroseconds</p>
+  </blockquote>
+
+  <p>нужно застрелить того пионера, который написал дилэй для арду..</p>
+
+  <p>даже не застрелить.. а четвертовать! &gt;:D</p>
+</blockquote>
+
+<p>Вот не надо!</p>
+
+<p>У меня на кружке пятиклашки, я показал им код без делея… Они не въехали. Нельзя же так сразу! Надо постепенно, сначала делей, а потом можно и отказаться…</p>
+
+<p><strong>Vad</strong> 25-10-2017</p>
+
+<p>Ну тут же не клуб пятиклассников.. <em>???</em></p>
+
+<p>я понимаю, что уровень развития некоторых товарисчей, присутствующих в обсуждении, даже ниже вашего кружка пятиклашек..</p>
+
+<p>но… тем не менее… зачем детям такое показывать вообще…?</p>
+
+<p>пусть бы они о дилэе узнали потом, когда всему научились бы… узнали бы… и офигели.. :o</p>
+
+<p><strong>PAA</strong> 25-10-2017</p>
+
+<p>…“Вад, использует встроенный ИОН, измеряет всего 10 раз.. на каждом из 4х ЕС метрах, медленно и методично, не подгоняя АЦП, использует всю шкалу, все 10 бит, включая 2 младших, которые у него не шумят “потому что” Вад никуда не спешит.”….</p>
+
+<ul>
+  <li>Прошу прощения, Вад, я перепутал. Это ТС использует ускорение АЦП до 1МГЦ.</li>
+</ul>
+
+<p>Что касается шума, то младший бит будет шуметь всегда, таковы особенности квантования, вы просто фильтруете шумы применяя обработку (ИМХО).</p>
+
+<p><strong>PAA</strong> 25-10-2017</p>
+
+<p>Уважаемый serge mat, я увидел в вашем коде, что вы ускоряете команду analogRead() при помощи изменения настроек регистра ADCSRA - “</p>
+
+<p>(n &amp; 4) cbi(ADCSRA,ADPS2) ;</p>
+
+<p>else sbi(ADCSRA,ADPS2) ;</p>
+
+<p>if (n &amp; 2) cbi(ADCSRA,ADPS1) ;</p>
+
+<p>else sbi(ADCSRA,ADPS1) ;</p>
+
+<p>if (n &amp; 1) cbi(ADCSRA,ADPS0) ;</p>
+
+<p>else sbi(ADCSRA,ADPS0) ; - т.е. меняя значения трёх последних бит ( уменьшаете коэф. деления - увеличивая тактовую частоту АЦП). Я уже писал, что разработчики не рекомендуют повышать её более 200кГц!!!. Если у вас Ардуино 16 МГЦ, то коэф. деления лучше не устанавливать меньше чем 64, при этом теоретически максимальная частота переключения электродов должна быть не более чем 16х106/64/13 = 19.23кГц.</p>
+
+<p>Но существует одна хитрость, которая позволяет не только поднять частоту переключения , но и сэкономить ресурс МК. Дело в том, что АЦП в МК исп-т алгоритм последовательного приближения, а это означает, что время преобразования зависит от уровня аналогового сигнала на входе АЦП. АЦП требует 13 тактов, только при макс. входном сигнале - короче, есть алгоритм настроек АЦП, по сигналу окончания преобразования, который используется как прерывание. В этом случае, АЦП будет реально работать в несколько раз быстрее без потери точности. Т.е. алгоритм таков: Идет переключение электрода, которое запускает преобразование, окончание преобразования переключает электрод и снова запускает преобразование и т.д. сколько раз - сколько вам необходимо измерений. По поводу задержки - не нужно тут ни каких задержек, сбрасываете значение первого преобразования - вот это и есть задержка. Ваша задержка не оптимальна, длительность пер. процесса зависит от уровня сигнала и время преобразования тоже зависит, т.о. задержка будет плавающая на время перех. процесса (т.е. адаптивная), а у вас постоянная, переходный процесс давно закончился а ядро всё будет ждать когда закончится ваша задержка. Ну и про шумы - у МК в настройках регистра ADMUX (REFS[1:0])можно задать разные ИОН для АЦП так же и командой analogReference(). По умолчанию ИОН это ваш VCC из USB, а там шумов…. и все они пролазят в ADC value. Поменяйте ИОН на стабильный, похерьте младший разряд, разберитесь с analogRead и будет вам счастье и не нужно вам делать 300 выборок и тем более 5000 как Сив, вам для фильтрации хватит 10-15 выборок (ИМХО). Во всяком случае я себе пишу код именно под такой алгоритм.</p>
+
+<p><strong>serge mat</strong> 25-10-2017</p>
+
+<blockquote>
+  <p>Ну и про шумы - у МК в настройках регистра ADMUX (REFS[1:0])можно задать разные ИОН для АЦП так же и командой analogReference(). По умолчанию ИОН это ваш VCC из USB, а там шумов…. и все они пролазят в ADC value. Поменяйте ИОН на стабильный, похерьте младший разряд, разберитесь с analogRead и будет вам счастье и не нужно вам делать 300 выборок и тем более 5000 как Сив, вам для фильтрации хватит 10-15 выборок (ИМХО). Во всяком случае я себе пишу код именно под такой алгоритм.</p>
+</blockquote>
+
+<p>Давайте сначала об опорном напряжении. Команда analogReference() знает для UNO только три варианта аргумента. Сейчас стоит DEFAUL. Есть еще INTERNAL, но там напряжение ниже, как я понял. И EXTERNAL. Это значит мне надо батарейку вешать специальную? Опять же на 5В надо не одну батарейку… Как это грамотно сделать?</p>
+
+<p><strong>Vad</strong> 25-10-2017</p>
+
+<blockquote>
+  <p>алгоритм последовательного приближения, а это означает, что время преобразования зависит от уровня аналогового сигнала на входе АЦП.</p>
+</blockquote>
+
+<p>вы опять что-то путаете</p>
+
+<p>последовательное приближение - “я угадаю ваши 10 бит за 10 шагов”</p>
+
+<p>а значит пофиг какое напряжение на входе..</p>
+
+<p>придется пройти все 10 итераций … по 1 для каждого бита</p>
+
+<p><strong>Vad</strong> 25-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Ну и про шумы - у МК в настройках регистра ADMUX (REFS[1:0])можно задать разные ИОН для АЦП так же и командой analogReference(). По умолчанию ИОН это ваш VCC из USB, а там шумов…. и все они пролазят в ADC value. Поменяйте ИОН на стабильный, похерьте младший разряд, разберитесь с analogRead и будет вам счастье и не нужно вам делать 300 выборок и тем более 5000 как Сив, вам для фильтрации хватит 10-15 выборок (ИМХО). Во всяком случае я себе пишу код именно под такой алгоритм.</p>
+  </blockquote>
+
+  <p>Давайте сначала об опорном напряжении. Команда analogReference() знает для UNO только три варианта аргумента. Сейчас стоит DEFAUL. Есть еще INTERNAL, но там напряжение ниже, как я понял. И EXTERNAL. Это значит мне надо батарейку вешать специальную? Опять же на 5В надо не одну батарейку… Как это грамотно сделать?</p>
+</blockquote>
+
+<p>забить, использовать дефолт, вы все равно не заметите разницы</p>
+
+<p><strong>vladindre</strong> 26-10-2017</p>
+
+<blockquote>
+  <p>Это значит мне надо батарейку вешать специальную?</p>
+</blockquote>
+
+<p>Нафига ? Опорное по-нормальному заводится от питания схемы. То есть автоматически учитывается его дрейф и со всеми шумами и никакой головной боли. И все нормально работает. Я всегда так делаю и никаких проблем не было. Еще никто не жаловался из клиентов. :)</p>
+
+<p><strong>siv237</strong> 26-10-2017</p>
+
+<p>Не знаю, зачем все эти сложности?</p>
+
+<p>Вот специально сгенерил график раствора на клубничном дереве (пролив “ствола” раз в час) за месяц в высоком разрешении:</p>
+
+<p>Могу дать сорсы данных хоть за весь период, для неверующих…</p>
+
+<p>Верхний график температура воздуха (фиолетовым) и раствора в баке (зеленым)</p>
+
+<p>Средний - усредненные сырые значения АЦП за секунду по электроду ЕС (фиолетовый), уровня (зеленый)</p>
+
+<p>Никаких методов сглаживания графиков не применяется, измерения не откидываются и все включены в усреднение за 1 секунду.</p>
+
+<p>Нижний - значение ЕС калиброванное по двум точкам с параметрами калибровки:</p>
+
+<p>ec2=2.826</p>
+
+<p>x2=145</p>
+
+<p>ec1=1.232</p>
+
+<p>x1=63</p>
+
+<p><a href="https://t.me/ponics_ru_files/18582" target="_blank"><img src="/imagehost2/thumbs/ecn1n.png" alt="" /></a></p>
+
+<p>Отлично видно, что точности измерений, двумя проводками, более чем достаточно для бытовых задач.</p>
+
+<p>Основные отклонения ЕС от ожидания вносит теплый или холодный раствор при при проливе его через трубу, так как температурный датчик и электроды несколько в разных местах раствора.</p>
+
+<p>Разница в показаниях между электродом уровня и электродом ЕС указывает на уровень раствора, а точнее глубину погружения в раствор электрода. К сожалению градиент температуры в растворе и его динамическое не равномерное перемешивание насосом тут действует еще более сильно.</p>
+
+<p>Моя схема три алюминиевых проводка без обвязок прямо в ардуину, 2 одновременных раствора с опросом по очереди, проверял 4 одновременно, в том числе в одной емкости (взаимное воздействие не оказывается).</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 26-10-2017</p>
+
+<p>:D Я не понимаю зачем в домашней гидропонике такая ультраточность в ЕС?</p>
+
+<p>+/- пара десятых после запятой погоды не сделают.</p>
+
+<p>Или просто в теме письками все меряются?)) :D</p>
+
+<p>У кого больше?))</p>
+
+<p>Настолько все проще делается: антенный разъем в качестве датчика, ардуино, самый простой скетч с лайтовым медианным фильтром, и вуаля. Выводи себе в сериал хоть до усеру. Чё велосипед то изобретать.</p>
+
+<p><strong>siv237</strong> 26-10-2017</p>
+
+<blockquote>
+  <p>:D Я не понимаю зачем в домашней гидропонике такая ультраточность в ЕС?</p>
+
+  <p>+/- пара десятых после запятой погоды не сделают.</p>
+
+  <p>Или просто в теме письками все меряются?)) :D</p>
+
+  <p>У кого больше?))</p>
+
+  <p>Настолько все проще делается: антенный разъем в качестве датчика, ардуино, самый простой скетч с лайтовым медианным фильтром, и вуаля. Выводи себе в сериал хоть до усеру. Чё велосипед то изобретать.</p>
+</blockquote>
+
+<p>Это ты мне про велосипед? ты вообще понимаешь всю иронию своего сообщения? Этот график получен двумя, подключенными напрямую к портам, проводками без всяких медиан прямым опросом с ардуины.</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 26-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>:D Я не понимаю зачем в домашней гидропонике такая ультраточность в ЕС?</p>
+
+    <p>+/- пара десятых после запятой погоды не сделают.</p>
+
+    <p>Или просто в теме письками все меряются?)) :D</p>
+
+    <p>У кого больше?))</p>
+
+    <p>Настолько все проще делается: антенный разъем в качестве датчика, ардуино, самый простой скетч с лайтовым медианным фильтром, и вуаля. Выводи себе в сериал хоть до усеру. Чё велосипед то изобретать.</p>
+  </blockquote>
+
+  <p>Это ты мне про велосипед? ты вообще понимаешь всю иронию своего сообщения? Этот график получен двумя, подключенными напрямую к портам, проводками без всяких медиан прямым опросом с ардуины.</p>
+</blockquote>
+
+<p>Ну пипец!)))</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 26-10-2017</p>
+
+<p>“Да я!!! Да у меня!!!”)))</p>
+
+<p><strong>siv237</strong> 26-10-2017</p>
+
+<blockquote>
+  <p>“Да я!!! Да у меня!!!”)))</p>
+</blockquote>
+
+<p>;D ;D ;D</p>
+
+<p><strong>Vad</strong> 26-10-2017</p>
+
+<blockquote>
+  <p>Вот специально сгенерил график</p>
+</blockquote>
+
+<p>надо его сгенерить во всех темах…</p>
+
+<p>не стоит останавливаться на всего двух))</p>
+
+<p><strong>PAA</strong> 26-10-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>алгоритм последовательного приближения, а это означает, что время преобразования зависит от уровня аналогового сигнала на входе АЦП.</p>
+  </blockquote>
+
+  <p>вы опять что-то путаете</p>
+
+  <p>последовательное приближение - “я угадаю ваши 10 бит за 10 шагов”</p>
+
+  <p>а значит пофиг какое напряжение на входе..</p>
+
+  <p>придется пройти все 10 итераций … по 1 для каждого бита</p>
+</blockquote>
+
+<p>Да вы правы, именно 10 шагов на 10 бит. Перепутал с последовательным АЦП.</p>
+
+<p>Так или иначе, я всё таки начал писать скетч под вышеописанный алгоритм.</p>
+
+<p><strong>miniatur</strong> 05-08-2019</p>
+
+<p>Спасибо ТС! Собрал как по схеме, залил скетч, работает! <em>Dance</em></p>
+
+<p><strong>Miando</strong> 29-12-2019</p>
+
+<p>А резисторы Р1 и Р1 обязательны? можно обойтись без них или заменить на номинал 220? у меня только такие :(</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

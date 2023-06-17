@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Перец подтоплением - первые шаги | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Перец подтоплением - первые шаги">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Перец подтоплением - первые шаги</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>lantech</strong> 30-06-2010</p>
+
+<p>Решил на подоконнике вырастить перец. Хочу попробовать два сорта - ранний здоровье и урожайный F1 Какаду. Посадить хочу в один балконный ящик 60 см два Какаду и один здоровье посредине. Субстрат - 70% перлит, 30% вермикулит. Взял так, чтоб излишней влажности не было, продавец отсоветовал от чистого вермикулита. Сами семечки в пробки из минваты, которые втыкаются в субстрат. Периодически насосом все проливается по уровню касания минватных пробок. Удобрение для начинающих - Spezialdunger Hydrokultur для роста, оно же для цветения и сульфат магния.</p>
+
+<p>Так как делаю впервые, возникает много вопросов. Ну во-первых рабочий ли субстрат для перцев. Во-вторых как часто поливать, правильный ли выбран уровень подтопления. Как готовить воду, в том числе в начале (пока это чистая вода без удобрений), достаточно ли просто отстаивать сутки-двое. Сколько держать PH и делать это сразу или когда пойдут удобрения?</p>
+
+<p>Заранее спасибо. Пока еще установку не собрал, но как посажу буду писать и отчитываться.</p>
+
+<p><strong>Sliva</strong> 30-06-2010</p>
+
+<p>Воду достаточно сутки-двое отстаивать, но можно еще и фильтровать каким-нибудь фильтром.</p>
+
+<p>pH контролировать всегда. По поводу субстрата лично я бы взял чисто керамзит безо всяких пробок, он точно не переувлажнится и дает хорошо дышать корням, не образует пыли, не рассыпается, не забивает насосы, шланги и прочее.</p>
+
+<p><strong>WERDNA</strong> 01-07-2010</p>
+
+<p>Влажности много не будет: у меня 50/50 только успевай поливать :) , для периодики думаю нормально.</p>
+
+<p>Пробки из минваты не нужны в той же смеси перлита - вермикулита изумительно все прорастает. Режим затопления раз в 4 часа, уровень затопления 3-5 см ниже уровня субстрата.</p>
+
+<p>Spezialdunger Hydrokultur + СМ - годится, расти будет, но лучше добавить кальциевую селитру и микру. Для цветения стоит поискать что то более фосфоро-калие содержащие, я использовал ETISSO красную.</p>
+
+<p>По поводу “Сколько держать PH и делать это сразу или когда пойдут удобрения”</p>
+
+<p>PH, с учетом склонности вермикулита к щелочению, сделайте 5.5 а там надо посмотрить.</p>
+
+<p><strong>Mole_Garden</strong> 02-07-2010</p>
+
+<p>:D от насоветовали, я бы взял из всех советов понемногу и будет у вас все хорошо.</p>
+
+<p>И так, для начала надо читать книжки из библиотеки http://www.ponics.ru/2009/06/lib/ , если до сих пор возникает вопрос с pH</p>
+
+<p>Во-вторых, воду достаточно отстаивать и фильтровать ее не надо, а почему, об этом есть статья http://www.ponics.ru/2009/04/filter_rodnik/</p>
+
+<p>Проращивать, мне лично, больше нравится в пробках, их можно поставить в тепличку, сделать в ней влажность по выше и так далее.</p>
+
+<p>По хорошему, надо бы кальций добавлять, так как может не хватить, того что есть в воде.</p>
+
+<p>По раствору, комплексное удобрения+сульфат магния(если его нет в удобрениях)+микро - это обязательные компоненты. Остальные тоже бы хорошо, но как получится</p>
+
+<p>Режимы подтопления подбираются индивидуально, так как у всех свои условия, у одного ветра нет, у другого не так солнышко печет. Пробуйте экспериментируйте.</p>
+
+<p><strong>lantech</strong> 02-07-2010</p>
+
+<p>Собрал установку. Внешний вид во вложении. Здесь у меня балконный ящик каждые три часа подтапливается до уровня на 2 см ниже поверхности субстрата, после чего насос отключается и вода самотеком возвращается в бак-канистру снизу. Семена положил в пробки минваты, а пробки в пакетики на проращивание. Всходят они недели две. Это получается посажу в вермикулит я их только через две недели.</p>
+
+<p>PS На цветение у меня красная Etisso, отдельно еще есть сульфат магния и монофосфат калия.</p>
+
+<p>А откуда брать кальций, это кальциевая селитра? И сколько добавлять, как определить?</p>
+
+<p>Не добавляется файл размером 770 кб. Внешняя ссылка:</p>
+
+<p>http://content.foto.mail.ru/list/sergiy_k/3/s-575.jpg</p>
+
+<p><strong>Mole_Garden</strong> 02-07-2010</p>
+
+<blockquote>
+  <p>Не добавляется файл размером 770 кб. Внешняя ссылка:</p>
+</blockquote>
+
+<p>Есть такая штука, под названием медленный интернет у людей, через модем или телефон, вот для них к примеру ваши всего 770 это пипец сколько. Пробуйте загружать фото более меньшего размера и разрешения, думайте о людях.</p>
+
+<p>А как определить сколько вам нужно кальция, это нужно спросить у вас, сколько и чего должно быть по вашим задумкам в вашем растворе. Исходя из этого рассчитывать.</p>
+
+<p><strong>lantech</strong> 02-07-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>Не добавляется файл размером 770 кб. Внешняя ссылка:</p>
+  </blockquote>
+
+  <p>Есть такая штука, под названием медленный интернет у людей, через модем или телефон, вот для них к примеру ваши всего 770 это пипец сколько. Пробуйте загружать фото более меньшего размера и разрешения, думайте о людях.</p>
+
+  <p>А как определить сколько вам нужно кальция, это нужно спросить у вас, сколько и чего должно быть по вашим задумкам в вашем растворе. Исходя из этого рассчитывать.</p>
+</blockquote>
+
+<p>Да нет, раствор-то у меня стандартный, т.е. покупной. я про:</p>
+
+<blockquote>
+  <p>По хорошему, надо бы кальций добавлять, так как может не хватить, того что есть в воде.</p>
+</blockquote>
+
+<p>На этом этапе надо добавлять?</p>
+
+<p>P.S.</p>
+
+<p>Фото для медленного инета :) :</p>
+
+<p>http://content.foto.mail.ru/list/sergiy_k/3/i-575.jpg</p>
+
+<p><strong>Mole_Garden</strong> 03-07-2010</p>
+
+<blockquote>
+  <p>На этом этапе надо добавлять?</p>
+</blockquote>
+
+<p>Думаю, нет.</p>
+
+<p><strong>lantech</strong> 08-07-2010</p>
+
+<p>Два перца в минватных пробках взошли, но корнями вверх. Как их теперь сажать не пойму. :D</p>
+
+<p><strong>valery</strong> 09-07-2010</p>
+
+<p>Корнями вниз :D</p>
+
+<p>Это, конечно, шутка. Но на самом деле так и есть. Случается такое.</p>
+
+<p>Возможно посадили очень “мелко”, близко к поверхности и корешком вверх …</p>
+
+<p>Корешки у семечка выходят с “остренького носика” - вот лучше именно им (носиком) вниз и положить семечко. Если посев немного “поглубже” - можно этим и не заморачиваться, корешки сами развернутся. Должен оставаться и еще небольшой тоненький слой субстрата чтобы росток мог об этот субстрат снять “шелуху” от лопнувшего семени … Иначе оно (она - шелуха) может не “содраться”, задержать раскрытие семядольных листочков, ну и соответственно, “затормозить” процесс …</p>
+
+<p><strong>lantech</strong> 09-07-2010</p>
+
+<p>Оставшиеся пробки поставил вертикально (те горизонтально лежали) Сегодня взошло еще два, уже правильно, корнями вниз, через всю пробку. А вчерашние корни подсохли :( . Сажал я острием внутрь, но видимо семя еще на силу тяжести реагирует.</p>
+
+<p><strong>Aleksey Kurenin</strong> 09-07-2010</p>
+
+<p><a href="http://ru.wikipedia.org/wiki/%D0%93%D0%B5%D0%BE%D1%82%D1%80%D0%BE%D0%BF%D0%B8%D0%B7%D0%BC" target="_blank">http://ru.wikipedia.org/wiki/%D0%93%D0%B5%D0%BE%D1%82%D1%80%D0%BE%D0%BF%D0%B8%D0%B7%D0%BC</a></p>
+
+<p>это как раз об этом.</p>
+
+<p><strong>orgail</strong> 09-07-2010</p>
+
+<p>У меня тоже некоторые семена так корешками вверх вылазали, а что делать :)</p>
+
+<p>А еще есть фототропизм, кстати икеевские бамбуки закрученные так и выращивают, есть одна статейка в одном забугорном журнальчике</p>
+
+<p><strong>lantech</strong> 17-07-2010</p>
+
+<p>Что-то они расти дальше никак не хотят. Так и торчат по две семядоли. Добавил 1,5 мл раствора для роста на 10 л воды, но растения не двигаются. Пора увеличивать концентрацию. Кстати, сам раствор тоже пора заменить?</p>
+
+<p><strong>lantech</strong> 20-07-2010</p>
+
+<p>В воскресенье залил концентрацию 20% - 5 мл на 10 л воды. Листочки растут, но не сказать что бурно</p>
+
+<p><strong>lantech</strong> 24-07-2010</p>
+
+<p>Увеличил концентрацию до 12,5 мл</p>
+
+<p><strong>lantech</strong> 24-07-2010</p>
+
+<blockquote>
+  <p>Влажности много не будет: у меня 50/50 только успевай поливать :) , для периодики думаю нормально.</p>
+
+  <p>Пробки из минваты не нужны в той же смеси перлита - вермикулита изумительно все прорастает. Режим затопления раз в 4 часа, уровень затопления 3-5 см ниже уровня субстрата.</p>
+
+  <p>Spezialdunger Hydrokultur + СМ - годится, расти будет, но лучше добавить кальциевую селитру и микру. Для цветения стоит поискать что то более фосфоро-калие содержащие, я использовал ETISSO красную.</p>
+
+  <p>По поводу “Сколько держать PH и делать это сразу или когда пойдут удобрения”</p>
+
+  <p>PH, с учетом склонности вермикулита к щелочению, сделайте 5.5 а там надо посмотрить.</p>
+</blockquote>
+
+<p>Сколько добавлять кальциевой селитры? И микро GHE FloraMicro подойдет?</p>
+
+<p>PS PH держится на уровне 5,5-6.</p>
+
+<p><strong>lantech</strong> 25-07-2010</p>
+
+<p>Вот такие сейчас эти перцы:</p>
+
+<p><a href="http://s1.postimage.org/QI_O0.jpg" target="_blank"><img src="http://s1.postimage.org/QI_O0.jpg" alt="" /></a></p>
+
+<p>крупнее:</p>
+
+<p><a href="http://content.foto.mail.ru/list/sergiy_k/3/s-577.jpg" target="_blank">http://content.foto.mail.ru/list/sergiy_k/3/s-577.jpg</a></p>
+
+<p><strong>lantech</strong> 31-07-2010</p>
+
+<p>Сегодня. Создается впечатление, что скорость роста зависит от концентрации раствора</p>
+
+<p><a href="http://s1.postimage.org/gSJai.jpg" target="_blank"><img src="http://s1.postimage.org/gSJai.jpg" alt="" /></a></p>
+
+<p><strong>WERDNA</strong> 01-08-2010</p>
+
+<blockquote>
+  <p>Сколько добавлять кальциевой селитры? И микро GHE FloraMicro подойдет?</p>
+
+  <p>PS PH держится на уровне 5,5-6.</p>
+</blockquote>
+
+<p>GHE FloraMicro - конечно подойдет.</p>
+
+<p>Я Клал Гидрокультур 2мл/л</p>
+
+<p>Кальциевая селитра (10%) 2,5 мл/л</p>
+
+<p>Сульфат магния (25%) 1 мл/л</p>
+
+<p>Микро 0,3 мл/л</p>
+
+<hr />
+
+<p>Плюс перцам очень важен калий поэтому Сульфат калия (10%) - 2-2,5 мл/л</p>
+
+<p>NPK~ 120/40/200</p>
+
+<p>PH - в таках же пределах. ВСЕ ОК - сотрите фотку.</p>
+
+<hr />
+
+<p>У меня пассивная (с ручным поливом) гидропоника перлит/вермикулит = 50/50</p>
+
+<p><a href="https://t.me/ponics_ru_files/4212" target="_blank"><img src="/attachimages/3067_IMAGE_188.png" alt="" /></a></p>
+
+<p><strong>lantech</strong> 31-10-2010</p>
+
+<p>Перец подрос и был перемещен в комнату:</p>
+
+<p><img src="http://content.foto.mail.ru/list/sergiy_k/578/i-580.jpg" alt="" /></p>
+
+<p><img src="http://content.foto.mail.ru/list/sergiy_k/578/i-585.jpg" alt="" /></p>
+
+<p>А это тот, который растет на земле:</p>
+
+<p><img src="http://content.foto.mail.ru/list/sergiy_k/578/i-586.jpg" alt="" /></p>
+
+<p>В последнее время:</p>
+
+<p><img src="http://content.foto.mail.ru/list/sergiy_k/578/i-592.jpg" alt="" /></p>
+
+<p>Одна проблема - завязи отваливаются. Т.е. рост идет хорошо, а плодов нет. Как будто я не Etisso Red скармливаю. Что делать, может поменять концентрат?</p>
+
+<p><strong>Oxy</strong> 31-10-2010</p>
+
+<p>У меня такое впечатление сложилось, чисто внутреннее, я не специалист, будто не сохранил ты им лето. Ну типа перешли в осень. Надо света попробовать добавить - может им не хватает для набора плода. Ты чем светишь?</p>
+
+<p><strong>WERDNA</strong> 01-11-2010</p>
+
+<p>Спокойствие только спокойствие. Перцы так часто прикалываются: первая волна цветения без плодов. Подождите, и все будет…</p>
+
+<p><strong>lantech</strong> 01-11-2010</p>
+
+<blockquote>
+  <p>У меня такое впечатление сложилось, чисто внутреннее, я не специалист, будто не сохранил ты им лето. Ну типа перешли в осень. Надо света попробовать добавить - может им не хватает для набора плода. Ты чем светишь?</p>
+</blockquote>
+
+<p>А вон на фото видно - две люминесцентных лампы по 18 Вт, теплые (вроде как спектр для плодов). Освещенность как-то замерял, вблизи до 12 кЛюкс дают, а там листья итак уже почти вплотную идут. Но увеличить тяжело - это натриевую ставить надо, а не хочу потому как она опаснее - горячее все-таки, а я занавесками закрываю. Могу только световой день продлить - сейчас на 12 часов стоит. Но вроде как перцы этого не любят… Подожду пока.</p>
+
+<p><strong>Oxy</strong> 01-11-2010</p>
+
+<p>:D ПИС! И что, ты хочешь сказать что эти деревья у тебя вырасли на таком туалетном светильничке еще и с рассеивающим пластиковым фильтром? Чего то верится с трудом. Да вообще не вериться, если честно. Тем более не поверю что с такими светлячками эти заросли вытянут плод.</p>
+
+<p>Народ, АУ! Выскажите плиз мнение по поводу такого светильника, а то у меня на кухне такой же висит. У меня для растюх выделено две ЭСЛ, одна 75 вторая 85 Вт по потреблению. Еле-еле вегу у сладких перцев потянул. Если б весна на балкон не пришла - фиг бы я плоды увидел.</p>
+
+<p>Расстояние от поверхности листьев до такого светильничка должно быть не больше 10 см. У тебя ровно 4 листочка освещаются, остальные в темноте сидят. Может у тебя дофига солнечного освещения? Но тогда завязи бы пошли…. Если честно, я подумал сначала что этот светильник просто для удобства работы с растениями а не для выращивания.</p>
+
+<p><strong>Mole_Garden</strong> 02-11-2010</p>
+
+<p>Мдя, ламп и в правду маловато для хорошего роста плодов.</p>
+
+<p>Для завязи попробуй опылять их вручную, немного добавить в питание калия и магния.</p>
+
+<p><strong>Oxy</strong> 02-11-2010</p>
+
+<p>А толку с того опыления? Я видел этот прикол на личном опыте, они опыляются - становится видно завязь а потом технично отсыхают у основания черенка. Причем отсыхают во всех стадиях - цветки, завязи, цветочные почки, крупные завязи. Перец если не тянет - то не тянет, реально сбрасывет. Имхо нужно добавить освещения и посмотреть на процесс.</p>
+
+<p><strong>orgail</strong> 03-11-2010</p>
+
+<p>Поддерживаю - освещение, +калия, магния, в основном конечно свет</p>
+
+<p><strong>lantech</strong> 16-11-2010</p>
+
+<blockquote>
+  <p>Мдя, ламп и в правду маловато для хорошего роста плодов.</p>
+
+  <p>Для завязи попробуй опылять их вручную, немного добавить в питание калия и магния.</p>
+</blockquote>
+
+<p>Дельный совет. На самом деле я их уже попробовал опылить вручную. Один перец уже сантиметров 6 вырос, два других только-только из цветка зарождаются. А как им добавить калия и магния? Это микроэлементы взять что ли?</p>
+
+<p>PS По поводу освещения - да они же не вытягиваются, и цвет листьев нормальный. Поэтому зачем? Признаков светового голодания не вижу. Вот на подоконнике без лампы симптомы есть - хоть там и укроп, но все равно бледный и тянется.</p>
+
+<p>PPSS Никак не могу убить паутинного клеща. Обратываю фуфанолом, помогает на время, еще и воняет жутко. Один перец пришлось выкинуть, т.к. все листья и цветки он сожрал.</p>
+
+<p><strong>Oxy</strong> 16-11-2010</p>
+
+<blockquote>
+  <p>PS По поводу освещения - да они же не вытягиваются, и цвет листьев нормальный. Поэтому зачем? Признаков светового голодания не вижу. Вот на подоконнике без лампы симптомы есть - хоть там и укроп, но все равно бледный и тянется.</p>
+</blockquote>
+
+<p>Да, возможно и так. Постепенно поднимая лампу ты вегетировал растение. Верхняя точка роста растет нормально, она возле лампы, междоузлия формируются правильными, и растение не тянеться - потому что расстояние до точки роста правильное. Но чтобы налить плод, ему нужно нормально прокачать растворчик через все ветки и с поверхности листьев испарить. А для этого - нужен мощный свет. И это цветение и бутонизация. Короче мощность лампы и расстояние до источника. Ты получишь конечно плоды, но они будут в количестве и размерами не такие как под более мощным освещением.</p>
+
+<p><strong>цветовод</strong> 17-11-2010</p>
+
+<p>Не знаю как на перце, а вот на розах паутинного клеща полностью ещё никто не истребил, только снижают количество. Если не прав, пусть поправят специалисты. :-\</p>
+
+<p><strong>Юрий.E.</strong> 20-11-2010</p>
+
+<p>Я пока не специалист,надеюсь им стать.Клещ одолевает.Борьба с переменным успехом,то я его - то он меня.Где то прочитал,что обработками уничтожается только “ненасытное животное”,а яйца нет(я имею ввиду его потомство).</p>
+
+<p><strong>valery</strong> 20-11-2010</p>
+
+<p>Не знаю, о каком растении и о каком количестве идет речь …</p>
+
+<p>Если о нескольких кустиках - то проще.</p>
+
+<p>Это НЕ СОВЕТ, и так делать нельзя, и мне говорили что НЕЛЬЗЯ (и я даже сам понимаю что НЕЛЬЗЯ) …</p>
+
+<p>Тем не менее.</p>
+
+<p>От прямого и точного попадания струей ДИХЛОФОСА прямо в нос, у меня еще ни одно “вредительское” насекомое - не выживало :D :D :D</p>
+
+<p>(ну в крайнем случае - ОЧЕНЬ плохо себя чувствовало :) )</p>
+
+<p><strong>lantech</strong> 28-11-2010</p>
+
+<p>Добавил монофосфат калия и сульфат магния, популяцию клещей уменьшил, хотя полностью удалить не удалось. Дихлофосом травить не буду, все-таки сам в этом же помещении сплю. Плод перца растет, но в час по чайной ложке, еле-еле, за неделю почти не вырос. Может и правда света мало. В общем решил я его удалить, раз все равно толку мало.</p>
+
+<p>А что под такой лампой вырастет, желательно побыстрее? Может редиски туда посадить? Я ее очень люблю, а на новый год и не найдешь нигде.</p>
+
+<p>Да, еще вопрос вырастут ли помидоры?</p>
+
+<p><strong>zalcer</strong> 04-01-2011</p>
+
+<p>Хех, а у меня на перце регулярно тля заводится. Так я её родимую слегонца рейдом синим от мух - и все дела )</p>
+
+<p>Как боролся с всплыванием перлита призатоплении?</p>
+
+<p><strong>mdima</strong> 04-01-2011</p>
+
+<p>Томаты дома растут замечательно, а вот редису требуется очень много света для формирования репки.</p>
+
+<p><strong>lantech</strong> 05-01-2011</p>
+
+<blockquote>
+  <p>Хех, а у меня на перце регулярно тля заводится. Так я её родимую слегонца рейдом синим от мух - и все дела )</p>
+
+  <p>Как боролся с всплыванием перлита призатоплении?</p>
+</blockquote>
+
+<p>А с этим надо бороться? Имхо пусть всплывает, равномерно же. И то это только первое время, потом перестает</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

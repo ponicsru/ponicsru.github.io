@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Комната с томатными джунглями | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Комната с томатными джунглями">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Комната с томатными джунглями</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>ludmila</strong> 18-07-2011</p>
+
+<p>Привет.</p>
+
+<p>Тут я расскажу о неистовом овоще, который вырос у меня в комнате.</p>
+
+<p>Вот как он выглядел.</p>
+
+<p><img src="http://pics.livejournal.com/meelahmeelah/pic/00001078" alt="" /></p>
+
+<p><strong>ludmila</strong> 18-07-2011</p>
+
+<p>Все началось больше года назад.</p>
+
+<p>2 июня 2010 я посадила в вермикулит семечки помидоров сорта “Щелковский”.</p>
+
+<p>3 июля 2010 пересадила 9 штук в гидропонную установку. В лотках установки – керамзит, поливалось все помпой 20 раз в сутки (максимальное число поливов, на которое был способен мой таймер).</p>
+
+<p>Лампа ДНАТ 400, примерно в 50 см от лотков.</p>
+
+<p>Кормились растения удобрением Spezialdunger Hydrokultur” от GreenWorld.</p>
+
+<p>Мелочь отлично прижилась и росла быстро (3 июля пересадила, 13 июля, согласно записям в моем “Дневнике наблюдений за живой природой” растения были уже вдвое больше).</p>
+
+<p>31 августа 2010 некоторые растения набрали бутоны. Я перевела их на кормление Etisso Bluhpflanzen.</p>
+
+<p>Начались проблемы: света на все 9 растений явно не хватало (не надо было сажать столько, конечно). Они боролись за место под лампой и выращивали очень длинные ветви, настоящие лианы. Некоторые начали дохнуть (в результате, забегая вперед, выжили три растения, и то одно из них в июне 2011 собиралось давать дуба, вытесненное соседом).</p>
+
+<p>Дело в том, что у меня тогда не было времени за ними толком присматривать, ежедневно убирать пасынки. Было много работы, и увлечение установкой отошло на второй-третий план.</p>
+
+<p>И однажды я с интересом обнаружила, что помидоры превратились в гигантский зеленый клубок вокруг лампы, в котором уже было совершенно непонятно, кто кому приходится пасынком, кто основной веткой и т.п. Помидорные лианы валялись на полу, доставали до потолка, а те, которые пытались обвиться вокруг лампы, вырастали и дальше нее, после чего иногда падали мне в кровать ночью. Добавляя тем самым мне острых ощущений от жизни. :)</p>
+
+<p><img src="http://pics.livejournal.com/meelahmeelah/pic/0000c1xb" alt="" /></p>
+
+<p><img src="http://pics.livejournal.com/meelahmeelah/pic/0000bb52" alt="" /></p>
+
+<p>Продолжение следует.</p>
+
+<p><strong>caiman</strong> 19-07-2011</p>
+
+<p><em>8)</em> Очень интересно….. <em>Bravo</em> продолжайте….</p>
+
+<p><strong>Rtyti</strong> 19-07-2011</p>
+
+<p>А куда у вас горячий воздух от лампы уходит? на фото не видно. А так здорово, :)</p>
+
+<p><strong>Hrun</strong> 19-07-2011</p>
+
+<p>Помидорки <em>8)</em></p>
+
+<p><strong>nbIx</strong> 19-07-2011</p>
+
+<p>Действительно томатные джунгли. Ждём продолжения :)</p>
+
+<blockquote>
+  <p>А куда у вас горячий воздух от лампы уходит? на фото не видно. А так здорово, :)</p>
+</blockquote>
+
+<p>Судя по конструкции в гофру. С одной стороны култуба, скорей всего, стоит вентилятор и гонит воздух от лампы в гофру, а гофра выходит куда-то :)</p>
+
+<p><strong>YoU-PiteR</strong> 19-07-2011</p>
+
+<p>Агр! Моя мечта, томатные джунгли!</p>
+
+<p><strong>ludmila</strong> 19-07-2011</p>
+
+<p>Забежала на минутку полюбоваться своим постом. :)) Обязательно допишу все в ближайшее время! Не сразу разобралась со вставкой картинок вчера, теперь, надеюсь, будет проще.</p>
+
+<p>Rtyti, вентилятор вмонтирован в гофр. Горячий воздух выходит в потолок.</p>
+
+<p>caiman, Hrun, nbIx, YoU-PiteR, спасибо за поддержку! :)</p>
+
+<p><strong>gena1</strong> 19-07-2011</p>
+
+<blockquote>
+  <p>Rtyti, вентилятор вмонтирован в гофр. Горячий воздух выходит в потолок.</p>
+</blockquote>
+
+<p>А из чего делали сам култуб (стекло), или покупали ?</p>
+
+<p><strong>caiman</strong> 19-07-2011</p>
+
+<p>А меня больше интересует сама установка…. Вертикалка? Проточка?? Томаты висят, нет опоры???</p>
+
+<p><strong>ludmila</strong> 20-07-2011</p>
+
+<p>Итак, осенью 2010 много работы, отъезды, помидорный куст так разросся, что я перестала понимать, где какое растение.</p>
+
+<p><img src="http://pics.livejournal.com/meelahmeelah/pic/0000ek5e" alt="" /></p>
+
+<p><img src="http://pics.livejournal.com/meelahmeelah/pic/0000drp8" alt="" /></p>
+
+<p>Взялась за ножницы только в ноябре 2010. И в несколько приемов привела помидоры в божеский вид. Вынесла два полных мусорных пакета с томатными ветками. Как они пахли, м! Очень здорово. И моя плантация стала выглядеть гораздо аккуратней. В процессе вырезания лишних веток обнаружила кучу новых помидоров, которых раньше не было видно под листьями. :)</p>
+
+<p>Тогда же завела наконец привычку прищипывать пасынки ежедневно. С этого момента томатов стало завязываться больше. И вообще безумный куст был наконец укрощен. Но если я не осматривала растения хотя бы несколько дней подряд, то потом находила новые длиннющие плети: пасынки отрастали со страшной силой. Особенно после того, как перешла на кормление GHE FloraMato и FloraMicro, мне показалось, что помидоры стали цвести обильней и расти быстрее.</p>
+
+<p>Январь 2011:</p>
+
+<p><img src="http://pics.livejournal.com/meelahmeelah/pic/0000fhhq" alt="" /></p>
+
+<p><img src="http://pics.livejournal.com/meelahmeelah/pic/0000g7ws" alt="" /></p>
+
+<p>У меня не было цели собирать большой урожай. Было интересно экспериментировать, фиксировать результаты, фотографировать симпатичные помидорки. Они часто у меня перезревали. Я с удовольствием демонстрировала свои достижения гостям, разрешала им нарвать красных помидоров – забавный аттракцион.</p>
+
+<p>Март 2011:</p>
+
+<p><img src="http://pics.livejournal.com/meelahmeelah/pic/0000kghq" alt="" /></p>
+
+<p>Не скажу точно, сколько получалось урожая. Думаю, 1 помидор в два дня я могла срезать точно со своих четырех растений (они остались вчетвером зимой).</p>
+
+<p>Интересно, что помидоры были вкусными. Я думала, что это будет что-то странное, но выяснилось, что аромат и вкус – лучше, чем у помидоров из магазина. Мои были более «настоящими», а магазинные после них казались водянистыми, лишенными запаха.</p>
+
+<p>Апрель 2011:</p>
+
+<p><img src="http://pics.livejournal.com/meelahmeelah/pic/0000q94q" alt="" /></p>
+
+<p>Весной мне все надоело. Я давно освоила технологию, было скучно, хотелось придумывать что-то еще. Но рука долго не поднималась уничтожить растения.</p>
+
+<p>5 июня 2011 я посчитала, что помидоры живут у меня уже год, непрерывно плодоносят около восьми месяцев, и нет ни малейшего признака, что они собираются когда-либо останавливаться. (Если мне казалось, что цветов стало маловато, я отращивала пару пасынков, и скоро они зацветали).</p>
+
+<p>Начало июня 2011:</p>
+
+<p><img src="http://pics.livejournal.com/meelahmeelah/pic/0000t7f9" alt="" /></p>
+
+<p><img src="http://pics.livejournal.com/meelahmeelah/pic/0000w7k0" alt="" /></p>
+
+<p>Срезать растения было ужасно жалко. Мы столько с ними вместе пережили! Все эти потопы из-за ломающихся таймеров, забивающиеся трубки перелива, опадающие из-за жары цветы, неизвестно откуда взявшаяся вершинная гниль, и т.д, и т.п.</p>
+
+<p>Зато теперь можно выращивать что-нибудь еще.</p>
+
+<p><strong>ludmila</strong> 20-07-2011</p>
+
+<p>gena1, култьюб купила готовый, там же мне продали гофр и подходящий к этому гофру круглый маленький вентилятор – вентилятор было просто засунуть в гофр. :) Удобно.</p>
+
+<p><strong>ludmila</strong> 20-07-2011</p>
+
+<p>caiman, насчет “как устроено”.</p>
+
+<p>Вот тут видно зеленый шланг, который из аквариума тянется к одному из верхних лотков.</p>
+
+<p><img src="http://pics.livejournal.com/meelahmeelah/pic/0000fhhq" alt="" /></p>
+
+<p>Помпа в аквариуме накачивает воду с удобрениями в верхний лоток, оттуда вода разливается по другим лоткам и из нижнего сливается обратно в аквариум.</p>
+
+<p>Помидорные лианы я подвязывала веревками.</p>
+
+<p><strong>ludmila</strong> 20-07-2011</p>
+
+<p>Кому-нибудь попадались надежные электронные таймеры? Мои постоянно ломались, причем безо всяких причин, не было заметно перепадов в сети или огромных нагрузок…</p>
+
+<p><strong>nadnab</strong> 20-07-2011</p>
+
+<blockquote>
+  <p>Кому-нибудь попадались надежные электронные таймеры? Мои постоянно ломались, причем безо всяких причин, не было заметно перепадов в сети или огромных нагрузок…</p>
+</blockquote>
+
+<p>Напишите какими пользовались, фирма;марка…</p>
+
+<p>Я пользуюсь не дорогим Feron TM22, тьфу тьфу - пока не подводил… 90грн/360руб.</p>
+
+<p><strong>Юрий Иваныч</strong> 20-07-2011</p>
+
+<p>ludmila, браво. <em>Bravo</em> <em>Bravo</em> <em>Bravo</em> А Вы установку сами делали или помогал кто?</p>
+
+<p><strong>valery</strong> 20-07-2011</p>
+
+<blockquote>
+  <p>Кому-нибудь попадались надежные электронные таймеры? Мои постоянно ломались, причем безо всяких причин, не было заметно перепадов в сети или огромных нагрузок…</p>
+</blockquote>
+
+<p>Таймеры Дюви (или может Дюве) Duwe - может немного вру в написании. Двадцать включений/выключений в сутки, шаг поминутный - очень надежные. Четыре штуки - паре два года и паре год. Ни один не ломался, не сбоил и вообще …</p>
+
+<p>Хорошо себя ведут. Германия (хотя все равно небось в Китае собирают) …</p>
+
+<p>Продаются в Москве в магазинах то ли “Умный дом”, то ли “Светлый дом” …</p>
+
+<p>(Во :o подсказал называется :-\ называется - то ли “так”, то ли “эдак” … продаются - то ли “там”, то ли “не там” …</p>
+
+<p>Мда …</p>
+
+<p><strong>ludmila</strong> 20-07-2011</p>
+
+<p>nadnab, спасибо, про Feron TM22 учту. сейчас нашла название только одного своего таймера: Rev. после него еще какие-то пробовала, и они все ломались один за другим. :)</p>
+
+<p>valery, спасибо за подсказку про Duwe!</p>
+
+<p><strong>ludmila</strong> 20-07-2011</p>
+
+<p>Юрий Иваныч, спасибо. :)</p>
+
+<p>Сама я бы все не смогла. Железки тяжелые для стеллажа принести, выпилить в трубах отверстия для растений, подключить лампу. С этим обращалась за помощью.</p>
+
+<p><strong>gorby777</strong> 22-07-2011</p>
+
+<blockquote>
+  <p>… и они все ломались один за другим. :)</p>
+
+  <p>…</p>
+</blockquote>
+
+<p>Китайские таймеры хороши и дёшевы. Но имеют общий недостаток - выход не защищен от скачков напряжения, возникающих при отключении индуктивной нагрузки. Для нормальной работы надо параллельно выходу установить конденсатор не ниже 250В, примерно 0,1 мкФ.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

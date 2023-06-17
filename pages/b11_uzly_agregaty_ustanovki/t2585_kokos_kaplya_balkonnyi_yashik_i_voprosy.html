@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Кокос, капля, балконный ящик и вопросы:-) | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Кокос, капля, балконный ящик и вопросы:-)">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Кокос, капля, балконный ящик и вопросы:-)</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Jackie</strong> 11-01-2017</p>
+
+<p>Добрый вечер уважаемые форумчане! Решил сделать себе систему капельного полива и растить клубнику. Растить хочу в UGro Pot 9, которые в свою очередь по 2шт будут стоять в балконных ящиках (ровно 2 мешка влазают размерами 20*20см). Исходя из стоимости субстрата пока планирую один ящик. Капля будет реверсная с ящика (или горшка как правильно) через фильтр обратно. В бак. Теперь хочу попросить вашего совета так сказать проконсультироваться :-). Можете мне подсказать как правильно подсчитать необходимые объемы подаваемого раствора (насос хочу замутить от бачка омывателя авто). Вопрос второй-подойдет ли насос омывателя:-). Если кто так делал, сильно ли шумит и какой в среднем производительность его. В нете не нашел, нашел только высоту подъема(рассматривал насос от ваз десятки). Клубнику посадил в торфяные таблетки. Клубника ремонтантная сариан F1 гавриш. По поводу питания хочу кормить фертикой люкс 1г/л+хлористый кальций 10мл/л. Спасибо</p>
+
+<p><strong>Cyclamech</strong> 11-01-2017</p>
+
+<p>Из семян? Интересненько! А успешные отчёты Вы встречали?</p>
+
+<p><strong>Jackie</strong> 11-01-2017</p>
+
+<p>Да, встречал.</p>
+
+<p><strong>siv237</strong> 12-01-2017</p>
+
+<p>Насос омывателя не хилую струю гонит при этом с 12 вольт откушивая 2 ампера. Он и капельный полив не очень совместимы мягко сказать. Особенно для клубники из семян :) Вы вообще видели ростки клубники? На них и дышать то страшно.</p>
+
+<p>Плюс сильное неудобство в том, что он не погружного типа, а цепляется к баку через резиновую прокладку. Вы хотите использовать его прямо с родным бачком? Шумит он сильно. Завоздушивается очень легко. Пусковой ток огромный, релюхи китайские на псевдо 10А не пойдут.</p>
+
+<p>Такое бы решение подошло бы для протоки, но тоже нет. Греется он очень сильно и на долгую работу не рассчитан. За полчаса воду в полторалитровой бутылке гоняемую по кругу прогревает от комнатной до температуры тела.</p>
+
+<p>В общем точно не для капельного полива, во всяком случае не прямого. Можно конечно наполнять некую емкость раз в сутки, а уже с неё самотеком каплю.</p>
+
+<p>Клубнику из семян проще проращивать в прозрачных одноразовых пластиковых контейнерах в кокосе. Всхожесть у них как правило так-себе и на 9 ваших контейнеров одновременно могут взойти от силы парочка (если по семечку в каждом). И что тогда делать будете? Лучше обильно засеять контейнер, а потом проредить слабых, оставив лучшие проростки. Всё равно потом пересаживать придется в том числе и из ваших лунок. Для полноценных кустов они слишком частые.</p>
+
+<p>В любом случае о поливе клубники из семян первые 2 месяца задумываться вообще не стоит. Смочили кокос в контейнере и закрыли плотно крышкой.</p>
+
+<p><strong>ihands</strong> 12-01-2017</p>
+
+<blockquote>
+  <p>Добрый вечер уважаемые форумчане! Решил сделать себе систему капельного полива и растить клубнику. Растить хочу в UGro Pot 9, которые в свою очередь по 2шт будут стоять в балконных ящиках (ровно 2 мешка влазают размерами 20*20см). Исходя из стоимости субстрата пока планирую один ящик. Капля будет реверсная с ящика (или горшка как правильно) через фильтр обратно. В бак. Теперь хочу попросить вашего совета так сказать проконсультироваться :-). Можете мне подсказать как правильно подсчитать необходимые объемы подаваемого раствора (насос хочу замутить от бачка омывателя авто). Вопрос второй-подойдет ли насос омывателя:-). Если кто так делал, сильно ли шумит и какой в среднем производительность его. В нете не нашел, нашел только высоту подъема(рассматривал насос от ваз десятки). Клубнику посадил в торфяные таблетки. Клубника ремонтантная сариан F1 гавриш. По поводу питания хочу кормить фертикой люкс 1г/л+хлористый кальций 10мл/л. Спасибо</p>
+</blockquote>
+
+<p>Еще нужно бы магний добавить… А там и до полностью самодельного раствора рукой подать.</p>
+
+<p>Капельный полив легко реализуется с помощью аквариумной помпы и аптечных капельниц. Другой вариант - эрлифт - с помощью аквариумного же компрессора и тех же капельниц. Всё работает от 220В.</p>
+
+<p>Компрессор шумит сильнее помпы, в спальне не пойдет. Помпа нормально.</p>
+
+<p>Возврат раствора - это, конечно, экономно и компактно, но не позволит вам контролировать ЕС и pH дренажа, а это небесполезно.</p>
+
+<p><strong>Cyclamech</strong> 12-01-2017</p>
+
+<blockquote>
+  <p>Растить хочу в UGro Pot 9… Исходя из стоимости субстрата пока планирую один ящик.</p>
+</blockquote>
+
+<p>Вы можете их (“угропоты”) сымитировать, сшив (например, степлером) гроубэги (из спанбонда или москитной сетки) такого размера, какого захотите. В этом случае (в отличие от “угропота”, который не дышащий полиэтилен) Вы бесплатно получите воздушную подрезку корней.</p>
+
+<p>Думаю понятно, что гроубэги можно заполнить любым субстратом.</p>
+
+<p><strong>Jackie</strong> 12-01-2017</p>
+
+<blockquote>
+  <p>Всхожесть у них как правило так-себе и на 9 ваших контейнеров одновременно могут взойти от силы парочка (если по семечку в каждом). И что тогда делать будете?</p>
+</blockquote>
+
+<p>UGro Pot 9 представляет собой 900 граммовый брикет кокосового субстрата, упакованного в устойчивый к воздействию ультрафиолетовых лучей пластиковый контейнер для выращивания (grow bag) с дренажными отверстиями в основании.</p>
+
+<p>Необходимо всего 6 литров воды, чтобы превратить UGro Pot 9 в 9 литров высококачественного кокосового субстрата.</p>
+
+<p>Идеально подходит для всех видов многолетних культур. Можно использовать как в помещении, так и на открытом воздухе.</p>
+
+<p>При помощи UGro Pot вы можете добиться не только большей рентабельности, сэкономив на покупке цветочных горшков, но и оптимизировать количество растений, выращиваемых на одном квадратном метре.</p>
+
+<p>Так на 1м2 умещается 49 пакетов Pot4 (7 рядов по 7 пакетов), 25 пакетов Pot9 (5×5) или 4 пакета Pot60 (2×2).</p>
+
+<p>Состав: 40% кокосовый торф, 30% кокосовые волокна, 30% кокосовая стружка</p>
+
+<p>pH: 5,5-6,5</p>
+
+<p>EC: &lt;0,6 мСм/см</p>
+
+<p>Влагоемкость: 600%</p>
+
+<p>Объем: 9 л</p>
+
+<p>Вес: 900 гр</p>
+
+<p>На одно растение один мешок. Семена, которые купил, там всего 4 зернышка.</p>
+
+<p><strong>Cyclamech</strong> 12-01-2017</p>
+
+<blockquote>
+  <p>…там всего 4 зернышка.</p>
+</blockquote>
+
+<p>Кто из вас двоих чего недопонял? <em>crazy</em></p>
+
+<p><strong>Jackie</strong> 12-01-2017</p>
+
+<p>:D я понял. Агротекстиль можно использовать? Посоветуйте кто нибудь насос или помпу. Если брали с китая киньте ссылку. Требуется высота подъема 1,5-2м.</p>
+
+<p><strong>Cyclamech</strong> 12-01-2017</p>
+
+<blockquote>
+  <p>Агротекстиль можно использовать?</p>
+</blockquote>
+
+<p>Спанбонд и агротекстиль - это одно и то же.</p>
+
+<p>Оптимальная схема “бэга”, на мой взгляд, это “попкорновый пакет”: 2 прямых строчки. Легко как степлером, так и на швейной машине.</p>
+
+<p><strong>Jackie</strong> 13-01-2017</p>
+
+<p>Заказал насосик с Китая, 3 метра 240л/ч. Теперь займусь курсами кройки и шитья :D. Изучаю книжку микроклимат и параллельно энциклопедию электроники:-) думаю, какого забивал я в вузе на физику и автоматику…</p>
+
+<p><strong>dmitron1036</strong> 13-02-2017</p>
+
+<p>можно мощным насосом наливать в ёмкость, оттуда самотёком на полив.</p>
+
+<p>Либо маломощным постоянно включённым.</p>
+
+<p><strong>Jackie</strong> 14-02-2017</p>
+
+<p>Из четырех семечек клубники проклюнулось 3 и то, после холодильника, потом на холодное окно и о чудо <em>crazy</em>. У одной появился настоящий листок. Кормлю шприцом (фертика 1г/л). Вопрос: дать растению че нить типа корневина или какой нибудь стимулятор корневой? Естессно не сейчас, после 3 листа</p>
+
+<p><strong>siv237</strong> 14-02-2017</p>
+
+<blockquote>
+  <p>Из четырех семечек клубники проклюнулось 3 и то, после холодильника, потом на холодное окно и о чудо <em>crazy</em>. У одной появился настоящий листок. Кормлю шприцом (фертика 1г/л). Вопрос: дать растению че нить типа корневина или какой нибудь стимулятор корневой? Естессно не сейчас, после 3 листа</p>
+</blockquote>
+
+<p>Из кормежки в такой стадии главное свет и еще раз свет и желательно круглосуточный. Поддерживать субстрат в слегка влажном состоянии просто водой. Раствора который капнули туда изначально этим растюшкам хватит на первые пару месяцев :)</p>
+
+<p>Будете лить раствором просто просолите субстрат. Они еще ничего не едят и почти 100% влаги просто испаряется, в отличии от солей. Они не испаряются в основном.</p>
+
+<p><strong>Jackie</strong> 14-02-2017</p>
+
+<p>Из под пленки их можно достать или пусть еще стоят?</p>
+
+<p><strong>siv237</strong> 14-02-2017</p>
+
+<blockquote>
+  <p>Из под пленки их можно достать или пусть еще стоят?</p>
+</blockquote>
+
+<p>Нужны фотки, что-бы понять как у вас сделано.</p>
+
+<p><strong>Jackie</strong> 14-02-2017</p>
+
+<p>Камера сломана <em>???</em> представьте контейнер пластиковый одноразовый, в нем 4 таблетки торфяные. Сегодня пересадил в горшки на кокос, заправленный раствором. Кормежку планирую делать с помощью лейки по методу Цикламе..(боюсь не правильно сказать). В горшке горшок проливаю кокос, дренаж на домашние растения уходит. Вопрос мой - стоит пересаЖденную клубнику пленкой накрыть, чтобы влажность была больше или пусть привыкают <em>crazy</em></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Первые шаги в домашней гидропонике: строим growbox. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Первые шаги в домашней гидропонике: строим growbox.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Первые шаги в домашней гидропонике: строим growbox.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>kossmos</strong> 12-03-2010</p>
+
+<p>Всем доброго вечера. С сегодняшнего дня начинаю вещать я о своём опыте, своих пробах и ошибках.</p>
+
+<p>Месяца 2-3 курил я весь гидропонный рунет и готов, наконец-то, выложить небольшой репорт о том, что готово на сегодняшний день.</p>
+
+<p>Решено было строить систему NFT на 21 посадочное место. Выращивать планируется в основном салат, но так же хочу экспериментировать с овощами и ягодами. Не знаю как оно пойдёт, но попробовать хочу многое.</p>
+
+<p>Сегодня готов каркас и подвешены 3 из 5-ти ЛЛ фирмы Osram. Был успешно произведён первый тестовый запуск света. Уже закуплены короба. В процессе остаётся решение о покрытии для бокса. Ну и конечно куча всяких мелочей.</p>
+
+<p>p.s. и в придачу фото моего верного помощника, который так и не дождался первый тестовый запуск света :)</p>
+
+<p>Первые фото:</p>
+
+<p><a href="https://t.me/ponics_ru_files/3558" target="_blank"><img src="/attachimages/1507_P1000001.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3559" target="_blank"><img src="/attachimages/1509_P1000002.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3560" target="_blank"><img src="/attachimages/1511_P1000003.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3561" target="_blank"><img src="/attachimages/1513_P1000004.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3562" target="_blank"><img src="/attachimages/1515_P1000005.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 12-03-2010</p>
+
+<p>:D Помощник блин дает.</p>
+
+<p>Ну что же, с началом вас, ждем. Пока все хорошо, и свет, и каркас.</p>
+
+<p><strong>ГидроПончик</strong> 13-03-2010</p>
+
+<p>Kossmos, привет! Всё класс! С почином! Особый привет помошнику!</p>
+
+<p><strong>kossmos</strong> 13-03-2010</p>
+
+<p>Благодарю за приём :)</p>
+
+<p>продолжаем…</p>
+
+<p>Сегодня сверлил отверстия под салатные стаканчики, короб использую размером 100х60 со съёмной верхней частью. Так же был куплен пенофол для изоляции. До самого последнего момента решал чем крыть бокс: пенофолом или красить матовой белой. Вопрос решился с финансовой стороны: пенофол оказался дешевле, всего 50 р за погонный метр. Хотя не исключаю возможность покраски в будущем пенофола именно белой матовой (надо на досуге попробовать возможность этого). Пенофолом упаковал всё по периметру, кроме передней части и над лампами.</p>
+
+<p>Ещё докуплены остальные лампы, эпра и прочая электроника, и всё подключено. Светом, честно говоря, более чем доволен: лампы с температурой 6400k дают очень яркие и живые краски. Мой помощник то и делал, что отдыхал под лампами на “грядке” (может белые котята растут от такого света? :-).</p>
+
+<p><a href="https://t.me/ponics_ru_files/3563" target="_blank"><img src="/attachimages/1548_P1000006.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3564" target="_blank"><img src="/attachimages/1550_P1000007.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3565" target="_blank"><img src="/attachimages/1552_P1000008.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3566" target="_blank"><img src="/attachimages/1554_P1000009.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 13-03-2010</p>
+
+<p>Все отлично! 8) Только смущает вот что, как будешь регулировать высоту светильников, подозреваю, что передвигая цепь? У самого такая система, намучился. Скажу тебе не очень удобная хрень.</p>
+
+<p><strong>kossmos</strong> 13-03-2010</p>
+
+<p>В принципе… не передвигая цепь, а цепляя крючок за следующее звено. На данный момент, думаю, это самый простой вариант. Двигать надо не каждый день, да и всего на звено-два, не запарюсь :)</p>
+
+<p><strong>valery</strong> 13-03-2010</p>
+
+<p>Даже если не каждый день перецеплять - не очень здорово.</p>
+
+<p>У меня тоже похожий “подвес” на цепях, крючками перецепляю.</p>
+
+<p>Делаю это ну очень редко, и все равно - раздражает, неудобно. Нужно искать что-то более “удобное”.</p>
+
+<p>Есть специальные катушки-подвесы для светильников - потянул вниз - опустились, приподнял вверх - поднялись.</p>
+
+<p>Если ничего не путаю в блоге у Батата есть похожие катушки. А может быть и ошибаюсь.</p>
+
+<p>Точно есть в интернет магазине на европейском сайте гидропоникс.eu. Стоят то ли 5 долларов, то ли 5 евро.</p>
+
+<p><strong>Batat</strong> 14-03-2010</p>
+
+<p>Всем привет!</p>
+
+<p>Поздравляю kossmos с почином!</p>
+
+<p>При всем уважении к мнению Константина и Валерия, считаю что на этом этапе заморачиваться с подвесом не стоит.</p>
+
+<p>На установке предусмотрено регулирование светильников по высоте с помощью цепей - отлично!</p>
+
+<p>Может для kossmos это не будет вызывать неудобств и не станет проблемой.</p>
+
+<p>Из опыта знаю, что попытка создать изначально “совершенную вещь”, может завести в дебри изобретательства, отнять время и средства. Самое главное побыстрее закончить монтаж, начать выращивать растения и получить результат.</p>
+
+<p>Основная цель - УРОЖАЙ, способы и инструменты - неважны или второстепенны!</p>
+
+<p>А улучшать-совершенствовать можно и нужно будет в процессе.</p>
+
+<p>Только эксплуатация покажет что ВАЖНО, а что НЕТ, причем для всех нас, оказывается, это разные понятия…</p>
+
+<p>Всем всего доброго!</p>
+
+<p>С уважением, Batat</p>
+
+<p><strong>kossmos</strong> 14-03-2010</p>
+
+<p>Вот я тоже придерживаюсь мнения, что на данном этапе для меня это не очень критично. Могу и позаморачиваться месяц другой, если это и так. Главное собрать побыстрей и запустить.</p>
+
+<p>С чем я пока что не определился , так это какие ёмкости для раствора использовать, какого объёма и где их взять.</p>
+
+<p><strong>Mole_Garden</strong> 14-03-2010</p>
+
+<p>:D Дык никто же не говорит, что это кака. Просто сказал, что крайне не удобная штука, но жить с ней бесспорно можно. У меня цепь вызывала раздражение из-за того, что почти каждый день приходилось фоткать и соответственно поднимать.</p>
+
+<p>Я для 10 салатов использовал емкость на 12-15 литров, заливал туда литров 10 раствора, хватало без долива почти на две недели. При активном росте доливал воды раз в неделю и то по чуток. Емкость из под краски на водной основе. Перед применением хорошо промыл и выдержал в чистой воде пару дней.</p>
+
+<p><strong>valery</strong> 14-03-2010</p>
+
+<blockquote>
+  <p>Только эксплуатация покажет что ВАЖНО, а что НЕТ, причем для всех нас, оказывается, это разные понятия…</p>
+</blockquote>
+
+<p>Да в общем, да.</p>
+
+<p>Так просто сказал, вдруг человеку будет интересно. А подвесы эти и сам все собираюсь, собираюсь купить …</p>
+
+<p>Да так и не покупаю.</p>
+
+<p>Если нужна - вот ссылка, можно посмотреть. Там и по СО2 есть неплохие приблудки <a href="http://www.hydroponics.eu/" target="_blank">http://www.hydroponics.eu/</a></p>
+
+<p><strong>kossmos</strong> 14-03-2010</p>
+
+<p>Выходит по 1 литру на 10 дней на одно растение. Сегодня попаду в ашан, посмотрю что там имеется.</p>
+
+<p>2valery</p>
+
+<p>вот благодарен за ссылку, аж глаза разбегаются от их ассортимента…</p>
+
+<p><strong>Batat</strong> 14-03-2010</p>
+
+<blockquote>
+  <p>Так просто сказал, вдруг человеку будет интересно.</p>
+</blockquote>
+
+<p>Совершенно верно. И не только интересно, но и полезно.</p>
+
+<p>Вы высказали свое мнение (спасибо, что вспомнили мои подвесы светильников), я высказал свое, для этого мы все здесь и собрались.</p>
+
+<p>Нужно как можно больше советовать друг-другу и чем больше будет мнений, советов и информации, тем лучше.</p>
+
+<p>Всеравно каждый сделает по-своему, ну и дай бог!</p>
+
+<p>А иначе все у всех было бы одинаковым и растили бы одно и тоже…</p>
+
+<p><strong>kossmos</strong> 14-03-2010</p>
+
+<p>Прикупили, значит, сегодня два бака для раствора. Нашли в ашане контейнеры для складывания разных безделушек, ёмкость порядка 25-30 л. Так же закупились семенами, в основном салатов. Наверно всего по одному взяли :) И ещё минеральное удобрение (фото выложу попозже), планирую первое время раствор делать из него. Посмотрим что выйдет.</p>
+
+<p>Осталась одна вещь не купленной - помпа. В окрестных зоомагазинах подобных вещей нет, только импортные фильтры.</p>
+
+<p><strong>Mole_Garden</strong> 14-03-2010</p>
+
+<p>Емкость случаем не прозрачная?</p>
+
+<p><strong>kossmos</strong> 14-03-2010</p>
+
+<p>Нет :) в ашане ещё много разных саженцев: смородина, крыжовник, виноград, даже черника привитая на каком-то кусте. Меня это очень заинтересовало…</p>
+
+<p><a href="https://t.me/ponics_ru_files/3567" target="_blank"><img src="/attachimages/1577_P1000010.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3568" target="_blank"><img src="/attachimages/1579_P1000011.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3569" target="_blank"><img src="/attachimages/1581_P1000012.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3570" target="_blank"><img src="/attachimages/1583_P1000013.png" alt="" /></a></p>
+
+<p><strong>травка</strong> 15-03-2010</p>
+
+<blockquote>
+  <p>Нет :) в ашане ещё много разных саженцев: смородина, крыжовник, виноград, даже черника привитая на каком-то кусте. Меня это очень заинтересовало…</p>
+</blockquote>
+
+<p>по сколько удобрений юзать будешь?</p>
+
+<p>витаминку В1 купи еще</p>
+
+<p><strong>kossmos</strong> 15-03-2010</p>
+
+<blockquote>
+  <p>по сколько удобрений юзать будешь?</p>
+
+  <p>витаминку В1 купи еще</p>
+</blockquote>
+
+<p>пока как на упаковке написано… надо же с чего-то начать ))</p>
+
+<p>B1 это зачем?</p>
+
+<p><strong>травка</strong> 15-03-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>по сколько удобрений юзать будешь?</p>
+
+    <p>витаминку В1 купи еще</p>
+  </blockquote>
+
+  <p>пока как на упаковке написано… надо же с чего-то начать ))</p>
+
+  <p>B1 это зачем?</p>
+</blockquote>
+
+<p>витамин это .1 ампулу на 10 литров раствора.</p>
+
+<p>а что на этикетке написано?сколько лить?</p>
+
+<p><strong>kossmos</strong> 15-03-2010</p>
+
+<p>Где-то 25 мл на 2 л воды.</p>
+
+<p>Сегодня спать, завтра напишу подробней.</p>
+
+<p><strong>Mole_Garden</strong> 15-03-2010</p>
+
+<blockquote>
+  <p>Где-то 25 мл на 2 л воды.</p>
+
+  <p>Сегодня спать, завтра напишу подробней.</p>
+</blockquote>
+
+<p>Написано скорей всего все же для использования на земле, а для гидропоники лучше рассчитать.</p>
+
+<p><strong>kossmos</strong> 16-03-2010</p>
+
+<blockquote>
+  <p>Написано скорей всего все же для использования на земле, а для гидропоники лучше рассчитать.</p>
+</blockquote>
+
+<p>Вот спасибо! Я как-то не подумал про это. Вечером посчитаю.</p>
+
+<p><strong>травка</strong> 16-03-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>Написано скорей всего все же для использования на земле, а для гидропоники лучше рассчитать.</p>
+  </blockquote>
+
+  <p>Вот спасибо! Я как-то не подумал про это. Вечером посчитаю.</p>
+</blockquote>
+
+<p>посчитай и не забудь ,что со 100%раствора начинать нельзя .потихоньку подымать концинтрацию раствора надо.</p>
+
+<p><strong>kossmos</strong> 17-03-2010</p>
+
+<p>Нужна помощь по раствору. Вот есть рецепт раствора для салата:</p>
+
+<p>N	200 ppm</p>
+
+<p>P	80 ppm</p>
+
+<p>K	200 ppm</p>
+
+<p>Ca	200 ppm</p>
+
+<p>Mg	50 ppm</p>
+
+<p>А на минеральных удобрениях, что я прикупил, написано:</p>
+
+<p>N	7%</p>
+
+<p>P	3%</p>
+
+<p>K	9%</p>
+
+<p>Ca	нет</p>
+
+<p>Mg	нет</p>
+
+<p>Путём перевода из процентов, получаем данное содержание в одном флаконе, т.е. 250 мл:</p>
+
+<p>N	17,5 мл</p>
+
+<p>P	7,5 мл</p>
+
+<p>K	22,5 мл</p>
+
+<p>Так?</p>
+
+<p>И ещё нужно добавлять кальций и магний?</p>
+
+<p><strong>Mole_Garden</strong> 17-03-2010</p>
+
+<blockquote>
+  <p>А на минеральных удобрениях, что я прикупил, написано:</p>
+
+  <p>N	7%</p>
+
+  <p>P	3%</p>
+
+  <p>K	9%</p>
+
+  <p>Ca	нет</p>
+
+  <p>Mg	нет</p>
+
+  <p>Так?</p>
+</blockquote>
+
+<p>Ну почему же вы смотрите на флакон и видя, что написано одно, пишите в итоге совсем другое?</p>
+
+<p>Ну на фотографии же четко видно, что написано не P, а P2O5 - это же оксид и пересчет в чистые элементы будет другой!!!</p>
+
+<p>Тоже самое с калием!</p>
+
+<p>Если будет выращивать на водопроводной воде, то кальций может и не понадобиться, если будете менять раствор каждую неделю, если менять так часто не планируете, то придется добавлять кальций удобрениями. А магний добавьте обязательно.</p>
+
+<p><strong>kossmos</strong> 17-03-2010</p>
+
+<p>Пишу так, потому что думал, что это незначительно.</p>
+
+<p>Так так, картинка начинает складываться. Я тут ещё статейки напечатал, читаю, просвещаюсь.</p>
+
+<p><strong>Mole_Garden</strong> 17-03-2010</p>
+
+<blockquote>
+  <p>Пишу так, потому что думал, что это незначительно.</p>
+
+  <p>Так так, картинка начинает складываться. Я тут ещё статейки напечатал, читаю, просвещаюсь.</p>
+</blockquote>
+
+<p>Читаем здесь <a href="http://forum.ponics.ru/index.php/topic,430.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,430.0.html</a></p>
+
+<p>Ответ на ваш вопрос под номером 2</p>
+
+<p><strong>kossmos</strong> 21-03-2010</p>
+
+<p>2Mole_Garden</p>
+
+<p>Благодарен за ссылку. Она мне очень помогла.</p>
+
+<p>На сегодняшнее утро с удобрениями и растворами разобрался. Ищу пару вещей на перспективу, первую же партию буду высаживать в том, что имею. Поставил вчера отстаиваться воду, в мой бак в аккурат входит 25 л. Вчера же была приобретена помпа, самая минимальная, которую часть тут называют - Unistar.</p>
+
+<p>Growbox практически готов, за исключением пару косметических деталей, которые возможно доделать уже в работающей системе. Сейчас только подключаю все трубочки, проращиваю семена, готовлю раствор и… в путь!</p>
+
+<p>Прикупил я так же ph-тест. Замер водопроводной воды показал - 8. В планах на следующей неделе сделать анализ воды на содержание в ней кальция, магния и железа.</p>
+
+<p>Несколько фото:</p>
+
+<p>1 фото - семена тархуна, мои первые жители.</p>
+
+<p>2 фото - так выглядит работающий бокс (отверстие слева будет заделано позже, справа же виден бак для раствора на 25 л)</p>
+
+<p><a href="https://t.me/ponics_ru_files/3571" target="_blank"><img src="/attachimages/1626_P1000014.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3572" target="_blank"><img src="/attachimages/1628_P1000015.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3573" target="_blank"><img src="/attachimages/1630_P1000016.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 21-03-2010</p>
+
+<p>8)</p>
+
+<p><strong>glider</strong> 21-03-2010</p>
+
+<p>Выглядит супер! 8) Тоже хочу себе попробовать собрать такой же для клубники.</p>
+
+<p><strong>kossmos</strong> 21-03-2010</p>
+
+<p>И я клубнику планирую там растить, ну если найду рассаду где :)</p>
+
+<p>У меня box почти герметичный выходит, надо туда обязательно термогигрометр установить.</p>
+
+<p><strong>kossmos</strong> 21-03-2010</p>
+
+<p>Где купить Флорист Микро? Если вдруг кто знает. Его даже в интернете не могу найти.</p>
+
+<p><strong>Mole_Garden</strong> 21-03-2010</p>
+
+<blockquote>
+  <p>Где купить Флорист Микро? Если вдруг кто знает. Его даже в интернете не могу найти.</p>
+</blockquote>
+
+<p>:D А почему именно флорист? Можно любое удобрение микро, у меня был pokon regenerator сейчас унифлор, думаю и других полно.</p>
+
+<p><strong>kossmos</strong> 21-03-2010</p>
+
+<blockquote>
+  <p>:D А почему именно флорист? Можно любое удобрение микро, у меня был pokon regenerator сейчас унифлор, думаю и других полно.</p>
+</blockquote>
+
+<p>Это единственное что мне известно такого рода. Теперь расширю свои поиски.</p>
+
+<p><strong>valery</strong> 21-03-2010</p>
+
+<p>Тоже долгое время, пока не “собрал” все прочие микроэлементы, пользовался “Поконом” - он даже во многих “цветочных” магазинах продается.</p>
+
+<p>Вполне нормально растения себя чувствовали.</p>
+
+<p><strong>kossmos</strong> 22-03-2010</p>
+
+<p>Вчера утром замочил первую пробную партию семян. Вышло 8 сортов салата и 2 сорта петрушки. Всё было куплено в ашане. К нашему привеликому удивлению на сегодняшнее утро 3 салата дали ростки. Удивлён столь стремительным ростом, надо в срочном порядке заканчивать box и запускать.</p>
+
+<p><strong>Mole_Garden</strong> 22-03-2010</p>
+
+<blockquote>
+  <p>Вчера утром замочил первую пробную партию семян. Вышло 8 сортов салата и 2 сорта петрушки. Всё было куплено в ашане. К нашему привеликому удивлению на сегодняшнее утро 3 салата дали ростки. Удивлён столь стремительным ростом, надо в срочном порядке заканчивать box и запускать.</p>
+</blockquote>
+
+<p>Ага, есть такое, салат уже через 12 часов порой проклевывается.</p>
+
+<p><strong>kossmos</strong> 30-03-2010</p>
+
+<p>Антивирус и Google ругаются на форум, говорят тут троян Exploit.JS.Agent.azh</p>
+
+<p><strong>kossmos</strong> 30-03-2010</p>
+
+<p>Странно работает, но немного работает. Попробую немного пописать.</p>
+
+<p>Все салаты были пересажены в стаканчики, но поливаются пока вручную просто водой. Большинство дали уже по первому листу. В качестве субстрата были выбраны, найденные в OBI, торфяные таблетки и присыпанные мелким керамзитом, предварительно отмоченным в воде.</p>
+
+<p>Обнаружилась одна большая проблема. При включенных лампах, температура внутри достигает 28 градусов. Растишки в принципе растут, но чем чревата столь высокая температура?</p>
+
+<p>p.s. 3-я фотография - 5 день с момента замачивания, 4-я и 5-я фотографии - 9 дней с момента замачивания.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3574" target="_blank"><img src="/attachimages/1704_P1000017.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3575" target="_blank"><img src="/attachimages/1706_P1000018.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3576" target="_blank"><img src="/attachimages/1708_P1000019.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3577" target="_blank"><img src="/attachimages/1710_P1000020.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3578" target="_blank"><img src="/attachimages/1712_P1000021.png" alt="" /></a></p>
+
+<p><strong>kossmos</strong> 30-03-2010</p>
+
+<p>Работает только быстрый ответ, ни изменить сообщение ни создать с добавлением фото не могу.</p>
+
+<p><strong>valery</strong> 30-03-2010</p>
+
+<p>Температура - нехорошая.</p>
+
+<p>Вообще для салатов выше 20 лучше бы не держать. А на искусственном свете - тем более.</p>
+
+<p>Чем хуже освещение - тем опасней высокая температура. Если сильно упрощая - должно быть некоторое соответствие температура/свет, как летом - 24-25 градусов - солнечный летний день, пасмурно - 19-20.</p>
+
+<p>Если где-то видите рекомендации по “высоким” температурам - смело “крутите” и “крутите” их вниз - рекомендации типа 26 градусов (к примеру) рассчитаны либо на открытый грунт летом (море солнца), либо на “нормальные” теплицы - тоже много света.</p>
+
+<p>В “домашних” условиях такой хороший свет - крайняя “редкость”.</p>
+
+<p>Чем чревато ? - Крайним “дисбалансом”, примерно как в машине если одновременно изо всех сил жать на газ и на тормоз. Может и доедете, но скорей всего чего-нибудь “сломается”.</p>
+
+<p><strong>Mole_Garden</strong> 30-03-2010</p>
+
+<blockquote>
+  <p>Антивирус и Google ругаются на форум, говорят тут троян Exploit.JS.Agent.azh</p>
+</blockquote>
+
+<p>Уже порешали эту бяку! Откуда они только берутся?</p>
+
+<p><strong>kossmos</strong> 30-03-2010</p>
+
+<p>valery, ну один выход - переносить, пока не поздно, всю систему на балкон. Делать активную вентиляцию пока нет желания.</p>
+
+<p><strong>Mole_Garden</strong> 30-03-2010</p>
+
+<p>Полностью согласен с Валерием. Ко всему прочему, очень сильно вытянется. Надо вентиляцию, уж слишком бокс у вас герметичный.</p>
+
+<p><strong>kossmos</strong> 30-03-2010</p>
+
+<blockquote>
+  <p>Полностью согласен с Валерием. Ко всему прочему, очень сильно вытянется. Надо вентиляцию, уж слишком бокс у вас герметичный.</p>
+</blockquote>
+
+<p>Это всё пенофол. Предполагал что будет лето, но чтоб такое!</p>
+
+<p><strong>valery</strong> 30-03-2010</p>
+
+<p>:D :D :D</p>
+
+<p>Все правильно. У нас в стране - зима, как всегда “внезапно”.</p>
+
+<p>А мы, как “суровые гидропонщики”, должны привыкать к “внезапному лету” …</p>
+
+<p>:D :D :D</p>
+
+<p><strong>kossmos</strong> 30-03-2010</p>
+
+<p>А перемещу-ка я установку на балкон. На выходных займусь.</p>
+
+<p><strong>Mole_Garden</strong> 30-03-2010</p>
+
+<blockquote>
+  <p>А перемещу-ка я установку на балкон. На выходных займусь.</p>
+</blockquote>
+
+<p>Не забудьте, что ночью все еще прохладно.</p>
+
+<p><strong>kossmos</strong> 30-03-2010</p>
+
+<blockquote>
+  <p>Не забудьте, что ночью все еще прохладно.</p>
+</blockquote>
+
+<p>А у меня день с ночью поменян местами (в целях экономии). Ночью будет светить свет и подогревать заодно :)</p>
+
+<p><strong>Zoldaten</strong> 06-04-2010</p>
+
+<blockquote>
+  <p>Всем привет!</p>
+
+  <p>Поздравляю kossmos с почином!</p>
+
+  <p>При всем уважении к мнению Константина и Валерия, считаю что на этом этапе заморачиваться с подвесом не стоит.</p>
+
+  <p>На установке предусмотрено регулирование светильников по высоте с помощью цепей - отлично!</p>
+
+  <p>Может для kossmos это не будет вызывать неудобств и не станет проблемой.</p>
+
+  <p>Из опыта знаю, что попытка создать изначально “совершенную вещь”, может завести в дебри изобретательства, отнять время и средства. Самое главное побыстрее закончить монтаж, начать выращивать растения и получить результат.</p>
+
+  <p>Основная цель - УРОЖАЙ, способы и инструменты - неважны или второстепенны!</p>
+
+  <p>А улучшать-совершенствовать можно и нужно будет в процессе.</p>
+
+  <p>Только эксплуатация покажет что ВАЖНО, а что НЕТ, причем для всех нас, оказывается, это разные понятия…</p>
+
+  <p>Всем всего доброго!</p>
+
+  <p>С уважением, Batat</p>
+</blockquote>
+
+<p>Доброго дня, всем. :)</p>
+
+<p>С подвесом просто - придумал не я, но могу изложить - электрический стеклоподъёмник от отечественных автомобилей, как отдельный узел мне очень понравился.</p>
+
+<p>Тягает туда сюда тросик, а тот, в свою очередь, через ролик саму лампу. Лампа вывешена за свой центр тяжести. Цена устройства невелика.</p>
+
+<p>Я не изготавливал, но красоту процесса постройки из фоторепортажа видел. Сначала ручное управление от кнопки (в комплекте), а потом можно зацепить к BM8036 как исполнительный механизм.</p>
+
+<p><strong>kossmos</strong> 09-04-2010</p>
+
+<blockquote>
+  <p>Доброго дня, всем. :)</p>
+
+  <p>С подвесом просто - придумал не я, но могу изложить - электрический стеклоподъёмник от отечественных автомобилей, как отдельный узел мне очень понравился.</p>
+
+  <p>Тягает туда сюда тросик, а тот, в свою очередь, через ролик саму лампу. Лампа вывешена за свой центр тяжести. Цена устройства невелика.</p>
+
+  <p>Я не изготавливал, но красоту процесса постройки из фоторепортажа видел. Сначала ручное управление от кнопки (в комплекте), а потом можно зацепить к BM8036 как исполнительный механизм.</p>
+</blockquote>
+
+<p>Всё это, конечно, здорово, но пока не актуально :) хотя некоторое неудобство при пользовании цепью использую.</p>
+
+<p><strong>kossmos</strong> 09-04-2010</p>
+
+<p>Так вот продолжаю.</p>
+
+<p>06 апреля посадил малышей на гидропонику. Замешал 25 л раствора, добавил туда etisso green + садовик (из ашана) + pokon регенератор для листьев. Пропорции соблюдены под строжайшим моим же контролем. PH 8.0. Температура 28-29 С. Кстати, уже куплены вентиляторы в количестве 2-х штук , сегодня покупаю блок питания и буду мастерить вентиляцию.</p>
+
+<p>На вечер 08 апреля PH 7.5/ Были утечки в системе, поэтому сказать точно сколько выпили растишки сложно.</p>
+
+<p>А ещё имею пренеприятнейший звук в виде булькающего раствора. Думаю как модернизировать установку.</p>
+
+<p>Пока всё.</p>
+
+<p>первые три фотографии - переезд на гидропонику, последние две фото - 2 дня на гидропонике (08-04)</p>
+
+<p><a href="https://t.me/ponics_ru_files/3579" target="_blank"><img src="/attachimages/1759_P1000022.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3580" target="_blank"><img src="/attachimages/1761_P1000023.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3581" target="_blank"><img src="/attachimages/1763_P1000024.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3582" target="_blank"><img src="/attachimages/1765_P1000025.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3583" target="_blank"><img src="/attachimages/1767_P1000026.png" alt="" /></a></p>
+
+<p><strong>Tony_85</strong> 09-04-2010</p>
+
+<p>Для салата слишком высокий PH. Снизьте хотя бы до 6.5, а лучше и к 6.0. От таких температур салат может вытянутся.</p>
+
+<p>А в общем очень хорошо выглядит. 8)</p>
+
+<p><strong>kossmos</strong> 10-04-2010</p>
+
+<blockquote>
+  <p>Для салата слишком высокий PH. Снизьте хотя бы до 6.5, а лучше и к 6.0. От таких температур салат может вытянутся.</p>
+
+  <p>А в общем очень хорошо выглядит. 8)</p>
+</blockquote>
+
+<p>Серьёзно? Я смотрел по таблице усвояемости веществ и ph в районе 8-8.5 показался мне самым оптимальным.</p>
+
+<p>В таком случае как снизить ph, не прибегая к магазинным химикатам?</p>
+
+<p>Кстати, вчера вечером установил два вентилятора размером 120 х 120 мм, по направлению вдоль каждого короба. Температура упала до 25 градусов.</p>
+
+<p><strong>Mole_Garden</strong> 10-04-2010</p>
+
+<blockquote>
+  <p>Серьёзно? Я смотрел по таблице усвояемости веществ и ph в районе 8-8.5 показался мне самым оптимальным.</p>
+
+  <p>В таком случае как снизить ph, не прибегая к магазинным химикатам?</p>
+</blockquote>
+
+<p>Где же ты нашел такую табличку? У нас вроде такой нет, у нас вроде правильная <a href="http://www.ponics.ru/2009/03/ph_tds/" target="_blank">http://www.ponics.ru/2009/03/ph_tds/</a></p>
+
+<p>pH можно снизить банальным электролитом из магазина авто запчастей. Подкислять раствор по каплям, потихоньку и почуток.</p>
+
+<blockquote>
+  <p>Кстати, вчера вечером установил два вентилятора размером 120 х 120 мм, по направлению вдоль каждого короба. Температура упала до 25 градусов.</p>
+</blockquote>
+
+<p>Думаю меньше уже и не получиться сделать, если стоит дома. Плохо, а что делать, разве что дышать активней, для получения СО2 :D</p>
+
+<p>Кстати, а что у тебя бурлит то? У тебя же NFT В такой системе можно обойтись вообще без компрессора, хватит одной помпы.</p>
+
+<p><strong>kossmos</strong> 10-04-2010</p>
+
+<p>Про эту таблицу и говорил. Только я ошибся. Посмотрел в таблицу ещё раз.</p>
+
+<p>Компрессора нет. Бурлит раствор в трубке, где он делится на два короба. Можно регулировать, чтобы не было звука, тогда один короб переполняется. (на фото отметил источник звука)</p>
+
+<p>Кстати думаю сделать установку для CO2 )))</p>
+
+<p><a href="https://t.me/ponics_ru_files/3584" target="_blank"><img src="/attachimages/1769_P1000025a.png" alt="" /></a></p>
+
+<p><strong>kossmos</strong> 10-04-2010</p>
+
+<p>Я вот тут смотрю, что ph можно понизить лимонной кислотой. Или электролит предпочтительней?</p>
+
+<p><strong>valery</strong> 10-04-2010</p>
+
+<p>В действительности - предпочтительней азотной или ортофосфорной кислотой. Или и той и другой вместе.</p>
+
+<p>Немного хуже (излишки серы появляются) - серной, в том числе и в виде электролита.</p>
+
+<p>Если не очень “химией” заморачиваетесь - то на первое время это один из наиболее доступных и простых способов.</p>
+
+<p>В крайнем случае (если ничего нет под рукой) - можно и лимонной. Но при неаккуратном и безграмотном “подкислении” лимонной кислотой</p>
+
+<p>можете испортить раствор. То есть это - не самый “предпочтительный” способ.</p>
+
+<p>Да и автомагазины, сейчас, кажется повсеместно имеются. Ну или гаражи или знакомые водители.</p>
+
+<p>То есть в самом электролите - ничего особо “вредного” или “грязного” - нет. Обычная серная кислота, разбавленная (у нормальных производителей) дистиллированной водой …</p>
+
+<p><strong>Mole_Garden</strong> 10-04-2010</p>
+
+<blockquote>
+  <p>Компрессора нет. Бурлит раствор в трубке, где он делится на два короба. Можно регулировать, чтобы не было звука, тогда один короб переполняется. (на фото отметил источник звука)</p>
+</blockquote>
+
+<p>А помпа работает на полную? И почему переполняется один короб? Отверстия для слива разные?</p>
+
+<p><strong>Tony_85</strong> 10-04-2010</p>
+
+<blockquote>
+  <p>В действительности - предпочтительней азотной или ортофосфорной кислотой. Или и той и другой вместе.</p>
+</blockquote>
+
+<p>Ортофосфорную кислоту можно купить в аптеках где делают сами лекарства на заказ. На Ваши объемы бутылочки на 100 мл надолго хватит.</p>
+
+<p><strong>kossmos</strong> 10-04-2010</p>
+
+<blockquote>
+  <p>А помпа работает на полную? И почему переполняется один короб? Отверстия для слива разные?</p>
+</blockquote>
+
+<p>Помпа работает на минимальную мощность. Отверстия для слива одинаковые. Раствор из помпы выходит в 12 мм трубку. Делится раствор тройником, на выходах которых так же 12 мм трубки. Ясно что весь объём трубки раствор заполнить не может, отсюда и звук. Было бы логичным на выходе из тройника взять 6 мм трубку, но нигде не смог найти нужный тройник.</p>
+
+<p><strong>Mole_Garden</strong> 10-04-2010</p>
+
+<p>А если врубить помпу на всю?</p>
+
+<p>И еще как вариант пережать трубку после тройника.</p>
+
+<p><strong>kossmos</strong> 10-04-2010</p>
+
+<p>Нашёл данную кислоту в магазине Чип и Дип, вспомнил что её применяют в качестве флюса при пайке. Но ещё спрошу в близлежащих аптеках.</p>
+
+<p>Спасибо всем за информацию.</p>
+
+<p>Кстати, 03-04 посадил в торфяные таблетки 3 сорта земляники и 1 сорт клубники. Сегодня утром одна семечка земляники дала росток. Не исключено, что через пол года на моей гидропонике останется одна клубника и земляника.</p>
+
+<p>В OBI продаёются саженцы клюква. Может попробовать… :)</p>
+
+<p><strong>kossmos</strong> 10-04-2010</p>
+
+<blockquote>
+  <p>А если врубить помпу на всю?</p>
+
+  <p>И еще как вариант пережать трубку после тройника.</p>
+</blockquote>
+
+<p>Попробую вечером и то и другое.</p>
+
+<p><strong>Mole_Garden</strong> 10-04-2010</p>
+
+<blockquote>
+  <p>Не исключено, что через пол года на моей гидропонике останется одна клубника и земляника.</p>
+
+  <p>В OBI продаёются саженцы клюква. Может попробовать… :)</p>
+</blockquote>
+
+<p>Опылять не устанешь с кисточкой и издавая звук ж-ж-ж-ж</p>
+
+<p>С кислотой из чип и дипа по осторожней, смотри, что бы была без добавок.</p>
+
+<p>Повыращивай пока что нибудь одно! :D Торопыга.</p>
+
+<p><strong>kossmos</strong> 10-04-2010</p>
+
+<p>Ну да. Забыл что их опылять надо )</p>
+
+<p>Такой вопрос: корешки, которые только появляются из стаканчика (до раствора они ещё не достают), кончики свои имеют коричневыми, как будто сохнут. Отчего это?</p>
+
+<p>Сам предполагаю одну из двух причин, или же они обе: повышенный ph и сильная концентрация раствора для малышей. Завтра буду окислять раствор и заодно подолью чистой водицы.</p>
+
+<p><strong>Mole_Garden</strong> 10-04-2010</p>
+
+<p>:D возможно так все и есть, а какое расстояние до корней до раствора? И какой он сейчас концентрации?</p>
+
+<p><strong>kossmos</strong> 10-04-2010</p>
+
+<blockquote>
+  <p>:D возможно так все и есть, а какое расстояние до корней до раствора? И какой он сейчас концентрации?</p>
+</blockquote>
+
+<p>Пару см. Корешки не под стаканчиком, а сбоку выбираются. Раствор N 200, P 53, K 211.</p>
+
+<p><strong>Mole_Garden</strong> 10-04-2010</p>
+
+<p>Для салата? Ну сдается мне что чуток передоз для салата, раза в два точно. А то что по бокам, это они сохнут. Надо дожидаться тех что снизу.</p>
+
+<p><strong>kossmos</strong> 10-04-2010</p>
+
+<blockquote>
+  <p>Для салата? Ну сдается мне что чуток передоз для салата, раза в два точно. А то что по бокам, это они сохнут. Надо дожидаться тех что снизу.</p>
+</blockquote>
+
+<p>Передоз исключён.</p>
+
+<p>N: 180 ppm</p>
+
+<p>P: 50 ppm</p>
+
+<p>K: 210 ppm</p>
+
+<p>Ca: 180-200 ppm</p>
+
+<p>Mg: 40-50 ppm</p>
+
+<p>Fe: 3-5 ppm</p>
+
+<p>Mn: 0.5 ppm</p>
+
+<p>Cu: 0.1 ppm</p>
+
+<p>Zn: 0.1 ppm</p>
+
+<p>B: 0.5 ppm</p>
+
+<p>Mo: 0.05 ppm</p>
+
+<p>Рецепт с форума. Плюс похожий находил в другом месте.</p>
+
+<p>В коробе хорошая влажность, на стаканчике всегда влага, плюс субстрат влажный, при условии что его больше не поливаю. Сложно поверить, что они сохнут.</p>
+
+<p><strong>Mole_Garden</strong> 10-04-2010</p>
+
+<p>Вот этот состав подходит больше к листовым <a href="http://forum.ponics.ru/index.php/topic,63.msg1880.html#msg1880" target="_blank">http://forum.ponics.ru/index.php/topic,63.msg1880.html#msg1880</a></p>
+
+<p>А ваш наверно к качаным</p>
+
+<p><strong>kossmos</strong> 10-04-2010</p>
+
+<p>Ужас. Ещё и для разных салатов разный раствор! Ладно. Немного разбавлю раствор и буду наблюдать. В любом случае салат выглядит хорошо, особенно некоторые сорта.</p>
+
+<p><strong>Mole_Garden</strong> 10-04-2010</p>
+
+<p>:D ну да, для качана надо много сил и элементов, для листового столько не надо.</p>
+
+<p><strong>kossmos</strong> 12-04-2010</p>
+
+<p>Вечер добрый. Чуть не потерял некоторых малышей! пришлось срочно переводить из на чистую воду.</p>
+
+<p>Купил таки я электролит. Замешал растишкам полностью новый раствор, с меньшей концентрацией чем прежде (в старом на дне оказался какой-то белый осадок, при размешивании его, раствор становился мутным, не понятно от чего), ph опустил до 5.5.</p>
+
+<p>У малышей день.</p>
+
+<p>Жду утра.</p>
+
+<p>Спокойной ночи.</p>
+
+<p><strong>Mole_Garden</strong> 13-04-2010</p>
+
+<p>А что же случилось с малышами? За что их на чистую воду</p>
+
+<p>Белый осадок это скорей всего известь или кальций, у меня тоже такая штука присутствует в растворе через неделю. 5,5 это нижний предел, вроде уже говорили, что лучше в районе 6 держать.</p>
+
+<p><strong>kossmos</strong> 13-04-2010</p>
+
+<p>Знаю, говорили. Так вышло с первого раза. Повышать на 0.5-1 ph я не рискнул. Очень внимательно слежу на оставшимися малышами.</p>
+
+<p>Вечером выложу фотографию. Кончили листиков погорели и все корешки.</p>
+
+<p><strong>kossmos</strong> 13-04-2010</p>
+
+<p>Кальций из водопроводной тубы? Это очень критично?</p>
+
+<p><strong>Mole_Garden</strong> 13-04-2010</p>
+
+<blockquote>
+  <p>Кальций из водопроводной тубы? Это очень критично?</p>
+</blockquote>
+
+<p>Да думаю не критично. А погорели из-за передоза?</p>
+
+<p><strong>kossmos</strong> 13-04-2010</p>
+
+<blockquote>
+  <p>Да думаю не критично. А погорели из-за передоза?</p>
+</blockquote>
+
+<p>Пока со своим опытом могу только предполагать что из-за большого ph. На втором месте передоз. Или всё вместе.</p>
+
+<p><strong>kossmos</strong> 04-06-2010</p>
+
+<p>Прошу прощения. Ситуация складывается так, что вынуждены переезжать. Будет там интернет или нет, сказать сложно. Все эксперименты вынуждены прекратить на неопределённый срок.</p>
+
+<p>Благодарны за советы и подсказки.</p>
+
+<p><strong>Mole_Garden</strong> 04-06-2010</p>
+
+<blockquote>
+  <p>Прошу прощения. Ситуация складывается так, что вынуждены переезжать. Будет там интернет или нет, сказать сложно. Все эксперименты вынуждены прекратить на неопределённый срок.</p>
+
+  <p>Благодарны за советы и подсказки.</p>
+</blockquote>
+
+<p>Ничего страшного. Ждем продолжения ! Удачи!</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

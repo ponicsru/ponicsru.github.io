@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Редис на светокультуре в вермикулите | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Редис на светокультуре в вермикулите">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Редис на светокультуре в вермикулите</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Likl</strong> 25-02-2019</p>
+
+<p>Все происходило тут http://forum.ponics.ru/index.php?topic=4617.0 <em>crazy</em></p>
+
+<p>Редиска.</p>
+
+<p>Лоток с ручным поливом половником. Субстрат вермикулит с добавлением перлита. Проращивание сразу в субстрате. <em>8)</em></p>
+
+<p>Сорт F1 Диего и Тарзан</p>
+
+<p>Подтопление кассет с редисом производится всегда стандартным раствором (N-140 мг/л, P-40 мг/л, K-280 мг/л, Ca-80 мг/л Mg-45мг/л),</p>
+
+<p>Прогнозный EC: 2.0 mS (1380 ppm)</p>
+
+<p>Прогнозный pH: 6.5</p>
+
+<p>100л – 10л</p>
+
+<p>KH2PO4 (Калия монофосфат) = 17.6 g – 1,76гр.</p>
+
+<p>Ca(NO3)2*4H2O (Кальциевая селитра, нитрат кальция) = 47.1 g – 4,71гр.</p>
+
+<p>KNO3 (Калиевая селитра, нитрат калия) = 59.3 g – 5,93гр.</p>
+
+<p>NH4NO3 (Аммиачная селитра, нитрат аммония) = 0.5 g – 0,05гр.</p>
+
+<p>MgSO4*7H2O (Сульфат магния, магний сернокислый) = 45.6 g – 4,56гр.</p>
+
+<p><strong>Likl</strong> 25-02-2019</p>
+
+<p>Освещение - прожектор ДНАТ 400 с расстояния около метра , освещенность 15 000 Лк. :D</p>
+
+<p>19.02.2018 замачивание редиса.</p>
+
+<p>21.02.2018 посадка в субстрат.</p>
+
+<p>23.02.2018 взошел редис.</p>
+
+<p>25.03.2018 редис съеден. Возраст 30 дней урожайность 2,2 кг/м2 :P</p>
+
+<p><img src="https://i.postimg.cc/FdCC4hRd/11.jpg" alt="" /></p>
+
+<p><img src="https://i.postimg.cc/BLbNNRgq/22.jpg" alt="" /></p>
+
+<p>На вкус редис как редис <em>???</em></p>
+
+<p><strong>Wildcat</strong> 25-02-2019</p>
+
+<blockquote>
+  <p>23.02.2018 взошел редис.</p>
+
+  <p>25.03.2018 редис съеден.</p>
+</blockquote>
+
+<p>Блин! Всю интригу убил. Это как в предисловии сказать, что убийца - садовник..</p>
+
+<p><strong>Likl</strong> 25-02-2019</p>
+
+<p>В то время интрига была, а со временем приутихли эмоции, отчет остался для публикации , сухой как аудиторская отчетность :(</p>
+
+<p><strong>Alexey777</strong> 13-03-2019</p>
+
+<blockquote>
+  <p>Блин! Всю интригу убил.</p>
+</blockquote>
+
+<p>Зато ясна суть выращивания редиса одним постом.</p>
+
+<p>В большинстве отчетов одно и тоже по 10 раз: формула, расчеты люксов-молей-прочая абракадабра+разговоры за жизнь. Читаешь эти 30 стр. и в итоге непонятно как же вырастить..(</p>
+
+<p>Про конкретные граммы на литр обычно умалчивают.</p>
+
+<p><strong>Likl</strong> 13-03-2019</p>
+
+<blockquote>
+  <p>Про конкретные граммы на литр обычно умалчивают.</p>
+</blockquote>
+
+<p>Дак в первом посте все же написано :D</p>
+
+<blockquote>
+  <p>100л – 10л</p>
+
+  <p>KH2PO4 (Калия монофосфат) = 17.6 g – 1,76гр.</p>
+
+  <p>Ca(NO3)2*4H2O (Кальциевая селитра, нитрат кальция) = 47.1 g – 4,71гр.</p>
+
+  <p>KNO3 (Калиевая селитра, нитрат калия) = 59.3 g – 5,93гр.</p>
+
+  <p>NH4NO3 (Аммиачная селитра, нитрат аммония) = 0.5 g – 0,05гр.</p>
+
+  <p>MgSO4*7H2O (Сульфат магния, магний сернокислый) = 45.6 g – 4,56гр.</p>
+</blockquote>
+
+<p>Может так понятнее будет? <em>???</em></p>
+
+<p>100л – 10л</p>
+
+<p>KH2PO4 (Калия монофосфат) = 17.6 g – 1,76гр.</p>
+
+<p>Ca(NO3)2*4H2O (Кальциевая селитра, нитрат кальция) = 47.1 g – 4,71гр.</p>
+
+<p>KNO3 (Калиевая селитра, нитрат калия) = 59.3 g – 5,93гр.</p>
+
+<p>NH4NO3 (Аммиачная селитра, нитрат аммония) = 0.5 g – 0,05гр.</p>
+
+<p>MgSO4*7H2O (Сульфат магния, магний сернокислый) = 45.6 g – 4,56гр.</p>
+
+<p><strong>Wildcat</strong> 13-03-2019</p>
+
+<p>Ладно, кратко так кратко.</p>
+
+<p>Сорта Дуро и Алекс F1.</p>
+
+<p>Кокос, раствор на акварине с селитрой. Полив нерегулярный, из лейки, когда вспомню.</p>
+
+<p>Свет белый, 5000К, 280 вт/м², день/ночь 12/12</p>
+
+<p>От первых всходов до сбора урожая - 23 дня.</p>
+
+<p>Урожайность - 3.7 кг/м²</p>
+
+<p>Редиска очень вкусная.</p>
+
+<p>Максимальный вес Дуро - 44 грамма, Алекс - 37 грамм. Без хвостов и ботвы.</p>
+
+<p>:P</p>
+
+<p><strong>Likl</strong> 13-03-2019</p>
+
+<blockquote>
+  <p>Урожайность - 3.7 кг/м²</p>
+</blockquote>
+
+<p>&gt;:( Обогнал, Редиска (R) &gt;:(</p>
+
+<blockquote>
+  <p>Возраст 30 дней урожайность 2,2 кг/м2</p>
+</blockquote>
+
+<p><strong>Alexey777</strong> 14-03-2019</p>
+
+<blockquote>
+  <p>Может так понятнее будет?</p>
+</blockquote>
+
+<p>Видимо я не верно выразился, в Вашей теме наоборот все понятно сразу, и граммы на литр указаны были у Вас сразу. Я своим предыдущим ответом имел ввиду бОльшую информативность Вашей темы над аналогичными.</p>
+
+<p><strong>Likl</strong> 14-03-2019</p>
+
+<p>Благодарю, приятно слышать. :)</p>
+
+<p>Вот только</p>
+
+<blockquote>
+  <p>бОльшую информативность</p>
+</blockquote>
+
+<p>весьма спорный вопрос. <em>???</em></p>
+
+<p>Это был эксперимент, и результат весьма посредственный, хотя и лучше, чем ранее в горшке с землей пытался вырастить :P</p>
+
+<p>Как пособие по выращиванию редиса не пойдет, только как толчок, что это возможно <em>8)</em></p>
+
+<p><strong>Alexey777</strong> 14-03-2019</p>
+
+<blockquote>
+  <p>Как пособие по выращиванию редиса не пойдет</p>
+</blockquote>
+
+<p>Конечно, не указаны прописные истины про рН, необходимое количество ватт на квадрат и нет споров по выбору сорта редиса..(</p>
+
+<p>И не обсуждались “космические корабли, бороздящие просторы вселенной”!</p>
+
+<p><strong>Wildcat</strong> 14-03-2019</p>
+
+<blockquote>
+  <p>нет споров по выбору сорта редиса.</p>
+</blockquote>
+
+<p>Уже 4 сорта в этой теме выращено. Хотите поговорить об этом? ;)</p>
+
+<blockquote>
+  <p>не указаны прописные истины про рН</p>
+</blockquote>
+
+<p>6</p>
+
+<blockquote>
+  <p>необходимое количество ватт на квадрат</p>
+</blockquote>
+
+<p>&gt; 250</p>
+
+<blockquote>
+  <p>И не обсуждались “космические корабли, бороздящие просторы вселенной”!</p>
+</blockquote>
+
+<p>Вжжжжжух!</p>
+
+<p><strong>Alexey777</strong> 14-03-2019</p>
+
+<p>Уважаемый WildCat! Вы не пожалели целых пары минут на написание не самого информативного поста, при этом игнорируя мой вопрос заданный Вам в ЛС, требующий ответа за 5 секунд..(</p>
+
+<p><strong>Wildcat</strong> 14-03-2019</p>
+
+<p>Здесь я предельно точно и конкретно ответил на конкретные вопросы. Вам мало букв в ответе? Что-то непонятно в значении рН 6?</p>
+
+<p>А в вашем вопросе в личку вы посетовали, что вам влом осваивать калькуляторы, и спросили, не буду ли я так любезен метнуться быро и найти вам профили для лука и петрушки, и переработать рецепты для общедоступных комплексных удобрений, чтобы вам не суетиться понапрасну.</p>
+
+<p>Я до сих пор под впечатлением и думаю, что делать с этим письмом. Видимо, уже ничего…</p>
+
+<p><strong>siv237</strong> 14-03-2019</p>
+
+<p>Давайте не забывать, что на форуме никто никому и ничем не обязан.</p>
+
+<p>Единственное правило, общение в рамках темы без очевидных оскорблений собеседников.</p>
+
+<p><strong>Alexey777</strong> 15-03-2019</p>
+
+<blockquote>
+  <p>Давайте не забывать, что на форуме никто никому и ничем не обязан.</p>
+
+  <p>Единственное правило, общение в рамках темы без очевидных оскорблений собеседников.</p>
+</blockquote>
+
+<p>Я за свои 90 сообщений никого не оскорбил и ни кого не принуждал..)</p>
+
+<p>Свой вопрос про растворы я написал 5 наиболее активным форумчанам, никто не ответил, сделал выводы, ищу дальше.</p>
+
+<p><strong>allex_step</strong> 15-03-2019</p>
+
+<p>хм………. какой вопрос - такой ответ <em>???</em></p>
+
+<p><strong>alidji69</strong> 16-06-2019</p>
+
+<p>глубину кассет можно узнать?тоже закупил редиса решил на кокосе растить но непонятна тара</p>
+
+<p><strong>Likl</strong> 17-06-2019</p>
+
+<p>Для посадки использовал крышку прозрачную от торта. Вермекулита насыпал 7-8см. :)</p>
+
+<p><strong>alidji69</strong> 17-06-2019</p>
+
+<p>сажали семена кучно или с просветом?слив\дренаж как организовывали?и температурный режим интересует,летом я так понимаю проблематично растить ибо нужно 16-20 градусов</p>
+
+<p><strong>Wildcat</strong> 17-06-2019</p>
+
+<blockquote>
+  <p>сажали семена кучно или с просветом?</p>
+</blockquote>
+
+<p>5*5 см</p>
+
+<blockquote>
+  <p>слив\дренаж как организовывали?</p>
+</blockquote>
+
+<p>дырки снизу</p>
+
+<blockquote>
+  <p>и температурный режим интересует,летом я так понимаю проблематично растить ибо нужно 16-20 градусов</p>
+</blockquote>
+
+<p>если есть много света, то пофиг на температуру. В разумных пределах, конечно. Важен режим день/ночь. Я использовал 12/12 часов. Получилось.</p>
+
+<p><strong>Likl</strong> 18-06-2019</p>
+
+<blockquote>
+  <p>сажали семена кучно или с просветом?</p>
+</blockquote>
+
+<p>Поштучно, на расстоянии пердпологаемой толщины корнеплода :D</p>
+
+<blockquote>
+  <p>слив\дренаж как организовывали?</p>
+</blockquote>
+
+<p>У меня не было, наливал раствор пока на дне лужица не образовывалась, но это в сверхмалых объёмах смотреть можно, а так то это не правильный подход &gt;:D</p>
+
+<blockquote>
+  <p>и температурный режим интересует,летом я так понимаю проблематично растить ибо нужно 16-20 градусов</p>
+</blockquote>
+
+<p>Не совсем так. Это для прорастания нужна низкая температура, но для современных семян это без разницы. <em>8)</em></p>
+
+<p>А так то редис, как и все растения любит тепло и солнце. ;)</p>
+
+<p>Только если семян не хотите, то световой день уменьшенный нужен, что летом может оказаться проблематичным сделать :-[</p>
+
+<p><strong>Miando</strong> 20-06-2019</p>
+
+<p>Сейчас сорта есть летние. У нас жара под 40, а в ОГ неплохо так растет. И световой день не маленький. Хотя чем севернее, тем он дольше.</p>
+
+<p><img src="https://i.postimg.cc/FYW5zh5c/IMG-20190620-184533.jpg" alt="" /></p>
+
+<p><strong>Likl</strong> 21-06-2019</p>
+
+<p>Это здорово. Молодцы селекционеры. <em>8)</em></p>
+
+<p>Обычный редис в это время весь бы в стрелку ушел (средняя полоса и севернее) &gt;:(</p>
+
+<p>На огороде поэтому садят его или в апреле или уже в конце августа. ;)</p>
+
+<p><strong>siv237</strong> 21-06-2019</p>
+
+<blockquote>
+  <p>Сейчас сорта есть летние</p>
+</blockquote>
+
+<p>А какие рекомендуете?</p>
+
+<p><strong>Miando</strong> 28-07-2019</p>
+
+<blockquote>
+  <blockquote>
+    <p>Сейчас сорта есть летние</p>
+  </blockquote>
+
+  <p>А какие рекомендуете?</p>
+</blockquote>
+
+<p>Честно говоря не знаю какие выросли, из посаженных 3ех сортов, но могу посмотреть, в ближайшем будущем, эти 3 сорта, пачки остались.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

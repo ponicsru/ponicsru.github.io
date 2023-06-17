@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Домик на Полярном круге | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Домик на Полярном круге">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Домик на Полярном круге</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>VADIM N</strong> 07-02-2016</p>
+
+<p>Всем доброго времени суток!</p>
+
+<p>Решил пора создать домик.</p>
+
+<p>Опыта выращивания растений мало.</p>
+
+<p>В прошлом году попробовал вырастить дома томаты, сладкий перец на гидропонике.</p>
+
+<p>Сейчас растет 2 куста крупной ремонтантной земляники Фреска F1 и 2 кута земляники альпийской Мечта и рассада детерминантных томатов.</p>
+
+<p>Субстрат торф.</p>
+
+<p>Свет у земляники две энергосберегающие лампы 105 Вт у рассады томатов одна энергосберегающая лампа 65 Вт.</p>
+
+<p>Полив ручной 2 раза в день.</p>
+
+<p>Использую удобрения: концентрированный раствор BONA FORTE для декоративно цветущих, селитра кальциевая буйские удобрения, селитра калиевая буйские удобрения, раствор магния сульфата в ампулах.</p>
+
+<p>Земляника Фреска F1</p>
+
+<p><a href="https://t.me/ponics_ru_files/17116" target="_blank"><img src="/imagehost2/thumbs/dsc02211.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/17117" target="_blank"><img src="/imagehost2/thumbs/dsc0225.jpg" alt="" /></a></p>
+
+<p>Земляника альпийская Мечта</p>
+
+<p><a href="https://t.me/ponics_ru_files/17118" target="_blank"><img src="/imagehost2/thumbs/dsc0159.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/17119" target="_blank"><img src="/imagehost2/thumbs/dsc0228.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/17120" target="_blank"><img src="/imagehost2/thumbs/dsc0184.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/17121" target="_blank"><img src="/imagehost2/thumbs/dsc0179.jpg" alt="" /></a></p>
+
+<p><strong>n72black</strong> 07-02-2016</p>
+
+<p>Земляника классная. <em>8)</em></p>
+
+<p>А фреску ф1 из семян растили? И с новосельем.</p>
+
+<p><strong>VADIM N</strong> 07-02-2016</p>
+
+<p>Спасибо! Фреска и Мечта выращены из семян.</p>
+
+<p><strong>ded_pihto</strong> 07-02-2016</p>
+
+<p>это круто ! вообще ! полярный круг и земляника. <em>8)</em> <em>8)</em> <em>8)</em> <em>8)</em> <em>8)</em></p>
+
+<p><strong>lidia</strong> 08-02-2016</p>
+
+<p>А как давно земляника посеяна? Выглядит <em>8)</em> $)!</p>
+
+<p>С новосельем и успехов!</p>
+
+<p><strong>AlexRyg</strong> 08-02-2016</p>
+
+<p>С новосельем. Земляника чудная <em>8)</em> . Но думаю не стоит делать ставку на комплексные удобрения. Надежнее делать растворы из простых солей.</p>
+
+<p><strong>ded_pihto</strong> 08-02-2016</p>
+
+<blockquote>
+  <p>С новосельем. Земляника чудная <em>8)</em> . Но думаю не стоит делать ставку на комплексные удобрения. Надежнее делать растворы из простых солей.</p>
+</blockquote>
+
+<p>если она такая выросла и зацвела то уже все хорошо с удобрениями и их приминением.</p>
+
+<p><strong>VADIM N</strong> 08-02-2016</p>
+
+<p>Земляника Фреска F1 посеяна 2 февраля. Взошла 10 февраля.</p>
+
+<p><a href="https://t.me/ponics_ru_files/17122" target="_blank"><img src="/imagehost2/thumbs/dsc0230.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/17123" target="_blank"><img src="/imagehost2/thumbs/dsc0232.jpg" alt="" /></a></p>
+
+<p><strong>VADIM N</strong> 08-02-2016</p>
+
+<p>Не в феврале, а в октябре.</p>
+
+<p><strong>lidia</strong> 08-02-2016</p>
+
+<blockquote>
+  <p>Не в феврале, а в октябре.</p>
+</blockquote>
+
+<p>Уф! :D А я уж собралась в обморок падать… :)</p>
+
+<p>А в чём? В кокосе?</p>
+
+<p><strong>VADIM N</strong> 08-02-2016</p>
+
+<blockquote>
+  <p>С новосельем. Земляника чудная <em>8)</em> . Но думаю не стоит делать ставку на комплексные удобрения. Надежнее делать растворы из простых солей.</p>
+</blockquote>
+
+<p>С простыми солями туго. Продают селитру кальциевую,борную кислоту и один раз в продаже появилась селитра калиевая. На комплексном удобрении растения растут очень хорошо.</p>
+
+<p>Томаты на нём в прошлом году.</p>
+
+<p><a href="https://t.me/ponics_ru_files/17124" target="_blank"><img src="/imagehost2/thumbs/dsc00561igi.jpg" alt="" /></a></p>
+
+<p>Томат “бычье сердце” жёлтое на DWC</p>
+
+<p><a href="https://t.me/ponics_ru_files/17125" target="_blank"><img src="/imagehost2/thumbs/dsc0073.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/17126" target="_blank"><img src="/imagehost2/thumbs/dsc0068.jpg" alt="" /></a></p>
+
+<p>Томат “монетка”</p>
+
+<p><strong>VADIM N</strong> 08-02-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>Не в феврале, а в октябре.</p>
+  </blockquote>
+
+  <p>Уф! :D А я уж собралась в обморок падать… :)</p>
+
+  <p>А в чём? В кокосе?</p>
+</blockquote>
+
+<p>Кокос не продают. Субстрат грунт для орхидей (торф).</p>
+
+<p><strong>ded_pihto</strong> 08-02-2016</p>
+
+<blockquote>
+  <p>Томаты на нём в прошлом году.</p>
+
+  <p><img src="/imagehost2/thumbs/dsc00561igi.jpg" alt="" /></p>
+
+  <p>Томат “бычье сердце” жёлтое на DWC</p>
+
+  <p><img src="/imagehost2/thumbs/dsc0073.jpg" alt="" /></p>
+
+  <p><img src="/imagehost2/thumbs/dsc0068.jpg" alt="" /></p>
+
+  <p>Томат “монетка”</p>
+</blockquote>
+
+<p>чем Вы томаты освещали ?</p>
+
+<p><strong>VADIM N</strong> 08-02-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>Томаты на нём в прошлом году.</p>
+
+    <p><img src="/imagehost2/thumbs/dsc00561igi.jpg" alt="" /></p>
+
+    <p>Томат “бычье сердце” жёлтое на DWC</p>
+
+    <p><img src="/imagehost2/thumbs/dsc0073.jpg" alt="" /></p>
+
+    <p><img src="/imagehost2/thumbs/dsc0068.jpg" alt="" /></p>
+
+    <p>Томат “монетка”</p>
+  </blockquote>
+
+  <p>чем Вы томаты освещали ?</p>
+</blockquote>
+
+<p>Рассада росла под лампой ДНАТ 250 вт потом естественное освещение.</p>
+
+<p><strong>ihands</strong> 08-02-2016</p>
+
+<p>Козырные растения, респект!</p>
+
+<p><em>**</em> 09-02-2016</p>
+
+<p>Присоединяюсь к поздравлениям!</p>
+
+<p>Томаты здоровские, особо “бычье сердце впечатлил”, как же на Полярном круге такому светолюбивому сорту хватает света? Совсем не подсвечивали? Расскажите о “бычьем сердце”, сколько весили плоды, какие вкусовые качества? :)</p>
+
+<p><strong>VADIM N</strong> 17-02-2016</p>
+
+<blockquote>
+  <p>Присоединяюсь к поздравлениям!</p>
+
+  <p>Томаты здоровские, особо “бычье сердце впечатлил”, как же на Полярном круге такому светолюбивому сорту хватает света? Совсем не подсвечивали? Расскажите о “бычьем сердце”, сколько весили плоды, какие вкусовые качества? :)</p>
+</blockquote>
+
+<p>В магазине купил пакетик с семенами томата “бычье сердце” розовое АЭЛИТА, выросло желтое.</p>
+
+<p>Томат “бычье сердце” посажен в начале марта 2015 г. в литровую емкость с перлитом.</p>
+
+<p>С марта по апрель рос в перлите под лампой днат 250 вт освещение 16 часов. В начале апреля пересажен в DWC( ведро 10 литров, раствора в ведре 8 литров аэрация раствора компрессором 150 литров в час) и переехал на лоджию. Раствор для него: комплексное удобрение Бона форте для декоративно цветущих 5 мл/л, кальциевая селитра буйская 1.25 гр/л, магния сульфат в ампулах 1 мл/л, EC раствора 2700, PH 6. Раствор менял через 14 дней до появления плодов потом смена раствора через 7 дней, ежедневно доливал воду по 2-3 литра. По калькулятору: N-295, P-87, K-332, Ca-207, Mg-60. Томаты на первой кисти были очень крупные примерно 700-600 гр( весы купил поздней), потом вес томатов был 400-250 гр. Вкусовые качества хорошие, сладкие, всем кто ел очень понравились. К концу июля корни заполнили весь объём ведра, аэрация раствора прекратилась томат был ликвидирован.</p>
+
+<p>Летом полярный день свет 24 часа в день.</p>
+
+<p><a href="https://t.me/ponics_ru_files/17127" target="_blank"><img src="/imagehost2/thumbs/dsc0080fuf.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/17128" target="_blank"><img src="/imagehost2/thumbs/dsc0085.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/17129" target="_blank"><img src="/imagehost2/thumbs/dsc0089.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/17130" target="_blank"><img src="/imagehost2/thumbs/dsc00861.jpg" alt="" /></a>томат среднего размера, первые были в два раза крупней.</p>
+
+<p><strong>VADIM N</strong> 17-02-2016</p>
+
+<p>Первый плод у “бычьего сердца” созрел примерно через 90 дней. Рос очень быстро <em>8)</em>.</p>
+
+<p><strong>n72black</strong> 17-02-2016</p>
+
+<p>Класс! Вот что значит, чем больше света, тем слаще плод.</p>
+
+<p>Но, на активном плодоношении азот лучше было убавить до 210-215 мг/л(меньше пасынков, активнее налив плодов) ;)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

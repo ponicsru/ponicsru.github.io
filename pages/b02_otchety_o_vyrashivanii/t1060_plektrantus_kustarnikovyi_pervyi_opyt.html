@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Плектрантус кустарниковый, первый опыт. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Плектрантус кустарниковый, первый опыт.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Плектрантус кустарниковый, первый опыт.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Lemon</strong> 16-06-2011</p>
+
+<p>Всем здравствуйте :) Собсно это мой первый пост на этом форуме, прошу принять в свой коллектив. Пару слов о себе: 24 года, женат, работаю в сфере IT услуг(но не люблю это направление). Последние 2 года активно потянуло к растеневодству, пальмы простенькие там, кактусы, есть роза - каждую неделю дарю жене цветок :D есть мята(о нем подробнее чуть позже). За эти 2 года много было проб и ошибок, эксперементов и опытов всяких, сейчас пробую в квартире вырастить клубнику и землянику(от семян) под ДНАТкой. Но все это в земле, с прогрессом куда веселее. Долго я думал насчет гидропоники в итоге на коленке собрал Установку для водной культуры, все ради опыта, сильно не бейте :) измерители я заказал, но думаю не раньше чем через 2 недели получу, пока без них - бред, но просто так сложилось. Есть растение у меня на подоконике Плектрантус кустарниковый, легко черенкуется, я ломанул пару черенков родственникам - укореняется без проблем, сломал еще 2 клона и поставил в воду, и вот эти корешки и толкнули меня в сторону нужную……</p>
+
+<p>Нашел немного ваты минеральной, и ведро 20 литровое , небольшой компрессор, дрявый горшок(на дне тоже насверлил), просверлил отверстие в крышке и под шланг от компрессора, как сбить пш до нейтрального я знаю, до этого был жидкий тестер на пш, но закончился и выравниваю пш “в слепую”, хотя там пока вода и в вате еще черенок,только что узнал тестеры уже посылкой пошли комне. Из питательного линейка удобрений от ГХЕ.</p>
+
+<p>О растении:</p>
+
+<p>Плектрантус кустарниковый</p>
+
+<p>Другие названия: Мольное дерево</p>
+
+<p>Plectranthus fruticosus</p>
+
+<p>Семейство Губоцветные (Labiatae)</p>
+
+<p>Плектрантус кустарниковый</p>
+
+<p>Жизненная форма: вечнозеленый кустарник</p>
+
+<p>Использование: рекомендуется для выращивания:	в жилых помещениях на подоконниках или как кадочное растение;</p>
+
+<p>в помещениях общего назначения (вестибюли, офисы);</p>
+
+<p>в зимних садах и оранжереях;</p>
+
+<p>прекрасное растение для гидропонной культуры</p>
+
+<p>длительность жизни в интерьере:	может выращиваться в течение 1-2 лет без прищипок и обрезок, только на поливах-подкормках (минимум ухода), после чего потеряет декоративность;</p>
+
+<p>если растение куплено с расчетом на более длительное содержание, нужно обеспечить тщательный уход и подходящие условия, тогда плектрантус может прожить 5-6 лет, а при условии омолаживания и выращивания из черенков срок жизни растения не ограничен</p>
+
+<p>Максимальные размеры в культуре: высота растения может достигать 1 м, диаметр кроны легко регулируется обрезками и прищипками</p>
+
+<p>Уход и проблемы с выращиванием: Пересадка:	 пересадку проводят 1 раз в 2-3 года в небольшие цветочные горшки или в крупные напольные горшки и кадки</p>
+
+<p>состав земельной смеси: дерновая земля или садовый компост : листовая земля : песок в соотношении 1:3:1 или 2:1:1</p>
+
+<p>кислотность (pH): слабокислая (5.0-6.0), нейтральная (6.0-7.0)</p>
+
+<p>при недостатке света побеги вытягиваются, поникают, листья желтеют;</p>
+
+<p>при недостатке питания, а также при длительном переувлажнении почвы края листьев чернеют и усыхают;</p>
+
+<p>при длительном переохлаждении повреждаются корни, молодые листья и точки роста;</p>
+
+<p>плектрантус относительно устойчив к вредителям, но может поражаться паутинным клещом, щитовкой, тлей, белокрылкой</p>
+
+<p>Уход в период активного роста:</p>
+
+<p>обрезка, прищипка, черенкование:	для усиления ветвления (чтобы придать растению форму пышного кустика) ежегодно или 1 раз в 2 года, в конце февраля-начале марта, проводят формирующую обрезку или прищипку побегов, выламывая и появляющиеся цветоносы;</p>
+
+<p>по мере взросления нижняя часть побегов одревесневает, теряет листву. Для омоложения растения нужно провести короткую обрезку или вырастить новое растение из черенка</p>
+
+<p>освещенность:	плектрантус предпочитает яркий рассеянный свет, поэтому лучше всего содержать его на западных или восточных окнах;</p>
+
+<p>при содержании на южном окне требуется притенение от полуденного солнца, на северном - искусственное досвечивание, особенно в осенне-зимний период</p>
+
+<p>оптимальная температура: +15-25°C</p>
+
+<p>полив и влажность воздуха:полив должен быть регулярным и обильным, без длительного переувлажнения и пересушивания почвы;</p>
+
+<p>обычно плектрантус выращивают в горшках диаметром менее 17 см - почва в них должна просыхать до дна горшка за 3-4 дня - такой режим полива будет для растения наилучшим;</p>
+
+<p>плектрантус хорошо переносит низкую влажность воздуха помещений, но рядом с отопительными приборами его лучше не размещать. Оптимальный уровень влажности воздуха при выращивании в квартире для плектрантуса - 50-55%</p>
+
+<p>подкормка:подкармливают плектрантус 1 раз в неделю или 1 раз в 2 недели, чередуя органические и минеральные удобрения;</p>
+
+<p>растение предпочитает органику, поэтому лучше использовать жидкие органо-минеральные удобрения</p>
+
+<p>Уход в период покоя:</p>
+
+<p>освещенность:продолжительность светового дня должна быть не менее 10 часов, лучше 12-14 часов;</p>
+
+<p>для досвечивания применяют специальные для растений фитолампы или люминесцентные лампы белого света</p>
+
+<p>оптимальная температура: +15-18°C, допускается содержание плектрантуса при температуре +10-12°C, если понижение температуры будет плавным</p>
+
+<p>полив и влажность воздуха: чем ниже температура воздуха в помещении, тем реже нужно проводить полив, однако полного высыхания почвы допускать нельзя</p>
+
+<p>период покоя:	плектрантус кустарниковый практически лишен периода покоя, так как в летний период он растет довольно активно, а ранней весной начинает цвести;</p>
+
+<p>период относительного покоя (когда ростовые процессы несколько замедляются, но не прекращаются совсем) у него наступает примерно к сентябрю и длится до декабря</p>
+
+<p>Размножение: 	чаще всего укоренением стеблевых или верхушечных черенков в любое время года в воде, в песке или в почве при температуре около +20°C и высокой влажности воздуха;реже размножают семенами</p>
+
+<p>Специфические требования культуры: предпочитает плодородный субстрат и органо-минеральные, а не чисто минеральные удобрения;растению необходимо яркое рассеянное освещение в течение всего года;</p>
+
+<p>опрыскивать растение нельзя, поскольку листья и стебли имеют опушение. Если поверхность листа или стебля долго не высыхает, могут появляться пятна, впоследствии усыхающие или загнивающие</p>
+
+<p>Декоративные свойства: листья</p>
+
+<p>окраска и форма листьев:листья однотонно-зеленой окраски, без пятен, мягкоопушенные, поверхность листа морщинистая;</p>
+
+<p>форма листьев широкоовальная, основание листа почти сердцевидное, край листа дваждыпильчатый;</p>
+
+<p>длина листа до 10 см, ширина 4-7 см</p>
+
+<p>стебель: опушенный, четырехгранный</p>
+
+<p>прочие декоративные свойства:если потереть лист или стебель, он начинает издавать приятный аромат, похожий на смесь мяты и камфары;</p>
+
+<p>плектрантус кустарниковый цветет обильно бледно-голубыми, мелкими, двугубыми цветками, собранными в соцветия-метелки;</p>
+
+<p>период цветения обычно наступает в феврале и длится до мая;</p>
+
+<p>поскольку в период цветения растение приобретает не совсем опрятный вид и его декоративность снижается, лучше выламывать соцветия, как только они появляются, не давая им развиваться</p>
+
+<p><a href="https://t.me/ponics_ru_files/5483" target="_blank"><img src="/attachimages/7271_IMG20110617_003.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5484" target="_blank"><img src="/attachimages/7273_IMG20110617_004.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5485" target="_blank"><img src="/attachimages/7275_IMG20110617_001.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5486" target="_blank"><img src="/attachimages/7277_IMG20110617_006.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5487" target="_blank"><img src="/attachimages/7279_IMG20110617_007.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5488" target="_blank"><img src="/attachimages/7281_IMG20110617_005.jpg" alt="" /></a></p>
+
+<p><strong>orgail</strong> 16-06-2011</p>
+
+<p>В добрый путь, как говорится и удачи :)</p>
+
+<p><strong>Oxy</strong> 16-06-2011</p>
+
+<p>Я бы рекомендовал укоренять не в вате, а в воде. Когда начнуться корешки, поместить его в родной горшочек а по кругу ствола насыпать мелкого гравия, или той же ватой заткнуть.</p>
+
+<p>Просто вата ствол держит неважно, а в дальнейшем ее функция будет только такая. Да и если это строительная минвата, то нежелательно чтоб она соприкасалась с водой.</p>
+
+<p>По большому счету, можно сразу черенок в корзинку, обсыпать гравием, и когда снаружи появяться корни - на постоянку с аэрацией. А так все очень ок, даже аэраторный камень очень крут. Наружное ведро, правда великовато для такого маленького растения, но маслом как говориться в данном случае общую кашу не испортить. А вот если нет приборов для измерения ПШ, то лучше на глаз ничего не понижать.</p>
+
+<p>Такие легко укореняемые бурьяны практически не обращают внимание на ПШ при укоренении :)</p>
+
+<p>А пока она корешки пустит, к вам и приборы приедут. Без приборов никак.</p>
+
+<p><strong>Lemon</strong> 29-06-2011</p>
+
+<p>И так всем доброго времени суток, прошу прощения за долгое отсутствие. Дом, работа, семья, дела и прочая суета в виде пляжей,купания и поездок. Короче говоря для гидропоники времени было недостаточно, но все возвращается.Для начала хочу рассказать немного о том, где я познаю азы растеневодства(помимо подоконика). Собственно площадка небольшая, учебная. Полка для телевизора, началось все с комнатных, затем захотелось попробовать в домашних условиях вырастить клубнику или землянику,бонусом рядышком загорают кактусы. Все это дело принимает искусственное освещение от ДНАТ-100.</p>
+
+<p><a href="https://t.me/ponics_ru_files/5489" target="_blank"><img src="/imagehost/thumbs/img20110629003.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5490" target="_blank"><img src="/imagehost/thumbs/img20110629004sls.jpg" alt="" /></a></p>
+
+<p>Хорошие новости - получил измерители, пш-тестер откалибровал, снял замеры пш 7,5 - многовато снизил до 5,7.</p>
+
+<p><a href="https://t.me/ponics_ru_files/5491" target="_blank"><img src="/imagehost/thumbs/img20110629010.jpg" alt="" /></a></p>
+
+<p>Теперь о моем первом подопечном как его уже тут назвали “Бурьян” :D. Бурьян не бурьян, а для первого раза мне думаю хватит. Растение преобразилось малость подрасло и набрало корневой массы, часть которых пожелтела и начала увядать(во всем виновата щелочная вода, я так думаю)</p>
+
+<p><a href="https://t.me/ponics_ru_files/5492" target="_blank"><img src="/imagehost/thumbs/img20110629005.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5493" target="_blank"><img src="/imagehost/thumbs/img20110629007.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5494" target="_blank"><img src="/imagehost/thumbs/img20110629008.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5495" target="_blank"><img src="/imagehost/thumbs/img20110629009.jpg" alt="" /></a></p>
+
+<p>Вот такие пироги, на данный момент в ведре 5литров воды разбавленных удобрами от ГХЕ на вегетативный период.</p>
+
+<p>По вашим коментам:</p>
+
+<p>Я бы с радостью использовал керамзит, но он щелочит воду, я не мог за это дело взяться без измерителей. Вата минеральная спецально для гидропоники снижал пш на глаз ибо знал пропорции, раньше пользовался жидким тестом пока был.</p>
+
+<p>Очень хотелось бы познать суть процесса от и до, от А до Я, вот только с химией слабовато - по школе упустил, если нужно- наверстаю. Буду рад если будете заглядывать, а я буду стараться. Рад что есть такой ресурс, жаль что раньше не встретил.</p>
+
+<p><strong>Coccinella</strong> 30-06-2011</p>
+
+<p>А кактусы под лампу, наверно, такие вытянувшиеся уже попали? Это не под ней они такими стали?</p>
+
+<p><strong>Lemon</strong> 30-06-2011</p>
+
+<p>Те 2 что на первом плане заметно подросли под ДНАТкой, не сказал бы что они вытянувшиеся сильно, а вот тот что подальше, как медуза горгона - это у него форма такая, тоже очень сильно вырос под искусственным освещением.Позже скину их фотки, если нужно.</p>
+
+<p><strong>Coccinella</strong> 30-06-2011</p>
+
+<p>Нет, по сравнению с моими бедолагами на северном окне Ваши вытянулись не так сильно :) Но вытянулись!</p>
+
+<p>Вообще кактусы - очень хороший индикатор освещения, точнее соотношения освещение-температура. Только вот растут они медленно, поэтому приборы все же надежнее :)</p>
+
+<p><strong>Lemon</strong> 30-06-2011</p>
+
+<p>Для Днат ламп это характерно, у них недостаток синего и красного спектра, вытянутые растения под этими лампами - это нормально, учитывая, что мощность всего 100вт, было бы хотя бы 400.Специалисты рекомендуют киловатные.</p>
+
+<p><strong>Mole_Garden</strong> 30-06-2011</p>
+
+<blockquote>
+  <p>Для Днат ламп это характерно, у них недостаток синего и красного спектра, вытянутые растения под этими лампами - это нормально, учитывая, что мощность всего 100вт, было бы хотя бы 400.Специалисты рекомендуют киловатные.</p>
+</blockquote>
+
+<p>Что же за спецы для домашних цветочков рекомендуют по киловатту? :D</p>
+
+<p><strong>Lemon</strong> 30-06-2011</p>
+
+<p>Да нет же, не для домашних киловаты. Это как я понял для дополнительного освещения в тепличных комплексах.</p>
+
+<p><strong>Lemon</strong> 06-07-2011</p>
+
+<p>Доброго времени суток, всем, кто заглядывает в мой отчет. С появлением измерительных приборов дело пошло куда веселей, по крайней мере пш метр я освоил и освоил, методв повышения и понижения уровня пш.</p>
+
+<p>О растении: если сравнивать с предыдущим состоянием, все намного лучше листья увеличились - растет на глазах, корни свежие и обновленные, а главное здоровые, о чем говорит их белоснежный цвет.</p>
+
+<p><a href="https://t.me/ponics_ru_files/5496" target="_blank"><img src="/imagehost/thumbs/p0407111238cnc.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5497" target="_blank"><img src="/imagehost/thumbs/p0407111239zgz.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5498" target="_blank"><img src="/imagehost/thumbs/p0407111241.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5499" target="_blank"><img src="/imagehost/thumbs/p040711124101.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5500" target="_blank"><img src="/imagehost/thumbs/p040711124303.jpg" alt="" /></a></p>
+
+<p>И для сравнения его мамка на подоконнике в земле:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5501" target="_blank"><img src="/imagehost/thumbs/p0407111244.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 06-07-2011</p>
+
+<p>Ну и отлично, так держать и не отставать! <em>8)</em></p>
+
+<p><strong>Lemon</strong> 06-07-2011</p>
+
+<p>И тут возник вопрос, как быть? Добавлять растворы в ведро или полностью сменять раствор?</p>
+
+<p><strong>valery</strong> 06-07-2011</p>
+
+<blockquote>
+  <p>И тут возник вопрос, как быть? Добавлять растворы в ведро или полностью сменять раствор?</p>
+</blockquote>
+
+<p>Обычно в “нашей (любительской) среде” как правило принято менять раствор целиком.</p>
+
+<p>Ни с кем из тех, кто использует различного рода “рециркуляции” спорить не готов и не стану …</p>
+
+<p>Но - не советовал бы этого делать (менять раствор полностью).</p>
+
+<p>Мне кажется (могу ошибаться) - лучше ПОСТОЯННО частично подменивать раствор на абсолютно новый и свежий (с чуть более низкой концентрацией) …</p>
+
+<p>То есть, скажем ежедневно удаляете небольшую часть старого раствора и восполняете “удаленное” и “выпитое” свежим.</p>
+
+<p>Возможно, меня лучше поймут “аквариумисты”.</p>
+
+<p>Если нужно - обосновать, я попробую. Если не нужно - то и достаточно.</p>
+
+<p><strong>Lemon</strong> 06-07-2011</p>
+
+<p>Я понял в чем суть. У меня были рыбки одно время.Я думаю каждый день - это слишком хлопотно, и так дел много, большая проблема с водопроводной водой, щелочная и очень жесткая, приходиться отстаивать, до этого момента я делал так: за 2 дня до смены раствора набираю воду в 5литровую бутылку, стоит часов 12, корректирую пш с 7,8 до 5,5, а затем больше чем через сутки корректирую повторно, ибо он возвращается к 7.Добавляю концентраты от гхе, вынимаю горшок, мою ведро, камень, крышку - заливаю свежий раствор и все, процесс продолжается дальше . Что можно поменять,я думаю это 2ую корректировку пш, может стоит корректировать после внесения концентратов? Заметил частое обращение на “вы” - тут так принято или это личное дело каждого? Сам я сторонник общения в сети на ты без “ВЫ”, тут все одинаковые, хотя для меня и в жизни все равны, жаль что для большинства это по другому :D</p>
+
+<p><strong>Lemon</strong> 11-07-2011</p>
+
+<p>Боже мой господа, вот это листища, прям огромные листья. Фотки будут по позже, проблемы с тырнетом :)</p>
+
+<p><strong>Mole_Garden</strong> 12-07-2011</p>
+
+<blockquote>
+  <p>Боже мой господа, вот это листища, прям огромные листья. Фотки будут по позже, проблемы с тырнетом :)</p>
+</blockquote>
+
+<p>Ждемс!</p>
+
+<p><strong>Lemon</strong> 18-07-2011</p>
+
+<p>Как же привыкаешь к цивилизации, по обстоятельствам остался я без интернета, выкладываю ситуацию по возможности. Растение лишилось лампы - пока что естественное освещение в результате чего вытянулся стебель. Пш раствора 5.5 плотность 1200. Есть вопросы к “опытным” треснул немного стебель - это может быть из за раствора или это я где то неаккуратно обошелся, все таки переехало растение с одной квартиры в другую :-.Только недавно заметил - уже все подсохло. Получив немного опыта - купил семечки дыньки :) хочу попробовать взяться за ощутимые результаты - ведь мята она будет рости бесконечно, а мне зачем это?</p>
+
+<p><a href="https://t.me/ponics_ru_files/5502" target="_blank"><img src="/imagehost/thumbs/img20110718001eme.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5503" target="_blank"><img src="/imagehost/thumbs/img20110718002.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5504" target="_blank"><img src="/imagehost/thumbs/img20110718003.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5505" target="_blank"><img src="/imagehost/thumbs/img20110718004.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 23-07-2011</p>
+
+<p>Подними чуток pH до 5,7-5,8</p>
+
+<p>Смотря как треснул. Знаю, что у огурцов иногда трескается, из-за давление вроде или поливов, не помню точно.</p>
+
+<p><strong>Lemon</strong> 31-07-2011</p>
+
+<p>Я так понял из за высокого корневого давления, было время пропал днат на неделю - видимо не успевал всю воду испарить в результате треснул стебель. Но сейчас уже такие корни-мочалки и здоровые листья, побеги боковые взрослеют после фотосесси срежу их и засушу, люблюб их в чай добавлять.</p>
+
+<p>Конечно до полноценного опыта далеко еще, но руками уже пощупал. Пш раствора обычно стабилен 5.5-5.6, еще поращу себе мяты,посушу, порежу клонов и потом заселю что нибудь существенней.</p>
+
+<p><a href="https://t.me/ponics_ru_files/5506" target="_blank"><img src="/imagehost/thumbs/img20110730001.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5507" target="_blank"><img src="/imagehost/thumbs/p3007111622.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5508" target="_blank"><img src="/imagehost/thumbs/p300711162201.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5509" target="_blank"><img src="/imagehost/thumbs/p300711162202.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5510" target="_blank"><img src="/imagehost/thumbs/p300711163302.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5511" target="_blank"><img src="/imagehost/thumbs/p3007111634.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5512" target="_blank"><img src="/imagehost/thumbs/p300711163401.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 01-08-2011</p>
+
+<p><em>8)</em> Очень даже хорошо для начала.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

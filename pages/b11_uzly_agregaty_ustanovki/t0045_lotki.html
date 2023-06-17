@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Лотки | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Лотки">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Лотки</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>mdima</strong> 24-04-2009</p>
+
+<p>Вот такие обслуживаемые лотки. Обслуживаемые - это значит, что верхняя крышка снимается, она на защелке.</p>
+
+<p>Лоток:</p>
+
+<p><a href="http://www.postimage.org/Pq6N3g0.jpg" target="_blank"><img src="http://www.postimage.org/Pq6N3g0.jpg" alt="" /></a></p>
+
+<p>Защелка крупно:</p>
+
+<p><a href="http://www.postimage.org/Pq6NaKr.jpg" target="_blank"><img src="http://www.postimage.org/Pq6NaKr.jpg" alt="" /></a></p>
+
+<p>Размеры лотка, как у голландцев 100х52х2000 мм.</p>
+
+<p>Приступаю к испытаниям :)</p>
+
+<p><strong>mdima</strong> 24-04-2009</p>
+
+<p>Так же планирую испытать необслуживаемые лотки (тоже закуплены) и понять на сколько нужет этот доступ сверху. Впринципе, понятно, чтобы помыть и т.п. Но поскольку цена обслуживаемого лотка примерно в 2.5 раза больше, чем необслуживаемого, то буду пробывать.</p>
+
+<p><strong>Mole_Garden</strong> 24-04-2009</p>
+
+<blockquote>
+  <p>Так же планирую испытать необслуживаемые лотки (тоже закуплены) и понять на сколько нужет этот доступ сверху. Впринципе, понятно, чтобы помыть и т.п. Но поскольку цена обслуживаемого лотка примерно в 2.5 раза больше, чем необслуживаемого, то буду пробывать.</p>
+</blockquote>
+
+<p>Короба хороши :D сам давно присматривался и прикидывал, а вот только про закрытые, как ты называешь не обслуживаемого, не встречал, чуть по подробней про него, как называется и производитель.</p>
+
+<p>И не кажется ли тебе, что они слишком широкие, можно чуть уже думаю что 50 или 60 мм было в самый раз.</p>
+
+<p><strong>mdima</strong> 24-04-2009</p>
+
+<p>цитирую “Райк Цваан”:</p>
+
+<p>[code]Конструкции. Теплица насчитывает 170 метров в длину и</p>
+
+<p>60 метров в ширину, и делится на 5 пролетов, каждый 12 метров</p>
+
+<p>шириной. Белые пластиковые желоба, шириной 100 мм и глубиной</p>
+
+<p>52 мм, имеют длину 12 метров и, следовательно, заполняют ширину</p>
+
+<p>пролета полностью.[/code]</p>
+
+<p>Плюс сам стаканчик d=52 мм.</p>
+
+<p><strong>Mole_Garden</strong> 24-04-2009</p>
+
+<blockquote>
+  <p>Плюс сам стаканчик d=52 мм.</p>
+</blockquote>
+
+<p>А тебе не кажется, что он широкий?</p>
+
+<p>Думаю тогда 70-80мм</p>
+
+<p><strong>mdima</strong> 24-04-2009</p>
+
+<p>По-моему самый то. Посажу, еще фотки выложу, поссмотрим :)</p>
+
+<p><strong>Mole_Garden</strong> 24-04-2009</p>
+
+<blockquote>
+  <p>По-моему самый то. Посажу, еще фотки выложу, поссмотрим :)</p>
+</blockquote>
+
+<p>Ок ждем</p>
+
+<p><strong>valery</strong> 24-04-2009</p>
+
+<p>Дмитрий, можно про лотки немного подробнее ???</p>
+
+<p>Помню (кажется на сайте Вашем заметка) об организации “раздвижных” крышек на лотках.</p>
+
+<p>Вот любопытно, а можно ли такое реализовать на таком лотке и крышке ?</p>
+
+<p>И как? Пилить крышку на части/сегменты ?</p>
+
+<p>Вообще, что это за лотки ? Что-то специализированное или те же кабельканалы ?</p>
+
+<p>Пошарохался по электрическим фирмам - забил себе голову всякой гадостью и ничего толкового не нашел.</p>
+
+<p>У большинства кабельканалов на донышке - канавки (или как их) под проводку.</p>
+
+<p>У Ваших - кажется донышко ровное, да ? Или просто не видно ?</p>
+
+<p>Подо что их все-таки лучше использовать ? Салаты ? И только ли салаты ? А не выращивают ли, случаем в лотках клубнику/землянику ?</p>
+
+<p>И в любом случае, если будет в Вашем интернет магазине, хотелось бы взять на пробу хотябы с пяток.</p>
+
+<p><strong>valery</strong> 24-04-2009</p>
+
+<p>Любопытно, действительно, что у Вас получится с “закрытыми” (необслуживаемыми).</p>
+
+<p>Вроде, исходя из логики, необходимость “залезть” внутрь - должна бы быть.</p>
+
+<p>С другой стороны - мыть можно и закрытые. Пропуская хорошо хлорированную воду (от водорослей, бактерий) и легкий раствор нелюбимой Вами серной кислоты (мой любимый электролит) - от солей.</p>
+
+<p>По крайне мере - капельницы и шланги таким макаром промываются очень хорошо.</p>
+
+<p>Наверное и для лотков это должно сработать.</p>
+
+<p><strong>mdima</strong> 24-04-2009</p>
+
+<blockquote>
+  <p>И как? Пилить крышку на части/сегменты ?</p>
+</blockquote>
+
+<p>На днях будут фото</p>
+
+<blockquote>
+  <p>Вообще, что это за лотки ? Что-то специализированное или те же кабельканалы ?</p>
+</blockquote>
+
+<p>Сложно сказать. Это ПВХ профиль. можно использовать и так и так.</p>
+
+<blockquote>
+  <p>У Ваших - кажется донышко ровное, да ? Или просто не видно ?</p>
+</blockquote>
+
+<p>Ровное</p>
+
+<blockquote>
+  <p>Подо что их все-таки лучше использовать ? Салаты ? И только ли салаты ? А не выращивают ли, случаем в лотках клубнику/землянику ?</p>
+</blockquote>
+
+<ol>
+  <li>
+    <p>Салаты</p>
+  </li>
+  <li>
+    <p>Травы</p>
+  </li>
+  <li>
+    <p>Клубника</p>
+  </li>
+</ol>
+
+<blockquote>
+  <p>И в любом случае, если будет в Вашем интернет магазине, хотелось бы взять на пробу хотябы с пяток.</p>
+</blockquote>
+
+<p>Думаю появятся со дня на день. Веду переговоры с поставщиком с какой партии начинается гуманная цена.</p>
+
+<p><strong>mdima</strong> 24-04-2009</p>
+
+<p>ПОЗОР! :D Я КУПИЛ КУСТИКИ САЛАТА! :D</p>
+
+<p>Ну, нужно было для отработки конструкции и т. п.</p>
+
+<p>Фотка:</p>
+
+<p><a href="https://t.me/ponics_ru_files/795" target="_blank"><img src="/attachimages/168_lotkisalat.png" alt="" /></a></p>
+
+<p><strong>chip</strong> 24-04-2009</p>
+
+<p>:D Прям как там и выросли!</p>
+
+<p><strong>Mole_Garden</strong> 24-04-2009</p>
+
+<p>МДа, хорошо сидят, но не дубачек, как никрути ;D</p>
+
+<p>А вообще, те короба которые я видел они идут с разделителем для проводов да и крышка ездит ой как тяжело, может тут ситуация будет другой</p>
+
+<p>Ждем тестов</p>
+
+<p><strong>mdima</strong> 24-04-2009</p>
+
+<p>Дно плоское. Цена, надеюсь, будет в понедельник.</p>
+
+<p><strong>mdima</strong> 24-04-2009</p>
+
+<p>Вот и славно, всех пятнично повеселил ;)</p>
+
+<p>:D</p>
+
+<p>Стаканчики жду на следующей недели.</p>
+
+<p><strong>Олеганос</strong> 24-04-2009</p>
+
+<p>реальные коробушки, тема!</p>
+
+<p><strong>marik78</strong> 24-04-2009</p>
+
+<p>лотки эти так похожи на короба для прокладки кабельных систем я когда то занимался прокладкой Локальных сетей мы использовали такие же короба сначала фирмы легранд но они дорогие потом попроще фирму нашли.</p>
+
+<p><strong>mdima</strong> 24-04-2009</p>
+
+<p>Подколю/пошучу:</p>
+
+<p>Очень похожи на короба для прокладки ЛВС :)</p>
+
+<p><a href="http://www.postimage.org/aV7b7jS.jpg" target="_blank"><img src="http://www.postimage.org/aV7b7jS.jpg" alt="" /></a></p>
+
+<p>думаю, кто-нибудь их узнает ;)</p>
+
+<p><strong>marik78</strong> 24-04-2009</p>
+
+<p>Значит я был прафффф :D эх сколько лет ЛВС не занимался а помню не один км проложил в универе да профессионализм не пропьешь!!! у нас такие лотки на фирме каналами называют почемуто</p>
+
+<p><strong>mdima</strong> 24-04-2009</p>
+
+<p>Вот и я говорю. Это ПВХ профиль. А уж для чего его использовать и как назвать - это дело каждого :D</p>
+
+<p><strong>marik78</strong> 24-04-2009</p>
+
+<p>у нас правда они закрытые полностью хотя я нашим конструкторам предлагал короба для ЛВС применять но че то они отмахнулись</p>
+
+<p><strong>mdima</strong> 27-04-2009</p>
+
+<p>Вот такие образцы я привез от поставщика:</p>
+
+<p>длинна 2м, ширина 100мм, глубина 60мм, диаметр под горшок 55 мм, расстояние между горшками 180мм</p>
+
+<p>обслуживаемый</p>
+
+<p><a href="http://www.postimage.org/PqpfrGJ.jpg" target="_blank"><img src="http://www.postimage.org/PqpfrGJ.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 03-05-2009</p>
+
+<p>Дмитрий, если эти лотки появятся в инет-магазине (надеюсь, появятся) - как Вы их планируете выставлять, “голыми” лотками или возможно, со всей, описанной Вами, “периферией” в виде всех этих магистральных шлангов, и прочих, поливных трубочек ?</p>
+
+<p><strong>mdima</strong> 03-05-2009</p>
+
+<p>Вообще планировал “под ключ” т.е. с периферией, но если кому нужны просто лотки, то наверное не откажем :)</p>
+
+<p><strong>Alex123</strong> 04-05-2009</p>
+
+<p>созрел вопросик: Если поставить рядом несколько лотков - вырисовывается ли расположение отверстий в шахматном порядке ? за счет этого получается экономия места. На больших профессиональных установках именно так и есть, но там лотки длинные - по 9-10 метров.</p>
+
+<p><strong>valery</strong> 04-05-2009</p>
+
+<blockquote>
+  <p>Вообще планировал “под ключ” т.е. с периферией, но если кому нужны просто лотки, то наверное не откажем :)</p>
+</blockquote>
+
+<p>Дмитрий, тогда запишите и меня в “очередь”. Хотелось бы на пробу 3-4 лоточка, как раз лучше с “периферией”.</p>
+
+<p>Не хотелось бы возиться с хорошей вещью и по “кривизне” собственных рук добиваться, чтобы из нее все текло и сочилось не туда куда надо.</p>
+
+<p>Хотя, мне кажется подобные лотки можно и не по прямому назначению использовать. А скажем как “растворосборник” для тех же минватных матов - в торцах рядов.</p>
+
+<p><strong>mdima</strong> 04-05-2009</p>
+
+<p>Делаю себе махонькую установочку на балкон:</p>
+
+<p><a href="http://www.postimage.org/Pq11koaS.jpg" target="_blank"><img src="http://www.postimage.org/Pq11koaS.jpg" alt="" /></a></p>
+
+<p><strong>koval.sergei</strong> 05-05-2009</p>
+
+<p>Дим, а штуцера какие будите ставить, на полипропеленовую трубу</p>
+
+<p><strong>Mole_Garden</strong> 05-05-2009</p>
+
+<blockquote>
+  <p>Делаю себе махонькую установочку на балкон:</p>
+</blockquote>
+
+<p>А в итоге труба будет внутри лотка или с боку, а от нее трубочки? Хотя думаю стоит дождаться окончательного результата и там все будет видно. ;)</p>
+
+<p><strong>koval.sergei</strong> 05-05-2009</p>
+
+<p>мне Старт коннекторы прислали, но не такие какие я хотел, размер большой, а маленькие должны подойти Старт коннекторы</p>
+
+<p><strong>valery</strong> 20-05-2009</p>
+
+<p>Дмитрий, как продвигается “лоточное” производство?</p>
+
+<p>Уже не терпится ухватить у Вас немножко клубнично-салатных. :)</p>
+
+<p><strong>mdima</strong> 20-05-2009</p>
+
+<p>Изготовили несколько разных вариантов, тестируем. Клубникой, зеленью, салатом. :) Думаю со дня на день ситуация прояснится.</p>
+
+<p><strong>Egor</strong> 26-05-2009</p>
+
+<p>Подписался на тему</p>
+
+<p><strong>nikadubrovsky</strong> 27-05-2009</p>
+
+<blockquote>
+  <p>Изготовили несколько разных вариантов, тестируем. Клубникой, зеленью, салатом. :) Думаю со дня на день ситуация прояснится.</p>
+</blockquote>
+
+<p>так как с клубникой?</p>
+
+<p>хороши ли лотки и сколько будут стоять?</p>
+
+<p><strong>mdima</strong> 27-05-2009</p>
+
+<p>Клубника наливает ягодки, лотки дорабатываем. (Немного притормозили работу, т.к. в связи со сменой хостинга и приходом товара, не успеваем рассылать заказы)</p>
+
+<p><strong>nikadubrovsky</strong> 13-06-2009</p>
+
+<blockquote>
+  <p>Клубника наливает ягодки, лотки дорабатываем. (Немного притормозили работу, т.к. в связи со сменой хостинга и приходом товара, не успеваем рассылать заказы)</p>
+</blockquote>
+
+<p>нам бы простые дешевые горшочки, чтобы попробовать и раствор такой: чтобы что-то нужно было и самому добавлять в образовательных целях, а что-то купить и пользоваться (чтобы вообще хоть что-то выросло)</p>
+
+<p><strong>Mole_Garden</strong> 13-06-2009</p>
+
+<blockquote>
+  <p>нам бы простые дешевые горшочки, чтобы попробовать и раствор такой: чтобы что-то нужно было и самому добавлять в образовательных целях, а что-то купить и пользоваться (чтобы вообще хоть что-то выросло)</p>
+</blockquote>
+
+<p>Так я же специально для вас выкладывал фотку своих горшков, они простые, удобные и если есть криативные идеи, то их можно реализовать на этих же горшках.</p>
+
+<p><strong>orgail</strong> 14-06-2009</p>
+
+<p>А я обследовал магазин, где работаю и обнаружил вот что:</p>
+
+<p>Кабель-канал 100х60</p>
+
+<p>И еще более интересное</p>
+
+<p>Короба для вентиляции!</p>
+
+<p>120х60</p>
+
+<p>И самое-самое:</p>
+
+<p>короб, размеры ВНИМАНИЕ:</p>
+
+<p>204х60 - а это значит, что может поместиться 2 ряда на то же длине и экономия по цене</p>
+
+<p><strong>Mole_Garden</strong> 14-06-2009</p>
+
+<blockquote>
+  <p>И самое-самое:</p>
+
+  <p>короб, размеры ВНИМАНИЕ:</p>
+
+  <p>204х60 - а это значит, что может поместиться 2 ряда на то же длине и экономия по цене</p>
+</blockquote>
+
+<p>Единственно, что мне приходит на ум, это то что такой короб можно использовать для выращивания рассады, а потом ее пересаживать в узкие короба и выращивание клубники и то при определенной фантазии. Остальные растения вряд ли, так как буду очень сильно затенять друг друга. Хотя, как вариант - снять крышку с короба и засадить его полностью зеленью 8)</p>
+
+<p><strong>orgail</strong> 14-06-2009</p>
+
+<p>Плохо, что у воздушных коробов нет крышки, они “неразборные” :(</p>
+
+<p><strong>Mole_Garden</strong> 14-06-2009</p>
+
+<blockquote>
+  <p>Плохо, что у воздушных коробов нет крышки, они “неразборные” :(</p>
+</blockquote>
+
+<p>Ну тогда рассада, клубника, но с хитрым размещением, зелень- тоже как клубнику размещаем в шахматном порядке, только плотней.</p>
+
+<p>Еще как вариант- это рукоделие, берем электролобзик и вперед. ;) фантазируем и делаем.</p>
+
+<p><strong>orgail</strong> 14-06-2009</p>
+
+<p>так конечно только под мелочь…</p>
+
+<p>а если короб 120х6 использовать как 6х120 ? :D</p>
+
+<p>то есть вертикально?</p>
+
+<p><strong>Mole_Garden</strong> 14-06-2009</p>
+
+<blockquote>
+  <p>так конечно только под мелочь…</p>
+
+  <p>а если короб 120х6 использовать как 6х120 ? :D</p>
+
+  <p>то есть вертикально?</p>
+</blockquote>
+
+<p>Вертикальные лотки это самый лучший вариант, на мой взгляд.</p>
+
+<p><strong>aquater</strong> 04-05-2010</p>
+
+<p>Всем здравствуйте . Меня кстати интересует такой вопрос . Можно ли использовать кабельный канал 100х60 для выращивания лука . Где-то на форуме я читал что меньше 100 мм глубиной использовать не стоит . Наверное так и есть , с продувкой опять же проблематично . Вопрос . Можно ли их для чего-нибудь использовать ?</p>
+
+<p><strong>Mole_Garden</strong> 05-05-2010</p>
+
+<blockquote>
+  <p>Всем здравствуйте . Меня кстати интересует такой вопрос . Можно ли использовать кабельный канал 100х60 для выращивания лука . Где-то на форуме я читал что меньше 100 мм глубиной использовать не стоит . Наверное так и есть , с продувкой опять же проблематично . Вопрос . Можно ли их для чего-нибудь использовать ?</p>
+</blockquote>
+
+<p>Использовать можно, но на сколько выйдет оправданно ?</p>
+
+<p><strong>ASK</strong> 06-05-2010</p>
+
+<blockquote>
+  <p>Всем здравствуйте . Меня кстати интересует такой вопрос . Можно ли использовать кабельный канал 100х60 для выращивания лука . Где-то на форуме я читал что меньше 100 мм глубиной использовать не стоит . Наверное так и есть , с продувкой опять же проблематично . Вопрос . Можно ли их для чего-нибудь использовать ?</p>
+</blockquote>
+
+<p>Я эксперементировал с такой глубиной - растет :)</p>
+
+<p>Только это не лучший вариант часто воду нужно подливать не держиться постоянная темпиратура…</p>
+
+<p><strong>valery</strong> 06-05-2010</p>
+
+<p>Для выращивания лука - можно любую “посуду” и даже без посуды, в том числе и кабель канал, но зачем ?</p>
+
+<p>Только если другой “посуды” нет, а кабель-каналов кругом полно, деть некуда, а выкинуть жалко …</p>
+
+<p>Разве нет ничего другого под рукой ? Главное, чтобы было удобно “огороднику” и растение компактно размещалось, ну и прочее …</p>
+
+<p>Кабель-каналы чаще принято приспосабливать под “салатные” лотки на “проточке (NFT)/</p>
+
+<p><strong>Smile</strong> 17-05-2011</p>
+
+<p>Здравствуйте.</p>
+
+<p>А что там вопрос с производством каналов 100х60 под салатные линии остановился или вообще снят с повестки дня. Тоже бы приобрел готовые короба (с заглушками) + периферия.</p>
+
+<p>Заранее спасибо.</p>
+
+<p><strong>Mole_Garden</strong> 20-05-2011</p>
+
+<blockquote>
+  <p>Здравствуйте.</p>
+
+  <p>А что там вопрос с производством каналов 100х60 под салатные линии остановился или вообще снят с повестки дня. Тоже бы приобрел готовые короба (с заглушками) + периферия.</p>
+
+  <p>Заранее спасибо.</p>
+</blockquote>
+
+<p>Если у тебя предполагается не большая установка, длиной до 2 метров, то используй обычные кабель каналы. А то так и просидишь, ничего не построив, так как на заказ такие короба, как уже говорилось, делают редко и большими партиями.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

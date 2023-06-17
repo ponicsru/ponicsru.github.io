@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Зелёное счастье | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Зелёное счастье">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Зелёное счастье</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>NSR</strong> 28-01-2015</p>
+
+<p>привет!</p>
+
+<p>хочу поделиться с вами непередаваемым удовольствием от собственноручно выращенного огурца :) .. вкуснейший огурчик с безумно ароматной зеленью, хрустящая горбушка свежего кирпичиком белого хлеба с кусочком сыра )) какая же вкуснятина ))</p>
+
+<p><a href="https://t.me/ponics_ru_files/13593" target="_blank"><img src="/imagehost2/thumbs/1yvy.jpg" alt="" /></a></p>
+
+<p>это не первый опыт выращивания дома, но почему то именно огурец вызвал у меня такие эмоции и желание здесь написать.. огурец турнир F1, очень переживала, что из за сухого климата (влажность 45- 50%) огурец если и вырастут, то будут пустые или дряблые, но оказалось наоборот - очень хрустящий, плотная хрустящая мякоть, плотность кожицы такая же как мякоти, попка не отличается - тоже сладкая и съедобная до самого хвостика.. ничего общего с магазинными водянистыми огурцами..</p>
+
+<p>зелень тоже моя (кервель кинза укроп) растёт сейчас в лопнувшем 60 литровом аквариуме (свет две трёхлетние люмки Т5 НО 8000к по 24вт) , который я чуть не выкинула, но вовремя сообразила, что туда можно поместить землянику (в мае)</p>
+
+<p><a href="https://t.me/ponics_ru_files/13594" target="_blank"><img src="/imagehost2/thumbs/21.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/13595" target="_blank"><img src="/imagehost2/thumbs/22.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/13596" target="_blank"><img src="/imagehost2/thumbs/3.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/13597" target="_blank"><img src="/imagehost2/thumbs/4.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/13598" target="_blank"><img src="/imagehost2/thumbs/5.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/13599" target="_blank"><img src="/imagehost2/thumbs/6.jpg" alt="" /></a></p>
+
+<p>один куст крупноплодный был куплен рассадой, остальные посеяны семечками - мелкоплодная земляника разных сортов … всё лето не следила за ней, поливала раствором один два раза в неделю т.к. почти не бывала дома, но она потихоньку росла.. как стала поливать каждый день, просто на глазах начала увеличиваться в размерах, цвести и вылезать из аквы .. пришлось срочно делать шкаф, куда её сразу же и переселила ..</p>
+
+<p><a href="https://t.me/ponics_ru_files/13600" target="_blank"><img src="/imagehost2/thumbs/7pdp.jpg" alt="" /></a></p>
+
+<p>мелкоплодная земляника оказалась безумно вкусной .. никакого сравнения с крупноплодной, а какой аромат !! - лесной земляники .. на всю комнату .. так что советую мелкоплодную - удовольствия и больше (вкус, запах) и чаще (15-20 ягод с пяти кустов каждый день) .. правда надоело опылять .. опыляла спичкой с ваткой - ягоды получались лучше, чем когда кисточкой .</p>
+
+<p><a href="https://t.me/ponics_ru_files/13601" target="_blank"><img src="/imagehost2/thumbs/8.jpg" alt="" /></a></p>
+
+<p>освещались компактами разной температуры и мощности (из того что было) .. и может это совпадение (т.к. сорта были разными), но под лампами 4200к кусты лучше всего росли и плодоносили .. максимум они в длину 2.5 см</p>
+
+<p><a href="https://t.me/ponics_ru_files/13602" target="_blank"><img src="/imagehost2/thumbs/9.jpg" alt="" /></a></p>
+
+<p>шкаф в три этажа - на втором - огурцы, вымахавшие мини-томаты, перец, горохи.. в центре лук (который не растёт) и боб - их уберу наверх … на третьем сейчас вместо земляники рассада и сладкий мини-перец (начал цвести) .. на первом бак для подготовки воды в аквы и прочие вещи ..</p>
+
+<p><a href="https://t.me/ponics_ru_files/13603" target="_blank"><img src="/imagehost2/thumbs/10.jpg" alt="" /></a></p>
+
+<p>разделение на второй и третий этажи только спереди, сзади у стены общее пространство на два этажа, там огурцы: турнир, с кучей завязей (ни одного пустоцвета) на подходе ещё три больших огурчика и справа - подмосковные вечера (практически одни пустоцветы пока) .. т.е. огурцы растут снизу второго этажа до потолка третьего ..</p>
+
+<p><a href="https://t.me/ponics_ru_files/13604" target="_blank"><img src="/imagehost2/thumbs/11.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/13605" target="_blank"><img src="/imagehost2/thumbs/12.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/13606" target="_blank"><img src="/imagehost2/thumbs/13.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/13607" target="_blank"><img src="/imagehost2/thumbs/14.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/13608" target="_blank"><img src="/imagehost2/thumbs/15.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/13609" target="_blank"><img src="/imagehost2/thumbs/16.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/13610" target="_blank"><img src="/imagehost2/thumbs/17.jpg" alt="" /></a></p>
+
+<p>а начиналось всё год назад с этого (переделанный комод) -</p>
+
+<p><a href="https://t.me/ponics_ru_files/13611" target="_blank"><img src="/imagehost2/thumbs/18.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/13612" target="_blank"><img src="/imagehost2/thumbs/19.jpg" alt="" /></a></p>
+
+<p>у гороха периодическое подтопление (помпа в той же ёмкости где горшки) .. бутылки - периодический полив через трубочки сверху (тоже самое - помпа в той же ёмкости куда стекал раствор) .. везде был мелкий керамзит</p>
+
+<p><a href="https://t.me/ponics_ru_files/13613" target="_blank"><img src="/imagehost2/thumbs/20.jpg" alt="" /></a></p>
+
+<p>субстрат сейчас везде - мелкий керамзит + кокос 50/50 .. удобрение флора микро (для мягкой воды) + мато + хлорид кальция .. ес 2 - 2.4 .. иногда беру воду подготовленную для аквариумов, туда помимо кальция ещё и магний добавлен .. освещение - разные компакты .. температура днём 25 ночью 22 .. влажность около 50% .. выше невозможно поднять никак, особенно когда на улице ниже нуля .. окна запотевшие .. и это не смотря на мокрые полотенца на батареях, постоянно работающий уз-увлажнитель , и три открытых аквариума ..</p>
+
+<p>со светом позже что-нибуд придумаю, хочу попробовать индукционную лампу (очень любопытно), ну и как будет время разберусь с удо, а то флора и так не дешёвая подорожала в два раза &gt;:(</p>
+
+<p>имеется проблема - треснувший вдоль стебель огурца, но нашла уже тут ответ, что это из за перепадов влажности субстрата и что надо трещину замазать мелом</p>
+
+<p><a href="https://t.me/ponics_ru_files/13614" target="_blank"><img src="/imagehost2/thumbs/23.jpg" alt="" /></a></p>
+
+<p>ну и хочу поблагодарить всех постояльцев форума, которых я уже полюбила, за информацию и помощь $) .. всех остальных за опыт (удачный и неудачный) на котором я учусь $) ..</p>
+
+<p><strong>Coccinella</strong> 28-01-2015</p>
+
+<p>Как все замечательно у Вас получилось!!! И вкусно!!! $) $) $)</p>
+
+<p><strong>Vad</strong> 28-01-2015</p>
+
+<p><em>8)</em></p>
+
+<p>отлично!</p>
+
+<p><strong>NSR</strong> 28-01-2015</p>
+
+<p>спасибо за добрые слова :) $)</p>
+
+<p>только вы в моей жизни способны понять счастье от выращенного в моей засухе огурца .. обычно я слышу - “во что ты превратила комнату”, “когда ты уберёшь аквариумы и вернёшь мебель”, “совсем сдурела - устроила в квартире огород”, “хочешь химией нас потравить” и тд. и тп. :D … а что делать когда нет дачи, балкона и даже окно настолько тёмное, что в солнечный день приходится включать свет .. :( .. всё детство летом я проводила на огороде и в саду у дедушки и бабушки за 2000 км от дома .. где протяни руку в любом месте и сорвёшь что нибудь вкусное .. я вдыхаю эти запахи и возвращаюсь туда .. и это тоже счастье ..</p>
+
+<p>сегодня меня не было весь день дома .. и огурец который с плодами завял - листья как тряпочки (второй с пустоцветами нормально) .. я его срочно опрыскала водой .. и пока замешивала раствор они стали как новые ))) меня это просто поразило ..</p>
+
+<p><strong>Vad</strong> 28-01-2015</p>
+
+<p>Непреодолимая тяга к живому, зеленому, вкусному… в нашем “каменном” веке не всем понятна :)</p>
+
+<p>Ну ничего… окружение адаптируется ))</p>
+
+<p>А огурец быстро откликается на влагу ..</p>
+
+<p>но злоупотреблять такими акциями не стоит… :-X</p>
+
+<p>Опять потрескается…</p>
+
+<p><strong>lidia</strong> 29-01-2015</p>
+
+<p>Мне очень понравились растения и как Вы их разместили. Здорово! :)</p>
+
+<p><strong>Coccinella</strong> 29-01-2015</p>
+
+<p>А мне как раз понравился огород в шкафу, красиво и функционально.</p>
+
+<p>А привядания листьев растений потенциально опасны еще и заселением паутинного клеща. Сейчас он еще спит, но скоро начнет просыпаться и тогда его может занести ветров в форточку. Как раз на таких листьях они и поселяются в первую очередь.</p>
+
+<p><strong>Strangeman</strong> 29-01-2015</p>
+
+<p>NSR, у Вас очень хорошо все получается! Прелесть!</p>
+
+<blockquote>
+  <p>спасибо за добрые слова :) $)</p>
+
+  <p>только вы в моей жизни способны понять счастье от выращенного в моей засухе огурца .. обычно я слышу - “во что ты превратила комнату”, “когда ты уберёшь аквариумы и вернёшь мебель”, “совсем сдурела - устроила в квартире огород”, “хочешь химией нас потравить” и тд. и тп. :D …</p>
+</blockquote>
+
+<p>Надо же, а мне растения в жилом помещении всегда казались эстетичными.</p>
+
+<p>У меня вот “дошли руки” до лоджии, делаю там зимний “живой уголок”, только показывать пока нечего.</p>
+
+<p>Жену мне удалось увлечь, так что мне проще, она с удовольствием помогает :)</p>
+
+<p>И, да - это зеленое счастье :)</p>
+
+<p><strong>Ru7tam</strong> 29-01-2015</p>
+
+<blockquote>
+  <p>Жену мне удалось увлечь, так что мне проще, она с удовольствием помогает :)</p>
+</blockquote>
+
+<p>Это Вам сильно повезло! :) У меня жена специально на кухне верхний свет после ужина гасит и сидит с маленьким светильником, чтобы цветочки, стоящие на подоконнике, не досвечивать…</p>
+
+<p><strong>Strangeman</strong> 29-01-2015</p>
+
+<blockquote>
+  <blockquote>
+    <p>Жену мне удалось увлечь, так что мне проще, она с удовольствием помогает :)</p>
+  </blockquote>
+
+  <p>Это Вам сильно повезло! :) У меня жена специально на кухне верхний свет после ужина гасит и сидит с маленьким светильником, чтобы цветочки, стоящие на подоконнике, не досвечивать…</p>
+</blockquote>
+
+<p>У нас к “серебряной” свадьбе близится. За столько лет, обычно, либо приходит взаимопонимание, либо понимание, что не по пути.</p>
+
+<p>PS У меня с первой женой не было полного взаимопонимания.</p>
+
+<p><strong>NSR</strong> 01-02-2015</p>
+
+<blockquote>
+  <p>А огурец быстро откликается на влагу ..</p>
+
+  <p>но злоупотреблять такими акциями не стоит… :-X</p>
+
+  <p>Опять потрескается…</p>
+</blockquote>
+
+<p>это первое что пришло мне в голову- опять потрескается, на следующий день подлезла к нему и внимательно осмотрела, трещины там везде вдоль всего стебля, не такие сильные - как царапины, но везде .. <em>???</em> и на другом тоже … ну ничего , я уже получила больше чем мечтала, это всё же временный экспериментальный шкаф, в голове уже разрабатываю новый капитальный, к тому же хочется ещё столько всего попробовать вырастить, у меня три пакета семян :D</p>
+
+<p>огурцы пока растут, по одному в день, достала пакетик - мои немного отличаются от изображения (округлый носик)</p>
+
+<p><a href="https://t.me/ponics_ru_files/13615" target="_blank"><img src="/imagehost2/thumbs/img4168.jpg" alt="" /></a></p>
+
+<p>ещё один большой остался, что будет дальше не понятно, больше растущих завязей нет.. у пустоцветного вроде завязались несколько - попки потемнели и заблестели, чуть увеличились, но пока тоже не растут .. думают</p>
+
+<blockquote>
+  <p>Мне очень понравились растения и как Вы их разместили. Здорово! :)</p>
+</blockquote>
+
+<p>спасибо $) .. если честно я не ожидала получить хотя бы один огурчик, хожу в лёгкой эйфории.. ведь я даже не знаю сколько и чего им лью, никак руки не дойдут посчитать и каждому лить нужное соотношение, всё на глазок :-[ пока терпят моё разгильдяйство ..</p>
+
+<blockquote>
+  <p>А привядания листьев растений потенциально опасны еще и заселением паутинного клеща. Сейчас он еще спит, но скоро начнет просыпаться и тогда его может занести ветров в форточку. Как раз на таких листьях они и поселяются в первую очередь.</p>
+</blockquote>
+
+<p>именно так и происходит у нас каждое лето ) .. задувает точно клещей и ещё кого то на мамины цветы - второй этаж и полно зелени за окном, плюс летом дома почти не бываю, так что летом будет перерыв сто процентов, ну может только зелень в аквариуме оставлю..</p>
+
+<blockquote>
+  <p>NSR, у Вас очень хорошо все получается! Прелесть!</p>
+
+  <p>Надо же, а мне растения в жилом помещении всегда казались эстетичными.</p>
+
+  <p>У меня вот “дошли руки” до лоджии, делаю там зимний “живой уголок”, только показывать пока нечего.</p>
+
+  <p>Жену мне удалось увлечь, так что мне проще, она с удовольствием помогает :)</p>
+
+  <p>И, да - это зеленое счастье :)</p>
+</blockquote>
+
+<p>спасибо $) .. это действительно хорошо, но моих уже не изменить, слишком разные у нас всегда были вкусы и интересы, цветы по их мнению могут быть только на окне, и именно цветы, а не помидоры, поливаемые химией :D</p>
+
+<p>завидую тем у кого есть балконы ) .. как то увидела у нас нестандартные дома, построенные на месте терракта, с большими и очень широкими полукруглыми балконами .. стояла полчаса любовалась на них - мечтала ))</p>
+
+<p>как же красиво цветёт сладкий мини-перец <del>Валерий</del> винни-пух</p>
+
+<p><a href="https://t.me/ponics_ru_files/13616" target="_blank"><img src="/imagehost2/thumbs/img4169.jpg" alt="" /></a></p>
+
+<p>никогда не видела как растёт перец, у бабушки с дедушкой их не было, так что для меня это открытие ..</p>
+
+<p><strong>Coccinella</strong> 01-02-2015</p>
+
+<p>Забавно, Ваши огурцы правильные, это те, что на фото на пакете семян, выращены с недостатком влаги. Такие острые носики бывают в двух случаях - при неравномерном снабжении влагой быстро растущего огурчика и при поражении их аскохитозом.</p>
+
+<p>Ваши оурчики политы лучше, чем те. $)</p>
+
+<p>Однако такие микротрещины на стебле способствуют поражению этим самым аскохитозом. В комнате инфекция вряд ли присутствует, а вот в тепличках на даче или у тех, кто на балконах выращивает, на это стоит обратить внимание.</p>
+
+<p><strong>Vad</strong> 01-02-2015</p>
+
+<blockquote>
+  <p>никогда не видела как растёт перец, у бабушки с дедушкой их не было, так что для меня это открытие</p>
+</blockquote>
+
+<p>ойй… был перец у меня в гостях :D</p>
+
+<p>сколько от него МУСОРА.. это ужас… :D</p>
+
+<p>а какой запах… когда цветет <em>Dance</em></p>
+
+<p>чем то на сирень смахивает… только тоньше и насыщеннее…</p>
+
+<p>:D</p>
+
+<p>тут есть про него видео</p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1497.msg64460#msg64460" target="_blank">http://forum.ponics.ru/index.php?topic=1497.msg64460#msg64460</a></p>
+
+<p><strong>Ru7tam</strong> 01-02-2015</p>
+
+<blockquote>
+  <p>никогда не видела как растёт перец, у бабушки с дедушкой их не было, так что для меня это открытие ..</p>
+</blockquote>
+
+<p>Он еще и сбрасывает эти цветочки лихо, если ему что-то в поливе/освещении/температуре не нравится. У меня, в результате, завязалось 3 цветочка на кусте, а растет - только один перец.</p>
+
+<p><strong>NSR</strong> 06-02-2015</p>
+
+<blockquote>
+  <p>Забавно, Ваши огурцы правильные, это те, что на фото на пакете семян, выращены с недостатком влаги. Такие острые носики бывают в двух случаях - при неравномерном снабжении влагой быстро растущего огурчика и при поражении их аскохитозом.</p>
+</blockquote>
+
+<p>:o действительно забавно :D .. я была уверена, что это у меня неправильные, или вообще другой сорт попался .. а ещё мне мнится, что уже есть какая то зараза, но пока внешне на литьях это не проявляется, сидит в стебле, корнях.. чисто интуитивно .. купила фитоспорин опрыскала и полила им для самоуспокоения ))</p>
+
+<p>ещё есть мелкие мошки и другие покрупней (2-3 мм) их меньше и летают по другой траектории и быстрее .. кто их знает, что они там откладывают в почве (про огуречных комариков читала)</p>
+
+<p>вот те что покрупнее</p>
+
+<p><a href="https://t.me/ponics_ru_files/13617" target="_blank"><img src="/imagehost2/thumbs/img4213tht.jpg" alt="" /></a></p>
+
+<p>огурцы пока растут, немножко кривенькие, трещины на стеблях увеличиваются</p>
+
+<p><a href="https://t.me/ponics_ru_files/13618" target="_blank"><img src="/imagehost2/thumbs/img4242.jpg" alt="" /></a></p>
+
+<p>вырос один у пустоцветного</p>
+
+<p><a href="https://t.me/ponics_ru_files/13619" target="_blank"><img src="/imagehost2/thumbs/img4222.jpg" alt="" /></a></p>
+
+<p>на вкус хуже, и самое ужасное с горькой попкой :( .. а я её ещё так смачно по привычке разжевала &gt;:( фу .. снесу его , совсем ему пои условия видима не подходят, лучше ещё какой нибудь сорт попробую вырастить, заодно попробую увеличить в субстрате процент кокоса к керамзиту .. сначала была мысль, что это из за удобрений, которые я неделю назад пока не закончилась флора сменила по рецепту николая для ленивых чайников как я - акварин хвойный + кальциевая селитра, но вчера попробовала новый огурчик турнира, выросший на новом удо - такой же вкусный и сладкий как прежние, ничем не отличался.. внешне тоже пока никакой перемены на растениях не вижу…</p>
+
+<p>а ещё я часто проветриваю сквозняком, очень жарко в комнате, к тому же накапливается радон, если прогнать воздух с утра пылесосом через тряпку - фонит прилично по бете .. шкаф хоть и закрыт дверками, но щелей много - тоже перепады влажности получаются и температуры ..</p>
+
+<blockquote>
+  <p>ойй… был перец у меня в гостях :D</p>
+
+  <p>сколько от него МУСОРА.. это ужас… :D</p>
+
+  <p>а какой запах… когда цветет <em>Dance</em></p>
+
+  <p>чем то на сирень смахивает… только тоньше и насыщеннее…</p>
+
+  <p>:D</p>
+
+  <p>тут есть про него видео</p>
+
+  <p><a href="http://forum.ponics.ru/index.php?topic=1497.msg64460#msg64460" target="_blank">http://forum.ponics.ru/index.php?topic=1497.msg64460#msg64460</a></p>
+</blockquote>
+
+<p>мой мусорит только под себя в горшочек :D .. он такой куклёныш .. но запаха я у своего не заметила, правда носом в цветочки не лезла ..</p>
+
+<p>классное видео )) .. прям сад у вас $) .. я когда представляю, что у меня есть балкон, большой, широкй .. помимо зелени представляю, что поставила бы туда кресло-кровать и столик-тумбу с чайником, плюшками и ноутом )) возможно даже небольшой аквариум куб на 60л и можно там жить :)</p>
+
+<p>я уже такие красивые перцы тут видела, но не могла понять это декоративные или можно вкусить )) .. укропа у вас так много и такой он большой !! густой!! аж слюнки потекли .. у меня почти одни пеньки - мало .. очень люблю его !</p>
+
+<blockquote>
+  <p>Он еще и сбрасывает эти цветочки лихо, если ему что-то в поливе/освещении/температуре не нравится. У меня, в результате, завязалось 3 цветочка на кусте, а растет - только один перец.</p>
+</blockquote>
+
+<p>да , я читала в домиках про это, что цветов много, а перцев кот наплакал .. у меня пока только листья сбрасывает, три уже сбросил - резко вянут и если слегка потянуть отрывается .. не пойму почему, может я повреждаю когда осматриваю его, может цветы когда растут повреждают, он же такой маленький, компактный и такой огромный букет в кучке с листьями :) .. перцы растут пока</p>
+
+<p><a href="https://t.me/ponics_ru_files/13620" target="_blank"><img src="/imagehost2/thumbs/img4202.jpg" alt="" /></a></p>
+
+<p>кстати .. может кто то знает, уже год мучает вопрос - почему после выключения света в шкафу, по комнате разносится запах скошенной травы минут пять , и так каждый вечер .. пыталась найти в инете ответ, но безрезультатно !</p>
+
+<p><strong>Coccinella</strong> 06-02-2015</p>
+
+<p>Очень много вопросов :)</p>
+
+<p>Мошки - они, родимые, комарики :(. Если в продаже есть липкие желтые таблички, повесьте на уровне корневой шейки.</p>
+
+<p>Фитоспорин от них не поможет, а инсектициды в жилых помещениях применять рискованно.</p>
+
+<p>А насчет запаха скошенной травы, я думаю дело в том, что растения по инерции продолжают транспирацию, а света нет.</p>
+
+<p>Вообще, мне последнее время попадаются сообщения о том, что дескать, ученые (не помню, кто именно) установили, будто пораженное вредителями растение испускает запах, привлекающий энтомофагов и одновременно включающий защитные механизмы соседних растений. Они в ответ начинают вырабатывать какие-то алкалоиды, чтобы справиться с нашествием.</p>
+
+<p>Запах скошенной травы, скорее всего, связан именно с этой реакцией растения, ему безразлично, укусили, скосили, еще как-то повредили… Можно сказать, что это запах боли поврежденного растения.</p>
+
+<p>Ну и вот, в таком случае получается, что Ваши растения этим запахом жалуются на стресс. Можно попытаться диммировать светильник (надеюсь, присутствующие подскажут, как это сделать технически), а можно не обращать внимания. Все, что не убивает, делает сильнее. Да и вообще, стресс в разумных границах оказывает генеративное действие.</p>
+
+<p><strong>NSR</strong> 06-02-2015</p>
+
+<p>спасибо вам за ответы :) .. значит комарики :D таки .. ловушки я уже купила на фото как раз мошка на ней .. к вечеру я их не вижу почти - все прилипают видима .. тех что побольше вообще несколько дней не вижу .. фитоспорин не от них конечно .. просто читала что он для профилактики, увидела, купила, пусть будет _)</p>
+
+<p>а запах скошенной травы тоже пусть будет тогда .. мне нравится :) .. будет время может попробую найти что нибудь про это подробней .. только что впихнула по дольке огурчика в домашних :D сказали сладкий :)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

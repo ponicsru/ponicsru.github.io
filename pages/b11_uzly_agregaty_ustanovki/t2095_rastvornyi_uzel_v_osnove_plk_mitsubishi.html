@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Растворный узел. в основе ПЛК Mitsubishi. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Растворный узел. в основе ПЛК Mitsubishi.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Растворный узел. в основе ПЛК Mitsubishi.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>trepuz</strong> 23-08-2014</p>
+
+<p>:-[</p>
+
+<p>Почти собрал прототип “растворного узла”. В основу взяты мозги от Mitsubishi alpha2 XL.</p>
+
+<p>Ни чего особенного, просто устройство под управлением ПЛК. Однажды меня очень впечатлил своим растворным узлом Alexx, с тех пор пытаюсь сделать ,что то подобное.</p>
+
+<p>Работы еще много чтобы полноценно тестировать начать, но дома в ванной уже пробовал намешивать раствор.</p>
+
+<p>Кому интересно, задавайте вопросы!</p>
+
+<p><a href="https://t.me/ponics_ru_files/12763" target="_blank"><img src="/attachimages/16938_dscn1597_thumb.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12764" target="_blank"><img src="/attachimages/16940_dscn1601_thumb.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12765" target="_blank"><img src="/attachimages/16942_dscn1613_thumb.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12766" target="_blank"><img src="/attachimages/16944_dscn1612_thumb.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12767" target="_blank"><img src="/attachimages/16946_dscn1603_thumb.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12768" target="_blank"><img src="/attachimages/16948_dscn1607_thumb.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12769" target="_blank"><img src="/attachimages/16950_2014-08-23_144452.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12770" target="_blank"><img src="/attachimages/16952_2014-08-23_144356.png" alt="" /></a></p>
+
+<p><strong>Alex123</strong> 23-08-2014</p>
+
+<p>Помпочки - недорогие китайские с Ебея ? Как себя показали ?</p>
+
+<p><strong>trepuz</strong> 23-08-2014</p>
+
+<p>Да, Китай. Сравнивать особо не с чем. :) но мне нравится как работают. брал еще и 6 вольтовые. , так 12в. намного лучшего качества.</p>
+
+<p><strong>Mole_Garden</strong> 23-08-2014</p>
+
+<p>Что умеет? Чего не умеет, но чему можно научить?</p>
+
+<p>Интерфейс для управления какой?</p>
+
+<p>Что за черная большая коробченка?</p>
+
+<p><strong>trepuz</strong> 23-08-2014</p>
+
+<blockquote>
+  <p>Что умеет?</p>
+</blockquote>
+
+<p>Решил сделать в виде раздельных модулей. каждый ящик(модуль) можно разместить на некотором расстояние друг от друга и соединять их можно витой парой и не ограничиваться длиной стандартного кабеля.</p>
+
+<p>Пока собраны только три модуля.</p>
+
+<p>1- сам контроллер, блок питания,</p>
+<blockquote>
+  <p>черная большая коробченка</p>
+</blockquote>
+
+<p>это Неттоп с семеркой(так удобно было, его может не быть. возможно в других моделях, его место будет занимать сенсорная операторская панель. пока не стал раскошеливаться) . Модуль, например, можно разместить в диспетчерской или другой комнате.</p>
+
+<p>2- это трансмиттерПШ\ЕС (датчики с резьбой можно в арматуру встроить), преобразователи напр. 1-30в. для каждого из дозаторов, контакты для подключения 3-х нагрузок по 16А., две из них независимые для работы насосов\клапанов для слива\залива и одина для параллельной работы с одним из дозаторов, контакты для подключения 3-х герконовых датчиков, и один свободный канал( можно подключить либо еще один геркон либо датчик температуры для пит. раствора. ). этот модуль можно разместить неподалёку от бака.</p>
+
+<p>3- коробочка с пятью дозаторами два из которых работают синхронно, от одного сигнала. Можно повесить на стену в непосредственной близости от реагентов и бака.</p>
+
+<p>в дальнейшем еще два:</p>
+
+<p>4- осталось шевронный корпус найти и напихать датчиков(темп. вла. CO2 и освещ).</p>
+
+<p>5-модуль с силовыми реле сух. типа и радиаторами для мощных нагрузок.</p>
+
+<p>На данный момент умеет : анализировать раствор (PH, EC, при необходимости есть выделенный канал для датчика температуры)</p>
+
+<p>управлять дозаторами и реле .</p>
+
+<blockquote>
+  <p>но чему можно научить?</p>
+</blockquote>
+
+<p>Научить можно многому! Основные алгоритмы управления уже построены, можно изменять параметры , выстраивать свои, улучшать, упрощать(все делается очень просто). Так как программируется Alpha2 интуитивным и понятным языком FBD (Functional Block Diagram)? что позволяет достаточно гибко использовать имеющиеся 15 входов(из которых 8 могут быть аналоговыми 0-10в.) и 13 дискретных выходов(либо 9 диск. и 2 аналоговых(0-10в. 0\4-20мА.), может посылать АТ-команды на GSM-модем для смс управления и уведомления(модемаGSM пока нету, но дистанционное управление можно реализовать через комп. с модемом.)</p>
+
+<p>Имеется интерфейс схематического представления. Можно частично визуализировать (картинки, таблицы, показания, кнопки)</p>
+
+<p>Также в качестве дополнительных входов в работе контроллера могут участвовать 8 кнопок размещенных на лицевой стороне возле многострочного дисплея. к ним можно привязать переключение режимов или сценария работы. На дисплее также может отображаться информация о выбранных режимах работы.</p>
+
+<p><strong>alexxx</strong> 23-08-2014</p>
+
+<blockquote>
+  <p>Да, Китай. Сравнивать особо не с чем. :) но мне нравится как работают.</p>
+</blockquote>
+
+<p>Силиконовые трубки кислота и щелочь разъест за пару недель…</p>
+
+<p>А что за трансмиттеры для пш и ес использовали? Работают в одном растворе нормально?</p>
+
+<p><strong>trepuz</strong> 23-08-2014</p>
+
+<p>Alexx, моё почтение :)</p>
+
+<blockquote>
+  <p>Силиконовые трубки кислота и щелочь разъест за пару недель…</p>
+</blockquote>
+
+<p>Трубки, да конеш в утиль. Можешь подсказать где нормальных прикупить? А сам механизм и качество неплохие. ИМХО.</p>
+
+<p>С трансмиттером мне один оч. хороший человек помог, кстати с этого форума <em>8)</em> , а работает он тоже оч. хоршо. Единственное что сигнал у него 0-5в. (для этого контроллера идеально было бы 0-10в.).</p>
+
+<blockquote>
+  <p>Работают в одном растворе нормально?</p>
+</blockquote>
+
+<p>Да, вполне.(с развязкой, все как надо) :)</p>
+
+<p><strong>gena1</strong> 23-08-2014</p>
+
+<p>Трансмиттер готовый PH EC готовый у Вас или самодельный ?</p>
+
+<p>При просадке питания от включения внешних нагрузок, параллельно работе трансмиттера какая максимальная погрешность измерений , в частности ЕС ? (для меня это сейчас одна из проблем)</p>
+
+<p><strong>Vad</strong> 23-08-2014</p>
+
+<p>никакой ;)</p>
+
+<p><strong>gena1</strong> 23-08-2014</p>
+
+<p>А я вот не могу побороть этот момент, никто из знакомых ради “такого бреда” :) не хочет тащить ко мне осцоллограф и смотреть что на что и как влияет :) Только и бормочат, что не должно быть впринципе :) …. А оно есть :) …. Старые все стали, брюзжат только :)</p>
+
+<p><strong>trepuz</strong> 23-08-2014</p>
+
+<blockquote>
+  <p>Трансмиттер готовый PH EC готовый у Вас или самодельный ?</p>
+</blockquote>
+
+<p>Готовый брал, человек для меня самостоятельно делал.</p>
+
+<blockquote>
+  <p>При просадке питания от включения внешних нагрузок, параллельно работе трансмиттера какая максимальная погрешность измерений , в частности ЕС ? (для меня это сейчас одна из проблем)</p>
+</blockquote>
+
+<p>Когда тестировал возникала такая беда. Сначала запаниковал, а потом увидел что “общий” болтается не подсоединенный <em>Wall</em>. Сейчас при коммутации нагрузок показания не скачут вовсе. Скорее у вас в другом проблема.</p>
+
+<p><strong>trepuz</strong> 23-08-2014</p>
+
+<blockquote>
+  <p>никакой ;)</p>
+</blockquote>
+
+<p>Здоровская критика от Вада :D пасибо.</p>
+
+<p><strong>gena1</strong> 23-08-2014</p>
+
+<p>Да, это замечательно, что все ок.</p>
+
+<p>Все из ebay я перебрал, вроде работают а, вроде и не очень. :) Сейчас ещё мне один экземпляр трансмиттера ЕС подарили от школьного! (реально у америкосов - это школьный “кружок”) оборудования, правда он показания сразу в цифре даёт, софта и распиновки разъемов, естественно, от него у меня нет . Завтра поковыряю, может найду где “врезаться” в него перед АЦП и взять себе показания :)</p>
+
+<p>Интересная это штука - “показометры”, вроде все просто, а столько нюансов :)</p>
+
+<p>У меня может сам б.п. слабый, при включении диафрагменного насоса или э/м клапана идёт просадка по питанию. Сейчас просто программно отключаю все нагрузки при измерении ЕС или РН , но это, “костыль” конечно, да и просто тупо :)</p>
+
+<p>Итого, нас около 10 человек, кто делает такие штуки своими руками :) Ура товарищи, растём :)</p>
+
+<p><strong>trepuz</strong> 23-08-2014</p>
+
+<p>Для наших школьников тоже такие делают(например <a href="http://www.nau-ra.ru/catalog/komplex/elektroprov" target="_blank">http://www.nau-ra.ru/catalog/komplex/elektroprov</a>) но это не то, переделывать много. Хотя может можно их как-то со Scada системой связать и через модуль вывода те же действия делать без всяких контроллеров.</p>
+
+<blockquote>
+  <p>У меня может сам б.п. слабый, при включении диафрагменного насоса или э/м клапана идёт просадка по питанию</p>
+</blockquote>
+
+<p>Попробуй с двумя б.п.</p>
+
+<blockquote>
+  <p>Итого, нас около 10 человек, кто делает такие штуки своими руками</p>
+</blockquote>
+
+<p>Лень двигатель прогресса :D</p>
+
+<p><strong>trepuz</strong> 23-08-2014</p>
+
+<blockquote>
+  <p>Все из ebay я перебрал, вроде работают а, вроде и не очень.</p>
+</blockquote>
+
+<p>Самый надежный и точный наверно Хановский будет. Сложнее чем у них пока не находил, хотя у фирмы нетафим есть платка(с виду серьезная).</p>
+
+<p><strong>gena1</strong> 23-08-2014</p>
+
+<blockquote>
+  <p>Для наших школьников тоже такие делают(например <a href="http://www.nau-ra.ru/catalog/komplex/elektroprov" target="_blank">http://www.nau-ra.ru/catalog/komplex/elektroprov</a>) но это не то,</p>
+</blockquote>
+
+<p>Если отечественная там не только коробочка с надписью, но и “потроха” - я буду несказанно рад !</p>
+
+<blockquote>
+  <p>Самый надежный и точный наверно Хановский будет. Сложнее чем у них пока не находил, хотя у фирмы нетафим есть платка(с виду серьезная).</p>
+</blockquote>
+
+<p>Цена ханны никогда не нравилась (конечно перебрал я всего подобного на гораздо большую сумму, здесь трудно спорить о целесообразности :) ), но и не хочется ломать принципы :). Нет там НИЧЕГО даже на 300 долл. внутри. Два гвоздя, + переменка между ними - берем сопротивление , “но есть нюанс”… (из анектода про Вовочку, цитировать полностью который здесь нельзя из этических соображений :) )</p>
+
+<p><strong>alexxx</strong> 26-08-2014</p>
+
+<blockquote>
+  <p>Трубки, да конеш в утиль. Можешь подсказать где нормальных прикупить?</p>
+</blockquote>
+
+<p><a href="http://www.ebay.com/itm/Cole-Parmer-25ft-1-8-ID-x-1-4-OD-PHARMED-Pump-Tubing-06484-06-NEW-/360958628518?pt=LH_DefaultDomain_0&amp;hash=item540acf92a6" target="_blank">http://www.ebay.com/itm/Cole-Parmer-25ft-1-8-ID-x-1-4-OD-PHARMED-Pump-Tubing-06484-06-NEW-/360958628518?pt=LH_DefaultDomain_0&amp;hash=item540acf92a6</a></p>
+
+<p><strong>trepuz</strong> 26-08-2014</p>
+
+<blockquote>
+  <p>Цитата: trepuz от 23 Августа 2014, 23:42:01</p>
+
+  <p>Трубки, да конеш в утиль. Можешь подсказать где нормальных прикупить?</p>
+
+  <p><a href="http://www.ebay.com/itm/...sh=item540acf92a6" target="_blank">www.ebay.com/itm/…sh=item540acf92a6</a></p>
+</blockquote>
+
+<p>Так влом тянуть их из штатов :-\</p>
+
+<p>а вот ты не связывался с <a href="http://www.prompolimer.com/" target="_blank">http://www.prompolimer.com/</a> ?</p>
+
+<p><strong>alexxx</strong> 26-08-2014</p>
+
+<p>А у них разве есть такие трубки? Там же нужны строго определенной упругости, и стойкие к кислоте/щелочи.</p>
+
+<p><strong>alexxx</strong> 26-08-2014</p>
+
+<blockquote>
+  <p>Так влом тянуть их из штатов :-\</p>
+</blockquote>
+
+<p>ну тогда я возьму про запас, а то с японии покупать их в 3 раза дороже выходит.))</p>
+
+<p>кстати японцы трубки тоже со штатов тянут для своих помп Welco</p>
+
+<p><strong>trepuz</strong> 26-08-2014</p>
+
+<blockquote>
+  <p>ну тогда я возьму про запас</p>
+</blockquote>
+
+<p><em>Dance</em></p>
+
+<blockquote>
+  <p>для своих помп Welco</p>
+</blockquote>
+
+<p>Да суперские насосы. дорогие?</p>
+
+<p>Kamoer еще понравились(вроде качественный Китай и трубки есть, правда тоже импорт.) надо попробовать!</p>
+
+<blockquote>
+  <p>А у них разве есть такие трубки?</p>
+</blockquote>
+
+<p>напишу сегодня им, спрошу. А какие параметры должны быть?</p>
+
+<p><strong>alexxx</strong> 26-08-2014</p>
+
+<blockquote>
+  <p>Да суперские насосы. дорогие?</p>
+</blockquote>
+
+<p>От партии зависит.. от 86 до 27$ за штуку. :)</p>
+
+<blockquote>
+  <p>А какие параметры должны быть?</p>
+</blockquote>
+
+<p>Такие же как у трубок в твоих насосах, тока чтобы не разъедались. :D</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

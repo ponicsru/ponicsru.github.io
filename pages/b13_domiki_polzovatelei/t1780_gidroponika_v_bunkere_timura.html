@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Гидропоника в бункере Тимура | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Гидропоника в бункере Тимура">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Гидропоника в бункере Тимура</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><em>**</em> 02-06-2013</p>
+
+<p>Давно интересовала меня тема выращивания растений без почвы, без солнечного света. В первые увидел технологию выращивания еще давно в развитых странах Израиль и Голландия, Дания ее широко применяли и применяют по сей день. Зажогся и я, идея гидропоники меня волновала все больше и больше, и в один прекрасный дождливый день решил собрать установку из подручных запчастей.</p>
+
+<p>Цель была создать максимально простую установку, удобную для эксплуатации. Рассмотрел все варианты, прочитал массу литературы, тематических журналов, форумов. Мною был выбран стеллажный метод - стелажи были куплены на стелажном заводе размеры 150см х 200см х40см, лампы flora osram 120см, бабина проводов, клемм и конечно же трубы ПП 110</p>
+
+<p>В качестве лаборатории по изучению флоры был выбран бункер, часть помещения была убрана, отремонтирована до боеготовного состояния :)</p>
+
+<p>Светоотражающим материалом была выбрана краска супер белого цвета, изначально купленная краска закончилась быстрее чем думал, была найдена военная краска на удивление белого цвета лохматых годов, после разбавления ее растворителем, в помещение невозможно было зайти в течении 2 недель… вонь была адской. Получил отравление <em>crazy</em> После чего остатки былой роскоши были заменены на импортную краску без запаха, чем несказанно рад.</p>
+
+<p>Далее нужно было собрать все купленные стеллажи, разобраться с соединением светильников (спасибо за помощь :) форумчанам объяснившем школьный курс физики) и выбрать благородные культуры для выращивания на гидропонике. Решил выращивать Салат, петрушку и укроп.</p>
+
+<p>Естественно был заведен “бортовой журнал” что бы помечать полив, посев, сорта и прочие вещи… но случился казус отравившись краской делая проводку я упал на все свое сооружение и перемешал все семена :) после чего они были высажены в хаотичном порядке в стаканчики собственного производства спасибо паяльнику :)</p>
+
+<p>Могу сказать что разные сорта салата выросли за 15 дней до полноценного размера и продолжают расти сейчас, периодически обрываю листки. Укроп вырос так же за 15 дней размером 30 см, петрушка была посажена пару дней назад жду всходов.</p>
+
+<p>Некоторые сорта салата показались горькими, сорта семян позже напишу, семена русского огорода оправдали себя салат получился великолепным и очень вкусным. Укроп вырос так же чудесным, было посажено 5 сортов разных производителей, внешний вид одинаков как и вкус, очень вкусный и ароматный (вопреки тому факту что гидропонная зелень не имеет аромата) Общая температура по сталлажам 20 ночь-23 день градуса по С</p>
+
+<p>Фотографии решил подписывать, если есть у кого то вопросы или предложения, кто то хочет показать свои результаты всегда отвечу пишите Gidroponika@lenta.ru</p>
+
+<p><a href="https://t.me/ponics_ru_files/10741" target="_blank"><img src="/attachimages/13484_gidro.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 02-06-2013</p>
+
+<p>О-го!</p>
+
+<p>Гидропоника не только вызывает привиыкание… но и опасна для здоровья :o</p>
+
+<p>аккуратнее там… проветривать нужно :-\</p>
+
+<p><strong>Гидропоника</strong> 02-06-2013</p>
+
+<blockquote>
+  <p>О-го!</p>
+
+  <p>Гидропоника не только вызывает привиыкание… но и опасна для здоровья :o</p>
+
+  <p>аккуратнее там… проветривать нужно :-\</p>
+</blockquote>
+
+<p>К сожалению нет возможности проветривания из за конструктивных особенностей бункера, кислород есть но после включения ламп по 4 шт на каждой полке стеллажа, его становиться значительно меньше, позже буду делать что то с вентиляцией</p>
+
+<p><strong>Vad</strong> 02-06-2013</p>
+
+<p>Да им кислород-то особо и не ….. они его сами.. генерируют..</p>
+
+<p>им бы.. Co2 :-[</p>
+
+<p>но вентиляция нужна конечно.. обязательно..</p>
+
+<p>и еще… в подвалах и бункерах скапливается газ - Радон.</p>
+
+<p>(выделяется из бетона, почвы, кирпича, … в общем.. из всего, что по землей)</p>
+
+<p>он очень тяжелый.. в 7 раз тяжелее воздуха.</p>
+
+<p>легко растворяется в воде.. и в тканях растения.</p>
+
+<p>У Американцев есть понятие “Радоновая вентиляция”. Если подвал не оборудован таковой.. то жилище ни продать ни купить нельзя, ну.. и наверное жить тоже запрещено.. :-\</p>
+
+<p>Константин… :-[</p>
+
+<p>Вам микрофон. ;)</p>
+
+<p><em>**</em> 02-06-2013</p>
+
+<p>Забыл упомянуть что первым делом был посажен лук в трубу ПП 50, делал все по технологии :) с применением компрессора - собрал 2 урожая, перо размером 35 см однако закончил этот эксперимент так как одолела мошка, видимо лучше использовать пластиковые ящики так как их легче мыть или чаще менять воду, воду не менял в течении 20 дней, температура была 18-20 по С…</p>
+
+<p>Гидропоньщики ?) кто как борется с мошкой? реально ли предотвратить появление этого момента, лук ем часто буду пробовать еще вырастить но чаще планирую менять воду</p>
+
+<p>Микрофон принят )))) Тимур на связи :)</p>
+
+<p>По поводу вентиляции что то есть, но все необходимо чинить :) пока руки не дошли, спичку сдувает по крайней мере буду двигаться в этом направлении и покупать гофру вентиляционную и вентиляторы</p>
+
+<p><strong>Vad</strong> 02-06-2013</p>
+
+<p>Я имел ввиду Константина - Mole_Garden</p>
+
+<p>он “Там” ;)</p>
+
+<p><strong>Гидропоника</strong> 02-06-2013</p>
+
+<p><a href="http://domekonom.su/2012/12/radon-zaschita.html" target="_blank">http://domekonom.su/2012/12/radon-zaschita.html</a></p>
+
+<p>про газ радон узнал много нового, с трудом вериться что в РФ строят так здания</p>
+
+<p><strong>Coccinella</strong> 03-06-2013</p>
+
+<p>У нас при социализме был санаторий с радоновыми грязевыми ваннами. Народ лечиться приезжал со всего союза. Сейчас уже ничего, конечно, не осталось,… лишь радона, как грязи… все в той же грязи…</p>
+
+<p><strong>Гидропоника</strong> 04-06-2013</p>
+
+<p>Собрал очередной урожай и вот что я заметил, если за один день салат не съедаеться то сразу приобретает очень вялый вид… По сравнению с магазинным теряет товарный вид…</p>
+
+<p>Причина в том что нет торфа и немного влаги, по этому он не может храниться и выглядить бодро долгое время? Сорта естественно разные использовал :(</p>
+
+<p><strong>Vad</strong> 04-06-2013</p>
+
+<p>если по аналогии с укропом.. да не убъет меня бог, за расткрытие псевдосекретов… :-[</p>
+
+<p>попробуйте последние 2-3 дня перед сбором урожая поднимать ес.. (в 2-3 раза) снижать температатуру ..</p>
+
+<p>я укроп собираю когда у него EC 5 - 5.5</p>
+
+<p>выглядит бодренько.. 2-3 дня лежа в холодильнике..</p>
+
+<p>если этого не делать.. то вянет в течение МИНУТ..</p>
+
+<p>но это у меня и … укроп :-[</p>
+
+<p><strong>Гидропоника</strong> 04-06-2013</p>
+
+<blockquote>
+  <p>если по аналогии с укропом.. да не убъет меня бог, за расткрытие псевдосекретов… :-[</p>
+
+  <p>попробуйте последние 2-3 дня перед сбором урожая поднимать ес.. (в 2-3 раза) снижать температатуру ..</p>
+
+  <p>я укроп собираю когда у него EC 5 - 5.5</p>
+
+  <p>выглядит бодренько.. 2-3 дня лежа в холодильнике..</p>
+
+  <p>если этого не делать.. то вянет в течение МИНУТ..</p>
+
+  <p>но это у меня и … укроп :-[</p>
+</blockquote>
+
+<p>Спасибо:) попробую</p>
+
+<p><strong>maikl25</strong> 10-07-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>если по аналогии с укропом.. да не убъет меня бог, за расткрытие псевдосекретов… :-[</p>
+
+    <p>попробуйте последние 2-3 дня перед сбором урожая поднимать ес.. (в 2-3 раза) снижать температатуру ..</p>
+
+    <p>я укроп собираю когда у него EC 5 - 5.5</p>
+
+    <p>выглядит бодренько.. 2-3 дня лежа в холодильнике..</p>
+
+    <p>если этого не делать.. то вянет в течение МИНУТ..</p>
+
+    <p>но это у меня и … укроп :-[</p>
+  </blockquote>
+
+  <p>Спасибо:) попробую</p>
+</blockquote>
+
+<p>Как успехи?</p>
+
+<p><em>**</em> 22-07-2013</p>
+
+<p>Сильная жара была и духота в городе, у меня возникла проблема с циркуляцией воздуха и свежем потоке кислорода … К сожалению не было средств сделать все по уму. Поехал отдыхать в забугорье <em>crazy</em></p>
+
+<p>Сейчас буду заново сажать все …</p>
+
+<p>По теме получился роскошный салат (все сорта получились великолепными, по сравнению с магазинными идеальные). Были отмечены мной более вкусные сорта :) салата собрал кустов 300 если не больше.</p>
+
+<p>Вырастил укроп, так же массу сортов. По вкусы все одинаково. Укропа собрал очень много, но рос гораздо дольше салата.</p>
+
+<p>Петрушку вырастил моментально в жару, собрал так же большое количество. Отметил для себя более вкусные сорта.</p>
+
+<p>Лук пока отбросил, слишком много мороки и мошек в итоге</p>
+
+<p><strong>Гидропоника</strong> 22-07-2013</p>
+
+<p>Сейчас цель, автоматизировать все. Собственно что бы меньше уделять бункеру времени :)</p>
+
+<p>Попробовать огурец и томат :)</p>
+
+<ul>
+  <li>цитрусовые</li>
+</ul>
+
+<p><strong>orgail</strong> 23-07-2013</p>
+
+<p>ну прям волшебный бункер получился :)</p>
+
+<p>какие сорта показались самыми вкусными?</p>
+
+<p><strong>Гидропоника</strong> 23-07-2013</p>
+
+<blockquote>
+  <p>ну прям волшебный бункер получился :)</p>
+
+  <p>какие сорта показались самыми вкусными?</p>
+</blockquote>
+
+<p>Я могу предположить, что для каждого сорта нужны особые условия выращивания, но при одинаковых условиях все же отличия на лицо. Я выбрал лучшие по вкусовым качествам. + других сортов в том что быстрее растут. Но менее хрустящие, и менее вкусны</p>
+
+<p>Доберусь до пачек, отпишусь по названиям</p>
+
+<p><strong>taram</strong> 27-07-2013</p>
+
+<p>Вентиляцию “победили”?</p>
+
+<p><strong>Гидропоника</strong> 13-09-2013</p>
+
+<p>Только приехал из отдыха :) Со свежими силами приступлю к гидропонике :)</p>
+
+<p>Вентиляцию еще не делал :) Сейчас уже прохладно и нужно думать об отоплении :)</p>
+
+<p>Смотрел радиаторы, буду покупать на следующей неделе устанавливать …</p>
+
+<p>Накопились вопросы))) первый))</p>
+
+<p>Кто выращивал тюльпаны?)) Дайте ссылку на фото) на обзор))</p>
+
+<p>Какие цветы лучше всего растут?)</p>
+
+<p><strong>Гидропоника</strong> 13-09-2013</p>
+
+<p>Вопрос всем, до каких размеров у вас вырастал салат? Листья и сам куст интересует.</p>
+
+<p><strong>maikl25</strong> 13-09-2013</p>
+
+<blockquote>
+  <p>Только приехал из отдыха :) Со свежими силами приступлю к гидропонике :)</p>
+
+  <p>Вентиляцию еще не делал :) Сейчас уже прохладно и нужно думать об отоплении :)</p>
+
+  <p>Смотрел радиаторы, буду покупать на следующей неделе устанавливать …</p>
+
+  <p>Накопились вопросы))) первый))</p>
+
+  <p>Кто выращивал тюльпаны?)) Дайте ссылку на фото) на обзор))</p>
+
+  <p>Какие цветы лучше всего растут?)</p>
+</blockquote>
+
+<p>а я как раз собрался продавать радиаторы и трубы, все новое, купил а ставить уже наверное не буду.</p>
+
+<p>тюльпаны пробовал материал был на форуме, не найдешь у себя поищу.</p>
+
+<p>по мне так лучше всего растут :) петунии только долго растут</p>
+
+<p><strong>maikl25</strong> 13-09-2013</p>
+
+<blockquote>
+  <p>Вопрос всем, до каких размеров у вас вырастал салат? Листья и сам куст интересует.</p>
+</blockquote>
+
+<p>у меня самый большой был 420 грамм за 50 дней <em>Bos</em></p>
+
+<p><strong>Гидропоника</strong> 14-09-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>Вопрос всем, до каких размеров у вас вырастал салат? Листья и сам куст интересует.</p>
+  </blockquote>
+
+  <p>у меня самый большой был 420 грамм за 50 дней <em>Bos</em></p>
+</blockquote>
+
+<p>В костораме купил :) сегодня :) биометалл по 12 секций</p>
+
+<p><strong>Гидропоника</strong> 14-09-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>Вопрос всем, до каких размеров у вас вырастал салат? Листья и сам куст интересует.</p>
+  </blockquote>
+
+  <p>у меня самый большой был 420 грамм за 50 дней <em>Bos</em></p>
+</blockquote>
+
+<p>Я не взвешивал последнюю партию, верхнии полки у меня настроены на 60 см по высоте, салат упирался верхушкой в лампы, труба 100д, лампы люмки…</p>
+
+<p>Просто на фотографиях и вообще не замечал таких размеров салата, ствол был толщиной в 3 см примерно.</p>
+
+<p>Может конечно сорт такой, но на пачке семян, были приславутые 300-400г заявленные.</p>
+
+<p><strong>ROSEMan</strong> 16-09-2013</p>
+
+<p>НА КАКИХ ФОТОГРАФИЯХ? Много букаф,а где подтверждения вашей работы?</p>
+
+<p><strong>Coccinella</strong> 16-09-2013</p>
+
+<p>Mizuna, Вы ник поменяли? :) Поройтесь на форуме, например, на предыдущей странице есть кое-что из фото достижений Гидропоники.</p>
+
+<p><strong>Гидропоника</strong> 16-09-2013</p>
+
+<blockquote>
+  <p>Mizuna, Вы ник поменяли? :) Поройтесь на форуме, например, на предыдущей странице есть кое-что из фото достижений Гидропоники.</p>
+</blockquote>
+
+<p>+5 Coccinella, фотографий я много выкладывал в разных темах.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

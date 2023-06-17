@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>&#1056;&#1077;&#1082;&#1091;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088; | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="&amp;#1056;&amp;#1077;&amp;#1082;&amp;#1091;&amp;#1087;&amp;#1077;&amp;#1088;&amp;#1072;&amp;#1090;&amp;#1086;&amp;#1088;">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">&#1056;&#1077;&#1082;&#1091;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>mdima</strong> 12-05-2009</p>
+
+<p>Я в своем репертуаре. :D Расчитал, спроектировал и заказал себе <a href="http://ru.wikipedia.org/wiki/&#1056;&#1077;&#1082;&#1091;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;" target="_blank">рекуператор</a>. Для теплицы, которую надо одновременно и отапливать и вентилировать, на мой взгляд вещь незаменимая. Пока остановился на 5.5 м2 обменной площади. Это маленький рекуператор для тестов. Если эффективность будет высокой, то расчитаю побольше. Ждем заказ из цеха :)</p>
+
+<p><strong>mdima</strong> 12-05-2009</p>
+
+<p>Принцип теплового обмена в рекуператоре:</p>
+
+<p><a href="http://www.postimage.org/gxJ8NaS.jpg" target="_blank"><img src="http://www.postimage.org/gxJ8NaS.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 12-05-2009</p>
+
+<p>А, куда он тебе? Теплицу строишь? ;)</p>
+
+<p>пока не совсем понятно как он будет выглядеть в конечном итоге.</p>
+
+<p><strong>mdima</strong> 12-05-2009</p>
+
+<p>Теплицу зимой надо проветривать и обогревать одновременно. Без рекуператора это связано с большими затратами. Рекуператор поможет сократить их от 10% до 70%.</p>
+
+<p>Выглядит как куб со стороной 30см, по сторонам которого отводы</p>
+
+<p><strong>Mole_Garden</strong> 12-05-2009</p>
+
+<p>я тока не понял куда и как этот рекуператор прикрутить и примостить в теплицу и где их взять?</p>
+
+<p>Немного порылся сам и вот что нашел</p>
+
+<p><a href="http://www.postimage.org/Pq1PDirS.jpg" target="_blank"><img src="http://www.postimage.org/Pq1PDirS.jpg" alt="" /></a></p>
+
+<p>Так хоть более менее понятно как это работает</p>
+
+<p><strong>Mole_Garden</strong> 12-05-2009</p>
+
+<p>Вот нашел еще подробное <a href="http://www.moskonversprom.ru/proj_cond.html" target="_blank">описание </a>этого устройства</p>
+
+<p><strong>Олеганос</strong> 19-05-2009</p>
+
+<p>Здравая идея , тока я ввиду полного отсутствия знаний иностранных языков не соссем понял принцип действия.</p>
+
+<p>Вопрос: происходит подогрев холодного воздуха - горячим, или-же неагрев осуществляется путем подмешивания холодного потока с горячим ????</p>
+
+<p><strong>Mole_Garden</strong> 19-05-2009</p>
+
+<blockquote>
+  <p>Здравая идея , тока я ввиду полного отсутствия знаний иностранных языков не соссем понял принцип действия.</p>
+
+  <p>Вопрос: происходит подогрев холодного воздуха - горячим, или-же неагрев осуществляется путем подмешивания холодного потока с горячим ????</p>
+</blockquote>
+
+<p>эээ Олег, ты меня пугаешь, суть картинки следующая:</p>
+
+<p>Синяя стрелка это холодный воздух, идущий с улицы. Красный, теплый идущий из теплицы.</p>
+
+<p><strong>Олеганос</strong> 19-05-2009</p>
+
+<p>Эээ…</p>
+
+<p>Дык это понятно, тока меня интересует каким образом нагрев холодного потока происходит.</p>
+
+<p>А вовсе не то, с какой стороны из этого чумодана выходит теплый воздух , а с какой в него входит холодный. :D</p>
+
+<p><strong>Mole_Garden</strong> 19-05-2009</p>
+
+<blockquote>
+  <p>Эээ…</p>
+
+  <p>Дык это понятно, тока меня интересует каким образом нагрев холодного потока происходит.</p>
+
+  <p>А вовсе не то, с какой стороны из этого чумодана выходит теплый воздух , а с какой в него входит холодный. :D</p>
+</blockquote>
+
+<p>когда выходит теплый воздух из теплицы, а холодный входит, то нагрев происходит выходящим теплым воздухом</p>
+
+<p>и на оборот, если на улице жарко, а в теплице прохладно, то с улице будет поступать охлажденный воздух, выходящим из теплицы.</p>
+
+<p><strong>DimaM</strong> 08-06-2009</p>
+
+<p>Я рекуператор собираюсь сделать в виде гофротрубы вставленной внутрь трубы с большим диаметром. По внутренней трубе будет вытяжка а в промежутке между внутренней и внешней - приточка. Протяну под потолком на всю длину теплицы. И покрашу черной краской чтобы на солнце грелась.</p>
+
+<p><strong>Mole_Garden</strong> 08-06-2009</p>
+
+<p>Ниче не понял, а можно чертежик схематичный.</p>
+
+<p><strong>mdima</strong> 08-06-2009</p>
+
+<p>Трубчатые рекуператоры намного менее эффективны, чем пластинчатые.</p>
+
+<p><strong>Mole_Garden</strong> 08-06-2009</p>
+
+<p>аааа, все понял, а вот летом тогда как? если труба будет черной.</p>
+
+<p>и еще, вся фишка рекуператора и пластин в нем, что они хорошо нагреваются и охлаждаются, а из чего будет ваша труба?</p>
+
+<p><strong>samodel</strong> 08-06-2009</p>
+
+<p>Вот нашел, <a href="http://www.inf.by/energyby/9" target="_blank">http://www.inf.by/energyby/9</a> тоже интересует очень.</p>
+
+<p>Надо будет пробовать сделать подобное, да показать, оправдать свой ник в конце концов!!!</p>
+
+<p>В голову приходят автомобильные радиаторы из люминия, почему то :-\</p>
+
+<p><strong>mdima</strong> 08-06-2009</p>
+
+<p>По ссылке как раз неэффективный, а вот пластинки из алюминия (толстая фольга) - самый то.</p>
+
+<p><strong>DimaM</strong> 08-06-2009</p>
+
+<blockquote>
+  <p>аааа, все понял, а вот летом тогда как? если труба будет черной.</p>
+
+  <p>и еще, вся фишка рекуператора и пластин в нем, что они хорошо нагреваются и охлаждаются, а из чего будет ваша труба?</p>
+</blockquote>
+
+<p>Обычная гибкая гофротруба для вытяжек, например кухонных. Из чего она сделана я даже не знаю, наверное просто железо тонкое с проволочным спиральным каркасом. Можно и гладкую вентиляционную трубу, но у гофры площадь теплообмена больше.</p>
+
+<p>Летом будут форточки открыты, поэтому внутри теплицы не будет создаваться разряжение от вытяжки и приточки через трубу не будет.</p>
+
+<p><img src="http://img3.imageshack.us/img3/6498/64275728.th.jpg" alt="" /></p>
+
+<p><strong>samodel</strong> 08-06-2009</p>
+
+<p>Вы правы, Дмитрий, и я понимаю что не эффективно………</p>
+
+<p>Вариант 2: Берем 57 авто радиаторов, собираем в известную нам схему….. :D</p>
+
+<p>Хорошо. Представляю так:</p>
+
+<p>Для самодельной постройки……</p>
+
+<p>…… что пластины как то должны быть закреплены между собой….. значит пайка…… тогда медная фольга.</p>
+
+<p>Цитата: Пока остановился на 5.5 м2 обменной площади.</p>
+
+<p>Столько (такова S) пластин должно быть для «рекуперации» (скока?) кв.м. помещения,</p>
+
+<p>или для (????) куб. м. воздухообмена?</p>
+
+<p><strong>Mole_Garden</strong> 08-06-2009</p>
+
+<p>а вот здесь описано как уже человек изготовил и проверил трубчатый <a href="http://inf.by/energyby/19/" target="_blank">рекуператор</a>.</p>
+
+<p>у него там даже было заметно повышение температуры на 1 градус. о как!</p>
+
+<p>вот еще статьи в том числе и про рекуператор. <a href="http://www.ttai.ru/index.php?page=menu&amp;id=103" target="_blank">Теплообмен</a></p>
+
+<p><strong>samodel</strong> 08-06-2009</p>
+
+<p>Константин, снова спасибо, был там же и не увидел!</p>
+
+<p>Выходит и трубками вполне сносно получается!</p>
+
+<p>Труба у меня есть метровая каналюга d=150, вот в неё, та, и напихаю трубочек!</p>
+
+<p>Уж начал было модель из бумаги ваять, да брошу – морочно однако - куча полосочек!</p>
+
+<p><strong>samodel</strong> 08-06-2009</p>
+
+<p>А вот такая идея:</p>
+
+<p>Канальник дует в один из работающих ДНАТ, ДНАТ работает в култубе – култуб соединен с рекуператором.</p>
+
+<p>Температура у ДНАТа 300 гр. Цельсия (или около – где то видел).</p>
+
+<p>Получаем печку + свежий воздух!?</p>
+
+<p><strong>mdima</strong> 08-06-2009</p>
+
+<p>Да, так и делают ;)</p>
+
+<p><strong>tiounaev</strong> 08-06-2009</p>
+
+<blockquote>
+  <p>А вот такая идея:</p>
+
+  <p>Канальник дует в один из работающих ДНАТ, ДНАТ работает в култубе – култуб соединен с рекуператором.</p>
+
+  <p>Температура у ДНАТа 300 гр. Цельсия (или около – где то видел).</p>
+
+  <p>Получаем печку + свежий воздух!?</p>
+</blockquote>
+
+<p>помойму у Дмитрия в магазине не что подобное продается.</p>
+
+<p><strong>DimaM</strong> 09-06-2009</p>
+
+<blockquote>
+  <p>А вот такая идея:</p>
+
+  <p>Канальник дует в один из работающих ДНАТ, ДНАТ работает в култубе – култуб соединен с рекуператором.</p>
+
+  <p>Температура у ДНАТа 300 гр. Цельсия (или около – где то видел).</p>
+
+  <p>Получаем печку + свежий воздух!?</p>
+</blockquote>
+
+<p>А смысл огород городить? А вдруг в приточном воздухе букашка какая-нибудь окажется и прямо на лампу днат попадет - взрыв. Придется фильтр на приточке ставить.</p>
+
+<p>А так внутри теплицы воздух от лампы и приточный сам перемешается.</p>
+
+<p>Я вот еще не знаю от куда лучше вытяжку делать из под потолка или от пола. При классическом отоплении батареями или регистрами под потолком будет более теплый воздух чем на полу. От солнца также. И вроде жалко тепло на улицу выбрасывать. Если же отопливаться теплыми полами, то у пола должен быть более теплый воздух, и тогда вытягивать лучше сверху.</p>
+
+<p><strong>Mole_Garden</strong> 09-06-2009</p>
+
+<blockquote>
+  <p>А смысл огород городить? А вдруг в приточном воздухе букашка какая-нибудь окажется и прямо на лампу днат попадет - взрыв. Придется фильтр на приточке ставить.</p>
+</blockquote>
+
+<p>А фильтр в принципе как обязательный вариант, потому что пыль то в воздухе с улицы обязательно присутствует. А ее присутствие в теплице не самый лучший вариант.</p>
+
+<blockquote>
+  <p>Я вот еще не знаю от куда лучше вытяжку делать из под потолка или от пола. При классическом отоплении батареями или регистрами под потолком будет более теплый воздух чем на полу. От солнца также. И вроде жалко тепло на улицу выбрасывать. Если же отопливаться теплыми полами, то у пола должен быть более теплый воздух, и тогда вытягивать лучше сверху.</p>
+</blockquote>
+
+<p>Странно, где бы то ни были батареи, теплый воздух будет по любому подниматься в верх. Так что, если цель удалить горячий воздух из теплицы, то вытяжку делать лучше сверху, так мне кажется в теории, не знаю как в практике.</p>
+
+<blockquote>
+  <p>И вроде жалко тепло на улицу выбрасывать.</p>
+</blockquote>
+
+<p>Если внимательно читали статью, то там даже пишут о повышение температуры на 1 градус, с учетом того, что происходит поступление свежего воздуха с улицы постоянно.</p>
+
+<p><strong>samodel</strong> 09-06-2009</p>
+
+<p>Господа! Да я вас в заблуждение ввел, не точным описанием.</p>
+
+<p>Движение воздуха:</p>
+
+<p>1 Теплица – 2 канальник – 3 лампа – 4 рекуператор – 5 улица.</p>
+
+<p>В моем посте можно наоборот понять, что и получилось.</p>
+
+<p>Константин прав на счет фильтра – безусловно. Хотя бы обозначить марлей в пару слоев!!!</p>
+
+<p>Дима М (который не МДима!) на счет «теплых полов»:</p>
+
+<p>Вещь замечательная, внизу 24 – 27; на уровне головы 17 – 20 (точно по Суворову!).</p>
+
+<p>Если «серьезно» делать отопление, вариант хороший, по деньгам сравним с регистрами – труда требует больше.</p>
+
+<p>Вытяжку, по любому сверху делать.</p>
+
+<p>Вот и не жалко тепло выбрасывать, оно свою работу сделало!</p>
+
+<p>Я сейчас делаю «экспериментальный полигон», с учетом возможности максимального контроля и управления микроклиматом, но как бы из подручных материалов! (во как, слова со словарем подбирал!)</p>
+
+<p>Вот попало в поле зрения, наверно не отмахаюсь – куплю. (на случай глобал. потепления)</p>
+
+<p><a href="http://www.rusklimat-rostov.ru/catalog/air-conditioner/mobile-type-air-conditioners/electrolux/9940.html" target="_blank">http://www.rusklimat-rostov.ru/catalog/air-conditioner/mobile-type-air-conditioners/electrolux/9940.html</a></p>
+
+<p><strong>samodel</strong> 09-06-2009</p>
+
+<p>Дмитрий, вопрос более вменяемый!</p>
+
+<p>Вы рассчитали площадь пластин в рекуператоре, а можно, отталкиваясь от площади помещения (15 кв.м.) как нибудь простенько, на пальцах (счеты в крайнем случае) зависимость понять?</p>
+
+<p>Умножить, типа S пола на коэффициентик = S пластин?! :)</p>
+
+<p><strong>DimaM</strong> 09-06-2009</p>
+
+<p>Я наверное не там стал писать про сохранение тепла в связи с вытяжкой, надо было в теме про зимнюю теплицу. Летом я считаю вообще проблем нет, окна открыл вот и вытяжка и приточка, ну максимум форточный вентилятор нужен на случай если ветра совсем нет. С кондиционерами (вместо открытых окон) себестоимость овощей летом будет такая же как и зимой с отоплением. А зимой все таки главная задача это сохранение тепла для минимизации затрат на отопление. Поэтому и возникает вопрос откуда лучше воздух выкачивать снизу или сверху. И еще основная задача вентиляции это удалить излишки кислорода (днем) и доставить свежий воздух с углекислым газом. Ночью наоборот, но предположим что ночью вентиляция выключена. Так где кислорода больше скапливается сверху или снизу?</p>
+
+<p><strong>samodel</strong> 09-06-2009</p>
+
+<p>Все верно! Вечная дилемма!</p>
+
+<p>Делаешь теплее, становиться темнее! И наоборот.</p>
+
+<p>Спорить нет смысла, особенно когда у каждого свои цели, задачи и климат.</p>
+
+<p>Сегодня в тени было 32, так держится вторую неделю (а лампы добавят!), думаю что многие овощи и ягоды будут рентабельны, еще как мин. месяц, а там, какой урожай народ соберет, и осень какая - не известно.</p>
+
+<p>Так что строю помаленьку «термос», чтобы от погоды не зависеть.</p>
+
+<p><strong>Mole_Garden</strong> 09-06-2009</p>
+
+<blockquote>
+  <p>Вот попало в поле зрения, наверно не отмахаюсь – куплю. (на случай глобал. потепления)</p>
+
+  <p><a href="http://www.rusklimat-rostov.ru/catalog/air-conditioner/mobile-type-air-conditioners/electrolux/9940.html" target="_blank">http://www.rusklimat-rostov.ru/catalog/air-conditioner/mobile-type-air-conditioners/electrolux/9940.html</a></p>
+</blockquote>
+
+<p>у меня такой стоит на работе, нормальная такая штука.</p>
+
+<p><strong>samodel</strong> 09-06-2009</p>
+
+<p>Константин, а у того что на работе у тебя, функция осушения контролируется как то, или: нажал на кнопку, потом сам же и выключил?</p>
+
+<p>Господа! Кислород, все таки, «горит» от нагревателя керамического?</p>
+
+<p><strong>Mole_Garden</strong> 10-06-2009</p>
+
+<blockquote>
+  <p>Константин, а у того что на работе у тебя, функция осушения контролируется как то, или: нажал на кнопку, потом сам же и выключил?</p>
+</blockquote>
+
+<p>Осушение это типо обогрев? если обогрев то даже и не знаю как работает, мы им пока только для охлаждения пользовались. :)</p>
+
+<p><strong>king1972</strong> 03-08-2009</p>
+
+<p>вот еще немного информации по пластинчатому рекуператору:</p>
+
+<p><a href="http://forum.penoizol.zp.ua/index.php/topic,309.30.html" target="_blank">http://forum.penoizol.zp.ua/index.php/topic,309.30.html</a></p>
+
+<p><strong>Mole_Garden</strong> 21-08-2009</p>
+
+<p>Для информации <a href="http://www.petrospek.net/downloads/TB9_05_Hov_tepl.pdf" target="_blank">http://www.petrospek.net/downloads/TB9_05_Hov_tepl.pdf</a></p>
+
+<p><strong>vladgord64</strong> 21-08-2009</p>
+
+<blockquote>
+  <blockquote>
+    <p>А смысл огород городить? А вдруг в приточном воздухе букашка какая-нибудь окажется и прямо на лампу днат попадет - взрыв. Придется фильтр на приточке ставить.</p>
+  </blockquote>
+
+  <p>А фильтр в принципе как обязательный вариант, потому что пыль то в воздухе с улицы обязательно присутствует. А ее присутствие в теплице не самый лучший вариант.</p>
+
+  <blockquote>
+    <p>Я вот еще не знаю от куда лучше вытяжку делать из под потолка или от пола. При классическом отоплении батареями или регистрами под потолком будет более теплый воздух чем на полу. От солнца также. И вроде жалко тепло на улицу выбрасывать. Если же отопливаться теплыми полами, то у пола должен быть более теплый воздух, и тогда вытягивать лучше сверху.</p>
+  </blockquote>
+
+  <p>Странно, где бы то ни были батареи, теплый воздух будет по любому подниматься в верх. Так что, если цель удалить горячий воздух из теплицы, то вытяжку делать лучше сверху, так мне кажется в теории, не знаю как в практике.</p>
+
+  <blockquote>
+    <p>И вроде жалко тепло на улицу выбрасывать.</p>
+  </blockquote>
+
+  <p>Если внимательно читали статью, то там даже пишут о повышение температуры на 1 градус, с учетом того, что происходит поступление свежего воздуха с улицы постоянно.</p>
+</blockquote>
+
+<p>Можно пойти другим путём.</p>
+
+<p>Воздух забирается с улицы и и патрубок опускается на дно ёмкости с водой комнатной или выше температуры. Пузырьками он выходит на поверхность уже очищенным от пыли, букашек и к тому же нагретый.</p>
+
+<p>В самой теплице, по принципу солнечного вегетария, под поверхностью см 20-30 прокладываются перфорированные трубы, выходящие над поверхностью на 40 см для забора кислорода и с другой стороны выходящие из теплицы наружу, тёплый воздух проходя по перфорированным трубам отдаёт своё тепло почве (заодно и влагу чарез отверстия), почва становится аккумулятором тепла.</p>
+
+<p><strong>Mole_Garden</strong> 31-08-2009</p>
+
+<blockquote>
+  <p>Можно пойти другим путём.</p>
+
+  <p>Воздух забирается с улицы и и патрубок опускается на дно ёмкости с водой комнатной или выше температуры. Пузырьками он выходит на поверхность уже очищенным от пыли, букашек и к тому же нагретый.</p>
+</blockquote>
+
+<p>Без сомнения можно сделать и как вы говорите, но для того что бы он нагревался лучше, воздух нужно будет пропускать через трубу к примеру в которой много мелких отверстий, что бы воздух бился на мелкие пузырьки, тогда он будет лучше прогреваться. Но нужно понимать, что при таком способе возрастет нагрузка на вентилятор.</p>
+
+<p>Думаю может всплыть еще куча нюансов.</p>
+
+<p><strong>vladgord64</strong> 31-08-2009</p>
+
+<p>Та да!</p>
+
+<p>можно просто увеличить размер патрубка до (допустим) 5 м :)</p>
+
+<p>но это же не эстетично..</p>
+
+<p>А насчёт ньюансов.. можно везде найти их, тем для обсуждения много..</p>
+
+<p><strong>amiNO</strong> 28-11-2009</p>
+
+<blockquote>
+  <p>Я в своем репертуаре. :D Расчитал, спроектировал и заказал себе <a href="http://ru.wikipedia.org/wiki/Рекуператор" target="_blank">рекуператор</a>. Для теплицы, которую надо одновременно и отапливать и вентилировать, на мой взгляд вещь незаменимая. Пока остановился на 5.5 м2 обменной площади. Это маленький рекуператор для тестов. Если эффективность будет высокой, то расчитаю побольше. Ждем заказ из цеха :)</p>
+</blockquote>
+
+<p>всем здравствуйте.</p>
+
+<p>заказ выполнили? если да то можно пожалуйсто фото кто, что и с чем едят…</p>
+
+<p>и краткое пояснение с заключением работает или нет.</p>
+
+<p>спасибо.</p>
+
+<p><strong>alexxx</strong> 07-11-2012</p>
+
+<p>Виталий7, отличная штука, стоит почти как растворный узел! <em>8)</em></p>
+
+<p><strong>Vad</strong> 07-11-2012</p>
+
+<p>Этож.. скоолькоо лука купить - то можно… :-\</p>
+
+<p>или кому продать… урожай… с такой площади… :-\</p>
+
+<p><strong>begunok</strong> 07-11-2012</p>
+
+<p>даешь луку и помидорам свежий и правильно увлажненный воздух!!</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

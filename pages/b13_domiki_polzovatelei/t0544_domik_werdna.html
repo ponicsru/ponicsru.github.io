@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Домик Werdna | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Домик Werdna">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Домик Werdna</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>WERDNA</strong> 15-06-2010</p>
+
+<p>Все началось с перца. Вырастил я на кокосовом субстрате перчик. Перчик понравился, а субстрат не очень, ибо закисает и засаливается (хотя субстрат конечно же непричем: плохому танцору сами знаете что…). Теперь перец растет у меня на смеси перлита и вермикулита - субстратом я очень доволен, но сейчас не об этом.</p>
+
+<p>Так вот, кроме перца рос у меня в кокосике салат. Рос он как то плохо и медленно, даже загибаться стал, и решил я собрать для него установку периодического затопления. Сказано-сделано: пробежался по магазинам, купил запчасти и таки собрал.</p>
+
+<p>Установка маленькая, так сказать для нужд обеспечения семьи зеленью, но все по-настоящему :).</p>
+
+<p>Примите меня в компанию?</p>
+
+<p><a href="https://t.me/ponics_ru_files/4185" target="_blank"><img src="/attachimages/2323_IMAGE_170.png" alt="" /></a></p>
+
+<p><strong>WERDNA</strong> 15-06-2010</p>
+
+<p>Перчик на перлите-вермикулите.</p>
+
+<p><a href="https://t.me/ponics_ru_files/4186" target="_blank"><img src="/attachimages/2325_IMAGE_172.png" alt="" /></a></p>
+
+<p><strong>Evgenin</strong> 15-06-2010</p>
+
+<p>Установка красиво смотрится 8)</p>
+
+<p>А вот салат, что огорчился, голову повесил?</p>
+
+<p><strong>WERDNA</strong> 15-06-2010</p>
+
+<p>Так на перекисленном и пересоленом кокосе он рос… вот и огорчился. Вчера вечером его пересадил в установку - жду реанимируется или нет.</p>
+
+<p><strong>Evgenin</strong> 15-06-2010</p>
+
+<blockquote>
+  <p>Так на перекисленном и пересоленом кокосе он рос… вот и огорчился. Вчера вечером его пересадил в установку - жду реанимируется или нет.</p>
+</blockquote>
+
+<p>чесно говоря я новичок, не знаю, лучше у гуру поинтересоваться.</p>
+
+<p><strong>WERDNA</strong> 16-06-2010</p>
+
+<p>Листья салата немного поднялись за прошедшие сутки. Пациент скорее жив чем… Хотя не кажи гоп…</p>
+
+<p><strong>WERDNA</strong> 16-06-2010</p>
+
+<p>Вот так выглядит “гидропонная кухня”. Растворы мешаю из комплексного удобрения (Hydrokultur от GreenWorld, Etisso) + довожу солями до нужного NPK.</p>
+
+<p><a href="https://t.me/ponics_ru_files/4187" target="_blank"><img src="/attachimages/2327_IMAGE_174.png" alt="" /></a></p>
+
+<p><strong>Rossich</strong> 16-06-2010</p>
+
+<blockquote>
+  <p>Вот так выглядит “гидропонная кухня”. Растворы мешаю из комплексного удобрения (Hydrokultur от GreenWorld, Etisso) + довожу солями до нужного NPK.</p>
+</blockquote>
+
+<p>GreenW….. 656 ? а не проще ли купить буйское “растворин” и добавлять максимум только кальций, зачем буржуев кормить… :D :D с их лохотроном.</p>
+
+<p><strong>WERDNA</strong> 16-06-2010</p>
+
+<p>Если речь идет про проще, то гидрокультур купить оказалось проще. А если по уму - конечно Вы правы.</p>
+
+<p>Меня заинтересовала кемира гидро. Только фасовка у них 25 кг. С моими объемами - внукам еще останется :D, да и хранить негде. А про растворин - спасибо за наводку, буду посмотреть.</p>
+
+<p><strong>Rossich</strong> 16-06-2010</p>
+
+<blockquote>
+  <p>Если речь идет про проще, то гидрокультур купить оказалось проще. А если по уму - конечно Вы правы.</p>
+
+  <p>Меня заинтересовала кемира гидро. Только фасовка у них 25 кг. С моими объемами - внукам еще останется :D, да и хранить негде. А про растворин - спасибо за наводку, буду посмотреть.</p>
+</blockquote>
+
+<p>Террафлекс, Нутривант Дрипп, Мастер- поищите эти просто классика.</p>
+
+<p><strong>WERDNA</strong> 16-06-2010</p>
+
+<p>Огромное спасибо обязательно учту при ближайшей закупке.</p>
+
+<p><strong>WERDNA</strong> 01-07-2010</p>
+
+<p>Салат в установке отрастил корни после варварской пересадки из кокоса и маленько приходит в себя, но как-то не очень. Посадил два новых - будем смотреть.</p>
+
+<p>Перец в перлите-вермикулите с ручным поливом растет очень даже хорошо. :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/4188" target="_blank"><img src="/attachimages/2354_IMAGE_181.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4189" target="_blank"><img src="/attachimages/2356_IMAGE_179.png" alt="" /></a></p>
+
+<p><strong>Rossich</strong> 01-07-2010</p>
+
+<blockquote>
+  <p>Салат в установке отрастил корни после варварской пересадки из кокоса и маленько приходит в себя, но как-то не очень. Посадил два новых - будем смотреть.</p>
+
+  <p>Перец в перлите-вермикулите с ручным поливом растет очень даже хорошо. :)</p>
+</blockquote>
+
+<p>Привет,</p>
+
+<p>салату жарко, “стрелкуется” похоже это-коллапс</p>
+
+<p><strong>WERDNA</strong> 01-07-2010</p>
+
+<p>Да балкон на южной стороне и там реально жарко :(</p>
+
+<p><strong>Mole_Garden</strong> 02-07-2010</p>
+
+<p>:D салат действительно стал не обычный. Ему бы температурку то градусов 20 и солнышка не так много.</p>
+
+<p><strong>WERDNA</strong> 29-09-2010</p>
+
+<p>У меня радостная новость! Вопреки всем издевательствам, у меня завязался самый острый в мире перчик (Bhut Jolokia). В одном экземпляре, но черт побери, сколько же положительный эмоций…</p>
+
+<p><a href="https://t.me/ponics_ru_files/4190" target="_blank"><img src="/attachimages/3449_BJ.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 29-09-2010</p>
+
+<p><em>crazy</em> Ждем отчета о поедание этого перца!</p>
+
+<p><strong>WERDNA</strong> 29-09-2010</p>
+
+<p>Не знаю, отважусь ли… Понюхать и то страшно….</p>
+
+<p><strong>orgail</strong> 29-09-2010</p>
+
+<p>такой лучше не поедать, его лучше макнуть и в сторонку</p>
+
+<p><strong>Rossich</strong> 02-03-2011</p>
+
+<blockquote>
+  <p>Не знаю за салат (у меня вырастить его прошлым летом так и не получилось то ли из за жары, то ли из за кривизны рук), а вот перцы на растворе точно таких же компонентов (единственное, дополнительно добавляю микроэлементы) растут очень очень хорошо…</p>
+</blockquote>
+
+<p>Коллега, глядя на фото перца, могу сказать что не хорошо ему…а точнее плохо, не зная всех условий сужу только по внешнему виду.</p>
+
+<p>1) явно выражена вегетативность (вытянутость) - дисбаланс в питании и освещенности.</p>
+
+<p>2) нет тугора листа, морщинистось - голодание по кальцию…</p>
+
+<p>3) с такого растения трудно получить полноценный урожай, плод будет мелким. Перец необходимо формировать в одну или две самых сильных ветви, оставляя на узлах не более 2-3 плодов.</p>
+
+<p><strong>Coccinella</strong> 02-03-2011</p>
+
+<p>Мне только кажется, что сегодня перец может выглядеть и иначе, все-таки чуть не полгода прошло :)</p>
+
+<p><strong>WERDNA</strong> 02-03-2011</p>
+
+<p>Да конечно иначе!</p>
+
+<p>Просто мы другую фотку обсуждали :), я ее сначала запостил в “ Домик Ивана Внутримкадного.”, как пример , а Rossich прокоментировал ее здесь, дабы не засорять чужую тему.</p>
+
+<p><strong>valery</strong> 02-03-2011</p>
+
+<p>Интересно, а нельзя ли ~~идентифицировать ~~ (ух ты, сам не понял, что сказал :( ), в смысле - определить по внешнему виду (плод, цветок, листочки, не знаю что) сорт/породу домашнего острого перчика, пересаженного из огорода ?</p>
+
+<p><strong>Coccinella</strong> 02-03-2011</p>
+
+<p>Жалко, обсуждаемый перец не увидела :(</p>
+
+<p>Валерий, в принципе именно по внешнему виду, по специальным протоколам-определителям, сорта и отличают друг от друга при регистрации, но в обычной практике их так много, что реально удается определить только особо выдающиеся. Да и то, когда примерно известно, что может быть :)</p>
+
+<p>А домашние острые перчики водятся в таком изобилии и опыляются, как хотят и с кем хотят, что ничего там не определить. Большинство любительских сортов в профессиональном смысле просто не описаны :)</p>
+
+<p><strong>WERDNA</strong> 02-03-2011</p>
+
+<p>Ну по цветку, и плоду вид можно определить достаточно достоверно. Фотку дайте!</p>
+
+<p><strong>Rossich</strong> 02-03-2011</p>
+
+<blockquote>
+  <p>Жалко, обсуждаемый перец не увидела :(</p>
+
+  <p>Валерий, в принципе именно по внешнему виду, по специальным протоколам-определителям, сорта и отличают друг от друга при регистрации, но в обычной практике их так много, что реально удается определить только особо выдающиеся. Да и то, когда примерно известно, что может быть :)</p>
+
+  <p>А домашние острые перчики водятся в таком изобилии и опыляются, как хотят и с кем хотят, что ничего там не определить. Большинство любительских сортов в профессиональном смысле просто не описаны :)</p>
+</blockquote>
+
+<p>Согласен, определить можно только запоминающиеся и выдающиеся сорта.</p>
+
+<p><a href="https://t.me/ponics_ru_files/4191" target="_blank"><img src="/attachimages/6062_dsc01156.jpg" alt="" /></a></p>
+
+<p><strong>WERDNA</strong> 02-03-2011</p>
+
+<p>Ок, по форме цветка и плода можно предположить вид. Так же согласен, определить можно только запоминающиеся и выдающиеся сорта.</p>
+
+<p><strong>WERDNA</strong> 02-03-2011</p>
+
+<p>Ув. Rossich проконсультируйте пожалуйста по кокосу, Вы писали, что Вашим питомцам сей субстрат очень нравится. Я сталкивался с проблемой закисления (в дренаже до PH 3-4, заливал 6). Опытные товарищи подсказали, что надо исключить аммиачный азот, и вроде, пользоваться кальциевой селитрой.</p>
+
+<p>А вы чем кормите? Какие значения Ph, Ppm? Может какие “советы бывалых” найдутся?</p>
+
+<p><strong>Rossich</strong> 02-03-2011</p>
+
+<blockquote>
+  <p>Ув. Rossich проконсультируйте пожалуйста по кокосу, Вы писали, что Вашим питомцам сей субстрат очень нравится. Я сталкивался с проблемой закисления (в дренаже до PH 3-4, заливал 6). Опытные товарищи подсказали, что надо исключить аммиачный азот, и вроде, пользоваться кальциевой селитрой.</p>
+
+  <p>А вы чем кормите? Какие значения Ph, Ppm? Может какие “советы бывалых” найдутся?</p>
+</blockquote>
+
+<p>После пролива Рн 5-5.5</p>
+
+<p>17-8-27+3СaО, 16-8-25+4MgО Нутривант Дрип + Са микс. 1500-2500ррм (ЕС субстрата 4-5)</p>
+
+<p><strong>WERDNA</strong> 13-05-2011</p>
+
+<p>Фув… Почти закончил строительство дачной теплицы, по мелочам кое что осталось… Размеры: длина 5,8 * ширина 2,5 * высота 3,2. Материал - стальной уголок и поликарбонат 6 мм. В теплице буду растить огурцы для собственных нужд. Полив - капельный, и к сожалению грунт. :(</p>
+
+<p>Конечно хотелось бы растить на вате, но “давление среды” в лице родственников приемлит только почву…</p>
+
+<p><a href="https://t.me/ponics_ru_files/4192" target="_blank"><img src="/attachimages/6885_IMAGE_244.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4193" target="_blank"><img src="/attachimages/6887_IMAGE_247.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4194" target="_blank"><img src="/attachimages/6889_IMAGE_248.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 13-05-2011</p>
+
+<p>Очень славная тепличка! А проветривание только через дверь?</p>
+
+<p><strong>WERDNA</strong> 13-05-2011</p>
+
+<p>Во втором торце теплицы будут еще распашные дверки. На самом деле, и меня этот вопрос волнует: в солнечный день (не далее как позавчера) в теплице под 40 градусов…</p>
+
+<p><strong>caiman</strong> 13-05-2011</p>
+
+<blockquote>
+  <p>Во втором торце теплицы будут еще распашные дверки. На самом деле, и меня этот вопрос волнует: в солнечный день (не далее как позавчера) в теплице под 40 градусов…</p>
+</blockquote>
+
+<p>Надо затенять и фогеры ставить… <em>8)</em></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

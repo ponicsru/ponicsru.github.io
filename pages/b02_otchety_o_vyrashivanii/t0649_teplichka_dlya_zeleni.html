@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Тепличка для зелени | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Тепличка для зелени">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Тепличка для зелени</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>green3530</strong> 11-11-2010</p>
+
+<p>Добрый вечер господа.</p>
+
+<p>Пришел и мой час.Этой зимой случайно зашел на сайт по гидропонике и узнал много нового для себя.Сразу скажу что отношения к аграрному сектору не имел до этого НИКАКОГО.Т.е. не просто НИКАКОГО а ВООБЩЕ НИКАКОГО.Отсюда и познания.Так что не судите строго.Вообщем загорелся я поставить тепличку для зелени(укроп петрушка салат).Было выбрано помещение15кв.м.с остекленением по периметру и непрозрачным потолком(других вариантов небыло).Высота 2.1м.Длина 3.4.Ширина 3.4.Оббилось пленкой пузырчатой+потолок со светоотражением.Был выбран метод рециркуляционной системы.И с марта были куплены семена петрушки 8 видов…укропа 6 видов…салата 3 вида(для проверки всхожести).все это было посажено в пробки с касетами Гродан.После N-ного количества дней персадили в “установку”.Без стаканчиков пробки просто”втыкались”в дырочки на лотках.</p>
+
+<p>Кстати для экперимента было поставлено 5 коробов по 2м.В каждом по 10 отвестий.Помпа на 1100лч(еле хватило).Раствор 3-х компонентный Probiotech.Присутствует РН-метр и TDS-метр.</p>
+
+<p>Результат-все лето питались зеленью <em>Dance</em></p>
+
+<p>Воодушевленный экпериментом решил усложнить себе жизнь и увеличить количество лотков с 5 до 28….больше не влазит)</p>
+
+<p>13.10 засеяна по этой же “методике” ТОЛЬКО петрушка….ну нравится она мне)</p>
+
+<p>23.10 пошли всходы</p>
+
+<p>11.11 пора пересаживать(корней достаточно)Проблема-страшно)))Поскольку вложено около 18000гр(1$=8гривень)то это уже не для удовольствия</p>
+
+<p>Цель-за сезон вернуть вложенное и это при продажной цене на сегодняшний день 20гр за кг((((</p>
+
+<p>Надеемся цена поднимется)</p>
+
+<p>Еще не куплены лампы Дназ…..по расчетам 2<em>250 вт на площадь3.4</em>2м…….высота от лотков до потолка 1.5м(ФОТО ЗАВТРА БУДЕТ)у нас 2 лампы с эМпра 1300гр….</p>
+
+<p>Это что касается петрушки….</p>
+
+<p>Плюс к этому можно под лодки поставить ящики для выращивания зеленого лука))))</p>
+
+<p>Идея и методика отсюдаhttp://forum.ponics.ru/index.php/topic,386.0.html</p>
+
+<p>Ящики закуплены рыбные 34см*74см…пока 5 шт на 50 кг лука..пробный выгон</p>
+
+<p>Агроперлит завтра….лук завтра..посадка послезавтра..</p>
+
+<p>Кажется много на себя взял….Посоветоваться нескем, поскольку НИКТО из знакомых НИЧЕГО в ЭТОМ не понимает)))Надежда на Вас.</p>
+
+<p>Вопросы:</p>
+
+<p>1.Можно ли секономить на лампах.</p>
+
+<p>2.Стоит обогреватель на 3Квт вентиляторный….при Т=0грС выгонял +20грС…..боюсь что не его не хватит при падении температуры(((</p>
+
+<p>3.Элекроэнергии “схавано” 700Квт за месяц!!!!!!!!Это при Т на улице 5-17грС(Повторяюсь фото завтра)Это без подсветки в 500Вт.ЗОЛОТАЯ петрушка?</p>
+
+<p>4.Как Вам нравится метод уважаемого aerogrow-а за который я зацепился?</p>
+
+<p>Буду признателен комментариям,замечаниям.предложениям.</p>
+
+<p><strong>Tony_85</strong> 11-11-2010</p>
+
+<p>Думаю, что с боковых окон у вас много света не будет, тем более зимой. Значит, у вас получается почти полная светокультура.</p>
+
+<p>У меня подвал. Теплоизоляция лучше не придумаешь. Две лампы ДНАТ 600 справляются с отоплением. Выходит где-то 650 КВт/месяц. Так что подумайте что лучше, затраты на обогрев или на освещение. Может лучше утеплить все, но поставить побольше ламп.</p>
+
+<p>Если у вас только зелень то лучше брать ДРИЗ. Качественнее будет. Лучше взять одну мощную лампу чем две меньшие. И по цене выйдет дешевле, так как на каждую лампу нужно по балласту, изу, патрону, вилке и т.д. И с одной сильной лампы световой поток будет сильнее.</p>
+
+<p>А что можете сказать о петрушке? Сколько растили, какой выход с кв. метр?. Какие вкусовые качества? Ну и фото, фото, фото в студию. :)</p>
+
+<p><strong>green3530</strong> 11-11-2010</p>
+
+<p>Правда..даже летом света не хватало….все стебли были под наклоном к окнам….</p>
+
+<p>Поставить на площадь 3.4* 2 две по 400Вт?Одной точно не хватит…..будут опять крайние “стелиться”…… при 1.5 метрах в высоте.Т.е вывод-ДВЕ.По 400?На покупку разница не большая…большая на Квт/ч.</p>
+
+<p>ДриЗ?Не узнавал есть ли такие.</p>
+
+<p>О петрушке….данные в тепличке….по вкусу?Петрушка и петрушка)))Разницы между базарной и своей не увидел(моя вкуснее))) ;)</p>
+
+<p>А по кг не взвешивал((Но с 5*10 посадочных мест под петрушку были 20…..20 укроп…10 салат….кстати салат получился как на картинке))красивый раскидыстый……выход из зерен 100%….1 семя в 1 пробку…..но боюсь тяжело мне будет с салатом раскрутиться)))</p>
+
+<p><strong>valery</strong> 12-11-2010</p>
+
+<p>Я тоже думаю, как Тони. На свете - сэкономить можно, но … не нужно.</p>
+
+<p>Свет - это будет основное и главное, от чего ВПРЯМУЮ будет зависеть Ваш урожай.</p>
+
+<p>Все остальное - важное, но во вторую очередь …</p>
+
+<p>Тем более - крыша непрозрачная. Сумеете “нормально” досветиться - будет урожай (вопрос, конечно, насколько рентабельный), не сумеете - ничего не будет (наверное, “ничего” это еще менее рентабельно, все равно ведь у Вас будут расходы, да и “бросить” Вы вряд ли захотите, раз уже “взялись” … )</p>
+
+<p><strong>Tony_85</strong> 12-11-2010</p>
+
+<p>А сколько времени от всходов до товарного вида росла петрушка?</p>
+
+<p>С салатом можете раскрутится. Но не сдавайте его оптовикам. Не выгодно. Идите на прямую в рестораны. Но туда надо идти уже с товаром, ну и не так что вы им предложили салат, а следующую партию можете привезти через месяц.</p>
+
+<p><strong>green3530</strong> 12-11-2010</p>
+
+<p>УРА!!!!!!Нашел.</p>
+
+<p><a href="http://www.energy-saving.com.ua/led_bio_uss70bio.html" target="_blank">http://www.energy-saving.com.ua/led_bio_uss70bio.html</a></p>
+
+<p>Мощность 72Вт</p>
+
+<p>Размеры 800<em>185</em>65</p>
+
+<p>Все идеально….а теперь внимание…ЦЕНА-772$ :o</p>
+
+<p>Побегу-ка я ДриЗ-ов накуплю пока есть)))</p>
+
+<p><strong>green3530</strong> 12-11-2010</p>
+
+<p>А вот и фото</p>
+
+<p><a href="https://t.me/ponics_ru_files/4409" target="_blank"><img src="/attachimages/3649_P6300001_thumb.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4410" target="_blank"><img src="/attachimages/3651_P6300002_thumb.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4411" target="_blank"><img src="/attachimages/3653_P6300003_thumb.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4412" target="_blank"><img src="/attachimages/3655_P6300004_thumb.png" alt="" /></a></p>
+
+<p><strong>valery</strong> 12-11-2010</p>
+
+<p>По первому снимку и лоткам - чуть не подумал, что это “тепличка” Моле Гарден … :D</p>
+
+<p>А что за “красивющий” прибор на снимке номер три ?</p>
+
+<p><strong>green3530</strong> 12-11-2010</p>
+
+<p>Контроллер…..регулирует включение-выключение отопления при заданных температурах…..подключен вентилятор на вытяжке….полив был летом по времени….свет по времени….все САМО работает)))только с датчиком влажности не разобрался….точнее разобрался но он после калибровки показывает от 30%-до 130%влажности)…пока бросил</p>
+
+<p>Сегодня были куплены 2 ДнаЗа по 250вт.</p>
+
+<p>Завтра установка….подключение.</p>
+
+<p><strong>sida</strong> 12-11-2010</p>
+
+<p>где покупал и сколько стоят ДНаЗы?. и хотелось бы их фото. плииииииз!!!</p>
+
+<p><strong>green3530</strong> 12-11-2010</p>
+
+<p>Покупал г.Харьков….цена 1350гр за пару….на первом фото чуток их видно на ящике)))</p>
+
+<p><strong>alexua</strong> 13-11-2010</p>
+
+<p>Вы из Харькова?? ;-)</p>
+
+<p><strong>Oxy</strong> 13-11-2010</p>
+
+<p>Все класно устроено! Ты из Украины?</p>
+
+<p>По датчику влажности - купи простой гигрометр за 60 грн. Или сделай сам.</p>
+
+<p><strong>Mole_Garden</strong> 14-11-2010</p>
+
+<blockquote>
+  <p>А вот и фото</p>
+</blockquote>
+
+<p>Можно чуть подробней про систему подачи раствора, та что с синими шлангами. По фото не видно, есть ли заглушки на коробах или же они открыты? Что за насос используется для подачи раствора?</p>
+
+<p><strong>green3530</strong> 14-11-2010</p>
+
+<p>Короба не просто короба…..там есть секретики…не знаю поможет или навредит….концы возле шлангов закрыты стеклом…..короба 60*40……посередине перегородка 2см высотой…и в конце2 см….еще в конце сделан слив…..получается что в коробах раствор находится на высоте 2 см+обновление идет постоянное…сделано на случай выключения (или поломки)помпы….помпа используется обычная на 2900л.ч…..плюс стоят краники на регулировку подачи….фотик после 4 фото полетел…..так что новые (если кому интересно )будут не завтра((</p>
+
+<p>13.11.2010 вся рассада пересажена в “установку”….РН 6…TDS 770(чистая вода 425)</p>
+
+<p>14.11.2010 АВАРИЯ…….протекание!!!!!!!!!!!!!РЕМОНТ…..+установлены 2 ДнаЗа …подсветка с 7 утра до 19.00…</p>
+
+<p>14.11.2010…посеяна новая партия семян</p>
+
+<p><strong>alexua</strong> 15-11-2010</p>
+
+<blockquote>
+  <p>Вы из Харькова?? ;-)</p>
+</blockquote>
+
+<p><strong>Mole_Garden</strong> 15-11-2010</p>
+
+<blockquote>
+  <p>Короба не просто короба…..там есть секретики…не знаю поможет или навредит….концы возле шлангов закрыты стеклом…..короба 60*40……посередине перегородка 2см высотой…и в конце2 см….</p>
+</blockquote>
+
+<p>А как стекло закреплено в коробе?</p>
+
+<p><strong>green3530</strong> 15-11-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>Короба не просто короба…..там есть секретики…не знаю поможет или навредит….концы возле шлангов закрыты стеклом…..короба 60*40……посередине перегородка 2см высотой…и в конце2 см….</p>
+  </blockquote>
+
+  <p>А как стекло закреплено в коробе?</p>
+</blockquote>
+
+<p>Мне бы Ваши проблемы))))</p>
+
+<p>Специальным клеем…..которым аквариумы клеят.Тюбик 10$ стоит.</p>
+
+<p><strong>Mole_Garden</strong> 16-11-2010</p>
+
+<blockquote>
+  <p>Мне бы Ваши проблемы))))</p>
+
+  <p>Специальным клеем…..которым аквариумы клеят.Тюбик 10$ стоит.</p>
+</blockquote>
+
+<p>Вот жешь блин, у всех есть спец клей, а я как лошара герметиком для аквариумов все клею. :D</p>
+
+<p><strong>valery</strong> 16-11-2010</p>
+
+<p>И я клею “герметиком” … А чем он оказался плох ?</p>
+
+<p><strong>Mole_Garden</strong> 16-11-2010</p>
+
+<blockquote>
+  <p>И я клею “герметиком” … А чем он оказался плох ?</p>
+</blockquote>
+
+<p>Ну клей то наверно прочнее склеивает. Хотя посмотрим при работе.</p>
+
+<p><strong>green3530</strong> 28-11-2010</p>
+
+<p>Все в порядке…..растем……только медленно(((</p>
+
+<p>Ни в какие сроки не вкладываемся…..</p>
+
+<p>Сгорел обогреватель…..завтра новый на 22 градуса выставлю</p>
+
+<p>16.11……-высажен лук в короба….растет медленно….похоже что холодновато ему при +17(((</p>
+
+<p><strong>Mole_Garden</strong> 28-11-2010</p>
+
+<blockquote>
+  <p>похоже что холодновато ему при +17(((</p>
+</blockquote>
+
+<p>Да не очень, температура воды какая?</p>
+
+<p><strong>green3530</strong> 28-11-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>похоже что холодновато ему при +17(((</p>
+  </blockquote>
+
+  <p>Да не очень, температура воды какая?</p>
+</blockquote>
+
+<p>Терморегулятор стоит на +24……но боюсь аквариумный(брал самый мощный на емкость&gt;300л) не прогревает емкость 200 л(на водном термометре +19)</p>
+
+<p><strong>Ogurec</strong> 14-04-2011</p>
+
+<p>Так бизнес у Автора получился или нет?</p>
+
+<p><strong>Smile</strong> 18-05-2011</p>
+
+<p>Вопрос к ТС: что в итоге вышло? получилось наладить производство зелени на продажу? Я просто сам сейчас этим вопросом тоже занимаюсь, поэтому очень интересен любой опыт в этом направлении.</p>
+
+<p>Заранее спасибо.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

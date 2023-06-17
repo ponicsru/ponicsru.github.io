@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Домик - мой первый опыт | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Домик - мой первый опыт">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Домик - мой первый опыт</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>demokrit</strong> 12-05-2013</p>
+
+<p>Всем привет. Выкладываю и рассказываю что проделал и что получилось.</p>
+
+<p>Сварил каркас и установил под наклоном две пластиковые трубы, в которых проделал отверстия под стаканчики. Установил пластиковую емкость на 50л. и с помощью насоса купленного в зоомагазине подаю жидкость. Пять раз в день по две минуты.</p>
+
+<p>Для приготовления смеси использую Кристалин (растворин марки Б) и Селитру кальциевую (по 0.8г. на литр воды), кислотность понижаю с помощью Электролита.</p>
+
+<p>Расходы (может кому будет интересно): Арматура, не покупал была; Трубы, переходники, заглушка 800р. Стаканчики с пробками - 10 шт. на 200р; емкость для жидкости 700р; насос 800р.; программируемая розетка 800р; пленка была; шланг 300р; керамзит 150р; Растворин 150р. и селитра тоже кажется 150р. (в ценах могу немного ошибаться +- 20-30р., покупал все по очереди и точно уже не помню). Итого примерно 4т.р.</p>
+
+<p>Приборы забыл посчитать :) весы 300р. Рн 700р. ВСЕГО на 5т.р.</p>
+
+<p>Посадил пять корней помидор (Волгоградский скороспелый 323, ) на одной стороне (трубе) и три огурца (Капелька) да другой стороне (трубе).</p>
+
+<p>Первые дней десять поливал простой водой. Сейчас поливаю жидкостью приготовленную указанным выше способом. Рн 58</p>
+
+<p>Так как нету приборов да и самих элементов, жидкость думаю полностью менять раз в 10 дней. (а там посмотрим)</p>
+
+<p>Ну вроде все.</p>
+
+<p><a href="https://t.me/ponics_ru_files/10535" target="_blank"><img src="/attachimages/13340_IMG_20130331_194942.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10536" target="_blank"><img src="/attachimages/13342_IMG_20130512_200755.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10537" target="_blank"><img src="/attachimages/13344_IMG_20130512_200022.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10538" target="_blank"><img src="/attachimages/13346_IMG_20130512_200030.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10539" target="_blank"><img src="/attachimages/13348_IMG_20130512_200052.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10540" target="_blank"><img src="/attachimages/13350_IMG_20130512_195940.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10541" target="_blank"><img src="/attachimages/13352_IMG_20130512_201022.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10542" target="_blank"><img src="/attachimages/13354_IMG_20130512_200345.jpg" alt="" /></a></p>
+
+<p><strong>cpf</strong> 12-05-2013</p>
+
+<p>Искренне желаю удачи…</p>
+
+<p>Но (КМК), наличие кондуктометра, на первом этапе, - важнее PH метра (хотя - тоже важен, но можно и лакмусовым индикатором обойтись), поскольку, если переборщить с концентрацией, растения быстро обезводятся.</p>
+
+<p><strong>Coccinella</strong> 12-05-2013</p>
+
+<p>“Есть у гидропоники начало, нет у гидропоники конца…” :)</p>
+
+<p>Успеха!!!</p>
+
+<p><strong>hanurik</strong> 13-05-2013</p>
+
+<p>В кристалине марка Б вроде нет магния совсем, или вы сульфат добавляете?</p>
+
+<p><strong>demokrit</strong> 13-05-2013</p>
+
+<blockquote>
+  <p>В кристалине марка Б вроде нет магния совсем, или вы сульфат добавляете?</p>
+</blockquote>
+
+<p>Да кстати его там нет, а Вы имеете ввиду МАГНИЯ СУЛЬФАТ? может тогда купить его в аптеке и добавлять в раствор. Если я правильно понял то подскажите в каких количествах на литр воды?</p>
+
+<p><strong>hanurik</strong> 13-05-2013</p>
+
+<p>Если в аптеке в виде порошка семиводный сульфат магния, то обычно 0.5 гр на литр.</p>
+
+<p><strong>demokrit</strong> 13-05-2013</p>
+
+<blockquote>
+  <p>Если в аптеке в виде порошка семиводный сульфат магния, то обычно 0.5 гр на литр.</p>
+</blockquote>
+
+<p>Отлично! сегодня обязательно найду!!!</p>
+
+<p><strong>demokrit</strong> 13-05-2013</p>
+
+<blockquote>
+  <p>Но (КМК), наличие кондуктометра, на первом этапе, - важнее PH метра</p>
+</blockquote>
+
+<p>Сегодня обойду все злачные места где можно будит такой прибор найти, но думаю не найду :(</p>
+
+<p>Если что закажу его на ebay.</p>
+
+<p><strong>demokrit</strong> 13-05-2013</p>
+
+<p>Купил МАГНИЯ СУЛЬФАТ в ампулах (30р). Подскажите сколько добавлять на 1л. воды</p>
+
+<p><a href="https://t.me/ponics_ru_files/10543" target="_blank"><img src="/attachimages/13356_IMG_20130513_103153.jpg" alt="" /></a></p>
+
+<p><strong>hanurik</strong> 13-05-2013</p>
+
+<p>Ну вроде по расчетам если 250 мг в 1 мл магний сульфата (чистой соли), то получается 57,7 мг магния в 1 мл, можно по 1 мл на литр добавлять, если я правильно посчитал.</p>
+
+<p><strong>cpf</strong> 13-05-2013</p>
+
+<p>Если сульфат магния 25%, а ампулы по 10мл, то надо добавлять примерно 1ампулу на 20л (лучше меньше, чем передозировка)</p>
+
+<p><strong>demokrit</strong> 13-05-2013</p>
+
+<p>Если не ошибся то вот состав.</p>
+
+<p><a href="https://t.me/ponics_ru_files/10544" target="_blank"><img src="/attachimages/13358_IMG_20130513_110643.jpg" alt="" /></a></p>
+
+<p><strong>cpf</strong> 13-05-2013</p>
+
+<p>ну так и есть (стандарт :) ), уже написал выше : “достаточно адной таблэтки” на 20 литров раствора :D</p>
+
+<p><strong>mitrotech</strong> 13-05-2013</p>
+
+<p>Как то высчитывал однажды - вдруг понадобится.</p>
+
+<p>Сульфат магния гептагидрат MgSO4*7H2O</p>
+
+<p>Атомные массы: Mg-24,3, S-32, O-16, H-1</p>
+
+<p>Молекулярная масса: 24,3+32+16<em>4+7</em>(1*2+16)=246,3</p>
+
+<p>Магния в единице массы: 246,3/24,3=1000/х =&gt; х=98,66 грамм Mg в кг.</p>
+
+<p>Серы в единице массы: 246,3/32=1000/х =&gt; х=129,92 грамм S в кг.</p>
+
+<p>В 1 грамме MgSO4*7H2O магния 98,66 мг, серы 129,92 мг.</p>
+
+<p>Таблица концентраций растворов сульфата магния</p>
+
+<p>Mg-S мг/мл 	10 грамм 	 25 грамм</p>
+
+<p>0,1 литра 	9,86-13	 24,66-32,48</p>
+
+<p><strong>Гидропоника</strong> 13-05-2013</p>
+
+<p>Я добавлял 1мл на литр, 1 ампула на 10 литров :)</p>
+
+<p><strong>hanurik</strong> 13-05-2013</p>
+
+<blockquote>
+  <p>Как то высчитывал однажды - вдруг понадобится.</p>
+
+  <p>Сульфат магния гептагидрат MgSO4*7H2O</p>
+
+  <p>Атомные массы: Mg-24,3, S-32, O-16, H-1</p>
+
+  <p>Молекулярная масса: 24,3+32+16<em>4+7</em>(1*2+16)=246,3</p>
+
+  <p>Магния в единице массы: 246,3/24,3=1000/х =&gt; х=98,66 грамм Mg в кг.</p>
+
+  <p>Серы в единице массы: 246,3/32=1000/х =&gt; х=129,92 грамм S в кг.</p>
+
+  <p>В 1 грамме MgSO4*7H2O магния 98,66 мг, серы 129,92 мг.</p>
+
+  <p>Таблица концентраций растворов сульфата магния</p>
+
+  <p>Mg-S мг/мл 10 грамм 25 грамм</p>
+
+  <p>0,1 литра 9,86-13 24,66-32,48</p>
+</blockquote>
+
+<p>Нужно добавить, что этот расчет для порошка, в растворе указана концентрация MgSO4 -250 мг/мл чистой соли, то есть 7 молекул воды считать не надо.</p>
+
+<p><strong>demokrit</strong> 14-05-2013</p>
+
+<p>Продается прибор меряющий концентрацию соли PPM стоит 1900р, скажите он очень нужен или пока можно без него?</p>
+
+<p><strong>hanurik</strong> 14-05-2013</p>
+
+<p>Очень дорого (хотя смотря какой) и лучше сразу EC-метр брать.</p>
+
+<p><strong>demokrit</strong> 15-05-2013</p>
+
+<p>Первые листочки :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/10545" target="_blank"><img src="/attachimages/13360_IMG_20130515_084532.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10546" target="_blank"><img src="/attachimages/13362_IMG_20130515_084845.jpg" alt="" /></a></p>
+
+<p><strong>Гидропоника</strong> 15-05-2013</p>
+
+<p>керамзит кажется большим :) быстро выросли у тебя :)</p>
+
+<p><strong>Al-nikoly</strong> 15-05-2013</p>
+
+<blockquote>
+  <p>керамзит кажется большим :)</p>
+</blockquote>
+
+<p>Не не не, это только кажется, нормальный размер керамзита. :)</p>
+
+<p><strong>demokrit</strong> 16-05-2013</p>
+
+<p>Постоянно потихоньку растет уровень Ph это нормально?</p>
+
+<p><strong>cpf</strong> 16-05-2013</p>
+
+<p>Видимо - ДА (растения пьют воду - концентрация и pH - растут). Что с концентрацией?</p>
+
+<p><strong>demokrit</strong> 16-05-2013</p>
+
+<p>Сегодня куплю прибор PPM (сказали отдадут за 1500р) и завтра обязательно отпишусь по концентрации соли (если я правильно Вас понял)</p>
+
+<p><strong>demokrit</strong> 26-05-2013</p>
+
+<p>Всем привет, вот первая проблема, на одном из корней помидор появилась тля, листья в течении суток скрутились, подскажите как с ней бороться. Советуют мыльную воду.</p>
+
+<p><a href="https://t.me/ponics_ru_files/10547" target="_blank"><img src="/attachimages/13400_IMG_20130526_131401.jpg" alt="" /></a></p>
+
+<p><strong>maikl25</strong> 26-05-2013</p>
+
+<blockquote>
+  <p>“Есть у гидропоники начало, нет у гидропоники конца…” :)</p>
+
+  <p>Успеха!!!</p>
+</blockquote>
+
+<p>золотые слова… <em>8)</em> <em>8)</em> <em>8)</em></p>
+
+<p><strong>valery</strong> 26-05-2013</p>
+
+<p>Вряд ли тля повреждает корневую.</p>
+
+<p>Тем более так, что листья скручиваются.</p>
+
+<p><strong>Oxy</strong> 26-05-2013</p>
+
+<p>Листья могут скрутиться, но не так резко. Чтоб листок скрутился из-за наличия тли, ее должно быть уже очень много. Вы посмотрите снизу листа - там же ее видно должно быть невооруженным глазом.</p>
+
+<p>Мыло поможет на первых 2-3 дня. Как раз есть время сбегать в ближаший магазин и прикупить средство от тли(если это вдруг действительно она)жидкий концентрат, а не палочку, рекомендую также прикупить и прилипатель(то же жидкость).</p>
+
+<p>В любом случае, по поводу тли сильно переживать не стоит, поскольку ваш томат растет в 100мм трубе. Через недельку другую, максимум через месяц, корневая заполнит трубу и у вас начнутся совсем другие проблемы, на фоне которых тля - покажеться как просто детский сад.</p>
+
+<p>Так же возьмите на заметку - тля сама по себе не появляется, ее в обязательном порядке приносят муравьи.</p>
+
+<p>Поэтому нужно понаблюдать, где какие есть дорожки натоптанные муравьями. Не будет муравьев - не будет и тли.</p>
+
+<p><strong>Coccinella</strong> 26-05-2013</p>
+
+<p>Если это тля на одном листе, то ее просто пальцем передавить можно :)</p>
+
+<p><strong>Гидропоника</strong> 26-05-2013</p>
+
+<p>как бороться с муровьями к стати?)))) у меня ы моем бункере муравьи :o</p>
+
+<p><strong>Гидропоника</strong> 26-05-2013</p>
+
+<p>пока то что нашел )</p>
+
+<p>Как бороться с муравьями в доме</p>
+
+<p>Могут ли причинить какой – то вред муравьи кроме дискомфорта от их присутствия. Они всеядные, их может привлечь мусор в вашем ведре, сахарница, хлебница. Ползая по вашей кухне, они разносят микробы, так же как и мухи или тараканы. Опасны ли те микробы, которые разносят муравьи, зависит исключительно от состояния вашего мусорного ведра и от ведер соседей, потому что они могут передвигаться из одной, в другую квартиру.</p>
+
+<p>Избавиться от муравьев достаточно сложно, но возможно. Главное нужно найти муравьиное гнездо, в нем живет самка, которая производит на свет новых муравьев. Самка ни когда не покинет свое гнездо и поэтому не может самостоятельно добывать еду, ее кормят рабочие муравьи. Обнаружить гнездо очень трудно, оно может быть спрятано где угодно. Но даже если вы его обнаружите, то не сможете добраться до самки, ведь коридор, который ведет в гнездо, может быть очень длинным. Но можно накормить рабочих муравьев, которые приносят еду для самки, любой отравой. Можно попробовать борную кислоту, она не сразу убьет муравья, а через какое – то время. Он вернется в гнездо и отравит там всех.</p>
+
+<p>Есть пару простых рецептов: муравьи не переносят запах растительного масла, бузины, полыни. Можно чесноком намазать их дорожки. В воде размешать сахар или мед и налить этот раствор в банку, они будут ползти на сладкое, и тонуть в воде. В стакане воды нужно развести борный спирт ( на кончике чайной ложки), три ложечки сахара и пару ложечек меда и налить ее в мелкую посуду.</p>
+
+<p><strong>Coccinella</strong> 26-05-2013</p>
+
+<p>В продаже попадаются средства от муравьев, но они действуют только 3-5 недель… Если условия благоприятны для жизни муравьев, то извести их навсегда практически невозможно. Остается стараться с ними сосуществовать :)</p>
+
+<p><strong>Гидропоника</strong> 26-05-2013</p>
+
+<p>подвал, наверно трещины и залезают…. канальи <em>crazy</em></p>
+
+<p>я их выкурю всех)) боюсь как бы не съели все</p>
+
+<p><strong>Vad</strong> 26-05-2013</p>
+
+<p>Я нашел гнездо ОГРОМНОЕ за кафелем на кухне.</p>
+
+<p>размером почти во всю площадь кафельного покрытия.. :o</p>
+
+<p>муравьиная ферма прям..</p>
+
+<p>балончик с лаком для волос + зажигалка=огнемет… и вот уже 13 лет ниодного муравья <em>???</em></p>
+
+<p><strong>Serg17</strong> 27-05-2013</p>
+
+<p>Муравьи свеклу жрут :'(</p>
+
+<p>Уже три съели, за четвертую взялись, но она большая, похоже растет быстрее чем ее едят. Уже несколько дней съесть не могут.</p>
+
+<p><strong>demokrit</strong> 28-05-2013</p>
+
+<p>Сегодня с утра опрыскал раствором от тли, кстати самой тли совсем мало я увидел несколько, пару штучек и пару муравьев.</p>
+
+<p>Я на всякий случай сделал еще пару фоток ростишек с корневой системой, скажите корневая не маленькая?</p>
+
+<p><a href="https://t.me/ponics_ru_files/10548" target="_blank"><img src="/attachimages/13450_1.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10549" target="_blank"><img src="/attachimages/13452_2.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 28-05-2013</p>
+
+<p>Маловата, да ведь не морковь выращиваете :) Было бы питание, урожай вырастет. Валерий вон изощрялся - в 5 см горшках по три года томаты выращивал :) (я преувеличиваю, но мысль понятна :))</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

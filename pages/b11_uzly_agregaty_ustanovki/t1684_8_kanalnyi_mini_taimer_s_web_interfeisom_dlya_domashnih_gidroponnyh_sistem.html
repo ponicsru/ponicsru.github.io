@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>8 канальный "Мини Таймер" с web интерфейсом для домашних гидропонных систем. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="8 канальный &quot;Мини Таймер&quot; с web интерфейсом для домашних гидропонных систем.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">8 канальный "Мини Таймер" с web интерфейсом для домашних гидропонных систем.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Vad</strong> 29-03-2013</p>
+
+<p>Закончена работа над новой железочкой.</p>
+
+<p>Ищется добрый, отзывчивый гровер - хозяин :-X</p>
+
+<p>Выполнен во влагозащищенном корпусе IP55</p>
+
+<p><a href="https://t.me/ponics_ru_files/10251" target="_blank"><img src="/imagehost/thumbs/dscn2627.jpg" alt="" /></a></p>
+
+<p>состояние реле удобно наблюдать чрез прозрачное стеклышко.</p>
+
+<p><a href="https://t.me/ponics_ru_files/10252" target="_blank"><img src="/imagehost/thumbs/dscn2625.jpg" alt="" /></a></p>
+
+<p>удобен при монтаже, свободный доступ к основным коммутационным элементам.</p>
+
+<p><a href="https://t.me/ponics_ru_files/10253" target="_blank"><img src="/imagehost/thumbs/dscn2623.jpg" alt="" /></a></p>
+
+<p>Это МиниТаймер - простой в установке и эксплуатации таймер, все с тем же веб интерфейсом (достаточно набрать адрес железки в строке “Адрес:” вашего браузера, и он перед Вами. )</p>
+
+<p>С вот такой веселенькой webмордочкой ;)</p>
+
+<p><a href="https://t.me/ponics_ru_files/10254" target="_blank"><img src="/imagehost/thumbs/ese.jpg" alt="" /></a></p>
+
+<p>Интерфейс кое-что унаследовал от “старшего брата” (да все практически :D)</p>
+
+<p>Основные функции:</p>
+
+<ol>
+  <li>Три независимых канала управления освещением с функцией “досветка”</li>
+</ol>
+
+<ul>
+  <li>
+    <p>Два включения в сутки (режим досветка , Утро- Вечер)</p>
+  </li>
+  <li>
+    <p>Шаг установки 1 минута.</p>
+  </li>
+  <li>
+    <p>Точность отработки +- 1 секунда (устанавливается время Включения лампы и время Выключения)</p>
+  </li>
+</ul>
+
+<p>Утром включаем люмку, будим растения :D Через 20 мин включаем светодиоды… еще через 20 мин ДНАТ…</p>
+
+<p>и т.д. и т.п.</p>
+
+<ol>
+  <li>Трехканальный (Зона 1 - 2 -3) циклический таймер с 4мя временными интервалами для управления насосами поливов. (интервалы любые, например утро-день-вечер-ночь)</li>
+</ol>
+
+<p>-Устанавливается временной промежуток времени. С какого часа (0-23) действует установленный интервал времени.</p>
+
+<p>-Точность отработки +- 1 секунда</p>
+
+<p>-Устанавливается время паузы между включениями в минутах (1-255 минут)</p>
+
+<p>-Устанавливается время работы каждого насоса в секундах(1-255 сек)</p>
+
+<ol>
+  <li>Двенадцать однократных (1 раз в сутки), независимых таймера общего назначения.</li>
+</ol>
+
+<p>-Точность отработки +- 1 секунда.</p>
+
+<p>-Устанавливается время включения, шаг 1 минута (00-23 Час, 0-59 минута)</p>
+
+<p>-Устанавливается продолжительность работы (1 сек -260 минут)</p>
+
+<p>-Два раздельных независимых канала (Aux1 Aux2)</p>
+
+<ol>
+  <li>Энергонезависимые часы</li>
+</ol>
+
+<ul>
+  <li>простая однокнопочная установка времени (автоматически устанавлиается дата и время с Вашего компьютера.</li>
+</ul>
+
+<p>Часы, Все данные и настройки сохраняются при отключении электричества.</p>
+
+<p>Программа исполняется независимо от наличия электричества.</p>
+
+<p>Кому нибудь интересна такая железка? :-[</p>
+
+<p>Возможно чуть подкорректировать.. под ваши задачи..</p>
+
+<p>(время, интервалы, названия, количество и назначение таймеров)</p>
+
+<p><strong>valery</strong> 29-03-2013</p>
+
+<p>:-[</p>
+
+<p>Интересна …</p>
+
+<p><strong>valery</strong> 29-03-2013</p>
+
+<p>Я … серьезно … :-[</p>
+
+<p><strong>Юка</strong> 29-03-2013</p>
+
+<p>“Железка” интересна, но, если добавить хотя бы один датчик температуры ….плюс датчик влажности…. или это уже почти “старший брат”, но иначе набор таймеров 59501 будет дешевле, хоть и не так наглядно… :-\ во озадачили…</p>
+
+<p><strong>Tony_85</strong> 29-03-2013</p>
+
+<p>И мне интересно. Приблизительная цена? Максимальные нагрузки на каналы такие как и у старшего брата?</p>
+
+<p>Для таймеров полива, я так понимаю самое большое время работы 255 с? Не маловато? А если есть 4 л капельница и надо ею капать 15 минут, то как это сделать?</p>
+
+<p><strong>valery</strong> 29-03-2013</p>
+
+<p>Тони, а куда “капаете” так много ? Признаться, 2-литровой капельницей больше 6 минут ни разу никуда не капал … :-\</p>
+
+<p>Или, может, в салатный лоток ?</p>
+
+<p><strong>valery</strong> 29-03-2013</p>
+
+<blockquote>
+  <p>Ищется добрый, отзывчивый гровер</p>
+</blockquote>
+
+<p>:-[ … не поторопился ли я … :-\</p>
+
+<p>С “этим”, конечно же, проблема … :(</p>
+
+<p><strong>Vad</strong> 29-03-2013</p>
+
+<p>Время - сколько надо, столько и сделаю ;) в разумных пределах…</p>
+
+<p>просто скажите сколько надо ;)</p>
+
+<p>хотите максимум 65535 сек? <em>???</em> да пожалста.. но кому 18 часов надо? :-\</p>
+
+<p>нагрузка - 10А на канал.</p>
+
+<p><strong>Vad</strong> 29-03-2013</p>
+
+<p>Валерий :-[ к Вам уже подбирается.. железка :-[</p>
+
+<p>1 штука в руки! :-X</p>
+
+<p><strong>valery</strong> 29-03-2013</p>
+
+<p>:(</p>
+
+<p>Так и знал … :(</p>
+
+<p>Ну ничего …</p>
+
+<p>Зато у нас ягеля много … и этого … снега, в общем … :(</p>
+
+<p><strong>Vad</strong> 29-03-2013</p>
+
+<p>Ягель? :-\</p>
+
+<p>Что-то знакомое :-\</p>
+
+<p>Это.. дерево! … или грибы… ?:-\</p>
+
+<p><strong>Oxy</strong> 29-03-2013</p>
+
+<p>это трава типо мох :)</p>
+
+<p><strong>Tony_85</strong> 29-03-2013</p>
+
+<blockquote>
+  <p>Тони, а куда “капаете” так много ? Признаться, 2-литровой капельницей больше 6 минут ни разу никуда не капал … :-\</p>
+
+  <p>Или, может, в салатный лоток ?</p>
+</blockquote>
+
+<p>у меня просто все таймера механические. Там шаг 15 минут. Вот и привык. У меня когда кабачок поливался то при той мощности насоса за 15 минут накапывало около 200 мл. раствора на 4 л капельнице. Капало в горшок, а не в мат. Под каждым горшком был поддон и вода никуда не стекала. А за день растение понемногу пило. А теперь при таком точном дозировании можно и мелкими дозами но чаще.</p>
+
+<p>Через неделю-две планирую заставлять теплицу «финскими колбасками» с кокосом. Полив капельной лентой. Вот и думаю над автоматикой.</p>
+
+<p><strong>Vad</strong> 29-03-2013</p>
+
+<p>подправим под необходимости!</p>
+
+<p>не проблема <em>8)</em></p>
+
+<p>Вы их только опишите :-[</p>
+
+<p>может вам и не надо половина из того, что есть… а чего-то не хватает :-X</p>
+
+<p>добавим - убавим…</p>
+
+<p><strong>Vad</strong> 29-03-2013</p>
+
+<blockquote>
+  <p>это трава типо мох :)</p>
+</blockquote>
+
+<p>Кладония..</p>
+
+<p>я знаю :D</p>
+
+<p>это я так пошутил :-[</p>
+
+<p><strong>Strangeman</strong> 29-03-2013</p>
+
+<blockquote>
+  <p>Зато у нас ягеля много … и этого … снега, в общем … :(</p>
+</blockquote>
+
+<p>Ягеля много - оленя много, аднака.</p>
+
+<p><strong>valery</strong> 29-03-2013</p>
+
+<blockquote>
+  <p>это трава типо мох :)</p>
+</blockquote>
+
+<p>:-\</p>
+
+<p>А мох это кто ? Или что ?</p>
+
+<p>Типа - “мохорка” ? ( хотя нет … махорка вроде на “а” … :-\ )</p>
+
+<p>Ну в общем, мох - это не то, что “курят” ?</p>
+
+<p>тьфу … запутали совсем … <em>crazy</em> <em>crazy</em> <em>crazy</em> ( уйду, пожалуй, из ботаники … :( )</p>
+
+<p><strong>valery</strong> 29-03-2013</p>
+
+<p>раз ягель не прокатил … :-\</p>
+
+<p>зато … :-\</p>
+
+<p>Зато я умею играть на гармошке ! :P :P :P</p>
+
+<p>И на магнитофоне !!! :P :P :P :P :P</p>
+
+<p><strong>gardener</strong> 29-03-2013</p>
+
+<blockquote>
+  <p>я умею играть на гармошке ! :P :P :P</p>
+
+  <p>И на магнитофоне !!! :P :P :P :P :P</p>
+</blockquote>
+
+<p>Да, конечно, на них карты хорошо держатся, а вы попробуйте на флейте сыграть :D</p>
+
+<p><strong>Vad</strong> 29-03-2013</p>
+
+<blockquote>
+  <p>Для таймеров полива, я так понимаю самое большое время работы 255 с? Не маловато? А если есть 4 л капельница и надо ею капать 15 минут, то как это сделать?</p>
+</blockquote>
+
+<p>так добавлять или нет? :-[</p>
+
+<p>255 сек это 4 минуты 25 сек.</p>
+
+<p>капельница 4 литра в час .. это ~ 260 мл за минимальный цыкл( 60сек пауза + 255 сек работа) :-\</p>
+
+<p>С учетом того, что период можно установить 1 мин… за час включится 11 раз , и накапает… 2860 мл</p>
+
+<p>:-[</p>
+
+<p>надо больше? :-\</p>
+
+<p><strong>Vad</strong> 02-04-2013</p>
+
+<p>В 1969 вся доступная NASA вычислительная мощность была меньше, чем у этого процессора.</p>
+
+<p>Они отправили человека на Луну. :D</p>
+
+<p>просто возник вопрос.. мало или нет..</p>
+
+<p>вопрос пределов.. а не функций..</p>
+
+<p>давайте поставим комп с линуксом пусть включает свет на кухне ))</p>
+
+<p>или управляет компрессором холодильника..</p>
+
+<p>:D</p>
+
+<p>или как тут… гдето на форуме…</p>
+
+<p>комп управляет открываением фоОорточки в теплице :D ;D</p>
+
+<p>Чем меньше в системе элементов, тем надежнее система..</p>
+
+<p>По этому в современных автомобильных системах зажигания досихпор успешно применяется однокристаллка.</p>
+
+<p>Даже при высокой надежности элементов надежность системы оказывается тем более низкой, чем больше число элементов..</p>
+
+<p>повисший комп - погибщий урожай.</p>
+
+<p>Оно вам надо?</p>
+
+<p>:D</p>
+
+<p><strong>Vad</strong> 16-04-2013</p>
+
+<p>Постоянно получаю вопросы в личку и просто в темах:</p>
+
+<p>“Может и работать железка без компьютера?”</p>
+
+<p>“Может ли работать без интернета?”</p>
+
+<p>“Можно ли подключать компьютер напрямую?”</p>
+
+<p>Отвечаю на все сразу :)</p>
+
+<p>Может!</p>
+
+<p>Устройство полностью автономно.</p>
+
+<p>Работает само по себе..</p>
+
+<p>Компьютер используется для настройки и просмотра параметров.</p>
+
+<p>При этом используются привычные вещи ( мышка, клавиатура, монитор)</p>
+
+<p>Параметров много… настраивается легко и просто.. когда видишь ВСЕ и ВСРАЗУ.</p>
+
+<p>Не нужно тыкать кнопки спичками…. перемещаясь по многоуровневому меню с 10 подменю в каждом.</p>
+
+<p><strong>artmaximus</strong> 16-04-2013</p>
+
+<p><em>8)</em> о как.</p>
+
+<p>Не плохо.</p>
+
+<p><strong>alexxx</strong> 16-04-2013</p>
+
+<p>А когда в продажу поступят агрегаты с датчиками рН и ЕС?</p>
+
+<p>Без них вся ценность прибора теряется.</p>
+
+<p><strong>Vad</strong> 16-04-2013</p>
+
+<p>какой финкционал нужен?</p>
+
+<p><strong>Strangeman</strong> 16-04-2013</p>
+
+<blockquote>
+  <p>Постоянно получаю вопросы в личку и просто в темах:</p>
+
+  <p>“Может и работать железка без компьютера?”</p>
+
+  <p>“Может ли работать без интернета?”</p>
+
+  <p>“Можно ли подключать компьютер напрямую?”</p>
+
+  <p>Отвечаю на все сразу :)</p>
+
+  <p>Может!</p>
+
+  <p>Устройство полностью автономно.</p>
+
+  <p>Работает само по себе..</p>
+
+  <p>Компьютер используется для настройки и просмотра параметров.</p>
+
+  <p>При этом используются привычные вещи ( мышка, клавиатура, монитор)</p>
+
+  <p>Параметров много… настраивается легко и просто.. когда видишь ВСЕ и ВСРАЗУ.</p>
+
+  <p>Не нужно тыкать кнопки спичками…. перемещаясь по многоуровневому меню с 10 подменю в каждом.</p>
+</blockquote>
+
+<p>Поменять параметры без компьютера, все же нельзя. Если используется в тепличке - для оперативного изменения параметров придется приносить с собой ноут или нетбук.</p>
+
+<p>Впрочем, если подключить WiFi маршрутизатор - можно с коммуникатора или смартфона рулить.</p>
+
+<p><strong>Strangeman</strong> 16-04-2013</p>
+
+<blockquote>
+  <p>А когда в продажу поступят агрегаты с датчиками рН и ЕС?</p>
+
+  <p>Без них вся ценность прибора теряется.</p>
+</blockquote>
+
+<p>Это же “ 8 канальный “Мини Таймер” с web интерфейсом для домашних гидропонных систем.” а не интегрированный комплекс управления тепличным хозяйством. Интегрированный комплекс нам уважаемый Casper <a href="http://forum.ponics.ru/index.php?topic=1700.0" target="_blank">обещает.</a></p>
+
+<p><strong>alexxx</strong> 16-04-2013</p>
+
+<blockquote>
+  <p>какой финкционал нужен?</p>
+</blockquote>
+
+<p>Измерение пш и ес, работа входов в зависимости от их значений. Ну алгоритмы работы дозаторов неплохо бы прикрутить.. Ну по типу как в моих агрегатах.. :)</p>
+
+<p>На такую продукцию по приемлемым ценам клиентов валом будет.</p>
+
+<p><strong>Vad</strong> 16-04-2013</p>
+
+<p>Да не проблема… знать бы какие исполнительные механизмы на выходе стоять будут..</p>
+
+<p>Бюджетных и надежных пока не присмотрел.. а дорогие никому не нужны <em>???</em></p>
+
+<p>да и нужно ли вобще такое усложнение жизни для домашних применений? ;)</p>
+
+<p>не 15 тонн раствора ведь <em>???</em></p>
+
+<p>если нужно - сделаю.. никаких проблемм <em>8)</em></p>
+
+<p>но пока только под заказ.. по конкретному ТЗ</p>
+
+<p><strong>Coccinella</strong> 16-04-2013</p>
+
+<p>Забавные у вас, господа, единицы измерения :) Дело ведь не в тоннах раствора, а в поголовье растений :) Укропу - свой режим, салату - свой, огурец - вообще барин, перец - прикидывается Гаврошем, но есть хочет… и в таком духе :)</p>
+
+<p><strong>alexxx</strong> 16-04-2013</p>
+
+<blockquote>
+  <p>Да не проблема… знать бы какие исполнительные механизмы на выходе стоять будут..</p>
+</blockquote>
+
+<p>Вот для этого и нужны алгоритмы работы дозаторов, настраиваемые пользователем. Например 1 сек. работает, 10 не работает.</p>
+
+<blockquote>
+  <p>Бюджетных и надежных пока не присмотрел..</p>
+</blockquote>
+
+<p>WELCO - 50$ розница</p>
+
+<p><strong>Strangeman</strong> 16-04-2013</p>
+
+<blockquote>
+  <ol>
+    <li>Непосредственно после включения электропитания не прикасайтесь к клавишам на панели ввода данных вручную (MDI) до появления на устройстве ЧПУ отображения положения или экрана аварийных сигналов.</li>
+  </ol>
+
+  <p>Некоторые клавиши на панели ввода данных вручную предназначены для</p>
+
+  <p>техобслуживания и других специальных операций.</p>
+
+  <p>Нажатие любой из этих клавиш может привести к аномальному состояниюЧПУ.</p>
+
+  <p>Запуск станка в данном состоянии может привести к непрогнозируемой его работе.</p>
+</blockquote>
+
+<p>Ой!</p>
+
+<p>И по поводу $200 - это не опечатка? Не верю, что такой может стоить $200.</p>
+
+<p><strong>Vad</strong> 16-04-2013</p>
+
+<blockquote>
+  <p>Дело ведь не в тоннах раствора, а в поголовье растений :)</p>
+</blockquote>
+
+<p>честно.. говоря.. ;) потребности в столь сложном (с точки зрения пользования) устройстве не увидел <em>???</em></p>
+
+<p>Ведь всем этим добром нужно уметь пользоваться :)</p>
+
+<p>это Вам хорошо.. :) Вам все понятно - потому что специалист.. <em>8)</em></p>
+
+<p>но ведь не все такие.. :-[</p>
+
+<p>На мой взгляд, автоматический растворный узел уместен в пром. масштабах..</p>
+
+<p>когда горы салата, горы томатов… )) а дома.. ну 20-30 растений.. ну пусть даже 100.. :)</p>
+
+<p>второй вопрос, кто купит железяку… за, хотя бы 1000-1500 баксов.. чтоб 10-20-30 литров раствора готовила в сутки? ;) 300 грамм для укропа… 15 литров томату… 6 литров огурчику… 4 литра салату… а отходы сливала бы перцу - потому что ему “все равно” :D</p>
+
+<p>я не орентируюсь на промышленное применение - не в коем случае.</p>
+
+<p>эта ниша занята, сертификаты получены, все жжужит и капает…</p>
+
+<p>а мы, - “дома растители”.. покупаем 15 таймеров… и из них лепим “ёлки”.. :D</p>
+
+<p>чтоб утром капало 15 минут каждые 5 минут, а ночью 2минуты каждые 3 часа :)</p>
+
+<p>это всего лиш мое мнение :-[</p>
+
+<p>возможно я и не прав :-X</p>
+
+<p><strong>Vad</strong> 16-04-2013</p>
+
+<blockquote>
+  <p>системе ЧПУ с PLC.</p>
+</blockquote>
+
+<p>а что такое ЧПУ с PLC?</p>
+
+<p><em>???</em></p>
+
+<p>по ЧПУ я специалист $)</p>
+
+<p>а про ЧПУ с PLC первый раз слышу :-\</p>
+
+<p><strong>Strangeman</strong> 16-04-2013</p>
+
+<p>Стоп, какой такой мосфет?</p>
+
+<blockquote>
+  <p>но вы уже сможете общаться с любыми физическими моторчиками магнитиками и прочими крутилками все зависимости от того кто и когда соорудил испольнительный орган</p>
+</blockquote>
+
+<p>Добавив MOSFETы, контакторы, частотники…</p>
+
+<p><strong>Vad</strong> 16-04-2013</p>
+
+<p>я понял, Вы знаете много разных слов :D</p>
+
+<p>на столько разных, что смысл не уловить. <em>???</em></p>
+
+<p><strong>Coccinella</strong> 17-04-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>Дело ведь не в тоннах раствора, а в поголовье растений :)</p>
+  </blockquote>
+
+  <p>честно.. говоря.. ;) потребности в столь сложном (с точки зрения пользования) устройстве не увидел <em>???</em></p>
+
+  <p>Ведь всем этим добром нужно уметь пользоваться :)</p>
+
+  <p>это Вам хорошо.. :) Вам все понятно - потому что специалист.. <em>8)</em></p>
+
+  <p>но ведь не все такие.. :-[</p>
+
+  <p>На мой взгляд, автоматический растворный узел уместен в пром. масштабах..</p>
+
+  <p>когда горы салата, горы томатов… )) а дома.. ну 20-30 растений.. ну пусть даже 100.. :)</p>
+
+  <p>второй вопрос, кто купит железяку… за, хотя бы 1000-1500 баксов.. чтоб 10-20-30 литров раствора готовила в сутки? ;) 300 грамм для укропа… 15 литров томату… 6 литров огурчику… 4 литра салату… а отходы сливала бы перцу - потому что ему “все равно” :D</p>
+
+  <p>я не орентируюсь на промышленное применение - не в коем случае.</p>
+
+  <p>эта ниша занята, сертификаты получены, все жжужит и капает…</p>
+
+  <p>а мы, - “дома растители”.. покупаем 15 таймеров… и из них лепим “ёлки”.. :D</p>
+
+  <p>чтоб утром капало 15 минут каждые 5 минут, а ночью 2минуты каждые 3 часа :)</p>
+
+  <p>это всего лиш мое мнение :-[</p>
+
+  <p>возможно я и не прав :-X</p>
+</blockquote>
+
+<p>А я именно это и имела в виду. Не нужно каждому укропу-салату-огурцу индивидуальный состав раствора. Всем один общий состав, а разница только по ЕС и частоте/дозе полива.</p>
+
+<p><strong>Coccinella</strong> 17-04-2013</p>
+
+<p>Там, где я про разные требования растений говорю, я больше микроклимат имела в виду, чем питание.</p>
+
+<p><strong>Strangeman</strong> 17-04-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>Стоп, какой такой мосфет?</p>
+
+    <blockquote>
+      <p>но вы уже сможете общаться с любыми физическими моторчиками магнитиками и прочими крутилками все зависимости от того кто и когда соорудил испольнительный орган</p>
+    </blockquote>
+
+    <p>Добавив MOSFETы, контакторы, частотники…</p>
+  </blockquote>
+
+  <p>вы просто умны не по годам - мой юный охотник за тубурэтками (с)</p>
+</blockquote>
+
+<p>А можно в дополнение к подъ…. услышать конкретику сравнения устройств?</p>
+
+<p>Потом можно будет поговорить о годах, уме и прочем.</p>
+
+<p><strong>Vad</strong> 17-04-2013</p>
+
+<p>скажите пожалуйста. ;)</p>
+
+<p>вам правда не с кем поговорить? :-[</p>
+
+<p><strong>Coccinella</strong> 18-04-2013</p>
+
+<p>Вот наткнулась на хорошую вещь, которую создали голландцы для профессионального управления капельным поливом в теплицах и в поле <a href="http://www.hortibiz.com/detail/article/24green-launches-new-webstore-for-managing-irrigation/" target="_blank">http://www.hortibiz.com/detail/article/24green-launches-new-webstore-for-managing-irrigation/</a></p>
+
+<p>Цены этих аппов на сайте упомянутой фирмы 24green.</p>
+
+<p>Vad, Вы уверены, что не продешевили? :)</p>
+
+<p><strong>Vad</strong> 18-04-2013</p>
+
+<p>:-[ яж не голландец…</p>
+
+<p>ориентируюсь на уровень дохода среднего россиянина..</p>
+
+<p>ну чтоб он мог купить… и что-то осталось на еду .. до конца месяца :-X</p>
+
+<p>да и.. до профессионального управления капельным поливом … пока еще далекооо :-[</p>
+
+<p><strong>Vad</strong> 18-04-2013</p>
+
+<p>Мои девайсы делаются под конкретные условия.</p>
+
+<p>С целью: Улучшить существующее.</p>
+
+<ol>
+  <li>
+    <p>Сделать управление удобнее</p>
+  </li>
+  <li>
+    <p>Сделать управление точнее</p>
+  </li>
+  <li>
+    <p>Сделать гибче</p>
+  </li>
+  <li>
+    <p>Убрать “костыли”</p>
+  </li>
+</ol>
+
+<p>ну и.. каждому по способностям..</p>
+
+<p>кто может все что вы написали сделать - уже сделали. А что делать остальным? покупать овны по 15 тыщь? :D</p>
+
+<p><strong>alexxx</strong> 18-04-2013</p>
+
+<blockquote>
+  <p>А что делать остальным? покупать овны по 15 тыщь? :D</p>
+</blockquote>
+
+<p>По 9… А если аналог минитаймера - 7 (плк100). Ну и датчики. :)</p>
+
+<p><strong>а-ну-ка</strong> 18-04-2013</p>
+
+<p>Давненько,при союзе было,на узле связи,служили три западенца,два москвича,и просто нормальные ребята…а мож и не было,но точно давно.</p>
+
+<p><strong>Vad</strong> 18-04-2013</p>
+
+<p>:-\</p>
+
+<p>вы это… о чем? :-\</p>
+
+<p>что-то я “нить” потерял <em>???</em></p>
+
+<p>:D</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

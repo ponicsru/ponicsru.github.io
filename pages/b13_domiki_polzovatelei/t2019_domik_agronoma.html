@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Домик Агронома | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Домик Агронома">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Домик Агронома</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Andrew1</strong> 13-04-2014</p>
+
+<p>Добрый день.</p>
+
+<p>Посеял я немного огурчиков и помидорчиков.</p>
+
+<p>Наделал кучу ошибок и пробую их исправить.</p>
+
+<p>Если подскажете буду очень благодарен. :)</p>
+
+<p>Выращивать полностью на искусственном освещении.</p>
+
+<p>И так посеял я семена 16.03.2014 в землю:</p>
+
+<p>Огурцы: Зозуля и Герман</p>
+
+<p>Томаты: Аврора , Ямал 200, Евпатор</p>
+
+<p>Еще была клубника но она не взошла</p>
+
+<p>да и салатик такой чахлый но рука не подымается выкинуть</p>
+
+<p>Потом отмывал корни и пересаживал их в горшочки с кокосом</p>
+
+<p>субстрат делал из мелкой и крупной фракции 3/2</p>
+
+<p>поливал флорой ,потом приобрел соли и пытался химичить</p>
+
+<p><strong>Vad</strong> 13-04-2014</p>
+
+<blockquote>
+  <p>Евпатор</p>
+</blockquote>
+
+<p><em>8)</em></p>
+
+<p>неубиваемый.. ;)</p>
+
+<p><strong>mikkke</strong> 13-04-2014</p>
+
+<p>:) Увидел домик Агронома, кинулся смотреть. Поучиться. Потому как у некоторых товарищей Агроном значит большой опыт. Надеюсь Вы такой опыт приобрете и будете нас учить. Велком!</p>
+
+<p><strong>mikkke</strong> 13-04-2014</p>
+
+<p>Интересно, поделитесь условиями Вашей светокультуры? Какой свет, какая площадь? Какая установка гидропоники?</p>
+
+<p>А семена высеять саое простое. Кинул в воду дождался, что утонули. затем в землю и жди. Как подрастут суй вих в установку гидропоники :)</p>
+
+<p><strong>Andrew1</strong> 13-04-2014</p>
+
+<blockquote>
+  <p>:) Увидел домик Агронома, кинулся смотреть. Поучиться. Потому как у некоторых товарищей Агроном значит большой опыт. Надеюсь Вы такой опыт приобрете и будете нас учить. Велком!</p>
+</blockquote>
+
+<p>Ну дык из всех кого знаю я самый продвинутый в этом деле ;) по этому так и на звали.</p>
+
+<p>Теперь вся надежда на вас.</p>
+
+<p><strong>Andrew1</strong> 13-04-2014</p>
+
+<blockquote>
+  <p>Интересно, поделитесь условиями Вашей светокультуры? Какой свет, какая площадь? Какая установка гидропоники?</p>
+
+  <p>А семена высеять саое простое. Кинул в воду дождался, что утонули. затем в землю и жди. Как подрастут суй вих в установку гидропоники :)</p>
+</blockquote>
+
+<p>Помещение большее 80кв.м. разбиваю на отдельные комнатки , боксы.</p>
+
+<p>Свет ДНАТ 400 и ДРИЗ 400</p>
+
+<p><a href="https://t.me/ponics_ru_files/12563" target="_blank"><img src="/attachimages/15949_DSC_0495.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12564" target="_blank"><img src="/attachimages/15951_DSC_0496.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12565" target="_blank"><img src="/attachimages/15953_DSC_0497.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12566" target="_blank"><img src="/attachimages/15955_DSC_0498.jpg" alt="" /></a></p>
+
+<p><strong>Andrew1</strong> 13-04-2014</p>
+
+<p>И вот огурчики под ДРИЗ 400</p>
+
+<p><a href="https://t.me/ponics_ru_files/12567" target="_blank"><img src="/attachimages/15957_DSC_0492.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12568" target="_blank"><img src="/attachimages/15959_DSC_0506.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12569" target="_blank"><img src="/attachimages/15961_DSC_0507.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12570" target="_blank"><img src="/attachimages/15963_DSC_0508.jpg" alt="" /></a></p>
+
+<p><strong>Andrew1</strong> 13-04-2014</p>
+
+<p>Вопрос к знатокам</p>
+
+<p>По самому краю лист желтеет что огурчик хочет?</p>
+
+<p>Результат:</p>
+
+<p>Прогнозный EC: 3.0 mS (2051 ppm)</p>
+
+<p>Прогнозный pH: 6.5</p>
+
+<p>KH2PO4 (Калия монофосфат) = 1.9 g</p>
+
+<p>Ca(NO3)2*4H2O (Кальциевая селитра, нитрат кальция) = 12.5 g</p>
+
+<p>KNO3 (Калиевая селитра, нитрат калия) = 6.1 g</p>
+
+<p>NH4NO3 (Аммиачная селитра, нитрат аммония) = 0.0 g</p>
+
+<p>MgSO4*7H2O (Сульфат магния, магний сернокислый) = 5.5 g</p>
+
+<p>результат EC: 2.4 mS</p>
+
+<p>дренаж EC: 3.2-3,5 mS</p>
+
+<p>Проверочные значения:</p>
+
+<p>N	 P	 K	 Ca	 Mg</p>
+
+<p>233	44	292	212	54</p>
+
+<p>микру добавляю Унифлор - микро</p>
+
+<p><a href="https://t.me/ponics_ru_files/12571" target="_blank"><img src="/attachimages/15965_DSC_0513.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12572" target="_blank"><img src="/attachimages/15967_DSC_0514.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12573" target="_blank"><img src="/attachimages/15969_DSC_0515.jpg" alt="" /></a></p>
+
+<p><strong>mikkke</strong> 13-04-2014</p>
+
+<p>Так и не понятно, куда будете высаживать саженцы. Что за установка гидропоники? По свету поподробней. Сколько ватт на метр? На какой широте живете? У вас полная светокультура или досветка?</p>
+
+<p><strong>Andrew1</strong> 13-04-2014</p>
+
+<p>Полная светокультура растет под Лампочкой ДРИЗ 400 (рефлекс) 1,5Х2,0 метра 16/8 световой режим</p>
+
+<p>Буду пересаживать в квадрат 3Х3 м по стенкам в два ряда и подсвечивать ДНАТ 1000 (если повезет)</p>
+
+<p>(купить нужные лампы большая проблема ну из расчета гуманной цены и наличия )</p>
+
+<p>Субстрат кокос + капельный полив (минеральной ваты не нашел по гуманной цене :o )</p>
+
+<p>Таматы сейчас под ДНАТ 400 переедут под ДРИЗ если им хватит там места</p>
+
+<p>Сам я из Питера</p>
+
+<p><strong>Andrew1</strong> 13-04-2014</p>
+
+<p>Еще один вопрос как пересчитать маркировку микру ???</p>
+
+<p>Состав “Аквадон-Микро универсальный”, мг/л</p>
+
+<p>Микроэлементы</p>
+
+<p>Мезоэлементы</p>
+
+<p>Fe Mo B Co Cu Zn Mn Mg S</p>
+
+<p>850-1150 18-22 190-230 8-12 85-115 85-115 850-115 15300 22500</p>
+
+<p>или</p>
+
+<p>унифлор микра</p>
+
+<p>Состав микроэлементов (Мг/л +/- 20процентов):</p>
+
+<p>Натрий(NA) - 4800</p>
+
+<p>Железо(FE) - 3200</p>
+
+<p>Марганец(Mn) - 1600</p>
+
+<p>Бор(B) - 1000</p>
+
+<p>Цинк(Zn) - 360</p>
+
+<p>Медь(Cu) - 320</p>
+
+<p>Молибден(Mo) - 102</p>
+
+<p>Йод(J) - 80</p>
+
+<p>Кобальт(Co) - 48</p>
+
+<p>Хром(Cr) - 22</p>
+
+<p>Никель(Ni) - 20</p>
+
+<p>Селен(Se) - 10</p>
+
+<p>Бром(Br) - 6</p>
+
+<p>Алюминий(Al) - 0.9 и другие.</p>
+
+<p>как перевести в проценты чтоб вставить в калькулятор ?( чувствую какой-то подвох в маркировке )</p>
+
+<p>что один что другой приводит к перебору меди чревато это чем ?</p>
+
+<p><strong>vilon</strong> 14-04-2014</p>
+
+<blockquote>
+  <p>Буду пересаживать в квадрат 3Х3 м по стенкам в два ряда и подсвечивать ДНАТ 1000 (если повезет)</p>
+
+  <p>(купить нужные лампы большая проблема ну из расчета гуманной цены и наличия )</p>
+
+  <p>Сам я из Питера</p>
+</blockquote>
+
+<p>Посмотрите вот тут: <a href="http://www.etm.ru" target="_blank">http://www.etm.ru</a>. Я свою ДНаТ 1000 брал у них по цене около 1700р. самую дешевую.</p>
+
+<blockquote>
+  <p>Еще один вопрос как пересчитать маркировку микру ???</p>
+
+  <p>унифлор микра</p>
+
+  <p>как перевести в проценты чтоб вставить в калькулятор ?( чувствую какой-то подвох в маркировке )</p>
+
+  <p>что один что другой приводит к перебору меди чревато это чем ?</p>
+</blockquote>
+
+<p>Используйте NPKcalculator.v1.26 NEW вот из этой темы <a href="http://forum.ponics.ru/index.php?topic=661.msg23963#msg23963" target="_blank">http://forum.ponics.ru/index.php?topic=661.msg23963#msg23963</a> там унифлор уже забит, как и много других удобрений.</p>
+
+<p><strong>Vad</strong> 14-04-2014</p>
+
+<blockquote>
+  <p>Используйте NPKcalculator.v1.26 NEW вот из этой темы <a href="http://forum.ponics.ru/index.php?topic=661.msg23963#msg23963" target="_blank">http://forum.ponics.ru/index.php?topic=661.msg23963#msg23963</a> там унифлор уже забит, как и много других удобрений.</p>
+</blockquote>
+
+<p>Да да.. используйте. <em>8)</em></p>
+
+<p>только перед использованием .. все удобрения пересчитайте <em>8)</em> там иногда забита откровенная ахинейка :-\</p>
+
+<p><strong>Andrew1</strong> 15-04-2014</p>
+
+<p>Я свою ДНаТ 1000 брал у них по цене около 1700р. самую дешевую.</p>
+
+<p>Имеет смысл самую дешевую ?стоит переплачивать ? Каково ваше мнение ?</p>
+
+<p>Используйте NPKcalculator.v1.26 NEW</p>
+
+<p>вот что выдает</p>
+
+<p>Файл заражен вирусом</p>
+
+<p>Скачивать зараженные файлы может только владелец.</p>
+
+<p><strong>Borodach1</strong> 15-04-2014</p>
+
+<blockquote>
+  <p>Файл заражен вирусом</p>
+
+  <p>Скачивать зараженные файлы может только владелец.</p>
+</blockquote>
+
+<p>У меня тоже самое писало когда пытался скачать IE. Ткнул “Оперой” и всё получилось.</p>
+
+<p><strong>vilon</strong> 15-04-2014</p>
+
+<blockquote>
+  <p>Имеет смысл самую дешевую ?стоит переплачивать ? Каково ваше мнение ?</p>
+</blockquote>
+
+<p>Все зависит от Ваших фин. возможностей, если для Вас 3000+ рублей не очень дорого, то имеет смысл брать Филипс. Если средства ограничены, то за 1700р. будет в самый раз.</p>
+
+<p>На просторах интернета читал, что для киловаттных ДНаТов спектральное распределение не так критично как для менее мощных, тут уже кол-во фотонов, а не качество, играет решающую роль.</p>
+
+<p><strong>Andrew1</strong> 16-04-2014</p>
+
+<p>Лампочку приобрел вот такую Лампа Venture Sunmaster Dual Spectrum ДНаТ 1000</p>
+
+<p>по наличию был только токая и Филипс да и филипс на 300р дешевле</p>
+
+<p>С экономить не получилось :(</p>
+
+<p>Побегу собирать на огурчиках уже цветочки вчера появились :)</p>
+
+<p>Если есть у кого комментарии или замечания не стесняйтесь буду рад любому совету :)</p>
+
+<p><strong>vilon</strong> 16-04-2014</p>
+
+<blockquote>
+  <p>Если есть у кого комментарии или замечания не стесняйтесь буду рад любому совету :)</p>
+</blockquote>
+
+<p>Могу только добавить, что такую лампу необходимо охлаждать. Какой светильник используете?</p>
+
+<p><strong>Andrew1</strong> 16-04-2014</p>
+
+<p>Собираюсь поставить по центру комнаты 3.2х3.2 на штативе.голую. К ней что то надо?</p>
+
+<p><strong>vilon</strong> 16-04-2014</p>
+
+<p>Люксметр есть? Было бы здорово замерить им освещенность.</p>
+
+<p>Поставьте, измерьте температуру, после нескольких часов работы на разном расстоянии от лампы. Колба лампы греется до 3000С.</p>
+
+<p>Я вот тоже хочу в следующий сезон отказаться от трапецевидного светильника и разместить огурцы по кругу вокруг лампы. Но кажется мне, что без култьюба с обдувом листья будут гореть даже на расстоянии метра. А если судить вот по этой табличке</p>
+
+<p><a href="https://t.me/ponics_ru_files/12574" target="_blank"><img src="/imagehost/thumbs/skssks.jpg" alt="" /></a></p>
+
+<p>Размещать надо не дальше метра.</p>
+
+<p><strong>Andrew1</strong> 16-04-2014</p>
+
+<p>То есть освещать комнату 2х2 ?</p>
+
+<p>на расстоянии метра она действительно жарит ,как на солнце летом :)</p>
+
+<p><strong>vilon</strong> 17-04-2014</p>
+
+<p>Освещать можно любую комнату :D</p>
+
+<p>А вот растениям необходимо определенное кол-во света, и чем дальше от лампы тем его меньше до растений доходит! Но с другой стороны чем ближе к лампе тем выше температура, поэтому для мощных ДНаТов используют специальные светильники либо култьюбы с принудительной вентиляцией.</p>
+
+<p>На личном примере убедился, что огурцам в метре от светильника уже маловато света (на чистой светокультуре). А на расстоянии в 30 см от стекла светильника температура около 300С!</p>
+
+<p>При том, что у меня активное охлаждение забортным воздухом и выдув так же на улицу. В данный момент у меня светильник выступает в качестве обогревателя, доводя температуру в комнате (11м2) с 18 до 280С за полтора часа работы.</p>
+
+<p>Посему подумайте об активном охлаждении! Для вертикального расположения идеален култьюб (cooltube) - это стеклянные трубки (d&gt;120мм) с фланцами по торцам для крепления воздуховодов либо вентилятора. Приток воздуха лучше брать снаружи, если позволяют условия.</p>
+
+<p>А что у вас с контролем климата?</p>
+
+<p><strong>Andrew1</strong> 19-04-2014</p>
+
+<p>Вы меня очень расстроили, если киловатта не будет хватать на 3 кубических метра бокса то теряется смысл моего эксперимента.</p>
+
+<p>климат пока регулирую по средствам биметаллических пластин конвертерных батарей и электронного тепло вентилятора. :)</p>
+
+<p>Да кстати вопрос а 1,5 метра по высоте хватит огурцу ?</p>
+
+<p><strong>Andrew1</strong> 19-04-2014</p>
+
+<p>взял в руки люксметр и померил я свои лампы :o :o :o :'( :'( :'( :'( :'( :'( :'(</p>
+
+<p>в действительности на расстоянии метра киловатт дает чуть больше 10к Lx причем резко падает если ведешь параллельно лампе верх и низ.</p>
+
+<p><em>sos</em> 5к lx совсем не хватит ?</p>
+
+<p><strong>vilon</strong> 19-04-2014</p>
+
+<p>Хватит 5к люкс, и 3 кубометра осветить получится, Вы сильно не расстраивайтесь! На то он и эксперимент ;) чтобы попробовать.</p>
+
+<p>Огурцу 1,5 метра маловато если формировать в один ствол, но можно укладывать плети по кругу либо скручивать в кольца по мере роста.</p>
+
+<p>Важной составляющей климата является относительная влажность воздуха. Для огурцов необходимо 60-70%. Я использую увлажнители на пьезокерамике (один бытовой и один самодельный). Так же необходимо продумать приток свежего воздуха, т.к. растениям необходим углекислый газ, и если Вы его не производите специально, то огурцы его смогут добывать только из воздуха.</p>
+
+<p><strong>Andrew1</strong> 25-04-2014</p>
+
+<p>Немного изменил конструкцию наклонил огурцы к лампе</p>
+
+<p>по середине 5 Lx по диагонали 3Lx причем там где три огурчики лучше выглядят чем где пять (листья вялые поникшие в низ)</p>
+
+<p>Даже не знаю что и думать :-\</p>
+
+<p>появились огурчики длинной два сантиметра но дальнейшего развитие не происходит</p>
+
+<p>Может что не так делаю ?</p>
+
+<p>поливаю один раз в два дня не больше 100 г начинает течь дренаж , температура днем 25-28 ночью 19-20. свет 15/9</p>
+
+<p>проветриваю (криво косо не могу точно сказать скока воздуха заходит в помещение ) днем три раза по часу полтора</p>
+
+<p>да и низкорослые помидорчики тоже по чему то вянут хотя стоят приемлемо под 400 ваткой 5-7 Lx</p>
+
+<p>температура такая же.</p>
+
+<p>влажность подымаю разлитой водой на полу по моему прибору 80-60 %% при включенной лампе соответственно выше чем когда она горит</p>
+
+<p>Может что не так делаю ?</p>
+
+<p>как можно хелатировать кальций ? чтоб не выпадал в осадок белого цвета при 3 дневном хранении</p>
+
+<p><strong>Coccinella</strong> 26-04-2014</p>
+
+<p>Им жарко, 28оС это чересчур!</p>
+
+<p><strong>Andrew1</strong> 08-05-2014</p>
+
+<p>Вот как то так</p>
+
+<p><a href="https://t.me/ponics_ru_files/12575" target="_blank"><img src="/attachimages/16113_DSC_0527.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12576" target="_blank"><img src="/attachimages/16115_DSC_0528.jpg" alt="" /></a></p>
+
+<p><strong>Andrew1</strong> 08-05-2014</p>
+
+<p>Опустил немного лианы и приблизил огурцы к лампе 1,3 метра теперь у них 5-7 Klx. Главное чтоб не сгорели. Поливаю пять раз в день по 20-30 грамм</p>
+
+<p><a href="https://t.me/ponics_ru_files/12577" target="_blank"><img src="/attachimages/16117_DSC_0539.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12578" target="_blank"><img src="/attachimages/16119_DSC_0539.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12579" target="_blank"><img src="/attachimages/16121_DSC_0541.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12580" target="_blank"><img src="/attachimages/16123_DSC_0545.jpg" alt="" /></a></p>
+
+<p><strong>Andrew1</strong> 08-05-2014</p>
+
+<p>Но огурцы не наливаються, так и засыхают. Завязи 3-5 сантиметров. Температуру снизил до 22 днем и ночью 16</p>
+
+<p><a href="https://t.me/ponics_ru_files/12581" target="_blank"><img src="/attachimages/16125_DSC_0548.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12582" target="_blank"><img src="/attachimages/16127_DSC_0550.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12583" target="_blank"><img src="/attachimages/16129_DSC_0550.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12584" target="_blank"><img src="/attachimages/16131_DSC_0551.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12585" target="_blank"><img src="/attachimages/16133_DSC_0552.jpg" alt="" /></a></p>
+
+<p><strong>Andrew1</strong> 08-05-2014</p>
+
+<p>В низ поставил помидорки там по холоднее на пару градусов</p>
+
+<p><a href="https://t.me/ponics_ru_files/12586" target="_blank"><img src="/attachimages/16135_DSC_0546.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12587" target="_blank"><img src="/attachimages/16137_DSC_0547.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 08-05-2014</p>
+
+<p>Вы мало поливаете огурцы, что такое 150 мл на растение в сутки? Это и на один огурчик не хватит, а ведь надо еще на само растение. А они у Вас еще растущие “ребенки” :)</p>
+
+<p>Сами посудите, огурец (плод) на 98% состоит из воды. При нормальном весе около 100-150 г практически весь Ваш полив еле-еле покрывает вес одного плода. А ведь в жизни такая примитивная математика не работает, всегда фактический расход выше рассчетного :(.</p>
+
+<p><strong>Andrew1</strong> 09-05-2014</p>
+
+<p>Всех с праздником.</p>
+
+<p><strong>Andrew1</strong> 09-05-2014</p>
+
+<p>Чаще поливать ? У меня при поливе начинается дренаж. Субстрат влажный стекает при нажатии на него</p>
+
+<p><strong>Coccinella</strong> 09-05-2014</p>
+
+<p>Ну и пусть он течет, зато с новым раствором растения получат питание.</p>
+
+<p>Хотя надо бы разобраться, почему растения так плохо потребляют раствор при такой температуре?</p>
+
+<p>Они могут быть перелиты, но тогда бы они уже подвядать начали. Что там с вентиляцией?</p>
+
+<p><strong>Andrew1</strong> 09-05-2014</p>
+
+<p>подвивание есть изначально на ближних к лампе . приток свежего воздуха стараюсь как можно больше . но не опускать температуру ниже 20 градусов</p>
+
+<p>температура была 26-28</p>
+
+<p>после вашей рекомендации снизил до 20-24</p>
+
+<p><strong>Coccinella</strong> 09-05-2014</p>
+
+<p>А какая относительная влажность воздуха?</p>
+
+<p><strong>Andrew1</strong> 09-05-2014</p>
+
+<p>От 65 до 80 днем и 75 -85 ночью</p>
+
+<p><strong>Coccinella</strong> 09-05-2014</p>
+
+<p>Попробуйте сделать им вытяжную вентиляцию. С влажностью воздуха всегда так - то низкая, то высокая. В обоих случаях устьица закрываются, транспирация останавливается, растения не пьют-не едят, кальций не поступает, завязи не растут… ну всякие другие неприятности по списку… :(</p>
+
+<p><strong>Andrew1</strong> 09-05-2014</p>
+
+<p>Как увеличить полив и на сколько? Чаще или больше? Температура полива 28 нормальна?</p>
+
+<p><strong>Coccinella</strong> 10-05-2014</p>
+
+<p>Можно и 23-25оС.</p>
+
+<p>Мне мнится, я же растений вживую не вижу и руками субстрат потрогать не могу, что лучше бы увеличить на некоторое время интервалы и немного повысить одноразовую дозу полива. Реже, но больше. На пару дней и посмотреть на реакцию растений.</p>
+
+<p><strong>Andrew1</strong> 10-05-2014</p>
+
+<p>300 грамм хватит для начала ? не взирая на дренаж</p>
+
+<p><strong>Andrew1</strong> 11-05-2014</p>
+
+<p>готовлю раствор на калькуляторе сайта почему прогнозируемый ЕС 3.2 от реального 2.6 отличаются ? или надо делать концентрат и доводить до 3.2 разбавлением водой?</p>
+
+<p><strong>vilon</strong> 12-05-2014</p>
+
+<blockquote>
+  <p>готовлю раствор на калькуляторе сайта почему прогнозируемый ЕС 3.2 от реального 2.6 отличаются ? или надо делать концентрат и доводить до 3.2 разбавлением водой?</p>
+</blockquote>
+
+<p>Какую воду используете?</p>
+
+<p>И как советовал VAD проверьте соответствие Ваших удобрений тому, что забито в калькуляторе. В зависимости от производителя концентрации могут отличаться.</p>
+
+<p><strong>Coccinella</strong> 12-05-2014</p>
+
+<blockquote>
+  <p>300 грамм хватит для начала ? не взирая на дренаж</p>
+</blockquote>
+
+<p>Извините, я не могу ответить на вопрос, не видя реальную ситуацию своими глазами. В данном случае даже фотосессия не поможет. Я могу помочь с общим алгоритмом, но конкретику придется определять самому методом научного тыка. Увы!</p>
+
+<p><strong>Andrew1</strong> 12-05-2014</p>
+
+<p>Большое спасибо за помощь.Что не бросаете в трудную минуту :)</p>
+
+<p>Воду беру из под крана пш 6,5 ЕС 0,03</p>
+
+<p>соли беру чистые и химически чистые</p>
+
+<p>калькулятор который на сайте встроены мне не проверить его</p>
+
+<p><strong>Andrew1</strong> 13-05-2014</p>
+
+<p>Глубоко уважаемая Coccinella вы советуете :</p>
+
+<p>Мини Черри, Огурцы, Светодиоды, Минвата Гродан (HUGO, Vital).</p>
+
+<p>« Ответ #578 : 11 Мая 2014, 21:27:23 »</p>
+
+<p>А скинуть калий до 260 (ну +/-) не получится?</p>
+
+<p>у меня на некоторых огурчиках такая же проблема</p>
+
+<p><a href="https://t.me/ponics_ru_files/12588" target="_blank"><img src="/attachimages/16183_p1050282.jpg" alt="" /></a></p>
+
+<p><strong>Andrew1</strong> 13-05-2014</p>
+
+<p>180 80 330 250 65</p>
+
+<p>NPK+Ca+Mg</p>
+
+<p>Это мой растворчик</p>
+
+<p><strong>Andrew1</strong> 13-05-2014</p>
+
+<p>N	P	K	Ca	Mg</p>
+
+<p>180	80	330	250	50</p>
+
+<p>Результат:</p>
+
+<p>Прогнозный EC: 3.4 mS (2304 ppm)</p>
+
+<p>Прогнозный pH: 6.3</p>
+
+<p>KH2PO4 (Калия монофосфат) = 35.1 g</p>
+
+<p>Ca(NO3)2*4H2O (Кальциевая селитра, нитрат кальция) = 147.3 g</p>
+
+<p>KNO3 (Калиевая селитра, нитрат калия) = 3.8 g</p>
+
+<p>K2SO4 (Сульфат калия, калий сернокислый) = 47.8 g</p>
+
+<p>MgSO4*7H2O (Сульфат магния, магний сернокислый) = 50.7 g</p>
+
+<p><a href="https://t.me/ponics_ru_files/12589" target="_blank"><img src="/attachimages/16185_Скриншот_14_05_2014_02_49_33.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12590" target="_blank"><img src="/attachimages/16187_Скриншот_14_05_2014_02_51_51.jpg" alt="" /></a></p>
+
+<p><strong>Andrew1</strong> 13-05-2014</p>
+
+<p>Вот на последнем фота калькулятор отказывается кальций давать</p>
+
+<p>почему?</p>
+
+<p><strong>Gnevko</strong> 14-05-2014</p>
+
+<p>Наверное потому, что расчетный кальций у вас 250, а в наличии всего 90 … вот калькулятор и возмущается (кстати, с какой программки у вас последний скрин?).</p>
+
+<p>А по поводу снизить калий … то вот это состояние моего листа, причем таких листов уже много</p>
+
+<p><a href="https://t.me/ponics_ru_files/12591" target="_blank"><img src="/imagehost/thumbs/p1050281.jpg" alt="" /></a></p>
+
+<p>если смотреть по каталогам яры - свидетельсвует о явном его недостатке.</p>
+
+<p>Дырочки в листе - это, говорят, надостаток фосфора … если я правильно понял обсуждение в моей теме.</p>
+
+<p><strong>Andrew1</strong> 14-05-2014</p>
+
+<p>ФИТО Агоном где брал уже не могу найти если надо могу выложить</p>
+
+<p>на один кальций две молекулы азота так при 250 кальции 500 азота получаться ?</p>
+
+<p>и это тока кальций еще калий</p>
+
+<p>а с серой что делать она вообще зашкаливает ?</p>
+
+<p><strong>Gnevko</strong> 14-05-2014</p>
+
+<p>Погодите, тут же не колличество молекул считают, их атомную (морялную) массу. У азота она равна 14, у кальция - 40.</p>
+
+<p>Сера, ну как сказать, все относительно и не понятно - в одних рецептах ее 35 (вот как тут - <a href="http://www.promgidroponica.ru/index.php?q=node/24" target="_blank">http://www.promgidroponica.ru/index.php?q=node/24</a>), в других - под 250 не проблема (вот как тут например <a href="http://agrodom.com/article/Ogyrci_na_gidroponike_doma" target="_blank">http://agrodom.com/article/Ogyrci_na_gidroponike_doma</a>). В этом то и вся “прелесть” интернета, информации много, но как правило она сильно противоречива, что своит ее полезность к значениям, близким, а то и равным 0.</p>
+
+<p><strong>Andrew1</strong> 14-05-2014</p>
+
+<p>почему она тогда сыпет аж два кило и в итоге минус по кальцию ? (другие калькуляторы сыпят полтора )</p>
+
+<p><strong>Gnevko</strong> 14-05-2014</p>
+
+<p>Ну батенька, кто ж ее знает <em>???</em></p>
+
+<p>Единственное на что стоит обратитьвнимание - это колличество раствора, на которое она расчитывает + очень может быть, что она пытается вам посчитать концентрат, а не готовый раствор, как в других калькуляторах - хз.</p>
+
+<p><strong>Coccinella</strong> 14-05-2014</p>
+
+<p>Гневко, у них не может быть дефицит калия при таком соотношении элементов. Эти сухие пятна похожи на недостаток фосфора и мне мнится, что и пожелтение листа связано именно с этими пятнами.</p>
+
+<p>А что там с хлором? Вот на это не похоже <a href="http://www.foto.greentalk.ru/v/20100307/MG+silt+250810/Cl+gurkos.jpg.html" target="_blank">http://www.foto.greentalk.ru/v/20100307/MG+silt+250810/Cl+gurkos.jpg.html</a> ?</p>
+
+<p><strong>Andrew1</strong> 14-05-2014</p>
+
+<p>он именно концентрат и считает 1/100</p>
+
+<p>А что есть разница в приготовлении раствора или концентрата ? мне казалось разница между ними тока в пропорции</p>
+
+<p>готовишь 1000 литров сразу или разбавляешь концентрат потом до 1000 литров количество солей по моему должно быть одинаковой.</p>
+
+<p>а не дадите ссылку на дефицит от велагро ?</p>
+
+<p>очень интересно предложение Coccinella по снижению калия чтоб кальций поднять в чем взаимосвязь ?</p>
+
+<p><strong>Andrew1</strong> 14-05-2014</p>
+
+<p>поеду с фоткаю взгляните вечерком плиз</p>
+
+<p>у меня на одной грядке каждой болячки по паре :)</p>
+
+<p>часть нормальных часть слабо развитых часть с дырками часть лист темно зеленый</p>
+
+<p>и что делать и по какой таблице не знаю</p>
+
+<p>есть тока один приятный момент один огурчик с ломался я его в сторону кинул и все выкинуть не мог так иногда излишки плескал да дренаж когда что под руку подвернется так вот он огуречик дал уже сантиметров десять :)</p>
+
+<p><strong>Gnevko</strong> 14-05-2014</p>
+
+<blockquote>
+  <p>очень интересно предложение Coccinella по снижению калия чтоб кальций поднять в чем взаимосвязь ?</p>
+</blockquote>
+
+<p>Как глосит теория, избыток одних элементов может блокировать поступление других.</p>
+
+<p><strong>Gnevko</strong> 14-05-2014</p>
+
+<blockquote>
+  <p>Гневко, у них не может быть дефицит калия при таком соотношении элементов. Эти сухие пятна похожи на недостаток фосфора и мне мнится, что и пожелтение листа связано именно с этими пятнами.</p>
+
+  <p>А что там с хлором? Вот на это не похоже <a href="http://www.foto.greentalk.ru/v/20100307/MG+silt+250810/Cl+gurkos.jpg.html" target="_blank">http://www.foto.greentalk.ru/v/20100307/MG+silt+250810/Cl+gurkos.jpg.html</a> ?</p>
+</blockquote>
+
+<p>Да хлора там вообще нет как бы, на осмосе ж делаю … да и воду тут не хлорируют уже оочень давно.</p>
+
+<p><strong>Andrew1</strong> 14-05-2014</p>
+
+<p>Вот</p>
+
+<p><a href="https://t.me/ponics_ru_files/12592" target="_blank"><img src="/attachimages/16210_DSC_0555.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12593" target="_blank"><img src="/attachimages/16212_DSC_0556.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12594" target="_blank"><img src="/attachimages/16214_DSC_0557.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12595" target="_blank"><img src="/attachimages/16216_DSC_0558.jpg" alt="" /></a></p>
+
+<p><strong>Andrew1</strong> 14-05-2014</p>
+
+<p>?</p>
+
+<p><a href="https://t.me/ponics_ru_files/12596" target="_blank"><img src="/attachimages/16218_DSC_0562.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12597" target="_blank"><img src="/attachimages/16220_DSC_0563.jpg" alt="" /></a></p>
+
+<p><strong>Andrew1</strong> 14-05-2014</p>
+
+<p>И еще не попадающие под мою логику?</p>
+
+<p><a href="https://t.me/ponics_ru_files/12598" target="_blank"><img src="/attachimages/16222_DSC_0565.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12599" target="_blank"><img src="/attachimages/16224_DSC_0560.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12600" target="_blank"><img src="/attachimages/16226_DSC_0568.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12601" target="_blank"><img src="/attachimages/16228_DSC_0567.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12602" target="_blank"><img src="/attachimages/16230_DSC_0561.jpg" alt="" /></a></p>
+
+<p><strong>Andrew1</strong> 24-05-2014</p>
+
+<p>Не удержался по пробовал, а через день еще. Пока горьковатый правда.</p>
+
+<p><a href="https://t.me/ponics_ru_files/12603" target="_blank"><img src="/attachimages/16252_DSC_0569.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12604" target="_blank"><img src="/attachimages/16254_DSC_0573.jpg" alt="" /></a></p>
+
+<p><strong>Andrew1</strong> 02-06-2014</p>
+
+<p>почему плод зауженный треугольной формы ?</p>
+
+<p><strong>Coccinella</strong> 02-06-2014</p>
+
+<p>Либо ЕС высокий, либо поливы редкие. Вода неравномерно поступает в плод.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

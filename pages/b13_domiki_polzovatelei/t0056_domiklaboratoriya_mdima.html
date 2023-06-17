@@ -1,0 +1,2174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Домик-лаборатория mdima | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Домик-лаборатория mdima">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Домик-лаборатория mdima</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>mdima</strong> 29-04-2009</p>
+
+<p>Домик-лаборатория (мечты…)</p>
+
+<p><a href="http://www.postimage.org/gx64w59.jpg" target="_blank"><img src="http://www.postimage.org/gx64w59.jpg" alt="" /></a></p>
+
+<p><strong>mdima</strong> 29-04-2009</p>
+
+<p>Пристройка: :D (тоже мечты)</p>
+
+<p><a href="http://www.postimage.org/PqBWqhA.jpg" target="_blank"><img src="http://www.postimage.org/PqBWqhA.jpg" alt="" /></a></p>
+
+<p><strong>Tony_85</strong> 29-04-2009</p>
+
+<p>Хорошие мечты.</p>
+
+<p>Я тоже мечтаю о теплице, но не о химии :D</p>
+
+<p><strong>valery</strong> 29-04-2009</p>
+
+<p>Что тут скажешь. Славно.</p>
+
+<p>Даже знаки восклицательные ставить не хочется. Не подходят они тут.</p>
+
+<p>Просто “славно” и все.</p>
+
+<p>У меня тоже есть мечта. Вырастить газончик. Что бы в январе, когда под 40, девушки-сотрудницы могли в “комнатке психологической разгрузки” босичком по травке пошлепать.</p>
+
+<p>Врочем, кажется, я уже этим делился. А может нет.</p>
+
+<p>Первая картинка мне даже больше нравится.</p>
+
+<p><strong>mdima</strong> 30-04-2009</p>
+
+<p>У меня дома живут:</p>
+
+<p>Петушки, Гуппи, Шпорцевые лягушки, сомик парчевый, сомик анцитрус, красноухая черепаха, кот поды перс, кошка безпородная, 4 котенка, фугу (рыба-шар)…. может еще кого забыл… помелочи типа артемии, уксусной угрицы и т.п.</p>
+
+<p>Так вот, сейчас ко мне едут два ежика мама и сынуля….</p>
+
+<p><strong>mdima</strong> 30-04-2009</p>
+
+<p>Да, забыл добавить…. у меня еще моль живет…. где-то…. :(</p>
+
+<p><strong>mdima</strong> 30-04-2009</p>
+
+<p>Ежики:</p>
+
+<p>Ежик-промоутер растворов (на заднем плане)</p>
+
+<p><a href="http://www.postimage.org/gx9aKDA.jpg" target="_blank"><img src="http://www.postimage.org/gx9aKDA.jpg" alt="" /></a></p>
+
+<p><a href="http://www.postimage.org/gx9b64S.jpg" target="_blank"><img src="http://www.postimage.org/gx9b64S.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 30-04-2009</p>
+
+<p>ежики хороши, да и растворы тоже очень даже ;)</p>
+
+<p><strong>mdima</strong> 30-04-2009</p>
+
+<p>Наделал гальки из оазиса, сижу балдею от самого факта. Если он и в деле себя таки покажет, то будет мой любимый субстрат.</p>
+
+<p><a href="http://www.postimage.org/PqGlVpr.jpg" target="_blank"><img src="http://www.postimage.org/PqGlVpr.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 30-04-2009</p>
+
+<p>сколько же тебе пришлось нарезать кубиков и все в ручную?</p>
+
+<p>А выглядит очень круто! 8)</p>
+
+<p><strong>mdima</strong> 30-04-2009</p>
+
+<p>Кто сказал вручную??? я что маньяк? :D Притом на фото не видно, там литра 3 такой “гальки”</p>
+
+<p><strong>koval.sergei</strong> 01-05-2009</p>
+
+<p>mdima, а такой оазис будет в продаже, и чё почём</p>
+
+<p><strong>mdima</strong> 01-05-2009</p>
+
+<p>В продаже появится только если покажет себя как хороший субстрат. Пока эксперементирую.</p>
+
+<p><strong>koval.sergei</strong> 01-05-2009</p>
+
+<p>Удачи в эксперементе, и ждём результатов</p>
+
+<p><strong>mdima</strong> 01-05-2009</p>
+
+<p>Школьники 10го класса сделали работу по гидропонике <a href="http://www.school528.ru/raboti/zaifert_gasanova_trusova/rabota.swf" target="_blank">смотреть тут</a></p>
+
+<p><strong>Mole_Garden</strong> 01-05-2009</p>
+
+<p>Школьникам ЗАЧЕТ, почему же мне никто не рассказал про гидропонику, когда я учился в школе :'(</p>
+
+<p><strong>Mendes</strong> 01-05-2009</p>
+
+<p>Что там школьники!! Я недавно общался с молодым агрономом одного из наших известных сельхоз преприятий. Он даже не слышал слова гидропоника! И в университете ни разу о нней не говорили.</p>
+
+<p><strong>Mole_Garden</strong> 01-05-2009</p>
+
+<blockquote>
+  <p>Что там школьники!! Я недавно общался с молодым агрономом одного из наших известных сельхоз преприятий. Он даже не слышал слова гидропоника! И в университете ни разу о нней не говорили.</p>
+</blockquote>
+
+<p>;D</p>
+
+<p><strong>mdima</strong> 03-05-2009</p>
+
+<p>Сегодня делали лотки под клубнику, если все сростется, завтра будут фотки.</p>
+
+<p><strong>mdima</strong> 04-05-2009</p>
+
+<p>Не успел я до темноты нащелкать клубнику, поэтому в качестве извинения фоткнул мою черепашку, которая лопает осьминожку….</p>
+
+<p><a href="http://www.postimage.org/Pq11PbM0.jpg" target="_blank"><img src="http://www.postimage.org/Pq11PbM0.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 05-05-2009</p>
+
+<blockquote>
+  <p>Не успел я до темноты нащелкать клубнику, поэтому в качестве извинения фоткнул мою черепашку, которая лопает осьминожку….</p>
+</blockquote>
+
+<p>:o</p>
+
+<p>А осьминогов тоже разводишь?</p>
+
+<p>А вообще жееесть конечно</p>
+
+<p><strong>mdima</strong> 05-05-2009</p>
+
+<p>Вот такая грядочка клубники:</p>
+
+<p><a href="http://www.postimage.org/gxtFUgi.jpg" target="_blank"><img src="http://www.postimage.org/gxtFUgi.jpg" alt="" /></a></p>
+
+<p><a href="http://www.postimage.org/Pq17e4Y0.jpg" target="_blank"><img src="http://www.postimage.org/Pq17e4Y0.jpg" alt="" /></a></p>
+
+<p><a href="http://www.postimage.org/Pq17etUr.jpg" target="_blank"><img src="http://www.postimage.org/Pq17etUr.jpg" alt="" /></a></p>
+
+<p><strong>nikadubrovsky</strong> 05-05-2009</p>
+
+<p>мою черепашку, которая лопает осьминожку….</p>
+
+<p>брутально.</p>
+
+<p>Моему 6-летнему сынишке очень понравилось.</p>
+
+<p><strong>nikadubrovsky</strong> 05-05-2009</p>
+
+<blockquote>
+  <p>Вот такая грядочка клубники:</p>
+</blockquote>
+
+<p>Прекрасная клубника.</p>
+
+<p>А есть ли описание как собрать коробочки.</p>
+
+<p>Можно ли с детишками выращивать клубнику?</p>
+
+<p>Долго ли она растет до вот такого состояния?  И куда делись усы (моя мама постоянно говорила, что у клубники есть “усы”).</p>
+
+<p><strong>mdima</strong> 05-05-2009</p>
+
+<ol>
+  <li>
+    <p>Усы сейчас удалены.</p>
+  </li>
+  <li>
+    <p>Лотки разрабатываем.</p>
+  </li>
+  <li>
+    <p>:)</p>
+  </li>
+  <li>
+    <p>Насчет с детишками…. если все получится, то напишу можно или нет… :) Т.е. насколько это сложно</p>
+  </li>
+</ol>
+
+<p><strong>Mole_Garden</strong> 05-05-2009</p>
+
+<p>А какой сорт? Будем ждать урожая, сегодня видел на рынке турецкую продают, 150 рублей за кило, вот что то ее совсем не захотелось покупать. ;)</p>
+
+<p><strong>valery</strong> 05-05-2009</p>
+
+<p>И, похоже, на “керамо-Оазизе” ?</p>
+
+<p>Дмитрий, пора уже лотки в магазин пускать.</p>
+
+<p>Мы тоже хотим пробовать.</p>
+
+<p><strong>mdima</strong> 05-05-2009</p>
+
+<p>Вы же хотите получить качественный продукт, а не полуфабрикат… Вот я и тестирую, чтобы мне не было стыдно за продукцию.</p>
+
+<p>Да, на оазисе :)</p>
+
+<p><strong>nikadubrovsky</strong> 06-05-2009</p>
+
+<blockquote>
+  <p>Наделал гальки из оазиса, сижу балдею от самого факта. Если он и в деле себя таки покажет, то будет мой любимый субстрат.</p>
+
+  <p><a href="http://www.postimage.org/PqGlVpr.jpg" target="_blank"><img src="http://www.postimage.org/PqGlVpr.jpg" alt="" /></a></p>
+</blockquote>
+
+<p>Прекрасные какие! Это ж какую красоту можно навести!!</p>
+
+<p>а что такое “оазис”?</p>
+
+<p><strong>mdima</strong> 06-05-2009</p>
+
+<p>Оазис - это такая пена. Она нейтральна, стерильна, влагоемка. :)</p>
+
+<p><strong>Mole_Garden</strong> 06-05-2009</p>
+
+<p>На фотках выше, обратил внимание, что емкость, где находится раствор, прозрачная, это было так задумано или просто нет пока другой емкости? Да и как то она открыта через чур, не будет ли попадать мусор и пыль, не думаю, что это будет полезно для корней.</p>
+
+<p>а что с сортом? известен? или клубника безымянная</p>
+
+<p><strong>mdima</strong> 06-05-2009</p>
+
+<p>все правильно: емкость временная, сорт неизвестен и т.д. :)</p>
+
+<p><strong>Mole_Garden</strong> 06-05-2009</p>
+
+<p>:D</p>
+
+<p><strong>Mendes</strong> 06-05-2009</p>
+
+<p>клубника из семени выращена или так и куплена рассадой?</p>
+
+<p><strong>mdima</strong> 06-05-2009</p>
+
+<p>С деревни выкопана.</p>
+
+<p><strong>nikadubrovsky</strong> 08-05-2009</p>
+
+<blockquote>
+  <p>Оазис - это такая пена. Она нейтральна, стерильна, влагоемка. :)</p>
+</blockquote>
+
+<p>Оба-на, какие можно дизайнерские штуки придумывать!</p>
+
+<p>Гидропонные установки по-большей части еще уродливы.</p>
+
+<p>Нужно придумать такие, чтобы в квартире поставить можно было…</p>
+
+<p>а есть ли другие цвета у этой пены?</p>
+
+<p>можно ли сделать так, чтобы она была видна снаружи?</p>
+
+<p>Можно ли сажать растения в аквариум, засыпая его дно разноцветной пеной?</p>
+
+<p>Что вы думаете про выращивание растений в карманах клиенки, куда насыпается грунт и подается вода через трубочку?</p>
+
+<p><strong>mdima</strong> 08-05-2009</p>
+
+<p>Вот подвесил светильник на 2 лампы по 36W из полированой нержавейки</p>
+
+<p><a href="http://www.postimage.org/Pq1pBpKS.jpg" target="_blank"><img src="http://www.postimage.org/Pq1pBpKS.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 08-05-2009</p>
+
+<p>Ну все, теперь ягоды должны быть с пол кило. :D</p>
+
+<p><strong>mdima</strong> 08-05-2009</p>
+
+<p>Сейчас сфоткал:</p>
+
+<p><a href="http://www.postimage.org/Pq1rOgmS.jpg" target="_blank"><img src="http://www.postimage.org/Pq1rOgmS.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 08-05-2009</p>
+
+<p>А какой у нее световой режим и температура ночью? не холодно им?</p>
+
+<p><strong>mdima</strong> 08-05-2009</p>
+
+<p>сейчас 12/12 днем и ночью +24</p>
+
+<p><strong>Mendes</strong> 08-05-2009</p>
+
+<p>Какая высота питательного слоя по дну лотка?</p>
+
+<p><strong>Mole_Garden</strong> 08-05-2009</p>
+
+<blockquote>
+  <p>сейчас 12/12 днем и ночью +24</p>
+</blockquote>
+
+<p>Каким образом добился такого сохранения температуры на балконе?</p>
+
+<p><strong>Mendes</strong> 08-05-2009</p>
+
+<p>тоже удивился тому, что у вас дневная температура на улице не отличается от ночной.</p>
+
+<p><strong>mdima</strong> 08-05-2009</p>
+
+<p>Балкон закрытый, дверь в комнату открыта, в комнате климат-контроль ;) :D</p>
+
+<p>2 лампы:</p>
+
+<p><a href="http://www.postimage.org/aV19Z1lr.jpg" target="_blank"><img src="http://www.postimage.org/aV19Z1lr.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 10-05-2009</p>
+
+<p>Насколько я понимаю, это пример “обслуживаемого” лотка, да ? То есть со съемной крышкой?</p>
+
+<p>А какая стандартная длина такого лотка ? Можно ли его резать по “любой” длине ? И какая длина данного лоточка, расстояние между горшочками (вроде насчитал 10 штук).</p>
+
+<p>Как подается питательный раствор - свободным течением по дну или индивидуально трубочками на каждый горшочек ?</p>
+
+<p><strong>mdima</strong> 10-05-2009</p>
+
+<ol>
+  <li>
+    <p>Да, это обслуживаемый лоток.</p>
+  </li>
+  <li>
+    <p>Длинна стандартная 2м (иногда в наличии появляются 4м) у меня отрезан 1м (по длине подоконника).</p>
+  </li>
+</ol>
+
+<p>2.1 Мы думаем делать 4 вида лотков</p>
+
+<p>а) помидоры и огурцы расстояние между коршками 25-30 см</p>
+
+<p>б) салат 18 см</p>
+
+<p>в) клубника 10 см</p>
+
+<p>г) зелень 5 см</p>
+
+<ol>
+  <li>раствор подается трубочками индивидуально, а общий дренаж стекает по лотку обратно в емкость.</li>
+</ol>
+
+<p><strong>rustamakhmetov</strong> 10-05-2009</p>
+
+<blockquote>
+  <ol>
+    <li>Да, это обслуживаемый лоток.</li>
+  </ol>
+</blockquote>
+
+<p>Из какого материала сделаны эти лотки?</p>
+
+<p><strong>mdima</strong> 10-05-2009</p>
+
+<p>ПВХ</p>
+
+<p><strong>rustamakhmetov</strong> 10-05-2009</p>
+
+<blockquote>
+  <p>ПВХ</p>
+</blockquote>
+
+<p>Самосборные или покупные?</p>
+
+<p><strong>mdima</strong> 10-05-2009</p>
+
+<p>Собственного изготовления</p>
+
+<p><strong>rustamakhmetov</strong> 10-05-2009</p>
+
+<blockquote>
+  <p>Собственного изготовления</p>
+</blockquote>
+
+<p>Какой ПВХ используется вспененный или жесткий? Какой толщины?</p>
+
+<p>Чем клеится?</p>
+
+<p><strong>mdima</strong> 10-05-2009</p>
+
+<p>сам лоток из жесткого, соединительные и концевые элементы из вспененого. Клей “cosmofen plus” - это раствореный ПВХ в смеси кетонов.</p>
+
+<p><strong>mdima</strong> 11-05-2009</p>
+
+<p>Клубника на лотках думает цвести:</p>
+
+<p><a href="http://www.postimage.org/Pq1Isja0.jpg" target="_blank"><img src="http://www.postimage.org/Pq1Isja0.jpg" alt="" /></a></p>
+
+<p><strong>Mendes</strong> 11-05-2009</p>
+
+<p>Дмитрий, заразился вашим опытом с клубникой. Купил сегодня расаду. Хотелось бы подробно узнать как их перевести на гидропонику. Поэтапно. Подойдет ли им тот самый раствор, которым я уже прилично вырастил огурцы и томаты?</p>
+
+<p><strong>mdima</strong> 11-05-2009</p>
+
+<p>У клибники свои требования к раствору, они сильно отличаются от остальных культур. К примеру, в растворе для клубники мало азота (по сравнению с томатами и огурцами), так как избыток азота клубнике вреден.</p>
+
+<p><strong>Mendes</strong> 11-05-2009</p>
+
+<p>из сказанного следует …</p>
+
+<p><strong>mdima</strong> 11-05-2009</p>
+
+<p>что раствор для томатов и огурцов для клубники не подходит. :)</p>
+
+<p><strong>Mendes</strong> 11-05-2009</p>
+
+<p>Может, в таком случае, посоветуете рецепт раствора?</p>
+
+<p>Только по-проще, для чайников :) Смотрю, в магазине вашем для клубники ничего нет. Выручайте!</p>
+
+<p><strong>mdima</strong> 11-05-2009</p>
+
+<p>В магазине раствор есть! :)</p>
+
+<p>Кстати, мы распустились:</p>
+
+<p><a href="http://www.postimage.org/Pq1KSbq0.jpg" target="_blank"><img src="http://www.postimage.org/Pq1KSbq0.jpg" alt="" /></a></p>
+
+<p><strong>nikadubrovsky</strong> 11-05-2009</p>
+
+<blockquote>
+  <p>2.1 Мы думаем делать 4 вида лотков</p>
+
+  <p>а) помидоры и огурцы расстояние между коршками 25-30 см</p>
+
+  <p>б) салат 18 см</p>
+
+  <p>в) клубника 10 см</p>
+
+  <p>г) зелень 5 см</p>
+</blockquote>
+
+<p>чем меньше расстояние, тем красивее будет выглядеть конструкция.</p>
+
+<p>Для того,чтобы установка вписывалась в интерьер городской квартиры, нужно чтобы баланс между массой зелени и массой железа был выдержан.</p>
+
+<p>Не очень понятно, как этого добиться: зелени маловато.</p>
+
+<p>Потому что это все в квартире можно и нужно растить, если как-то красиво оформить.</p>
+
+<p><strong>Mole_Garden</strong> 12-05-2009</p>
+
+<blockquote>
+  <p>Кстати, мы распустились:</p>
+</blockquote>
+
+<p>а разве цветочек не должен быть на ножке? Прям цветок из ствола?</p>
+
+<blockquote>
+  <p>чем меньше расстояние, тем красивее будет выглядеть конструкция.</p>
+
+  <p>Для того,чтобы установка вписывалась в интерьер городской квартиры, нужно чтобы баланс между массой зелени и массой железа был выдержан.</p>
+
+  <p>Не очень понятно, как этого добиться: зелени маловато.</p>
+
+  <p>Потому что это все в квартире можно и нужно растить, если как-то красиво оформить.</p>
+</blockquote>
+
+<p>В данный момент идет работа над топовыми моделями, думаю, через некоторое время, когда будет все готово, магазин будет в автономном режиме, у Дмитрия будет куча свободного времени и будет нечем заняться, он обязательно порадует нас дизайнерской установкой. :D Правда Дмитрий? Только мне почему-то кажется, что ее стоимость будет в раза 2-3 дороже.</p>
+
+<p>Как говорится за дизайн и эксклюзив надо платить.</p>
+
+<p><strong>mdima</strong> 12-05-2009</p>
+
+<blockquote>
+  <p>чем меньше расстояние, тем красивее будет выглядеть конструкция.</p>
+</blockquote>
+
+<p>Если серьезно, то расстояние между горшками диктуется техникой культуры, а не эстетическими чувствами :)</p>
+
+<p><strong>nikadubrovsky</strong> 12-05-2009</p>
+
+<blockquote>
+  <blockquote>
+    <p>чем меньше расстояние, тем красивее будет выглядеть конструкция.</p>
+  </blockquote>
+
+  <p>Если серьезно, то расстояние между горшками диктуется техникой культуры, а не эстетическими чувствами :)</p>
+</blockquote>
+
+<p>и еще, размер растения постоянно меняется, поэтому сложно планировать как оно наверняка будет выглядеть.</p>
+
+<p>наверное хорошо, когда много таких белых шпал одна над другой, тогда будет больше видно самих растений, а шпалы можно было бы креативно покрасить.</p>
+
+<p>иначе видок будет как на дешевой фабрике.</p>
+
+<p><strong>mdima</strong> 12-05-2009</p>
+
+<p>Лоток белый опять же не просто так. Белый цвет отражает до 95% света на обратную сторону листа. И когда мы используем искусстевенный свет, то каждый процент - это реальная экономия.</p>
+
+<p><strong>nikadubrovsky</strong> 18-05-2009</p>
+
+<blockquote>
+  <p>Лоток белый опять же не просто так. Белый цвет отражает до 95% света на обратную сторону листа. И когда мы используем искусстевенный свет, то каждый процент - это реальная экономия.</p>
+</blockquote>
+
+<p>То есть в идеале все вокруг растений должно быть белым?</p>
+
+<p>а можно ли как-то менять форму-цвет ламп?</p>
+
+<p>какие вообще изменения возможны, где можно “поиграть” с цветом, формой, расстояниями?</p>
+
+<p><strong>Mole_Garden</strong> 18-05-2009</p>
+
+<blockquote>
+  <p>То есть в идеале все вокруг растений должно быть белым?</p>
+</blockquote>
+
+<p>В идеале, для большего отражения да, можно еще к примеру все обклеить отражающей пленкой</p>
+
+<blockquote>
+  <p>а можно ли как-то менять форму-цвет ламп?</p>
+</blockquote>
+
+<p>Не совсем понял о чем вопрос? Как это, форма-цвета ламп?</p>
+
+<blockquote>
+  <p>какие вообще изменения возможны, где можно “поиграть” с цветом, формой, расстояниями?</p>
+</blockquote>
+
+<p>Если у вас задача вырастить один цветочек для души, для дома, то можно пренебречь и цветом горшка, у меня к примеру они не белые, форма так по сути тоже роли не играет, все зависит от задач. А поиграть можно с чем угодно, главное результат, что бы не огорчил.</p>
+
+<p><strong>mdima</strong> 01-06-2009</p>
+
+<p>Жена сейчас приготовила салат “Перепелиное гнездо”. Угощайтесь! :)</p>
+
+<p><a href="http://www.postimage.org/Pq1msuCi.jpg" target="_blank"><img src="http://www.postimage.org/Pq1msuCi.jpg" alt="" /></a></p>
+
+<p><strong>Mendes</strong> 01-06-2009</p>
+
+<p>Безумно аппетитно выглядит :)</p>
+
+<p><strong>Mole_Garden</strong> 01-06-2009</p>
+
+<p>спасибо, очень вкусно…. :)</p>
+
+<p>наверно :(</p>
+
+<p><strong>mdima</strong> 01-06-2009</p>
+
+<p>Спасибо!</p>
+
+<p><strong>mdima</strong> 04-06-2009</p>
+
+<p>Потихоньку наливаемся :)</p>
+
+<p><a href="http://www.postimage.org/aV1jsSM9.jpg" target="_blank"><img src="http://www.postimage.org/aV1jsSM9.jpg" alt="" /></a></p>
+
+<p><strong>Hrun</strong> 04-06-2009</p>
+
+<p>Салат выглядит очень вкусно 8)</p>
+
+<p>А почему у клубнички молодые листья так закручиваются?</p>
+
+<p><strong>mdima</strong> 04-06-2009</p>
+
+<p>Это они не закручиваются, это они наоборот еще не раскрылись полностью</p>
+
+<p><strong>Mole_Garden</strong> 04-06-2009</p>
+
+<p>ага, у моих некоторых цветов так же, у маранты к примеру, появляется трубочка, а потом медленно разворачивается и получается листок, такую же картину наблюдал сегодня в больнице на монстере, лист раскручивается из комочка зелени.</p>
+
+<p><strong>nikadubrovsky</strong> 05-06-2009</p>
+
+<blockquote>
+  <p>Если у вас задача вырастить один цветочек для души, для дома, то можно пренебречь и цветом горшка, у меня к примеру они не белые, форма так по сути тоже роли не играет, все зависит от задач. А поиграть можно с чем угодно, главное результат, что бы не огорчил.</p>
+</blockquote>
+
+<p>мне бы хотелось уставить всю квартиру полезными растениями,</p>
+
+<p>но так, чтобы я не чувствовала себя жителем какого-то дешевого подсобного хозяйства</p>
+
+<p><strong>valery</strong> 05-06-2009</p>
+
+<p>Это всего лишь вопрос качественного изготовления и “легкого” дизайна.</p>
+
+<p>Например на изделия типа AeroGarden в стиле хай-тек можно просто любоваться.</p>
+
+<p>Да и покупать их только из-за этого.</p>
+
+<p><strong>Mole_Garden</strong> 05-06-2009</p>
+
+<p>ну еще бы кроме дизайна была бы польза, тогда бы было очень круто.</p>
+
+<p><strong>Mendes</strong> 05-06-2009</p>
+
+<p>Красота сама по себе бесполезна. Как соль в еде.</p>
+
+<p>Но многие ли из вас едят без соли?!</p>
+
+<p>То-то же!</p>
+
+<p>” В человеке все должно быть прекрасно …”</p>
+
+<p>Полностью поддерживаю стремление Ники к красоте.</p>
+
+<p><strong>valery</strong> 05-06-2009</p>
+
+<p>Красота спасет мир.</p>
+
+<p>А может и не спасет.</p>
+
+<p><strong>Mole_Garden</strong> 05-06-2009</p>
+
+<p>могу предложить для красоты только вариант для цветов. Вот так к примеру выглядит обычное майонезное ведро, которое очень хорошо использовать для гидропоники, но в нем можно растить только один цветок, овощи не получится, хотя, можно попробовать и перчик посадить, но когда он подрастет его придется поливать каждый день. С цветами проще, поливаю раз- два в неделю. Вот только не знаю где еще купить такой уровень раствора, в магазинах нигде не нашел, можно сделать и другой уровень, только тогда под горшок нужно будет поставить блюдце или что то в этом роде ;)</p>
+
+<p><strong>mdima</strong> 10-06-2009</p>
+
+<p>Мы планируем такую форму теплицы:</p>
+
+<p><img src="http://img40.imageshack.us/img40/5762/42989986.jpg" alt="" /></p>
+
+<p>Вот сегодня был в таком хозяйстве.</p>
+
+<p>Там несколько таких теплиц общей площадью 40 соток.</p>
+
+<p><img src="http://img20.imageshack.us/img20/7101/19545391.th.jpg" alt="" /></p>
+
+<p><strong>DimaM</strong> 11-06-2009</p>
+
+<p>Это стандартная теплица или по спец заказу? Не видел таких в продаже. Судя по фото наклон крыши кажется небольшой, снег не будет лежать?</p>
+
+<p>Это будет летняя и межсезонная теплица или для зимы тоже, как тогда с утеплением?</p>
+
+<p><strong>valery</strong> 11-06-2009</p>
+
+<p>Что-то у меня фото теплички не хочет увеличиваться.</p>
+
+<p><strong>Mole_Garden</strong> 11-06-2009</p>
+
+<blockquote>
+  <p>Что-то у меня фото теплички не хочет увеличиваться.</p>
+</blockquote>
+
+<p>потому что это такое фото, маленького размера.</p>
+
+<p>И так по поводу теплицы есть вопросики:</p>
+
+<p>как будет осуществлена вентиляция или она не нужна ?</p>
+
+<p>а почему не по митлайндеру? у него довольно интересно реализованная вентиляция.</p>
+
+<blockquote>
+  <p>Вот сегодня был в таком хозяйстве.</p>
+
+  <p>Там несколько таких теплиц общей площадью 40 соток.</p>
+</blockquote>
+
+<p>у них плоский потолок?</p>
+
+<p><strong>mdima</strong> 11-06-2009</p>
+
+<blockquote>
+  <p>у них плоский потолок?</p>
+</blockquote>
+
+<p>да. плоский - полиэтилен.</p>
+
+<p><strong>mdima</strong> 11-06-2009</p>
+
+<p>Взяли на пробу 250W МГ лампочку для рассады.</p>
+
+<p><img src="http://img7.imageshack.us/img7/8279/28826360.th.jpg" alt="" /></p>
+
+<p><img src="http://img7.imageshack.us/img7/9660/56824035.th.jpg" alt="" /></p>
+
+<p><strong>Mole_Garden</strong> 11-06-2009</p>
+
+<p>МГ- это видимо металлогалогенная лампа с преобладанием синего спектра?</p>
+
+<p>во сколько вышел светильник с лампой?</p>
+
+<blockquote>
+  <p>Взяли на пробу 250W МГ лампочку для рассады.</p>
+</blockquote>
+
+<p>:D рассадный отдел открываешь?</p>
+
+<p><strong>mdima</strong> 11-06-2009</p>
+
+<p>Вышло в 4200р :( зато светит, что надо и практически не греется.</p>
+
+<p><strong>Mole_Garden</strong> 11-06-2009</p>
+
+<blockquote>
+  <p>Вышло в 4200р :( зато светит, что надо и практически не греется.</p>
+</blockquote>
+
+<p>4200 это со все светильник с отражателем+лампа+эмпра или эпра?=4200</p>
+
+<p>в магазе комплект света без светильника стоит 3000 рублей</p>
+
+<p>так что может быть у тебя еще не самая большая цена</p>
+
+<p>Чуть подробней о планах ее использования?</p>
+
+<p><strong>mdima</strong> 12-06-2009</p>
+
+<p>Да, это все вместе, под ключ так сказать. Планы - светить на рассаду 1-2 м2 :)</p>
+
+<p><strong>mdima</strong> 30-06-2009</p>
+
+<p>Сегодня пришел заказ: Лотки металличиские для гидропонного выращивания на минеральной вате. Металл 0.75 мм покрыт двумя слоями антикорра. Сверху порошковая покраска для агрессивных сред.</p>
+
+<p>Размеры 1.25 м х 25 см х 7.5 см</p>
+
+<p>Лотки оснащены ребрами жесткости, которые такж выполняют функцию дренажных каналов.</p>
+
+<p>Лотки стыкуются сами с собой глубина захода 10 см, что позволяет наращивать необходимую длинну. За счет перекрытия лотков и небольшого уклона стык не требует герметизации, но по желанию возможна дополнительная герметизация специальной клеющейся лентой.</p>
+
+<p>Лоток:</p>
+
+<p><img src="http://img20.imageshack.us/img20/7293/77369115.th.jpg" alt="" /></p>
+
+<p>Лоток с матом:</p>
+
+<p><img src="http://img20.imageshack.us/img20/2255/70847346.th.jpg" alt="" /></p>
+
+<p>Два лотка узел соединения:</p>
+
+<p><img src="http://img20.imageshack.us/img20/5278/91992244.th.jpg" alt="" /></p>
+
+<p>Два состыкованных лотка:</p>
+
+<p><img src="http://img20.imageshack.us/img20/668/42831365.th.jpg" alt="" /></p>
+
+<p><strong>mdima</strong> 30-06-2009</p>
+
+<p>А то пора высаживать ( ;) ), а лотков не было :-D</p>
+
+<p><img src="http://img43.imageshack.us/img43/4834/39982198.th.jpg" alt="" /></p>
+
+<p><strong>Mole_Garden</strong> 30-06-2009</p>
+
+<p>У тебя там уже огурцы завязываются? :D</p>
+
+<p><strong>solod</strong> 30-06-2009</p>
+
+<p>Здравствуйте. а какая стоимость такой теплицы (11.06.09) и где лотки заказывали.</p>
+
+<p><strong>mdima</strong> 30-06-2009</p>
+
+<p>Лотки заказывал в нашем цеху специально для магазина.</p>
+
+<p>По стоимости теплицы: размеры, чей карбонат, какой (2-3 стеночный, толщина и т.п.)</p>
+
+<p><strong>solod</strong> 30-06-2009</p>
+
+<p>Теплица что-бы зимой можно было выращивать( до -35), чей поликарбонат- не знаю, обращаюсь как к специалисту. Площадь 50м., высота 2,5 прямой стены.</p>
+
+<p>Какая стоимость лотка, под какие культуры и сделаете ли размер по заказу.</p>
+
+<p><strong>orgail</strong> 30-06-2009</p>
+
+<p>Это получается лотки по-типу черепицы друг на друга накладываются?</p>
+
+<p><strong>mdima</strong> 30-06-2009</p>
+
+<p>Данный конкретный лоток под минеральноватные маты, соответственно - томат, огурец, розы и т.д. По ценам пока не скажу, цены будет ориентировочно завтра.</p>
+
+<p>Да, лотки как черепица, только с “замочком” и получаются самонесущие.</p>
+
+<p><strong>solod</strong> 30-06-2009</p>
+
+<p>Спасибо, жду ответа по ценам на лоток и теплицу</p>
+
+<p><strong>valery</strong> 01-07-2009</p>
+
+<p>Интересный и грамотный лоток. А толковые лотки под маты - большая проблема.</p>
+
+<p>Нельзя ли уточнить по “жесткости” - насколько сопротивляются на изгиб и “скручивание”.</p>
+
+<p>Возможно ли оторвать от поверхности с запитанным матом, без заметной деформации/прогибов ?</p>
+
+<p>К сожалению видны некоторые конструктивные недостатки (на мой взгляд, возможно ошибаюсь).</p>
+
+<p>Это окончательный вариант, возможно ли внесение некоторых изменений ? Возможно ли изготовление немного модифицированных “на заказ” ?</p>
+
+<p><strong>mdima</strong> 01-07-2009</p>
+
+<p>Это первый вариант. При поднимании с замоченным матом лоток не деформируется (хотя плохо могу себе представить зачем нужно поднимать лотки с матом) Любые пожелания и внесения в коструктив приветствуются. Без проблемм можем изготовить и под заказ. Нагрузку на скручивание держит плохо, потому, что задачи такой не ставилось (пока не ставилось). Мы просто разрабатывали лотки с возможностью масштабирования. Сейчас под них разрабатываем регулируемые “козлы”, чтобы можно было устанавливать лотки над полом и “козлами” регулировать наклон для стока дренажа.</p>
+
+<p><strong>valery</strong> 01-07-2009</p>
+
+<p>Дмитрий, я в лотках пока не “ориентируюсь”, только начинаю знакомиться и разбираться, поэтому, возможно, задам вопросы и “не в нужную” сторону.</p>
+
+<p>Но тема для обсуждения, все-таки есть.</p>
+
+<p>Жесткость на скручивание, возможно и не нужна, это я к слову спросил.</p>
+
+<p>Но отдельные (единичные) жесткие лотки все-таки нужны - под “контрольные” маты для взвешивания.</p>
+
+<p>Под “заказ” - я имел ввиду, прежде всего возможность изготовления лотков с одним “бортиком” или даже, со вторым “бортиком”, но “загнутым” вниз - иногда нужно, если дренаж организуется по другой схеме.</p>
+
+<p><strong>valery</strong> 01-07-2009</p>
+
+<p>Мысль с “козлами” понятна и вполне имеет место быть. Необходимость в опорах под лотки тоже существует, особенно с регулируемыми ножками (хотя бы по принципу “винта”). Даже и не только для “дренажного” наклона, но и просто для более “ровного” выставления горизонта.</p>
+
+<p>Импортные - дороги, да и частный единичный заказ где-то в мастерской, тоже, думаю, обойдется не дешево. А если при этом “заказчик” и “изготовитель” плохо представляют, что конкретно должно получиться - и вовсе нехорошо.</p>
+
+<p><strong>orgail</strong> 01-07-2009</p>
+
+<p>Дмитрий, а почему не использовать покрытие для лотков типа “жидкий пластик”</p>
+
+<p>ну из гугла вроде того <a href="http://okeankrasok.ru/zhidkiyplastik.html" target="_blank">http://okeankrasok.ru/zhidkiyplastik.html</a></p>
+
+<p><strong>mdima</strong> 01-07-2009</p>
+
+<blockquote>
+  <p>Под “заказ” - я имел ввиду, прежде всего возможность изготовления лотков с одним “бортиком” или даже, со вторым “бортиком”, но “загнутым” вниз - иногда нужно, если дренаж организуется по другой схеме.</p>
+</blockquote>
+
+<p>ой, а можно рисуночек для лучшего представления?</p>
+
+<blockquote>
+  <p>Дмитрий, а почему не использовать покрытие для лотков типа “жидкий пластик”</p>
+</blockquote>
+
+<p>В рекламе мы используем такой пластик, но по прочности, конечно, он ни в какое сравнение не идет с порошковой покраской.</p>
+
+<p><strong>mdima</strong> 05-11-2009</p>
+
+<p>Прошло первое испытание раствора для укореннения. Черенкам неделя. Под воздействием препарата развивается более мощная корневая система. При этом в основном образуются высокоэффективные корни воздушного типа.</p>
+
+<p><a href="http://s4.postimage.org/1U_bmS.jpg" target="_blank"><img src="http://s4.postimage.org/1U_bmS.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 05-11-2009</p>
+
+<p>А это именно раствор, а не гель, так понимаю. Предназначен для срезанных черенков, которые мы раньше ставили просто в воду?</p>
+
+<p><strong>mdima</strong> 06-11-2009</p>
+
+<p>Я, наверное, немного непонятно объяснял. Это просто вода. Просто один из черенков обмакнут в гель перед помещением в воду, а другой нет.</p>
+
+<p><strong>Mole_Garden</strong> 06-11-2009</p>
+
+<blockquote>
+  <p>Я, наверное, немного непонятно объяснял. Это просто вода. Просто один из черенков обмакнут в гель перед помещением в воду, а другой нет.</p>
+</blockquote>
+
+<p>Вот так уже яснее. Значит чудо зелье работает</p>
+
+<p>К слову, я тоже тестирую данный препарат, укореняю побег Гардении жасминовой и две веточки Гибискуса, о результатах позже, но пока растения стоят и не вянут ;)</p>
+
+<p><strong>Олеганос</strong> 07-11-2009</p>
+
+<p>Тук-тук-тук! хозяина однако дома? ;)</p>
+
+<p>Блин … :-\ че-то нету ни кого… А пожрать то есть тута че? :-X</p>
+
+<p><strong>mdima</strong> 02-12-2009</p>
+
+<p>Дома, дома :-D</p>
+
+<p><strong>Mole_Garden</strong> 02-12-2009</p>
+
+<p>И так про клонекс или его аналог произведенной Дмитрием. В общем досталась мне эта штука и я провел тестирование на следующих растениях:</p>
+
+<p>Гибискус</p>
+
+<p>Гардения(очень молодое, срезал верхушку)</p>
+
+<p>Фиалка</p>
+
+<p>Спатфилиум</p>
+
+<p>В результате, все 100% пустили корни, причем очень мощные и большие. Вот несколько фоток фиалки и спатфилума. Фиалка, которая была обработана препаратам на первой фотке с лева, дальше думаю поймете ;)</p>
+
+<p>p.s. теперь не знаю куда девать клоны гардении и гибискуса :D</p>
+
+<p><strong>Олеганос</strong> 02-12-2009</p>
+
+<p>;D Да я смотрю, :-X и без этой беды листья же не сдохли!?</p>
+
+<p>:-\ Ты давай посерьезнее испытание какое нибудь?! Укорени че нить такое, что хреново укореняется, например.</p>
+
+<p><strong>Mole_Garden</strong> 02-12-2009</p>
+
+<blockquote>
+  <p>;D Да я смотрю, :-X и без этой беды листья же не сдохли!?</p>
+
+  <p>:-\ Ты давай посерьезнее испытание какое нибудь?! Укорени че нить такое, что хреново укореняется, например.</p>
+</blockquote>
+
+<p>Ты видимо не уловил суть испытания и прочитал, то что я написал между строчек. А если ты не видишь разницы и не понимаешь чем это обернется потом, уж извини.</p>
+
+<p>Давай лучше предлагай, что еще укоренить, а то только болтаешь.</p>
+
+<p><strong>Олеганос</strong> 02-12-2009</p>
+
+<p>разница есть - не спорю, но через пару дней и у остальных такие же корни отрастут. :D</p>
+
+<p>Ты поищи там в инете какие из растений плохо укореняются и укорени попробуй ;)</p>
+
+<p><strong>Mole_Garden</strong> 02-12-2009</p>
+
+<blockquote>
+  <p>разница есть - не спорю, но через пару дней и у остальных такие же корни отрастут. :D</p>
+
+  <p>Ты поищи там в инете какие из растений плохо укореняются и укорени попробуй ;)</p>
+</blockquote>
+
+<p>Эти фиалки уже с такой корневой стоят почти неделю и что то не видно никакого рывка от контрольного черенка. Если чуть внимательней присмотреться, то на обработанном корни растут со всех сторон и хочу вас заверить, что они растут именно там где был нанесен гель стимулирующий развитие корней. На контрольном же черенке растут только снизу.</p>
+
+<p>Если бы были такие под рукой, то укоренил бы.</p>
+
+<p><strong>mdima</strong> 31-12-2009</p>
+
+<p>Поздравляю всех с наступающим НовымГодом!</p>
+
+<p><strong>ruppert</strong> 31-12-2009</p>
+
+<p>Здравствуйте Дмитрий! С наступающим Вас!</p>
+
+<p>Извините если пишу не туда но вопросы персонально Вам, поэтому задам их, с Вашего позволения, здесь.</p>
+
+<ol>
+  <li>
+    <p>Скажите, в каком количестве (на одно растение) нужно готовить раствор. Я поясню: например при выращивании салата в лотках с непрерывной подачей раствора. Есть ли какие нормы? Ну например а) лишь бы насосу было хватало всасывать… б) чем больше тем лучше… в) существует норма - столько-то литров на куст…</p>
+  </li>
+  <li>
+    <p>В ходе роста растений количество раствора уменьшается (как я понимаю). Доливать нужно таким же раствором или просто воду?</p>
+  </li>
+  <li>
+    <p>Как можно прикинуть количество раствора для добавления? С какой интенсивностью растения поглащают воду (или в каком количестве…)? Ну то есть как можно с первого раза расчитать нужное кол-во раствора чтобы его хватило на весь цикл роста растений применительно например к салату?</p>
+  </li>
+  <li>
+    <p>С какой интенсивностью беднеет раствор? Т.е. на сколько его хватит? Я опять же про салат. Если я правильно понимаю то при постоянном использовании раствора его нужно менять каждые 2-3 месяца? Поправьте если я не прав.</p>
+  </li>
+</ol>
+
+<p>Я несколько дней читал форум и статьи на сайте, но конкретных сведений по этим вопросам не встретил. Кстати это единственные вопросы которые у меня возникли, а так все что нужно для начала занятий гидропоникой я вычитал. Хороший форум. А вопросы персонально к Вам потому что Вы химик. Заранее благодарю за ответы.</p>
+
+<p><strong>mdima</strong> 31-12-2009</p>
+
+<ol>
+  <li>
+    <p>Обычно исходят из соображений разумности. Т.е. удобства пользования. Не стоит делать раствор сразу на весь период вегетации для всех кустов. Это и неудобно и все равно его корректировать придется.</p>
+  </li>
+  <li>
+    <p>Доливаем либо воду либо концентрат, в зависимости от изменения содержания солей в растворе. Пример: Если было 900 ppm а стало 1200 ppm - то доливаем воду, если было 900 ppm, а стало 600 ppm, то доливаем концентрат раствора.</p>
+  </li>
+  <li>
+    <p>см 1. :-D</p>
+  </li>
+  <li>
+    <p>все зависит от: сорта, освещения, влажности, температуры. При том зависит в разы раз. Менять….. можно совсем не менять… я меняю по наитию (ну и смотрю на темп роста) раз в 3 месяца примерно.</p>
+  </li>
+</ol>
+
+<p><strong>ruppert</strong> 31-12-2009</p>
+
+<p>Спасибо.</p>
+
+<p><strong>valery</strong> 15-01-2010</p>
+
+<p>Дмитрий, а не могли бы посоветовать, чем и как хелатировать марганец ?</p>
+
+<p>(Марганец сернокислый 1-водный).</p>
+
+<p><strong>mdima</strong> 15-01-2010</p>
+
+<p>Трилоном Б (EDTA)</p>
+
+<p>К раствору трилона (рассчитать по реакции сколько грамм) добавить раствор марганца, и оттитровать 1н раствором KOH до pH 6.5</p>
+
+<p><strong>Mole_Garden</strong> 15-01-2010</p>
+
+<blockquote>
+  <p>Трилоном Б (EDTA)</p>
+
+  <p>К раствору трилона (рассчитать по реакции сколько грамм) добавить раствор марганца, и оттитровать 1н раствором KOH до pH 6.5</p>
+</blockquote>
+
+<p>;D Ни хера не понял, кроме оттитровать - т.е. довести кислотность видимо до 6,5</p>
+
+<p><strong>mdima</strong> 15-01-2010</p>
+
+<p>Да, добавлять по каплям и перемешивать, постоянно контролируя pH.</p>
+
+<p>Молярная масса КОН 56,1, соответственно 1н раствор это 56,1г/литр КОН.</p>
+
+<p><strong>Mole_Garden</strong> 15-01-2010</p>
+
+<p>Не я про другое</p>
+
+<blockquote>
+  <p>раствору трилона (рассчитать по реакции сколько грамм) добавить раствор марганца</p>
+</blockquote>
+
+<p>По какой реакции?</p>
+
+<p><strong>valery</strong> 16-01-2010</p>
+
+<p>Марганец сернокислый одноводный (химически чистый) MnSO4*H2O, молярная масса 169.</p>
+
+<p>32,5 - марганца, 19 серы.</p>
+
+<p>Мне нужно держать в растворе 16,9 г ИСХОДНОЙ СОЛИ в 1 литре воды.</p>
+
+<p>Трилон Б - молярная масса 372. 1%-й раствор, если я правильно понимаю, в чем далеко не уверен, получается 3,72 г на литр.</p>
+
+<p>Дальше - полный шлагбаум.</p>
+
+<p>Вроде, исходя из “общих рассуждений” он бы нам должен перевести имеющийся марганец в некое “устойчиваое соединение”, и что ?</p>
+
+<p>Одна молекула трилона реагирует с одной молекулой металла, замещая металл на натрий.</p>
+
+<p>Считая “тупо и прямо” - я бы в этот литр “набухал” бы еще 37,2 грамма трилона.</p>
+
+<p>Что-то, наверное, глупость какая-то получается.</p>
+
+<p>Что значит “рассчитать количество трилона по реакции” толком не смог “перевести”.</p>
+
+<p>Сделайте маленькую скидку на “безграмотность”, как рассчитать количество трилона ?</p>
+
+<p>Мне кажется мой “расчет” сильно далек от чего-нибудь…</p>
+
+<p><strong>valery</strong> 16-01-2010</p>
+
+<p>А может быть и правильно… Не пойму, чего-то, никак.</p>
+
+<p><strong>mdima</strong> 16-01-2010</p>
+
+<p>EDTA-2Na + MnSO4*H2O -&gt; EDTA-Mn+Na2SO4</p>
+
+<p>На 372г трилона берем 169г сульфата марганца. Лучше взять небольшой избыток трилона (чтобы весь марганец точно прореагировал), к примеру:</p>
+
+<p>На 400г трилона берем 170г сульфата марганца.</p>
+
+<p>И запомнить проще и отмерить и т.д. :)</p>
+
+<p><strong>valery</strong> 16-01-2010</p>
+
+<p>Ага, теперь понятно.</p>
+
+<p>Как раз это в голове и “бродило”, но в абсолютной прострации и полной неуверенности.</p>
+
+<p>Спасибо большое !</p>
+
+<p><strong>mdima</strong> 16-01-2010</p>
+
+<p>а потом не забываем оттитровать. :)</p>
+
+<p><strong>valery</strong> 16-01-2010</p>
+
+<p>Да, про “титрование” помню.</p>
+
+<p>Дмитрий, а не уточните, - “прочие” хелатированные микроэлементы тоже нужно титровать до этого уровня ? Или у каждого “свой” ?</p>
+
+<p><strong>mdima</strong> 16-01-2010</p>
+
+<p>вполне можно до этого. Главное помните - реакция идет до суток.</p>
+
+<p><strong>valery</strong> 16-01-2010</p>
+
+<p>Спасибо!</p>
+
+<p><strong>цветовод</strong> 24-03-2010</p>
+
+<p>Дмитрий подскажите, пожалуйста, 0,3-0,5 мМоль\л (4-7мг\л) аммиачной селитры это сколько на 100 литров ???? Никак не могу сообразить. Вчера немного закладывали за воротник :-\, а сегодня надо посчитать.</p>
+
+<p><strong>Mole_Garden</strong> 24-03-2010</p>
+
+<blockquote>
+  <p>Дмитрий подскажите, пожалуйста, 0,3-0,5 мМоль\л (4-7мг\л) аммиачной селитры это сколько на 100 литров ???? Никак не могу сообразить. Вчера немного закладывали за воротник :-\, а сегодня надо посчитать.</p>
+</blockquote>
+
+<p>что-то подсказывает, что на литр.</p>
+
+<p><strong>цветовод</strong> 24-03-2010</p>
+
+<p>Сколько гр. аммиачной селитры на 100 литров воды? Торможу конкретно.</p>
+
+<p><strong>Mole_Garden</strong> 24-03-2010</p>
+
+<blockquote>
+  <p>Сколько гр. аммиачной селитры на 100 литров воды? Торможу конкретно.</p>
+</blockquote>
+
+<p>в общем сам запутался :-\</p>
+
+<p><strong>цветовод</strong> 24-03-2010</p>
+
+<p>Т. е. мне надо добавить 120 гр. на 100 литров? Правильно?</p>
+
+<p><strong>Mole_Garden</strong> 24-03-2010</p>
+
+<blockquote>
+  <p>Т. е. мне надо добавить 120 гр. на 100 литров? Правильно?</p>
+</blockquote>
+
+<p>:D Не не, я уже сам запутался, привлек Дмитрия, он пока молчит. Давай дождемся его.</p>
+
+<p><strong>valery</strong> 24-03-2010</p>
+
+<p>Ну видимо так и должно быть 0,4-0,7 грамма аммиачной селитры на 100 литров воды. Если я тоже ничего не путаю. Хотя я вчера ничего не отмечал :D :D :D</p>
+
+<p>Вроде бы - вполне “нормальный” шаг, чтобы поймать “переломный момент”.</p>
+
+<p>К примеру в “моем” на сегодня растворе для огурца, в общей сложности 2 грамма аммиачки на 100 литров, и вроде чуть-чуть “подъезжает” вниз, наверное буду совсем на “немножко” уменьшать.</p>
+
+<p><strong>valery</strong> 24-03-2010</p>
+
+<p>Задумался …</p>
+
+<p>Все, ребята. И я - к вам …</p>
+
+<p>Чего-то тоже башню заклинило …ъ</p>
+
+<p>1 моль аммиачной селитры примерно 80 грамм.</p>
+
+<p>0,3-0,5 мМоль, будет соответственно 0,3<em>80 - 0,5</em>80 = 24-40 мг селитры на литр …</p>
+
+<p>Или 2,4-4 грамма на 100 литров …</p>
+
+<p>В общем - ничего не понятно. Нужно выпить, тогда сразу все проясняется.</p>
+
+<p><strong>mdima</strong> 24-03-2010</p>
+
+<p>Все правильно :)</p>
+
+<p><strong>Mole_Garden</strong> 24-03-2010</p>
+
+<blockquote>
+  <p>Все правильно :)</p>
+</blockquote>
+
+<p>:D все сказанное правильно или что то одно?</p>
+
+<p><strong>mdima</strong> 24-03-2010</p>
+
+<blockquote>
+  <p>Задумался …</p>
+
+  <p>Все, ребята. И я - к вам …</p>
+
+  <p>Чего-то тоже башню заклинило …ъ</p>
+
+  <p>1 моль аммиачной селитры примерно 80 грамм.</p>
+
+  <p>0,3-0,5 мМоль, будет соответственно 0,3<em>80 - 0,5</em>80 = 24-40 мг селитры на литр …</p>
+
+  <p>Или 2,4-4 грамма на 100 литров …</p>
+
+  <p>В общем - ничего не понятно. Нужно выпить, тогда сразу все проясняется.</p>
+</blockquote>
+
+<p>Все именно так</p>
+
+<p><strong>mozal</strong> 03-04-2010</p>
+
+<blockquote>
+  <blockquote>
+    <ol>
+      <li>Да, это обслуживаемый лоток.</li>
+    </ol>
+  </blockquote>
+
+  <p>Из какого материала сделаны эти лотки?</p>
+</blockquote>
+
+<p>Кабельные короба из ПВХ (кабель-каналы)</p>
+
+<p><a href="http://www.mitsar.ru/catalog/katalog/kabeljnaya-armatura/truby-koroba-i-aksessuary-k-nim-dlya-elektromontadja/kabeljnye-koroba-iz-pvh-kabelj-kanaly-.html" target="_blank">mitsar</a></p>
+
+<p><a href="http://www.electro-mpo.ru/card5779.html" target="_blank">electro-mpo</a></p>
+
+<p><strong>цветовод</strong> 03-07-2010</p>
+
+<p>Здравствуйте Дмитрий.</p>
+
+<p>Я в “Химреактивах” купил MgSO4 7H2O, но так получилось, что он по дороге попал под дождь, и часть мешка превратилась в камень. Можно теперь использовать этот магний или нет? ???</p>
+
+<p><strong>mdima</strong> 05-07-2010</p>
+
+<p>Можно. Процентов на 10 больше его кладите.</p>
+
+<p><strong>цветовод</strong> 05-07-2010</p>
+
+<p>Спасибо. <em>Dance</em></p>
+
+<p><strong>Садовник</strong> 05-07-2010</p>
+
+<p>mdima, а кальциевую селитру после аналогичной ситуации можно использовать? :-[</p>
+
+<p><strong>Mole_Garden</strong> 05-07-2010</p>
+
+<blockquote>
+  <p>mdima, а кальциевую селитру после аналогичной ситуации можно использовать? :-[</p>
+</blockquote>
+
+<p>:D Потоп пришел внезапно!</p>
+
+<p><strong>valery</strong> 08-07-2010</p>
+
+<p>Чего-то Дмитрий молчит …</p>
+
+<p>Но кажется эта тема как-то уже поднималась. В принципе - можно и промокшей и окаменевшей кальциевой селитрой пользоваться.</p>
+
+<p>Вроде бы Дмитрий как-то говорил, что просто нужно будет учесть (сделать некоторый небольшой допуск) то, что “влажная” соль будет несколько больше весить …</p>
+
+<p>То есть взять ее (к примеру) процентов на 10 больше по весу, чем необходимо по “рассчетам”.</p>
+
+<p>Может я и придумываю совсем (или приснилось), но в общем -то можно соль и “подсушить”. В микроволновке там или на сковородке … :D</p>
+
+<p><strong>orgail</strong> 08-07-2010</p>
+
+<p>а на сколько повышается ППМ при добавлении грамма сухой селитры в литр дистилированной воды? :)</p>
+
+<p>жаль что ппм большой нечем померять</p>
+
+<p><strong>valery</strong> 10-07-2010</p>
+
+<p>Хелп ! И SOS !</p>
+
+<p>Хотя зачем это “нерусскими словами” …</p>
+
+<p>СРОЧНО НУЖНА СКОРАЯ ПОМОЩЬ …</p>
+
+<p>Дмитрий, не могли бы подсказать, из чего можно в домашних условиях изготовить калибровочный раствор с рН=7 и рН=4 ?</p>
+
+<p>Пусть не особо точный, но хотя бы приблизительно ? На дистиллированной воде ?</p>
+
+<p>Можно ли что-то сделать на основе, скажем КОН или какого-нибудь того же хлористого калия, скажем ?</p>
+
+<p><strong>valery</strong> 10-07-2010</p>
+
+<p>Может кто кроме Дмитрия знает, что можно “намутить” с гидроксидом калия ?</p>
+
+<p>Похоже поломал свой рН метр прямо перед отъездом в отпуск и “огород” останется без раствора :'( :'( :'(</p>
+
+<p>Свои калибровачные растворы уже не свежие и чего-то сильно врут … рН метр вылетает из них с криком “Ерриор …” :'(</p>
+
+<p>Николай, Максим - знаете чего на эту тему ? Может соли поваренной сколько нибудь грамм насыпать в дистиллированный литр ?</p>
+
+<p><strong>orgail</strong> 10-07-2010</p>
+
+<p>Валерий, я б с радостью подсказал, но боюсь подсказать больше чем даст гугл не смогу</p>
+
+<p>А это вы наверное и сами найдете, чтонить типа [http://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9<em>%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C](http://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9</em>%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C){:target=”_blank”}</p>
+
+<p>там табличка есть справа пониже, тока ее бы проверить</p>
+
+<p>но я бы Диму дождался, а то как то мне эта таблица не нравиться а почитав форумы химиков аж страшно стало</p>
+
+<p><strong>valery</strong> 10-07-2010</p>
+
+<p>Спасибо, Максим! Сам люблю сначала в Гугль лезть, а тут чего-то запаниковал …</p>
+
+<p>Раствора надо приготовить кучу, времени практически не остается, а вода у нас летом - меняется в течение суток. Почему, интересно …</p>
+
+<p>И реакции еще сутки идут … без прибора - никак.</p>
+
+<p>В принципе и читать разбираться особо некогда, так что если у кого есть “готовый рецепт” - буду благодарен.</p>
+
+<p>Ну читать, конечно, все равно пойду …</p>
+
+<p><strong>Rossich</strong> 10-07-2010</p>
+
+<blockquote>
+  <p>СРОЧНО НУЖНА СКОРАЯ ПОМОЩЬ …</p>
+
+  <p>Дмитрий, не могли бы подсказать, из чего можно в домашних условиях изготовить калибровочный раствор с рН=7 и рН=4 ?</p>
+</blockquote>
+
+<p>Валера РН7 дистиллят Н2О …4 надо бадяжить.</p>
+
+<p><strong>valery</strong> 10-07-2010</p>
+
+<p>Спасибо, но мне хотелось бы точней. Дистиллят он все равно чуток гуляет ( а может и нет ? ), вроде еще и углекислоты может наглотаться …</p>
+
+<p>Кстати.</p>
+
+<p>Извиняюсь за “мусор” у Дмитрия, ну как тут мимо вот такой фразы пройдешь - (вычитал про “аквакомпьютеры” , пока про “буфер” искал ), цитата</p>
+
+<p>Контроль освещения</p>
+
+<p>Некоторые аквакомпьютеры могут имитировать циклы закат-восход, а также изменение уровня ночного освещения в соответствие с лунным циклом. Многие кораллы, морские и пресноводные рыбы и беспозвоночные имеют репродуктивные циклы, связанные с циклом луны, поэтому эксперименты с этими компьютерами могут вызвать размножение тех видов, которые прежде не нерестились в неволе</p>
+
+<p>Блин. И не знаешь что делать. То ли огурец растить. То ли бросить - и начать томат. Больно про него “вкусно” пишут … Или “лутше” как у Цветовода розы :o</p>
+
+<p>А тут - тоже …</p>
+
+<p>Луна, кораллы Эхе-хе … Хочу “морской” компьютер и соленый аквариум … А у меня все гуппи, да барбусы … Верней, гуппей у меня и нету, но все равно - лабео с анцитрусами.</p>
+
+<p>Мечта.</p>
+
+<p>Морской коралл цветет помидором и плодит огурцом. Под искусственной луной ночью в комнате … У-у-у …</p>
+
+<p><strong>Batat</strong> 10-07-2010</p>
+
+<blockquote>
+  <p>Валера РН7 дистиллят Н2О …4 надо бадяжить.</p>
+</blockquote>
+
+<p>Я могу ошибаться, но вроде бы, нельзя окунать рН - метр в дистиллированную воду.</p>
+
+<p>Поэтому, моя рекомендация взять прибор и сходить в одну из хим. лабораторий с шоколадкой в кармане.</p>
+
+<p>Девчата готовят любой раствор, титруют его и определяют рН, затем Вы проверяете свой рН-метр по этому р-ру.</p>
+
+<p>При необходимости корректируете прибор.</p>
+
+<p>Думаю, так будет проще всего.</p>
+
+<p><strong>biolight</strong> 11-07-2010</p>
+
+<p>Валерий, наверное проще воспользоваться ГОСТОМ: <a href="http://www.complexdoc.ru/pdf/%D0%93%D0%9E%D0%A1%D0%A2%204919.2-77/gost_4919.2-77.pdf" target="_blank">http://www.complexdoc.ru/pdf/%D0%93%D0%9E%D0%A1%D0%A2%204919.2-77/gost_4919.2-77.pdf</a></p>
+
+<p><strong>Batat</strong> 11-07-2010</p>
+
+<blockquote>
+  <p>Валерий, наверное проще воспользоваться ГОСТОМ: <a href="http://www.complexdoc.ru/pdf/%D0%93%D0%9E%D0%A1%D0%A2%204919.2-77/gost_4919.2-77.pdf" target="_blank">http://www.complexdoc.ru/pdf/%D0%93%D0%9E%D0%A1%D0%A2%204919.2-77/gost_4919.2-77.pdf</a></p>
+</blockquote>
+
+<p>Николай, спасибо за полезный ГОСТ.</p>
+
+<p>Просветите, пожалуйста по поводу рН-метра.</p>
+
+<p>У меня стойкое мнение или заблуждение, о том что нельзя электрод от рН-метра или портативный прибор помещать в дистиллированную воду( измерять рН дист. воды).</p>
+
+<p>Так ли это?</p>
+
+<p><strong>valery</strong> 11-07-2010</p>
+
+<p>Спасибо всем кто отозвался - как в тему, так и в личку. Проблема решена.</p>
+
+<p>А про дистиллированную воду … Непонятно. А я постоянно после каждого измерения споласкиваю именно дистиллированной водой …</p>
+
+<p>Вроде бы “хранить” в дистиллированной не рекомендуется … Впрочем - все “по слухам”.</p>
+
+<p>Если у кого есть точная информация - было бы полезно. И возможно - многим.</p>
+
+<p><strong>valery</strong> 11-07-2010</p>
+
+<p>И правда, хорошая статья про буферные растворы … 8)</p>
+
+<p>Жалко платинового тигля у меня пока нету :(</p>
+
+<p>Зато Хлористый Калий - есть.</p>
+
+<p>Подпишу стакан стеклянный маркером - “Платиновый тигль” , небось раствор - не догадается.</p>
+
+<p>Я одно время из кубиков “Комат Агро” делал кубики “Гродан Дельта”. Ничего получалось. Даже хорошо 8)</p>
+
+<p><strong>Садовник</strong> 11-07-2010</p>
+
+<blockquote>
+  <p>И правда, хорошая статья про буферные растворы … 8)</p>
+
+  <p>Жалко платинового тигля у меня пока нету :(</p>
+
+  <p>Зато Хлористый Калий - есть.</p>
+
+  <p>Подпишу стакан стеклянный маркером - “Платиновый тигль” , небось раствор - не догадается.</p>
+
+  <p>Я одно время из кубиков “Комат Агро” делал кубики “Гродан Дельта”. Ничего получалось. Даже хорошо 8)</p>
+</blockquote>
+
+<p>А чуваки всё искали “филисофский камень”…</p>
+
+<p>Ну тупыыые.</p>
+
+<p><strong>Batat</strong> 11-07-2010</p>
+
+<blockquote>
+  <p>Спасибо всем кто отозвался - как в тему, так и в личку. Проблема решена.</p>
+</blockquote>
+
+<p>Каким способом?</p>
+
+<p>Может и нам всем будет полезно знать?</p>
+
+<p><strong>biolight</strong> 11-07-2010</p>
+
+<blockquote>
+  <p>Николай, спасибо за полезный ГОСТ.</p>
+
+  <p>Просветите, пожалуйста по поводу рН-метра.</p>
+
+  <p>У меня стойкое мнение или заблуждение, о том что нельзя электрод от рН-метра или портативный прибор помещать в дистиллированную воду( измерять рН дист. воды).</p>
+
+  <p>Так ли это?</p>
+</blockquote>
+
+<p>Александр, как раз электроды pH-метра и принято хранить в дистиллированной воде. Им нельзя давать пересыхать. В противном случае придется вымачивать часов 8 в 0,1н HCl. - так поступают еще и с новыми электродами, которые хранятся сухими.</p>
+
+<p>У меня же pH-метр пришел со специальной емкостью на электроде, т.е. он был уже влажным. Я только откалибровал и всё.</p>
+
+<p><strong>valery</strong> 11-07-2010</p>
+
+<p>Николай, все же с “хранением” хотелось бы точнее разобраться … информация везде противоречивая …</p>
+
+<p>От “нужно” в дистиллированной, до “нельзя” …</p>
+
+<p>У меня к примеру рН метры просто с влажной вставочкой в “защитном колпачке”, вроде как она должна время от времени смачиваться “калибровочным” или “буферным” в районе 4,01 …</p>
+
+<p>А “китайский” - вообще без ничего. И не просит смачиваться, работает и все :D</p>
+
+<p>Фиг его знает …</p>
+
+<p>Александр, до “по глупому решил …” , пользы для кого-нибудь от такого “решения” - мало.</p>
+
+<p>Вынул батарейки, разрядил память, вставил новые и откалибровал в старом растворе … Вроде все нормально, дежурные растворы, где я знаю рН точно - показал правильно.</p>
+
+<p><strong>biolight</strong> 11-07-2010</p>
+
+<p>Мда… сколько источников столько и мнений)))</p>
+
+<p>Варианты: Дистиллят, Соляная кислота, Хлористый калий, Сухим. :)</p>
+
+<p><strong>mdima</strong> 22-07-2010</p>
+
+<p>Правильно хранить стекляный электрод pH метра следует в геле с подкисленым хлористым калием. Но… это для pH метров с 3-4 знаками точности. Для наших целей можно хранить сухим полгода/год (если совсем не пользоваться, если пользоваться регулярно, то вообще можно не заморачиваться). Либо в стакане с немного подкисленным дистилятом. (Но, на самом деле и это паранойя и перебор).</p>
+
+<p>P.S.</p>
+
+<p>Лежал в больнице - сегодня выписался.</p>
+
+<p><strong>Batat</strong> 22-07-2010</p>
+
+<p>Спасибо, за информацию.</p>
+
+<p>Поскорее выздоравливайте, поправляйтесь, востанавливайтесь!</p>
+
+<p>Всегда рады общению с Вами. $)</p>
+
+<p><strong>orgail</strong> 23-07-2010</p>
+
+<p>Поздравляю с выпиской, Дмитрий</p>
+
+<p>Здоровья Вам!</p>
+
+<p><strong>mdima</strong> 08-02-2011</p>
+
+<p>Сегодня заезжал в “Жигулевские сады” прикупить роз к юбилею своей супруги.</p>
+
+<p>Фотки:</p>
+
+<p><a href="http://s2.postimage.org/2xdopdb6s/2011_02_08_10_04_59.jpg" target="_blank"><img src="http://s2.postimage.org/2xdopdb6s/2011_02_08_10_04_59.jpg" alt="" /></a></p>
+
+<p><a href="http://s2.postimage.org/2xdtnzco4/2011_02_08_10_03_28.jpg" target="_blank"><img src="http://s2.postimage.org/2xdtnzco4/2011_02_08_10_03_28.jpg" alt="" /></a></p>
+
+<p><a href="http://s2.postimage.org/2xdymle5g/2011_02_08_10_03_11.jpg" target="_blank"><img src="http://s2.postimage.org/2xdymle5g/2011_02_08_10_03_11.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 08-02-2011</p>
+
+<p>:D Весело у них там!</p>
+
+<p><strong>valery</strong> 15-02-2011</p>
+
+<p>А я то думаю, по какому такому случаю у меня помидор поспел … :-\ А оказывается - есть повод :D</p>
+
+<p>Дмитрий, с Днем Рождения ! Счастья, здоровья, успехов !</p>
+
+<p><strong>mdima</strong> 15-02-2011</p>
+
+<p>Спасибо большое!</p>
+
+<p><strong>Mole_Garden</strong> 15-02-2011</p>
+
+<p>$) Держи дружище! С праздником!!! Не болей больше пожалуйста и почаще радуй нас новыми разработками!!!</p>
+
+<p><strong>mdima</strong> 15-02-2011</p>
+
+<p>Постараюсь</p>
+
+<p><strong>Coccinella</strong> 15-02-2011</p>
+
+<p>И я тоже Вас поздравляю ! $)</p>
+
+<p><strong>mdima</strong> 15-02-2011</p>
+
+<p>Спасибо, очень приятно! :)</p>
+
+<p><strong>caiman</strong> 15-02-2011</p>
+
+<p>С днем рождения. Счастья и здоровья. Оно самое ценное, что есть у человека. $)</p>
+
+<p><strong>Tony_85</strong> 15-02-2011</p>
+
+<p>Присоединяюсь к поздравлениям. Всего самого лучшего!!!</p>
+
+<p><strong>mdima</strong> 15-02-2011</p>
+
+<p>Спасибо!</p>
+
+<p><strong>Mastodont88</strong> 15-02-2011</p>
+
+<p>С днем Варения Дима, желаю крепкого здоровья , долгих лет жизни и выдающихся агроуспехов <em>Dance</em></p>
+
+<p><strong>mdima</strong> 15-02-2011</p>
+
+<p>Спасибо!</p>
+
+<p><strong>Олеганос</strong> 15-02-2011</p>
+
+<p>$)ну я я присоединяюсь и поздравляю! Здоровья! Удачи! Чтоб все у тебя было, Дим, и ни чего тебе за это не было! :D</p>
+
+<p><strong>adyard</strong> 15-02-2011</p>
+
+<p>С днем рождения Дмитрий! Успехов Вам в жизни и делах. Большое Вам спасибо за вашу работу и помощь форумчанам. <em>Bravo</em></p>
+
+<p><strong>Садовник</strong> 15-02-2011</p>
+
+<p>С Днём рождения, Дмитрий! :)</p>
+
+<p>Спасибо за то, что Вы делаете. <em>8)</em></p>
+
+<p>Успехов во всех хороших начинаниях!</p>
+
+<p><strong>Rossich</strong> 15-02-2011</p>
+
+<p>Дмитрий,</p>
+
+<p>С днем “Варенья”, пусть жизнь сложится без горечи, не болей!</p>
+
+<p>С уважением Андрей.</p>
+
+<p><strong>Юрий.E.</strong> 15-02-2011</p>
+
+<p>С Днём рождения, Дмитрий! Здоровья,удачи,радости!</p>
+
+<p><strong>ProRus</strong> 15-02-2011</p>
+
+<p>ПОЗДРАВЛЯЮ !!! УРА !!! УРА !!! УРА !!!</p>
+
+<p><strong>orgail</strong> 15-02-2011</p>
+
+<p>[move] [size=24pt]Поздравляю, Дмитрий! [/size][/move]</p>
+
+<p><strong>mdima</strong> 15-02-2011</p>
+
+<p>Всем огромное спасибо!</p>
+
+<p><strong>mdima</strong> 17-02-2011</p>
+
+<p>начну издалека…. …после юбилея супруги остались завявшие розы…. :-D</p>
+
+<p><a href="https://t.me/ponics_ru_files/1068" target="_blank"><img src="/attachimages/5820_DSC_7418a.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/1069" target="_blank"><img src="/attachimages/5822_DSC_7419a.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/1070" target="_blank"><img src="/attachimages/5824_DSC_7421a.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 18-02-2011</p>
+
+<p>И теперь у тебя дома всегда буду расти розы! <em>8)</em></p>
+
+<p><strong>AlexKg</strong> 20-02-2011</p>
+
+<p>mdima очень интересно, а можно подробности )) какой субстрат использовали для черенков, какие условия, что использовали в качестве удобрения?</p>
+
+<p>Просто сам тоже самое сделал буквально вчера. Было 7 роз, нарезал черенков, посадил в три горшка с разными наполнителями - грунт, перлит/вермикулит, кокос. Накрыл пленкой, жду )</p>
+
+<p><strong>Олеганос</strong> 20-02-2011</p>
+
+<p>:o ух скока много черенков, блииин!</p>
+
+<p>мне тоже интересен ответ на вопрос прозвучавший выше…</p>
+
+<p>А еще интересно вот то:</p>
+
+<p>1) Какая все-же длина черенка оптимальна при укоренении роз?</p>
+
+<p>2) Общался как-то с человеком , так вот он рекомендовал колючки с черенков обстригать. Насколько это принципиально?</p>
+
+<p>3) На фотках у черенков ,смотрю, проклевываются листочки уже… После того, как это произошло, нужно ли продолжать держать черенки покрытыми, т.е. в условиях повышеной влажности ? и как долго?</p>
+
+<p>Пробовал укоренять черенки роз и после появления таких же вот молоденьких листиков , я снял парнички… <em>???</em> По-видимому зря- черенки после этого погибли. А корешков на них не оказалось. :(</p>
+
+<p><strong>mdima</strong> 20-02-2011</p>
+
+<p>Посадил в смесь: 2 торфа+1 перлит+1 верикулит + доломитовая мука для нейтрализации торфа + гидрогель (от…. э…. забывчивости)</p>
+
+<p>перед посадкой 15 сек в 50% изопропаноле с 5000 ppm IBA (индолилмасляная кислота)</p>
+
+<p>Листики - да, распускаются… Ждем-с…. ( Думаю сдохнут :) )</p>
+
+<p><strong>Олеганос</strong> 20-02-2011</p>
+
+<p>то что думаешь сдохнут - это есть ответ на мои вопросы походу <em>???</em></p>
+
+<p><strong>mdima</strong> 20-02-2011</p>
+
+<p>Но пока выглядят так:</p>
+
+<p><a href="https://t.me/ponics_ru_files/1071" target="_blank"><img src="/attachimages/5894_DSC_7425a.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/1072" target="_blank"><img src="/attachimages/5896_DSC_7426a.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/1073" target="_blank"><img src="/attachimages/5898_DSC_7427a.jpg" alt="" /></a></p>
+
+<p><strong>mdima</strong> 20-02-2011</p>
+
+<p>Заодно вопрос… кто знает, что за паразит на моей фиттонии..</p>
+
+<p><a href="https://t.me/ponics_ru_files/1074" target="_blank"><img src="/attachimages/5900_DSC_7428a.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/1075" target="_blank"><img src="/attachimages/5902_DSC_7429a.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 21-02-2011</p>
+
+<p>Плоховато видно, но похоже на одну из щитовок. В любом случае полив Актарой 25 д.г. в концентрации 2 г/л воды должен их отвадить.</p>
+
+<p><strong>mdima</strong> 21-02-2011</p>
+
+<p>Большое спасибо за рекомендацию!</p>
+
+<p>Чтобы посмотреть фотографию полностью:</p>
+
+<ol>
+  <li>щелкнуть на фотографию</li>
+</ol>
+
+<p>и после того как откроется окошко</p>
+
+<ol>
+  <li>Щелкнуть на кнопку в правом верхнем углу “посмотреть в полном размере”</li>
+</ol>
+
+<p><strong>Mole_Garden</strong> 21-02-2011</p>
+
+<p>Или вот прямые ссылки на изображение</p>
+
+<p><a href="http://forum.ponics.ru/index.php?action=dlattach;topic=56.0;attach=5902;image" target="_blank">http://forum.ponics.ru/index.php?action=dlattach;topic=56.0;attach=5902;image</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php?action=dlattach;topic=56.0;attach=5900;image" target="_blank">http://forum.ponics.ru/index.php?action=dlattach;topic=56.0;attach=5900;image</a></p>
+
+<p><strong>Roman_kzt</strong> 13-09-2011</p>
+
+<p>Здравствуйте Уважаемые химики-садоводы! :)</p>
+
+<p>Пришел к вам за советом!</p>
+
+<p>Хочу попробовать выращивать клубнику на гидропонике. Так вот, 1) можете ли вы посоветовать какие сорта для этого наиболее подходят; 2) на данный момент у меня есть вот такой сорт, который не могу распознать, могли ли вы подсказать, что это за сорт!?</p>
+
+<p><a href="https://t.me/ponics_ru_files/1076" target="_blank"><img src="/attachimages/8462_Клубника.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 20-09-2011</p>
+
+<blockquote>
+  <p>Здравствуйте Уважаемые химики-садоводы! :)</p>
+
+  <p>Пришел к вам за советом!</p>
+
+  <p>Хочу попробовать выращивать клубнику на гидропонике. Так вот, 1) можете ли вы посоветовать какие сорта для этого наиболее подходят; 2) на данный момент у меня есть вот такой сорт, который не могу распознать, могли ли вы подсказать, что это за сорт!?</p>
+</blockquote>
+
+<p>Попробуйте задавать вопросы в соответствующих тема, может быть тогда, ответы будут куда быстрее.</p>
+
+<p><strong>mdima</strong> 18-11-2011</p>
+
+<p>Вот ведь занесло, вторую неделю мотаюсь между Муравленко и Ноябрьском. :)</p>
+
+<p>P.s. пишу с сотика</p>
+
+<p><a href="https://t.me/ponics_ru_files/1077" target="_blank"><img src="/attachimages/9024_2011-11-16 15.35.57.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 18-11-2011</p>
+
+<p>:D</p>
+
+<p>А в Москве дождь!</p>
+
+<p><strong>Алексей007</strong> 02-12-2011</p>
+
+<p>Уважаемый mdima, вижу по фотографии, что снимали из здания “Газпромнефть-ННГ” в Муравленко. Когда-то там работал…</p>
+
+<p><strong>mdima</strong> 23-09-2012</p>
+
+<p>Именно оттуда.</p>
+
+<p><strong>mdima</strong> 23-09-2012</p>
+
+<p>Немного не по теме, но создал вот такой ролик:</p>
+
+<p>[html]&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/KGAogdQNdcc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;[/html]</p>
+
+<p><a href="http://youtu.be/KGAogdQNdcc" target="_blank">Ссылка</a></p>
+
+<p><strong>Rossich</strong> 23-09-2012</p>
+
+<p>Дмитрий, ну мощно задвинул… У нас на Черноморском побережье тепло, подъезжай душу и сердце согреть можно.</p>
+
+<p>А то видно, ты на Северах уже совсем подмерз.</p>
+
+<p>С уважением Россич</p>
+
+<p><strong>Coccinella</strong> 23-09-2012</p>
+
+<p>Дмитрий, я уже говорила, что Вы - гений?! Ну ведь правда же - гений! Мало того, что гидропоника в людях пробуждает литературный талант, так еще и … слова не подберу… но талант несомненно.</p>
+
+<p>А текст тоже Ваш?</p>
+
+<p><strong>mdima</strong> 23-09-2012</p>
+
+<p>Спасибо большое. Текст, звуковой и видео монтаж мои. Дикторскую начитку заказывал.</p>
+
+<p>P.S. Ну подмерз я, ну бывает…. ))))</p>
+
+<p><strong>Rossich</strong> 24-09-2012</p>
+
+<blockquote>
+  <p>Спасибо большое. Текст, звуковой и видео монтаж мои. Дикторскую начитку заказывал.</p>
+
+  <p>P.S. Ну подмерз я, ну бывает…. ))))</p>
+</blockquote>
+
+<p>Дмитрий, просто молодец, еще не поздно и в кино, шоу бизнесе по пробоваться. <em>8)</em></p>
+
+<p><strong>mdima</strong> 24-09-2012</p>
+
+<p>Да зачем? Денег, вроде, зарабатываю. А это и от души и для души. :)</p>
+
+<p><strong>orgail</strong> 24-09-2012</p>
+
+<p>Вот! Лучше меньше спать и заниматься любимым делом, тогда и бесцельного перещелкивания каналов не будет, а сон будет как вынужденная, но необходимая каторга :D</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

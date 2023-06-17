@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Огурец на DWC. если кому интересно. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Огурец на DWC. если кому интересно.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Огурец на DWC. если кому интересно.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>diman73rus</strong> 01-10-2013</p>
+
+<p>Привет.</p>
+
+<p>Посадил дед <del>репку</del>… огурец. :)</p>
+
+<p>минеральные пробки, пока вода.</p>
+
+<p>21/06/13</p>
+
+<p><a href="https://t.me/ponics_ru_files/10965" target="_blank"><img src="/attachimages/13917_2013-06-21 22.54.59.jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 01-10-2013</p>
+
+<p>27/06/13</p>
+
+<p>проклюнулись только 3 из 5 семян.</p>
+
+<p>Агат F1 если чо.</p>
+
+<p><a href="https://t.me/ponics_ru_files/10966" target="_blank"><img src="/attachimages/13919_2013-06-27 10.53.28.jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 01-10-2013</p>
+
+<p>светил сначала светодиодами</p>
+
+<p><a href="https://t.me/ponics_ru_files/10967" target="_blank"><img src="/attachimages/13921_2013-06-29 18.05.01.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10968" target="_blank"><img src="/attachimages/13923_2013-06-30 12.56.00.jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 01-10-2013</p>
+
+<p>01/07/13 - 10/07/13</p>
+
+<p>потом энергосберегайкой 50W 4200К</p>
+
+<p>подсадил к Агату двух Мазаев</p>
+
+<p>раствор N200-P60-K300-Ca250-Mg50+микры</p>
+
+<p><a href="https://t.me/ponics_ru_files/10969" target="_blank"><img src="/attachimages/13925_2013-07-01 09.31.55.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10970" target="_blank"><img src="/attachimages/13927_2013-07-04 11.02.16.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10971" target="_blank"><img src="/attachimages/13929_2013-07-05 09.14.57.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10972" target="_blank"><img src="/attachimages/13931_2013-07-06 07.16.22.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10973" target="_blank"><img src="/attachimages/13933_2013-07-07 07.13.40.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10974" target="_blank"><img src="/attachimages/13935_2013-07-08 08.26.19.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10975" target="_blank"><img src="/attachimages/13937_2013-07-09 09.06.22.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10976" target="_blank"><img src="/attachimages/13939_2013-07-10 08.31.01.jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 01-10-2013</p>
+
+<p>11/07-19/07/13</p>
+
+<p>растем потихоньку на подоконнике .. :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/10977" target="_blank"><img src="/attachimages/13941_2013-07-11 09.46.41.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10978" target="_blank"><img src="/attachimages/13943_2013-07-12 09.55.12.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10979" target="_blank"><img src="/attachimages/13945_2013-07-13 11.09.24.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10980" target="_blank"><img src="/attachimages/13947_2013-07-15 09.08.11.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10981" target="_blank"><img src="/attachimages/13949_2013-07-16 07.28.06.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10982" target="_blank"><img src="/attachimages/13951_2013-07-17 09.11.12.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10983" target="_blank"><img src="/attachimages/13953_2013-07-18 08.16.30.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10984" target="_blank"><img src="/attachimages/13955_2013-07-19 09.25.35.jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 01-10-2013</p>
+
+<p>20/07/13 переезд на лоджию. ПМЖ.</p>
+
+<p>раствор N230-P50-K300-Ca250-Mg50+микры</p>
+
+<p><a href="https://t.me/ponics_ru_files/10985" target="_blank"><img src="/attachimages/13957_2013-07-20 08.26.13.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10986" target="_blank"><img src="/attachimages/13959_2013-07-20 17.57.59.jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 01-10-2013</p>
+
+<p>растем, обживаем лоджию… полностью.. 5 метров в длину…</p>
+
+<p>освещение естественное, без досвечивания.</p>
+
+<p>раствор тот же.</p>
+
+<p>21/07-12/08/13</p>
+
+<p><a href="https://t.me/ponics_ru_files/10987" target="_blank"><img src="/attachimages/13961_2013-07-21 08.41.08.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10988" target="_blank"><img src="/attachimages/13963_2013-07-22 09.47.07.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10989" target="_blank"><img src="/attachimages/13965_2013-07-25 08.23.16.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10990" target="_blank"><img src="/attachimages/13967_2013-07-27 11.28.44.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10991" target="_blank"><img src="/attachimages/13969_2013-07-28 10.59.38.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10992" target="_blank"><img src="/attachimages/13971_2013-08-01 08.32.03.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10993" target="_blank"><img src="/attachimages/13973_2013-08-02 09.18.07.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10994" target="_blank"><img src="/attachimages/13975_2013-08-12 20.14.51.jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 01-10-2013</p>
+
+<p>поехали плодоносить… :)</p>
+
+<p>раствор N210-P40-K330-Ca200-Mg50+микры</p>
+
+<p>26/08/13 - по сей день</p>
+
+<p>начал досветку ДнаЗ 150W + ДнаЗ 70W (что было).. домашние начали возмущаться некрасивому желтому свету.. :(</p>
+
+<p><a href="https://t.me/ponics_ru_files/10995" target="_blank"><img src="/attachimages/13977_2013-08-26_08.32.06.jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 01-10-2013</p>
+
+<p>взвешиваем урожай</p>
+
+<p><a href="https://t.me/ponics_ru_files/10996" target="_blank"><img src="/attachimages/13979_2013-08-31_10.04.05.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10997" target="_blank"><img src="/attachimages/13981_2013-09-05_10.02.56.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10998" target="_blank"><img src="/attachimages/13983_2013-09-21_20.18.05.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10999" target="_blank"><img src="/attachimages/13985_2013-09-29_07.48.12.jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 01-10-2013</p>
+
+<p>еще</p>
+
+<p><a href="https://t.me/ponics_ru_files/11000" target="_blank"><img src="/attachimages/13987_2013-09-30 12.00.00.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11001" target="_blank"><img src="/attachimages/13989_2013-09-30 12.00.01.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11002" target="_blank"><img src="/attachimages/13991_2013-10-01_10.14.05.jpg" alt="" /></a></p>
+
+<p><strong>diman73rus</strong> 01-10-2013</p>
+
+<p>пришли холода, раствор начал подогревать до 24C аквариумным нагревателем.</p>
+
+<p>температура воздуха ночью доходила до 15C, получил мучнистую росу. вылечил. больные листочки пожелтели. вырезал.</p>
+
+<p>потом стало еще холоднее… поставил масляный радиатор, и дома включили отопление.</p>
+
+<p>двери на лоджию не закрываю. домашние ругаются.. снизу экрана лоджии образовывается конденсат, боюсь плесени.</p>
+
+<p>поставил вентилятор, который теплый воздух от радиатора разгоняет. конденсат частично исчез. все равно боюсь плесени.</p>
+
+<p>получилось днем до 25C, ночью около 20C. грелка раствора отключается вместе со светом. свет - 16 часов.</p>
+
+<p>Агат плодоносит, Мазай дал один огурец и решил, что пора на покой.. типа осень на дворе.</p>
+
+<p><strong>VVS_</strong> 01-10-2013</p>
+
+<p>У меня такая же лоджия. Утеплил изнутри вкруговую пеноплексом 30мм, все пропенил, заклеил изоспаном, зашил пластиковыми панелями. Две зимы с открытой дверью в лоджии +23С, красота. Никаких проблем.</p>
+
+<p>Грибок штука опасная, потом ничем не изведешь… А озонировать коронным разрядом дома нельзя, не жилое помещение во время обработки.</p>
+
+<p><strong>diman73rus</strong> 16-11-2013</p>
+
+<p>сегодня скосил огурцы.</p>
+
+<p>опять напал клещ. бороться сил больше нет.</p>
+
+<p><strong>diman73rus</strong> 01-08-2014</p>
+
+<p>Этим летом всё больше занимаюсь огородом на даче, и на балконе растет на DWC только один огурец RZ Авианс.</p>
+
+<p>На это раз посеян был пораньше. Посему без досветки совсем. Всё та же северная лоджия. В 2 ствола - оставил только один боковой побег.</p>
+
+<p>Фотка месячной давности. С тех пор один раз огурец выпивал раствор досуха и несколько раз почти досуха. Но еще жив. Клеща пока нет. :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/11003" target="_blank"><img src="/attachimages/16828_01.07.14 - 1.jpg" alt="" /></a></p>
+
+<p><strong>cpf</strong> 01-08-2014</p>
+
+<p><em>8)</em> Красавец-огурец.</p>
+
+<p><strong>Гир</strong> 02-08-2014</p>
+
+<blockquote>
+  <p>С тех пор один раз огурец выпивал раствор досуха и несколько раз почти досуха.</p>
+</blockquote>
+
+<p>Вы pH раствора контролируете - регулируете?</p>
+
+<p>Сколько примерно по времени наливается один плод, они вроде очень длинные?</p>
+
+<p><strong>diman73rus</strong> 03-08-2014</p>
+
+<p>контролирую. сначала регулировал, потом забил. ph около 5.0-6.5.</p>
+
+<p>один плод при EC 2.0 ms наливается примерно неделю. при 2.5 - медленнее. при 1.5 начинают расти боковые побеги. :)</p>
+
+<p><strong>Гир</strong> 03-08-2014</p>
+
+<p>Пробывали в растворе кальций держать 100 или хотябы меньше 200, сказывалось ли это на рост растения или еще чего?</p>
+
+<p>По магнию тоже меньше 50 когда нибудь раствор держали?</p>
+
+<p>У меня не двц правда (керамзит с торфосмесью), кальций всегда около 130, магний 20-30, почему то у всех в растворах кальция в два раза больше.</p>
+
+<p>Такой крупноплодный сорт, и при 2,5 ЕС Вы говорите рост зеленцев замедляется странно.</p>
+
+<p>Читал что такие крупноплодные сорта “лояльно” относятся к скачкам pH, похоже Вы это подтверждаете.</p>
+
+<p>Вы когда огурцы собрали из пазух листьев случаем новые зеленцы не начинают расти?</p>
+
+<p><strong>diman73rus</strong> 03-08-2014</p>
+
+<p>Кальция в растворе всегда было меньше 200. Мало того, что использовал формулу N256-P39-K352-Ca160-Mg33, но и из-за применения сульфата магния, часть кальция выпадала в осадок в виде сульфата. Так что там кальция меньше формулы.</p>
+
+<p>недостаток света сказывается на плодоношении. не все зеленцы вырастали в плоды. часть подсыхала. Присмотрелся сейчас - в пазухах полно мелких, но не стартующих зародышей… хотя может быть это зачатки бокового побега. :)</p>
+
+<p>по зимнему сезону в подвале помню, что вырастали по 2-3 из одной пазухи. Но стартовал всегда один, пока не срежешь, другие не росли.</p>
+
+<p><strong>Гир</strong> 03-08-2014</p>
+
+<p>А Вы этот кальций выпадающий в осадок, азоткой или фосфорной к растворимости приводите?</p>
+
+<p>Так что же, у Вас в растворе присутстувуют нерастворимые частицы (муть или хлопья)? (вы же на регулировку pH забили)</p>
+
+<p>И такой диликатный вапрос, на одном растворе растите или есть разные по фазам (вега, плод, балансирующий между ними)?</p>
+
+<p>Без света ни куда, у меня тоже не все зеленцы выростали в плоды но только при откровенной жаре (солнцепеке).</p>
+
+<p>Вот интересно что стимулирует рост новых зеленцев из собраных пазух листьев (Вы случаем не в курсе)?</p>
+
+<p><strong>diman73rus</strong> 04-08-2014</p>
+
+<p>я просто отстаиваю концентрированный (x5) раствор и сливаю в другую емкость без мути.</p>
+
+<p>раствор - сразу один рецепт. через месяц старый сливаю и наливаю свежий. потом только доливаю либо воду, либо концентрат.</p>
+
+<p>про пазухи пока не в курсе. :)</p>
+
+<p><strong>Гир</strong> 04-08-2014</p>
+
+<p>У меня впечатления личного (небольшого) опыта от двц, что это не подходящий вариант для огурца. (а у Вас растет на двц не плохо, может сорт, может удобрения хорошие)?</p>
+
+<p>Вы не пробывали растить огурец в каком нибудь субстрате, для сравнения в развитии и плодоношении?</p>
+
+<p><strong>diman73rus</strong> 04-08-2014</p>
+
+<p>нет, не растил.</p>
+
+<p>кто знает… может климат получился нормальный, может сорт такой…</p>
+
+<p>удобрениями не заморачивался. самые обыкновенные.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

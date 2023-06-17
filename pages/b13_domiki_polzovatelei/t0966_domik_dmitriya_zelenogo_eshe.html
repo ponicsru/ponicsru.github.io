@@ -1,0 +1,1912 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>домик Дмитрия (зеленого еще) | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="домик Дмитрия (зеленого еще)">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">домик Дмитрия (зеленого еще)</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Дмитрий (зеленый еще)</strong> 10-04-2011</p>
+
+<p>[size=24pt]Привет всем форумчанам !</p>
+
+<p>приглашаю в гости !</p>
+
+<p>Заходите в мой дом! В нем все двери открыты, буду песни вам петь и вином угощать.[/size]</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 10-04-2011</p>
+
+<p>вот и настало время когда могу поделиться своим скромным опытом в гидропонике которому отроду 3 месяца!</p>
+
+<p><a href="https://t.me/ponics_ru_files/5238" target="_blank"><img src="/imagehost/thumbs/imag0060.jpg" alt="" /></a></p>
+
+<p>не так интересно но наступая на грабли приобретаешь ценный опыт</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 10-04-2011</p>
+
+<p><a href="https://t.me/ponics_ru_files/5239" target="_blank"><img src="/imagehost/thumbs/imag0067.jpg" alt="" /></a></p>
+
+<p>эта конструкция доработанная и улучшенная полностью автоматическая !</p>
+
+<p>нравится самому!</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 10-04-2011</p>
+
+<p><a href="https://t.me/ponics_ru_files/5240" target="_blank"><img src="/imagehost/thumbs/imag0063oxo.jpg" alt="" /></a></p>
+
+<p>вот мои три эксперементальных образка фото 19 марта 2011 года</p>
+
+<p>пока еще на торфе но готовится пересадка на керамзит отмою корни залью чего сам намутил посмотрим как получится?</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 10-04-2011</p>
+
+<p>томаты ! семена привезены из италии сорт неизвестен название тоже но там они растут на гидропонике в матах</p>
+
+<p>а вообще итальянцы могут растить перец и томаты ведь пицца на них и держится !</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 10-04-2011</p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0074apa.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0074apa.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p>итак фото от 10 апреля результат ! томаты высота по 50 сантиметров размах крыльев 60 см тот, который остался в грунте более худой и бледный а два его брата жирные зеленые и готовятся зацвести непонятно только почему мокушка как то скручена сначала но потом она разворачивается наверно так надо</p>
+
+<p><a href="https://t.me/ponics_ru_files/5241" target="_blank"><img src="/imagehost/thumbs/imag0073ccc.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 10-04-2011</p>
+
+<p>Очень хорошая фотография в том смысле, что видно, как в начале растениям света хватало, потом был период недостатка света и междоузлия увеличились, потом опять все нормализовалось. Просто не растение, а летопись :) Только не мойте Вы корни при пересадке, пожалуйста, пожалейте растения. Им же больно, Вы все самые ценные корешочки поотмываете. Пересаживайте лучше, как есть. И Вам и растениям лучше будет!</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 10-04-2011</p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0070.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0070.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p>а это самый первый цветок</p>
+
+<p>Для всех женщин от всей души прям так и напоминает весну !!!!!!!!!!!</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 10-04-2011</p>
+
+<p>вот первые гости ! и какие ! рад !</p>
+
+<p>не буду больше мыть но есть прецидент что непромытые корни в горшке все покрылось зеленым ковром красиво крнечно но не думаю, что полезно</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 10-04-2011</p>
+
+<p>вот мои растворы и из чего я их намутил жена говорить , что похож на алхимика и работаю в корпорации монстров потаму, что таких ( мутантов помидоров никогда не видела) !&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0078nyn.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0078nyn.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p><strong>Coccinella</strong> 10-04-2011</p>
+
+<p>Забыла поздравить с новосельем $), так взволновалась за бедные корни :) Зелень в горшке, конечно, ни к чему, но эту проблему надо решать иначе.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 10-04-2011</p>
+
+<p>решил уже корни все же промыл в слабой марганцовке помоему помидорке даже понравилось !</p>
+
+<p><strong>orgail</strong> 10-04-2011</p>
+
+<p>а марганцем зачем еще жечь “ранки”?</p>
+
+<p>ну вы его теперь лучше на пару дней оставьте в покое в обычной водичке нейтрализованной и не трогайте, пущай отходит, ну и “притените” конечно же</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 10-04-2011</p>
+
+<p>это было месяц назад а теперь он лучше всех &lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0079.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0079.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p>а вот в огуречном царстве проблемма !!!!!!!!!!!!!!!!!!!! подскажите кто что думает и это несущий ствол в смысле основной или не знаю как его там но он лопнул по оси но верх живой все вроде в порядке</p>
+
+<p><strong>orgail</strong> 10-04-2011</p>
+
+<p>есть варианты, где то упоминается - Растрескивание стебля огурца - полив холодной водой по растению.</p>
+
+<p><strong>Rtyti</strong> 10-04-2011</p>
+
+<p>С новосельем. Сочных плодов, крепких корней и зеленой листвы. Удачи. <em>8)</em></p>
+
+<p><strong>Coccinella</strong> 11-04-2011</p>
+
+<p>Растрескивание стебля огурца вызывает и перепад температур (та же холодная вода), и колебания корневого давления, и перепады влажности воздуха, это неприятное, но частое явление. Чтобы в трещину не попала инфекция, ее лучше замазать кашицей из мела (просто развести строительный мел водой и кисточкой или пальцем замазать ранку). В производстве в мел часто добавляют фунгициды, но он и сам по себе хорошо действует. (Последнее время защитники склоняются к мысли, что мел препятствует работе фунгицидов)</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-04-2011</p>
+
+<p>спасибо !</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-04-2011</p>
+
+<p>это мой собственный роддом</p>
+
+<p>лепил из того, что было два старых светильника один рабочий другой пустой и вентилятор от компа</p>
+
+<p>молодь салатная чувствует себя там прекрасно</p>
+
+<p><a href="https://t.me/ponics_ru_files/5242" target="_blank"><img src="/imagehost/thumbs/imag0084.jpg" alt="" /></a></p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0085.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0085.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0086.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0086.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-04-2011</p>
+
+<p>а это ясли надеюсь хватит до школы!</p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0090.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0090.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p><strong>Coccinella</strong> 11-04-2011</p>
+
+<p>Все-таки больше трех растений салата в одном горшке оставлять не стоит. Тесно им будет. Лишние лучше сразу удалить (и в миску :))</p>
+
+<p><strong>Rtyti</strong> 11-04-2011</p>
+
+<blockquote>
+  <p>это мой собственный роддом</p>
+
+  <p>лепил из того, что было два старых светильника один рабочий другой пустой и вентилятор от компа</p>
+
+  <p>Подскажи от чего запитал вентилятор? К чему подключил?</p>
+</blockquote>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-04-2011</p>
+
+<p>старый блок питания от чего не знаю собираю всякую непотребность и вот ! иногда очень бывает нужна <em>8)</em></p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-04-2011</p>
+
+<p>а по поводу количества пока не решаюсь проредить посмотрю недельку выживает сильнейший причем пробки самопальные из минваты посмотрю как себя проявят !</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-04-2011</p>
+
+<p>а кто что скажет по поводу комплекта флора из 3х компонентов кроме цены в 530 р за литр может перейти на нее ?</p>
+
+<p><strong>Coccinella</strong> 11-04-2011</p>
+
+<p>Если Вы что-то скажете конкретное по составу этой флоры, то и комментарии поступят :)</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-04-2011</p>
+
+<p>как раз ищу состав но говорят кто продает там идет инструкция как для какого растения разводить</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 12-04-2011</p>
+
+<p>всем привет салатик растет</p>
+
+<p><a href="https://t.me/ponics_ru_files/5243" target="_blank"><img src="/imagehost/thumbs/imag0092.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 12-04-2011</p>
+
+<p><em>8)</em></p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 12-04-2011</p>
+
+<p>локонично и емко !</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 13-04-2011</p>
+
+<p>огурцы болеют пипец пятна желтые на нижних листьях</p>
+
+<p><strong>Coccinella</strong> 14-04-2011</p>
+
+<blockquote>
+  <p>огурцы болеют пипец пятна желтые на нижних листьях</p>
+</blockquote>
+
+<p>К таким сообщениям желательно сразу давать картинку. По описанию ничего вразумительного ответить невозможно.</p>
+
+<p><strong>mobidev</strong> 14-04-2011</p>
+
+<blockquote>
+  <p>Если Вы что-то скажете конкретное по составу этой флоры, то и комментарии поступят :)</p>
+</blockquote>
+
+<p>Прошу сильно не пинать, это мой первый пост на форуме, тоже недавно заинтересовался гидропоникой и вот нашёл состав флоры, если Дмитрий имеет в виду GHE Flora Series и опять же не знаю на сколько можно доверять этому ресурсу по указанному составу компонентов <a href="http://green-drop-home.com/zencart/index.php?main_page=product_info&amp;products_id=43" target="_blank">http://green-drop-home.com/zencart/index.php?main_page=product_info&amp;products_id=43</a></p>
+
+<p>Думаю, может точнее состав есть на сайте производителя GHE.</p>
+
+<p>P.S. вот кажется нашёл состав на сайте производителя <a href="http://www.generalhydroponics.com/genhydro_US/floraseries_calculator.html" target="_blank">http://www.generalhydroponics.com/genhydro_US/floraseries_calculator.html</a> или вот ещё на европейском зеркале <a href="http://www.eurohydro.com/resources.php?mod=flora_calc" target="_blank">http://www.eurohydro.com/resources.php?mod=flora_calc</a></p>
+
+<p>P.P.S. Дмитрий, если не секрет можете написать состав питательных удобрений с которых Вы начали, увидел там Кимиру Люкс, тоже купил пакетик думал начать с неё, но уже начал сомневаться, потому что Вы с неё собрались уходить :(</p>
+
+<p><strong>valery</strong> 14-04-2011</p>
+
+<p>mobidev, никто “пинаться”-то и не собирается, напротив, спасибо за ссылку …</p>
+
+<p>Вот в чем штука … GHE - очень “своеобразная” компания … И с составом раствора - у них полный кавардак …</p>
+
+<p>На сайтах пишут одно, на упаковках - СОВЕРШЕННО другое, причем у разных покупателей одного и того же продукта зачастую оказываются одни и те же “марки” концентрата (ну к примеру Флора Гро) - с … абсолютно разными составом, указанным на этикетке …</p>
+
+<p>При этом в концетрате запросто может оказаться и нечто “третье” …</p>
+
+<p>Даже в приведенных Вами ссылках, обратите внимание - на двух разных сайтах состав в таблице и в “калькуляторе” - заметно отличается по всем без исключения “маркам” …</p>
+
+<p><strong>Mole_Garden</strong> 14-04-2011</p>
+
+<blockquote>
+  <p>увидел там Кимиру Люкс, тоже купил пакетик думал начать с неё, но уже начал сомневаться, потому что Вы с неё собрались уходить :(</p>
+</blockquote>
+
+<p>Про кемиру люкс уже много писали, пользуйтесь поиском и все станет ясно.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 14-04-2011</p>
+
+<p>конечно сегодня будет картинка</p>
+
+<p>вот такая проблемма в картинках</p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0100krk.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0100krk.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p><strong>Coccinella</strong> 14-04-2011</p>
+
+<p>А я в Брюсселе нашла магазин GHE :), очень много любопытных вещей, правда любопытных. Горшки мне очень понравились. А уж удобрений… даже органические… для гидропоники…:) а мы тут о мамонтах… :)</p>
+
+<p>Правда, ценников не было, а спрашивать я не рискнула :) Побоялась, что чего-нибудь куплю… :)</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 14-04-2011</p>
+
+<p>Про кемиру могу сказать одно ! люкс работает но не очень быстрые результаты</p>
+
+<p>по моим наблюдениям лучше работает кемира плюс ! особенно томаты ее полюбили !</p>
+
+<p>фотки выложу позже только ее надо мешать 1+1 с кальциевой селитрой и на 5 литров одну ампулу сульфата магния моим помидоркам нравится</p>
+
+<p>а еще я попробовал сделать так ! разводил кемиру плюс в дистилированной воде до перенасыщения раствора и селитру так же приблизительно получается 400 грамм на полтора литровую бутылку дестилята из автомагазина а если подогреть то и все 500 грамм без остатка и осадка а потом мерным стаканчиком сохраняя пропорцию 1+1 делал раствор в 60 литровом баке и туда добавлял 6 ампул сульфата магния из аптеки 25% раствор вроде все работает главное света побольше !</p>
+
+<p>и еще или драть два стаканчика или промывать один после каждого раствора в противном случае сразу гипс !!!!!!!!!!</p>
+
+<p>!!!!!!!! дааа вот еще новость мои пикколо перцы собираются цвести !!!!!!!!!!!!!!высота куста 28 см</p>
+
+<p><a href="https://t.me/ponics_ru_files/5244" target="_blank"><img src="/imagehost/thumbs/imag0097.jpg" alt="" /></a></p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 14-04-2011</p>
+
+<p>заметил интересную вещ над перцами весят два дназа по 250 ватт 90 см от макушек и ради хохмы поставил люмку 36 ватт прям в кусты и что ! помидорка маленький и дохленький пострадалец весь поломанный при падении повернулся к люмке и ожил !</p>
+
+<p><a href="https://t.me/ponics_ru_files/5245" target="_blank"><img src="/imagehost/thumbs/imag0098.jpg" alt="" /></a></p>
+
+<p><strong>Oxy</strong> 14-04-2011</p>
+
+<p>Ну да, 250 Вт хочет растояние 25-30 см до верхушки. А световой поток снижаеться обратно пропорционально квадрату расстояния.</p>
+
+<p><strong>mobidev</strong> 14-04-2011</p>
+
+<blockquote>
+  <p>Вот в чем штука … GHE - очень “своеобразная” компания … И с составом раствора - у них полный кавардак …</p>
+
+  <p>На сайтах пишут одно, на упаковках - СОВЕРШЕННО другое, причем у разных покупателей одного и того же продукта зачастую оказываются одни и те же “марки” концентрата (ну к примеру Флора Гро) - с … абсолютно разными составом, указанным на этикетке …</p>
+
+  <p>При этом в концетрате запросто может оказаться и нечто “третье” …</p>
+
+  <p>Даже в приведенных Вами ссылках, обратите внимание - на двух разных сайтах состав в таблице и в “калькуляторе” - заметно отличается по всем без исключения “маркам” …</p>
+</blockquote>
+
+<p>Единственное, навскидку, что приходит в голову видимо в Европе и в штатах несколько разные по концентрации продукты или может у них там ориентируются пересчёты на их галоны и пинты :(</p>
+
+<p>Но возможно что просто в(для) Европе(ы) делают по более старым рецептурам, чем в головной штатовской конторе, которая использует уже более современные рецепты.</p>
+
+<p>Это наверно можно сравнивать как кофэ одной известной марки, который сделан в Европе и в Краснодарском крае, не скажу что у нас плохо делают, но они координально отличаются по вкусу.</p>
+
+<p>Или как BMW одной модели, но разных годов выпуска ;)</p>
+
+<blockquote>
+  <p>Про кемиру люкс уже много писали, пользуйтесь поиском и все станет ясно.</p>
+</blockquote>
+
+<p>Спасибо, попробую поискать.</p>
+
+<p>Интересно было почему Дмитрий уходит с неё в пользу GHE, неужели на разных составах может быть такая существенная разница в развитии :o</p>
+
+<blockquote>
+  <p>А я в Брюсселе нашла магазин GHE :), очень много любопытных вещей, правда любопытных. Горшки мне очень понравились. А уж удобрений… даже органические… для гидропоники…:) а мы тут о мамонтах… :)</p>
+
+  <p>Правда, ценников не было, а спрашивать я не рискнула :) Побоялась, что чего-нибудь куплю… :)</p>
+</blockquote>
+
+<p>Эх, надо было всё же купить, что-то мне уже начинает казаться, что разница может быть. В составах продаваемых для Европы и для России или других третьих стран.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>вот мой помидорка ! на кемире без бульбулятора 0.5 литра выпивает за 2е суток кемира люкс и кальциевая селитра 1+1 + сульфат магния</p>
+
+<p><a href="https://t.me/ponics_ru_files/5246" target="_blank"><img src="/imagehost/thumbs/imag0099.jpg" alt="" /></a></p>
+
+<p><strong>caiman</strong> 15-04-2011</p>
+
+<p>Молодец!!! <em>8)</em></p>
+
+<p>Осталось дождаться цветения и урожая…..</p>
+
+<p><strong>Coccinella</strong> 15-04-2011</p>
+
+<p>Дмитрий, а что за сорт томата? Я насчитала 12 листьев (с молодым, еще не полностью выросшим), а кисть еще не видна.</p>
+
+<p>Что касается огурцов-страдальцев, мне мнится проблема в фосфоре. Либо его мало, либо не поступает в растение.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>про сорт ничего не знаю только видел как растет плоды гроздями этот сорт в италии используют для завяливания помидорок очень вкусный продукт получается а сам плод почти одна мякоть без воды диаметр 2-2.5 сантиметра дык итальянци его в бальзамическом уксусе вымачивают и потом дольками режут и вялят уксус видно как консервант чтоб не пропали на ранней стадии подсыхания</p>
+
+<p>а цветочки есть только ракурс не очень выбрал да еще торопился утром дело было !</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>все же из головы не выходит мысль про водоподготовку обратный осмос !</p>
+
+<p>выход воды ррм 13 рн 6.5 на вкус вода как снег вкус знакомый с детства !</p>
+
+<p><a href="https://t.me/ponics_ru_files/5247" target="_blank"><img src="/imagehost/thumbs/imag0109.jpg" alt="" /></a></p>
+
+<p>путем вычислений и несложных переделок производительность увеличил до 100 литров в час</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0110.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0110.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p>а это просто баклажаны красиво радуюсь !</p>
+
+<p><strong>Coccinella</strong> 15-04-2011</p>
+
+<p>Можно и осмос, но важнее подкислить воду.</p>
+
+<p>И убедительно прошу питательные растворы на вкус не пробовать, ограничиться только водой :)</p>
+
+<p>А баклажаны и правда очень красивые :)</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>;D вкус воды ! пробовать раствор не буду больше сало и лучек люблю кстати дома на платформе из пенопласта неплохой результат получается как только доберусь до дома покажу и прикольную штуку сделал чтоб отверстия на конус вырезать в пенопласте многим понравится !</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>да вот еще !</p>
+
+<p>Уважаемая coccinella вы мне писали про раствор на базе тех трех видов флоры</p>
+
+<p>на подходе у меня огурчики может поделитесь своими мыслями по поводу раствора для оных а то мои бедалаги на балконе как в аду то желтеют то стволы трескаются но теперь все будет ок помещение с микроклиматом светом и осталось только добрый раствор им подать а я не химик ну совсем я конечно разберусь с растворами ну оч хочерся все сразу и много натура такая !</p>
+
+<p><strong>mobidev</strong> 15-04-2011</p>
+
+<blockquote>
+  <p>Про кемиру могу сказать одно ! люкс работает но не очень быстрые результаты</p>
+
+  <p>по моим наблюдениям лучше работает кемира плюс ! особенно томаты ее полюбили !</p>
+
+  <p>фотки выложу позже только ее надо мешать 1+1 с кальциевой селитрой и на 5 литров одну ампулу сульфата магния моим помидоркам нравится</p>
+
+  <p>а еще я попробовал сделать так ! разводил кемиру плюс в дистилированной воде до перенасыщения раствора и селитру так же приблизительно получается 400 грамм на полтора литровую бутылку дестилята из автомагазина а если подогреть то и все 500 грамм без остатка и осадка а потом мерным стаканчиком сохраняя пропорцию 1+1 делал раствор в 60 литровом баке и туда добавлял 6 ампул сульфата магния из аптеки 25% раствор вроде все работает главное света побольше !</p>
+
+  <p>и еще или драть два стаканчика или промывать один после каждого раствора в противном случае сразу гипс !!!!!!!!!!</p>
+</blockquote>
+
+<p>Дмитрий, спасибо про уточнения по разведению раствора! Видимо прийдётся вспоминать школьные уроки химии, как давно это было :)</p>
+
+<blockquote>
+  <p>все же из головы не выходит мысль про водоподготовку обратный осмос !</p>
+
+  <p>выход воды ррм 13 рн 6.5 на вкус вода как снег вкус знакомый с детства !</p>
+
+  <p><img src="/imagehost/thumbs/imag0109.jpg" alt="" /></p>
+
+  <p>путем вычислений и несложных переделок производительность увеличил до 100 литров в час</p>
+</blockquote>
+
+<p>А что это за мегадевайс такой хитрый?</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>это водоподготовка просто вода которая у меня идет из крана не ахти какая вот я ее и доделываю да и потом в воде 178ррм трудно стабилизировать рн пляшет как уж на сковородке а тут все четко на 5 литров того и того и результат всегда одинаковый</p>
+
+<p>ничего не надо вспоминать главное весы чтоб 1 грамм точность и вперед</p>
+
+<p><strong>mobidev</strong> 15-04-2011</p>
+
+<blockquote>
+  <p>Уважаемая coccinella вы мне писали про раствор на базе тех трех видов флоры</p>
+
+  <p>на подходе у меня огурчики может поделитесь своими мыслями по поводу раствора для оных…</p>
+</blockquote>
+
+<p>Может поможет, нашёл ссылки с сайта GHE на таблицы применения Flora Series, правда не увидел выкладки по конкретным агрокультурам <a href="http://www.eurohydro.com/publications/publications/APPLICATION%20CHARTS/GB/CHART-FLORA-SERIES-GB.pdf]CHART-FLORA-SERIES-GB.pdf[/url] там же есть и на русском описание [url=http://www.eurohydro.com/publications/publications/APPLICATION%20CHARTS/RU/CHART-FLORA-SERIES-RU.pdf" target="_blank">CHART-FLORA-SERIES-RU.pdf</a> , но что интересно, в GB-варианте идёт сначала таблица применения в Aero, Hydro, Coco, затем в земле, а в русской версии PDF наоборот, сначала в земле, затем всё остальное.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>даа все говорят там путаница сплошная как по растворам так и по их содержанию</p>
+
+<p>флора у меня есть и вопросов куча тож есть по ней мне подсказывает coccinella и вот из последнего 35 мл флора гро и 10 грамм кальциевой селитры на 10 литров воды</p>
+
+<p><strong>mobidev</strong> 15-04-2011</p>
+
+<blockquote>
+  <p>даа все говорят там путаница сплошная как по растворам так и по их содержанию</p>
+
+  <p>флора у меня есть и вопросов куча тож есть по ней мне подсказывает coccinella и вот из последнего 35 мл флора гро и 10 грамм кальциевой селитры на 10 литров воды</p>
+</blockquote>
+
+<p>да, выше писали что сайт и наклейка не всегда соответствуют, но может тогда ориентироваться на данные в наклейке упаковки</p>
+
+<p>вот нашёл у себя табличку приаттачу её, правда не по флоре, а где-то когда-то в интернете нарыл, сорри, не проверял на сколько она точная, что скажут спецы?</p>
+
+<p><a href="https://t.me/ponics_ru_files/5248" target="_blank">rukovodstvo.pdf</a></p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>хорошая табличка так теперь установка такая берем таблицу , калькулятор , перещитываем все параметры в флоре на 1 литр или на 10 литров чтоб удобнее было и смотрим чего в флоре не хватает а чего лишнего как тебе план ?</p>
+
+<p><strong>mobidev</strong> 15-04-2011</p>
+
+<blockquote>
+  <p>хорошая табличка так теперь установка такая берем таблицу , калькулятор , перещитываем все параметры в флоре на 1 литр или на 10 литров чтоб удобнее было и смотрим чего в флоре не хватает а чего лишнего как тебе план ?</p>
+</blockquote>
+
+<p>В принципе наверно так и надо, только что скажут спецы по качеству таблички и влияет ли тот фактор, что она кажется была приведена для субстрата - каменных агро-матов?</p>
+
+<p>На сколько она приближена к практическим реалиям повседневного использования?</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>помоему лезем глубоко так наверное не стоит делать</p>
+
+<p><strong>mobidev</strong> 15-04-2011</p>
+
+<blockquote>
+  <p>помоему лезем глубоко так наверное не стоит делать</p>
+</blockquote>
+
+<p>мне тоже это пока всё ново, я начинающий даже точнее сказать только на стадии ознакомления, перед начинающими ;)</p>
+
+<p>вот на GHE нашёл ещё интересные ссылки про выращивание перца! может пригодится Вам <a href="http://www.eurohydro.com/cultures.php?mod=hotpeppers]Перцы Чили[/url], а продолжение и более детально про [url=http://fatalii.net/growing/index.php?option=com_content&amp;task=view&amp;id=43&amp;Itemid=61" target="_blank">эти перцы тут</a> жаль только что на английском :(</p>
+
+<p><strong>valery</strong> 15-04-2011</p>
+
+<p>Э …</p>
+
+<p>Друзья, никто, конечно, от Флоры - не помрет, и растения расти будут, если более менее близко угадаете по NPK …</p>
+
+<p>Смысла только гоняться за ней нету никакого … И рекомендаций по РАЗНЫМ АГРОКУЛЬТУРАМ там не может быть в ПРИНЦИПЕ !</p>
+
+<p>Это же компания и состав для ОДНОЙ культуры, из которой раньше в России делали пеньковую веревку, а сейчас курят, чтобы “ширше” улыбаться …</p>
+
+<p>Ну что Вы в самом деле.</p>
+
+<p>Картофель и томаты на ней растят “по доверчивости”, а на этикетках овощи рисуют … ну просто негоже потому что сразу коноплю на этикетке рисовать.</p>
+
+<p>Делают они и удобную пласмассу - ведра, датч поты, аэро- и прочее … для выращивания той же самой марихуаны у себя под письменным столом или в гроубоксе …</p>
+
+<p>Конечно, вещи красивенькие и удобные, при желании туда и петрушку можно посадить и фуксию, никто не запретит … - но “целевая аудитория”, вообще-то, другая …</p>
+
+<p>Не огородная.</p>
+
+<p>По поводу состава, галлонов и мер … Разный состав - не от разных “систем измерения” - не важно в галлон мы льем, в литр или в бочку - процент, он и в Африке процент …</p>
+
+<p>4% азота - значит в этом в этом килограмме порошка или литре концентрата (или в галлоне) - 4 процента азота.</p>
+
+<p>Ну и особо хитрых “секретов” в свете “современных знаний” - никто туда особо не “привносит”, что бы отсталая Европа не успевала за передовыми штатами …</p>
+
+<p>Азот - фосфор - калий и т.д. как и у всех растений.</p>
+
+<p>Отношение к этой компании в разных странах - разное. В Штатах вон в Калифорнии чуть ли не закон собираются принять, легализующий выращивание “травки”, хотя там и так выращивают и никто “не скрывается” …</p>
+
+<p>В Северных Европах - вот смотрите Coccinella даже разыскала в Брюсселе - магазин, и ей многие удобные штуковины приглянулись …</p>
+
+<p>А во Франции (в Париже в частности) - таких магазинов не найти, хотя Европейская штаб-квартира - во Франции …</p>
+
+<p>В Финляндии - финская полиция относится построже - закрывают и громят магазинчики для гроверов с продукцией GHE …</p>
+
+<p>Поэтому основная торговля у них организована - интернет-магазинами … Поиск сотрудников - молодежь до 25 лет, с “активной жизненной позицией” :D</p>
+
+<p>Ну и так далее.</p>
+
+<p>Почему у них такая чехарда с составом - трудно сказать, читал несколько НЕубедительных разъяснений, типа того, что в разных странах - разные законодательства, разная “сертификация”, существуют какие-то ограничения … и, якобы, поэтому они пишут состав … КАКОЙ ПРИДЕТСЯ …</p>
+
+<p>Верить ли этим “разъяснениям” или нет - … кто его знает.</p>
+
+<p>Возьмите НОРМАЛЬНОЕ водорастворимое КОМПЛЕКСНОЕ с ИЗВЕСТНЫМ И ПОНЯТНЫМ составом. По крайней мере никто не будет голову ломать, а что же именно у меня в растворе …</p>
+
+<p>Или попробуйте уточнить состав где-нибудь на форумах “Дзаги” … Хотя они, вроде и сами не знают …</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>баа Валермй привет !</p>
+
+<p>зашел таки в гости !</p>
+
+<p>я сам понял что флора для выращивания веревок потаму как нарыл в сети</p>
+
+<p>наступая на грабли преобретаешь ценный опыт</p>
+
+<p>щас у меня работает твоя рекомендация 1+1 и сульфат магния ну мне кажется медленно работает или я просто сам себя настрополил на ето</p>
+
+<p>вот везде где только могу предлагаю создать видео инструкцию для всех начинающих и не понимающих принципы химии пока только дым</p>
+
+<p><strong>mobidev</strong> 15-04-2011</p>
+
+<blockquote>
+  <p>Возьмите НОРМАЛЬНОЕ водорастворимое КОМПЛЕКСНОЕ с ИЗВЕСТНЫМ И ПОНЯТНЫМ составом. По крайней мере никто не будет голову ломать, а что же именно у меня в растворе …</p>
+
+  <p>Или попробуйте уточнить состав где-нибудь на форумах “Дзаги” … Хотя они, вроде и сами не знают …</p>
+</blockquote>
+
+<p>Эх жаль, думал, что GHE серьёзная контора для овощеводов :( а какие Вы посоветуете водорастворимые несложные и может желательно готовые, то есть жидкие, а то пока весов не приобрёл, жидкость можно на крайняк шприцем из ближайшей аптеки развести ;)</p>
+
+<p><strong>valery</strong> 15-04-2011</p>
+
+<blockquote>
+  <p>баа Валермй привет !</p>
+
+  <p>зашел таки в гости !</p>
+
+  <p>я сам понял что флора для выращивания веревок потаму как нарыл в сети</p>
+
+  <p>наступая на грабли преобретаешь ценный опыт</p>
+
+  <p>щас у меня работает твоя рекомендация 1+1 и сульфат магния ну мне кажется медленно работает или я просто сам себя настрополил на ето</p>
+
+  <p>вот везде где только могу предлагаю создать видео инструкцию для всех начинающих и не понимающих принципы химии пока только дым</p>
+</blockquote>
+
+<p>А что, разве я не заходил :-\ Ну, наверное, случайно …</p>
+
+<p>Рекомендация … Да это, конечно, не совсем РЕКОМЕНДАЦИЯ. Это упрощение - для тех кто пока не готов “морочить голову” растворами, тогда можно и так - беды не будет.</p>
+
+<p>Конечно, Вам пора “мешать” что-то уже более подходящее под конкретную культуру.</p>
+
+<p><strong>valery</strong> 15-04-2011</p>
+
+<blockquote>
+  <p>Эх жаль, думал, что GHE серьёзная контора для овощеводов :</p>
+</blockquote>
+
+<p>Я, вообще-то, не к тому, что на Флоре растить - нельзя. Если ничего другого под рукой нет - можно, разобравшись с NPK и требованиями своей культуры.</p>
+
+<p>Очень многие - растят и даже НАХВАЛИВАЮТ.</p>
+
+<p>Я просто к тому, что нет нужды охотиться за Флорой специально - там нет ничего “волшебного и секретного” от “ведущих химиков НАСА”, а есть обычные “компоненты” с NPK заточенным под коноплю, только и всего.</p>
+
+<p><strong>Coccinella</strong> 15-04-2011</p>
+
+<p>А Валерий прав! Те юноши в магазине очень удивились, узревши меня (определенно, не их клиентура :)). Я тоже удивилась, обнаружив в продаже семена… тыквы:):) Нескольких сортов! Но и только :):):)</p>
+
+<p>Правда органические удобрения для гидропоники меня тоже удивили :)</p>
+
+<p>Растению действительно глубоко безразлично, откуда мы берем NPK и прочие элементы, которые ему подсовываем. Потратил человек деньги на Флору, значит надо ее использовать. Купил Буйский Акварин, скорми растениям. Ну и так далее …</p>
+
+<p><strong>mobidev</strong> 15-04-2011</p>
+
+<blockquote>
+  <p>Правда органические удобрения для гидропоники меня тоже удивили :)</p>
+
+  <p>Растению действительно глубоко безразлично, откуда мы берем NPK и прочие элементы, которые ему подсовываем. Потратил человек деньги на Флору, значит надо ее использовать. Купил Буйский Акварин, скорми растениям. Ну и так далее …</p>
+</blockquote>
+
+<p>Извините, а почему удивили органические удобрения для поники? В удобрениях пока слабо ориентируюсь, точнее пока наверно совсем не ориентируюсь, но всё же что в этом странного?</p>
+
+<p><strong>Coccinella</strong> 15-04-2011</p>
+
+<p>Да… :) Органика для гидропоники мало подходит, точнее совсем не подходит… вот я и удивилась :) В гидропонике все питательные элементы так в виде отдельных ионов растению и подаются, поэтому быстро усваиваются, все быстро растет и относительно хорошо поддается управлению.</p>
+
+<p>Органика же обычно имеет никому не известный состав, потихоньку (несколько недель или месяцев) минерализуется до тех же самых ионов, но что из всего этого, когда и в каком количестве попадает в растение - не ведомо совершенно никому.</p>
+
+<p>Поэтому урожай какой-нибудь вырастает (есть у него такое вредное свойство :)), но никак не планируемый. В домашних условиях каждый цветок радует (и это замечательно), но при выращивании на рынок хочется какой-то ясности :)</p>
+
+<p><strong>mobidev</strong> 15-04-2011</p>
+
+<blockquote>
+  <p>Поэтому урожай какой-нибудь вырастает (есть у него такое вредное свойство :)), но никак не планируемый. В домашних условиях каждый цветок радует (и это замечательно), но при выращивании на рынок хочется какой-то ясности :)</p>
+</blockquote>
+
+<p>Теперь всё понятно!</p>
+
+<p>Кстати, продолжая поиски истины нашёл этикетки на сайте GHE, где указан таки состав их продукции <a href="http://www.generalhydroponics.com/genhydro_US/product_labels.html]Product Labels[/url] и [url=http://www.generalhydroponics.com/genhydro_US/product_literature.html" target="_blank">Product Literature</a></p>
+
+<p>P.S. у GHE ещё и блог оказывается есть ;) <a href="http://www.generalhydroponics.com/blog/" target="_blank">http://www.generalhydroponics.com/blog/</a></p>
+
+<p><strong>mobidev</strong> 16-04-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Эх жаль, думал, что GHE серьёзная контора для овощеводов :</p>
+  </blockquote>
+
+  <p>Я, вообще-то, не к тому, что на Флоре растить - нельзя. Если ничего другого под рукой нет - можно, разобравшись с NPK и требованиями своей культуры.</p>
+
+  <p>Очень многие - растят и даже НАХВАЛИВАЮТ.</p>
+
+  <p>Я просто к тому, что нет нужды охотиться за Флорой специально - там нет ничего “волшебного и секретного” от “ведущих химиков НАСА”, а есть обычные “компоненты” с NPK заточенным под коноплю, только и всего.</p>
+</blockquote>
+
+<p>Нашёл в гугле ссылку на <a href="http://floragrow.ru/files/ghe_flora_series_ru.pdf]Таблицу применения Flora Series в гидропонных системах для отдельных видов растений[/url] похоже на перевод аналогичного PDF-документа с [url=http://www.eurohydro.com/pdf/tabs/gb/fs-plants.pdf" target="_blank">европейского зеркала официального сайта GHE</a>, где расписаны рецепты применения Flora Series для различных агрокультур.</p>
+
+<p>А что скажут спецы, это реально или блеф? :-\</p>
+
+<p><strong>Mole_Garden</strong> 16-04-2011</p>
+
+<p>GHE это не плохая, дорогая хрень!</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 16-04-2011</p>
+
+<p>нуу опять масса рекомендаций а главное что все понятно и конкретно !</p>
+
+<p>ну неужели никому и в голову не приходит что есть люди у которых нет опыта но есть желание</p>
+
+<p>или в это и есть смысл такого общения человек же конкретно спрашивает чего купить и сколько чего намешать чтоб все расло в граммах на литр или 10 воды чего его водить за нос всякими рассуждениями о високих материях нпк итд все это придет а на первом этапе хочется видеть результат !</p>
+
+<p>а вот когда уже все начнет расти ! вот тогда и можно рассуждать о том о сем чего лучше а чего дороже</p>
+
+<p>скажите конкретно купи Х и У Хстолько грамм У столько грамм В разные бутылки на столько воды и меси из этих бутылок раствор 1Х1 в третью бутылку до получения Х ррм и сделай рн 6.0</p>
+
+<p>все ! требуется пока только это !</p>
+
+<p><strong>Юка</strong> 17-04-2011</p>
+
+<p>Дмитрий, год назад решал такую же задачу и только теперь понимаю, почему не получал конкретного ответа. Самая нужная подсказка в вопросе №9 F.A.Q <a href="http://forum.ponics.ru/index.php?topic=430.msg12435#msg12435" target="_blank">http://forum.ponics.ru/index.php?topic=430.msg12435#msg12435</a> (спасибо Валерию и конечно Моле Гарден за тему F.A.Q.)</p>
+
+<p><strong>Coccinella</strong> 17-04-2011</p>
+
+<blockquote>
+  <p>ну неужели никому и в голову не приходит что есть люди у которых нет опыта но есть желание</p>
+
+  <p>…</p>
+
+  <p>скажите конкретно купи Х и У Хстолько грамм У столько грамм В разные бутылки на столько воды и меси из этих бутылок раствор 1Х1 в третью бутылку до получения Х ррм и сделай рн 6.0</p>
+
+  <p>все ! требуется пока только это !</p>
+</blockquote>
+
+<p>Вот лет пять пройдет и мы всем коллективом напишем всеобъемлющий труд на тему “Городское гидропонное садоводство для всех!” :))) На вашем опыте, вопросах и ошибках :) :) :).</p>
+
+<p><strong>orgail</strong> 17-04-2011</p>
+
+<blockquote>
+  <p>нуу опять масса рекомендаций а главное что все понятно и конкретно !</p>
+
+  <p>скажите конкретно купи Х и У Хстолько грамм У столько грамм В разные бутылки на столько воды и меси из этих бутылок раствор 1Х1 в третью бутылку до получения Х ррм и сделай рн 6.0</p>
+
+  <p>все ! требуется пока только это !</p>
+</blockquote>
+
+<p>даже если написать рецепт 72 шрифтом при входе на сайт или форум - такие вопросы все равно остануться :D</p>
+
+<p>а рецептов множество и на форуме и сайте и в библиотеке, тока с ложки никто не кормит :D</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 17-04-2011</p>
+
+<p>даа уж я перехожу на другой уровень !</p>
+
+<p>сегодня купил почти все химикаты !</p>
+
+<p>завтра придут точные весы и буду проводить замес раствора а ля Дмитрий мой рецепт !</p>
+
+<p>знаю точно что мошки должны сдохнуть или от невыносимых условий или от удивления ! :D</p>
+
+<p>держитесь ГУРУ гидропоники до этого были цветочки а завтра начнутся ягодки набирайтесь терпения я от вас не отстану !</p>
+
+<p>пока на моей фазенде за месяц не будут выростать помидоры до товарного вида ! или пока меня отсюда не попрут модераторы! <em>Dance</em></p>
+
+<p>заранее перед всеми извиняюсь за настойчивость и наглость !</p>
+
+<p>мне нужны результаты ! и вот тогда я наконец то сам сделаю видеоинструкцию для клана начинающих !</p>
+
+<p><strong>valery</strong> 17-04-2011</p>
+
+<p>Модераторы у нас терпеливые, так что помидоры должны сдаться раньше … :) <em>8)</em></p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 18-04-2011</p>
+
+<p>Итак в продолжение разговора про перец и салат высаженный мной 04 04 11 установка с временным затоплением перец 8 раз в сутки салат 4 перец в керамзите салат в минвате аля Дмитрий !</p>
+
+<p>для перца кемира люкс 1+1селитра кальциевая + хелаты в удобной форме от грин ворлд</p>
+
+<p>для салата кемира плюс 1+1 селитра кальциевая + хелаты</p>
+
+<p><a href="https://t.me/ponics_ru_files/5249" target="_blank"><img src="/imagehost/thumbs/imag0113.jpg" alt="" /></a></p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0114.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0114.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 20-04-2011</p>
+
+<p>всем привет !</p>
+
+<p>аппетит растет сегодня видоизменил стелаж !</p>
+
+<p>салат растет все удивляются новая партия на подходе рассады море !</p>
+
+<p>оказалось ее можно выгодно продать уже появились заказы и заложил кассету огурцов 240 шт всхожесть 100% благодаря накопленному опыту</p>
+
+<p><a href="https://t.me/ponics_ru_files/5250" target="_blank"><img src="/imagehost/thumbs/imag0115.jpg" alt="" /></a></p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0116.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0116.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p>всерьез подумываю о расширении конструкции! и обьемов</p>
+
+<p><strong>Coccinella</strong> 20-04-2011</p>
+
+<p>Тут не думать надо, а действовать :) Сезон продажи-покупки рассады вот-вот закончится. Спрос надо ловить, пока есть :)</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 20-04-2011</p>
+
+<p>Дык и ловлю из последнего !</p>
+
+<p>вчера продал огурци рассаду по 40 р кустик20 шт и еще просят богатые товарищи за ценой не стоят тем более в москве им нет времени возиться воткнул и радуются в состоянии 4 полных листьев сорт гавриш прям в пробках а ля Дмитрий и в стаканчиках под салат надо что то придумать с упаковкой для поддержания до момента пересадки в грунт вид ее (рассады ) всех удивил типа как можно зимой такую зеленую вырастить</p>
+
+<p>осталось продумать с упаковкой</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 20-04-2011</p>
+
+<p>растишки просто прут а не растут чуть с температурой зазивался и на тебе цветут вот и держу 18 градусов так вроде им меньше хочется расти</p>
+
+<p><a href="https://t.me/ponics_ru_files/5251" target="_blank"><img src="/imagehost/thumbs/imag0117.jpg" alt="" /></a></p>
+
+<p>и это за 5 дней</p>
+
+<p><strong>Coccinella</strong> 21-04-2011</p>
+
+<p>Дмитрий, я забыла, где Вы обитаете? Сколько времени этим огурцам терпеть до высадки на постоянное место? В принципе их можно не вынимая из салатного горшка пересадить в 10 см пластмассовый горшок с торфом или кокосом (да хоть с какой-нибудь “землей”) и еще 2-3 недели подержать. После этого их можно будет высаживать в теплицу. Для открытого грунта через 3 недели они будут велики. В открытый грунт их бы лучше всего сейчас высадить, только Вашим покупателям наверно еще некуда.</p>
+
+<p>В этом возрасте при недостатке света они тянутся буквально на глазах.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 21-04-2011</p>
+
+<p>я в москве тут еще местами снег вот я и понизил температуру вроде пока получается их удерживать думаю через недельку к майским в парники вполне пойдет вроде тепло идет !</p>
+
+<p><strong>Coccinella</strong> 21-04-2011</p>
+
+<p>Это они в салатных кассетах сидят? Друг от друга где-то 6 см? Неделю не продержите, вытянутся. Да и не может огурец долго при 18оС, проблемы пойдут. Все же лучше бы их рассадить хоть в 8 см горшочки, как я выше писала. В Подмосковье раньше 9 мая даже в пленочную теплицу огурец сажать рановато.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 21-04-2011</p>
+
+<p>последовал совету намутил торф перлит и остатки вермика почти все рассадил вышло очень даже товарный вид завтра большую часть заберут</p>
+
+<p>вот только интересно как они себя поведут они были на растворе а теперь в грунте может в поддон раствора махнуть пусть грунт напитается</p>
+
+<p>пока они все выберут тут и сажать можно</p>
+
+<p><strong>Coccinella</strong> 21-04-2011</p>
+
+<blockquote>
+  <p>последовал совету намутил торф перлит и остатки вермика почти все рассадил вышло очень даже товарный вид завтра большую часть заберут</p>
+
+  <p>вот только интересно как они себя поведут они были на растворе а теперь в грунте может в поддон раствора махнуть пусть грунт напитается</p>
+
+  <p>пока они все выберут тут и сажать можно</p>
+</blockquote>
+
+<p>Очень здравая мысль!</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 21-04-2011</p>
+
+<p>итак сегодня закончил строительство гроу бокса</p>
+
+<p>задумывал на 3 растения ( огурцы) буду пробовать сорта 1 гвидон 2 герман 3 фараон</p>
+
+<p>все они партенокарпики (самоопыляющиеся ) теневыносливые</p>
+
+<p>в качестве подсветки использовал люмки 4х36 ватт в качестве основного света планирую Дназ от фирмы эколюм новая не фонарная серия дали мне протестировать 400 ватт</p>
+
+<p>растишки буду брать из последней партии они самые удачные !</p>
+
+<p>при появлении 2х настоящих листьев распикирую в керамзит стаканчики 10 см</p>
+
+<p>раствор а ля Дмитрий сам мешал из компонентов !</p>
+
+<p>расстояние между растениями по осям отверстий 28см боюсь что часто ну посмотрим буду формировать куст вверх. высота ящика 130 от края горшка до верхней точки шпалеры</p>
+
+<p>цена вопроса и кол во материала</p>
+
+<p>1 направляющие 28х28 4 штуки (12метров) 152р</p>
+
+<p>2 пенофол 4м кв 140р</p>
+
+<p>3 саморезы 100 гр 55 р</p>
+
+<p>скотч 2х сторонний 2 рулончика 40 р</p>
+
+<p>лампы комплект 4шт 1020 р</p>
+
+<p>итого 1407р</p>
+
+<p>две руки ( 9 пальцев ) и желание ! бесплатно !</p>
+
+<p>пожелайте мне удачи !</p>
+
+<p>вопросы и предложения с радостью рассматриваю люблю учиться на чужих ошибках ! <em>Dance</em></p>
+
+<p><a href="https://t.me/ponics_ru_files/5252" target="_blank"><img src="/imagehost/thumbs/imag0120.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 21-04-2011</p>
+
+<p>Удачи! :)</p>
+
+<p>Однако насчет теневыносливости этих гибридов не обнадеживайтесь. Еще какие светотребовательные! А Гвидон еще и желтеть будет, он оказался черношипый :(.</p>
+
+<p>Но урожай должен вырасти, только при такой тесноте придется удалять все боковые побеги и формировать в один стебель. Думаю, что у Вас все получится!</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 21-04-2011</p>
+
+<p>ай спасибо моими усилиями и вашими молитвами и наставлениями заколосятся балконы по всей россии томатами и огурцами! <em>8)</em></p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 23-04-2011</p>
+
+<p>на домашнем томате отмер цветочек а на огурцах завязь идет и плоды не растут а вянут чего то не хватает кто знает?</p>
+
+<p><strong>valery</strong> 23-04-2011</p>
+
+<p>Дмитрий …</p>
+
+<p>Ну, блин (прошу прощения) …</p>
+
+<p>Ну ОПИСЫВАЙТЕ ситуацию подробно, ну снимки выкладываейте, пишите ВСЕ - температуру, влажность, освещение, полив, ЕС, рН, состав … все, что знаете.</p>
+
+<p>Получается - “у меня на чердаке чего-то ухает … чтобы это значило?..” :-\</p>
+
+<p>Или - “позавчера сосед помер. От чего?” Да фиг его знает - под машину попал, кирпич на голову упал, инфаркт, склероз, а может ему шесть лет назад 104 года исполнилось … - тогда “от старости” …</p>
+
+<p>Я не дли “прикола”, ей-богу … Просто даже зная ВСЕ, но не видя реальной ситуации и СПЕЦИАЛИСТЫ не всегда ответят точно … А тут … ?</p>
+
+<p>Что касается “на огурцах завязь идет. а плоды - не растут” … так, скорее всего и нету там пока у Вас никаких завязей. Маленькие “огурчики” - это и есть “женский цветок” - что бы завязь “случилась” - нужно еще “многое”.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 23-04-2011</p>
+
+<p>Валер щас все будет просто вчера с работы пришел в 1час ночи увидел и расстроился и вот написал даже не столько от удивления а скорее от недоумения происходящего</p>
+
+<p><a href="https://t.me/ponics_ru_files/5253" target="_blank"><img src="/imagehost/thumbs/imag0124.jpg" alt="" /></a></p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0126.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0126.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p>рн 6.0 ррм 1200 в томате</p>
+
+<p>рн 6.0 ррм 1050 в огурце</p>
+
+<p>температура 24 влажность 56%</p>
+
+<p><strong>valery</strong> 23-04-2011</p>
+
+<p>Да я больше для других “желающих помочь” спросил …</p>
+
+<p>А из меня лекарь-диагност, как из “известного” материала - пуля.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 23-04-2011</p>
+
+<p>Валер Ё!</p>
+
+<p>да особо нет горящих то помоч !</p>
+
+<p>похоже каждый в своем навозе роется и радуется если чего получается ! поэтому мы так и живем как в России заведено каждый сам за себя !</p>
+
+<p>я искринне уважаю китайцев и японцев за то что они друг друга всегда поддерживают ! если кто спрашивает как укол в зад воткнуть то и расскажут и покажут и видео пришлют сам проверял на перевале в Даляне ногу чел сломал так они пока не приехала бригада по мобилке видео прислали как шину положить а потом вертолет прилетел и денег не взяли сами 100 баков дали на их фонд а лично никто не взял ! черт почему у нас не так ? ведь много хороших людей !!!!</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 23-04-2011</p>
+
+<p>одно отрадно жду coccinnelly с дачи вернется может все прояснит</p>
+
+<p>тебе тож спасибо твой совет работает 1+1 но сам понимаешь уже охота побольше и побыстрее !!!!!!</p>
+
+<p><strong>Олеганос</strong> 23-04-2011</p>
+
+<blockquote>
+  <p>Валер щас все будет просто вчера с работы пришел в 1час ночи увидел и расстроился и вот написал даже не столько от удивления а скорее от недоумения происходящего</p>
+
+  <p><img src="/imagehost/thumbs/imag0124.jpg" alt="" /></p>
+
+  <p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0126.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0126.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+  <p>рн 6.0 ррм 1200 в томате</p>
+
+  <p>рн 6.0 ррм 1050 в огурце</p>
+
+  <p>температура 24 влажность 56%</p>
+</blockquote>
+
+<p>На таком растворе не вырастут огурцы у тя никогда, Диман!(томаты тожа)</p>
+
+<p>Валера скромничает конечно… настроения, видно, у него нету просто :-\</p>
+
+<p>1)РН - высоковат очень! Надо - 5,5</p>
+
+<p>2) концентрация низка катастрофически - сделай…, для начала, 2000ррм… тока постепенно - не сразу.</p>
+
+<p>по составу раствора - не подскжу</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 24-04-2011</p>
+
+<p>сеня попробую</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 25-04-2011</p>
+
+<p>всем привет !</p>
+
+<p>с праздником (кого не поздравил)</p>
+
+<p>на рабочей фазенде все идет нормально</p>
+
+<p>на перце наблюдаю обильное цветение !</p>
+
+<p>и непонятная проблемма !молоденькие листики не в большом количестве чем то болеют !</p>
+
+<p><a href="https://t.me/ponics_ru_files/5254" target="_blank"><img src="/imagehost/thumbs/imag0127.jpg" alt="" /></a></p>
+
+<p>и еще интересная вещь !</p>
+
+<p>прямо на глазах вянут и опускаются листья добавил в раствор кальция и они так же на глазах поднялись</p>
+
+<p>то есть процесс питания идет нормально думаю что за выходные они изрядно усвоили из раствора кальция</p>
+
+<p>жаль нечем померить какого элемента именно не хватает для нормы</p>
+
+<p>рн 5.7 ррм 1680 видимо надо довести до 2000 ?</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 25-04-2011</p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0128.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0128.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p>сегодня запустил свою самоделку</p>
+
+<p><strong>mobidev</strong> 25-04-2011</p>
+
+<blockquote>
+  <p>всем привет !</p>
+
+  <p>с праздником (кого не поздравил)</p>
+
+  <p>на рабочей фазенде все идет нормально</p>
+
+  <p>на перце наблюдаю обильное цветение !</p>
+</blockquote>
+
+<p>Приветствую, Дмитрий!</p>
+
+<p>И Вас с прошедшим праздником!</p>
+
+<p>Последнее время не часто получается забегать на форум, но каждый раз при знакомстве с достижениями его обитателей, мотивирует всё больше и больше!</p>
+
+<p>Спасибо вам форумчане огромное и Вам Дмитрий в частности!</p>
+
+<p><strong>Coccinella</strong> 25-04-2011</p>
+
+<p>Дмитрий, у Вас столько вопросов …:) При относительной влажности воздуха 56% и температуре 24оС да еще при хорошей освещенности Вы бы тоже привяли, если бы были растением :) А в привядающин листья кальций не поступает. Опять же, если Вы видите, что добавка кальция в раствор улучшает ситуацию, то зачем спрашивать “чего в супе не хватает”? Ясно же, что кальция :) Пузырчатость на листьях перца вполне естественна, при светокультуре такие вещи бывают постоянно, в листе растет содержание ауксинов, но неравномерно, вот он и пузырится.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 25-04-2011</p>
+
+<p>вопросов масса!</p>
+
+<p>не спорю!</p>
+
+<p>но они скоро закончатся и будут другие по мере обрастания опытом</p>
+
+<p><strong>Олеганос</strong> 26-04-2011</p>
+
+<p>А че ты их одним кальцием чтоль кормишь? :o</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 26-04-2011</p>
+
+<p>нет почему одним</p>
+
+<p>просто по видимому они его быстрее расходуют</p>
+
+<p>в прошлый раз добавил дозу разведенной кемиры а селитры не добавил отвлекли так они листья повесили в момент долил селитры кальциевой и в момент все в порядке стало вот и вывод напрашивается что они ее из раствора в большей степени поглощают (могу ошибаться первый опыт)</p>
+
+<p><strong>Coccinella</strong> 26-04-2011</p>
+
+<p>Кальций действительно один из наиболее потребляемых растением элементов. Просто при обычном выращивании его всегда сколько-то содержится в почве, а в гидропонике, сколько дали, столько есть.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 26-04-2011</p>
+
+<p>заходите в мой отчет о перцах помоему есть результаты</p>
+
+<p><strong>Олеганос</strong> 26-04-2011</p>
+
+<blockquote>
+  <p>нет почему одним</p>
+
+  <p>просто по видимому они его быстрее расходуют</p>
+
+  <p>в прошлый раз добавил дозу разведенной кемиры а селитры не добавил отвлекли так они листья повесили в момент долил селитры кальциевой и в момент все в порядке стало вот и вывод напрашивается что они ее из раствора в большей степени поглощают (могу ошибаться первый опыт)</p>
+</blockquote>
+
+<p>быстрее расходует это че значит , что нужно добавлять, в следующие разы, одну лишь силитру? :-\</p>
+
+<p>Нее… ну это не правильно, походу :(</p>
+
+<p><strong>Coccinella</strong> 26-04-2011</p>
+
+<p>Олег, просто в следующую подкормку надо увеличить дозу кальция, все остальные элементы тоже нужны.</p>
+
+<p><strong>Олеганос</strong> 26-04-2011</p>
+
+<p>:)ну я это и и мел ввиду</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 28-04-2011</p>
+
+<p>сегодня провел серию эксперементов по растворению суперфосфата !</p>
+
+<p>при растворении в воде из осмоса при параметрах рн 5.7 и ррм 0.05 температура 25 г никак не получилось и крутил и тряс</p>
+
+<p>мне на помощ пришла стиральная машинка РЕТОНА ультрозвуковая поместил ее в емкость и растворилось все на 99% осталось два камушка и кусочек дерева</p>
+
+<p>буйский завод рулит и стиральная машинка ретона !</p>
+
+<p>интересно только она в процессе воздействия на раствор ничего не меняет !</p>
+
+<p>оставил раствор в покое завтра посмотрю на предмет осадка или еще чего !</p>
+
+<p><strong>Юка</strong> 28-04-2011</p>
+
+<p>:o <em>8)</em> <em>Bravo</em></p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 28-04-2011</p>
+
+<p>нашел вот такую интересную композицию</p>
+
+<p><a href="http://agrifleks.ru/" target="_blank">http://agrifleks.ru/</a></p>
+
+<p>террафлекс универсал параметры дают возможность для маневра</p>
+
+<p>цена 100р кг если до 100 кг после 90р</p>
+
+<p>и мнего чего приятного по качеству и цене !</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 29-04-2011</p>
+
+<p>здравствуйте все !</p>
+
+<p>подскажите чего не хватает огурцу !</p>
+
+<p>края систа помоему начинают заворачиваться и лист становится как купол !</p>
+
+<p><a href="https://t.me/ponics_ru_files/5255" target="_blank"><img src="/imagehost/thumbs/imag0134.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 29-04-2011</p>
+
+<p>Это дефицит кальция.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 29-04-2011</p>
+
+<p>ок ! спасибо щас поправим</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 29-04-2011</p>
+
+<p>уважаемая кокцинелла !</p>
+
+<p>подскажите общие агрорекомендации по посадке смородины</p>
+
+<p>мне для тестирования во владимирской области передали 6 кустов 3 черная и 3 красная</p>
+
+<p>как правильно подготовить посадочные места почва чернозем раньше 20 лет назад там был скотный двор</p>
+
+<p>замеры не проводил ( кстати как их провести грамотно )</p>
+
+<p><strong>Coccinella</strong> 29-04-2011</p>
+
+<p>Да не мучайтесь, выкопайте яму подходящего размера для имеющегося объема корней и сажайте. Смородина на то и смородина, она сама растет и родит :) Сажать лучше в одну линию, расстояние между кустами 1,5-2 м, так легче урожай убирать. А когда приживутся, кемирой польете или террафлексом каким-нибудь посыпете. Вам же не на рынок! А для себя и так чересчур будет :)</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 02-05-2011</p>
+
+<p>Итак всем привет !</p>
+
+<p>поздравляю всех с прошедшим праздником трудового народа ! $)это дамам!</p>
+
+<p>начался дачный сезон !</p>
+
+<p>на балконной фазенде первые в моей жизни реально ощутимые результаты</p>
+
+<p><a href="https://t.me/ponics_ru_files/5256" target="_blank"><img src="/imagehost/thumbs/imag0135.jpg" alt="" /></a></p>
+
+<p>первый и последний огурец</p>
+
+<p>придется все разбирать как не жалко</p>
+
+<p>надеюсь что на рабочей фазенде все идет нормально завтра будет репорт !</p>
+
+<p><strong>NellyKH</strong> 05-05-2011</p>
+
+<blockquote>
+  <p>Итак всем привет !</p>
+
+  <p>поздравляю всех с прошедшим праздником трудового народа ! $)это дамам!</p>
+
+  <p>начался дачный сезон !</p>
+
+  <p>на балконной фазенде первые в моей жизни реально ощутимые результаты</p>
+
+  <p><img src="/imagehost/thumbs/imag0135.jpg" alt="" /></p>
+
+  <p>первый и последний огурец</p>
+
+  <p>придется все разбирать как не жалко</p>
+
+  <p>надеюсь что на рабочей фазенде все идет нормально завтра будет репорт !</p>
+</blockquote>
+
+<p>Огурчик <em>8)</em></p>
+
+<p>Только не понятно <em>???</em> зачем все разбирать??? Пусть дальше огурки плодятся, а мы (я) вам немножечко позавидую и по радуюсь Вашим успехам ;)</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 05-05-2011</p>
+
+<p>жалюзи ставить придут жарко невыносимо !</p>
+
+<p>а огурчики вкусные ! ммм !</p>
+
+<p>8 го ставлю теплицу 8.3 на 3 вот там и повоюем!!!!!!!!! <em>8)</em></p>
+
+<p><strong>mobidev</strong> 05-05-2011</p>
+
+<blockquote>
+  <p>жалюзи ставить придут жарко невыносимо !</p>
+
+  <p>а огурчики вкусные ! ммм !</p>
+
+  <p>8 го ставлю теплицу 8.3 на 3 вот там и повоюем!!!!!!!!! <em>8)</em></p>
+</blockquote>
+
+<p>Если правильно понял будете ставить теплицу размером 8,3 м * 3 м?</p>
+
+<p>Какой материал решили использовать? Плёнку или поликарбнат?</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 06-05-2011</p>
+
+<p>после праздников постараюсь выложить фотки</p>
+
+<p>каркас из профильной трубы 40Х20</p>
+
+<p>укрою поликарбонатом 8мм думаю будет норм !</p>
+
+<p><strong>Coccinella</strong> 06-05-2011</p>
+
+<p>Дмитрий, а в Ваших краях зимой снега много?</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 06-05-2011</p>
+
+<p>бывает до метра снега</p>
+
+<p>но в основном если наметет ветром и около приград</p>
+
+<p>а в среднем 50 см</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 06-05-2011</p>
+
+<p>каркас теплици расчитан на нагрузку 80 см снега если он там на крыше задержится</p>
+
+<p>планирую внутренний подогрев газ на участке думаю справимся</p>
+
+<p>газ творит чудеса !</p>
+
+<p><strong>mobidev</strong> 10-05-2011</p>
+
+<p>Вот тоже думал о тепличке, интересно много ли придётся затрачивать энергии на прогрев зимой и про снег, кстати, тоже вопрос хороший, где-то на ютубе видел у человека такую тепличку от снега провалило и он решил ставить гео купол :o Слежу за развитием событий ;)</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-05-2011</p>
+
+<p>процесс идет !</p>
+
+<p>скоро будет фото</p>
+
+<p><strong>Coccinella</strong> 11-05-2011</p>
+
+<p>С маленькой теплицы и вручную можно снег счистить. Просто, случись что, рухнувшую пленочную тепличку можно реанимировать за 1-2 дня, а поликарбонат восстанавливать и дороже, и дольше.</p>
+
+<p><strong>mobidev</strong> 11-05-2011</p>
+
+<p>У нас просто ветры бывают не слабые и дуют обычно не менее 3 дней, боюсь что плёнка не осилит этого :'( Хотя и по поликарбонату сомневаюсь немного.</p>
+
+<p><strong>Coccinella</strong> 11-05-2011</p>
+
+<p>Не слабые, это сколько м/сек?</p>
+
+<p><strong>mobidev</strong> 11-05-2011</p>
+
+<blockquote>
+  <p>Не слабые, это сколько м/сек?</p>
+</blockquote>
+
+<p>25-30 м/с это средний ветер, берег Чёрного моря ;)</p>
+
+<p><strong>Coccinella</strong> 11-05-2011</p>
+
+<p>Пленка выдержит, но может снести всю конструкцию :). Просто надо продумать количество стоек и их “крепление” к земле - на якорях или закапывать поглубже.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-05-2011</p>
+
+<p>штыри из арматуры на 120 в землю через 50 см а потом на них горизонтальную и подлить бетоном и фундамент и никуда не улетит</p>
+
+<p>а ставить лучше с севера на юг</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-05-2011</p>
+
+<p>берег черного моря это супер !</p>
+
+<p>завидую но только летом говорят с работкой у вас не очень ?</p>
+
+<p><strong>orgail</strong> 11-05-2011</p>
+
+<p>а поточнее насчет берега? :)</p>
+
+<p>он у нас оочень длиный :D</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-05-2011</p>
+
+<p>да российский берег наверно весь класный в плане отдохнуть</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-05-2011</p>
+
+<p>перцы зреют!</p>
+
+<p><a href="https://t.me/ponics_ru_files/5257" target="_blank"><img src="/imagehost/thumbs/dsc0042.jpg" alt="" /></a></p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-05-2011</p>
+
+<p>не понял как но получилась такая огромная фотка</p>
+
+<p>[url=http://forum.ponics.ru/imagehost/?v=dsc0043dzd.jpg] <a href="https://t.me/ponics_ru_files/5258" target="_blank"><img src="/imagehost/thumbs/dsc0043dzd.jpg" alt="" /></a></p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-05-2011</p>
+
+<p>вылезла клубника с зимы семена проростали уже выкинуть хотел</p>
+
+<p>а вот те наа</p>
+
+<p><a href="https://t.me/ponics_ru_files/5259" target="_blank"><img src="/imagehost/thumbs/dsc0044.jpg" alt="" /></a></p>
+
+<p><strong>mobidev</strong> 11-05-2011</p>
+
+<blockquote>
+  <p>берег черного моря это супер !</p>
+
+  <p>завидую но только летом говорят с работкой у вас не очень ?</p>
+</blockquote>
+
+<p>Это смотря где работать, как раз кто занимается гостиничным и около того бизнесом за счёт лета и живут потом :D</p>
+
+<blockquote>
+  <p>а поточнее насчет берега? :)</p>
+
+  <p>он у нас оочень длиный :D</p>
+</blockquote>
+
+<p>Нам до Сочи далеко, я из Новороссийска</p>
+
+<p><strong>Coccinella</strong> 11-05-2011</p>
+
+<p>Дмитрий, какой Вы молодец! Как все красиво и аккуратно!</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-05-2011</p>
+
+<p>спасибо !</p>
+
+<p>хочу похвастать своей системой автополива пирамидки с цветами</p>
+
+<p>бак 10 литров включается таймер 2 раза в сутки на одну минуту оч удобно и не парюсь с поливами</p>
+
+<p><a href="https://t.me/ponics_ru_files/5260" target="_blank"><img src="/imagehost/thumbs/dsc0046.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5261" target="_blank"><img src="/imagehost/thumbs/dsc0047.jpg" alt="" /></a></p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 11-05-2011</p>
+
+<p>буду очень признателен кокцинелле если посмотрев на мои фото пирамидки с цветами посоветует что сделать чтоб кончики листьев не сохли</p>
+
+<p>поливал слабым раствором по чеснокову потом перешел на простую воду до понимания причины пожелтения</p>
+
+<p><strong>Coccinella</strong> 12-05-2011</p>
+
+<p>Обычно это бывает от того, что в горшках растет рН субстрата и нарушается потребление микроэлементов. Иногда на комнатных растениях так проявляется борный токсикоз.</p>
+
+<p><strong>SergF</strong> 12-05-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>перцы зреют!</p>
+
+    <p><img src="/imagehost/thumbs/dsc0042.jpg" alt="" /></p>
+  </blockquote>
+
+  <p>Красота! “Перцы над городом” :)</p>
+
+  <blockquote>
+
+  </blockquote>
+
+  <p>Нам до Сочи далеко, я из Новороссийска</p>
+</blockquote>
+
+<p>Южан потянуло на гидропонику :) Я тож из Новороса…</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 12-05-2011</p>
+
+<p>то есть закисляем воду примерно до 5.0 поливаем и ждем?</p>
+
+<p><strong>Coccinella</strong> 12-05-2011</p>
+
+<p>Лучше бы выяснить, каков фактический рН в корневой зоне растений. Если есть время, почитайте вот это</p>
+
+<p><a href="http://www.greentalk.ru/node/1870" target="_blank">http://www.greentalk.ru/node/1870</a></p>
+
+<p>Управление микроэлементами - дело сложное, простым и резким понижением рН можно и навредить.</p>
+
+<p><strong>Mole_Garden</strong> 13-05-2011</p>
+
+<blockquote>
+  <p>буду очень признателен кокцинелле если посмотрев на мои фото пирамидки с цветами посоветует что сделать чтоб кончики листьев не сохли</p>
+
+  <p>поливал слабым раствором по чеснокову потом перешел на простую воду до понимания причины пожелтения</p>
+</blockquote>
+
+<p>Растворами растения в земле поливают не чаще одного раза в неделю, иначе будет передоз удобрений. Остальные поливы простой водой.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 14-05-2011</p>
+
+<p>да перешел на простую воду жду реакции !</p>
+
+<p><strong>kil</strong> 14-05-2011</p>
+
+<blockquote>
+  <p>Растворами растения в земле поливают не чаще одного раза в неделю, иначе будет передоз удобрений. Остальные поливы простой водой.</p>
+</blockquote>
+
+<p>Разве это не один из мифов? Я в том смысле, что земля конечно весьма буферна как плотный субстрат, но общая сумма поступивших веществ остается такой же, как и если бы была не земля, а например керамзит или вообще аэропоника? Известно засоление почв на классическом земледелии при неучете баланса потребления, удобрения, просачивания в грунтовые воды и полива. Чем земля отличается от любого другого субстрата, почему поливают не чаще раза в неделю? Почему именно передоз удобрений, а не нехватка, например?</p>
+
+<p>Если у Дмитрия нет отверстий в дне горшков, то засоление ему гарантировано. Если есть - то все зависит от фазы луны и погоды на марсе, уж очень земля медленно реагирует. Без земли проще…</p>
+
+<p><strong>Coccinella</strong> 16-05-2011</p>
+
+<p>Тут дело не в том, что земля буферна оттого, что плотная. Она содержит очень много всего чего, в том числе органики. Ни одна лаборатория полный анализ земли в цветочном горшке делать даже не возьмется, не говоря уже о том, сколько это будет стоить. Все наши искусственные субстраты от торфа и кокоса до минваты именно тем и хороши, что содержат только то, что мы туда внесли. Да и то сплошь и рядом что-то остается неучтенным, то сера, то хлор, то натрий… или вовсе никель с алюминием.</p>
+
+<p>Насчет того, как часто надо подкармливать комнатные растения в почве - вопрос очень сложный. У меня один коллега рассаду балконных цветов на продажу выращивает, так он ни рассаду, ни у себя дома все полтора десятка ящиков чистой водой не поливает - только слабым, подкисленным раствором комплексного.</p>
+
+<p>Питание декоративных растений - очень сложная штука, у каждого растения свои требования, причем зачастую никому не известные. Растений-то тысячи видов. Это не полторы сотни овощных культур :)</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 16-05-2011</p>
+
+<p>Всем доброго здоровья !</p>
+
+<p>итак выкладываю фото своего маленького тепличного хозяйства (мини огородик на участке )</p>
+
+<p>на неделе туда переедут почти все мои постояльцы</p>
+
+<p>кстати оказалось очень не просто перевести с гидры на грунт многие виды (огурци в стадии цветения сбросили почти все листья , томат из 6 эксперементальных кустов выжил только один ( зозуля)</p>
+
+<p>машенька и фараон откинули коньки сразу на второй день</p>
+
+<p>гвидон немного помучался и отправился за ними !</p>
+
+<p>а вот сельдирей чувствует себя под простой пленкой прекрасно перенес заморозок -3 гр правда листья пожелтели но новые побеги идут полным ходом</p>
+
+<p>вызвал агронома из молдавии ( занимается тепличным хозяйством ) он спас мне все остальные огурчики</p>
+
+<p>и перец целый день ходил вокруг кучи с перепрелым навозом к вечеру изготовил вонючую жижу на ночь полил и чудо все ожило !!!!!!!!! сказал что теперь только поливать !</p>
+
+<p>опыт дело такое не пропьешь !</p>
+
+<p><a href="https://t.me/ponics_ru_files/5262" target="_blank"><img src="/imagehost/thumbs/imag0140.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5263" target="_blank"><img src="/imagehost/thumbs/imag0141.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5264" target="_blank"><img src="/imagehost/thumbs/imag0142.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 16-05-2011</p>
+
+<p>Огурцы вообще очень плохо переносят пересадку, особенно уже цветущие. Это на вате их с пятью листьями пересаживают, а в торфе я их никогда старше трех листьев не пересаживала.</p>
+
+<p>А тепличка аккуратная, но вопрос традиционный :) - проветривание только через дверь или с двух концов?</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 16-05-2011</p>
+
+<p>проветривание с двух сторон над дверью фрамуга и в торце фрамуга открываются сами с помощью приводов на аккумуляторе при температуре от 20 до 35 градусов можно отрегулировать и закрываются так же а пока не работает система аккумулятор заряжает</p>
+
+<p>не знаю на сколько надежно все это оборудование пока тестирую вроде работает</p>
+
+<p><a href="https://t.me/ponics_ru_files/5265" target="_blank"><img src="/imagehost/thumbs/imag0143.jpg" alt="" /></a></p>
+
+<p>пока тут они не установленны (фото с прошлой недели ) но за основу конструкции взяты комплект приводов стекол от ваза модель не знаю там есть переключатель полюсов то есть сигнал пошел с термостата фрамуга открылась и остановилась на определенной позиции (допустим 90 градусов все зависит от регулировки ) потом еще сигнал и она опускается до полного притвора</p>
+
+<p>как сделать чтоб она имела несколько положений еще не придумал времени не было но все в проэкте !</p>
+
+<p><strong>Oxy</strong> 16-05-2011</p>
+
+<p>Есть такое решение как “шаговый механизм”. Представляет собой звездочку с удлиненными лучами. В каждом луче пропил под штифт. количество лучей определяет угол поворота. это решение носит имя изобретателя, но я забыл как правильно оно называеться. если найду то скину ссылку.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 16-05-2011</p>
+
+<p>ок! жду ссылку мож кому еще пригодится</p>
+
+<p>но у моей конструкции нет инерции похолодало она в один мах хлоп и закрылась и так же если жарко становится на прошлых выходных был сильный ветер холодный так вот она у меня несколько раз в час срабатывала пока не знаю хорошо это или плохо !</p>
+
+<p>наверно все таки в этом плюс есть а то пока этот механизм доведет створку до закрытого состояния все вымерзнет нафиг !</p>
+
+<p>а может и нет время покажет</p>
+
+<p>в любом случае планирую установку вентилятора движение воздуха нужно создать наверно им там так комфортнее будет да и датчик работать точнее будет !</p>
+
+<p><strong>Oxy</strong> 16-05-2011</p>
+
+<p>В том решении о котором я говорю, на вал мотора насажена звездочка а в ее пропилы вставлен штифт связанный с исполняющим устройством. мотор например делает один оборот а исполняющий механизм сдвигаеться напримре, на 30 градусов или на 45, смотря как звездочка выполнена. но вообще если покопаться в нете есть масса решений, просто у меня сейчас нет времени за компом сидеть.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 16-05-2011</p>
+
+<p>пока продумываю полив и вот чем надеюсь все реализовать</p>
+
+<p>там на заднем плане за теплицей бочка стоит синяя она 250 литров и вот такой шланг с перфорацией</p>
+
+<p>из бочки труба до клапана с насосиком и таймер</p>
+
+<p><a href="https://t.me/ponics_ru_files/5266" target="_blank"><img src="/imagehost/thumbs/imag0144.jpg" alt="" /></a></p>
+
+<p>думаю этим комплектом все реализовать а в бочке можно намешить чего угодно и просто воды и подкормочку организовать не проблемма</p>
+
+<p>электричество у меня на участке бесперебойно подается генератор в запасе имеется включен по схеме с автозапуском работает на магистральном газе коего у нас в деревне много так что максимум 30 секунд на запуск и переключение на резерв а работать он сутки может спокойно после моей небольшой переделки !</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 16-05-2011</p>
+
+<p>мои домашние помидорки два дальних куста просто а двапередних подвиты с двух корней в один стебель растут быстрее и уже догоняют своих старших братьев</p>
+
+<p><a href="https://t.me/ponics_ru_files/5267" target="_blank"><img src="/imagehost/thumbs/dsc0049.jpg" alt="" /></a></p>
+
+<p><strong>koval.sergei</strong> 16-05-2011</p>
+
+<p>Димка привет, если честно говоря меня такая тепличка не устраивает, очень они уж хлипкие, но для пробы будет гут, У тебя получается мини гидро…., для пробы я правильно понял.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 16-05-2011</p>
+
+<p>привет ! Серег !дачный вариант да и не такая уж хлипкая в целом</p>
+
+<p>зима покажет но думаю все будет ок</p>
+
+<p>даа там будет и гидра и грунт хочу пробовать и то и се но думаю гидра перевесит чашку весов но это в проекте</p>
+
+<p>а пока много рассады и поставлю ту установочку которая у меня на работе ты видел ! что на столе !</p>
+
+<p><strong>koval.sergei</strong> 16-05-2011</p>
+
+<p>Тогда гут, и в путь, будет нормуль. <em>8)</em></p>
+
+<p>Того глядишь и азарт появится, на крупное потянет. $)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

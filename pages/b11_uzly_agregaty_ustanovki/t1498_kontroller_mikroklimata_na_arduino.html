@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Контроллер микроклимата на ARDUINO | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Контроллер микроклимата на ARDUINO">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Контроллер микроклимата на ARDUINO</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>GarliCS</strong> 05-07-2012</p>
+
+<p>Уважаемые, есть желание скромный подвал(15м2) превратить в нечто полезное.</p>
+
+<p>Почитал форум и сделал вывод, что микроклимат, на 1 месте по значимости. По сему хочу сделать микроконтроллер этого самого микроклимата. Из кучи вариантов остановился на ARDUINO (<a href="http://www.arduino.ru" target="_blank">www.arduino.ru</a>), как на не дорогом и понятном мне, куча датчиков доступна на ebay.com</p>
+
+<p>Как вижу нужные параметры:</p>
+
+<ol>
+  <li>
+    <p>Реле освещения.</p>
+  </li>
+  <li>
+    <p>Реле полива.</p>
+  </li>
+  <li>
+    <p>Реле аэрации раствора.</p>
+  </li>
+  <li>
+    <p>Датчик температуры воздуха и влажности, с реле на внешние устройства (вентилятор, увлажнитель, нагреватель).</p>
+  </li>
+  <li>
+    <p>Датчик температуры раствора с реле (нагреватель).</p>
+  </li>
+  <li>
+    <p>Со временем датчик СО2 с реле на подачу из баллона через редуктор.</p>
+  </li>
+</ol>
+
+<p>Может чего пропустил, дополните.</p>
+
+<p>Постараюсь осветить, что и как буду делать, по мере появления свободного времени.</p>
+
+<p><strong>gena1</strong> 05-07-2012</p>
+
+<p>ARDUINO на данный момент не имеет конкурентов в своей нише, правильный выбор :)</p>
+
+<p>Ещё будет нужно:</p>
+
+<p>Ph+EC+ корреляция их показаний от Тр-ра</p>
+
+<p>минимум 2 темпер-х датчика на воздух, один вниз, другой вверх - в закрытом помещении разница до 10 град.</p>
+
+<p>Ph+EC - аналог обвес руками делать придётся, и питать поочерёдно (одновременно в однор р-ре работать не могут)</p>
+
+<p>С02- об этом пока думать смешно :)</p>
+
+<ul>
+  <li>много + много мелочей :) Без какого-либо ручного опыта в гидре нет смысла делать…. Точнее я бы не стал.</li>
+</ul>
+
+<p><strong>Vad</strong> 05-07-2012</p>
+
+<p>:o идею украли ;D</p>
+
+<p><strong>андрей п</strong> 05-07-2012</p>
+
+<blockquote>
+  <p>Уважаемые, есть желание скромный подвал(15м2) превратить в нечто полезное.</p>
+
+  <p>Почитал форум и сделал вывод, что микроклимат, на 1 месте по значимости. По сему хочу сделать микроконтроллер этого самого микроклимата. Из кучи вариантов остановился на ARDUINO (<a href="http://www.arduino.ru" target="_blank">www.arduino.ru</a>), как на не дорогом и понятном мне, куча датчиков доступна на ebay.com</p>
+
+  <p>Как вижу нужные параметры:</p>
+
+  <ol>
+    <li>
+      <p>Реле освещения.</p>
+    </li>
+    <li>
+      <p>Реле полива.</p>
+    </li>
+    <li>
+      <p>Реле аэрации раствора.</p>
+    </li>
+    <li>
+      <p>Датчик температуры воздуха и влажности, с реле на внешние устройства (вентилятор, увлажнитель, нагреватель).</p>
+    </li>
+    <li>
+      <p>Датчик температуры раствора с реле (нагреватель).</p>
+    </li>
+    <li>
+      <p>Со временем датчик СО2 с реле на подачу из баллона через редуктор.</p>
+    </li>
+  </ol>
+
+  <p>Может чего пропустил, дополните.</p>
+
+  <p>Постараюсь осветить, что и как буду делать, по мере появления свободного времени.</p>
+</blockquote>
+
+<p>Чисто теоретическая поправка- на первом месте не микроклимат, а всё, что влияет так или иначе на растение. Только в комплексе и никак иначе. <em>???</em>Знакомый голландец приоритеты расставил так: 1.Нормальное фитосанитарное состояние, 2.Питание.3-микроклимат.</p>
+
+<p><strong>GarliCS</strong> 05-07-2012</p>
+
+<blockquote>
+  <p>ARDUINO на данный момент не имеет конкурентов в своей нише, правильный выбор :)</p>
+
+  <p>Ещё будет нужно:</p>
+
+  <p>Ph+EC+ корреляция их показаний от Тр-ра</p>
+
+  <p>минимум 2 темпер-х датчика на воздух, один вниз, другой вверх - в закрытом помещении разница до 10 град.</p>
+
+  <p>Ph+EC - аналог обвес руками делать придётся, и питать поочерёдно (одновременно в однор р-ре работать не могут)</p>
+
+  <p>С02- об этом пока думать смешно :)</p>
+
+  <ul>
+    <li>много + много мелочей :) Без какого-либо ручного опыта в гидре нет смысла делать…. Точнее я бы не стал.</li>
+  </ul>
+</blockquote>
+
+<p>На балконе вырастил 1 урожай салата, 6 кустов (за 4 недели из семечка), сие плавало в поролоне на пенопластовом плоту в ванночке с раствором Чеснокова, под люминесцентной лампой. Семья осталась довольна. Решили расширить поприще.</p>
+
+<p>PH и EC думаю корректировать 1 раз в неделю в ручную, так проще.</p>
+
+<p>Сейчас на балконе попробовал посадить тот-же салат, но под светодиодной лентой, результат за то-же время хуже. Думаю из-за температуры днем она доходит до 40 с, когда выращивал 1 урожай температура была 25-30 с на улице месяц шли дожди.</p>
+
+<p><strong>GarliCS</strong> 05-07-2012</p>
+
+<blockquote>
+  <p>:o идею украли ;D</p>
+</blockquote>
+
+<p>Давай вместе сообща, одна голова хорошо, а две лучше.</p>
+
+<p><strong>GarliCS</strong> 05-07-2012</p>
+
+<blockquote>
+  <p>Чисто теоретическая поправка- на первом месте не микроклимат, а всё, что влияет так или иначе на растение. Только в комплексе и никак иначе. <em>???</em>Знакомый голландец приоритеты расставил так: 1.Нормальное фитосанитарное состояние, 2.Питание.3-микроклимат.</p>
+</blockquote>
+
+<p>Подвал чистый, побеленный, 12С хоть зимой хоть летом влажность прибор зимой показывал 60% сейчас 70%.</p>
+
+<p>Питание уже смешивал из ЧАД солей, салат не плохо вырос, пока жары не было.</p>
+
+<p><strong>Vad</strong> 05-07-2012</p>
+
+<blockquote>
+  <p>12С хоть зимой хоть летом ———————— салат не плохо вырос, пока жары не было.</p>
+</blockquote>
+
+<p><em>???</em></p>
+
+<p><strong>GarliCS</strong> 05-07-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>12С хоть зимой хоть летом ———————— салат не плохо вырос, пока жары не было.</p>
+  </blockquote>
+
+  <p><em>???</em></p>
+</blockquote>
+
+<p>Я думаю, если ЛЛ светить то температура подымется до нужных 25С со светом, плюс теплый раствор за период покоя, не даст остыть подвалу, а ардуиной можно управлять обогревателем, тем самым поддерживая необходимую температуру. Как бы не пришлось еще вентилятором теплый воздух выгонять.</p>
+
+<p>Про жару упомянул в связи с опытом выращивания на балконе.</p>
+
+<p><strong>Vad</strong> 05-07-2012</p>
+
+<p>а салату 25-то и много…</p>
+
+<p>емуб 18-20… кажется.. ото он бы рос как из пулемета..</p>
+
+<ol>
+  <li>
+    <p>Реле освещения. 1 ОУ</p>
+  </li>
+  <li>
+    <p>Реле полива. таймер</p>
+  </li>
+  <li>
+    <p>Реле аэрации раствора. постоянно аэрировать</p>
+  </li>
+  <li>
+    <p>Датчик температуры воздуха и влажности, с реле на внешние устройства (вентилятор, увлажнитель, нагреватель). еще 2 ОУ</p>
+  </li>
+  <li>
+    <p>Датчик температуры раствора с реле (нагреватель). сомнительная надобность… но если че - 1 ОУ</p>
+  </li>
+</ol>
+
+<p>итого:</p>
+
+<p>не сильно ЖИРНО для ардуины?</p>
+
+<p>вчем ее смысл?</p>
+
+<p>почему все салат выращивают? :-\</p>
+
+<p><strong>gena1</strong> 05-07-2012</p>
+
+<blockquote>
+  <p>итого:</p>
+
+  <p>не сильно ЖИРНО для ардуины?</p>
+
+  <p>вчем ее смысл?</p>
+</blockquote>
+
+<p>Нет смысла :) На ардуине у моего друга уже вертолёт летает по заданному маршруту автономно, а тут нужет только таймер :))))</p>
+
+<p><strong>GarliCS</strong> 05-07-2012</p>
+
+<p>Как вижу нужные параметры:</p>
+
+<ol>
+  <li>
+    <p>Реле освещения (таймер 1 реле).</p>
+  </li>
+  <li>
+    <p>Реле полива (таймер 1 реле).</p>
+  </li>
+  <li>
+    <p>Реле аэрации раствора (таймер 10 мин работы 1.50 простой, иначе в пустую молотит, только 26 мг кислорода в литре воды можно растворить).</p>
+  </li>
+  <li>
+    <p>Датчик температуры воздуха и влажности <a href="http://www.ebay.com/itm/DHT22-AM2302-Digital-Temperature-and-Humidity-Sensor-Replace-SHT11-SHT15-/140786274816?pt=LH_DefaultDomain_0&amp;hash=item20c7841200" target="_blank">http://www.ebay.com/itm/DHT22-AM2302-Digital-Temperature-and-Humidity-Sensor-Replace-SHT11-SHT15-/140786274816?pt=LH_DefaultDomain_0&amp;hash=item20c7841200</a> , с реле на внешние устройства (вентилятор, увлажнитель, нагреватель).</p>
+  </li>
+  <li>
+    <p>Датчик температуры раствора <a href="http://www.ebay.com/itm/DS18S20-DS1820-1-Wire-Digital-Thermometer-Dallas-/180827780851?pt=LH_DefaultDomain_0&amp;hash=item2a1a2cf6f3" target="_blank">http://www.ebay.com/itm/DS18S20-DS1820-1-Wire-Digital-Thermometer-Dallas-/180827780851?pt=LH_DefaultDomain_0&amp;hash=item2a1a2cf6f3</a> с реле (нагреватель).</p>
+  </li>
+  <li>
+    <p>Со временем датчик СО2 <a href="http://www.ebay.com/itm/Carbon-dioxide-sensor-Gas-sensor-module-/170858198665?pt=UK_BOI_Industrial_Automation_Control_ET&amp;hash=item27c7f13689" target="_blank">http://www.ebay.com/itm/Carbon-dioxide-sensor-Gas-sensor-module-/170858198665?pt=UK_BOI_Industrial_Automation_Control_ET&amp;hash=item27c7f13689</a> с реле на подачу из баллона через редуктор.</p>
+  </li>
+</ol>
+
+<p>Нет ни одного ОУ кроме CO2, везде цифра, исполнительные реле обычные механические на 10А или 30А для реле освещения. Если требуется то у ардуины есть и аналоговые входа (1024 градации) переводящие в цифру.</p>
+
+<p>Салат потому что легко вырастить, неприхотлив, скороспелый. И добавив его к порезанным томатам и огурцам, вкус сильно меняется в положительную сторону, в подвале планирую и укроп и петрушку и ченить посерьезней попробовать.</p>
+
+<p>Ардуино можно в дальнейшем расширять, к примеру циклический таймер на затопление (3 мин насос работает, 3 часа раствор сливает) я дешевый и стабильный не нашел.</p>
+
+<p><strong>Vad</strong> 05-07-2012</p>
+
+<p>я имел ввиду ОУ + реле - самодостаточная конструкция… без ардуин..</p>
+
+<p>не думаю что прийдется 20 раз в сутки температуру менять.. или освещение..</p>
+
+<p>это ставится 1 раз.. и… забывается. :)</p>
+
+<p>реле полива? а зачем аэрация?</p>
+
+<p>тут чтото одно.. или полив или аэрация ;)</p>
+
+<p>ардуина - из пушки по воробьям… БДЫЫЩЩЩ…. <em>Dance</em></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

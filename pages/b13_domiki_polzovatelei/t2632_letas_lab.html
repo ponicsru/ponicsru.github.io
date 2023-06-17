@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Leta's Lab | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Leta&#39;s Lab">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Leta's Lab</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Letalis</strong> 23-04-2017</p>
+
+<p>Доброго времени суток, уважаемые!</p>
+
+<p>Как говорил незабвенный сэр Макс, никогда не знаешь, где тебе повезет. Пессимисты могут добавить - лучше б знать, где не повезет, оно полезней как-то…</p>
+
+<p>Есть такая гадкая штука - аллергия на землю. Точнее - на микроскопические грибы и плесень, которая в ней обитает. Можно прикрыть землю в горшках, однако это не панацея.</p>
+
+<p>До недавнего времени любовь к озеленению подоконников побеждала с разгромным счетом - ценой вопроса в прием пары кругленьких антигистаминовых решений в период обострения.</p>
+
+<p>Однако у детеныша случилась та же напасть, и пичкать его регулярно лекарствами, тем более в период активного становления иммунной системы, мне не позволяет совесть. К тому же мы ждем еще прибавления в семействе и лишние лекарства - опять-таки непозволительная роскошь для организма.</p>
+
+<p>Мысленно прощаясь со своими зелеными друзьями, я думала об альтернативах - и дядя гугл не подвел, выдав волшебное слово “гидропоника”.</p>
+
+<p>Я буду рада любой помощи, критике, комментариям и просто вашему, уважаемые, вдохновляющему присутствию.</p>
+
+<p>Итак, наличествует…</p>
+
+<p>Инструментарий: ph- и tds-метры, гигро- и термометр, УЗ-увлажнитель, несколько led светильников.</p>
+
+<p>Химия: сульфат калия, кальциевая селитра, сульфат магния, Spezialdunger Hydrocultur, автомобильный электролит (серная кислота); нахожусь в активном поиске микроэлементов.</p>
+
+<p>Растения, переведенные на подпор в керамзите: эфирномасленничные (тимьян, розмарин, шалфей, базилик, мята, мелисса), декоративнолиственные (хедера, фикус бенджамина), суккулент (каланхоэ), цитрусовые (мандарин и лимон).</p>
+
+<p>Растения, переведенные на… немного путаюсь в терминологии - подпор с аэрацией или dwc правильно? - бак с аквариумным компрессором и камнем-рассекателем: томаты бонсай (3 шт на 12 л), земляника королева елизавета и базилик (гугл говорит, что они неплохо растут вместе - по 3 растения на 12 л).</p>
+
+<p>Растения, ожидающие очереди на экзекуцию: хлорофитум, лавр, алоэ.</p>
+
+<p>Площадь: три подоконника и закрытый балкон. На зиму пространство будет безжалостно сокращено до 1 подоконника, однако не теряю надежды выпросить под гидропонные дела небольшой шкафчик.</p>
+
+<p>Моя цель - сохранить поголовье подопечных и, желательно, получить немного зелени и пряных трав к столу.</p>
+
+<p>Предвидя комментарии про прозрачные стаканчики - просто было под рукой много и дешево, про цветение в курсе, буду красить, оборачивать или менять (возможно, всю систему), но - немного позже).</p>
+
+<p>Я несколько ограничена в основных ресурсах - времени, физической силе и, конечно, средствах (т.е. аэрогарден покупать нет желания), однако постараюсь обеспечить растениям достаточный для выживания коридор =)</p>
+
+<p>На подпоре растения после пересадки стоят в воде неделю, потом потихоньку подливаю растворчик попеременно с водичкой.</p>
+
+<p>Раствор для эфирномасленничных: 0,5 мл на литр кальциевой селитры и сульфата магния, 3 мл Hcl (Spezialdunger Hydrocultur);</p>
+
+<p>для томатов с базиликом: 0,5 мл на литр кальциевой селитры и сульфата магния, 1 мл Hcl;</p>
+
+<p>остальные: 0,5 мл на литр кальциевой селитры и сульфата магния, 0.5 мл Hcl.</p>
+
+<p>Я наверняка где-то налажала и что-то перепутала, однако ребенок перестал болеть (3 раза за зиму! кошмар!), чихать и сопливить, а растения - живы и вроде почти здоровы.</p>
+
+<p>О проблемах (они были неизбежны с моими то кривыми руками, которые раньше тока и умели, простите за выражение, друлем по паку в лк дпсить) - далее.</p>
+
+<p><strong>Letalis</strong> 23-04-2017</p>
+
+<p><a href="https://t.me/ponics_ru_files/18457" target="_blank"><img src="/imagehost2/thumbs/zjz.jpg" alt="" /></a></p>
+
+<p><strong>siv237</strong> 23-04-2017</p>
+
+<p>Крутой мини садик, но вот боюсь ваши растишки распробовав гидропонику быстро увеличатся в размерах и будут мешать вам и друг другу.</p>
+
+<p>Еще не понятно, если вы ставите на подпор, зачем аэрация? Она ведь шумит, вы ведь в комнате.</p>
+
+<p>Подпор хорош отсутствием механических приспособ и как следствие именно тишиной, а иначе смысла в нем нет помоему. Далеко не самая эффективная система для быстрорастущих.</p>
+
+<p>А вот перевод цитрусовых на гидропонику на подпор, говорю по своему опыту, дает взрывной практически рост и отличные темно-зеленые листья. В земле таких не было. У меня мандарин дичка, после перевода на гидропонику (огуречный раствор K:Ca 2.5) начал отращивать побеги по полметра в месяц и это зимой. Даже удалось на мандарин привит павловский лимон окулировкой с первого раза. Листья материнского дерева, даже самые крупные, раза в 4 мельче моих.</p>
+
+<p>А теперь вот мандарин культурный привил 2 дня назад на этот же подвой. Посмотрим, выйдет ли дерево дружбы на гидропонике :)</p>
+
+<p><strong>cpf</strong> 23-04-2017</p>
+
+<p>Использовал раньше (и даже использую, иногда, “на старте”) примерно такой же набор, но:</p>
+
+<ol>
+  <li>
+    <p>Если добавлять Кальций кальциевой селитрой, то быстро получаем перебор по азоту (в Hydrokultur его и так с избытком, можно взять такой же Kakteen - там его чуть меньше).</p>
+  </li>
+  <li>
+    <p>Если увеличивать EC (концентрацию), например, для томатов, по мере их роста - получаем перебор по азоту, с блокировкой усвоения магния (опять же из-за избытка азота в аммонийной форме в Hydrokultur).</p>
+  </li>
+</ol>
+
+<p>Вывод: для “зелени” и начальной стадии развития у плодо-овощей :-\ , - вполне сойдёт. Для дальнейших экспериментов, например, с томатами - надо искать что-то другое (например, как писали много раз, “Акварин хвойный”). По микроэлементам: и в HydroKultur и в Акварине - их достаточно.</p>
+
+<p><strong>Letalis</strong> 23-04-2017</p>
+
+<p>С аэрацией (фото в центре) томаты и земляника (базилик примостился за наличием свободного места в “установке” =) я боюсь, что им, как наиболее быстро развивающимся растениям, просто не хватит кислорода т_т</p>
+
+<p>Надеюсь, наши цитрусовые вырастут и перерастут все возможные рекорды, будут радостно махать лопухами, очищая воздух в комнатах и радуя глаз и, возможно, даже вкус =)</p>
+
+<p><a href="https://t.me/ponics_ru_files/18458" target="_blank"><img src="/imagehost2/thumbs/2wfw.jpg" alt="" /></a></p>
+
+<p>Сейчас часть растений размещена вот на такой этажерочке - удобно подстригать и света больше достается. Влажность здесь 40% +, t 22С.</p>
+
+<p><strong>Letalis</strong> 23-04-2017</p>
+
+<p>Hydrokultur Kakteen, принято, записано, будем поискать) Акварин Хвойный, неоднократно рекомендованный на форуме, пока не найден Т_Т ищу =) спасибо)</p>
+
+<p><strong>cpf</strong> 23-04-2017</p>
+
+<blockquote>
+  <p>Hydrokultur Kakteen, принято, записано, будем поискать) Акварин Хвойный, неоднократно рекомендованный на форуме, пока не найден Т_Т ищу =) спасибо)</p>
+</blockquote>
+
+<p><a href="https://t.me/ponics_ru_files/18459" target="_blank"><img src="/imagehost2/thumbs/3186.jpg" alt="" /></a></p>
+
+<p><strong>Letalis</strong> 23-04-2017</p>
+
+<p>О. Ооо… Ясн) вижу, в оби есть, обязательно возьму, когда там буду =) спасибо)</p>
+
+<p><strong>siv237</strong> 23-04-2017</p>
+
+<blockquote>
+  <p>Сейчас часть растений размещена вот на такой этажерочке - удобно подстригать и света больше достается. Влажность здесь 40% +, t 22С.</p>
+</blockquote>
+
+<p>Интересная компоновка, но кажется растишки должны быстро перерасти, особенно нижний ярус, и как тогда светить.</p>
+
+<p>Судя по всему фотка 1,5 месячной давности. Интересно бы взглянуть, как оно стало сейчас :)</p>
+
+<p><strong>Letalis</strong> 23-04-2017</p>
+
+<p>все фото вчерашние =) сегодня могу добавить только экспериментальную рукколу =)</p>
+
+<p><a href="https://t.me/ponics_ru_files/18460" target="_blank"><img src="/imagehost2/thumbs/3pop.jpg" alt="" /></a></p>
+
+<p><strong>Gnevko</strong> 25-04-2017</p>
+
+<p>Или мне это только кажется, или мало света экспериментальной руколле :-\</p>
+
+<p><strong>Letalis</strong> 25-04-2017</p>
+
+<p>Не оценит руккола новую лампочку - пойдет на микрозелень, жертва неудавшегося эксперимента &gt;:D</p>
+
+<p>Kakteen найден, прихватизирован и скоро пойдет в дело, пересчитать только…</p>
+
+<p>Немногочисленные оставшиеся в земле растюшки, переодически откушивающие “с барского стола” растворчику, распушились и зазеленели со страшной силой =) огурец даже пытается отращивать собственно огурец, кофе лопухами машет =) вот она, незамедлительная практическая польза гидропоники!</p>
+
+<p><strong>Gnevko</strong> 26-04-2017</p>
+
+<p>Причем же тут гидропоника? пока что видна, судя по описанию, незамедлительная практическая польза от использования удобрений.</p>
+
+<p><strong>Borodach1</strong> 26-04-2017</p>
+
+<blockquote>
+  <p>все фото вчерашние =) сегодня могу добавить только экспериментальную рукколу =)</p>
+</blockquote>
+
+<p>Я так понимаю это попытка воссоздать “плавающие плоты”?</p>
+
+<p>Тогда всё не правильно. Скоро растишки “загнутся”. Вы их душите. Они задохнутся и “утонут”. :'(</p>
+
+<p>Точка из которой вниз растут корни, а вверх растёт стебель, должна находится выше уровня жидкости.</p>
+
+<p>Внимательно присмотритесь к фоткам салата на плотах. Там горшочки не касаются жидкости.</p>
+
+<p><strong>siv237</strong> 26-04-2017</p>
+
+<blockquote>
+  <p>все фото вчерашние =) сегодня могу добавить только экспериментальную рукколу =)</p>
+</blockquote>
+
+<p>Ну меня просто смутила дата фотографии и снег просматриваемый в окошке на предыдущем фото</p>
+
+<p><a href="https://t.me/ponics_ru_files/18461" target="_blank"><img src="/imagehost2/thumbs/20170426142751.png" alt="" /></a></p>
+
+<p><strong>Letalis</strong> 26-04-2017</p>
+
+<p>2siv237: Недавно по нам прошелся хороший снежный заряд, сейчас дотаивает) 2014 год! фотоаппарат-путешественник во времени)) или дата у него сбилась =_=</p>
+
+<p>2Borodach1:</p>
+
+<p><a href="https://t.me/ponics_ru_files/18462" target="_blank"><img src="/imagehost2/thumbs/1mjm.jpg" alt="" /></a></p>
+
+<p>руккола пока жива, сейчас подумаю как ее спасти, спасибо) второй вариант с салатом был такой, но я, наверно, и здесь что-то неправильно сделала)</p>
+
+<p>В любом случае, походу, все равно все тянутся, хотя окно восточное и досветка до 23.00.</p>
+
+<p>2Gnevko: извиняюсь сильно) :-[ это была попытка пошутить, но, видимо, у меня слишком специфическое чувство юмора) постараюсь быть серьезней… еще серьезней… <em>???</em> ффух, не, пока не получается, но я буду тренироваться)</p>
+
+<p><strong>Gnevko</strong> 26-04-2017</p>
+
+<p>Зачем вы извиняете себя, да притом еще и сильно? :D</p>
+
+<p>На самом же деле, я не в коем случае не намеревался усомниться в ваших способностях в области “пошутить”. С моей стороны это была скорее всего неудачная попытка предостеречь от преждевременной эйфории. Некоторые новички, узнав слово “гидропоника”, думают, что поймали бога за бороду … но обычно их ждет разочарование.</p>
+
+<p><strong>Letalis</strong> 04-05-2017</p>
+
+<p>Дела ~~нас-с…суч…сущные ~~, безотлагательные, в общем, отвлекли меня от растений, и, воспользовавшись приоткрытым по случаю весеннего солнышка окном, флоре незамедлительно составила компанию фауна в виде черных какулек, ползающих по стеблям и сереньких маленьких летающих комароподобных существ. Родословную не выспрашивала, фоток нет. Обнаружены вредители были, когда мой бедный… многострадальный… тимьян наполовину! засох!! <em>Wall</em></p>
+
+<p>До:</p>
+
+<p><a href="https://t.me/ponics_ru_files/18463" target="_blank"><img src="/imagehost2/thumbs/dsc0433.jpg" alt="" /></a></p>
+
+<p>Были проведены оперативные действия, включающие <del>нецензурные высказывания</del> обрезку пострадавшего, прохладный душ всего наличного состава (кроме фикуса и толстянки - тяжелые, заразы :'( ), выкидывание некоторых отдельно взятых граждан ~~на мороз ~~ на балкон (от 7 до 35 градусов), обеззараживание поверхностей отпаривателем и УФ-лампой, рассовывание сушеных мандариновых шкурок в мешочках во все, блин, подходящие места. И неподходящие тоже &gt;:D. Можете смеяться, но шкурки отлично помогли от моли в свое время.</p>
+
+<p>Признаков инсектоидной активности в течении недели не обнаружено… <em>ждем в засаде</em></p>
+
+<p>После:</p>
+
+<p><a href="https://t.me/ponics_ru_files/18464" target="_blank"><img src="/imagehost2/thumbs/dsc0553.jpg" alt="" /></a></p>
+
+<p>Визуально пока пострадал только тимьян - лишился половины кроны. У меня, конечно, есть несколько запасных клонов, но, надеюсь, оклемается.</p>
+
+<p>Более приятные новости - на другом подоконнике:</p>
+
+<p><a href="https://t.me/ponics_ru_files/18465" target="_blank"><img src="/imagehost2/thumbs/dsc0550.jpg" alt="" /></a></p>
+
+<p>Это то, что когда-нибудь возможно будет маленькими помидорками?) :-[</p>
+
+<p><a href="https://t.me/ponics_ru_files/18466" target="_blank"><img src="/imagehost2/thumbs/dsc0548.jpg" alt="" /></a></p>
+
+<p>Это то, что когда-нибудь возможно будет клоном землянички?)</p>
+
+<p>Оно быстро растет)</p>
+
+<p><a href="https://t.me/ponics_ru_files/18467" target="_blank"><img src="/imagehost2/thumbs/dsc0549.jpg" alt="" /></a></p>
+
+<p><strong>siv237</strong> 04-05-2017</p>
+
+<p>Удивляюсь. Уже не первый случай тут на форуме с попаданием всякой гадости через окно.</p>
+
+<p>Используйте антимаскитные сетки на окнах ну и вообще взять за правило не помешает выдерживать карантин для приносимых в дом растений с улицы.</p>
+
+<p>В нашем регионе вообще открытыми окошки летом не принято держать без сеток, так-как комаров тучи. Может в других местах и не так и сетки не ставят?</p>
+
+<p><strong>siv237</strong> 04-05-2017</p>
+
+<blockquote>
+  <p>Это то, что когда-нибудь возможно будет маленькими помидорками?) :-[</p>
+</blockquote>
+
+<p>Да, но еще не так скоро как хочется, где-то месяц наверно. А вообще смотрю сорт детерминантный, очень на мой ред-робин похож.</p>
+
+<p>Кстати по усам клубники. Я придумал интересный как мне кажется способ их укоренения. Получаются мощные толстые корни.</p>
+
+<p>Нужно взять контейнер для еды и насыпать примерно 1/4 мелкого керамзита (того, который плавает, это важно). Дальше заливаем водой до верхней кромки, керамзит всплывает, кладем сверху усы. По мере выпивания раствора керамзит с усами просто опускается ниже, а усы всегда остаются на поверхности и не тонут, но при этом не запутываются корни и можно по несколько штук в одном контейнере растить. Приживаемость получается у них отличная.</p>
+
+<p><strong>Letalis</strong> 04-05-2017</p>
+
+<p>Да, сетки пора ставить)</p>
+
+<p>Сорт у помидорок - Томат Бонсай, Гавриш. На упаковке указано, что это ультраскороспелый карликовый гибрид, рекомендованный для выращивания в горшочках)</p>
+
+<p>Интересный способ укоренения) спасибо <em>8)</em></p>
+
+<p><strong>siv237</strong> 04-05-2017</p>
+
+<blockquote>
+  <p>Да, сетки пора ставить)</p>
+
+  <p>Сорт у помидорок - Томат Бонсай, Гавриш. На упаковке указано, что это ультраскороспелый карликовый гибрид, рекомендованный для выращивания в горшочках)</p>
+
+  <p>Интересный способ укоренения) спасибо <em>8)</em></p>
+</blockquote>
+
+<p>Да знаю, именно его искал в нашем городе, не нашел. Но продавцы сказали что ред-робин и бонсай это один и тот же сорт.</p>
+
+<p><strong>Letalis</strong> 26-05-2017</p>
+
+<p>Была в икее скидка во-от на такую интересную штуку)</p>
+
+<p><a href="https://t.me/ponics_ru_files/18468" target="_blank"><img src="/imagehost2/thumbs/1ara.jpg" alt="" /></a></p>
+
+<p>“Штука” была восторженно облизана, прихватизирована и превращена в рассадное отделение =) очень удобно оказалось)</p>
+
+<p><a href="https://t.me/ponics_ru_files/18469" target="_blank"><img src="/imagehost2/thumbs/2hzh.jpg" alt="" /></a></p>
+
+<p>Оно, конечно, будет дорабатываться потихоньку, а пока - выглядит довольно красиво и работает как дополнительный источник освещения в комнате, перемещается легко =) салату вроде нравится =)</p>
+
+<p><a href="https://t.me/ponics_ru_files/18470" target="_blank"><img src="/imagehost2/thumbs/3vev.jpg" alt="" /></a></p>
+
+<p><strong>Cyclamech</strong> 26-05-2017</p>
+
+<p>“Люмки” - прошлый век!</p>
+
+<p><strong>orgail</strong> 27-05-2017</p>
+
+<p>хлипковато, не?</p>
+
+<p><strong>cpf</strong> 27-05-2017</p>
+
+<p>Для рассады - нормально, ИМХО.</p>
+
+<p><strong>Letalis</strong> 10-07-2017</p>
+
+<p>Я успела отлежать в больничке, родить и снова отлежать в больничке, а выросли пара помидорок и огурец) К сожалению, длительное отсутствие сказалось на моих питомцах не лучшим образом, буду потихоньку приводить их ~~к общему знаменателю ~~ в порядок… так что хвастаться, к сожалению, нечем) салатик вырос прямо в рассадном отделении и был обгрызен без меня)</p>
+
+<p>Вкусные, но запущеные:</p>
+
+<p><a href="https://t.me/ponics_ru_files/18471" target="_blank"><img src="/imagehost2/thumbs/2xqx.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18472" target="_blank"><img src="/imagehost2/thumbs/3fcf.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 10-07-2017</p>
+
+<p>С пополнением! $) $)</p>
+
+<p>Не болейте! $) $)</p>
+
+<p>Остальное не важно ;)</p>
+
+<p><strong>Letalis</strong> 10-07-2017</p>
+
+<p>Пасяп =)</p>
+
+<p><strong>Cyclamech</strong> 10-07-2017</p>
+
+<p><em>8)</em> :-*</p>
+
+<p><strong>Borodach1</strong> 10-07-2017</p>
+
+<p>Это фигня. Выживут.)))</p>
+
+<p>Я вот последнюю неделю по утрам перед работой и по вечерам после работы занимался высадкой проклюнувшихся семечек. Петрушку и щавель. Чего то совсем плохо плохо проклёвывались. Вот и приходилось частями сеять.</p>
+
+<p>В итоге у меня сейчас в одном горшке петрушка вылазит, в другом щавель, а в остальных солянка сборная. )))</p>
+
+<p>В одном из горшков посадил три базилика пустившими корни черенками. В этом горшке тоже наблюдаю всходы петрушки.)))</p>
+
+<p>Даже не знаю что теперь получится.)))</p>
+
+<p><strong>Vad</strong> 10-07-2017</p>
+
+<blockquote>
+  <p>Даже не знаю что теперь получится.)))</p>
+</blockquote>
+
+<p>дык-ить! Салат! ;)</p>
+
+<p><strong>Borodach1</strong> 10-07-2017</p>
+
+<p>Салат проклюнулся на стадии барботирования. Поэтому с ним приключений нет. В салатных горшках кроме салата больше ничего не вылезло.)))</p>
+
+<p>А может салат убийца петрушки и щавля? )))</p>
+
+<p><strong>Letalis</strong> 04-11-2017</p>
+
+<p>Остатки былой роскоши) Пора начинать зимние эксперименты =)</p>
+
+<p><a href="https://t.me/ponics_ru_files/18473" target="_blank"><img src="/imagehost2/thumbs/dsc0001.jpg" alt="" /></a></p>
+
+<p><strong>Miando</strong> 24-06-2018</p>
+
+<p>Как дела? Что нового? <em>Bravo</em></p>
+
+<p><strong>Letalis</strong> 02-07-2018</p>
+
+<p>Каждый раз, когда я собираюсь наконец-то сфотографировать свой замечательный выросший салат, обнаруживаю его сожранным. Потому что он вырос. Так-то… =_=</p>
+
+<p><strong>Letalis</strong> 16-07-2018</p>
+
+<p>Огурчики растут… Весело помахивающий лопухами-листьями и усами-тентаклями монстр уверенно захватил балкон. Пьет по 3 литра в день, выдает по 1 огурцу… весь в цвету, огурчики небольшие, чуть изогнутые и колючие, но сладчайшие, вкуснейшие :3 Как я благодарна гидропонике в общем и форуму в частности за такие огурчики)))</p>
+
+<p><a href="https://t.me/ponics_ru_files/18474" target="_blank"><img src="/imagehost2/thumbs/1aja.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18475" target="_blank"><img src="/imagehost2/thumbs/2vnv.jpg" alt="" /></a></p>
+
+<p><strong>Letalis</strong> 16-07-2018</p>
+
+<p><a href="https://t.me/ponics_ru_files/18476" target="_blank"><img src="/imagehost2/thumbs/1mrm.jpg" alt="" /></a></p>
+
+<p>Слева - керамзит и растворчик, справа - земля х) Сначала были в одинаковых емкостях, но, чуть подросши, базилик начал выпивать все до донышка за полдня, пришлось переместить в тару побольше)</p>
+
+<p><strong>siv237</strong> 16-07-2018</p>
+
+<blockquote>
+  <p>чуть изогнутые и колючие, но сладчайшие, вкуснейшие :3 Как я благодарна гидропонике в общем и форуму в частности за такие огурчики)))</p>
+</blockquote>
+
+<p>Ради этого вкуса стоит выращивать огурцы дома на гидропонике :)</p>
+
+<p><strong>Letalis</strong> 16-07-2018</p>
+
+<p>Определенно стоит того)</p>
+
+<p><strong>Letalis</strong> 20-07-2018</p>
+
+<p><a href="https://t.me/ponics_ru_files/18477" target="_blank"><img src="/imagehost2/thumbs/1crc.jpg" alt="" /></a></p>
+
+<p>Приятный и вдохновляющий вид из окна на оккупированный балкон =)</p>
+
+<p><strong>siv237</strong> 20-07-2018</p>
+
+<p>Красота и польза :)</p>
+
+<p><strong>Miando</strong> 20-07-2018</p>
+
+<p>Завидую :) Мне жена не разрешает окно занимать, а на балконе солнце только до обеда. Еле уговорил на одну полку, на стеллаже в подсобке, но сейчас уже 3 занял :D</p>
+
+<p><strong>Letalis</strong> 23-07-2018</p>
+
+<p>Может быть, кто-то подскажет, что с этим несчастным листиком? О_О остальные листики более-менее нормальные… :o</p>
+
+<p><a href="https://t.me/ponics_ru_files/18478" target="_blank"><img src="/imagehost2/thumbs/2tlt.jpg" alt="" /></a></p>
+
+<p><strong>simiko</strong> 23-07-2018</p>
+
+<p>Жарко ему((</p>
+
+<p><strong>Letalis</strong> 23-07-2018</p>
+
+<p>спасибо) будем думать…</p>
+
+<p><strong>siv237</strong> 23-07-2018</p>
+
+<p>Что с pH?</p>
+
+<p><strong>Letalis</strong> 24-07-2018</p>
+
+<p>6.0 - 6.5 ph, 1000 - 1100 ppm</p>
+
+<p><strong>Letalis</strong> 24-07-2018</p>
+
+<p>Plantix (https://play.google.com/store/apps/details?id=com.peat.GartenBank&amp;hl=ru) сейчас велел мне додать растюшке калия… врет?)</p>
+
+<p><strong>siv237</strong> 24-07-2018</p>
+
+<p>прикольная программа.</p>
+
+<p><strong>allex_step</strong> 24-07-2018</p>
+
+<blockquote>
+  <p>Plantix (<a href="http://forum.ponics.ru/go.php?url=aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5wZWF0LkdhcnRlbkJhbmsmYW1wO2hsPXJ1" target="_blank">play.google.com/s…tenBank&amp;hl=ru</a>) сейчас велел мне додать растюшке калия… врет?)</p>
+</blockquote>
+
+<p>а бывает ответ типа “Всё в порядке. Изменений не требуется.”?</p>
+
+<p><strong>siv237</strong> 24-07-2018</p>
+
+<blockquote>
+  <blockquote>
+    <p>Plantix (<a href="http://forum.ponics.ru/go.php?url=aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5wZWF0LkdhcnRlbkJhbmsmYW1wO2hsPXJ1" target="_blank">play.google.com/s…tenBank&amp;hl=ru</a>) сейчас велел мне додать растюшке калия… врет?)</p>
+  </blockquote>
+
+  <p>а бывает ответ типа “Всё в порядке. Изменений не требуется.”?</p>
+</blockquote>
+
+<p>Ну в основном так и отвечает. Распознает кстати не плохо растения.</p>
+
+<p><strong>allex_step</strong> 24-07-2018</p>
+
+<p>ну… попробуем, будем поДсмотреть (поставил 2.1.1 т.к. выше не влезает)</p>
+
+<p><strong>Vad</strong> 24-07-2018</p>
+
+<p>хрень….</p>
+
+<p><a href="http://softobase.com/ru/article/igry-tamagochi-na-android-luchshaya-semerka/android" target="_blank">это</a> лучше</p>
+
+<p>:D ;D</p>
+
+<p><strong>Letalis</strong> 28-07-2018</p>
+
+<p>Сегодняшний… урожай О_О</p>
+
+<p><a href="https://t.me/ponics_ru_files/18479" target="_blank"><img src="/imagehost2/thumbs/00204c40463f52c76fd94a09b47eb9ac.jpg" alt="" /></a></p>
+
+<p>этот монстр озверел просто)))</p>
+
+<p><strong>simiko</strong> 28-07-2018</p>
+
+<p>Отлично! <em>8)</em></p>
+
+<p>Выращиваю овощи первый год, но уже понял, что хороший урожай = хороший солнечный (любой хороший)) свет))</p>
+
+<p>Хороший свет “прощает” очень многое.</p>
+
+<p>Даже принцип бочки (как его там Либиха, Либниха, не помню)) при наличии хорошего света не очень работает.</p>
+
+<p>Удачи Вам.</p>
+
+<p>Так держать))</p>
+
+<p><strong>Wildcat</strong> 29-07-2018</p>
+
+<p>Работает он, замечательно работает. Просто в большинстве бочек плашка с надписью “Свет” изначально не просто ниже остальных, а выбита напрочь :)</p>
+
+<p><strong>simiko</strong> 29-07-2018</p>
+
+<p>Да мне кажется что свет и не плашка вовсе, а количество поступающей в бочку воды))</p>
+
+<p><strong>Letalis</strong> 06-08-2018</p>
+
+<p>Стоило только отвлечься на “по делам” на пару-тройку дней, балконный монстр победил с разгромным счетом в неравном бою с оставленным на “на хозяйстве” супругом, выпил до дна 12 литров раствора за день и рухнул под тяжестью плодов победы…</p>
+
+<p><a href="https://t.me/ponics_ru_files/18480" target="_blank"><img src="/imagehost2/thumbs/viberimage.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18481" target="_blank"><img src="/imagehost2/thumbs/viberimage1.jpg" alt="" /></a></p>
+
+<p>Никому не доверить своих <del>экспериментальных монстров</del> подопечных Т_Т</p>
+
+<p><strong>Letalis</strong> 06-08-2018</p>
+
+<p>Проезжая мимо поля пшеницы давече, вот такой персонаж приглючился, потом вечерком набросала как смогла… сельское хозяйство - это наверно не мое, оно меня пугает х)</p>
+
+<p><a href="https://t.me/ponics_ru_files/18482" target="_blank"><img src="/imagehost2/thumbs/viberimageqfq.jpg" alt="" /></a></p>
+
+<p>вот гидропоника - другое дело х)</p>
+
+<p><strong>Letalis</strong> 21-09-2018</p>
+
+<p>https://lifehacker.ru/mify-o-gmo/</p>
+
+<p>и немного вкусноты в каментах)</p>
+
+<p><strong>Letalis</strong> 19-11-2018</p>
+
+<p><img src="https://i.postimg.cc/xX6KJ6J2/2.jpg" alt="" /></p>
+
+<p><img src="https://i.postimg.cc/5Hj8w8LF/3.jpg" alt="" /></p>
+
+<p>Зимний сезон в разгаре, обычно пряные травки сгрызаются по мере подрастания, а тут базилик до лампы дорос в кои-то веки)</p>
+
+<p><strong>Letalis</strong> 15-01-2019</p>
+
+<p><img src="https://i.postimg.cc/vDp6TvLF/viber-image3.jpg" alt="" /></p>
+
+<p>не лето, но приятно)</p>
+
+<p><strong>Likl</strong> 15-01-2019</p>
+
+<p>В январе !!! <em>Dance</em></p>
+
+<p>Такое даже в салат жалко :(</p>
+
+<blockquote>
+  <p>https://lifehacker.ru/mify-o-gmo/и немного вкусноты в каментах)</p>
+</blockquote>
+
+<p>Да, некоторые комментарии особенно “шедевральны” как и сама статья. <em>sos</em></p>
+
+<p><strong>Letalis</strong> 24-09-2019</p>
+
+<p>Остатки былой роскоши летнего периода) Ампельный феникс одним кустом оттарабанил все закатки, нуждающиеся в остром перчике… Рос в кокосе, на растворе радостно отрастил метровые плети при заявленной высоте куста в 45 см, жаль фоток нет - на балконе не развернешься для хорошей общей фотки, слишком много всего там росло х) Ликвидирован из-за холодов, в планах - найти такому красавцу место в комнате и растить как многолетник. Что примечательно, на солнышке плоды у куста узкие вытянутые, в тенечке короткие и пузатые, но острые вроде одинаково) Смело рекомендую сорт начинающим перцеводам (типа меня) - нетребователен к уходу, радостно лопает почти любой растворчик (уехал с полок магазинов гринворлд, догонялись чем могли), спокойно воспринял не самое теплое лето.</p>
+
+<p><img src="https://i.postimg.cc/jnRXkMLs/viber-2019-09-24-13-57-32.jpg" alt="" /></p>
+
+<p><strong>Letalis</strong> 10-12-2019</p>
+
+<p><img src="https://i.postimg.cc/T5m8nVYx/viber-2019-12-10-21-49-29.jpg" alt="" /></p>
+
+<p>Салатик давно на потоке, но обычно выглядит непрезентабельно полуобгрызено… А тут что-то я его загустила и буйная шапка нежной зелени лезет из рассадного отделения на декабрьское (отсутствующее) солнышко х)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

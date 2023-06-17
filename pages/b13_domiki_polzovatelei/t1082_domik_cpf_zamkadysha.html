@@ -1,0 +1,2440 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>домик cpf (ЗаМКАДыша) | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="домик cpf (ЗаМКАДыша)">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">домик cpf (ЗаМКАДыша)</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>cpf</strong> 26-06-2011</p>
+
+<p>Всем присутствующим - Здравствуйте!</p>
+
+<p>Спасибо, что посетили мою лачужку. Надеюсь, найдете для себя что-нибудь полезное, а я всегда гостям - рад (даже иногда незванным :D</p>
+
+<p>Занятием, которому посвящен форум, я увлекся относительно недавно. Просматривать формуы по теме стал примерно с начала этого года, а решился попробовать сам что-нибудь хорошее вырастить только в феврале этого года. Начал с просмотра теории, конструкций реализованных установок, практики более опытных форумчан и т.п. (вообщем-то как и большинство здесь присутствующих). В марте стал собирать свою установку на лестничной клетке (но, к сожалению, из-за личных обстоятельств до сих пор ее не закончил:(, надеюсь что в августе она начнет полноценно работать:)</p>
+
+<p>А пока решил смастырить Light-балконный вариант установки, для проведения экспериментов по выращиванию стойких детерминантных томатиков:)</p>
+
+<p>Поскольку, на дворе уже стоял май, и времени на эксперименты по проращиванию семян уже не было, я решил воспользоваться трудами моей родной сестренки и изъял у нее с балкона ящик с подрастающими помидорками (балконное чудо-юдо и чет-такое “Московское …”:)</p>
+
+<p>Пару контрольных экземпляров я пересадил в установку (естественно после промывки корней, естественно с повреждениями:(, а остальные 3 оставил там, где они “родились” - в балконном ящике, для контроля.</p>
+
+<p>Кроме того, я решил попробовать клонировать томатики с помощью 3-х пасынков, по методике, описанной в данном ресурсе. Опыт прошел успешно: клоны дали корни на 5-й день и сейчас питаются в установке, показывая, что пока им, вроде, все нравится.</p>
+
+<p>Несколько фото:</p>
+
+<p>зима- начало</p>
+
+<p><a href="https://t.me/ponics_ru_files/5595" target="_blank"><img src="/imagehost/thumbs/cimg2630.jpg" alt="" /></a></p>
+
+<p>укарденные у сестры помидоры:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5596" target="_blank"><img src="/imagehost/thumbs/cimg2893.jpg" alt="" /></a></p>
+
+<p>закупленные помпы для установок (повезло: в секции уцененки в окрестном магазине купил пару итальянских помп по цене китайских- работают отлично)</p>
+
+<p><a href="https://t.me/ponics_ru_files/5597" target="_blank"><img src="/imagehost/thumbs/cimg2892.jpg" alt="" /></a></p>
+
+<p>это - балконная установка:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5598" target="_blank"><img src="/imagehost/thumbs/cimg2894yzy.jpg" alt="" /></a></p>
+
+<p>это - молодые клоны:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5599" target="_blank"><img src="/imagehost/thumbs/cimg2895.jpg" alt="" /></a></p>
+
+<p>это - один из “старослужащих”:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5600" target="_blank"><img src="/imagehost/thumbs/cimg2896.jpg" alt="" /></a></p>
+
+<p>это- вид из спальной:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5601" target="_blank"><img src="/imagehost/thumbs/cimg2901.jpg" alt="" /></a></p>
+
+<p>это- корни:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5602" target="_blank"><img src="/imagehost/thumbs/cimg2930usu.jpg" alt="" /></a></p>
+
+<p>тоже установка :D</p>
+
+<p><a href="https://t.me/ponics_ru_files/5603" target="_blank"><img src="/imagehost/thumbs/120b.jpg" alt="" /></a></p>
+
+<p>на первый раз - хватит. Будут гости -буду постить дальше:)</p>
+
+<p><strong>caiman</strong> 26-06-2011</p>
+
+<p>Гости будут обязательно, куда же домик без гостей и “застолий”….. Скучно не будет точно…. Так что с новосельем :D</p>
+
+<p><strong>Mole_Garden</strong> 26-06-2011</p>
+
+<p><em>8)</em> ну что же, отличное начало, отличная установка, отличные помидоры и отличное оборудование. <em>Bravo</em></p>
+
+<p><strong>Юрий Иваныч</strong> 26-06-2011</p>
+
+<p>С новосельем!!! <em>Bravo</em> Гости будут обязательно. Люди здесь хорошие, добрые и отзывчивые. Удачи.</p>
+
+<p><strong>Acc</strong> 26-06-2011</p>
+
+<p>С новосельицем <em>8)</em> Нашего полку прибыло :)Периодика? Красиво построено. Расскажите подробнее (сифон видел) климат, насос, раствор… Удач, успехов, как говорится: в добрый путь <em>Bravo</em></p>
+
+<p><strong>cpf</strong> 02-07-2011</p>
+
+<p>Добрый день всем.</p>
+
+<p>Спасибо тем, кто заглянул. (Особенно приятно видеть человека-Асс из Севастополя- Родины моего отца и ближайшей родни по его линии. Очень люблю этот город …:)</p>
+
+<p>Сначала отвечу на вопросы по балконной установке:</p>
+
+<p>насос - Sicce PLK210, производительность 2500л/ч, h=2,5м - параметры, так сказать, “на перспективу”. Купил за 1200руб в садовом центре в отделе уцененки, очень удобен длинный 10м шнур. Работает бесшумно и мощно. Трубу установки 160 мм, объемом около 20л наполняет меньше чем за 1мин. Слив при выключенном насосе происходит еще быстрее. При включенном, слив - около 2-3 мин, далее происходит переход в режим проточки, перемешивания и аэрации (т.е. сифон не “запирается” до конца, и сколько раствора поступает-столько и сливается). В таком режиме установка находится до момента выключения таймера. Весь цикл - минут 10.</p>
+
+<p>Раствор использую - для новичков:</p>
+
+<p>жидкое удобрение GreenWorld Hydrokultur + Сульфат магния (25% в ампулах из аптеки)+Хлорид кальция (10% в ампулах из аптеки). Аптечные препараты купил т.к. не смог быстро купить кальциевую и калиевую селитру. Кальциевую вообще трудно найти - а то, что видел - в упаковках по 25кг, без машины (которая 3-й месяц в ремонте:( утащить к себе в “заМКАДную нору” - сложно :)</p>
+
+<p>Кроме того, решил, что попробовать можно и на таком “компоте”.</p>
+
+<p>Состав раствора более подробно (40л) : 100 мл GW Hk + 2 ампулы по 10 мл MgSO4+3ампулы по 10мл СаCl2. По моим прикидкам - есть легкий передоз по хлору и недостаток по кальцию и азоту. В нашей водопроводной, воде (по словам местного установщика осмос-фильтров) - сильное превышение ПДК по кальцию и магнию, поэтому решил, что буду готовить раствор на водопроводной воде. Кроме того, знаю, что для водоподготовки в нашем городке не используется хлор, а применяется озонирование артезианской воды.</p>
+
+<p>Параметры раствора: ph=6.4-6.5, ppm=1400-1500. Параметры воды: ph=7.3-7.4, ppm=300-350. Измеряю приборами Milwaukee ph600 и CD97. Покупал здесь: <a href="http://www.moemgorod.com/index.php?categoryID=101&amp;category_slug=tds-ec-ph-orp-meters" target="_blank">http://www.moemgorod.com/index.php?categoryID=101&amp;category_slug=tds-ec-ph-orp-meters</a> -работают по предоплате, но четко (дольше всего ждал пока курьер почты EMS России соизволит привезти мой заказ)- рекомендую. Кислотность понижаю электролитом.</p>
+
+<p>Фото помпы и раствора в баке:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5604" target="_blank"><img src="/imagehost/thumbs/cimg2985.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5605" target="_blank"><img src="/imagehost/thumbs/cimg2986.jpg" alt="" /></a></p>
+
+<p><strong>cpf</strong> 02-07-2011</p>
+
+<p>Теперь о сложностях, без которых, как я понял, обойтись никак нельзя :-\</p>
+
+<p>Помидорки в моей установке - существенно отстают в развитии от своих родных братьев в балконном ящике. <em>???</em></p>
+
+<p>Даже принимая во внимание, что они прошли процесс пересадки с повреждением корневой, потом неделю жили только на воде и еще неделю, постепенно выходили из режима голодания (плавно повышалась концентрация раствора) - считаю, что это не нормально (что-то я делаю не так :-\ ).</p>
+
+<p>Предположение первое: беда с режимами поливов - сначала использовал режим с 7 до 22 часов с интервалом 3 часа. Пока было не очень жарко - помидорки чуствовали себя хорошо - зацвели, и я уже думал о будущем урожае <em>Bravo</em>.Однако, как только стало жарко - томатики получили, видимо, тепловой удар - пришел домой, а они поникли/повяли и пришлось срочно их откачивать-реанимировать непрерывными поливами с интервалом 15 мин (Слава Богу - быстро оклимались). Однако, шок, видимо, не прошел для них даром - половина цветков осыпалась, часть листьев начала сохнуть на кончиках, дольнейший рост - приостановился.</p>
+
+<p>Грустные фото :( :</p>
+
+<p><a href="https://t.me/ponics_ru_files/5606" target="_blank"><img src="/imagehost/thumbs/cimg2979.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5607" target="_blank"><img src="/imagehost/thumbs/cimg2984.jpg" alt="" /></a></p>
+
+<p>малыши-клоны тоже страдают :'( :</p>
+
+<p><a href="https://t.me/ponics_ru_files/5608" target="_blank"><img src="/imagehost/thumbs/cimg2976.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5609" target="_blank"><img src="/imagehost/thumbs/cimg2995.jpg" alt="" /></a></p>
+
+<p>а в это время, в балконном ящике - все нормально :) :</p>
+
+<p><a href="https://t.me/ponics_ru_files/5610" target="_blank"><img src="/imagehost/thumbs/cimg3008.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5611" target="_blank"><img src="/imagehost/thumbs/cimg3011.jpg" alt="" /></a></p>
+
+<p>Сейчас сделал чаще режим полива (в самую жару - каждый час). выглядит так:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5612" target="_blank"><img src="/imagehost/thumbs/cimg3031.jpg" alt="" /></a></p>
+
+<p><strong>caiman</strong> 02-07-2011</p>
+
+<p>Томаты парни, хоть и выносливые, но все равно - это не саксаул… Перегрев - поникшие листья, вечером в тени - голову поднимают и радуются. При пересадке могла быть повреждена корневая, стресс и т.д, отсюда и опавшие цветки и листья…. Я в таких случаях пользуюсь “Reanimator” ProBioTech, или гуматом натрия, или любым стимулятором, но осторожно, - помогает…….</p>
+
+<p>Все будет хорошо, а поврежденные листья можно(желательно) удалить….</p>
+
+<p>Удачи…</p>
+
+<p><strong>cpf</strong> 02-07-2011</p>
+
+<p>Помидорки в установке - отстают от собратьев в балконном ящике.</p>
+
+<p>Предположение второе: микроклимат или раствор (что-то не так) :-\</p>
+
+<p>Может быть Солнце начинает жарить раньше молодцов в установке из-за расположения на балконе (в угол с ящиком - Солнышко заглядывает на час-два попозже, только часов в 15-16)? На установку Солнце начинает светить примерно в 14. Светит сейчас примерно до 20.30. На балконе два крайних окна раскрыты настеж целый день. Иногда еще происходит небольшое затенение сохнущим бельем :)</p>
+
+<p>Решил поставить дополнительный “ветерок”, с отдельным таймером:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5613" target="_blank"><img src="/imagehost/thumbs/cimg3023pdp.jpg" alt="" /></a></p>
+
+<p>Может еще слишком большая для такой жары концентрация раствора? Сейчас днем - 33, а на балконе может быть и больше…</p>
+
+<p>Может разбавить растворчик немного осмос-водичкой (ph=6.7, ppm=35-40)?</p>
+
+<p>Еще несколько фоток мелких помидорчиков на одном кусте из установки (кусты второго сорта - “молчат” и в ящике и в установке, может им не нравится жара?)</p>
+
+<p><a href="https://t.me/ponics_ru_files/5614" target="_blank"><img src="/imagehost/thumbs/cimg3014.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5615" target="_blank"><img src="/imagehost/thumbs/cimg3030.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5616" target="_blank"><img src="/imagehost/thumbs/cimg3033.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5617" target="_blank"><img src="/imagehost/thumbs/cimg3009.jpg" alt="" /></a></p>
+
+<p><strong>cpf</strong> 02-07-2011</p>
+
+<blockquote>
+  <p>Томаты парни, хоть и выносливые, но все равно - это не саксаул… Перегрев - поникшие листья, вечером в тени - голову поднимают и радуются. При пересадке могла быть повреждена корневая, стресс и т.д, отсюда и опавшие цветки и листья…. Я в таких случаях пользуюсь “Reanimator” ProBioTech, или гуматом натрия, или любым стимулятором, но осторожно, - помогает…….</p>
+
+  <p>Все будет хорошо, а поврежденные листья можно(желательно) удалить….</p>
+
+  <p>Удачи…</p>
+</blockquote>
+
+<p>Спасибо, за совет - попробую найти “реаниматор” :) Кроме того, сейчас сообщили по телевизору, что предстоящая неделя в Мск будет дождливая и со шкваловым ветром - жара уходит. Уфф..</p>
+
+<p><strong>Acc</strong> 02-07-2011</p>
+
+<p>:)Спасибо. Томаты солнышко очень любят. Вероятно проблемы с корневой, а без сильных корней урожая не жди. Превикур в таких случаях очень хорошо. Наши гуру подскажут поточнее ;)</p>
+
+<p><strong>caiman</strong> 02-07-2011</p>
+
+<p>……(кусты второго сорта - “молчат” и в ящике и в установке, может им не нравится жара?)</p>
+
+<p>Дело не в жаре, а в сорте по степени созревания… Томаты бывают суперранние, ранние, среднеспелые, поздние. Вот и посмотрите какой у вас второй сорт и делайте вывод, поздний сорт не может цвести одновременно с ранним….</p>
+
+<p><strong>cpf</strong> 02-07-2011</p>
+
+<blockquote>
+  <p>Дело не в жаре, а в сорте по степени созревания… Томаты бывают суперранние, ранние, среднеспелые, поздние. Вот и посмотрите какой у вас второй сорт и делайте вывод, поздний сорт не может цвести одновременно с ранним….</p>
+</blockquote>
+
+<p>Да, думаю, что так и есть… Смутило только, что куст в установке, вроде, затеял цвести, а потом вдруг сбросил все цветки и “замолчал…”, а его собрат в ящике дает только “ботву”. Но похоже, что сорт действительно более позднего созревания - будем ждать. Спасибо за участие…</p>
+
+<p>Сейчас подрастают еще три клона - хочу их поселить еще в одну установку “на подпоре”, с аэрацией - подробности позднее… ;)</p>
+
+<p><a href="https://t.me/ponics_ru_files/5618" target="_blank"><img src="/imagehost/thumbs/cimg2997.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5619" target="_blank"><img src="/imagehost/thumbs/cimg2998.jpg" alt="" /></a></p>
+
+<p><strong>caiman</strong> 02-07-2011</p>
+
+<p>Ну, если такие дела, то надо сделать упор в растворе на калий и фосфор, а азота поменьше….. Должно помочь…</p>
+
+<p><strong>cpf</strong> 03-07-2011</p>
+
+<blockquote>
+  <p>:)Спасибо. Томаты солнышко очень любят. Вероятно проблемы с корневой, а без сильных корней урожая не жди. Превикур в таких случаях очень хорошо. Наши гуру подскажут поточнее ;)</p>
+</blockquote>
+
+<p>Чет задумался я :-\ : … “а что может быть не так с корневой”? И…</p>
+
+<p>…решил сделать такой апгрейд (установил экран от солнечного света-тепла):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5620" target="_blank"><img src="/imagehost/thumbs/cimg3078.jpg" alt="" /></a></p>
+
+<p>Надеюсь, что теперь труба будет меньше нагреваться на солнечном свету, и это благоприятно скажется на работе корневой системы (и, в целом, на моих томатиках :)</p>
+
+<p>:-X они вроде пошли завязываться:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5621" target="_blank"><img src="/imagehost/thumbs/cimg3079.jpg" alt="" /></a></p>
+
+<p>:D “Молчать! Рыбы!”…</p>
+
+<p><a href="https://t.me/ponics_ru_files/5622" target="_blank"><img src="/imagehost/thumbs/cimg3072.jpg" alt="" /></a></p>
+
+<p>“щас спою…”</p>
+
+<p><a href="https://t.me/ponics_ru_files/5623" target="_blank"><img src="/imagehost/thumbs/cimg3076.jpg" alt="" /></a></p>
+
+<p>:D</p>
+
+<p>а это- “дела в ящике” :) :</p>
+
+<p><a href="https://t.me/ponics_ru_files/5624" target="_blank"><img src="/imagehost/thumbs/cimg3080.jpg" alt="" /></a></p>
+
+<p>Продолжение следует…</p>
+
+<p><strong>Acc</strong> 03-07-2011</p>
+
+<p>Прикольный у Вас аквариум <em>8)</em> Это скока там литров, интересно? Лялиус красавчег, петушок-боец пооптрепался немного :D, а термометр этот фтопку: ерунда, все врет. Эх, люблю я это аквариумное дело с детства балуюсь</p>
+
+<p><a href="https://t.me/ponics_ru_files/5625" target="_blank"><img src="/imagehost/thumbs/008.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 03-07-2011</p>
+
+<blockquote>
+  <p>Сейчас сделал чаще режим полива (в самую жару - каждый час). выглядит так:</p>
+
+  <p><img src="/imagehost/thumbs/cimg3031.jpg" alt="" /></p>
+</blockquote>
+
+<p>Судя по этой фотке ночью поливов нет? А почему?</p>
+
+<p><strong>Coccinella</strong> 04-07-2011</p>
+
+<p>Джентльмены, пожалуйста, имейте в виду, что вентилятор на балконе томаты (и прочие растения) не охлаждает, а сушит (на самом деле нановит вред растениям). Нельзя балкон сравнивать с гроубоксом, это по микроклимату и внутри, и снаружи разные “конструкции”.</p>
+
+<p>Если Вы уже сами заметили, что за мокрой простыней растениям не так жарко, то что Вас останавливает? Вывешивайте им в жаркую погоду каждое утро мокрую простыню. Томаты только обрадуются.</p>
+
+<p>И что за разговоры “первый сорт, второй сорт”. У каждого сорта есть название, желательно и самому его знать и окружающим сообщать.</p>
+
+<p>И последнее - а как таксочку зовут?</p>
+
+<p><strong>cpf</strong> 04-07-2011</p>
+
+<blockquote>
+  <p>Прикольный у Вас аквариум <em>8)</em> Это скока там литров, интересно? Лялиус красавчег, петушок-боец пооптрепался немного :D, а термометр этот фтопку: ерунда, все врет. Эх, люблю я это аквариумное дело с детства балуюсь</p>
+</blockquote>
+
+<p>Аквариум - настольный, подарок дочке на ДР. Всего 25л объема. Живут в нем 2 лялиуса и 3 петушка (одын самэц и две самочки:). Делали испанцы, кажется. В комплекте еще светодиодная подсветка и фильтр-аэратор.</p>
+
+<p><strong>cpf</strong> 04-07-2011</p>
+
+<blockquote>
+  <p>Судя по этой фотке ночью поливов нет? А почему?</p>
+</blockquote>
+
+<p>Почему то решил, что ночью растения должны спать :) Сейчас сам задумался: ПОЧЕМУ? Наверное, разок за ночь полить не мешает. Спасибо за замечание…</p>
+
+<p><strong>cpf</strong> 04-07-2011</p>
+
+<blockquote>
+  <p>Джентльмены, пожалуйста, имейте в виду, что вентилятор на балконе томаты (и прочие растения) не охлаждает, а сушит (на самом деле нановит вред растениям). Нельзя балкон сравнивать с гроубоксом, это по микроклимату и внутри, и снаружи разные “конструкции”.</p>
+</blockquote>
+
+<p>Спасибо, за замечание - просто во время, когда Солнце светит прямо на балкон - там душно-невозможно, даже с открытыми настеж окнами. Движение воздуха практически отсутствует. Поэтому я и решил создать “легкий бриз” :)</p>
+
+<blockquote>
+
+  <p>Если Вы уже сами заметили, что за мокрой простыней растениям не так жарко, то что Вас останавливает? Вывешивайте им в жаркую погоду каждое утро мокрую простыню. Томаты только обрадуются.</p>
+</blockquote>
+
+<p>Скажу жене, чтобы стирала чаще и побольше :))</p>
+
+<blockquote>
+  <p>И что за разговоры “первый сорт, второй сорт”. У каждого сорта есть название, желательно и самому его знать и окружающим сообщать.</p>
+</blockquote>
+
+<p>Я бы рад сообщить, но помидоры- ворованные (точнее изъятые именем Страшего Брата у своей родной сестренки :) , а она то ли от страха, то ли из вредности забыла название 2-го сорта. 1-й сорт - “Балконное Чудо” - уже начал плодоносить. Попробую все-таки выяснить забытое название (буду думать, как вернуть память сестре :D</p>
+
+<blockquote>
+  <p>И последнее - а как таксочку зовут?</p>
+</blockquote>
+
+<p>Таксу зовут Эдвин-Юджин-Кэролайл-Вундеркинд (это полное имя), сокращенно: Эдвин или Эдя, можно Эдисон (если обращаться к нему официально). Порода - кроличья, но, гад, отъелся до мини уже… :)</p>
+
+<p><strong>Coccinella</strong> 04-07-2011</p>
+
+<p>А вообще-то в очень сильную жару для растений на балконе бывает лучше, когда окна закрыты, а дверь в комнату (если она вообще после евроремонта осталась, конечно) открыта. Другое дело, как это сказывается на самочувствии домочадцев :)</p>
+
+<p>Еще вариант “для растений” - окна закрыть и изнутри повесить на них белую простыню (как более эстетичный вариант, белые жалюзи ролло). Света хватит, а температура и влажность воздуха улучшится. А то вентиляторный бриз в жару только усиливает транспирацию, но при закрытых устьицах растений (они закрываются при низкой относительной влажности воздуха) может превратиться в суховей.</p>
+
+<p><strong>valery</strong> 04-07-2011</p>
+
+<blockquote>
+  <p>Скажу жене, чтобы стирала чаще и побольше :))</p>
+</blockquote>
+
+<p><em>8)</em> Правильно. Прекрасную половину обязательно нужно приобщать к гидропонике. А то у нас явное преобладание мужчин. Хотя может и не по “качеству”, а только по “количеству”…</p>
+
+<blockquote>
+
+  <p>буду думать, как вернуть память сестре :D</p>
+</blockquote>
+
+<p>Угостить мороженым, вырастить цветок и подарить Айфон.</p>
+
+<blockquote>
+
+  <p>Таксу зовут Эдвин-Юджин-Кэролайл-Вундеркинд (это полное имя), сокращенно: Эдвин или Эдя, можно Эдисон (если обращаться к нему официально). Порода - кроличья, но, гад, отъелся до мини уже… :)</p>
+</blockquote>
+
+<p><em>8)</em></p>
+
+<p><strong>cpf</strong> 09-07-2011</p>
+
+<p>Продолжаю “мучить” томатики. В контрольных ящиках - все более-менее красиво:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5626" target="_blank"><img src="/imagehost/thumbs/cimg3094.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5627" target="_blank"><img src="/imagehost/thumbs/cimg3095.jpg" alt="" /></a></p>
+
+<p>а в установке дела похуже :(:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5628" target="_blank"><img src="/imagehost/thumbs/cimg3097.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5629" target="_blank"><img src="/imagehost/thumbs/cimg3098.jpg" alt="" /></a></p>
+
+<p>хотя, я надеялся, что будет наоборот</p>
+
+<p>Не могу понять, что я делаю не так: растишки почти ничего не едят. Подлил только на прошлой неделе (когда была жара),</p>
+
+<p>примерно 4-5 литров водички, до контрольной отметки. Скорректировал ph и ppm, сейчас они такие:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5630" target="_blank"><img src="/imagehost/thumbs/cimg3106.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5631" target="_blank"><img src="/imagehost/thumbs/cimg3105.jpg" alt="" /></a></p>
+
+<p>и практически не меняются.</p>
+
+<p>температура днем сейчас в районе 23-25гр, ночью на балконе 18-20…</p>
+
+<p>еще смущает это (на нижних, старых листьях):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5632" target="_blank"><img src="/imagehost/thumbs/cimg3100.jpg" alt="" /></a></p>
+
+<p>и это (на другом кусте, другого сорта):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5633" target="_blank"><img src="/imagehost/thumbs/cimg3102.jpg" alt="" /></a></p>
+
+<p>кроме того, может быть “почикать” пасынков, хотя детерминантные томатики, вроде, сами себя могут отрегулировать как</p>
+
+<p>им нужно. Или им и мне нужны разные вещи? :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/5634" target="_blank"><img src="/imagehost/thumbs/cimg3099.jpg" alt="" /></a></p>
+
+<p>Подскажите мысли: как догнать и перегнать “ящичников”? <em>???</em> Может растворчик поменять (этому месяц примерно)?</p>
+
+<p><strong>nadnab</strong> 09-07-2011</p>
+
+<p>Я хоть и не АС еще в гидропонике, но на втором приборе это 400ppm, что на мой взгляд ничтожно мало для таких здоровяков. У меня вода из крана с большей концентрацией солей течет.</p>
+
+<p>Похоже больше на попытку выращивания на чистой воде (ох не кидайте в меня тапки, если я ошибся ))</p>
+
+<p>И еще…</p>
+
+<p>Характеристики TDS-метра Milwaukee CD97:</p>
+
+<p>Диапазон измерений: 0 - 1000 ppm</p>
+
+<p>Он вам не подходит, диапазон нужен от 0 до 5000 (или 10000 если вы будете готовить концентраты растворов)</p>
+
+<p>Увидел про поливы ночью? А нужно ? или вопрос наоборот - а все ли культуры нужно ночью поливать ?</p>
+
+<blockquote>
+  <p>Подскажите мысли: как догнать и перегнать “ящичников”? <em>???</em> Может растворчик поменять (этому месяц примерно)?</p>
+</blockquote>
+
+<p>Где то читал, что раствор желательно менять 1 раз в 2 недели, т.к. растения питаются не равномерно, и по истечению 2 недель у вас может быть большой концентрат одного элемента и недостача другого.</p>
+
+<p><strong>valery</strong> 09-07-2011</p>
+
+<p>Согласен с предыдущим “оратором” … :)</p>
+
+<p>Вот Вам, возможно, и часть ответа - почему в ящике лучше … Видимо в ящиках (почва, наверное) - они умудряются находить необходимое количество “питания”, а в “растворе” (точнее, как сказал nadlab - в “воде из под крана”) - с трудом.</p>
+
+<p>Борщик-то они похоже съели еще по жаре, на прошлой неделе (я имею в виду “корректор” рН и ррм :) ) - ну а саму тарелку из под борща - не трогают (месяц уже) …</p>
+
+<p>Вот и кажется, что - “не едят” … Но раз живы (да и выглядят вполне) - значит необходимый мизер все-таки находят …</p>
+
+<p>Вторая часть … Возможно, все-таки - поливы … Если столько раствора (воды) налить в ящики с почвой, возможно томаты в установке сразу станут выглядеть ЛУЧШЕ, чем их конкуренты в ящиках …</p>
+
+<p>Впрочем, это только ПРЕДПОЛОЖЕНИЯ … Вам на месте должно быть видней.</p>
+
+<p>А так … - Да вроде вполне неплохие у Вас томатики, не расстраивайтесь.</p>
+
+<p><strong>cpf</strong> 09-07-2011</p>
+
+<blockquote>
+  <p>Я хоть и не АС еще в гидропонике, но на втором приборе это 400ppm, что на мой взгляд ничтожно мало для таких здоровяков. У меня вода из крана с большей концентрацией солей течет.</p>
+
+  <p>Похоже больше на попытку выращивания на чистой воде (ох не кидайте в меня тапки, если я ошибся ))</p>
+</blockquote>
+
+<p>Ошиблись… Сейчас объясню: если внимательно приглядеться, вверху есть символы °E (которые обозначают ошибку в порядке,</p>
+
+<p>т.е. нехватка еще одного разряда). Я тоже ошибся, когда купил этот прибор (Вы справедливо заметили насчет диапазона измерений, заметил уже после того, как получил прибор), но потом обратил внимание на то, что при плавном повышении ppm раствора выше 1000, он продолжает измерять, но высвечивает эти символы. Конечно, такая работа с прибором - некорректна (уже заказал вот этот: <a href="http://www.moemgorod.com/index.php?productID=496" target="_blank">http://www.moemgorod.com/index.php?productID=496</a>), но пока, за неимением лучшего, пользуюсь этим.</p>
+
+<p>Все равно - Спасибо за ценные замечания. Думаю, что все-таки проблемы в концентрации раствора.</p>
+
+<p>А менять 40 литров раствора, для 5 растений, раз в 2 недели - мне кажется перебором :)</p>
+
+<p><strong>cpf</strong> 09-07-2011</p>
+
+<blockquote>
+  <p>Вторая часть … Возможно, все-таки - поливы … Если столько раствора (воды) налить в ящики с почвой, возможно томаты в установке сразу станут выглядеть ЛУЧШЕ, чем их конкуренты в ящиках …</p>
+</blockquote>
+
+<p>Вы считаете, что я их слишком часто поливаю? Я пробовал поливать их реже (примерно раз в 3 часа), так они сильно мучились от жары - приходилось экстренно “откачивать”, приходя домой после работы :)</p>
+
+<p><strong>nadnab</strong> 09-07-2011</p>
+
+<blockquote>
+  <p>А менять 45 литров раствора, для 5 растений, раз в 1-2 недели - мне кажется перебором:)</p>
+</blockquote>
+
+<p>Про 1 раз в неделю я не говорил.</p>
+
+<p>У самого объем есть в 35 литров - меняю через 3-4 недели (мусор накапливается, да иногда и слизь появляется)</p>
+
+<p><strong>begunok</strong> 09-07-2011</p>
+
+<p>у вас вполне взрослые томаты, и даже, забывая про то, что не очень понятна концентрация раствора, то при 25-30 градусов в день томатики должны выпивать пару литров в день.</p>
+
+<p>Посчитаем 2 литра в день на 5 растений =10 литров. Ваши 40 литров должны сьедаться за 4 дня</p>
+
+<p>Ну, возможно, это очень грубмо -может не 2 литра в день, а литр, но все равно 3-4 недели -это слишком долго.</p>
+
+<p>Вы уже не знаете, какие вещества будут в растворе через 5 дней, меняйте почаще раствор, попробуйте померять ЕС и все будет хорошо</p>
+
+<p><strong>cpf</strong> 09-07-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>А менять 45 литров раствора, для 5 растений, раз в 1-2 недели - мне кажется перебором:)</p>
+  </blockquote>
+
+  <p>Про 1 раз в неделю я не говорил.</p>
+
+  <p>У самого объем есть в 35 литров - меняю через 3-4 недели (мусор накапливается, да иногда и слизь появляется)</p>
+</blockquote>
+
+<p>исправил сообщение (раз в 2 недели)… Слизь - это от недостатка воздуха, наверное?</p>
+
+<p>У меня раствор успевает “обернуться” за каждый цикл работы таймера. При этом аэрируется, т.к. интенсивно пенится при сливе…</p>
+
+<p><a href="https://t.me/ponics_ru_files/5635" target="_blank"><img src="/imagehost/thumbs/cimg2928geg.jpg" alt="" /></a></p>
+
+<p>Запах гнили - отсутствует. Мусор будет накапливаться, если что-либо добавлять кроме воды (чтобы поддержать концентрацию), а я пока добавил только водичку… и томатики перестали кушать совсем :(. Наверное, прав Валерий - “скушали борщ” (вкусняшку), а тарелка осталась :)</p>
+
+<p><strong>cpf</strong> 09-07-2011</p>
+
+<blockquote>
+  <p>у вас вполне взрослые томаты, и даже, забывая про то, что не очень понятна концентрация раствора, то при 25-30 градусов в день томатики должны выпивать пару литров в день.</p>
+
+  <p>Посчитаем 2 литра в день на 5 растений =10 литров. Ваши 40 литров должны сьедаться за 4 дня</p>
+
+  <p>Ну, возможно, это очень грубмо -может не 2 литра в день, а литр, но все равно 3-4 недели -это слишком долго.</p>
+
+  <p>Вы уже не знаете, какие вещества будут в растворе через 5 дней, меняйте почаще раствор, попробуйте померять ЕС и все будет хорошо</p>
+</blockquote>
+
+<p>если бы они так кушали - я был бы СЧАСТЛИВ (наверное, как дедушка, <del>закормивший</del>, накормивший внуков до отвала :)</p>
+
+<p>Для моих “малоросликов”, думаю, 1 литр в день - предел возможностей… Раствор - поменяю завтра. Спасибо за участие.</p>
+
+<p><strong>valery</strong> 09-07-2011</p>
+
+<blockquote>
+  <p>Вы считаете, что я их слишком часто поливаю?</p>
+</blockquote>
+
+<p>Да нет, конечно. Я так вовсе НЕ считаю, поэтому и написал “возможно”. Просто “предположил”, причем “наобум”.</p>
+
+<p><strong>cpf</strong> 10-07-2011</p>
+
+<p>Ну, вот, - заменил растворчик. ;)</p>
+
+<p>Влил на 40л воды (ppm 350):</p>
+
+<p>5мл электролита H2SO4, чтобы опустить ph до 6,4,</p>
+
+<p>20мл Сульфата Магния (25% в ампулах),</p>
+
+<p>30мл Хлорида Кальция (10% в ампулах),</p>
+
+<p>200мл GW Hydrokultur - получилось 990 ppm - мало. Пришлось долить весь остаток GW (еще 10-15мл) - получилось 1200 ppm,ph=6,1</p>
+
+<p>Смутил немного осадок в пузырьке GW Hydrokultur (слегка замутил раствор, когда доливал остатки).</p>
+
+<p>Теперь будем “ждать и надеяться” :) . В следующие выходные - выложу, что получилось.</p>
+
+<p><strong>nadnab</strong> 10-07-2011</p>
+
+<p>хоть и сужу по своему перцу.., но если все хорошо, после завтра будут серьезные изменения! УДАЧИ <em>8)</em></p>
+
+<p>А вот до след выходных ждать долго )</p>
+
+<p><strong>cpf</strong> 24-07-2011</p>
+
+<p>Прошло две недели…</p>
+
+<p>Сколь-нибудь значительного прогресса, к сожалению, не наблюдаю:</p>
+
+<p>помидорки в ящике по-прежнему - зеленые (один только сегодня чуть зажелтел):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5636" target="_blank"><img src="/imagehost/thumbs/cimg3448.jpg" alt="" /></a></p>
+
+<p>вторая ветка - подломилась :( (пришлось поставить на “растяжку”)</p>
+
+<p><a href="https://t.me/ponics_ru_files/5637" target="_blank"><img src="/imagehost/thumbs/cimg3449.jpg" alt="" /></a></p>
+
+<p>в установке - помидоры стали крупнее, но больше их не стало и по-прежнему - зеленые (а так хочется их попробовать :) )</p>
+
+<p><a href="https://t.me/ponics_ru_files/5638" target="_blank"><img src="/imagehost/thumbs/cimg3450.jpg" alt="" /></a></p>
+
+<p>правда, “неизвестный” сорт - зацвел (и в установке и в ящике), но, боюсь, что при такой жаре (больше 30, а на балконе, на Солнышке, думаю, все 40) - все будет впустую :(</p>
+
+<p><a href="https://t.me/ponics_ru_files/5639" target="_blank"><img src="/imagehost/thumbs/cimg3451.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5640" target="_blank"><img src="/imagehost/thumbs/cimg3452.jpg" alt="" /></a></p>
+
+<p>Режимы полива выставил такие :</p>
+
+<p><a href="https://t.me/ponics_ru_files/5641" target="_blank"><img src="/imagehost/thumbs/cimg3453.jpg" alt="" /></a></p>
+
+<p>Раствора пьют 2л за 2-3 дня (в основном, воду), ppm держу 1200-1400, ph 5,7-6.0</p>
+
+<p>Борюсь с жарой, вывешивая мокрое белье на балкон… все равно - ЖАРКО. Утром, пока Солнце на другой стороне дома, опрыскиваю томатики из пульверизатора, после процедуры “опыления” (тружусь “аки пчела” ;D )</p>
+
+<p>А это - кипрские бананки (и моя дочка, собирается их попробовать). Бананам явно че-то не хватает; у дочки, вроде, - все нормально:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5642" target="_blank"><img src="/imagehost/thumbs/cimg3201.jpg" alt="" /></a></p>
+
+<p><strong>cpf</strong> 28-07-2011</p>
+
+<p>Ну, вот - моя доча вернулась и … внесла коррективы в эксперимент: загубила накорню один куст из установки (который подавал хоть какие-то надежды на успешное завершение &gt;:(</p>
+
+<p><a href="https://t.me/ponics_ru_files/5643" target="_blank"><img src="/imagehost/thumbs/cimg3460.jpg" alt="" /></a></p>
+
+<p>это то, что удалось с него получить - “мои слезы” :'( на фоне “торжества сукулентов” :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/5644" target="_blank"><img src="/imagehost/thumbs/cimg3459.jpg" alt="" /></a></p>
+
+<p>а это - “я - теряю кооорни…” (слова из песни) :'(</p>
+
+<p><a href="https://t.me/ponics_ru_files/5645" target="_blank"><img src="/imagehost/thumbs/cimg3463.jpg" alt="" /></a></p>
+
+<p>“обидно чесслово”, особенно если учесть, что вчера добавил калия в растворчик (все-таки -через сульфат), и температура сегодня упала (прошли дожди с грозами)…</p>
+
+<p>…а ящик - пока цел, и начал краснеть:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5646" target="_blank"><img src="/imagehost/thumbs/cimg3461.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5647" target="_blank"><img src="/imagehost/thumbs/cimg3462.jpg" alt="" /></a></p>
+
+<p>может все-таки удастся попробовать помидорок ? <em>Wall</em></p>
+
+<p><strong>Rossich</strong> 29-07-2011</p>
+
+<blockquote>
+  <p>Ну, вот - моя доча вернулась и … внесла коррективы в эксперимент:</p>
+</blockquote>
+
+<p>Я бы не пробовал и доче не давал.. конечно Я не провидец, но передоз азота и жирование налицо….есть прибор нитрачек, советую прикупить чтобы не стать жертвой эксперимента… Простите если что не так… Мнение субъективно и без претензий.</p>
+
+<p><strong>Coccinella</strong> 29-07-2011</p>
+
+<p>Да ладно Вам :) Тут Еврокомиссия собралась нитратные нормы на рукколу вводить (6 тыс мг/кг, если кого интересует), так голландцы уже засуетились, когда их диетологи повысят рекомендуемые нормы потребления нитратов :)? Диетологи, правда, ответили, что пока результатов исследований не будет, рекомендации тоже никто пересматривать не станет.</p>
+
+<p>Кстати о нитрачеке, мне попадались пару лет назад интересные исследования голландцев о коррекции доз азотного питания земляники по содержанию нитратов в черешках листьев. На картофеле это уже применяется давно и довольно широко.</p>
+
+<p><strong>SergF</strong> 29-07-2011</p>
+
+<p>Если по рынку пройти с этим приборчиком то наверное много интересного будет, я вчера томатики видел размером с голову, видимо совсем без нитратов :) сейчас много мини-рынков развелось, где народ торгует тем что вырастил сам, очень сомневаюсь что бабушка из глубокой станицы точно дозирует удобрения, раньше она навозом да золой удобряла а сейчас живность в хозяйстве редкость, соседка показала пакет какой надо купить в магазине и сыпать под куст и все…</p>
+
+<p><strong>cpf</strong> 30-07-2011</p>
+
+<blockquote>
+  <p>[Я бы не пробовал и доче не давал.. конечно Я не провидец, но передоз азота и жирование налицо….есть прибор нитрачек, советую прикупить чтобы не стать жертвой эксперимента… Простите если что не так… Мнение субъективно и без претензий.</p>
+</blockquote>
+
+<p>Спасибо за мнение (я сам тоже пришел к такому выводу). Попробую найти приборчик (на будущее), чтобы перевести эксперимент на следующую стадию (и, заодно, знать ситуацию с качеством продуктов “с рынка” :)</p>
+
+<p><strong>cpf</strong> 08-10-2011</p>
+
+<p>Ну что ж, осень, похоже, вступает в свои права - сейчас наступили последние теплые деньки… Эксперимент подходит к завершению:</p>
+
+<p>1-й урожай уже собрали и скушали (в-основном с “контрольного ящика”):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5648" target="_blank"><img src="/imagehost/thumbs/cimg3510.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5649" target="_blank"><img src="/imagehost/thumbs/cimg3511.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5650" target="_blank"><img src="/imagehost/thumbs/cimg3512.jpg" alt="" /></a></p>
+
+<p>те, “кто - в трубе” - жируют…(точнее жировали,в августе, посадил только “на воду”, без хлеба):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5651" target="_blank"><img src="/imagehost/thumbs/cimg3526.jpg" alt="" /></a></p>
+
+<p>2-й урожай, сейчас это выглядит так:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5652" target="_blank"><img src="/imagehost/thumbs/cimg3707.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5653" target="_blank"><img src="/imagehost/thumbs/cimg3710.jpg" alt="" /></a></p>
+
+<p>те, что поменьше - это “клоны в 3-м поколении” (потомки тех, кого дочка поломала) :)</p>
+
+<p>сегодня устроил им “парикмахерскую”:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5654" target="_blank"><img src="/imagehost/thumbs/cimg3709.jpg" alt="" /></a></p>
+
+<p>в ящике - тоже “пыжутся из последних сил”:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5655" target="_blank"><img src="/imagehost/thumbs/cimg3706.jpg" alt="" /></a></p>
+
+<p>…</p>
+
+<p>на лестничной клетке - все никак не закончу “лестничного монстра”, соседи уже - волнуются, интересуются, когда это заработает:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5656" target="_blank"><img src="/imagehost/thumbs/cimg3711.jpg" alt="" /></a></p>
+
+<p>…</p>
+
+<p>А я, как толстый лев (т.е. Лев Толстой) - опять хочу в деревню. :( Даже несмотря на то, что “кака-я-то фигня” съела всю капусту подчистую:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5657" target="_blank"><img src="/imagehost/thumbs/cimg3480.jpg" alt="" /></a></p>
+
+<p>и больше там ничего съедобного не осталось:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5658" target="_blank"><img src="/imagehost/thumbs/cimg3488.jpg" alt="" /></a></p>
+
+<p>…</p>
+
+<p>а за окном , теперь-закаты (сегодня тоже пофоткаю):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5659" target="_blank"><img src="/imagehost/thumbs/cimg3663.jpg" alt="" /></a></p>
+
+<p><strong>cpf</strong> 12-10-2011</p>
+
+<p>Чет решил проверить свой словарный запас и прошел тест:</p>
+
+<p><a href="http://www.joksland.ru/test/zapas.php" target="_blank">http://www.joksland.ru/test/zapas.php</a></p>
+
+<p>Результат разачаровал: :-\</p>
+
+<p>ответил правильно на 29 вопросов из 35!</p>
+
+<p><a href="http://www.joksland.ru/test/zapas2.php" target="_blank">http://www.joksland.ru/test/zapas2.php</a></p>
+
+<p>16 вопросов из 21!</p>
+
+<p><strong>SergF</strong> 12-10-2011</p>
+
+<p>Да намана! у меня 30 из 35 и 15 из 21… совсем не разочарован :) вот ежели б меньше половины то да :D</p>
+
+<p><strong>valery</strong> 12-10-2011</p>
+
+<p><em>8)</em></p>
+
+<p>И я тоже одно слово угадал … :o</p>
+
+<p><strong>Coccinella</strong> 12-10-2011</p>
+
+<p>Cpf, похоже, что Вашу капусту сгубил бактериоз, но что касается “останков” огорода, то было бы неплохо их сейчас опрыснуть раундапом. Зачем Вам сорняки плодить?</p>
+
+<p><strong>cpf</strong> 12-10-2011</p>
+
+<p>Спасибо, уважаемая Coccinella, поеду в 20-х числах - опрыскивать и “сажать горчицу” :) Заодно, “дерну” несколько кустов земляники для дальнейших экспериментов и заложу их в холодильник на пару месяцев.</p>
+
+<p><strong>cpf</strong> 24-12-2011</p>
+
+<p>Ну вот: “Пришла беда - откуда не ждали!” :(</p>
+
+<p>После пересадки кустика помидорчиков с балкона на подоконник (всех прикончить - рука не поднялась)- обнаружилась следующая гадость:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5660" target="_blank"><img src="/imagehost/thumbs/cimg3785.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5661" target="_blank"><img src="/imagehost/thumbs/cimg3789.jpg" alt="" /></a></p>
+
+<p>из них какие-то мошки получаются…</p>
+
+<p>Чем бороться с этой “бедой” (чтобы никто не пострадал)? <em>???</em></p>
+
+<p>Можно, конечно, “биологическим оружием” с дачи ( :D) :</p>
+
+<p><a href="https://t.me/ponics_ru_files/5662" target="_blank"><img src="/imagehost/thumbs/cimg3676.jpg" alt="" /></a></p>
+
+<p>но, уже - снег лежит… (все залегли спать… :))</p>
+
+<p><strong>valery</strong> 24-12-2011</p>
+
+<p>Ух ты … :o Букашки ! А это, случаем, не белокрылка какая-нибудь ?</p>
+
+<p><strong>андрей п</strong> 24-12-2011</p>
+
+<p>Она, родимая и есть, как это не прискорбно.</p>
+
+<p><strong>Coccinella</strong> 24-12-2011</p>
+
+<p>Это глобальное потепление! не иначе! Ей давно пора погибнуть от мороза!</p>
+
+<p>Итак, берется актара 2 г/л воды и поливается под корень. Урожай там намечается?</p>
+
+<p>Если, да, то все, что только можно, обирается перед обработкой и дозаривается с яблоками и бананами. Там срок ожидания большой, недели три до безопасного потребления пройдет, не меньше. Но Актара с белокрыдкой справится.</p>
+
+<p><strong>а-ну-ка</strong> 24-12-2011</p>
+
+<p>Какое мин. количество раствора актары под корень?Похожая ситуация,летающих убирал дихлофосом,а вот букашек….Зимуют укорененные пасынки.</p>
+
+<p><strong>Coccinella</strong> 25-12-2011</p>
+
+<p>Чтобы полить :), где-то 50 мл как минимум, можно больше, если растения не плодоносят.</p>
+
+<p><strong>а-ну-ка</strong> 25-12-2011</p>
+
+<blockquote>
+  <p>Чтобы полить :) где-то 50 мл как минимум, можно больше, если растения не плодоносят.</p>
+</blockquote>
+
+<p>Спасибо,у нас только появилась осенью(Одесская обл)В диковину,раньше не было.</p>
+
+<p><strong>cpf</strong> 26-12-2011</p>
+
+<p>Спасибо, Coccinella, Вы прям - наша скорая помощь $)(или баба-Наталья? :) )</p>
+
+<p><strong>Coccinella</strong> 26-12-2011</p>
+
+<p>Почему баба-Наталья? (я такой не знаю!) тогда уж баба-Яга :) Хотя предпочитаю позиционироваться, как леди :)</p>
+
+<p><strong>cpf</strong> 26-12-2011</p>
+
+<p>Это - у итальянцев, вместо “Деда-Мороза” (подарки дарит всякие…, на Рождество):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5663" target="_blank"><img src="/imagehost/thumbs/natale.jpg" alt="" /></a></p>
+
+<p><strong>aivar</strong> 26-12-2011</p>
+
+<blockquote>
+  <p>тогда уж баба-Яга :) Хотя предпочитаю позиционироваться, как леди :)</p>
+</blockquote>
+
+<p>в смысле Леди-Яга…? :o :o</p>
+
+<p>ой извините… вырвалось. :o :o</p>
+
+<p><strong>Coccinella</strong> 26-12-2011</p>
+
+<p>:D :D :D Нет, леди - Coccinella!</p>
+
+<p><strong>cpf</strong> 11-08-2012</p>
+
+<p>В этом году - продолжил “балконные” эксперименты. На этот раз, выбрал (почему-то) вот такой сорт:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5664" target="_blank"><img src="/imagehost/thumbs/cimg4862.jpg" alt="" /></a></p>
+
+<p>хотел посмотреть, как будут расти в моей балконной установке индетерминантные сорта.</p>
+
+<p>Начал поздно (в День Победы 9 Мая 2012 - “посеял” зернышки). Думаю, что начинать надо было раньше, иначе процесс цветения - пришёлся на самую жаркую пору и завязывание происходило с большим трудом (вместо 5-9 плодов на кисти 2-3, часто - вообще 0 :( )</p>
+
+<p><a href="https://t.me/ponics_ru_files/5665" target="_blank"><img src="/imagehost/thumbs/cimg4856.jpg" alt="" /></a></p>
+
+<p>Кроме того, уезжал на 2 недели в отпуск - и за помидорами смотрел (доливал воду) тесть, не имеющий никакого гидропонного опыта :) (зато в огороде - у него огромный “помидорный” опыт). Несколько фоток из Крыма, Кача:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5666" target="_blank"><img src="/imagehost/thumbs/cimg4598.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5667" target="_blank"><img src="/imagehost/thumbs/cimg4628.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5668" target="_blank"><img src="/imagehost/thumbs/cimg4662.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5669" target="_blank"><img src="/imagehost/thumbs/cimg4771.jpg" alt="" /></a></p>
+
+<p>Сегодня установка выглядит так:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5670" target="_blank"><img src="/imagehost/thumbs/cimg4854.jpg" alt="" /></a></p>
+
+<p>Вид из комнаты:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5671" target="_blank"><img src="/imagehost/thumbs/cimg4861.jpg" alt="" /></a></p>
+
+<p>Кое-что из того, что осталось из того, что завязалось :D</p>
+
+<p><a href="https://t.me/ponics_ru_files/5672" target="_blank"><img src="/imagehost/thumbs/cimg4857.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5673" target="_blank"><img src="/imagehost/thumbs/cimg4858.jpg" alt="" /></a></p>
+
+<p>Корни - все-таки добрались до “кухни”, жалко их обрезать :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/5674" target="_blank"><img src="/imagehost/thumbs/cimg4859.jpg" alt="" /></a></p>
+
+<p>А это - импровизированный увлажнитель-охладитель (особого толку, правда, не наблюдаю…):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5675" target="_blank"><img src="/imagehost/thumbs/cimg4860.jpg" alt="" /></a></p>
+
+<p>А это “братишка” в цветочном горшке - опыт моей жены:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5676" target="_blank"><img src="/imagehost/thumbs/cimg4853.jpg" alt="" /></a></p>
+
+<p>Как видно - ему тоже “пришлось не сладко”. Жарко и сухо…</p>
+
+<p>Резюме такое: все-таки на остекленной лоджии, на солнечной стороне - довольно тяжело получить оптимальные условия для выращивания (слишком высокая средняя температура и низкая влажность…). Буду думать - как исправить положение в будущем :-\</p>
+
+<p>НУ И НА ПОСЛЕДОК: Завтра исполняется 100лет Российской военной авиации (Поздравляю летчиков!) - несколько снимков из окошка, через стекло (ребятки - “разминаются” перед шоу):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5677" target="_blank"><img src="/imagehost/thumbs/cimg4864.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5678" target="_blank"><img src="/imagehost/thumbs/cimg4865.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5679" target="_blank"><img src="/imagehost/thumbs/cimg4866.jpg" alt="" /></a></p>
+
+<p><strong>orgail</strong> 11-08-2012</p>
+
+<p>корешеки через слив пролезли? :)</p>
+
+<p><strong>cpf</strong> 12-08-2012</p>
+
+<p>Угу, - там специально сделано было неплотно, чтобы остатки раствора сливались. Туда они и просунулись :D</p>
+
+<p><strong>ALB</strong> 12-08-2012</p>
+
+<p>может их не обрезать , а просто аккуратно вытянуть оттуда ? или доступа в ёмкость с корнями нету ?</p>
+
+<p><strong>Coccinella</strong> 12-08-2012</p>
+
+<p>Оставьте растение в покое! Если корням там комфортно, пусть растут. Если солоно - концентрация высокая - они сами передумают. Не надо поить лошадь насильно, еще взбрыкнет…</p>
+
+<p><strong>valery</strong> 12-08-2012</p>
+
+<blockquote>
+  <p>Не надо поить лошадь насильно, еще взбрыкнет…</p>
+</blockquote>
+
+<p>:D :D :D</p>
+
+<p><strong>artmaximus</strong> 12-08-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>Не надо поить лошадь насильно, еще взбрыкнет…</p>
+  </blockquote>
+
+  <p>:D :D :D</p>
+</blockquote>
+
+<p>:D :D :D <em>8)</em> <em>8)</em> <em>8)</em>…в самую “тему” <em>8)</em></p>
+
+<p><strong>cpf</strong> 08-09-2012</p>
+
+<p>Движусь к завершению сезона:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5680" target="_blank"><img src="/imagehost/thumbs/cimg4937.jpg" alt="" /></a></p>
+
+<p>еще пытаются созреть:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5681" target="_blank"><img src="/imagehost/thumbs/cimg4938.jpg" alt="" /></a></p>
+
+<p>сделал поливы пореже, и получил … дефицит калия <em>???</em>?:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5682" target="_blank"><img src="/imagehost/thumbs/cimg4939.jpg" alt="" /></a></p>
+
+<p>на старых листьях:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5683" target="_blank"><img src="/imagehost/thumbs/cimg4940.jpg" alt="" /></a></p>
+
+<p>в принципе, - все, что понадобилось для выращивания (главный компонент - форум ponics.ru <em>8)</em>):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5684" target="_blank"><img src="/imagehost/thumbs/cimg4943.jpg" alt="" /></a></p>
+
+<p>если бы еще справился с климатом на балконе… : :-\ …</p>
+
+<p>а это очередные суккуленты жены расцвели :-X:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5685" target="_blank"><img src="/imagehost/thumbs/cimg4874.jpg" alt="" /></a></p>
+
+<p><strong>а-ну-ка</strong> 08-09-2012</p>
+
+<p>Мраморность на нижних старых листьях-магний</p>
+
+<p><strong>cpf</strong> 09-09-2012</p>
+
+<p>Вышел погулять с собачкой, 50м от подъезда:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5686" target="_blank"><img src="/imagehost/thumbs/cimg4944.jpg" alt="" /></a></p>
+
+<p>вчера тоже пару штук подобрал (был не готов, ножа с собой не было, пришлось осторожно “выворачивать”).</p>
+
+<p>Грибов в этом году - много (грибников, правда, все равно больше :) )</p>
+
+<p>Весной, в деревеньке, когда ходили гулять с собачкой - во, кого нашли:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5687" target="_blank"><img src="/imagehost/thumbs/cimg4373.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5688" target="_blank"><img src="/imagehost/thumbs/cimg4385.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5689" target="_blank"><img src="/imagehost/thumbs/cimg4387.jpg" alt="" /></a></p>
+
+<p>было перебито крыло - пришлось привезти в Москву и сдать в орнитологическую клинику (сказали - что позаботятся… Надо наведаться - проверить :-)</p>
+
+<p><strong>valery</strong> 09-09-2012</p>
+
+<p><em>8)</em></p>
+
+<p>Замечательная птица.</p>
+
+<p><strong>orgail</strong> 09-09-2012</p>
+
+<p>у нас на даче такая же красавица “в гостях побывала”, правда здоровая слава богу</p>
+
+<p><strong>cpf</strong> 05-11-2012</p>
+
+<p>Как думаете, товарищи: “сворачиваться” в этом сезоне - или еще “помучать” томатики, чтобы дозрели?</p>
+
+<p>Ночная температура 9-10гр, дневная около 15 (отапливать лоджию электричеством - смысла особого не вижу),</p>
+
+<p>световой день - короткий: Восход 08:45, Заход 17:40… вообщем, “рубить” - жалко, но мучать - тоже зря не хочу…</p>
+
+<p>Что же делать? <em>???</em></p>
+
+<p><a href="https://t.me/ponics_ru_files/5690" target="_blank"><img src="/imagehost/thumbs/cimg4960.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5691" target="_blank"><img src="/imagehost/thumbs/cimg4963.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5692" target="_blank"><img src="/imagehost/thumbs/cimg4959.jpg" alt="" /></a></p>
+
+<p><strong>Юка</strong> 05-11-2012</p>
+
+<p>Сложно давать советы не зная ситуации,… помидорки очень живучи и плодоносят постоянно не один только летний сезон (мои на зиму в подвал переезжают), а у Вас , если бы стеклопакеты лоджию от улицы отделяли, то микроклимат создать было-бы много проще, жалко ведь таких красавиц ….да и смысл выращивания, наверное, в получении урожая в межсезонный период. “Думаю” - надо тёплый пол плюс добавить в огород “зелени” и лучок “ по Валерию” и лоджия оправдает затраты.</p>
+
+<p><strong>SergF</strong> 05-11-2012</p>
+
+<p>Пусть растут! У меня на даче перцы еще растут, а они более теплолюбивые…</p>
+
+<p><strong>valery</strong> 05-11-2012</p>
+
+<p>Если не планируете на это место пока никого … я бы оставил.</p>
+
+<p>( у меня “пенсионный фонд” раздувается прямо на глазах)</p>
+
+<p>Буквально днями “рубил долгожителей” :'( … Баклажановое дерево тащил из лотка … ощущение … что живую скотинку прибил ( в один момент показалось, что он … “упирается” … :'( :'( :'( )</p>
+
+<p>Плодоношения уже почти никакого, но я бы оставлял всех. Просто пришла пора сажать “новичков”, а … некуда.</p>
+
+<p><strong>cpf</strong> 09-02-2013</p>
+
+<p>Сегодня вышел проводить дочку в школу, заодно решил сфоткать наше чудо-юдо уличную светодиодную подсветку:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5693" target="_blank"><img src="/imagehost/thumbs/cimg5018.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5694" target="_blank"><img src="/imagehost/thumbs/cimg5027.jpg" alt="" /></a></p>
+
+<p>видно, что фотовспышка освещает лучше, чем эти “чудища” &gt;:(</p>
+
+<p>это обычные ДРЛки:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5695" target="_blank"><img src="/imagehost/thumbs/cimg5028.jpg" alt="" /></a></p>
+
+<p>(на заднем плане - светодиодный светильник на столбе)</p>
+
+<p><a href="https://t.me/ponics_ru_files/5696" target="_blank"><img src="/imagehost/thumbs/cimg5029.jpg" alt="" /></a></p>
+
+<p>а это - фонарные столбы со светодиодами:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5697" target="_blank"><img src="/imagehost/thumbs/cimg5019.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5698" target="_blank"><img src="/imagehost/thumbs/cimg5022.jpg" alt="" /></a></p>
+
+<p>а это - ДНАТы:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5699" target="_blank"><img src="/imagehost/thumbs/cimg5033.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5700" target="_blank"><img src="/imagehost/thumbs/cimg5031.jpg" alt="" /></a></p>
+
+<p>а это микс: ДРЛки + ДНАТы+ ледяной дождь прошел:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5701" target="_blank"><img src="/imagehost/thumbs/cimg5034.jpg" alt="" /></a></p>
+
+<p>резюме:</p>
+
+<ol>
+  <li>
+    <p>Все-таки ДНАТы - дают световой поток значительно больше</p>
+  </li>
+  <li>
+    <p>Зрительно свет воспринимается по-другому: светодиоды на столбах визуально - ярче (видимо из-за линз),</p>
+  </li>
+</ol>
+
+<p>но фототехника “считает” по-другому :) Думаю, что растишки - тоже … :D</p>
+
+<p>Вывод - ДНАТ (или ДНАЗ) - если нужно освещать площадь, СД - если нужно осветить локальный участок</p>
+
+<p><strong>Vad</strong> 09-02-2013</p>
+
+<p>д-ддаа….</p>
+
+<p>летом тяжко будет…</p>
+
+<p>это не освещение.. это “маяки” - чтоб не споткнуться\не удариться о них.. :-[</p>
+
+<p><strong>daemon</strong> 09-02-2013</p>
+
+<blockquote>
+  <p>Сегодня вышел проводить дочку в школу, заодно решил сфоткать наше чудо-юдо уличную светодиодную подсветку…</p>
+
+  <p>…видно, что фотовспышка освещает лучше, чем эти “чудища” &gt;:(…</p>
+
+  <p>резюме:</p>
+
+  <ol>
+    <li>
+      <p>Все-таки ДНАТы - дают световой поток значительно больше</p>
+    </li>
+    <li>
+      <p>Зрительно свет воспринимается по-другому: светодиоды на столбах визуально - ярче (видимо из-за линз),</p>
+    </li>
+  </ol>
+
+  <p>но фототехника “считает” по-другому :) Думаю, что растишки - тоже … :D</p>
+
+  <p>Вывод - ДНАТ (или ДНАЗ) - если нужно освещать площадь, СД - если нужно осветить локальный участок</p>
+</blockquote>
+
+<p>Странное резюме.</p>
+
+<p>Если бы вы снимали на тепловизор, то ваш вывод был бы больше в пользу ламп накаливания.</p>
+
+<p>Другими словами сомнительное сравнение зависимостей светочувствительности матрицы вашей камеры, человечесокого глаза, и хлоропластов вы привели.</p>
+
+<p><strong>Vad</strong> 09-02-2013</p>
+
+<p>а че странного..</p>
+
+<p>ТЕМНО… :-[</p>
+
+<p><strong>cpf</strong> 11-02-2013</p>
+
+<blockquote>
+  <p>Странное резюме.</p>
+
+  <p>Если бы вы снимали на тепловизор, то ваш вывод был бы больше в пользу ламп накаливания.</p>
+
+  <p>Другими словами сомнительное сравнение зависимостей светочувствительности матрицы вашей камеры, человечесокого глаза, и хлоропластов вы привели.</p>
+</blockquote>
+
+<p>Согласен - не совсем корректное, наверное. Но в любом случае, чем больше светопоток - тем ярче получается снимок.</p>
+
+<p>Светодиоды дают большую яркость, но в узких участках спектра (линейчатый), спектр свечения других ламп (таких как ДНАТ - более равномерный, почти сплошной). Фототехника - “выравнивает” (“приводит”) спектр… Вот и результат… Для хлоропластов - нужен светопоток , в первую очередь, кмк.</p>
+
+<p><strong>SergF</strong> 11-02-2013</p>
+
+<p>У нас тож половину светильников заменили на светодиодные, теперь полумрак везде :) Видимо те кто принимает решение по замене начитались рекламных статеек где светодиоды в 3 раза эффективнее ДНаТов и вместо 400-600Вт вешают светодиодные на 150-200Вт &gt;:D</p>
+
+<p>Про диаграмму направленности похоже эти люди ваще не слышали, а ведь высота подвеса и расстояние между столбами было принято под конкретный светильник, теперь освещение мало того что слабее так еще пятнами! А в дождь какая жуть, сейчас у всех ксенон или просто холодный свет, так блики от фар сливаются с бликами от фонарей, очень сложно разобрать встречные авто, желтый ДНаТ давал освещение и блики на фоне которых фары были более различимы… короче все по старой схеме “хотели как лучше а…” :) Но галочку в статье расходов по переходу на энергосберегающие технологии поставили, бюджет попилили, все намана…</p>
+
+<p><strong>cpf</strong> 10-03-2013</p>
+
+<p>Пока у нас некоторые товарищи борются со слизнями:</p>
+
+<blockquote>
+  <p>Сегодня утром обнаружил гадов в количестве 5шт., по прозвищу слизень. &gt;:(</p>
+
+  <p>Coccinella. Вы били правы. $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $)</p>
+</blockquote>
+
+<p>моя любимая дочка завела новую любимицу:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5702" target="_blank"><img src="/imagehost/thumbs/cimg5038.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5703" target="_blank"><img src="/imagehost/thumbs/cimg5039.jpg" alt="" /></a></p>
+
+<p>и требует, чтобы я немедленно начал процесс выращивания клубники для её (улитки) кормления :-*</p>
+
+<p>вот теперь думаю, - куда податься для приобретения кустиков…? :-\</p>
+
+<p><strong>Coccinella</strong> 10-03-2013</p>
+
+<p>Я лет в 12 примерно таким же образом нечаянно скормила совсем даже крошечной улиточке прелестный кустик папоротника. Нам этот папортоник подарили, а она при нем проникла нелегально :). Даже не предполагала, что она - такая маленькая - может его так быстро (за пару месяцев) слопать начисто :'( Пришлость весной выпустить ее на волю, пока она на кактусы не перекинулась :)</p>
+
+<p>А прошлым летом под кассетами с капустной рассадой я обнаружила чудовище, похожее на хорошо откормленную сосиску с рожками. :o Посадила его в ведро, ходила пугала соседей очередной угрозой урожаю, а потом отнесла в лес, у нас там болото рядом и… выпустила тварь живую :)</p>
+
+<p><strong>valery</strong> 10-03-2013</p>
+
+<blockquote>
+  <p>и требует, чтобы я немедленно начал процесс выращивания клубники для её (улитки) кормления :-*</p>
+
+  <p>вот теперь думаю, - куда податься для приобретения кустиков…? :-\</p>
+</blockquote>
+
+<p>Все же мистер Эйнштейн был прав. Все относительно и зависит от точки зрения наблюдателя …</p>
+
+<p>В смысле, от “приоритетов” …</p>
+
+<p><em>8)</em></p>
+
+<p><strong>artmaximus</strong> 10-03-2013</p>
+
+<p>…сын как увидел. сразу завопил…можно мы тоже заведём <em>8)</em></p>
+
+<p><strong>Vad</strong> 10-03-2013</p>
+
+<p>Кода вижу улитку…</p>
+
+<p>всегда вспоминается… про каток…</p>
+
+<p>“Противоугонная система асфальтоукладочного катка заложена на этапе проэктирования ТС.</p>
+
+<p>Принцип действия прост. Через час после угона, ТС находится в пределах видимости, и его можно легко догнать быстрым шагом.” <em>crazy</em> <em>Dance</em></p>
+
+<p><strong>cpf</strong> 24-03-2013</p>
+
+<p>Снежок пошел… В окошко глянул, а там вот:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5704" target="_blank"><img src="/imagehost/thumbs/cimg5052.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5705" target="_blank"><img src="/imagehost/thumbs/cimg5053.jpg" alt="" /></a></p>
+
+<p><strong>cpf</strong> 24-03-2013</p>
+
+<p>:( … пока писал сообщение:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5706" target="_blank"><img src="/imagehost/thumbs/cimg5054.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5707" target="_blank"><img src="/imagehost/thumbs/cimg5056.jpg" alt="" /></a></p>
+
+<p>застряли - обе… чувствую - придется топать за трактором в деревню… :o</p>
+
+<p><strong>cpf</strong> 24-03-2013</p>
+
+<p>… :D действие - продолжается:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5708" target="_blank"><img src="/imagehost/thumbs/cimg5057.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5709" target="_blank"><img src="/imagehost/thumbs/cimg5062.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5710" target="_blank"><img src="/imagehost/thumbs/cimg5066xnx.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5711" target="_blank"><img src="/imagehost/thumbs/cimg5069.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5712" target="_blank"><img src="/imagehost/thumbs/cimg5071.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5713" target="_blank"><img src="/imagehost/thumbs/cimg5073.jpg" alt="" /></a></p>
+
+<p>уффф… <em>Dance</em> Переживал, аж вспотел…(как будто - сам вытягивал…)</p>
+
+<p><strong>valery</strong> 24-03-2013</p>
+
+<p><em>Dance</em></p>
+
+<p><strong>valery</strong> 24-03-2013</p>
+
+<p>Столб посреди дороги … - это правильно! Это … по-нашему.</p>
+
+<p>Враги - не пройдут!</p>
+
+<p><strong>Vad</strong> 24-03-2013</p>
+
+<p>А у нас Абрикос и слива цветет <em>8)</em></p>
+
+<p>снега в этом году…. почти и не видели… так.. сантиметров 5-7 выпало и потаяло… <em>???</em></p>
+
+<p><strong>Strangeman</strong> 24-03-2013</p>
+
+<p>А у нас, после жары доходящей до 15 градусов, вернулась зима. -6 :(</p>
+
+<p><strong>SergF</strong> 24-03-2013</p>
+
+<p>У нас тож снега намело ночью, все цветет во всю блин! опять без косточковых останемся…:(</p>
+
+<p><strong>cpf</strong> 29-03-2013</p>
+
+<p>Вроде, погода налаживается - пора начинать сезон.</p>
+
+<p>Проросшие семечки - убираем в парничек и ждем всходов… (надеюсь получить ФИНИК КРАСНЫЙ F1)</p>
+
+<p><a href="https://t.me/ponics_ru_files/5714" target="_blank"><img src="/imagehost/thumbs/cimg5084mfm.jpg" alt="" /></a></p>
+
+<p>В аквариуме - образовался “детский сад”</p>
+
+<p><a href="https://t.me/ponics_ru_files/5715" target="_blank"><img src="/imagehost/thumbs/cimg5082ghg.jpg" alt="" /></a></p>
+
+<p>Выросли “любимые цветы моей таксы” (воняют тухлятиной…)</p>
+
+<p><a href="https://t.me/ponics_ru_files/5716" target="_blank"><img src="/imagehost/thumbs/cimg5083xlx.jpg" alt="" /></a></p>
+
+<p>Вот он, хад, нанюхался и балдеет…</p>
+
+<p><a href="https://t.me/ponics_ru_files/5717" target="_blank"><img src="/imagehost/thumbs/cimg5087.jpg" alt="" /></a></p>
+
+<p><strong>cpf</strong> 10-05-2013</p>
+
+<p>прошел 1 мес с момента пересадки из “парничка” в керамзит (для двух - только две недели): каким - сколько, из фотографий - не понятно :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/5718" target="_blank"><img src="/imagehost/thumbs/cimg5358.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5719" target="_blank"><img src="/imagehost/thumbs/cimg5359.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5720" target="_blank"><img src="/imagehost/thumbs/cimg5360.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5721" target="_blank"><img src="/imagehost/thumbs/cimg5361.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5722" target="_blank"><img src="/imagehost/thumbs/cimg5362.jpg" alt="" /></a></p>
+
+<p>а это “зверюга” - подрастает:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5723" target="_blank"><img src="/imagehost/thumbs/cimg5356.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5724" target="_blank"><img src="/imagehost/thumbs/cimg5357.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 10-05-2013</p>
+
+<blockquote>
+  <p>а это “зверюга” - подрастает:</p>
+</blockquote>
+
+<p>:o</p>
+
+<p><strong>Coccinella</strong> 10-05-2013</p>
+
+<p>Главное зверюгу к томатам не подпускать, слопает и еще попросит :)</p>
+
+<p><strong>Mole_Garden</strong> 10-05-2013</p>
+
+<blockquote>
+  <p>а это “зверюга” - подрастает:</p>
+</blockquote>
+
+<p>А этот куда? На борщь? Или ….? для красоты?</p>
+
+<p><strong>cpf</strong> 11-05-2013</p>
+
+<p>Да меня самого - на чипсы пустят, если со “зверем” что случится!</p>
+
+<p>(доча экспериментировала, жрать - невозможно ;D )</p>
+
+<p><a href="https://t.me/ponics_ru_files/5725" target="_blank"><img src="/imagehost/thumbs/20130326074602.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5726" target="_blank"><img src="/imagehost/thumbs/20130326085224.jpg" alt="" /></a></p>
+
+<p>:D :D :D</p>
+
+<p>я так себе думаю… :-\</p>
+
+<p><a href="https://t.me/ponics_ru_files/5727" target="_blank"><img src="/imagehost/thumbs/20130502122440.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 11-05-2013</p>
+
+<p>:o :o</p>
+
+<p>это.. вы…. чего… улиток жарите??? :o</p>
+
+<p><strong>artmaximus</strong> 11-05-2013</p>
+
+<blockquote>
+  <p>Да меня самого - на чипсы пустят, если со “зверем” что случится!</p>
+
+  <p>(доча экспериментировала, жрать - невозможно ;D )</p>
+
+  <p><img src="/imagehost/thumbs/20130326074602.jpg" alt="" /></p>
+
+  <p><img src="/imagehost/thumbs/20130326085224.jpg" alt="" /></p>
+
+  <p>:D :D :D</p>
+
+  <p>я так себе думаю… :-\</p>
+
+  <p><img src="/imagehost/thumbs/20130502122440.jpg" alt="" /></p>
+</blockquote>
+
+<p>…чипсы…со вкусом улиток :-[ :D</p>
+
+<p>Пора ошейник с поводком…для “зверюги” :o (я про улитку, если её так можно назвать :o :D)</p>
+
+<p><strong>artmaximus</strong> 11-05-2013</p>
+
+<p>Имя есть у улитки? :-[</p>
+
+<p><strong>artmaximus</strong> 11-05-2013</p>
+
+<p>Дети будут…вышлешь посылкой? :D <em>crazy</em></p>
+
+<p>Я про улиточных ;D</p>
+
+<p><strong>cpf</strong> 11-05-2013</p>
+
+<blockquote>
+  <p>Имя есть у улитки? :-[</p>
+</blockquote>
+
+<p>имени - нет (думаю, что и слуха - тоже, не реагирует на крики… :-X )</p>
+
+<blockquote>
+  <p>Дети будут…вышлешь посылкой? :D <em>crazy</em></p>
+
+  <p>Я про улиточных ;D</p>
+</blockquote>
+
+<p>если будут - вышлю, “нивапрос” ;) (должны быть, оно ж - гермафродит, насколько помню :-\ )</p>
+
+<blockquote>
+  <p>:o :o</p>
+
+  <p>это.. вы…. чего… улиток жарите??? :o</p>
+</blockquote>
+
+<p>вообще-то это была картошка… но улиток тоже запекаю в духовке, иногда, виноградных, специально приготовленных (продаются в магазинах в замороженном виде) - очень вкусно, с красным вином …(советую попробовать, хотя бы разок :P )</p>
+
+<p><strong>Coccinella</strong> 12-05-2013</p>
+
+<p>Да зверюга, что Вы холите, и есть та самая виноградная улитка!!! У нас тут один фермер затеял на экспорт их выращивать…</p>
+
+<p>А у меня очередная моральная травма :( Пошли вчера с дочкой в лес по грибы (сморчкам пора, полведра набрали мимоходом), но по дороге в лес встретили вот такую зверюгу прямо на дороге:( А эта дорога, между прочим, ведет на поле, где я свою капусту выращиваю. Нужны мне там такие монстры? Нет! Нет! и Нет!!!</p>
+
+<p>А убить-то я животину не могу, мне ее жалко :'( Пришлось отловить и полчаса думать, в чей бы соседский огород подбросить :) Соседей тоже далко :). Кончилось тем, что забросила ее в заросли сныти - и зверюшка поест и сорняка меньше станет :) Вернулись с грибами домой, а в теплице уж рыщет… небольшой, с полметра… Так я скоро на компостной куче крокодила встречу…</p>
+
+<p><strong>cpf</strong> 12-05-2013</p>
+
+<p>Как сообщила мне дочь, это - улитка Ахатина (Achatina). Виноградные - поменьше, и раковины у них не такие вытянутые…</p>
+
+<p>( а для еды, я покупаю такие: <a href="http://www.delikateska.ru/product/426" target="_blank">http://www.delikateska.ru/product/426</a> ;) )</p>
+
+<p><strong>cpf</strong> 12-05-2013</p>
+
+<p>Чет наш местный “Икар” - разлетался… лучше бы удобрял чего-нить в окрестностях (че зря бензин жечь?) ;D</p>
+
+<p><a href="https://t.me/ponics_ru_files/5728" target="_blank"><img src="/imagehost/thumbs/cimg5363.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5729" target="_blank"><img src="/imagehost/thumbs/cimg5369.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5730" target="_blank"><img src="/imagehost/thumbs/cimg5366.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 12-05-2013</p>
+
+<p>Слушайте дочь, дети знают, что говорят :) Но мною встреченная зверюга была именно из тех, кого предприимчивые люди разводят на продажу… Вам :)</p>
+
+<p><strong>cpf</strong> 16-05-2013</p>
+
+<p>Прошла еще неделька…, пришли еще проблемки:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5731" target="_blank"><img src="/imagehost/thumbs/cimg5372.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5732" target="_blank"><img src="/imagehost/thumbs/cimg5373.jpg" alt="" /></a></p>
+
+<p>на трех кустиках одного сорта - закручиваются молодые листья:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5733" target="_blank"><img src="/imagehost/thumbs/cimg5374.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5734" target="_blank"><img src="/imagehost/thumbs/cimg5376.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5735" target="_blank"><img src="/imagehost/thumbs/cimg5378.jpg" alt="" /></a></p>
+
+<p>два остальные (другого сорта) - чувствуют себя отлично:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5736" target="_blank"><img src="/imagehost/thumbs/cimg5375.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5737" target="_blank"><img src="/imagehost/thumbs/cimg5377.jpg" alt="" /></a></p>
+
+<p>ph 6.2 ppm ~1000 Ca и Mg - присутствуют. В чем может быть дело? <em>???</em> Высоковаты суточные температуры? :-\</p>
+
+<p><strong>Coccinella</strong> 16-05-2013</p>
+
+<p>Если Вы имеете в виду когтевидные листья, то это непоступление кальция. Возможно, рН высоковато, возможно, низковата относительная влажность воздуха. Возможно, именно для этого сорта неправильное соотношение К:Са в растворе. Кстати, на младших растениях это тоже уже начинается, просто еще не так сильно выражено.</p>
+
+<p>А растениям не будет тесно? Они ведь вырастут, вон посмотрите, что у Vad-a творится :)</p>
+
+<p><strong>cpf</strong> 16-05-2013</p>
+
+<blockquote>
+  <p>Если Вы имеете в виду когтевидные листья, то это непоступление кальция. Возможно, рН высоковато, возможно, низковата относительная влажность воздуха. Возможно, именно для этого сорта неправильное соотношение К:Са в растворе. Кстати, на младших растениях это тоже уже начинается, просто еще не так сильно выражено.</p>
+</blockquote>
+
+<p>Спасибо Большое, буду дейстовать так:</p>
+
+<p>опять запущу увлажнитель</p>
+
+<p>немного снижу ph (посмотрим пару дней)</p>
+
+<p>потихоньку добавлю Ca …</p>
+
+<blockquote>
+  <p>А растениям не будет тесно? Они ведь вырастут, вон посмотрите, что у Vad-a творится :)</p>
+</blockquote>
+
+<p>Да, вроде, в прошлом году удалось их развести (с помощью “веерных” проволочных направляющих). Но это в июне понадобится только… :-[</p>
+
+<p><strong>SergF</strong> 16-05-2013</p>
+
+<blockquote>
+  <p>Как сообщила мне дочь, это - улитка Ахатина (Achatina). Виноградные - поменьше, и раковины у них не такие вытянутые…</p>
+
+  <p>( а для еды, я покупаю такие: <a href="http://www.delikateska.ru/product/426" target="_blank">http://www.delikateska.ru/product/426</a> ;) )</p>
+</blockquote>
+
+<p>Повторяю свое прошлогоднее предложение, все желающие могут в неограниченном количестве собирать и вывозить виноградных улиток с моей дачи :D</p>
+
+<p>…а то я этот деликатес “грозой” и “слизнеедом” запарился травить :) , некоторые особи не меньше тех что на фото, грамм на 50 точно потянут…</p>
+
+<p>непонятно почему “виноградная”, он их как раз мало интересует…</p>
+
+<p><strong>cpf</strong> 16-05-2013</p>
+
+<p>Спасибо, конечно, но мне до Вашей дачи… как до Берлина :D (Да и, боюсь, что не прокормлю всех “дачников” ;D)</p>
+
+<p>(Тем белее сейчас сезон отпусков начнется - там по трассе будет не протолкнуться :( )</p>
+
+<p>Как “светодиодный” гроу-бокс поживает?</p>
+
+<p><strong>cpf</strong> 27-06-2013</p>
+
+<blockquote>
+  <p>………………….</p>
+
+  <p>Сколько я тут в разных темах приводила картинок и роликов из промышленных теплиц? Горбатые листья, краевой ожог под лампами… а урожай при этом… сказочный! :) Хотя лучше бы без краевого ожога, конечно :)</p>
+
+  <p>А горбатый или скрученный лист, это не питание, а микроклимат.</p>
+</blockquote>
+
+<p>В подтверждение (извините за некачественное фото)…</p>
+
+<p><a href="https://t.me/ponics_ru_files/5738" target="_blank"><img src="/imagehost/thumbs/cimg5440.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5739" target="_blank"><img src="/imagehost/thumbs/cimg5441.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5740" target="_blank"><img src="/imagehost/thumbs/cimg5443jxj.jpg" alt="" /></a></p>
+
+<p>никак не могу распрямить листы: микроклимат (будь он не ладен) + калий/кальций <em>Wall</em></p>
+
+<p><strong>Coccinella</strong> 28-06-2013</p>
+
+<p>Это жара, на последнем фото даже не столько дефицит кальция, сколько пониженная влажность воздуха. Но я еще раз напоминаю, все эти перекрученные листья - попытка растения создать самому себе условия получше. Ну вы-то все в жару тоже в майках ходите, а не в костюмах-тройках при галстуке :) !</p>
+
+<p>Растение крутит лист, чтобы поймать лишнюю молекулу воды из воздуха или прикрыть плод от солнцепека, или еще пару фотонов света отловить, а вы волнуетесь, как бабушка над внуком :)</p>
+
+<p><strong>cpf</strong> 07-07-2013</p>
+
+<p>Продолжаю борьбу с жарой:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5741" target="_blank"><img src="/imagehost/thumbs/cimg5475.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5742" target="_blank"><img src="/imagehost/thumbs/cimg5476.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5743" target="_blank"><img src="/imagehost/thumbs/cimg5477.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5744" target="_blank"><img src="/imagehost/thumbs/cimg5480.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5745" target="_blank"><img src="/imagehost/thumbs/cimg5481.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5746" target="_blank"><img src="/imagehost/thumbs/cimg5482.jpg" alt="" /></a></p>
+
+<p>жара - пока побеждает :)</p>
+
+<p>А это - “пришельцы”:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5747" target="_blank"><img src="/imagehost/thumbs/cimg5458.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5748" target="_blank"><img src="/imagehost/thumbs/cimg5452.jpg" alt="" /></a></p>
+
+<p>чувствуют себя в жаре - отлично…</p>
+
+<p><strong>Coccinella</strong> 07-07-2013</p>
+
+<p>Какая прелесть!!! А ведь они с томатами - земляки :)</p>
+
+<p><strong>Mole_Garden</strong> 09-07-2013</p>
+
+<blockquote>
+  <p>Продолжаю борьбу с жарой:</p>
+</blockquote>
+
+<p>Присмотрелся на твои фото. Очень похоже на листы на моих томатах. Так же превращаются в лодочку и скручиваются не только листья, но и сама ветка с листьями.</p>
+
+<p>Думаешь это все от жары? У нас уже жара спала и данная проблема в основном на молодых и верхних листья.</p>
+
+<blockquote>
+  <p>Какая прелесть!!! А ведь они с томатами - земляки :)</p>
+</blockquote>
+
+<p>Набрели тут на местный кактусовый сад под названием Аризона Гарден.</p>
+
+<p><img src="https://lh5.googleusercontent.com/ysNESHlFeHEuEmEaScSjvezrh_H6WOz82WbbxJq1lQc=w276-h206-p-no" alt="" /></p>
+
+<p><strong>Coccinella</strong> 09-07-2013</p>
+
+<p>Потрясающие кактусы!!!</p>
+
+<p><strong>cpf</strong> 09-07-2013</p>
+
+<blockquote>
+  <p>Присмотрелся на твои фото. Очень похоже на листы на моих томатах. Так же превращаются в лодочку и скручиваются не только листья, но и сама ветка с листьями.</p>
+
+  <p>Думаешь это все от жары? У нас уже жара спала и данная проблема в основном на молодых и верхних листья.</p>
+</blockquote>
+
+<p>Думаю, что не только жара: низкая влажность + низкий pH + блокировка кальция (возможно калием или амонийным азотом) еще скорее всего…</p>
+
+<blockquote>
+  <p>Набрели тут на местный кактусовый сад под названием Аризона Гарден.</p>
+</blockquote>
+
+<p>фантастика… <em>8)</em></p>
+
+<p><strong>Strangeman</strong> 23-08-2013</p>
+
+<p>Вот это вид!!! <em>8)</em></p>
+
+<p><strong>cpf</strong> 22-09-2013</p>
+
+<p>Осень (из серии “Прогулки с собачкой 50м от подъезда”) :</p>
+
+<p><a href="https://t.me/ponics_ru_files/5749" target="_blank"><img src="/imagehost/thumbs/img00089.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5750" target="_blank"><img src="/imagehost/thumbs/img00124.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5751" target="_blank"><img src="/imagehost/thumbs/cimg5647.jpg" alt="" /></a></p>
+
+<p>вот такая “Гидропоника”: дожди+ пиво из брошенной бутылки, видимо :D</p>
+
+<p><strong>Coccinella</strong> 23-09-2013</p>
+
+<p>Пора учить собаку искать грибы :)</p>
+
+<p><strong>cpf</strong> 12-03-2014</p>
+
+<p>9 Марта был день открытых дверей в Центре Подготовки Космонавтов в “Звёздном Городке”.</p>
+
+<p>Тоже - заглянул (может кому пригодятся фотки узлов, для гидропоники :) :</p>
+
+<p><a href="https://t.me/ponics_ru_files/5752" target="_blank"><img src="/imagehost/thumbs/img00157.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5753" target="_blank"><img src="/imagehost/thumbs/img00159.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5754" target="_blank"><img src="/imagehost/thumbs/img00156.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5755" target="_blank"><img src="/imagehost/thumbs/img00162.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 12-03-2014</p>
+
+<p>ээхх</p>
+
+<p>Какой бассейн для хлореллы и спирулины - то! <em>8)</em></p>
+
+<p>а салата сколько вырастет там…. :-\</p>
+
+<p><strong>cpf</strong> 21-05-2014</p>
+
+<p>В этом году “грядка” пока выглядит так (начал проращивание только в конце Марта):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5756" target="_blank"><img src="/imagehost/thumbs/img00174.jpg" alt="" /></a></p>
+
+<p>Немного лирики:</p>
+
+<p>“Аленький цветочек” (гуляя у себя около дома в лесу обнаружил)</p>
+
+<p><a href="https://t.me/ponics_ru_files/5757" target="_blank"><img src="/imagehost/thumbs/img00170.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5758" target="_blank"><img src="/imagehost/thumbs/img00171.jpg" alt="" /></a></p>
+
+<p>“Незабудковый лес”</p>
+
+<p><a href="https://t.me/ponics_ru_files/5759" target="_blank"><img src="/imagehost/thumbs/img00172.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5760" target="_blank"><img src="/imagehost/thumbs/img00173.jpg" alt="" /></a></p>
+
+<p>Ещё, чтобы поднять настроение (улитка - жрёт мою жену, или “пиллинг по-московски” ;D ):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5761" target="_blank"><img src="/imagehost/thumbs/img00118.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5762" target="_blank"><img src="/imagehost/thumbs/img00175.jpg" alt="" /></a></p>
+
+<p><strong>cpf</strong> 10-09-2014</p>
+
+<p>В этом году сезон прошел, мягко говоря, “не очень” (явно ошибся с сортами):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5763" target="_blank"><img src="/imagehost2/thumbs/cimg6063.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5764" target="_blank"><img src="/imagehost2/thumbs/cimg6068.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5765" target="_blank"><img src="/imagehost2/thumbs/cimg6062.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5766" target="_blank"><img src="/imagehost2/thumbs/cimg6067.jpg" alt="" /></a></p>
+
+<p>“типа черри”, размером с горох и в количестве “кот наплакал” :(</p>
+
+<p><a href="https://t.me/ponics_ru_files/5767" target="_blank"><img src="/imagehost2/thumbs/cimg6066.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 10-09-2014</p>
+
+<p>А что за сорта?</p>
+
+<p><strong>cpf</strong> 30-11-2014</p>
+
+<p>Сорру, за молчание (куда-то “потерял” этот пост).</p>
+
+<p>Сорта были “Черный Мавр” и “Дюймовочка” - больше их растить на ГП не буду точно.</p>
+
+<p>[glow=red,2,300]Буду пробовать:[/glow]</p>
+
+<p><a href="https://t.me/ponics_ru_files/5768" target="_blank"><img src="/imagehost2/thumbs/img00238.jpg" alt="" /></a></p>
+
+<p>вид корней внутри установки, при смене популяции:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5769" target="_blank"><img src="/imagehost2/thumbs/img00225.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5770" target="_blank"><img src="/imagehost2/thumbs/img00226.jpg" alt="" /></a></p>
+
+<p><strong>d74mt</strong> 01-12-2014</p>
+
+<p>У меня сейчас сорт Бэтта торчит. Довольно низкорослый. Правда сидит в земле и под диодами. Пока только цветёт. Росто- сантимеров 40. Можно его попробывать. После 6 листьев он раскустился на 2 ствола.</p>
+
+<p><strong>cpf</strong> 25-07-2015</p>
+
+<p>В этом году “огород” выглядит так:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5771" target="_blank"><img src="/imagehost2/thumbs/cimg6368.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5772" target="_blank"><img src="/imagehost2/thumbs/cimg6372.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5773" target="_blank"><img src="/imagehost2/thumbs/cimg6373.jpg" alt="" /></a></p>
+
+<p>Но с листочками - все равно проблемки (так и не научился их побеждать):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5774" target="_blank"><img src="/imagehost2/thumbs/cimg6369.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5775" target="_blank"><img src="/imagehost2/thumbs/cimg6370.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5776" target="_blank"><img src="/imagehost2/thumbs/cimg6371.jpg" alt="" /></a></p>
+
+<p>то ли жарко, то ли сухо, то ли чё-то не хватает… :-\</p>
+
+<p>Менял и ЕС, и кальций+магний и калий… - без толку (видимо, когда плодоносят - высасывают из нижних листьев всё по-максимуму).</p>
+
+<p><strong>Gnevko</strong> 25-07-2015</p>
+
+<p>Вы нижние листья не обрезаете? Если обрезать, то проблем со старыми листьями не будет ввиду отсутствия таковых :)</p>
+
+<p><strong>cpf</strong> 25-07-2015</p>
+
+<p>Потихоньку режу …(по паре, через день: “нет листьев-нет проблем”? :D)</p>
+
+<p>Я их жалею, чтобы тень в комнате создавали (южная сторона, все-таки, иногда - жарковато…).</p>
+
+<p><strong>Gnevko</strong> 25-07-2015</p>
+
+<p>И еще кажется мне что маловата у них корневая система, в промышленных теплицах на растение приходится около 7 литров того же кокоса или мин ваты, а у вас в одной трубе (метровой?) 5 штук сидит и как следствие - растение не в состоянии “прокачать” в жару нужный объем жидкости, к тому же южная сторона…</p>
+
+<p><strong>cpf</strong> 26-07-2015</p>
+
+<p>Вы совершенно правы, Gnevko, я тоже прихожу к такому выводу… НО, думаю, что это связано не столько с объемом трубы (у меня примерно 20л, с учетом колена для сифона), сколько с формой и количеством прорезей в горшках (…Andrew.. уже писал в своих постах:</p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1777.msg92290#msg92290" target="_blank">http://forum.ponics.ru/index.php?topic=1777.msg92290#msg92290</a>,</p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1777.msg92292#msg92292" target="_blank">http://forum.ponics.ru/index.php?topic=1777.msg92292#msg92292</a>,</p>
+
+<p>о важности радиальных прорезей в днище, для правильного развития корневой), у меня - только круглые отверстия Ø10мм, чего явно недостаточно. Вследствие этого, корневая система находится преимущественно внутри горшков, и сравнительно “неохотно” выходит наружу, в трубу (видно по предыдущим фото). Жаль, что я раньше до этого “не допер” ! <em>Wall</em>.</p>
+
+<p>Спасибо за комментарий: постараюсь учесть этот нюанс в следующем году. :-\</p>
+
+<p><strong>Gnevko</strong> 26-07-2015</p>
+
+<p>А не отказаться ли вам вообще от горшков как таковых? От горшков оставить только верхнюю часть см эдак 5-6, коль уж они так чудно в отверстия трубы входят, сверху круг пенопласта поплотнее чуть большего диаметра, можно даже сделать небольшой пазик в пенопласте, что бы плотнее на “горловину” горшка лег. В пенопласте по средине дырку, в ней фиксируете стебель (как у Вада в домике сделано) и готово. Корни конечно в итоге все переплетуться, но зато полная свобода :)</p>
+
+<p><strong>cpf</strong> 26-07-2015</p>
+
+<p>Можно попробовать, конечно, только в горшках находится субстрат-керамзит, который смачивается периодикой, и с которого корешки “слизывают” влагу. Дело в том, что из-за особенности установки (сифонный слив), раствор заполняет примерно 3/4 трубы, после чего - быстро сливается. Весь процесс заполнения/слива занимает примерно 3 минуты, а дальше (опять же из-за особенности работы сифона) установка переходит в режим “питательный слой” (т.е. раствор течет по дну, и сразу сливается обратно в бак), пока не сработает таймер (мой механический таймер по-минимуму работает минут 10, меньше - не может).</p>
+
+<p>Боюсь, что если уберу субстрат (горшки), то:</p>
+
+<ul>
+  <li>
+    <p>высаживать в установку можно будет только кустики с уже достаточно развитой корневой (иначе, до раствора не дотянутся)</p>
+  </li>
+  <li>
+    <p>их будет достаточно сильно “полоскать”, ибо насос качает 2500л/час (сейчас молодые корни горшки и субстрат “берегут”)</p>
+  </li>
+  <li>
+    <p>корешки будут подсыхать, ибо неоткуда будет “слизывать” влагу (можно, правда, сделать поливы почаще)</p>
+  </li>
+</ul>
+
+<p><strong>Gnevko</strong> 26-07-2015</p>
+
+<p>2500л/час - это конечно круть для корешков :) Похоже, что без кардинально измененного устройства системы не обойтись …</p>
+
+<p><strong>cpf</strong> 15-09-2015</p>
+
+<p>Думаю над проблемой: как заставить наливаться “нижние” плоды?</p>
+
+<p>Верхние - заметно крупнее, и наливаются и срываются в первую очередь.</p>
+
+<p>Освещается нижняя часть - лучше… В чем может быть дело? :-\</p>
+
+<p><a href="https://t.me/ponics_ru_files/5777" target="_blank"><img src="/imagehost2/thumbs/cimg6452.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5778" target="_blank"><img src="/imagehost2/thumbs/cimg6453.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5779" target="_blank"><img src="/imagehost2/thumbs/cimg6454.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5780" target="_blank"><img src="/imagehost2/thumbs/cimg6450.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5781" target="_blank"><img src="/imagehost2/thumbs/cimg6451.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5782" target="_blank"><img src="/imagehost2/thumbs/cimg6458.jpg" alt="" /></a></p>
+
+<p>ну и в завершение - “грибы” (сходил тут за молочком, метров 200 от подъезда :) ):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5783" target="_blank"><img src="/imagehost2/thumbs/cimg6456.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5784" target="_blank"><img src="/imagehost2/thumbs/cimg6457.jpg" alt="" /></a></p>
+
+<p><strong>lidia</strong> 15-09-2015</p>
+
+<p>И у меня такие были. Они потом, после сбора верхних начинают расти (но не очень) и спеть.</p>
+
+<p>А заставить их первыми вырасти :-\ :-\ :-.</p>
+
+<p><em>crazy</em> Разве что отсечь стебель выше их вместе со всеми помидорами :D (шутка)</p>
+
+<p>Если есть способы менее кардинальные и фатальные - хотелось бы тоже узнать.</p>
+
+<p><strong>cpf</strong> 28-09-2015</p>
+
+<p>Был на выходных “в деревеньке”, забирал “урожайчик” тыквенный:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5785" target="_blank"><img src="/imagehost2/thumbs/img00248.jpg" alt="" /></a></p>
+
+<p>теперь, надо придумать, как его использовать :-\</p>
+
+<p><strong>Borodach1</strong> 28-09-2015</p>
+
+<p>По старой русской традиции раздавать родственникам, соседям и друзьям. Когда они все пресытятся и начнут отказываться - коллегам на работе. :)</p>
+
+<p><strong>cpf</strong> 26-07-2016</p>
+
+<p>По чуть-чуть “щипаю” свой балконный огород (на салатики, пока до деревни не добрался :) ), остатки:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5786" target="_blank"><img src="/imagehost2/thumbs/cimg6783.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5787" target="_blank"><img src="/imagehost2/thumbs/cimg6785.jpg" alt="" /></a></p>
+
+<p>В этом году - только жёлтые! (почти как в рекламе M&amp;Мсов wanted :D)</p>
+
+<p><strong>Cyclamech</strong> 29-12-2016</p>
+
+<p>Из чего Вы изготавливаете удобрения сейчас? Закончилось, по-моему, на коррекции простыми солями некоего “гидрокультур”.</p>
+
+<p><strong>cpf</strong> 29-12-2016</p>
+
+<p>В данный момент, я занимаюсь гидропоникой примерно так:</p>
+
+<p><a href="https://www.youtube.com/watch?v=kyuKygiiRSE" target="_blank">https://www.youtube.com/watch?v=kyuKygiiRSE</a> :)</p>
+
+<p>(“готовлюсь” к поступлению дочки в муз. училище: посещаю с ней концерты, мастерклассы и т.п.),</p>
+
+<p>но весной что-нибудь “намешаю” обязательно :-[</p>
+
+<p><strong>Cyclamech</strong> 30-12-2016</p>
+
+<p>Да уж, в наушниках не послушаешь…</p>
+
+<p>А Вы кактусы не пробовали?</p>
+
+<p><strong>cpf</strong> 30-12-2016</p>
+
+<p>По кактусам, у меня жена - “специалист” (любитель суккулентов :D). Все подоконники - забиты ими. Цветут периодически.</p>
+
+<p>Из “кактусовых” я только ASB GreenWorld Kakteen (попеременно с Hydrokultur) пользовал, т.к. почему-то был в 2 раза дешевле.</p>
+
+<p>Хочу попробовать из Агриколы N3 (для томатов, перцев, баклажанов) или Fertika Люкс что-нибудь соорудить. На Агриколе - пробовал, вроде, растёт… :). Ну, нравится мне из “готовых компонентов еду готовить” (Виски+Cola или Текила+Cuintreau ;) ).</p>
+
+<p><strong>Cyclamech</strong> 30-12-2016</p>
+
+<blockquote>
+  <p>Ну, нравится мне из “готовых компонентов еду готовить” (Виски+Cola или Текила+Cuintreau ;) ).</p>
+</blockquote>
+
+<p>Тогда Вам 3-11-38 + кальцинит.</p>
+
+<p><strong>cpf</strong> 30-12-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>Ну, нравится мне из “готовых компонентов еду готовить” (Виски+Cola или Текила+Cuintreau ;) ).</p>
+  </blockquote>
+
+  <p>Тогда Вам 3-11-38 + кальцинит.</p>
+</blockquote>
+
+<p>Почти угадал: 3+11+38=52 (мне чуть поменьше), а “кальцинит” (или кальцинат?) - пока рано (не дождётесь!) :D</p>
+
+<p><strong>Cyclamech</strong> 30-12-2016</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>Ну, нравится мне из “готовых компонентов еду готовить” (Виски+Cola или Текила+Cuintreau ;) ).</p>
+    </blockquote>
+
+    <p>Тогда Вам 3-11-38 + кальцинит.</p>
+  </blockquote>
+
+  <p>Почти угадал: 3+11+38=52 (мне чуть поменьше), а “кальцинит” (или кальцинат?) - пока рано (не дождётесь!) :D</p>
+</blockquote>
+
+<p>А у нас пределы: 27, 37, а потом можно считать, что уже “за так” живёшь. <em>crazy</em></p>
+
+<p><strong>cpf</strong> 30-12-2016</p>
+
+<blockquote>
+  <p>….</p>
+
+  <p>А у нас пределы: 27, 37, а потом можно считать, что уже “за так” живёшь. <em>crazy</em></p>
+</blockquote>
+
+<p>Давай не будем о грустном (и так- тоскливо: мой сосед по лестничной площадке - был бортинженером на “сочинской” ТУшке :'( ).</p>
+
+<p><strong>Cyclamech</strong> 30-12-2016</p>
+
+<p>Это, скорее, не о грустном, а о странном: мы уже не нужны по сути, но нам ещё позволено! <em>crazy</em></p>
+
+<p><strong>cpf</strong> 11-08-2017</p>
+
+<p>В этом сезоне, посадил “что-то”, скорее, чисто “из спортивного интереса”.</p>
+
+<p>Решил попробовать вырастить перца с помидорами на “каше из топора”, по максимально “топорной” технологии (практически “на глазок”, с минимум “заморочек”) <em>crazy</em></p>
+
+<p>Подкислил воду 10мл электролита на 35-38л, взял такую “гадость”:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5788" target="_blank"><img src="/imagehost2/thumbs/img20170811144657.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5789" target="_blank"><img src="/imagehost2/thumbs/img20170811144742.jpg" alt="" /></a></p>
+
+<p>Потом добавил столовую ложку, “с горкой” кальциевой селитры (на 35-38 литров раствора):</p>
+
+<p><a href="https://t.me/ponics_ru_files/5790" target="_blank"><img src="/imagehost2/thumbs/img20170811150215.jpg" alt="" /></a></p>
+
+<p>высадил в установку на балкон 9-го Мая, и на 3 месяца забыл (только собирал “что упало” и пару раз доливал водички :) )</p>
+
+<p><a href="https://t.me/ponics_ru_files/5791" target="_blank"><img src="/imagehost2/thumbs/img20170811141515.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/5792" target="_blank"><img src="/imagehost2/thumbs/img20170811141538.jpg" alt="" /></a></p>
+
+<p>из комнаты выглядит так:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5793" target="_blank"><img src="/imagehost2/thumbs/img20170811141650.jpg" alt="" /></a></p>
+
+<p>Выводы:</p>
+
+<ul>
+  <li>
+    <p>зря взял “черри”! на балконе надо растить только “крупноплодные” <em>Wall</em></p>
+  </li>
+  <li>
+    <p>перец и помидоры - могут “жить дружно” :)</p>
+  </li>
+  <li>
+    <p>будет расти, даже если не трогать (а может поэтому и растёт? :-)</p>
+  </li>
+  <li>
+    <p>если “трогать” - может расти быстрее и больше (а может и умереть <em>crazy</em>).</p>
+  </li>
+</ul>
+
+<p><strong>Vad</strong> 11-08-2017</p>
+
+<p>ну, блин..</p>
+
+<p>почему черри-то? &gt;:(</p>
+
+<p><strong>cpf</strong> 11-08-2017</p>
+
+<blockquote>
+  <p>ну, блин..</p>
+
+  <p>почему черри-то? &gt;:(</p>
+</blockquote>
+
+<p>Вад, сам себе - удивляюсь… <em>???</em> Наверное, полюбил за зиму салаты из них с моцареллой и рукколой :)</p>
+
+<p>Больше их не буду растить - неинтересно… :(</p>
+
+<p><strong>Vad</strong> 11-08-2017</p>
+
+<p>так отож :-\</p>
+
+<p><strong>Gnevko</strong> 11-08-2017</p>
+
+<p>Угу, совсем не интересно … согласен :D</p>
+
+<p><a href="https://t.me/ponics_ru_files/5794" target="_blank"><img src="/imagehost2/thumbs/img7192eue.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 11-08-2017</p>
+
+<p>когда у тебя “полезной высоты” 1.5 метра… и площадь меньше квадратного метра…</p>
+
+<p>не.. не интересно :)</p>
+
+<p>тут надо тыквоподобные томаты выращивать)) чтоб было 3 кисти.. по 3 плода…</p>
+
+<p>массой по 3 кг :D</p>
+
+<p><strong>cpf</strong> 12-08-2017</p>
+
+<blockquote>
+  <p>Угу, совсем не интересно … согласен :D</p>
+</blockquote>
+
+<p>У нас вряд-ли смогу найти такой сорт (с “такими кистями”) <em>???</em></p>
+
+<p>Хотя, как говорится: “плохому танцору…” :-X</p>
+
+<p>GNEVKO, напомни точное название сорта, Пожалуйста…</p>
+
+<p><strong>allex_step</strong> 12-08-2017</p>
+
+<p>да-да!!! очень интересно! назовите фамилию, пожалуйста!</p>
+
+<p><strong>Cyclamech</strong> 12-08-2017</p>
+
+<p>Он, видимо, <a href="http://forum.ponics.ru/index.php?topic=2429.0" target="_blank">призывает вас</a> к уважительному отношению… :-[ <em>crazy</em></p>
+
+<p><strong>allex_step</strong> 12-08-2017</p>
+
+<p>мдя-я-я-я….. пичалько… их никто не импортирует… только ТАМ покупать</p>
+
+<p>не вариант, однако</p>
+
+<p>но возьму на заметку kiepenkerl phantasia f1 - мож соберусь, да и закуплю чего еще там интересного разом</p>
+
+<p>спасибо за инфу</p>
+
+<p><strong>Cyclamech</strong> 12-08-2017</p>
+
+<p>Теперь и я Вас призываю: коллега выращивал 2 сорта. Сорт черри (фотки которого так впечатлили), как я понял, называется Tropical.</p>
+
+<p>…</p>
+
+<p>А вообще просто стоит узнать достойные фирмы и сорта, которые доступны на доступной территории. Не стоит, думаю, строго упираться в конкретный пример коллеги.</p>
+
+<p>Тот же сорт огурца “Зозуля”, например, частенько мелькает в домашнем выращивании с позитивными отзывами.</p>
+
+<p><strong>Cyclamech</strong> 12-08-2017</p>
+
+<blockquote>
+  <p>ну, блин..</p>
+
+  <p>почему черри-то? &gt;:(</p>
+</blockquote>
+
+<p><a href="https://t.me/ponics_ru_files/5795" target="_blank"><img src="/imagehost2/thumbs/381.png" alt="" /></a></p>
+
+<p><em>crazy</em></p>
+
+<p><strong>allex_step</strong> 12-08-2017</p>
+
+<p>ах да. Tropical</p>
+
+<p>у Sperli есть альтернатива - [size=18px][font=Asap]Tomate Rubin Pearl F1 Hybride</p>
+
+<p>похоже тоже не импортируют… :'( [/font][/size]</p>
+
+<p><strong>Vad</strong> 12-08-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>ну, блин..</p>
+
+    <p>почему черри-то? &gt;:(</p>
+  </blockquote>
+
+  <p><img src="/imagehost2/thumbs/381.png" alt="" /></p>
+
+  <p><em>crazy</em></p>
+</blockquote>
+
+<p>а причем тут черри? :-\</p>
+
+<p><strong>Cyclamech</strong> 12-08-2017</p>
+
+<blockquote>
+  <p>а причем тут черри? :-\</p>
+</blockquote>
+
+<p>Ну типа я тонко намекаю, что только среди черри остались по-настоящему вкусные томаты и только их есть смысл выращивать в виде хобби. :-[</p>
+
+<p><strong>Vad</strong> 12-08-2017</p>
+
+<p>бросай бухать..</p>
+
+<p>намек слишком прозрачен :D</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>и СНОВА ОГУРЦЫ или крах проекта на самом интересном месте... | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="и СНОВА ОГУРЦЫ или крах проекта на самом интересном месте...">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">и СНОВА ОГУРЦЫ или крах проекта на самом интересном месте...</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Calltop</strong> 06-01-2010</p>
+
+<p>В начале октября начал выращивать огурцы на подоконнике, это почти получилось, но только почти…. Далее подробней на суд общественности.</p>
+
+<p><strong>Calltop</strong> 06-01-2010</p>
+
+<p>10.10</p>
+
+<p>Пророщены семена огурцов «Маша F-1» в кухонной губке. Из 9 семян проклюнулись 7</p>
+
+<p>11.10</p>
+
+<p>ростки завернуты в синтепон, смоченый водой и высажены в пластиковые стаканчики. Накрыл и поставил на шкаф — там теплее.</p>
+
+<p>17.10</p>
+
+<p>из 8 ростков выжили и проросли из синтепона 5. Один по неосторожности раздавлен. 2 накрыты другими пластиковыми стаканчиками и выставлены на окно, добавлено немного раствора «Мастер 20Х20Х20». Еще два высажены в грунт (один из «грунтовых» раздавлен лампой…) Сильно тянутся. Едва заметные зачатки первого настоящего листа. Итого — 3 выживших ростка: два на гидропонике, один в грунте.</p>
+
+<p>25.10</p>
+
+<p>те, что были в стаканчиках высажены в в аэрируемый раствор. На ночь включена грелка и досветка - «сберегайка» на 12Вт возле самых ростков. Днем грелку включить забыл, те, что в растворе слегка подвяли.</p>
+
+<p>26.10 Пытаюсь исправить положение — включены грелка и досветка на ночь.</p>
+
+<p>27.10 Похоже, что ростки воспряли духом :) на фото корневая зона прикрыта только синтепоном. Рядом стоявшие помидоры на этой же стадии погибли все…</p>
+
+<p>30.10 Появись первые настоящие листья (первый величиной чуть меньше копейки, второй в виде зачатка), из картона вырезаны круги с дырочками и ими прикрыта зона корней: на стаканчиках крышечки.</p>
+
+<p>31.10-14.11 Бурный рост зелени и корней, утолстился стебель. Следствие затемнения корней и досветки сберегайкой: почти в упор.</p>
+
+<p>15.11 Появляются новые листья, появились почки, похожие на зачатки огурцов (замечены вчера, они не парные и в основании эллиптическое образование примерно 2Х3мм на которых маленькие зеленые кисточки (будущий цветок?) ). Корни сантиметров 20 проросли через дырки в дне и боках стаканчиков похожи на мочалку: тонкие, белые. Гибель последнего «грунтового» куста (выставлен женой и тещей на балкон: он не досвечивался) — идти смотреть на него нет душевных сил: вся надежда теперь на гидропонику. Отмечен более быстрый рост барботируемого лука, чем небарботируемого (растет рядом на воде).</p>
+
+<p>11.12 Пропустил момент похолодания… Кусты попали под ледяной сквозняк: на одном кусте погибла точка роста (пушистый кустик на верхушке куста) — завяла и отвалилась надежда на пасынка. Второй куст выжил целиком. Щели заклеил, сквозняк убрал. Хотя условия далеки до идеальных — холодновато — кусты чувствуют себя удовлетворительно. Имеет место увядание и сброс листьев: суховато, холодновато и темновато!!! Пытаюсь улучшить ситуацию как могу.</p>
+
+<p>17.12 На кусте, где уцелела точка роста, похоже что-то собирается зацвести: огурцеобразные пупыри больше в размерах, чем месяц назад (3Х7мм вместо 2Х3) — на концах нечто желтое, похожее на бутон. Долил свежего раствора, попытался заклеить все что можно, досвечиваю с вечера до утра. К вечеру возможных бутонов уже три. Погода больше месяца пасмурная, почти месяц ощитимого роста нет, кроме усиков — усиков выросло по 5-7 на каждом кусте, цепляются за все, что тронут (один вцепился даже за растущий рядом зеленый лук). Концентрата «Мастера» осталось литров на 15 — есть идея перейти на Чеснокова-Барызину или на «Мастер» для плодоношения. Для эффективного плодоношения крайне недостаточные размеры кустов — особенно того, где умерла точка роста. Корни (осмотрел у одного куста) за месяц выросли незначительно: температуру воды поддерживаю аквариумным терморегулятором. Ситуация критическая, главным образом по ОСВЕЩЕНИЮ и влажности. Рядом растет лук — в качестве зеленой пищи и индикатора освещенности. Сфотографировать не получилось опишу словами: нижние листья вянут, засыхают и отмирают. Листья поменьше и повыше: контур засыхает и желтеет. Стебель: от корней участок 10-15 см вдвое толще остального стебля, корни: за месяц (полтора) не выросли ощутимо.</p>
+
+<p>02.01 пересох стебель на одном кусте (погиб), у второго засохли почти все листья, точка роста вянет, что либо предпринимать, скорее всего поздно. Добавил раствора Мастер 15-5-30. За месяц третий раз на полдня появлялось солнце: окна южные, но толку от этого мало.</p>
+
+<p>06.01 единственный уцелевший куст завял, хоть и не вполне умер. Констатирую крах проекта. Реагировать надо было энергичней (аргессивней) и быстрее, а именно: добавить освещения и поменять раствор еще три недели назад, при начале цветения.</p>
+
+<p><strong>Calltop</strong> 06-01-2010</p>
+
+<p>а теперь слайды:</p>
+
+<p>10.10</p>
+
+<p><a href="https://t.me/ponics_ru_files/3005" target="_blank"><img src="/attachimages/989_IMG0300A.png" alt="" /></a></p>
+
+<p><strong>Calltop</strong> 06-01-2010</p>
+
+<p>27.10 :</p>
+
+<p><a href="https://t.me/ponics_ru_files/3006" target="_blank"><img src="/attachimages/991_IMG0315A.png" alt="" /></a></p>
+
+<p><strong>Calltop</strong> 06-01-2010</p>
+
+<p>15.11 :</p>
+
+<p><a href="https://t.me/ponics_ru_files/3007" target="_blank"><img src="/attachimages/993_IMG0316A.png" alt="" /></a></p>
+
+<p><strong>Calltop</strong> 06-01-2010</p>
+
+<p>Здесь досвечивал сберегайкой 23Вт 6400К что называется в упор: виден стаканчик один из трез, на котором эта самая сберегайка стояла как на ножках.</p>
+
+<p>15.11:</p>
+
+<p><a href="https://t.me/ponics_ru_files/3008" target="_blank"><img src="/attachimages/995_IMG0318A.png" alt="" /></a></p>
+
+<p><strong>Calltop</strong> 06-01-2010</p>
+
+<p>25.12 :</p>
+
+<p>вот они, подвявшие отмирающие листья. Фоткал мобильником, видно плохо, но в центре можно рассмотреть нечто похожее на завязь огурца: желтенький цветочек на конце огурцеобразного пупыря (в длину 20мм, в диаметре 4-5мм, пупырышки, как у настояшего огурца)</p>
+
+<p><strong>Calltop</strong> 06-01-2010</p>
+
+<p>собственно фотка:</p>
+
+<p>и еще одна от 25.12: видно корыто с луком на перо: у лука тоже булькает аэратор и поднимает влажность воздуха. Когда света совсем мало - лук светлый, падающий и тонкий, как досвечивается - темнеет и крепчает</p>
+
+<p><a href="https://t.me/ponics_ru_files/3009" target="_blank"><img src="/attachimages/997_IMG0330A_.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3010" target="_blank"><img src="/attachimages/999_IMG0329A.png" alt="" /></a></p>
+
+<p><strong>Calltop</strong> 06-01-2010</p>
+
+<p>06.01</p>
+
+<p>И, собственно финал….</p>
+
+<p>время начинать поедать огурцы, однако… ???</p>
+
+<p>все отсохло, все завяло… Хоть и не две сотки, тем более не два гектара, но двух кустов все равно жаль. Что-то я упустил, особенно недели три назад - подскажите, кто сведущ или более удачлив - я готовлюсь к реваншу.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3011" target="_blank"><img src="/attachimages/1001_IMG0331A_.png" alt="" /></a></p>
+
+<p><strong>Oxy</strong> 07-01-2010</p>
+
+<p>Привет! Я тоже начинающий :-) Как по мне, для начала необходимо обеспечить гаррантированную ситуацию с микроклиматом, запастись всеми необходимыми термометрами, изготовить гигрометр. Затем обеспечить перестраховку: Запасные таймеры(как минимум один), запасную лампочку, по возможности запасной водный нагреватель. Понятное дело, продумать чем нагревать воздух в случае чего. Проверить тысячу раз надежноть крепления всего чего только возможно. Например,весом 100 кг случайно облокотиться на всю установку. И тогда только останеться заряжать семечку, и озабочиваться питательным раствором. По крайней мере я делал именно так. И после всех таких подготовок, первое что сделал - загнал все растения в глубокий шок плохим раствором. Они скоро месяц как восстанавливаются. Так что лучше сначала все хорошо продумать и подготовить, чтоб впоследствии не воевать с многими факторами неизвестности.</p>
+
+<p><strong>ХеН</strong> 07-01-2010</p>
+
+<p>Если у кого было приусадебное хозяйство то вспомните как ваши родители или деды да бабушки проращивали семена. Изходя из собственных наблюдений могу сказать следующее: мать у меня замачивает семена огурцов на тряпочке, политой водой, так што бы семена лежали лишь на половину прикрытыми водой. Для ускорения их проращивания можно и раствору добавить но это к нашим специалистам. Я сам только лишь наматываю все на ус. Изучаю, сравниваю-вобщем иследую на теории. к практи намерен приступить скорее всего по весне. Сейчас пока приходится довольствоваться проращивание ячменя)</p>
+
+<p><strong>Mole_Garden</strong> 07-01-2010</p>
+
+<p>Ну по мне так такой вид огурца это следствие питания и света + собственно сквозняк, который начал пагубное дело.</p>
+
+<p>И опять таки, очень важно соблюдать нюансы, которые одинаковы почти для всех растений</p>
+
+<p>1) Питание(должно быть сбалансировано, переводить на 100% раствор росток нужно плавно ). У Валеры есть довольно простой рецепт раствора для огурца, думаю, можно порыскать по его домику, там возможно он есть.</p>
+
+<p>2) Свет - 23 ватта маловато, не зависимо от того, что стоят на окнах. Хотя бы ватт 100.</p>
+
+<p>3) Температура - как раствора, так и окружающей среды, от окна то ночью небось холодом дует.</p>
+
+<p>4) Влажность - раз подоконник, то значит батарея, а значит сухой воздух.</p>
+
+<p>Для информации:</p>
+
+<p><a href="http://www.ponics.ru/2009/06/report_cucumber/" target="_blank">http://www.ponics.ru/2009/06/report_cucumber/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/05/cucumber2/" target="_blank">http://www.ponics.ru/2009/05/cucumber2/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/05/cucumber/" target="_blank">http://www.ponics.ru/2009/05/cucumber/</a></p>
+
+<p><strong>mdima</strong> 08-01-2010</p>
+
+<p>И фотки корней бы не помешали.</p>
+
+<p><strong>Calltop</strong> 08-01-2010</p>
+
+<p>корни: сфоткал перед тем, как останки кустов отправились в мусор</p>
+
+<p><a href="https://t.me/ponics_ru_files/3012" target="_blank"><img src="/attachimages/1023_k1.png" alt="" /></a></p>
+
+<p><strong>Calltop</strong> 08-01-2010</p>
+
+<p>корни второго куста. Здесь корни побольше, подлиннее. На фотках выглядят как нечто монолитное, однако - это слипшиеся от воды слегка осклизлые жгуты тонких ниточек-корешков. В общем - больше месяца корни практически ни с места, хотя именно корням были созданы все условия: температура 26 градусов аквариумным подогревателем, темно (накрыл ведро куском вагонки), с раствором вроде тоже все в норме было, не пересыхали: уровень жидкости все время был нормальным. По запаху - огурцами пахли, парши, плесени и т.п. не замечено. Стимуляторов роста корней не добавлял никаких.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3013" target="_blank"><img src="/attachimages/1025_kr2.png" alt="" /></a></p>
+
+<p><strong>ХеН</strong> 08-01-2010</p>
+
+<p>На вид какой-то бактериоз. Просто так слизь на корнях не будет. Из-за этого они дохнут потому как не хватает им питания и кислорода. Я так думаю)</p>
+
+<p><strong>mdima</strong> 08-01-2010</p>
+
+<p>Да, корни плохие. Скорей всего не барботировался раствор, что привело к появлению анаэробной патогенной флоры.</p>
+
+<p><strong>Jah</strong> 09-01-2010</p>
+
+<p>Конечно, слизи чересчур много. И по виду листочков ясно, что корни задыхались, также важно заметить, что выгнутые куполом листья бывают от недостатка кальция.</p>
+
+<p><strong>Jah</strong> 09-01-2010</p>
+
+<p>Правильный огурец должен выглядеть примерно вот так (правда, это огурдыня, но разница невелика)</p>
+
+<p><img src="http://spice-blog.ru/gallery2/d/2323-2/DSC05427.jpeg" alt="" /> <img src="http://spice-blog.ru/gallery2/d/2328-2/DSC05440.jpeg" alt="" /> <img src="http://spice-blog.ru/gallery2/d/2332-2/DSC05445.jpeg" alt="" /> <img src="http://spice-blog.ru/gallery2/d/2336-2/DSC05448.jpeg" alt="" /> <img src="http://spice-blog.ru/gallery2/d/2340-2/DSC05449.jpeg" alt="" /></p>
+
+<p>Раствор самодельный, подбираю его вообще-то для капусты, только она не очень понимает, чего от неё хотят. В этой же установке сидят (щас придёт Дима и чо-нибудь плохое скажет) два вида капусты, сердечник (тож крестоцветное, типа кресс-салата), горох, овощная хризантема, перцы, сеянцы миртовых трёх видов, земляника, петрушка.</p>
+
+<p><strong>Mole_Garden</strong> 09-01-2010</p>
+
+<p>да и 26 градусов многовато, я бы держал в районе 24-22.</p>
+
+<p>Кстати, что-то проморгал и не увидел описание самой установки для выращивания, какого она типа и прочее. А корни и в правду плохие, у мня у перца на 3 недели жизни были куда больше.</p>
+
+<p><strong>Calltop</strong> 09-01-2010</p>
+
+<p>Спасибо, форумчане - подтверждаете мои догадки, и то о чем я не догадывался. Итак что было:</p>
+
+<p>Установка: ведро на 10 литров, в него вложена в трех см от верха вырезаная из вагонки крышка с отверстиями для двух стаканчиков и маленькими отверстиями для шлангов и провода грелки. Система глубокого затопления. температура раствора держалась 24 грелкой для аквариумов 50Вт (26 град. - это я ошибся - посмотрел на грелку повнимательней). барботировался раствор маленьким аквариумным аэратором. Потом уже увидел, как кусты выбросил - воздуха на 10 литров мало, скорей всего изначально мало и может быть мембрана подпросела.</p>
+
+<p><strong>Mole_Garden</strong> 09-01-2010</p>
+
+<p>У меня один компрессор работал, шумел и даже дул, но как-то странно звучал, просто рычал. Разобрал посмотрел, ничего не видно, разобрал полностью, снял резинку и увидел трещину, мембрана треснула и вуаля, капец компрессору. :D Так что стоит все еще раз перепроверить.</p>
+
+<p><strong>Calltop</strong> 12-01-2010</p>
+
+<p>Компрессоры разобрал, осмотрел, проверил - исправные.</p>
+
+<p>Дело было так: камень висел не доходя до дна примерно 8 см и пузырей было достаточно, а потом - как раз перед началом “конца” я его утопил на дно - то есть подача воздуха сократилась вдвое как минимум из-за давления. Еще момент подсказал коллега (он прошлой зимой-весной огурцы выращивал) - я раствор не менял, а доливал. Месяц такой практики - нормально, два - наглость, а на третий - неприемлемо: судя по всему огурцы сожрали весь калий, особенно под конец, когда завязывались активно, а фосфор все нарастал - вот и отравление по фосфору при недостаточном дыхании. А так как булькотело слабо - еще и бактерии со слизью - в общем хоть и по неопытности, но планомерно угробил корни…</p>
+
+<p><strong>Jah</strong> 12-01-2010</p>
+
+<p>Очень похоже на правду :)</p>
+
+<p><strong>Mole_Garden</strong> 12-01-2010</p>
+
+<p>Слизь скорей всего из-за недостаточного дыхания, возможно из-за проникновения света</p>
+
+<p>А вы как делали с раствором? Постоянно доливали свежий с удобрениями? :D</p>
+
+<p><strong>Calltop</strong> 12-01-2010</p>
+
+<p>Недостаточное дыхание - согласен на 100%</p>
+
+<p>Света там не было точно: вся поверхность накрыта, на стаканчики сделал картонные нашлепки, накрыто все.</p>
+
+<p>Да, доливал. Не смейтесь, но так и было… больше не буду. Мы изволили доливать (экономить) раствор и Мы пролошились в полный рост… и угробил даже не огурцы, а надежду на лучшую жизнь - учитесь, кто может, и на моих ошибках…</p>
+
+<p>У меня дубль второй уже начат: проращиваются семечки Медия. Да будут овощи - здоровые и вкусные!</p>
+
+<p><strong>Mole_Garden</strong> 12-01-2010</p>
+
+<p>8) Ну что же, очень радует, что вы не опустили рук, а еще с большим азартом ринулись вперед к новым урожаям. Удачи и ждем фоток, а возможно и репорта. ;)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

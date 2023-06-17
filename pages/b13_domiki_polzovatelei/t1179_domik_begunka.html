@@ -1,0 +1,3939 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Домик бегунка | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Домик бегунка">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Домик бегунка</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>begunok</strong> 10-09-2011</p>
+
+<p>Добрый день всем.</p>
+
+<p>После разных маленьких экспериментов решил чуть расшириться. Завожу свой домик.</p>
+
+<p>Купил палаточку у китайцев 3 на 1 м, хотя обещали, заразы 3 на 1.5 метра, но после того, как собрана была -оказалось, что украли полметра)))</p>
+
+<p>Ну да ладно.</p>
+
+<p>Поставил бесшумные вентиляторы, попробовал разные системы освещения -в результате остановился на 600 ДНаТ в култьюбе. Открытый светильник давал слишком много избыточного тепла -температура в тепличке выросла до 31 градуса. Попробовал култьюб, хотя освещенность стала явно меньше, но температура упала до 24 градусов. Так что все терпимо</p>
+
+<p>26 августа посеял семена 8 разных сортов томатов. Взошли практически 100 процентно.</p>
+
+<p>Вот один томатик, который я привез из Италии, Куплен просто на рынке из-за своей красивой формы. Тоже посажен))</p>
+
+<p>Сегодня сфотографировал тепличку, все растет потихонечку</p>
+
+<p><a href="https://t.me/ponics_ru_files/6337" target="_blank"><img src="/attachimages/8433_фотография (6).jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6338" target="_blank"><img src="/attachimages/8435_IMG_2733.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6339" target="_blank"><img src="/attachimages/8437_IMG_2765.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6340" target="_blank"><img src="/attachimages/8439_IMG_2763.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 10-09-2011</p>
+
+<p>Хорошие начинания, но только не многовато ли томатов на такую маленькую площадь? Лучше меньше растений, но больше урожай, чем больше растений, но меньше урожай.</p>
+
+<p><strong>valery</strong> 10-09-2011</p>
+
+<p>Приличных урожаев на новой томатной плантации!</p>
+
+<p>А с кубиками - несколько странно … Вроде бы внешне выглядят вполне стандартными 10х10х6,5 …</p>
+
+<p>У меня вес при запитке - в ТОЧНОСТИ как говорит Алексей.</p>
+
+<p>С поливом можно определиться и на “скорую руку”, без весов ( с весами - лучше). Просто приподнимите один из крайних кубиков … - полегчал “заметно”, значит пора поливать. Первое время (для сравнения) можно просто держать там же один полностью запитанный кубик, но без рассада.</p>
+
+<p>Потрогали (приподняли) его, затем с росточком … Разница чувствуется сразу.</p>
+
+<p>Кстати, а как запитывали ? Я, к примеру, бросаю в ведро (или там глубокий тазик) и жду, когда утонет (пара минут). Утонул - значит “запитан” …</p>
+
+<p>Ставить - очень удобно на стекло. И “излишки” стекают не задерживаясь, и корешочки (а они быстро кубик прошивают) - не прилипают, не прирастают к “шероховатому” …</p>
+
+<p><strong>Acc</strong> 10-09-2011</p>
+
+<p>Поздравляю с новосельем :), желаю хороших урожаев и дальнейших плодотворных исследований <em>8)</em> <em>Bravo</em></p>
+
+<p><strong>begunok</strong> 10-09-2011</p>
+
+<blockquote>
+  <p>Приличных урожаев на новой томатной плантации!</p>
+
+  <p>А с кубиками - несколько странно … Вроде бы внешне выглядят вполне стандартными 10х10х6,5 …</p>
+</blockquote>
+
+<p>Сегодня взвесил кубики, вроде нормально- 460 гр после 4 дней, видимо первый раз как-то коряво взвесил.</p>
+
+<p>А растений будет 12 штук, выберу те, которые полуше.</p>
+
+<p>Попробую сравнить выращивание на гродане и в супергроу. Уж очень он мне понравился</p>
+
+<p>Кстати, кто в Москве -могу поделиться саженцами)))</p>
+
+<p><strong>chip</strong> 10-09-2011</p>
+
+<p>А какие сорта посадили? Может тоже попробовать… Зима на носу, будет чем заняться.</p>
+
+<p><strong>begunok</strong> 11-09-2011</p>
+
+<p>Посадил следующее</p>
+
+<p>Биг биф - https://store.tomatofest.com/ProductDetails.asp?ProductCode=TF-0053</p>
+
+<p>Brandywine-Heirloom - <img src="https://store.tomatofest.com/v/vspfiles/photos/TF-0078-2.jpg" alt="" /></p>
+
+<p>Зеленая зебра <img src="https://store.tomatofest.com/v/vspfiles/photos/TF-0225-2.jpg" alt="" /></p>
+
+<p>Marmande - https://store.tomatofest.com/ProductDetails.asp?ProductCode=TF-0312</p>
+
+<p>Mexico -<img src="https://store.tomatofest.com/v/vspfiles/photos/TF-0316-2.jpg" alt="" /></p>
+
+<p>Mortgage Lifter, Bi-Color - <img src="https://store.tomatofest.com/v/vspfiles/photos/TF-0323-2.jpg" alt="" /></p>
+
+<p>Ну и итальянский помидор</p>
+
+<p><strong>begunok</strong> 16-09-2011</p>
+
+<p>продолжают расти помидорки</p>
+
+<p>Купил я в конце концов баллон с углекислым газом. Оказалось довольно просто поддерживать уровень в 750-800 ppm</p>
+
+<p>И еще- может кто знает -что это с одним растением? какие-то странные лиситья. Тот, что на первой фотографии в середине</p>
+
+<p><a href="https://t.me/ponics_ru_files/6341" target="_blank"><img src="/attachimages/8469_IMG_2771.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6342" target="_blank"><img src="/attachimages/8471_IMG_2767.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 16-09-2011</p>
+
+<p>Обычный картофельный лист, у некоторых любительских сортов такое бывает. Скажу сразу, выбор сортов мне не нравится, все - любительские, значит, вести себя будут непредсказуемо, болеть могут всем на свете (хотя в закрытом помещении скорее всего не заболеют) и когда дело дойдет до урожая, очень велик риск растрескивания. Но если Вам они нравятся именно своей экзотичностью, то все вышесказанное просто не берите в голову, Вы же для себя их выращиваете :)</p>
+
+<p><strong>Aleksey Kurenin</strong> 16-09-2011</p>
+
+<p>Бегунок, Вы приглашали в гости.</p>
+
+<p>Всё нормально пока. То что Coccinella назвала картофелным листом это вы скорее всего выбракуете, я так думаю. Вообще имхо этио связано с её же мыслью о выборе гибридов :-X</p>
+
+<p>У меня вопрос, а что это за лотки такие пластиковые? В них кубики стоят. Вы туда и маты будете класть?</p>
+
+<p><strong>begunok</strong> 16-09-2011</p>
+
+<p>Ну да, туда буду и маты класть. Как раз по размеру -это вентиляционные лотки.</p>
+
+<p>По поводу выбора гибридов, у меня есть профессиональные семена от Petoseed , так и непрофессиональные. Посмотрим, какие лучше</p>
+
+<p><strong>orgail</strong> 16-09-2011</p>
+
+<p>рос у меня прошлым летом похожий, тоже подумал что картоха :)</p>
+
+<p>вот с названием не помню, толи яблонька россии, а мож еще что</p>
+
+<p><strong>андрей п</strong> 16-09-2011</p>
+
+<p>У нас томатов с такими листьями полно в огородах. Плод большого размера, розовый. Очень вкусный. Не бракуй, посмотришь хоть кто вырастет.</p>
+
+<p><strong>Aleksey Kurenin</strong> 16-09-2011</p>
+
+<blockquote>
+  <p>Ну да, туда буду и маты класть. Как раз по размеру -это вентиляционные лотки.</p>
+</blockquote>
+
+<p>Имхо - плохое решение.</p>
+
+<p>Куда будет дренаж деваться?</p>
+
+<p><strong>begunok</strong> 17-09-2011</p>
+
+<p>Дренаж будет уходить в специальную емкость</p>
+
+<p><strong>Aleksey Kurenin</strong> 17-09-2011</p>
+
+<p>:) эт понятно, что не на пол литься будет.</p>
+
+<p>в лотке будет несколько матов и на каждом несколько дренажных отверстий. правильно?</p>
+
+<p>то есть каждый следующий мат будет лежать (плавать) в дренаже текущем из предыдущего? Или даже из дренажа соседних дренажных отверстий.</p>
+
+<p>повторяю - плохая идея. :-X</p>
+
+<p>Какая у Вас ширина этого лотка?</p>
+
+<p><strong>begunok</strong> 17-09-2011</p>
+
+<p>ширина чуть больше, чем мат -на 3 см. Я видел у кого-то на форуме такое же сооружение, вроде 2 год уже -все нормально</p>
+
+<p><strong>Aleksey Kurenin</strong> 18-09-2011</p>
+
+<p>положите в лоток пенопласт шириной 20см (маты то у вас 20см?) и толщиной см по три. Дренаж будет хорошо сливаться в щели между пенопластом и стенками лотка.</p>
+
+<p>а то что у кого то нормально, то можно только порадоваться <em>???</em></p>
+
+<p><strong>begunok</strong> 01-10-2011</p>
+
+<p>Продолжение следует</p>
+
+<p>Появились первые цветки</p>
+
+<p>Оказывается, очень сложно уследить за пасынками. Я не очень представляю, что делают огромные теплицы. Люди ходят каждые полчаса -убирают пасынки? Я просмотрел буквально 2 дня -так пришлось удалять уже огромные ветки</p>
+
+<p><a href="https://t.me/ponics_ru_files/6343" target="_blank"><img src="/attachimages/8573_IMG_2779.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6344" target="_blank"><img src="/attachimages/8575_IMG_2778.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6345" target="_blank"><img src="/attachimages/8577_IMG_2777.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 01-10-2011</p>
+
+<p>Или перевернуть лоток выпуклой стороной вверх.</p>
+
+<p>20-ти сантиметровые каналы очень точно подошли под 20см мат …</p>
+
+<p><strong>begunok</strong> 01-10-2011</p>
+
+<p>единственная доработка -положил на дно каналов пластиковые поддончики в 1 см -сток прекрасный</p>
+
+<p><strong>Coccinella</strong> 02-10-2011</p>
+
+<p>Просто пасынки надо вовремя удалять :) Ведь известно, что они обязательно будут и известно, где именно. Вот вовремя и выщипываете, это не так уж трудно :)</p>
+
+<p><strong>caiman</strong> 02-10-2011</p>
+
+<p>Да и в больших теплицах у каждой работницы своя делянка с которой она получает от всходов до сбора урожая, вот и удаляет, да еще небось сдает на дальнейшую посадку старшему, так что не только поудалять, а еще и сохранить…… :D :D</p>
+
+<p>Это я так думаю, а как на самом деле знают спецы, кто в теплицах работает….</p>
+
+<p><strong>valery</strong> 02-10-2011</p>
+
+<p>Кстати, насчет “клипс и клипсов” …</p>
+
+<p>Хотел брякнуть, но забыл …</p>
+
+<p>Знаете, наверное, но на всякий случай - клипсы “действие вегетативное”. “Генеративное действие” - просто вокруг шпагата.</p>
+
+<p>Как-то так случается, что в нашем домашнем “микроклимате”, чаще приходится думать как сдвинуть баланс в генеративную сторону …</p>
+
+<p><strong>Coccinella</strong> 03-10-2011</p>
+
+<p>Валерий, вокруг шпагата бывает уж очень генеративно :) Если шпагат тонкий, а растение тяжелое, то бывает, что врезается до середины стебля. А потом серая гниль в этом месте идет.</p>
+
+<p><strong>valery</strong> 03-10-2011</p>
+
+<p>Спасибо! Я не “против”, даже “за” … :)</p>
+
+<p>Просто больно уж в помещениях климат “ровный”, приходится “собирать” генеративные действия (все, какие “плохо лежат” :-[ )</p>
+
+<p><strong>ProRus</strong> 03-10-2011</p>
+
+<p>А что старый, бабушкин метод не подходит для современных технологий?</p>
+
+<p>Старую рубашку рвем на лоскутки и восьмеркой подвязываем.</p>
+
+<p><strong>Coccinella</strong> 03-10-2011</p>
+
+<p>Пока пара растений бабушкин метод очень хорош, а вот уже с десятком так возиться недосуг.</p>
+
+<p><strong>ProRus</strong> 03-10-2011</p>
+
+<blockquote>
+  <p>Пока пара растений бабушкин метод очень хорош, а вот уже с десятком так возиться недосуг.</p>
+</blockquote>
+
+<p>Понял, согласен.</p>
+
+<p><strong>begunok</strong> 03-10-2011</p>
+
+<p>я пока сделал что-то среднее))) пока клипсы жду</p>
+
+<p>Навязал шпагатов плюс подвязал пластиковыми хомутами. Понимаю, что долго так нельзя -пластик будет впиваться. Надеюсь, что месяц проживет</p>
+
+<p><strong>valery</strong> 03-10-2011</p>
+
+<p>Если потребуется, вот этот “американский друг” отправил <a href="http://www.ebay.com/itm/Tomato-Vine-Trellis-Support-Clips-Qty-100-/360397364811?pt=LH_DefaultDomain_0&amp;hash=item53e95b5e4b#ht_500wt_1413" target="_blank">http://www.ebay.com/itm/Tomato-Vine-Trellis-Support-Clips-Qty-100-/360397364811?pt=LH_DefaultDomain_0&amp;hash=item53e95b5e4b#ht_500wt_1413</a></p>
+
+<p>6,95$ упаковка. С учетом доставки (две упаковки) получилось 4 рубля клипса. Что, конечно, недешево. :(</p>
+
+<p><strong>caiman</strong> 03-10-2011</p>
+
+<p>Я тоже нигде в Украине не могу найти эти клипсы, а то мои уже заканчиваются…… <em>???</em></p>
+
+<p><strong>begunok</strong> 06-10-2011</p>
+
+<p>Подскажите, как правильно формировать завязи для крупноплодных томатов?</p>
+
+<p>скажем 1 кисть -когда появились завязи оставить 3-4 плода? меньше?</p>
+
+<p>а 2 кисть? так же?</p>
+
+<p><strong>Coccinella</strong> 06-10-2011</p>
+
+<p>В условиях недостатка света лучше оставить не больше 4 плодов на первых кистях.</p>
+
+<p><strong>Aleksey Kurenin</strong> 06-10-2011</p>
+
+<p>я бы не побоялся даже и по 2-3 плода.</p>
+
+<p><strong>begunok</strong> 29-10-2011</p>
+
+<p>Послендие фотографии из домика</p>
+
+<p>Поставил новый редуктор для CO2 -поддерживает очень тонкую настройку.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6346" target="_blank"><img src="/imagehost/thumbs/img2799.jpg" alt="" /></a></p>
+
+<p>Вид томатиков в общем</p>
+
+<p><a href="https://t.me/ponics_ru_files/6347" target="_blank"><img src="/imagehost/thumbs/img2800.jpg" alt="" /></a></p>
+
+<p>Эти стоят на Гродане</p>
+
+<p><a href="https://t.me/ponics_ru_files/6348" target="_blank"><img src="/imagehost/thumbs/img2801.jpg" alt="" /></a></p>
+
+<p>Эти стоят на Sure to Grow. Видны еще дыни</p>
+
+<p><a href="https://t.me/ponics_ru_files/6349" target="_blank"><img src="/imagehost/thumbs/img2802.jpg" alt="" /></a></p>
+
+<p>Итальянский томатик</p>
+
+<p><a href="https://t.me/ponics_ru_files/6350" target="_blank"><img src="/imagehost/thumbs/img2803.jpg" alt="" /></a></p>
+
+<p>Другие томатики</p>
+
+<p><a href="https://t.me/ponics_ru_files/6351" target="_blank"><img src="/imagehost/thumbs/img2806.jpg" alt="" /></a></p>
+
+<p>Обнаружил, что приборы то раскалибровалиь(((</p>
+
+<p>Заказал новые через Ebay HM Digital COM-100 TDS EC Water Conductivity Combo Temp и HM Digital PH-200 Waterproof pH Temp Water</p>
+
+<p>Всего получилось 4200р</p>
+
+<p><strong>valery</strong> 29-10-2011</p>
+
+<p><em>8)</em></p>
+
+<p>Гаечный ключ и плоскогубцы … :) Чувствуется “уголок” настоящего растениевода … :) <em>8)</em></p>
+
+<p><strong>begunok</strong> 29-10-2011</p>
+
+<p>Валерий, представляешь- ты как всегда прав)) Ну ладно, дренаж был приличным -500 мл с 4 литров.</p>
+
+<p>Но раствор был 1500 ppm и кислотность 4</p>
+
+<p>А растения живы. Даже странно</p>
+
+<p><strong>valery</strong> 29-10-2011</p>
+
+<p>pH 4,0 … несколько “круто” … но не смертельно, томат терпеливый …</p>
+
+<p>Хуже то, что при чересчур долгих поливах с таким рН … уже сам мат может не “выдержать” и начнутся (вернее, МОГУТ начаться) проблемы с его структурой.</p>
+
+<p>Без резких движений, выковыриваем поэтапно из раствора аммонийный азот (можно в рабочий бак добавить тот же самый состав в старом исполнении, но без аммонийного азота - все параметры рабочего раствора останутся прежними, а аммоний заметно снизится) …</p>
+
+<p>Быстрых изменений ждать не обязательно, не факт, что мат мгновенно отреагирует, главное что бы появилась “устойчивая положительная тенденция” ( :o во даю… классное словосочетание, надо записать … :D ) - то есть, что бы через сутки-двое (может трое) - рН стал РАСТИ, пусть чуть-чуть, постепенно, но постоянно. (еще более важно - что бы ниже не падал).</p>
+
+<p>Когда (и если) это получится - потом нужно будет не забыть “притормозить” … (перестать уменьшать аммоний чуть раньше, чем выйдем к “заветным” 5,5-6,0 в мате).</p>
+
+<p><strong>begunok</strong> 05-11-2011</p>
+
+<p>Наконец-то усмирил pH, купил для более точного измерения 2 pH метра. Старый начал “плавать”. Каждый раз приходится калибровать. Поливаю 7 раз в день, начинаю после включения ламп через час, выключаю за 3 часа до выключения. Влажность порядка 50 процентов. Температура ночью 17 днем 20. Питательный раствор разбил на 3 части - в одном мешаю Мастера, в другом кальций, в третем магний.</p>
+
+<p>Сделал новые фотографии.</p>
+
+<p>Не знаю, как ухаживать за дынями. Появились первые цветки. Написано, что обычно они мужские. Как бы их отличать от женских)))? Придется поработать за пчел.</p>
+
+<p>Есть проблема с одним из семагровских томатов. Удалил верхушку роста. Что с ней будет? Вырастет ли новая?</p>
+
+<p><a href="https://t.me/ponics_ru_files/6352" target="_blank"><img src="/imagehost/thumbs/img2813.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6353" target="_blank"><img src="/imagehost/thumbs/img2809.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 05-11-2011</p>
+
+<p>Новая макушка, вместо старой, конечно, не вырастет … , но если в верхней части есть молоденькие пасынки (или появятся в ближайшее время) - можно выращивать новый побег из них. (Из одного … или даже из двух). А по мере развития нового побега, остаток старого ствола можно будет срезать, когда созреют томаты (если они есть на этом участке).</p>
+
+<p>Про поливы - даже любопытно :) И у меня сейчас как раз семь :) И температуры - близки …</p>
+
+<p>По поводу Мастера. Не пользовался Мастером и любил его “хвалить” заочно …</p>
+
+<p>Что-то недавно читал о Мастере 3-11-38 … и с удивлением обнаружил, что среди микроэлементов ПОЛНОСТЬЮ ОТСУТСТВУЕТ МОЛИБДЕН :o</p>
+
+<p>Может просто ошибка на сайте ? Интересно, что написано на упаковке ?</p>
+
+<p><strong>begunok</strong> 05-11-2011</p>
+
+<p>в мастерах нет молибдена, точно. Отдельно приходится добавлять микроэлементы из ЭДТА микса, там он есть</p>
+
+<p><strong>Coccinella</strong> 06-11-2011</p>
+
+<p>Мужские цветки у дынь такие же, как у огурцов, кабачков, тыквы и их родственников. То есть у женского цветка сразу под цветком виден будущий плодик, а у мужских всего лишь цветоножка, как у всех декоративных цветов. У дыни, тыквы первые цветки действительно обычно мужские. Некоторые дыни поэтому вообще рекомендуют прищипнуть над 4 листом и пустить два пасынка. На пасынках женские цветки начинаются раньше, а в пазухах первых 4 листьев мужские цветки продолжают образовываться, поэтому для опыления хватает.</p>
+
+<p>Но можно и в один стебель выращивать, как огурцы. Так тоже вырастают :).</p>
+
+<p>Мы с мамой каждый раз спорим, как лучше :).</p>
+
+<p><strong>begunok</strong> 15-11-2011</p>
+
+<p>Сфотографую к выходным свои цветочки)) работаю пчелой -жужжу над каждым цветком <em>crazy</em></p>
+
+<p>Купил ЕС метр. Буду думать -какую концентрацию правильно поддерживать)) Придумал -ту, под которой растет))))</p>
+
+<p>Кстати, задумался над микозой -ну над фунгусами. Купил 3 разных вида. Думаю- можно ли посадить грибы к взрослым растениям или нет?</p>
+
+<p>Хорошо бы, Алексей Куренин не увидел. Но факт есть факт - на sure to grow урожай зреет лучше. Возможно, связано с большим количеством дренажа. Может, полив лучше подходит. Но следующий посев буду делать в него.</p>
+
+<p><strong>begunok</strong> 15-11-2011</p>
+
+<p>Вот что интересно обнаружил у гродана про томаты</p>
+
+<p>EC pH NH4 K Na Ca Mg NO3 Cl S HCO3 P Si Fe Mn Zn B Cu Mo K/Ca</p>
+
+<p>Sample mS/cm ppm ppm ppm ppm ppm ppm ppm ppm ppm ppm ppm ppm ppm ppm ppm ppm ppm</p>
+
+<p>2.8 6.1 9.0 274.0 25.0 309.0 53.0 279.0 25.0 51.0 12.0 68.00 7.00 0.95 0.66 0.78 0.9 0.1 0 0.9</p>
+
+<p>Так что-то формула немного другая, чем я пользуюсь</p>
+
+<p>сейчас буду пересчитывать</p>
+
+<p><strong>begunok</strong> 16-11-2011</p>
+
+<p>Чего-то я везде расписался</p>
+
+<p>Получил сразу 3 прибора)))</p>
+
+<p>Это блю-лаб все в одном)) - <a href="http://www.bluelabassist.com/shop/Bluelab+Monitors/Bluelab+Guardian+Monitor.html" target="_blank">http://www.bluelabassist.com/shop/Bluelab+Monitors/Bluelab+Guardian+Monitor.html</a> за 400 долларов вместе с доставкой</p>
+
+<p>и кроме этого отдельно ЕС и рН метр</p>
+
+<p>Вот эти -</p>
+
+<p>HM Digital COM-100 TDS EC</p>
+
+<p>HM Digital PH-200 Waterproof pH. Оба прибора обошлись в 135 с доставкой.</p>
+
+<p>Вообщем, показывают примерно одно и тоже, но блю лаб выглядит знаааачительно привлекательней.</p>
+
+<p>Оказалось, что 1400 ppm вовсе не означает, как при рассчтете интернет-калькуляторами 2.1 ЕС. У меня показывает 4,4</p>
+
+<p>Как то это странно(((</p>
+
+<p><strong>valery</strong> 16-11-2011</p>
+
+<p>:D :D :D</p>
+
+<p>А измеряйте ЕС и выбрасывайте ppm-ы из головы … Мы ж давно эту тему обсуждаем :D (периодически)</p>
+
+<p>На Блю-Лаб … тоже точил зубы. Но не наточил. Не нашел напильник с обезболиванием …</p>
+
+<p>А HM Com-100 - работает около 3-х лет … или, возможно, чуть больше - совершенно без нареканий … “неправильно” хранимый, неухоженый, некалиброванный и показывает правильно (с новыми калиброванными приборами - расхождений нет, точнее - в пределах погрешности).</p>
+
+<p>А вот с “ихним” рН-200 дважды не везло. Брак попадался.</p>
+
+<p><strong>valery</strong> 16-11-2011</p>
+
+<p>Все же “симпатишный” этот гад. Блю-Лаб, в смысле. :(</p>
+
+<p>Вот любопытно, его электроды можно “воткнуть” в мат и там держать постоянно ?</p>
+
+<p><strong>begunok</strong> 16-11-2011</p>
+
+<p>в нем один электрод стеклянный- тот, который ph</p>
+
+<p>а второй пластик -довольно таки толстый. думаю вряд ли.</p>
+
+<p>Хорошо бы иметь оба таких- железненьких))) воткнул и радуйся</p>
+
+<p><strong>begunok</strong> 18-11-2011</p>
+
+<p>Ну что, потянулась стражда. Ну вообщем, крестьяне начали подготавливаться к сбору урожая</p>
+
+<p>Это тот, итальянский. Ну правда маленький</p>
+
+<p><a href="https://t.me/ponics_ru_files/6354" target="_blank"><img src="/imagehost/thumbs/img2821.jpg" alt="" /></a></p>
+
+<p>Самые большие вот эти - mortage lifter bicolor. Когда поспеют -должны быть красно-желтые. Черные точки -это органика всякая. Ферменты там и прочее</p>
+
+<p><a href="https://t.me/ponics_ru_files/6355" target="_blank"><img src="/imagehost/thumbs/img2814.jpg" alt="" /></a></p>
+
+<p>Самые смешные -зеленая зебра. Когда поспеет, должны быть зелено-желтыми, полосатыми</p>
+
+<p><a href="https://t.me/ponics_ru_files/6356" target="_blank"><img src="/imagehost/thumbs/img2820iii.jpg" alt="" /></a></p>
+
+<p>Они же</p>
+
+<p><a href="https://t.me/ponics_ru_files/6357" target="_blank"><img src="/imagehost/thumbs/img2823.jpg" alt="" /></a></p>
+
+<p>Ну и F1 биг биф, те, которые голландские. Юрий Иванович -вот эти семена я вам послал</p>
+
+<p><a href="https://t.me/ponics_ru_files/6358" target="_blank"><img src="/imagehost/thumbs/img2828.jpg" alt="" /></a></p>
+
+<p><strong>Юрий Иваныч</strong> 18-11-2011</p>
+
+<p>:o :o :o Странно ко мне дошли только какие то мааахонькие семечки. Наверное на почте воруют. Как бы их пообиднее назвать, но так что бы нормативно получилось, а то вдруг Coccinella прочтет - некрасиво получится перед дамой. $) Шутка. :D :D :D ;D ;D ;D Замечательно выглядят.</p>
+
+<p><strong>Юрий Иваныч</strong> 18-11-2011</p>
+
+<p>Максим, я вспоминаю, Вы писали что то о сроке их годности. Уточните пожалуйста. Я, как Вы уже успели заметить, ударился пока в огурцы. До томатов пока очередь не дошла. Обидно будет если семена пропадут. :'(</p>
+
+<p><strong>valery</strong> 18-11-2011</p>
+
+<p><em>8)</em> ЗдОрово … ! Особенно “зебры” симпатичные … “Дни” не считал, но по-моему довольно быстро получилось. <em>8)</em></p>
+
+<p>Юрий Иваныч, конечно, почта ! (кто ж еще … &gt;:D ) Мне вот тоже семена пришли. По почте. Да еще через таможню. :o</p>
+
+<p>Так тех семян - вообще почти не видно. В микроскоп только рассматривать.</p>
+
+<p>Велико-Британцы высылали. Это те, которые в маленькой такой британии живут. (обритаются. или обрЕтаются. словом - слоняются и шарохаются)</p>
+
+<p>Так что там семена …</p>
+
+<p>Они даже названия из наших слов умудряются тырить &gt;:D &gt;:D &gt;:D</p>
+
+<p>“С-трав-бери” называется.</p>
+
+<p>Вообще уже.</p>
+
+<p><strong>begunok</strong> 18-11-2011</p>
+
+<p>Юрий, я покупал их летом -обычно год хранения.</p>
+
+<p>Так что у вас есть время)))) не переживайте</p>
+
+<p>А так сегодня идет 12 неделя со дня высева, или посева?)))</p>
+
+<p><strong>Coccinella</strong> 19-11-2011</p>
+
+<p>Прочту, конечно, :). Семена томата, если они изначально хорошо отсортированы не теряют всхожести несколько лет. Если саморучно экстрагированы из плодов и высушены на промокашке (интересно, они еще водятся?), то все равно 2-3 года всхожесть сохраняют (она у них просто изначально ниже за счет того, что часть семян на вид выглядят зрелыми, но таковыми не являются :))</p>
+
+<p>Begunok, фотографии замечательные, так и хочется позаимствовать для лекций. А почему на стебле Green Zebra так много придаточных корней? Такое бывает, когда корням воздуха не хватает, а также, когда шпагат где-то ниже врезается в стебель растения. (Еще это бывает при некоторых заболеваниях, но они в данном случае практически невероятны.)</p>
+
+<p><strong>begunok</strong> 19-11-2011</p>
+
+<p>Милая Coccinella</p>
+
+<p>Конечно, берите любые фотографии</p>
+
+<p>Кстати, итальянские томатики как раз такие))) высушенные на промокашке))</p>
+
+<p>А по поводу корней. ЕСть шпагат, который врезаетеся. Я только получил клипсы. Да и полив только-только отрегулировал.</p>
+
+<p>Вот сейчас думаю -что же делать.</p>
+
+<p>Хочется попробовать залить микозы в маты вначале. Хочется еще поэксперементировать с бактериями и новыми сортами томатиков. ЧТо делать, что делать)))</p>
+
+<p><strong>Coccinella</strong> 19-11-2011</p>
+
+<blockquote>
+  <p>Хочется попробовать залить микозы в маты вначале. Хочется еще поэксперементировать с бактериями и новыми сортами томатиков. ЧТо делать, что делать)))</p>
+</blockquote>
+
+<p>Ну так для своего же удовольствия выращиваете :), хочется экспериментировать - удачи!</p>
+
+<p>А насчет микозов - так вообще-то болезни называют :). В том смысле, что Вы имеете в виду, начните с чего-нибудь, содержащее гриб Trichoderma harzianum, таких препаратов много и они действительно хорошо действуют.</p>
+
+<p><strong>begunok</strong> 20-11-2011</p>
+
+<p>да, конечно)))</p>
+
+<p>микоризы вроде правильнее)))</p>
+
+<p>Coccinella, для меня только не очень понятно как правильно их засевать. Я так предполагаю, чуть заранее, до выставления растений на маты? Или вместе?</p>
+
+<p><strong>Coccinella</strong> 20-11-2011</p>
+
+<p>Лучше заранее, но можно и после. Нам надо достичь рабочей концентрации (титра) 10 в седьмой - 10 в девятой степени единиц, образующих колонии на 1 мл субстрата. Сами мы измерить это не можем, но готовые препараты обычно столько и содержат (на эткетке должно быть указано). Обычно рекомендуют разводить препараты в 100 и более раз, а потом ждать 2-4 недели, пока микроорганизмы размножатся до эффективной концентрации. Поэтому в принципе можно сразу вносить неразбавленный препарат и не ждать эти недели.</p>
+
+<p>Мне лично больше всего нравятся сухие споровые порошки, они хранятся в темном сухом месте десятилетиями, всего-то и надо развести в воде и полить. Или корни окунуть. Можно использовать готовые жидкие суспензии, но они должны быть свежими, триходермин (и другие почвенные микроорганизмы) в воде быстро гибнет.</p>
+
+<p>Препараты на основе торфа или почвы хранятся довольно долго, но в гидропонике именно их применять несподручно.</p>
+
+<p><strong>begunok</strong> 23-11-2011</p>
+
+<p>Пока мы тут кумекали об огурцах -помидорах-гродане, я забыл рассказать про эксперимент свой.</p>
+
+<p>Были у меня остатки от Sure To Grow - однажды помидорки растил на нем <a href="http://forum.ponics.ru/index.php?topic=740.30" target="_blank">http://forum.ponics.ru/index.php?topic=740.30</a> и мне он больше понравился, чем кокос и керамзит.</p>
+
+<p>Так вот, я сделал простенькую установку -взял отрезок 1 метровый -ну примерно такой <a href="https://t.me/ponics_ru_files/6359" target="_blank"><img src="/imagehost/thumbs/501020xa.jpg" alt="" /></a></p>
+
+<p>Ну так вот, сделал 3 дырки, насыпал туда этих кубиков -вот таких - <a href="http://www.suretogrow.com/stg-storm-hail-hydroponic-supplies-from-sure-to-grow" target="_blank">http://www.suretogrow.com/stg-storm-hail-hydroponic-supplies-from-sure-to-grow</a></p>
+
+<p>Потом взял кубики гродана, посадил туда дыньки.</p>
+
+<p>На сегодняшний день все это выглядит примерно так</p>
+
+<p>Это вершки (фотографировал без вспышки -поэтому цвета такие странные)</p>
+
+<p><a href="https://t.me/ponics_ru_files/6360" target="_blank"><img src="/imagehost/thumbs/img2832.jpg" alt="" /></a></p>
+
+<p>Ну и сама установочка внизу</p>
+
+<p><a href="https://t.me/ponics_ru_files/6361" target="_blank"><img src="/imagehost/thumbs/img2829.jpg" alt="" /></a></p>
+
+<p>Поливается как томатики, растет просто чудесно. Вообщем -рекомендую эту среду и думаю буду ее продавать</p>
+
+<p><strong>Юрий Иваныч</strong> 23-11-2011</p>
+
+<p>А какие ценовые рамки? :-X</p>
+
+<p><strong>valery</strong> 23-11-2011</p>
+
+<p>Почему бы и нет ?</p>
+
+<p>Собственно, у Вас получился тот же мат, но с “постоянной” долгоиграющей рубашкой и несколько “бессистемно-хаотичной” структурой.</p>
+
+<p><strong>begunok</strong> 23-11-2011</p>
+
+<p>надо подумать про цену</p>
+
+<p>Я думаю, для 1 метра это будет в районе 600р, может меньше. Дороговато, мне кажется?</p>
+
+<p>Вообщем, не знаю пока))) надо поговорить с дилером. К сожалению, в Европе дилер не отвечает ни на что</p>
+
+<p>Самое что интересное, у меня на этой фигне растет лучше</p>
+
+<p><strong>valery</strong> 23-11-2011</p>
+
+<blockquote>
+  <p>Самое что интересное</p>
+</blockquote>
+
+<p>А именно так и должно быть.</p>
+
+<p>Аналогия простая.</p>
+
+<p>Кирпич и снайперская винтовка Драгунова.</p>
+
+<p>Первое - получается сразу. Всего-то … рукой махнул и высадил окошко у соседки …</p>
+
+<p>Второе … Нужно долго разбираться, тренироваться, учитывать скорость/направление ветра, дальность, брать поправку на “упреждение”, плавно/нежно нажимать на спусковой крючок, ровно дышать … и прочее.</p>
+
+<p>Но конечный эффект все таки разный, как с кирпичом не тренируйся …</p>
+
+<p>Алексей ведь не раз отмечал - это “не наш” (не любительский) продукт.</p>
+
+<p>У нас, как правило, практически полностью отсутствуют должные средства контроля/управления … (не считая знаний, понимания, опыта, умения …)</p>
+
+<p>Ну или типа … Даже не будучи сельским жителем … если вдруг придется - сядем в телегу с лошадью, подергаем за вожжи, покричим, потопаем ногами … Все равно приедем куда-нибудь.</p>
+
+<p>На самолете … дергая вожжами … Скорей всего и не взлетим. Или не долетим :D … в смысле, в любом случае - отстанем.</p>
+
+<p>Вот.</p>
+
+<p>Летом девчонки у меня в “огороде” кушали арбуз.</p>
+
+<p>Накидали семечек в мой ящик с почвой/чистотелом.</p>
+
+<p>Никакого “контроля” температуры-влажности, практически без освещения, без поливов (забываю), без ваты, кокоса, рН и ЕС …</p>
+
+<p>А они возьми и днями взойди … :o</p>
+
+<p><strong>begunok</strong> 25-11-2011</p>
+
+<p>у меня завтра сбор урожая.</p>
+
+<p>Пойдем с мелким помидорки собирать</p>
+
+<p><strong>Юрий Иваныч</strong> 25-11-2011</p>
+
+<p>Ящики по больше берите. :D</p>
+
+<p><strong>valery</strong> 25-11-2011</p>
+
+<p><em>8)</em></p>
+
+<p><strong>begunok</strong> 26-11-2011</p>
+
+<p>Первый урожай))</p>
+
+<p>Какие-то они у меня маленькие все-таки. Итого полкило помидоров</p>
+
+<p><a href="https://t.me/ponics_ru_files/6362" target="_blank"><img src="/attachimages/9093_IMG_2834.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6363" target="_blank"><img src="/attachimages/9095_IMG_2833.jpg" alt="" /></a></p>
+
+<p><strong>Aleksey Kurenin</strong> 26-11-2011</p>
+
+<p>Зато для Ноября - вкусные.</p>
+
+<p><strong>valery</strong> 26-11-2011</p>
+
+<p><em>8)</em></p>
+
+<p><em>Dance</em></p>
+
+<p>(не совсем понял … снимки отличаются ? )</p>
+
+<p><strong>Coccinella</strong> 26-11-2011</p>
+
+<p>Алексей, гидропонщики начисто лишены чувства реальности :). Получили урожай в конце ноября и недовольны - низкий мол! :)</p>
+
+<p>С ума сойти можно! Даже не знаю, как это адекватно назвать :), слово “наглость” просится, но не подходит… :)</p>
+
+<p>Бегунок, я Вас поздравляю $) с таким замечательным урожаем!!! Вы - герой гидропонного фронта! $)</p>
+
+<p>Ох, господа, разорите вы в конце-концов импортеров :(.</p>
+
+<p><strong>valery</strong> 26-11-2011</p>
+
+<blockquote>
+  <p>Алексей, гидропонщики начисто лишены чувства реальности :). Получили урожай в конце ноября и недовольны - низкий мол! :)</p>
+</blockquote>
+
+<p>:D :D :D</p>
+
+<p>Может быть на размер повлиял несколько высоковатый поначалу (особенно до “измерений”) ЕС ? ( или “тепловатая” температура ? )</p>
+
+<p>Или в данном случае это большой роли не сыграло ?</p>
+
+<p><strong>Aleksey Kurenin</strong> 26-11-2011</p>
+
+<blockquote>
+  <p>(не совсем понял … снимки отличаются ? )</p>
+</blockquote>
+
+<p>Валерий!! Конечно отличаются. У них же номера разные.</p>
+
+<p><strong>begunok</strong> 26-11-2011</p>
+
+<p>сейчас, когда пойдут нормальные- я думаю будет помидорки в районе 400 гр, и от профессиональого сорта, ровненькие -по 200 гр думаю</p>
+
+<p>Вообщем -следующая неделя))</p>
+
+<p><strong>Юрий Иваныч</strong> 26-11-2011</p>
+
+<p>Молодчина! Поздравляю. <em>8)</em> <em>Bravo</em></p>
+
+<p><strong>valery</strong> 26-11-2011</p>
+
+<blockquote>
+  <p>я думаю будет помидорки в районе 400 гр, и от профессиональого сорта, ровненькие -по 200 гр думаю</p>
+</blockquote>
+
+<p>:o</p>
+
+<p>Позавидовал … :-[</p>
+
+<p>Пойду тогда тоже “фотографироваться” <em>crazy</em></p>
+
+<p>И “взвешиваться” &gt;:D</p>
+
+<p>:-\ ( или лучше просто гирьки от весов подпилю … <em>8)</em> … мысль … )</p>
+
+<p><strong>orgail</strong> 26-11-2011</p>
+
+<p>Валерий гирки надо высверливать, тогда на фотке незаметно будет :D</p>
+
+<p>Бегунок, поздравляю с урожаем! Очень красивые!</p>
+
+<p><strong>begunok</strong> 26-11-2011</p>
+
+<p>Кстати да)))</p>
+
+<p>Я на практике после 3 курса работал в овощном магазине))) У всех продавцов были свои гирьки, высверленные на 250 грам. Стоила такая гирька 25 рублей))) Эхх, почти коммунизм</p>
+
+<p><strong>valery</strong> 26-11-2011</p>
+
+<blockquote>
+  <p>Валерий гирки надо высверливать</p>
+</blockquote>
+
+<p>Бытие опережает сознание … В смысле, я сначала пост набрал … , а про дрель уже позже начал размышлять <em>crazy</em></p>
+
+<p>Опять же … мысли-то бьются как птицы :o Пока решил остановиться на папье-маше … :-[</p>
+
+<p><strong>begunok</strong> 29-11-2011</p>
+
+<p>Зреют томатики</p>
+
+<p><a href="https://t.me/ponics_ru_files/6364" target="_blank"><img src="/imagehost/thumbs/img2838.jpg" alt="" /></a></p>
+
+<p><strong>begunok</strong> 30-11-2011</p>
+
+<p>урожай зрел)))</p>
+
+<p><a href="https://t.me/ponics_ru_files/6365" target="_blank"><img src="/imagehost/thumbs/img2841.jpg" alt="" /></a></p>
+
+<p>Сижу, купил пиво, закусываю помидорчиками.</p>
+
+<p><strong>Юрий Иваныч</strong> 30-11-2011</p>
+
+<p>Максим, поздравляю с прекрасным урожаем. Какой вес плодов?</p>
+
+<p><strong>begunok</strong> 30-11-2011</p>
+
+<p>1 и 2 сбор в результате около кг))) Все-таки надо поменьше ЕС делать с самого начала</p>
+
+<p><strong>Coccinella</strong> 30-11-2011</p>
+
+<blockquote>
+  <p>урожай зрел)))</p>
+
+  <p><img src="/imagehost/thumbs/img2841.jpg" alt="" /></p>
+
+  <p>Сижу, купил пиво, закусываю помидорчиками.</p>
+</blockquote>
+
+<p>А с семьей поделиться?!</p>
+
+<p><strong>begunok</strong> 30-11-2011</p>
+
+<p>семья боится есть их)) говорит отравленные</p>
+
+<p>Хотя померял я все)) лучше покупных</p>
+
+<p>С нового года хочу попробовать растить на органике. Кто со мной? Валерий? Юрий?</p>
+
+<p><strong>Юрий Иваныч</strong> 30-11-2011</p>
+
+<p>Растить на органике? Это как? В грунте?</p>
+
+<p><strong>begunok</strong> 30-11-2011</p>
+
+<p>разные есть варианты</p>
+
+<p>Я хочу попробовать гумус-земля, гумус-кокос</p>
+
+<p>Вместе с микоризой и бактериями. Очень хочется надеяться, что получится</p>
+
+<p><strong>aivar</strong> 30-11-2011</p>
+
+<p>где то читал, еще до регистрации на форуме, про подобную ситуацию… может даже где то здесь и читал…</p>
+
+<p>дядька тоже что то вырастил, а семья сказала “фи” химия…</p>
+
+<p>дядька в лабораторию отнес, там спросили откуда, он говорит - из лесу вестимо, ну в смысле - из теплички…</p>
+
+<p>ок, говорят лабораторщики приходите к нам есчо… через день.</p>
+
+<p>пришел, а его давай во лжи уличать… типа не бывает такого чистого в тепличках…</p>
+
+<p>и бумажку дали…</p>
+
+<p>с тех пор живут они… ну дядька с семьей своей… счастливо и добра наживают.</p>
+
+<p>по моему и у Валерия тоже часть семьи не сразу приняла выраСЧенное …</p>
+
+<p><strong>Юрий Иваныч</strong> 30-11-2011</p>
+
+<p>Я уверен, что у тебя все прекрасно получится.</p>
+
+<p>А насчет предложения растить на органике, спасибо, но я зимой отдыхаю от земли :-X. У меня при доме 0,3 га великолепного чернозема, так что летом у меня работы хватает. :-[ Хочу по весне посадить твои бифы и посмотреть, что из этого получится.</p>
+
+<p><strong>valery</strong> 30-11-2011</p>
+
+<blockquote>
+  <p>С нового года хочу попробовать растить на органике. Кто со мной? Валерий? Юрий?</p>
+</blockquote>
+
+<p>Не … я “пас” :)</p>
+
+<p><strong>valery</strong> 30-11-2011</p>
+
+<blockquote>
+  <p>по моему и у Валерия тоже часть семьи не сразу приняла выраСЧенное …</p>
+</blockquote>
+
+<p>Да не-е… Наоборот. Ребенок - счастлив, все - довольны (хотел сказать “балдеют”, но слово не нравится, а по смыслу - самое то).</p>
+
+<p>Это у меня с баклажанами промашка вышла …</p>
+
+<p>Да и то … Я его изводил-изводил (сразу-то под корень нельзя, вырезал постепенно … Отплодоносит участок - вырежу ) - а он успевал быстрее отрастать (с завязавшимся плодом рука не поднималась резать) …</p>
+
+<p>В общем - реабилитировали и баклажан, когда от него осталась одна ветка …</p>
+
+<p>Зашли как-то всем “дамским полом” в огород … Ай-ай … Синенькие! Ой-ой … какие красивенькие!</p>
+
+<p>Сделал “рожу кирпичом” и типа “дал себя уговорить” :D … оставить, в смысле.</p>
+
+<p><strong>aivar</strong> 30-11-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>по моему и у Валерия тоже часть семьи не сразу приняла выраСЧенное …</p>
+  </blockquote>
+
+  <p>Да не-е… Наоборот. Ребенок - счастлив, все - довольны (хотел сказать “балдеют”, но слово не нравится, а по смыслу - самое то).</p>
+</blockquote>
+
+<p>Позвольте! У меня все ходы записаны…</p>
+
+<blockquote>
+  <p>Более того. Как раз хотел пройтись по “вкусу” огурцов. Моя “любимая половина” к моим гидропонным опытам относится достаточно скептично. Во всяком случае чего-нибудь “попробовать” я ее не уговариваю - не хочет и не надо. …</p>
+
+  <p>…</p>
+</blockquote>
+
+<p><strong>begunok</strong> 01-12-2011</p>
+
+<p>Появились первые чемпионы.</p>
+
+<p>сегодня с утра зашел в тепличку -ба, а помидорки то поспели. Я совсем забыл, что у меня же двухцветок много))) А я жду, пока они покраснеют, а оказывается, они уже созрели)))</p>
+
+<p>Рекодрсмен -это Mortgage Lifter, Bi-Color-Heirloom. 252 грамма</p>
+
+<p><a href="https://t.me/ponics_ru_files/6366" target="_blank"><img src="/imagehost/thumbs/img2842.jpg" alt="" /></a></p>
+
+<p>А забра оказалась очень вкусная. Думаю оставить итальянскую помидорку на семена</p>
+
+<p>Итого 2 кг красавцев уже</p>
+
+<p><strong>Coccinella</strong> 01-12-2011</p>
+
+<p>Здорово-то как!!!</p>
+
+<p><strong>Юрий Иваныч</strong> 01-12-2011</p>
+
+<p>Максим, привет. А ты чем кормишь? Комплексным или сам раствор делаешь?</p>
+
+<p><strong>begunok</strong> 01-12-2011</p>
+
+<p>я валагрой удобряю. хочешь -пришлю? всего-то и нужно 2 ведерка. Только добавить сульфат магния и кальций. ну и кислоты чуть. Очень удобно</p>
+
+<p><strong>Юрий Иваныч</strong> 01-12-2011</p>
+
+<blockquote>
+  <p>я валагрой удобряю. хочешь -пришлю? всего-то и нужно 2 ведерка. Только добавить сульфат магния и кальций. ну и кислоты чуть. Очень удобно</p>
+</blockquote>
+
+<p>Конечно хочу. <em>8)</em></p>
+
+<p><strong>valery</strong> 01-12-2011</p>
+
+<blockquote>
+  <p>Позвольте! У меня все ходы записаны…</p>
+
+  <blockquote>
+    <p>Более того. Как раз хотел пройтись по “вкусу” огурцов. Моя “любимая половина” к моим гидропонным опытам относится достаточно скептично. Во всяком случае чего-нибудь “попробовать” я ее не уговариваю - не хочет и не надо. …</p>
+
+    <p>…</p>
+  </blockquote>
+</blockquote>
+
+<p>:o</p>
+
+<p>Хм …</p>
+
+<p>:-\</p>
+
+<p>Кхм … кхм … кхм … ( “проклятая старость” … АБС)</p>
+
+<p>Ну значит это … как его … :-\ … а, да ! Старческий маразм! Вернее, этот … как его … а, во! Старческий СКЛЕРОЗ !</p>
+
+<p>(Ну за два-то с половиной года забудешь даже как тебя зовут … Не то, что про огурцы. С тем “как зовут” - легче. Заходишь по утрам в форум, смотришь подпись в своей теме - и сразу вспоминаешь :) … а про огурцы - это ж надо странички листать. )</p>
+
+<p>Значит так оно и было. :-[</p>
+
+<p>Но видать постепенно все переменилось. Теперь “ругаются” почему я не сажаю огурцы.</p>
+
+<p>( ну, почему-почему … &gt;:D Потому. &gt;:D Места нету. &gt;:D )</p>
+
+<p><strong>valery</strong> 01-12-2011</p>
+
+<blockquote>
+  <p>Рекодрсмен -это Mortgage Lifter, Bi-Color-Heirloom. 252 грамма</p>
+</blockquote>
+
+<p>:o :o :o</p>
+
+<p>&gt;:D &gt;:D &gt;:D &gt;:D &gt;:D</p>
+
+<p><em>Wall</em> <em>Wall</em> <em>Wall</em> <em>Wall</em> <em>Wall</em> <em>Wall</em> <em>Wall</em></p>
+
+<p><strong>aivar</strong> 01-12-2011</p>
+
+<blockquote>
+  <p>Рекодрсмен -это Mortgage Lifter, Bi-Color-Heirloom. 252 грамма</p>
+</blockquote>
+
+<p>Я давно про маму свою рассказать хочу…</p>
+
+<p>она “органический латшский крестьянин”</p>
+
+<p>но это не мешает ей взращивать томатики и перцы.</p>
+
+<p>Вот этим годом уродился у нее, я все тянул…. не рассказывал…. думал фото найду… ан нет, нету фото… :( :( :( но томатик я сам кушалС…</p>
+
+<p>так вот он весил 1900 граммОВ</p>
+
+<p>это ее личный рекорд, до этого был 1700</p>
+
+<p>и они вкуууууусныыыыыыыые.</p>
+
+<p>Она (мамОЧКа) посмотрела фото моего эксперимента… одобрила… и теперь мне ОООчень надо вырастить один томат весом 1901 грамм(ов)</p>
+
+<p><strong>begunok</strong> 02-12-2011</p>
+
+<p>переходим на органику)))</p>
+
+<p><strong>SergF</strong> 02-12-2011</p>
+
+<p>Валер, да у них животы будут болеть от нитратов! :-X</p>
+
+<p>(ну как еще себя успокоить глядя на это “безобразие”… “Ніщо так не шкодить здоров`ю українця, як багатство його сусіда…” немного префразировать и заменить богатство на успехи :))</p>
+
+<p><strong>valery</strong> 02-12-2011</p>
+
+<p>:-\ … У кого ?</p>
+
+<p><strong>SergF</strong> 02-12-2011</p>
+
+<p>У тех кто такие огромные помидорки выращивает! &gt;:D</p>
+
+<p>зы. не завидую… совсем… :-[</p>
+
+<p><strong>valery</strong> 02-12-2011</p>
+
+<p>А … А я подумал у огурцов животы заболят … Хотел уже оправдываться, мол “поэтому и не сажаю” ( а место бы нашел, коли поискать … ) :-[</p>
+
+<p><strong>valery</strong> 02-12-2011</p>
+
+<p>По размеру все же палка о двух концах.</p>
+
+<p>Скажем, Бегунок сетует на ЕС … лучше бы поначалу “пониже” … Может быть.</p>
+
+<p>В теплицах на высокой шпалере, на хорошем освещении, тем более естественном, возможно “налить” плод проще (или удобней, не знаю) …</p>
+
+<p>А у нас, в домашних/полудомашних условиях … шут его знает.</p>
+
+<p>Вот скажем. В моем случае сейчас идут хорошо налитые крупные томаты, близко к максимальным размерам, свойственным сорту (гибриду).</p>
+
+<p>(Не очень высокий ЕС, относительно низкая температура и т.д.)</p>
+
+<p>Ничего переделывать не собираюсь, но в действительности, хорошо бы напротив - немного добавив свет, повысить ЕС и увеличить (чуточку) температуру.</p>
+
+<p>Почему.</p>
+
+<p>Достаточно сильно затягивается созревание кистей. Шпалера - низкая. В результате - стебель некуда девать. Головы томатов впритык лезут к лампам (перегреваются, страдают “отделяющиеся” кисти, хуже завязываются, слабее кисть), а нижние кисти буквально “скребут” по полу не давая убрать (“смотать”) стебель …</p>
+
+<p>К тому же на растении ОДНОВРЕМЕННО находится довольно много наливающихся кистей, что заметно перегружает … все - и корневую и все что попало.</p>
+
+<p>Лучше бы нижние кисти “созревать-срезать” пораньше, что бы “нагрузка” была не столь велика.</p>
+
+<p><strong>begunok</strong> 04-12-2011</p>
+
+<blockquote>
+  <p>Достаточно сильно затягивается созревание кистей. Шпалера - низкая. В результате - стебель некуда девать. Головы томатов впритык лезут к лампам (перегреваются, страдают “отделяющиеся” кисти, хуже завязываются, слабее кисть), а нижние кисти буквально “скребут” по полу не давая убрать (“смотать”) стебель …</p>
+
+  <p>К тому же на растении ОДНОВРЕМЕННО находится довольно много наливающихся кистей, что заметно перегружает … все - и корневую и все что попало.</p>
+</blockquote>
+
+<p>Я сегодня вспомнил о таком методе -STG -когда довольно низко кладут сетку, пропускают через нее стебель и дальше пригибают стебель к сетке -в результате растение растет не вверх а горизонтально. Этот метод широко используют при выращивании веселящей травы. Интересно, можно ли его использовать на томатах? У меня тоже проблема с огромным стеблем</p>
+
+<p>Ну и сегодняшний урожай</p>
+
+<p><a href="https://t.me/ponics_ru_files/6367" target="_blank"><img src="/imagehost/thumbs/img2843.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 04-12-2011</p>
+
+<p>Один из томатов “веду” как раз горизонтально, (но без сетки) - опускать некуда (растет “вторым” стеблем и “вылез” из диких зарослей внизу, так что не “приспустить” …</p>
+
+<p>Просто прицепливаю его к шпалере горизонтально (точнее к железной арматуре) …</p>
+
+<p>Он постоянно поднимает голову “вверх” (упираясь в потолок) и несколько поворачиваясь на лампу …</p>
+
+<p>Я его снову “гну” и прицепливаю …</p>
+
+<p>Что можно сказать … Нормально растет, вяжет плоды (попробую сфотографировать) … Единственная “нехорошесть” - если кисть зацвела на “вертикальном” участке, после пригибания в “горизонтальное” - завязи (и кисть) оказываются под “непривычным” и “неправильным” углом к стеблю … там не знаю к чему еще …</p>
+
+<p>Видимо с ростом плодов возможны заломы кисти (хотя пока еще не было). Где-то около 2-х метров вот такого “горизонтального” участка …</p>
+
+<p><strong>Coccinella</strong> 04-12-2011</p>
+
+<p>А ведь по идее как раз приспускание позволяет в некоторой степени избежать заломов кисти. Возможно, Вы стебель опускаете, куда место позволяет, а не куда надо бы. В крупных теплицах отчасти именно поэтому кистедержатели применяют только поначалу, пока стебель вертикальный. Позже, когда начинается укладка, более высокие кисти сразу повисают под менее опасным углом.</p>
+
+<p>Вот посмотрите у Алексея Куренина в фотоальбомах ГТ</p>
+
+<p><a href="http://www.greentalk.ru/v/111_003/111_008/111/111_001_001/P1030901.JPG.html" target="_blank">http://www.greentalk.ru/v/111_003/111_008/111/111_001_001/P1030901.JPG.html</a> (забавно, я знаю, кто автор идеи “постелек для томата”, мы были знакомы :) )</p>
+
+<p><a href="http://www.greentalk.ru/v/111_003/111_008/111/111_001_001/P1030904_001.JPG.html" target="_blank">http://www.greentalk.ru/v/111_003/111_008/111/111_001_001/P1030904_001.JPG.html</a></p>
+
+<p>Еще вот здесь</p>
+
+<p><a href="http://www.greentalk.ru/v/111_003/111_008/111/111_001_001/P1030906.JPG.html" target="_blank">http://www.greentalk.ru/v/111_003/111_008/111/111_001_001/P1030906.JPG.html</a></p>
+
+<p>хорошо видно, что растения изначально приучали расти в нужном направлении.</p>
+
+<p><strong>begunok</strong> 04-12-2011</p>
+
+<p>мне просто по тупому не хватает ни высоты ни ширины мой теплички( в этом беда. Если в высоту- то 2 м, приспустить не могу - растение упрется в стену. А если вот так -сразу вбок, то есть 3 метра вдоль и 2 м в высоту потом. Все лучше</p>
+
+<p><strong>valery</strong> 04-12-2011</p>
+
+<p>Мда … Сходил, вот … “Сфотографировался” …</p>
+
+<p>Оказалось в огорде - были “агрономы” … (кто-то решетку у входа убрал) …</p>
+
+<p>Мама дорогая … :o ( готовили “субстрат” из “Гродан” и кокоса :D )</p>
+
+<p><strong>begunok</strong> 04-12-2011</p>
+
+<p>что случилось, Валер? набедокурили у тебя?</p>
+
+<p><strong>valery</strong> 04-12-2011</p>
+
+<p>Выясняли, “что” лучше :D Минвата или кокос …</p>
+
+<p>Я склоняюсь к вате. А они пока - в раздумьях …</p>
+
+<p><strong>begunok</strong> 04-12-2011</p>
+
+<p>не расстраивайся. все перемелится</p>
+
+<p><strong>Юрий Иваныч</strong> 04-12-2011</p>
+
+<blockquote>
+  <p>Выясняли, “что” лучше :D Минвата или кокос …</p>
+
+  <p>Я склоняюсь к вате. А они пока - в раздумьях …</p>
+</blockquote>
+
+<p>А кто же виновник происшествия?</p>
+
+<p><strong>Юрий Иваныч</strong> 04-12-2011</p>
+
+<blockquote>
+  <p>Я сегодня вспомнил о таком методе -STG -когда довольно низко кладут сетку, пропускают через нее стебель и дальше пригибают стебель к сетке -в результате растение растет не вверх а горизонтально. Этот метод широко используют при выращивании веселящей травы. Интересно, можно ли его использовать на томатах? У меня тоже проблема с огромным стеблем</p>
+
+  <p>Ну и сегодняшний урожай</p>
+
+  <p><img src="/imagehost/thumbs/img2843.jpg" alt="" /></p>
+</blockquote>
+
+<p>А как на вкус? У меня сегодня уже 4 семечки из 8 “выскочили” из кубика. Посев вечером 29.11.11.</p>
+
+<p><strong>begunok</strong> 04-12-2011</p>
+
+<p>вкус нормальный</p>
+
+<p>Мне больше понравились полосатики и те, биг бифы -которые у тебя))</p>
+
+<p>Они победители каких-то там конкурсов в штатах</p>
+
+<p><strong>Юрий Иваныч</strong> 05-12-2011</p>
+
+<blockquote>
+  <p>вкус нормальный</p>
+
+  <p>Мне больше понравились полосатики и те, биг бифы -которые у тебя))</p>
+
+  <p>Они победители каких-то там конкурсов в штатах</p>
+</blockquote>
+
+<p>У меня уже 6 из 8 проросли, поместил под лампы, что бы не тянулись. Пока на воде, завтра начну слабеньким раствором подкармливать.</p>
+
+<p><strong>Mole_Garden</strong> 05-12-2011</p>
+
+<p>Вообще, желательно подкармливать слабым раствором их с самого начала жизни, а не когда проклюнутся и пару дней проживу.</p>
+
+<p><strong>begunok</strong> 07-12-2011</p>
+
+<p>заехал перед работой, сорвал один помидорчик</p>
+
+<p>Все-таки красивые они, зебры</p>
+
+<p>Фотографировал айфоном плохо получилось, чуть подправил яркость</p>
+
+<p><a href="https://t.me/ponics_ru_files/6368" target="_blank"><img src="/imagehost/thumbs/pomidorjrj.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 07-12-2011</p>
+
+<p>Да и вкусные, наверно! Зелено-коричневые томаты обладают особым вкусом. Не зря плоды Кумато стоят в 1,5-2 раза дороже красных томатов.</p>
+
+<p><strong>valery</strong> 07-12-2011</p>
+
+<p>Красивые томаты.</p>
+
+<p>И все же снимки не в состоянии передать … красоты-удовольствия от живого, висящего на “веточке” …</p>
+
+<p>Особенно приятен момент, когда полностью налитОе лоснящееся зеленое “яблоко” в кисти висит-висит … висит-висит … уже и поднадоест …</p>
+
+<p>А потом вдруг чуть-чуть подергивается первым “легким-розовым” … ну ей богу, как самым ранним утром “подергивается” небо на рассвете …</p>
+
+<p>А попробуешь сделать снимок … Тьфу ты … Ну картинка и картинка. Не живая.</p>
+
+<p><strong>Юрий Иваныч</strong> 07-12-2011</p>
+
+<p>Фотография это искуство, которое далеко не каждому покоряется. А черно-белая среди профи и ценителей считается высшим “пилотажем”. <em>Bos</em></p>
+
+<p><strong>begunok</strong> 08-12-2011</p>
+
+<p><a href="https://t.me/ponics_ru_files/6369" target="_blank"><img src="/imagehost/thumbs/img2846.jpg" alt="" /></a></p>
+
+<p>Поделюсь замечательным советом, что делать с подмиорками</p>
+
+<p>Берете много разных помидорок. В этом весь прикол -разных. Чери, черные, красные, цветные, серо-буромалиновые.</p>
+
+<p>Режете их разной формы - дольками, кубиками, квадратиками, вообщем как хотите. Выкладываете их на дуршлаг.</p>
+
+<p>Берете морскую крупную соль. Солите чуть больше, чем обычно. Ждете минут 5-10.</p>
+
+<p>В это же время начинаете варить какие-нибудь макароны, ракушки или буквочки. Понятно -из очень твердого теста.</p>
+
+<p>Как раз, когда макарончики будут готовы(минут 5-10) до полутвердного состояния, берете помидорки, с них стекла лишняя жидкость, добавляете в них немного свежего остого перца, можно чуть чеснока и обязательно свежего базилика. Лучше всего зеленого. Добавить оливкового масла и сбрызнуть бальзамическим уксусом</p>
+
+<p>Сливаете воду с макарончиков, не промывая, закидываете в салат из помидорок</p>
+
+<p>Я лично сьедаю почти кастрюлю))))</p>
+
+<p><strong>valery</strong> 08-12-2011</p>
+
+<p>Здесь должен стоять смайлик, который “слюни пускает” … (или может “слюньки” :-\ ) … Ну, неважно …</p>
+
+<p>Все равно нету такого в нашем “трафарете” :( А бывает очень сильно “нужОн” … <em>Wall</em></p>
+
+<p><strong>Coccinella</strong> 08-12-2011</p>
+
+<p>Завтра попробую!</p>
+
+<p><strong>Юрий Иваныч</strong> 08-12-2011</p>
+
+<blockquote>
+  <p>Здесь должен стоять смайлик, который “слюни пускает” … (или может “слюньки” :-\ ) … Ну, неважно …</p>
+
+  <p>Все равно нету такого в нашем “трафарете” :( А бывает очень сильно “нужОн” … <em>Wall</em></p>
+</blockquote>
+
+<p>И еще смайлик, который “подавился слюной” - это я про себя. Молодец Максим. Класс. <em>8)</em></p>
+
+<p><strong>ALB</strong> 08-12-2011</p>
+
+<p>насчёт подавилься слюной - аккуратнее пожалуйста <em>Bravo</em> - вы нам ещё пригодитесь</p>
+
+<p><strong>Юрий Иваныч</strong> 09-12-2011</p>
+
+<blockquote>
+  <p>насчёт подавилься слюной - аккуратнее пожалуйста <em>Bravo</em> - вы нам ещё пригодитесь</p>
+</blockquote>
+
+<p>Да нее.. это я так - шутейно, т.е не взаправду, т.е как бы виртуально… :D</p>
+
+<p><strong>begunok</strong> 10-12-2011</p>
+
+<p>собрал самый большой урожай сегодня))) 2 кило))</p>
+
+<p>Итого в районе 5 кг</p>
+
+<p><a href="https://t.me/ponics_ru_files/6370" target="_blank"><img src="/imagehost/thumbs/img2849.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 10-12-2011</p>
+
+<p>Замечательно! <em>8)</em></p>
+
+<p>Вот что значит “светлая голова” и “умелые руки” <em>8)</em></p>
+
+<p>(вооруженные капельницей и толковым субстратом :-X )</p>
+
+<p>…</p>
+
+<p>На крупном БИФе трещинки видны … Возможно сильно влажность скакала и (или) ЕС …</p>
+
+<p><strong>valery</strong> 10-12-2011</p>
+
+<p>Тем, кто только начинает выращивать томат дома (или планирует) - хорошая иллюстрация о “нормировке” …</p>
+
+<p>В центре снимка - кисть, срезана “разом” …</p>
+
+<p>Хорошо видно, что при “нагруженной” кисти томаты постепенно начинают “уступать” в размере …</p>
+
+<p>Крупный - ближе к стволу (и листу), возможно, завязался первым и затем, первым начав налив, получал больше ассимилятов - следующим “доставалось” меньше …</p>
+
+<p><strong>begunok</strong> 10-12-2011</p>
+
+<p>изменялась ЕС, да и влажность могла скакануть.</p>
+
+<p>Очень странно вот что, трещина появилась 2 дня назад, раньше ее не было</p>
+
+<p><strong>valery</strong> 10-12-2011</p>
+
+<p>Максим, если не сложно, не подскажете мне (вдруг еще не успели съесть :) ) вес и диаметр крупного БИФа ?..</p>
+
+<p>Пытаюсь научиться “наливать” плоды температурой :o - оказывается просто фантастическая вещь … :o</p>
+
+<p>Ну, вернее, не оказывается … Агрономы-то это и так знают (и даже нам напоминают) , а мы часто … мимо проходим. Читал “много” раз, но просто - читал …</p>
+
+<p>Пока не сделал “форточку” и не появилась возможность “температуры крутить” … Если все делать вовремя и аккуратно … ну просто видимые на глаз</p>
+
+<p>эффекты …</p>
+
+<p><strong>begunok</strong> 10-12-2011</p>
+
+<p>эти не очень большие -в районе 230 грам, диаметр 9 см</p>
+
+<p>А наливать температурой- это как? Я понял, что нужно обязательно помидор- ну сам плод ставить под открытый свет. Он нагревается и притягивает ассимилятны. Вы об этом же?</p>
+
+<p><strong>valery</strong> 10-12-2011</p>
+
+<p>Частично, да.</p>
+
+<p>Но в общем-то больше о “температурном графике” и отчасти КСС …</p>
+
+<p>Достаточно “быстрая-глубокая” предночная яма (в частности) заметно “гонит” сок-ассимиляты в плоды …</p>
+
+<p>Похоже, тоже самое происходит, если мат остается более теплым, после быстрого сброса температуры воздуха в “предночь” …</p>
+
+<p>Главное - понять-разобраться, делать вовремя и не увлекаться …</p>
+
+<p>Вот и давайте будем “выяснять” - <a href="http://www.greentalk.ru/node/1378" target="_blank">http://www.greentalk.ru/node/1378</a></p>
+
+<p>А можно и здесь у нас, в тему к Алексею податься (вероятно, и Coccinella прокомментирует) и “оккупировать” (в смысле - тему), может , “не погонит” … :D :-\ (в смысле - Алексей) … Глядишь, и еще кому пригодится …</p>
+
+<p><strong>Coccinella</strong> 10-12-2011</p>
+
+<p>Валерий, мне самой кажется, что удобнее эту тему продолжать на ГТ. Здесь есть ссылка и все желающие могут и читать, и участвовать в обсуждениях ГТ. Алексей Куренин ведь очень занят и дважды объяснять одно и то же … это же времени требует.</p>
+
+<p>К тому же на ГТ эта тема - вообще учебник! Там ведь кроме температурного графика масса всякой другой полезнейшей информации.</p>
+
+<p><strong>valery</strong> 10-12-2011</p>
+
+<p>Да, возможно, так лучше. По поводу “информации” … действительно. Соберешься что-нибудь спросить :) , перечитаешь тему … :-[ , оказывается отвечали уже раз … словом, много раз.</p>
+
+<p><strong>begunok</strong> 14-12-2011</p>
+
+<p>сегодняшний урожай)))</p>
+
+<p>ну там обычные и полосатые. Опять за сегодняшний день растрескались, да что такое</p>
+
+<p>Понимаю, всем уже надоел))</p>
+
+<p><a href="https://t.me/ponics_ru_files/6371" target="_blank"><img src="/imagehost/thumbs/img2850.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 14-12-2011</p>
+
+<p>Почему ж … На декабрьский урожай всегда приятно посмотреть … :)</p>
+
+<p><strong>Юрий Иваныч</strong> 14-12-2011</p>
+
+<p>Не говори глупостей. Разве такие фотки могут надоесть? <em>???</em> Классный урожай. <em>8)</em></p>
+
+<p><strong>Coccinella</strong> 14-12-2011</p>
+
+<p>А чтобы меньше растрескивались, поднимите немного ЕС. А на вид вкуснющиее…….</p>
+
+<p><strong>begunok</strong> 17-12-2011</p>
+
+<p>Сегодня у меня рекодсмен -300 гр)))</p>
+
+<p>Опять же из промышленных биг бифов</p>
+
+<p><a href="https://t.me/ponics_ru_files/6372" target="_blank"><img src="/imagehost/thumbs/img2852.jpg" alt="" /></a></p>
+
+<p>Ну и урожайчик</p>
+
+<p><a href="https://t.me/ponics_ru_files/6373" target="_blank"><img src="/imagehost/thumbs/img2851.jpg" alt="" /></a></p>
+
+<p>Уже скоро-скоро будет новый эксперимент)) органика, полуорганика против гидропоники))</p>
+
+<p><strong>Юрий Иваныч</strong> 18-12-2011</p>
+
+<p><em>8)</em> <em>8)</em> <em>8)</em></p>
+
+<p>Держи нас в курсе по поводу нового эксперимента.</p>
+
+<p><strong>Acc</strong> 18-12-2011</p>
+
+<p>А нож в кадре - это тонкий намек на скорую погибель сеньера помидора <em>???</em> Жалко красавчика :'( собственноручновыращенного</p>
+
+<p><strong>begunok</strong> 20-12-2011</p>
+
+<p>супер-геройский помидор))) 400 грам прекрасного желто-розового томата)))</p>
+
+<p>А какой вкуснющий!!!</p>
+
+<p>Ну и очень красивый итальянский помидорчик</p>
+
+<p><a href="https://t.me/ponics_ru_files/6374" target="_blank"><img src="/imagehost/thumbs/img2853.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 20-12-2011</p>
+
+<p>:D :D :D</p>
+
+<p>Как дойдете до двух килограмм … останавливайтесь. :)</p>
+
+<p><strong>SergF</strong> 21-12-2011</p>
+
+<p>:-\</p>
+
+<p>“Не бойся совершенства — ты никогда его не достигнешь!” С. Дали</p>
+
+<p>…это я не про то что чем больше вес тем лучше… про то что я никогда не догоню этих “суровых гидропонщиков” :'(</p>
+
+<p><strong>begunok</strong> 21-12-2011</p>
+
+<blockquote>
+  <p>:-\</p>
+
+  <p>“Не бойся совершенства — ты никогда его не достигнешь!” С. Дали</p>
+
+  <p>…это я не про то что чем больше вес тем лучше… про то что я никогда не догоню этих “суровых гидропонщиков” :'(</p>
+</blockquote>
+
+<p>Вот же)) у вас там такая красотища))))</p>
+
+<p><strong>Юрий Иваныч</strong> 21-12-2011</p>
+
+<blockquote>
+  <p>супер-геройский помидор))) 400 грам прекрасного желто-розового томата)))</p>
+
+  <p>А какой вкуснющий!!!</p>
+
+  <p>Ну и очень красивый итальянский помидорчик</p>
+</blockquote>
+
+<p>Максим, молодчина. Лечу за твоим “паравозом” на всех парах (на поворотах сбрасываю скорость :D). Быфы растут как на дрожжах. Скоро будут переезжать в маты на ПМЖ.</p>
+
+<p><strong>begunok</strong> 22-12-2011</p>
+
+<p>а я вот думаю -попробовать огурчики или баклажанчики))) вот не знаю. После НГ посажу заново все, жду прямо -не дождусь посадки новых</p>
+
+<p>Кстати, интересно, ты поливать будешь одним раствором?</p>
+
+<p>И еще -совет бывалого))) Убирай нещадно листву у томатов. Я жалел все, жалел ботву. В результате -ботвы много, помидор мало)))))</p>
+
+<p><strong>valery</strong> 22-12-2011</p>
+
+<p>У кого-то из томатных специалистов (А.Коол или П.Страдиот, точно не помню) по этому поводу сказано примерно следующее.</p>
+
+<p>“Листья - уже прошлое. Голова - будущее.”</p>
+
+<p>Ну это не совсем к тому, что на листья СОВСЕМ уж внимания обращать не надо … Но это - уже сделано, отработано и “назад” не вернешь. Основное внимание - голове.</p>
+
+<p><strong>Юрий Иваныч</strong> 22-12-2011</p>
+
+<blockquote>
+  <p>а я вот думаю -попробовать огурчики или баклажанчики))) вот не знаю. После НГ посажу заново все, жду прямо -не дождусь посадки новых</p>
+
+  <p>Кстати, интересно, ты поливать будешь одним раствором?</p>
+
+  <p>И еще -совет бывалого))) Убирай нещадно листву у томатов. Я жалел все, жалел ботву. В результате -ботвы много, помидор мало)))))</p>
+</blockquote>
+
+<p>Что сажать - тут я не советчик. Что больше нравится, то и сажай. ;)</p>
+
+<p>Растворы у меня конечно же разные, уже и помпу прикупил, да и капельницы один добрый человек прислал. :D Как обустроятся на новом месте - сфоткаю и покажу.</p>
+
+<p>Насчет листвы спасибо - учту конечно. <em>8)</em></p>
+
+<p><strong>begunok</strong> 23-12-2011</p>
+
+<p>сегодняшний урожайчик.</p>
+
+<p>Все-таки красивые эти зебры))</p>
+
+<p><a href="https://t.me/ponics_ru_files/6375" target="_blank"><img src="/imagehost/thumbs/img2855.jpg" alt="" /></a></p>
+
+<p>юр, тебе баклажан прислать? я буду покупать, если есть у семениса сейчас</p>
+
+<p><strong>Юрий Иваныч</strong> 23-12-2011</p>
+
+<p>Макс, привет. Спасибо за предложение, но в нашей семье как то в сторону баклажанов все дышат ровно. Мы их даже весной не сажаем. :-X Так уж повелось. А зебры действительно красивы. <em>8)</em></p>
+
+<p><strong>begunok</strong> 23-12-2011</p>
+
+<p>помогите найти прибор, измеряющий уровень сахара в плодах?</p>
+
+<p>И еще интересно, кроме нитратов, что еще меряют плохого в лабораториях? <em>sos</em></p>
+
+<p><strong>Coccinella</strong> 23-12-2011</p>
+
+<blockquote>
+  <p>помогите найти прибор, измеряющий уровень сахара в плодах?</p>
+
+  <p>И еще интересно, кроме нитратов, что еще меряют плохого в лабораториях? <em>sos</em></p>
+</blockquote>
+
+<p>1) Ищите на ключевое слово “рефрактометр”</p>
+
+<p>2) Радиацию, остаточные количества пестицидов ( в Вашем случае практически нереально, но вообще могут быть даже тогда, когда СЗР не применялись), тяжелые металлы, патогенные мкроорганизмы (если мы о СЭС говорим).</p>
+
+<p><strong>begunok</strong> 28-12-2011</p>
+
+<p>урожайчик) большие по 400 грамм</p>
+
+<p>Итого с начала где-то 10 кг</p>
+
+<p>Что мне нравится -что все томаты разные) И таких ну совсем нет в магазине</p>
+
+<p><a href="https://t.me/ponics_ru_files/6376" target="_blank"><img src="/imagehost/thumbs/img2861.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 28-12-2011</p>
+
+<p>Правильно. В магазинах же - нормальные помидоры. А у Вас похоже, семеноводы “подшутили”. Надо разрезать большие плоды и посмотреть.</p>
+
+<p>Если семечки жарятся и щелкаются, значит это тыквы … &gt;:D</p>
+
+<p><strong>ProRus</strong> 29-12-2011</p>
+
+<blockquote>
+  <p>Если семечки жарятся и щелкаются, значит это тыквы … &gt;:D</p>
+</blockquote>
+
+<p>;D <em>8)</em></p>
+
+<p>Это та тыква, про которую Coccinella рассказывала? ;D</p>
+
+<p><strong>Coccinella</strong> 29-12-2011</p>
+
+<p>Нееет, эта - хорошая ! :)</p>
+
+<p><strong>Юрий Иваныч</strong> 29-12-2011</p>
+
+<blockquote>
+  <p>урожайчик) большие по 400 грамм</p>
+
+  <p>Итого с начала где-то 10 кг</p>
+
+  <p>Что мне нравится -что все томаты разные) И таких ну совсем нет в магазине</p>
+
+  <p><img src="/imagehost/thumbs/img2861.jpg" alt="" /></p>
+</blockquote>
+
+<p>Ничего, ничего &gt;:D у меня тоже такие будут. Я так думаю. :-[</p>
+
+<p><strong>Oxy</strong> 31-12-2011</p>
+
+<blockquote>
+  <p>помогите найти прибор, измеряющий уровень сахара в плодах?</p>
+
+  <p>И еще интересно, кроме нитратов, что еще меряют плохого в лабораториях? <em>sos</em></p>
+</blockquote>
+
+<p>Вот для общего развития и просто чтоб отбить охоту заниматься промышленными тепличными комплексами выкладываю прайсик который качнул на одном из сайтов которые Валера подогнал.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6377" target="_blank">pris_list_agro.doc</a></p>
+
+<p><strong>begunok</strong> 31-12-2011</p>
+
+<p>купил уже рефрактометр.</p>
+
+<p>Вот только что непонятно -разброс цен. От 10 долларов до 200-300 за похожие приборы</p>
+
+<p><strong>valery</strong> 31-12-2011</p>
+
+<blockquote>
+  <p>Вот для общего развития и просто чтоб отбить охоту</p>
+</blockquote>
+
+<p>Ага … :D Тоже как-то выкладывал чей-то прайс на измерительную технику … “Компас” кажется … Спектрометры-ионометры или как их там … Штука обалденная, пока до ценника не дочитаешь …</p>
+
+<p><strong>Mastodont</strong> 31-12-2011</p>
+
+<blockquote>
+  <p>купил уже рефрактометр.</p>
+
+  <p>Вот только что непонятно -разброс цен. От 10 долларов до 200-300 за похожие приборы</p>
+</blockquote>
+
+<p>Прочитал в википедии , что такое рефрактометр, очень широкий спектр функций он выполняет, но хотелось бы больше узнать как используете этот прибор по предназначению, чтобы понять насколько он необходим и полезен</p>
+
+<p><strong>begunok</strong> 31-12-2011</p>
+
+<p>а хрен его знает)))</p>
+
+<p>Хотя бы померять уровень сахара в плодах. Не знаю, насколько это подойдет к томатам.</p>
+
+<p>Насколько я понимаю, очень интересно мерять уровень сахара в землянике там и в арбузах))</p>
+
+<p><strong>Coccinella</strong> 31-12-2011</p>
+
+<p>Нормально это подойдет к томатам :). Для многих сортов в Средиземноморских странах указывают содержание сахаров по Бриксу. Даже на этикетке томатов, для потребителей.</p>
+
+<p>Правда, вкус томатов зависит от соотношения сдержания кислоты и сахаров, а не только от их абсолютного значения. Томаты с высоким “бриксом” хороши для сушки.</p>
+
+<p>Чтобы Ваши томаты в Новом году были вкусными для Вас и Ваших близких!</p>
+
+<p><strong>begunok</strong> 31-12-2011</p>
+
+<p>Спасибо, дорогая Кокцинела.</p>
+
+<p>Удачи вам в следующем году. Будьте счастливы</p>
+
+<p>Ну, и конечно, всем здешним обитателям. Чтобы жизнь была плодотворна и интересна. С новым годом!</p>
+
+<p><strong>begunok</strong> 02-01-2012</p>
+
+<p>Накормил тещу помидорами. Хвалила, говорит -похожи на настоящие))) ;D</p>
+
+<p>А вот у меня загводзка, ну или как его, проблема.</p>
+
+<p>Кто может подсказать -как правильно провести смену оборота? Мне не очень хочется косить под корень взрослые растения -на них еще висят плоды, хочется дать им дозреть и хочется посадить малышей. Вопрос вот в чем -я хотел бы во время смены оборота провести фунгинацию( ну или как это правильно сказать) -вообщем обрызгать все фунгицидами. Но мне очень кажется, что малшам это не будет полезно? Может есть секрет какой? Кокцинелочка, Валерий, помогите советом</p>
+
+<p><strong>valery</strong> 02-01-2012</p>
+
+<p>Я-то - “пас” … У меня только “отрицательная” практика :D Лучше послушаем, что скажет Coccinella.</p>
+
+<p><strong>Coccinella</strong> 02-01-2012</p>
+
+<p>А насколько малыши малы? Чем именно собираетесь обрабатывать? И зачем? :) Я поняла - “на всякий случай” и “кабы чего не вышло”, но поконкретнее, есть уже подозреваемые? :)</p>
+
+<p>Потому что, по идее, именно Ваши и остальных присутствующих растения, именно сейчас особо ничем болеть и не должны. Неоткуда взяться инфекции, живых растений нет, гнилая картошка рядом не валяется, табачным пеплом (я надеюсь) их никто не посыпает и табачными настойками не поливает…</p>
+
+<p>Настоящую фумигацию - газовую обработку парами или газами фунгицида - Вам не сделать при всем желании, вряд ли даже в России настолько серьезные препараты продаются в свободном доступе.</p>
+
+<p>Если уж очень хочется, то для душевного спокойствия и безопасно для растительных младенцев, можно опрыснуть все помещение, растения и субстрат Превикуром 2 мл/1 л воды. Им даже полить (пролить) субстрат можно. Растения его переносят без страданий даже в фазе семядолей (это моя любимая “скорая помощь” при выпадении сеянцев).</p>
+
+<p>Только убедитесь, что остатки препарата надежно спрятаны от малолетних родственников и соседей, у него цвет такой розовый, аппетитный, так и хочется лизнуть :)</p>
+
+<p><strong>begunok</strong> 02-01-2012</p>
+
+<p>Малыши еще даже не посажены в пробки. Старички как раз растут. Отдельного помещения для малышей нет. Выбор такой- убрать старичков, обработать чем-то вроде ридомила голд( он только и есть) и только после этого посадить малышей.</p>
+
+<p>Второй вариант- посадить малышей к взрослым и уже потом убрать старичков</p>
+
+<p><strong>Coccinella</strong> 02-01-2012</p>
+
+<p>Если взрослые здоровы (то есть не поражены инфекциями), то подсаживайте к ним малышей и не тратьте попусту химию.</p>
+
+<p><strong>begunok</strong> 07-01-2012</p>
+
+<p>ну и сегодняшние помидорки</p>
+
+<p>Сын обрезал, приятно было на него посмотреть</p>
+
+<p><a href="https://t.me/ponics_ru_files/6378" target="_blank"><img src="/imagehost/thumbs/img2888.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 07-01-2012</p>
+
+<p>С ума сойти! На дворе январь, а у людей ТАКИЕ помидоры!!! $)</p>
+
+<p><strong>valery</strong> 07-01-2012</p>
+
+<p>Даже странно … :-\</p>
+
+<p>Трубы в шесть этажей квартиру не полосуют …</p>
+
+<p>“Рейн Форест”, “Датч Пот” и “Аэро-“ как его там - не применялся …</p>
+
+<p>Флора Мато - не используется …</p>
+
+<p>Даже светодиод - не включен … :-\</p>
+
+<p>А помидоры - растут. Удивительно. :-\</p>
+
+<p><strong>cpf</strong> 08-01-2012</p>
+
+<blockquote>
+  <p>Поставил новый редуктор для CO2 -поддерживает очень тонкую настройку.</p>
+</blockquote>
+
+<p>Видимо, в нем дело… :)</p>
+
+<p>Если серьезно, лишний раз убеждаюсь: “правильные” сорта и микроклимат (в т.ч. свет) - больше половины успеха. Молодец, begunok, Удачи тебе и дальше… <em>8)</em></p>
+
+<p><strong>ALB</strong> 08-01-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>Поставил новый редуктор для CO2 -поддерживает очень тонкую настройку.</p>
+  </blockquote>
+
+  <p>Видимо, в нем дело… :)</p>
+
+  <p>Если серьезно, лишний раз убеждаюсь: “правильные” сорта и микроклимат (в т.ч. свет) - больше половины успеха. Молодец, begunok, Удачи тебе и дальше… <em>8)</em></p>
+</blockquote>
+
+<p>в аквариумах часто используют <a href="http://www.camozzi.ru/upravlenie/avtoklapan/pnevmodrosseli/" target="_blank">http://www.camozzi.ru/upravlenie/avtoklapan/pnevmodrosseli/</a> - редуктор , потом пневмодроссель, потом расходомер</p>
+
+<p><strong>begunok</strong> 08-01-2012</p>
+
+<p>Сегодня посадил томатики в пробки Root Riot для эксперимента остроконечники( Валерий) против тупоконечников( Мастадонт) :D :D</p>
+
+<p>Будем сравнивать полное органическое выращивание против чисто минеральной гидропоники, Ну и для теста попробуем смешанную систему))))</p>
+
+<p>Как появятся фотографии -покажу.</p>
+
+<p><strong>valery</strong> 08-01-2012</p>
+
+<p>Не-а … Я не согласен :D и в “остроконечники” не записываюсь … :D</p>
+
+<p>А основную разницу между “остро” и “тупо” вижу только в том … что в первом случае мы растим “как мы поведем” - то есть как “умеем” или “знаем” (хорошо или плохо), наобум или пытаемся учиться …</p>
+
+<p>А во втором - “как пойдет” (то есть “как карта ляжет” и куда, в какую сторону (полезную или не очень) пойдут “органические процессы”). Тоже с нашим участием, естественно, но уже существенно и заметно “ограниченом”.</p>
+
+<p>:D</p>
+
+<p>Если мы совсем уж “тупо” (я не о присутствующих) :) - то органика нас в большинстве случаев все же “вывезет”. Хоть куда-нибудь.</p>
+
+<p>А если “остро”, но без балды … Конечно, скорее всего загубим урожай, и органика “утрет нам нос”.</p>
+
+<p>Все же “мое” ощущение, что на форуме скорее всего собираются люди, желающие выращивать “остро” (читая, пробуя, “научиваясь”, набивая шишки и набираясь опыта).</p>
+
+<p>А вообще, эксперименты - это, конечно, хорошо. Удачи ! (я буду за инертные субстраты “болеть” :D )</p>
+
+<p><strong>begunok</strong> 08-01-2012</p>
+
+<p>А кто мне подскажет, на взрослое растение томата сколько нужно земли? 10 литров? 15? 5?</p>
+
+<p>Мне подсказывает внутреннее чутье, что 5 литров будет недостаточно</p>
+
+<p><strong>valery</strong> 08-01-2012</p>
+
+<p>А что … ? Решили попробовать не просто на “органике”, но еще и в “почве” ?</p>
+
+<p>(про объем - не знаю …)</p>
+
+<p><strong>Coccinella</strong> 08-01-2012</p>
+
+<p>7-10 л на растение должно хватить.</p>
+
+<p><strong>begunok</strong> 08-01-2012</p>
+
+<p>идея такая</p>
+
+<p>2 растения на SureToGrow - неорганика, капля</p>
+
+<p>2 растения на Sublime - неорганика, капля</p>
+
+<p>2 растения на почве с гумусом, полная органика</p>
+
+<p>2 растения на кокосе с гумусом, органо-минеральные удобрения</p>
+
+<p><strong>Oxy</strong> 08-01-2012</p>
+
+<blockquote>
+  <p>А кто мне подскажет, на взрослое растение томата сколько нужно земли? 10 литров? 15? 5?</p>
+
+  <p>Мне подсказывает внутреннее чутье, что 5 литров будет недостаточно</p>
+</blockquote>
+
+<p>Вообще ты молодец!</p>
+
+<p>А 5 литров земли будет вполне достаточно. Я уверен там хватит питательных вещей для растюхи. Другой вопрос что воды будет недостаточно всегда, это я уже наблюдал :) Особенно когда знаешь, что почва в этой воде явно лишняя :) И особенно хорошо, когда заранее знаешь, что там в этом растворе плавает :)</p>
+
+<p>Тут некорректно сравнивать землю и гидру на маленьком количестве растюх. Вот корректно сравнивать разные образцы самой земли при одинаковых семенах.</p>
+
+<p><strong>Coccinella</strong> 09-01-2012</p>
+
+<p>Вообще-то, мне кажется, тут вопрос в приоритетах. Урожайность на таком маленьком количестве растений сравнить не удастся, я согласна с Оху.</p>
+
+<p>Какой-нибудь урожай вообще вырастет во всех вариантах.</p>
+
+<p>Если цель получить урожай для ленивых (очень занятых), то скорее всего “победит” полная органика с автоматическим капельным поливом. Вот только, что скажут домашние и соседи, если Вы соберетесь делать подкормки сброженным навозом или птичьим пометом? Особенно, пока все это бродить будет?</p>
+
+<p>Если цель - уйти от грязи и вони, но быть с урожаем, то “победит” какая-то из гидропонных систем (там еще микроклимат будет сильно влиять).</p>
+
+<p>Если для тех, кто не хочет считать растворы и нюхать навоз, то 10 л грунта и полив разведенным комплексным из леечки через день - самое то. А кальций можно сразу мелом в грунт внести , на сезон хватит.</p>
+
+<p><strong>cpf</strong> 09-01-2012</p>
+
+<p>А мне интересна мотивация: что заставляет “переходить” с гидропоники на органику? :-\ Кмк только одно: недостаточные вкусовые качества плодов :-X Урожайность? (на гидропонике - выше), трудоемкость? (вообще нипричем :D) Что еще пропустил? :-\</p>
+
+<p><strong>begunok</strong> 09-01-2012</p>
+
+<p>для меня вот что интересно -даже не урожай) хотя это тоже интересно.</p>
+
+<p>для меня интересен вкус помидорок и кол-во нитратов в них</p>
+
+<p>Хочется убедиться, что “бабушкины” помидоры не будут вкуснее “тепличных” ну или будут <em>Dance</em></p>
+
+<p><strong>cpf</strong> 09-01-2012</p>
+
+<p>Так я и думал. А как же теория: вкус зависит по большей части от 1) сорта 2) освещения 3) зрелости на момент сбора? Все остальное - вторично… (про количество нитратов - вообще молчу, ибо в гидропонике их значительно меньше должно быть, кмк).</p>
+
+<p><strong>begunok</strong> 09-01-2012</p>
+
+<p>ну вот и проверим))) условия то одинаковые будут</p>
+
+<p><strong>Юрий Иваныч</strong> 09-01-2012</p>
+
+<p>Удачи, Максим. Держи нас в курсе. <em>8)</em></p>
+
+<p><strong>begunok</strong> 12-01-2012</p>
+
+<p>Предпоследний урожай я думаю.</p>
+
+<p>Через неделю -две буду менять растения</p>
+
+<p>Салат -потрясающе вкусный. Особенно зеленые тигрята</p>
+
+<p><a href="https://t.me/ponics_ru_files/6379" target="_blank"><img src="/attachimages/9865_IMG_2889.jpg" alt="" /></a></p>
+
+<p><strong>begunok</strong> 21-01-2012</p>
+
+<p>Ну вот, смена оборота.</p>
+
+<p>Всегда немножко грустно, когда убираешь старые растения, над которыми трясся полгода. С другой стороны -новое, интересное.</p>
+
+<p>Собрал остатки зеленых томатиков, вечерком сделаю фото новых. Высадил их в кубики Root Riot - в интернете можно посмотреть что это</p>
+
+<p><a href="https://t.me/ponics_ru_files/6380" target="_blank"><img src="/imagehost/thumbs/img2894.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 21-01-2012</p>
+
+<p>Зелено-тигровые (зебры в крапинку) - это уже вполне зрелые ? То есть их естественный цвет останется таким, розоветь не будут, да ?</p>
+
+<p><strong>begunok</strong> 21-01-2012</p>
+
+<p>аха, зеленые с желтым -это спелый плод. И лучше их не передерживать</p>
+
+<p><strong>d74mt</strong> 21-01-2012</p>
+
+<p>я в продаже видел сорт- Болото. Они не краснеют и не желтеют написано. Остаются зелёными. Типа специальный сорт со вкусом зелёных помидор без вредности для здоровья</p>
+
+<p><strong>Coccinella</strong> 21-01-2012</p>
+
+<p>А существуют сорта зеленых томатов. Мне в свое время рассказывал один очень известный селекционер гладиолусов, что он сам на Кубе видел, как местные жители выбрасывают красные томаты, а едят только зеленые. В жарком климате томаты плохо прокрашиваются. Опять же, мы едим их в основном свежими, а в Средиземноморье их больше варят, жарят, тушат, сушат…</p>
+
+<p><strong>d74mt</strong> 21-01-2012</p>
+
+<p>раньше мне такие в магазинах не попадались.</p>
+
+<p>я такой пакетик видел:</p>
+
+<p><img src="http://data9.gallery.ru/albums/gallery/225748-9250f-25869986-m549x500.jpg" alt="" /></p>
+
+<p>Раннеспелый крупноплодный сорт салатного назначения, с необыкновенными плодами зелено-болотной окраски и изумительного вкуса, массой 150-250 г. Растения высотой до 1,3 м. Урожайность 2,0-2,5 кг/растение. Выращивать в один стебель с пасынкованием и подвязкой к опоре. Плоды собирают при появлении жёлто-коричневого оттенка. Рекомендуется для не обогреваемых теплиц, укрытий и открытого грунта.</p>
+
+<p><strong>begunok</strong> 21-01-2012</p>
+
+<p>это не то</p>
+
+<p>Мои называются зеленая зебра</p>
+
+<p><strong>valery</strong> 21-01-2012</p>
+
+<p>А вот мне как-то (наверное, в силу “привычки” :( ) зеленые томаты не очень нравятся … :(</p>
+
+<p>Успехи Бегунка - радуют, а зеленый цвет … смущает все равно. :-[</p>
+
+<p><strong>Садовник</strong> 21-01-2012</p>
+
+<blockquote>
+  <p>А вот мне как-то (наверное, в силу “привычки” :( ) зеленые томаты не очень нравятся … :(</p>
+
+  <p>Успехи Бегунка - радуют, а зеленый цвет … смущает все равно. :-[</p>
+</blockquote>
+
+<p>Наследие эпохи вечнозелёных помидоров?</p>
+
+<p><strong>Coccinella</strong> 21-01-2012</p>
+
+<p>В овощном магазине семидесятых годов:</p>
+
+<p>”- а почему у вас помидоры зеленые?</p>
+
+<ul>
+  <li>берите огурцы, они желтые!”.</li>
+</ul>
+
+<p><strong>valery</strong> 21-01-2012</p>
+
+<p>:D</p>
+
+<p>Не знаю …</p>
+
+<p>С обывательской точки зрения, я бы купил такой из “любопытства”, попробовать, из “экзотических” соображений … (один. а остальные купил бы красные.).</p>
+
+<p><strong>d74mt</strong> 22-01-2012</p>
+
+<p>фиолетовый перец и помидоры, белые баклажаны, зелёные помидоры… када у нас красные огурцы появятся? ;)</p>
+
+<p><strong>cpf</strong> 22-01-2012</p>
+
+<blockquote>
+  <p>[Наследие эпохи вечнозелёных помидоров?</p>
+</blockquote>
+
+<p>скорее гены приматов (как и во всех нас) - мозг реагирует на красное:</p>
+
+<p>В своем исследовании Норберт Хагеманн развил ее идею. «У некоторых видов приматов морда наиболее агрессивных самцов имеет ярко-алый цвет», - говорит ученый. Он считает, что человек вполне мог унаследовать подсознательную реакцию на красный цвет от своих далеких предков. Пьричем проявляться такое поведение может в самых необычных ситуациях.</p>
+
+<p>:)</p>
+
+<p><a href="https://t.me/ponics_ru_files/6381" target="_blank"><img src="/imagehost/thumbs/1251173414big402429psychologyint.jpg" alt="" /></a></p>
+
+<p>P/S begunok - Вашт помидоры - <em>8)</em> Надеюсь на вскус - тоже.</p>
+
+<p><strong>begunok</strong> 22-01-2012</p>
+
+<p>спасибо))</p>
+
+<p>Страшные красные чебурашки</p>
+
+<p><strong>begunok</strong> 22-01-2012</p>
+
+<p>Ну вот, новые жители домика.</p>
+
+<p>Пресадил сегодня из Root Riot в кубики. Ждем пару недель))</p>
+
+<p><a href="https://t.me/ponics_ru_files/6382" target="_blank"><img src="/imagehost/thumbs/img2895.jpg" alt="" /></a></p>
+
+<p><strong>Юрий Иваныч</strong> 22-01-2012</p>
+
+<p>Максим, а какие размеры кубиков?</p>
+
+<p><strong>begunok</strong> 22-01-2012</p>
+
+<p>хм -не знаю. 10 на 10 наверное? Валерий точно знает)) он дока</p>
+
+<p>посмотрел на сайтах -102 мм</p>
+
+<p>Эти рут риот больше по размеру, чем дырки в гродане -пришлось вручную подрезать все. Благо, всего 10 шт</p>
+
+<p>Померял светопоток -600 наномолей, залил раствором 2.5 микросименса, на донышко положил микоризу. Будем смотреть что да как</p>
+
+<p>Еще бактериями чуть попозже полью))) Все по науке :D :D</p>
+
+<p><strong>Coccinella</strong> 22-01-2012</p>
+
+<p>А какими бактериями?</p>
+
+<p><strong>begunok</strong> 22-01-2012</p>
+
+<p>Azotobacter vinelandii……………minimum of 300,000 cfu/ml</p>
+
+<p>Clostridium pasteurianum……… minimum of 300,000 cfu/ml</p>
+
+<p>Вначале разводят с сахарком или медом, держат на 37 градусах 3-4 дня, для колоний, потом поливают</p>
+
+<p>Я вообще агар еще купил -думаю -может на агаре на жидком развести? или мед лучше?</p>
+
+<p><strong>valery</strong> 22-01-2012</p>
+
+<p>:-\</p>
+
+<p>Небольшая статья об Азотобактер …</p>
+
+<p><a href="https://t.me/ponics_ru_files/6383" target="_blank">bertsova.pdf</a></p>
+
+<p><strong>valery</strong> 22-01-2012</p>
+
+<p>Может и будет толк :-\ И даже - явный :-\ :-\</p>
+
+<p>И все же … неясно. Зачем нам в растворе - азотфиксант. Мы ведь и так даем нужный уровень азота.</p>
+
+<p>Если все “заработает” нормально - видимо, нужно будет пытаться этот новый “атмосферный” азот учитывать ? И давать в исходном растворе более низкие уровни азота ?</p>
+
+<p>К тому же азот будет поступать в аммонийно-аммиачных формах … :-\</p>
+
+<p>Почва его “поглотит”, свяжет и будет отдавать постепенно, в процессе нитрификации …</p>
+
+<p>А в данном случае ? Совершенно неясно … :-\ :-\ :-\</p>
+
+<p>Как-то пока больше вопросов, чем ответов … Впрочем, посмотрим как это будет выглядеть. Интересно.</p>
+
+<p><strong>begunok</strong> 23-01-2012</p>
+
+<p>А вот подскажите -почему нельзя в одной тепличке выращивать томаты и огурцы? Я где-то встречал такое утверждение</p>
+
+<p><strong>Юрий Иваныч</strong> 23-01-2012</p>
+
+<p>Насколько мне известно (пусть гуру поправят если навру) - очень сложно, а порой невозможно добиться в одной теплице идеальный микроклимат для томата и огурца одновременно. Во как. :-[</p>
+
+<p><strong>Aleksey Kurenin</strong> 23-01-2012</p>
+
+<blockquote>
+  <p>А вот подскажите -почему нельзя в одной тепличке выращивать томаты и огурцы? Я где-то встречал такое утверждение</p>
+</blockquote>
+
+<p>1) Примерно потому же, почему нельзя, например, жарить рыбу и мясо вместе на одной сковороде, или смотреть хороший фильм и читать хорошую книгу одновременно.</p>
+
+<p>2) Юриваныч ответил уже.</p>
+
+<p>3) А кто сказал, что нельзя!? У меня на огороде прекрасно росли вместе, в плёночной теплице, летом. И томата и огурца было достаточно, и даже более чем нужно для пропитания овощами трёх семей. Моя, родители, брата, да ещё и соседям всем перепало, так, не мало. :)</p>
+
+<p>Вот видите, все три ответа имеют право на жизнь. Не правда ли?</p>
+
+<p>Слова, нельзя и можно, очень уж такие скользкие, что ли. <em>???</em></p>
+
+<p><strong>Coccinella</strong> 23-01-2012</p>
+
+<p>И как Алексею удается всегда быть правым?! <em>???</em></p>
+
+<p>На самом деле огурцы и томаты запросто можно выращивать вместе не только в любительских теплицах, но и в профессиональных. Просто, если нам нужен не урожай вообще (для себя, родни и соседей, и даже для продажи излишков), а всерьез, экономически выгодный урожай, то проще-легче-выгоднее каждому сорту (не только культуре) обеспечивать оптимальные для нее-него условия.</p>
+
+<p>Поэтому голландцы выращивают на десятке гектар один сорт томата или огурца, а многие наши коллеги на такой же площади стремятся вырастить и огурец (2-3 гибрида), и томат (столько же), да еще и землянику и где-нибудь - розы. :) Гулять, так гулять ! :)</p>
+
+<p>Так что выращивайте все вместе и не волнуйтесь по пустякам :) Все получится!</p>
+
+<p><strong>begunok</strong> 23-01-2012</p>
+
+<p>спасибо)))</p>
+
+<p>А Алексей просто научился давать правильные ответы всегда :D</p>
+
+<p>Если набрать в гугле выращивание огурцов и томатов вместе -то обычный ответ -нельзя. Почему нельзя? Потому что любят разный микроклимат. А чего он разный то? Если посмотреть таблицу ураганов в топике и ЮрийИваныча -то нормальная влажность в районе 50-75% в температуре 17-21</p>
+
+<p>Другой любимый ответ - томаты любят проветривание. Ну это понятно для лета и перегрева. Сейчас же зима. Ну можно подуть для опыления, но не вот прямо разница</p>
+
+<p>Вообщем - наверное, можно вместе. Не оптимально будет, наверное, но можно</p>
+
+<p><strong>Aleksey Kurenin</strong> 24-01-2012</p>
+
+<p>Нет уж, я далекооооооооо не всегда даю правильные ответы. :-X Я такой же обыкновенный человек, вот так мои дорогие коллеги.</p>
+
+<p><strong>Юрий Иваныч</strong> 24-01-2012</p>
+
+<p>Ну все правильно. <em>8)</em> В моем сообщении ключевое слово - идеальный. ;)</p>
+
+<p><strong>begunok</strong> 29-01-2012</p>
+
+<p>Как всегда, когда уже думаешь, что знаешь все подводные камни - эти маленькие, зеленые люди снова выкидывают что-то новое</p>
+
+<p>Коллеги, посмотрите? Чего это у здоровых растений такой странный стебель? Стебель изгибается и не идет вверх, а стелится. Обычно на этом этапе стебель идет просто вверх</p>
+
+<p><a href="https://t.me/ponics_ru_files/6384" target="_blank"><img src="/imagehost/thumbs/img28971.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 29-01-2012</p>
+
+<p>Немного вытянувшиеся растения в перерыве между поливами потеряли тургор. Потеряли ненамного, но начали было ложиться, да обстоятельства изменились и они “передумали” :). Еще такие вещи могут быть от локально более высокой темрпературы или соответственно локального дефицита света. Понимаете, это как недавно Валерий о температуре рассказывал. Кажется, что все условия одинаковые, а на самом деле тут миллисименс, там микромоль… Растения чувствует разницу температур в доли градуса.</p>
+
+<p>Это у Вас все растения одного варианта, или часть “органически-гидропонных”? Они по какой-то причине не одинакового роста и вряд ли тут виноват состав раствора.</p>
+
+<p>А вот освещенность/температура могут быть разными.</p>
+
+<p><strong>begunok</strong> 29-01-2012</p>
+
+<p>все растения сейчас одинаковые. -все условия одинаковые</p>
+
+<p>Главное -не паниковать)))))) не охота сейчас подвязывать их</p>
+
+<p>Есть проблема с перепадом температуры. Днем - 24, ночью до 12</p>
+
+<p><strong>Coccinella</strong> 29-01-2012</p>
+
+<p>Они в самом начале вытянулись и тонкое подсемядольное колено их не удержало в какой-то неучтенный момент. Им можно сейчас воткнуть деревянные шампуры для шашлыка по три штуки в кубик вигвамом. Буржуи так постоянно делают. Хотя можно и сразу “взрослые” бамбуковые колышки поставить, чтобы корни зазря лишний раз не травмировать.</p>
+
+<p><strong>valery</strong> 29-01-2012</p>
+
+<p>Меня немного пленка под металлическими лоточками смутила.</p>
+
+<p>Если это “инфракрасная” - могут быть перегревы в кубике.</p>
+
+<p>А еще такое небольшое количество кубиков очень удобно ставить на стеклышко (можно на “индивидуальные” стеклянные квадратики).</p>
+
+<p>Очень хорошо уходит, не застаивается дренаж и корни остаются в кубике, не стремятся выбраться куда попало …</p>
+
+<p><strong>orgail</strong> 29-01-2012</p>
+
+<p>Валерий, Вы уже просто виртуозно владеете еще и темой “микрообъемов” корневой системы и как ей рулить <em>8)</em> :)</p>
+
+<p>А как вспомню Ваш томат в кубике и те режимы полива, так просто в благоговейном шоке :)</p>
+
+<p>Так скоро будет репортаж - как вырастить баобаб в наперстке <em>8)</em></p>
+
+<p><strong>valery</strong> 29-01-2012</p>
+
+<p>Спасибо, Максим … :D</p>
+
+<p>Я тоже в шоке. По совету Coccinella, данному участнику в одной из тем, - покрасить пол …</p>
+
+<p>Изгваздал нынче кусок зеленой стены белой краской и полоску пола (черная шахтная резина) …</p>
+
+<p>Ужас. Сколько еще неизведанных резервов организма ! :o (в смысле, не задействованных ресурсов освещения :) )</p>
+
+<p>Действительно, все преобразилось. Ощущения, что света - масса, как будто “лишний ДНАТ” включили <em>8)</em></p>
+
+<p><strong>valery</strong> 29-01-2012</p>
+
+<p>Хм …</p>
+
+<p>А если, Вы, Максим, по поводу “стеклышек” … так это когда-то где-то Алексей Куренин подсказал :D <em>8)</em></p>
+
+<p><del>“Огуречные” корни у меня при первом знакомстве с кубиками лезли кто куда … :)</del> <em>Wall</em> <em>Wall</em> <em>Wall</em></p>
+
+<p><strong>Coccinella</strong> 29-01-2012</p>
+
+<blockquote>
+  <p>“Огуречные” корни у меня при первом знакомстве с кубиками лезли кто куда … :)</p>
+</blockquote>
+
+<p>Простите, а кто с кем знакомился? :-[ Корни с кубиками? :)</p>
+
+<p><strong>valery</strong> 29-01-2012</p>
+
+<p>:)</p>
+
+<p>Теперь уже и не разобраться … :-[</p>
+
+<p><strong>begunok</strong> 29-01-2012</p>
+
+<p>вообщем поставил подпорки, но зелень меня сейчас очень радует, красивая такая зелень)))</p>
+
+<p>А по поводу перегрева -у меня ночью всего 8-9 градусов, поэтому приходится делать очень короткую ночь -всего 4 часа и поставить обогрев. Сейчас, мелочь чуть окрепнет и удлиню ночь и уберу инфракрасный обогрев</p>
+
+<p><strong>valery</strong> 29-01-2012</p>
+
+<p>Почему ж так холодно ночью ? А у меня складывалось впечатление, что все это где-то в жилом-полужилом помещении растет … или в “подсобном” …</p>
+
+<p><strong>begunok</strong> 05-02-2012</p>
+
+<p>Сегодняшние фотки.</p>
+
+<p>Несмотря на холод по ночам, все растет и живет потихоньку. Есть недостаток чего-то на нижних листьях - желтые пятна, но, думаю, ничего страшного</p>
+
+<p><a href="https://t.me/ponics_ru_files/6385" target="_blank"><img src="/attachimages/10052_IMG_2899.jpg" alt="" /></a></p>
+
+<p><strong>Юрий Иваныч</strong> 05-02-2012</p>
+
+<p>Классные томатики. <em>8)</em> А сколько им?</p>
+
+<p><strong>begunok</strong> 05-02-2012</p>
+
+<p>3 недели сейчас. Скоро на место ставить буду)</p>
+
+<p><strong>Coccinella</strong> 05-02-2012</p>
+
+<p>Подкормили бы Вы их магнием, Бегунок, … на всякий случай…</p>
+
+<p><strong>begunok</strong> 06-02-2012</p>
+
+<p>спасибо, подкормлю</p>
+
+<p><strong>utyv</strong> 08-02-2012</p>
+
+<p>Холода ночью заинтриговали, честное слово. Уж не на лоджию ли палатка переехала?</p>
+
+<p><strong>begunok</strong> 08-02-2012</p>
+
+<p>у меня сейчас появилось специальное помещение)) без кондесата, только потолок 2 метра, что мало</p>
+
+<p>А ночью - чтобы сделать растениям ночь, тепла от лампы нет, а окружающая температура 7-9 градусов</p>
+
+<p><strong>Coccinella</strong> 08-02-2012</p>
+
+<p>А обогреватель поставить дорого? Да хоть бытовой, масляный радиатор, они не так уж много потребляют и неплохо регулируются.</p>
+
+<p><strong>begunok</strong> 11-02-2012</p>
+
+<p>Сегодняшние фотки</p>
+
+<p>Появились намеки на цветочки. Попробую дотерпеть до следующих выходных и пересадить через неделю</p>
+
+<p>Вот что интересно, никак не пойму и не научусь определять пасынки</p>
+
+<p>Кокцинелочка, помогите - нужно удалять их или нет? Красным отмечен отросток</p>
+
+<p><a href="https://t.me/ponics_ru_files/6386" target="_blank"><img src="/imagehost/thumbs/img2906.jpg" alt="" /></a></p>
+
+<p>Ну и внешний вид на сегодняшний день общий вид</p>
+
+<p><a href="https://t.me/ponics_ru_files/6387" target="_blank"><img src="/imagehost/thumbs/img2902.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 11-02-2012</p>
+
+<p>Их бы - расставить немного …</p>
+
+<p>А в каком смысле “определять” пасынки ? То, что в пазухе листа - то и пасынок …</p>
+
+<p><strong>valery</strong> 11-02-2012</p>
+
+<p>“Намеки на цветочки” - действительно отделяется первая кисть.</p>
+
+<p>Снимок не удается увеличить, не очень хорошо видно, но ощущение возникает, что растение несколько “низковато” и листьев - немного, то есть первая кисть - довольно низко.</p>
+
+<p>Желательно, что бы до первой кисти сформировалось 9 листьев (меньше листьев - потери). На “низкую” первую кисть могут влиять низкие ночные температуры, особенно в первые недели (та кисть, что отделяется сейчас, закладывалась в растении несколько ранее. То есть ее определяют “события/обстановка” микроклимата из недавнего “прошлого”.</p>
+
+<p>(если верить “литературе”, чуть ли не месяц назад … :o )</p>
+
+<p><strong>begunok</strong> 11-02-2012</p>
+
+<p>да просто этот пасынок в пазухе листа, но я не понимаю иногда- это пасынок или основной ствол на верхушке</p>
+
+<p>А низкие температуры и сейчас)) но уже получше- в районе 9-10 градусов</p>
+
+<p>Расставить не хочу пока, подожду еще недельку и на постоянное местечко</p>
+
+<p><strong>valery</strong> 11-02-2012</p>
+
+<p>Если следующий лист идет вплотную за пасынком и сложно понять, где молодой пасынок, а где основной ствол … Пасынок всегда будет БЛИЖЕ к листу, в основании которого растет, чем “продолжение”. Ну и, конечно, с “этой” же стороны, что и лист …</p>
+
+<p><strong>valery</strong> 11-02-2012</p>
+
+<p>А “не хотите расставлять” … :-\ Не знаю … А почему ?</p>
+
+<p>Расставить - 1,5 минуты. Пересадке на постоянное место - не помеха. Листья - НЕ должны перекрываться (потери света, резко-неравномерное освещение, затенение, ухудшение вентиляции). Растение ведь именно сейчас (и особенно - раньше) все еще формирует и корневую систему и “закладывает” свое будущее - силу/развитие/здоровье …</p>
+
+<p>Ночная температура - близкая к критической (а то и хуже). Вы же хотите добавить “вегетативности” ? Хорошо, чтобы действия были “однонаправленные” …</p>
+
+<p>Если начнем “работать” только с кубиком - получим действия “раздерганные”. Большая разница день/ночь - генеративное. Более влажный кубик с более низким ЕС - вегетативное. К тому же еще более влажный тяжелый кубик будет уходить в ночь на такую низкую температуру … Это для корневой совсем не хорошо.</p>
+
+<p>А технической возможности чуточку “подогреться” ночью, как советует Coccinella, что - нет совсем ?</p>
+
+<p><strong>begunok</strong> 11-02-2012</p>
+
+<p>за эти технические возможности по попе схлопочу от пожарных))))</p>
+
+<p>Удивляюсь, как они 1.2 киловата то терпят))</p>
+
+<p>Про раздвижение -тут проблема не в 1.5 минуты) Валер, ты же сам проводишь со своими питомцами, как и я не один час в день?</p>
+
+<p>Проблема в том, что они ложаться -ствол кривой. Их нужно поддерживать. Поддерживать могу только с помощью лесенки, она более -менее работает на 3 растения, если в густую.</p>
+
+<p>Ну, блин, вы меня короче, сподвигаете расставить их уже по-взрослому))) ладно, наверное, завтра так и сделаю уже))))</p>
+
+<p><strong>valery</strong> 11-02-2012</p>
+
+<p>Ясно … с пожарными лучше не спорить, это “да” … :-\</p>
+
+<p><strong>Coccinella</strong> 11-02-2012</p>
+
+<p>Begunok, а что у Вас за сорт? Я пролистала 7-8 страниц назад, не нашла. Красным отмечен именно пасынок, но вот удалять его или нет - вопрос именно в данном случае интересный. При таких низких среднесуточных температурах томаты (некоторые сорта и гибриды) имеют свойство вершковаться - у них пропадает точка роста.</p>
+
+<p>И в таком случае легче всего решить проблему за счет пасынка ,пустить его вместо верхушки.</p>
+
+<p>Цвет и форма листьев адекватны условиям, но я согласна с Валерием - их надо расставить. Ну что Вы будете делать с метровыми хлыстами? Нужны они Вам… Кривоваты? Не беда! В Ваших садовых магазинах бамбуковые колышки не продаются? Примерно по 40-50 см длиной? Вы посмотрите. По три таких колышка на растение, вигвамом, и никто никуда валиться не будет.</p>
+
+<p><strong>begunok</strong> 11-02-2012</p>
+
+<p>Не дождался кокцинеллочки))</p>
+
+<p>Это биг биф, тот, который и у меня хорошо зарекомендовал себя, и у Юрия Ивановича сейчас растет( палец соскользнул- получилось Урий Иванович)))))</p>
+
+<p>Хотелось бы узнать, как там у Юры</p>
+
+<p>Вообщем, удалил эти пасынки, надеюсь, что в конце следующей недели будет нормальная ночная температура.</p>
+
+<p>А так- завтра расставлю все по местам</p>
+
+<p><strong>Coccinella</strong> 11-02-2012</p>
+
+<p>Понятно :). Это индет, удалили, и правильно, все должно быть в порядке.</p>
+
+<p><strong>begunok</strong> 18-02-2012</p>
+
+<p>Ну вообщем, сегодня пересадил все томатики, а так же посадил базилик, мяту и цветочки. Томатики были посажены уже с цветами 2 кисти</p>
+
+<p>Получилось 2 куста на STG (Sure to Grow), два куста на Sublime -на фотографии они ближе</p>
+
+<p>2 куста на кокосе с перлитом + биогумус + неорганические удобрения</p>
+
+<p>2 куста на земле с перлитом + биогумус + органические удобрения</p>
+
+<p>Попробую вести так -все, что на матах обычным способом, EC в районе 2.5 , жесткость воды из под крана около 0.4. pH в районе 5</p>
+
+<p>Кокос будет поливаться дренажем из матов, разбавляя до ЕС в районе 2 и с контролем pH, добавляя также жидкий биогумус</p>
+
+<p>Земля будет поливаться органическими удобрениями раз в неделю, раз в неделю водой. Ну как-то так. Вообщем -никакой неорганики))))</p>
+
+<p>Фотика под рукой не было фотографии не очень качества из телефона. Завтра будут нормальные.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6388" target="_blank"><img src="/imagehost/thumbs/img0119.jpg" alt="" /></a></p>
+
+<p>Ну и земелька</p>
+
+<p><a href="https://t.me/ponics_ru_files/6389" target="_blank"><img src="/imagehost/thumbs/img0120.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 18-02-2012</p>
+
+<p>Рассмотрел знакомый “прибор” - Грин Лайф … удобная штука … с СО2 764 … :) или сколько там (не очень четко видно на снимке) …</p>
+
+<p><strong>begunok</strong> 18-02-2012</p>
+
+<p>колеблется от 600 до 800 ppm. Раньше доводил с помощью дозатора до 900-1000. Но как-то убрал эти попытки, на глаз разницы никакой нет</p>
+
+<p>Ну а влажность в районе 60-70 сейчас получается держать</p>
+
+<p><strong>begunok</strong> 20-02-2012</p>
+
+<p>Вот, сделал нормальные фотки. Сегодня повнимательнее рассмотрел корни с микоризой- такие прям смешные))) волосатые</p>
+
+<p>Надо будет сфоткать дополнительно</p>
+
+<p>Все равно, кстати, не понимаю -как поливать землю. Сколько ее поливать? На глаз? подскажите пожалуйста</p>
+
+<p><a href="https://t.me/ponics_ru_files/6390" target="_blank"><img src="/imagehost/thumbs/img2910.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6391" target="_blank"><img src="/imagehost/thumbs/img2907.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 20-02-2012</p>
+
+<p>У Вас земли мало, была бы грядка, то все легко. Полили, взяли ком земли в горсть, сжали кулак (я все храброго портняжку при этом вспоминаю :)), если вода - капли- показалась между пальцами - все в порядке. Если потекла - перелили. Если не выжимается - надо еще. А в таком варианте… взвешивать придется, как минвату.</p>
+
+<p><strong>valery</strong> 21-02-2012</p>
+
+<blockquote>
+  <p>Все равно, кстати, не понимаю -как поливать землю. Сколько ее поливать? На глаз? подскажите пожалуйста</p>
+</blockquote>
+
+<p>:D Та же проблема … :) Наверное, действительно, придется поучиться “отжимать” …</p>
+
+<p><strong>Coccinella</strong> 21-02-2012</p>
+
+<p>Да ее отжать придется первые два раза, потом просто кожей руки будете чувствовать.</p>
+
+<p>Я в свое время была на практике в шампиньоннице “Московского” и все удивлялась, как агроном с бригадиром определяют поливную норму в камерах ? Они просто поверхность грядки рукой погладят и решают, здесь надо 2 л/м2, а там 2,5 л/м2. Не выдержала, взяла пробы и пошла в лаборатории определила влажность, они рукой определяли различия до 0,5% влажности! Только потренироваться немного нужно.</p>
+
+<p><strong>orgail</strong> 21-02-2012</p>
+
+<p>похоже на то, когда раствор бетона замешиваешь :D</p>
+
+<p><strong>valery</strong> 21-02-2012</p>
+
+<p>Ну … тогда и я … эта … похвалюсь от нескромности … :-[ :D</p>
+
+<p>Раствор-то все равно “мешаю” каждый день. То раствор, то дренаж разбавляешь. То еще придумаешь себе какое развлечение …</p>
+
+<p>Через день - ОООчень редко. Только, когда сильно обленишься. :(</p>
+
+<p>Так вот, когда исходная вода стабильна (а особенно с дренажом) очень быстро навостряешься “плескать” на глазок.</p>
+
+<p>Получается - точно, и ЕС и рН, прибором - только проверяешь.</p>
+
+<p>Но “ляпы”, нет, нет, да все равно случаются. :-[</p>
+
+<p><strong>begunok</strong> 21-02-2012</p>
+
+<p>вот моя микориза))) хвалюсь типа</p>
+
+<p><a href="https://t.me/ponics_ru_files/6392" target="_blank"><img src="/imagehost/thumbs/img2915.jpg" alt="" /></a></p>
+
+<p><strong>SergF</strong> 22-02-2012</p>
+
+<p>Листики желтыми пятнами, или мне показалось так на последнем фото?</p>
+
+<p><strong>begunok</strong> 22-02-2012</p>
+
+<p>да были проблемы на нижних листках</p>
+
+<p>Сейчас нормально все, тьфу-тьфу-тьфу</p>
+
+<p>Ну, правда, если я не пересушу или не переувлажню почву. Вообще, ребят, как же проще работать с матами.</p>
+
+<p><strong>Coccinella</strong> 22-02-2012</p>
+
+<blockquote>
+  <p>… Вообще, ребят, как же проще работать с матами.</p>
+</blockquote>
+
+<p>:)</p>
+
+<p><strong>begunok</strong> 03-03-2012</p>
+
+<p>Свеженькие фотки. Все растет потихоньку. Есть проблемы с жированием на земле и в кокосе. Я так понимаю -просто почаще поливать чистой водой? Это выход? Кокцинеллочка, помогите советом.</p>
+
+<p>Что еще интересного? А, да, у меня в дренаже ЕС меньше, чем в поливе. Это означает, что не хватает еды? Надо ли беспокоиться? Валерий, я вроде видел, у тебя была такая же проблема?</p>
+
+<p>Ну и фотки</p>
+
+<p><a href="https://t.me/ponics_ru_files/6393" target="_blank"><img src="/imagehost/thumbs/img2919.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6394" target="_blank"><img src="/attachimages/10150_IMG_2921.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6395" target="_blank"><img src="/attachimages/10152_IMG_2922.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6396" target="_blank"><img src="/attachimages/10154_IMG_2923.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 03-03-2012</p>
+
+<p>Я не уверена насчет жирования, скорее проблемы с микроклиматом, почитайте последние страниц 5-10 домика Валерия.</p>
+
+<p>То, что ЕС падает, для интенсивно растущих и одновременно пытающихся плодоносить растений вполне нормально, нервничать не стоит :)</p>
+
+<p>Горбатые листья при досветке вообще - норма жизни :). А в целом очень миленькие растения. Меня только смутили коричневые пятна на стебле на первом фото - это тень от чего-то? И на самом маленьком томатике на последнем фото мне мерещится вершинная гниль. Проверьте, пожалуйста, может ракурс не такой.</p>
+
+<p><strong>begunok</strong> 03-03-2012</p>
+
+<p>спасибо большое, кокцинеллочка</p>
+
+<p>микроклимат вроде нормальный сейчас. Есть где-то ожоги от кендала. Про вершинную гниль обязательно завтра посмотрю. А темные пятна - тень от чего-то</p>
+
+<p><strong>begunok</strong> 04-03-2012</p>
+
+<p>Посмотрел внимательно все плоды</p>
+
+<p>Ну так и есть, как ожидалось, в земле и в кокогрунте есть признаки вершинной гнили, посрезал половину плодов</p>
+
+<p>В субстратах все хорошо</p>
+
+<p><strong>begunok</strong> 12-03-2012</p>
+
+<p>Ну что же, промежуточные итоги.</p>
+
+<p>Плоды на BLV сублиме более ровные по размеру, на STG - более крупные, но не равномерные</p>
+
+<p>На земле и кокосе -было много с вершинной гнилью -но это моя вина. Оставшиеся- разнокалиберные, меньше по размеру, чем на матах, надеюсь, что будут вкуснее))) гыы</p>
+
+<p>Первая фотография -на земле</p>
+
+<p>вторая -на сублиме</p>
+
+<p>третья -на сублиме.</p>
+
+<p>четвертая -на STG</p>
+
+<p>На фотографиях не виден размер, но вообщем -на земле размер меньше всех, на стг -больше всех</p>
+
+<p><a href="https://t.me/ponics_ru_files/6397" target="_blank"><img src="/attachimages/10247_IMG_2928.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6398" target="_blank"><img src="/attachimages/10249_IMG_2926.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6399" target="_blank"><img src="/attachimages/10251_IMG_2924.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6400" target="_blank"><img src="/attachimages/10253_IMG_2927.jpg" alt="" /></a></p>
+
+<p><strong>Юрий Иваныч</strong> 12-03-2012</p>
+
+<p>Классные томатики. <em>8)</em> Еще одно подтверждение тому, что мин. вата - лучший и самый управляемый субстрат для закрытых помещений. :-\</p>
+
+<p><strong>begunok</strong> 12-03-2012</p>
+
+<p>Юр -так это не минвата))))</p>
+
+<p>Это паралон -ну сублим))) и СТГ</p>
+
+<p>Для меня мин-вата хуже работает</p>
+
+<p><strong>Юрий Иваныч</strong> 12-03-2012</p>
+
+<p>Скорее всего я не совсем точно выразил мысль. Под “минватой” подразумевались все искуственные субстраты, ну и конечно сама минвата в том числе.</p>
+
+<p><strong>begunok</strong> 12-03-2012</p>
+
+<p>Ну, если эти томатики на земле будут не вкусными и с большим количеством нитратов, я их убью))) :D</p>
+
+<p><strong>Юрий Иваныч</strong> 12-03-2012</p>
+
+<p>Че, прям насмерть? :o</p>
+
+<p><strong>Mastodont</strong> 12-03-2012</p>
+
+<blockquote>
+  <p>Скорее всего я не совсем точно выразил мысль. Под “минватой” подразумевались все искуственные субстраты, ну и конечно сама минвата в том числе.</p>
+</blockquote>
+
+<p>;D</p>
+
+<p><strong>Юрий Иваныч</strong> 12-03-2012</p>
+
+<p>:-\</p>
+
+<p><strong>begunok</strong> 12-03-2012</p>
+
+<p>сделаю из них кетчуп)))) <em>Dance</em></p>
+
+<p><strong>begunok</strong> 14-03-2012</p>
+
+<p>сидим в шереметьево, ждем вылета на берлин. С утра полил растения, но чото-боюсь, что будет им плохо за 4 дня не полива</p>
+
+<p>Интересно, жена что скажет, когда по приземлению я побегу к помидорам?</p>
+
+<p><strong>SergF</strong> 14-03-2012</p>
+
+<p>Тож летом оставлял своих питомцев но на неделю, как ни готовился (в поддоны всех поставил, слой воды налил 3-4 см) выжили не все :(</p>
+
+<p><strong>begunok</strong> 21-03-2012</p>
+
+<p>последние фотки с платнации</p>
+
+<p>Уже и краснеть некоторые начали</p>
+
+<p><a href="https://t.me/ponics_ru_files/6401" target="_blank"><img src="/imagehost/thumbs/img2930.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6402" target="_blank"><img src="/attachimages/10376_IMG_2931.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 21-03-2012</p>
+
+<p>Я, конечно, леди-Яга :), но почему мне мнится вершинная гниль на некоторых (хорошо еще не на всех, уххх) плодах?</p>
+
+<p><strong>begunok</strong> 21-03-2012</p>
+
+<p>вот же</p>
+
+<p>я сейчас буду переживать до завтра</p>
+
+<p><strong>orgail</strong> 21-03-2012</p>
+
+<p>ага, верхний снимок нижний справа плод :)</p>
+
+<p><strong>begunok</strong> 22-03-2012</p>
+
+<p>проверл</p>
+
+<p>не, это не вершинная</p>
+
+<p>Что-то в этот раз большие жопки у них. Я так понимаю -жопки образуются от неравномерного питания?</p>
+
+<p><strong>Юрий Иваныч</strong> 22-03-2012</p>
+
+<p>Максим, привет. Классные томатики. <em>8)</em> Как там Берлин?</p>
+
+<p><strong>Юрий Иваныч</strong> 22-03-2012</p>
+
+<p>Кстати поздравляю с присвоением “очередного звания”. :D</p>
+
+<p><strong>Coccinella</strong> 22-03-2012</p>
+
+<blockquote>
+  <p>проверл</p>
+
+  <p>не, это не вершинная</p>
+
+  <p>Что-то в этот раз большие жопки у них. Я так понимаю -жопки образуются от неравномерного питания?</p>
+</blockquote>
+
+<p>Оно, конечно, радует, но что именно Вы именуете этим - гм - термином?</p>
+
+<p><strong>begunok</strong> 23-03-2012</p>
+
+<p>ну сморщенные жопки у томатов.</p>
+
+<p>как бы тяжи, что-ли</p>
+
+<p>В берлине +20, тепло, все ходят в пиджачках, пьют вино и пиво.</p>
+
+<p><strong>Юка</strong> 23-03-2012</p>
+
+<p>Не мне ветеранам подсказывать, но гляньте на картинки по дефициту элементов <a href="http://agroplus-group.ru/inf/recomendacii_po_tomatam" target="_blank">http://agroplus-group.ru/inf/recomendacii_po_tomatam</a></p>
+
+<p><strong>begunok</strong> 23-03-2012</p>
+
+<p>у меня больше похоже на это</p>
+
+<p><a href="https://t.me/ponics_ru_files/6403" target="_blank"><img src="/imagehost/thumbs/521.jpg" alt="" /></a></p>
+
+<p><strong>Юка</strong> 23-03-2012</p>
+
+<p>Правый помидор надо в смайлик для гидропонщиков доработать.</p>
+
+<p><strong>Coccinella</strong> 24-03-2012</p>
+
+<p>Для общей информации :), у плода томата это место именуется вершиной плода, а вовсе не так, как Вы его обозвали :)</p>
+
+<p>И кто бы точно знал, от чего бывает такое безобразие :). Голландцы как-то лет 15 назад порекомендовали мне завести шмелей :)</p>
+
+<p>Я сама сейчас думаю, что это все-таки связано с кальцием (его поступлением в плод) и высоким корневым давлением. Это, когда растения слишком поздно вечером (в конце дня) поливают, да еще температура в зоне корней высокая. Корни качают воду в растение, а листья уже спать пошли, плод при этом более теплый, в него все и поступает. Если кальция в клеточной стенка маловато, стенка от давления рвется, через какое-то время разрывы рубцуются, ну а плод становится вот таким.</p>
+
+<p>Только надо учесть, что поступление воды в растение стимулирует и азот. Поэтому при относительном превышении его дозы (по сравнению с калием и кальцием) тоже возможны такие же … гм … результаты.</p>
+
+<p><strong>begunok</strong> 26-03-2012</p>
+
+<p>первый урожай, через 2 месяца всего</p>
+
+<p>А базилик то как пахнет</p>
+
+<p><a href="https://t.me/ponics_ru_files/6404" target="_blank"><img src="/imagehost/thumbs/img2934.jpg" alt="" /></a></p>
+
+<p><strong>Юрий Иваныч</strong> 26-03-2012</p>
+
+<p><em>8)</em> <em>8)</em> <em>8)</em> А 2 месяца после чего?</p>
+
+<p><strong>begunok</strong> 26-03-2012</p>
+
+<p>нашел фотку у себя -росточки, только пересаженные в кубики -значит еще плюс 2 недели)) получается 2 недели 2 мес до первого плода</p>
+
+<p><strong>Юрий Иваныч</strong> 28-03-2012</p>
+
+<blockquote>
+  <p>нашел фотку у себя -росточки, только пересаженные в кубики -значит еще плюс 2 недели)) получается 2 недели 2 мес до первого плода</p>
+</blockquote>
+
+<p>:o Ни фига себе. Это (на сколько я понимаю в математике :D) получается 74 дня. Молодец, поздравляю.</p>
+
+<p><strong>begunok</strong> 01-04-2012</p>
+
+<p>Урожай зреет))</p>
+
+<p>Томатики и базилик</p>
+
+<p><a href="https://t.me/ponics_ru_files/6405" target="_blank"><img src="/imagehost/thumbs/img2938.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6406" target="_blank"><img src="/imagehost/thumbs/img2935.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6407" target="_blank"><img src="/imagehost/thumbs/img2936.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 01-04-2012</p>
+
+<p>Как замечательно! $) Надеюсь, это не первоапрельская шутка :), а настоящие томатики.</p>
+
+<p><strong>begunok</strong> 01-04-2012</p>
+
+<p>Кокцинелоочка, конечно настоящие)) и базилик.</p>
+
+<p>Запах - очуметь</p>
+
+<p><strong>Юрий Иваныч</strong> 01-04-2012</p>
+
+<p>Превосходный результат, поздравляю. <em>8)</em> А что за девайс рядом с пустой ванночкой? :-\ На УЗ увлажнитель воздуха похож.</p>
+
+<p><strong>begunok</strong> 01-04-2012</p>
+
+<p>он и есть))) увлажнитель, не хватает мне испарений обычных</p>
+
+<p>Ща эксперимент проведем - будем клубнику выращивать)</p>
+
+<p><strong>begunok</strong> 03-04-2012</p>
+
+<p>зреет-зреет урожай))</p>
+
+<p>Собрал сегодня. Для сравнения положил довольно-таки большой апельсин.</p>
+
+<p>Вес самого большого около 400грам</p>
+
+<p><a href="https://t.me/ponics_ru_files/6408" target="_blank"><img src="/attachimages/10505_IMG_2940.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 03-04-2012</p>
+
+<p>Красотища!</p>
+
+<p><strong>valery</strong> 03-04-2012</p>
+
+<p>Одно слово - “наши помидоры” !!! (или это вроде как “два слова” … ? :-\ , ну неважно … )</p>
+
+<p>Наши помидоры - лучше. Не то, что в этих африках-марокках … ( или в “мароккох” … :-\ хм … ну что ты будешь делать <em>???</em> )</p>
+
+<p>Короче. На “том” континенте - апельсины хуже. А на этом континенте - помидоры лучше. (закон природы такой :o )</p>
+
+<p><strong>begunok</strong> 05-04-2012</p>
+
+<p>Вести с полей</p>
+
+<p>Все ближе и ближе посадка клубники</p>
+
+<p>А пока сейчас - помидоры</p>
+
+<p><a href="https://t.me/ponics_ru_files/6409" target="_blank"><img src="/imagehost/thumbs/img2942.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 05-04-2012</p>
+
+<p>Просто потрясающе!</p>
+
+<p><strong>begunok</strong> 08-04-2012</p>
+
+<p>Итак, 80 дней с момента высадки. что мы имеем</p>
+
+<p>1е растение в земле	175 гр</p>
+
+<p>2е растение в земле	444 гр</p>
+
+<p>1е растение в кокосе	326 гр</p>
+
+<p>2е растение в кокосе 150 гр</p>
+
+<p>1е растение в Sure to Grow	1358 гр</p>
+
+<p>2е растение в Sure to Grow	1186 гр</p>
+
+<p>1е растение сублиме	1260 гр</p>
+
+<p>2е растение сублиме	1543 гр</p>
+
+<p>Итого 6.5 кг с 4 растений. Ну, просто видимо я в земле выращивать не умею. Содержание нитратов примерно одинаковое, в земле и кокосе чуть больше. В сублиме общий вес чуть больше.</p>
+
+<p><strong>cpf</strong> 08-04-2012</p>
+
+<p>Отличный результат! <em>8)</em> Как на вкус? Различия по субстратам есть?</p>
+
+<p><strong>begunok</strong> 08-04-2012</p>
+
+<p>ну мне показалось более сладкие на кокосе.</p>
+
+<p>Но все-таки это очень субьективно</p>
+
+<p><strong>begunok</strong> 10-05-2012</p>
+
+<p>Помогите, люди добрые</p>
+
+<p>Хотелось бы почитать про клубнику на гидропонике - что удалять, как опылять, на что обратить внимание.</p>
+
+<p>Световой день, температурный режим и все такое</p>
+
+<p>Кто богат - буду рад.</p>
+
+<p><strong>Coccinella</strong> 10-05-2012</p>
+
+<p><a href="http://www.greentalk.ru/node/123" target="_blank">http://www.greentalk.ru/node/123</a></p>
+
+<p><a href="http://www.greentalk.ru/v/111_003/111_003/SV300001.JPG.html" target="_blank">http://www.greentalk.ru/v/111_003/111_003/SV300001.JPG.html</a></p>
+
+<p>Кое-что из голландских рекомендаций я тут по темам разбрасывала, сейчас сама не помню, где именно… У голландцев много на эту тему, но мне сейчас переводить некогда, текущих дел много…</p>
+
+<p>Попробуйте отсюда гуглом или еще чем перевести сами, это очень полезный голландский сайт (земляника по-голландски aardbei)</p>
+
+<p><a href="http://www.gfactueel.nl" target="_blank">http://www.gfactueel.nl</a></p>
+
+<p>например</p>
+
+<p><a href="http://www.gfactueel.nl/Teeltgeluid/Jac-Sprenkels-1.htm" target="_blank">http://www.gfactueel.nl/Teeltgeluid/Jac-Sprenkels-1.htm</a></p>
+
+<p>Там, если порыться, таких блогов много, я одно время их сохраняла на диске, но потом забросила…</p>
+
+<p><strong>begunok</strong> 10-05-2012</p>
+
+<p>Кокцинеллочка, спасибо огромное за ссылки. Гринток, то, конечно, я прочитал весь от корки до корки еще раньше. Но, к сожалению, там технологии не описано, как с томатами</p>
+
+<p>За голландцев особенное спасибо</p>
+
+<p><strong>begunok</strong> 13-05-2012</p>
+
+<p>у меня новый домик. В нем две комнаты</p>
+
+<p>Посадили всякий селдерей в землю и земляничку разных сортов. Знаю, что земляничку вроде не очень правильно посадил, но так надо)))</p>
+
+<p><a href="https://t.me/ponics_ru_files/6410" target="_blank"><img src="/attachimages/10873_фотография (7).jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6411" target="_blank"><img src="/attachimages/10875_фотография (6).jpg" alt="" /></a></p>
+
+<p><strong>silver_jr</strong> 13-05-2012</p>
+
+<p>В новой комнате какое освещение? По цвету видимо Днат. Интересно какие по мощности и сколько их?</p>
+
+<p><strong>begunok</strong> 13-05-2012</p>
+
+<p>в этой 2 по 600 ват</p>
+
+<p><strong>Coccinella</strong> 13-05-2012</p>
+
+<p>А почему растеньица такие разные по величине?</p>
+
+<p><strong>begunok</strong> 14-05-2012</p>
+
+<p>а они были куплены в виде разной рассады))) так что это-то ничего страшного</p>
+
+<p>Посмотрим, какие лучше приживуться. Были вытащены из земли и торфа и посажены в вату</p>
+
+<p><strong>begunok</strong> 18-05-2012</p>
+
+<p>Подскажите, что делать с первыми цветками. Корневая еще не очень большая, листов всего 1-2-3, появились первые бутоны.</p>
+
+<p>Где-то видел, что их обрывать. Жалко чото</p>
+
+<p>Вот например</p>
+
+<p><a href="https://t.me/ponics_ru_files/6412" target="_blank"><img src="/attachimages/10898_фотография (7).jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 18-05-2012</p>
+
+<p>А Вы их на продажу или для себя? Если жалко, то и оставтьте, я бы оставила :) Кормите Вы их хорошо, освещаете, они же находятся в значительно лучших условиях, чем их собратья в огороде. Вам же из них не варенье варить, вся радость в первых ягодках. А для варенья на рынке купите :)</p>
+
+<p><strong>begunok</strong> 18-05-2012</p>
+
+<p>конечно для себя)))</p>
+
+<p>Кокцинеллочка, интересно, а есть возможность вырастить куст прямо в кубике, без пересадки в мат? я смотрю на вылезщие корни у клубники, они значительно отличаются от томатов. более толстые, не сильно ветвятся. Может, им достаточно место в кубе? Если в мат залезает 8 кустов по Алексею</p>
+
+<p><strong>Coccinella</strong> 18-05-2012</p>
+
+<p>Представила себе Алексея, по которому в мат залезают 8 кустиков клубники :) Жуть!!!</p>
+
+<p>Кто бы пробовал? Вон у Валерия в 5 см кубике (если не ошибаюсь) томаты по три года растут и плодоносят. Тут ведь на самом деле вопрос в частоте поливов. Чем меньше объем субстрата, тем меньше запас раствора. Если Вы, как Валерий, можете себе позволить поливать их “через час по чайной ложке”, то почему бы и нет?</p>
+
+<p><strong>Coccinella</strong> 18-05-2012</p>
+
+<p>Бегунок, земляника уже цветет, пора подумать об уборке урожая :)</p>
+
+<p>Посмотрите, что придумали испанцы</p>
+
+<p><a href="http://www.agrobot.com/#" target="_blank">http://www.agrobot.com/#</a>!prettyPhoto</p>
+
+<p>Просто с ума сойти!</p>
+
+<p><strong>begunok</strong> 18-05-2012</p>
+
+<p>все равно поверху сидит испанский дядька и кладет клубничку к клубничке в коробочку :D :D</p>
+
+<p><strong>orgail</strong> 18-05-2012</p>
+
+<p>:D</p>
+
+<p><strong>begunok</strong> 19-05-2012</p>
+
+<p>работаю пчелой</p>
+
+<p><a href="https://t.me/ponics_ru_files/6413" target="_blank"><img src="/imagehost/thumbs/img0166.jpg" alt="" /></a></p>
+
+<p><strong>artmaximus</strong> 19-05-2012</p>
+
+<blockquote>
+  <p>Бегунок, земляника уже цветет, пора подумать об уборке урожая :)</p>
+
+  <p>Посмотрите, что придумали испанцы</p>
+
+  <p><a href="http://www.agrobot.com/#" target="_blank">http://www.agrobot.com/#</a>!prettyPhoto</p>
+
+  <p>Просто с ума сойти!</p>
+</blockquote>
+
+<p>…“хлеб” у гасторбайтер сборщиков “ отнимает” :D… а стоит-то…поди как вся теплица в сборе :D</p>
+
+<p><strong>artmaximus</strong> 19-05-2012</p>
+
+<blockquote>
+  <p>работаю пчелой</p>
+
+  <p><img src="/imagehost/thumbs/img0166.jpg" alt="" /></p>
+</blockquote>
+
+<p>…давай-давай :)…как говорится…бог в помощь :)</p>
+
+<p>сам так же “жужжью” :D… и ни одна “зверушка” не залетает на лоджию :(</p>
+
+<p>на днях залетела в квартиру “залётная” пчела… я её на лоджию…а ей ничего и не надо…лишь бы “смататься”…через минут пять отпустил “бедолагу” …со свистом улетела :D</p>
+
+<p>только на себя и надеешься :)</p>
+
+<p><strong>Юрий Иваныч</strong> 20-05-2012</p>
+
+<blockquote>
+  <p>работаю пчелой</p>
+
+  <p><img src="/imagehost/thumbs/img0166.jpg" alt="" /></p>
+</blockquote>
+
+<p>Макс, молодчина!!! <em>8)</em> Поздравляю с началом нового оборота. А мне сейчас некогда заниматься с растюхами - жара настала, устанавливаю людям кондиционеры. Вот придет осень, свободного времени станет больше, глядишь и выращу чего-нибудь.</p>
+
+<p><strong>valery</strong> 20-05-2012</p>
+
+<p>Хм … Что-то я пропустил такие красивые картинки с клубничкой (ничего “такого” :-[ ) …</p>
+
+<p>Замечательные кустики. Мне кажется можно и в кубиках вырастить, без пересадки.</p>
+
+<p><strong>Coccinella</strong> 20-05-2012</p>
+
+<blockquote>
+  <p>Вот придет осень, свободного времени станет больше, глядишь и выращу чего-нибудь.</p>
+</blockquote>
+
+<p>Это учитель :) Вырастите, конечно, разумное, доброе, вечное… Хотя бы посеете :)</p>
+
+<p><strong>begunok</strong> 20-05-2012</p>
+
+<p>Юр, как это учитель осенью будет свободен?) Осенью же снова школа?</p>
+
+<p>Валерий, да я решил уже пересадить) все-таки так более знакомо)</p>
+
+<p><strong>valery</strong> 20-05-2012</p>
+
+<p>Эх … не угадал (это я про себя).</p>
+
+<p>Ну … пересадить - тоже хорошо.</p>
+
+<p>(“Всех не пересажаете” … Откуда это :-\ Что-то такое мучительно знакомое … :-\ А-а-а …</p>
+
+<p>Ну да. Видимо, из старой книжки про гидропонику <em>8)</em> Или может из “Юного натуралиста” …</p>
+
+<p><strong>begunok</strong> 28-05-2012</p>
+
+<p>вообщем, посадил я (высадил), ну или засунул я землянику в маты.</p>
+
+<p>Уже появились такие порядочные ягодки)))))</p>
+
+<p>Растим, вообщем урожай</p>
+
+<p><a href="https://t.me/ponics_ru_files/6414" target="_blank"><img src="/attachimages/10940_IMG_3060.jpg" alt="" /></a></p>
+
+<p><strong>Юрий Иваныч</strong> 30-05-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>Вот придет осень, свободного времени станет больше, глядишь и выращу чего-нибудь.</p>
+  </blockquote>
+
+  <p>Это учитель :) Вырастите, конечно, разумное, доброе, вечное… Хотя бы посеете :)</p>
+</blockquote>
+
+<p>В данный момент - у меня “Уборочная” - мои детишки пишут ЕГЭ. А осенью снова начнётся “посевная”. :D</p>
+
+<blockquote>
+  <p>Юр, как это учитель осенью будет свободен?) Осенью же снова школа?</p>
+
+  <p>Валерий, да я решил уже пересадить) все-таки так более знакомо)</p>
+</blockquote>
+
+<p>Имелось в виду, когда уберу урожай с огородов (суммарно 50 соток), времени станет больше. :) Гидропоникой буду заниматься в осенне-зимний период. :-X</p>
+
+<p><strong>begunok</strong> 31-05-2012</p>
+
+<p>Сильно их там, детишек, не убирайте)))</p>
+
+<p><strong>artmaximus</strong> 31-05-2012</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>Вот придет осень, свободного времени станет больше, глядишь и выращу чего-нибудь.</p>
+    </blockquote>
+
+    <p>Это учитель :) Вырастите, конечно, разумное, доброе, вечное… Хотя бы посеете :)</p>
+  </blockquote>
+
+  <p>В данный момент - у меня “Уборочная” - мои детишки пишут ЕГЭ. А осенью снова начнётся “посевная”. :D</p>
+
+  <blockquote>
+    <p>Юр, как это учитель осенью будет свободен?) Осенью же снова школа?</p>
+
+    <p>Валерий, да я решил уже пересадить) все-таки так более знакомо)</p>
+  </blockquote>
+
+  <p>Имелось в виду, когда уберу урожай с огородов (суммарно 50 соток), времени станет больше. :) Гидропоникой буду заниматься в осенне-зимний период. :-X</p>
+</blockquote>
+
+<p>…сил Вам…как говорится, что б справиться со всем и вся ;)</p>
+
+<p><strong>Юрий Иваныч</strong> 31-05-2012</p>
+
+<blockquote>
+  <p>…сил Вам…как говорится, что б справиться со всем и вся ;)</p>
+</blockquote>
+
+<p>Спасибо. Если очень захотеть и постараться, то все получится. :)</p>
+
+<p><strong>begunok</strong> 09-06-2012</p>
+
+<p>Последние фотографии.</p>
+
+<p>Прошел ровно месяц с посадки</p>
+
+<p><a href="https://t.me/ponics_ru_files/6415" target="_blank"><img src="/attachimages/11022_IMG_3070.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6416" target="_blank"><img src="/attachimages/11024_IMG_3069.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6417" target="_blank"><img src="/attachimages/11026_IMG_3067.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 09-06-2012</p>
+
+<p><em>8)</em></p>
+
+<p>очень даже прилично !</p>
+
+<p><strong>Rossich</strong> 10-06-2012</p>
+
+<p>Здорово. Чуть понизь концентрацию ПР. Мне кажется -лист подкручивает и ягода мелковата.</p>
+
+<p><strong>begunok</strong> 10-06-2012</p>
+
+<p>Андрей Анатольевич -ПР -это что? Я слаб в сокращениях.</p>
+
+<p>Например у нас на работе есть такие - ПОПИС, ППО, ППК, БТП и прочее <em>Wall</em></p>
+
+<p><strong>Rossich</strong> 10-06-2012</p>
+
+<blockquote>
+  <p>Александр Анатольевич -ПР -это что? Я слаб в сокращениях.</p>
+
+  <p>Например у нас на работе есть такие - ПОПИС, ППО, ППК, БТП и прочее <em>Wall</em></p>
+</blockquote>
+
+<p>ПР- это питательный раствор.</p>
+
+<p>А звать меня- Андрей Анатольевич.</p>
+
+<p><strong>angeltaiga</strong> 12-06-2012</p>
+
+<p>Здравствуйте! гостей принимаете с вопросами там всякими разными ;). Меня Сергей зовут. .Гидропоникой решил попробовать занятся этой весной. Многих нюансов не знаю, да что там говорить вообще ничего не знаю. 1.5-2 месяца запоем читал форум смотрел фото и вот созрел. Вопросов будет множество, если вам будет не трудно то, надеюсь поделитесь своим опытом. Мои первые шаги вы уже видели в домике у Россича. Буду рад знакомству.</p>
+
+<p><strong>begunok</strong> 12-06-2012</p>
+
+<p>Конечно, Сергей</p>
+
+<p>Добро пожаловать. На что знаю -попробую ответить))</p>
+
+<p><strong>artmaximus</strong> 12-06-2012</p>
+
+<blockquote>
+  <p>Последние фотографии.</p>
+
+  <p>Прошел ровно месяц с посадки</p>
+</blockquote>
+
+<p>красота <em>8)</em></p>
+
+<p>“жаба” давит…белая :D</p>
+
+<p>тоже хочу такое :D…да вот только 2 крохотульки и осталось у меня…если не “загублю” :-[</p>
+
+<p><em>8)</em> отличный результат :)</p>
+
+<p><strong>begunok</strong> 12-06-2012</p>
+
+<p>Опустил Ес по совету Россича до 1.8</p>
+
+<p>Посмотрим, что из этого получится</p>
+
+<p>Спасибо за добрые слова))) это у меня витрина магазинчика на самом деле)))) лучше всяких слов показывает преимущества матов</p>
+
+<p><strong>artmaximus</strong> 12-06-2012</p>
+
+<blockquote>
+  <p>Опустил Ес по совету Россича до 1.8</p>
+
+  <p>Посмотрим, что из этого получится</p>
+
+  <p>Спасибо за добрые слова))) это у меня витрина магазинчика на самом деле)))) лучше всяких слов показывает преимущества матов</p>
+</blockquote>
+
+<p>…матом их всех…матом :D</p>
+
+<p><strong>angeltaiga</strong> 14-06-2012</p>
+
+<p>Здравствуйте. Скажите пожалуйста , что может быть с листом ? Может быть он просто отмирает или это недостаток чего-то. Верхние листья в порядке.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6418" target="_blank"><img src="/attachimages/11057_SP_A0210.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6419" target="_blank"><img src="/attachimages/11059_SP_A0211.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 14-06-2012</p>
+
+<p>Похоже на недостаток магния, но все же потерпите, подождите ответа Россича. Он же очень занят сейчас.</p>
+
+<p><strong>artmaximus</strong> 16-06-2012</p>
+
+<p>…я б чего нибудь подсказал… :-[</p>
+
+<p>…но ничего в этом…“ни бум бум” :D</p>
+
+<p>только лишь удачи :D</p>
+
+<p><strong>Юрий Иваныч</strong> 16-06-2012</p>
+
+<blockquote>
+  <p>Последние фотографии.</p>
+
+  <p>Прошел ровно месяц с посадки</p>
+</blockquote>
+
+<p>Максим, привет. Молодец - поздравляю. <em>8)</em> У меня к сожалению сейчас на гидропонику времени нет совсем. :'(</p>
+
+<p><strong>begunok</strong> 31-12-2012</p>
+
+<p>Ребят, а как формировать кисть у черри? Есть ли какие секреты?</p>
+
+<p><strong>begunok</strong> 26-03-2013</p>
+
+<p>сегодня собрал урожайчик</p>
+
+<p><a href="https://t.me/ponics_ru_files/6420" target="_blank"><img src="/attachimages/12891_фотография (9).jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 26-03-2013</p>
+
+<p>Замечательно! До меня только сейчас дошел смысл предыдущего вопроса :) Такие кисти не формируют, просто лучше выбирать для выращивания гибриды черри с прямыми (простыми) кистями.</p>
+
+<p>Бегунок, Вы, пожалуйста, не пропадайте с форума, где-то ближе к вечеру я и у Вас фото клянчить буду. Мне просто надо время весь Ваш домик пересмотреть :)</p>
+
+<p><strong>mav</strong> 26-03-2013</p>
+
+<blockquote>
+  <p>сегодня собрал урожайчик</p>
+</blockquote>
+
+<p><em>8)</em> <em>8)</em> <em>8)</em> <em>8)</em> шикарно. Чуть пол дисплея не откусил :D</p>
+
+<p><strong>cpf</strong> 26-03-2013</p>
+
+<p>Да уж: “Шоб я так жил!” <em>8)</em> Отличный урожай!</p>
+
+<p><strong>Coccinella</strong> 26-03-2013</p>
+
+<p>Begunok, а Вы не могли бы прислать фото Вашей растильни общим планом? Нигде в архиве не завалялось? Пожалуйста! И еще хотелось бы картинки с красной земляникой в минвате в оригинальную величину, здесь они мелковаты. Для презентаций годятся, а вот для публикации малы :( (mg@iaskola.lv)</p>
+
+<p><strong>begunok</strong> 27-03-2013</p>
+
+<p>если найду, конечно пришлю)))</p>
+
+<p><strong>Юрий Иваныч</strong> 05-04-2013</p>
+
+<p>Максим, привет. Давненько мы не общались, все суета, суета. Классные томатики получились, молодчина. <em>8)</em></p>
+
+<p><strong>begunok</strong> 06-04-2013</p>
+
+<p>Юрий, привет, рад очень видеть</p>
+
+<p>К сожалению, не занимаюсь почти томатиками.</p>
+
+<p>Вот, уволюсь с работы, буду заниматься)))</p>
+
+<p><strong>Mole_Garden</strong> 17-04-2013</p>
+
+<blockquote>
+  <p>вообщем, посадил я (высадил), ну или засунул я землянику в маты.</p>
+
+  <p>Уже появились такие порядочные ягодки)))))</p>
+
+  <p>Растим, вообщем урожай</p>
+</blockquote>
+
+<p>Как и куда у тебя сливается дренаж?</p>
+
+<p>На чем они лежат?</p>
+
+<p><strong>begunok</strong> 19-04-2013</p>
+
+<p>Покосил новый урожай</p>
+
+<p>Лежат на коробках - по 2 метра короба от вентиляции, сливаются в такие же коробки</p>
+
+<p><a href="https://t.me/ponics_ru_files/6421" target="_blank"><img src="/attachimages/13052_фотография (10).jpg" alt="" /></a></p>
+
+<p><strong>artmaximus</strong> 19-04-2013</p>
+
+<p>Сочно <em>8)</em> $) $)</p>
+
+<p>Чего тут скажешь :D</p>
+
+<p>И красиво <em>8)</em></p>
+
+<p><strong>begunok</strong> 13-09-2013</p>
+
+<p>Кокцинеллочка, вы однажды спрашивали разрешение на использовние фотографий.</p>
+
+<p>Можно ли у вас тоже попросить фотографии домашних гидропонщиков? Нужны красивые фотографии красивых растений. Не важно каких</p>
+
+<p><strong>Coccinella</strong> 13-09-2013</p>
+
+<p>Если они согласны, то я поделюсь. Но ближе к концу следующей недели, отбор (один только просмотр) картинок требует уйму времени, а у меня уборка урожая и параллельно куча всяких мероприятий.</p>
+
+<p><strong>begunok</strong> 14-09-2013</p>
+
+<p>хорошо))) спасибо большое</p>
+
+<p><strong>Vad</strong> 14-09-2013</p>
+
+<blockquote>
+  <p>Если они согласны…</p>
+</blockquote>
+
+<p>кто “ОНИ” авторы? :-\</p>
+
+<p>согласны! <img src="http://webarmavir.ru/public/style_emoticons/default/44.gif" alt="" /> все согласны!</p>
+
+<p>(есть воздержавшиеся? <img src="http://webarmavir.ru/public/style_emoticons/default/89.gif" alt="" />)</p>
+
+<p><strong>Coccinella</strong> 15-09-2013</p>
+
+<p>Конечно, авторы! Вряд ли сфотографированные объекты посещают форум и могут что-то сказать :) Хотя… это ведь Ваши томаты сидели в “Одногоршечниках”? :)… могут и возмутиться… :)</p>
+
+<p><strong>Vad</strong> 15-09-2013</p>
+
+<p>Мои точно не сидят! я им интернет брезал :D</p>
+
+<p>а будут возмущаться… кормить не стану! :)</p>
+
+<p><strong>begunok</strong> 24-09-2013</p>
+
+<p>Кокцинеллочка, помогите-спасите)))</p>
+
+<p>Я не могу найти Ваш пост, где фотографии из Голландии из томатных теплиц. Там все люди как космонавты одеты, пробуют различные томаты и все такое.</p>
+
+<p>Помогите-спасите))</p>
+
+<p><strong>Coccinella</strong> 25-09-2013</p>
+
+<p>А у меня такого, кажется, и не было. Видимо, это была ссылка на какие-то дни открытых дверей в Голландии. Вам по сюжету, что именно надо? Соблюдение правил гигиены или разнообразие гибридов?</p>
+
+<p>Пока могу предложить свою свежую картинку из Польши, “томатный академик” Рафал Алфут в новой демо-теплице</p>
+
+<p><a href="https://t.me/ponics_ru_files/6422" target="_blank"><img src="/attachimages/13902_Picture3.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 25-09-2013</p>
+
+<p>Вот здесь свеженькие репортажи из Голландии</p>
+
+<p><a href="http://www.gfactueel.nl/Glas/Foto--Video/2013/9/Kijken-voelen-proeven-en-praten-op-Demodag-Rijk-Zwaan-1355725W/" target="_blank">http://www.gfactueel.nl/Glas/Foto–Video/2013/9/Kijken-voelen-proeven-en-praten-op-Demodag-Rijk-Zwaan-1355725W/</a></p>
+
+<p><a href="http://www.gfactueel.nl/Glas/Foto--Video/2013/9/Nieuw-aubergineras-Adele-maakt-indruk-1368048W/" target="_blank">http://www.gfactueel.nl/Glas/Foto–Video/2013/9/Nieuw-aubergineras-Adele-maakt-indruk-1368048W/</a></p>
+
+<p>К фото с корнями скахзано, что избыточный рост корней стимулировал чрезмерный вегетативный рост черри томатов, от чего содержание сахаров в них снизилось на 1,5о Брикса и даже больше по сравнению с прошлым годом.</p>
+
+<p>Это очень важное замечание, особенно для местной публики, которая корнями зачастую увлекается больше, чем урожаем.</p>
+
+<p><strong>begunok</strong> 04-11-2013</p>
+
+<p>Скоро будем высаживать что-нибудь)))</p>
+
+<p>Нашел таки подвальчик для своей слабости))))</p>
+
+<p>Вот, может, кому интересно метод опыления</p>
+
+<p><a href="http://www.youtube.com/watch?v=a5D4dm8KTP8#ws" target="_blank">http://www.youtube.com/watch?v=a5D4dm8KTP8#ws</a></p>
+
+<p><strong>Vad</strong> 04-11-2013</p>
+
+<p>так и делаем :) такой же щеткой.. ))</p>
+
+<p>только саму щетку не снимать… прикладываем в основании кисти… и… вся кисть сразу опыляется</p>
+
+<p><strong>Coccinella</strong> 05-11-2013</p>
+
+<p>Да, я тоже считаю, что правильнее прикладывать в основании кисти или хотя бы к цветоножке.</p>
+
+<p>Здесь хорошо видно, что большая часть пыльцы улетает куда-то в пространство мимо пестика. А у большинства пасленовых тычинки короче пестика, а сам цветок повернут так, что пыльца сама просыпается на пестик. Мы этому процессу только помогаем.</p>
+
+<p><strong>begunok</strong> 14-04-2015</p>
+
+<p>ППЦ. Написал сообщение Россичу и уже потом прочитал((((</p>
+
+<p>Как же быстро меняется жизнь(((</p>
+
+<p><strong>Coccinella</strong> 15-04-2015</p>
+
+<p>Да, очень грустно, я все еще надеюсь, что это ошибочная информация. Его профиль в фейсбуке все еще открыт.</p>
+
+<p><strong>begunok</strong> 16-04-2015</p>
+
+<p>я обожаю мучать растения)))</p>
+
+<p>Посмотрев на бонсаи, решил помучать перец.</p>
+
+<p>Ну, понятно, столкнулся с множеством проблем - недостаток света( использовал на 5 кустов 2 лампы по 70 вт, только, конечно, лампы были продвинутые, даже больше -таких даже у Валерия нет)))</p>
+
+<p>Ну, ес–сно подхватил паутинный клещ, переохладил растения и недостаток влаги. Ну и выращивал я их как бонсай - в минимальном грунте. 3 на 3 на 7 см горошчке.</p>
+
+<p>Итого, через 2.5 получил плоды)))</p>
+
+<p><a href="https://t.me/ponics_ru_files/6423" target="_blank"><img src="/imagehost2/thumbs/10915300102062356337535072239879.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6424" target="_blank"><img src="/imagehost2/thumbs/11075024102062683236907355824093.jpg" alt="" /></a></p>
+
+<p><strong>Borodach1</strong> 16-04-2015</p>
+
+<p>Это точно бонсай? Вы ничего не перепутали? Акселерат какой-то. )))))))))))</p>
+
+<p>Через 2.5 чего? Дня? Месяца? Квартала? Года? Сантиметра? ;)</p>
+
+<p><strong>begunok</strong> 16-04-2015</p>
+
+<p>было интересно что будет, если растение погрузить в стресс постоянно)))</p>
+
+<p>2.5 месяца конечно же</p>
+
+<p><strong>Coccinella</strong> 16-04-2015</p>
+
+<blockquote>
+  <p>было интересно что будет, если растение погрузить в стресс постоянно)))</p>
+</blockquote>
+
+<p>Погибнут? :'( :'( :'(</p>
+
+<p><strong>Coccinella</strong> 16-04-2015</p>
+
+<blockquote>
+  <p>…</p>
+
+  <p>Я посчитал круглогодичную теплицу , район середина россии. Значит, 7 месяцев тьма и холод.</p>
+
+  <p>Расчеты примерно такие</p>
+
+  <p>на 100 (20 метров длина - 5 метров ширина, есть технические проходы) метрах можно уместить на матах 500 кустов томатов ( из расчета 3.5 куста на метр, двойной мат)</p>
+
+  <p>Ну совсем наобум - 10 кг с куста в год? итого 5 000 кг в год. Возьмем среднегодовую цену элитных сортов скажем 100р? Тоже наобум</p>
+
+  <p>Итого 500 000р</p>
+
+  <p>Считаем только свет- мощность ламп 50 по 400вт, 5 часов светим, и то не факт, что хватит. 500р в день, 7 месяцев - 100 000р</p>
+
+  <p>2 человека, работающих - 25000 в мес - 600 000р в год</p>
+
+  <p>Вода, отопление, удобрения даже уже не считаем -итого чистого убытка 300 000 в год</p>
+
+  <p>В чем моя ошибка в подсчетах?</p>
+</blockquote>
+
+<p>На 100 м2 маты не нужны, вполне хватит хорошей почвы или моих любимых финских колбасок. При высадке 2,5 раст/м2 в апреле и вполне разумной урожайности 10-12 кг/м2 за 6 месяцев выращивания (начало сборов последние дни июня), Вы получите 1 -1,2 т томата с теплицы. Цену реализации считайте сами.</p>
+
+<p>Минвата или даже кокос в таких условиях не окупятся никогда из-за невозможности управлять микроклиматом.</p>
+
+<p><strong>begunok</strong> 16-04-2015</p>
+
+<p>Ну да, это понятно, что за летний период можно собрать порядка 1тонны. Но игрушка тем и хороша, чтобы поиграть круглогодично)))</p>
+
+<p><strong>Coccinella</strong> 17-04-2015</p>
+
+<blockquote>
+  <p>ошибка № 1 на 100м2 нужно 0,5 работника</p>
+
+  <p>ошибка № 2 реальное досвечивание всего 3-3,5 месяца и не с таким кол-вом ламп</p>
+
+  <p>ошибка № 3 если в расчет не брали отопление, удобрения, семена, лекарства и тд и тп то похоже Вы ничего вообще не считали а взяли и просто пальцем в “небо” ткнули</p>
+</blockquote>
+
+<p><strong>Coccinella</strong> 17-04-2015</p>
+
+<blockquote>
+  <p>Ну да, это понятно, что за летний период можно собрать порядка 1тонны. Но игрушка тем и хороша, чтобы поиграть круглогодично)))</p>
+</blockquote>
+
+<p>Так мы об игрушке говорим или о средстве заработка? Круглогодичная теплица таких размеров в Средней полосе не окупится ни в жизнь :'(. В ней зимой очень трудно регулировать влажность воздуха, почитайте мазанку Олеганоса</p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=142.0" target="_blank">http://forum.ponics.ru/index.php?topic=142.0</a></p>
+
+<p><strong>Вик</strong> 17-04-2015</p>
+
+<blockquote>
+  <p>Так мы об игрушке говорим или о средстве заработка? Круглогодичная теплица таких размеров в Средней полосе не окупится ни в жизнь :'(. В ней зимой очень трудно регулировать влажность воздуха, почитайте мазанку Олеганоса</p>
+
+  <p><a href="http://forum.ponics.ru/index.php?topic=142.0" target="_blank">http://forum.ponics.ru/index.php?topic=142.0</a></p>
+</blockquote>
+
+<p>да с влажностью проблематично в маленьких теплицах - тут Вы правы, но если приложить голову и руки то решаемо.</p>
+
+<p>а на счет окупаемости….. посмотрим…. (тьфу, тьфу,тьфу чтоб не сглазить)</p>
+
+<p>да и… бегунок Вы тепличку ставить думаете или просто в теории? если ставить то могу указать на некоторые подводные камни (некоторые - потому, что еще не все сам расчухал) чтоб не “сбивать ноги”</p>
+
+<p><strong>Milkon10</strong> 17-04-2015</p>
+
+<blockquote>
+  <p>Круглогодичная теплица таких размеров в Средней полосе не окупится ни в жизнь :'(.</p>
+</blockquote>
+
+<p>Насчет таких размеров - несомненно!</p>
+
+<p>Однако, есть у меня один клиент (1С я занимаюсь), у нас в Уфе - одно из самых крупных тепличных хозяйств в республике.</p>
+
+<p>Так вот, на обычной земле, с минимальной подсветкой, газовым отоплением и теплицами, покрытыми полиэтиленовой пленкой, вполне себе неплохо зарабатывают. Специализируются на томатах и огурцах. На самом деле, очень выгодное это дело, когда есть большие площади. При этом, главная (подавляющая!) статья затрат - газ.</p>
+
+<p><strong>Coccinella</strong> 18-04-2015</p>
+
+<p>Ну да, чем больше объем воздуха в теплице, тем меньше теплопотери, экономнее расход газа или другого энергоресурса, тем проще обеспечить микроклимат, тем выше урожайность.</p>
+
+<p>Бегунок, Вы для начала просто посчитайте потребность в обогреве теплицы той конструкции, которую планируете строить</p>
+
+<p>Алгоритм здесь <a href="http://www.greentalk.ru/blog/47/entry-443-konspekt-lektcij-vvklimova-po-energetike-tepli/" target="_blank">http://www.greentalk.ru/blog/47/entry-443-konspekt-lektcij-vvklimova-po-energetike-tepli/</a></p>
+
+<p><strong>Вик</strong> 18-04-2015</p>
+
+<p>из за этого объёма мне пришлось 5,9 метров высотой тепличку делать ;)</p>
+
+<p><strong>а-ну-ка</strong> 18-04-2015</p>
+
+<p>бред…</p>
+
+<p><strong>begunok</strong> 18-04-2015</p>
+
+<blockquote>
+  <blockquote>
+    <p>Так мы об игрушке говорим или о средстве заработка? Круглогодичная теплица таких размеров в Средней полосе не окупится ни в жизнь :'(. В ней зимой очень трудно регулировать влажность воздуха, почитайте мазанку Олеганоса</p>
+
+    <p><a href="http://forum.ponics.ru/index.php?topic=142.0" target="_blank">http://forum.ponics.ru/index.php?topic=142.0</a></p>
+  </blockquote>
+
+  <p>да с влажностью проблематично в маленьких теплицах - тут Вы правы, но если приложить голову и руки то решаемо.</p>
+
+  <p>а на счет окупаемости….. посмотрим…. (тьфу, тьфу,тьфу чтоб не сглазить)</p>
+
+  <p>да и… бегунок Вы тепличку ставить думаете или просто в теории? если ставить то могу указать на некоторые подводные камни (некоторые - потому, что еще не все сам расчухал) чтоб не “сбивать ноги”</p>
+</blockquote>
+
+<p>Вик, я не теоритик, был бы очень рад, если вы расскажите о подводных камнях. Но мне кажется, что в средней полосе она не окупится не в жисть.</p>
+
+<p><strong>Coccinella</strong> 18-04-2015</p>
+
+<p>Вик, делитесь опытом, пожалуйста, лучше с картинками. Я как представлю себе теплицу 100 кв.м и высотой 5,9 м :) , это же практически двухэтажный дом :), всего-то и осталось - обшить стены, накрыть крышу, сделать перекрытия и внутреннюю отделку…</p>
+
+<p><strong>Вик</strong> 18-04-2015</p>
+
+<p>картинки будут позже… пока на словах:</p>
+
+<p>Алтайский край, теплица двугорбая :D, 240м2 общая площадь, проточка, в этом году сажал только огурцы (куча сортов на пробу) 500 кустов и укроп….</p>
+
+<p>как говорится отрабатывал технологию…..</p>
+
+<p>даже с учетом 3х волн клеща &gt;:D и прикорневой гнили :'( прибыль есть… :D</p>
+
+<p>подробно чуть попозже когда сезон закончится (в июне) , пока времени не много, да и печатаю медленно (сначала всё в ворде наберу а потом буду вставлять….</p>
+
+<p><strong>Вик</strong> 19-04-2015</p>
+
+<p>вопросы:</p>
+
+<ol>
+  <li>
+    <p>из чего каркас думаете делать</p>
+  </li>
+  <li>
+    <p>чем накрывать</p>
+  </li>
+  <li>
+    <p>какая форма предполагаемой теплицы</p>
+  </li>
+  <li>
+    <p>размеры дл-шир-выс</p>
+  </li>
+  <li>
+    <p>наклон почвы</p>
+  </li>
+  <li>
+    <p>вид отопления</p>
+  </li>
+</ol>
+
+<p>ну для начала хватит…….. :D</p>
+
+<p><strong>begunok</strong> 19-04-2015</p>
+
+<p>Мне бы хотелось сделать масштабируемый модуль промышленной теплицы</p>
+
+<p>Что-то типа того, что на фотографии</p>
+
+<p><a href="https://t.me/ponics_ru_files/6424" target="_blank"><img src="/imagehost2/thumbs/gallery6077183141627348611248.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 19-04-2015</p>
+
+<p>Бегунок, Вы - любимый племянник олигарха? :-[</p>
+
+<p>100 кв.м не масштабируются в такие вещи, в таком случае надо начинать от пары тысяч кв.м. И стоить это будет в пересчете на 1 кв.м раза в 4 дороже, чем 3 га и разв 6 дороже, счем 1 га.</p>
+
+<p><strong>Strangeman</strong> 20-04-2015</p>
+
+<p>Во как, а ведь у меня точно такие же мысли были - строить по блочному принципу, чтобы без кредита.</p>
+
+<p>Каркас - профильная труба, покрытие - поликарбонат.</p>
+
+<p><strong>orgail</strong> 20-04-2015</p>
+
+<p>блоки эт хорошо, но с ростом системы часто большая бандура в большом сарае работает эффективнее, чем много маленьких :)</p>
+
+<p><strong>Вик</strong> 20-04-2015</p>
+
+<blockquote>
+  <p>Во как, а ведь у меня точно такие же мысли были - строить по блочному принципу, чтобы без кредита.</p>
+
+  <p>Каркас - профильная труба, покрытие - поликарбонат.</p>
+</blockquote>
+
+<p>так при вашем климате дешевле и проще плёнку использовать чем поликарбонат……</p>
+
+<p><strong>begunok</strong> 20-04-2015</p>
+
+<p>Яж не специалист в строительстве.</p>
+
+<p>Позвонил разным своим знакомым, цены на такой модуль озвучили от 1500 евро за 1 кв метр до 3000 рублей за кв метр, сами понимаете, что есть где разгуляться)))</p>
+
+<p>Вик вот поделился своей ценой за кв метр -она ближе к 1500р. Но это второй вопрос -о строительстве. У меня не получается прибыль даже без строительства((</p>
+
+<p>Кокцинеллочка - ваша фраза “ошибка № 2 реальное досвечивание всего 3-3,5 месяца и не с таким кол-вом ламп”</p>
+
+<p>Это в теплых местах 3-3.5 месяца. У нас вот сейчас апрель, а снег летит, световой день часов 9. И такая погода - месяцев 6-7.</p>
+
+<p>По поводу ламп -я считал 1 лампу 400вт на 2 кв метра, что совсем не много</p>
+
+<p><strong>Strangeman</strong> 20-04-2015</p>
+
+<blockquote>
+  <p>блоки эт хорошо, но с ростом системы часто большая бандура в большом сарае работает эффективнее, чем много маленьких :)</p>
+</blockquote>
+
+<p>Так я и предполагал со временем большой. Это же не отдельные теплички, это одна, которая будет достраиваться секциями.</p>
+
+<p><strong>Strangeman</strong> 20-04-2015</p>
+
+<blockquote>
+  <blockquote>
+    <p>Во как, а ведь у меня точно такие же мысли были - строить по блочному принципу, чтобы без кредита.</p>
+
+    <p>Каркас - профильная труба, покрытие - поликарбонат.</p>
+  </blockquote>
+
+  <p>так при вашем климате дешевле и проще плёнку использовать чем поликарбонат……</p>
+</blockquote>
+
+<p>Я раньше тоже твк думал, но у нас теперь вот как бывает <a href="http://m.youtube.com/watch?v=YKIK8nX8Qeo&amp;itct=CCQQpDAYACITCIXi2f7VhcUCFQSAGAodm3gAiTIHcmVsYXRlZEjl8LPUy8qZ-KkB" target="_blank">http://m.youtube.com/watch?v=YKIK8nX8Qeo&amp;itct=CCQQpDAYACITCIXi2f7VhcUCFQSAGAodm3gAiTIHcmVsYXRlZEjl8LPUy8qZ-KkB</a>]</p>
+
+<p><strong>Coccinella</strong> 21-04-2015</p>
+
+<p>Господа, теплицы такого типа дешевле всего строить сразу 1-3 га, при этом расходы на “холодный домик” составляют 15,0-20,0 евро/м2 (1,5-2 млн евро/га). Посекционное строительство - самое дорогое. Это ведь обогреваемые теплицы с центральным обогревом. Там вся системав разводки труб проектируется под определенные условия. А вы собираетесь время от времени новые трубы к существующим приваривать? Это же нереально. Да и котел должен быть определенной мощности. Сразу ставить с резервом - нелогично, их обычно не рекомендуется “вполсилы” эксплуатировать. Докупать периодически более мощный?</p>
+
+<p>Даже Янукович при всех его возможностях себе такого не позволил, построил 1000 м2 с 10 климатическими зонами и выращивал там себе все, что хотел, ну не лично, видимо, садовники… :)</p>
+
+<p>Посекционно можно строить теплицы на солнечном обогреве.</p>
+
+<p>Что касается досвечивания, то в большинстве промышленных теплиц мощность ламп 100-120 Вт/м2. 180-200 Вт/м2 это, конечно, очень хорошо, но дорого. Да и не всегда нужно. К тому же вот-вот появятся надежные лед-модули, пока они дороги и недостаточно долговечны, но ситуация быстро улучшается.</p>
+
+<p>Все упирается в рынок.</p>
+
+<p>Бегунок, а Вы где обитаете? Мне почему-то казалось, что Вы из Питера, я ошибаюсь?</p>
+
+<p><strong>Вик</strong> 21-04-2015</p>
+
+<blockquote>
+  <p>Посекционное строительство - самое дорогое. Это ведь обогреваемые теплицы с центральным обогревом. Там вся системав разводки труб проектируется под определенные условия. А вы собираетесь время от времени новые трубы к существующим приваривать? Это же нереально. Да и котел должен быть определенной мощности. Сразу ставить с резервом - нелогично, их обычно не рекомендуется “вполсилы” эксплуатировать. Докупать периодически более мощный?</p>
+</blockquote>
+
+<p>вот вот … я и отказался от блочного строительства…. при расширении дешевле еще одну тепличку ставить рядом…</p>
+
+<p>а при работе котла в “пол-силы” перерасход энергоносителя увеличивается до 30%, если старт-стопную схему использовать то либо ну очень большие теплоаккумуляторы строить надо, либо температура прыгать будет, что очень не айс….</p>
+
+<p><strong>Strangeman</strong> 21-04-2015</p>
+
+<p>Но ведь кредит тоже не бесплатный, верно? У нас от24% годовых. Это же прямые и гарантированные потери.</p>
+
+<p>Но мои мысли о моей теплице, наверное, лучше излагать в моем домике, т.к. я ее планирую, как любительскую. Во всяком случае на начальном этапе. Да и земли у меня нет под коммерческую.</p>
+
+<p>Пару слов о любительской. На мой взгляд ее можно наращивать, используя первое время без котла, естественно, с сезонными ограничениями. Необходимость теплицы в любительских условиях я остро осознал после осени прошлого года и весны текущего. Прямо сейчас, при минимальных затратах в виде электрообогрева и/или буржуйки, рассада в теплице чувствовала бы себя великолепно, а высадить в ОГ невозможно.</p>
+
+<p>Забыл посмотреть, как чувствуют себя балаганы в соседней деревне. Прошлой осенью содрало всю пленку.</p>
+
+<p><strong>begunok</strong> 21-04-2015</p>
+
+<p>Кокцинеллочка, из москвы</p>
+
+<p>Хорошо, а вот такой вопрос. А если ставить вместо 1 стекла стеклопакет двойной?</p>
+
+<p><strong>а-ну-ка</strong> 21-04-2015</p>
+
+<p>Вам семью прокормить или капитал приумножить? Если второе– то Вы совсем не там копаете… Даже если левое отмывать…Подобное только Фирташу позволенно под личную госпрограмму рефинансирования.</p>
+
+<p><strong>Coccinella</strong> 21-04-2015</p>
+
+<p>Редкий случай :) - я согласна с А-ну-ка :)</p>
+
+<p><strong>Вик</strong> 22-04-2015</p>
+
+<p>begunok сходите в старый московский зимний сад… и у тех.персонала поинтересуйтесь почему они стекло заменяют дорогущим монолитным поликарбонатом, и как они с воронами воюют…. :D</p>
+
+<p>а потом решите - нужно Вам стекло или нет?</p>
+
+<p><strong>Strangeman</strong> 22-04-2015</p>
+
+<p>А что там с воронами? Они бомбят не только грецкими орехами, но и кокосовыми?</p>
+
+<p><strong>Вик</strong> 23-04-2015</p>
+
+<p>да натыкался на видео про московский зимний сад…..они там гады сидят на крыше и целенаправленно стекло долбают….. &gt;:D</p>
+
+<p>мужики только снег скребками смахнули, не успели отойти а тут пара ворон садится и за несколько секунд шипку в хлам…. а голос за кадром комментирует, что такое происходит чуть ли не каждый день…. :D</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

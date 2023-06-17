@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Новая квартира - новые забавы (заботы). | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Новая квартира - новые забавы (заботы).">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Новая квартира - новые забавы (заботы).</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>ГидроПончик</strong> 18-01-2010</p>
+
+<p>Приветствую всех любителей и профессионалов гидропоники!</p>
+
+<p>В прошлом году купил квартиру, наконец-то появился нормальный интернет, ну и вот - я здесь!</p>
+
+<p>Ремонт квартиры ещё не закончен, а страсть, как обычно взяла верх. Любительской гидропоникой занимаюсь шестой год. Что буду выращивать в этот раз пока не решил. Завтра пойду в магазин за семенами, а там - что на душу ляжет, то и вырастит.А лоджия готова к приёму новых жильцов. Развитие дальнейших событий, в отдельно взятой квартире будет, естественно, представлено на ваш (надеюсь товарищекий) суд.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3078" target="_blank"><img src="/attachimages/1076_DSCN4611.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3079" target="_blank"><img src="/attachimages/1078_DSCN4612.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3080" target="_blank"><img src="/attachimages/1080_DSCN4649.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3081" target="_blank"><img src="/attachimages/1082_DSCN4651.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3082" target="_blank"><img src="/attachimages/1084_DSCN4657.png" alt="" /></a></p>
+
+<p><strong>caiman</strong> 18-01-2010</p>
+
+<p>С новосельем! $)</p>
+
+<p>Сами мы из Украины, поэтому со своим закусоном</p>
+
+<p><a href="http://s2.postimage.org/txMHS.jpg" target="_blank"><img src="http://s2.postimage.org/txMHS.jpg" alt="" /></a></p>
+
+<p><a href="http://s3.postimage.org/1OS9gr.jpg" target="_blank"><img src="http://s3.postimage.org/1OS9gr.jpg" alt="" /></a> :D</p>
+
+<p>Наливай!!! :)</p>
+
+<p><strong>koval.sergei</strong> 18-01-2010</p>
+
+<p>Насчёт закусона это хорошо, сэм есть (горилка), а что за перчик там у вас на фотке caiman, ааа.</p>
+
+<p><strong>koval.sergei</strong> 18-01-2010</p>
+
+<p>Во блин дал сразу с вопросами :-[, с новосельем Вас в нашем форуме. :)</p>
+
+<p><strong>Mole_Garden</strong> 18-01-2010</p>
+
+<p>:D 8)</p>
+
+<p>Очень круто! Вот только не совсем понял зачем так высоко подняли установку? Для клубники и салатов?</p>
+
+<p><strong>caiman</strong> 18-01-2010</p>
+
+<blockquote>
+  <p>Насчёт закусона это хорошо, сэм есть (горилка), а что за перчик там у вас на фотке caiman, ааа.</p>
+</blockquote>
+
+<p>Перчик, Сергей, растет в тепличке сейчас-зимой.</p>
+
+<p><strong>ГидроПончик</strong> 18-01-2010</p>
+
+<p>Спасибо всем!!!</p>
+
+<p>Mole-Garden На самом деле, моя установка всеядная, места хватит для всех. От верхнего края трубы до потолка 1,5 метра. Просто таков был полёт дизайнерской мысли.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3083" target="_blank"><img src="/attachimages/1088_DSCN4658.png" alt="" /></a></p>
+
+<p><strong>ХеН</strong> 19-01-2010</p>
+
+<p>Все эстетические замашки на лицо :-X Не в обиду конешно. Поздравляю с новоселием.</p>
+
+<p><strong>ГидроПончик</strong> 18-02-2010</p>
+
+<p>Хроники витаминных салатов.</p>
+
+<p>14 января. Из заветного пакетика, наугад, взял две семечки. Положил их в пробки Агрос, пропитанные водой из под крана, присыпал вермикулитом. На следующий день оба вылезли на свет.</p>
+
+<p>20 января. Пробки с подросшими салатами вставлены в кубики Агрос, а кубики в стаканчики.</p>
+
+<p>21 января. Стаканчики с салатами поставил в установку.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3084" target="_blank"><img src="/attachimages/1306_DSCN5172.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3085" target="_blank"><img src="/attachimages/1308_DSCN4708.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3086" target="_blank"><img src="/attachimages/1310_DSCN4749.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3087" target="_blank"><img src="/attachimages/1324_DSCN4748.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3088" target="_blank">default.htm</a></p>
+
+<p><strong>ГидроПончик</strong> 18-02-2010</p>
+
+<p>22 января - 12 февраля.</p>
+
+<p>Время идёт - салатик растёт. В установку заряжен раствор для огурцов, и периодика настроена под огурец.</p>
+
+<p>Салаты были поставлены, как попутчики, ради эксперимента.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3089" target="_blank"><img src="/attachimages/1326_DSCN4865.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3090" target="_blank"><img src="/attachimages/1328_DSCN5049.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3091" target="_blank"><img src="/attachimages/1330_DSCN5085.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3092" target="_blank"><img src="/attachimages/1332_DSCN5096.png" alt="" /></a></p>
+
+<p><strong>ГидроПончик</strong> 18-02-2010</p>
+
+<p>18 февраля, т.е. сегодня. 19 ч. 30 мин. Хроники двух салатов удачно закончены.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3093" target="_blank"><img src="/attachimages/1334_DSCN5144.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3094" target="_blank"><img src="/attachimages/1336_DSCN5164.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3095" target="_blank"><img src="/attachimages/1338_DSCN5165.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3096" target="_blank"><img src="/attachimages/1340_DSCN5166.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3097" target="_blank"><img src="/attachimages/1342_DSCN5171.png" alt="" /></a></p>
+
+<p><strong>ГидроПончик</strong> 18-02-2010</p>
+
+<p>Бренные останки.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3098" target="_blank"><img src="/attachimages/1344_DSCN5176.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3099" target="_blank"><img src="/attachimages/1346_DSCN5178.png" alt="" /></a></p>
+
+<p><strong>nick</strong> 18-02-2010</p>
+
+<p>Красиво. Аппетитно.Могете. Что тут еще сказать ;)</p>
+
+<p><strong>orgail</strong> 19-02-2010</p>
+
+<p>Поздравляю!</p>
+
+<p>Взвесить не успели, наверное? :)</p>
+
+<p><strong>valery</strong> 19-02-2010</p>
+
+<p>Выглядит действительно вкусно, так что до взвешивания. наверное, дело не дошло …</p>
+
+<p><strong>Batat</strong> 19-02-2010</p>
+
+<blockquote>
+  <p>18 февраля, т.е. сегодня. 19 ч. 30 мин. Хроники двух салатов удачно закончены.</p>
+</blockquote>
+
+<p>Поздравляю!</p>
+
+<p>Чем Вы так красиво и аккуратно обернули трубы?</p>
+
+<p><strong>Oxy</strong> 19-02-2010</p>
+
+<p>С двойным новосельем! На форуме и в квартире! А чем досвечиваете?</p>
+
+<p><strong>ГидроПончик</strong> 19-02-2010</p>
+
+<p>Спасибо, всем!!!</p>
+
+<p>Batat, у нас, в строительных товарах, продаётся блестящий скотч. 25 метров при ширине 5 см., заклеивает площадь 1,25 кв.м. - стоит от 50 до 110 рублей. Или у вентеляционщиков обменять на что-нибудь жидкое, они этим скотчем приматывают пенофол к воздуховодам.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3100" target="_blank"><img src="/attachimages/1348_DSCN5184.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3101" target="_blank"><img src="/attachimages/1350_DSCN5188.png" alt="" /></a></p>
+
+<p><strong>ГидроПончик</strong> 19-02-2010</p>
+
+<p>Oxy, подсветка, с учётом окна, сделана на базе ЭСЛок. Светильники изготовлены из водосточной трубы и заглушек от канашки. Пока, в каждом по одной лампе по 85 Вт. Количество ламп можно увеличить до 4-х.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3102" target="_blank"><img src="/attachimages/1352_DSCN5189.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3103" target="_blank"><img src="/attachimages/1354_DSCN5192.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 19-02-2010</p>
+
+<p>А можно чуть более детальное фото светильников?</p>
+
+<p>В целом все очень хорошо 8) Так держать</p>
+
+<p><strong>ГидроПончик</strong> 19-02-2010</p>
+
+<p>Mole_Garden Светильниками это можно назвать, с натяжкой. Скорее отражатели. А поподробней - да легко.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3104" target="_blank"><img src="/attachimages/1356_DSCN5193.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3105" target="_blank"><img src="/attachimages/1358_DSCN5195.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3106" target="_blank"><img src="/attachimages/1360_DSCN5197.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 19-02-2010</p>
+
+<p>Спасибо, так более понятно.</p>
+
+<p><strong>ГидроПончик</strong> 19-02-2010</p>
+
+<p>Крессалат съедается и одновременно засеевается каждые 7 -10 дней. И просто на пассивной гидропонике салат и два базилика все с разницей в 1 неделю.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3107" target="_blank"><img src="/attachimages/1362_DSCN4686.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3108" target="_blank"><img src="/attachimages/1364_DSCN4745.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3109" target="_blank"><img src="/attachimages/1366_DSCN5198.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 19-02-2010</p>
+
+<p>И как кресс салат? Выглядит шикарно, прямо ковер. 8)</p>
+
+<p><strong>ГидроПончик</strong> 20-02-2010</p>
+
+<p>Этой зимой решил, для профилактики ОРЗ и прочих напастей, вместо чеснока использовать кресс-салат. Эффект превзошёл все ожидания. Все эпидемии проходят мимо, отсутствует чесночный запах, придаёт особый - ранее мне неведомый - пикантный вкус. Заметил побочный эффект. Через два месяца регулярного употребления - усилилась…увеличелась…ну вы меня понимаете… В общем, теперь кресс-салатами занимается жена, которая до этой зимы шла с гидропоникой паралельно.</p>
+
+<p>Начинал с семян от Русского огорода - дороговато получалось. Потом перешел на “Забаву” и “Весенний” от Аэлиты - тоже дроговато. Остановился на развесной “Забаве” от базарных кавказцев - самый дешевый, на сегодня вариант.</p>
+
+<p>Технология выращивания у меня такая: От 5-ти лировых бутылей отрезл дно, в одном попрожигал дырок, насыпал керамзита, присыпал вермикулитом, во второе налил воды и вставил первое во второе. На такую площадь засыпаю 8 пакетов т.е. 8 грамм семян, сверху продырявленный целофановый пакет и на сутки в кухонный шкафчик. Через сутки достаю, снимаю пакет и на подоконник. Подливаю водичку, по мере усыхания, брызгаю 3 -4 раза в день. Через 10 дней срезаю ровный коврик салата, и ничего не трогая опять на подоконник. Через 10 дней срезаю второй урожай. После этого вместе с корнями удаляю вермикулит, меняю его на новый. И дальше повторение. Таких плошек изготовлено пока три штуки. Жена настаивает на том, что в идеале, их должно быть десять.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3110" target="_blank"><img src="/attachimages/1368_DSCN5200.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3111" target="_blank"><img src="/attachimages/1370_DSCN5201.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 20-02-2010</p>
+
+<p>8)</p>
+
+<p>Т.е. питается он только водой?</p>
+
+<p><strong>ГидроПончик</strong> 20-02-2010</p>
+
+<p>У меня питается только отстоянной водой из крана. Пробовал добавлять слабенького раствора - начинали желтеть. Я думаю, им на десять дней хватает запасов питания в семечке и в воде. Иногда поподает вода, которую готовлю для смены раствора в установке, с pH=5,8 ,тогда процесс ускоряется и сокращается до 7 дней.</p>
+
+<p><strong>Mole_Garden</strong> 20-02-2010</p>
+
+<p>И еще очень круто, что семена у вас можно купить в развес, у нас я такого нигде не видел.</p>
+
+<p><strong>Batat</strong> 20-02-2010</p>
+
+<p>ГидроПончик мо - ло - де - цццц!!!!!!!!!!!</p>
+
+<p>С уважением, Batat</p>
+
+<p><strong>ГидроПончик</strong> 13-03-2010</p>
+
+<p>Решил поработать с перцами. На этот раз будет “Ерошка” от Манул, скарее всего на матах.</p>
+
+<p>Итак, начну.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3112" target="_blank"><img src="/attachimages/1533_DSCN5374.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3113" target="_blank"><img src="/attachimages/1535_DSCN5376.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3114" target="_blank"><img src="/attachimages/1537_DSCN5377.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3115" target="_blank"><img src="/attachimages/1539_DSCN5378.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3116" target="_blank"><img src="/attachimages/1541_DSCN5379.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3117" target="_blank"><img src="/attachimages/2101_DSCN5680.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 13-03-2010</p>
+
+<p>8) Вперед за наших! За заводчиков перца! :D</p>
+
+<p><strong>ГидроПончик</strong> 13-03-2010</p>
+
+<p>Да я чё-то всё от наших и огурцы и помидоры и салаты. Пора чёнибудь буржуйского попробывать, а то всё “Русский огород”.</p>
+
+<p>На сегодня огурцы и помидоры в такой стадии:</p>
+
+<p><a href="https://t.me/ponics_ru_files/3118" target="_blank"><img src="/attachimages/1543_DSCN5373.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3119" target="_blank"><img src="/attachimages/1545_DSCN5380.png" alt="" /></a></p>
+
+<p><strong>ГидроПончик</strong> 15-03-2010</p>
+
+<p>Базилику мало света, ему уже 1,5 месяца, а солнечные места все заняты.</p>
+
+<p>Салат на периодике с огурцом, потихоньку растёт, свет ему достаётся только из окна.</p>
+
+<p>Листовая горчица в земле бушует.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3120" target="_blank"><img src="/attachimages/1585_DSCN5391.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3121" target="_blank"><img src="/attachimages/1587_DSCN5392.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3122" target="_blank"><img src="/attachimages/1589_DSCN5384.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 15-03-2010</p>
+
+<p>:D базелик прям дерево</p>
+
+<p><strong>kossmos</strong> 15-03-2010</p>
+
+<p>Надо срочно организовывать дополнительное освещение.</p>
+
+<p><strong>utyv</strong> 17-03-2010</p>
+
+<p>Не могли бы вы чуть подробнее пояснить устройство Вашей устнановки периодического затопления? Очень интересно, к осени собираюсь то же периодику построить.</p>
+
+<p>Собственно интересует вот что:</p>
+
+<ul>
+  <li>
+    <p>Соединения шлангов с трубой стандартными сантехническими комплектующими сделаны или что-то пришлось клеить-мастерить?</p>
+  </li>
+  <li>
+    <p>Раствор через верний шланг подается а через нижний стекает, или наоборот?</p>
+  </li>
+  <li>
+    <p>Затопление происходит за счет того что вытекает медленно, или какая-то автоматика перекрывает сток на время затопления? Может быть сифон используется как в книжках описывают?</p>
+  </li>
+  <li>
+    <p>Насос я так понимаю в бутылке находится?</p>
+  </li>
+</ul>
+
+<p>Спасибо.</p>
+
+<p><strong>ГидроПончик</strong> 17-03-2010</p>
+
+<p>Влад, привет! Можно на ТЫ.</p>
+
+<p>Клеить ничего не пришлось, а вот мастерить приходится постоянно. Шланги с рабочим объёмом соединяются через штуцер и фиксируется хомутом. Для этого нужно в двух заглушках просверлить отверстия 1/2 дюйма. Недостоток такого соединения в том, что штуцер изготовлен из металла, хоть и бронза, новсёже металл. Но на это я глазки закрываю.</p>
+
+<p>Раствор подаётся через нижний шланг помпой. Мощности помпы должно хватать для подъёма раствора из резервуара до рабочего уровня трубы. Я с этим особо не заморачивался, купил в ближайшем магазине аквариумную, с высотой подъёма 70 см.</p>
+
+<p>Затопление происходит из-за того, что помпа качает непрерывно в течении заданного таймером времени, а через верхнюю трубу, используемую в качестве сифона, излишки перетекают в резервуар. Когда время затопления заканчивается, раствор через помпу стекает в бутыль. Время и частота затопления зависит от растения, которое находится в установке.</p>
+
+<p>В качестве опции можно бросить в резервуар аэратор. В моей системе аэрация раствора происходит во время работы сифона. Булькает - мама не горюй!</p>
+
+<p>К достоинствам такой системы можно отнести её гибкость. Можно смоделировать любой объём и конфигурацию, и менять их в любое время.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3123" target="_blank"><img src="/attachimages/1592_DSCN5402.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3124" target="_blank"><img src="/attachimages/1594_DSCN5406.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3125" target="_blank"><img src="/attachimages/1596_DSCN5403.png" alt="" /></a></p>
+
+<p><strong>ГидроПончик</strong> 17-03-2010</p>
+
+<p>Да забыл! Ещё очень удобно проводить ревизию</p>
+
+<p><a href="https://t.me/ponics_ru_files/3126" target="_blank"><img src="/attachimages/1598_DSCN5356.png" alt="" /></a></p>
+
+<p><strong>ГидроПончик</strong> 18-03-2010</p>
+
+<p>Самый первый клон, который пустил корни в рюмке с водой, показал корешки из кубика. Запитал растворчиком блок “агрос” и пристроил сверху кубик с клоном. Пока изготовлю лоток, пусть постоит на подносе у окошка на ручном поливе.</p>
+
+<p>На подходе клоны, которые были поставлены пускать корни сразу в кубиках. Всё это затеяно с мыслью о том, что через месяц-полтора, все выжившие клоны будут вынесены на улицу, где и будут объединятья в одну капельную систему.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3127" target="_blank"><img src="/attachimages/1600_DSCN5410.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3128" target="_blank"><img src="/attachimages/1602_DSCN5409.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3129" target="_blank"><img src="/attachimages/1604_DSCN5414.png" alt="" /></a></p>
+
+<p><strong>ГидроПончик</strong> 19-03-2010</p>
+
+<p>Такие вершки и корешки. Эххх! Ему бы аэрацию и под ДНАТ….</p>
+
+<p><a href="https://t.me/ponics_ru_files/3130" target="_blank"><img src="/attachimages/1610_DSCN5426.png" alt="" /></a></p>
+
+<p><strong>ГидроПончик</strong> 21-03-2010</p>
+
+<p>Ну вот и съеден первый огурец. А “рубиновое кружево” пыхтит потихоньку, но не рубинится из -за нехватки света. Всё таки день ещё короткий.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3131" target="_blank"><img src="/attachimages/1640_DSCN5447.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3132" target="_blank"><img src="/attachimages/1642_DSCN5464.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3133" target="_blank"><img src="/attachimages/1644_DSCN5465.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 21-03-2010</p>
+
+<p>8)</p>
+
+<p><strong>ГидроПончик</strong> 21-03-2010</p>
+
+<p>Огурец весил 112 гр. Сочный, ароматный и вкусный.</p>
+
+<p>Однако болезнь опять начала проявляться, теперь и на молодых листьях. Ещё недельку поборюсь с этим недугом, если не будет сдвигов, придётья убирать его из установки. Жаль, конечно.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3134" target="_blank"><img src="/attachimages/1646_DSCN5264.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3135" target="_blank"><img src="/attachimages/1648_DSCN5284.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 22-03-2010</p>
+
+<p>А что с листьями других растений, те что на первой фотке снизу под рукой? Какие-то белые пятна.</p>
+
+<p><strong>ГидроПончик</strong> 22-03-2010</p>
+
+<p>Белые пятна - это я опрыскивал “гамаиром”, результатов это никаких не дало. Надо наверное, попробывать что нибудь поядовитее, например “абига - пик”.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3136" target="_blank"><img src="/attachimages/1650_DSCN5491.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3137" target="_blank"><img src="/attachimages/1652_DSCN5444.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 22-03-2010</p>
+
+<p>А напомните отчего вы боритесь?</p>
+
+<p><strong>ГидроПончик</strong> 22-03-2010</p>
+
+<p>От чего не знаю, но борюсь. Всеми силами.</p>
+
+<p><strong>ГидроПончик</strong> 27-03-2010</p>
+
+<p>Поосле обработки огурца препаратом “абига-пик” прошла неделя. Огурец остаётся в установке потому, что зараза остановлена. Реакция огурца была незамедлительна. На казалось -бы засохших нижних боковых побегах начали гроздьями завязываться огурчики. Вобщем огурец порадовал.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3138" target="_blank"><img src="/attachimages/1690_DSCN5529.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3139" target="_blank"><img src="/attachimages/1692_DSCN5537.png" alt="" /></a></p>
+
+<p><strong>ГидроПончик</strong> 27-03-2010</p>
+
+<p>Вот итог субботнего вечера. Выстукал из оцинковки лоток(весёлая и громкая работёнка) на четыре растения. засадил в блоки помидорных клонов и в лоток под окно. С каплей пока заморачиваться не буду, месяц пополиваю в ручную, а потом будут вынесены на улицу, и там уже буду мастерить капельный полив.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3140" target="_blank"><img src="/attachimages/1694_DSCN5539.png" alt="" /></a></p>
+
+<p><strong>caiman</strong> 28-03-2010</p>
+
+<blockquote>
+  <p>Поосле обработки огурца препаратом “абига-пик” прошла неделя. Огурец остаётся в установке потому, что зараза остановлена. Реакция огурца была незамедлительна. На казалось -бы засохших нижних боковых побегах начали гроздьями завязываться огурчики. Вобщем огурец порадовал.</p>
+</blockquote>
+
+<p>Как “ФАМИЛИЯ” огурца? ??? :D</p>
+
+<p><strong>ГидроПончик</strong> 28-03-2010</p>
+
+<p>Фамилия “Русский огород”, а зовут Аннушкой.</p>
+
+<p>Сорт раньше не выращивал, как себя покажет неизвестно.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3141" target="_blank"><img src="/attachimages/1696_DSCN5443.png" alt="" /></a></p>
+
+<p><strong>caiman</strong> 28-03-2010</p>
+
+<p>Пишут, что он пчелоопыляемый. Как опылять будете?</p>
+
+<p><strong>Mole_Garden</strong> 28-03-2010</p>
+
+<blockquote>
+  <p>На казалось -бы засохших нижних боковых побегах начали гроздьями завязываться огурчики.</p>
+</blockquote>
+
+<p>Мутант какой то стал :D</p>
+
+<p><strong>ГидроПончик</strong> 28-03-2010</p>
+
+<p>Про пчёл ничего не написано.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3142" target="_blank"><img src="/attachimages/1698_DSCN5555.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 28-03-2010</p>
+
+<p>Просто, как правило для открытого грунта это пчелоопыляемые сорта, хотя в описание ни про то, ни про другое не говориться.</p>
+
+<p><strong>valery</strong> 28-03-2010</p>
+
+<p>Хорошо, что огурчики ожили.</p>
+
+<p>Можно, конечно, ничего не делать, но возможно, лучше бы все эти зеленцы - поудалять, поотщипнуть.</p>
+
+<p>Оставить по одному - которые завязались. Или по одному, которые только зацвели и уже хорошо раскрылись, возможно завяжутся и вырастут.</p>
+
+<p>Если оставить всех, не прищипывая - скорее всего погибнут, сбросятся, будут висеть-подгнивать, распространяя “патогены” …</p>
+
+<p>Выкормиться они вряд ли смогут, очень маленькие листочки на веточке, не потянут “зеленцов”, света столько не наберут. Ну и сам огурчик, только очухавшийся от болезни - будет здорово перенапрягаться …</p>
+
+<p>А можно и не трогать ничего. Может огурец и сам “умный” - разберется …</p>
+
+<p><strong>caiman</strong> 28-03-2010</p>
+
+<p>Огурец Аннушка F1 - Растение с длинными плетями, пчелоопыляемое. Урожайность - 5,0-6,0 кг/кв.м. Особенности агротехники: для выращивания в открытом грунте. Сроки созревания: ультраскороспелый: от всходов до начала плодоношения - 33-40 дня. Плод: зеленец эллипсовидный, крупнобугорчатый, без опушения. Длина зеленца 8-12 см, масса - 120-135 г. Мякоть плотная, без горечи. Вкусовые качества отличные. Устойчив к мучнистой росе. Использование: отличен для засолки и консервирования, а также для употребления в свежем виде. Гибрид очень скороспелый, а это значит, что на Вашем столе рано появятся свежие огурцы. Мякоть у огурцов плотная, что при консервировании позволяет получать хрустящие огурчики. Темно-зеленые крупнобугорчатые корнишончики не только собирать приятно, но и в банке, и на столе они будут украшением. В отличие от других сортов плоды не горчат, даже при неблагоприятных погодных условиях. Поэтому из него Вы всегда может приготовить вкусный салат, который придется по вкусу и родным, и гостям. Устойчивость гибрида к мучнистым росам гарантирует получение урожая на протяжении всего лета.</p>
+
+<p>Может и не так совсем, нашел в глобальной паутине ??? :-[</p>
+
+<p><strong>ГидроПончик</strong> 10-04-2010</p>
+
+<p>Вчера вернулся из короткой командировки. Одна ночёвка была в Абхазии. Неравнодушен я к колючим, вот пополнил своё семейство абхазским экземплярчиком. Родитель был обнаружен на крыше деревенского, пардон, сортира. Субтропики….</p>
+
+<p><a href="https://t.me/ponics_ru_files/3143" target="_blank"><img src="/attachimages/1774_DSCN5640.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3144" target="_blank"><img src="/attachimages/1776_DSCN5623.png" alt="" /></a></p>
+
+<p><strong>ГидроПончик</strong> 10-04-2010</p>
+
+<p>За время моего отсутствия глобальных изменений на моём огородике не произошло. Огурец приходит в себя, подтверждение этому - сегодняшнее фото <img src="http://" alt="" /> Помидорчики наливаются, <img src="[/img] салаты хоть и не дают скоростных показателей, но и просто на подоре и в установке, выглядят очень даже апетитно,[img]http://" alt="" /> <img src="[/img], а базелик будет расти до упора, пока его не подрезаю - на лоджии стоит неописуемый аромат.[img]" alt="" /></p>
+
+<p><a href="https://t.me/ponics_ru_files/3145" target="_blank"><img src="/attachimages/1778_DSCN5645.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3146" target="_blank"><img src="/attachimages/1780_DSCN5612.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3147" target="_blank"><img src="/attachimages/1782_DSCN5647.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3148" target="_blank"><img src="/attachimages/1784_DSCN5641.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3149" target="_blank"><img src="/attachimages/1786_DSCN5637.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 11-04-2010</p>
+
+<p>8) А салат то уже готов к поеданию и сбору.</p>
+
+<p><strong>ГидроПончик</strong> 15-05-2010</p>
+
+<p>Ну наконец-то удосужился состряпать репортик “Рубиновое кружево НК”.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3150" target="_blank"><img src="/attachimages/2071_DSCN5043.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3151" target="_blank"><img src="/attachimages/2073_DSCN5142.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3152" target="_blank"><img src="/attachimages/2075_DSCN5392.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3153" target="_blank"><img src="/attachimages/2077_DSCN5557.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3154" target="_blank"><img src="/attachimages/2079_DSCN5646.png" alt="" /></a></p>
+
+<p><strong>ГидроПончик</strong> 15-05-2010</p>
+
+<p>Почемуто все фотки в одном сообщении не проходят.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3155" target="_blank"><img src="/attachimages/2081_DSCN5686.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3156" target="_blank"><img src="/attachimages/2083_DSCN5701.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3157" target="_blank"><img src="/attachimages/2085_DSCN5727.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3158" target="_blank"><img src="/attachimages/2087_DSCN5729.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 15-05-2010</p>
+
+<blockquote>
+  <p>Почемуто все фотки в одном сообщении не проходят.</p>
+</blockquote>
+
+<p>Потому что посмотрите какого они у вас размера, стоит ограничение на размер файла, место у нас не очень резиновое :D</p>
+
+<p>По поводу добавления фотографий уже писала не раз, лучше всего использовать для этого встроенную функцию, которая находится на полем куда вводиться сообщение с левой верхней стороны, т.е. между смайлами и полем куда пишется текст, там написано Добавить Изображение</p>
+
+<p><strong>Mole_Garden</strong> 15-05-2010</p>
+
+<p>Салат что надо 8)</p>
+
+<p><strong>Hrun</strong> 15-05-2010</p>
+
+<p>Салат супер, но фотки гигантские, для форума такой размер и качество не нужно.</p>
+
+<p>Оптимально 640х480 или 800х600 и качество 80%</p>
+
+<p><strong>Batat</strong> 15-05-2010</p>
+
+<blockquote>
+  <p>Ну наконец-то удосужился состряпать репортик “Рубиновое кружево НК”.</p>
+</blockquote>
+
+<p>Поздравляю, отличный результат!</p>
+
+<p>Сколько дней прошло от посева до сбора?</p>
+
+<p>Какой состав и концентрация пит. р-ра?</p>
+
+<p>Если взвесили растение, то какой его вес?</p>
+
+<p>Как на вкус?</p>
+
+<p><strong>ГидроПончик</strong> 16-05-2010</p>
+
+<p>Это Рубиновое кружево последний попутчик в установке с помидором на периодике, поэтому состав и концентрация раствора подогнаны под помидор. На основе Унифлора. Взвесить ничего не успеваю, спасибо, хоть фотографируют перед поеданием. Вкус у салата очень даже…..</p>
+
+<p>От посева до сбора - 38 дней, товарный вид приобрел на 30-й день.</p>
+
+<p>С наступлением тепла, игры с салатами продолжаются на свежем воздухе.</p>
+
+<p>Процесс такой: 4 салата стоят на крыше, четыре дома, под лампой в стаканчиках, и еще четыре в пробках, все с разницей в 10 дней. Ротация - по мере созревания.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3159" target="_blank"><img src="/attachimages/2089_крыша.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3160" target="_blank"><img src="/attachimages/2091_семена.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3161" target="_blank"><img src="/attachimages/2093_молодёжь.png" alt="" /></a></p>
+
+<p><strong>ГидроПончик</strong> 16-05-2010</p>
+
+<p>В конце апреля произошел переезд на свежий воздух, под солнышко. Уже знакомые вам клоны томата,</p>
+
+<p><a href="http://s1.postimage.org/FdWn9.jpg" target="_blank"><img src="http://s1.postimage.org/FdWn9.jpg" alt="" /></a></p>
+
+<p><a href="http://s3.postimage.org/cjDG9.jpg" target="_blank"><img src="http://s3.postimage.org/cjDG9.jpg" alt="" /></a></p>
+
+<p>сегодня выглядят так</p>
+
+<p><a href="http://s4.postimage.org/QTWkJ.jpg" target="_blank"><img src="http://s4.postimage.org/QTWkJ.jpg" alt="" /></a> цветут, завязываются и наливаются потихоньку на капельном поливе.</p>
+
+<p>Из четырёх перцев, взошедших в начале апреля,</p>
+
+<p><a href="http://s2.postimage.org/yqWe9.jpg" target="_blank"><img src="http://s2.postimage.org/yqWe9.jpg" alt="" /></a></p>
+
+<p>один перемещен в горшок с грунтом, остальные в систему с аэрацией раствора.</p>
+
+<p><a href="http://s3.postimage.org/ckt39.jpg" target="_blank"><img src="http://s3.postimage.org/ckt39.jpg" alt="" /></a></p>
+
+<p>Котрый в грунте, явно лидирует.</p>
+
+<p><strong>Mole_Garden</strong> 16-05-2010</p>
+
+<p>Капельницы видимо медицинские? Из всех равномерно течет раствор?</p>
+
+<p>А вообще красота, солнышко, лето, растения да еще свои овощи! 8)</p>
+
+<p><strong>Batat</strong> 16-05-2010</p>
+
+<p>Успехов Вам, ГидроПончик!</p>
+
+<p><strong>ГидроПончик</strong> 25-05-2010</p>
+
+<p>Ну наконец-то, закупился на летний период. Большое спасибо Леночке из Агроспрома. Вся эта кучка весит 2000 полновесных российских рублей.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3162" target="_blank"><img src="/attachimages/2109_DSCN5908.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 26-05-2010</p>
+
+<p>:D А куда столько вермикулита то?</p>
+
+<p>Розовенькая так понимаю кемира гидро, белая кальценит(кальциевая селитра) 8)</p>
+
+<p><strong>tatyana</strong> 06-03-2012</p>
+
+<p>а зачем салат срезаете всем кустом? я всегда обрываю сколько нужно листочков,а остальные дальше растут,и так до тех пор пока листы у основания горькими не становятся.</p>
+
+<p><strong>Юка</strong> 06-03-2012</p>
+
+<p>год отучал желающих отщипывать листочки (почти получилось). Растёт сорок салатов, растут сорок дней, ну и подсеваю периодически, а ежели дожить до горьких листов, то в результате затем месяц без салата ….</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

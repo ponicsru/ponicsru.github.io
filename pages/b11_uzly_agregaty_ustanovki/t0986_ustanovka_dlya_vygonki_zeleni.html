@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Установка для выгонки зелени | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Установка для выгонки зелени">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Установка для выгонки зелени</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Gidropont</strong> 25-04-2011</p>
+
+<p>Всем, добрый день!</p>
+
+<p>Солнышко греет! Отличное настроение! Хочется чего-нибудь натворить!</p>
+
+<p>На работе всех заразил гидрой. Ходят, чихают, хотят лекарство. Я предложил всем скинуться и собрать креативную, многоярусную установку. Засадить в нее зелень и лечиться.</p>
+
+<p>Идея была принята на УРА, и теперь я располагая бюджетом, аж в 18225р. 53к. :P начинаю воплощать ее в жисть. :)</p>
+
+<p>Хочу сделать что-то типа ГРИНФУД, только симпатичней, дабы не испортить интерьер офиса и оправдать вложения сотрудников.</p>
+
+<p>Каркас уже есть. Это алюминиевый профиль. У нас из него перегородки сделаны.</p>
+
+<p>Высота 2200, длина 1500, ширина 700.</p>
+
+<p>Осталось за малым. Впихнуть туда четыре яруса ламп, лотков и рассадное отделение.</p>
+
+<p>Стою перед выбором проточка или аэро. Склоняюсь в пользу второго варианта т.к. не хочется заморачиваться с субстратом и корректировать Рн.</p>
+
+<p>Ламп на каждом ярусе 6шт по 58Вт, три холодного-белого и три fluorы. Подключение через ЭПРА</p>
+
+<p>Под растения сделаю короба из ПВХ 1500х700х80. Внутри спринклеры.</p>
+
+<p>Вопрос 1. Как сеять семена и крепить растения?</p>
+
+<p>Вопрос 2. Как прокачать спринклеры на разных ярусах?</p>
+
+<p>Я, конечно “допетрю”, но не хочется терять время. Может у кого есть готовое решение или мысли?</p>
+
+<p><a href="https://t.me/ponics_ru_files/5304" target="_blank"><img src="/attachimages/6711_Фото-0055.jpg" alt="" /></a></p>
+
+<p><strong>ProRus</strong> 25-04-2011</p>
+
+<blockquote>
+  <p>Стою перед выбором проточка или аэро. Склоняюсь в пользу второго варианта т.к. не хочется заморачиваться с субстратом и корректировать Рн.</p>
+
+  <p>Ламп на каждом ярусе 6шт по 58Вт, три холодного-белого и три fluorы. Подключение через ЭПРА</p>
+
+  <p>Под растения сделаю короба из ПВХ 1500х700х80. Внутри спринклеры.</p>
+
+  <p>Вопрос 1. Как сеять семена и крепить растения?</p>
+
+  <p>Вопрос 2. Как прокачать спринклеры на разных ярусах?</p>
+
+  <p>Я, конечно “допетрю”, но не хочется терять время. Может у кого есть готовое решение или мысли?</p>
+</blockquote>
+
+<ol>
+  <li>
+    <p>В субстрате.</p>
+  </li>
+  <li>
+    <p>Насосом.</p>
+  </li>
+</ol>
+
+<p>Правда не очень понял зачем прокачивать спринкеры? Если для аэро, то не понимаю зачем для зелени аэро? Хотите проблем? Пользуйте проточку и только проточку в стаканчиках.</p>
+
+<p><strong>Gidropont</strong> 25-04-2011</p>
+
+<p>А какие проблемы у аэро?</p>
+
+<p>Не хочется возиться со стаканчиками, набивать торфом и ежедневно корректировать Рн.</p>
+
+<p><strong>Coccinella</strong> 25-04-2011</p>
+
+<p>Тут уже один товарищ пробует четвертый раз что-нибудь путное вырастить в аэропонике, не зная рН и ЕС :)</p>
+
+<p>Торф или кокос в горшочки насыпать - не проблема, а раствор надо всего лишь научиться делать :)</p>
+
+<p><strong>orgail</strong> 25-04-2011</p>
+
+<p>если “дело будет в офисе” то шума от проточки будет меньше, разве что звук льющейся водички :) из побочных эфектов может только в туалет чаще бегать будете :D</p>
+
+<p>а от аэро шума поболе будет, может на нервы действовать :)</p>
+
+<p><strong>Gidropont</strong> 25-04-2011</p>
+
+<blockquote>
+  <p>Тут уже один товарищ пробует четвертый раз что-нибудь путное вырастить в аэропонике, не зная рН и ЕС :)</p>
+</blockquote>
+
+<p>Я тоже несколько раз пытался на ген.тумана вырастить. Он как раз рН и ЕС меняет. (не про меня ли это?) :D</p>
+
+<blockquote>
+  <p>Торф или кокос в горшочки насыпать - не проблема, а раствор надо всего лишь научиться делать :)</p>
+</blockquote>
+
+<p>На даче или дома на балконе можно. Но в офисе считаю не эстетично. Да и сотрудники торф за землю примут, а я обещал без земли. :D</p>
+
+<p>А шум это не проблема, под нее отдельную комнату выделим.</p>
+
+<p>И все же, как сажать растения?</p>
+
+<p><strong>ProRus</strong> 26-04-2011</p>
+
+<blockquote>
+  <p>А какие проблемы у аэро?</p>
+
+  <p>Не хочется возиться со стаканчиками, набивать торфом и ежедневно корректировать Рн.</p>
+</blockquote>
+
+<p>Самая главная проблема с аэро - это электроэнергия и поломка насоса. Вырубят минут на 15-ть свет и хана вашим растюхам, у проточки в стаканчиках довольно приличный запас по времени (у меня один раз два выходных просидели по причине выхода из строя насоса). Если у вас не было проблем с электричеством, она у вас появится как раз тогда, когда посадите первый огород (закон подлости).</p>
+
+<p><strong>valery</strong> 26-04-2011</p>
+
+<p>Уважаемый Gidropon! (только не обижайтесь ради бога) …</p>
+
+<p>Здесь лучше - определиться, для чего Вы затеиваете эту затею …</p>
+
+<p>Если сделать симпатичную установку ХайТек - стоит добавить светодиоды (разного цвета) и любоваться. Семена лучше туда и вовсе не совать, несколько искусственных</p>
+
+<p>пластмассовых цветов (или аквариумных водорослей) - в разноцветном тумане весьма скрасят пейзаж.</p>
+
+<p>А если офисом собираетесь покушать салатиков - симпатичную установку ведь и в один ярус сделать можно … Стаканчики, торфик, кокосик, проточечка, все журчит, переливается … Тоже хорошо.</p>
+
+<p>Кроме бестолковых и сложнорешаемых проблем эта “аэро” ничего не даст. До салатов - руки не дойдут, да и не вырастут они … Зачем ИСКУССТВЕННО городить перед собой массу препятствий ?</p>
+
+<p><strong>Mole_Garden</strong> 26-04-2011</p>
+
+<blockquote>
+  <p>А какие проблемы у аэро?</p>
+
+  <p>Не хочется возиться со стаканчиками, набивать торфом и ежедневно корректировать Рн.</p>
+</blockquote>
+
+<p>Давление в системе необходимое для работы сплинкеров, засоленность сплинкеров и так далее…</p>
+
+<p>Возиться придется раз в две недели, ну может чуть чаще, зависит от того как будешь сажать. Ежедневно корректировать и не нужно, нужно лишь раствор нормально сделать.</p>
+
+<p>Ребята дело говорят, NFT тебя спасет. А если кто то усомниться и скажут, что растения растут в земле, то покажи им корни, которые торчать будут из стаканчиков.</p>
+
+<p><strong>Gidropont</strong> 26-04-2011</p>
+
+<blockquote>
+  <p>Самая главная проблема с аэро - это электроэнергия и поломка насоса. Вырубят минут на 15-ть свет и хана вашим растюхам, у проточки в стаканчиках довольно приличный запас по времени (у меня один раз два выходных просидели по причине выхода из строя насоса). Если у вас не было проблем с электричеством, она у вас появится как раз тогда, когда посадите первый огород (закон подлости).</p>
+</blockquote>
+
+<p>А как же все эти AeroGarden и AeroFloты. В коробе все равно слой раствора остается и на время сбоя растениям хватит.</p>
+
+<blockquote>
+  <p>Уважаемый Gidropon! (только не обижайтесь ради бога) …</p>
+
+  <p>Здесь лучше - определиться, для чего Вы затеиваете эту затею …</p>
+
+  <p>Если сделать симпатичную установку ХайТек - стоит добавить светодиоды (разного цвета) и любоваться. Семена лучше туда и вовсе не совать, несколько искусственных</p>
+
+  <p>пластмассовых цветов (или аквариумных водорослей) - в разноцветном тумане весьма скрасят пейзаж.</p>
+
+  <p>А если офисом собираетесь покушать салатиков - симпатичную установку ведь и в один ярус сделать можно … Стаканчики, торфик, кокосик, проточечка, все журчит, переливается … Тоже хорошо.</p>
+
+  <p>Кроме бестолковых и сложнорешаемых проблем эта “аэро” ничего не даст. До салатов - руки не дойдут, да и не вырастут они … Зачем ИСКУССТВЕННО городить перед собой массу препятствий ?</p>
+</blockquote>
+
+<p>Valery! Именно эту задачу я себе поставил - ХайТек с живыми салатиками. А народу в офисе много, одним ярусом не обойдусь. :)</p>
+
+<p>Объясните почему аэро ни чего не даст?</p>
+
+<blockquote>
+  <p>Давление в системе необходимое для работы сплинкеров, засоленность сплинкеров и так далее…</p>
+
+  <p>Возиться придется раз в две недели, ну может чуть чаще, зависит от того как будешь сажать. Ежедневно корректировать и не нужно, нужно лишь раствор нормально сделать.</p>
+
+  <p>Ребята дело говорят, NFT тебя спасет. А если кто то усомниться и скажут, что растения растут в земле, то покажи им корни, которые торчать будут из стаканчиков.</p>
+</blockquote>
+
+<p>В том то и дело, что NFT слишком простое решение.</p>
+
+<p>В капельницах давление на порядок меньше и ни чего, прокачивает. :)</p>
+
+<p>Поймите, я не ищу легкого пути. Я не хочу повторять готовую, отработанную систему. Мне нужно что то ПРИДУМАТЬ. И я уверен, что большинство из вас преследуют эту цель. Потому что все это интересно и все надо попробовать. :)</p>
+
+<p><strong>orgail</strong> 26-04-2011</p>
+
+<p>ну сделайте на одном “этаже” проточку, на втором аэро, а на третьем… ну не знаю :) на подпоре обычном с аэрацией :D</p>
+
+<p>что то где то да вырастет, дай бог :D</p>
+
+<p>а потом “всем колхозом” и решите после первого урожая на чем проще :)</p>
+
+<p><strong>Coccinella</strong> 27-04-2011</p>
+
+<blockquote>
+  <p>Поймите, я не ищу легкого пути. Я не хочу повторять готовую, отработанную систему. Мне нужно что то ПРИДУМАТЬ. …. Потому что все это интересно и все надо попробовать. :)</p>
+</blockquote>
+
+<p>Вот кто бы ПРИДУМАЛ и ВОПЛОТИЛ простой в исполнении рукодельными людьми автоматический дозатор СО2, устанавливаемый на вентиль газового баллона? Актуальная проблема, а то уже коров в салате пасти предлагают :)</p>
+
+<p><strong>Юка</strong> 27-04-2011</p>
+
+<p>Проблема может быть решена при использовании редуктора от акваланга, а дальше нужно Т.З.</p>
+
+<p><strong>valery</strong> 27-04-2011</p>
+
+<blockquote>
+  <p>Valery! Именно эту задачу я себе поставил - ХайТек …</p>
+</blockquote>
+
+<p>Конечно, коли так, то и все “возражения” снимаются автоматически … Удачного воплощения.</p>
+
+<blockquote>
+  <p>А народу в офисе много, одним ярусом не обойдусь. :)</p>
+</blockquote>
+
+<p>Будем надеяться, Вам повезет и офис останется доволен. Просто мне кажется - чем меньше ярусов, тем больше урожай.</p>
+
+<blockquote>
+  <p>Объясните почему аэро ни чего не даст?</p>
+</blockquote>
+
+<p>Ну “потому что”. А что оно должно дать “по замыслу” ?</p>
+
+<p><strong>orgail</strong> 27-04-2011</p>
+
+<p>Cocinella, а в чем сложности? Вроде СО2 не взрывоопасен, а соленоидных клапанов море для разных целей и сред есть</p>
+
+<p>типа <a href="http://www.kipservis.ru/asco.htm" target="_blank">http://www.kipservis.ru/asco.htm</a></p>
+
+<p><strong>vit474</strong> 10-05-2011</p>
+
+<blockquote>
+  <p>Поймите, я не ищу легкого пути. Я не хочу повторять готовую, отработанную систему. Мне нужно что то ПРИДУМАТЬ. И я уверен, что большинство из вас преследуют эту цель. Потому что все это интересно и все надо попробовать. :)</p>
+</blockquote>
+
+<p>Работа ради работы - это профанация. Цель -то определите , какой эффект от установки вы хотите получить. Только чтобы сотрудники не чихали и не сопливились ?</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

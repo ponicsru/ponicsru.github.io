@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Томаты на балконе | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Томаты на балконе">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Томаты на балконе</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Митрич-13</strong> 05-09-2017</p>
+
+<p>Здравствуйте! Я уже несколько лет увлекаюсь выращиванием томатов на гидропонике на балконе. Балкон у меня маленький, около 2 кв.м, выходит на юго-запад и затеняется большой березой. В прошлые годы я выращивал томаты на фитильной системе: горшки 10 л, наполненные керамзитом или сфагнумом. На керамзите растет чуть лучше. С раствором я раньше тоже не заморачивался, мешал кальциевую селитру и кристаллон специальный (18:18:18:4), доводя раствор до концентрации 2 г/л. Росли томаты очень хорошо, особенно черри Помисолька и Волшебный каскад (собрал за лето с 2 растений около 7 кг плодов). Менял раствор раз в полмесяца.</p>
+
+<p>В этом году у меня уже активная система: керамзит смачивается раствором два раза в сутки по 15 минут по таймеру с помощью аквариумной помпы, находящейся в поддоне с раствором. Сорта: ампельный детерминантный гибрид Рамблин голд страйп с желтыми плодами, индетерминантные черри Коллина и сливки Сэр Элиан. У последних двух сортов урожай значительно ниже, видимо, для балкона луче использовать детерминантные и полудетерминантные сорта. Питаются томаты по профилю “Базовый для минеральной ваты”. рН и ЕС периодически контролируются.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18705" target="_blank"><img src="/imagehost2/thumbs/img3016.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18706" target="_blank"><img src="/imagehost2/thumbs/img3314.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18707" target="_blank"><img src="/imagehost2/thumbs/img3316.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18708" target="_blank"><img src="/imagehost2/thumbs/img3391.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18709" target="_blank"><img src="/imagehost2/thumbs/img3392wlw.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18710" target="_blank"><img src="/imagehost2/thumbs/img3394.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 05-09-2017</p>
+
+<p><em>8)</em></p>
+
+<p>шикарно! <em>Dance</em></p>
+
+<p><strong>Митрич-13</strong> 05-09-2017</p>
+
+<p>На старых листьях томатов появляются хлоротичные межжилковые пятна, постепенно края листьев усыхают. Это недостаток магния? Видимо сульфат магния у меня не той системы :D, есть буйский, а есть старый производства Реакхим.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18711" target="_blank"><img src="/imagehost2/thumbs/img3396.jpg" alt="" /></a></p>
+
+<p><strong>Митрич-13</strong> 05-09-2017</p>
+
+<p>Индетерминантные томаты Коллина и Сэр Элиан уже выросли метра по три, приходится их стелить и закручивать, а урожая на них немного. В прошлом году садил черри Барбарис и гибрид Спрут от Седека, который в их ролике дал 1400 кг с одного растения за 2 года. Барбарис мне понравился, а от Спрута кроме ботвы ничего не дождался :(.</p>
+
+<p><strong>Vad</strong> 05-09-2017</p>
+
+<p>нее.. на фото это не магний..</p>
+
+<p>магний - на листе мелкокрапчатый межжилковый хлороз по всему листу.. потом в середине этих крапинок появляется еще и антоциановый окрас..</p>
+
+<p>в начале похож на дефицит железа..</p>
+
+<p>тут что-то очень знакомое, но лично невиданное на своих растениях.. :)</p>
+
+<p>какие то залысины.. знакомые.. как пленка белая натянута?</p>
+
+<p>лист истончен в этих местах?</p>
+
+<p><strong>Vad</strong> 05-09-2017</p>
+
+<p>Попробуйте <a href="http://pomidorchik.com/sorta-tomatov/pomidory-evpator-f1.html" target="_blank"> Евпатор F1</a> от Гавриша <em>8)</em></p>
+
+<p>растение мощное, не высокое.. с короткими междуузельями</p>
+
+<p>и в условиях балкона 1 кисть весит ~1 кг :D</p>
+
+<p>вне зависимости от количества плодов на ней..</p>
+
+<p>если 6-8 то 150-180 грамм</p>
+
+<p>если 3-4 то по 300-350 грамм :D</p>
+
+<p>если 2 то 400-450 грамм..</p>
+
+<p><strong>Митрич-13</strong> 06-09-2017</p>
+
+<p>Завтра еще раз попробую сфотографировать листья с повреждениями.</p>
+
+<p>В этом году у себя в саду попробовал выращивать помидоры на “финских колбасках” по упрощенной технологии - понравилось, хоть и лето было поганое. Капельный полив через ленту мне не подходит, так как нужно давление и система фильтрации, а у меня бочка с цветущей водой и червячками . У меня раствор течет из бочки самотеком через таймер полива и далее через шланг с дырками (для калибровки отверстий в дырки вставлены отрезки пустого стержня от шариковой ручки). В качестве питания использовал раствор слабой концентрации: 70-80 г Валагровского Мастера 3:11:38:4 + 60 г Кальциевой селитры на 227 л. бочку. За неделю расходовалось около 170 л раствора на 7,5 погонных метров “колбасы”. Торф для колбасы перед использованием заправил немного золой и азофоской, так как сразу включать автополив не было смысла - дожди шли постоянно и помидоры пока приживались - не сушили почву. На 7,5 метров колбасы использовал 22 ведра торфа. Пленку использовал б/у белую. Полив осуществлялся в течение 3 минут в сутки.</p>
+
+<p><strong>Митрич-13</strong> 12-01-2018</p>
+
+<p>Павловский лимон на керамзите на фитильной системе растет уже 5 лет, не прихотлив. Ест и раствор кристаллона + кальциевая селитра и остатки раствора для томатов. Дает пару плодов по 200-300 г. в год. Корни сильно в раствор не лезут, гниют в нем. Основная масса их, видимо, на границе сред. Горшок с керамзитом объемом 2 литра примерно.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18712" target="_blank"><img src="/attachimages/18302_IMG_3733[1].jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18713" target="_blank"><img src="/attachimages/18304_IMG_3734[1].jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18714" target="_blank"><img src="/attachimages/18306_IMG_3735[1].jpg" alt="" /></a></p>
+
+<p><strong>КРОТ</strong> 12-01-2018</p>
+
+<p>Классно! А сажали с косточки? Или саженец купили?</p>
+
+<p><strong>siv237</strong> 12-01-2018</p>
+
+<blockquote>
+  <p>Павловский лимон на керамзите на фитильной системе растет уже 5 лет, не прихотлив. Ест и раствор кристаллона + кальциевая селитра и остатки раствора для томатов. Дает пару плодов по 200-300 г. в год. Корни сильно в раствор не лезут, гниют в нем. Основная масса их, видимо, на границе сред. Горшок с керамзитом объемом 2 литра примерно.</p>
+</blockquote>
+
+<p>Привет брату-цитрусоводу на гидре!</p>
+
+<p>Мой лимон Меера растет на подпоре постоянно в растворе. Подвой мандарин севок. Все, кроме штамба подвоя - результат приростов менее чем за год, с весны из одной почки.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18715" target="_blank"><img src="/imagehost2/thumbs/photo20180112231444.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18716" target="_blank"><img src="/imagehost2/thumbs/photo20180112231436.jpg" alt="" /></a></p>
+
+<p>Странно, что у вас корни гниют в растворе, у меня они в постоянно затопленном керамзитном дренаже чувствуют себя отлично, проверял осенью, после чего завязались три плода и прошло 3 зимних прироста.</p>
+
+<p>И есть еще севок грейпфрута, тоже в подпоре, а до этого в периодике сидел с полным погружением корней и никакого гниения, корни золотистые толстые и крепкие.</p>
+
+<p>У вас Павловский корнесобственный черенок или прививка?</p>
+
+<p><em>**</em> 13-01-2018</p>
+
+<p>Лимон выращен из укорененного черенка с сортового дерева. Корни, которые выходят в раствор, долго не живут - снаружи горшка есть как отмершие, так и свежие корешки. На фото видно, как из дренажного отверстия выходит свежий корешок на фоне переплетения бурых и мертвых.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18717" target="_blank"><img src="/attachimages/18308_IMG_3737[1].jpg" alt="" /></a></p>
+
+<p><strong>Митрич-13</strong> 13-01-2018</p>
+
+<p>Может, просто горшок уже мал.</p>
+
+<p><strong>siv237</strong> 14-01-2018</p>
+
+<p>Белые корни это новый прирост. Обычный цвет корней цитрусовых светло-коричневый или золотистый. Живые корни плотные и упругие, а срез белый. Вот те, слева на фото, что свисают в раствор, вполне себе живые просто покрыты слизью.</p>
+
+<p>А вообще корневую систему цитруса лучше держать не сильно глубоко, желательно не погружать глубже 1/4, а остальные корни должны иметь доступ к воздуху. Потому я на подпоре держу его в чистом крупном керамзите.</p>
+
+<p>Так, как у цитрусов нет мелких воздушных корней, дышат они поверхностью толстых, а она значительно меньше чем у других растений.</p>
+
+<p>В горшке еще неплохо бы добавить отверстий для доступа воздуха вглубь субстрата, но не сильно много, что-бы не пересушить.</p>
+
+<p>Я бы на вашем месте сделал бы перевалку в более высокий горшок при этом с тем-же диаметром, но на дно полностью бы просыпал крупным керамзитом, и чтобы топился только он.</p>
+
+<p><strong>Митрич-13</strong> 14-01-2018</p>
+
+<p>Данный горшок невысокий, топится снизу на 2 см, керамзит фракции 5-10 мм. Горшок по виду уже мал для такого растения, но места на подоконнике для более крупного нет. Данный горшок вставлен в 6 л ведерко из под майонеза, чтобы был запас раствора, т.к. летом были случаи пересыхания по недосмотру.</p>
+
+<p><strong>Митрич-13</strong> 13-12-2018</p>
+
+<p>В этом году на балконе сажал 4 сорта томатов, три из них черри - Барбарис, Сан шугар и №355 от Вилморина. Крупноплодный был один гибрид - Оля. Выбрал его за то, что он не очень требователен к свету, полудетерминантный. Раствор - Галуку 5-8 недель. Томаты очень быстро разделились по степени проявления дефицита Мg, Оля себя чувствовала отлично, а Сан шугар потерял все взрослые листья, и его я удалил. У других сортов степень проявления дефицита Мg была средней. Урожай с Оли около 2-2.5 кг, с черриков -меньше.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18718" target="_blank"><img src="/attachimages/19324_IMG_0085.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18719" target="_blank"><img src="/attachimages/19326_IMG_0020.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18720" target="_blank"><img src="/attachimages/19328_IMG_0086.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18721" target="_blank"><img src="/attachimages/19330_IMG_0087.jpg" alt="" /></a></p>
+
+<p><strong>Митрич-13</strong> 13-12-2018</p>
+
+<p>Черри :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/18722" target="_blank"><img src="/attachimages/19332_IMG_0088.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18723" target="_blank"><img src="/attachimages/19334_IMG_0089.jpg" alt="" /></a></p>
+
+<p><strong>Warnerbache</strong> 30-12-2018</p>
+
+<p>Я нынче опять решила посадить на балконе томаты.На этот раз посадила желтоплодную Конфетку и красненькие Вишенка и Малышок.У Малышка плод величиной с крупную бусину всего</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

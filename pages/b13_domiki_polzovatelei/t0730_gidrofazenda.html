@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Гидрофазенда | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Гидрофазенда">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Гидрофазенда</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>famoso</strong> 27-01-2011</p>
+
+<p>Рад приветствовать всех в этой теме!!! Меня зовут Иван. Я новичок в гидропонике, но идей у меня полно. Постараюсь их все воплотить в жизнь. На данный момент я собираю свою первую серьезную гидроустановку. Заказываю потихоньку запчасти (прям как конструктор), надеюсь в течении недели она будет готова. Для особо желающих могу запечатлеть процесс. Пока собираюсь выращивать помидоры Флорида Петит и Балконное чудо и ждать лето, чтоб построить еще парочку установок и под естественным освещением вырастить еще что-нибудь. Пока вот так вот.</p>
+
+<p><strong>Юка</strong> 27-01-2011</p>
+
+<p>Иван, красивое название “Гидрофазенда” да плюс “” идей у меня полно. Постараюсь их все воплотить в жизнь. “” может раскроете карты, вдруг грабли обойти удастся? ведь ““собираю свою первую серьезную гидроустановку”” значит опыт с несерьёзными уже есть?</p>
+
+<p><strong>famoso</strong> 27-01-2011</p>
+
+<p>Да до этого выращивал в обрезанных бутылках, стаканчиках и даже баночках из под йогурта. Выращивал фасоль, розу, укроп на кемире люкс</p>
+
+<p>[hr]</p>
+
+<p>Обращаться можно и на ты и необязательно так официально Иван ;)</p>
+
+<p><strong>ProRus</strong> 27-01-2011</p>
+
+<p>Добро пожаловать !!!</p>
+
+<p>Пишите все и обо всем… А мы будем заглядывать к вам на огонек.</p>
+
+<p><strong>famoso</strong> 27-01-2011</p>
+
+<p>Все ни как не могу придумать как мне закрепить ЭСЛ? Если захотите помочь мне могу выложить фото где все это будет стоять)</p>
+
+<p><strong>valery</strong> 27-01-2011</p>
+
+<p>Можно просто на “веревочке” подвесить (как вариант - цепочка, тросик) …</p>
+
+<p>Можно вставить в отражатель из “Аланода” - как в самодельных отражателях для ДНАТ …</p>
+
+<p>А в чем именно затруднение ?</p>
+
+<p><strong>Mole_Garden</strong> 27-01-2011</p>
+
+<blockquote>
+  <p>Все ни как не могу придумать как мне закрепить ЭСЛ? Если захотите помочь мне могу выложить фото где все это будет стоять)</p>
+</blockquote>
+
+<p>Ну да, без фоток тяжело представить как все это будет реализовано.</p>
+
+<p><strong>famoso</strong> 27-01-2011</p>
+
+<p>У меня подоконник и как на нем закрепить я просто не представляю</p>
+
+<p>А если вешать ДНАТ его попроще наверное закрепить? И хватит ли мне 100- 150 Ватт?</p>
+
+<p>Не обижайтесь на меня за глупые вопросы, просто свет для меня представляет большую трудность, т.к. я в нем совсем не разбираюсь :-[</p>
+
+<p>Жду пока телефон перезагрузиться, потом фото будет</p>
+
+<p><strong>famoso</strong> 27-01-2011</p>
+
+<p>Вот и фото</p>
+
+<p>С удовольствием приветствую у себя valery и Mole_Garden <em>Bravo</em></p>
+
+<p><a href="https://t.me/ponics_ru_files/4741" target="_blank"><img src="/attachimages/5457_IMAG0020.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4742" target="_blank"><img src="/attachimages/5459_IMAG0021.jpg" alt="" /></a></p>
+
+<p><strong>famoso</strong> 27-01-2011</p>
+
+<p>А еще как вы относитесь к удобрениям от GHE?</p>
+
+<p><strong>Юка</strong> 27-01-2011</p>
+
+<p>Очень вкусно но дорого, хотя сам с этого начинал и изначально задача, что бы поверить. Успехов.</p>
+
+<p><strong>famoso</strong> 27-01-2011</p>
+
+<p>Да денег на него хватит, мне важно было мнение. Спасибо</p>
+
+<p><strong>Mole_Garden</strong> 27-01-2011</p>
+
+<blockquote>
+  <p>Да денег на него хватит, мне важно было мнение. Спасибо</p>
+</blockquote>
+
+<p>Не для всех культур можно сварить из них бульон</p>
+
+<p><strong>ProRus</strong> 28-01-2011</p>
+
+<blockquote>
+  <p>У меня подоконник и как на нем закрепить я просто не представляю</p>
+
+  <p>А если вешать ДНАТ его попроще наверное закрепить? И хватит ли мне 100- 150 Ватт?</p>
+</blockquote>
+
+<p>Например вот так. 150 должно хватить.</p>
+
+<p><a href="http://s4.postimage.org/12btaqnhg/lamp.jpg" target="_blank"><img src="http://s4.postimage.org/12btaqnhg/lamp.jpg" alt="" /></a></p>
+
+<p><strong>famoso</strong> 28-01-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>У меня подоконник и как на нем закрепить я просто не представляю</p>
+
+    <p>А если вешать ДНАТ его попроще наверное закрепить? И хватит ли мне 100- 150 Ватт?</p>
+  </blockquote>
+
+  <p>Например вот так. 150 должно хватить.</p>
+
+  <p><a href="http://s4.postimage.org/12btaqnhg/lamp.jpg" target="_blank"><img src="http://s4.postimage.org/12btaqnhg/lamp.jpg" alt="" /></a></p>
+</blockquote>
+
+<p>Это вы о ДНАТ?</p>
+
+<p>И дайте пожайлуста ссылки где вы все это покупали :)</p>
+
+<p>И вообще было бы интересно кто где отаваривается…</p>
+
+<p><strong>famoso</strong> 30-01-2011</p>
+
+<p>Извиняюсь за свой глупый вопрос (может быть просьбу). Много раз на форуме читал о репорте valery про лук верней его выращивание, сам репорт чет ни как найти не могу может кинет кто ссылку :-[</p>
+
+<p><strong>Mole_Garden</strong> 30-01-2011</p>
+
+<blockquote>
+  <p>Извиняюсь за свой глупый вопрос (может быть просьбу). Много раз на форуме читал о репорте valery про лук верней его выращивание, сам репорт чет ни как найти не могу может кинет кто ссылку :-[</p>
+</blockquote>
+
+<p>Просто надо пользоваться поиском, для начала ищите на сайте ponics.ru, если там не находите, то ищите на форуме</p>
+
+<p>вот репорт http://www.ponics.ru/2009/06/onion/</p>
+
+<p><strong>famoso</strong> 30-01-2011</p>
+
+<p>ага, спасибо</p>
+
+<p>очень познавательно <em>8)</em></p>
+
+<p><strong>famoso</strong> 31-01-2011</p>
+
+<p>И так, новости на сегодня….</p>
+
+<p>Сегодня курьер привез воздушный компрессор SERA air 275 R plus и аксессуары к нему SERA air set “M”</p>
+
+<p>Сейчас ожидаю, когда доставят емкость</p>
+
+<p>Завтра планируется к покупке: удобрения, стаканчики, pH метр</p>
+
+<p>Подскажите, где в Москве есть толковый магазин, в котором можно купить ДНаТ и все к нему?</p>
+
+<p><a href="https://t.me/ponics_ru_files/4743" target="_blank"><img src="/attachimages/5591_IMAG0024.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4744" target="_blank"><img src="/attachimages/5593_IMAG0025.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 31-01-2011</p>
+
+<blockquote>
+  <p>Подскажите, где в Москве есть толковый магазин, в котором можно купить ДНаТ и все к нему?</p>
+</blockquote>
+
+<p>Ну если цена вопроса не сильно напрягает, то в горшкове, на совке. Если хочется дешевле, то можно тут <a href="http://www.electro-mpo.ru/catalog-cgroupe11.html" target="_blank">http://www.electro-mpo.ru/catalog-cgroupe11.html</a> А вообще думаю любой строй рынок.</p>
+
+<p><strong>famoso</strong> 31-01-2011</p>
+
+<p>Ого спасибо по ценам очень хорошо <em>8)</em></p>
+
+<p>Просто офигеть как подходит, весь осортимент есть :)</p>
+
+<p>Поштучно вроде, да?</p>
+
+<p>И ткните меня, где там ЭМПРА или ЭПРА <em>???</em></p>
+
+<p><strong>Mole_Garden</strong> 31-01-2011</p>
+
+<blockquote>
+  <p>И ткните меня, где там ЭМПРА или ЭПРА <em>???</em></p>
+</blockquote>
+
+<p>Могу еще сам сходить и купить, да и светильник собрать :D</p>
+
+<p>ИЗУ - <a href="http://www.electro-mpo.ru/catalog-cgroupe292.html" target="_blank">http://www.electro-mpo.ru/catalog-cgroupe292.html</a></p>
+
+<p>Дросели - <a href="http://www.electro-mpo.ru/catalog-cgroupe553.html" target="_blank">http://www.electro-mpo.ru/catalog-cgroupe553.html</a></p>
+
+<p><strong>famoso</strong> 01-02-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>И ткните меня, где там ЭМПРА или ЭПРА <em>???</em></p>
+  </blockquote>
+
+  <p>Могу еще сам сходить и купить, да и светильник собрать :D</p>
+
+  <p>ИЗУ - <a href="http://www.electro-mpo.ru/catalog-cgroupe292.html" target="_blank">http://www.electro-mpo.ru/catalog-cgroupe292.html</a></p>
+
+  <p>Дросели - <a href="http://www.electro-mpo.ru/catalog-cgroupe553.html" target="_blank">http://www.electro-mpo.ru/catalog-cgroupe553.html</a></p>
+</blockquote>
+
+<p>$) Да вроде не надо, должен же я хоть что-то сделать</p>
+
+<p><strong>Mole_Garden</strong> 01-02-2011</p>
+
+<blockquote>
+  <p>$) Да вроде не надо, должен же я хоть что-то сделать</p>
+</blockquote>
+
+<p>:D Хорошо !</p>
+
+<p><strong>famoso</strong> 07-02-2011</p>
+
+<p>Сегодня я решил, что помидоры откладываются на некоторое время, чтоб компрессор зря не простаивал я начал выращивать лук</p>
+
+<p>Пока только закинул его на барботажку пару часов назад:</p>
+
+<p><a href="https://t.me/ponics_ru_files/4745" target="_blank"><img src="/attachimages/5672_IMAG0026.jpg" alt="" /></a></p>
+
+<p><strong>johnnykor</strong> 07-02-2011</p>
+
+<p>Если вдруг еще не купил свет, то можно напрямую купить в Reflux на рязанке в офисе компании. Я там брал ДНаЗ 400w за 670 рублей. ЭПРА у них на тот момент небыло, но предложили ПРА за 1700 все в одном корпусе, но надо было еще магнитный пускатель докупать отдельно.</p>
+
+<p><strong>famoso</strong> 07-02-2011</p>
+
+<blockquote>
+  <p>Если вдруг еще не купил свет, то можно напрямую купить в Reflux на рязанке в офисе компании. Я там брал ДНаЗ 400w за 670 рублей. ЭПРА у них на тот момент небыло, но предложили ПРА за 1700 все в одном корпусе, но надо было еще магнитный пускатель докупать отдельно.</p>
+</blockquote>
+
+<p>Спасибо, но мне проще заказать :)</p>
+
+<p><strong>WERDNA</strong> 07-02-2011</p>
+
+<p>ЭПРА брал орбитовкий (orbita.su) Тока что смотрел - 1500 рублей (было дороже :-\ или я что то путаю). Заказывал прям у них, оплачивал квитанцией через сбербанк по счету (счет прислали на почту).</p>
+
+<p><strong>caiman</strong> 07-02-2011</p>
+
+<blockquote>
+  <p>Сегодня я решил, что помидоры откладываются на некоторое время, чтоб компрессор зря не простаивал я начал выращивать лук</p>
+
+  <p>Пока только закинул его на барботажку пару часов назад:</p>
+</blockquote>
+
+<p>А лука не много? для первого раза ??? ;D:D ;D</p>
+
+<p><strong>famoso</strong> 07-02-2011</p>
+
+<p>;D ;D ;D</p>
+
+<p>Думаю хватит я просто в пятилитровку сажаю</p>
+
+<p><strong>famoso</strong> 18-03-2011</p>
+
+<p>Наконец-то я вернулся. Меня не было по причине отсутствия интернета - что-то провайдер намутил, но я всегда был с вами по мере возможностей. Сидел с телефона, не писал потому-что не удобно. Сейчас собираю установку вот из такого ящика (купил в магазине), горшочков для рассады, которые привезут в понедельник вместе с семенами (купил на <a href="http://www.zaseem.ru" target="_blank">http://www.zaseem.ru</a>) или вторник и компрессора</p>
+
+<p><a href="https://t.me/ponics_ru_files/4746" target="_blank"><img src="/imagehost/thumbs/imag0031.jpg" alt="" /></a></p>
+
+<p><strong>famoso</strong> 18-03-2011</p>
+
+<p>Сейчас (в данный момент) еще сажаю редиску на вермикулит в стаканчики 200 мл и еще может пару тройку семечек кину в керамзит. Какие будут советы по агротехнике???</p>
+
+<p>Процесс барботирования (6 часов)</p>
+
+<p><a href="https://t.me/ponics_ru_files/4747" target="_blank"><img src="/imagehost/thumbs/imag0033fkf.jpg" alt="" /></a></p>
+
+<p>Это как бы шаг вперед к освоению техники “картошка”</p>
+
+<p><strong>famoso</strong> 18-03-2011</p>
+
+<p>Кстати лучок вышел зачотный с трех луковиц два хороших пучка получилось, да еще такой зелененький, да в конце февраля<em>Dance</em></p>
+
+<p>Правда рос он у меня долго…</p>
+
+<p><strong>famoso</strong> 18-03-2011</p>
+
+<p>Поставил семена проращиваться, хотя просто положил на ватку чтоб завтра с утра посадить</p>
+
+<p>Семена немного набухли</p>
+
+<p><strong>Mole_Garden</strong> 19-03-2011</p>
+
+<blockquote>
+  <p>Сейчас (в данный момент) еще сажаю редиску на вермикулит в стаканчики 200 мл и еще может пару тройку семечек кину в керамзит. Какие будут советы по агротехнике???</p>
+</blockquote>
+
+<p>Совет один, почитать про агротехнику <a href="http://www.ponics.ru/2009/04/agrotrip3/" target="_blank">http://www.ponics.ru/2009/04/agrotrip3/</a></p>
+
+<p>Ящик нужно светоизолировать.</p>
+
+<p><strong>famoso</strong> 19-03-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Сейчас (в данный момент) еще сажаю редиску на вермикулит в стаканчики 200 мл и еще может пару тройку семечек кину в керамзит. Какие будут советы по агротехнике???</p>
+  </blockquote>
+
+  <p>Совет один, почитать про агротехнику <a href="http://www.ponics.ru/2009/04/agrotrip3/" target="_blank">http://www.ponics.ru/2009/04/agrotrip3/</a></p>
+
+  <p>Ящик нужно светоизолировать.</p>
+</blockquote>
+
+<p>Эссесно, только вот думаю чем либо газетами как лук, там не капли водорослей не было, либо закрасить чем нибудь, либо скотчем</p>
+
+<p><strong>famoso</strong> 19-03-2011</p>
+
+<p>Сегодня докупил:</p>
+
+<p>1) pH метр PH025</p>
+
+<p>2) кассета с пробками</p>
+
+<p>3) кубики АГРОС</p>
+
+<p>4) ортофосфорную кислоту</p>
+
+<p>5) Etisso Hydro</p>
+
+<p><a href="https://t.me/ponics_ru_files/4748" target="_blank"><img src="/attachimages/6322_IMAG0034.jpg" alt="" /></a></p>
+
+<p><strong>famoso</strong> 19-03-2011</p>
+
+<p>Подскажите как его разводить для томатов, огурцов и земляники?</p>
+
+<p><strong>Coccinella</strong> 19-03-2011</p>
+
+<p>Именно на Вашем удобрении состав указан? На картинке не разобрать. А то в нете, то одно, то другое. Вообще, судя по первым пяти ссылкам - лапша на уши трудового народа, но использовать можно :)</p>
+
+<p><strong>famoso</strong> 19-03-2011</p>
+
+<blockquote>
+  <p>Именно на Вашем удобрении состав указан? На картинке не разобрать. А то в нете, то одно, то другое. Вообще, судя по первым пяти ссылкам - лапша на уши трудового народа, но использовать можно :)</p>
+</blockquote>
+
+<p>азот общий-5,2%</p>
+
+<p>фосфор (P2O5)-5,0%</p>
+
+<p>калий (K2O)-6,6%</p>
+
+<p>железо, медь, марганец, цинк-присутствие</p>
+
+<p><strong>Coccinella</strong> 19-03-2011</p>
+
+<p>У меня получается под томаты на 10 л воды 30 мл этого удобрения, 5 г нитрата кальция и 2 г нитрата калия. Про землянику, вопрос вообще не ко мне, а огурцы я бы тоже поливала этим же составом, только ЕС сделала пониже.</p>
+
+<p><strong>famoso</strong> 19-03-2011</p>
+
+<p>Спасибо за помощь.</p>
+
+<p>Надо будет солей докупить а пока сначала будет одна этиссо</p>
+
+<p>А еще болгарский перец на этом хорошо будет расти?</p>
+
+<p><strong>Coccinella</strong> 20-03-2011</p>
+
+<p>Только на этом удобрении все расти будет плоховато. А если добавить калий и кальций, как для томатов, то и перец расти будет :)</p>
+
+<p><strong>famoso</strong> 20-03-2011</p>
+
+<p>Спасибо $)</p>
+
+<p>На следущей неделе бегом в магазин)</p>
+
+<p><strong>famoso</strong> 21-03-2011</p>
+
+<p>Подскажите какой pH раствора необходим для редиса :-\</p>
+
+<p>А так же томатов, огурцов, паприки и земляники</p>
+
+<p><strong>Coccinella</strong> 21-03-2011</p>
+
+<p>А порыться в информации на главной странице - слабо? :)</p>
+
+<p><strong>famoso</strong> 21-03-2011</p>
+
+<p>Вроде все посмотрел нашел только о зелени <em>???</em></p>
+
+<p><strong>famoso</strong> 21-03-2011</p>
+
+<p>5,6-6,2 пойдет для редиса?</p>
+
+<p><strong>Coccinella</strong> 21-03-2011</p>
+
+<p>Пойдет. И для всех остальных в Вашем списке тоже годится :)</p>
+
+<p><strong>famoso</strong> 21-03-2011</p>
+
+<p>Ладненько, пойду корректировать…</p>
+
+<p><strong>famoso</strong> 22-03-2011</p>
+
+<p>Новости на сегодня:</p>
+
+<p>-привезли семена</p>
+
+<p><a href="https://t.me/ponics_ru_files/4749" target="_blank"><img src="/imagehost/thumbs/imag0035.jpg" alt="" /></a></p>
+
+<p>-стакнчики</p>
+
+<p><a href="https://t.me/ponics_ru_files/4750" target="_blank"><img src="/imagehost/thumbs/imag0037.jpg" alt="" /></a></p>
+
+<p>-а также вот эту книгу, чтобы разобрать с выращиванием картофеля из семян</p>
+
+<p><a href="https://t.me/ponics_ru_files/4751" target="_blank"><img src="/imagehost/thumbs/imag0040.jpg" alt="" /></a></p>
+
+<p>как вы думаете какой стаканчик лучше?</p>
+
+<p><a href="https://t.me/ponics_ru_files/4752" target="_blank"><img src="/imagehost/thumbs/imag0039cmc.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 22-03-2011</p>
+
+<p>Для редиса все великоваты, для огурца-томата-перца лучше с ребром 8-10 см. Все вопросы по землянике к Россичу. Вы в этих горшочках собираетесь только рассаду выращивать или потом с горшочком в какую-то другую емкость (трубу, мат, автопот?) высаживать?</p>
+
+<p>(Мат, конечно, не емкость, но слова не подобрала :))</p>
+
+<p><strong>famoso</strong> 22-03-2011</p>
+
+<blockquote>
+  <p>Для редиса все великоваты, для огурца-томата-перца лучше с ребром 8-10 см. Все вопросы по землянике к Россичу. Вы в этих горшочках собираетесь только рассаду выращивать или потом с горшочком в какую-то другую емкость (трубу, мат, автопот?) высаживать?</p>
+
+  <p>(Мат, конечно, не емкость, но слова не подобрала :))</p>
+</blockquote>
+
+<p>Нет редис растет в 200 граммовых стаканчиках, фото потом добавлю</p>
+
+<p>А эти не сказал бы что великоваты мелкие 7х7х8 см, средние 8х8х8, большие 9х9х10, круглые 0,25 литра</p>
+
+<p>Еще едут сейчас круглые 1 и 2 литра. Так что полный боекомплект <em>8)</em></p>
+
+<p>Я в этих горшочках буду их выращивать всю их огуречную (томатную, перечную нужное подчеркнуть) жизнь, в пробках или кубиках пересажу рассаду в керамзит, в стаканчики, а стаканчики в емкость что позади их. Вот такая цепочка <em>Bos</em></p>
+
+<p><strong>Coccinella</strong> 22-03-2011</p>
+
+<p>Тогда лучше в литровые.</p>
+
+<p><strong>famoso</strong> 22-03-2011</p>
+
+<blockquote>
+  <p>Тогда лучше в литровые.</p>
+</blockquote>
+
+<p>Так 9х9х10 это уже почти литровые, в них даже минкубик влазит…</p>
+
+<p><strong>Mole_Garden</strong> 22-03-2011</p>
+
+<blockquote>
+  <p>Подскажите какой pH раствора необходим для редиса :-\</p>
+
+  <p>А так же томатов, огурцов, паприки и земляники</p>
+</blockquote>
+
+<p>Честное слово, ломает перекопировать в сотый раз ссылки, почитай сам на главной странице в разделе технология культур <a href="http://www.ponics.ru/" target="_blank">http://www.ponics.ru/</a></p>
+
+<p><strong>famoso</strong> 22-03-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Подскажите какой pH раствора необходим для редиса :-\</p>
+
+    <p>А так же томатов, огурцов, паприки и земляники</p>
+  </blockquote>
+
+  <p>Честное слово, ломает перекопировать в сотый раз ссылки, почитай сам на главной странице в разделе технология культур <a href="http://www.ponics.ru/" target="_blank">http://www.ponics.ru/</a></p>
+</blockquote>
+
+<p>Уважаемый Mole_Garden, конечно спасибо, но я уже все нашел и прочитал (слава богу поиск работает на ура!!!), а уважаемая Coccinella потвердила то что я нашел</p>
+
+<p><strong>famoso</strong> 22-03-2011</p>
+
+<p>А можно ли барботировать обработанные производителем семена???</p>
+
+<p><strong>Coccinella</strong> 22-03-2011</p>
+
+<p>Можно, но НЕ НУЖНО! Зачем? Барботировать может быть смысл (да и то спорный вопрос) семена лука, моркови, петрушки. Все остальное прекрасно всходит без заморочек, если обеспечить оптимальную влажность и температуру среды.</p>
+
+<p>Если очень хочется что-то с семенами учудить :) - подержите 15 мин на свету под настольной лампой. Лучше, конечно, днем при естественном освещении на подоконнике. (Очень хочется сказать что-то типа: столько-то тыс люкс при такой-то длине волны, но боюсь, что воспримут всерьез :))</p>
+
+<p><strong>famoso</strong> 31-03-2011</p>
+
+<p>31 марта, полет нормальный ;)</p>
+
+<p>маленький базилик, очень быстро взошел (посадил в пятницу, взошли в воскресенье первые 2 былинки):</p>
+
+<p><a href="https://t.me/ponics_ru_files/4753" target="_blank"><img src="/imagehost/thumbs/imag0044php.jpg" alt="" /></a></p>
+
+<p>огурчики F1 Зозуля и F1 Динамит</p>
+
+<p><a href="https://t.me/ponics_ru_files/4754" target="_blank"><img src="/imagehost/thumbs/imag0045.jpg" alt="" /></a></p>
+
+<p>томатики Балконное чудо</p>
+
+<p><a href="https://t.me/ponics_ru_files/4755" target="_blank"><img src="/imagehost/thumbs/imag0046scs.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4756" target="_blank"><img src="/imagehost/thumbs/imag0047wmw.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4757" target="_blank"><img src="/imagehost/thumbs/imag0048.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4758" target="_blank"><img src="/imagehost/thumbs/imag0049.jpg" alt="" /></a></p>
+
+<p>так же еще имеется редиска (на некоторых фото на заднем плане), но я решил ее не фотать, все равно на выходных вместо нее другую посажу, т. к. с этой я ступил, посадил по 2-3 штуки в маленький стаканчик, да к тому же с краю</p>
+
+<p>а еще есть зеленый лук который еще не взошел, хотя я его посадил дней 10 назад… это нормально???</p>
+
+<p>[size=18pt]Спасибо Coccinella и Mole_Garden Ваши советы мне пригодились, а так же всем за внимание[/size]</p>
+
+<p><strong>Coccinella</strong> 31-03-2011</p>
+
+<p>Для лука можно сказать нормально, хотя… Какой сорт?</p>
+
+<p>Томатики - просто прелесть, огурцам явно было темно и жарко. Два растения в кубике ни к чему, одно надо удалить (не вырывать, а отщипнуть над поверхностью кубика) - самое длинное.</p>
+
+<p>Огурцу вытягиваться вредно. Пока не поздно, лишних в салат, будут первым урожаем. :)</p>
+
+<p><strong>famoso</strong> 31-03-2011</p>
+
+<blockquote>
+  <p>Для лука можно сказать нормально, хотя… Какой сорт?</p>
+</blockquote>
+
+<p>Лук “Белое перо” фирмы Гавриш</p>
+
+<blockquote>
+  <p>Томатики - просто прелесть, огурцам явно было темно и жарко. Два растения в кубике ни к чему, одно надо удалить (не вырывать, а отщипнуть над поверхностью кубика) - самое длинное.</p>
+</blockquote>
+
+<p>С томатами очень старался, а огурцы как взошли сразу поставил на светлый подоконник на котором солнце где то с 10 до 19 часов и сейчас растут помидорки, а до этого всходили на теплой батареи (температура там невысокая, так как квартира со своим котлом)</p>
+
+<p>А когда лучше отщипнуть утром или вечером?</p>
+
+<blockquote>
+  <p>Огурцу вытягиваться вредно. Пока не поздно, лишних в салат, будут первым урожаем. :)</p>
+</blockquote>
+
+<p>Хоть сам и повар по профессии, но не разу не слышал о салате из стеблей огурца, можно по подробнее??? Желательно рецептик $)</p>
+
+<p><strong>Coccinella</strong> 31-03-2011</p>
+
+<p>Какая разница, когда отщипывать? Чем раньше, тем легче (не так жалко :))</p>
+
+<p>Насчет салата из проростков огурца я тут где-то перед Новым годом высказывалась, не помню, в какой теме :( . Проростки огурца заменяют по вкусу и аромату настоящий огурец, применяются там же, где и обычные огурцы. У Ваших растений уже пошел настоящий лист, это может ухудшить вкусовые качества, зато подсемядольное колено длинное, а как раз в нем весь вкус сейчас и сидит :)</p>
+
+<p><strong>famoso</strong> 31-03-2011</p>
+
+<p>Уже отщипнул ;)</p>
+
+<p>UPD</p>
+
+<p>По вкусу и правда на огурец похоже, помню когда маленьким был у бабушки на даче усы огуречные ел, а еще виноградные, с кислинкой…</p>
+
+<p><strong>famoso</strong> 06-04-2011</p>
+
+<p>Подскажите, что с моим огурчиком?</p>
+
+<p><a href="https://t.me/ponics_ru_files/4759" target="_blank"><img src="/imagehost/thumbs/imag0051rnr.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 06-04-2011</p>
+
+<p>Трудно сказать, картинка маленькая. Какие рН и ЕС?</p>
+
+<p><strong>famoso</strong> 06-04-2011</p>
+
+<p>pH 5.9-6.1</p>
+
+<p>EC не знаю</p>
+
+<p>что с семядольными листочками? это только на одном огурце</p>
+
+<p><a href="https://t.me/ponics_ru_files/4760" target="_blank"><img src="/imagehost/thumbs/imag0051xyx.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 06-04-2011</p>
+
+<p>Может быть локальный скачок концентрации, может быть сквозняк. Болезни в домашних условиях в это время года маловероятны. Такие вещи вызывают общие условия среды.</p>
+
+<p><strong>famoso</strong> 06-04-2011</p>
+
+<p>скорей сквозняк</p>
+
+<p>бестолковые члены семьи открывали окно прям около этого огурца, либо он охладился о стекло пакет, потому как он до него сегодня дотранивался (вернее приложился к нему)</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>Даю наводку на Дназ цены вкусные лампы яркие</p>
+
+<p><a href="https://t.me/ponics_ru_files/4761" target="_blank"><img src="/imagehost/thumbs/imag0112.jpg" alt="" /></a></p>
+
+<p>лампа 100 ватт 340рубчиков 250 480р и кроме того дриз днат итд фирма эколюм офис на ул кусковской 27 торгуют за нал !</p>
+
+<p><strong>famoso</strong> 15-04-2011</p>
+
+<blockquote>
+  <p>Даю наводку на Дназ цены вкусные лампы яркие</p>
+
+  <p><img src="/imagehost/thumbs/imag0112.jpg" alt="" /></p>
+
+  <p>лампа 100 ватт 340рубчиков 250 480р и кроме того дриз днат итд фирма эколюм офис на ул кусковской 27 торгуют за нал !</p>
+</blockquote>
+
+<p>спасибо конечно, но эту покупку отложу до осени</p>
+
+<p>света у меня и на окне много</p>
+
+<p><strong>famoso</strong> 24-04-2011</p>
+
+<p>Здравствуйте, дорогие форумчане!!!</p>
+
+<p>Христос воскресе!!! <em>Bravo</em></p>
+
+<p>Давно не был на форуме, давно не бал в домике… Столько новых тем!</p>
+
+<p>Рассада моя погибла. Почему не знаю. Начало все как то сохнуть и посохло… Помидорчики уже в мусорке, а вот огурчики стоят, но я чувствую недолго и им осталось… :(</p>
+
+<p>Но я не унываю. И вчера я посадил новые помидорчики Аляска, опять в пробки, всего 3 штуки, но теперь я буду использовать не Etisso, а Кемиру-Люкс…</p>
+
+<p>Надеюсь все получиться :-\</p>
+
+<p><strong>famoso</strong> 25-04-2011</p>
+
+<p>Помидорки еще не взошли, но я вспомнил, что когда-то читал о том , что любую рассаду, как только взойдет, надо закалять при низких температурах. Но я не знаю при какой температуре это делается… И у меня нету дома такого места, если только холодильник пойдет?</p>
+
+<p><strong>ProRus</strong> 25-04-2011</p>
+
+<blockquote>
+  <p>И у меня нету дома такого места, если только холодильник пойдет?</p>
+</blockquote>
+
+<p>Хотите их в +4 засунуть? Не вздумайте, томаты теплолюбивые растения.</p>
+
+<p><strong>famoso</strong> 25-04-2011</p>
+
+<p>ясно, а что с ними надо делать пока маленькие? (вернее у меня они еще не взошли)</p>
+
+<p><strong>ProRus</strong> 25-04-2011</p>
+
+<blockquote>
+  <p>ясно, а что с ними надо делать пока маленькие? (вернее у меня они еще не взошли)</p>
+</blockquote>
+
+<p>Читайте - <a href="http://www.ponics.ru/2009/05/tomat/" target="_blank">http://www.ponics.ru/2009/05/tomat/</a>, <a href="http://www.hydo.ru/plants/tomatos/" target="_blank">http://www.hydo.ru/plants/tomatos/</a></p>
+
+<p><strong>famoso</strong> 25-04-2011</p>
+
+<p>По поводу первой ссылки:</p>
+
+<p>Not Found</p>
+
+<p>Sorry, but you are looking for something that isn't here.</p>
+
+<p>А насчет второй - спасибо, в принципе о переворачивании я знал, а вот когда высаживать в установку - нет</p>
+
+<p><strong>ProRus</strong> 26-04-2011</p>
+
+<blockquote>
+  <p>По поводу первой ссылки:</p>
+
+  <p>Not Found</p>
+
+  <p>Sorry, but you are looking for something that isn't here.</p>
+
+  <p>А насчет второй - спасибо, в принципе о переворачивании я знал, а вот когда высаживать в установку - нет</p>
+</blockquote>
+
+<p>Ну дак обратите внимание, что запитая случайно в ссылку попала… :)</p>
+
+<p><a href="http://www.ponics.ru/2009/05/tomat/" target="_blank">http://www.ponics.ru/2009/05/tomat/</a></p>
+
+<p><strong>famoso</strong> 29-04-2011</p>
+
+<p>Очень нужна помощь!!!</p>
+
+<p>Нужно составить раствор для только что взошедших томатов на основе Кемира-Люкс, желательно в двух вариантах: 1)основанный на одной кемире, 2)полноценный раствор с кальцием, магнием и микроэлементами</p>
+
+<p>Пожайлуста $)</p>
+
+<p><strong>famoso</strong> 29-04-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>По поводу первой ссылки:</p>
+
+    <p>Not Found</p>
+
+    <p>Sorry, but you are looking for something that isn't here.</p>
+
+    <p>А насчет второй - спасибо, в принципе о переворачивании я знал, а вот когда высаживать в установку - нет</p>
+  </blockquote>
+
+  <p>Ну дак обратите внимание, что запитая случайно в ссылку попала… :)</p>
+
+  <p><a href="http://www.ponics.ru/2009/05/tomat/" target="_blank">http://www.ponics.ru/2009/05/tomat/</a></p>
+</blockquote>
+
+<p>Кстати, запятая в ссылку не попала. Я проверил ;)</p>
+
+<p><strong>famoso</strong> 29-04-2011</p>
+
+<blockquote>
+  <p>Очень нужна помощь!!!</p>
+
+  <p>Нужно составить раствор для только что взошедших томатов на основе Кемира-Люкс, желательно в двух вариантах: 1)основанный на одной кемире, 2)полноценный раствор с кальцием, магнием и микроэлементами</p>
+
+  <p>Пожайлуста $)</p>
+</blockquote>
+
+<p>Продублировал, чтоб последняя была!</p>
+
+<p><strong>valery</strong> 29-04-2011</p>
+
+<p>Чтобы кто-то посчитал, было бы неплохо, если бы указали состав раствора, который стремитесь получить …</p>
+
+<p>И хорошо бы переписать с этикетки Кемиры-Люкс полный и ТОЧНЫЙ состав - ведь кто-то должен найти эту Кемиру-Люкс у себя или поискать состав в Сети …</p>
+
+<p>А у Вас она под рукой.</p>
+
+<p>Про Кемиру-Люкс много раз уже упоминалось - удобрение как удобрение, но оно ДЛЯ ПОЧВЫ, в частности в нем как раз много аммонийного азота …</p>
+
+<p>Впрочем, желающие все равно на ней растят … Так что - посчитают.</p>
+
+<p><strong>famoso</strong> 29-04-2011</p>
+
+<blockquote>
+  <p>Чтобы кто-то посчитал, было бы неплохо, если бы указали состав раствора, который стремитесь получить …</p>
+
+  <p>И хорошо бы переписать с этикетки Кемиры-Люкс полный и ТОЧНЫЙ состав - ведь кто-то должен найти эту Кемиру-Люкс у себя или поискать состав в Сети …</p>
+
+  <p>А у Вас она под рукой.</p>
+
+  <p>Про Кемиру-Люкс много раз уже упоминалось - удобрение как удобрение, но оно ДЛЯ ПОЧВЫ, в частности в нем как раз много аммонийного азота …</p>
+
+  <p>Впрочем, желающие все равно на ней растят … Так что - посчитают.</p>
+</blockquote>
+
+<p>Извеняюсь за оплошность… Состав:</p>
+
+<p>азот общ. 16.0</p>
+
+<p>фосфор 20.6</p>
+
+<p>калий 27.1</p>
+
+<p>железо 0.1</p>
+
+<p>бор 0.02</p>
+
+<p>медь 0.01</p>
+
+<p>марганец 0.1</p>
+
+<p>молибден 0.002</p>
+
+<p>цинк 0.01</p>
+
+<p>Рецепт раствора не знаю, мне надо для помидорчиков… Я не знаю какой лучше…</p>
+
+<p>Можете меня научить как это делается и дать рецепт :-[ Правда это слишком длинный путь :)</p>
+
+<p><strong>valery</strong> 29-04-2011</p>
+
+<p>Я не научу, потому что не знаю и не умею.</p>
+
+<p>Нужно брать рецепт и тщательно с ним разбираться - для какой он культуры, (например томат), для какого “типа”, для какого сорта, для какого “метода” выращивания и для каких “климатических условий” - израильские или калифорнийские будут явно отличиться - свет другой.</p>
+
+<p>Мне кажется страны Северной Европы в этом плане - нам “ближе” ( та же Голландия) … Отчасти - Северная Америка и Канада …</p>
+
+<p>Я стараюсь опираюсь только на голландские рецепты и только для минеральной ваты. Конкретные составы - спрашиваю. Или у агрономов фирмы производителя - они дают точные, или у Алексея Куренина (большинство агрономов узнавая, что на “вате” составы дают, но с почти обязательной оговоркой “проконсультируйтесь дополнительно у Куренина” :)”, если интересует что-то еще - спрашиваю у Coccinella, или у Россича (клубника) или у всех форумчан, которые “увлекаются” конкретно “нужной” культурой и успели в ней разобраться, а может и “профессионально занимаются” … Или еще что-то где-то читаю и сравниваю …</p>
+
+<p>Так что ничего внятного посоветовать не смогу.</p>
+
+<p>Одно “успокаивает” - как правило, в заметной части “составов”, основные “пропорции/соотношения” - не меняются или меняются незначительно, разнятся лишь концентрации ну и еще что-то, “по мелочи” (хотя иногда и не по мелочи :-\ )</p>
+
+<p>Недавно в одной из веток был вопрос о “перце” - там ссылка на Гринток и несколько составов - томат, перец, огурец, баклажан … Посмотрите.</p>
+
+<p>На рецепты для “ваты” можно и в других “гидропонных” способах опираться - они хорошо проработаны.</p>
+
+<p>Ваш состав, если никто не найдет времени, посчитаю. Только завтра.</p>
+
+<p>Посмотрите заодно у VVS - хорошая таблица.</p>
+
+<p><strong>famoso</strong> 29-04-2011</p>
+
+<blockquote>
+  <p>Я не научу, потому что не знаю и не умею.</p>
+
+  <p>Нужно брать рецепт и тщательно с ним разбираться - для какой он культуры, (например томат), для какого “типа”, для какого сорта, для какого “метода” выращивания и для каких “климатических условий” - израильские или калифорнийские будут явно отличиться - свет другой.</p>
+
+  <p>Мне кажется страны Северной Европы в этом плане - нам “ближе” ( та же Голландия) … Отчасти - Северная Америка и Канада …</p>
+
+  <p>Я стараюсь опираюсь только на голландские рецепты и только для минеральной ваты. Конкретные составы - спрашиваю. Или у агрономов фирмы производителя - они дают точные, или у Алексея Куренина (большинство агрономов узнавая, что на “вате” составы дают, но с почти обязательной оговоркой “проконсультируйтесь дополнительно у Куренина” :)”, если интересует что-то еще - спрашиваю у Coccinella, или у Россича (клубника) или у всех форумчан, которые “увлекаются” конкретно “нужной” культурой и успели в ней разобраться, а может и “профессионально занимаются” … Или еще что-то где-то читаю и сравниваю …</p>
+
+  <p>Так что ничего внятного посоветовать не смогу.</p>
+
+  <p>Одно “успокаивает” - как правило, в заметной части “составов”, основные “пропорции/соотношения” - не меняются или меняются незначительно, разнятся лишь концентрации ну и еще что-то, “по мелочи” (хотя иногда и не по мелочи :-\ )</p>
+
+  <p>Недавно в одной из веток был вопрос о “перце” - там ссылка на Гринток и несколько составов - томат, перец, огурец, баклажан … Посмотрите.</p>
+
+  <p>На рецепты для “ваты” можно и в других “гидропонных” способах опираться - они хорошо проработаны.</p>
+
+  <p>Ваш состав, если никто не найдет времени, посчитаю. Только завтра.</p>
+
+  <p>Посмотрите заодно у VVS - хорошая таблица.</p>
+</blockquote>
+
+<p>Я просто не знаю на каких сайтах искать рецепты… :'( А Гринток где-то видел, сейчас поищу</p>
+
+<p><strong>valery</strong> 30-04-2011</p>
+
+<p>Ну возьмите тот же 1 грамм Кемиры Люкс на литр воды.</p>
+
+<p>“Раствор”, конечно будет “перекошенный” - полное отсутствие магния и кальция (кроме тех, что возможно, в исходной воде) …</p>
+
+<p>Получите - где “мало”, где “много” …</p>
+
+<p>Азота, пожалуй, несколько маловато, причем аммонийного - напротив, много …</p>
+
+<p>Фосфора - с избытком …</p>
+
+<p>По микроэлементам - где-то не “дотеняте”, где-то некоторый перебор …</p>
+
+<p>Толкового - не получите, но хоть какой-то раствор …</p>
+
+<p>Получится примерно так</p>
+
+<p>N=160</p>
+
+<p>P=90</p>
+
+<p>K=225</p>
+
+<p>Mg=0</p>
+
+<p>Ca=0</p>
+
+<p>Fe=1</p>
+
+<p>B=0.2</p>
+
+<p>Mn=1</p>
+
+<p>Zn=0.1</p>
+
+<p>Cu=0.1</p>
+
+<p>Mo=0.02</p>
+
+<p>В любом случае нужна будет Кальциевая Селитра и Сульфат Магния. Да и с ними будет - кривовато.</p>
+
+<p><strong>Mole_Garden</strong> 30-04-2011</p>
+
+<blockquote>
+  <p>Я просто не знаю на каких сайтах искать рецепты… :'( А Гринток где-то видел, сейчас поищу</p>
+</blockquote>
+
+<p>Имеется в виду, что бы было написано, типо для томата, рекомендуем взять 1 грамм тако-то удобрения + 1 грамм вот такого.</p>
+
+<p>Для огурца рекомендуем взять вот такого удобрения 1,1 грамм+ 0,8 грамм вот такого или взять 1,3 вот такого +0,9 вот такого</p>
+
+<p>Типо этого?</p>
+
+<p><strong>famoso</strong> 30-04-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Я просто не знаю на каких сайтах искать рецепты… :'( А Гринток где-то видел, сейчас поищу</p>
+  </blockquote>
+
+  <p>Имеется в виду, что бы было написано, типо для томата, рекомендуем взять 1 грамм тако-то удобрения + 1 грамм вот такого.</p>
+
+  <p>Для огурца рекомендуем взять вот такого удобрения 1,1 грамм+ 0,8 грамм вот такого или взять 1,3 вот такого +0,9 вот такого</p>
+
+  <p>Типо этого?</p>
+</blockquote>
+
+<p>Да-да мне имено такие рецепты и нужны</p>
+
+<p><strong>Mole_Garden</strong> 30-04-2011</p>
+
+<blockquote>
+  <p>Да-да мне имено такие рецепты и нужны</p>
+</blockquote>
+
+<p>;D ;D ;D</p>
+
+<p>Для информации, количество удобрения, которые существуют заваливает наверно видов за 200-300</p>
+
+<p>Это сколько же рецептов то надо будет писать!? предположу что примерно около 1000 !</p>
+
+<p>А что мешает взять калькулятор, бумажку и карандашик и просто посчитать, ведь данные по требованию азота, фосфора и других элементов есть!!! Совсем ужо обленились, честное слово!</p>
+
+<p><strong>famoso</strong> 02-05-2011</p>
+
+<p>А это моя роза. Ее отец маме где-то в декабре подарил. В горшке их было всего четыре. Я взял самую хилую, выкопал и промыл корешки. И посадил в совершенно не подготовленный керамзит, на эту т.н. установку(хотя ни какая это не установка, так убожество какое-то). Растил ее недели 2 на воде. Выращивал я ее на Кемире-Люкс в концентрации типо 1г/л (типо, потому-что делил я удобрение, как наркоман картонкой пополам, потом еще пополам, опять пополам и снова пополам и растворил в литровой бутылке). Сначала я за ней ухаживал, менял раствор, листочки желтые обрывал, но потом забыл о ней на некоторое время, и вот она у меня в одном растворе простояла месяца 3. Потом я себе кое-что прикупил для гидропоники и вспомнил о своей розе поменял раствор, потом еще поменял и вот она собирается зацвести… <em>Dance</em></p>
+
+<p>Вот собственно бутон</p>
+
+<p><a href="https://t.me/ponics_ru_files/4762" target="_blank"><img src="/imagehost/thumbs/imag0045kkk.jpg" alt="" /></a></p>
+
+<p>А это вся роза вместе с псевдоустановкой</p>
+
+<p><a href="https://t.me/ponics_ru_files/4763" target="_blank"><img src="/imagehost/thumbs/imag0046uyu.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 04-05-2011</p>
+
+<p><em>8)</em> Вот порой даже и без ухода растение то цветет!</p>
+
+<p><strong>famoso</strong> 04-05-2011</p>
+
+<blockquote>
+  <p><em>8)</em> Вот порой даже и без ухода растение то цветет!</p>
+</blockquote>
+
+<p>А вернее при минимальном уходе :-[</p>
+
+<p>Гидропоника вообще вещь!!! Насколько помню, когда мы с бабушкой их выращивали они очень капризничали…</p>
+
+<p><strong>famoso</strong> 02-06-2011</p>
+
+<p>Помидорка:</p>
+
+<p><a href="https://t.me/ponics_ru_files/4764" target="_blank"><img src="/imagehost/thumbs/imag0052.jpg" alt="" /></a></p>
+
+<p>первая кисть</p>
+
+<p><a href="https://t.me/ponics_ru_files/4765" target="_blank"><img src="/imagehost/thumbs/imag0053.jpg" alt="" /></a></p>
+
+<p>что это со стволом?</p>
+
+<p>он фиолетового почти цвета в самом низу и чуть-чуть над семядолями…</p>
+
+<p><a href="https://t.me/ponics_ru_files/4766" target="_blank"><img src="/imagehost/thumbs/imag0054.jpg" alt="" /></a></p>
+
+<p><strong>famoso</strong> 02-06-2011</p>
+
+<p>В это воскресенье (29.5), кстати, посадил сладкий перец Бухарест 4 шт в пробки. Их вы можете наблюдать позади помидорки</p>
+
+<p><strong>valery</strong> 02-06-2011</p>
+
+<blockquote>
+  <p>Помидорка:</p>
+</blockquote>
+
+<p>Хорошенькая помидорка. Может быть кисть немного излишне “островата” - под довольно острым углом к стеблю. (Не обращайте внимания - это “придирка” :D )</p>
+
+<p>При завязывании плодов и наливе (если они - крупноплодные и не станете нормировать) - под весом томатов кисть будет сгибаться вниз, может несколько “пережать” плодоножку, что заметно ухудшит снабжение плодов … Посмотрите, если что - можно поставить кистедержатель.</p>
+
+<p>По “синему” основанию ствола - ничего не знаю, подождем, что скажут другие и, в частности, Coccinella …</p>
+
+<p>Но совсем недавно (меньше трех недель назад) высаживал в мат очередной томатик - у него была абсолютно похожая картина. Немного попереживал, заподозрив “черную ножку”, но все нормализовалось.</p>
+
+<p><strong>valery</strong> 02-06-2011</p>
+
+<p>И пасынок под кистью лучше убрать не затягивая.</p>
+
+<p><strong>famoso</strong> 02-06-2011</p>
+
+<blockquote>
+  <p>И пасынок под кистью лучше убрать не затягивая.</p>
+</blockquote>
+
+<p>Уберу, спасибо за совет</p>
+
+<p>Нормировать скорей всего буду, т.к. состав раствора скудный, боюсь помидорка не выдержит целую кисть из 6 томатиков, тем более где-то здесь видел, что первую кисть либо совсем убирают, либо оставляют только часть… Но так как это моя первая помидорка на гидропонике я хочу поскорее увидеть урожай :-[</p>
+
+<p><strong>Coccinella</strong> 02-06-2011</p>
+
+<p>Валерий очередной раз прав :) синеватый цвет корневой шейки - это сортовой признак, беспокоиться не о чем.</p>
+
+<p>Нормировать кисть не обязательно, но подвязать ее (хоть ленточкой, если нет кистедержателя) надо. Еще в мои студенческие годы было доказано, что залом кисти вызывает снижение общего (ОБЩЕГО!!!) урожая на 15%.</p>
+
+<p>Удалять первую кисть и вовсе преступно, мы же не ботву выращиваем, а плоды!!!</p>
+
+<p><strong>famoso</strong> 09-06-2011</p>
+
+<p>Здравствуйте, Форумчане!!!</p>
+
+<p>А мы продолжаем цвести</p>
+
+<p><a href="https://t.me/ponics_ru_files/4767" target="_blank"><img src="/imagehost/thumbs/imag0065.jpg" alt="" /></a></p>
+
+<p>Вторая кисть - распускается</p>
+
+<p><a href="https://t.me/ponics_ru_files/4768" target="_blank"><img src="/imagehost/thumbs/imag0066.jpg" alt="" /></a></p>
+
+<p>В полный рост, правда он у меня немного кривоват надо подвязать, но не могу сообразить как</p>
+
+<p><a href="https://t.me/ponics_ru_files/4769" target="_blank"><img src="/imagehost/thumbs/imag0067tit.jpg" alt="" /></a></p>
+
+<p>А это огурчики посадил в воскресенье, сегодня взошли</p>
+
+<p><a href="https://t.me/ponics_ru_files/4770" target="_blank"><img src="/imagehost/thumbs/imag0068tst.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4771" target="_blank"><img src="/imagehost/thumbs/imag0069klk.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4772" target="_blank"><img src="/imagehost/thumbs/imag0070zrz.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 09-06-2011</p>
+
+<p>А почему бак с раствором прозрачный? Любишь водоросли?</p>
+
+<p><strong>ProRus</strong> 09-06-2011</p>
+
+<blockquote>
+  <p>А мы продолжаем цвести</p>
+</blockquote>
+
+<p>Я бы не давал им пока цвести, совсем еще томатик маленький, слабенький. Ствол тоненький, хиленький. Не забудьте его подвязать, а то заломается у корня.</p>
+
+<blockquote>
+  <p>А почему бак с раствором прозрачный? Любишь водоросли?</p>
+</blockquote>
+
+<p>Он их разводит. ;)</p>
+
+<p>Прикройте хотя бы фольгой вашу коробочку с раствором, а то водоросли все питательные вещества из вашего раствора поедят, томату не достанется ничего.</p>
+
+<p><strong>famoso</strong> 09-06-2011</p>
+
+<blockquote>
+  <p>А почему бак с раствором прозрачный? Любишь водоросли?</p>
+</blockquote>
+
+<p>Не то что люблю, просто что-то не подумал - заклею</p>
+
+<blockquote>
+  <blockquote>
+    <p>А мы продолжаем цвести</p>
+  </blockquote>
+
+  <p>Я бы не давал им пока цвести, совсем еще томатик маленький, слабенький. Ствол тоненький, хиленький. Не забудьте его подвязать, а то заломается у корня.</p>
+
+  <blockquote>
+    <p>А почему бак с раствором прозрачный? Любишь водоросли?</p>
+  </blockquote>
+
+  <p>Он их разводит. ;)</p>
+
+  <p>Прикройте хотя бы фольгой вашу коробочку с раствором, а то водоросли все питательные вещества из вашего раствора поедят, томату не достанется ничего.</p>
+</blockquote>
+
+<p>Это он на фото такой смотрится, а так крепенький, тем более я его подвяжу, плоды все равно еще незавязались есть время подумать</p>
+
+<p>Спасибо, о фольге даже что то и не подумал :-[</p>
+
+<p><strong>famoso</strong> 15-06-2011</p>
+
+<p>Себе заметка на память:</p>
+
+<p>расчет элемента в г/л <a href="http://forum.ponics.ru/index.php?topic=430.msg16597#msg16597" target="_blank">http://forum.ponics.ru/index.php?topic=430.msg16597#msg16597</a></p>
+
+<p>порядок составления раствора <a href="http://forum.ponics.ru/index.php?topic=430.msg24580#msg24580" target="_blank">http://forum.ponics.ru/index.php?topic=430.msg24580#msg24580</a></p>
+
+<p><strong>famoso</strong> 15-06-2011</p>
+
+<p>Пойдет ли для огурцов (выращивание в Агросе) раствор:</p>
+
+<p>KH2PO4 0.35</p>
+
+<p>Ca(NO3)2 1.02</p>
+
+<p>K2SO4 0.51</p>
+
+<p>MgSO4 * 7H2O 0.51</p>
+
+<p>N 174</p>
+
+<p>P 80</p>
+
+<p>K 330</p>
+
+<p>Ca 250</p>
+
+<p>Mg 50</p>
+
+<p>S 164</p>
+
+<p><strong>ProRus</strong> 15-06-2011</p>
+
+<p>Подойдет.</p>
+
+<p>Можно такой. Хотя в принципе очень похожи.</p>
+
+<p>N-140</p>
+
+<p>P-50</p>
+
+<p>K-350</p>
+
+<p>Ca-200</p>
+
+<p>Mg-50</p>
+
+<p>S-150-250</p>
+
+<p>Fe-3</p>
+
+<p>Mn-0.8</p>
+
+<p>Cu-0.07</p>
+
+<p>Zn-0.1</p>
+
+<p>B-0.3</p>
+
+<p>Mo-0.03</p>
+
+<p><strong>famoso</strong> 15-06-2011</p>
+
+<blockquote>
+  <p>Подойдет.</p>
+
+  <p>Можно такой. Хотя в принципе очень похожи.</p>
+
+  <p>N-140</p>
+
+  <p>P-50</p>
+
+  <p>K-350</p>
+
+  <p>Ca-200</p>
+
+  <p>Mg-50</p>
+
+  <p>S-150-250</p>
+
+  <p>Fe-3</p>
+
+  <p>Mn-0.8</p>
+
+  <p>Cu-0.07</p>
+
+  <p>Zn-0.1</p>
+
+  <p>B-0.3</p>
+
+  <p>Mo-0.03</p>
+</blockquote>
+
+<p>Я так понимаю что ваш на период плодоношения…</p>
+
+<p><strong>famoso</strong> 18-06-2011</p>
+
+<p>Пойдет ли раствор для плодоношения томатов:</p>
+
+<p>N 210</p>
+
+<p>P 40</p>
+
+<p>K 340</p>
+
+<p>Ca 170</p>
+
+<p>Mg 50</p>
+
+<p>S 120</p>
+
+<p><strong>valery</strong> 18-06-2011</p>
+
+<p><em>8)</em></p>
+
+<p><strong>famoso</strong> 19-06-2011</p>
+
+<p>Томаты, стандартный</p>
+
+<p>На 100 л:</p>
+
+<p>KH2PO4 17,5 г</p>
+
+<p>Ca(NO3)2 69,7 г</p>
+
+<p>KNO3 66,2 г</p>
+
+<p>K2SO4 64,8 г</p>
+
+<p>MgSO4*7(H2O) 51,3 г</p>
+
+<p>N 210</p>
+
+<p>P 40</p>
+
+<p>K 340</p>
+
+<p>Ca 170</p>
+
+<p>Mg 50</p>
+
+<p>S 186</p>
+
+<p><strong>famoso</strong> 19-06-2011</p>
+
+<p>Помидорка :P</p>
+
+<p>Я ее завершковал, т.к. не хочу большую 3-4 кисти мне хватит</p>
+
+<p><a href="https://t.me/ponics_ru_files/4773" target="_blank"><img src="/imagehost/thumbs/imag0072eie.jpg" alt="" /></a></p>
+
+<p>Так же я ее подвязал и заклеил еще 10 числа</p>
+
+<p><a href="https://t.me/ponics_ru_files/4774" target="_blank"><img src="/imagehost/thumbs/imag0073czc.jpg" alt="" /></a></p>
+
+<p>Первая кисть</p>
+
+<p><a href="https://t.me/ponics_ru_files/4775" target="_blank"><img src="/imagehost/thumbs/imag0074lzl.jpg" alt="" /></a></p>
+
+<p>Вторая</p>
+
+<p><a href="https://t.me/ponics_ru_files/4776" target="_blank"><img src="/imagehost/thumbs/imag0075.jpg" alt="" /></a></p>
+
+<p>Третья отцветает</p>
+
+<p><a href="https://t.me/ponics_ru_files/4777" target="_blank"><img src="/imagehost/thumbs/imag0076.jpg" alt="" /></a></p>
+
+<p>А это недостаток чего-то, подскажите :-\</p>
+
+<p><a href="https://t.me/ponics_ru_files/4778" target="_blank"><img src="/imagehost/thumbs/imag0077.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 20-06-2011</p>
+
+<p>Вот именно это - низкая влажность воздуха, но на первых снимках виден недостаток кальция на верхних листьях (края завернутые книзу, подворачивающиеся).</p>
+
+<p><strong>famoso</strong> 25-06-2011</p>
+
+<p>Насчет кальция спасибо, исправил, новые листья не скручены <em>Dance</em></p>
+
+<p>А вот это что? &gt;:(</p>
+
+<p><a href="https://t.me/ponics_ru_files/4779" target="_blank"><img src="/imagehost/thumbs/imag0084uru.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 25-06-2011</p>
+
+<p>Не уверен, но скорее всего “вершинная гниль” томата и есть.</p>
+
+<p>Если так, то наиболее вероятная причина - как раз недостаток кальция.</p>
+
+<p>Недостаток - не обязательно в растворе. В растворе его может быть и в “достатке” …</p>
+
+<p>Может либо кем-то (чем-то) “блокироваться” - например высоким уровнем калия (или другим “антагонистом”), либо просто плохо “продвигаться” из-за слабых-неактивных корней и (или) низкой транспирации (“выпивания” воды и ее дальнейшего “испарения”) - могут мешать (как варианты) - слишком ВЫСОКАЯ влажность (некуда испарять), слишком НИЗКАЯ влажность (растение “пугается” возможного “обезвоживания” и закрывает устьица), отсутствие вентиляции или иного “движения” воздуха (растение активно испаряет, воздух не движется, вокруг листьев образуется нечто типа воздушной “подушки” с повышенной влажностью, что затрудняет дальнейшее испарение-транспирацию … Эта влажная “подушка” расходится-рассасывается, конечно … Но не столь быстро как нужно …</p>
+
+<p>:D … А может это и вовсе не вершинная гниль … :)</p>
+
+<p><strong>valery</strong> 25-06-2011</p>
+
+<p>А … забыл. Можно попробовать “внешнюю” подкорму Кальциевой селитрой, особенно - по молоденьким плодам. Концентрацию не помню - поищите поиском, Coccinella довольно часто об этом говорит.</p>
+
+<p><strong>valery</strong> 25-06-2011</p>
+
+<p>То, что “завершковали”, возможно и правильно … :-\ … но какой-нибудь небольшой “побег роста”, возможно, и не помешал бы …</p>
+
+<p><strong>famoso</strong> 25-06-2011</p>
+
+<p>Спасибо, Валерий, за ответ</p>
+
+<p>Скорей что-нибудь с раствором намудрил или низкая влажность… Попробую подкормку по листьям</p>
+
+<p>Еще раз спасибо, а то переживаю… :-\</p>
+
+<p>Побег имеется я его сразу не заметил и не удалил, он ползет из предпоследнего междоузлия)))</p>
+
+<p><strong>valery</strong> 25-06-2011</p>
+
+<p>Ну и хорошо. Точка роста все же “желательна быть” … :)</p>
+
+<p><strong>valery</strong> 25-06-2011</p>
+
+<p>Кстати … Кальциевая селитра - разная бывает.</p>
+
+<p><strong>famoso</strong> 25-06-2011</p>
+
+<p>Таак, нашел 5г/л, спасибо попробую и томаты и огурчики тоже думаю</p>
+
+<p>Вот вам два вопроса в догонку :)</p>
+
+<p>1)У меня не получается нормально растворить кальциевую селитру, всегда хоть чуть-чуть вываливается осадок :(</p>
+
+<p>2)Я наверно надоел, но по болезням я дуб, что у меня с огурчиком(здесь смайлик как в “Шреке”, когда кот стоял со шляпой с невинной рожей)</p>
+
+<p><a href="https://t.me/ponics_ru_files/4780" target="_blank"><img src="/imagehost/thumbs/imag0085sus.jpg" alt="" /></a></p>
+
+<p><strong>famoso</strong> 25-06-2011</p>
+
+<blockquote>
+  <p>Кстати … Кальциевая селитра - разная бывает.</p>
+</blockquote>
+
+<p>У меня от VALAGRO, купил в GREENMARKT</p>
+
+<p><strong>valery</strong> 25-06-2011</p>
+
+<p>Я по “болезням” - не намного дальше “ушел” :D</p>
+
+<p>Обратил внимание на Ваш раствор. Посмотрите на состав кальциевой селитры на упаковке “Валагро”. Импортная отличается от российской “Буйской” по составу (содержанию азота-кальция).</p>
+
+<p>Например, чтобы получить 170 Ca++ (то есть, как элемента) - я бы давал “Кальцинит” Яра-Лива 0,9 г/л (или 90 г на 100 литров, в Вашем случае). Думаю, кальциевая селитра от “Валагро” - такая же. Тогда, возможно, у Вас действительно может быть маловато кальция в растворе.</p>
+
+<p>Я щас гляну точно.</p>
+
+<p>Яра Лива:</p>
+
+<p>N(общий)=15,5%</p>
+
+<p>N-NO3=14.4% (нитратный)</p>
+
+<p>N-NH4=1.1% (аммонийный)</p>
+
+<p>Ca=19.0% (или 26,5% СaO)</p>
+
+<p>По “идее” и у Валагро должно быть также.</p>
+
+<p>Буйская (без аммонийного азота) - N=11.6%, Сa=16.6%. (она еще и “четырехводная”, то есть Ca(NO3)2*4(H20) …),</p>
+
+<p>а Вы, возможно, считали из “чистой” формулы Ca(NO3)2 … Могла получиться “ошибка”.</p>
+
+<p><strong>famoso</strong> 25-06-2011</p>
+
+<p>Кальция чистого 17%, оксида - 24</p>
+
+<p><strong>valery</strong> 25-06-2011</p>
+
+<p>Кальциевую селитру разводить … можно сразу исходную воду “подготовить” (подкислить) примерно до 5,8-6,0 …</p>
+
+<p>А полиэтиленовую пленку (вероятно) с кубика бы лучше снять. Пусть “дышит” и вентилируется … Что с огурцом - не знаю, “для себя” бы решил, что ему - “сыро” …</p>
+
+<p><strong>valery</strong> 25-06-2011</p>
+
+<blockquote>
+  <p>Кальция чистого 17%, оксида - 24</p>
+</blockquote>
+
+<p>Значит “нужно” ровно 100 грамм.</p>
+
+<p><strong>famoso</strong> 25-06-2011</p>
+
+<p>На литр? :o</p>
+
+<p><strong>valery</strong> 25-06-2011</p>
+
+<p>:o</p>
+
+<p>Нет, но Вы же на 100 литров считали. На литр 1 грамм, на 100 литров - 100 грамм.</p>
+
+<p><strong>famoso</strong> 25-06-2011</p>
+
+<p>Ааа, и правда тупанул конкретно, это я считал просто так на 100 л, а так мне 0,5 л, для подкормки по листу хватит :D</p>
+
+<p><strong>valery</strong> 26-06-2011</p>
+
+<p>Подумалось … :-\ Вдруг, мы о “разном” … Я имею в виду Ваш “рабочий” раствор, можно немножко пересчитать под Ваш Валагровский “кальций” … 1 г кальциевой селитры на 1 литр раствора, получим 170 кальция (к чему Вы “стремитесь”, исходя из “рецепта”) …</p>
+
+<p>А подкормка по листу … не знаю. Если разыскали ответ, так и делайте, как там написано.</p>
+
+<p><strong>famoso</strong> 26-06-2011</p>
+
+<p>Спасибо, что пояснили, а то правда не доперло, я и так чуть больше грамма добавляю :)</p>
+
+<p><strong>Coccinella</strong> 27-06-2011</p>
+
+<p>Валерий прав, на томате натуральная вершинная гниль. Я бы вообще о качестве кальциевой селитры так не заморачивалась, а профильтровала эти поллитра, да и опрыснула. А то пока найдете достаточно чистую селитру, всю кисть потерять можете. Кстати, поврежденный плод лучше удалить, он уже не поправится.</p>
+
+<p>По огурцу что-то сказать трудно. Возможно в какой-то период раннего детства был резкий скачок ЕС, не нравятся мне эти пятна на семядолях. Пестрота на нижнем листе может быть и от того же, а может и от перелива.</p>
+
+<p>Гидропоника - технология реактивная, растение реагирует на изменение условий буквально на глазах. При этом каждый лист может, как летопись, свидетельствовать о своем событии.</p>
+
+<p>Но эти пятна могут быть и началом инфекции, покажите, пожалуйста, растение целиком.</p>
+
+<p><strong>famoso</strong> 27-06-2011</p>
+
+<p>Спасибо</p>
+
+<p>Я особо и не заморачивался опрыскивал уже 4 раза, плоды удалил, вроде, тьфу, тьфу, тьфу, прошло :-\</p>
+
+<p>Этот огурец, я оставлю, но особо на него надежды нет, я посажу еще, а этот какой-то отсталый, 3 более молодых (разница 1 неделя) уже догнали…</p>
+
+<p>Фото выложу, но чуть позже</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

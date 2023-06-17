@@ -1,0 +1,2653 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Электроника в теплице (изучаем, спрашиваем, общаемся)... | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Электроника в теплице (изучаем, спрашиваем, общаемся)...">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Электроника в теплице (изучаем, спрашиваем, общаемся)...</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>ProRus</strong> 23-10-2012</p>
+
+<p>Вы готовы сделать что либо своими руками?</p>
+
+<p>У вас есть желание, но не хватает опыта или знаний?</p>
+
+<p>Вам нужна помощь знающих людей?</p>
+
+<p>Оставляйте здесь свои заявки, вам помогут !!!</p>
+
+<p>Пожелания:</p>
+
+<ol>
+  <li>
+    <p>Вы должны подробнее почитать по предмету…</p>
+  </li>
+  <li>
+    <p>Вы должны четко представлять конечный результат…</p>
+  </li>
+  <li>
+    <p>Вы должны как можно четче оформить заявку с указанием всех тонкостей и подробностей…</p>
+  </li>
+</ol>
+
+<p>P.S. Не нужно делать из темы…</p>
+
+<p>Заявки и ответы на них</p>
+
+<ol>
+  <li>Заявка от пользователя “[Научите меня контролировать уровень EC и pH при помощи компьютера](http://forum.ponics.ru/index.php?action=profile;u=1419]ProRus[/url]” на тему “[url=http://forum.ponics.ru/index.php?topic=1559.msg55354#msg55354){:target=”_blank”}”</li>
+</ol>
+
+<p>ответы на заявку №1.</p>
+
+<p>1.1. от пользователя “<a href="http://forum.ponics.ru/index.php?action=profile;u=3290]nikpdg[/url]&quot; - [url=http://forum.ponics.ru/index.php?topic=1559.msg55363#msg55363" target="_blank">ответ</a>…</p>
+
+<p>1.2. от пользователя “<a href="http://forum.ponics.ru/index.php?action=profile;u=6023]Vad[/url]&quot; - [url=http://forum.ponics.ru/index.php?topic=1559.msg55385#msg55385" target="_blank">ответ</a>…</p>
+
+<p>1.3. от пользователя “<a href="http://forum.ponics.ru/index.php?action=profile;u=725]alexxx[/url]&quot; - [url=http://forum.ponics.ru/index.php?topic=1559.msg55425#msg55425" target="_blank">ответ</a>…</p>
+
+<ol>
+  <li>Просьба от пользователя “[Поделитесь ссылкой на основы по Arduino](http://forum.ponics.ru/index.php?action=profile;u=1504]gena1[/url]” на тему “[url=http://forum.ponics.ru/index.php?topic=1559.msg63370#msg63370){:target=”_blank”}”</li>
+</ol>
+
+<p>ответы на заявку №2.</p>
+
+<p>2.1. от пользователя “<a href="http://forum.ponics.ru/index.php?action=profile;u=1419]ProRus[/url]&quot; - [url=http://forum.ponics.ru/index.php?topic=1559.msg63900#msg63900" target="_blank">ответ</a>…</p>
+
+<p>Другое интересное</p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1559.msg55719#msg55719]Ph и tds электроды не могут одновременно измерять один и тот же раствор[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=1504){:target=&quot;_blank&quot;}">gena1</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1559.msg55725#msg55725]Китайские Ph и TDS электроды не могут работать друг с другом[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=725){:target=&quot;_blank&quot;}">alexxx</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1559.msg56175#msg56175]Макет(он же эмулятор) контроля на комплектующих[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=727]vlad72[/url]). [url=http://forum.ponics.ru/index.php?topic=1559.msg56350#msg56350]Как вы контролируете количество раствора соленоидом?[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=727){:target=&quot;_blank&quot;}">vlad72</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1559.msg56202#msg56202]Где покупать комплектующие[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=727){:target=&quot;_blank&quot;}">vlad72</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1559.msg56215#msg56215]Туман - что это и зачем[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=5663){:target=&quot;_blank&quot;}">aivar</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1559.msg56350#msg56350]Полезные книги для начинающих[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=727){:target=&quot;_blank&quot;}">vlad72</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1559.msg56373#msg56373]Работа в визуализации, как конфигурировать клапан[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=727){:target=&quot;_blank&quot;}">vlad72</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1559.msg56374#msg56374]Как присваивается имя реальному выходу ПЛК[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=727){:target=&quot;_blank&quot;}">vlad72</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1559.msg56375#msg56375]Простое и понятное программирование в CoDeSys[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=727){:target=&quot;_blank&quot;}">vlad72</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1559.msg56379#msg56379]Схема установки на шесть кустов[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=727]vlad72[/url]), [url=http://forum.ponics.ru/index.php?topic=1559.msg56381#msg56381]реализация на ОВЕНе[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=727){:target=&quot;_blank&quot;}">vlad72</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1559.msg56392#msg56392]Дозаторы не подходят для эксплуатации в гидропонных установках[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=727){:target=&quot;_blank&quot;}">vlad72</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php?action=profile;u=1504]Использование контроллеров отопительного оборудования[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=1504){:target=&quot;_blank&quot;}">gena1</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1559.msg56515#msg56515]Использование инфракрасной пленки для обогрева[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=16){:target=&quot;_blank&quot;}">valery</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1559.msg56544#msg56544]ВИДЕО-УРОКИ от ОВЕН[/url] ([url=http://forum.ponics.ru/index.php?action=profile;u=727){:target=&quot;_blank&quot;}">vlad72</a></p>
+
+<p><strong>ProRus</strong> 23-10-2012</p>
+
+<p>Задача:</p>
+
+<ol>
+  <li>
+    <p>При помощи датчика в реальном времени снимать показания электропроводности питательного раствора.</p>
+  </li>
+  <li>
+    <p>При помощи датчика в реальном времени снимать показания кислотности питательного раствора.</p>
+  </li>
+  <li>
+    <p>Все показания возможно снять/снимать через интерфейс Ethernet.</p>
+  </li>
+  <li>
+    <p>Написать программу которая отслеживает показания и строит график на персональном компьютере в реальном времени и хранит показания в базе данных.</p>
+  </li>
+</ol>
+
+<p>P.S. Мои знания в области электротехники и программирования заканчиваются школьными знаниями или немного больше. ;)</p>
+
+<p><strong>VVS_</strong> 23-10-2012</p>
+
+<p>К сожалению не программист так что только п.1 с просмотром на месте.</p>
+
+<p><strong>ProRus</strong> 23-10-2012</p>
+
+<blockquote>
+  <p>К сожалению не программист так что только п.1 с просмотром на месте.</p>
+</blockquote>
+
+<p>Пункты 1 и 2 я конечно уже умею, в реальном времени и с накоплением статистики и даже графики умею строить в Excel, но реальное время происходит только во время посещения теплички. :)</p>
+
+<p>Я даже представляю что мне нужно…</p>
+
+<p>Например:</p>
+
+<p>pH-электрод (HI 1293D Spare pH Electrode for pH Monitors)</p>
+
+<p>EC - электрод (HI 7630 Conductivity &amp; TDS Probe)</p>
+
+<p>Модуль для получения данных (какой не в курсе)</p>
+
+<p>Модуль с интерфейсом Ethernet (какой не в курсе)</p>
+
+<p>Среду программирования (какую не в курсе)</p>
+
+<p>Можно купить HI 991404-01 и оттуда взять электроды, если не получится, то останется хороший прибор.</p>
+
+<p>Опять же если использовать контроллер ОВЕН, по и среда программирования понятна CoDeSys.</p>
+
+<p>Но какого контролера достаточно будет для моих целей мне пока не понятно. :(</p>
+
+<p><strong>VVS_</strong> 23-10-2012</p>
+
+<p>Овены умеют по Эзернету бегать?</p>
+
+<p><strong>nikpdg</strong> 23-10-2012</p>
+
+<p>Добрый день ProRus!</p>
+
+<p>Моё мнение таково:</p>
+
+<p>1)Советую программу MasterScada RT32-32 точки бесплатно без ограничений по времени.</p>
+
+<p>Скачивается с оф. сайта. Могу оказать помощь (безвозмездно) в конфигурировании. Поскольку имеется запас точек и не малый, то можно довольно легко ввести туда и остальные параметры (температуры, давление насосов, можно давление до и после фильтра). Кроме этого в программе легко собираются алгоритмы, тоесть можно заложить логику (при достижении параметров что либо включать или отключать при этом можно формировать временные интервалы и т.д.). Но это возможно при условии что компьютер будет все время включен; хотя для регистрации это необходимо. К этому ведется журнал, в котором можно установить запись необходимых событий ( когда вышли на уставку, когда включились насосы, когда включилась вентиляция ит.д.). Красивые, удобные графики хорошо маштабируются. И это без ПЛК.</p>
+
+<p>2)Все это с ПЛК ОВЕН : плюс -работа алгоритмов не зависит от компьтера (для серьёзных предприятий это существенно) , минус-это покупка ПЛК.</p>
+
+<p>При необходимости написания программы для ПЛК помогу (безвозмезно- тоесть даром) ОВЕН работает по Ethernet.</p>
+
+<p>3) Овен выпустил МВ110-224.pH - рН метр. Я точно не знаю подойдет ли он Вам по характеристикам. Но к нему есть бесплатный ОРС , тоесть его можно подключить хоть к ПЛК, хоть к скаде напрямую по витой паре.</p>
+
+<p>Ну гдето так. Возможны другие варианты ; в некоторых я могу в той или иной мере оказать посильную помощь.</p>
+
+<p><strong>valery</strong> 23-10-2012</p>
+
+<p>Во … Вот и мне нужны подобные штуки, как и Руслану …</p>
+
+<p><strong>zalcer</strong> 23-10-2012</p>
+
+<blockquote>
+  <p>Во … Вот и мне нужны подобные штуки, как и Руслану …</p>
+</blockquote>
+
+<p>Всем нужны. ;)</p>
+
+<p><strong>ProRus</strong> 23-10-2012</p>
+
+<blockquote>
+  <p>Моё мнение таково:</p>
+</blockquote>
+
+<p>Вам та легко… Вы и так все знаете…</p>
+
+<p>Я вот смотрю, смотрю и ничего не понимаю…</p>
+
+<p>ПЛК63, ПЛК73, ПЛК100, ПЛК150, ПЛК154… <em>???</em></p>
+
+<p>Дак еще и модели разные …</p>
+
+<p>Например ПЛК100-220.Р-М.</p>
+
+<p>Ну да… питание ~220 В, Р - дискретные выходы ПЛК100 6 э/м реле, M - объем памяти ввода/вывода не ограничен (Med. license)</p>
+
+<p>Мне что нужно? :-\</p>
+
+<p>Мда… Если бы знал что я хочу, сам бы сделал… &gt;:(</p>
+
+<p>Например <a href="http://www.hannainst.com.au/learn_more/c:HI+1293D" target="_blank">HI 1293D Spare pH Electrode for pH Monitors</a>. Какой там сигнал?</p>
+
+<p>Ну думается мне что по любому аналоговый. Как его потом прикручивать к ПЛК? Или нужен еще какой модуль ввода/вывода?</p>
+
+<p>ПЛК к компьютеру подключается через Ethernet и потом настраивается при помощи программного?</p>
+
+<p>Может существуют какие эмуляторы ПЛК которые можно попробовать программировать для отладки там и понимания процесса?</p>
+
+<p>Я сам принцип еще не очень понимаю чего спрашиваю, буду читать…</p>
+
+<p>Понимаю что выгляжу глупо, но какой есть… :)</p>
+
+<p><strong>valery</strong> 23-10-2012</p>
+
+<blockquote>
+  <p>Я вот смотрю, смотрю и ничего не понимаю…</p>
+
+  <p>ПЛК63, ПЛК73, ПЛК100, ПЛК150, ПЛК154… <em>???</em></p>
+
+  <p>Дак еще и модели разные …</p>
+
+  <p>Например ПЛК100-220.Р-М.</p>
+
+  <p>Ну да… питание ~220 В, Р - дискретные выходы ПЛК100 6 э/м реле, M - объем памяти ввода/вывода не ограничен (Med. license)</p>
+
+  <p>Мне что нужно? :-\</p>
+</blockquote>
+
+<p>Мда… :-\ :-\ :-\ Похожая история. Единственный, кто всерьез обещал помочь - Алекс (автор “растворника”). Мне нужно было только купить этот самый “Овен” …</p>
+
+<p>Посмотрел я посмотрел и ничего не понял … что же из этого нужно :-[</p>
+
+<p><strong>Vad</strong> 23-10-2012</p>
+
+<blockquote>
+  <p>Овены умеют по Эзернету бегать?</p>
+</blockquote>
+
+<p>бегать умеют.. но не в курсе, имеют ли овены web морды.</p>
+
+<p>там свой протокол..</p>
+
+<p>чем помочь? :)</p>
+
+<p>помогу.</p>
+
+<p>датчики, контроллер..?</p>
+
+<p>или хочется самому?</p>
+
+<p>самому не сложно, но это программно-аппаратный комплекс.. и кое что придется паять-придумывать.. Иначе цена заоблачная.</p>
+
+<p>Модуль аналогового ввода МВ110-224.pH цена 4 661 :o</p>
+
+<p>За чуть бОльшие деньги могу предложить сделать контроллер под ваши задачи,</p>
+
+<p>8 каналов управления (220в 10А ) (таймеры или автоматика.. или таймеры и автоматика)</p>
+
+<p>+</p>
+
+<p>2 температуры</p>
+
+<p>1 влажность</p>
+
+<p>1 измеритеь ЕС</p>
+
+<p>1 измеритель PH.</p>
+
+<p>С датчиками <em>???</em></p>
+
+<p><strong>Vad</strong> 23-10-2012</p>
+
+<blockquote>
+  <p>Например <a href="http://www.hannainst.com.au/learn_more/c:HI+1293D" target="_blank">HI 1293D Spare pH Electrode for pH Monitors</a>. Какой там сигнал?</p>
+</blockquote>
+
+<p>аналоговый.. на уровне микровольт..</p>
+
+<p>в овен не воткнуть его напрямую <em>???</em></p>
+
+<p><strong>ProRus</strong> 23-10-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>Например <a href="http://www.hannainst.com.au/learn_more/c:HI+1293D" target="_blank">HI 1293D Spare pH Electrode for pH Monitors</a>. Какой там сигнал?</p>
+  </blockquote>
+
+  <p>аналоговый.. на уровне микровольт..</p>
+
+  <p>в овен не воткнуть его напрямую <em>???</em></p>
+</blockquote>
+
+<p>И через что его втыкают? Модуль ввода/вывода?</p>
+
+<blockquote>
+  <p>чем помочь? :)</p>
+
+  <p>помогу.</p>
+
+  <p>датчики, контроллер..?</p>
+
+  <p>или хочется самому?</p>
+
+  <p>самому не сложно, но это программно-аппаратный комплекс.. и кое что придется паять-придумывать.. Иначе цена заоблачная.</p>
+</blockquote>
+
+<p>Хочется конечно самому, но вот хватит ли уму? :)</p>
+
+<p>А если не хватит, вы есть… :) Ну и Алекс конечно…</p>
+
+<p>Просто всегда было интересно понять этот самый, далекий для меня мир электроники…</p>
+
+<p>Особенно контроллеров которые в принципе в современном мире не так уж и сложны в настройке… (это я про простые решения конечно).</p>
+
+<p><strong>Vad</strong> 23-10-2012</p>
+
+<p>если есть время.. то можно освоить все что угодно…</p>
+
+<p><em>???</em></p>
+
+<p>это не так сложно.</p>
+
+<p>нужно выучить английский язык (хотябы на уровне “технического”)</p>
+
+<p>понять принципы построения программ (алгоритм)</p>
+
+<p>(попробуйте для начала, записать на бумаге все действия, необходимые для того чтоб “попить воды” - так пишутся программы. :))</p>
+
+<p>изучить какой-никакой язык программирования, их много</p>
+
+<p>изучить внутренее устройство конкретного контроллера (чтоб знать что куда, откуда и для чего)</p>
+
+<p>ну и.. все.. дальше все само произойдет..</p>
+
+<p>у вас будет “ящик с инструментами”..</p>
+
+<p>и Вы будете знать.. что пилой - пилят, молотком - забивают, топором - рубят…</p>
+
+<p>А что рубить-пилить-забивать - подскажет текущая необходимость.</p>
+
+<p>но мебель… лучше покупать в готовом виде ;D</p>
+
+<p>:)</p>
+
+<p><strong>Rossich</strong> 23-10-2012</p>
+
+<p>Ну все… собрались крейзи IT-ботаники, :-\ эт надолго.. пойду домашней попью.. может после литра включусь?</p>
+
+<p><strong>Vad</strong> 23-10-2012</p>
+
+<p>;D</p>
+
+<p><strong>nikpdg</strong> 23-10-2012</p>
+
+<p>Доброй ночи всем.</p>
+
+<p>Во первых для простой регистрации с ведением архива нет надобности в ПЛК и учить языки программирования нет особой нужды. Хотя это на любителя ;) . Простая схема которую я внедрял на нескольких предприятиях, где нет необходимости в логических алгоритмах выглядит так: компьютер- какой либо преобразователь в rs-485( USB-rs485 или СОМ-rs 485(как промышленный , так и самодельный-я пользовался и теми и другими))-далее линия связи витая пара (расстояние до 1200м, хотя мне удавалось получать стабильную работу на 1800м; при этом расстояние по Ethernet без повторителей 100м)-и собственно приборы ,поддерживающие какой либо протокол (ModBus , ОВЕН или др.).Приборов без повторителей до 32 шт на этой одной витой паре.Программ Scada достаточно много бесплатных. Есть и с Web , есть и с алгоритмами внутри Scadы. Вот именно в этом я могу помочь. То есть помочь выбрать бесплатное легальное програмное обеспечение, сконфигурировать , настроить и отправить Вам файлы и оказать помощь в установке ПО. А какие приборы будут у Вас - это вопрос. К примеру может быть устройство на Atmege собранное уважаемым Vad. Главное чтобы был стандартный протокол (лучше ModBus). При этом можно самодельный рН метр можно разбавить к примеру модулем дискретных выходов и в scade сделать автоматическую коррекцию рН по какому либо алгоритму (с задержками или ПИД-регулирование).При этом реле модуля будет управлять насосами, клапанами, дозаторами и прочей периферией. Пока все. Извините если утомил :-\</p>
+
+<p><strong>Vad</strong> 23-10-2012</p>
+
+<p><em>???</em> так у меня веб интерфейс встроен, никакие внешние программы при этом не нужны.. и контроллер полностью автономен.. им можно управлять не только с компа… но и с телефона… планшета.. да хоть с холодильника )) если у него есть web браузер :)</p>
+
+<p>Конфигурирование требуется только на уровне - какие таймеры, когда срабатывают… и какие нагрузки при этом включаются и выключаются..</p>
+
+<p>И задаются параметры которые необходимо регулировать..</p>
+
+<p>графики рисует внешний сервер.. или данные сохраняются на SD карту.. и обрабатываются тем же экселем…</p>
+
+<p>промышленным контроллер… громоздко.. дорого.. избыточно.. и не гибко порою..</p>
+
+<p>да и какой смысл 1800 метров тянуть линию связи.. :)</p>
+
+<p>если это домашняя тепличка….. 100 метров вполне достаточно.. даже если она не маленькая..</p>
+
+<p>а если мало, то можно прикрутить wifi - 4-5 км по прямой.. с направленными антеннами - легко..</p>
+
+<p>или GSM если уж СОВСЕМ тяжко с интернетом.. (пустыня например :-\ океан…. :-\ или дачный поселок в 20 км от города)</p>
+
+<p>но с GSM есть некоторые ограничения (динамический IP)</p>
+
+<p><strong>nikpdg</strong> 24-10-2012</p>
+
+<p>В таком случае это на мой взгляд лучшее решение для дома. Я то работаю как то больше в промышленности, а там требования другие (сертификаты, лицензии и прочее). За применение микроконтроллеров в автоматизации двумя руками ( сам купил небольшую партию atmega - зимой по свободе буду более плотно осваивать).</p>
+
+<p><strong>alexxx</strong> 24-10-2012</p>
+
+<blockquote>
+  <p>Мне что нужно? :-\</p>
+</blockquote>
+
+<p>Вам нужен контроллер ПЛК150 У.М.</p>
+
+<p>У него 4 аналоговых входа для датчиков, и 4 дискретных выхода для подключения устройств. Если не хватает - модуль МВУ8 даст еще 8 выходов.</p>
+
+<p>Что касается измерения ПШ и ЕС - я бы порекомендовал трансмиттер ханна HI98143-22, и к нему электроды HI1001 и HI3001</p>
+
+<p>Овеновский модуль пш пока не работоспособен, они его на доработку отправили.</p>
+
+<p><strong>ProRus</strong> 24-10-2012</p>
+
+<blockquote>
+  <p>Вам нужен контроллер ПЛК150 У.М.</p>
+
+  <p>У него 4 аналоговых входа для датчиков, и 4 дискретных выхода для подключения устройств. Если не хватает - модуль МВУ8 даст еще 8 выходов.</p>
+
+  <p>Что касается измерения ПШ и ЕС - я бы порекомендовал трансмиттер ханна HI98143-22, и к нему электроды HI1001 и HI3001</p>
+
+  <p>Овеновский модуль пш пока не работоспособен, они его на доработку отправили.</p>
+</blockquote>
+
+<p>Именно такого ответа я и ждал… <em>8)</em> Пошел заказывать…</p>
+
+<p><strong>koval.sergei</strong> 26-10-2012</p>
+
+<p>Привет всем.</p>
+
+<p>ProRus автоматизацией решил заняться? ;)</p>
+
+<p><strong>ProRus</strong> 26-10-2012</p>
+
+<blockquote>
+  <p>Привет всем.</p>
+
+  <p>ProRus автоматизацией решил заняться? ;)</p>
+</blockquote>
+
+<p>Ага, надо развиваться… :)</p>
+
+<p><strong>ProRus</strong> 01-11-2012</p>
+
+<p>Решил переименовать тему, а то как то не очень старое название отражает смысл.</p>
+
+<p>Ну значит так…</p>
+
+<p>Купил я следующее:</p>
+
+<ol>
+  <li>
+    <p>ОВЕН ПЛК150-220.У-М - это так, на будущее для знакомства с качественным оборудованием. :)</p>
+  </li>
+  <li>
+    <p>ОВЕН ПМ01-220.АВ - на всякий пожарный для приема/передачи по GPRS.</p>
+  </li>
+  <li>
+    <p>Arduino Mega 2560+W5100+Keypad LCD+Breadboard+jumper для отработки знаний и навыков в программировании.</p>
+  </li>
+</ol>
+
+<p>Пока все это дело в пути, решил попрактиковаться и восстановить знания в области программирования.</p>
+
+<p>Скачал программу Proteus которая успешно может эмулировать различные контроллеры, Arduino в их числе.</p>
+
+<p>Нарисовал простую схемку эмулирующую ситуацию на входах (кнопки) и включающую зазличные приборы при возникновении этой самой ситуации (диод).</p>
+
+<p>Теперь пишу программу которая при нажатии на кнопку, зажигает определенный диод используя сдвиговый регистр 74HC595.</p>
+
+<p>Для чего это все?</p>
+
+<p>На схемке видно, что каждая кнопка имеет название. По названию думаю видно назначение входа.</p>
+
+<p>Достиг уровень PH определенного значения, сработал выход и плюхнул в раствор кислоты, ну и далее по аналогии…</p>
+
+<p>На схемке правда не Mega 2560, да и не суть важно что там…</p>
+
+<p>Изучение идет медленно, так как ресурсов совсем не много, но думаю осилю…</p>
+
+<p><a href="https://t.me/ponics_ru_files/9570" target="_blank"><img src="/attachimages/11837_shemka.jpg" alt="" /></a></p>
+
+<p><strong>gena1</strong> 01-11-2012</p>
+
+<p>Дабы сразу задумались : скоро вас ждёт печалька. :)</p>
+
+<p>Ph и tds электроды не могут одновременно измерять один и тот же р-р, поэтому показания нужно снимать поочереди (т.е. один включать, другой выключать с задержкой (они не сразу после включения питания дают верные рез-таты) ). Поэтому, для этого 2 дискретных вывода уже зарезервируйте. На 52 дискрета вроде есть готовая версия ардуино.</p>
+
+<p>Кроме того, про рх электрод - для пост. измерений берите с загущенным электролитом.</p>
+
+<p><strong>ProRus</strong> 01-11-2012</p>
+
+<blockquote>
+  <p>Ph и tds электроды не могут одновременно измерять один и тот же р-р, поэтому показания нужно снимать поочереди (т.е. один включать, другой выключать с задержкой (они не сразу после включения питания дают верные рез-таты) ). Поэтому, для этого 2 дискретных вывода уже зарезервируйте. На 52 дискрета вроде есть готовая версия ардуино.</p>
+
+  <p>Кроме того, про рх электрод - для пост. измерений берите с загущенным электролитом.</p>
+</blockquote>
+
+<p>А с чем связана невозможность одновременно измерять два параметра?</p>
+
+<p>Если засунуть два прибора одновременно (один ПШ, второй ТДС), показания будут искажаться?</p>
+
+<p><strong>Vad</strong> 01-11-2012</p>
+
+<p>а Вы их.. проводочом… между собой .. соедините ))</p>
+
+<p><strong>valery</strong> 01-11-2012</p>
+
+<p>Сам “делать” ничего не буду … :( , но за Вашими, Руслан, “продвижениями” буду с интересом наблюдать … <em>8)</em></p>
+
+<p><strong>cpf</strong> 01-11-2012</p>
+
+<p>БОЛЬШОЙ БРАТ - не спит…(он все видит…) :D</p>
+
+<p><strong>alexxx</strong> 01-11-2012</p>
+
+<blockquote>
+  <p>Дабы сразу задумались : скоро вас ждёт печалька. :)</p>
+
+  <p>Ph и tds электроды не могут одновременно измерять один и тот же р-р, поэтому показания нужно снимать поочереди (т.е. один включать, другой выключать с задержкой (они не сразу после включения питания дают верные рез-таты) ). Поэтому, для этого 2 дискретных вывода уже зарезервируйте. На 52 дискрета вроде есть готовая версия ардуино.</p>
+
+  <p>Кроме того, про рх электрод - для пост. измерений берите с загущенным электролитом.</p>
+</blockquote>
+
+<p>Это китайский хлам из экоюнита не может работать друг с другом без конфликтов, а нормальные приборы с гальванически развязанными входами в общем растворе работают отлично. <em>8)</em></p>
+
+<p><strong>gena1</strong> 01-11-2012</p>
+
+<blockquote>
+  <p>Это китайский хлам из экоюнита не может работать друг с другом без конфликтов, а нормальные приборы с гальванически развязанными входами в общем растворе работают отлично. <em>8)</em></p>
+</blockquote>
+
+<p>Причём тут готовые приборы ??????????????????????????</p>
+
+<p>Речь об электродах и проектируемом устройстве электроды - аналог - дискрет . Переключать предложил я , кто силён в аналоговой схемотехнике - пусть делает развязку как ему угодно.</p>
+
+<p><strong>vlad72</strong> 16-11-2012</p>
+
+<blockquote>
+  <p>Причём тут готовые приборы ??????????????????????????</p>
+
+  <p>Речь об электродах и проектируемом устройстве электроды - аналог - дискрет . Переключать предложил я , кто силён в аналоговой схемотехнике - пусть делает развязку как ему угодно.</p>
+</blockquote>
+
+<p>….всем - HI….</p>
+
+<ul>
+  <li>готовые приборы надежнее и не надо тратить время</li>
+</ul>
+
+<p>эксперементы и пайку, например…Вы предлагаете использовать</p>
+
+<p>связку: -“</p>
+
+<p>электроды - аналог - дискрет “ и потом подавать сигнал на контроллер (обработку)? Процесс дозировки,который</p>
+
+<p>програмно опирается на “онлайн” показания с электродов (через</p>
+
+<p>HI 98143) , т.е. аналговый сигнал непосредственно,будет гораздо</p>
+
+<p>быстрее нежели предложенный Вами…статистические показания которого будут изменяться дискретно, а значит периодически..</p>
+
+<p>…вообщем я собрал макет(он же эмулятор) на таких комплектующих:</p>
+
+<p>Исполнительные механизмы:</p>
+
+<p><a href="http://forum.ponics.ru/go.php?url=aHR0cDovL3d3dy5raXBzcGIucnUvY2F0YWxvZy9rbGFwYW4tZWxla3Ryb21hZ25pdG55ai9lbGVtZW50MTgwNzc1LnBocA==" target="_blank">www.kipspb.ru/cat…element180775.php</a></p>
+
+<p>клапан соленоид на 24В. Применяется в системах “очистки воды”, насоса 2штуки , тоже от систем очистки, производительность 2л/мин ,брал в комплекте с блоками питания на 24В, , коннекторы (тройники и переходники) и трубку (вы их можете увидеть в фильтрах под</p>
+
+<p>мойктй у себя дома), брал в магазине торгующим системами</p>
+
+<p>очистки воды….</p>
+
+<p>Получился конструктор -“ЛЕГО”. Очень легко собирается и разбирается))))) . Фото к сожалению пока не могу скинуть,но</p>
+
+<p>модель оказалась вполне работоспособной на практике…и</p>
+
+<p>обслуживает сейчас 4 установки ДВЦ обьемом 10л. Каждая)))))</p>
+
+<p>Пока лежу в больничке пришел -</p>
+
+<p>трансмиттер HI 98143 и электроды к нему, но возможности “прикрутить” к системе нет…уже сейчас , находясь вдалеке от</p>
+
+<p>растений я могу посмотреть уровень раствора, которое употребило</p>
+
+<p>растение за определенный период …. и запитать их либо раствором,</p>
+
+<p>либо просто водой..))))…..осуществляется это по каналу “интернет”,</p>
+
+<p>с помощью программы - “ удаленный рабочий стол” Ammyy Admin.</p>
+
+<p>но в запасниках лежит ещё не изученный модем “ОВЕН”, по которому</p>
+
+<p>я “открою” каналы связи по -GPS и GSM ….так что</p>
+
+<p>…совсем забыл..))) сейчас, на практике очень доволен, правда</p>
+
+<p>дозировка реализована пока на основе таблицы FLORA . Щас ,</p>
+
+<p>пока время позволяет, изучаю описание….</p>
+
+<p>Да, мозги ОВЕН-150 + 3шт блоков МДВВ…+ 2шт. насосов + соленоиды</p>
+
+<p>15 шт ( кстати соленоиды Вы можете приобрести и в “Мастерките”_ они рекомендованны в разделе “умный дом”)…вообщем все есть -</p>
+
+<p>если захочешь)))….</p>
+
+<p>… ну как то так))))))</p>
+
+<p>P.S. …не используйте системы “обратного осмоса” для эксплуатации</p>
+
+<p>электродов!!!</p>
+
+<p><strong>Юка</strong> 16-11-2012</p>
+
+<p>vlad72, пожалуйста, не останавливайтесь на достигнутом, т.к. инфа полезна, и …… в общем есть желание применить…</p>
+
+<p><strong>aivar</strong> 16-11-2012</p>
+
+<blockquote>
+  <p>Исполнительные механизмы:</p>
+
+  <p><a href="http://www.kipspb.ru/catalog/klapan-elektromagnitnyj/element180775.php" target="_blank">http://www.kipspb.ru/catalog/klapan-elektromagnitnyj/element180775.php</a></p>
+
+  <p>клапан соленоид на 24В.</p>
+</blockquote>
+
+<p>ссылочку себе в домик утащу, гранмерси)))</p>
+
+<p>давно искал, даже уже плюнул на поиски и у ффр заказал, а он не те прислал, которые просил, в егойных клапанах, точнее в соленоидах к клапанам так и не разобрался(((</p>
+
+<p>и совсем на автоматику замешивания плюнул… теперь вот пойду подбирать плевки из колодца…</p>
+
+<p>еще раз гранмерси)</p>
+
+<p>да еще и магаз у них прямо совсем рядом</p>
+
+<p><strong>FFR</strong> 16-11-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>Исполнительные механизмы:</p>
+
+    <p><a href="http://www.kipspb.ru/catalog/klapan-elektromagnitnyj/element180775.php" target="_blank">http://www.kipspb.ru/catalog/klapan-elektromagnitnyj/element180775.php</a></p>
+
+    <p>клапан соленоид на 24В.</p>
+  </blockquote>
+
+  <p>ссылочку себе в домик утащу, гранмерси)))</p>
+
+  <p>давно искал, даже уже плюнул на поиски и у ффр заказал, а он не те прислал, которые просил, в егойных клапанах, точнее в соленоидах к клапанам так и не разобрался(((</p>
+
+  <p>и совсем на автоматику замешивания плюнул… теперь вот пойду подбирать плевки из колодца…</p>
+
+  <p>еще раз гранмерси)</p>
+
+  <p>да еще и магаз у них прямо совсем рядом</p>
+</blockquote>
+
+<p>Добрый вечер!</p>
+
+<p>Уважаемый aivar!</p>
+
+<p>Если можно, давайте обсудим, с какой проблемой Вы столкнулись?</p>
+
+<p><strong>vlad72</strong> 17-11-2012</p>
+
+<p>…клапана посолидней - <a href="http://www.masterkit.ru/main/set.php?code_id=1043699" target="_blank">http://www.masterkit.ru/main/set.php?code_id=1043699</a></p>
+
+<ul>
+  <li>аналог используемого - <a href="http://www.masterkit.ru/main/set.php?code_id=887030" target="_blank">http://www.masterkit.ru/main/set.php?code_id=887030</a></li>
+</ul>
+
+<p>Конечно правильнее использовать шаровые клапана, но они</p>
+
+<p>на порядок дороже… :'(</p>
+
+<p>….дозировка примерно на таких помпах - :(</p>
+
+<p><a href="http://www.ebay.com/itm/Dosing-pump-Peristaltic-dosing-pump-for-aquarium-lab-/400323384721?pt=LH_DefaultDomain_0&amp;hash=item5d35221591" target="_blank">http://www.ebay.com/itm/Dosing-pump-Peristaltic-dosing-pump-for-aquarium-lab-/400323384721?pt=LH_DefaultDomain_0&amp;hash=item5d35221591</a> …. :-Xтока качественных</p>
+
+<p>:-[ японских ….</p>
+
+<p>трансмиттер HI 98143 + электроды HI 3001 b HI 1001 брал здесь -</p>
+
+<p>:-\ :-[</p>
+
+<p><a href="http://www.hannameters.com/hi98143-22.html" target="_blank">http://www.hannameters.com/hi98143-22.html</a></p>
+
+<p>и</p>
+
+<p><a href="http://www.hannameters.com/hi3001.html" target="_blank">http://www.hannameters.com/hi3001.html</a></p>
+
+<p><a href="http://www.hannameters.com/hi1001.html" target="_blank">http://www.hannameters.com/hi1001.html</a></p>
+
+<p>Шлют EMS-ом, регистрация карты на ПалПай должна быть,</p>
+
+<p>заказ оформляется в три клика,…1=добавить в корзину</p>
+
+<p>2=купить, 3=…адрес для отправки берется автоматом из</p>
+
+<p>данных на ПалПай…и все….как только они отправят Вам на мыло</p>
+
+<p>придут данные с РПО (номером для отслеживания посылки, на</p>
+
+<p>чинается на E…)….смотрите когда оно обьявится на почте, получаете…</p>
+
+<p>датчик ультразвуковой примерно такой - <a href="http://www.ebay.com/itm/New-Hyde-Park-Ultrasonic-Proximity-Sensor-SC956A-1V0S-/220554657655?nma=true&amp;si=h40YoLEYOhvM1vYQHahz%2FwWQDq0%3D&amp;orig_cvip=true&amp;rt=nc&amp;_trksid=p2047675.l2557" target="_blank">http://www.ebay.com/itm/New-Hyde-Park-Ultrasonic-Proximity-Sensor-SC956A-1V0S-/220554657655?nma=true&amp;si=h40YoLEYOhvM1vYQHahz%2FwWQDq0%3D&amp;orig_cvip=true&amp;rt=nc&amp;_trksid=p2047675.l2557</a></p>
+
+<p>..с аналоговыми выходами 0 - 10В…</p>
+
+<p><strong>aivar</strong> 17-11-2012</p>
+
+<blockquote>
+  <p>Добрый вечер!</p>
+
+  <p>Уважаемый aivar!</p>
+
+  <p>Если можно, давайте обсудим, с какой проблемой Вы столкнулись?</p>
+</blockquote>
+
+<p>Фридрих Филиппович, да нечего обсуждать, вместо “обычно закрытых” имею две недели ожидания и два “обычно открытых” клапана и что та там еще с вольтажом запутка была :( :( … скорее всего не хватило мне умения донести посредством телефона свои запросы :( :(</p>
+
+<p>а вот на “туман” не нарадуюсь, спасибо Вам :)</p>
+
+<p><strong>valery</strong> 17-11-2012</p>
+
+<p>А что за “туман” ? ( … вдруг мне тоже “надо” … :o :-[ )</p>
+
+<p><strong>aivar</strong> 17-11-2012</p>
+
+<blockquote>
+  <p>А что за “туман” ? ( … вдруг мне тоже “надо” … :o :-[ )</p>
+</blockquote>
+
+<p>Конечно надо, не понимаю <em>???</em> как Вы без “тумана” до сих пор <em>???</em> <em>???</em> <em>???</em></p>
+
+<p><a href="http://farmgarden.ru/article_info.php?articles_id=97" target="_blank">туман</a></p>
+
+<p><strong>Vad</strong> 17-11-2012</p>
+
+<p>штука прикольная.. но наверное всетаки для теплиц.. а не гроухомов… :-[</p>
+
+<p>не знаю как у Валерия устроено все..</p>
+
+<p>но для “комнатного выращивания” и на не больших площадях хорошо применяется УЗ разбрызгиватель :) (“умные названия” атомайзер, небулайзер )</p>
+
+<p>это когда не нужно “кубы в час” разбрызгивать</p>
+
+<p>..</p>
+
+<p>кстати.. в эти туманизаторы.. в случае аварийного падения температуры.. можно заряжать горячую воду.. по закону сохранения энергии и массы.. горячая вода отдаст температуру воздуху))</p>
+
+<p>где то прочитал… не помню где</p>
+
+<p><strong>valery</strong> 17-11-2012</p>
+
+<blockquote>
+  <p>не знаю как у Валерия устроено все..</p>
+</blockquote>
+
+<p>Фоггеры (НаанДан) у меня таки есть… Правда я ими не пользуюсь, не нашел применения.</p>
+
+<p>Как-то вот так получается ( а ведь и правда … интересно… :o ) необходимая влажность почему-то сама по себе поддерживается :o</p>
+
+<p>Хы … Причем в достаточно широких пределах.</p>
+
+<p>Входная дверь - с длинной цепочкой и крючками :D - шаг крючков - примерно 5% влажности.</p>
+
+<p>Причем меняется (влажность) не рывками, а плавно. Что радует <em>Dance</em></p>
+
+<p>:)</p>
+
+<p><strong>Vad</strong> 17-11-2012</p>
+
+<p>;D ;D ;D ;D</p>
+
+<p>все гениальное - гениально просто! <em>Dance</em></p>
+
+<p><strong>valery</strong> 18-11-2012</p>
+
+<p>:D</p>
+
+<p><strong>FFR</strong> 18-11-2012</p>
+
+<blockquote>
+  <p>Фридрих Филиппович, да нечего обсуждать, вместо “обычно закрытых” имею две недели ожидания и два “обычно открытых” клапана и что та там еще с вольтажом запутка была :( :( … скорее всего не хватило мне умения донести посредством телефона свои запросы :( :(</p>
+
+  <p>а вот на “туман” не нарадуюсь, спасибо Вам :)</p>
+</blockquote>
+
+<p>По соленоидным кранам, е том случае, если вам нужно что-то особое, лучше уж связаться со мной напрямую, к примеру через Скайп.</p>
+
+<p>Есть огромное количество модификаций, но к сожалению не все наши дилеры знают все тонкости…</p>
+
+<p>Да и по напряжению. Напряжение - не самое главное. Есть соленоиды, которым нужно давать напругу постоянно, а есть импульсные, которым достаточно импульса длительностью 200 миллисекунд. А что бы перевести его в исходное состояние, нужен второй такой же импульс, только обратной полярности.</p>
+
+<p>Такие соленоидные краны работают в энерго-экономичных системах, например в паре с контроллером Geva-75, где одной батарейки Крона хватает на ГОД работы и контроллера и крана…</p>
+
+<p>А здесь есть видео на тему, что же такое наши соленоидные краны: <a href="http://youtu.be/IcVrLi-P7Lw" target="_blank">http://youtu.be/IcVrLi-P7Lw</a></p>
+
+<p><strong>aivar</strong> 18-11-2012</p>
+
+<blockquote>
+  <p>Есть огромное количество модификаций, но к сожалению не все наши дилеры знают все тонкости…</p>
+</blockquote>
+
+<p>вот здесь то и рылась собака))) что модификаций много, а вот что за соленоид оказался, вместо заказанного “обычно закрытого” открывающегося при наличии на нем напряжения, пришлось выяснять опытным путем, в результате оказалось, что оно в прямом виде не “вписывается” в предписанное место, а доделки в виде схемы управления, идеологически не вписываются в мое мировоззрение.</p>
+
+<p>Поэтому судьба им пылиться на полке ближайшее время…</p>
+
+<p>А вот загадочные символы на соленоидах не плохо было бы расшифровать и выложить в доступном месте, может и дилерам стало бы попроще разобраться с модификациями…</p>
+
+<p>Потому как, где то на израильском сайте, таки, нашел информацию о модификациях, но, право, как то не комильфо торговать хорошую вещь без сопроводительной документации…</p>
+
+<p>за сим откланиваюсь…</p>
+
+<p>:o :o ойц чей то я… :-\ :-\</p>
+
+<p>наверное так: больше по соленоидам сказать не имею</p>
+
+<p><strong>ProRus</strong> 19-11-2012</p>
+
+<blockquote>
+  <p>трансмиттер HI 98143 + электроды HI 3001 b HI 1001 брал здесь -</p>
+
+  <p>:-\ :-[</p>
+
+  <p><a href="http://forum.ponics.ru/go.php?url=aHR0cDovL3d3dy5oYW5uYW1ldGVycy5jb20vaGk5ODE0My0yMi5odG1s" target="_blank">www.hannameters.com/hi98143-22.html</a></p>
+
+  <p>и</p>
+
+  <p><a href="http://forum.ponics.ru/go.php?url=aHR0cDovL3d3dy5oYW5uYW1ldGVycy5jb20vaGkzMDAxLmh0bWw=" target="_blank">www.hannameters.com/hi3001.html</a></p>
+
+  <p><a href="http://forum.ponics.ru/go.php?url=aHR0cDovL3d3dy5oYW5uYW1ldGVycy5jb20vaGkxMDAxLmh0bWw=" target="_blank">www.hannameters.com/hi1001.html</a></p>
+</blockquote>
+
+<p>Да, все хорошо но цена пока меня пугает… :(</p>
+
+<p><strong>ProRus</strong> 19-11-2012</p>
+
+<p>Да, друзья, читаю я вас, но не догоняю.. :)</p>
+
+<p>То ли тормоз, то ли медленный газ…</p>
+
+<p>А…., начинающий элетроник… :)</p>
+
+<p><strong>ProRus</strong> 19-11-2012</p>
+
+<blockquote>
+  <p>и запитать их либо раствором,</p>
+
+  <p>либо просто водой..</p>
+</blockquote>
+
+<p>В принципе все понятно, но как вы контролируете количество раствора соленоидом?</p>
+
+<p><strong>FFR</strong> 19-11-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>Есть огромное количество модификаций, но к сожалению не все наши дилеры знают все тонкости…</p>
+  </blockquote>
+
+  <p>вот здесь то и рылась собака))) что модификаций много, а вот что за соленоид оказался, вместо заказанного “обычно закрытого” открывающегося при наличии на нем напряжения, пришлось выяснять опытным путем, в результате оказалось, что оно в прямом виде не “вписывается” в предписанное место, а доделки в виде схемы управления, идеологически не вписываются в мое мировоззрение.</p>
+
+  <p>Поэтому судьба им пылиться на полке ближайшее время…</p>
+
+  <p>А вот загадочные символы на соленоидах не плохо было бы расшифровать и выложить в доступном месте, может и дилерам стало бы попроще разобраться с модификациями…</p>
+
+  <p>Потому как, где то на израильском сайте, таки, нашел информацию о модификациях, но, право, как то не комильфо торговать хорошую вещь без сопроводительной документации…</p>
+
+  <p>за сим откланиваюсь…</p>
+
+  <p>:o :o ойц чей то я… :-\ :-\</p>
+
+  <p>наверное так: больше по соленоидам сказать не имею</p>
+</blockquote>
+
+<p>Ну по загадочным символам постараюсь ответить - напишите, что же там за символы?</p>
+
+<p>Кстати, видеоролик в чем-то помог разобраться?</p>
+
+<p><strong>aivar</strong> 19-11-2012</p>
+
+<blockquote>
+  <p>Ну по загадочным символам постараюсь ответить - напишите, что же там за символы?</p>
+
+  <p>Кстати, видеоролик в чем-то помог разобраться?</p>
+</blockquote>
+
+<p>Видеоролик был просмотрен не единожды до покупки, ну и сейчас еще раз, на всякий случай…</p>
+
+<p>Спасибо, за участие, но сейчас задача “стирать пыль” с соленоидов не в приоритете))</p>
+
+<p>Тем более разбирательство того как “оно” работает было произведено, просто не вписалось это “оно” в мировоззрение…</p>
+
+<p>да…. видеоролик в качестве общей информации, на мой взгляд, очень толковый, к сожалению, в моем случае, ключевые слова - “общей информации”.</p>
+
+<p>На всякий случай, претензий, почти нет, всяко где нить да пригодится, тем более, подняв переписку, обнаружил, что купил их не у Вас, хотя и пытался))), а судя по всему у представителей или дилеров…</p>
+
+<p>Почти как про XEROX - не важно чьей фирмы копировальный аппарат, все равно ксерокс)), не важно где купил форсунки 4191 (или соленоиды</p>
+
+<p>baccara) все равно у ФФР :) :)</p>
+
+<p><strong>FFR</strong> 20-11-2012</p>
+
+<p>Тем не менее, если появятся вопросы, или понадобится помощь - обращайтесь! :)</p>
+
+<p><strong>vlad72</strong> 22-11-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>и запитать их либо раствором,</p>
+
+    <p>либо просто водой..</p>
+  </blockquote>
+
+  <p>В принципе все понятно, но как вы контролируете количество раствора соленоидом?</p>
+</blockquote>
+
+<p>…имелось ввиду, что четыре обслуживаемых емкости могут быть</p>
+
+<p>заполнены либо раствором- либо просто водой (с уже норм. РН).</p>
+
+<p>Количество раствора контролируется ультразвуковым датчиком</p>
+
+<p>измерения уровня.Пока система не реверсивная, но как только</p>
+
+<p>“прикручу” трансмиттер и электроды к ОВЕНу, будет реверс…</p>
+
+<p>…как начинающему электронику; - обратите внимание на язык</p>
+
+<p>программирования LD- язык РелейноКонтактныхСхем. Он очень</p>
+
+<p>легок в понимании простых программ.В проекте (в редакторе.)</p>
+
+<p>обозначаете “контакт” и “обмотку”.контакту(будет вход) пишите имя (адрес на реальном выходе ПЛК Овен), а обмотке (будет выход) имя</p>
+
+<p>на реальном выходе ПЛК….и всё….ПО готов….можно нажать “СТАРТ”</p>
+
+<p>и “пощелкать” в реальности вх/выходами ПЛК :-[…..</p>
+
+<p>Для ознакомления совсем <em>Wall</em>“чайников” :( рекомендованна книга :-X;</p>
+
+<p>Программируемые логические контроллеры, автор И.Г.Минаев</p>
+
+<p>В.В. Самойленко. <em>Bos</em>Там описание с примерами- все на LD.Начинается с описания основ (Булева алгебра,..ну типа ; чЁ такое 0/1),На примере работы с ОВЕН, и книга;- Программируемые контроллеры, автор Игорь Петров.Более подробное описание работы с ПЛК, где даны пояснения ко всем языкам .</p>
+
+<p>…изучение займет совсем немного времени,в этот же день Вы будете</p>
+
+<p>“щелкать” вх./вых на реальном ПЛК <em>Dance</em>, как только Вы научились</p>
+
+<p>реализовывать взаимодеиствие вх/вых в визуализации ( тоже вАщЕ</p>
+
+<p>легко :-\ ) можно загрузить в комп программу “удаленный рабочий</p>
+
+<p>стол” (полно в ИНЕТе бесплатных ПО) , название одной я приводил где-то Выше и осуществить слив/залив емкости удаленно, например</p>
+
+<p>с работы <em>Dance</em> , можно приложение для мобилы скачать и…..</p>
+
+<p>соединиться с установкой из любой точки планеты ..по интернету <em>Bos</em>..так сказать…</p>
+
+<p>….ну вот как-то так…. :-[</p>
+
+<p><strong>valery</strong> 22-11-2012</p>
+
+<blockquote>
+  <p>Для ознакомления совсем <em>Wall</em>“чайников” :( рекомендованна книга :-X;</p>
+
+  <p>Программируемые логические контроллеры, автор И.Г.Минаев</p>
+
+  <p>В.В. Самойленко. <em>Bos</em></p>
+</blockquote>
+
+<p>Надо чуток “подготовиться” теоретически … ( и морально) … и тоже попробовать почитать … :(</p>
+
+<p>Наверное, так и сделаю <em>Wall</em></p>
+
+<p><strong>artmaximus</strong> 22-11-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>Для ознакомления совсем <em>Wall</em>“чайников” :( рекомендованна книга :-X;</p>
+
+    <p>Программируемые логические контроллеры, автор И.Г.Минаев</p>
+
+    <p>В.В. Самойленко. <em>Bos</em></p>
+  </blockquote>
+
+  <p>Надо чуток “подготовиться” теоретически … ( и морально) … и тоже попробовать почитать … :(</p>
+
+  <p>Наверное, так и сделаю <em>Wall</em></p>
+</blockquote>
+
+<p>…и я так сделаю… <em>Wall</em></p>
+
+<p>…может чего прибавится :-[</p>
+
+<p><strong>alexxx</strong> 22-11-2012</p>
+
+<p>Прямо в установочных папках кодесиса есть отличные инструкции на русском по программированию и визуализации, с примерами. Толково написаны, мне их оказалось вполне достаточно для освоения.</p>
+
+<p><strong>vlad72</strong> 23-11-2012</p>
+
+<p>;) действительно все очень просто <em>8)</em></p>
+
+<p>скачайте (Среда программирования CoDeSys 2.3 и другое программное обеспечение для ОВЕН ПЛК) отсюда - <a href="http://www.owen.ru/catalog/55710393" target="_blank">http://www.owen.ru/catalog/55710393</a></p>
+
+<p>и в режиме эмуляции “поиграйте” ПЛК….в визуале ничего сложного</p>
+
+<p>тоже нет…просто рисуете прямоугольник и ему задаете ….например вход , в конфигурации этого прямоугольника задаете переменную т.е. имя</p>
+
+<p>входа контроллера, - цвета; желтый и красный (тревога)…..почти все</p>
+
+<p>вопросы обсуждались на форуме ОВЕНа. Нада зарегится на форуме</p>
+
+<p>и просто забить в поиск интересующий вопрос…</p>
+
+<p>…если наберется достаточное количество желающих ( …лучше имеющих ПЛК) …можно обмениваться ПО…напрмер… :-[</p>
+
+<p><strong>Юка</strong> 23-11-2012</p>
+
+<p>А тут ещё и ОВЕНы за пол цены <a href="http://www.kipspb.ru/catalog/sale/" target="_blank">http://www.kipspb.ru/catalog/sale/</a> :-\</p>
+
+<p><strong>alexxx</strong> 23-11-2012</p>
+
+<blockquote>
+  <p>А тут ещё и ОВЕНы за пол цены <a href="http://www.kipspb.ru/catalog/sale/" target="_blank">http://www.kipspb.ru/catalog/sale/</a> :-\</p>
+</blockquote>
+
+<p>Это не контроллеры…</p>
+
+<p><strong>Alex123</strong> 24-11-2012</p>
+
+<blockquote>
+  <p>А тут ещё и ОВЕНы за пол цены <a href="http://www.kipspb.ru/catalog/sale/" target="_blank">http://www.kipspb.ru/catalog/sale/</a> :-\</p>
+</blockquote>
+
+<p>Походу нет у них ничего за полцены. <em>???</em> <em>???</em>Я хотел одну приблуду у них купить, так они мне ответили, что это ошибка на сайте и в наличии нету. Короче замануха &gt;:D &gt;:D</p>
+
+<p><strong>koval.sergei</strong> 24-11-2012</p>
+
+<p>Приобретаю овенскую продукциюhttp://www.owenkomplekt.ru/catalog/detail.php?ID=2985без рекламы, если что сгорело и сломалось можно на прямую с ними обговорить. Была проблема с мдвв (прошивка старая была) оправил пере прошили и забрал у них.</p>
+
+<p><strong>Alex123</strong> 24-11-2012</p>
+
+<p>А кто-нибудь может посоветовать, где перистальтические помпы в России лучше купить ? Производительностью литра три в час…</p>
+
+<p><strong>vlad72</strong> 24-11-2012</p>
+
+<p>Работа в визуализации <em>8)</em>.Ниже СКРИНы, как конфигурировать</p>
+
+<p>клапан :-X ( зеленый элипс с номером 1). Просто описываете</p>
+
+<p>при каких переменных ( в данном случае вых. ПЛК VIH_N т.е.</p>
+
+<p>клапан соленоид :o) элипс поменяет цвет на синий ….</p>
+
+<p><a href="https://t.me/ponics_ru_files/9571" target="_blank"><img src="/attachimages/11898_ВИЗУА_СХ.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9572" target="_blank"><img src="/attachimages/11900_выделение.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9573" target="_blank"><img src="/attachimages/11902_конф.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9574" target="_blank"><img src="/attachimages/11904_конф_5.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9575" target="_blank"><img src="/attachimages/11906_конф_7.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9576" target="_blank"><img src="/attachimages/11908_конф+2.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9577" target="_blank"><img src="/attachimages/11910_конф+4.jpg" alt="" /></a></p>
+
+<p><strong>vlad72</strong> 24-11-2012</p>
+
+<p>на скринах ниже представлено :(,как присваивается имя реальному выходу ПЛК - vihod_2 или аналоговому входу - vedro.Это работа в разделе “РЕСУРСЫ” ; -“конфигурация ПЛК”. Также скрин кусочка основной ПО,где показана связь переменной VIH_3 т.е. выхода ( клапан) с выходами а именно VIH_2_2, VIH_4_4,…. VIH_8_8 и т.д. Написана на LD, т.е. видно что схема состоит из “контакта” (ВХ) и “обмотки”(ВЫХ) реле. При замыкании любого из контактов на входе, обозначенных VIH_N_N срабатывает “обмотка” ( замыкается вых.ПЛК) ……..срабатывает соленоид……В визуале зеленый элипс станет синим.. <em>Bravo</em></p>
+
+<p><a href="https://t.me/ponics_ru_files/9578" target="_blank"><img src="/attachimages/11912_ТЕЛО_ПРГРАММЫ.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9579" target="_blank"><img src="/attachimages/11914_КОНФИГ_АНАЛОГОВОГО_ВХОДА.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9580" target="_blank"><img src="/attachimages/11916_КОНФИГ_ДИСКРЕТНОГО ВЫХОДА.jpg" alt="" /></a></p>
+
+<p><strong>vlad72</strong> 24-11-2012</p>
+
+<p><a href="http://www.fayloobmennik.net/2386669" target="_blank">kurs_CoDeSys_2.pdf</a></p>
+
+<p><a href="http://www.fayloobmennik.net/2386686" target="_blank">kurs_CoDeSys_1.pdf</a></p>
+
+<p>…одним из модераторов форума начата (…и уже видимо продолжения</p>
+
+<p>не будет. <em>???</em>…) книга ;-“Простое и понятное программирование в CoDeSys”</p>
+
+<p>Рассказано с точки зрения потребителя,а не изготовителя ПЛК, самое</p>
+
+<p>начало работы с ОВЕНом и пример ПО….</p>
+
+<p><a href="http://www.fayloobmennik.net/2386695" target="_blank">progr_mk.djvu</a></p>
+
+<p><a href="http://www.fayloobmennik.net/2386706" target="_blank">Программируемые логические контроллеры.djvu</a></p>
+
+<p>а в этих сЦылках две кнгиги рекомендованные выше… :-[</p>
+
+<p><strong>valery</strong> 24-11-2012</p>
+
+<blockquote>
+  <p>А кто-нибудь может посоветовать, где перистальтические помпы в России лучше купить ? Производительностью литра три в час…</p>
+</blockquote>
+
+<p>… вот любопытно. А если такую перистальтическую помпу - капельницей заменить ?</p>
+
+<p>Одна двухлитровая накапает в час ровно два литра. Две - четыре. Точность - высокая, стоят - дешево (копейки).</p>
+
+<p>За три минуты по таймеру - накапает 100 мл. :-\ Лично для моих потребностей - возможная “погрешность” вполне вписывается в требования.</p>
+
+<p><strong>valery</strong> 24-11-2012</p>
+
+<p>Хм …</p>
+
+<p>Три самых дешевых насосика с тремя капельницами … вот почти и растворный узел на трех Дозатронах … :-\</p>
+
+<p><strong>valery</strong> 24-11-2012</p>
+
+<p>Извиняюсь … По инерции не в ту тему залез … :-[</p>
+
+<p><strong>vlad72</strong> 24-11-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>А кто-нибудь может посоветовать, где перистальтические помпы в России лучше купить ? Производительностью литра три в час…</p>
+  </blockquote>
+
+  <p>… вот любопытно. А если такую перистальтическую помпу - капельницей заменить ?</p>
+
+  <p>Одна двухлитровая накапает в час ровно два литра. Две - четыре. Точность - высокая, стоят - дешево (копейки).</p>
+
+  <p>За три минуты по таймеру - накапает 100 мл. :-\ Лично для моих потребностей - возможная “погрешность” вполне вписывается в требования.</p>
+</blockquote>
+
+<p>…..может проще использовать обычный аквариумный воздушный</p>
+
+<p>компрессор и электро-клапана :-[ ( ВАЗовские например..) Клапана будут стравливать воздух когда подача должна быть прекращена.. <em>8)</em>.Такая схема подачи реализована была у Алекса в одной из первых установок… :(.</p>
+
+<p><a href="https://t.me/ponics_ru_files/9581" target="_blank"><img src="/attachimages/11918_ДОЗАТОРЫ ВМЕСТО КАПЕЛЬНИЦЫ.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 24-11-2012</p>
+
+<p>Может и проще, не знаю.</p>
+
+<p>Не вполне ясно, насколько точно подавались компоненты раствора под давлением воздушной помпы …, но реализовано все достаточно</p>
+
+<p>остроумно. <em>8)</em></p>
+
+<p><strong>vlad72</strong> 24-11-2012</p>
+
+<p>вот реализация в ОВЕНе.1скрин тело программы…..2ой это раздел</p>
+
+<p>где присваиваются имена реальным вх/ выходам ПЛК..здесь квадратики</p>
+
+<p>в 1 и 2ом рисунках замкнутые вх/выхода….прогу могу залить на</p>
+
+<p>файлообменник ..посмотрите наглядно, как работает простейшая схема</p>
+
+<p>:-\</p>
+
+<p>В разделе визуализации наблюдаем; при нажатии на klapan_1 и KOMPRESSOR они переходят в красный цвет, что говорит о включении</p>
+
+<p>нагрузки <em>Bravo</em></p>
+
+<p><a href="https://t.me/ponics_ru_files/9582" target="_blank"><img src="/attachimages/11920_дОЗАТОРЫ ВМЕСТО КАПЕЛЬНИЦЫ_3.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9583" target="_blank"><img src="/attachimages/11922_дОЗАТОРЫ ВМЕСТО КАПЕЛЬНИЦЫ_4.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9584" target="_blank"><img src="/attachimages/11924_дОЗАТОРЫ ВМЕСТО КАПЕЛЬНИЦЫ_2.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9585" target="_blank"><img src="/attachimages/11926_дОЗАТОРЫ ВМЕСТО КАПЕЛЬНИЦЫ_7.jpg" alt="" /></a></p>
+
+<p><strong>vlad72</strong> 24-11-2012</p>
+
+<blockquote>
+  <p>Может и проще, не знаю.</p>
+
+  <p>Не вполне ясно, насколько точно подавались компоненты раствора под давлением воздушной помпы …, но реализовано все достаточно</p>
+
+  <p>остроумно. <em>8)</em></p>
+</blockquote>
+
+<p>…..если речь идет о литрах в час, то я думаю можно без проблемм</p>
+
+<p>откалибровать хоть по времени…..в визуале уже нарисованы</p>
+
+<p>таймеры задержки выключения, остается только внести их в</p>
+
+<p>программу ,т.е. в цепь между входом klapan_1 и выходом PH_PLUS,</p>
+
+<p>получим при нажатии на кнопку klapan_1, в визуале срабатывание</p>
+
+<p>выхода PH_PLUS, но с задержкой которая определена Вами :o</p>
+
+<p><a href="http://www.fayloobmennik.net/2386836" target="_blank">PRIMER_DLY_FORUMA.zip</a></p>
+
+<p>Вот этот пример в формате .ZIP Предварительно,конечно необходимо</p>
+
+<p>скачать и установить CoDeSys_v23926…попробую залить в комплекте</p>
+
+<p>с программой удаленного доступа к рабочему столу…чЁта пока не получается… :'(</p>
+
+<p><strong>alexxx</strong> 24-11-2012</p>
+
+<blockquote>
+  <p>… вот любопытно. А если такую перистальтическую помпу - капельницей заменить ?</p>
+</blockquote>
+
+<p>Разъест</p>
+
+<p><strong>gena1</strong> 24-11-2012</p>
+
+<p>Не разъест !!! У меня - капельницы российские без воздушки, всё прекрасно. Есс-но 100% кислоту не лью. Всё остальное гидропонное льётся прекрасно через капельчный же фильтр - только его меняю раз в несколько месяцев.</p>
+
+<p><strong>vlad72</strong> 24-11-2012</p>
+
+<p>:-[ в электролите замачиваю, три месяца уже в банке…можно</p>
+
+<p>на практике убедиться какой материал более стойкий. Так было</p>
+
+<p>обнаружено что вот такие дозаторы не подходят для эксплуатации</p>
+
+<p>поскольку изготовлены из нейлона, а его растворяет кислота… :'( :'(</p>
+
+<p><a href="http://www.kipspb.ru/catalog/doziruyuschie-nasosy/element340472.php" target="_blank">http://www.kipspb.ru/catalog/doziruyuschie-nasosy/element340472.php</a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9586" target="_blank"><img src="/attachimages/11928_ycmpbig.jpg" alt="" /></a></p>
+
+<p><strong>Alex123</strong> 25-11-2012</p>
+
+<blockquote>
+  <p>:-[ в электролите замачиваю, три месяца уже в банке…можно</p>
+
+  <p>на практике убедиться какой материал более стойкий. Так было</p>
+
+  <p>обнаружено что вот такие дозаторы не подходят для эксплуатации</p>
+
+  <p>поскольку изготовлены из нейлона, а его растворяет кислота… :'( :'(</p>
+
+  <p><a href="http://www.kipspb.ru/catalog/doziruyuschie-nasosy/element340472.php" target="_blank">http://www.kipspb.ru/catalog/doziruyuschie-nasosy/element340472.php</a></p>
+</blockquote>
+
+<p>А подскажите Влад, эти насосики достаточно точно дозируют ? И как они в плане надежности ?</p>
+
+<p><strong>vlad72</strong> 25-11-2012</p>
+
+<p>…дозируют они очень точно <em>8)</em> <em>8)</em>, … НО …. предназначены для работы с водой. <em>???</em> На снимке видно, на насосе белый налет :o ( сорри за качество :)) &gt;:( это его разьело… :'(</p>
+
+<p>….еще один снимок показывает какие коннекторы ( соединители;</p>
+
+<p>тройники,колена….) я применил для работы с соленоидами ( на</p>
+
+<p>снимке голубой), а также трубка …и нож это достаточный набор,</p>
+
+<p>что бы соединить всё по схеме показанной ранее на одном из скринов.</p>
+
+<p>( визуал КоДеСис).</p>
+
+<p>И последний снимок - установка, общий смысл можно угадать. На</p>
+
+<p>основании из крышки от компьютера закреплены соленоиды ( встречно, поскольку, напомню, такие клапана работают в одну</p>
+
+<p>сторону, а также им необходимо давление) затем соеденино все</p>
+
+<p>пластиковыми трубками с насосом…надето на прямоугольное ведро.</p>
+
+<p>Оно и есть - контрольная емкость.В нее поступает вода из 60литровой</p>
+
+<p>бочки, где она аэрируется (подготавливается).В бочку ,в свою очередь, вода поступает после аквафильтра, работой которого заведует клапан НЕПТУН ,на основании датчика уровня бочки….</p>
+
+<p>В комплекте ещё есть ультрафиолетовая лампа (стоит там же,</p>
+
+<p>на крышке) , что бы не покрывались налетом электроды…..</p>
+
+<p>Дозация 6 перильстатических помп WELKO, по 3шт на каждой стороне</p>
+
+<p>крышки.Высота <em>8)</em>8 см. :o</p>
+
+<p><a href="https://t.me/ponics_ru_files/9587" target="_blank"><img src="/attachimages/11930_дозатор поршневой.bmp" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9588" target="_blank"><img src="/attachimages/11932_коннекторы.bmp" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9589" target="_blank"><img src="/attachimages/11934_УЗЕЛ.bmp" alt="" /></a></p>
+
+<p><strong>gena1</strong> 27-11-2012</p>
+
+<p>В каждом городе есть магазины отопительного оборудования, у них полно готовых контроллеров на любой кошелек и вкус.</p>
+
+<p>Например, мне нравятся “батареечные” типы - типа такого: <a href="http://www.climatik.su/kotel/chug/avomatika.html/nid/14728" target="_blank">http://www.climatik.su/kotel/chug/avomatika.html/nid/14728</a> , ставится перед каждой батареей (узлом батарей) и т.д. (куча модификаций с доп выводами и устройствами, куча брендов, куча ноунейм производителей). Недельное программирование, работа от пальчиковых батареек - это не просто контроллер, но и сам сервопривод - который открывает и закрывает батарею, оставляя поток достаточный для поддержания заданной программой температуры.</p>
+
+<p>Это не для антирекламы, это к тому, что зачем изобретать велосипед, когда самолёт уже сделан - нужно просто знать где искать.</p>
+
+<p><strong>orgail</strong> 28-11-2012</p>
+
+<p>это устройство к теплицам имеет мало отношения, практически бесполезное</p>
+
+<p>вы ИК-пленкой теплицу отапливать собираетесь или тенами? и что вы обогреете пусть даже 12 кватами?</p>
+
+<p>даже простой предложенный термостат промышленного изготовления даст вашему устройству и в хвост и в гриву</p>
+
+<p>vikont, как бы вам сказать, чтоб не обидеть….</p>
+
+<p>прерывайте уже свои потоки рекламы вечно сомнительной продукции на данном форуме</p>
+
+<p><strong>gena1</strong> 28-11-2012</p>
+
+<blockquote>
+  <p>характеристики и на то для чего они собственно предназначены! Я уже помолчу о цене самолетика :) Прежде чем создавать новое устройство, мы посмотрели что имеется на рынке и их цену. Нет ни одного устройства на 4-е канала, с мощностью до 3,5 КВт на каждый канал, да еще с ночным режимом.</p>
+</blockquote>
+
+<p>Какие 3,5 квт ? Мощность отопительных котлов (если это электрические, для которых я дал ссылку) десятки киловат !!! Жидкотопливные и газовые - сотни и тысячи киловатт. Для всего этого есть эти готовые ДЕШЕВЫЕ устройства.</p>
+
+<p>Не 4-ре канала? Полноценные контроллеры на бесконечное (расширяемое) кол-во каналов - всё есть по ссылке.</p>
+
+<p>Какой ночной режим ? :) Там даже “праздники” можно программировать, не то, что просто ночь :)</p>
+
+<p>Но я не против “извращений”, я сам выращиваю на аэропонике, прекрасно осознавая, что это просто трата времени, зато интересно :)</p>
+
+<p><strong>FFR</strong> 28-11-2012</p>
+
+<p>Ставить в теплице несколько контроллеров, например один для регулирования температуры, второй - освещенности, третий Ph-EC, четвертый - влажности, пятый для полива, шестой для вентиляции и т.д. - это величайшая глупость. В теплице должен стоять один контроллер, но для теплицы. С возможностью управления всеми параметрами и с возможностью корреляции отдельных параметров и управления микроклиматом, орошением и всеми прочим делами с учетом всех параметров.</p>
+<blockquote>
+  <p>Но я не против “извращений”, я сам выращиваю на аэропонике, прекрасно осознавая, что это просто трата времени, зато интересно :)</p>
+</blockquote>
+
+<p>Вот тут - я полностью согласен. Если это хобби, если занятие гидропоникой или аэропоникой, это просто занятие для удовольствия или для развлечения, тут можно лепить все что угодно и фантазировать без границ. Хоть с десятком контроллеров, хоть с написанием собственных гениальных программ… :)</p>
+
+<p><strong>orgail</strong> 28-11-2012</p>
+
+<p>для серьезного придумали многочисленные варианты промышленно-выпускаемых программируемых логических контроллеров с кучей интерфейсных плат, из которых конечно же специализированные компании могут собрать хоть систему управления конкретно теплицами и иметь опыт эксплуатации этой системы в заданных условиях. никто не будет самостоятельно придумывать контроллер для теплиц - все сейчас делают на основе промышленной автоматики - просто лэбл скрывает многое.</p>
+
+<p>а для простых людей есть не менее полезные штуки малой автоматизации опять же промышленные и тут не грех разбивать систему на отдельные компоненты, ремонтопригоднее и с заменой проблем не будет.</p>
+
+<p>а вот вещи кустарной сборки конечно же полезны, но хозяин должен быть в курсе - что-куда.</p>
+
+<p><strong>Oxy</strong> 28-11-2012</p>
+
+<p>Так крепко пахнуло Совком, тягуче-тягуче. Высокой концентрации… <em>crazy</em> Совок… Ностальжи :)</p>
+
+<p><strong>GEORG53</strong> 28-11-2012</p>
+
+<blockquote>
+  <p>для серьезного придумали многочисленные варианты промышленно-выпускаемых программируемых логических контроллеров с кучей интерфейсных плат, из которых конечно же специализированные компании могут собрать хоть систему управления конкретно теплицами и иметь опыт эксплуатации этой системы в заданных условиях. никто не будет самостоятельно придумывать контроллер для теплиц - все сейчас делают на основе промышленной автоматики - просто лэбл скрывает многое.</p>
+</blockquote>
+
+<p>Весь вопрос в цене… Профессиональные системные интеграторы без труда соберут систему для теплиц на профессиональных же контроллерах, выбор большой. Вопрос в уровне ценовой доступности таких решений для рядового фермера, ну, пусть и не очень рядового… Да и для гроверов- любителей есть какие-то предложения систем автоматики в сборе, по доступной цене, и без “кулибничества”?</p>
+
+<p><strong>GEORG53</strong> 28-11-2012</p>
+
+<blockquote>
+  <p>Так крепко пахнуло Совком, тягуче-тягуче. Высокой концентрации… <em>crazy</em> Совок… Ностальжи :)</p>
+</blockquote>
+
+<p>OXY, интересно было бы узнать, что именно вы называете “совком” высокой концентрации?</p>
+
+<p><strong>Alex123</strong> 29-11-2012</p>
+
+<blockquote>
+  <p>А какая разница между хобби и профессией? Только в графике работы… :) Лук выгоняю профессионально на стеллажах и весь год использовал ИК пленку. Из опыта и родился терморегулятор. Но если мой опыт никому не нужен, тогда топите печки и ставьте котлы на десятки килловат… кто ж мешает?</p>
+</blockquote>
+
+<p>Елки-палки, а у меня как раз была проблема в том, чем бы таким малогабаритным и слабонагревающимся поддержать нужную температуру в малом объеме. Пришлось использовать в качестве нагревателя несколько последовательно соединеных многоваттных резисторов. А про ИК пленку я даже не подумал.</p>
+
+<p><strong>Alex123</strong> 29-11-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>для серьезного придумали многочисленные варианты промышленно-выпускаемых программируемых логических контроллеров с кучей интерфейсных плат, из которых конечно же специализированные компании могут собрать хоть систему управления конкретно теплицами и иметь опыт эксплуатации этой системы в заданных условиях. никто не будет самостоятельно придумывать контроллер для теплиц - все сейчас делают на основе промышленной автоматики - просто лэбл скрывает многое.</p>
+  </blockquote>
+
+  <p>Весь вопрос в цене… Профессиональные системные интеграторы без труда соберут систему для теплиц на профессиональных же контроллерах, выбор большой. Вопрос в уровне ценовой доступности таких решений для рядового фермера, ну, пусть и не очень рядового… Да и для гроверов- любителей есть какие-то предложения систем автоматики в сборе, по доступной цене, и без “кулибничества”?</p>
+</blockquote>
+
+<p>На гроверах-любителях продавцы стока процентов наваривают, что профессиональные системные интеграторы нервно курят в сторонке. Хотя и они тоже далеко не ангелы…</p>
+
+<p><strong>orgail</strong> 29-11-2012</p>
+
+<p>vikont, Вы можете топить хоть пленкой, хоть дровами, если вам хватает отапливаться 12 кватт - либо теплица маловата, либо это бункер какой, либо климат хороший, но опять же размер отапливаемого совсем мал</p>
+
+<p>какие размеры вашей теплицы? какой покрывной материал? давайте посчитаем как Вы отапливаетесь 12 кватами?</p>
+
+<p><strong>ProRus</strong> 29-11-2012</p>
+
+<blockquote>
+  <p>И температуру хорошо держит и растениям комфортно от ИК лучей.</p>
+</blockquote>
+
+<p>А давайте лучше про это поговорим.</p>
+
+<p>Какова температура за бортом?</p>
+
+<p>Какая температура внутри?</p>
+
+<p>Как установлена пленка или нагреватели?</p>
+
+<p>Подробнее, подробнее пожалуйста. ;)</p>
+
+<p>Я тоже хотел попрактиковать, но руки так и не дошли…</p>
+
+<p><strong>ProRus</strong> 29-11-2012</p>
+
+<blockquote>
+  <p>vikont, Вы можете топить хоть пленкой, хоть дровами, если вам хватает отапливаться 12 кватт - либо теплица маловата, либо это бункер какой, либо климат хороший, но опять же размер отапливаемого совсем мал</p>
+
+  <p>какие размеры вашей теплицы? какой покрывной материал? давайте посчитаем как Вы отапливаетесь 12 кватами?</p>
+</blockquote>
+
+<p>Я думаю это возможно…</p>
+
+<p>Я вообще не отапливал (только в ночное время), света столько, что хватало на поддержание нужной температуры даже с проветриванием.</p>
+
+<p>Конечно если разложить свет на киловатты, то прилично выходит.</p>
+
+<p>Помещение конечно не большое (45м2) и за бортом +5, но все же…</p>
+
+<p>Ну и забыл сказать что полная светокультура в “бункере”. ;)</p>
+
+<p><strong>ProRus</strong> 29-11-2012</p>
+
+<p>Пришел мне ПЛК150-220.У-М. Диск в комплекте имеет трещину, соответственно не читаем.</p>
+
+<p>Где я могу взять информацию с данного диска? Или кто поможет?</p>
+
+<p><strong>valery</strong> 29-11-2012</p>
+
+<p>Я пользуюсь ИК пленкой.</p>
+
+<p>Отношение - двойственное.</p>
+
+<p>Обогреваться - не очень серьезно.</p>
+
+<p>Емкости на стеллажах согревать - вполне достаточно.</p>
+
+<p>На пол под лотки и маты с субстратом … :-\ не очень нравится. Среднесуточную температуру практически не поднимает, “разогревает” самый низ стебля растения - что совершенно ни к чему. Понапрасну перегревает субстрат, что плохо для дыхания.</p>
+
+<p>Зато вечером удобно - снижая свет и охлаждая помещение можно быстро разогреть субстрат и закачать воду в плоды ( в период набора веса) - воплощение несколько иное, но сама идея описана “Ринатом” на Гринтоке …</p>
+
+<p>Мое мнение - как обогрев “не очень”, как некоторое “подспорье” - вполне.</p>
+
+<p><strong>Alex123</strong> 29-11-2012</p>
+
+<blockquote>
+  <p>Пришел мне ПЛК150-220.У-М. Диск в комплекте имеет трещину, соответственно не читаем.</p>
+
+  <p>Где я могу взять информацию с данного диска? Или кто поможет?</p>
+</blockquote>
+
+<p>На сайте производителя не смотрели ? <a href="http://www.owen.ru" target="_blank">www.owen.ru</a> - там есть все программное обеспечение и всякие мануалы</p>
+
+<p><a href="http://www.owen.ru/soft" target="_blank">http://www.owen.ru/soft</a></p>
+
+<p><strong>Alex123</strong> 29-11-2012</p>
+
+<blockquote>
+  <p>Я пользуюсь ИК пленкой.</p>
+
+  <p>Отношение - двойственное.</p>
+
+  <p>Обогреваться - не очень серьезно.</p>
+
+  <p>Емкости на стеллажах согревать - вполне достаточно.</p>
+
+  <p>На пол под лотки и маты с субстратом … :-\ не очень нравится. Среднесуточную температуру практически не поднимает, “разогревает” самый низ стебля растения - что совершенно ни к чему. Понапрасну перегревает субстрат, что плохо для дыхания.</p>
+
+  <p>Зато вечером удобно - снижая свет и охлаждая помещение можно быстро разогреть субстрат и закачать воду в плоды ( в период набора веса) - воплощение несколько иное, но сама идея описана “Ринатом” на Гринтоке …</p>
+
+  <p>Мое мнение - как обогрев “не очень”, как некоторое “подспорье” - вполне.</p>
+</blockquote>
+
+<p>Валера, а воздушный зазор между пленкой и лотками имеется ?</p>
+
+<p><strong>ProRus</strong> 29-11-2012</p>
+
+<blockquote>
+  <p>На сайте производителя не смотрели ? <a href="http://www.owen.ru" target="_blank">www.owen.ru</a> - там есть все программное обеспечение и всякие мануалы</p>
+</blockquote>
+
+<p>Я не знаю что должно быть на диске…</p>
+
+<p><strong>valery</strong> 29-11-2012</p>
+
+<blockquote>
+  <p>Валера, а воздушный зазор между пленкой и лотками имеется ?</p>
+</blockquote>
+
+<p>Да. Пленка непосредственно на полу, а лотки … ну типа на самодельных скамеечках или как их обозвать … в общем длинные подставки из металлического</p>
+
+<p>уголка с ножками на винтах … для выравнивания.</p>
+
+<p>Сейчас - на подвесах (нравится - обалдеть. я не только маты, но и проточные лотки подвесил - ну просто ОЧЕНЬ хорошо выравнивать !!!.</p>
+
+<p>От пола до дна лотков или матов - по разному - от 15 до 30 см. Примерно :) ( штангенциркуль где-то в ботве затерялся … :( :( :( )</p>
+
+<p><strong>artmaximus</strong> 29-11-2012</p>
+
+<p>( штангенциркуль где-то в ботве затерялся … :( :( :( )</p>
+
+<p>…маузер…(с) как его моя мама называла, когда работала на заводе токорем :D :D :D :</p>
+
+<p><strong>valery</strong> 29-11-2012</p>
+
+<p>:)</p>
+
+<p>Похож.</p>
+
+<p><strong>artmaximus</strong> 29-11-2012</p>
+
+<p>…ой :-[</p>
+
+<ul>
+  <li>токарем</li>
+</ul>
+
+<p><strong>vlad72</strong> 29-11-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>На сайте производителя не смотрели ? <a href="http://www.owen.ru" target="_blank">www.owen.ru</a> - там есть все программное обеспечение и всякие мануалы</p>
+  </blockquote>
+
+  <p>Я не знаю что должно быть на диске…</p>
+</blockquote>
+
+<p>Для начала почитайте книжку ( она в комплекте с контроллером должна быть) называется ;_” РЭ” - Руководство по эксплуатации….</p>
+
+<p>там в конце описания должна быть таблица документов ( в формате</p>
+
+<p>pdf) приложение В….вот так выглядет скрин таблицы….В книжке</p>
+
+<p>последовательно описаны шаги - чЁ куда вТыКать…и чЁ сКачаТь,</p>
+
+<p>если чЁ…. Для начала скачайте программу установки -“ Среда программирования CoDeSyS “ и - “ Таргеты “ ( они нужны</p>
+
+<p>для работы Вашего ПК с ПЛК) … и приступайте к работе в режиме</p>
+
+<p>эмуляции (это когда -“типа есть ПЛК”…) …потом “свяжитесь” с ПЛК</p>
+
+<p>……….и..и..и……можете “поиграть” програмкой управления вх/вых…..</p>
+
+<p>ВОТ сЦыЛка <em>__</em> 1)))).Скачайте и установите у себя на компе русифицированную версию ..именно вот эту - CoDeSys версия 2.3.9.36 (Русифицированная версия), для этого сходите по ссылке <a href="http://www.owen.ru/catalog/55710393" target="_blank">http://www.owen.ru/catalog/55710393</a> и нажмитете - “скачать (exe)”</p>
+
+<p>2))))).затем скачайте отсюда - <a href="http://www.owen.ru/soft/29331214" target="_blank">http://www.owen.ru/soft/29331214</a></p>
+
+<ul>
+  <li>нажать “Target-file - скачать” затем посмотрите подробные ВИДЕО-УРОКИ…здесь…<a href="http://www.owen.ru/catalog/81399447" target="_blank">http://www.owen.ru/catalog/81399447</a></li>
+</ul>
+
+<p>…3)))) ДОКУМЕНТАЦИЯ…почитать…..</p>
+
+<p><a href="http://www.owen.ru/catalog/51162335" target="_blank">http://www.owen.ru/catalog/51162335</a> ..это список, как раз всего что</p>
+
+<p>НАДа для включения ПЛК Первые шаги с CoDeSys</p>
+
+<p>скачать</p>
+
+<p>Руководство пользователя по программированию ПЛК в CoDeSys</p>
+
+<p>скачать</p>
+
+<p>Визуализация CoDeSys.</p>
+
+<p>Дополнение к руководству пользователя по программированию ПЛК в CoDeSys</p>
+
+<p>скачать</p>
+
+<p>Конфигурирование области ввода/вывода ПЛК.</p>
+
+<p>Руководство пользователя для v2.0</p>
+
+<p>скачать</p>
+
+<p>Конфигурирование области ввода/вывода ПЛК.</p>
+
+<p>Руководство пользователя</p>
+
+<p>скачать========================================</p>
+
+<p>…..вот как-то таккк……</p>
+
+<p><a href="https://t.me/ponics_ru_files/9590" target="_blank"><img src="/attachimages/11943_перечень докуменьов.jpg" alt="" /></a></p>
+
+<p><strong>koval.sergei</strong> 29-11-2012</p>
+
+<p>ProRus.</p>
+
+<p>А ЛУЧШЕ , видео посмотри там есть у овна, а потом качай и устанавливай прогу.</p>
+
+<p><strong>vlad72</strong> 30-11-2012</p>
+
+<blockquote>
+  <p>ProRus.</p>
+
+  <p>А ЛУЧШЕ , видео посмотри там есть у овна, а потом качай и устанавливай прогу.</p>
+</blockquote>
+
+<p>ВИДЕО-УРОКИ - <em>8)</em> <a href="http://forum.ponics.ru/go.php?url=aHR0cDovL3d3dy5vd2VuLnJ1L2NhdGFsb2cvODEzOTk0NDc=" target="_blank">http://forum.ponics.ru/go.php?url=aHR0cDovL3d3dy5vd2VuLnJ1L2NhdGFsb2cvODEzOTk0NDc=</a></p>
+
+<p>ДОКи по видео</p>
+
+<p><a href="https://t.me/ponics_ru_files/9591" target="_blank"><img src="/attachimages/11945_ДОКИ.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9592" target="_blank"><img src="/attachimages/11947_САЙТ ОВЕН.jpg" alt="" /></a></p>
+
+<p><strong>Rossich</strong> 02-12-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>это устройство к теплицам имеет мало отношения, практически бесполезное</p>
+
+    <p>вы ИК-пленкой теплицу отапливать собираетесь или тенами? и что вы обогреете пусть даже 12 кватами?</p>
+
+    <p>даже простой предложенный термостат промышленного изготовления даст вашему устройству и в хвост и в гриву</p>
+
+    <p>vikont, как бы вам сказать, чтоб не обидеть….</p>
+
+    <p>прерывайте уже свои потоки рекламы вечно сомнительной продукции на данном форуме</p>
+  </blockquote>
+
+  <p>ХМ! А я и отапливаю ИК пленкой! И на стеллажах ее использую… Или на этом форуме такое в диковинку?</p>
+</blockquote>
+
+<p>Виконт а можно фото ваших стеллажей с пленкой. Я вижу человек Вы состоятельный, наверное и система у Вас крутая?</p>
+
+<p><strong>ProRus</strong> 03-12-2012</p>
+
+<blockquote>
+  <p>ProRus.</p>
+
+  <p>А ЛУЧШЕ , видео посмотри там есть у овна, а потом качай и устанавливай прогу.</p>
+</blockquote>
+
+<p>Спасибо, Друзья!!!</p>
+
+<p>Мне Овен уже выслал CD почтой. Фирма однако. Ну а я никуда не тороплюсь. ;)</p>
+
+<p><strong>billbill</strong> 23-01-2013</p>
+
+<blockquote>
+  <p><img src="http://forum.ponics.ru/index.php?action=dlattach;topic=1559.0;attach=11918" alt="" /></p>
+
+  <p>…..может проще использовать обычный аквариумный воздушный</p>
+
+  <p>компрессор и электро-клапана :-[ ( ВАЗовские например..) Клапана будут стравливать воздух когда подача должна быть прекращена.. <em>8)</em>.Такая схема подачи реализована была у Алекса в одной из первых установок… :(.</p>
+</blockquote>
+
+<p>скажите как в данной схеме реализована дозировка?</p>
+
+<p>ведь очень много факторов при пневмо системе. начиная от того что д.б. “идеальная” герметичность и к тому же при “уходе” химии образуется воздушный буфер. отсюда вывод - даже приблизительной точности не добиться при воздушном способе %)</p>
+
+<p>и что можете предложить в качестве “клапан распределитель”?</p>
+
+<p><strong>alexxx</strong> 30-01-2013</p>
+
+<p>billbill, вообще в данной схеме точность дозирования обеспечивается показаниями датчика EC.</p>
+
+<p>В качестве клапанов распределителей - любые трехходовые шаровые краны с электроприводом.</p>
+
+<p><strong>ProRus</strong> 30-04-2013</p>
+
+<p>Появилось немного свободного времени.</p>
+
+<p>Продолжил разбираться с автоматикой.</p>
+
+<p>Научил Arduino:</p>
+
+<ol>
+  <li>
+    <p>Собирать температуру и влажность.</p>
+  </li>
+  <li>
+    <p>Запихивать данные в базу данных MySQL.</p>
+  </li>
+  <li>
+    <p>Выводить данные из MySQL в браузер при помощи PHP.</p>
+  </li>
+</ol>
+
+<p>Медленно, но верно мы идем к победе…</p>
+
+<p>Каким образом вывести график из полученных данных в браузер?</p>
+
+<p>Разбираюсь с <a href="http://www.humblesoftware.com/flotr2/index" target="_blank">Flotr2</a>.</p>
+
+<p>Может есть другие способы?</p>
+
+<p>Какие датчики всеж использовать для EC, pH, CO2?</p>
+
+<p><strong>Vad</strong> 30-04-2013</p>
+
+<blockquote>
+  <p>Выводить данные из MySQL в браузер при помощи PHP.</p>
+</blockquote>
+
+<p>нюх-нюх…. - пахнет линуксом ;)</p>
+
+<p>зачем mysql? зачем так тяжело?</p>
+
+<p>нам гвоздик обойный забить.. :-[ а не костыль в шпалу ;)</p>
+
+<blockquote>
+  <p>Разбираюсь с Flotr2.</p>
+</blockquote>
+
+<p>Flotr2 - это “украшение”.. “гаджет”… одним словом “биогумус”. <em>crazy</em></p>
+
+<p>если нужен “прибор”.. берите rrdtool <a href="http://oss.oetiker.ch/rrdtool/" target="_blank">http://oss.oetiker.ch/rrdtool/</a></p>
+
+<p>за одно .. и от mysql отстанете :)</p>
+
+<p><strong>Strangeman</strong> 30-04-2013</p>
+
+<p>Почему Линуксом? Народ давно под Виндой Денвер юзает. Все ставится и настраивается в один клик.</p>
+
+<p><strong>gena1</strong> 30-04-2013</p>
+
+<blockquote>
+  <p>Научил Arduino:</p>
+
+  <ol>
+    <li>Собирать температуру и влажность.</li>
+  </ol>
+</blockquote>
+
+<p>Не поделитесь ссылкой на “основы” ?</p>
+
+<p>И для всех вопрос - как заставить работать в одном растворе 2 датчика ph и ec одновременно ? Подавать питание попеременно ?</p>
+
+<p><strong>Strangeman</strong> 30-04-2013</p>
+
+<p>Гальванически развязывать.</p>
+
+<p><strong>ProRus</strong> 06-05-2013</p>
+
+<p>Ну вот научил строить графики при помощи Flotr2 из базы данных.</p>
+
+<p>Вроде ничего так получается…</p>
+
+<blockquote>
+  <p>если нужен “прибор”.. берите rrdtool <a href="http://forum.ponics.ru/go.php?url=aHR0cDovL29zcy5vZXRpa2VyLmNoL3JyZHRvb2wv" target="_blank">oss.oetiker.ch/rrdtool/</a></p>
+
+  <p>за одно .. и от mysql отстанете :)</p>
+</blockquote>
+
+<p>Не очень пока понял как эта штука работает… Но почитаю. Спасибо !!!</p>
+
+<p>Я так понял можно сделать полностью автономный прибор без использования баз данных и дополнительных серверов, хотя с данными из базы данных потом можно достойно манипулировать.</p>
+
+<p><a href="https://t.me/ponics_ru_files/9593" target="_blank"><img src="/attachimages/13311_temperature.jpg" alt="" /></a></p>
+
+<p><strong>ProRus</strong> 07-05-2013</p>
+
+<blockquote>
+  <p>Не поделитесь ссылкой на “основы” ?</p>
+</blockquote>
+
+<p>На <a href="http://www.arduino.cc/" target="_blank">официальном</a> сайте много полезного.</p>
+
+<p><a href="http://arduino.ru" target="_blank">Сайт</a> на русском языке для начала…</p>
+
+<p>Ну и шикарный <a href="http://habrahabr.ru/hub/arduino/" target="_blank">сайт</a> с которого я много чего подчерпнул.</p>
+
+<p>Ну и через <a href="https://www.google.ru/search?q=arduino+%D0%B2%D0%BB%D0%B0%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C+%D1%82%D0%B5%D0%BC%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0" target="_blank">Гугла</a> найдете очень многое.</p>
+
+<p><strong>ProRus</strong> 13-05-2013</p>
+
+<p>С ардуиной побаловался, решил попробовать ПЛК150.</p>
+
+<p>Вот так вот с маху не получилось… Не очень понятен сам подход.</p>
+
+<p>Читаю уроки, делаю примеры, получается, а вот сам смысл ухватить не могу, видимо мозг по другому работает…</p>
+
+<p>Если с ардуиной все сразу стало понятно, то с ПЛК туговато…</p>
+
+<p>Укажите на простой пример, любой но наглядный. Пока не вижу, не могу понять…</p>
+
+<p>Например:</p>
+
+<p>Как и какой датчик подключить для измерения температуры и вывести данные в CodeSys?</p>
+
+<p><strong>alexxx</strong> 13-05-2013</p>
+
+<p>Да вроде там всё просто… Во вкладке конфигурации конфигурируем подключенное железо, во вкладке POU пишем программу, во вкладке визуализации выводим данные на экран.</p>
+
+<p>Датчики температуры можно подключать любые.</p>
+
+<p><strong>ProRus</strong> 13-05-2013</p>
+
+<blockquote>
+  <p>Датчики температуры можно подключать любые.</p>
+</blockquote>
+
+<p>В инструкции к ПЛК написано:</p>
+
+<p>Типы поддерживаемых датчиков</p>
+
+<blockquote>
+  <p>Термосопротивления:</p>
+
+  <p>ТСМ50М, ТСП50П, ТСМ100М, ТСП100П,</p>
+
+  <p>ТСН100Н, ТСМ500М, ТСП500П, ТСН500Н,</p>
+
+  <p>ТСП1000П, ТСН1000Н</p>
+
+  <p>Термопреобразователи сопротивления:</p>
+
+  <p>ТХК (L), ТЖК (J), ТНН (N), ТХА (K), ТПП (S),</p>
+
+  <p>ТПП (R), ТПР (В), ТВР (А-1), ТВР (А-2)</p>
+</blockquote>
+
+<p>А у меня к примеру есть сейчас в наличии</p>
+
+<ol>
+  <li>
+    <p>DS18B20+, термометр, 0.5C,Ind,TO92,датчик.</p>
+  </li>
+  <li>
+    <p>HIH-4000-004PBF, датчик влажности отн.(HIH-3610-004),5В,3.5%,1.27мм, датчик.</p>
+  </li>
+</ol>
+
+<p>Смогу я их прикрутить?</p>
+
+<p><strong>alexxx</strong> 13-05-2013</p>
+
+<p>Цифровые нельзя, только аналоговые или термосопротивления.</p>
+
+<p><strong>kulikovas1989</strong> 13-05-2013</p>
+
+<p>Товарищи, нашел отличную (на мой взгляд) весч, <a href="http://www.graviton.com.ua/" target="_blank">http://www.graviton.com.ua/</a> как я понимаю с помощью этих систем можно осуществить поддержание влажности и температуры в гроубоксах на заданном уровне, задать периодичное включение света и подключить еще пару исполнительных приборов?</p>
+
+<p><strong>ProRus</strong> 14-05-2013</p>
+
+<blockquote>
+  <p>Цифровые нельзя, только аналоговые или термосопротивления.</p>
+</blockquote>
+
+<p>Так как аналоговых датчиков нет, а искать пока не хочется (Arduino оказалась роднее, ПЛК пока на полку), решил прикрутить к Arduino 1-Ware.</p>
+
+<p>Прикрутил DS1820 совместно с DHT11. Вот такая получается разбежка в показателях (1,38 градуса).</p>
+
+<p>Humidity DHT11: 32.00 %</p>
+
+<p>Temperature DHT11: 28.00 oC</p>
+
+<p>Temperature DS1820: 26.62 oC</p>
+
+<p>1-Ware мне кажется приемлема для моих целей, так как на один кабель могу навешать множество различных датчиков, которых я планирую использовать мнооого. 1-Ware медленная шина конечно, но в принципе скорости мне не нужны, все равно опрос будет проводится раз в минуту а то и реже.</p>
+
+<p>Что думаете?</p>
+
+<p><strong>orgail</strong> 14-05-2013</p>
+
+<p>да главное поменьше кабелей, понадежнее</p>
+
+<p>а скорость в нашем деле… чай не ракеты на орбиту запускаем</p>
+
+<p><strong>alexxx</strong> 14-05-2013</p>
+
+<p>А мне так эти климатконтроли вообще не интересны…</p>
+
+<p><strong>ProRus</strong> 14-05-2013</p>
+
+<blockquote>
+  <p>А мне так эти климатконтроли вообще не интересны…</p>
+</blockquote>
+
+<p>Для меня (как для начинающего автоматизации) это основная задача как менее сложная.</p>
+
+<p>Далее конечно в планах полная автоматизация, хотя за растворными автоматами проще обратиться к вам (возможно так и сделаю в будущем). ;)</p>
+
+<p><strong>Strangeman</strong> 14-05-2013</p>
+
+<p>Вот так и выясняется ограниченность всяких готовых решений типа ПЛК.</p>
+
+<p>Самое интересное, что контроллер там наверняка AVR или PIC стоит, но вот среда разработки не поддерживает работу с конкретной шиной и “приехали”, а так как вся система проприетарная - добавить самостоятельно или с помощью сообщества/друга/знакомого не получится и остается ждать милости от разработчиков. Можно и не дождаться.</p>
+
+<p><strong>ProRus</strong> 14-05-2013</p>
+
+<blockquote>
+  <p>Вот так и выясняется ограниченность всяких готовых решений типа ПЛК.</p>
+</blockquote>
+
+<p>Да ладно вы так…</p>
+
+<p>Преимущества готовых решений в первую очередь в сертификатах, поддержке, гарантиях и т.д.</p>
+
+<p>ОВЕН - хорошая контора это видно не вооруженным взглядом.</p>
+
+<p>В моем случае дело в прокладке между ПЛК? :)</p>
+
+<p><strong>Vad</strong> 14-05-2013</p>
+
+<p>причем сдесь прокладка )) если овен не имеет поддержки 1-wire :)</p>
+
+<p><strong>alexxx</strong> 14-05-2013</p>
+
+<blockquote>
+  <p>причем сдесь прокладка )) если овен не имеет поддержки 1-wire :)</p>
+</blockquote>
+
+<p>Конвертер 1Wire-RS485 (Modbus RTU)</p>
+
+<p>Конвертер 1Wire-RS485 предназначен для работы с датчиками типа DALLAS DS18S20/DS18B20 подключаемых по шине 1-Wire™ (до 16 шт.). Конвертер осуществляет периодический опрос всех подключенных датчиков и производит преобразование данных для последующей передачи по интерфейсу RS-485 в протоколе Modbus(RTU). Питание конвертера осуществляется постоянным током в диапазоне напряжений 8…30В или фиксированным 5В. Наличие выхода типа «открытый коллектор» позволяет подключать внешние цепи сигнализирования событий повышения или снижения значений температуры выше или ниже установленных порогов.</p>
+
+<p><a href="http://samara.energoportal.ru/catalog/konverter-1-wire-rs485-modbus-rtu-526213.html" target="_blank">http://samara.energoportal.ru/catalog/konverter-1-wire-rs485-modbus-rtu-526213.html</a></p>
+
+<p><strong>Strangeman</strong> 14-05-2013</p>
+
+<p>И что? Ещё один контроллер в дополнение к основному в то время, когда и основной справился бы с задачей.</p>
+
+<p>Только не поймите превратно, я ничего против MODBUS &amp; RS432 не имею. В масштабной распределенной системе ни о каком 1-wire и речи не может быть, но если речь идёт о маленькой тепличке, тем более балконе или лоджии, 1-wire в самый раз.</p>
+
+<p>Разве Овен не для таких задач позиционируется?</p>
+
+<p><strong>alexxx</strong> 14-05-2013</p>
+
+<p>Зачем стрелять из пушки по воробьям? С автоматизацией полива справится таймер, с климатом - термостат.</p>
+
+<p>Такие задачи и автоматизацией то не назовешь…</p>
+
+<p><strong>Strangeman</strong> 14-05-2013</p>
+
+<p>А как же масштабируемость, задел на будущее?</p>
+
+<p>К таймеру потом не прикрутишь датчик ФАР.</p>
+
+<p><strong>alexxx</strong> 14-05-2013</p>
+
+<p>Каким вам видится будущее 1-wire?</p>
+
+<p><strong>Vad</strong> 14-05-2013</p>
+
+<p>сегмент 1-wire до 300 метров однако… (витой парой CAT5)</p>
+
+<p>мало разве? :-[</p>
+
+<p>изернет так не умеет… <em>???</em></p>
+
+<p><strong>Serg17</strong> 14-05-2013</p>
+
+<blockquote>
+  <p>Зачем стрелять из пушки по воробьям? С автоматизацией полива справится таймер, с климатом - термостат.</p>
+
+  <p>Такие задачи и автоматизацией то не назовешь…</p>
+</blockquote>
+
+<p>Автоматизация тепличного хозяйства далеко не самая простая задача, а формализовать ее часто непросто. И мне кажется, что подавляющее число контроллеров марки ОВЕН решают более тривиальные задачи в области вентиляции и ГВС.</p>
+
+<p>К одному горшку пределать таймер и термостат не очень сложно, но когда вечером приходишь домой(или еще куда-то), то возникает вопрос - а все ли работало как положенно, не пропущен ли полив из-за ошибки или отсутствия контакта в наборном поле(диске) реле времени. Да и само реле времени не вечно, раз 50 изменил время включения, и заглючило оно, то сработает, то не сработает.</p>
+
+<p>если вырашивается 10-15 культур по разной технологии и в каждой культуре есть растения на разной стадии развития, со своими требованиями к дневным и ночным температурам/влажностям, с наростающей(или сокращающейся) досветкой, то вся автоматизация на таймерах и термостатах через некоторое время превратится в сплошной кошмар для персонала, т.к. какие-то узлы или контакты начнут глючить и дяде Васе придется в 9:30 бежать в один угол и смотреть включилась ли помпа, а в 9:35 смотреть на небо и если солнце светит, то проверять, что досветка выключилась, а затенение над двухнедельной редиской раскрылось и так будет весь день на ногах, т.к. диспечерского пункта, куда сводилась бы вся информация не предусмотрено. Кроме простоты реализации диспечеризации, ПЛК позволяют просто реализовать сбор архивной информации по всем имеющемся параметрам, и их отклонениям от установленных значений, оперативно, а иногда, и автоматически вычислять неисправное оборудование или сбои в его работе.</p>
+
+<p>Т.е. ПЛК не только подобно термостату или реле времени что-то включает и выключает, но и оценивает результат работы, и если выбило автомат или УЗО на подогреве раствора, то ПЛК быстро обнаружит, что раствор не подогревается, несмотря на все его старания, и, в отличие от термостата, информация о температуре раствора может храниться в СУБД очень долгий срок. И всегда есть возможность посмотреть все ли работало штатно на прошлой неделе.</p>
+
+<p>Любительская автоматизация может быть и хобби, а может просто в итоге сберечь много времени на рутиных обязанностях, типа контроля температуры, влажности(PH, EC).</p>
+
+<blockquote>
+  <p>Вот так и выясняется ограниченность всяких готовых решений типа ПЛК.</p>
+</blockquote>
+
+<p>Количество датчиков по типу выходного сигнала(интерфейсу) необычайно широко. И нет такого устройства, которое могло бы принять сигнал от любого датчика. Поэтому либо выбирают тип ПЛК, а потом подбирают к нему датчики и исполнительные механизмы, или наоборот, в начале выбирают датчик, а потом смотрят, куда его можно подключить. Имея в наличии датчик с нестандартным интерфейсом и желание его использовать, можно далеко зайти.(Как-то надо было померить трансформаторный датчик положения, так пришлось с помощью аналогового выхода выдавать синусоиду 400 Гц и синхронно с ней производить замеры)</p>
+
+<blockquote>
+  <p>сегмент 1-wire до 300 метров однако… (витой парой CAT5)мало разве? изернет так не умеет…</p>
+</blockquote>
+
+<p>C ethernet'ом - как повезет с производителем, месяца два назад на стандартную бухту CAT5е накололи RJ-45 и заработало на 1G. Чудо? Не соответствует спецификации? - Тогда берем оптику. Дорого? - Переходим на RS-485, он уж точно дальше 1-wire действует, и устройств по больше 16 подключить можно.</p>
+
+<p>PS: Мне кажется у DS только одно устройство с интерфейсом 1-wire получилось - пресловутая таблетка к домофону, все остальное за уши притянуто - номенклатура датчиков маленькая, и практически никем не поддерживается - в серьезных разработках не применяется по причине медленной работы и низкой точности(имеется ли сертификат как средства измерения?), отсутствия конструктива - тот же DS18S20/DS18B20 в раствор не засунешь, а конденсат на нем выпадет - заржавеет.</p>
+
+<p><strong>Vad</strong> 15-05-2013</p>
+
+<blockquote>
+  <p>отсутствия конструктива - тот же DS18S20/DS18B20 в раствор не засунешь, а конденсат на нем выпадет - заржавеет.</p>
+</blockquote>
+
+<p>это как понимать? как отсутсвие фантазии или…?</p>
+
+<p>Вас так постушать.. все остальные датчики… сразу рождаются в бронированых кольчугах из 08Х22Н6Т.</p>
+
+<p>хватит. :D</p>
+
+<p><strong>alexxx</strong> 15-05-2013</p>
+
+<blockquote>
+  <p>сегмент 1-wire до 300 метров однако… (витой парой CAT5)</p>
+
+  <p>мало разве? :-[</p>
+</blockquote>
+
+<p>Ну да, маловато… :-X</p>
+
+<p><strong>Strangeman</strong> 15-05-2013</p>
+
+<p>Serg17, опус хорош,но в контексте не понятен.</p>
+
+<p>Я же сразу написал, что для масштабного проекта (завод, тепличный комплекс) 1-wire не годится, как конечный транспорт.</p>
+
+<p>Что касается балкона - меня более чем устраивают ds18b20 и HIH400X, но я не стану подключать последний к аналоговому входу даже при расстоянии 1м до датчика. В тоже время используя 1-wire ADC я успешно пользуюсь датчиком.</p>
+
+<p>Кстати, а с каких пор 1-wire стала нестандартной?</p>
+
+<p><strong>alexxx</strong> 15-05-2013</p>
+
+<p>Так тема вроде не про балконы, а про теплицы. <em>???</em></p>
+
+<p><strong>Serg17</strong> 15-05-2013</p>
+
+<blockquote>
+  <p>это как понимать? как отсутсвие фантазии или…?</p>
+
+  <p>Вас так постушать.. все остальные датчики… сразу рождаются в бронированых кольчугах из 08Х22Н6Т.</p>
+</blockquote>
+
+<p>Возьми 100М, 100П или Ni1000 - там и кольцевое уплотнение крышки, и кабельное уплотнение - ничего не обломится и не заржавеет.</p>
+
+<blockquote>
+  <p>1-wire до 300 метров</p>
+</blockquote>
+
+<p>Каким кабелем(AWG24 годится?) и какое согласование требуется? Какая схема подключения( 2 витых пары - одна питание и одна на 1-wire)?</p>
+
+<p>В середине 90-х был бумажный DataSheet от DALLAS Sem. по таким усройствам, да куда-то задевался… А то б глянул…</p>
+
+<p>А если хочется что-то поизобретать, в плане конструктива, мне больше нравится AD590, тем же AWG24 на несколько десятков метров работает без проблем и с первого раза.</p>
+
+<p>A 1-wire на те же пресловутые 300 метров без бубна не запустишь, будешь программой компенсировать удельную емкость и индуктивность кабеля. (попробуй подключи на бухту CAT5(305м), 26 ом на каждый провод вроде и не много, но может и не заработать, т.к. протокол обмена, скорее всего, реализован программно и проверялся только на столе). Ну и мне казалось, что эта технология больше подходит для настольного термометра, чем для распределенной системы.</p>
+
+<blockquote>
+  <p>Кстати, а с каких пор 1-wire стала нестандартной?</p>
+</blockquote>
+
+<p>Какой контроллер Siemens ее поддерживает? Если Siemens не поддерживает, то это какой-то не стандартный(локальный/корпоративный) стандарт, названый стандартом для маркетинга.</p>
+
+<p>PS: пока писал нашел кабель для 1-wire на 300м. Это IEEE1394, причем одного кабеля мало, еще нужна и специальная микросхема приемопередатчика. Я честно скажу - бухту такого кабеля в глаза не видел, хотя может где-то и мимо проходил, но мало ли где мы ходим? Так, что про кабель СAT-5 на 300 метров забываем, не заработает точно!</p>
+
+<p><strong>Vad</strong> 15-05-2013</p>
+
+<p>;D ;D ;D</p>
+
+<p>смешно пишите</p>
+
+<p>;D ;D ;D</p>
+
+<p>продолжайте! <em>Dance</em></p>
+
+<p>хотябы… тут, вот, немножко..</p>
+
+<p><a href="http://ru.wikipedia.org/wiki/1-Wire" target="_blank">http://ru.wikipedia.org/wiki/1-Wire</a></p>
+
+<p>для ознакомления.. в разделе применение.. читаните ;)</p>
+
+<p>все нормально работает))</p>
+
+<p>есть ацп, термеметры, выключатели, …</p>
+
+<p><a href="http://category.alldatasheet.com/index.jsp?Searchword=1-WIRE" target="_blank">http://category.alldatasheet.com/index.jsp?Searchword=1-WIRE</a></p>
+
+<p>если в вашем ПЛК нет поддержки 1-wire, то ПЛК хороший, и правильно сделали что купили его, просто 1-wire - плохой интерфейс\протокол :D</p>
+
+<p>у “однопроводных” термрметров … НОЖКИ ржавеют ;D</p>
+
+<p>удаляюсь. <em>Dance</em></p>
+
+<p><strong>Vad</strong> 15-05-2013</p>
+
+<blockquote>
+  <p>HIH400X, но я не стану подключать последний к аналоговому входу даже при расстоянии 1м до датчика.</p>
+</blockquote>
+
+<p>почему?</p>
+
+<p><strong>Serg17</strong> 15-05-2013</p>
+
+<p>Сходил по ссылке на ALLDATASHEET(испортился сайт - раньше pdf скачивать давал, а нынче только просмотр HTML)</p>
+
+<p>Открыл у Siemens позицию LSK389 - там высокая яркость при токе 2 мА. Ничего непонял - каким боком это к 1-wire?</p>
+
+<blockquote>
+  <p>для ознакомления.. в разделе применение.. читаните</p>
+</blockquote>
+
+<p>Почитал :D. Так и представил элеватор (20-40 силосов(бункеров) 40м высотой, каждый, по 2 тыс тонн), а там… провод IEEE1394 ;D</p>
+
+<p>Туда без заверенной копии метрологического сертификата(свидетельства о регистрации как средства измерения) даже на территорию не пустят.</p>
+
+<p>И, еще, нужен пожарный сертификат - объект повышенной пожароопасности.</p>
+
+<p>А если хотят измерять температуру зерна, а не в курилке(в 100 метрах от ближайшего силоса), то еще и гигиенический сертификат нужен.</p>
+
+<p>Интересно, кто эту статью написал? Он хоть раз <del>элеватор видел</del>что-нибудь автоматизировал? В английской версии я что-то такого не увидел, там больше про таблетки к домофону.</p>
+
+<p>(Вот она “народная” энциклопедия - что хочу то и пишу). Везде указывается, что информация из WIKI не является надежной и требует проверки.</p>
+
+<blockquote>
+  <p>у “однопроводных” термрметров … НОЖКИ ржавеют</p>
+</blockquote>
+
+<p>В элеваторе после одной загрузки-выгрузки, не то что ножки заржавеют, там сам термометр однопроводный не найдешь - сотрется в такую пыль, что даже санитарно-эпидемиологическая экспертиза следов не найдет.</p>
+
+<p><strong>Vad</strong> 15-05-2013</p>
+
+<blockquote>
+  <p>Сходил по ссылке на ALLDATASHEET(испортился сайт - раньше pdf скачивать давал, а нынче только просмотр HTML)</p>
+
+  <p>Открыл у Siemens позицию LSK389 - там высокая яркость при токе 2 мА. Ничего непонял - каким боком это к 1-wire?</p>
+</blockquote>
+
+<p>все он дает… я кинул ссылку на 1-wire.. незнаю что вы там… в светодиодах нашли )))</p>
+
+<p><strong>Serg17</strong> 15-05-2013</p>
+
+<p>Не знаю, у меня открывается страница LED Datasheet :-\</p>
+
+<p>Сайту похоже пофиг на “sSearchword=1-WIRE”, он берет из cookies, что искал в последний раз.</p>
+
+<p>Ввел ручками 1-WIRE и увидел список из 108 позиций с преобладанием двух производителей(DS и MAXIM). Не густо.</p>
+
+<p>Преобладают EEPROM, драйверы LED'ов и термометры, один потенциометр и два комбинированных - термометр-вольтметр.</p>
+
+<p>И ни одного датчика давления или влажности/освещенности/тока/PH/EC/СO2 - ничего нет, боюсь, даже напряжения в розетке не померить. Что с таким набором делать в теплице - незнаю. :-\</p>
+
+<p><strong>Vad</strong> 15-05-2013</p>
+
+<p><em>???</em></p>
+
+<p><strong>ProRus</strong> 15-05-2013</p>
+
+<blockquote>
+  <p>Так тема вроде не про балконы, а про теплицы. <em>???</em></p>
+</blockquote>
+
+<p>Может переименовать в “Электроника в тепличке и на балконе (изучаем, спрашиваем, общаемся)…” :)</p>
+
+<p><strong>Strangeman</strong> 15-05-2013</p>
+
+<p>Думаю, стоит. А то народ пошёл рисоваться знаниями компонентов промышленной автоматизации.Вот уже и до элеваторов дошло.</p>
+
+<p>У меня по основной работе все больше ARINC и MIL, может их заюзаем?</p>
+
+<p><strong>Serg17</strong> 15-05-2013</p>
+
+<blockquote>
+  <p>А то народ пошёл рисоваться знаниями компонентов промышленной автоматизации.Вот уже и до элеваторов дошло.</p>
+</blockquote>
+
+<p>Просто автор абзаца в wiki кроме шкафа для конопли похоже ничего не делал, а после сбора урожая полет мысли был просто мирового масштаба.</p>
+
+<p>А в жизни все проще: в начале тендер, где в первую очередь проверяются сертификаты, а во вторую очередь говорят, покажите действующую установку, чтоб с ее персоналом можно было б переговорить.</p>
+
+<p>Это же все элементарно. Хотя в теории можно и на элеватор поставить и на самолет, но на практике ни то, ни то, не получится.</p>
+
+<blockquote>
+  <p>У меня по основной работе все больше ARINC и MIL, может их заюзаем</p>
+</blockquote>
+
+<p>Да ну ее работу, … куда по дальше, лучше травку будем выращивать.</p>
+
+<p>А то только за последние полгода железка под названием ГА-163 уже дважды доставала дальше некуда: секрет ее работы утрачен похоже безвозвратно. По осени две недели вокруг нее ходили и в феврале целую неделю на нее угробили и все в неотапливаемом помещении. Может растворный узел с ней собрать можно? Только штуцера у нее такие, что придется шланги с хомутами использовать.</p>
+
+<p>Я совсем не против 1-wire устройств, даже хочу использоать iButton у себя на даче для постановки/снятия с охраны. Но кому-нибудь рекомендовать использовать в теплице побоюсь.</p>
+
+<p>Я вообще не знаю с какой стороны подойти к теплице. Компоненты с индексом “С” не годятся, только “i”, а MIL явно перебор по цене.. Если что-то на 220В размещать в самой теплице , то нужен разделительный трансформатор. Я уже нашел 380/220-0.66кВт; не много, но есть с чего начать, хотя только один ДНАТ плюс еще что-то потянет. Мощные LED'ы пока не вызывают доверия.</p>
+
+<p>PS: Если кто чинит электронику после пробоя по поверхности печатной платы, могу подсказать, что медное напыление хорошо убирается ортофосфорной кислотой (если ластик не берет).</p>
+
+<p><strong>alexxx</strong> 16-05-2013</p>
+
+<blockquote>
+  <p>даже хочу использоать iButton у себя на даче для постановки/снятия с охраны.</p>
+</blockquote>
+
+<p>А я думаю обыкновенную автомобильную сигнализацию приспособить. У нее и пульт ДУ 2 штуки, и сирена - всё уже в наличии, и стоит дешего. <em>8)</em></p>
+
+<p><strong>ProRus</strong> 16-05-2013</p>
+
+<p>На кабель UTP по 1-Ware прикрутил 4-ре датчика DS18B20 и один датчик DHT11.</p>
+
+<p>Научил записывать в базу данных MySQL и выводить график по http.</p>
+
+<p>Вот что получается.</p>
+
+<p>График можно приближать выделив определенную область.</p>
+
+<p>Надо еще сделать возможность выбора периода по дате для графика и в принципе я доволен своей работой.</p>
+
+<p>Далее хочу купить датчики PH и EC и так же засунуть данные в график…</p>
+
+<p>Еще наверное нужно сделать возможность отображения графиков.</p>
+
+<p><a href="https://t.me/ponics_ru_files/9594" target="_blank"><img src="/attachimages/13365_temperature.jpg" alt="" /></a></p>
+
+<p><strong>cpf</strong> 16-05-2013</p>
+
+<p>А чегой-то T на улице так упала в конце графика? Солнце село (или тучки налетели)? :)</p>
+
+<p><strong>orgail</strong> 16-05-2013</p>
+
+<p>ага, тоже хотел спросить</p>
+
+<p><strong>ProRus</strong> 16-05-2013</p>
+
+<blockquote>
+  <p>А чегой-то T на улице так упала в конце графика? Солнце село (или тучки налетели)? :)</p>
+</blockquote>
+
+<p>Восточная сторона, солнце зашло за угол.</p>
+
+<p>Датчик уличной температуры на солнце, не прикрыт.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

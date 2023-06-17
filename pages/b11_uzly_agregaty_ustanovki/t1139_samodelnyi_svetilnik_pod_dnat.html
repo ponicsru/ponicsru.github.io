@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Самодельный светильник под ДНАТ | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Самодельный светильник под ДНАТ">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Самодельный светильник под ДНАТ</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>promod</strong> 11-08-2011</p>
+
+<p>светильник с охлаждением и стеклом готовый стоит примерно 2000 вечно деревянных)) а этот намного дешевле)) сам прожектор примерно 800 рублей, (говорят есть такие же, но дешевле, но не было времени искать), патрон Е40- 50 р., фланцы по 30 рублей, клёпки 15 рублей за 50 штук, уголок 20 рублей)) путём нехитрых вычислений получаем примерно 950 рублей один светильник и немного свободного времени. теперь про лампы. лампы заказал немецкие 4 штуки, пока делал светильники одну грохнул, купил русскую))) к сожалению разницы не нашёл, но она лучше разгорается (быстрее). пусковые устройства тоже немецкие, а дросселя русские, отлитые из танков, ибо вес одного изделия почти 5 кило))) ( сорвал спину пока нёс всё барахло до машины) после подключения и тестовых запусков выяснилось, что автоматы у меня в квартире стоят слабые, и их время от времени выключало. пока тестил выявил недостатки охлаждения- у меня стоял один вентилятор на 100 на вдув и один на 125 на выдув, после тестирования на выдуве расплавился((( выкинул оба и поставил центробежный)) теперь после часа работы верх светильника чуть тёплый)))) сам в шке от таких результатов, и шума значительно меньше, чем от вентиляторов))) я доволен. вообщем получил я отличные светильники мощностью 400 ватт каждый. задавайте вопросы всё поясню, что не понятно.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6220" target="_blank"><img src="/attachimages/7957_DSC04552.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6221" target="_blank"><img src="/attachimages/7959_DSC04553.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6222" target="_blank"><img src="/attachimages/7961_DSC04554.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6223" target="_blank"><img src="/attachimages/7963_DSC04555.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6224" target="_blank"><img src="/attachimages/7965_DSC04557.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6225" target="_blank"><img src="/attachimages/7967_DSC04558.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6226" target="_blank"><img src="/attachimages/7969_DSC04559.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6227" target="_blank"><img src="/attachimages/7971_DSC04560.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6228" target="_blank"><img src="/attachimages/7973_DSC04561.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6229" target="_blank"><img src="/attachimages/7975_DSC04562.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6230" target="_blank"><img src="/attachimages/7977_DSC04563.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6231" target="_blank"><img src="/attachimages/7979_DSC04564.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6232" target="_blank"><img src="/attachimages/7981_DSC04566.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6233" target="_blank"><img src="/attachimages/7983_DSC04570.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6234" target="_blank"><img src="/attachimages/7985_DSC04572.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6235" target="_blank"><img src="/attachimages/7987_DSC04576.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6236" target="_blank"><img src="/attachimages/7989_DSC04577.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6237" target="_blank"><img src="/attachimages/7991_DSC04578.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6238" target="_blank"><img src="/attachimages/7993_DSC04580.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6239" target="_blank"><img src="/attachimages/7995_DSC04582.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6240" target="_blank"><img src="/attachimages/7997_DSC04584.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6241" target="_blank"><img src="/attachimages/7999_DSC04586.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6242" target="_blank"><img src="/attachimages/8001_DSC05353.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6243" target="_blank"><img src="/attachimages/8003_DSC05354.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 11-08-2011</p>
+
+<p>сколько светильников охлаждает один канальник?</p>
+
+<p>На фото видно, что цоколь лампы почти выходит за пределы светильника, там ничего не правится?</p>
+
+<p><strong>promod</strong> 11-08-2011</p>
+
+<p>вентилятор на 6 светильников, но он столько воздуха через них прокачивает, что охлаждается нормально. лампа немного концом выглядывает, но с охлаждением фланец не плавится, без вертушки не проверял, скорее всего расплавится, а точнее такие фланцы не плавятся, а просто делаются мягкими, затем как остывают рассыпаются в крошки.</p>
+
+<p><strong>Mole_Garden</strong> 11-08-2011</p>
+
+<p>я надеюсь ты понимаешь, что если вдруг у тебя сгорит вентиль и тебя в этот момент не будет рядом, то все твои светильники накроются медным тазом.</p>
+
+<p><strong>kil</strong> 11-08-2011</p>
+
+<blockquote>
+  <p>я надеюсь ты понимаешь, что если вдруг у тебя сгорит вентиль и тебя в этот момент не будет рядом, то все твои светильники накроются медным тазом.</p>
+</blockquote>
+
+<p>Над лампами надо поставить термопредохранители, вроде таких:</p>
+
+<p><a href="http://www.radiobox.ru/pred/terpre/terpre.html" target="_blank">http://www.radiobox.ru/pred/terpre/terpre.html</a></p>
+
+<p><strong>promod</strong> 11-08-2011</p>
+
+<p>а как такой приспособить?</p>
+
+<p><strong>kil</strong> 12-08-2011</p>
+
+<blockquote>
+  <p>а как такой приспособить?</p>
+</blockquote>
+
+<p>Просто последовательно с лампой и дросселем. Сплав внутри расплавится - цепь разорвется.</p>
+
+<p><strong>promod</strong> 12-08-2011</p>
+
+<p>так ну допустим вентилятор отказал, фланцы расплавились, куча дыма и т.п. они же не перегреются, просто поднимется темпиратура.</p>
+
+<p><strong>Mole_Garden</strong> 12-08-2011</p>
+
+<blockquote>
+  <p>так ну допустим вентилятор отказал, фланцы расплавились, куча дыма и т.п. они же не перегреются, просто поднимется темпиратура.</p>
+</blockquote>
+
+<p>Отравятся растения и сгорят лампы, и в правду, какая мелочь.</p>
+
+<p><strong>promod</strong> 13-08-2011</p>
+
+<p>лампы не сгорят, они могут работать и без охлаждения в этом корпусе. я же охлаждение делал, чтобы можно было ближе к растениям подносить. а если дым, то сигнализация сработает.</p>
+
+<p><strong>Mole_Garden</strong> 13-08-2011</p>
+
+<blockquote>
+  <p>лампы не сгорят, они могут работать и без охлаждения в этом корпусе. я же охлаждение делал, чтобы можно было ближе к растениям подносить. а если дым, то сигнализация сработает.</p>
+</blockquote>
+
+<p>Ну это хорошо, если все будет так!</p>
+
+<p><strong>promod</strong> 13-08-2011</p>
+
+<p>по крайней мере я однажды такой фланец расплавил, он не загорелся, а просто сложился пополам, а гофра с хамутом слетела. после того как он остыл, я только коснулся, а он в крупу рассыпался.</p>
+
+<p><strong>promod</strong> 14-08-2011</p>
+
+<p>кст никто не знает есть ли металлические фланцы?</p>
+
+<p><strong>Mole_Garden</strong> 14-08-2011</p>
+
+<blockquote>
+  <p>кст никто не знает есть ли металлические фланцы?</p>
+</blockquote>
+
+<p>Есть</p>
+
+<p><strong>promod</strong> 14-08-2011</p>
+
+<p>блин чёто ни разу не видел((( они там же где и вентиляция? или надо искать в отделах с промышленной вентиляцией?</p>
+
+<p><strong>Mole_Garden</strong> 14-08-2011</p>
+
+<blockquote>
+  <p>блин чёто ни разу не видел((( они там же где и вентиляция? или надо искать в отделах с промышленной вентиляцией?</p>
+</blockquote>
+
+<p>Ну вообще я видел их там же где и вся приблуда на вентиляцию продается, там же есть фланцы и из жести.</p>
+
+<p><strong>promod</strong> 14-08-2011</p>
+
+<p>надо будет поискать, тогда вообще ничего не будет страшно)))</p>
+
+<p><strong>valery</strong> 14-08-2011</p>
+
+<p>А чего именно Вы так забоялись ?</p>
+
+<p>Пояснили бы, для чего вообще вся эта эпопея с фланцами, вентиляторами, обдувами, прожекторами … под 400 ДНАТ и 250 МГ ?</p>
+
+<p>Лампам от “тепла” - ни тепло ни холодно :)</p>
+
+<p>Растениям при нормальном подвесе - тоже (они ведь не просто “жаром” от “раскаленного” светильника греются, но и также просто поглощая “инфракрасную” составляющую ДНАТов, а она достаточно велика и, мало того, - вполне полезна … )</p>
+
+<p>Ставить “светильник” (пластиковый корпус) - и его же “обдувать”, чтобы не расплавился ? А зачем Вы его ставите ?</p>
+
+<p>Вам нужны обычные “отражатели” и не более того. Они как правило - металлические :) (к примеру, тот же “аланод”) и никак от тепла лампы не пострадают.</p>
+
+<p>Любой отражатель открытого типа вполне нормально вентилируется обычными естественными восходящими потоками воздуха.</p>
+
+<p>Да и сами “гирлянды” из 6 ДНАТ-400 и 6 МГ-250 … :( на две небольшие установки … ? <em>???</em> <em>???</em> <em>???</em></p>
+
+<p>У Вас ведь, если я не ошибаюсь, “промышленное” помещение ? Видимо с вполне высокими потолками.</p>
+
+<p>2 киловаттных ДНАТа - легко заменят (и дадут БОЛЬШИЙ световой поток), чем 6 по 400.</p>
+
+<p>Их потребление с электронным балластом составит около 2,1-2,2 кВт.</p>
+
+<p>Общий световой поток может составить порядка 300 000 - 320 000 люмен (300-320 ТЫСЯЧ !!!)</p>
+
+<p>6 ДНАТов по 400 ватт с “механикой” (ЭМПРА) - будут кушать от 2,76 до 3,0 кВт …</p>
+
+<p>Их общий световой поток составит около 240-270 кЛм …</p>
+
+<p>Сравните сами</p>
+
+<p>Потребляем Получаем</p>
+
+<p>2,15 310</p>
+
+<p>и</p>
+
+<p>2,9 255</p>
+
+<p>Есть же разница. Да и 2 компактных электронных блока (слегка теплых) и 6 комлектов “плафонов”, проводок, патронов, прерывателей-пускателей, ИЗУ, дросселей из “танков” с непомерным весом (нагретых почти как утюг) …</p>
+
+<p>Зачем ?</p>
+
+<p><strong>promod</strong> 14-08-2011</p>
+
+<p>аммм)) даже не знаю что ответить))) кст корпус из аллюминия, а охлаждение я делал чтобы можно было к растениям поближе поднести)) это ведь моя первая установка, у меня площадей ещё много и планов тоже. так что я уже придумал как сделать следующую систему, а вы мне как раз помогли определиться с освещением)) за что вам огромное спасибо)) так получается для экономии пространства пускаем под большим углом в несколько рядов, а между вешаем днат киловатки, и света много и экономия))) я прав?</p>
+
+<p><strong>promod</strong> 15-08-2011</p>
+
+<p>кст ещё вопросик я на приточку ещё каларифер не делал, так может воздух с приточки через лампы пропускать? опять же экономия)) они же вроди на улице светят в фонарях, там тоже холодно. что думаете по этому поводу?</p>
+
+<p><strong>cpf</strong> 15-08-2011</p>
+
+<p>Кмк, мысль хорошая, но я бы смешивал бы уличный воздух и воздух из помещения - тогда перепад температур зимой был бы не такой большой, и меньше было бы шансов “угробить” лампы… Если воздух уже подогрет калорифером - тогда вообще ничего страшного не случится.</p>
+
+<p><strong>promod</strong> 15-08-2011</p>
+
+<p>тогда можно каларифер шутейный поставить, только чтоб чуть чуть подогреть)) кст там до ламп воздуховодов метров 7, пока по ним воздух будет проходить, он ещ будет подогреваться так что не должно лампы угробить. можно пополам, половину воздуха с улицы брать а половину из помещения</p>
+
+<p><strong>Степан</strong> 02-08-2012</p>
+
+<p>А может кто то скинуть подробную схему днат на 250 или 400?</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

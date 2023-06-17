@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Чердачок DimaM | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Чердачок DimaM">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Чердачок DimaM</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>DimaM</strong> 30-05-2009</p>
+
+<p><a href="http://www.postimage.org/aVSPm7r.jpg" target="_blank"><img src="http://www.postimage.org/aVSPm7r.jpg" alt="" /></a></p>
+
+<p>Скоро закончу свою установку на периодике на 3-м (чердачном) этаже своего дома. Сегодня сделал емкость, осталось обвязать и подключить насос. Параллельно строю зимнюю теплицу во дворе размером 4 на 6 м. Делаю из досок, т.к. делаю своими руками в основном, а мне больше нравиться мастерить из дерева. Северная стена будет глухая, утепленная, остальные из поликарбоната.</p>
+
+<p><strong>mdima</strong> 30-05-2009</p>
+
+<p>С новосельем! Для зелени - самый то, а для салата по-моему слишком часто отверстия. Какое расстояние между центрами?</p>
+
+<p><strong>DimaM</strong> 30-05-2009</p>
+
+<p>Между центрами 12 см, ячейки 6*6см. Но не обязательно сажать в каждую ячейку, можно через одну или даже две. Или думаю в промежуточных потом подсаживать рассаду ко времени окончания цикла роста ранее посаженных. Собираюсь начать с томатов - черри.</p>
+
+<p><strong>mdima</strong> 30-05-2009</p>
+
+<p>У черри есть такой ньюанс: Либо проращивать, а потом сразу понижать температуру, либо очень хорошо освещать с самого начала, иначе они вытягиваются.</p>
+
+<p><strong>Mole_Garden</strong> 30-05-2009</p>
+
+<p>А почему ячейки прямоугольные? У вас уже заготовлены такой формы горшочки?</p>
+
+<p><strong>DimaM</strong> 30-05-2009</p>
+
+<p>Ячейки сделаны по книге Д. Денисова</p>
+
+<p>А почему такие, даже не знаю имею ли я право разглашать ноу-хау описанные у него.</p>
+
+<p><strong>Mole_Garden</strong> 30-05-2009</p>
+
+<p>:D Теперь понятно почему прямоугольные, у меня тоже есть эта книга ;)</p>
+
+<p>Просто Дмитрий выращивает в керамзите, т.е. трубы наполнены керамзитом и растение сажается прям в него, а если, к примеру захочется выращивать салат в горшочке, то в такую трубу на вряд ли что вставится.</p>
+
+<p>Здесь придется рассаду либо сразу в трубу либо одно из двух :)</p>
+
+<p><strong>Mole_Garden</strong> 30-05-2009</p>
+
+<p>а можно еще пару фоток установки, к примеру с боку, там где сливная труба, гляжу изменили немного систему слива, точней сделали не так как в книге :)</p>
+
+<p><strong>DimaM</strong> 31-05-2009</p>
+
+<p><a href="http://www.postimage.org/Pq1eH_yJ.jpg" target="_blank"><img src="http://www.postimage.org/Pq1eH_yJ.jpg" alt="" /></a></p>
+
+<p>Перелив сделан по другому. Внутрь 50 трубы вставлена 40, на которую намотан бинт, чтобы она внутри 50 двигалась с усилием. Так можно регулировать уровень перелива. И получается все герметично, вода снаружи не течет как у Денисова. Слив по трубочке от системы с регулировкой скорости прижимом. 110 угол от канализационной трубы стоит примерно столько же как и муфта + заглушка. Поэтому получается не намного дороже оригинала.</p>
+
+<p>Крепление труб тоже другое.</p>
+
+<p><strong>DimaM</strong> 31-05-2009</p>
+
+<p>Томаты которые виднеются на первой фотографии в мини установке кормлю сейчас “Биогумусом” от “Силы жизни” <a href="http://www.silazhizni.ru/about_fertilizer.htm" target="_blank">silazhizni</a> Развожу 5.5мл на 1л. воды. Заказал у Дмитрия его концентрат, как получу перейду на него.</p>
+
+<p><strong>Mole_Garden</strong> 31-05-2009</p>
+
+<p>т.е. через 40 осуществляется основной перелив, что бы не выливалось через ячейки, а через капельницу сливаются остатки. Правильно ли понял?</p>
+
+<p>Как быстро стекает вода через капельницу и на сколько внутри трубы торчит 40? 2-3 см?</p>
+
+<p><strong>Mole_Garden</strong> 31-05-2009</p>
+
+<blockquote>
+  <p>Томаты которые виднеются на первой фотографии в мини установке кормлю сейчас “Биогумусом” от “Силы жизни” <a href="http://www.silazhizni.ru/about_fertilizer.htm" target="_blank">silazhizni</a> Развожу 5.5мл на 1л. воды. Заказал у Дмитрия его концентрат, как получу перейду на него.</p>
+</blockquote>
+
+<p>Раствор не тухнет? судя по фотке чувствуют они себя хорошо.</p>
+
+<p><strong>DimaM</strong> 31-05-2009</p>
+
+<blockquote>
+  <p>т.е. через 40 осуществляется основной перелив, что бы не выливалось через ячейки, а через капельницу сливаются остатки. Правильно ли понял?</p>
+
+  <p>Как быстро стекает вода через капельницу и на сколько внутри трубы торчит 40? 2-3 см?</p>
+</blockquote>
+
+<p>Да так. Еще не пробовал, емкость же вчера только сделал. 40 не доходит 2-4 см до верха. Но ее можно двигать вверх-вниз внутри 50, потом в процессе отрегулирую.</p>
+
+<p><strong>DimaM</strong> 31-05-2009</p>
+
+<blockquote>
+  <blockquote>
+    <p>Томаты которые виднеются на первой фотографии в мини установке кормлю сейчас “Биогумусом” от “Силы жизни” <a href="http://www.silazhizni.ru/about_fertilizer.htm" target="_blank">silazhizni</a> Развожу 5.5мл на 1л. воды. Заказал у Дмитрия его концентрат, как получу перейду на него.</p>
+  </blockquote>
+
+  <p>Раствор не тухнет? судя по фотке чувствуют они себя хорошо.</p>
+</blockquote>
+
+<p>Вроде не тухнет. Внутри трубы лежит линейный аквариумный бурбулятор почти на всю длину. Компрессор работает постоянно. Труба заполнена керамзитом.</p>
+
+<p><strong>Олеганос</strong> 03-06-2009</p>
+
+<p>:) Салам! А из чего , если не секрет, емкость то под раствор сделал? ;)</p>
+
+<p><strong>DimaM</strong> 03-06-2009</p>
+
+<p>Из деревянных мебельных панелей сделал короб 1.6<em>0.3</em>0.4 и внутрь уложил пленку для рыбоводческих прудов (купил в “зеленой стране” на Московском ш. в Самаре - погонный метр шириной 6м - что-то около 1т.р., но могу ошибаться, давно покупал). Вместо мебельных панелей можно было и фанеру, но т.к. это дома решил сделать поаккуратней. По сумме вышло около 2т.р., но считаю что это лучше чем стеклянный аквариум, который может разбиться.</p>
+
+<p>Кстати вчера только узнал, что можно заказать алюминиевые питьевые баки от вагонов 150-200 литров на базе, где режут эти вагоны на металлолом, но не знаю как алюминий взаимодействует с раствором.</p>
+
+<p><strong>mdima</strong> 03-06-2009</p>
+
+<p>Нет, алюминий не стоит :)</p>
+
+<p><strong>DimaM</strong> 15-06-2009</p>
+
+<p>На выходные уезжал отдыхать на Волгу, приезжаю а в мини-установке раствора совсем нет. А туда входит около 3 литров. Не понятно, это растения столько выпивают на жаре, или вода испаряется так быстро благодаря интенсивному барботированию. Если это вода так испаряется, то она же без солей испаряется, и залив свежий раствор получим более сильную концентрацию, т.к. оставшиеся соли растворяться. Если же растения выпили, то они наверное с солями выпили, или нет?</p>
+
+<p>В общем залил пока чистую воду, сегодня промою, и залью свежего раствора. Наверное так и придется TDS метр покупать, чтобы не гадать.</p>
+
+<p>А на чердаке в последнее время жара до 35гр. Кондиционеры только на нижних этажах. Как бы кирдык не пришел к помидорам от такой жары. А они у меня сейчас как раз завязываются.</p>
+
+<p><strong>Mole_Garden</strong> 15-06-2009</p>
+
+<blockquote>
+  <p>Не понятно, это растения столько выпивают на жаре, или вода испаряется так быстро благодаря интенсивному барботированию.</p>
+</blockquote>
+
+<p>думаю что точно растения, у вас же их 4 штуки, за два дня 2-3 литра при 35 градусах более чем нормально.</p>
+
+<blockquote>
+  <p>Наверное так и придется TDS метр покупать, чтобы не гадать.</p>
+</blockquote>
+
+<p>правильно думаете :D</p>
+
+<blockquote>
+  <p>А на чердаке в последнее время жара до 35гр. …А они у меня сейчас как раз завязываются.</p>
+</blockquote>
+
+<p>35 это очень и очень жарко, могу, а точней скорей всего при такой температуре и не завяжутся, рекомендую так же добавить СО2 для растений и вообще принять меры по охлаждению окружающей среды.</p>
+
+<p><strong>DimaM</strong> 19-06-2009</p>
+
+<p>Начал засыпать трубы в большой установке керамзитом. Эх и муторное это занятие, оказывается, керамзит засыпать в трубы. Надеюсь не придется его когда-нибудь обратно доставать например для промывки от корней. Или придется?</p>
+
+<p>Жду из магазина ph метр для доведения керамзита до нормы. Доводить собираюсь непосредственно в установке промывкой водой с кислотой.</p>
+
+<p>В мини-установке подрастают помидорки, перешел на раствор из концентрата от mdima.</p>
+
+<p><strong>Mole_Garden</strong> 19-06-2009</p>
+
+<p>промывать точно придется, так что мужайтесь. Правда не очень часто, раз в цикл, т.е. если помидоры будут расти 3 месяца, то раз в 3 месяца, после удаления растения, останутся корешки и если их не удалить они начнут гнить.</p>
+
+<p><strong>DimaM</strong> 19-06-2009</p>
+
+<blockquote>
+  <p>промывать точно придется, так что мужайтесь. Правда не очень часто, раз в цикл, т.е. если помидоры будут расти 3 месяца, то раз в 3 месяца, после удаления растения, останутся корешки и если их не удалить они начнут гнить.</p>
+</blockquote>
+
+<p>А чем опасно гниение? Кроме запаха? Как я понял, установка с керамзитом является большим биофильтром, там будут гуматы и органика может переработается “по-правильному”? Я в мини-установку рассаду прямо с землей втыкал без промывки и вроде ничего страшного не произошло, да еще и биогумус заливал, запаха не было. Но барботирование там сильное. И в бак у большой установки можно аэратор положить</p>
+
+<p><strong>Mole_Garden</strong> 19-06-2009</p>
+
+<p>Думаю, что растение и корни будут не в восторге. Кто знает, может гнить начнут и здоровые корни, да и болезни они же не просто так появляются.</p>
+
+<p><strong>DimaM</strong> 23-06-2009</p>
+
+<p><img src="http://img38.imageshack.us/img38/2544/38373236.th.jpg" alt="" /></p>
+
+<p>Строительство теплицы потихоньку движется. На крышу буду класть 10мм сотовый поликарбонат, т.к. считаю что у него оптимальное соотношение процента светопропускания и теплопроводности. У 16мм светопропускание на 10% меньше, да и стоит в 2 раза больше. Для установки стропил все же нанял рабочих, сам на высоте не могу работать. Теперь вот думаю боковые стены по низу наглухо закрывать, или нет, наверное закрою, все равно кусты рядом затеняют.</p>
+
+<p><strong>DimaM</strong> 26-06-2009</p>
+
+<p>Замерил рн только что приобретенным рн-метром в мини установке, оказывается 8.5. В наличии сейчас есть только борная кислота. Можно ей уменьшать рн?</p>
+
+<p>А это мои растущие помидорки:</p>
+
+<p><img src="http://img3.imageshack.us/img3/1296/23477761.th.jpg" alt="" /></p>
+
+<p><strong>Mole_Garden</strong> 26-06-2009</p>
+
+<p>Как уже неоднократно говорилось, лучше азотной, потом серной и уж крайний случай это лимонная, но ей не желательно так как органика. Хотя у вас там и биогумас вроде добавлен в раствор, так что по идее ничего страшного не должно произойти. Но борной точно нет, траванете еще чего доброго свои помидоры. Ведь бор нужен в микро дозах.</p>
+
+<p><strong>DimaM</strong> 26-06-2009</p>
+
+<p>Ну бегу лимон отжимать.</p>
+
+<p><strong>Mole_Garden</strong> 26-06-2009</p>
+
+<p>я вообще говорил про лимонную кислоту из пакетика.</p>
+
+<p>и добавляйте ее потихоньку и по маленько.</p>
+
+<p><strong>Mendes</strong> 26-06-2009</p>
+
+<p>Ничего у вас помидоры!!! А мои как горошины :(</p>
+
+<p>А когда вы высевали семена? Сколько им дней (месяцев)?</p>
+
+<p><strong>DimaM</strong> 27-06-2009</p>
+
+<blockquote>
+  <p>Ничего у вас помидоры!!! А мои как горошины :(</p>
+
+  <p>А когда вы высевали семена? Сколько им дней (месяцев)?</p>
+</blockquote>
+
+<p>К сожалению не помню, надо все таки дневник завести или фотографировать почаще, на форуме здесь писать. Кажется в середине апреля рассаду в установку посадил, вместо предыдущих погибших <a href="http://forum.gidroponika.com/topic1081s10.html." target="_blank">http://forum.gidroponika.com/topic1081s10.html.</a> Сорт “Флорида петит”.</p>
+
+<p><strong>valery</strong> 27-06-2009</p>
+
+<p>Так подкисляйте аккумуляторным электролитом - должны же у Вас быть магазины автозапчастей ?</p>
+
+<p>Если нет (должны быть) спросите у знакомых водителей или в крупном гараже.</p>
+
+<p>Аккумуляторный электролит - серная кислота разведенная дистиллированной водой, литровая бутылка (1,27 кг) стоит смешные копейки, точно не помню может рублей 20 или 40.</p>
+
+<p>Профессионалы этим, конечно, не подкисляют, грамотные любители - тоже.</p>
+
+<p>Но за неимением лучшего - очень даже подойдет. Я где-то с полгода подкисляю электролитом, истратил от силы четверть бутылки, а ежедневный расход раствора довольно большой - около 20 литров.</p>
+
+<p>Азотная кислота есть, только ее в руки страшно брать, надо сначала учебник химии читать и какое-нибудь руководство по технике безопасности :)</p>
+
+<p>Будьте аккуратны, добавляйте по каплям, я после первых “подкислений” все пожег.</p>
+
+<p><strong>valery</strong> 27-06-2009</p>
+
+<p>Да, и не забудьте убедиться, что Ваш прибор откалиброван и показывает правильно.</p>
+
+<p>Потому что я так “наподкислялся” как раз купив новенький прибор, который оказался бракованным.</p>
+
+<p><strong>DimaM</strong> 28-06-2009</p>
+
+<p>Уже так и сделал, подкислил электролитом. Про лимон это я пошутил. Сейчас постепенно довожу до нормы, керамзит был толком не подготовленный и рн растет со временем.</p>
+
+<p><strong>Mole_Garden</strong> 29-06-2009</p>
+
+<p>solod вопросы и ответы перенесены <a href="http://forum.ponics.ru/index.php/topic,14.msg3739.html#msg3739" target="_blank">сюда</a>, дабы не засорять тему.</p>
+
+<p><strong>DimaM</strong> 29-06-2009</p>
+
+<p>А я вот все таки думаю что надо как-нибудь на самом деле лимон отжать попробовать, заодно и витаминов добавиться в растворе. Все равно у меня и гумус и куски земли в растворе. Гумус и сейчас продолжаю понемногу подливать к фирменному раствору. Я все таки больше сторонник натур продуктов. Гидропоника прельщает только возможностью автоматизации с минимизацией ручного труда.</p>
+
+<p><strong>valery</strong> 29-06-2009</p>
+
+<p>Если тянет на “органику”, можно подумать и о коко-матах.</p>
+
+<p><strong>DimaM</strong> 03-07-2009</p>
+
+<blockquote>
+  <p>Если тянет на “органику”, можно подумать и о коко-матах.</p>
+</blockquote>
+
+<p>Валера, периодически захожу в Ваш домик, читаю какие сложности с матами, типа влажность как-то замерять, или взвешивать их, что-то не хочется думать о коко-матах. Наверное маты это все таки для крупных хозяйств. А в маленьком автоматизацию думаю проще и дешевле сделать с керамзитом + периодика. Да и керамзит вроде тоже вполне натуральный материал - глина запеченая.</p>
+
+<p>Может я и не прав. Но реально ли с матами оставить растения без присмотра на неделю без контроля увлажненности? Думаю что с периодикой более реально в домашних условиях.</p>
+
+<p><strong>mdima</strong> 03-07-2009</p>
+
+<blockquote>
+  <p>Искал дешевую и менее вредную замену препаратам на основе хлора для обеззараживания воды в бассейне и узнал что можно использовать перекись водорода, который выделяет активный кислород. А нельзя ли в гидропонный раствор его добавлять для насыщения кислородом?</p>
+</blockquote>
+
+<p>При низких концентрациях можно, но крайне осторожно, чтобы кислород упевал переходить в молекулярную форму и растворяться в воде. При высоких концентрациях сильно обожжете корни. Плюс к этому, атомарный кислород, получающийся при каталитическом расщеплении перекиси будет активно осаждать железо. Да и экономически это врят-ли целесообразно.</p>
+
+<p><strong>valery</strong> 03-07-2009</p>
+
+<blockquote>
+  <p>читаю какие сложности с матами, типа влажность как-то замерять, или взвешивать их, что-то не хочется думать о коко-матах. Наверное маты это все таки для крупных хозяйств. А в маленьком автоматизацию думаю проще и дешевле сделать с керамзитом + периодика. Да и керамзит вроде тоже вполне натуральный материал - глина запеченая.</p>
+
+  <p>Может я и не прав. Но реально ли с матами оставить растения без присмотра на неделю без контроля увлажненности?</p>
+</blockquote>
+
+<p>Дмитрий, да я ж за маты не агитирую. Я к ним никакого отношения не имею. Просто знакомлюсь. И чем больше с ними возюкаешься, тем больше они нравятся. Сложностей - вообще никаких нет. Сложности (посильные) возникают, когда начинаешь больше понимать, больше стараться, и пытаться растить лучше, ну и соответственно - больше. Можно себе голову и не забивать влажностью и взвешиванием. У меня на первых матах - и капельниц не было. Так, из кружки польешь - и ладно. Все растет. Ну я не из кружки поливал. Из бутылки. Тоже хорошо.</p>
+
+<p>А из средств контроля был только один замечательный прибор - градусник. Даже не термометр. Со стенки снял.</p>
+
+<p>А в кокосовом мате - и вовсе песня. Он еще менее капризный. Не пересыхает и не переувлажняется, растить можно как в земле, только урожайность лучше. И практически все грубые ошибки гасит. Но на минвате можно получить результат еще выше чем на кокосе.</p>
+
+<p>И на неделю без “контроля влажности” - оставить можно. Я уезжал немного больше, чем на две недели, почти на три. Единственноо сделал - капельницы воткнул. Раньше стояли, но не у всех.</p>
+
+<p>А из средств контроля влажности - был только вечно пьяный грузчик, которому поручил раствор доливать. И ничего. Мало того, раствор закончился (куда его грузчик подевал - загадка, надеюсь, не выпил), он туда сначала старую отработку лил (дренаж не выброшенный), а потом и вовсе воду.</p>
+
+<p>Да и то, проблемы возникли, только потому, что за самими растениями никто не ухаживал - нужно было температуру поддерживать, увлажнять, подрезать (формировать) ну и остальное. А самим матам - хоть бы хны. Хотя и “Коматовские”.</p>
+
+<p>Впрочем, растите на здоровье и на керамзите. Почему нет? На всем можно растить, лишь бы хотелось, нравилось и получалось.</p>
+
+<p><strong>Mole_Garden</strong> 03-07-2009</p>
+
+<blockquote>
+  <p>На всем можно растить, лишь бы хотелось, нравилось и получалось.</p>
+</blockquote>
+
+<p>Золотые слова, Валерий ;)</p>
+
+<p><strong>valery</strong> 03-07-2009</p>
+
+<p>:)</p>
+
+<p><strong>DimaM</strong> 21-07-2009</p>
+
+<p>Созрел мой первый гидропонный урожай :)</p>
+
+<p><img src="http://img111.imageshack.us/img111/258/50745961.th.jpg" alt="" /></p>
+
+<p><strong>Mendes</strong> 21-07-2009</p>
+
+<p>Поздравляю!</p>
+
+<p>Не забудьте поделиться впечатлениями о вкусовых качествах вашего урожая.</p>
+
+<p><strong>DimaM</strong> 28-07-2009</p>
+
+<blockquote>
+  <p>Поздравляю!</p>
+
+  <p>Не забудьте поделиться впечатлениями о вкусовых качествах вашего урожая.</p>
+</blockquote>
+
+<p>Мне показалось что помидорки немного кисловатые на вкус и кожица толстая, жесткая. Может освещения маловато. Прожектор я включаю только на час утром и на два часа вечером, не хочется из-за четырех корней больше электричества жечь, от окна вроде неплохо освещаются.</p>
+
+<p>Сейчас еще в огороде на солнышке подрастают черри в пластиковых бутылках, посмотрим что там получиться. Семена черри привез из Испании когда там отдыхали, наковырял из магазинных, уж больно понравились - такие сладкие были, дети лучше клубники ели. Оказались лиановидные , вымахали под полтора метра.</p>
+
+<p>Кстати, давно искал томат “Щелковский ранний”, на днях купил в Ашане семена.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

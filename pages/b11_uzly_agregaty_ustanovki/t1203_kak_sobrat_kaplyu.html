@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Как собрать каплю? | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Как собрать каплю?">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Как собрать каплю?</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>ASK</strong> 06-10-2011</p>
+
+<p>Купил таки компенсированные капельницы на 2 литра сразу с разъемами под тонкую трубку, трубку купил, выравниватель давления купил, фильтр и так есть. ….И что делать дальше? Чем качать в капельницы? Просто дуть скажем насосом в трубку которая заглушена на конце? … Насос сгорит. Делать расширительный бак и качать в него с автоматикой по отключению? резина в баке не кончиться от расствора? Или пустить магистраль с капельницами кольцом обратно в бак придавив ее краном на выходе, что бы создать требуемое давление? Что делать-то, подскажите? :-\</p>
+
+<p><strong>valery</strong> 06-10-2011</p>
+
+<p>“Дуть” в магистральный шланг” (более толстую трубу) - в который будут “воткнуты” капельницы с отходящими от них “тонкими шлангами” с наконечниками-втыкательницами (во, классный термин :D ) на вторых концах этих самых “тонких шлангов”, которые (наконечники) будет “воткнуты” в кубик, мат, иной субстрат или почву …</p>
+
+<p>( Ух ты … Вот это фраза получилась :o Аж порадовался … :o … но это еще только середина фразы … отвлекся … )</p>
+
+<p>… второй конец которого (я про магистральный шланг) именно будет “заглушен” на конце …</p>
+
+<p>Ффу-у … Конец фразы. Управился … :) (самому бы теперь перечитать - порадоваться :) )</p>
+
+<p>Насос включится, создаст необходимое давление, “откроет” капельницы и … не сгорит.</p>
+
+<p>Если конечно не будет уж ОЧЕНЬ оглушительной разницы ( одна-две капельницы с 2 литрами в час на 1 бар, а насос 10 бар 20 тонн в минуту :o )</p>
+
+<p>А какой насос ? Какое давление и “объем” ?</p>
+
+<p><strong>WERDNA</strong> 07-10-2011</p>
+
+<p>Что такое выравниватель давления? Редуктор? Предохранительный клапан?</p>
+
+<p>Про насос: Валерий правильно спросил про тип насоса. Если центробежный - проблемы нет можете забыть и не вспоминать. Если объемного типа (вибропоршневой, диафрагменный), то скорее всего в самом насосе встроен байпас с клапаном, ограничивающим максимальное давление… Одним словом дайте больше информации.</p>
+
+<p><strong>Coccinella</strong> 07-10-2011</p>
+
+<p>А еще есть такая штука, как самотек. В небольших крестьянских хозяйствах бак с раствором поднимают где-то на метр-полтора от земли и просто вентиль открывают. (Главное, не забыть его закрыть вовремя)</p>
+
+<p><strong>ASK</strong> 07-10-2011</p>
+
+<p>в том-то и дело что насоса пока нет, точнее нет, они как раз есть в ассортименте: помпа для фонтана “мощная” :) циркуляционный насос, родничок, водолей на 25 метров столба воды. А вот что ставить. Валерий, у меня капельницы сразу вкручены в тройники под тонкий шланг так что дуть подразумевается в тонкий магистральный :(</p>
+
+<p>С баком идея интересная, но рабочее давление капельниц 1,5 бара… Это сколько водяного столба? Есть электромагнитный клапан 220 вольт впринципе открывать закрывать поток можно им.</p>
+
+<p><strong>valery</strong> 07-10-2011</p>
+
+<p>1,5 бара почти точно 15 метров … :-\ Так высоко бак, конечно, не поднять …</p>
+
+<p>Есть более “легкие” капельницы, для которых “самотека” было бы вполне достаточно (например у Каймана на низком давлении открываются) …</p>
+
+<p>1,5 бара - для теплицы “обычное дело”, а для дома … Страшного ничего нет, но насос придется немного “повыбирать” …</p>
+
+<p>К примеру у меня насос - всего выдает давление 1,4 бар (14 метров), для капельниц это нормально-рабочий режим, но … открываются они на 0,8.</p>
+
+<p>В общем - смотрите описания, их (насосов) сейчас масса … И “выносите” на обсуждение то, что присмотрели …</p>
+
+<p>По поводу “Водолея” - не знаю … Был (есть) - близкий/похожий по классу … то ли “Ветерок”, то ли “Ручеек” … или еще как похоже …</p>
+
+<p>Ужас.</p>
+
+<p>Орал как гибрид трактора-бензопилы-бормашины :o отрывал шланги и фоггеры :o и кидался ими в разные стороны … :( Про воду куда попало и вовсе молчу … :-[</p>
+
+<p><strong>valery</strong> 07-10-2011</p>
+
+<p>“Мощные” помпы для фонтана - не настолько мощны, чтобы открыть капельницу.</p>
+
+<p><strong>ASK</strong> 07-10-2011</p>
+
+<p>водолей это центробежный, а отрывал видимо вибрационный.</p>
+
+<p>1,5 бара я думаю это номинальное давление, т.е. от 09 до 2 рабочий диапазон, но надо пробовать, у нас в продаже других просто нет :(</p>
+
+<p>я вот думаю о циркуляционном, он вроде 1 очко давит но не сгорит ли он от постоянного накачивания в закрытую трубу?</p>
+
+<p><strong>valery</strong> 07-10-2011</p>
+
+<p>Да, я вероятно про “вибрационный” (названия - похожи, и “высота столба” - 25 м :) )</p>
+
+<p>Если 1,5 - номинальное … ну их хорошо … у меня тогда примерно такой же “диапазон” - 0,8-2,0.</p>
+
+<p>А что за производитель, какая конкретно марка/модель капельницы ? Крупные производители - очень подробно на своих сайтах тех.характеристики указывают …</p>
+
+<p>Циркуляционный … - не знаю. Не пользовался. Но люди - пользуются и не жалуются … Вот Россич - вполне “рекомендует” …</p>
+
+<p>А если финансы позволяют и “на это дело - не жалко” … можно смотреть насосы “Lowaro” - это специализированные (в том числе и для теплиц, то есть не боящиеся “слабоагрессивной среды” - раствора).</p>
+
+<p>Хотя … наверное это уже для совсем “серьезных” выращивателей … :)</p>
+
+<p><strong>ASK</strong> 07-10-2011</p>
+
+<blockquote>
+  <p>Хотя … наверное это уже для совсем “серьезных” выращивателей … :)</p>
+</blockquote>
+
+<p>Да уж, нам до серьезных далековато…</p>
+
+<p>капельницы gardena <img src="http://www.gardena.com/dimage.axd/default/ga210-0634/35x40/gardena-54652756.png" alt="" /></p>
+
+<p>диапазон 0,5-4 бар</p>
+
+<p><strong>valery</strong> 07-10-2011</p>
+
+<p>:) Так и насос тогда тоже “ихний” берите … По крайней мере будет - в цвет и фасон … :) <em>8)</em></p>
+
+<p><strong>ASK</strong> 07-10-2011</p>
+
+<p>жаба давит и квакает, квакает и давит :) есть же говорит у тебя насосы зачем тебе еще? &gt;:D</p>
+
+<p><strong>Mole_Garden</strong> 07-10-2011</p>
+
+<blockquote>
+  <p>жаба давит и квакает, квакает и давит :) есть же говорит у тебя насосы зачем тебе еще? &gt;:D</p>
+</blockquote>
+
+<p>Так попробуй тем, что есть.</p>
+
+<p><strong>WERDNA</strong> 07-10-2011</p>
+
+<p>Гарденовские насосы посмотрие 2000/1 (1,1 бар)- работает 2 года с гарденовскими же капалками безо всяких (капельницы компенсированные 2 л/ч), линия напрямую к насосу - исключительно положительные эмоции. В этом году купил 4000/2 (кажется 2 бар) - такой же, только лучше :) . Молотить “в закрытую трубу” по паспорту можно 1 час (да и больше можно, с центробежным что сделается, разве что перегреется, да и то вряд ли - т.к. погружной. )</p>
+
+<p>Для любительских целей - маст хэв… Стоит конечно определенных денег, но он их реально стоит…</p>
+
+<p><strong>valery</strong> 07-10-2011</p>
+
+<p>Друзья … а никто, случаем мои посты не удаляет … ? Что-то за последние несколько дней уже несколько “непонятных эпизодов” … :-\</p>
+
+<p><strong>valery</strong> 07-10-2011</p>
+
+<blockquote>
+  <p>Гарденовские насосы посмотрие</p>
+</blockquote>
+
+<p><em>8)</em></p>
+
+<p>Мне кажется, я ошибся с давлением … Скорее всего и у меня 1,1 бар (а не 1,4) … Кажется, такая же модель.</p>
+
+<p><strong>caiman</strong> 08-10-2011</p>
+
+<blockquote>
+  <p>Купил таки компенсированные капельницы на 2 литра сразу с разъемами под тонкую трубку, трубку купил, выравниватель давления купил, фильтр и так есть. ….И что делать дальше? Чем качать в капельницы? Просто дуть скажем насосом в трубку которая заглушена на конце? … Насос сгорит. Делать расширительный бак и качать в него с автоматикой по отключению? резина в баке не кончиться от расствора? Или пустить магистраль с капельницами кольцом обратно в бак придавив ее краном на выходе, что бы создать требуемое давление? Что делать-то, подскажите? :-\</p>
+</blockquote>
+
+<p>Обычный аквариумный насос с высотой подьема до 2 м вполне подойдет…… И стоит недорого… Пробуйте…..</p>
+
+<p><strong>студент</strong> 08-10-2011</p>
+
+<p>купил себе китайский taifu. маленький и компактный.</p>
+
+<p>центробежный насос. Hmax 32m Qmax 35 l/min</p>
+
+<p>и стоит копейки (1150 р отдал)</p>
+
+<p>работает отлично и все открывает</p>
+
+<p><strong>Mole_Garden</strong> 08-10-2011</p>
+
+<blockquote>
+  <p>Друзья … а никто, случаем мои посты не удаляет … ? Что-то за последние несколько дней уже несколько “непонятных эпизодов” … :-\</p>
+</blockquote>
+
+<p>Да вроде нет, я не трогаю.</p>
+
+<p><strong>WERDNA</strong> 08-10-2011</p>
+
+<p>Не знаю, как такие слабые насосы открывают капельницы, у меня не получилось :-\</p>
+
+<p>У меня гарденовские капельницы 2 литра, так вот, когда фильтр зарастает и давление падает (до 0,7), расход через капельниы становится непредсказуемым и неравномерным. Для контроля даже поставил манометр за фильтром. Как тольтко до 1 бара падает - промываю. <em>8)</em></p>
+
+<p><strong>ASK</strong> 08-10-2011</p>
+
+<p>Всем спасибо, попробую церкулярным качнуть, если не пойдет, буду покупать что-то.</p>
+
+<p><strong>caiman</strong> 08-10-2011</p>
+
+<blockquote>
+  <p>Не знаю, как такие слабые насосы открывают капельницы, у меня не получилось :-\</p>
+
+  <p>У меня гарденовские капельницы 2 литра, так вот, когда фильтр зарастает и давление падает (до 0,7), расход через капельниы становится непредсказуемым и неравномерным. Для контроля даже поставил манометр за фильтром. Как тольтко до 1 бара падает - промываю. <em>8)</em></p>
+</blockquote>
+
+<p>У меня тож был с фильтром - забился фильтр - капец капельницам… Поставил “голову” все открывается и капает без проблем…. Правда капельницы израильские ADO.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

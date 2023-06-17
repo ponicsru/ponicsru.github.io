@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>салат айсберг, небольшой эксперимент | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="салат айсберг, небольшой эксперимент">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">салат айсберг, небольшой эксперимент</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>bukanoff</strong> 23-03-2013</p>
+
+<p>Доброго времени суток, господа присяжные заседатели.</p>
+
+<p>Как и обещал выкладываю отчет о своих экспериментах. Для подопытного был выбран салат сорта “Айсберг”, семена купил в ближайшем магазине.</p>
+
+<p>Высадка производилась в три типа: торфяные таблетки, керамзит и что-то напоминающее кокосовую стружку (хотя называется субстрат для орхидеи). Семена, таблетки и “кокосовая стружка” предварительно были замочены в корневине на 12 часов. Высадка была произведена 24.02.13 утром. В качестве питательного раствора был сначала принят корневин.</p>
+
+<p>Первые ростки показались через 2 дня, температура была в пределах 18-20. Результаты всхода очень хорошие - примерно 90%. Пленка была снята 26.02.13 утром.</p>
+
+<p>Три дня ростки стояли под освещением, правда комнатным, после чего были помещены под лампу ДНаЗ 400. Простояли пару дней. Затем часовой день был сокращен до 18 часов. Температура ОС поддерживалась на уровне 17-19 днем и 15-16 ночью. Влажность от 30-50, ночью влажность увеличивалась ближе к 50. Вручную повысить никак не удалось. Питательный раствор на первых порах поддерживался на уровне 700-800 ррм, менялся каждые два дня. Через пару недель, когда ростки подросли на ствол стал вести, расстояние до лампы было 70 см, пришлось увеличить до 1,5 м. Ростки на керамзите засохли после помещения под ДНаЗ. Концентрация раствора также была увеличена до 1400-1500. Однако, из-за отсутствия прибора по замеру уровня солей не известно на каком уровне находились соли. Раствор замешивался в банке при помощи ррм калькулятора заливался, остатки ставились в темное место. Через два дня, когда необходимо было доливать раствор туда бухалось пол крышки исходного зелья раствора, перемешивалось и выливалось на подкормку. Через каждые 3-4 подкормки приготавливался новый раствор. Кроме того, через пару недель был сокращен световой день до 12-14 часов, когда как получается выключать.</p>
+
+<p>В целом за 28 дней результат не очень радует, корневая система кажется очень слабой, основной ствол, на котором держится листва весь изогнутый, и по-моему ему тяжело держать листья. Лист не очень крупный, возможно из-за избытка света. Всего пару семечек смогли пробиться через дырочку в стакане на прямую к раствору. Пока все выглядит вот так.</p>
+
+<p>Так же через пару недель нашел минвату для гидропоники, не гродан, но вроде агрос. если точнее то кубики. в стакане, где вымачивались семена оставалось еще достаточно много, кроме того, они взошли и пустили неплохие корни. Эксперимента ради часть из них были пересажены в минвату. Результата пока особого не видно.</p>
+
+<p>Очень хотелось бы выслушать замечания, советы и тд и тп. :-\</p>
+
+<p><a href="https://t.me/ponics_ru_files/10215" target="_blank"><img src="/attachimages/12750_20130323_092526.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10216" target="_blank"><img src="/attachimages/12752_20130224_124555.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10217" target="_blank"><img src="/attachimages/12754_20130224_124944.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10218" target="_blank"><img src="/attachimages/12756_20130226_100358.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10219" target="_blank"><img src="/attachimages/12758_20130323_091226.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10220" target="_blank"><img src="/attachimages/12760_20130323_091236.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10221" target="_blank"><img src="/attachimages/12762_20130323_091255.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10222" target="_blank"><img src="/attachimages/12764_20130323_092553.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10223" target="_blank"><img src="/attachimages/12766_20130323_092602.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10224" target="_blank"><img src="/attachimages/12768_20130323_092631.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10225" target="_blank"><img src="/attachimages/12770_20130323_092702.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 23-03-2013</p>
+
+<p>Как же можно так издеваться над беззащитным салатом?! Во-первых, он (тсс, никому не говорите, страшная тайна!) - не орхидея, не ягель и даже не дуб, поэтому выращивать его в соответствующих субстратах как-то… нелогично.</p>
+
+<p>Во-вторых, кто Вам сказал, что Корневин может быть питательным раствором да еще в таких количествах? Вы бы сами на диете из аспирина или касторки посидели недельку, вот бы у Вас листья зазеленели и ноги бы не подгибались… Это же стимулятор роста! В повышенных дозах вообще можно растение загубить! Если растения совершенно голодные, чего там можно стимулировать? Они, видимо, пока еще живы только за счет нитратов в поливной воде, сколько-то их там всегда присутствует.</p>
+
+<p>Ну и наконец, почему уровень субстрата в стаканчиках такой низкий? Растениям темно, бортик стакана весь свет застит.</p>
+
+<p><strong>bukanoff</strong> 23-03-2013</p>
+
+<blockquote>
+  <p>Как же можно так издеваться над беззащитным салатом?! Во-первых, он (тсс, никому не говорите, страшная тайна!) - не орхидея, не ягель и даже не дуб, поэтому выращивать его в соответствующих субстратах как-то… нелогично.</p>
+
+  <p>Во-вторых, кто Вам сказал, что Корневин может быть питательным раствором да еще в таких количествах? Вы бы сами на диете из аспирина или касторки посидели недельку, вот бы у Вас листья зазеленели и ноги бы не подгибались… Это же стимулятор роста! В повышенных дозах вообще можно растение загубить! Если растения совершенно голодные, чего там можно стимулировать? Они, видимо, пока еще живы только за счет нитратов в поливной воде, сколько-то их там всегда присутствует.</p>
+
+  <p>Ну и наконец, почему уровень субстрата в стаканчиках такой низкий? Растениям темно, бортик стакана весь свет застит.</p>
+</blockquote>
+
+<p>корневин использовался только в начале 1-ый и 2-ой день, в последующем готовился раствор с концентрацией 700-800 ppm, а через пару недель 1300-1400. с субстратом орхидеи получилось случайно, в магазине спросил кокосовую стружку, дали этот пакет, не обратил внимание сначала, потом уже решил для эксперимента попробовать. Так как это первый опыт, так же решил посадить на разных уровнях. А в целом плане было высадить нижние повыше. Спасибо за конструктивную критику <em>8)</em></p>
+
+<p><strong>Гидропоника</strong> 30-10-2013</p>
+
+<p>У меня в Карамзите рос и не жаловался)))) правдо некоторые семена смывало))))</p>
+
+<p>Сейчас в бумажку вкладываю</p>
+
+<p><strong>monksk</strong> 13-12-2013</p>
+
+<blockquote>
+  <p>У меня в Карамзите рос и не жаловался)))) правдо некоторые семена смывало))))</p>
+
+  <p>Сейчас в бумажку вкладываю</p>
+</blockquote>
+
+<p>вот оно Спасибо)</p>
+
+<p><strong>Borodach1</strong> 25-03-2014</p>
+
+<p>Совсем дурацкий вопрос.</p>
+
+<p>Из детских воспоминаний. Я в детстве был уверен, что редиска растёт… пучками. :o Ну как картошка. :D</p>
+
+<p>Её же продавали вместе с ботвой увязаной в пучки. Вот в детском воображении так и улеглось. Годков наверное до 18-ти был уверен в пучковаости редиски. :D</p>
+
+<p>Ну и собственно сам вопрос про салат. Его принято по одному в стаканчик сажать или по несколько семечек? :-[ :D</p>
+
+<p><strong>mitrotech</strong> 25-03-2014</p>
+
+<p>Я пробовал высевать в стаканчик по 4, по 3, по 2 и по одному семени. Лучший результат по одному семени. Всё-таки листовой салат это не укроп.</p>
+
+<p><strong>Borodach1</strong> 25-03-2014</p>
+
+<blockquote>
+  <p>Я пробовал высевать в стаканчик по 4, по 3, по 2 и по одному семени. Лучший результат по одному семени. Всё-таки листовой салат это не укроп.</p>
+</blockquote>
+
+<p>Ага! Спасибо! Будем знать! :D</p>
+
+<p><strong>diman73rus</strong> 25-03-2014</p>
+
+<blockquote>
+  <p>Ну и собственно сам вопрос про салат. Его принято по одному в стаканчик сажать или по несколько семечек? :-[ :D</p>
+</blockquote>
+
+<p>по одному. на случай невсхожести стаканчиков делают больше. процентов на 10.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Домик Evgena | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Домик Evgena">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Домик Evgena</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Evgen</strong> 07-03-2011</p>
+
+<p>Всем привет!!! Я как начинающий любитель гидропоники еще не имеющий опыт в этом не легком (кажущимся на первый взгляд) деле некое время назад решил собрать установочку для выращивания салата…))) Эксперимент прошел не совсем удачно в силу своих переоценненых возможностей , недостатка средств и еще кое каких факторов, но дело не в этом , а в том что сейчас передо мной открылась переспектива ( как снег на голову) организовать небольшое производство этого растения и очень не хочется упускать эту возможность, причем без собственных вложений!!! В связи с этим событием возникает куча вопросов и питаю надежды на вашу помошь , т.к. многие вопросы не успел еще рассмотреть в силу недостатка времени ( теперь придеться днем и ночью у компа сидеть )) но обо всем по порядку…. Имеется подвальное помещение довольно таки крупное , но пока планируется занять полезной площади для установок 60 кв.м а точнее 40 кв.м так как планируется два яруса благо высота = 3м позволяет… Температура внутри помещения зимой от 0…+5 градусов, летом (независимо от внеш. темп.) не выше +20гр. естественно планирую утеплять , но выплывает первый и самый главный вопрос в освещении..</p>
+
+<ol>
+  <li>
+    <p>Сможет ли ДНаЗ 400 подвешанный на расстояние ровно 1м от растений в ширину осветить 3м(т.е. влево и право от себя на 1,5 м) и в длину 1,5 м. хватиь ли салатикам этого света или придется переходить на большее кол-во ДНаЗ 250 т.к. длина одного стеллажа 5 м. а ширина 3м. вот и планирую пока 3 ДНаЗа 400 на него….. Подскажите правильно ли это …, и будет ли большой эффект от этого перехода…, или есть еще какая нибудь альтернатива ДНаЗу на этом расстоянии….</p>
+  </li>
+  <li>
+    <p>Вот кстати назрел и второй не маловажный вопрос: в рекомендации агротипа показаны периоды искуственого освещения растений :</p>
+  </li>
+</ol>
+
+<p>месяц:	 1	 2	 3	 4	 5	 6	 7	 8	 9	 10	 11	 12</p>
+
+<p>Период</p>
+
+<p>досвечивания,час:	16 14-12 8-10 8-10 8-10 8-10 8-10 6-8 8-10 12-14 16</p>
+
+<p>правильно ли я понял что имеется ввиду отстутвие естественного света…. <em>???</em> , тогда получается что среднее годовое потребление света за день составляет около 11 часов, если я что не так понял , поправьте меня пожалуйста ….Заранее спасибо…!!! ;)</p>
+
+<p><strong>valery</strong> 07-03-2011</p>
+
+<p>Напротив, в ПРИСУТСТВИИ естественного света.</p>
+
+<p>Как Вы видите, в темное время года досвечивают больше, в “светлое” - меньше.</p>
+
+<p><strong>Coccinella</strong> 07-03-2011</p>
+
+<p>А как Вы собираетесь обслуживать грядку салата шириной в 3 м?</p>
+
+<p><strong>Mole_Garden</strong> 07-03-2011</p>
+
+<blockquote>
+  <p>правильно ли я понял что имеется ввиду отстутвие естественного света…. <em>???</em> , тогда получается что среднее годовое потребление света за день составляет около 11 часов, если я что не так понял , поправьте меня пожалуйста ….Заранее спасибо…!!! ;)</p>
+</blockquote>
+
+<p>Обычно, точнее почти всегда в 99% случаев выращивают именно в теплицах при наличие естественного света. А лампами же только досвечивают. У тебя же полная ламповая зависимость, а соответственно надо светить по 16 часов не меньше.</p>
+
+<p>Кстати, а ты не узнавал сколько стоит салат по городу, рассчитывал какая будет у тебя себестоимость салата при таком выращивание?</p>
+
+<p>Про площадь.</p>
+
+<p>По данным с одного сайта ДНАЗ 400 с высоты в 1,5 метра освещает площадь 2.5 x 1.6 при этом освещенность выходит 5500 - 7500 клюкс. А значит, что с высоты 1-1,2 метра площадь будет еще меньше. Это их замеры и их данные.</p>
+
+<p>Однако из своего опыта. Лампа ДНАЗ 250 с высоты в 70см освещала в ширину 1.8-1.9 метра, в длину 1.2 и салаты росли хорошо</p>
+
+<p>Из чего можно сделать предположение, что ДНАЗ 400 возможно и сможет осветить требуемую тебе площадь с большой доли вероятности. По крайне мере, когда я делал расчет я тоже брал такие же цифры как у тебя. Думаю если что, то можно и рассчитывать не 3 метра в ширину, а по 2,5-2,7 точно.</p>
+
+<p><strong>Evgen</strong> 08-03-2011</p>
+
+<blockquote>
+  <p>А как Вы собираетесь обслуживать грядку салата шириной в 3 м?</p>
+</blockquote>
+
+<p>вообщем планирую выращивать на NFT системе, точнее предполагается использовать кабель канал 80 х 60 мм такие же были у Константина в его репорте про салатный стелаж ….)))) думаю что его не будет трудно передвинуть( или снять ) на нужное место чтобы достать до последнего стаканчика, просто в целях экономии площади и соответственно теплоизоляционных материалов планирую занять площадь длиной 7м и шириной 6,6м ….и распологаться они будут поперечно ширине , т.е. получается по 3 м с каждой стороны , а 0,8- 1м будет технологический проход между ними по середине , думаю будет достаточно….</p>
+
+<p><strong>Mole_Garden</strong> 08-03-2011</p>
+
+<p>На самом деле, кабель каналы не самый дешевый вариант. Если это пока тест, эксперименты с желанием получить урожай, то может все же лучше сделать столы?</p>
+
+<p>А у кого еще какие мысли по этому поводу? Т.е. что лучше использовать(столы, короба или еще что то) что бы получилось практично и что бы все это занимало максимально большую площадь при этом на проходы уходило как можно меньше? Пока у меня только один из бюджетных вариантов это стол длиной в во всю площадь и шириной примерно в 2 метра(для сбора продукции с двух сторон вполне нормальная ширина)</p>
+
+<p>А вот еще вопрос, если салаты выращивать на столе, то во что их ставить когда они будут уже дозревать до товарного вида? Пенопласт? или какие еще возможны варианты?</p>
+
+<p>Вот такое решение от Агротипа</p>
+
+<p>Кассета-вкладыш для выращивания салата на</p>
+
+<p>стеллажах по технологии “прилив-отлив”</p>
+
+<p>8 ячеек (416х587)</p>
+
+<p><a href="https://t.me/ponics_ru_files/5043" target="_blank"><img src="/imagehost/thumbs/ugs41.jpg" alt="" /></a></p>
+
+<p><strong>Evgen</strong> 09-03-2011</p>
+
+<blockquote>
+  <p>Обычно, точнее почти всегда в 99% случаев выращивают именно в теплицах при наличие естественного света. А лампами же только досвечивают. У тебя же полная ламповая зависимость, а соответственно надо светить по 16 часов не меньше.</p>
+
+  <p>Кстати, а ты не узнавал сколько стоит салат по городу, рассчитывал какая будет у тебя себестоимость салата при таком выращивание?</p>
+</blockquote>
+
+<p>Средняя розничная стоимость салата у нас в торговых сетях около 40 руб. стаканчик на данный момент , в новогодние праздники цена доходила до 60 руб.. в осенне - весений период колебалась от 30 до 40 руб., в летний период еще не было возможности следить за ее изменением! Вообще планирую в летний период не заниматься производством , слишком маленькая цена и потребительский спрос будет маленький , ее (зелени) и так будет у всех на дачах и огородах хватать!!!</p>
+
+<p>Себестоимость моего стаканчика с учетом ваших поправок по свету и максимальных издержек получается приблизительно такая:</p>
+
+<p>Энергопотребление( тепловое в том числе) - 6,69 руб.</p>
+
+<p>Субстрат( торф) - 0,5руб</p>
+
+<p>Стаканчик - 0,48 руб.</p>
+
+<p>СО2 (заправка) - 0,44 руб.</p>
+
+<p>Семена - 0,1 руб.</p>
+
+<p>Упаковка - 0,47руб.</p>
+
+<p>Удобрения - 0,11 руб.</p>
+
+<p>Водоснабжение - 0,1 руб.</p>
+
+<p>ИТОГО : 8,9 рубля</p>
+
+<p>Отпускная минимальная цена приблизительно такая же как и вас Костя минимум 20 руб., и с учетом того что практически во всех торговых точках представленный продукт реализуется только от одного единственного конкурента , который даже не из нашего региона ( еще идут транспотрные расходы) можно сказать что салатик будет вполне конкурентно способен! <em>8)</em> Да и свои транспортные расходы и налоговые издержки планирую пока включит по вверх отпускной цены, тогда думаю что цена может увеличится до 25 руб. за стаканчик!!!</p>
+
+<blockquote>
+  <p>Про площадь.</p>
+
+  <p>По данным с одного сайта ДНАЗ 400 с высоты в 1,5 метра освещает площадь 2.5 x 1.6 при этом освещенность выходит 5500 - 7500 клюкс. А значит, что с высоты 1-1,2 метра площадь будет еще меньше. Это их замеры и их данные.</p>
+
+  <p>Однако из своего опыта. Лампа ДНАЗ 250 с высоты в 70см освещала в ширину 1.8-1.9 метра, в длину 1.2 и салаты росли хорошо</p>
+
+  <p>Из чего можно сделать предположение, что ДНАЗ 400 возможно и сможет осветить требуемую тебе площадь с большой доли вероятности. По крайне мере, когда я делал расчет я тоже брал такие же цифры как у тебя. Думаю если что, то можно и рассчитывать не 3 метра в ширину, а по 2,5-2,7 точно.</p>
+</blockquote>
+
+<p>Спасибо Костя! Я для расчетов себестоимости прикинул пока ДНаЗ 250 4 штуки на эту площадь 15 кв. м . этого должно хватить ??? потому как планирую уже переделать по другому размеры установки (ширина 2 м. длина 7,5м)высоту подвесса тоже можно изменить … и какая оптимальная на ваш взгляг нужна высота для ДНаЗ 250 чтобы осветил 2 м в ширину и 1,8 м в длину…?????</p>
+
+<p><strong>Mole_Garden</strong> 09-03-2011</p>
+
+<blockquote>
+  <p>Спасибо Костя! Я для расчетов себестоимости прикинул пока ДНаЗ 250 4 штуки на эту площадь 15 кв. м . этого должно хватить ??? потому как планирую уже переделать по другому размеры установки (ширина 2 м. длина 7,5м)высоту подвесса тоже можно изменить … и какая оптимальная на ваш взгляг нужна высота для ДНаЗ 250 чтобы осветил 2 м в ширину и 1,8 м в длину…?????</p>
+</blockquote>
+
+<p>Ох сдается мне что маловато это будет. В длину лампы 250 ватт освещают 1,1-1,3 метра, на 1,8 они точно не потянут. Если поднимать выше, то будет теряться освещенность.</p>
+
+<p>Для прояснения, лампа освещает прямоугольную площадь, но ни как не квадрат. Так что как бы не вешал, не получиться осветить задуманную тобою площадь без потерь освещенности. Ламу в 250 ватт более чем на 90 см поднимать не стоит, но это личные ощущения, приборов под рукой не было, что бы замерить показания освещенности.</p>
+
+<p><strong>Evgen</strong> 14-03-2011</p>
+
+<p>Ох сдается мне что маловато это будет. В длину лампы 250 ватт освещают 1,1-1,3 метра, на 1,8 они точно не потянут. Если поднимать выше, то будет теряться освещенность.</p>
+
+<p>Для прояснения, лампа освещает прямоугольную площадь, но ни как не квадрат. Так что как бы не вешал, не получиться осветить задуманную тобою площадь без потерь освещенности. Ламу в 250 ватт более чем на 90 см поднимать не стоит, но это личные ощущения, приборов под рукой не было, что бы замерить показания освещенности.</p>
+
+<p>Извиняюсь немного запутался в цифрах, будет не 4 а 5 ламп ДНаЗ 250 на эту площадь , теперь вот еще такой очень важный для меня вопрос , если ДНАЗ 250поднять чуть выше на на высоту 90 см сможет ли он осветить в ширину 2,2м и длину 1,5м….???? если сможет без значительной потере освещенности хочу пока остановиться на этом варианте , всю голову изломал с этим освещением…… :-\</p>
+
+<p><strong>Mole_Garden</strong> 15-03-2011</p>
+
+<blockquote>
+  <p>теперь вот еще такой очень важный для меня вопрос , если ДНАЗ 250поднять чуть выше на на высоту 90 см сможет ли он осветить в ширину 2,2м и длину 1,5м….???? если сможет без значительной потере освещенности хочу пока остановиться на этом варианте , всю голову изломал с этим освещением…… :-\</p>
+</blockquote>
+
+<p>Кто бы знал! Надо проверять, а негде и не кому.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

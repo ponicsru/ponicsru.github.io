@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Зелёный уголок на моём балкончике   ---   от Sashko | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Зелёный уголок на моём балкончике   ---   от Sashko">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Зелёный уголок на моём балкончике   ---   от Sashko</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>sashko</strong> 23-05-2010</p>
+
+<p>Здравствуйте уважаемые! Решил немножко рассказать о своих достижениях,они не очень то большие,но так как я делаю первые шаги в этом интересном деле, то меня это радует.Хочу поделиться с Вами моим экспериментом.</p>
+
+<p>Зимой купил по интернету в <a href="http://www.hydroponics.eu" target="_blank">www.hydroponics.eu</a> систему New Aeroponix 1.28,собрал,поставил,залил водой,запустил,заработало.Ура… Потом начало капать в разных местах,купил обычный строительный силикон,поклеил заново,запустил,опять капает,просачивалась вода в разных местах системы.Разобрал снова,по Вашим советам поехал в зоомагазин купил клей для аквариумов,полностью всё переклеил,все узлы.После по клейки всё стало работать супер,и пол сухой,а это очень важно, так как мы живём на третьем этаже и не охота топить соседей. :-\</p>
+
+<p>Моя первая покупка питательных элементов была Bio Sevia,но как то она мне не очень понравилась.Начало мутнеть,какие то желейные субстанции + запах очень приятный :o,а кроме того саженцы стояли на месте,роста никакого.</p>
+
+<p>Потом же по Вашим рекомендациям я приобрёл минеральные питательные элементы от GHE <a href="http://www.eurohydro.com/floraseries.html" target="_blank">http://www.eurohydro.com/floraseries.html</a> Залил высадил и так и началось выращивание,но уже на балконе.У нас было потеплело,но по ночам ещё были низкие температуры,днём +23,а ночью +14.Поэтому первые 2 недели не сильно шли в рост,но корни прорастали и даже написано в литературе,что первое время прорастают корни,а потом идут в рост и сами саженцы.</p>
+
+<p>Ах да растим всё подряд.Был высадил огурцы, простояли недельку и к сожалению засохли ???,но я сильно не расстроился,потому что уже ознакомился о совмещении растений + для каждого растения есть свои концентрации пит.растворов.</p>
+
+<p><strong>sashko</strong> 23-05-2010</p>
+
+<p>Вот так это всё было:</p>
+
+<p>Мои первые саженцы:</p>
+
+<p>А это через 2 недельки:</p>
+
+<p>Пятая неделя:</p>
+
+<p>А так они выглядят сегодня,прошло 6 недель после посадки:</p>
+
+<p><strong>Hrun</strong> 23-05-2010</p>
+
+<p>8) а на вкус как? уже пробовали?</p>
+
+<p><strong>Mole_Garden</strong> 23-05-2010</p>
+
+<p>Ну что же очень даже круто. 8) Так держать!</p>
+
+<p><strong>sashko</strong> 23-05-2010</p>
+
+<blockquote>
+  <p>8) а на вкус как? уже пробовали?</p>
+</blockquote>
+
+<p>Срезал зелёный кориандр на салат,супер 8) приятный свежий вкус.</p>
+
+<p>А сегодня будем резать салат на ужин,простой рецепт:листья салата,порезанные тонкие кольца на пополам репчатого лука,подсолнечное масло,уксус и соль по вкусу.Превосходный лёгкий салатик.</p>
+
+<p><strong>sashko</strong> 23-05-2010</p>
+
+<blockquote>
+  <p>Ну что же очень даже круто. 8) Так держать!</p>
+</blockquote>
+
+<p>Благодарю Константин! Буду стараться :)</p>
+
+<p><strong>tango</strong> 23-05-2010</p>
+
+<p>ЗачОт 8) Гламурненько.</p>
+
+<p>а подсветка какая была? или так святым духом?</p>
+
+<p><strong>Gidropont</strong> 23-05-2010</p>
+
+<p>Отличный огородик! 8) Только вот 6 недель для салатов по-моему многовато. Солнышка у вас там должно быть много, а вот балкон, если не ошибаюсь, выходит на запад. Может в этом причина?</p>
+
+<p>Да, у томатика лучше пасынок отчикать, да и тени меньше будет.</p>
+
+<p>Удачи! Хороших урожаев.</p>
+
+<p><strong>sashko</strong> 23-05-2010</p>
+
+<blockquote>
+  <p>ЗачОт 8) Гламурненько.</p>
+
+  <p>а подсветка какая была? или так святым духом?</p>
+</blockquote>
+
+<p>Да не было никакой подсветки,солнышко да и то только после обеда. :o</p>
+
+<p><strong>sashko</strong> 23-05-2010</p>
+
+<blockquote>
+  <p>Отличный огородик! 8) Только вот 6 недель для салатов по-моему многовато. Солнышка у вас там должно быть много, а вот балкон, если не ошибаюсь, выходит на запад. Может в этом причина?</p>
+
+  <p>Да, у томатика лучше пасынок отчикать, да и тени меньше будет.</p>
+
+  <p>Удачи! Хороших урожаев.</p>
+</blockquote>
+
+<p>Спасибо :-[</p>
+
+<p>Да 6 недель это наверно много,но я этот эксперимент проводил на балконе,на открытом воздухе и здесь как необычно весна затянулась очень холодная и дождливая и ветреная.Да бывали после высадки растений тёплые деньки,но ночью температура сильно опускалась.Из за этого они наверно стояли на месте и медленно росли.(Мы живём за 9км от Атлантического океана,а вода там ооочень холодная) Только вот последнюю неделю была жара невыносимая где то до +35 и мои саженцы пошли сильно в рост,уже мешают друг другу. А представьте себе если это всё происходит в теплице,где постоянно выдержана температура и все условия :o</p>
+
+<p>Да балкон именно на западной стороне и солнце туда попадает где то после 15.00.</p>
+
+<p><strong>ГидроПончик</strong> 24-05-2010</p>
+
+<p>Всё нормально! Поздравляю!</p>
+
+<p>Я с конца апреля перенёс все салаты на воздух. Оказалось, что без подсветки, стабильной температуры и влажности салатики, что и понятно, в скорости созревания хороших результатов не показывают.</p>
+
+<p>Ну а шесть недель, это всего-то 42 дня. Успехов и терпения - от всей души.</p>
+
+<p><strong>sashko</strong> 24-05-2010</p>
+
+<blockquote>
+  <p>Всё нормально! Поздравляю!</p>
+
+  <p>Я с конца апреля перенёс все салаты на воздух. Оказалось, что без подсветки, стабильной температуры и влажности салатики, что и понятно, в скорости созревания хороших результатов не показывают.</p>
+
+  <p>Ну а шесть недель, это всего-то 42 дня. Успехов и терпения - от всей души.</p>
+</blockquote>
+
+<p>Трудимся, стараемся и терпим. Большое спасибо за внимание!</p>
+
+<p><strong>valery</strong> 24-05-2010</p>
+
+<p>8)</p>
+
+<p><strong>sashko</strong> 13-03-2011</p>
+
+<p>вот такие были выросли помидорчики черри!!!</p>
+
+<p><a href="https://t.me/ponics_ru_files/3814" target="_blank"><img src="/imagehost/thumbs/img0010.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3815" target="_blank"><img src="/imagehost/thumbs/img0011tmt.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 13-03-2011</p>
+
+<p>Вы большой молодец! И томатики красивые выросли.</p>
+
+<p>Только на будущее (Вы наверно уже и сами догадались :)), когда будете размещать растения в ячейках заранее представьте себе, какого размера они вырастут и цв. капусту (и вообще все капусты) сажайте так, чтобы она салат-редис не затеняла. А при уходе за томатами лучше не оставлять пеньком от листьев и пасынков и аккуратно работать ножом, а не обрывать. Там на стебле в паре мест видны очень нехорошие раны. В данном случае обошлось, но вообще они чреваты серой гнилью стебля.</p>
+
+<p>Но все равно, очень хороший результат для первой попытки!</p>
+
+<p><strong>Mole_Garden</strong> 13-03-2011</p>
+
+<p>Помидорки есть, а вот листвы совсем нет.</p>
+
+<p><strong>sashko</strong> 13-03-2011</p>
+
+<p>Это я сам по-отщипывал,были сильные заросли,чтобы все шло в рост плода.</p>
+
+<p><strong>Mole_Garden</strong> 13-03-2011</p>
+
+<blockquote>
+  <p>Это я сам по-отщипывал,были сильные заросли,чтобы все шло в рост плода.</p>
+</blockquote>
+
+<p>:D Жестоко! Ведь благодаря листве, а не стволу, идет фотосинтез и растут плоды. Листву как правило обрывают внизу и по не многу, но она должна быть.</p>
+
+<p><strong>sashko</strong> 13-03-2011</p>
+
+<p>Вот еще узнал полезную информацию,а я листья оборвал и думал всё будет идти в плод,быстрей поспеют. :-[</p>
+
+<p><strong>sashko</strong> 13-03-2011</p>
+
+<p>Только добрался к банану,а меня уже и поймали папарацци</p>
+
+<p><a href="https://t.me/ponics_ru_files/3816" target="_blank"><img src="/imagehost/thumbs/xaf5e612f.jpg" alt="" /></a></p>
+
+<p><strong>sashko</strong> 13-03-2011</p>
+
+<p>Непутевые заметки с Сашком!!!</p>
+
+<p>Интересная пальма! :o</p>
+
+<p><a href="https://t.me/ponics_ru_files/3817" target="_blank"><img src="/imagehost/thumbs/xb427a62b.jpg" alt="" /></a></p>
+
+<p>Плантация сахарного тростника!</p>
+
+<p><a href="https://t.me/ponics_ru_files/3818" target="_blank"><img src="/imagehost/thumbs/xa7f938fc.jpg" alt="" /></a></p>
+
+<p>Жена захотела папайи!</p>
+
+<p><a href="https://t.me/ponics_ru_files/3819" target="_blank"><img src="/imagehost/thumbs/x71f22797.jpg" alt="" /></a></p>
+
+<p><strong>sashko</strong> 05-04-2011</p>
+
+<p>Вот решил попробовать вырастить что-то новое,но пока без гидропоники,так как недавно приобрёл,а там посмотрим и индивидуальной системы для каждого растения пока нету.</p>
+
+<p><a href="https://t.me/ponics_ru_files/3820" target="_blank"><img src="/imagehost/thumbs/jj.jpg" alt="" /></a></p>
+
+<p>Маракуйя</p>
+
+<p><strong>sashko</strong> 05-04-2011</p>
+
+<p><a href="https://t.me/ponics_ru_files/3821" target="_blank"><img src="/imagehost/thumbs/d.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/3822" target="_blank"><img src="/imagehost/thumbs/vcbvc.jpg" alt="" /></a></p>
+
+<p>Лайм</p>
+
+<p><strong>sashko</strong> 05-04-2011</p>
+
+<p><a href="https://t.me/ponics_ru_files/3823" target="_blank"><img src="/imagehost/thumbs/555.jpg" alt="" /></a></p>
+
+<p>Оливковое дерево</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

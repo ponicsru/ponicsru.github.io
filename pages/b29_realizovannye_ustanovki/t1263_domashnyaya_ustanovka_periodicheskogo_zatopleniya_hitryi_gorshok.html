@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Домашняя установка периодического затопления "Хитрый Горшок" | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Домашняя установка периодического затопления &quot;Хитрый Горшок&quot;">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Домашняя установка периодического затопления "Хитрый Горшок"</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Nikolai</strong> 28-11-2011</p>
+
+<p>Представляю установку периодического затопления (ebb&amp;flow), назовем ее условно… «хитрый горшок». Прошу прощения, что не стану раскрывать внутреннее устройство (это пока секрет), расскажу о свойствах установки.</p>
+
+<p>Комплект установки на фотографии:</p>
+
+<p><a href="https://t.me/ponics_ru_files/6748" target="_blank"><img src="/imagehost/thumbs/hitrygorshok.jpg" alt="" /></a></p>
+
+<p>В комплект входят: собственно горшок, аквариумный компрессор, таймер, горшочки с субстратом, например, керамзитом.</p>
+
+<p>Построен на основе готового цветочного горшка объемом 5.5 литра</p>
+
+<p>Размеры: высота 21 см, максимальный диаметр 25 см.</p>
+
+<p>Размер верхнего поддона: диаметр 20.5 см, высота 8 см</p>
+
+<p>В установку можно залить до 3-х литров раствора, который, под действием силы тяжести перетекает в нижнюю часть горшка.</p>
+
+<p>Приводится в действие воздушным компрессором. Компрессор управляется таймером.</p>
+
+<p>При включенном компрессоре около 0.8 литра раствора из нижней части горшка поступает в верхний поддон.</p>
+
+<p>При выключении компрессора, раствор уходит обратно вниз.</p>
+
+<p>Система стабилизации поддерживает постоянный уровень затопления. То есть, один и тот же объем раствора поступает при затоплении наверх, независимо от количества раствора в горшке (пока раствор вообще есть).</p>
+
+<p>Объем затопляющего раствора можно настраивать (уменьшать).</p>
+
+<p>В верхний затапливаемый поддон помещается:</p>
+
+<p>до 7 стаканчиков диаметром 7 см, либо</p>
+
+<p>до 4 стаканчиков диаметром 9 см, либо</p>
+
+<p>до 3 стаканчиков диаметром 10 см</p>
+
+<p>Уровень затопления примерно 4 см от дна стаканчика, зависит от того, насколько плотно заставлен стаканчиками затапливаемый поддон. Реально раствор поднимается выше за счет капиллярности субстрата.</p>
+
+<p>По сравнению с аналогами, которые приводятся в действие помпой внутри горшка, «хитрый горшок» имеет преимущества:</p>
+
+<ol>
+  <li>
+    <p>Несколько горшков могут быть подключены к одному компрессору, нужны только дополнительные шланги и тройники.</p>
+  </li>
+  <li>
+    <p>Если раствор израсходуется, компрессор, в отличие от помпы, не сгорит.</p>
+  </li>
+  <li>
+    <p>Высокое напряжение не подведено к горшку</p>
+  </li>
+  <li>
+    <p>Не засоряется</p>
+  </li>
+  <li>
+    <p>Если нет электричества, то полить можно просто подув в трубочку, вместо компрессора.</p>
+  </li>
+  <li>
+    <p>Компрессор может быть легко заменен на другой любого размера</p>
+  </li>
+</ol>
+
+<p>Компактные размеры — помещается, например, на подоконнике.</p>
+
+<p>Эстетичная внешность.</p>
+
+<p>Что можно выращивать:</p>
+
+<ol>
+  <li>
+    <p>Зелень — базилик, мяту (проверено), салат (проверено)</p>
+  </li>
+  <li>
+    <p>Острые перцы (проверено)</p>
+  </li>
+  <li>
+    <p>Рассаду (проверено)</p>
+  </li>
+</ol>
+
+<p>Плохо растет земляника. Либо для нее нужны высокие стаканчики, чтобы верх корней</p>
+
+<p>оставался сухим.</p>
+
+<p>Потребление электричества незначительное. В основном, потребляет энергию таймер, думаю что пару ватт, т.к. слегка греется. Компрессор мощностью 3-5 Ватт включается на полчаса 3-4 раза в день.</p>
+
+<p>Варианты конструкции зависят от технологии изготовления:</p>
+
+<ol>
+  <li>Литье из полипропилена (та же технология, что используется для изготовления цветочных горшков). По этой технологии, «хитрый горшок» будет состоять из трех «горшкообразных» деталей, плюс несколько трубочек, тройников, краников. Тройники и краники готовые, аквариумные.</li>
+</ol>
+
+<p>Имеется рабочий прототип этой конструкции.</p>
+
+<p>При массовом производстве, цена самого «хитрого горшка» может быть от 300 рублей. (Здесь я опираюсь на факт, что цветочный горшок, на основе которого сделана установка, в настоящее время продается в розницу по цене от 73 до 100 рублей, «хитрый горшок» примерно в три раза сложнее).</p>
+
+<p>Однако, для начала производства по этой технологии потребуются три пресс формы, стоимостью от одного до нескольких миллионов рублей.</p>
+
+<ol>
+  <li>Сборная конструкция. В этом варианте предполагается дорабатывать выпускаемые разными производителями цветочные горшки.</li>
+</ol>
+
+<p>Конструкция для этого варианта прорабатывается.</p>
+
+<p>Цена горшка будет выше (от 500 рублей), но стартовые вложения в производство гораздо меньше.</p>
+
+<p>Ищу партнеров и инвесторов для организации производства установки. Нахожусь в Новосибирске. Пишите в ЛС.</p>
+
+<p>Интересно мнение форумчан, насколько востребованной может оказаться такая конструкция.</p>
+
+<p><strong>Nikolai</strong> 28-11-2011</p>
+
+<p>Вот, например, горшки на моем подоконнике:</p>
+
+<p><a href="https://t.me/ponics_ru_files/6749" target="_blank"><img src="/imagehost/thumbs/img5984.jpg" alt="" /></a></p>
+
+<p>В середине - 4 острых перца и бугенвиллея между ними.</p>
+
+<p>Справа мелисса, в горшке старой конструкции, без системы стабилизации уровня (требует частого долива раствора)</p>
+
+<p>Слева новый, пока пустой “хитрый горшок”.</p>
+
+<p><strong>Coccinella</strong> 28-11-2011</p>
+
+<p>Почему мне кажется, что эта фотография уже присутствует в одной из тем?</p>
+
+<p><strong>Nikolai</strong> 28-11-2011</p>
+
+<blockquote>
+  <p>Почему мне кажется, что эта фотография уже присутствует в одной из тем?</p>
+</blockquote>
+
+<p>Там немного другая фотография. Подоконник у меня всего один с гидропоникой, поэтому фотографии похожие.</p>
+
+<p><strong>begunok</strong> 28-11-2011</p>
+
+<p>Николай, внесу чуть негатива</p>
+
+<p>Не обижаться чур)))</p>
+
+<p>Цена горшка 500р без помпы? С помой это будет 1200-1300р? Чем это лучше, чем существующие варианты - простите за ссылку, форумчане <a href="http://fitosvet.nichost.ru/product_info.php?products_id=972&amp;osCsid=1478aed6b5d1e3927889e5becfced6fd" target="_blank">http://fitosvet.nichost.ru/product_info.php?products_id=972&amp;osCsid=1478aed6b5d1e3927889e5becfced6fd</a> ?</p>
+
+<p>И как вы это будете доставлять из новосиба?</p>
+
+<p>Хотите поставлю у себя в магазе, но думаю, спрос будет очень маленьким</p>
+
+<p><strong>Nikolai</strong> 28-11-2011</p>
+
+<blockquote>
+  <p>Николай, внесу чуть негатива</p>
+
+  <p>Не обижаться чур)))</p>
+
+  <p>Цена горшка 500р без помпы? С помой это будет 1200-1300р? Чем это лучше, чем существующие варианты - простите за ссылку, форумчане <a href="http://fitosvet.nichost.ru/product_info.php?products_id=972&amp;osCsid=1478aed6b5d1e3927889e5becfced6fd" target="_blank">http://fitosvet.nichost.ru/product_info.php?products_id=972&amp;osCsid=1478aed6b5d1e3927889e5becfced6fd</a> ?</p>
+
+  <p>И как вы это будете доставлять из новосиба?</p>
+
+  <p>Хотите поставлю у себя в магазе, но думаю, спрос будет очень маленьким</p>
+</blockquote>
+
+<p>Чем “хитрый горшок” лучше приведенного примера DWC:</p>
+
+<ul>
+  <li>
+    <p>можно поставить дома на подоконник, и не испортить интерьер</p>
+  </li>
+  <li>
+    <p>можно выращивать несколько разных растений, т.к. свободное расположение горшков</p>
+  </li>
+  <li>
+    <p>компрессор может быть один на несколько горшков, установку можно наращивать одними только горшками</p>
+  </li>
+  <li>
+    <p>периодика может быть более гибкой в параметрах, чем DWC (эксперты скажут точнее)</p>
+  </li>
+</ul>
+
+<p>Я бы позиционировал свой горшок как “игрушку” - для тех, кто хочет попробовать, что такое гидропоника. Согласитесь, что приличного вида устройств для начинающих на рынке нет.</p>
+
+<p>Большое спасибо за предложение выставить установку в Вашем магазине, очень хочется им со временем воспользоваться, когда буду иметь серийный продукт.</p>
+
+<p>Спасибо за оценку спроса, это тоже очень важно.</p>
+
+<p><strong>Юка</strong> 28-11-2011</p>
+
+<p>Уважаемый Николай, прежде чем ““иметь серийный продукт”” не сочтите за труд получить патент, а то зачем новое “луковое счастье” рождать. Если Вы серьёзно желаете выпускать такую игрушку то начните с патента и удачи Вам. <em>Bravo</em></p>
+
+<p><strong>Nikolai</strong> 28-11-2011</p>
+
+<p>Юка, спасибо за совет. Патент это обязательно!</p>
+
+<p><strong>Mole_Garden</strong> 29-11-2011</p>
+
+<p>Попробую предположить, что подача раствора в горшке сделана с помощью эрлифта.</p>
+
+<p>Кстати, а как со звуком работающего компрессора и раствора?</p>
+
+<p><strong>Nikolai</strong> 30-11-2011</p>
+
+<blockquote>
+  <p>Попробую предположить, что подача раствора в горшке сделана с помощью эрлифта.</p>
+
+  <p>Кстати, а как со звуком работающего компрессора и раствора?</p>
+</blockquote>
+
+<p>В целях конспирации догадки насчет устройства комментировать не стану :)</p>
+
+<p>Компрессор включается 3-4 раза в сутки на полчаса и только днем. Поэтому звук его не мешает. Компрессор, кстати еще советский, лет 20 провалялся до этого в кладовке. 3 Ватта. Вполне хватает.</p>
+
+<p>А раствор булькает, громче компрессора. Типа аэрация происходит.</p>
+
+<p><strong>cpf</strong> 16-01-2012</p>
+
+<p>Чет еще раз “занесло” в эту тему: прочитал еще раз… Мне кажется, что автору гораздо перспективнее сосредоточится на выпуске универсальных “внутренностей” (наборов) для готовых горшков распространенных типоразмеров. Почему я так решил:</p>
+
+<ol>
+  <li>
+    <p>у всех представления о том какие горшки им подходят - разные</p>
+  </li>
+  <li>
+    <p>у многи уже есть достаточные количества горшков дома</p>
+  </li>
+  <li>
+    <p>если в наборе “для переделки обычного горшка - в smart” будет подложка (или несколько), то большинство людей смогут сами вырезать поддон и прорезать в нем дырки под необходимое им количество стаканчиков с субстратом.</p>
+  </li>
+  <li>
+    <p>“особо одаренные” смогут сами на базе наборов создать требуемую им установку (например, из балконного ящика или аквариума)…</p>
+  </li>
+</ol>
+
+<p><strong>Nikolai</strong> 09-02-2012</p>
+
+<p>По секрету скажу, что внутренностей у горшка нет, в том смысле чтобы что-то переставить в горшок другой формы.</p>
+
+<p>Дырки под стакачики с субстратом в горшке также отсутствуют, стаканчики просто стоят в верхней части горшка.</p>
+
+<p>Технология его изготовления в домашних условиях получается сложная, приходится применять циркулярку, сварку полипропилена горячим воздухом и т.п.</p>
+
+<p>В планах - серийное производство горшков на продажу.</p>
+
+<p><strong>Nikolai</strong> 24-02-2013</p>
+
+<p>Инструкцию написал про горшок:</p>
+
+<p><a href="http://hitroponika.com/?page_id=745" target="_blank">http://hitroponika.com/?page_id=745</a></p>
+
+<p><strong>Coccinella</strong> 24-02-2013</p>
+
+<p>Редактирование:</p>
+
+<p>“Флакон из темного пластика, с желтоватым порошок внутри.”Видимо, опечатка, Вы имели в виду с ….порошКОМ.</p>
+
+<p>“Посадка семян” - грамотно ПОСЕВ</p>
+
+<p>В целом все понятно :), $) Вы - молодец!</p>
+
+<p><strong>Nikolai</strong> 24-02-2013</p>
+
+<p>Спасибо, Coccinella, поправил :)</p>
+
+<p><strong>diman73rus</strong> 29-04-2013</p>
+
+<blockquote>
+  <p>Попробую предположить, что подача раствора в горшке сделана с помощью эрлифта.</p>
+
+  <p>Кстати, а как со звуком работающего компрессора и раствора?</p>
+</blockquote>
+
+<p>там гармошка надувается. ;)</p>
+
+<p><strong>kwik</strong> 14-03-2017</p>
+
+<p>Почему-то не проходят личные сообщения для Николая((</p>
+
+<p><strong>siv237</strong> 14-03-2017</p>
+
+<p>“Чудо горшок” не имеет никаких преимуществ в сравнении с обычным пассивным подпором, при этом имеет кучу недостатков.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Кто-то, мягко говоря, не прав. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Кто-то, мягко говоря, не прав.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Кто-то, мягко говоря, не прав.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Игл</strong> 13-05-2018</p>
+
+<p>Перечитал огромное количество инфы в нете о гидропонике в плане лука на перо. в 90% случаев говорится о 8 кг. пера с 10 кг. репки, а то и более. После этого поговорил с людьми, реально работающими в данной сфере. Ответ один. На гидропонике лук растет БЫСТРЕЕ, но не более в плане урожайности. Способна репка дать 50% от собственного веса- и все. Хоть на воде, хоть в земле. Это так? :o</p>
+
+<p><strong>siv237</strong> 13-05-2018</p>
+
+<blockquote>
+  <p>Перечитал огромное количество инфы в нете о гидропонике в плане лука на перо. в 90% случаев говорится о 8 кг. пера с 10 кг. репки, а то и более. После этого поговорил с людьми, реально работающими в данной сфере. Ответ один. На гидропонике лук растет БЫСТРЕЕ, но не более в плане урожайности. Способна репка дать 50% от собственного веса- и все. Хоть на воде, хоть в земле. Это так? :o</p>
+</blockquote>
+
+<p>Может и больше, при нескольких срезках. Но качество второй срезки будет хуже, а времени уйдет больше, чем при замене.</p>
+
+<p>Суть в том, что репка растит перо не для того, чтобы его срезали, а для того, чтобы с него питаться самой.</p>
+
+<p>Растит она его ровно столько, чтобы хватало, соответственно если тепло и солнечно, перо будет меньше по размеру. Как только перо достигает оптимального размера, оно начинает кормить луковицу и расти прекращает.</p>
+
+<p>Потому на объем выхода пера с луковицы больше влияет не условия, в которых происходит выгонка, а больше условия, при которых луковица росла ранее. Главное условие выгонки, не дать сгнить луковицам раньше, чем они отдадут перо.</p>
+
+<p>Если хотите максимальный выход с веса посадки, попробуйте растить с чернушки. Принцип как у салатов, в стаканчиках с очень плотным посевом. Сроки тоже, как у салатов и технология требуется полная - гидропонная, с нормальным раствором и хорошим светом. Перо выходит тонкое, зато очень нежное. В одном стаканчике может быть до нескольких сотен. Нечто среднее между зеленью и микрозеленью но такой способ набирает популярность. Есть еще шанс запрыгнуть.</p>
+
+<p><strong>Vad</strong> 14-05-2018</p>
+
+<p>растите лук в темноте и холоде…</p>
+
+<p>потом, в последние 3 дня перед срезкой, ВРУБАЕМ СВЕТ и оно зеленеет …</p>
+
+<p>дешево, малозатратно, и перо получается гигантским :)</p>
+
+<p>тут на форуме технология описана</p>
+
+<p><strong>Игл</strong> 14-05-2018</p>
+
+<p>В темноте- это понятно, но на счет холода…Очень медленно лезет.</p>
+
+<p><strong>Vad</strong> 14-05-2018</p>
+
+<p>что значит медленно?</p>
+
+<p>10-15 дней - медленно? :-\</p>
+
+<p>полистайте “луковые записки Валерия”</p>
+
+<p><a href="http://www.ponics.ru/2009/06/onion/" target="_blank">http://www.ponics.ru/2009/06/onion/</a></p>
+
+<p><a href="https://gidroponika.com/content/view/643/243/" target="_blank">https://gidroponika.com/content/view/643/243/</a></p>
+
+<p><strong>Игл</strong> 14-05-2018</p>
+
+<p>Цитирую из его поста.</p>
+
+<p>В момент посадки- 28, 28 град. С</p>
+
+<p>Когда корни достали до воды- 18, 20 град. С</p>
+
+<p>Через 3, 4 дня повышаем до 25, 26 град.С</p>
+
+<p>По достижении роста пера до 15, 18 см понижаем до 20 град. С, и досвет.</p>
+
+<p>Вопрос. Где холод?</p>
+
+<p><strong>Vad</strong> 14-05-2018</p>
+
+<p>слово “РАСТВОР” (читай ВОДА) пропустили…</p>
+
+<p>лук при температурах выше 22-25 градусов становится тонкий, бугорчато-пупырчатый или вовсе ложится..</p>
+
+<p>потерять 2-3 дня в сроке и получить плотное перо… или… да, дело ваше.. можете при 28 растить <em>???</em></p>
+
+<p><em>**</em> 14-05-2018</p>
+
+<p>Я цитировал, повторяю, ЦИТИРОВАЛ. <em>8)</em> Валерия. На счет “Раствор” пропустил- не понял…</p>
+
+<p><strong>Vad</strong> 14-05-2018</p>
+
+<p>цитировал, одно слово? там перед ним ЕЩЕ одно слово есть..</p>
+
+<p>Валерий говорит о температуре РАСТВОРА, в корнях… или как вам еще … “намекать”)) :D</p>
+
+<p>так же говорит, что корни хреново растут при температуре выше 20 градусов (но повышение температуры мера вынужденная)</p>
+
+<p>прочитайте уже… внимательнее, что-ли.. о чем нам спорить.. если вы не поняли предмет спора ))</p>
+
+<p>прочтут первое и последнее слово и машут руками как вентилятор ))</p>
+
+<p><strong>Игл</strong> 14-05-2018</p>
+
+<p>Понял :D. Вы сказали- растить лук в холоде и я подумал, что вы говорите о температуре ВОДЫ. Понятно, что оптимальная температура ВОЗДУХА- не более 20 град.С. Спасибо.</p>
+
+<p><strong>Игл</strong> 14-05-2018</p>
+
+<p>А вообще, поговорив с практиками, понял, что все эти игры с температурами хороши только в плане эксперимента. В РЕАЛЬНОЙ работе никто их не использует. 20 град.С и вперед. Затемнение- да. Засвет- да.</p>
+
+<p>Но я вообще- то не об этом затевал тему. Валерий пишет- 90 % выхода пера. НИКТО из реально работающих такой процент не подтвердил. Говорят, что это возможно на гидропонике, но только в плане эксперимента со специально отобранным посадочным ОЧЕНЬ многозачатковым материалом.</p>
+
+<p>В реальной жизни- 50% МАКСИМУМ? Или я общался не с тем контингентом? Вот в чем ВОПРОС.</p>
+
+<p><strong>Vad</strong> 14-05-2018</p>
+
+<p>выход от материала зависит и от количества..</p>
+
+<p>вырастить 50 луковиц с выходом 90% проще, чем 50 тысяч..</p>
+
+<p>потому что…. чем больше луковиц, тем больше разброс параметров..</p>
+
+<p>скорость роста разная у всех, масса, плотность пера, у каждой луковицы своя, условия разные у всех луковиц…</p>
+
+<p>вот и… <em>???</em></p>
+
+<p><strong>Vad</strong> 14-05-2018</p>
+
+<blockquote>
+  <p>Понял :D. Вы сказали- растить лук в холоде и я подумал, что вы говорите о температуре ВОДЫ.</p>
+</blockquote>
+
+<p>Завтра я скажу, что в наших краях становится жарко, вы решите, что у меня температура тела высокая? :D</p>
+
+<p><em>**</em> 14-05-2018</p>
+
+<p>Почему условия разные у всех луковиц, если они сидят рядом в одной матрице? :-\ Одного урожая и сорта?</p>
+
+<p><strong>Vad</strong> 15-05-2018</p>
+
+<p>потому что, они все находятся на расстоянии.. а не в одной точке пространства… различия климата на расстоянии 10-15 см может быть в разы…</p>
+
+<p>где то сквозняк… где то застой… где то перегрев… где то влажность разная..</p>
+
+<p>кроме того, они все разные по генетике, массе, объему…</p>
+
+<p>да неужели это нужно объяснять??? :o</p>
+
+<p>нет на планете точных копий организмов..</p>
+
+<p>даже у однояйцевых близнецов ногти с разной скоростью растут :-\</p>
+
+<p><strong>VVS_</strong> 15-05-2018</p>
+
+<p>Неужели такой спрос на это перо? Или на эти салаты?</p>
+
+<p>Первого надо мало, чтобы обожраться на всю жизнь, второе, вообще трава, не имеющая собственного вкуса, не понимаю в чем прикол.</p>
+
+<p>Ни разу в овощном магазине не видел, чтобы кто-то купил перо или салат. Все берут что-то более необходимое.</p>
+
+<p>Видел один раз как бабушка выбирала лук из которого уже торчит длинное перо. Сам брал такой же, поставить на раствор. Но брать больше 2 луковиц за 2 месяца желания нет…</p>
+
+<p><strong>allex_step</strong> 15-05-2018</p>
+
+<p>Раз уж тема несколько расплылась - добавлю и я 16 копеек…</p>
+
+<p>Давеча в семенном магазе заглянул к лукам (имел интерес к разновидностям без репки и многорепчатым) - были приобретены семена: батун, шалот и 2 сорта лука на перо. Шнитт - не оказалось в наличии, а черемша(медвежий лук) у меня почему-то не хочет проклевываться (мож ея в холодильник устроить для оптимизации условий?)</p>
+
+<p>Я так понимаю эти которые на перо из семян, а не из репки таки нужно кормить? По какому профилю им компот намутить - что-нить среднего для зелени типа N-210 P-70 K-300 Ca-180 Mg-67 Fe-3 Mn-1.25 B-0.5 Zn-0.4 Cu-0.26 Mo-0.06? А сколько серы их устраивает?</p>
+
+<p><strong>VVS_</strong> 15-05-2018</p>
+
+<p>По моему скромному мнению, не плодоносящей зелени уровень калия 1.2-1.3 относительно азота, не более.</p>
+
+<p>Фосфор 0.21-0.23. Кальций равен азоту. Магний равен фосфору +5%.</p>
+
+<p>Бор 0,025 от азота.</p>
+
+<p>При этом уровень азота по обстановке, 140-170, в зависимости от того сколько ЕС выдерживает.</p>
+
+<p><strong>allex_step</strong> 15-05-2018</p>
+
+<p>это будет N-165[font=Verdana] P-36[/font] K-206 Ca-165 Mg-38 B-4 - верно посчитал? Таки разница УХ!!! Или у бора таки другой коэффициент? А что в отношении серы?</p>
+
+<p>Черемшу(медвежий лук) кто-нить выращивал?</p>
+
+<p><strong>VVS_</strong> 15-05-2018</p>
+
+<p>Бор 0.35 0.4, это я ошибся ноликом.</p>
+
+<p>Сера не должна превышать кальций. По хорошему вообще не более 100ппм</p>
+
+<p><strong>Игл</strong> 15-05-2018</p>
+
+<blockquote>
+  <p>Неужели такой спрос на это перо? Или на эти салаты?</p>
+
+  <p>Первого надо мало, чтобы обожраться на всю жизнь, второе, вообще трава, не имеющая собственного вкуса, не понимаю в чем прикол.</p>
+
+  <p>Ни разу в овощном магазине не видел, чтобы кто-то купил перо или салат. Все берут что-то более необходимое.</p>
+
+  <p>Видел один раз как бабушка выбирала лук из которого уже торчит длинное перо. Сам брал такой же, поставить на раствор. Но брать больше 2 луковиц за 2 месяца желания нет…</p>
+</blockquote>
+
+<p>Большой город требует много продуктов и зеленого лука в том числе…Привезти его из Средней Азии нереально. Срок хранения практически отсутствует. Поэтому растить и реализовывать надо на месте.</p>
+
+<p><strong>Vad</strong> 15-05-2018</p>
+
+<p>а что за город… такой?</p>
+
+<p>большой…</p>
+
+<p>Пекин? ;)</p>
+
+<p><strong>allex_step</strong> 15-05-2018</p>
+
+<blockquote>
+  <p>а что за город… такой?</p>
+
+  <p>большой…</p>
+
+  <p>Пекин? ;)</p>
+</blockquote>
+
+<p>А разве такая проблема привезти в Пекин из Средней Азии..? <em>Bos</em> :-\</p>
+
+<p>Да и вроде как Игл уже говорил откуда он - до Пекина как до Луны (6 тыщ кило)</p>
+
+<p><em>**</em> 15-05-2018</p>
+
+<p>Пекин, конечно. Вы очень хорошо читаете справа налево))) мои посты <em>8)</em> Ну а если без хохмы, то 12 млн. населения Питера маловато?</p>
+
+<p>На всякий случай, расстояние от нашей планеты до ее спутника- Луны, порядка 400000 км.</p>
+
+<p>Честно говоря, я здесь не для того, что бы по базарить.</p>
+
+<p>Спок. ночи.</p>
+
+<p><strong>Borodach1</strong> 16-05-2018</p>
+
+<p>Странно… Не помню в Питере магазина, в котором не было бы лука. Или я невнимательно смотрел, или нужно будет решать вопрос с устранением конкурентов. )))</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 16-05-2018</p>
+
+<p>Предлагали тут луковую ферму в Питере(круглогодичную). Переуступка за 200 тыщ.руб. На 8 тонн лука.</p>
+
+<p>Подружился с калькулятором. Выяснилось, что можно выйти в ноль можно только зимой. Т.к. ферма закрытая(не теплица), аренда 50000, работникам нужно заплатить, за электроэнергию нужно заплатить(3руб.квт/ч), за посадочный материал нужно заплатить.</p>
+
+<p>Цена приема готовой продукции на Софийской овощной базе вызвала смех.</p>
+
+<p>Сбыт в розницу - это неподъемная задача(кто работал с розницей, тот поймет).</p>
+
+<p>В печку, воопчем..</p>
+
+<p><em>**</em> 16-05-2018</p>
+
+<p>О.. уже эту ферму отдают практически даром))</p>
+
+<p><a href="https://t.me/ponics_ru_files/19281" target="_blank"><img src="/imagehost2/thumbs/3935380016.jpg" alt="" /></a></p>
+
+<p>70тыщ.в месяц аренда+коммунальные услуги(7-10тыщ).</p>
+
+<p>Итого траты 80т.р+ФОТ(работникам).</p>
+
+<p><strong>Vad</strong> 16-05-2018</p>
+
+<blockquote>
+  <p>Пекин, конечно. Вы очень хорошо читаете справа налево))) мои посты <em>8)</em> Ну а если без хохмы, то 12 млн. населения Питера маловато?</p>
+</blockquote>
+
+<p>Странный пафос… ;)</p>
+
+<p>Почему я(да и вообще кто-то) должен держать голове Ваш возраст, рост, место жительства, род занятий?</p>
+
+<p>Напишите о себе в профиле, откуда вы, род занятий, пол, вес, рост, род занятий и сексуальные предпочтения ;)… всем сразу станет проще :)</p>
+
+<p>если без хохмы, то 12 лямов - много..</p>
+
+<p>но неужели такой адский спрос на лук? :)</p>
+
+<blockquote>
+  <p>На всякий случай, расстояние от нашей планеты до ее спутника- Луны, порядка 400000 км.</p>
+</blockquote>
+
+<p>в апогее, в перигее на ~50 тыщ меньше :D</p>
+
+<blockquote>
+  <p>Честно говоря, я здесь не для того, что бы по базарить.</p>
+
+  <p>Спок. ночи.</p>
+</blockquote>
+
+<p>хм, а нам скучно без “базару”…</p>
+
+<p><strong>Игл</strong> 16-05-2018</p>
+
+<p>Да нет, конечно. Ничего адского нет. Нормальный, стабильный бизнес, ввиду отсутствия арендных платежей.</p>
+
+<p><strong>Игл</strong> 16-05-2018</p>
+
+<p>Инфу в профиле дополнил.</p>
+
+<p><strong>Coccinella</strong> 19-05-2018</p>
+
+<p>В сооружениях такого типа,как на фото, выход пера не будет выше 50% от массы посадочного материала. Да и то, если Вы луковицы не будете обрезать по плечики, как делают очень многие для более быстрого и равномерного прорастания пера.</p>
+
+<p><strong>Игл</strong> 20-05-2018</p>
+
+<p>на фото посадка в землю, мостовым… Я, конечно, не за этот способ, но обоснуйте, пож., почему.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Как "чайники" осваивают гидропонику. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Как &quot;чайники&quot; осваивают гидропонику.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Как "чайники" осваивают гидропонику.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>gillette</strong> 07-05-2011</p>
+
+<p>Здравствуйте жители и гости <del>нашего города</del> форума, хочу максимально подробно описАть свои первые шаги в гидре (типа бизнес план с цветными картинками для новичков) с планируемым выходом на аквапонику. Сразу скажу что аграрного образования и малейшего опыта ноль, а точнее -2 :D</p>
+
+<p>Планирую начать с лука на перо (посчитал самым оптимальным вариантом для опыта в минус два балла), продолжу салатом, петрушкой, щавелем, укропом, базеликом и всем всем всем,что можно вырастить на плавающих платформах. Хотя буду прислушиваться к мнению оптовиков, с которыми уже состоялся предварительный разговор (обещали лишить проблем со сбытом).</p>
+
+<p>Итак по курсу 8 гривен=1$ закуплено:</p>
+
+<p>Листы OSB 2500<em>1220</em>10мм 3шт по -127грн. каждый</p>
+
+<p>Доска 4000<em>100</em>20мм 10шт по -10грн. (4шт остались т.к. две доски на 1лист+35см.остаток)</p>
+
+<p>Антикор автомобильный (мастика)+сольвент -55грн. (половина банки осталось)</p>
+
+<p>Пленка 2-х слойная обычная с неизвестной мне толщиной 10м по -9грн за метр (1м остался)</p>
+
+<p>Силиконовый герметик 1шт -15грн. (пол тюбика осталось)</p>
+
+<p>Саморезы пакет 500шт -25грн. (около 400 осталось)</p>
+
+<p>Скобы для степлера 1000 шт за -6грн. (много <em>crazy</em>)</p>
+
+<p>Стаканчики водочные одноразовые за 600шт за -36грн. (водку не пью поэтому остались все 600)</p>
+
+<p>Экструдированый полистирол 118<em>580</em>20мм 15 листов по -15.1грн (останется 3 листа)</p>
+
+<p>Для аэрации пищевой (вроде ПВХ) шланг с внутр. Ф6мм 100м по -0.95грн за м.</p>
+
+<p>Тройники латунные Ф6мм с запасом 20шт. по -2.4грн за шт.</p>
+
+<p>Прошу не счесть ко-во остатков результатом грубых ошибок в расчетах :'( ,это хоть и разведка,но разведка боем, поэтому на трех емкостях останавливаться не намерен.</p>
+
+<p>Также заказал в “ароване” и жду пересылки:</p>
+
+<p>Компрессор 80Вт, 70л в мин. -410.59грн.</p>
+
+<p>Компрессор 2Вт (для бульбуляции) -37.49грн.</p>
+
+<p>Обратный клапан для компрессора -23.85грн.</p>
+
+<p>УФ стерилизатор (про запас) :-X -224.66грн.</p>
+
+<p>Аквариумные нагреватели (для бульбуляции) 50Вт на 50л. воды 2шт -48.29грн. каждый.</p>
+
+<p>Вот что готово на сегодняшний день:</p>
+
+<p><a href="https://t.me/ponics_ru_files/5320" target="_blank"><img src="/attachimages/6858_P1010102_1.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5321" target="_blank"><img src="/attachimages/6860_P1010105.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5322" target="_blank"><img src="/attachimages/6862_P1010101.jpg" alt="" /></a></p>
+
+<p><strong>gillette</strong> 07-05-2011</p>
+
+<p>Детали и подробности:</p>
+
+<p>Стаканчики мнуться,но не трескаются и не ломаются (проверял перед покупкой), будут “дырявиться” паяльником.</p>
+
+<p>Размеры листов пенопласта чудным образом почти оказались кратными размерам лотков.</p>
+
+<p>При выращивании названого в первом посте (кроме лука) в качестве субстрата планирую использовать синтепон.</p>
+
+<p>Латунь будет использоваться только для подачи воздуха и контактировать с водой и раствором не будет.</p>
+
+<p>Бозумно рад что выбрал экструд. пенопласт, а не тот кот. с шариками- режется фрезой (не паяльником) как масло и при этом не сыпется с него “труха”, более-менее крепенький и твердый, думаю в работе будет служить дольше.</p>
+
+<p>Наверное у Вас возникает вопрос- зачем для лука стаканЫ? Просто хочу для всей зелени все сделать однотипным, универсальным, модульным и взаимозаменяемым.</p>
+
+<p>Растояние между отверстиями 40мм диаметр которых 50мм. по центрам 90мм. Кол-во посадочных мест на листе 72. Листов в лотке 4шт.. А лотков…..лотков три, пока три <em>Bos</em></p>
+
+<p><strong>caiman</strong> 08-05-2011</p>
+
+<p>Ну что сказать :-\ Всё довольно логично и продумано. Сразу видно человек расчетливый, а значит, шаги продумываются. Это очень хорошо. Правда время для лукового эксперимента выбрано не ахти…. Лук с “земли” уже пошел в полный рост по 9грн/кг. Но есть свой плюс. За лето обкатать технологию и осенью вперед и с песней….</p>
+
+<p>Удачи!!!!</p>
+
+<p>А где у “нас” в Украине OSB 10мм по 127грн. продают, я себе в Епицентре 8мм брал по 137грн/ лист. Дайте ориентир…..</p>
+
+<p><strong>gillette</strong> 08-05-2011</p>
+
+<blockquote>
+  <p>Ну что сказать :-\ Всё довольно логично и продумано. Сразу видно человек расчетливый, а значит, шаги продумываются. Это очень хорошо. Правда время для лукового эксперимента выбрано не ахти…. Лук с “земли” уже пошел в полный рост по 9грн/кг. Но есть свой плюс. За лето обкатать технологию и осенью вперед и с песней….</p>
+
+  <p>Удачи!!!!</p>
+
+  <p>А где у “нас” в Украине OSB 10мм по 127грн. продают, я себе в Епицентре 8мм брал по 137грн/ лист. Дайте ориентир…..</p>
+</blockquote>
+
+<p>Мерси за помплиман :-[</p>
+
+<p>По выбору времени года для выращивания все именно так, как Вы сказали - обкатать технологию.</p>
+
+<p>OSB брал в “Новой линии” (Харьков) производства Румынии 2445<em>1225</em>10мм, точная цена -126.95грн.</p>
+
+<p>Была там и “Польша”, размер 2500<em>1250</em>10мм за 154грн.. Наднях нашел “Польшу” 2500<em>1250</em>10 по 140грн. от десяти листов ( 50листов в прайсе указано чтоб нагнать жути):</p>
+
+<p><a href="http://mdim.com.ua/index.php/prais-list" target="_blank">http://mdim.com.ua/index.php/prais-list</a></p>
+
+<p>Созванивался с менеджером этой фирмы (давно знакомы по цементному вопросу) сказал он так: для тебя, дарагой и за один лист будет 140. Но филиалов по Украине у них вроде нет :(</p>
+
+<p><strong>Acc</strong> 08-05-2011</p>
+
+<p>Удачных стартов, хороших результатов, будем рады репортажам с “полей”. А базилик растет на платформе? Тоже хочу базиличок посеять :)</p>
+
+<p><strong>gillette</strong> 08-05-2011</p>
+
+<blockquote>
+  <p>Удачных стартов, хороших результатов, будем рады репортажам с “полей”. А базилик растет на платформе? Тоже хочу базиличок посеять :)</p>
+</blockquote>
+
+<p>Спасибо большое! :)</p>
+
+<p>Про базилик не уверен, но тут на форуме где-то видел вроде базилик и кажется на платформах :D</p>
+
+<p>Будем поискать.</p>
+
+<p>Нашел: <a href="http://forum.ponics.ru/index.php?topic=367.0" target="_blank">http://forum.ponics.ru/index.php?topic=367.0</a></p>
+
+<p><strong>Acc</strong> 09-05-2011</p>
+
+<p>Спасибо за ссылочки и с Днем Победы!!! <em>Dance</em></p>
+
+<p><strong>gillette</strong> 09-05-2011</p>
+
+<p>Не за что.</p>
+
+<p>С Днем Победы всех!!! <em>Dance</em></p>
+
+<p><strong>gillette</strong> 17-05-2011</p>
+
+<p>Все, что заказывал в ароване пришло и работает (если кому интересно выложу фото).</p>
+
+<p>Сейчас обдумываю конструкцию девайса для механизированой перфорации шланга для аэрации. т.к. 10метров для каждого лотка (хочу пустить от края до края змеевиком- 2.5м. туда, 2.5м. назад, 2.5м.туда, 2.5м.назад) прокалывать иголкой пооваливаются пальцы <em>crazy</em></p>
+
+<p>Задумка такая: Один ролик (типа шкива с полукруглым углублением) наравляющий, другой с иголками ведущий. Шланг запускаем между ними и вращаем ручку как на мясорубке, таким образом по идее шланг и прокалывается и протягивается по нужной длинне.</p>
+
+<p>Еще одно. Для крепления шланга ко дну лотков взал силиконовые присоски для аквариума, но столкнулся с необходимостью приклеить с помощью шприца, иголки и силик. гермета верхний слой пленки (лоток обшит двухслойной пленкой) к нижнему (нижний слой кое-как прилип к мастике), а потом подумал, а не нарезать ли мне прутков нержевейки диаметром 6-8мм длинной по 1м-1.1м и ими пригрузить шланг……? :-\</p>
+
+<p>Так и сделаю! :)</p>
+
+<p><strong>Mizol</strong> 18-05-2011</p>
+
+<p>А на швейной машинке не пробовали прострочить? :) Без нитки, ессесна, и с направляющими…</p>
+
+<p><strong>gillette</strong> 23-06-2011</p>
+
+<p>Уже попробывал. Во первых лапка не достаточно прижимает шланг к тем зазубреным штучкам которые подают с нужным шагом и периодичностью материал, так что пришлось тянуть руками и как результат не синхронной работы машинки и команды “тянем-потянем” 4 иглы на 18 дырочек. Шило тоже не помогло,т.к. проколы в шланге не продуваются изза эластичности последнего. Решил сверлить.</p>
+
+<p>Выручил настольный сверлильный станок, сверло диам. 1мм. и простая приспособа типа направляющий зажим зажатая в тиски на сверлилке.</p>
+
+<p><strong>VenLOG</strong> 24-02-2012</p>
+
+<p>ну расскажите результат! интересно же!</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Помогите спроектировать установку | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Помогите спроектировать установку">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Помогите спроектировать установку</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Stanislav</strong> 15-01-2010</p>
+
+<p>Дорогие форумчане!!!</p>
+
+<p>Появилась мысль собрать установку, опыта нет совсем, но есть идея.</p>
+
+<p>О гидропонике знаю не много, этой “темой” интересуюсь всего 5 дней, но уже крепко заинтересовался.</p>
+
+<p>Хочу начать с конструкции, и плясать буду от имеющегося свободного места, сегодня-завтра буду готов показать свой макет.</p>
+
+<p>Цель темы: с начала и до конца под руководством опытных специалистов собрать гидропонную установку и вырастить урожай “чего нибудь”.</p>
+
+<p>Возможно вы посчитаете это наглостью, “как это так мы годами голову морочим , а он решил на готовое прийти”, но исходя из всех перечитанных веток на этом сайте, народ здесь добродушный и чем сможет обязательно поможет…</p>
+
+<p>Всего мне так сказать наилучшего, а Вам заранее благодарность и низкий поклон :)!!!</p>
+
+<p><strong>травка</strong> 15-01-2010</p>
+
+<blockquote>
+  <p>Дорогие форумчане!!!</p>
+
+  <p>Появилась мысль собрать установку, опыта нет совсем, но есть идея.</p>
+
+  <p>О гидропонике знаю не много, этой “темой” интересуюсь всего 5 дней, но уже крепко заинтересовался.</p>
+
+  <p>Хочу начать с конструкции, и плясать буду от имеющегося свободного места, сегодня-завтра буду готов показать свой макет.</p>
+
+  <p>Цель темы: с начала и до конца под руководством опытных специалистов собрать гидропонную установку и вырастить урожай “чего нибудь”.</p>
+
+  <p>Возможно вы посчитаете это наглостью, “как это так мы годами голову морочим , а он решил на готовое прийти”, но исходя из всех перечитанных веток на этом сайте, народ здесь добродушный и чем сможет обязательно поможет…</p>
+
+  <p>Всего мне так сказать наилучшего, а Вам заранее благодарность и низкий поклон :)!!!</p>
+</blockquote>
+
+<p>:D”чего нибудь”,здесь не растят.вы почитайте немного ,а потом конкретно скажите .хочу вырастить салат или помидор,огурец .и тут сразу все быстро пойдет. :D</p>
+
+<p><strong>Stanislav</strong> 15-01-2010</p>
+
+<p>Да, согласен, формулировку в мусор. Хочу начать с томатов черри или жгучего перца, или огурцов.</p>
+
+<p>Пока не определен, так-как желаемая культура связана со строением установки, как я понял.</p>
+
+<p><strong>травка</strong> 15-01-2010</p>
+
+<blockquote>
+  <p>Да, согласен, формулировку в мусор. Хочу начать с томатов черри или жгучего перца, или огурцов.</p>
+
+  <p>Пока не определен, так-как желаемая культура связана со строением установки, как я понял.</p>
+</blockquote>
+
+<p>контрольно измерительные приборы вам нужны обязательно.без них очень плохо и не понятно .место нашли где установку поставите?</p>
+
+<p>можете в мат посадить ,все подробно расписано в репортах и на главной странице .полив в ручную можно делать.</p>
+
+<p><strong>Mole_Garden</strong> 15-01-2010</p>
+
+<p>:D Для начало скажите сколько растений, какая площадь, чем планируете светить?</p>
+
+<p>Для ознакомления:</p>
+
+<p><a href="http://www.ponics.ru/2009/06/fornewbies/" target="_blank">http://www.ponics.ru/2009/06/fornewbies/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/09/my_nft_system/" target="_blank">http://www.ponics.ru/2009/09/my_nft_system/</a> - для салата</p>
+
+<p><a href="http://www.ponics.ru/2009/03/aeroponic/" target="_blank">http://www.ponics.ru/2009/03/aeroponic/</a> - можно выращивать перец</p>
+
+<p><a href="http://www.ponics.ru/2009/03/types/" target="_blank">http://www.ponics.ru/2009/03/types/</a> - теория про установки</p>
+
+<p>Так же рекомендую почитать технологию различных культур</p>
+
+<p><a href="http://www.ponics.ru/2009/05/cucumber/" target="_blank">http://www.ponics.ru/2009/05/cucumber/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/05/pepper/" target="_blank">http://www.ponics.ru/2009/05/pepper/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/05/tomat/" target="_blank">http://www.ponics.ru/2009/05/tomat/</a></p>
+
+<p>Так же несколько репортов подскажут вам, что именно вы хотите</p>
+
+<p><a href="http://www.ponics.ru/2009/06/peper_report/" target="_blank">http://www.ponics.ru/2009/06/peper_report/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/06/report_cucumber/" target="_blank">http://www.ponics.ru/2009/06/report_cucumber/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/11/lactuca_mole_report/" target="_blank">http://www.ponics.ru/2009/11/lactuca_mole_report/</a></p>
+
+<p>Словом, посмотрите, почитайте и определитесь.</p>
+
+<p><strong>Stanislav</strong> 15-01-2010</p>
+
+<p>Что касается приборов, я уже определился с некоторыми из них.</p>
+
+<p>А по статьям, большое спасибо, большинство из этого я прочел, а что не осилил наверстаю сегодня</p>
+
+<p><strong>Stanislav</strong> 15-01-2010</p>
+
+<p>Вот мой первый макет, пока без размеров и особенностей, позже с Вашей помощью все решится…</p>
+
+<p><a href="http://s2.postimage.org/lzvCA.jpg" target="_blank"><img src="http://s2.postimage.org/lzvCA.jpg" alt="" /></a></p>
+
+<p><strong>Stanislav</strong> 15-01-2010</p>
+
+<blockquote>
+  <p>:D Для начало скажите сколько растений, какая площадь, чем планируете светить?</p>
+</blockquote>
+
+<p>Растений планирую 40-50, если точно то 48.</p>
+
+<p>Площадь каждого яруса 0,8 м2.</p>
+
+<p>Начать светить планировал двумя fluoraми по 58w, на каждый ярус.</p>
+
+<p><strong>Mole_Garden</strong> 15-01-2010</p>
+
+<p>Кстати, еще порекомендовал бы прочитать пару книг из библиотеки</p>
+
+<p><a href="http://www.ponics.ru/2009/06/lib/" target="_blank">http://www.ponics.ru/2009/06/lib/</a></p>
+
+<p>Бентли М. Промышленная гидропоника</p>
+
+<p>Зальцер Э. Гидропоника для любителей</p>
+
+<p>Чесноков В. А. Базырина Е. Н. Выращивание растений без почвы</p>
+
+<p><strong>Mole_Garden</strong> 15-01-2010</p>
+
+<blockquote>
+  <p>Растений планирую 40-50, если точно то 48.</p>
+
+  <p>Площадь каждого яруса 0,8 м2.</p>
+
+  <p>Начать светить планировал двумя fluoraми по 58w, на каждый ярус.</p>
+</blockquote>
+
+<p>Под такими лампами вырастит только салат, высота для томатов и перцев очень маленькая. Как правило в стеллажах не растят такие культуры.</p>
+
+<p><strong>Stanislav</strong> 15-01-2010</p>
+
+<p>Вот по этому я и создал эту тему…</p>
+
+<p>Хочу все шаги обсуждать.</p>
+
+<p>У меня из материалов ничего нет, буду все покупать.</p>
+
+<p>Что касается расстояниями между полок, я могу себе позволить 70 см от края горшка до лампы, этого тоже не достаточно для низкорослых помидор?</p>
+
+<p>Сейчас найду сорт и описание…</p>
+
+<p><strong>Stanislav</strong> 15-01-2010</p>
+
+<p>РЕД ЧЕРРИ F1 (RED CHERRY F1)</p>
+
+<p>Раннеспелый индетерминантный гибрид томата сортотипа черри. Растение очень мощное, с развитой корневой системой. Кисть одно или двукратно разветвлена. В одном соцветии формируется свыше 30 плодов, идеально круглой формы, ярко красной окраски, без зеленого пятна возле плодоножки, и средним весом 15-20г. Гибрид очень продуктивный. Предназначен для выращивания, как в закрытом, так и в открытом грунте. Рекомендован для потребления в свежем виде, и цельноплодного консервирования. Имеет высокую стойкость к вертицилиозу, фузариозу (раса 0-1) и вируса огуречной мозаики.</p>
+
+<p>Производитель: Galassi sementi (Италия)</p>
+
+<p><strong>Stanislav</strong> 15-01-2010</p>
+
+<p>И еще, прошу прощения за вопрос не по теме:</p>
+
+<p>у меня живет коломондин в горшке, в земле, я сорвал пару плодов, изъял косточки, проростил под марлей, а теперь хочу посадить в кокосовый субстракт, в маленький горшочек и поставить в пластиковый одноразовый пищевой бокс на 1см перлита.</p>
+
+<p>И данную тепличку хочу засунуть под две обычные люминесцентные лампы, ватность еще не смотрел.</p>
+
+<p>Вопросы:</p>
+
+<ul>
+  <li>
+    <p>что не так?</p>
+  </li>
+  <li>
+    <p>не отрезать ли у горшков дно, чтобы им проще было из перлита в кокос набирать воду?</p>
+  </li>
+  <li>
+    <p>как часто поливать и какой световой день им дать?</p>
+  </li>
+  <li>
+    <p>какую температуру держать в боксе?</p>
+  </li>
+</ul>
+
+<p><strong>Mole_Garden</strong> 15-01-2010</p>
+
+<blockquote>
+  <p>РЕД ЧЕРРИ F1 (RED CHERRY F1)</p>
+
+  <p>Раннеспелый индетерминантный гибрид томата сортотипа черри. Растение очень мощное, с развитой корневой системой.</p>
+</blockquote>
+
+<p>Черри никогда не был низкорослым</p>
+
+<p>ДЕТ (детерминантный) - с ограниченым ростом стебля (низкорослые)</p>
+
+<p>ИНДЕТ (индетерминантный) - с неограниченым рост стебля (и пасынков) естественно эти томаты принято называть высокорослыми</p>
+
+<p>Посмотрите репорт Максима, тут он далеко не малышка <a href="http://forum.ponics.ru/index.php/topic,228.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,228.0.html</a></p>
+
+<p>Стеллажи точно не для перца и не для томата. Ну может быть с расстоянием между стеллажами в метр</p>
+
+<p>типо вот этой установки Классика</p>
+
+<p>ГУОВРИ</p>
+
+<p>ЦУГ-3</p>
+
+<p>Вот еще одна фотка ЦУГ-3</p>
+
+<p><img src="http://img525.imageshack.us/img525/7135/image0084846419.th.jpg" alt="" /></p>
+
+<p>Но тут в первом варианте лампы похоже на Днат, а во втором показал просто стеллаж.</p>
+
+<p>А здесь подробней про нее и история про выращивание <a href="http://saginawfood.blogspot.com/" target="_blank">http://saginawfood.blogspot.com/</a></p>
+
+<p>Вот ее можно приспособить под томат или перец.</p>
+
+<p>Домашний вариант, но лампы лучше ставить не люмки, а ДНАТ или ДНАЗ</p>
+
+<p><strong>Mole_Garden</strong> 15-01-2010</p>
+
+<p>:D Да что я вам рассказываю, гляньте сюда и выберите что понравиться <a href="http://forum.ponics.ru/index.php/topic,290.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,290.0.html</a></p>
+
+<p><strong>Stanislav</strong> 15-01-2010</p>
+
+<p>Про разницу дет и индет я знал, но вот в описании как-то пропустил, спасибо.</p>
+
+<p>А если взять, детерминантный сорт, тоже вариантов нет?</p>
+
+<p>Про лампы, я готов поставить и Днат, мне бы вот только с культурой выращивания определится, а потом для неё и силу света и расстояние определит!!!</p>
+
+<p>Салат - правда не охота.</p>
+
+<p><strong>Mole_Garden</strong> 15-01-2010</p>
+
+<p>Почему же можно и томат. <a href="http://www.ponics.ru/2009/11/sort/#1" target="_blank">http://www.ponics.ru/2009/11/sort/#1</a></p>
+
+<p>Выбирайте сорт теневыносливый, низкорослый, скороспелый, а лучше ультарскороспелый.</p>
+
+<p>Вот к примеру Валера выращивает <a href="http://forum.ponics.ru/index.php/topic,52.msg9766.html#msg9766" target="_blank">http://forum.ponics.ru/index.php/topic,52.msg9766.html#msg9766</a></p>
+
+<p>У меня был сорт минибел, как раз для дома, есть еще много разных. Если поставите ДНАТ то шансов вырастить больше</p>
+
+<p><strong>Stanislav</strong> 15-01-2010</p>
+
+<p>Здорово, спасибо, продвигаюсь…</p>
+
+<p>По Коломондину нечего не ответите???</p>
+
+<p><strong>Mole_Garden</strong> 15-01-2010</p>
+
+<blockquote>
+  <p>Вопросы:</p>
+
+  <ul>
+    <li>
+      <p>что не так?</p>
+    </li>
+    <li>
+      <p>не отрезать ли у горшков дно, чтобы им проще было из перлита в кокос набирать воду?</p>
+    </li>
+    <li>
+      <p>как часто поливать и какой световой день им дать?</p>
+    </li>
+    <li>
+      <p>какую температуру держать в боксе?</p>
+    </li>
+  </ul>
+</blockquote>
+
+<p>1) что не так с чем?</p>
+
+<p>2) достаточно несколько отверстий в дне и в боках, если влага будет внизу то он ее сам втянет сколько нужно, но все же заливать их не следует. Тем более вы будете же поливать сверху, отверстия тут будут играть слива избытка влаги если таковая будет. А перлит для поддержания микроклимата</p>
+
+<p>3) в тепличке поливайте по ощущениям и на глаз, влага там испаряется, как правило не очень быстро. Световой день дайте им часов 18</p>
+
+<p>А они у вас уже большие?</p>
+
+<p>4) Думаю 23-25 градусов, не особо силен в цитрусовых.</p>
+
+<p><strong>Stanislav</strong> 15-01-2010</p>
+
+<blockquote>
+  <p>1) что не так с чем?</p>
+</blockquote>
+
+<p>С методикой, может я вообще все плохо придумал…</p>
+
+<blockquote>
+  <p>А они у вас уже большие?</p>
+</blockquote>
+
+<p>Я их только посадил. :)</p>
+
+<p>За советы спасибо, воплощу в жизнь.</p>
+
+<p><strong>Stanislav</strong> 15-01-2010</p>
+
+<p>Значит, по скольку на моей воображаемой установке все-таки можно что-то вырастить, давайте вернемся к ней.</p>
+
+<p>1) Сначала хотел бы определится с системой подачи раствора.</p>
+
+<p>Думаю непрерывная подача раствора по трубочке к корням каждого растения, с последующей заменой на сплитера - самое оно, что скажете?</p>
+
+<p>Сток хочу сделать так: из шестого лотка на третьем ярусе в пятый, потом в четвертый на втором ярусе, потом в третий и дальше на первый ярус, а от туда в бак.</p>
+
+<p>В баке аэрация компрессором.</p>
+
+<p>Можно еще СО2 подвести к каждому лотку.</p>
+
+<p>Что вы граждане об этом думаете, может что лучше предложите?</p>
+
+<p><strong>Mole_Garden</strong> 15-01-2010</p>
+
+<p>Хм, а субстрат какой планируете? То что предлагаете вы это похоже будет капля, а капля предполагает собой наличие субстрата. В вашем варианте с лотками или коробами можно использовать керамзит.</p>
+
+<blockquote>
+  <p>с последующей заменой на сплитера</p>
+</blockquote>
+
+<p>имеется ввиду на сплинкеры? это уже будет аэропоника. В общем ничерта не понял :D</p>
+
+<p>Лучше может попробовать переодику и керамзит, хотя как это реализовать в многоярусном исполнении пока, что то не придумал.</p>
+
+<p><strong>Stanislav</strong> 15-01-2010</p>
+
+<p>Спринклер - точно. он самый…</p>
+
+<p>Субстрат, планировал именно керамзит.</p>
+
+<p>Значит попробую изложить свою мысль:</p>
+
+<p>Есть значит у меня короб 100<em>100</em>1500мм, сделан он из пвх или акрила, крышка съёмная, в крышке 8 отверстий диаметром 48 мм.</p>
+
+<p>Теперь смотрим на торец этого короба 100*100, в верхнем правом углу труба, которая проходит через всю длину короба и выходит насквозь.</p>
+
+<p>Теперь смотрим на короб сверху и заглядываем в одно из отверстий для горшка, сверху посередине к горшку подходит трубочка, которая выходит из той самой трубы, которая описана выше, и из этой трубочки подаётся раствор. И раствор подаётся прям к корням или керамзиту.</p>
+
+<p>Короба (поддоны) имеют в торцах снизу слив для раствора.</p>
+
+<p>Я вот подумал, что трубочками можно подавать раствор через время, тем самым заполнять определенный уровень раствора в коробе, а пропускная способность стока будет ниже и тогда некоторое время раствор будет в коробе.</p>
+
+<p>А что касается сплинкеров, то потом установку легко переоборудовать в аэропонику, я это имел ввиду.</p>
+
+<p><strong>Mole_Garden</strong> 15-01-2010</p>
+
+<p>:D 8)</p>
+
+<p>Тогда все круто, все изложенное имеет право на жизнь.</p>
+
+<p>Перед началом всех действий не забудьте как следует обработать керамзит</p>
+
+<p>А так вроде все хорошо и правильно.</p>
+
+<p><strong>Stanislav</strong> 15-01-2010</p>
+
+<p>Спасибо, спасибо, спасибо…</p>
+
+<p>Я буду плавно дорисовывать макет и дальше советоваться по оборудованию, свету и так далее.</p>
+
+<p><strong>Stanislav</strong> 15-01-2010</p>
+
+<p>Отчет с поля битвы с Каламондином :)</p>
+
+<p><a href="http://s1.postimage.org/3ieQ9.jpg" target="_blank"><img src="http://s1.postimage.org/3ieQ9.jpg" alt="" /></a> <a href="http://s1.postimage.org/3ihki.jpg" target="_blank"><img src="http://s1.postimage.org/3ihki.jpg" alt="" /></a></p>
+
+<p><a href="http://s3.postimage.org/1GHToS.jpg" target="_blank"><img src="http://s3.postimage.org/1GHToS.jpg" alt="" /></a> <a href="http://s4.postimage.org/1s2m3i.jpg" target="_blank"><img src="http://s4.postimage.org/1s2m3i.jpg" alt="" /></a></p>
+
+<p><strong>Stanislav</strong> 15-01-2010</p>
+
+<p>Только вот термометр показывает 26С…</p>
+
+<p>Не страшно?</p>
+
+<p><strong>Mole_Garden</strong> 16-01-2010</p>
+
+<blockquote>
+  <p>Только вот термометр показывает 26С…</p>
+
+  <p>Не страшно?</p>
+</blockquote>
+
+<p>Думаю нет. Все же цитрус.</p>
+
+<p><strong>Stanislav</strong> 16-01-2010</p>
+
+<p>Люди спасите, помогите.</p>
+
+<p>Хочу подготовить рассаду помидор…</p>
+
+<ol>
+  <li>
+    <p>Сколько этой самой рассаде нужно света в ватах на кв/м и какие лампы использовать?</p>
+  </li>
+  <li>
+    <p>Какой размер горшков нужен под рассаду, сколько её нужно места чтобы проклюнуться, и сколько нужно места после первой пикировки?</p>
+  </li>
+  <li>
+    <p>В каком субстрате лучше её выращивать, чтобы если-что высадить потом в открытый грунт?</p>
+  </li>
+</ol>
+
+<p><strong>Stanislav</strong> 16-01-2010</p>
+
+<p>И ещё если использовать 10 ДНАТ по 250w какое нужно вспомогательное оборудование (дросель, изу, конденсаторы) и сколько их нужно.</p>
+
+<p><strong>Mole_Garden</strong> 17-01-2010</p>
+
+<p>Про освещение:</p>
+
+<p><a href="http://www.ponics.ru/2009/06/light/" target="_blank">http://www.ponics.ru/2009/06/light/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/06/reflux70/" target="_blank">http://www.ponics.ru/2009/06/reflux70/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/12/discription_lamps/" target="_blank">http://www.ponics.ru/2009/12/discription_lamps/</a></p>
+
+<p>Для ламп ДНаТ, ДнаЗ, ДРИ, ДРЛ - нужен дроссель и ИЗУ, по желанию конденсатор (ЭМПрА) еще как вариант купить ЭПРА, но это будет дороже. За то у ЭПРА и вес меньше и экономии дает больше.</p>
+
+<p>По поводу рассады рекомендую прочитать следующее:</p>
+
+<p><a href="http://www.ponics.ru/2009/05/cassettes/" target="_blank">http://www.ponics.ru/2009/05/cassettes/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/05/cubes/" target="_blank">http://www.ponics.ru/2009/05/cubes/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/06/mat/" target="_blank">http://www.ponics.ru/2009/06/mat/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/05/tomat/" target="_blank">http://www.ponics.ru/2009/05/tomat/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/04/agro_trip2/" target="_blank">http://www.ponics.ru/2009/04/agro_trip2/</a></p>
+
+<p>p.s. в следующий раз для начала пользуйтесь поиском! И если не найдете ответы, то задавайте вопросы.</p>
+
+<p><strong>Олеганос</strong> 17-01-2010</p>
+
+<p>Для каждой дампы необходимы: 1)дроссель… (можно) от ДРЛ, такой же мощности, а можно при желании и от 400 ваттной. 8) 2)Изу… лучше трех-выводное. 3)конденсатор по- желанию, если энергия - халява, то можно не париться. Если же хочешь меньше за свет платить, то 32-36 мФ, 400 вольт. для каждой лампы.</p>
+
+<p><strong>Stanislav</strong> 17-01-2010</p>
+
+<p>Большое спасибо за ответы.</p>
+
+<p>Я хотел бы узнать такую вещь, хватит ли 4*36W fluorы на 1 кв/м рассады помидора?</p>
+
+<p>И еще, как вы рассчитываете объем необходимого света на ту или инную культуру.</p>
+
+<p>И последнее, энергосберегающая лампа на 85w, может чем то помочь в выращивании?</p>
+
+<p><strong>Mole_Garden</strong> 17-01-2010</p>
+
+<blockquote>
+  <p>Я хотел бы узнать такую вещь, хватит ли 4*36W fluorы на 1 кв/м рассады помидора?</p>
+</blockquote>
+
+<p>Ага, если ее повесить в 5-10 см от рассады до стадии 2-3 настоящих листьев, а дальше уже если хотите быстрого роста, хорошего урожая надо ставить ДНАТ. Если скокрость не принципиально, то можете оставить и флюору, только оооочень долго будете ждать. Длинные лампы они равномерно распределяют световой поток на протяженности всей лампы и таким образом из 36 ватт помидору достается гулькина фига.</p>
+
+<blockquote>
+  <p>И еще, как вы рассчитываете объем необходимого света на ту или инную культуру.</p>
+</blockquote>
+
+<p>В некоторых статьях нашего сайта даются рекомендации, а так же из личного опыта.</p>
+
+<blockquote>
+  <p>И последнее, энергосберегающая лампа на 85w, может чем то помочь в выращивании?</p>
+</blockquote>
+
+<p>Да вполне, кстати вот репорт, где Дмитрий вырастил перец <a href="http://www.ponics.ru/2009/06/peper_report/" target="_blank">http://www.ponics.ru/2009/06/peper_report/</a> на сколько мне помнится у него лампа на 85 или 105 ватт. Так что на пару растений вашей хватить должно.</p>
+
+<p><strong>Stanislav</strong> 18-01-2010</p>
+
+<p>А если взять 250W, это увеличит мои возможности в три раза?</p>
+
+<p><strong>Mole_Garden</strong> 18-01-2010</p>
+
+<blockquote>
+  <p>А если взять 250W, это увеличит мои возможности в три раза?</p>
+</blockquote>
+
+<p>:D 250 ватт чего ? Энергосберегайку или ДНАТ?</p>
+
+<p><strong>Stanislav</strong> 18-01-2010</p>
+
+<p>ЕСЛ</p>
+
+<p><strong>Mole_Garden</strong> 18-01-2010</p>
+
+<blockquote>
+  <p>ЕСЛ</p>
+</blockquote>
+
+<p>Это поможет, но лучше ставить сразу ДНАТ по цене подозреваю выйдет одинаково, а по производительности Днат будет гораздо выше.</p>
+
+<p><strong>травка</strong> 19-01-2010</p>
+
+<blockquote>
+  <p>ЕСЛ</p>
+</blockquote>
+
+<p>ставте ДНАТЫ и по мошнее не пожелеете .расти будет как на дрожах.только надо будет ,светильники поставить специальные .тут на сайте они есть по900 рублей.</p>
+
+<p><strong>utyv</strong> 09-03-2010</p>
+
+<blockquote>
+  <p>Я вот подумал, что трубочками можно подавать раствор через время, тем самым заполнять определенный уровень раствора в коробе, а пропускная способность стока будет ниже и тогда некоторое время раствор будет в коробе.</p>
+</blockquote>
+
+<p>Я тоже думаю где-то в этом направлении. Смущает то что возможность перелива будет зависеть от регулировки таймера, производительности насоса и пропускной способности стока. Насколько это надежно? Кто-то пробовал уже? Опасаюсь, вдруг раствор через край польется.</p>
+
+<p>Еще, как выпускной шланг к коробу крепить думаете? Стенки толстые? А шланг какой в диаметре? Я вот не придумал, как герметично приделать 5 мм аквариумную трубку к ПЭТ бутылке…</p>
+
+<p><strong>2netz</strong> 14-02-2013</p>
+
+<p>Здравствуйте.</p>
+
+<p>Хочу начать выращивание на гидропонике, но есть проблема .</p>
+
+<p>Живу в квартире и очень мало места . Есть ниша в стене размером высота 80 см , ширина 80 см , гдубина 45 см . Можно увеличить высоту до 125 см .</p>
+
+<p>Вопрос , возможно ли выращивание в таких условиях ?? И ,как я понимаю, будет проблема с устанвкой света , ведь лампы в такую нишу не поместятся .</p>
+
+<p>Зараннее спасибо за ответ .</p>
+
+<p><strong>Vad</strong> 14-02-2013</p>
+
+<p>а что вы хотели бы там видеть?</p>
+
+<p><strong>2netz</strong> 14-02-2013</p>
+
+<p>Начать хотел бы с зелени ( петрушка укроп салат )</p>
+
+<p>Потом посложнее . помидорка , огуурчик,перчик</p>
+
+<p>, ну и в конце концов , клубничка :))))</p>
+
+<p>Сразу скажу что ниша используется для опыта , если всё получится , то будет выделенно гораздо большее пространство .</p>
+
+<p><strong>Юка</strong> 14-02-2013</p>
+
+<p>Многие начинают с лукового пера…. :-X , но если салат (выберите сорт с более коротким сроком вызревания) , то освещение м.б. организовано спец. люмками, они существуют длиной 40 см. поищите в “аквариумных” магазинах. Успехов.</p>
+
+<p><strong>Vad</strong> 14-02-2013</p>
+
+<p>пожалуй томат в дырке 80х80х45 не вырастет :-\</p>
+
+<p>не.. он вырастет конечно.. причем далеко за пределы этой самой дырки..</p>
+
+<p>а вот укропчик и петрушка - аж бегом!</p>
+
+<p>сверху вешайте 4-5 лампочек люмок по 30 ватт они как раз около 80 см длинной</p>
+
+<p>вниз ставите балконный ящик..</p>
+
+<p>вот моя конструкция как раз вошла бы..</p>
+
+<p>исследуйте тут</p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1302.msg48401#msg48401" target="_blank">http://forum.ponics.ru/index.php?topic=1302.msg48401#msg48401</a></p>
+
+<p>может идеи какие появятся ;)</p>
+
+<p><strong>2netz</strong> 14-02-2013</p>
+
+<p>Спасибо :)</p>
+
+<p>1 вопрос : Есть ли на форуме ветка “ Вопросы новичков”?? Потому что вопросов будет много и разные )</p>
+
+<p>2 вопрос : Есть ли таблица , каким овощам какая нужна освещённость ? ( есть прибор )</p>
+
+<p>3 вопрос: К выше указаным параметрам подойдут мини помидорки-виноградинки ( подоконный вариант ) ??</p>
+
+<p><strong>Vad</strong> 14-02-2013</p>
+
+<p>ветка для новичков есть.. почти во всех разделах.</p>
+
+<p>освещенность не меньше 10-15к люкс на уровне “земли” (есть прибор)</p>
+
+<p>томаты, в том числе и микротоматы любят влажность.. 60% сможете поддерживать влажность в этом пространстве? при не большой температуре.. (20-25С, света то мало жарко - нельзя)</p>
+
+<p><strong>Al-nikoly</strong> 14-02-2013</p>
+
+<p>А заведите себе лучше домик сразу, чтобы все вопросы были в одном месте, или создайте тему в ветке “помогите”</p>
+
+<p><strong>2netz</strong> 14-02-2013</p>
+
+<p>вот тут и возникают вопросы по свету . Размер “парника” 80 на 45 см , а люмки или 90 или 60 см .Причём последнии дают только 1к люмен , а их нужно 10-15 , как быть ??</p>
+
+<p><strong>Vad</strong> 14-02-2013</p>
+
+<p>не люмен а ЛЮКС</p>
+
+<p>прибор же есть? вроде..</p>
+
+<p><a href="http://sp220.ru/Product/feron_2004b_cab2_30w_t4_lyuminestsentnyj_svetilnik/" target="_blank">http://sp220.ru/Product/feron_2004b_cab2_30w_t4_lyuminestsentnyj_svetilnik/</a></p>
+
+<p>Мощность 30 Ватт.</p>
+
+<p>Размеры: 800х18х43 мм</p>
+
+<p>можно (лучше) использовать только саму лампу.. отражатель проще делать</p>
+
+<p>а балласты разместить за пределами растильни ;)</p>
+
+<p><a href="http://selt1273.designb2b.ru/good/601432" target="_blank">http://selt1273.designb2b.ru/good/601432</a></p>
+
+<p>еще лампочка.. :-\</p>
+
+<p>писят три рубля :D</p>
+
+<p><strong>artmaximus</strong> 14-02-2013</p>
+
+<p>…вообще то длина 30 вт люминисцентных ламп 90 см+ несколько миллиметров.</p>
+
+<p>Так для инфы. :</p>
+
+<p>18 вт - 60 см</p>
+
+<p>30 вт -90 см</p>
+
+<p>36 вт. - 120см</p>
+
+<p>58 вт. - 150см.</p>
+
+<p>Это про “классические” 26 мм лампы.</p>
+
+<p>Ну и + несколько мм. на наконечники.</p>
+
+<p>Берём ЭПРА к необходимым лампам (по длине). В комплекте пружины и наконечники для ламп с проводами).</p>
+
+<p>Остаётся основа (на которую всё крепится).</p>
+
+<p>Шлёпаем свет сколько нужно.</p>
+
+<p><a href="http://zenosvet.ru/" target="_blank">http://zenosvet.ru/</a> (это к примеру, сам там беру)</p>
+
+<p>Это не реклама!!!!!!!!!</p>
+
+<p>Для информации.</p>
+
+<p><strong>Vad</strong> 14-02-2013</p>
+
+<p>я имел ввиду T4 и T5 лампы :) именно они у меня светят..</p>
+
+<p>(кстати уже запределами их ресурса &gt; 10000 часов… и по прежнему, с 30 см дают 12килолюкс )))</p>
+
+<p>T8 очень… крупные чтоль… яб сказал ТОЛСТЫЕ но .. они же не толстые :-[</p>
+
+<p><strong>artmaximus</strong> 14-02-2013</p>
+
+<p>Т8 дешевле :D</p>
+
+<p>Это главный козырь :D</p>
+
+<p><strong>artmaximus</strong> 14-02-2013</p>
+
+<p>Вад, вспомним ЛД и ЛБ <em>crazy</em> -вот где “стройность” :D</p>
+
+<p><strong>Vad</strong> 14-02-2013</p>
+
+<p>ну.. :-\ разница не гигантская.. всего в два раза.. :-\</p>
+
+<p>за то светит яршЭ ;)</p>
+
+<p>а может и нет <em>crazy</em></p>
+
+<p><strong>Vad</strong> 14-02-2013</p>
+
+<blockquote>
+  <p>Вад, вспомним ЛД и ЛБ <em>crazy</em> -вот где “стройность” :D</p>
+</blockquote>
+
+<p>не не… не будем их вспоминать :-X</p>
+
+<p>ну их ))</p>
+
+<p><strong>2netz</strong> 14-02-2013</p>
+
+<p>Спасибо !</p>
+
+<p>Да действительно , у меня люксметр. Просто искал инфу и перепутал с люменом .</p>
+
+<p>! Провёл эксперимант :</p>
+
+<p>У меня есть 3 лампочки по 6 ватт как раз те , каторые мне опсоветовал ВАД.</p>
+
+<p>Я соеденил их и померил их светопоток.</p>
+
+<p>25 см 50 см</p>
+
+<p>18 вт 800 260</p>
+
+<p>Можно примерно посчитать , сколько будет выдавать такая же лампа на 40 вт без отражателя .</p>
+
+<p>30 вт 1330 430</p>
+
+<p>В принципе не плохо .</p>
+
+<p>Вопросы:</p>
+
+<ol>
+  <li>
+    <p>Сколько прибавит отражатель ?</p>
+  </li>
+  <li>
+    <p>Сколько ставить (покупать) на светильник</p>
+  </li>
+  <li>
+    <p>Мож ДРЛ 250 ? ( тепла будет много и от тех ламп)</p>
+  </li>
+</ol>
+
+<p><strong>artmaximus</strong> 14-02-2013</p>
+
+<p>Я по глупости , несколько лет назад (больше десяти), купил по дешёвке их (несколько коробок) <em>crazy</em> <em>Wall</em></p>
+
+<p>Когда они закончились…я перекрестился <em>crazy</em></p>
+
+<p><strong>Vad</strong> 14-02-2013</p>
+
+<blockquote>
+  <p>Можно примерно посчитать , сколько будет выдавать такая же лампа на 40 вт без отражателя .</p>
+</blockquote>
+
+<p>нельзя. линейная экстраполяция не применима :)</p>
+
+<p>яркость растет не предсказуемо и три по 6 ват светят не так как 18ваттная :-X</p>
+
+<p>(в каких единицах вы померили? это что за цыфры такие)</p>
+
+<blockquote>
+  <p>Вопросы:</p>
+
+  <ol>
+    <li>Сколько прибавит отражатель ?</li>
+  </ol>
+</blockquote>
+
+<p>правильный прибавит столько-же (ну в идеале, столько-же.. а так.. ну процентов 90)</p>
+
+<blockquote>
+  <ol>
+    <li>Сколько ставить (покупать) на светильник</li>
+  </ol>
+</blockquote>
+
+<p>чтоб на уровне листиков было 10-15клюкс :)</p>
+
+<blockquote>
+  <ol>
+    <li>Мож ДРЛ 250 ? ( тепла будет много и от тех ламп)</li>
+  </ol>
+</blockquote>
+
+<p>линеные выгоднее.. их охлаждать прощще и отражать удобнее</p>
+
+<p><strong>2netz</strong> 15-02-2013</p>
+
+<p>Спасибо. буду пробывать . Как появятся какие то реультаты деятельности , напишу :)</p>
+
+<p><strong>Vad</strong> 15-02-2013</p>
+
+<p>ну давайте уже скорее чтоли )) интересно ведь ))</p>
+
+<p>и фотку растильни сделайте..</p>
+
+<p>может еще идей подкинет кто? :-[</p>
+
+<p><strong>2netz</strong> 16-02-2013</p>
+
+<p>хорошо .</p>
+
+<p>Сегодня прошёлся по магазинам , а у нас в городе ничего и нет зеркального для отражателя . Попробую что нить выдуумать .</p>
+
+<p>Ну и мне почему то кажется что отражатель даёт процентов 70 а не 90 :)</p>
+
+<p>да и по ходу если начну делать надо отлельную ветку заводить- вопросов и фоток будет тьма :))))</p>
+
+<p><strong>artmaximus</strong> 16-02-2013</p>
+
+<p>Отражатель можно и белый сделать. Будет не хуже, даже лучше.</p>
+
+<p>В любой конторе, кто занимается доборными элементами и у кого есть листогиб, легко сделают изделие из крашенной оцинковки (белой) по заданным размерам.Любой отражатель.</p>
+
+<p><strong>Vad</strong> 16-02-2013</p>
+
+<p>пластик для обшивки стен, суперклей, пишевая фольга+двухсторонний скотч.. вот и весь отражатель))</p>
+
+<p>зачем там железяки жуткие.. <em>???</em></p>
+
+<p><strong>artmaximus</strong> 17-02-2013</p>
+
+<p>Ну так то , конечно :)</p>
+
+<p>Если хочется с цианом (вонючим) повозиться.</p>
+
+<p>Экспериментировали и пришёл к выводу, что белый цвет лучше отражает и рассеивает, чем зеркальный.</p>
+
+<p>Материалы могут быть разные, какие хочется и какие вам легче достать и обрабатывать.</p>
+
+<p>Можно ПВХ пластик, сендвич панель (классная вещь и обрабатывается легко), можно и композит, а можно и пластиковые панели (как говорил Вад). :D</p>
+
+<p>Так что, немного фантазии …и вуаля :D</p>
+
+<p><strong>Vad</strong> 17-02-2013</p>
+
+<p>тот пластик по канавкам классно режется, гнется, отлично клеится, прощает ошибки и выглядит весьма не плохо.. :-[</p>
+
+<p><strong>2netz</strong> 01-03-2013</p>
+
+<p>Сделал свой домик , как советовали. где лучше задавать вопросы тут или там ?*</p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1661.msg58814#msg58814" target="_blank">http://forum.ponics.ru/index.php?topic=1661.msg58814#msg58814</a></p>
+
+<p><strong>Oxy</strong> 01-03-2013</p>
+
+<p>В домике</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

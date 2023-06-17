@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Врет. Ровно в 2 раза! | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Врет. Ровно в 2 раза!">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Врет. Ровно в 2 раза!</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Vad</strong> 23-11-2013</p>
+
+<p>Будьте осторожны!</p>
+
+<p>Сегодня получил новые “приборы”. один в один как сдесь</p>
+
+<p><a href="http://www.ebay.com/itm/400600725270?ssPageName=STRK:MEWNX:IT&amp;_trksid=p3984.m1439.l2649#ht_3500wt_1026" target="_blank">http://www.ebay.com/itm/400600725270?ssPageName=STRK:MEWNX:IT&amp;_trksid=p3984.m1439.l2649#ht_3500wt_1026</a></p>
+
+<p><a href="http://www.ebay.com/itm/Pool-SPA-Water-Lab-Digital-EC-Conductivity-Tester-Meter/190840020391?rt=nc&amp;_trksid=p2047675.m1851&amp;_trkparms=aid%3D222002%26algo%3DSIC.FIT%26ao%3D1%26asc%3D18241%26meid%3D2913317146015084023%26pid%3D100005%26prg%3D8344%26rk%3D4%26rkt%3D4%26sd%3D400600725270%26#ht_3858wt_906" target="_blank">http://www.ebay.com/itm/Pool-SPA-Water-Lab-Digital-EC-Conductivity-Tester-Meter/190840020391?rt=nc&amp;_trksid=p2047675.m1851&amp;_trkparms=aid%3D222002%26algo%3DSIC.FIT%26ao%3D1%26asc%3D18241%26meid%3D2913317146015084023%26pid%3D100005%26prg%3D8344%26rk%3D4%26rkt%3D4%26sd%3D400600725270%26#ht_3858wt_906</a></p>
+
+<p>ну их много там.. “таких же”</p>
+
+<p><a href="https://t.me/ponics_ru_files/11218" target="_blank"><img src="/imagehost/thumbs/cb311.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11219" target="_blank"><img src="/imagehost/thumbs/cb314.jpg" alt="" /></a></p>
+
+<p>Врет РОВНО в два раза.</p>
+
+<p>(показывает в 2 раза больше, чем есть)</p>
+
+<p>Калибровать не удается. Не хватает пределов регулировки.</p>
+
+<p>В утиль!</p>
+
+<p>Не покупать!</p>
+
+<p>Купленые проверять!</p>
+
+<p>Быстро оценить ситуацию можно так:</p>
+
+<p>1 грамм повареной соли растворить в 1 литре воды.. и получить показания ~ 200 х10(+ ваша вода)</p>
+
+<p>а не 500 х10 или 600 х10</p>
+
+<p>Тестеры едут назад, на родину в китай… <em>crazy</em> &gt;:D</p>
+
+<p><strong>Klubnikov</strong> 24-11-2013</p>
+
+<p>бесплатный сыр только в китае)) богатый ассортимент для халявщиков</p>
+
+<p>Это ты из таких приборов собираешь высококлассные системы контроля среды? как в подписи написано..</p>
+
+<p><strong>alexxx</strong> 24-11-2013</p>
+
+<p>А что, за такие деньги они еще и правильно показывать должны? ;D</p>
+
+<p><strong>Vad</strong> 24-11-2013</p>
+
+<p>Тема создана с целью предупредить пользователей о наличие проблемы.</p>
+
+<p>ведь люди измеряют и спрашивают почему не растет <em>8)</em></p>
+
+<p>Klubnikov, И откуда вы все знаете?</p>
+
+<p>я клонирую их… вы только не говорите никому:-X</p>
+
+<p>да, отпиливаю от них кусочки ;D и клонирую <em>Dance</em></p>
+
+<p><em>crazy</em></p>
+
+<p>удивительный идиотизм :D <em>8)</em></p>
+
+<p><strong>VVS_</strong> 25-11-2013</p>
+
+<p>Скрыть 50% поверхности элктрода куском термоусадки:)</p>
+
+<p>Они хоть термокомпенсированные?</p>
+
+<p><strong>Vad</strong> 25-11-2013</p>
+
+<p>Я знаю.</p>
+
+<p>Да .. еслиб себе брал - повозился бы..</p>
+
+<p>а так.. кумовейный товарищь просил.. вряд ли ему понравится такой вариант :D</p>
+
+<p><strong>begunok</strong> 25-11-2013</p>
+
+<p>Вад, так ты купил прибор до 1,5 ес. Он тебе ничего и не покажет</p>
+
+<p><strong>Vad</strong> 25-11-2013</p>
+
+<p>:D</p>
+
+<p>я купил до 9 mS</p>
+
+<p><em>8)</em></p>
+
+<p><strong>Vad</strong> 25-11-2013</p>
+
+<p>вобще, их у меня внушительная коллекция уже :D</p>
+
+<p>какой-то я… ECметроголик :D</p>
+
+<p>все время кажется.. ну вот щас.. куплю на 10 баксов дороже.. И <em>Dance</em></p>
+
+<p>а хрен там.. одно и тоже.. и показыают одинаково - скучно <em>???</em></p>
+
+<p>китайских ноунеймов штук 5 уже.. ханну вот купил.. ну показывает.. ну тоже самое.. - сложил ее в коробочку.. - лежит как “поверочный” :D</p>
+
+<p>(я коллекционер наверное :-)</p>
+
+<p>вот, осталось жабу придушить и купить лабораторный <em>8)</em></p>
+
+<p>уж очень мне понравилось с ними общаться <em>8)</em> три знака после запятой! <em>Dance</em></p>
+
+<p><strong>Alex123</strong> 25-11-2013</p>
+
+<p>У меня такой же - купил пару лет назад. Солью не проверял. водопроводную показывает 80 ррм</p>
+
+<p>Кстати, вот тут условия калибровки несколько другие <a href="http://blea.ch/wiki/index.php/PPM_Meter" target="_blank">http://blea.ch/wiki/index.php/PPM_Meter</a></p>
+
+<p><strong>Alex123</strong> 25-11-2013</p>
+
+<blockquote>
+  <p>А что, за такие деньги они еще и правильно показывать должны? ;D</p>
+</blockquote>
+
+<p>А почему бы нет ?</p>
+
+<p><strong>Vad</strong> 25-11-2013</p>
+
+<blockquote>
+  <p>У меня такой же - купил пару лет назад. Солью не проверял. водопроводную показывает 80 ррм</p>
+</blockquote>
+
+<p>ппм?</p>
+
+<p>он не показывает ppm он микросименсы показывает ;)</p>
+
+<p><strong>Alex123</strong> 25-11-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>У меня такой же - купил пару лет назад. Солью не проверял. водопроводную показывает 80 ррм</p>
+  </blockquote>
+
+  <p>ппм?</p>
+
+  <p>он не показывает ppm он микросименсы показывает ;)</p>
+</blockquote>
+
+<p>Не, мой меряет ТDS, хотя внешне такой же как и ваш.</p>
+
+<p>вот такой <a href="http://www.ebay.com/itm/LCD-Display-Digital-Purity-Filter-Pen-TDS-Meter-Water-Quality-Tester-0-9999-PPM-/290993547788?pt=US_Garden_Tools&amp;hash=item43c0912a0c" target="_blank">http://www.ebay.com/itm/LCD-Display-Digital-Purity-Filter-Pen-TDS-Meter-Water-Quality-Tester-0-9999-PPM-/290993547788?pt=US_Garden_Tools&amp;hash=item43c0912a0c</a></p>
+
+<p><strong>Vad</strong> 25-11-2013</p>
+
+<p>ооойй..</p>
+
+<p>ну его… совсем-совсем :-[</p>
+
+<p><em>Wall</em></p>
+
+<p><strong>Borodach1</strong> 25-11-2013</p>
+
+<blockquote>
+  <p>Будьте осторожны!</p>
+
+  <p>Сегодня получил новые “приборы”.</p>
+
+  <p>…</p>
+
+  <p>Врет РОВНО в два раза.</p>
+
+  <p>(показывает в 2 раза больше, чем есть)</p>
+
+  <p>Калибровать не удается. Не хватает пределов регулировки.</p>
+</blockquote>
+
+<p>А может как в той истории с PH-метрами? Батарейки сдохли, вот и показывает всякую чушь. :-[</p>
+
+<p>А может ещё и сборка такая. Мне долго мозги высасывал доставшийся по случаю Hanna Checker 1, пока я не решил посмотреть как он устроен. &gt;:( Оказалось, что из трёх концов тумблера включения припаяно было только 2. А третий просто лежал на горке припоя. Со временем, с изменением температуры, влажности, сопротивление этого “контакта” менялось. А как у меня показания менялись! :o Причём сделан он был даже не в Китае, а если верить корпусу, то в Португалии.</p>
+
+<p><strong>Vad</strong> 26-11-2013</p>
+
+<p>“весь импорт делается…” :-X</p>
+
+<p>ханну свою не разбирал.. но знаю точно, что себестоимость ее бакса 3 - 3.5.. :D</p>
+
+<p>нет. тут дело не в батарейках.. точно..))</p>
+
+<p>он показывал очень точно! и Точно в 2 раза выше чем должен ))</p>
+
+<p><strong>Nikolai</strong> 26-11-2013</p>
+
+<p>Это чинится, и очень просто:</p>
+
+<p>Хорошим маркером напишите на корпусе: “/2”</p>
+
+<p>Готово!</p>
+
+<p><strong>Strangeman</strong> 26-11-2013</p>
+
+<p>Мне пипиметр такой же достался. Посадил на электроды 2 колечка термоусадки, а далее крутилкой. Мой, правда, не в 2 раза, а совсем ерунду показывал. Интересно получается - у них все приборы завышают, но почему? Ладно бы в обе стороны врали.</p>
+
+<p><strong>Borodach1</strong> 26-11-2013</p>
+
+<blockquote>
+  <p>Мне пипиметр такой же достался.</p>
+</blockquote>
+
+<p>:D :D :D :D :D</p>
+
+<p>Прям какой то урологический прибор. :D :D :D</p>
+
+<p><strong>Vad</strong> 26-11-2013</p>
+
+<blockquote>
+  <p>Интересно получается - у них все приборы завышают, но почему? Ладно бы в обе стороны врали.</p>
+</blockquote>
+
+<p>шоп конопля не росла! :D</p>
+
+<p><strong>покерист</strong> 26-11-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>Интересно получается - у них все приборы завышают, но почему? Ладно бы в обе стороны врали.</p>
+  </blockquote>
+
+  <p>шоп конопля не росла! :D</p>
+</blockquote>
+
+<p>А у кого то растет <em>???</em> <em>???</em> <em>???</em></p>
+
+<p><strong>Vad</strong> 26-11-2013</p>
+
+<p>:o</p>
+
+<p><strong>покерист</strong> 26-11-2013</p>
+
+<blockquote>
+  <p>:o</p>
+</blockquote>
+
+<p>Показывали тут недавно!!!!!! В соседнем районе один гидропонщик ;D ;D ;D выращивал не только огурчики и помидорчики но и веселуху ;D ;D ;D соответственно продавал!!!!!!!!!1</p>
+
+<p>Когда его брали на квартире менты в шоке были как замечательно у него все растет в квартире ;D ;D ;D</p>
+
+<p>И КОНФИСКОВАЛИ!!!!!!!!!!!!!!!</p>
+
+<p>В итоге все замяли :) т к 2 куста не криминал!!!!!!!!!!!!!</p>
+
+<p>КРАСИВЫЙ ОГОРОДИК БЫЛ <em>8)</em> <em>8)</em> <em>8)</em></p>
+
+<p><strong>taram</strong> 26-11-2013</p>
+
+<blockquote>
+  <p>Показывали тут недавно!!!!!! В соседнем районе один гидропонщик ;D ;D ;D выращивал не только огурчики и помидорчики но и веселуху ;D ;D ;D соответственно продавал!!!!!!!!!1</p>
+
+  <p>В итоге все замяли :) т к 2 куста не криминал!!!!!!!!!!!!!</p>
+
+  <p>КРАСИВЫЙ ОГОРОДИК БЫЛ <em>8)</em> <em>8)</em> <em>8)</em></p>
+</blockquote>
+
+<p>Обманываете ,уважаемый, или не договариваете. ЕСли “продавал”, то не важно сколько кустов было. Без уголовного дела и соответстенно срока, если доказано, никак.</p>
+
+<p><strong>покерист</strong> 26-11-2013</p>
+
+<p>ВЫРАЩИВАТЬ одна статья!!!!!!!!!!!!!!!</p>
+
+<p>ХРАНЕНИЕ другая статья</p>
+
+<p>РАСПРОСТРАНЕНИЕ 3 статья вот по этой статье и проблема у ДУРИКА!!!!!!!!!!!!! только доказать надо а он как было сказано по телеку деньги ему на эл кошелек кидали после этого он говорил где надо забрать из тайника на улице!!!!!!!!!!</p>
+
+<p><strong>Vad</strong> 26-11-2013</p>
+
+<p>Господа… :D</p>
+
+<p>мы тут что обсуждаем? <em>???</em></p>
+
+<p><strong>покерист</strong> 26-11-2013</p>
+
+<blockquote>
+  <p>Господа… :D</p>
+
+  <p>мы тут что обсуждаем? <em>???</em></p>
+</blockquote>
+
+<p>;D ;D ;D сам поднял тему ;D ;D ;D ну а я подхватил ;D ;D ;D</p>
+
+<p>СМЕШНАЯ ВЕДЬ ТЕМА ;D</p>
+
+<p>Кстати по РУСКОМУ ЭКСТРИМУ каналу недавно видел там дядька по странам катается и расказывает где как отдыхать так вот</p>
+
+<p>Амстердам показывали магазин гидропоники в основном установки и семена к чему я а точно!!!!!</p>
+
+<p>ТАКИХ ДОРОГИХ СЕМЯН Я никогда не видел 3 семечка 50 ЕВРО</p>
+
+<p>Я и не знал что есть столько сортов конопли существует!!!!!!!!!!</p>
+
+<p><strong>taram</strong> 17-03-2014</p>
+
+<p>Подскажите, есть ли возможность отремонтировать пш-метр, показывающий 4.0пш вместо 7.0пш?</p>
+
+<p>У калибровки диапазон регулировки не привышает +-0.5пш.</p>
+
+<p>Пшметр вполне не из дешевых, калибровка трёхточечная.</p>
+
+<p><strong>Vad</strong> 17-03-2014</p>
+
+<p>фотку рабочей части покажите..</p>
+
+<p>скорее всего испортился/засалился/кончился электрод сравнения</p>
+
+<p><strong>taram</strong> 17-03-2014</p>
+
+<blockquote>
+  <p>фотку рабочей части покажите..</p>
+
+  <p>скорее всего испортился/засалился/кончился электрод сравнения</p>
+</blockquote>
+
+<p>Испортил тем, что мерил раствор с пш 1.0, а потом одел колпачёк, забыв промыть электрод.</p>
+
+<p>Видимо сдвинулся диапазон. Кто то об этом писал на форуме.</p>
+
+<p><strong>Vad</strong> 17-03-2014</p>
+
+<p>электрод сравнения там жидкий?</p>
+
+<p>нужно увидеть, чтоб понять как исправлять.. фотку в студию (или, хотяб полное имя )</p>
+
+<p><strong>taram</strong> 17-03-2014</p>
+
+<p>Вот фото</p>
+
+<p><a href="https://t.me/ponics_ru_files/11220" target="_blank"><img src="/imagehost/thumbs/20120117062444.jpg" alt="" /></a> <a href="https://t.me/ponics_ru_files/11221" target="_blank"><img src="/imagehost/thumbs/20120117062436.jpg" alt="" /></a></p>
+
+<p>Раз диапазон сдвинулся от кислого раствора с 1пш, то может пшметр подержать в щелочном с пш12-13?</p>
+
+<p><strong>Gamelander</strong> 17-03-2014</p>
+
+<p>Вопрос в тему: собрался приобретать ЕС-метр, уважаемое сообщество, посоветуйте какой купить, чтобы и показывал нормально и по цене было приемлемо. В общем - оптимальный вариант.</p>
+
+<p><strong>Vad</strong> 17-03-2014</p>
+
+<blockquote>
+  <p>Вот фото</p>
+
+  <p><img src="/imagehost/thumbs/20120117062444.jpg" alt="" /> <img src="/imagehost/thumbs/20120117062436.jpg" alt="" /></p>
+
+  <p>Раз диапазон сдвинулся от кислого раствора с 1пш, то может пшметр подержать в щелочном с пш12-13?</p>
+</blockquote>
+
+<p>Замочите его в 5-10% хлористом калие (KCl)</p>
+
+<p>на 1-2-3 суток..</p>
+
+<p><strong>taram</strong> 17-03-2014</p>
+
+<blockquote>
+  <p>Замочите его в 5-10% хлористом калие (KCl)</p>
+
+  <p>на 1-2-3 суток..</p>
+</blockquote>
+
+<p>А такие растворы подайдут?</p>
+
+<p><a href="https://t.me/ponics_ru_files/11222" target="_blank"><img src="/imagehost/thumbs/20120117085516.jpg" alt="" /></a> <a href="https://t.me/ponics_ru_files/11223" target="_blank"><img src="/imagehost/thumbs/20120117085535.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 17-03-2014</p>
+
+<p>ну да.. это оно и есть..</p>
+
+<p>только разводить нужно немножко концентрированнее… чтоб “выманить” прямым осмосом ждкость из которой состоит электрод сравнения</p>
+
+<p><strong>taram</strong> 17-03-2014</p>
+
+<blockquote>
+  <p>ну да.. это оно и есть..</p>
+
+  <p>только разводить нужно немножко концентрированнее… чтоб “выманить” прямым осмосом ждкость из которой состоит электрод сравнения</p>
+</blockquote>
+
+<p>А что из представленых фот поконцетрированей? похоже правая, да? она для очистки.</p>
+
+<p><strong>Vad</strong> 17-03-2014</p>
+
+<p>правая для очистки..</p>
+
+<p>они не сухие?</p>
+
+<p><strong>taram</strong> 17-03-2014</p>
+
+<blockquote>
+  <p>правая для очистки..</p>
+
+  <p>они не сухие?</p>
+</blockquote>
+
+<p>На фото жидкости. Могу разбавить или выпарить. Третьего не дано :o :-.</p>
+
+<p><strong>taram</strong> 17-03-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>правая для очистки..</p>
+
+    <p>они не сухие?</p>
+  </blockquote>
+
+  <p>На фото жидкости. Могу разбавить или выпарить. Третьего не дано :o :-.</p>
+</blockquote>
+
+<p>Так что - выпарить? Не вкурсе кто сколько ЕС будет у</p>
+
+<blockquote>
+  <p>5-10% хлористом калие (KCl)</p>
+</blockquote>
+
+<p><strong>Vad</strong> 17-03-2014</p>
+
+<p>Будет много mS.. нам такое не измерить.</p>
+
+<p>не надо выпаривать… замачивайте уже как есть…</p>
+
+<p><strong>taram</strong> 17-03-2014</p>
+
+<blockquote>
+  <p>Будет много mS.. нам такое не измерить.</p>
+
+  <p>не надо выпаривать… замачивайте уже как есть…</p>
+</blockquote>
+
+<p>Ясненько. Пошел мочить. :D</p>
+
+<p><strong>Vad</strong> 17-03-2014</p>
+
+<p><em>8)</em> мочи его! “в сортире!”(c)ПУ</p>
+
+<p><strong>vilon</strong> 18-03-2014</p>
+
+<blockquote>
+  <p>Вопрос в тему: собрался приобретать ЕС-метр, уважаемое сообщество, посоветуйте какой купить, чтобы и показывал нормально и по цене было приемлемо. В общем - оптимальный вариант.</p>
+</blockquote>
+
+<p>Уважаемый Vad, откликнитесь, пожалуйста, на просьбу форумчанина, для меня такой вопрос тоже актуален! Ибо собирался покупать как раз такой вот синенький.</p>
+
+<p><strong>diman73rus</strong> 18-03-2014</p>
+
+<p>я купил в свое время вот такой: <a href="http://moemgorod.com/product/hm-digital-com-80-ec-tds-hydrotester/" target="_blank">http://moemgorod.com/product/hm-digital-com-80-ec-tds-hydrotester/</a></p>
+
+<p>еще ни разу за год не подводил.</p>
+
+<p><strong>Vad</strong> 18-03-2014</p>
+
+<blockquote>
+  <p>Уважаемый Vad, откликнитесь, пожалуйста, на просьбу форумчанина, для меня такой вопрос тоже актуален! Ибо собирался покупать как раз такой вот синенький.</p>
+</blockquote>
+
+<p>да… как бы.. :-\</p>
+
+<p>не знаю что советовать.. все меняется..</p>
+
+<p>из дешовых, у меня черный и синий <em>8)</em></p>
+
+<p>все куплено в разное время.. и до этого раза, описанного в первом посте, как бы.. проблемм небыло <em>???</em></p>
+
+<p>если сильно дорогой покупать жаба душит, то остальное - лотерея <em>???</em></p>
+
+<p>я 2 раза выиграл и один раз проиграл.. ставки 2:1 ;)</p>
+
+<p><strong>taram</strong> 24-04-2014</p>
+
+<blockquote>
+  <p>А такие растворы подайдут?</p>
+
+  <p><img src="/imagehost/thumbs/20120117085516.jpg" alt="" /></p>
+</blockquote>
+
+<p>Подскажите, какой рН должен быть у такого раствора для хранения пшметров (ма9015)?</p>
+
+<p>Измерил рН своего раствора для хранения - зашкаливает в минус.</p>
+
+<p>Так же не должно быть?</p>
+
+<p>Боюсь свой новый пшметр опять испортить, я этот раствор капаю в колпачёк закрывающий электрод при хранение.</p>
+
+<p><strong>Strangeman</strong> 24-04-2014</p>
+
+<p>Это, скорее всего, KCl. Если так - pH действительно низкий.</p>
+
+<p><strong>Vad</strong> 24-04-2014</p>
+
+<p>угу.. низкий.. всего 8 ;)</p>
+
+<p>KCl'ом заполнена емкость “электрода сравнения”</p>
+
+<p>по тому в нем и хранится электрод :D</p>
+
+<p><strong>Vad</strong> 24-04-2014</p>
+
+<blockquote>
+  <p>Подскажите, какой рН должен быть у такого раствора для хранения пшметров (ма9015)?</p>
+
+  <p>Измерил рН своего раствора для хранения - зашкаливает в минус.</p>
+</blockquote>
+
+<p>подсказываю..</p>
+
+<p>берем яндыкс.. на набиваем в него “MA9015” жмем большую кнопку справа..</p>
+
+<p>плучаем мануал на MA9015</p>
+
+<p><a href="http://www.milwaukeeinstruments.com/pdf/MSDS/MA9015.pdf" target="_blank">http://www.milwaukeeinstruments.com/pdf/MSDS/MA9015.pdf</a></p>
+
+<p>Читаем</p>
+
+<p>SECTION 9: PHYSICAL/CHEMICAL PROPERTIES</p>
+
+<p>Appearance: Colorless liquid Odor: Odorless Density at 20°C: 1.02 g/cm³</p>
+
+<p>Melting Point: NA Boiling Point: ~ 100°C Solubility: Soluble</p>
+
+<p>pH at 20°C: 5 - 7</p>
+
+<p><strong>taram</strong> 24-04-2014</p>
+
+<blockquote>
+  <p>Читаем</p>
+</blockquote>
+
+<p>Благодарю, Vad!</p>
+
+<p>Я в этой англиканской галиматьё сам бы ничо не понял.</p>
+
+<p>Теперь, мне, надо понять, с какого Х в моей бутыле с ма9015 такой низкий рН :-. Из за этого похоже предыдущий рНметр испортился.</p>
+
+<p><strong>Vad</strong> 24-04-2014</p>
+
+<p>К сожалению.. на вопрос</p>
+<blockquote>
+  <p>с какого Х в моей бутыле с ма9015 такой низкий рН?</p>
+</blockquote>
+
+<p>яндекс ответа не знает )) я спрашивал :D</p>
+
+<p><strong>taram</strong> 24-04-2014</p>
+
+<blockquote>
+  <p>К сожалению.. на вопрос</p>
+  <blockquote>
+    <p>с какого Х в моей бутыле с ма9015 такой низкий рН?</p>
+  </blockquote>
+
+  <p>яндекс ответа не знает )) я спрашивал :D</p>
+</blockquote>
+
+<p>:) У меня пока одна версия - фосфорной кислотой разбавил раствор. Алкоголь-зло! <em>crazy</em></p>
+
+<p><strong>Gromozeka</strong> 31-07-2014</p>
+
+<p>Вопрос. Наблюдаю на DX и кондуктометры и ph метры по 13 - 15 баксов. Это совсем стрёмные аппараты? Выброс денег, или обычная китайская лотерея, в смысле могут и штатно работать?</p>
+
+<p>Просто давали ссылки на com 100 и 200, оно как бы 70 и 60 баксов, а 130 баксов и 30 баксов за комплект, это интересная разница. Но эта разница интересна только в том случае, когда комплект за 30 работает так же или не на много хуже комплекта за 130. Опять же, судя по старым сообщениям на форуме, хвалят ph-009, который, собственно китайский китай и есть…</p>
+
+<p>Подскажите пожалуйста.</p>
+
+<p><strong>Vad</strong> 31-07-2014</p>
+
+<p>лотерея…</p>
+
+<p><strong>Gromozeka</strong> 31-07-2014</p>
+
+<p>Vad спасибо. Ph метр более менее понятен. Практически любой годится если не почвенный.</p>
+
+<p>По китайским tds метрам какие то рекомендации есть? В EC они не меряют, как я понял, пересчёт по коэффициенту.</p>
+
+<p><strong>Vad</strong> 31-07-2014</p>
+
+<p>лотерея ))</p>
+
+<p>но имеет смысл искать… где про сименсы написано ))</p>
+
+<p>лотерея 50/50</p>
+
+<p><strong>Borodach1</strong> 01-08-2014</p>
+
+<blockquote>
+  <p>Просто давали ссылки на com 100 и 200, оно как бы 70 и 60 баксов, а 130 баксов и 30 баксов за комплект, это интересная разница. Но эта разница интересна только в том случае, когда комплект за 30 работает так же или не на много хуже комплекта за 130.</p>
+</blockquote>
+
+<p>РН-метр у меня HANNA Checker 1 и ещё какой то обычный китайский аквариумный. Иногда, когда сомнения берут, меряю обоими. Если сильно разбежались, значит нужно калибровать. Меряют они как то долго. От пол минуты до минуты. Интересно, это у меня такие глюки или это особенности РН метров?</p>
+
+<p>СОМ-100 я не рекомендовал. Сам ещё не пробовал. Он пока ещё ползёт по нашей почте. :)</p>
+
+<p>TDS метр у меня китайский, с виду такой же, как в первом посте этой темы. Коэффициент 500. Вроде не врёт. Меряет практически мгновенно. А сом-100 я заказал как раз чтобы был ещё какой нибудь контроль.</p>
+
+<p><strong>Gromozeka</strong> 01-08-2014</p>
+
+<p>Китайская лотерея, это нормально. Иногда попадается что то вообще нерабочее, муляж, которыц в принципе не пригоден. Если же вопрос просто в качестве сборки, игра того стоит.</p>
+
+<p>Заказал наборчик, ориентируясь на отзывы на DX. Ph 2011 и tds 3м.</p>
+
+<p><strong>Vad</strong> 01-08-2014</p>
+
+<blockquote>
+  <p>Меряют они как то долго. От пол минуты до минуты. Интересно, это у меня такие глюки или это особенности РН метров?</p>
+</blockquote>
+
+<p>это особенности электродов.</p>
+
+<p>они все так..</p>
+
+<p>вобще, реальное устаканивание показаний наступает где-то через час :D</p>
+
+<p><strong>Gromozeka</strong> 02-08-2014</p>
+
+<p>Просто в моём случае… Я полнейший чайник, более того, не известно ещё, станет ли гидропоника длительным увлечением, хобби. С этих позиций большие вложения в качественную измерительную аппаратуру на первых порах кажутся избыточными.</p>
+
+<p>Понравится, куплю более толковые и более дорогие инструменты.</p>
+
+<p><strong>Vad</strong> 02-08-2014</p>
+
+<p>станет оно хобби, или не станет - зависит от результата.. а результат зависит от подхода..</p>
+
+<p>отнесетесь внимательно и с желанием понимать что делаешь - будет результат…</p>
+
+<p>нет - нет.</p>
+
+<p>в данном случае, положиться на инструмент которй показывает “что-нибудь”, равно иметь непроградуированные весы например… или линейку ;)</p>
+
+<p>она как бы есть.. но точно не измерить <em>???</em> а приблизительно - и так можно оценить…</p>
+
+<p>за сим надобность в такой линейке отпадает <em>???</em></p>
+
+<p>конечно, измерять золотой линейкой, с платиновой инкрустацией циферок.. рубиновыми камушками каждые 5 мм, и бриллиантами на 10мм отметках куда приятнее ;)</p>
+
+<p>но ..</p>
+
+<p>цвет, размер, материал линейки на точность не влияет ;)</p>
+
+<p>линейка она и вафрике - линейка</p>
+
+<p><strong>Gromozeka</strong> 02-08-2014</p>
+
+<p>Вопрос. Грамм поваренной соли на литр, размешать, но не взбалтывать, отстоять пару часов.</p>
+
+<p>Что должны показать аппараты?</p>
+
+<p>Имеется в виду прикинуть, годен/не годен.</p>
+
+<p>P.s. есть аппараты очень специфические, для флигранной настройки, например углы и размеры до тысячных. Температура на пару градусов йок, а иногда и десяток градусов, ушла геометрия. Что характерно, конечному пользователю мм туда - сюда вообще без разницы. Прикидочные значения на пальцах.</p>
+
+<p>Так и тут. Много факторов для конечного результата и эт, биологическая, адаптабельная и изменчивая система. В добавок, главный фактор, это любопытные, неопытные или кривые руки оператора с неуместным энтузиазмом… Плохо если контролирующий аппарат на много врёт или день рождения бабушки показывает. Или ломается шибко часто. А в если просто стабильно подвирает, это вообще нормально, осилим, справимся. И дозировать по булькам приучимся.</p>
+
+<p>Растил бы продукт на продажу, вложился бы.</p>
+
+<p><strong>Vad</strong> 02-08-2014</p>
+
+<p>должно быть +2mS к тому что было</p>
+
+<p>(сперва измерить чистую воду, запомнить значение, потом намешать соль.. снова измерить, должно стать на 2 больше )</p>
+
+<p>Все это понятно, про геометрию, угловые секунды, филигранность..</p>
+
+<p>но когда “прямой угол” колеблется в пределах 45 градусов +- 5 это перебор :D</p>
+
+<p>понимаете?</p>
+
+<p><strong>Borodach1</strong> 02-08-2014</p>
+
+<p>Может лучше не в литре развести, а в поллитре? ;D Ну… в смысле в 500 мл. :D</p>
+
+<p>Должно получиться 4. А потом несколько раз разбавляя 1:1 прогоним нужный нам диапазон на линейность.</p>
+
+<p><strong>Vad</strong> 02-08-2014</p>
+
+<p>да хоть в чекушке :D</p>
+
+<p><strong>Gromozeka</strong> 02-08-2014</p>
+
+<p>Ок. Это кондуктометр. А ph метр как без калибровочного раствора уличить? В смысле “Калибровочный раствор своими руками”.</p>
+
+<p>45 +-5 это у нас в строительстве норма. Если там не дотянуть, а здесь надставить дощечкой, то визуально, если не прищуриваться, вполне.</p>
+
+<p><strong>Vad</strong> 02-08-2014</p>
+
+<p>ну может в строительстве норма а тут никак ))</p>
+
+<p>Пшометры обычно не сильно врут +-1-2 :D</p>
+
+<p>уксус столовый - 2.5</p>
+
+<p>сода (насыщеный раствор ) около 8.5-9</p>
+
+<p>но лучше калибровать растворами</p>
+
+<p><strong>Borodach1</strong> 02-08-2014</p>
+
+<blockquote>
+  <p>да хоть в чекушке :D</p>
+</blockquote>
+
+<p>:D :D :D</p>
+
+<p>Я кстати почти в чекушке и разводил.</p>
+
+<p>В мерном стакане на 250 мл.</p>
+
+<p>Зато я теперь знаю, что где то до 6 практически линейно, а при 8-ке страшно заваливает.</p>
+
+<p>Но к счастью это уже не наш диапазон. :)</p>
+
+<blockquote>
+  <p>45 +-5 это у нас в строительстве норма. Если там не дотянуть, а здесь надставить дощечкой, то визуально, если не прищуриваться, вполне.</p>
+</blockquote>
+
+<p>Всё было бы ничего. Только разговор шёл о прямом угле. ;D</p>
+
+<blockquote>
+  <p>но когда “прямой угол” колеблется в пределах 45 градусов +- 5 это перебор :D</p>
+
+  <p>понимаете?</p>
+</blockquote>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Лук и как это было - опытом делиться caiman | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Лук и как это было - опытом делиться caiman">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Лук и как это было - опытом делиться caiman</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>caiman</strong> 14-10-2009</p>
+
+<p>Всем привет. По совету Koval Sergey решил тоже дом построить. Что нам стоит дом построить, нарисуем(напишем), будем жить. Из “мебели” пока ничего. Но, думаю, потихоньку буду наполнять. Так, что милости просим, дверь всегда открыта, гостям всегда рады.</p>
+
+<p>Меня сейчас больше заботит разводка воздуха по бакам, расположеным в три яруса по 7 ящиков на каждом. Какой “продувной” мощности взять компрессор и какой? мембранный или поршневой? ???</p>
+
+<p><strong>caiman</strong> 15-10-2009</p>
+
+<p><a href="http://www.postimage.org/Ts1GH2KA.jpg" target="_blank"><img src="http://www.postimage.org/Ts1GH2KA.jpg" alt="" /></a></p>
+
+<p>Как то так :-[</p>
+
+<p><strong>koval.sergei</strong> 15-10-2009</p>
+
+<p>Внутренние размеры ящиков каковы</p>
+
+<p><strong>Mole_Garden</strong> 15-10-2009</p>
+
+<blockquote>
+  <p>Как то так :-[</p>
+</blockquote>
+
+<p>Очень хорошо, красиво, нарядно, стелланжно- от слова стеллаж</p>
+
+<p>Вот собственно схема, которую накидал для автоматизации</p>
+
+<p>Если появятся вопросы спрашивайте, это все теория, на практике не проверял.</p>
+
+<p><strong>koval.sergei</strong> 15-10-2009</p>
+
+<p>Вот этот вариант самый тот, что нужно. Водичку подливать не надо в баки, также постоянно подливаеться чистая вода, то есть свежая, комресор один в подающем баке достаточно.</p>
+
+<p><strong>Mole_Garden</strong> 15-10-2009</p>
+
+<blockquote>
+  <p>Внутренние размеры ящиков каковы</p>
+</blockquote>
+
+<p>предполагаю, что размер 80*40</p>
+
+<p><strong>Mole_Garden</strong> 15-10-2009</p>
+
+<blockquote>
+  <p>Меня сейчас больше заботит разводка воздуха по бакам, расположенными в три яруса по 7 ящиков на каждом. Какой “продувной” мощности взять компрессор и какой? мембранный или поршневой? ???</p>
+</blockquote>
+
+<p>Думаю, однозначно поршневой, он все же мощнее и давление у него по больше будет. Подозреваю, что Hailea у вас нет, но вроде я скидывал альтернативу. 7 ящиков по 30 литров это 210 литров всего.</p>
+
+<p>И так попробуем прикинуть.</p>
+
+<blockquote>
+  <p>Компрессор</p>
+
+  <blockquote>
+    <p>Сколько по Вашему опыту приходится баков на один компрессор Sera (Италия), 550 л/ч?</p>
+  </blockquote>
+
+  <p>Если 4-х канальный как раз на четыре бака - по каналу на бак.</p>
+</blockquote>
+
+<p>И так считаем</p>
+
+<p>у вас 7 баков* 3 яруса= 21 бак всего</p>
+
+<p>из поста выше</p>
+
+<p>550 л/ч делим на 4= 130 примерно л/ч на бак</p>
+
+<p>130 л/ч*21= 2730 л/ч итого на все баки</p>
+
+<p>2730 л/ч делим на 60 минут = и того нам нужен примерно компрессор с показателями порядка 45 л/минута</p>
+
+<p>Исходя из этого выбираете, думаю лучше брать немного с запасом литров 60 в минуту . ;)</p>
+
+<p>Вам нужен</p>
+
+<p>либо 3000 литров в час</p>
+
+<p>либо 50-60 литров в минуту и самое главное рассчитать гидродинамику(разводку воздуха в баки, точней диаметр трубы по, которой будет подаваться воздух к распылителям).</p>
+
+<p>Можете почитать еще тут может поможет для расчета <a href="http://www.ponics.ru/2009/03/watertrace/" target="_blank">http://www.ponics.ru/2009/03/watertrace/</a></p>
+
+<p><strong>Mole_Garden</strong> 16-10-2009</p>
+
+<p>Caiman прием прием, что не ужели не возникло вопросов?</p>
+
+<p><strong>caiman</strong> 16-10-2009</p>
+
+<p>Да, вот расчитать бы воздуходинамику разводки воздуха на все три этажа было бы желательно. А то я в этом ничего не понимаю. ??? :-[</p>
+
+<p><strong>Mole_Garden</strong> 16-10-2009</p>
+
+<blockquote>
+  <p>Да, вот расчитать бы воздуходинамику разводки воздуха на все три этажа было бы желательно. А то я в этом ничего не понимаю. ??? :-[</p>
+</blockquote>
+
+<p>А ты спрашивай что именно не понятно ;)</p>
+
+<p><img src="http://img63.imageshack.us/img63/7475/hydrodinamic27440245.th.jpg" alt="" /></p>
+
+<p>тут вроде же все расписано.</p>
+
+<p>Площадь сечения основной трубы должна быть больше, чем сумма площадей сечения всех подключенных трубочек</p>
+
+<p><strong>Mole_Garden</strong> 16-10-2009</p>
+
+<p>Кстати, вроде нигде не писал, а из чего сам стеллаж(каркас) сделан?</p>
+
+<p><strong>Mole_Garden</strong> 17-10-2009</p>
+
+<p>К слову сказать, я бы наверно сделал примерно так.</p>
+
+<p><strong>caiman</strong> 17-10-2009</p>
+
+<p>Стелаж сделан из деревянных брусков. Что-то похожее и я думал, только трубочки к ящикам не сверху вниз, а снизу в ящик. Про разводку я у mdima читал, правда там качество изображения плохое, не все понял. Сейчас, вроде развиднелось, спасибо. Сделаю, отпишусь.</p>
+
+<p><strong>Mole_Garden</strong> 17-10-2009</p>
+
+<blockquote>
+  <p>Стелаж сделан из деревянных брусков. Что-то похожее и я думал, только трубочки к ящикам не сверху вниз, а снизу в ящик.</p>
+</blockquote>
+
+<p>Это они так висят :D, основная трубка же находится на уровне этажей стеллажа.</p>
+
+<p><strong>caiman</strong> 18-10-2009</p>
+
+<p>Тоесть, воздушная трубка от магистральной заходит в ящик снизу или свисая, сверху?</p>
+
+<p>Если сверху, то неудобно лук собирать, трубочки мешают :D</p>
+
+<p><strong>Mole_Garden</strong> 18-10-2009</p>
+
+<blockquote>
+  <p>Тоесть, воздушная трубка от магистральной заходит в ящик снизу или свисая, сверху?</p>
+
+  <p>Если сверху, то неудобно лук собирать, трубочки мешают :D</p>
+</blockquote>
+
+<p>Трубочка для распылителя расположена так что бы вам было удобно, а уж как это вам виднее. Магистральная труба на уровне полок.</p>
+
+<p><strong>koval.sergei</strong> 21-10-2009</p>
+
+<p>Что то хозяин домика куды-то пропал :D</p>
+
+<p>Не лука, не компрессора, не видать.</p>
+
+<p>Поди на рынок уже убежал. :)</p>
+
+<p><strong>caiman</strong> 22-10-2009</p>
+
+<p>Точно, был на рынке, купил лучка, засадил в ящики, ждите фоток :o</p>
+
+<p><strong>koval.sergei</strong> 22-10-2009</p>
+
+<p>Ну вот , как в воду глядел ;)</p>
+
+<p><strong>caiman</strong> 22-10-2009</p>
+
+<p>Лук был куплен не крупный, почищен, обрезан, замочен, высажен.</p>
+
+<p>Теперь буду ждать результата.</p>
+
+<p><a href="https://t.me/ponics_ru_files/1649" target="_blank"><img src="/attachimages/637_IMG0241A.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/1650" target="_blank"><img src="/attachimages/639_IMG0242A.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/1651" target="_blank"><img src="/attachimages/641_IMG0243A.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/1652" target="_blank"><img src="/attachimages/643_IMG0244A.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/1653" target="_blank"><img src="/attachimages/645_IMG0246A.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/1654" target="_blank"><img src="/attachimages/647_IMG0247A.png" alt="" /></a></p>
+
+<p><strong>koval.sergei</strong> 22-10-2009</p>
+
+<p>Нормально получилось 8), а завес лука производили на каждый ящик. Для интереса.</p>
+
+<p><strong>caiman</strong> 22-10-2009</p>
+
+<p>Честно говоря нет :-[, но это не проблема. Ведь ящики и лук еще есть, можно взвесить в любой момент :D</p>
+
+<p><strong>koval.sergei</strong> 22-10-2009</p>
+
+<p>А почему у вас водичка сильно тёмная при бортаже, вы добавлялии что то. Да, и свет особо им пока не нужен дней 5.</p>
+
+<p><strong>Mole_Garden</strong> 22-10-2009</p>
+
+<p>Ого, уважаемый caiman отличное начало осенних дней ;) На одной из фоток у вас засветилась бутылка? Квас для растений в виде стимуляторов?</p>
+
+<p><strong>lobcter</strong> 22-10-2009</p>
+
+<p>Классно сделано и аккуратно, килограмм 6 будет наверное на один ящик.</p>
+
+<p><strong>caiman</strong> 22-10-2009</p>
+
+<blockquote>
+  <p>А почему у вас водичка сильно тёмная при бортаже, вы добавлялии что то. Да, и свет особо им пока не нужен дней 5.</p>
+</blockquote>
+
+<p>Это вода потемнела от луковых чешуек “одежки”, была б Пасха, можно было б яйца покрасить, а так прийдется вылить, потому как подозреваю, что в этой “краске” дубильные вещества луковых чешуек не дадут стимулировать лук при следующей загрузке. ???</p>
+
+<p><strong>koval.sergei</strong> 22-10-2009</p>
+
+<p>Барбировали 12 часов, на фото мочка у лука хорошая получилась, даже отличная. И если не трудно, сделайте завес, для того чтобы знать скока получили товарного продукта.</p>
+
+<p><strong>caiman</strong> 22-10-2009</p>
+
+<blockquote>
+  <p>Ого, уважаемый caiman отличное начало осенних дней ;) На одной из фоток у вас засветилась бутылка? Квас для растений в виде стимуляторов?</p>
+</blockquote>
+
+<p>Да, биостимулятор для роста и развития растений. Язык украинский, но понять представителям братских словянским народов можно</p>
+
+<p><a href="https://t.me/ponics_ru_files/1655" target="_blank"><img src="/attachimages/649_IMG0252A.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/1656" target="_blank"><img src="/attachimages/651_IMG0253A.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 22-10-2009</p>
+
+<p>А еще есть такое предложение, этот отчет уже попахивает репортом, в домиках по идее высказывают мысли и прочую ерунду, может создать тему про репорт по выгонке лука от caiman ?</p>
+
+<p><strong>caiman</strong> 22-10-2009</p>
+
+<p>Может быть, может быть. :-[</p>
+
+<p><strong>caiman</strong> 26-10-2009</p>
+
+<p>С момента посадки лучка прошло 5 дней. Т.е. лук был посажен 21.10.09, а сегодня 26.10.09. Вроде правильно посчитал :-[</p>
+
+<p>Первые день-два шло наращивание корней:</p>
+
+<p><a href="http://s4.postimage.org/RU759.jpg" target="_blank"><img src="http://s4.postimage.org/RU759.jpg" alt="" /></a></p>
+
+<p>И верх немного проклюнулся:</p>
+
+<p><a href="http://s3.postimage.org/1b3J0i.jpg" target="_blank"><img src="http://s3.postimage.org/1b3J0i.jpg" alt="" /></a></p>
+
+<p><a href="http://s3.postimage.org/1b3N_A.jpg" target="_blank"><img src="http://s3.postimage.org/1b3N_A.jpg" alt="" /></a></p>
+
+<p><a href="http://s4.postimage.org/RV1sr.jpg" target="_blank"><img src="http://s4.postimage.org/RV1sr.jpg" alt="" /></a></p>
+
+<p>Прошло еще два дня. И вот сегодня лук имеет вот такой вид:</p>
+
+<p><a href="http://s4.postimage.org/RVKm0.jpg" target="_blank"><img src="http://s4.postimage.org/RVKm0.jpg" alt="" /></a></p>
+
+<p>Есть и рекодсмен роста</p>
+
+<p><a href="http://s3.postimage.org/1b5Fei.jpg" target="_blank"><img src="http://s3.postimage.org/1b5Fei.jpg" alt="" /></a></p>
+
+<p>И общий вид ящиков с луком:</p>
+
+<p><a href="http://s4.postimage.org/RXrC9.jpg" target="_blank"><img src="http://s4.postimage.org/RXrC9.jpg" alt="" /></a></p>
+
+<p><a href="http://s3.postimage.org/1b7DXr.jpg" target="_blank"><img src="http://s3.postimage.org/1b7DXr.jpg" alt="" /></a></p>
+
+<p>Вот такие дела на сегодня :-[</p>
+
+<p><strong>Mole_Garden</strong> 27-10-2009</p>
+
+<p>Очень хорошие такие дела, корневая хорошая, верх уже потихоньку пробивается. На мой взгляд все идет просто отлично. А свет у вас горит над луком постоянно? или только на время фотосесии?</p>
+
+<p><strong>caiman</strong> 27-10-2009</p>
+
+<p>Пока только на кастинге и для портфоллио ;D</p>
+
+<p>Но скоро будут видеть “свет божий” через “люмки” 8)</p>
+
+<p><strong>koval.sergei</strong> 27-10-2009</p>
+
+<p>Сколько уже суток вы его держите без света, и какая температура в помещении, а так-же и воды в емкостях.</p>
+
+<p><strong>caiman</strong> 27-10-2009</p>
+
+<p>Без света - 5 дней. Температура в помещении +21-+22 град., воды в ящике 30 литров. :)</p>
+
+<p><strong>koval.sergei</strong> 27-10-2009</p>
+
+<p>А в воде какая температура.</p>
+
+<p><strong>caiman</strong> 27-10-2009</p>
+
+<p>+21 - + 23, где то так!</p>
+
+<p><strong>koval.sergei</strong> 27-10-2009</p>
+
+<p>Нормально :) Самый то</p>
+
+<p><strong>Mendes</strong> 28-10-2009</p>
+
+<p>Есть один вопрос, оставшийся без внимания (по крайней мере, я на него ответа не встретил):</p>
+
+<p>Если баки располагать стеллажно, то какое минимальное расстояние (по высоте) необходимо выдержать между ними? То есть, на какую высоту роста пера нужно расчитывать?</p>
+
+<p><strong>caiman</strong> 28-10-2009</p>
+
+<p>Уважаемый Азамат! Если следовать рекомендациям Валеры, то нижний ярус, первый, тот который пол, можно делать: высота ящика + 10-15см.</p>
+
+<p>Второй ярус: высота ящика + 25-30см+ ?см для размещения светильников, ламп, лампочек и т.д.</p>
+
+<p>Третий ярус: высота ящика + 40-50см + ?см на свет.</p>
+
+<p>У меня стелаж с равными по высоте стелажиками, полками: 3 яруса, по 75см. Под потолок. Высота полков 2,50м.</p>
+
+<p>Как-то так :-[</p>
+
+<p>Перо более 40-50см не вырастет, нет вырастет конечно, но хлопотно и долго это, а цена… Так, что ориентир 40см. 8)</p>
+
+<p><strong>Mendes</strong> 28-10-2009</p>
+
+<p>Понял, спасибо.</p>
+
+<p>Вариант Валерия, при всем моем уважении к его методу, как отправной точке…я бы сказал, матери всех обсуждаемых на форуме методов, предполагает слишком сложное манипулирование матриалом в процессе гонки. Перекладывание луковиц из нижних ярусов в верхние достаточно хлопотен, хотя, конечно, он позволяет сэкономить на световом обрудовании в начале гонки и на аэрации на конечном.</p>
+
+<p>Но это опять-таки, дело выбора каждого.</p>
+
+<p><strong>caiman</strong> 29-10-2009</p>
+
+<p>Перекладываются крышки с луковицами, а не сами луковицы, что физически невозможно из-за корней. Но, вы правы, хлопотно это :)</p>
+
+<p><strong>baa</strong> 29-10-2009</p>
+
+<blockquote>
+  <p>Но, вы правы, хлопотно это :)</p>
+</blockquote>
+
+<p>Я тоже сторонник -где посадил там и снял. Ведь при больших объёмах это действитель напрягает.</p>
+
+<p>Уважаемый Сaiman, а ящики у Вас шли с отверстиями для стока ? Если да, то как и чем Вы их заделывали ?</p>
+
+<p><strong>cloobex</strong> 29-10-2009</p>
+
+<p>Отличный репорт получается.</p>
+
+<p>Признаюсь, планирую нечто подобное, но я пока на стадии вырезания лунок в ящиках )) но смотря на такие фото хочется уже быстрее достичь результата. Появилось 2 вопроса к caiman: какой раствор для барботирования применяли, какой он концентрации был? и второй вопрос - какие распылители исполюзуются в баках?</p>
+
+<p>Заранее благодарен за ответ))</p>
+
+<p><strong>caiman</strong> 29-10-2009</p>
+
+<blockquote>
+  <blockquote>
+    <p>Но, вы правы, хлопотно это :)</p>
+  </blockquote>
+
+  <p>Я тоже сторонник -где посадил там и снял. Ведь при больших объёмах это действитель напрягает.</p>
+
+  <p>Уважаемый Сaiman, а ящики у Вас шли с отверстиями для стока ? Если да, то как и чем Вы их заделывали ?</p>
+</blockquote>
+
+<p>Уважаемый baa! Мои ящики, да и ваши тоже, раз спрашиваете про сливные дырки, применяются для транспортировки красной рыбы во льду, так называемая “охлажденка”. Рад, что нашли, а дырки заделывал пенопластом на том же ТИТАНЕ (это клей такой, это пояснение для новых людей), т.е. вырезал пенопластовый клин чуть больше чем дырка, смазывал клеем и с силой впихивал. Второй вариант - монтажная пена, но потом надо всеравно заливать титаном.</p>
+
+<p>Теперь ответ cloobex. Для барботирования применял воду из под крана температурой +35 - +40, + “Вермисол”. Барботаж12-20 часов, потом 12часов прогревание, т.е. заворачивал луковицы в что-то теплое (старое одеяло) и дальше ПОСАДКА.</p>
+
+<p>В баках использую аквариумные распылители двух видлв: длинные трубчатые зеленые и обычные каменные цилиндры.</p>
+
+<p><strong>koval.sergei</strong> 30-10-2009</p>
+
+<p>Ну как у Вас лучок подрос или же ещё нет</p>
+
+<p><strong>baa</strong> 30-10-2009</p>
+
+<blockquote>
+  <p>. Рад, что нашли, а дырки заделывал пенопластом на том же ТИТАНЕ</p>
+</blockquote>
+
+<p>К сожалению пока не нашёл, но выяснил, что точно такие же ящики бывают и без дырок . Просто те что с дырками имеют маркировку ( в конце) [font=Verdana] <a href="0">size=20pt</a>[/size][/font][size=10pt]</p>
+
+<p><strong>Gentlekiller</strong> 30-10-2009</p>
+
+<p>А что такого привлекательного в этих пенопластовых ящиках, что за ними все так охотятся? Не проще ли использовать любой ящик из любого материала, постелив туда кусок пленки без разрезов? Мне этот вариант кажется самым доступным</p>
+
+<p><strong>Mole_Garden</strong> 30-10-2009</p>
+
+<blockquote>
+  <p>А что такого привлекательного в этих пенопластовых ящиках, что за ними все так охотятся? Не проще ли использовать любой ящик из любого материала, постелив туда кусок пленки без разрезов? Мне этот вариант кажется самым доступным</p>
+</blockquote>
+
+<p>Вариант, но если внимательней прочитаете посты выше, то найдете ответ на свой вопрос.</p>
+
+<p>Пенопласт лучше для помещений где прохладно, а в так ни чем не лучше других вариантов.</p>
+
+<p><strong>baa</strong> 30-10-2009</p>
+
+<blockquote>
+  <p>А что такого привлекательного в этих пенопластовых ящиках, что за ними все так охотятся? Не проще ли использовать любой ящик из любого материала, постелив туда кусок пленки без разрезов? Мне этот вариант кажется самым доступным</p>
+</blockquote>
+
+<p>Если Вам известно, что цена зелёного лука максимальна когда холодно, то есть зимой, то выгонка зимой самая выгодная. А пенопласт-это самый энергосберегающий вариант, тем более ящики уже готовой формы и не пропускают воду, короче говоря готовый термос.</p>
+
+<p><strong>cloobex</strong> 30-10-2009</p>
+
+<blockquote>
+  <p>Теперь ответ cloobex. Для барботирования применял воду из под крана температурой +35 - +40, + “Вермисол”. Барботаж12-20 часов, потом 12часов прогревание, т.е. заворачивал луковицы в что-то теплое (старое одеяло) и дальше ПОСАДКА.</p>
+
+  <p>В баках использую аквариумные распылители двух видлв: длинные трубчатые зеленые и обычные каменные цилиндры.</p>
+</blockquote>
+
+<p>Спасибо за ответ!</p>
+
+<p>А по поводу ящиков, сам с трудом их во Львове нашёл, только в одном месте были, хоть и город немаленький - областной центр. Зато все ящики с дырками. Придётся клеить Титаном.</p>
+
+<p><strong>sanek</strong> 01-11-2009</p>
+
+<p>Что та видать та на пузырях похуже получаеся лучше трубками поливать как написана повыше или нет7</p>
+
+<p><strong>Mole_Garden</strong> 02-11-2009</p>
+
+<p>caiman, а почему тут фоток неть ;) и как результаты?</p>
+
+<p><strong>caiman</strong> 02-11-2009</p>
+
+<p>Все будет, правда! Я сегодня только смог попасть в “глобальную паутину”, были технические “недоразумения”.</p>
+
+<p>Соберусь с “духом” и выложу. А к baa закинул пару фоток для Санька-неверующего.</p>
+
+<p>Ну, надо было наказать, это ж не 41-й (к-н Титаренко “В бой идут одни старики”) ;D</p>
+
+<p><strong>Mole_Garden</strong> 02-11-2009</p>
+
+<p>Да ужо не знаю, что сказать, сказал бы, что уже решил ничего не доказывать, пущай как хочет, верит не верит. А фоток ждем с нетерпением ;)</p>
+
+<p><strong>caiman</strong> 03-11-2009</p>
+
+<p>Попытка №2. С первой не получилось, зависает комп, не грузятся фото.</p>
+
+<p>“Сказка” про лук, для Санька</p>
+
+<p>предисловие:</p>
+
+<p>Жил был лук и жил Санек,</p>
+
+<p>не с китая паренек</p>
+
+<p>Наш Санек тот лук растил,</p>
+
+<p>целый месяц, как ……..!</p>
+
+<p>И была у паренька супер-клевая мечта,</p>
+
+<p>чтобы враз по интернету</p>
+
+<p>разузнать про лук секреты.</p>
+
+<p>Как растить его в воде</p>
+
+<p>за недели эдак две</p>
+
+<p>Думаю, что язык фото Саньку будет более понятен :D</p>
+
+<p>Так что смотри Санек. Это не фотомонтаж, не фотошоп, это РЕАЛЬНОСТЬ.</p>
+
+<p>НАЧАЛО. ПОСАДКА</p>
+
+<p>21.10.09. поздний вечер, темно, страшно, а сажать надо. Посадил :)</p>
+
+<p><a href="http://s4.postimage.org/1JCBti.jpg" target="_blank"><img src="http://s4.postimage.org/1JCBti.jpg" alt="" /></a></p>
+
+<p><a href="http://s4.postimage.org/1JCIXJ.jpg" target="_blank"><img src="http://s4.postimage.org/1JCIXJ.jpg" alt="" /></a>Закрыл черной пленкой, от “сглазу” разного :D</p>
+
+<p><a href="http://s4.postimage.org/1JCVqr.jpg" target="_blank"><img src="http://s4.postimage.org/1JCVqr.jpg" alt="" /></a></p>
+
+<p>Прошло 2-3 дня. Пошел рост пера и корней.</p>
+
+<p><a href="http://s2.postimage.org/C8_w9.jpg" target="_blank"><img src="http://s2.postimage.org/C8_w9.jpg" alt="" /></a></p>
+
+<p><a href="http://s2.postimage.org/C9gZ9.jpg" target="_blank"><img src="http://s2.postimage.org/C9gZ9.jpg" alt="" /></a></p>
+
+<p><a href="http://s2.postimage.org/C9AWi.jpg" target="_blank"><img src="http://s2.postimage.org/C9AWi.jpg" alt="" /></a></p>
+
+<p><a href="http://s3.postimage.org/4HTrr.jpg" target="_blank"><img src="http://s3.postimage.org/4HTrr.jpg" alt="" /></a></p>
+
+<p>29.10.09. Прошло 8 дней</p>
+
+<p><a href="http://s2.postimage.org/Cb8cS.jpg" target="_blank"><img src="http://s2.postimage.org/Cb8cS.jpg" alt="" /></a></p>
+
+<p><a href="http://s2.postimage.org/Cc050.jpg" target="_blank"><img src="http://s2.postimage.org/Cc050.jpg" alt="" /></a></p>
+
+<p><a href="http://s2.postimage.org/CcwvS.jpg" target="_blank"><img src="http://s2.postimage.org/CcwvS.jpg" alt="" /></a></p>
+
+<p>02.11.09 До конца 15-ти дневной гонки осталось 3 дня.</p>
+
+<p><a href="http://s4.postimage.org/1JGcsi.jpg" target="_blank"><img src="http://s4.postimage.org/1JGcsi.jpg" alt="" /></a></p>
+
+<p><a href="http://s3.postimage.org/4Kv3S.jpg" target="_blank"><img src="http://s3.postimage.org/4Kv3S.jpg" alt="" /></a></p>
+
+<p><a href="http://s2.postimage.org/Ce6hA.jpg" target="_blank"><img src="http://s2.postimage.org/Ce6hA.jpg" alt="" /></a></p>
+
+<p>Перо кое где уже “ложится”, значит технически спелое. Лук взошел не весь, хотя корни есть у всех луковиц. Будем ждать.</p>
+
+<p>29.10.09 было засажено еще три ящика лука, но про него позже.</p>
+
+<p>Пока все! Думаю, что Санька убедил, а Санек?</p>
+
+<p><strong>Mole_Garden</strong> 04-11-2009</p>
+
+<blockquote>
+  <p>Попытка №2. С первой не получилось, зависает комп, не грузятся фото.</p>
+
+  <p>“Сказка” про лук, для Санька</p>
+
+  <p>предисловие:</p>
+
+  <p>Жил был лук и жил Санек,</p>
+
+  <p>не с китая паренек</p>
+
+  <p>Наш Санек тот лук растил,</p>
+
+  <p>целый месяц, как ……..!</p>
+
+  <p>И была у паренька супер-клевая мечта,</p>
+
+  <p>чтобы враз по интернету</p>
+
+  <p>разузнать про лук секреты.</p>
+
+  <p>Как растить его в воде</p>
+
+  <p>за недели эдак две</p>
+</blockquote>
+
+<p>:o Caiman -ЗАЧЕТ ;D</p>
+
+<p>Стих в тему, в точку и просто красиво !!! :)</p>
+
+<p>sanek, честное слово, вас никто не пытается задеть и обидеть, просто надо относиться с доверием к словам постояльцев нашего форума. Я стараюсь следить за правдивостью постов участников. Откровенную ахинею мы сразу пытаемся прибить и искоренить !</p>
+
+<p><strong>sanek</strong> 04-11-2009</p>
+
+<p>Стихи прямтаки вот выростеш 500 килогарм зеленова лука за месиц а я поглижу Всем так думают так просто а попробуй сам может пузырем и побыстей а мало</p>
+
+<p><strong>Mole_Garden</strong> 04-11-2009</p>
+
+<blockquote>
+  <p>Стихи прямтаки вот выростеш 500 килогарм зеленова лука за месиц а я поглижу Всем так думают так просто а попробуй сам может пузырем и побыстей а мало</p>
+</blockquote>
+
+<p>Александр, это второе и последнее предупреждение. Пишите более понятно, используйте знаки препинания и проверяйте орфографию, тем более, это помогает делать форум, слова с ошибками подчеркиваются красным. Не хочется, что бы форум превратился в болото неразберихи и невнятных постов.</p>
+
+<p>Спасибо за понимание, Александр.</p>
+
+<p><strong>caiman</strong> 04-11-2009</p>
+
+<blockquote>
+  <p>Стихи прямтаки вот выростеш 500 килогарм зеленова лука за месиц а я поглижу Всем так думают так просто а попробуй сам может пузырем и побыстей а мало</p>
+</blockquote>
+
+<p>Cкажите Санек, а с какой площади вы собираете 500кг зеленого лука-пера в месяц и сколько тонн лука при этом используется? Вы, наверно используете для выращивания отапливаемую теплицу? И какое географическое местоположение, нет, так сложно, короче где Вы живете, Саня?</p>
+
+<p><strong>caiman</strong> 04-11-2009</p>
+
+<p>Саня! Вы не обижайтесь, если я вас оскорбил, прошу прощения. Действительно, человек к нам, пусть и коряво, но с вопросами, а я паразит такой, ему ни слова, одни фотки.</p>
+
+<p>Саня, ты спрашивай, спрашивай, только, пожалуйста, фильтруй посты и вопросы конкретно и четко. Тогда и ответы будешь получать по теме, а не по темечку.</p>
+
+<p>Из нас, конечно, агрономы не ахти какие, но если ты думаешь, что хороший агроном должен быть в грязной фуфайке, чуточку трезв, по колена в грязи, то ты явно ошибаешься. А в остальном все верно, я картошку покупаю на базаре. :D</p>
+
+<p><strong>Mole_Garden</strong> 04-11-2009</p>
+
+<blockquote>
+  <p>Под Воронежом есть город Семилуки. точку я пставил. Что ниспросиш только оскорбляца я не разу даже и нни матирился двое придуприждений мне за что ? Сами вы узбеки все ково ни спросиш все читай . Один мендес раз ответил как немного человек.</p>
+
+  <p>а дгугие грамотнае все</p>
+
+  <p>НИбось коровкик от свинарника ни один ни оличит а туда все агрономы. хоть раз поиснили бы понятно. Нибось жрать картошку в магизыны ходитя ни спрашиваите хорошо пишут или нет. Минделеевы какие. Узбеки даже лутше.</p>
+</blockquote>
+
+<p>Александр, вы просто поймите, у нас здесь не индивидуальная школа, где все приносят на блюдечке по первому зову, если хотите, что-то узнать, прежде всего следует прочитать хотя бы то, что рекомендуют, а потом спрашивать и утверждать. Да, еще к слову сказать, вы же даже не спрашивает, а вы просто говорите, что все это лож, враки, брехня и т.д. Если зададите конкретный или приблизительный вопрос то с радостью ответим. В общем хватит, надеюсь Вы меня поняли и давайте прекратим эти распри, если вам еще есть, что сказать по этому поводу, пишите ко мне в личку, пообщаемся. Если уж пишите в теме, то пишите по делу, если хочется поболтать или обсудить что-нибудь, то есть соответствующие разделы <a href="http://forum.ponics.ru/index.php/board,1.0.html" target="_blank">http://forum.ponics.ru/index.php/board,1.0.html</a></p>
+
+<p>Поэтому все сообщения выше, которые связаны с разборками я удалю, если что пишите в личку.</p>
+
+<p><strong>Mendes</strong> 04-11-2009</p>
+
+<blockquote>
+  <p>Узбеки даже лутше.</p>
+</blockquote>
+
+<p>Вот тут Санек не могу с вами не согласиться! ;D</p>
+
+<p><strong>caiman</strong> 06-11-2009</p>
+
+<p>Вот так, медленно, мы перешли от интернационального ЛУКА к обсуждению этническо-языковых проблем.</p>
+
+<p>Ребята! Возвращаемся к луку, он со всеми народами говорит на одном языке - вырос-не вырос. :D</p>
+
+<p><strong>Mole_Garden</strong> 06-11-2009</p>
+
+<p>Все дальнейшие национальные распри только через личку, иначе буду ругаться! А здесь про лук</p>
+
+<p><strong>sanek</strong> 06-11-2009</p>
+
+<p>Если будити ругаца сза меня я ни бууд к вам ходить</p>
+
+<p><strong>Mole_Garden</strong> 06-11-2009</p>
+
+<blockquote>
+  <p>Если будити ругаца сза меня я ни бууд к вам ходить</p>
+</blockquote>
+
+<p>Александр, больше не будут, я за этим буду следить.</p>
+
+<p><strong>caiman</strong> 06-11-2009</p>
+
+<p>Вот и ладушки!!! Тогда я, с вашего позволения, про лук.</p>
+
+<p>На чем я остановился? ??? Ага, 02.11.09 - до окончания эксперимента осталось 3 дня.</p>
+
+<p>Ну, вот сегодня 06.11.09 собрал первый урожай с одного ящика. Надо честно признаться, что не весь лук взошел, хотя корни пустил, Было несколько с подгнившим донышком, а так, в принципе, с ящика посаженых 1,25 кг собрано 1,03 кг пера или 82,4 %.</p>
+
+<p>А теперь фото с комментариями:</p>
+
+<p>06.11.09 - утро, осмотр вверенного участка на предмет готовности меня и лука к уборке.</p>
+
+<p>Два ящика готовы, третий подкачал, так, что будем перебирать:</p>
+
+<p><a href="http://s2.postimage.org/WV5J0.jpg" target="_blank"><img src="http://s2.postimage.org/WV5J0.jpg" alt="" /></a></p>
+
+<p><a href="http://s2.postimage.org/WVaIi.jpg" target="_blank"><img src="http://s2.postimage.org/WVaIi.jpg" alt="" /></a></p>
+
+<p>Ну, а это такие мы корни отрастили:</p>
+
+<p><a href="http://s3.postimage.org/m5pAi.jpg" target="_blank"><img src="http://s3.postimage.org/m5pAi.jpg" alt="" /></a></p>
+
+<p><a href="http://s2.postimage.org/WVEE0.jpg" target="_blank"><img src="http://s2.postimage.org/WVEE0.jpg" alt="" /></a></p>
+
+<p>Общая высота линейки(строительный уровень)- 40см. Перо, в основном, на отметке 30см + луковица= 30-35см, думаю в самый раз:</p>
+
+<p><a href="http://s3.postimage.org/m7IfA.jpg" target="_blank"><img src="http://s3.postimage.org/m7IfA.jpg" alt="" /></a></p>
+
+<p>Выбраный лук с корнями и луковицами:</p>
+
+<p><a href="http://s4.postimage.org/4dwIA.jpg" target="_blank"><img src="http://s4.postimage.org/4dwIA.jpg" alt="" /></a></p>
+
+<p><a href="http://s2.postimage.org/WWXXJ.jpg" target="_blank"><img src="http://s2.postimage.org/WWXXJ.jpg" alt="" /></a></p>
+
+<p>Уже очищеный, т.е. готовый к употреблению:</p>
+
+<p><a href="http://s4.postimage.org/4eQ1i.jpg" target="_blank"><img src="http://s4.postimage.org/4eQ1i.jpg" alt="" /></a></p>
+
+<p><a href="http://s4.postimage.org/4eXvJ.jpg" target="_blank"><img src="http://s4.postimage.org/4eXvJ.jpg" alt="" /></a></p>
+
+<p>Контрольное взвешивание, вес нетто:</p>
+
+<p><a href="http://s2.postimage.org/WYlfJ.jpg" target="_blank"><img src="http://s2.postimage.org/WYlfJ.jpg" alt="" /></a></p>
+
+<p><a href="http://s4.postimage.org/4fMTJ.jpg" target="_blank"><img src="http://s4.postimage.org/4fMTJ.jpg" alt="" /></a></p>
+
+<p>Был добавлен один “утеряный” стебелек, который добавил 7грамм:</p>
+
+<p><a href="http://s3.postimage.org/mbjeA.jpg" target="_blank"><img src="http://s3.postimage.org/mbjeA.jpg" alt="" /></a></p>
+
+<p>Вот такие получились результаты за 15-16 дней. Оставил доращивать два ящика лука, т.к. выбрал, на мой взгляд, лучший лучок.</p>
+
+<p>Так, что система VALERY работает!!! 8)</p>
+
+<p>Можно сажать лук и косить бабосы</p>
+
+<p>На этом ВСЕ!</p>
+
+<p><strong>caiman</strong> 06-11-2009</p>
+
+<p>По настоятельной просьбе Валеры, тему закрываю, вернее прикрываю. Все, что хотел - показал. Спасибо за внимание. ;)</p>
+
+<p><strong>Mole_Garden</strong> 06-11-2009</p>
+
+<p>Тему закрыл!</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

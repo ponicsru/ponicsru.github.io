@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Домик, который построил Дэн... | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Домик, который построил Дэн...">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Домик, который построил Дэн...</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Dannieboy</strong> 11-11-2011</p>
+
+<p>Вот собсно и я дозрел, и уже есть чем поделиццо с уважаемым сообществом.</p>
+
+<p>Ща будет многабукв! :D</p>
+
+<p>После долгого прочтения и осмысления разных ресурсов и конкретно этого зажглося :) в оном месте бенгальским огнём неодолимое желание взрастить всяко-разно для нужд семейных и с прицелом на извлечение маленького денежного ручейка “для поддержки штанов”. На фоне радикальной смены жизненного уклада (дауншифтинг сугубо городских людей) и ноль целы хрен десятых опыта не то, что в гидропонике, но и в выращивании чего-либо в землице (хотя лукавлю… и дача у родителей была и сами уже кой-чего садили…) решение заняться гидрой более чем безшабашное, но… мож “новичкам и дуракам везёт”? На всё выше отписанное накладываются ограничения в виде отсутствия в нашем регионе необходимых товаров для гидропоники, и явный культурологический шок местных торговцев садоводческими товарами от самого слова “гидропоника”, хотя “выгонщиков” (судя по слухам), да и профессионалов в этом деле у нас тут хватает, и ограниченные фин возможности. Но! “Охота она ж пуще неволи!” ;) Собсно далее будем отчитываться… ну ессесно всегда рады видеть всех неравнодушных в нашем домишке. Нашем, поскольку я ж не один! Со мной верный друг и лучшая жена на свете Инночка.</p>
+
+<p><strong>Dannieboy</strong> 11-11-2011</p>
+
+<p>Начали с простого. С лука. Как и ожидалось всё ж не так просто… :)</p>
+
+<p>Поскольку с ящиками из под рыбы у нас тут засада (всё только в картоне),то пришлось купить две небольшие пласт ёмкости (маленькие, но уж какие были), крышки с прорезями для луковиц были сделаны из обрезков ПВХ пластика 6мм. Ввиду семейной болезни, которая даже “таблеткой от жадности” не лечится дырки сделал слишком часто, а ёмкости маловаты, а лук не весь удалось отобрать 3-4 см… в итоге имеем некоторые дырки в которые луковички не влезли просто физически. Да! И ещё пришлось докупать лук в сельпо. Он, гад, оказался ещё больше, чем тот, что был у нас. Да и в итоге покупной-то и не взошёл на 90%.</p>
+
+<p>01.11.11 Заложили на барботаж на 12ч. но пробурбулили их сутки…</p>
+
+<p><img src="http://img-fotki.yandex.ru/get/5818/7667231.9/0_6d4e4_4d29e4a4_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447716/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447716/</a></p>
+
+<p><img src="http://img-fotki.yandex.ru/get/4613/7667231.9/0_6d4e5_76b959bc_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447717/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447717/</a></p>
+
+<p>Ещё один косяк при подготовке луковок… не подрезали дондышко, а всего лишь ободрали старые корешки… Но всё равно полезли свежие…</p>
+
+<p><img src="http://img-fotki.yandex.ru/get/4524/7667231.9/0_6d4e7_ec54cbaf_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447719/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447719/</a></p>
+
+<p>Затем взвесили… и подрезали головку до точки роста.</p>
+
+<p><img src="http://img-fotki.yandex.ru/get/4712/7667231.9/0_6d4e6_52161a1b_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447718/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447718/</a></p>
+
+<p>02.11.11 Высадили в ёмкости (пока без подогрева воды)</p>
+
+<p><img src="http://img-fotki.yandex.ru/get/4419/7667231.9/0_6d4e8_b1a3e30a_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447720/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447720/</a></p>
+
+<p>04.11.11 Вот так выглядят луковки…</p>
+
+<p><img src="http://img-fotki.yandex.ru/get/5313/7667231.9/0_6d4e9_6b89b07d_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447721/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447721/</a></p>
+
+<p><img src="http://img-fotki.yandex.ru/get/4523/7667231.9/0_6d4ea_28ac8b26_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447722/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447722/</a></p>
+
+<p>07.11.11 Кое-кто стартанул нереально!</p>
+
+<p><img src="http://img-fotki.yandex.ru/get/4419/7667231.9/0_6d4eb_f5ff42a0_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447723/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447723/</a></p>
+
+<p><img src="http://img-fotki.yandex.ru/get/4524/7667231.9/0_6d4ec_d9b61dad_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447724/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447724/</a></p>
+
+<p><img src="http://img-fotki.yandex.ru/get/4420/7667231.9/0_6d4ed_8c472e47_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447725/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447725/</a></p>
+
+<p>Фоток корешков нет, но почти у всех они ого-го!</p>
+
+<p>11.11.11 Вот, что имеем на сегодня.</p>
+
+<p><img src="http://img-fotki.yandex.ru/get/4524/7667231.9/0_6d4ee_afe17dd6_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447726/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447726/</a></p>
+
+<p>Часть луковок, которые так и не тронулись в рост (вернее чуть тронулись и тут же засохли их точки роста) были безжалостно удалены, а остальные распределены по ящикам. Те, что уже хороши собой были перемещены в один ящик и явлены на свет божий…</p>
+
+<p><img src="http://img-fotki.yandex.ru/get/5818/7667231.9/0_6d4ef_1d7e7b37_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447727/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447727/</a></p>
+
+<p>Ну и был добавлен Биогумус в микроскопических дозах.</p>
+
+<p><strong>Dannieboy</strong> 11-11-2011</p>
+
+<p>Раззадоренные первыми скромными успехами на ниве луковыгона и под напором моей прекрасной музы решили замахнуццо на… редис. Взвесив все наши возможности по созданию темп режима и досветки (благо для растишек есть отдельная комната с окном на юг и сберегайка на 105Вт 4100К) купили мешок нейтрализованного торфа и (о, счастье!) несколько мешочков вермикулита, а также готовые пластиковые мини-парники, ну и семена, ессесно! :D “Корал”, “Ребел”, “Хелро”</p>
+
+<p>07.11.11 Высчитали необходимое кол-во субстрата и пропорции. Забили в кассеты. Посадили семушки на рекомендованную глыбину. Присыпали. Закрыли плёнкой. Перекрестили.</p>
+
+<p><img src="http://img-fotki.yandex.ru/get/4713/7667231.9/0_6d4f1_53721408_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447729/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447729/</a></p>
+
+<p><img src="http://img-fotki.yandex.ru/get/4613/7667231.9/0_6d4f2_d97468c2_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447730/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447730/</a></p>
+
+<p><img src="http://img-fotki.yandex.ru/get/5312/7667231.9/0_6d4f3_def9d0de_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447731/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447731/</a></p>
+
+<p>На третий день взошло почти всё. Плёнку сняли и перенесли в сени, где легко можно создать нужную температуру в +5-8 гр. на ближайшие дни.</p>
+
+<p>11.11.11 Вот как всё выглядит сегодня.</p>
+
+<p><img src="http://img-fotki.yandex.ru/get/5818/7667231.9/0_6d4f4_b38973c_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447732/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447732/</a></p>
+
+<p><img src="http://img-fotki.yandex.ru/get/4524/7667231.9/0_6d4f6_535e1fb1_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447734/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447734/</a></p>
+
+<p><img src="http://img-fotki.yandex.ru/get/5821/7667231.9/0_6d4f8_c77e6c8_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447736/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447736/</a></p>
+
+<p><strong>SergF</strong> 11-11-2011</p>
+
+<p>Начало бодрое, так держать! :)</p>
+
+<p><strong>Coccinella</strong> 11-11-2011</p>
+
+<p>С пожеланиями успехов на огородно-гидропонной грядке!!!</p>
+
+<p>Дамы и господа! Уже давно хочу заметить, что лук до точки роста обрезать невозможно, она у него находится глубоко внутри луковицы на самом донце. То место, до которого большинство обрезает, называется шейкой луковицы, но некоторые обрезают по плечики. Терминологию придумали давным давно для облегчения взаимопонимания :)</p>
+
+<p>И к вопросу о взаимопонимании, если не затруднит и не создаст личных неудобств, нельзя ли специально язык не коверкать? Мне это очень сильно затрудняет понимание текста. Вполне достаточно проблем, создаваемых опечатками и аллергией к урокам грамматики родного языка :)</p>
+
+<p>Извините за занудство!</p>
+
+<p><strong>Dannieboy</strong> 11-11-2011</p>
+
+<p>11.11.11 Решили шо нам остро не хватает томатиков и огурчегов. Засыпали в мелкие рассадные кассеты вермикулита чистаго. Намочили. Засадили. Томаты: Розовая Ляня, Челнок, Максимка. Огурец: Апрельский ранний, Гирлянда, Зозуля, Герман.</p>
+
+<p>Слегка присыпали луночки вермикулитом. Испугался недостаточной влажности и спрыснул водичкой кассету.</p>
+
+<p>Теперь ждём-с…</p>
+
+<p>Фотографии в альбоме «<a href="http://fotki.yandex.ru/users/dannieboy/album/132315/]Гидра[/url]» [url=http://fotki.yandex.ru/users/dannieboy/" target="_blank">dannieboy</a> на Яндекс.Фотках</p>
+
+<p><img src="http://img-fotki.yandex.ru/get/4524/7667231.9/0_6d4f9_cf8f783d_L.jpg" alt="" /></p>
+
+<p>[more]</p>
+
+<p><img src="http://img-fotki.yandex.ru/get/5818/7667231.9/0_6d4fa_a256873f_L.jpg" alt="" /></p>
+
+<p><img src="http://img-fotki.yandex.ru/get/5313/7667231.9/0_6d4fb_53b06731_L.jpg" alt="" /></p>
+
+<p><img src="http://img-fotki.yandex.ru/get/4713/7667231.9/0_6d4fc_9cc6f0b3_L.jpg" alt="" /></p>
+
+<p><img src="http://img-fotki.yandex.ru/get/5312/7667231.9/0_6d4fd_82840c33_L.jpg" alt="" /></p>
+
+<p>На одной из фоток эксперимент с геранькой.</p>
+
+<p><strong>Dannieboy</strong> 11-11-2011</p>
+
+<blockquote>
+  <p>И к вопросу о взаимопонимании, если не затруднит и не создаст личных неудобств, нельзя ли специально язык не коверкать? Мне это очень сильно затрудняет понимание текста. Вполне достаточно проблем, создаваемых опечатками и аллергией к урокам грамматики родного языка :)</p>
+
+  <p>Извините за занудство!</p>
+</blockquote>
+
+<p>Извините филолога. :-[ Просто дурачусь на старости… <em>crazy</em></p>
+
+<p><strong>aivar</strong> 11-11-2011</p>
+
+<blockquote>
+  <p>С пожеланиями успехов на огородно-гидропонной грядке!!!</p>
+</blockquote>
+
+<p>присоединяюсь.</p>
+
+<blockquote>
+  <p>И к вопросу о взаимопонимании, если не затруднит и не создаст личных неудобств, нельзя ли специально язык не коверкать? Мне это очень сильно затрудняет понимание текста. Вполне достаточно проблем, создаваемых опечатками и аллергией к урокам грамматики родного языка :)</p>
+</blockquote>
+
+<p>Conccinella, видать глубока моральная травма нанесенная русскоязычными филологами ;) ;)</p>
+
+<p><strong>Mole_Garden</strong> 11-11-2011</p>
+
+<p>Отличное начало.</p>
+
+<p>Есть несколько вопросов и замечаний.</p>
+
+<p>1) лампу лучше все же повесить горизонтально, а не как у тебя вертикально.</p>
+
+<p>2) Чем планируешь кормить растения? Какими удобрениями? Есть ли необходимые приборы для замера pH и TDS</p>
+
+<p>3) Не слишком ли много растений для первого опыта? :)</p>
+
+<p>4) Чем планируешь светить все томаты?</p>
+
+<p><strong>Dannieboy</strong> 12-11-2011</p>
+
+<blockquote>
+  <p>Отличное начало.</p>
+
+  <p>Есть несколько вопросов и замечаний.</p>
+
+  <p>1) лампу лучше все же повесить горизонтально, а не как у тебя вертикально.</p>
+
+  <p>2) Чем планируешь кормить растения? Какими удобрениями? Есть ли необходимые приборы для замера pH и TDS</p>
+
+  <p>3) Не слишком ли много растений для первого опыта? :)</p>
+
+  <p>4) Чем планируешь светить все томаты?</p>
+</blockquote>
+
+<p>Спасибо за поддержку!</p>
+
+<ol>
+  <li>
+    <p>Про лампу понял. Пока чешу мозг как это сделать.</p>
+  </li>
+  <li>
+    <p>Кормить пока попробую вот этим.</p>
+  </li>
+</ol>
+
+<p><img src="http://img-fotki.yandex.ru/get/5312/7667231.9/0_6d524_4ee42aaa_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447780/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447780/</a></p>
+
+<p>но когда я стану “суровым гидропонщиком” :D, то скорее всего буду мешать по рецептуре… Посему были приобретены ещё</p>
+
+<p><img src="http://img-fotki.yandex.ru/get/4713/7667231.9/0_6d522_c30f064_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447778/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447778/</a></p>
+
+<p>а вот кальциевой селитры нетути у нас тут в продаже :( “Будем иска-а-а-ть…”</p>
+
+<p>Про приборы… :( Ща все будут ругаться… :-[ Прям в понедельник и поеду за ними! Хотя из всех приборов, доступных у нас, есть лишь жидкие Ph-метры для аквариумов и 2 типа приборов для замера на почвах. TDS для жидкостей нетути. Заказывать буду через инет.</p>
+
+<ol>
+  <li>Много… но ещё и земляничку на след неделе засажу :-[ Пяток прижившихся усиков были успешно отделены от мамок, выкопаны (прям перед тем как мороз жахнул), отмыты от землицы и уложены в пласт какет в холодильник на полку с темп 0 +2.</li>
+</ol>
+
+<p><img src="http://img-fotki.yandex.ru/get/5820/7667231.9/0_6d526_13273f36_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447782/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447782/</a></p>
+
+<p>Дело за подготовкой керамзита, ну и прочими подготовительными этапами.</p>
+
+<p>Дело в том, что на данный момент мы сами себе хозяева. Можем целиком и полностью занять себя этим делом, да и площади позволяют.</p>
+
+<ol>
+  <li>На первых порах очень низэнько повешу обычные люмки. Затем, видимо, ДНаТ. Но у нас, ведь не полная светокультура. Всё же есть в комнатах окна. В одной на юг, в другой на юго-запад аж 2. По свету, однако думать и думать ещё надо… Тариф-то у нас тут на эл. энергию приемлемый, но всё же хотелось бы поэкономнее.</li>
+</ol>
+
+<p><strong>Dannieboy</strong> 12-11-2011</p>
+
+<blockquote>
+  <p>…видать глубока моральная травма нанесенная русскоязычными филологами…</p>
+</blockquote>
+
+<p>Я англоязычный филолог… ;D однако только по специальности…</p>
+
+<p><strong>Dannieboy</strong> 12-11-2011</p>
+
+<p>Обнаружил крепёжные дырдочки в патроне и развернул лампу горизонтальною. Абажурко сделаю уже таки завтра… Ни фотона наверх! ;D</p>
+
+<p><img src="http://img-fotki.yandex.ru/get/5312/7667231.9/0_6d52f_8d1f3ca6_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447791/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447791/</a></p>
+
+<p>Вот ещё соорудил из “заначек” лампочку. Две люмки холодные, ЭПРА, профиль (для световых коробов), немного саморезов, два крюка-шурупа, капроновый шнур…</p>
+
+<p><img src="http://img-fotki.yandex.ru/get/5820/7667231.9/0_6d530_e706287_L.jpg" alt="" /></p>
+
+<p><a href="http://fotki.yandex.ru/users/dannieboy/view/447792/" target="_blank">http://fotki.yandex.ru/users/dannieboy/view/447792/</a></p>
+
+<p><strong>Rtyti</strong> 14-11-2011</p>
+
+<p>успехов на грядках! :)</p>
+
+<p>люмки попробуй закрыть с боков фольгой, матовой стороной к свету. улицу не будет освещать :D больше фотонов растишкам</p>
+
+<p><strong>ProRus</strong> 14-11-2011</p>
+
+<p>Все аккуратненько. Удачи в начинаниях !!!</p>
+
+<p><strong>Mole_Garden</strong> 14-11-2011</p>
+
+<p>Большая просьба, вставлять фото с разрешением не ниже 800 на 600, а то уж больно мелко выходит</p>
+
+<p>И на мой взгляд, яндекс фотки не лучший вариант для вставки на форум. Так как там нельзя вставлять привьюшки со ссылками на оригиналы.</p>
+
+<p>По возможности, пожалуйста, пользуйтесь кнопкой “Добавить изображение”, которая расположена под смайлами в левой стороне.</p>
+
+<p><strong>Dannieboy</strong> 18-11-2011</p>
+
+<p>До дыр зачитал на сайте статью про технологию выращивания редиса. Всё равно не пойму фразу</p>
+<blockquote>
+  <p>подтопление на 20-30 минут без задержки раствора</p>
+</blockquote>
+
+<p>Тогда это уже получается проточный способ. Или ж я туплю?</p>
+
+<p><strong>Mole_Garden</strong> 18-11-2011</p>
+
+<p>По всей видимости это значит, после прекращения цикла подтопления раствор не должен нигде застаиваться и кассеты должны стоять на сухой поверхности, либо на поверхности где нет стоячей воды.</p>
+
+<p><strong>Coccinella</strong> 19-11-2011</p>
+
+<p>Это не по видимости, это так и есть :). Метод подтопления или прилив-отлив (дословно по-английски или по-немецки).</p>
+
+<p><strong>Dannieboy</strong> 21-11-2011</p>
+
+<p>Вот.  Уже даже съеден! Злой, гад, но сочный!</p>
+
+<p>Вот сие действительно за 6 дней выросло…</p>
+
+<p>Мускусята остались равнодушны <em>???</em></p>
+
+<p>Мелкий сОбак с интересом наблюдает, как хозяин уговаривает уток.</p>
+
+<p>Второй лоточек.</p>
+
+<p>Непонятна причина падучести некоторых перьев. Что бы это могло быть? Мож слишком высокая темп воздуха?</p>
+
+<p>Теперь томатики-огурки…</p>
+
+<p>А редиско таки растёт!</p>
+
+<p>Формируем первый лист.</p>
+
+<p>Правда, уже есть проблемки… Некоторые растишки прилегли. Лучше всех держится и выглядит “Корал”. Фоток пока нет.</p>
+
+<p><strong>Coccinella</strong> 21-11-2011</p>
+
+<p>Несоответствие температуры и освещенности, а в общем и целом все очень здорово!</p>
+
+<p><strong>Dannieboy</strong> 21-11-2011</p>
+
+<p>Спасибо за поддержку!</p>
+
+<p>Думаю, что с переездом на подоконник в достаточно тёплой комнате так и вышло. Хотя до этого строго держал рекомендованные температурные режимы (для редиса). А сейчас днём стало сложно держать темп на уровне +16. Иногда при солнце аж до 25 подскакивает. :(</p>
+
+<p><strong>valery</strong> 21-11-2011</p>
+
+<p>Хорошенькие, как и все малыши.</p>
+
+<p><strong>Dannieboy</strong> 23-11-2011</p>
+
+<p>Вот лежальцы… :(</p>
+
+<p>и, ведь, не все сорта, а именно полегли Хелро и Ребел. Корал стоит пока бодрячком.</p>
+
+<p>И вот хотел бы узнать что за ерунда с огурчиками.</p>
+
+<p>Почему у некоторых сортов слишком светлые листочки, да и с формой что-то не то. Хотя я понимаю, что это семядольные пока ещё… но всё же? Что не так могёт быть?</p>
+
+<p><strong>Юрий Иваныч</strong> 23-11-2011</p>
+
+<p>Что либо подсказать, опыта пока не хватает. :'( У моих четырех сортов огурцов после раскрытия семядольных листьев то же цвет отличался.</p>
+
+<p><strong>Coccinella</strong> 23-11-2011</p>
+
+<p>Отличаться может субстрат (содержание азота в нем), а может освещенность. Большинство здесь присутствующих размещают лампы слишком низко над растениями (я понимаю, экономия), а надо бы повыше (правда и лампы тогда надо помощнее), чтобы освещенность была более ровной.</p>
+
+<p><strong>valery</strong> 23-11-2011</p>
+
+<p>И, возможно, с влажностью (я про огурчики) - не все в порядке.</p>
+
+<p>Либо с влажностью субстрата (пробки ? или что там ?) или, скорее всего, - с влажностью воздуха, ( слишком рано “открыли-сняли” пленку, если была …)</p>
+
+<p>(в данный момент не о “цвете листочков” речь, а о “кривоватости” некоторых семядольных листочков)</p>
+
+<p>На снимке видно, что некоторые сеянцы-всходы не сумели снять “семенную оболочку” (или как там она правильно называется).</p>
+
+<p>Хотя, такое, возможно, может произойти и в том случае, если очень уж мелко “посеяли”, прямо у поверхности (точно не знаю насчет “мелкости посева”, предположение “наобум”).</p>
+
+<p><strong>Dannieboy</strong> 24-11-2011</p>
+
+<p>В вермикулите сидят… посажены были примерно на 1 - 1.5 см. Вопрос про полив малышей: так всё же как и чем их пока поливать? Я слегка сбрызгиваю из “пшикалки” тёпленькой водичкой и минут на 5 заливаю в поддон 1 л., в котором стоят кассеты. Что я делаю не так?</p>
+
+<p><strong>Coccinella</strong> 24-11-2011</p>
+
+<p>Возможно, Вы их переливаете. Испарение у них сейчас маленькое, поверхность листа крохотная. Кривоватость семядолей неприятна, но не критична. Хуже, что часть такая бледная, но может это сортовые различия. В любом случае до появления настоящего листа подкормку давать большого смысла нет, все равно сейчас питание идет из семядолей. Заливать поддон с кассетами снизу мне кажется сейчас неэффективным (надо бы посмотреть, какая длина корня, он до этого сырого слоя уже дошел или нет?). Денек-другой не поливайте снизу, только пшикайте.</p>
+
+<p><strong>Dannieboy</strong> 24-11-2011</p>
+
+<p>Спасибо! Принял к действию. “Апрельский ранний” (тот ряд, что скраю) был сразу густого зелёного цвета.</p>
+
+<p><strong>Dannieboy</strong> 24-11-2011</p>
+
+<p>Первые потери… В неравном бою пал смертью храбрых “Максимка”.</p>
+
+<p>“Ну что вы! Это ж совсем не я!”</p>
+
+<p><strong>Alex123</strong> 24-11-2011</p>
+
+<blockquote>
+  <p>Обнаружил крепёжные дырдочки в патроне и развернул лампу горизонтальною. Абажурко сделаю уже таки завтра… Ни фотона наверх!</p>
+</blockquote>
+
+<p>Спешу “обрадовать” - энергосберегайки лучше крепить как положено т.е. вертикально. Как известно внутри лампы находится электроника, и при нарушении процесса вентиляции перегревается и выходит из строя. Буквально на днях разбирал такие неисправные лампы - внутри все детальки почерневшие от высокой температуры. Как вариант можно насверлить в конуснообразной части кучу отверстий, но мне легко говорить, а если никогда не разбирал такие лампы, то можно просверлить что-нибудь лишнее.</p>
+
+<p><strong>d74mt</strong> 24-11-2011</p>
+
+<blockquote>
+  <p>Спешу “обрадовать” - энергосберегайки лучше крепить как положено т.е. вертикально. Как известно внутри лампы находится электроника, и при нарушении процесса вентиляции перегревается и выходит из строя. Буквально на днях разбирал такие неисправные лампы - внутри все детальки почерневшие от высокой температуры. Как вариант можно насверлить в конуснообразной части кучу отверстий, но мне легко говорить, а если никогда не разбирал такие лампы, то можно просверлить что-нибудь лишнее.</p>
+</blockquote>
+
+<p>допустимо горизонтальное крепление. Но лучше- лампой верх.</p>
+
+<p><strong>Alex123</strong> 24-11-2011</p>
+
+<p>Редиска очень сильно вытянутая. Нормально когда стебелек не более 1см от земли до листьев. Маловато света однако. Есть голландские сорта, которым света меньше надо, может быть это коралл и есть. Световой день у редиски вроде не меньше 12 часов должен быть…</p>
+
+<p><strong>Dannieboy</strong> 24-11-2011</p>
+
+<p>Дык вроде как все они у мну голландские… Только Корал менее чувствителен к недостатку света и повышенной темп. День и держу 12 ч. Сейчас на улице днями солнышко, стоят они на южном окне… А, вот досветка, конечно слабовата у меня… Ну, пока что это всего лишь “набивание шишек”, хотя будет реально жаль коли из этого эксперимента ничего съестть потом не удасться. :D</p>
+
+<p><strong>Dannieboy</strong> 24-11-2011</p>
+
+<p>Всё! Мозг кипит и уже не соображу где я тут натыкался на умные вещи про пересчёт процентных долей солей в массовые для удобрений… <em>???</em> Как же ж их вё же переконвертировать в мгл? Заранее простите за тупость… :-[</p>
+
+<p><strong>Эд76</strong> 24-11-2011</p>
+
+<blockquote>
+  <p>Всё! Мозг кипит и уже не соображу где я тут натыкался на умные вещи про пересчёт процентных долей солей в массовые для удобрений… <em>???</em> Как же ж их вё же переконвертировать в мгл? Заранее простите за тупость… :-[</p>
+</blockquote>
+
+<p>Попробую, хотя я и сам не большой знаток. ppm это другими словами количество чистого вещества в растворе в мг на литр . Допустим есть химическое соединение MgSO4 7H2O необходимо узнать сколько содержит это соединение чистого магния. Открываем таблицу менделеева и суммируем атомную массу всех химических элементов входящих в состав этого соединения . 1 атом магния(24,3)+1атом Серы (32,06)+4атома кислорода (4<em>16)+7молекул воды (7</em>18) =246.4 это молекулярная масса химического соединения Магния сульфата семиводного . Находим чистый магний 24.3/246 .4*100 %=9,74% столько %Mg в грамме ,миллиграмме итд удобрения. Также можно посчитать серу и др элементы. По такому принципу расчитываються все ppm. ppm=мг.Очень часто производители сами указывают % содержания вещества. Ексель может вам помочь в расчетах.</p>
+
+<p>Исправил , запарился немного за день сорри.</p>
+
+<p><strong>Acc</strong> 24-11-2011</p>
+
+<p>Вообще-то наоборот 24.3/246.4*100%=9,74% :)</p>
+
+<p><strong>Mole_Garden</strong> 25-11-2011</p>
+
+<p>для кучи <a href="http://forum.ponics.ru/index.php?topic=430.msg16597#msg16597" target="_blank">http://forum.ponics.ru/index.php?topic=430.msg16597#msg16597</a> и тут <a href="http://www.ponics.ru/2009/10/table_for_hydro/" target="_blank">http://www.ponics.ru/2009/10/table_for_hydro/</a></p>
+
+<p><strong>Dannieboy</strong> 25-11-2011</p>
+
+<blockquote>
+  <p>для кучи <a href="http://forum.ponics.ru/index.php?topic=430.msg16597#msg16597" target="_blank">http://forum.ponics.ru/index.php?topic=430.msg16597#msg16597</a> и тут <a href="http://www.ponics.ru/2009/10/table_for_hydro/" target="_blank">http://www.ponics.ru/2009/10/table_for_hydro/</a></p>
+</blockquote>
+
+<p>Спасибо, дружище! Ведь, точно видел где-то на форуме, а тупо забыл где… :(</p>
+
+<p><strong>Dannieboy</strong> 12-12-2011</p>
+
+<p>Начались проблемки с рассадой томатов и огурца. Отпикировали томаты в отдельные стакашки из пласт бутылок. Большая часть малышей была пересажена в керамзит, но его не хватило. Посему несколько кустиков переехали на нейтр торф с вермикулитом. Полив капельный ручной… ;) т.е. лью под каждый кустик из 10 куб шприца. Вот те, что в керамзите чувствуют себя пока очень даже хорошо, а те шо в торфе явно болеют: свееееетленькие такие стали… :( У Зозули тоже хлороз, видимо. Ну и ввиду того, что таблетка от жадности мне всегда мала было посажено слишком много кустиков огурца. Причём, балбес я, посадил в мал. кассету. Теперь им очень тесно. Буду рассаживать. Правда, боюсь сажать в торф с вермикулитом.</p>
+
+<p>Вот ещё беду обнаружил.</p>
+
+<p><strong>valery</strong> 12-12-2011</p>
+
+<p>С вопросами по торфу, прежде всего к Coccinelle, конечно … :) ( поднимите поиском и сгруппируйте “посты” по “пользователю” … и скачайте заодно книгу Ноллендорфа )</p>
+
+<p>Но на первый ( не искушенный торфом взгляд :D … эка я того … выразился … :D ) - он у Вас кажется перелитым.</p>
+
+<p>При полном увеличении фото - бутылочки с торфом напоминают скорее даже не торф, а мокрую грязь. Возможно, чересчур влажный. (плюс еще “чего-нибудь” … не “раскилили” там … кальций не внесли … не знаю)</p>
+
+<p>И немного “зря” у Вас огурчики такие мокрющие (по-моему :-[ )</p>
+
+<p><strong>Coccinella</strong> 12-12-2011</p>
+
+<p>Валерий, а Вы нашли, где можно скачать Ноллендорфа? Поделитесь ссылкой, пожалуйста, а то я уж собиралась заняться сканированием на праздниках.</p>
+
+<p>В такой торф ничего ни сажать, ни сеять нельзя, он ведь не только действительно сырой, но и пустой. В нет ни грамулечки питательных элементов. Конечно, все растения от голода помрут. В нейтрализованный торф обязательно надо вносить комплексные удобрения. Вообще-то существуют специальные для этого дела, но с горя можно делать смесь из того, что есть. В принципе, состав делается очень похоже на то, как рассчитывают составы питательных растворов, только пропорции другие. На ГТ висят рекомендации Ноллендорфа</p>
+
+<p>[http://www.greentalk.ru/v/20100307/<strong>__</strong><strong>__</strong><strong>__+</strong><strong>__</strong><strong>__</strong><strong>2.jpg.html](http://www.greentalk.ru/v/20100307/</strong><strong>__</strong><strong>__</strong><strong>+</strong><strong>__</strong><strong>__</strong>__2.jpg.html){:target=”_blank”}</p>
+
+<p><strong>valery</strong> 12-12-2011</p>
+
+<p>:o :o :o</p>
+
+<p>Могу ошибаться … но должен быть. Прочесть не смог - показалось достаточно сложным … поэтому не уверен, есть ли.</p>
+
+<p>А после Вашего вопроса … совсем засомневался. Может быть я читал где-то отдельные страницы :-\ Мне кажется, Вы и выкладывали сканы …</p>
+
+<p>Словом, пойду в “поиск”. :-\ ( неужели ошибся … :-[ … я ж люблю “книжки собирать” … :-[ )</p>
+
+<p><strong>Садовник</strong> 12-12-2011</p>
+
+<p>Дырочки в обрезаных бутылках для дренажа делал?</p>
+
+<p><strong>Dannieboy</strong> 12-12-2011</p>
+
+<blockquote>
+  <p>Дырочки в обрезаных бутылках для дренажа делал?</p>
+</blockquote>
+
+<p>Конечно. Там прорези и дырочки. Под баночками лежит поролон.</p>
+
+<p>Про переувлажнение торфа я понял. Я понимаю, что торф пустой, но, ведь, и керамзит “пустой”. Поливаются и те и те одним раствором. Но торф поливаю чуток поменее.</p>
+
+<p>Самое гадкое, шо никак не решу как далее растить огурцы. :( Их слишком много, однако. Мо…жет в трубу их? Что присоветуете? Маты ну никак не доступны…</p>
+
+<p><strong>Садовник</strong> 12-12-2011</p>
+
+<p>рН проверял? Есть подозрение, что помимо переувлажнения торф совсем не нейтральный.</p>
+
+<p><strong>Coccinella</strong> 12-12-2011</p>
+
+<p>Я очень люблю выращивать в торфе, но для Ваших целей лучше брать готовые торфяные субстраты, а не самим их смешивать. Торф - уникальный субстрат, он аккумулирует очень большие количества минеральных элементов без вреда для растений, он замечательно держит воду, он при нормальном поливе обеспечивает очень хорошее соотношение воздуха и воды, он не токсичен, не содержит патогенов, чист от сорняков. Замечательное “учебное пособие” для малообъемной культуры.</p>
+
+<p>Но очень важен производитель, качество торфосмеси и т.д. и т.п.</p>
+
+<p>Раствор для керамзита весь целиком поглощается торфом и растениям достается в лучшем случае вода. Сейчас надо бы в оставшийся торф хоть вручную намешать комплексного и аммиачки, а все микроэлементы можно давать с поливом. Но огурцы надо срочно рассаживать, они очень быстро перерастают. Если торф не готов, то остается только керамзит :)</p>
+
+<p>И Садовник прав, рН стоит проверить.</p>
+
+<p><strong>Dannieboy</strong> 12-12-2011</p>
+
+<p>Спасибо. Керамзита тоже пока нету… :(</p>
+
+<p><strong>valery</strong> 12-12-2011</p>
+
+<p>И Ноллендорфа у меня … тоже нету :o</p>
+
+<p>(на домашнем бы компьютере посмотреть … но там и вовсе вряд ли)</p>
+
+<p>Надо ж так <del>лопухну…</del> ошибиться-обмануться-обмануть … :o :-[ :-[ :-[ :-[</p>
+
+<p>Ну вот, Dannieboy, а Вы там что-то говорили о “непробиваемой” … этой … :-\</p>
+
+<p>( А вы говорили</p>
+
+<p>Василий Иваныч</p>
+
+<p>Что мелкая речка</p>
+
+<p>Урал … )</p>
+
+<p>:'(</p>
+
+<p>Ну ладно. Извиняюсь, в общем.</p>
+
+<p><strong>Coccinella</strong> 12-12-2011</p>
+
+<p>Да, ладно, на рождественские каникулы отсканирую самое интересное.</p>
+
+<p><strong>Dannieboy</strong> 13-12-2011</p>
+
+<p>Я так понимаю, что надо сделать раствор и залить им торф или же сухими солями? За какое время до посадки? В табличке из книги Ноллендорфа мл\л чего? Воды или торфа? А как же вымерить литраж тофа тогда? Во скоко вопросов… :(</p>
+
+<p><strong>Coccinella</strong> 13-12-2011</p>
+
+<p>Ноллендорф давно всех нас приучил измерять объем субстрата, будь то торф или минвата, или керамзит… Берем ведро известного объема и заполняем торфом :) Если объем ведра не известен, сначала вымеряем его водой (хоть бутылками из-под минералки или колы, хоть стеклянными банками). Лучше смешивать сухой торф сухими удобрениями, но можно и влажный. Не сушить же его, потом не размочить будет! В принципе, небольшой объем торфа можно и полить раствором удобрений, так проще, но его нельзя переувлажнить. Будет долго просыхать, начнется минерализация. Очень важно тщательно перемешать несколько раз.</p>
+
+<p>Идеально готовить торфосмесь за месяц до использования, но мне всегда было некогда и мы ее свежеприготовленную сразу и использовали. Только давали сначала прогреться в теплице при 20-24оС.</p>
+
+<p><strong>Dannieboy</strong> 13-12-2011</p>
+
+<p>Спасибо. Прояснилось.</p>
+
+<p><strong>Садовник</strong> 13-12-2011</p>
+
+<p>Да, вот перемешать, осбенно, если соли, не гранулированные, с влажным торфом - задачка ещё та.</p>
+
+<p>Нужно быть как минимум очень ловким барменом.</p>
+
+<p>И всё-таки, Дэн, что там с рН ?</p>
+
+<p><strong>Dannieboy</strong> 13-12-2011</p>
+
+<blockquote>
+  <p>И всё-таки, Дэн, что там с рН ?</p>
+</blockquote>
+
+<p>:-[ Клянусь завтра купить приборчег для субстратов\земельки… :-[</p>
+
+<p>Я ж нонче колхознег. За 60 км от города. А мой “танк” по кризисным временам совсем накладен в пути…</p>
+
+<p><strong>SergF</strong> 14-12-2011</p>
+
+<blockquote>
+  <p>… А мой “танк” по кризисным временам совсем накладен в пути…</p>
+</blockquote>
+
+<p>TLC поди? :)</p>
+
+<p><strong>Dannieboy</strong> 15-12-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>… А мой “танк” по кризисным временам совсем накладен в пути…</p>
+  </blockquote>
+
+  <p>TLC поди? :)</p>
+</blockquote>
+
+<p>Патриот</p>
+
+<p><strong>valery</strong> 15-12-2011</p>
+
+<p>На всякий случай. “Приборчик” для субстратов и земли (из тех, что продают в садовых магазинах) ОЧЕНЬ груб …</p>
+
+<p>Если сумеет адекватно показать разницу между рН 6,0 и 7,0 - считайте “повезло” …</p>
+
+<p>Для наших целей (даже в субстрате) он не очень подходит.</p>
+
+<p>Посмотрите тему eBay … Китайский рН метр в 3-5-7 долларов вполне решит проблему. А если и почта неподалеку … не придется никуда и ехать.</p>
+
+<p><strong>Dannieboy</strong> 15-12-2011</p>
+
+<p>Спасибо. Обязательно присмотрюсь к чему-нить не ebay, тем более, что прибор я так и не купил. Не понравился он мне. ;)</p>
+
+<p><strong>Садовник</strong> 15-12-2011</p>
+
+<p>Пока из Е-бая придётприбор -</p>
+
+<p>Купи шоколадку и в ближайшей школе у химички возьми лакмусовую бумагу со шкалой. Точность не ахти какая, но позволит отмести, или дальше развивать одну из возможных причин хлороза.</p>
+
+<p><strong>ALB</strong> 15-12-2011</p>
+
+<p>в аквариумном магазине тесты для воды “НИЛПА” - pH , KH, GH и если очень надо то на нитраты и аммиак</p>
+
+<p>“капельный тест” на pH расходуется медленно - на каждый анализ две капли индикатора (пузырька 15мл хватает примерно на 200 измерений), хранится давольно долго.</p>
+
+<p><strong>Юрий Иваныч</strong> 15-12-2011</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>… А мой “танк” по кризисным временам совсем накладен в пути…</p>
+    </blockquote>
+
+    <p>TLC поди? :)</p>
+  </blockquote>
+
+  <p>Патриот</p>
+</blockquote>
+
+<p>Уфф…. А я уж грешным делом подумал - “Т-90”. :D</p>
+
+<p><strong>Dannieboy</strong> 15-12-2011</p>
+
+<p>Народ! Вы не поверите! Нет в нашем городе в продаже ВАЩЕ НИ Х… чего. Нет ни лакм бумаги, и уже 2 мес нет ни в одном аквариумном магазине жидких Ph тестов, в единственном приличном садоводческом магазине и то! одни ёлки в продаже теперь. Забедись просто! В спец фирме и 4-ёх магазинах при их, называемых громко “Медтехника” окромя стетоскопов, тонометров и термометров для детских ванночек в виде уточек ни Х нет. Ежели и есть какие лаб предметы, то только в конторах, которые работают ТОЛЬКО с юрлицами и ТОЛЬКО под заказ. Вот теперь и чё хотите говорите мне про советские времена, когда, даже в нашем богом забытом городе можно было свободно купить и колбы всякие лабораторные и проч добро в СВОБОДНОЙ продаже для простых людей.</p>
+
+<p><strong>Dannieboy</strong> 15-12-2011</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <p>… А мой “танк” по кризисным временам совсем накладен в пути…</p>
+      </blockquote>
+
+      <p>TLC поди? :)</p>
+    </blockquote>
+
+    <p>Патриот</p>
+  </blockquote>
+
+  <p>Уфф…. А я уж грешным делом подумал - “Т-90”. :D</p>
+</blockquote>
+
+<p>Ну, в принципе башню уже подумываю прикрутить к Патру своему… и “так через щёлочку спросить: скока-скока?”</p>
+
+<p><strong>valery</strong> 15-12-2011</p>
+
+<p>Хм … А зачем в богом забытом городе советскому человеку … колба ?</p>
+
+<p>Ему в то время полезней были банки трехлитровые … под закрутку огурцов-помидоров … (бАльшая была редкость … )</p>
+
+<p><strong>Dannieboy</strong> 15-12-2011</p>
+
+<p>;D А вот так как-то…</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

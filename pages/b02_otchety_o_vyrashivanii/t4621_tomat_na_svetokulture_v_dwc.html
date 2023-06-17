@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Томат на светокультуре в DWC | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Томат на светокультуре в DWC">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Томат на светокультуре в DWC</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Likl</strong> 25-02-2019</p>
+
+<p>Все происходило тут http://forum.ponics.ru/index.php?topic=4617.0 <em>crazy</em></p>
+
+<p>Томат</p>
+
+<p>Два ведра с DWC. Субстрат керамзит. Проращивание в таблетках кокоса. :D</p>
+
+<p>Сорт Лукошко на окошке и Москвич</p>
+
+<p>Питательный раствор для выращивания томатов на минеральной вате(Голландия)</p>
+
+<p>ЕС= 1.5 - 3.5</p>
+
+<p>рН= 6.0 - 6.3</p>
+
+<p>Раствор стартовый (до 1-ой кисти)</p>
+
+<p>NH4+	NO3-	N	P	K	Mg	Ca	Fe	Mn	B	Zn	Cu	Mo</p>
+
+<p>17.5	206.5	224	39	302	61	190	2	0.55	0.27	0.33	0.05	0.05</p>
+
+<p>100л – 10л 						Прогнозный EC: 3.0 mS (2034 ppm)</p>
+
+<p>Прогнозный pH: 6.5</p>
+
+<p>KH2PO4 (Калия монофосфат) = 17.1 g – 1,71гр.</p>
+
+<p>Ca(NO3)2*4H2O (Кальциевая селитра, нитрат кальция) = 111.9 g – 11,19гр.</p>
+
+<p>KNO3 (Калиевая селитра, нитрат калия) = 65.4 g – 6,54гр.</p>
+
+<p>NH4NO3 (Аммиачная селитра, нитрат аммония) = 0.2 g – 0,02гр.</p>
+
+<p>MgSO4*7H2O (Сульфат магния, магний сернокислый) = 61.8 g – 6,18гр.</p>
+
+<p><strong>Likl</strong> 25-02-2019</p>
+
+<p>19.02.2018 замачивание томата.</p>
+
+<p>21.02.2018 посадка в субстрат.</p>
+
+<p>25.02.2018 взошел томат.</p>
+
+<p>04.03.2018 посадил в ведра</p>
+
+<p>Описание на форуме http://forum.ponics.ru/index.php?topic=2830.0</p>
+
+<p>11.03.2018 сменил раствор на базовый из калькулятора</p>
+
+<p>26.03.2018 добавляю новый раствор, для завязей из калькулятора, Томат цветет.</p>
+
+<p>15.04.2018 сменил раствор на базовый из калькулятора</p>
+
+<p>05.05.2018 (69 день) ЛнО 0гр.+35гр.=35гр. первый урожай <em>Dance</em></p>
+
+<p><img src="https://i.postimg.cc/F1kWjwG9/77.jpg" alt="" /></p>
+
+<p>05.05.2018 (69 день) ЛнО 0гр.+35гр.=35гр.</p>
+
+<p>09.05.2018 (73 день) ЛнО 35гр.+78гр.=113гр.</p>
+
+<p>12.05.2018 (76 день) ЛнО 113гр.+48гр.=161гр.</p>
+
+<p>16.05.2018 (80 день) ЛнО 161гр.+136гр.=297гр.</p>
+
+<p>19.05.2018 (83 день) ЛнО 297гр.+60гр.=357гр.</p>
+
+<p>М 0гр.+31гр.=31гр.</p>
+
+<p>17.05.2018 (91 день) ЛнО 357гр.+89гр.=446гр.</p>
+
+<p>М 31гр.+143гр.=174гр.</p>
+
+<p>02.06.2018 (107 день) ЛнО 446гр.+86гр.=532гр.</p>
+
+<p>М 174гр.+203гр.=377гр.</p>
+
+<p>10.06.2018 (115 день) ЛнО 532гр.+12гр.=544гр.</p>
+
+<p>М 377гр.+107гр.=484гр.</p>
+
+<p>Итого 544+484=1028гр. ТОМАТА СОБРАНО и СЪЕДЕНО <em>Dance</em></p>
+
+<p><strong>Likl</strong> 26-02-2019</p>
+
+<p>Растения выросли не большие сантиметров 70 (супердеты). :)</p>
+
+<p>Очень плотные кусты. замучился удалять пасынки, которые растут внутрь куста. макушки как таковой нету разделение на два стебля идет, далее снова на два стебля. :o</p>
+
+<p>Плоды вкусные , сладкие <em>Dance</em>, но мало их. :(</p>
+
+<p><strong>Tmk</strong> 27-02-2019</p>
+
+<p>Вот и моему помидору ровно 3 месяца https://www.youtube.com/watch?v=eEa3mrjy_yg.</p>
+
+<p>Листья опалило солнце ещё 2 недели назад. Надо было задвигать тюльку. На полу его пасынок в обычном грунте.</p>
+
+<p><strong>siv237</strong> 27-02-2019</p>
+
+<p>Не могло солнце, да еще и через окошко что-то опалить. Это же томат. У вас явно не в солнце дело. Вернее так, ему явно не хватает солнца помимо прочего.</p>
+
+<p><strong>Likl</strong> 27-02-2019</p>
+
+<blockquote>
+  <p>Листья опалило солнце ещё 2 недели назад.</p>
+</blockquote>
+
+<p>Это не солнце, это лучи смерти на томат попали <em>crazy</em> &gt;:D</p>
+
+<p>И чего он такой высокий и такой лысый?, соседи сверху то курсе, что томат к ним гости идет ;D</p>
+
+<p><strong>Tmk</strong> 27-02-2019</p>
+
+<blockquote>
+  <p>Не могло солнце, да еще и через окошко что-то опалить. Это же томат. У вас явно не в солнце дело. Вернее так, ему явно не хватает солнца помимо прочего.</p>
+</blockquote>
+
+<p>Просто после 1,5 месяца пасмурной зимней погоды, во второй половине февраля, начало лупить солнце: прямыми лучами, после 3 часов дня. И так больше недели. В первые дни, таких палящих лучей, немного упустил дренаж на дне емкости. После этого и началось. Прибавим к этому сухой воздух в квартире. Но ждём и вашу версию :)</p>
+
+<p><strong>Tmk</strong> 27-02-2019</p>
+
+<p>При высадке рассады в открытый грунт рекомендуют предварительно закалять растения. То что помидору не хватает солнца не спорю. Использую не все возможности по свету какие есть. Я и не рассчитывал на февраль. Смешно сказать меня пока интересуют пасынки от этого растения. Обрываю их довольно поздно что бы лучше укоренялись. Один из пасынков посадил в салатную грядку в кокосовую стружку. Это на тот случай если не смогу первое растение в тёплое время года на балкон перетащить :)</p>
+
+<p><strong>siv237</strong> 28-02-2019</p>
+
+<blockquote>
+  <p>При высадке рассады в открытый грунт рекомендуют предварительно закалять растения.</p>
+</blockquote>
+
+<p>О эти рекомендации да. Закалка :)</p>
+
+<p>Смысл в том, что сперва несчастные тонюсенькие изогнутые на зимнем окошке дистрофики выращивают сразу кучей, потом прореживают и перевкапывают по самые уши и лишь потом на солнышко выставляют. Достаточно просто не давать вытянуться рассаде в начале развития активно её досвечивать. Тогда не придется выносить на солнце и холод приводя соотношение температуры к свету в норму для прерывания процесса вытягивания.</p>
+
+<p>И это все называется закалкой рассады :)</p>
+
+<p>Если делать кучу глупостей и несколько верных действий постоянно, то рано или поздно глупости становятся частью важного ритуала успеха.</p>
+
+<p><strong>Tmk</strong> 28-02-2019</p>
+
+<p>Сегодня досвечиваю огурец последний день. Перенесу ствол на окно: пускай выживает. Освободившиеся ресурсы перенаправлю на помидор и рассаду для дачи.</p>
+
+<p><strong>Tmk</strong> 28-02-2019</p>
+
+<blockquote>
+  <p>О эти рекомендации да. Закалка</p>
+</blockquote>
+
+<p>А как обьяснить: при высадке в открытый грунт листва желтеет. Потом отрастает новая зелёная?</p>
+
+<p><strong>Likl</strong> 28-02-2019</p>
+
+<blockquote>
+  <p>Сегодня досвечиваю огурец последний день. Перенесу ствол на окно: пускай выживает. Освободившиеся ресурсы перенаправлю на помидор и рассаду для дачи.</p>
+</blockquote>
+
+<p>Огурец все окно и займет, а бедным томатам еще меньше света достанется ;D</p>
+
+<p><strong>Tmk</strong> 28-02-2019</p>
+
+<blockquote>
+  <p>Огурец все окно и займет, а бедным томатам еще меньше света достанется</p>
+</blockquote>
+
+<p>Они в разных комнатах. Да и формировать его буду как и прежде в один ствол. И вообще, он уже старичок :D Осталось ему уже не долго жить. &gt;:D</p>
+
+<p><strong>Likl</strong> 28-02-2019</p>
+
+<blockquote>
+  <p>И вообще, он уже старичок Осталось ему уже не долго жить.</p>
+</blockquote>
+
+<p>Чё сразу старый то? Уж помоложе тебя будет то ;D</p>
+
+<p>Длинна стебля огурца отрицательно начинает сказывается на питании после 15м :o</p>
+
+<p>берем рулетку, и меряем возраст длинной <em>8)</em></p>
+
+<p><strong>Tmk</strong> 28-02-2019</p>
+
+<p>Я ему нечаянно голову свернул две недели назад &gt;:(. Растёт со второй половины октября.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

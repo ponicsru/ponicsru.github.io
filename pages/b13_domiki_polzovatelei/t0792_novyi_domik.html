@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>NОВЫЙ домик | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="NОВЫЙ домик">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">NОВЫЙ домик</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>NОВЫЙ</strong> 15-03-2011</p>
+
+<p>Здравствуйте всем !!! Я начинающий гидропонщик,есть вопросы, если Вам не трудно, подскажите пожалуйста, вот несколько первых вопросов:</p>
+
+<p>1.есть готовые растворы для начинающих, чтоб просто разводить водой для огурца и др.овощей?</p>
+
+<p>2.подскажите какой фирмы хороший капельный шланг?сколько нужно л/час для системы на матах?</p>
+
+<p>3.для системы на матах сколько раз в день нужно поливать растения?</p>
+
+<p>4.сколько дней может храниться расвор в бочке?</p>
+
+<p><strong>caiman</strong> 15-03-2011</p>
+
+<ol>
+  <li>
+    <p>Есть.</p>
+  </li>
+  <li>
+    <p>Шланг с встроенными капельницами или под капельницы??? 4л/час достаточно, если имеете ввиду пропускную способность капельниц.</p>
+  </li>
+  <li>
+    <p>Зависит от вида, сорта растения, возраста, светового и теплового режима(конкретизируйте вопрос)</p>
+  </li>
+  <li>
+    <p>Пока не закончится или не зацветет(если на свету) Дней вам хватит. У меня 3 недели 100литров расходуется и нормуль.</p>
+  </li>
+</ol>
+
+<p>Вы попробуйте задать вопросы ориентируясь и нас ориентируя на конкретное растение…. Тогда и ответы будут конкретные..</p>
+
+<p>Удачи Вам НОВЫЙ новичек!!!!!</p>
+
+<p><strong>NОВЫЙ</strong> 15-03-2011</p>
+
+<blockquote>
+  <ol>
+    <li>
+      <p>Есть.</p>
+    </li>
+    <li>
+      <p>Шланг с встроенными капельницами или под капельницы??? 4л/час достаточно, если имеете ввиду пропускную способность капельниц.</p>
+    </li>
+    <li>
+      <p>Зависит от вида, сорта растения, возраста, светового и теплового режима(конкретизируйте вопрос)</p>
+    </li>
+    <li>
+      <p>Пока не закончится или не зацветет(если на свету) Дней вам хватит. У меня 3 недели 100литров расходуется и нормуль.</p>
+    </li>
+  </ol>
+
+  <p>Вы попробуйте задать вопросы ориентируясь и нас ориентируя на конкретное растение…. Тогда и ответы будут конкретные..</p>
+
+  <p>Удачи Вам НОВЫЙ новичек!!!!!</p>
+</blockquote>
+
+<p>для вот такой огурцовой системы</p>
+
+<p><a href="https://t.me/ponics_ru_files/5076" target="_blank"><img src="/attachimages/6282_kurkku7.jpg" alt="" /></a></p>
+
+<p><strong>caiman</strong> 15-03-2011</p>
+
+<p>Какой субстрат? В чем находится? Сколько растений в системе? Вы выбрали капельный полив? Капельницы встроенные, наружные? Компенсированные нет?</p>
+
+<p>Вот видите сколько вопросов возникает глядя на ваш замечательный рисунок…</p>
+
+<p>На эту тему есть анекдот, только вы не обижайтесь, вас это не касается, это просто сравнение.</p>
+
+<p>Учительница на доске нарисовала схематически птичку и задала вопрос: Что это за птичка, дети???</p>
+
+<p>Дти кто во что горазд, фантазия богатая: от воробья до орла и колибри. Один Вован ничего не сказал. Послала училка Вовочку за папой. Сидит в учительской - ждет.. Стук, открывается дверь, голая ж..а и голос:- угадайте, чей я папа???</p>
+
+<p>Не тушуйтесь, конкретней задавайте вопросы и не бойтесь показаться смешным. Тут все так начинали…. Ну почти все… :D</p>
+
+<p><strong>NОВЫЙ</strong> 15-03-2011</p>
+
+<p>Мин.вата для тренировки пока100 растений, капельный шланг сверху на мате, а Компенсированные это как?</p>
+
+<p><strong>caiman</strong> 15-03-2011</p>
+
+<p>По минвате это лучше Вам к Валере или Алексею Куренину, они спецы по вате. <em>8)</em></p>
+
+<p>Поясните, как вы собираетесь лафлет(шланг с встроенными капельницами) пустить поверх мата??? Мат ведь покрыт пленкой…</p>
+
+<p>ГУГЛ - капельница компенсированная - читаем - думаем - принимаем решение…. :D</p>
+
+<p><strong>Aleksey Kurenin</strong> 15-03-2011</p>
+
+<p>Новичёк, я Вам рекомендую серьёзно задуматься над тем, чтобы начать с чего то другого. Зачем Вам сразу вата? Или у Вас есть какие то “непреодолимые” причины? :)</p>
+
+<p>Компенсированные, это когда они по давлению косменсируются. То есть при разных давлениях, поток раствора не будет меняться. (в разумных пределах конечно).</p>
+
+<p><strong>NОВЫЙ</strong> 15-03-2011</p>
+
+<blockquote>
+  <p>По минвате это лучше Вам к Валере или Алексею Куренину, они спецы по вате. <em>8)</em></p>
+
+  <p>Поясните, как вы собираетесь лафлет(шланг с встроенными капельницами) пустить поверх мата??? Мат ведь покрыт пленкой…</p>
+
+  <p>ГУГЛ - капельница компенсированная - читаем - думаем - принимаем решение…. :D</p>
+</blockquote>
+
+<p>как на картинке, шланг пойдет мату и кубикам</p>
+
+<p><a href="https://t.me/ponics_ru_files/5077" target="_blank"><img src="/attachimages/6284_drip-irrigation-system.jpg" alt="" /></a></p>
+
+<p><strong>NОВЫЙ</strong> 15-03-2011</p>
+
+<blockquote>
+  <p>Новичёк, я Вам рекомендую серьёзно задуматься над тем, чтобы начать с чего то другого. Зачем Вам сразу вата? Или у Вас есть какие то “непреодолимые” причины? :)</p>
+
+  <p>Компенсированные, это когда они по давлению косменсируются. То есть при разных давлениях, поток раствора не будет меняться. (в разумных пределах конечно).</p>
+</blockquote>
+
+<p>Здесь на форуме посоветовали на матах.</p>
+
+<p>Вы что посоветуете?</p>
+
+<p><strong>Aleksey Kurenin</strong> 16-03-2011</p>
+
+<p><em>???</em> не знаю я что посоветовать. Вы всё это с какой целью собираетесь выращивать? ПРосто для интереса?</p>
+
+<p>Я к тому, что малообъёмка требует затрат на оборудование. 100 растений это около 50М2 теплица. Большая она достаточно.</p>
+
+<p>КОгда будет посадка, гокда уборка культуры?</p>
+
+<p><strong>caiman</strong> 16-03-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>По минвате это лучше Вам к Валере или Алексею Куренину, они спецы по вате. <em>8)</em></p>
+
+    <p>Поясните, как вы собираетесь лафлет(шланг с встроенными капельницами) пустить поверх мата??? Мат ведь покрыт пленкой…</p>
+
+    <p>ГУГЛ - капельница компенсированная - читаем - думаем - принимаем решение…. :D</p>
+  </blockquote>
+
+  <p>как на картинке, шланг пойдет мату и кубикам</p>
+</blockquote>
+
+<p>То, что у вас на картинке называется: реверсивный капельный полив с компенсированными капельницами выносными. Шланг про который вы пишете - это магистральный пластиковый шланг, в который и вставляются капельницы с разводкой на четыре растения. Пользуйтесь Поиском, там все очень доходчиво написано, а вот если не поймете чего-то, тогда задавайте вопросы. У меня стоят такие капельницы, но только в кокоматах(в кокосе).</p>
+
+<p><strong>NОВЫЙ</strong> 16-03-2011</p>
+
+<blockquote>
+  <p><em>???</em> не знаю я что посоветовать. Вы всё это с какой целью собираетесь выращивать? ПРосто для интереса?</p>
+
+  <p>Я к тому, что малообъёмка требует затрат на оборудование. 100 растений это около 50М2 теплица. Большая она достаточно.</p>
+
+  <p>КОгда будет посадка, гокда уборка культуры?</p>
+</blockquote>
+
+<p>цель,опыт и знакомство с гидропоникой для комерческого выращивания растений в будущем.</p>
+
+<p>теплицы пока нет, буду тренироваться когда тепло будет</p>
+
+<p><strong>NОВЫЙ</strong> 16-03-2011</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>По минвате это лучше Вам к Валере или Алексею Куренину, они спецы по вате. <em>8)</em></p>
+
+      <p>Поясните, как вы собираетесь лафлет(шланг с встроенными капельницами) пустить поверх мата??? Мат ведь покрыт пленкой…</p>
+
+      <p>ГУГЛ - капельница компенсированная - читаем - думаем - принимаем решение…. :D</p>
+    </blockquote>
+
+    <p>как на картинке, шланг пойдет мату и кубикам</p>
+  </blockquote>
+
+  <p>То, что у вас на картинке называется: реверсивный капельный полив с компенсированными капельницами выносными. Шланг про который вы пишете - это магистральный пластиковый шланг, в который и вставляются капельницы с разводкой на четыре растения. Пользуйтесь Поиском, там все очень доходчиво написано, а вот если не поймете чего-то, тогда задавайте вопросы. У меня стоят такие капельницы, но только в кокоматах(в кокосе).</p>
+</blockquote>
+
+<p>а зачем труба? капельный шланг неподойдет ?</p>
+
+<p><strong>caiman</strong> 16-03-2011</p>
+
+<p>Какая труба??? <em>???</em></p>
+
+<p>Куда капельный шланг не подойдет??? <em>???</em></p>
+
+<p><strong>Coccinella</strong> 16-03-2011</p>
+
+<p>Nовый, возможно, для начала Вам стоит попробовать что-то в таком духе?</p>
+
+<p><a href="http://www.greentalk.ru/v/20100307/MG_271110/gurku+rene.JPG.html" target="_blank">http://www.greentalk.ru/v/20100307/MG_271110/gurku+rene.JPG.html</a></p>
+
+<p>В данном случае, как видите, полив вообще сверху, но те капельные шланги, что Вы имеете в виду или даже попроще, сюда вполне бы подошли. А стартовые затраты намного ниже и управление поливом проще.</p>
+
+<p><strong>NОВЫЙ</strong> 16-03-2011</p>
+
+<blockquote>
+  <p>Какая труба??? <em>???</em></p>
+
+  <p>Куда капельный шланг не подойдет??? <em>???</em></p>
+</blockquote>
+
+<p>вместо магистрального пластикого шланга(труба),капельный шланг подойдет?</p>
+
+<p><strong>caiman</strong> 16-03-2011</p>
+
+<p>Подойдет, только его надо всовывать под пленку мата и расстояние между капельницами(встроенными) должно быть не менее 20см, для того, чтобы при стыковки матов не было протечек между матами. Примерно так.</p>
+
+<p>Но матов и Лафлета Вам точно не хватит для организации системы. Почитайте про капельное орошение на малообъемке и вам много е станет понятно и отпадут многие вопросы.</p>
+
+<p><strong>NОВЫЙ</strong> 11-04-2011</p>
+
+<p>тds метр как то надо настраивать ?или он готов сразу к измерениям?</p>
+
+<p>купил тds метр а он в очищенной и простой воде показывает одинаково</p>
+
+<p><strong>Mole_Garden</strong> 12-04-2011</p>
+
+<blockquote>
+  <p>тds метр как то надо настраивать ?или он готов сразу к измерениям?</p>
+
+  <p>купил тds метр а он в очищенной и простой воде показывает одинаково</p>
+</blockquote>
+
+<p>Очищенная вода после чего? Если после фильтра, то по идее пора выкинуть фильтр. А ваще они почти все откалиброванные приезжают.</p>
+
+<p><strong>NОВЫЙ</strong> 12-04-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>тds метр как то надо настраивать ?или он готов сразу к измерениям?</p>
+
+    <p>купил тds метр а он в очищенной и простой воде показывает одинаково</p>
+  </blockquote>
+
+  <p>Очищенная вода после чего? Если после фильтра, то по идее пора выкинуть фильтр. А ваще они почти все откалиброванные приезжают.</p>
+</blockquote>
+
+<p>какой то смолой что ли я так и не понял</p>
+
+<p><strong>orgail</strong> 12-04-2011</p>
+
+<p>проверить работоспособность прибора достаточно просто</p>
+
+<p>измерьте ppm воды из под крана, выньте прибор</p>
+
+<p>добавьте в воду несколько крупинок обычной соли</p>
+
+<p>попробуйте измерить ppm еще раз - показания прибора должны вырасти</p>
+
+<p>так вы сможете определить - реагирует ли прибор на изменение ppm</p>
+
+<p>откалибровать точно - уже по растворам с известным ppm (такие продают отдельно обычно)</p>
+
+<p><strong>valery</strong> 13-04-2011</p>
+
+<p><em>8)</em></p>
+
+<p><strong>NОВЫЙ</strong> 13-04-2011</p>
+
+<blockquote>
+  <p>проверить работоспособность прибора достаточно просто</p>
+
+  <p>измерьте ppm воды из под крана, выньте прибор</p>
+
+  <p>добавьте в воду несколько крупинок обычной соли</p>
+
+  <p>попробуйте измерить ppm еще раз - показания прибора должны вырасти</p>
+
+  <p>так вы сможете определить - реагирует ли прибор на изменение ppm</p>
+
+  <p>откалибровать точно - уже по растворам с известным ppm (такие продают отдельно обычно)</p>
+</blockquote>
+
+<p>проверил , показания вырасли примерно на 50-60ppm</p>
+
+<p>какие растворы можно сделать самому и откалибровать ?</p>
+
+<p><strong>андрей п</strong> 13-04-2011</p>
+
+<p>В описании прибора должно быть написано как калибровать и какие калибровочные растворы для этого используются.Приготовить их самому не получится.Нужно приобретать специально или заказывать в лабораториях.Удачи Вам!</p>
+
+<p><strong>Mole_Garden</strong> 13-04-2011</p>
+
+<p>Вообще, если вариантов нет, то можно попробовать сделать так.</p>
+
+<p>Берем весы с сотыми грамма, взвешиваем ровно один грамм KCl и растворяем его в осмотической воде. Один растворенный грамм равен 1000 ppm.</p>
+
+<p><strong>Svyatoy_nv</strong> 21-04-2011</p>
+
+<blockquote>
+  <p>Вообще, если вариантов нет, то можно попробовать сделать так.</p>
+
+  <p>Берем весы с сотыми грамма, взвешиваем ровно один грамм KCl и растворяем его в осмотической воде. Один растворенный грамм равен 1000 ppm.</p>
+</blockquote>
+
+<p>А зачем вообще точно настраивать TDS метр? Запомнил какой ppm был в оригинальном растворе, предположил разброс (скажем 30%), как только цифра поменялась на 30% (иль если не лень в любое время) - подстраиваем под оригинальный. :-X Вот Ph - это да, важно…</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

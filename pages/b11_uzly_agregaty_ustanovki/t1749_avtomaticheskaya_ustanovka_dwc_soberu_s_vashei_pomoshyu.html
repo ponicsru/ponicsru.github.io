@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>автоматическая установка DWC, соберу с вашей помощью) | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="автоматическая установка DWC, соберу с вашей помощью)">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">автоматическая установка DWC, соберу с вашей помощью)</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>kulikovas1989</strong> 07-05-2013</p>
+
+<p>Доброго времени суток, загорелся идеей выращивания дома всякой всячины, а именно овощей (черри, огурцы), ягод (клубника, земляника) и травы (лук зеленый итд) методом DWC, прочитал много статей и топиков в частности и на этом форуме, но к сожалению не нашел инструкции по типу: возьмите предмет А, В, С соедините и получится готовый автоматический аппарат для выращивания всякой всячины.</p>
+
+<p>Никто не хочет выкладывать свой интеллектуальный труд просто так)</p>
+
+<p>Значит придется плагиатить и додумывать и спрашивать советы)</p>
+
+<p>Украв принципиальную схему у Alexxx думаю сообразить свой аппарат! Нукак свой…</p>
+
+<p>Сделаю в смысле сам)</p>
+
+<p>Далее прилагаю схему и ряд вопросов, прошу дать советы и внести корректировки по делу)</p>
+
+<p>Описание схемы:</p>
+
+<p>1.в рабочих баках постоянно находится питательная смесь</p>
+
+<p>2.раз в сутки смесь из каждого рабочего бака поступает в емкость для приготовления питательной смеси, в данной емкости доливается необходимое количество воды, анализируется состав смеси и добовляются удобрения, после чего смесь идет обратно в рабочий бак</p>
+
+<ol>
+  <li>забыл дорисовать на схеме, ПЛК управляет клапанами баков</li>
+</ol>
+
+<p>Вопросы:</p>
+
+<p>1.У Alexxx в конструкции было 6 компонентов для приготовления питательной смеси, Flora Micro GHE, Flora Gro GHE, Flora Bloom GHE, PH+,PH-, «?» - что за последний загадочный компонент?! На фото не видно?!)</p>
+
+<ol>
+  <li>удачным ли вариантом будет использовать в качестве мозга ОВЕН ПЛК-150 + ноут!? ГДЕ лучше покупать, тот же вопрос про HANNA HI98143 для измерения ПШ и ТДС (как я понял состава смеси)!?</li>
+</ol>
+
+<p>3.Какие клапоны использовать для подачи удобрений в емкость для приготовления питательной смеси?!</p>
+
+<ol>
+  <li>
+    <p>Какие клапоны использовать для подачи питательной смеси от этой емкости к рабочим бакам (где выращиваются растения)?</p>
+  </li>
+  <li>
+    <p>Какой выбрать насос</p>
+  </li>
+  <li>
+    <p>как реализовать поочередное переливание жидкости из рабочих баков в емкость для приготовления смеси с учетом моей схемы, как понимаю нужны специальные клапаны?! допустим с первым баком понятно, клапан должен перекрыть путь жидкости дальше и открыть доступ к баку 1, если работать со вторым баком то клапон 1 должен закрыть путь к баку 1 открыть путь для жидкости дальше а клапан 2 закрыть путь воде дальше и открыть путь для жидкости к баку2?! и т д , надеюсь понятно изложил что хотел сказать)</p>
+  </li>
+</ol>
+
+<p><a href="https://t.me/ponics_ru_files/10499" target="_blank"><img src="/attachimages/13314_sgema11.jpg" alt="" /></a></p>
+
+<p><strong>alexxx</strong> 07-05-2013</p>
+
+<p>Ну раз схему украл - воруй уж до конца :D</p>
+
+<p>Там и про клапаны есть, и про всё остальное.</p>
+
+<p><strong>kulikovas1989</strong> 07-05-2013</p>
+
+<p>ну как украл, нарисовал как понял)</p>
+
+<p>я уже два дня читаю по форуму, полой информации так и не собрать воедино, было бы проще если бы Вы, Алекс, дали мне правильную схему и используемые материалы, а если совсем добрый то и руководство к сборке :-[</p>
+
+<p>1.ПЛК150 У.М.</p>
+
+<p>2.модуль МВУ8</p>
+
+<p>3.трансмиттер ханна HI98143-22</p>
+
+<p>3.электроды HI1001 и HI3001</p>
+
+<p>4.клапаны для подачи в рабочие баки <a href="http://www.masterkit.ru/main/set.php?code_id=887030" target="_blank">http://www.masterkit.ru/main/set.php?code_id=887030</a> ???</p>
+
+<p>5.дозирующие помпы такие примерно <a href="http://www.ebay.com/itm/Dosing-pump-Peristaltic-dosing-pump-aquarium-lab-/161017401322?pt=LH_DefaultDomain_0&amp;hash=item257d628fea" target="_blank">http://www.ebay.com/itm/Dosing-pump-Peristaltic-dosing-pump-aquarium-lab-/161017401322?pt=LH_DefaultDomain_0&amp;hash=item257d628fea</a> ??</p>
+
+<p>еще датчик влажности, вентилятор нужно к плккоторый можно присобачить, и какой насос брать?! хочу 6 рабочих емкостей (с растениями) по литров 20-30-40 =)</p>
+
+<p><strong>alexxx</strong> 07-05-2013</p>
+
+<p>Да бери на здоровье. Схемы все правильные, да и сложного в них ничего нет. Руководство по сборке вот только всё руки дописать не доходят… :D</p>
+
+<p><strong>alexxx</strong> 07-05-2013</p>
+
+<p>Клапаны нужны шаровые с электроприводом, 2-х ходовые для зон, и 3-х ходовые для смены направления перекачки. По ссылке соленоид - не подойдет.</p>
+
+<p>Помпы эти тоже г, за пару недель разъедаются трубки.</p>
+
+<p><strong>kulikovas1989</strong> 07-05-2013</p>
+
+<blockquote>
+  <p>Да бери на здоровье. Схемы все правильные, да и сложного в них ничего нет. Руководство по сборке вот только всё руки дописать не доходят… :D</p>
+</blockquote>
+
+<p>напиши напиши, не все такие умные в технике, я так вообще только пользователь) как че сделать так только по инструкции!)</p>
+
+<p>Я то возьму, да и наверное соберу, может даже настрою программу (нужно попробовать) просто для начала нужно определить что нужно приобрести, чтобы не накупить того чего не нужно, с этой целью я и создал топик, чтобы умные головы сказали сколько чего купить)</p>
+
+<p><strong>kulikovas1989</strong> 07-05-2013</p>
+
+<p>кстати по поводу электродов, не могу найти HI 3001?!</p>
+
+<p>всё вроде как нашел в другом топике</p>
+
+<p><a href="http://www.hannameters.com/hi1001.html" target="_blank">http://www.hannameters.com/hi1001.html</a></p>
+
+<p><a href="http://www.hannameters.com/hi3001.html" target="_blank">http://www.hannameters.com/hi3001.html</a></p>
+
+<p><a href="http://www.hannameters.com/hi98143-22.html" target="_blank">http://www.hannameters.com/hi98143-22.html</a></p>
+
+<p>эти гаджеты нужны?)</p>
+
+<p>за такие деньги они небось вечные)</p>
+
+<p>Как я понимаю к ПЛК - 150 ОВЕН я подключаю трансмиттер ханна HI98143-22 к которому подключены электроды HI1001, 3001 !? трансмиттер подключается к аналоговому входу?! и остается еще три аналог. входа для других датчиков, например влажности и температуры, какие выбрать?!</p>
+
+<p>к дискретным выходам ОВЕНА ПЛК-150:</p>
+
+<ol>
+  <li>
+    <p>я подключаю клапаны для заполнения рабочих баков - 6</p>
+  </li>
+  <li>
+    <p>дозирующие клапаны сосудов с удобрениями 6, либо не клапанов а дозирующих насосов, я пока не понял что нужно :)</p>
+  </li>
+  <li>
+    <p>насос для закачки выкачки раствора из емкости для приготовления смеси -1</p>
+  </li>
+  <li>
+    <p>освещение - 1, я думаю хватит команды вкл выкл да же?!</p>
+  </li>
+</ol>
+
+<p>5.клапан докачки воды - 1</p>
+
+<p>6.клапан слива непригодной смеси - 1</p>
+
+<p>Итго 16 исполнительным устройств! Значит нужно 2 модуля МВУ8?! куда они подкл?!</p>
+
+<p>также подскажите не умному зачем в ПЛК-150 аналоговые выходы и дискретные входы))))</p>
+
+<p><strong>alexxx</strong> 07-05-2013</p>
+
+<blockquote>
+  <p>также подскажите не умному зачем в ПЛК-150 аналоговые выходы и дискретные входы))))</p>
+</blockquote>
+
+<p>Может лучше не стоит приступать к таким задачам не обладая элементарными знаниями? А то деньги уйдут, а оборудование на полке пылиться будет..</p>
+
+<p><strong>kulikovas1989</strong> 07-05-2013</p>
+
+<p>так знания то как то получаются?!</p>
+
+<p>спросил узнал)</p>
+
+<p><strong>alexxx</strong> 07-05-2013</p>
+
+<p>Ну для начала не мешало бы почитать техническую документацию для овена и ханны, много бы вопросов отпало.</p>
+
+<p><strong>alexxx</strong> 07-05-2013</p>
+
+<p>Также рекомендую ознакомиться с видами насосов, представленных на рынке, и с их возможностями.</p>
+
+<p>Ну и принцип действия соленоида должен на зубок отскакивать.</p>
+
+<p><strong>kulikovas1989</strong> 07-05-2013</p>
+
+<p>Алекс спасибо за советы, однако для того чтобы знать что именно мне нужно на этом рынке задам Вам пару наводящих вопросов)</p>
+
+<ol>
+  <li>
+    <p>каким образом выполняется механизм дозирования насосами?! Зная его производительность ОВЕН ПЛК включает его на определенное время, чтобы перекачалось нужное колличество ве-ва!?</p>
+  </li>
+  <li>
+    <p>как же все таки работает логистика ваших установок в плане перекачки растворов из рабочих баков в емкость для приготовления ?! тоесть по моей схеме, для выкачивания из бака 1, клапан 1 закрывает путь к клапану 2 и открывает бак 1</p>
+  </li>
+</ol>
+
+<p>а для замены жидкости в баке 2 клапан 1 закр бак 1 откр путь к лапану 2 а клапан 2 закр путь к клапану 3 и откр бак 2?!?)</p>
+
+<p><a href="https://t.me/ponics_ru_files/10500" target="_blank"><img src="/attachimages/13318_sgema2.jpg" alt="" /></a></p>
+
+<p><strong>kulikovas1989</strong> 07-05-2013</p>
+
+<p>порылся в топиках нашел вариант дозирующих насосиков welco WMP-1 - P3-AA-_P!</p>
+
+<p>как такой вариант?! реально ли их купить малой паритией, а то алекс 100 закупал) этого многовато пока)</p>
+
+<p>также актуален для меня вопрос с кранами для подачи раствора в рабочие емкости!?</p>
+
+<p><strong>Serg17</strong> 07-05-2013</p>
+
+<blockquote>
+  <p>также актуален для меня вопрос с кранами для подачи раствора в рабочие емкости!?</p>
+</blockquote>
+
+<p>А кто-нибудь пробовал клапаны от стиральных машин? Там есть полностью пластмассовые экземпляры.</p>
+
+<p>Такой же вопрос про насосы для кофеварок.(гудят они правда)</p>
+
+<blockquote>
+  <p>также подскажите не умному зачем в ПЛК-150 аналоговые выходы и дискретные входы))))</p>
+</blockquote>
+
+<p>К дискретному входу можно подключить датчик уровня жидкости, например, от автомобиля поплавковый с герконом.</p>
+
+<p>Аналоговым выходом можно управлять частотным преобразователем или регулирующим клапаном., короче всем, что имеет аналоговй вход с таким же диапазоном.</p>
+
+<p>Часто эксперименты с аналоговыми входами и выходами наказываются покупкой нового устройства с аналоговым входом и/или выходом. :D</p>
+
+<blockquote>
+  <p>каким образом выполняется механизм дозирования насосами?! Зная его производительность ОВЕН ПЛК включает его на определенное время, чтобы перекачалось нужное колличество ве-ва!?</p>
+</blockquote>
+
+<p>Можно и так, но надо учитывать время выхода насоса на номинальную производительность, а также время выбега после отключения, на производительность насоса еще сильно влияет напряжение в сети и уровень жидкости в баке, вязкость(химический состав) и температура жидкости. Надежнее ставить расходомер(в автоматических кофеварках есть неплохие экземпляры, например 286473300 <a href="http://kofe-spares.ru/product/286473300/" target="_blank">http://kofe-spares.ru/product/286473300/</a>)</p>
+
+<p>Неплохо было бы в каждый бак поставить датчик уровня. Чтобы сразу понять, что больше туда ничего лить не надо.</p>
+
+<p>Эх, гулять, так гулять…</p>
+
+<p>Я б еще добавил дренажный бак, для слива туда избытка разных жидкостей (на случай всякого глюка в программе) с датчиком уровня, который при наполнении дренажного бака выключает всю автоматику до прихода программиста или наладчика от греха подальше.</p>
+
+<p>Ну, и смс информирование на случай нештатных ситуаций, типа там свет отключили(не забываем про бесперебойник) или еще что приключилось.</p>
+
+<p><strong>gena1</strong> 08-05-2013</p>
+
+<p>Что ж Вы мозг то себе …. Алекс за Вас же все сделал: по концентрации/уровню смотрите сколько налил насос.</p>
+
+<p><strong>alexxx</strong> 08-05-2013</p>
+
+<p>Для начала следует просто представить схему будущего узла в голове, со всеми насосами и клапанами. Погонять виртуальный раствор, как он там будет течь, куда удобрения будут подливаться, где датчики будут стоять, и т.д.</p>
+
+<p>Когда эта виртуальная модель в голове заработает - можно приступать к сборке, и вопросов особых уже не возникает. ;)</p>
+
+<p><strong>kulikovas1989</strong> 08-05-2013</p>
+
+<p>мои вопросы как раз же по тому как все должно правильно бегать и из чего собирать)</p>
+
+<p>Этого виртуальная модель не расскажет)</p>
+
+<p><strong>gena1</strong> 08-05-2013</p>
+
+<p>Ржачно всё тут :)</p>
+
+<p><strong>Coccinella</strong> 08-05-2013</p>
+
+<p>Alexxx, а Вы кубик Рубика в воображении собирать не пробовали? :-[ У меня не получилось, но читая Ваши сообщения, кажется, что для Вас это такой пустяк… $)</p>
+
+<p>Воображая все эти емкости, клапаны и фитинги, неплохо помнить и о растениях. А то у Kulikovas может получиться технически совершенный узел, непригодный для поставленной задачи только потому, что о растениях забыли :'(</p>
+
+<p><strong>alexxx</strong> 08-05-2013</p>
+
+<blockquote>
+  <p>Alexxx, а Вы кубик Рубика в воображении собирать не пробовали? :-[ У меня не получилось, но читая Ваши сообщения, кажется, что для Вас это такой пустяк… $)</p>
+</blockquote>
+
+<p>Если честно, я его не то что в воображении….. в реале ни разу не собирал. Да и на столько ходов вперед я плохо просчитываю, кратковременная память ни к черту. :D</p>
+
+<p>Но представить макет любого устройства, и каждого его узла в отдельности - на мой взгляд не очень сложно. Мы же тут не космические корабли конструируем.. $)</p>
+
+<p><strong>kulikovas1989</strong> 08-05-2013</p>
+
+<blockquote>
+  <p>Ржачно всё тут :)</p>
+</blockquote>
+
+<p>главное что не плачевно)</p>
+
+<blockquote>
+  <p>Alexxx, а Вы кубик Рубика в воображении собирать не пробовали? :-[ У меня не получилось, но читая Ваши сообщения, кажется, что для Вас это такой пустяк… $)</p>
+
+  <p>Воображая все эти емкости, клапаны и фитинги, неплохо помнить и о растениях. А то у Kulikovas может получиться технически совершенный узел, непригодный для поставленной задачи только потому, что о растениях забыли :'(</p>
+</blockquote>
+
+<p>думаю главное узел, к растениям нужно уже программу писать, чтобы они вовремя получили то что им нужно, свет воду все вещ-ва)</p>
+
+<p><strong>Coccinella</strong> 08-05-2013</p>
+
+<p>Главное все же - растения. А все узлы и прибамбасы подстраиваются под их требования. Иначе сидячая забастовка с их стороны, а то и вовсе суицид с укором в глазах “Ты нас породил, за что же губишь?” :'( :'( :'(</p>
+
+<p><strong>kulikovas1989</strong> 08-05-2013</p>
+
+<p>подойдут ли клапаны из полипропилена?! или разьест?!</p>
+
+<p><strong>alexxx</strong> 08-05-2013</p>
+
+<p>Смотря какие клапаны, и смотря для каких целей.</p>
+
+<p>Разъесть не разъест.</p>
+
+<p><strong>kulikovas1989</strong> 08-05-2013</p>
+
+<p>для распределения готовой питательной смеси по рабочим емкостям!</p>
+
+<p>и из каких выбрать материалов насосы для дозирования удобрений?!микро гро блум!?</p>
+
+<p><strong>alexxx</strong> 08-05-2013</p>
+
+<p>Как будто их великий выбор из разных материалов… :D</p>
+
+<p><strong>kulikovas1989</strong> 08-05-2013</p>
+
+<p>Ваш ответ меня просто спас, неужели просто написать что спрашивают) <em>8)</em> <em>8)</em> <em>8)</em></p>
+
+<p>кстати как я понимаю подобные клапана не подойдут?! с клапаном из витона?! <a href="http://kiparis-spb.ru/catalogue/item/2975/" target="_blank">http://kiparis-spb.ru/catalogue/item/2975/</a></p>
+
+<p><strong>alexxx</strong> 08-05-2013</p>
+
+<blockquote>
+  <p>Ваш ответ меня просто спас, неужели просто написать что спрашивают) <em>8)</em> <em>8)</em> <em>8)</em></p>
+</blockquote>
+
+<p>Да я уже писал про всё, и не раз. Неужели трудно просто поискать то, что нужно?</p>
+
+<p><strong>alexxx</strong> 08-05-2013</p>
+
+<blockquote>
+  <p>и из каких выбрать материалов насосы для дозирования удобрений?!</p>
+</blockquote>
+
+<p>Это абсолютно не важно, так как в перистальтических дозаторах перекачиваемая жидкость ни коим местом не контактирует с самим насосом, только с трубкой. Такой ответ удовлетворяет?</p>
+
+<p><strong>kulikovas1989</strong> 08-05-2013</p>
+
+<p>Да, спасибо)</p>
+
+<p><strong>cpf</strong> 09-05-2013</p>
+
+<blockquote>
+  <p>Главное все же - растения. А все узлы и прибамбасы подстраиваются под их требования. Иначе сидячая забастовка с их стороны, а то и вовсе суицид с укором в глазах “Ты нас породил, за что же губишь?” :'( :'( :'(</p>
+</blockquote>
+
+<p>Да в первоначальной схеме речь о растениях вообще не идет :D Обсуждается установка для получения растворов (типа “супер-миксера”). О том, что правильно подобранный питательный раствор - всего лишь 20% успеха, видимо забыли (или не знаем? :)) А о том, что на урожай гораздо больше влияет микроклимат и освещение - тоже “ни гу-гу” … ;) Видимо, просто человек увлекся “робототехникой” в примитивном виде. Что ж - это тоже хорошо (мой сын-оболтус учится в институте на “специалиста-робототехника”, и нифига ничего сам делать-конструировать не желает :( )</p>
+
+<p><strong>kulikovas1989</strong> 09-05-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>Главное все же - растения. А все узлы и прибамбасы подстраиваются под их требования. Иначе сидячая забастовка с их стороны, а то и вовсе суицид с укором в глазах “Ты нас породил, за что же губишь?” :'( :'( :'(</p>
+  </blockquote>
+
+  <p>Да в первоначальной схеме речь о растениях вообще не идет :D Обсуждается установка для получения растворов (типа “супер-миксера”). О том, что правильно подобранный питательный раствор - всего лишь 20% успеха, видимо забыли (или не знаем? :)) А о том, что на урожай гораздо больше влияет микроклимат и освещение - тоже “ни гу-гу” … ;) Видимо, просто человек увлекся “робототехникой” в примитивном виде. Что ж - это тоже хорошо (мой сын-оболтус учится в институте на “специалиста-робототехника”, и нифига ничего сам делать-конструировать не желает :( )</p>
+</blockquote>
+
+<p>по другим вопросам выращивания растений пока вопросов у меня нет, пока я готовлю проект автоматики и подбираю материалы опытные образцы черри будут расти в своей тепличке) Про освещение и климат для разных растений много информации, про то как и из чего собрать себе автомат меньше, от сюда и круг вопросов задаваемых мной!</p>
+
+<p><strong>Vad</strong> 09-05-2013</p>
+
+<blockquote>
+  <p>Про освещение и климат для разных растений много информации, про то как и из чего собрать себе автомат меньше</p>
+</blockquote>
+
+<p>и это должно было навести на “мысиль” ;)</p>
+
+<p>Вы для собственной теплички.. такой растворник хотите делать? :)</p>
+
+<p>Вам выращивать и жевать или резать, паять и скручивать?</p>
+
+<p>вобще, “Вам ехать или шашечки? “ :D</p>
+
+<p><strong>Serg17</strong> 09-05-2013</p>
+
+<blockquote>
+  <p>подойдут ли клапаны из полипропилена?! или разьест?!</p>
+</blockquote>
+
+<p>Если в емкости PH-up и PH-down не нальешь, что-то совсем едкое(более едкое, чем электролит для свинцовых аккумуляторов), то для полипропилена все будет ОК. Но лучше(безопаснее) использовать более разбавленные растворы. Есть еще такое соображение, что чем концентрированее кислота (HNO3 или H2SO4) тем больше она парит(улетучивается), а также впитывает влагу из воздуха.</p>
+
+<p>У клапанов кроме корпуса и фланцев есть еще шток и уплотнение(набивка). Обязательно нужно смотреть ТУ на уплотнение. Тип уплотнения всегда указывается производителем клапана.</p>
+
+<p>Часто уплотнение оказывается самым слабым местом клапана.</p>
+
+<p>Если производитель пишет, что клапан годится для пищевой промышленности и как пример указывает линии по разливке фруктовых соков, то можешь за клапан не переживать.</p>
+
+<p>Практически все питательные растворы имеют слабокислую или нейтральную реакцию и там отсутствуют органические растворители и сильные окислители, а также нет высоких давлений и температур.</p>
+
+<p>Про используемые материалы(где-то писал недавно):</p>
+
+<p>Полиэтилен выдерживает при комнатных температурах все(даже концентрированную азотную кислоту), но если он без пигмента, то боится любого света. Рабочая температура ниже 700 и зависит от способа получения.</p>
+
+<p>Полипропилен выдерживает практически все, кроме концентрированной азотной кислоты(и даже ее, но недолго), также без пигмента боится любого света. Рабочая температура обычно ниже 1100, но выше 00 - боится холода.</p>
+
+<p>Питательные растворы вызывают коррозию большинства металлов, кроме меди( и еще некоторых совсем экзотических).</p>
+
+<p>Изделия покрытые никелем пугают своей аллергичностью и потенциальной возможностью образовывать(при +800) карбонил никеля - Ni(CO)4. Клапана при длительном включении - греются.</p>
+
+<p>Хромированные покрытия часто бывают с дефектами, через которые они и разрушаются.</p>
+
+<p>Оцинкованное покрытие просто быстро разрушается.</p>
+
+<p><strong>Coccinella</strong> 10-05-2013</p>
+
+<p>Изделия, покрытые никелем, потенциально грозят никелевым отравлением растений.</p>
+
+<p><strong>kulikovas1989</strong> 10-05-2013</p>
+
+<p>Serg17, Coccinella, cпасибо за информацию <em>8)</em></p>
+
+<p><strong>kulikovas1989</strong> 11-05-2013</p>
+
+<p>кто нибудь знает косательно данных приборов?! <a href="http://www.avtomatica.ru/plugins/shop/device.php?mode=devices&amp;type=&amp;parentid=7" target="_blank">http://www.avtomatica.ru/plugins/shop/device.php?mode=devices&amp;type=&amp;parentid=7</a></p>
+
+<p>Кондуктометр-концентратомеры анализаторы жидкости кондуктометрический=)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

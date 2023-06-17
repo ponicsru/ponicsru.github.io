@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>новичок я | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="новичок я">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">новичок я</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Алиса</strong> 28-03-2011</p>
+
+<p>Хочу вырастить огурцы и помидоры на гидропонике</p>
+
+<p><strong>Coccinella</strong> 28-03-2011</p>
+
+<p>И это правильно! Удачи!</p>
+
+<p><strong>Mole_Garden</strong> 28-03-2011</p>
+
+<blockquote>
+  <p>Хочу вырастить огурцы и помидоры на гидропонике</p>
+</blockquote>
+
+<p>читаем форум, пользуемся поиском, изучаем библиотеку, агтотехнологию и все получится.</p>
+
+<p><a href="http://www.ponics.ru/2009/06/lib/" target="_blank">http://www.ponics.ru/2009/06/lib/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/05/cucumber/" target="_blank">http://www.ponics.ru/2009/05/cucumber/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/05/cucumber2/" target="_blank">http://www.ponics.ru/2009/05/cucumber2/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/06/npk_cultures/" target="_blank">http://www.ponics.ru/2009/06/npk_cultures/</a></p>
+
+<p><strong>Алиса</strong> 28-03-2011</p>
+
+<p>спасибо!!!Начну читать!!! <em>Bravo</em></p>
+
+<p><strong>NellyKH</strong> 29-03-2011</p>
+
+<p>С новосельем дорогая $) $) $)</p>
+
+<p><strong>Алиса</strong> 29-03-2011</p>
+
+<p>спасибки</p>
+
+<p><strong>NellyKH</strong> 30-03-2011</p>
+
+<p>Ты не стесняйся, задавай вопросы конкретные, на этом сайте <em>8)</em> люди я по себе знаю :-[ спасибо всем огромное $) $) $)</p>
+
+<p><strong>Алиса</strong> 30-03-2011</p>
+
+<p>Задавать еще нечего семена даже не проросли ….</p>
+
+<p><strong>Mole_Garden</strong> 30-03-2011</p>
+
+<blockquote>
+  <p>Задавать еще нечего семена даже не проросли ….</p>
+</blockquote>
+
+<p>Прежде чем они прорастут, лучше уже знать все остальное, что бы не сажать их по 10 раз.</p>
+
+<p><strong>Coccinella</strong> 30-03-2011</p>
+
+<p>Константин, такими советами Вы разорите торговцев семенами :)</p>
+
+<p><strong>Алиса</strong> 30-03-2011</p>
+
+<p>я все уже прочитала .а вопросы буду задавать по ходу дела!!! <em>Bos</em></p>
+
+<p><strong>Mole_Garden</strong> 01-04-2011</p>
+
+<blockquote>
+  <p>Константин, такими советами Вы разорите торговцев семенами :)</p>
+</blockquote>
+
+<p>:D Не, нормуль, зеленых еще мега куча!</p>
+
+<p><strong>Алиса</strong> 15-04-2011</p>
+
+<p>Здравствуйте!!!кто нибудь выращивал растения на минеральной вате????Спасибо!!! <em>Wall</em></p>
+
+<p><strong>Rtyti</strong> 15-04-2011</p>
+
+<p>Крепких корней, с новосельем. на какой системе планируете ростить? :)</p>
+
+<p><strong>caiman</strong> 15-04-2011</p>
+
+<blockquote>
+  <p>Здравствуйте!!!кто нибудь выращивал растения на минеральной вате????Спасибо!!! <em>Wall</em></p>
+</blockquote>
+
+<p>Конечно - Valery!!!!!!</p>
+
+<p><strong>Алиса</strong> 15-04-2011</p>
+
+<p>я сегодня в интернете читала на минеральной вате выращивают растения!!! вроде все просто !!!следи за влажностью и температурой!!! есть ли на самом деле какие то проблемы в этом???и вата которой утепляют дома она тоже подходит??</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>я на минвате выращиваю только надо ее сперва проверить !</p>
+
+<p>кусок ваты заливаешь дистилировкой и полоскаешь там минут 5 потом мериеш ррм и рн если вода не изменила показатели то вата пойдет потом режеш ее на ленты по 4 см и скатываешь в ролики по размеру стаканчика и аминь все работает только именно в рулоны потаму что волокна у ваты идут вдоль и если ее положить поперек слива воды все погниет вот фото</p>
+
+<p><a href="https://t.me/ponics_ru_files/5144" target="_blank"><img src="/imagehost/thumbs/imag0102.jpg" alt="" /></a></p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0103.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0103.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0105.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0105.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0101.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0101.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p><strong>Алиса</strong> 15-04-2011</p>
+
+<p>Спасибо!!!!Теперь понятно!!! Я еще думала о такой вате как листы ее можно на кубики порезать!!!! Не надо горшки …лентой по краям оборачиваешь и вперед…что вы об этом думаете???</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>да и незабудьте сверху присыпать вермикулитом он в дальнейшем будет как индикатор влажности ваты видите начал подсыхать в поддон воды долили или раствора смотря на чем растите</p>
+
+<p>по началу лоток с стаканчиками плавать будет и его желательно смочить сверху а когда он утонет процесс капилярных каналов работать начнет все у нас получится проверено и еще сильно очень вату не укатывайте рыхлость должна быть чтоб пальцем можно было почти до дна стаканчика проткнуть ваш валик дальше на него семечку кладете или растишку маленькую вермиком присыпали и полили из распылителя чтоб вермик не смыть и грязи ненаделать !</p>
+
+<p><strong>Алиса</strong> 15-04-2011</p>
+
+<p>спасибо!!!</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>не грубости ради скажу вы простите попу газетой вытираете или мягенькой бумажкой</p>
+
+<p>много не сэкономите на ленте а горшки ето единоразовое вложение даже если корни через него сильно проросткут их обрезатьт можно салат в миску а стаканчик помыть и под новую заделку в отход только вата</p>
+
+<p>да и потом растишки то живые им вентиляция надо и забота ( как о своей попе и мягенькой бумажке) :D</p>
+
+<p>только чур никаких обид!!!!!!!!!</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>я пользую для салата два типа стаканчиков</p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0108.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0108.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p>тот что сверху для подпора мне больше нравится</p>
+
+<p>а тот что снизу это родной салатный но для платформы очень хлипкий практически одноразовый :-\</p>
+
+<p>невыгодный он</p>
+
+<p>вот что с помидорами на вате а потом в керамзите получается</p>
+
+<p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0099njn.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0099njn.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+<p><strong>Алиса</strong> 15-04-2011</p>
+
+<p>я про горшки говорю вот зачем….. готовлю бизнес план по теплице и выращиванию цветов на гидропонике для продажи !!!!читала про эти кубики ( порезанные из минеральной ваты )удобно с ними работать и растениям вроде там хорошо!!!! дышат и растут!!!!в землю тоже удобно сажать!!!(Салат за границей так выращивают тоже)просто там свою минеральную вату рекламируют для этого и цены там высоковатые ….вот мне и интересно а есть ли разница в этой минеральной вате????как поняла из предыдущих ответов надо РН проверить и все должно быть нормально…..</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>выше фотку положил с помидором растет быстро а разница в вате фирменной и моей огромная особенно в цене кубик стоит 50р пробка 2р а вата рулон 70м квадратных стоит 650 р сколько из 70 метров можно накатать таких стаканчиков думаю больше 1000 считайте дальше сами а для того чтоб не маяться проверками вата изовер называется и будет нам счастье и толстые зеленые стебли <em>Dance</em></p>
+
+<p>а валик мой корни за месяц так сплетают что он покрепче кубика становится !</p>
+
+<p><strong>Алиса</strong> 15-04-2011</p>
+
+<p>спасибо за совет …будем думать…. <em>8)</em></p>
+
+<p><strong>Coccinella</strong> 15-04-2011</p>
+
+<p>Алиса, для бизнес плана все выше сказанное (никому не в обиду) совершенно непригодно. Салат на минвате никто не выращивает, в основном огурец-томат-перец (в меньшей степени баклажан-кабачок). Минвата не игрушки для начинающих,а серьезная и дорогостоящая технология. Цветы, кстати, на вате практически не выращивают, в основном в торфе и кокосе.</p>
+
+<p>Так развлекаться, как Дмитрий, можно для собственного удовольствия, но деньги так не заработать.</p>
+
+<p><strong>Алиса</strong> 15-04-2011</p>
+
+<p>спасибо за совет!!!!а как они эти цветы потом в землю пересаживают???????</p>
+
+<p><strong>Coccinella</strong> 15-04-2011</p>
+
+<p>В смысле? Цветы никуда не пересаживают, так в кокосе и выращивают. Ну розы, те в основном в минвате от черенка до старости. А всякие там лилии, фаленопсисы, тюльпаны так в органических субстратах, а то и вовсе в открытом грунте (лилии, тюльпаны и прочие) растут.</p>
+
+<p>А если речь идет о цветочной рассаде, то ее в основном в торфе выращивают, а потом пересаживают без проблем.</p>
+
+<p><strong>Алиса</strong> 15-04-2011</p>
+
+<p>дома просто все цветы в земле растут …..я вас поняла будем думать!!!!спасибо!!! ;)</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>нет причин для обид просто в сравнении пришлось рассказать человеку</p>
+
+<p>а салат в вате действительно никто не выращивает один я наверно пробую пока что то получается что то нет !</p>
+
+<p><strong>NellyKH</strong> 18-04-2011</p>
+
+<blockquote>
+  <p>я пользую для салата два типа стаканчиков</p>
+
+  <p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0108.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0108.jpg” border=”0”&gt;&lt;/a&gt;</p>
+
+  <p>тот что сверху для подпора мне больше нравится</p>
+
+  <p>а тот что снизу это родной салатный но для платформы очень хлипкий практически одноразовый :-\</p>
+
+  <p>невыгодный он</p>
+
+  <p>вот что с помидорами на вате а потом в керамзите получается</p>
+
+  <p>&lt;a href=”http://forum.ponics.ru/imagehost/?v=imag0099njn.jpg”&gt;&lt;img src=”http://forum.ponics.ru/imagehost/thumbs/imag0099njn.jpg” border=”0”&gt;&lt;/a&gt;</p>
+</blockquote>
+
+<p>Дмитрий!</p>
+
+<p>Классное фото и тотамик красавец $) Мне бы такие и по скорее :-[ Вид из окна прикольный томатик растет над 9ти этажкой :P Вы на каком этаже живете?</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 18-04-2011</p>
+
+<p>17этаж</p>
+
+<p><strong>Олеганос</strong> 22-04-2011</p>
+
+<p>:o фига се вы “кулибины”! Афанареть!</p>
+
+<p>Минвата для выращивания растений - :-X должна быть специальной!!!</p>
+
+<p>Строительную вату использовать КРАЙНЕ не желательно.</p>
+
+<p>РН воды она может и не поменяет, но какой нибудь фенол в себе содержать - это запросто :(</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 22-04-2011</p>
+
+<p>фенол закисляет воду так что это сразу заметно ! по сути это ж кислота или что то в этом роде ! если что не так поправьте меня</p>
+
+<p><strong>Олеганос</strong> 22-04-2011</p>
+
+<p>:-\я х.з. закисляет он или нет… надо Valery спросить.</p>
+
+<p>Но вредный - очень, этот фенол :(.</p>
+
+<p>Нужно применять нормальные ваты ;)</p>
+
+<p><strong>ALadin</strong> 22-04-2011</p>
+
+<p>Да вреден не только сам формальдегид, а еще вредна и пыль, которая образуется при “потрошении” строительной мин. ваты.</p>
+
+<p><strong>Олеганос</strong> 23-04-2011</p>
+
+<p>короче …</p>
+
+<p>Дмитрий, не вздумай кушать, то что выросло! :-\</p>
+
+<p>Отдай все нуждающимся!!!</p>
+
+<p>Заодно посмотришь : перестали они после твого “подгона” нуждаться или еще нет ;D</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 24-04-2011</p>
+
+<p>;D</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

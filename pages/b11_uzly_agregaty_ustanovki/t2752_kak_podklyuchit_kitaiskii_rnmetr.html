@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Как подключить китайский рН-метр? | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Как подключить китайский рН-метр?">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Как подключить китайский рН-метр?</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>serge mat</strong> 01-11-2017</p>
+
+<p>Купил на алиэкспрессе рН-метр.</p>
+
+<p><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/22894123_2024421504455606_1623898933650044895_n.jpg?oh=07c8e944103aa458fe102e89d8c065ea&amp;oe=5A72EB5F" alt="" /><img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/22893977_2024421517788938_9087116497934870866_n.jpg?oh=0b0b9853e47a3e7d660857cfe2747e5e&amp;oe=5AA3EC0D" alt="" /></p>
+
+<p>Теперь не знаю, как его подключить. У датчика 6 пинов. Я смог догадаться, что V+ - это для подачи питания, в инструкции сказано, 5V. Два пина G, как я догадываюсь, это общий. Остаются еще три: To, Do, Po. Кто из них кто?</p>
+
+<p>Приводится скетч для ардуино, там указано только:</p>
+
+<p>[code]#define SensorPin 0 //pH meter Analog output to Arduino Analog Input 0[/code]</p>
+
+<p>А что именно надо подключить к этому пину не сказано. Зато в конце скетча есть такой момент:</p>
+
+<p>[code]digitalWrite(13, HIGH);</p>
+
+<p>delay(800);</p>
+
+<p>digitalWrite(13, LOW);[/code]</p>
+
+<p>Это они для примера, что можно делать что-то еще?</p>
+
+<p>Это о том, что между измерениями должно быть не меньше 0,8 секунды?</p>
+
+<p>Или еще один пин надо задействовать на вход?</p>
+
+<p>Может кто знает…</p>
+
+<p>Инструкцию на китайском прикладываю.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18849" target="_blank">б-+·¬ъ¦ч+Lб¬Ardunio PH+л¬¦¦ўT¦+ў¦щ.pdf</a></p>
+
+<p><strong>allex_step</strong> 01-11-2017</p>
+
+<p>[size=1em]P0 - аналоговый вход[/size]</p>
+
+<p>[font=verdana][size=1em]T0 - TempComp1 (NC)[/size][/font]</p>
+
+<p>[font=verdana][size=1em]D0 - TempComp2 (NC)[/size][/font]</p>
+
+<p><a href="http://iarduino.ru/shop/Sensory-Datchiki/datchik-kislotnosti-zhidkosti-rn-metr.html" target="_blank">http://iarduino.ru/shop/Sensory-Datchiki/datchik-kislotnosti-zhidkosti-rn-metr.html</a></p>
+
+<p><strong>veresk</strong> 01-11-2017</p>
+
+<p>Po аналоговый выход PH</p>
+
+<p>To тепрературный выход</p>
+
+<p>Do это как сигнализация о том что пш достиг установленного уровня.</p>
+
+<p><em>**</em> 01-11-2017</p>
+
+<p>Воооо! У меня такой-же.))</p>
+
+<p>Держи: https://forum.arduino.cc/index.php?topic=336012.0</p>
+
+<p>И не благодари.</p>
+
+<p>В статье все интуитивно понятно, если в английском не силен.</p>
+
+<p>Сия шилда имеет инвертированое вычисление(измерение?).</p>
+
+<p>Нормально работает.</p>
+
+<p><strong>serge mat</strong> 01-11-2017</p>
+
+<p>Спасибо, стало понятно.</p>
+
+<blockquote>
+  <p>To тепрературный выход</p>
+</blockquote>
+
+<p>Температуру тоже можно им замерять? Кто-нибудь пробовал?</p>
+
+<p><strong>Vad</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>А что именно надо подключить к этому пину не сказано. Зато в конце скетча есть такой момент:</p>
+
+  <p>[code]digitalWrite(13, HIGH);</p>
+
+  <p>delay(800);</p>
+
+  <p>digitalWrite(13, LOW);[/code]</p>
+
+  <p>Это они для примера, что можно делать что-то еще?</p>
+
+  <p>Это о том, что между измерениями должно быть не меньше 0,8 секунды?</p>
+</blockquote>
+
+<p>это лампочкоймигайка..</p>
+
+<p>на 13 пине висит светодиод ))</p>
+
+<p><strong>Vad</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>Температуру тоже можно им замерять? Кто-нибудь пробовал?</p>
+</blockquote>
+
+<p>конечно пробовали ))</p>
+
+<p>он немедленно начнет показывать температуру(причем, не земную а на марсе!)</p>
+
+<p>как только вы его сунете в рабочую емкость… с раствором..</p>
+
+<p>а не в стаканчике… ;)</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 01-11-2017</p>
+
+<p>Подтверждаю. Температуру на этом шилде не смог ещё измерить никто..</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>[size=1em]P0 - аналоговый вход[/size]</p>
+
+  <p>[font=verdana][size=1em]T0 - TempComp1 (NC)[/size][/font]</p>
+
+  <p>[font=verdana][size=1em]D0 - TempComp2 (NC)[/size][/font]</p>
+
+  <p><a href="http://iarduino.ru/shop/Sensory-Datchiki/datchik-kislotnosti-zhidkosti-rn-metr.html" target="_blank">http://iarduino.ru/shop/Sensory-Datchiki/datchik-kislotnosti-zhidkosti-rn-metr.html</a></p>
+</blockquote>
+
+<p>Немножко не та шилда. При использовании скетча по ссылке - топикастера ждёт сюрприз)</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 01-11-2017</p>
+
+<p>Датчик температуры отдельный ставьте на ардуину. Типа ds18b20. Опираться в вычислениях на него сможете для всех устройств, которым нужна поправка на температуру.</p>
+
+<p><strong>Vad</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>Подтверждаю. Температуру на этом шилде не смог ещё измерить никто..</p>
+</blockquote>
+
+<p>да я не про температуру.. вообще то )</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 01-11-2017</p>
+
+<p>:D</p>
+
+<p><em>**</em> 01-11-2017</p>
+
+<p>Ну ваще мощно для домашней установки систему измерений делать. Не, ну я понимаю у Сива тыща литров раствора за день поглощают полтора огурца.. а остальным то зачем?</p>
+
+<p>Для теплички эти агрегаты - в самый раз.</p>
+
+<p>И вообще -</p>
+
+<p>“Домашний сад” рулит!!!))</p>
+
+<p><strong>serge mat</strong> 02-11-2017</p>
+
+<p>Любопытно, но у меня оказалась слишком низкой чувствительность. Мне пришлось внести коэффициент 2,236.</p>
+
+<p>То есть если электрод показывает изменение рН на одну единицу, то на самом деле произошло изменение на две единицы с лишним!</p>
+
+<p>[code]const float k=2.236;</p>
+
+<p>float f;</p>
+
+<p>int Po = 1023-analogRead (pHpin);</p>
+
+<p>f = (float) Po;</p>
+
+<p>f <em>= k</em>14./1023.;</p>
+
+<p>[/code]</p>
+
+<p><strong>Vad</strong> 02-11-2017</p>
+
+<p>нужно взять две точки ~2 и ~10</p>
+
+<p>запомнить значение ацп… а внутри интерполяция..</p>
+
+<p>и все <em>???</em></p>
+
+<p>делается в 1 строчку ..</p>
+
+<p><strong>serge mat</strong> 02-11-2017</p>
+
+<blockquote>
+  <p>нужно взять две точки ~2 и ~10</p>
+
+  <p>запомнить значение ацп… а внутри интерполяция..</p>
+
+  <p>и все <em>???</em></p>
+
+  <p>делается в 1 строчку ..</p>
+</blockquote>
+
+<p>Не вопрос!</p>
+
+<p>Просто во всех текстах ни слова не было про коэффициент…</p>
+
+<p><strong>Vad</strong> 02-11-2017</p>
+
+<p>а нафиг он нужен.. если все само случится..</p>
+
+<p>просто “натянется” диапазон значений АЦП на pH… и все.. никаких коэффициентов.. блин..</p>
+
+<p>понавыдумывают.. потом голову ломают :D</p>
+
+<p><strong>serge mat</strong> 02-11-2017</p>
+
+<blockquote>
+  <p>а нафиг он нужен.. если все само случится..</p>
+
+  <p>просто “натянется” диапазон значений АЦП на pH… и все.. никаких коэффициентов.. блин..</p>
+
+  <p>понавыдумывают.. потом голову ломают :D</p>
+</blockquote>
+
+<p>Видимо я не правильно объяснил.</p>
+
+<p>Если я беру значение АЦП и натягиваю на диапазон от 0 до 14, то получается фигня.</p>
+
+<p>Надо после этого действия еще умножить на коэффициент, подобранный вручную.</p>
+
+<p>Иначе говоря, диапазон получается от 0 до 32 примерно…</p>
+
+<p>Вроде вот так, с коэффициентом показывает что-то похожее на правду.</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 02-11-2017</p>
+
+<p>Po = (1023 - analogRead(pHpin)) / 73.07;</p>
+
+<p>Не вставляет? :)</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 02-11-2017</p>
+
+<p>Вообще, Вад правильно написал, ограничивай диапазон, а внутри интерполяция. Ибо линейность этого ph-метра такая прям линейнооость.. <em>Dance</em></p>
+
+<p>Тут где-то уже обоссывалась эта тема.</p>
+
+<p><strong>Cyclamech</strong> 02-11-2017</p>
+
+<blockquote>
+  <p>Po = (1023 - analogRead(pHpin)) / 73.07;</p>
+</blockquote>
+
+<p>Шикарный код! В “лучших традициях”! Пеши исчо! <em>8)</em></p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 02-11-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Po = (1023 - analogRead(pHpin)) / 73.07;</p>
+  </blockquote>
+
+  <p>Шикарный код! В “лучших традициях”! Пеши исчо! <em>8)</em></p>
+</blockquote>
+
+<p>:D</p>
+
+<p><strong>unclef1</strong> 08-12-2017</p>
+
+<p>Протестировал такой. Ниже 3 х вольт по выходу не дает. А так реагирует на разные растворы. Чувствительный даже к дыханию на плату. Собрал свою схему. Совместил с измерением EC. Что по выходу у этой платы должно быть?</p>
+
+<p><strong>java</strong> 07-04-2019</p>
+
+<p>Всем привет!</p>
+
+<p>Столкнулся с очень странной проблемой. по таблице рН 4 соответствует 1,14 вольт а рН 10 соответственно 2,86. (аналоговый вход на pin)</p>
+
+<p>У моего датчика всё наоборот. И поэтому когда я отпускаю датчик в раствор с рН 4 он показывает 10, а когда в рН 10 то показывает 4. Как можно конвертировать вход с датчика?</p>
+
+<p>void readPH() /<em>–(Subroutine, reads current value of pH Meter)——————————————–</em>/</p>
+
+<p>{</p>
+
+<p>for(int i=0; i&lt;10; i++) //получите 10 значений выборки от датчика, чтобы сгладить</p>
+
+<p>// значение</p>
+
+<p>{</p>
+
+<p>pHavg = analogRead(pHpin); //получите чтение от датчика ПЭ-аш и положите в массив</p>
+
+<p>delay(10); //короткая задержка между показаниями</p>
+
+<p>}</p>
+
+<p>for(int i=0; i&lt;9; i++) //сортировка аналоговых значений от малых до больших</p>
+
+<p>{</p>
+
+<p>for(int j=i+1; j&lt;10; j++)</p>
+
+<p>{</p>
+
+<p>if(pHavg &gt; pHavg[j]) //если значение” i “массива больше значения” j</p>
+
+<p>{</p>
+
+<p>temp = pHavg; //присвоить” i “ временной переменной</p>
+
+<p>pHavg = pHavg[j]; //переключить” j “в положение” i”</p>
+
+<p>pHavg[j] = temp; //переключить” i “в положение” j”</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>avgValue = 0;</p>
+
+<p>for(int i=2; i&lt;8; i++) //возьмите значение всего 6 значений Центрального массива</p>
+
+<p>{</p>
+
+<p>avgValue += pHavg; //get total</p>
+
+<p>}</p>
+
+<p>pHvalue = (float)avgValue*5.0/1024/6; //сопоставьте аналог (0-1023) с милливольтом (0-5)..</p>
+
+<p>// деление на 6 в среднем</p>
+
+<p>if (negative == 0) //если смещение положительное… см. раздел подпрограмма</p>
+
+<p>// калибровки.. отрицательный инициализируется как 0</p>
+
+<p>{</p>
+
+<p>pHvalue = (slope<em>3.5</em>pHvalue + offset + offset2); //преобразуйте милливольт в значение ПЭ-аш, с</p>
+
+<p>// положительными смещением и наклоном от</p>
+
+<p>// калибровки</p>
+
+<p>}</p>
+
+<p>else</p>
+
+<p>{</p>
+
+<p>pHvalue = (slope<em>3.5</em>pHvalue - offset + offset2); //преобразуйте милливольт в значение pH с</p>
+
+<p>// отрицательным смещением и наклоном от калибровки</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p><strong>siv237</strong> 08-04-2019</p>
+
+<p>просто 1023 отнять то что на с ацп идет не подойдет?</p>
+
+<p>avgValue=1023-avgValue</p>
+
+<p><strong>java</strong> 17-04-2019</p>
+
+<p>Нет, пробовал уже по всякому, если изменять эту величину, начинает писать рН -230, или 40, и перестаёт вобще реагировать. Заказал у китайцев другой датчик. ну не должно быть напряжение с датчика наооборот.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

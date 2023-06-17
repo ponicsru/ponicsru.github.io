@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Фильтр обратного осмоса | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Фильтр обратного осмоса">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Фильтр обратного осмоса</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>mdima</strong> 05-05-2009</p>
+
+<p>Тестирование этого фильтра:</p>
+
+<p><img src="http://ecounit.com.ua/public/goods/200/11283_7546_mini000.jpg" alt="" /></p>
+
+<p>кто не читал, рекомендую: <a href="http://www.ponics.ru/2009/04/filter_rodnik" target="_blank">http://www.ponics.ru/2009/04/filter_rodnik</a></p>
+
+<p>Вода из под крана</p>
+
+<p>243-246 ppm (мг/л)</p>
+
+<p>Отбор воды после фильтра порциями по - 30 мл (приблизительно)</p>
+
+<p>№ порции минерализация ppm (мг/л)</p>
+
+<p>1я порция - 26</p>
+
+<p>2я порция - 14</p>
+
+<p>3-я - 10</p>
+
+<p>4-я - 8</p>
+
+<p>5-я - 7</p>
+
+<p>6-я - 6</p>
+
+<p>7-я - 5</p>
+
+<p>8-я - 5</p>
+
+<p>9-я - 4</p>
+
+<p>10-я - 4</p>
+
+<p>11-я - 4</p>
+
+<p><strong>Mole_Garden</strong> 05-05-2009</p>
+
+<p>к плюсам бы отнес компактность, мобильность, простоту установки и замены комплектующих.</p>
+
+<p>На мой взгляд отличный девайс, правда у меня его пока нет :D</p>
+
+<p><strong>koval.sergei</strong> 12-05-2010</p>
+
+<p>Обратный осмос.</p>
+
+<p>Кто нибудь сталкивался с этим аппаратом.</p>
+
+<p><strong>Mole_Garden</strong> 12-05-2010</p>
+
+<blockquote>
+  <p>Обратный осмос.</p>
+
+  <p>Кто нибудь сталкивался с этим аппаратом.</p>
+</blockquote>
+
+<p>Да, а что интересует?</p>
+
+<p><strong>koval.sergei</strong> 12-05-2010</p>
+
+<p>Какой подешевле и по качеству в работе, у меня водичка сам понимаешь 1200ррм.</p>
+
+<p><strong>Mole_Garden</strong> 12-05-2010</p>
+
+<blockquote>
+  <p>Какой подешевле и по качеству в работе, у меня водичка сам понимаешь 1200ррм.</p>
+</blockquote>
+
+<p>Смотря для каких объемов воды.</p>
+
+<p><strong>koval.sergei</strong> 12-05-2010</p>
+
+<p>В сутки 100л-200л.</p>
+
+<p><strong>Олеганос</strong> 26-05-2010</p>
+
+<p>Серега, твое л.с. прочитал… ;)</p>
+
+<p>По поводу фильтра че тебе сказать… штука путная - базара нет 8).</p>
+
+<p>Себе приобрел зимой “Атолл -5400р”.</p>
+
+<p>Более производительнее и по доступной цене, на тот момент найти не удалось ни чего.</p>
+
+<p>Качеством очистки доволен вполне. Вода на входе 350-450. На выходе - 1- 1,5!</p>
+
+<p>Хотя… заявленая производительность - не что иное как пиар :D</p>
+
+<p>Заявленая 850 литров в час/ реальная же - 1,5 -2 литра в минуту. :-X</p>
+
+<p><strong>Садовник</strong> 26-05-2010</p>
+
+<blockquote>
+  <p>Какой подешевле и по качеству в работе, у меня водичка сам понимаешь 1200ррм.</p>
+</blockquote>
+
+<p>Ты можешь сам собрать систему из компонентов, которые продаются в строительных гипермаркетах, или по и-нету заказать.</p>
+
+<p>Нужно:</p>
+
+<ul>
+  <li>
+    <p>RO мембрана + корпус, или несколько, в зависимости от нужной производительности;</p>
+  </li>
+  <li>
+    <p>насос повышения давления;</p>
+  </li>
+  <li>
+    <p>бак для готовой воды;</p>
+  </li>
+  <li>
+    <p>поплавковый выключатель в бак;</p>
+  </li>
+  <li>
+    <p>фильтр предварительной грубой очистки;</p>
+  </li>
+  <li>
+    <p>трубки и краники.</p>
+  </li>
+</ul>
+
+<p>Выйдет дешевле атолла, при большей производительности. :)</p>
+
+<p>При работе на 20% очищенной воды 80% “рассола” идет в канализацию.</p>
+
+<p><strong>koval.sergei</strong> 26-05-2010</p>
+
+<p>Тогда что нибудь придумаем.</p>
+
+<p><strong>Олеганос</strong> 27-05-2010</p>
+
+<p>…да и еще один момент, Сергей…</p>
+
+<p>Тута в инструкции по фильтру интересная весч написана :</p>
+
+<p>ТРЕБОВАНИЯ К ПОДАВАЕМОЙ ВОДЕ.</p>
+
+<p>Так вот согласно им : минерализация ее должна быть не более 600мг/л!!!</p>
+
+<p>А у тя, Серый, -1200, если не ошибаюсь…</p>
+
+<p>В таких случаях производитель рекомендует устанавливать перед фильтром дополнительную систему водоподготовки. О составе которой лучше всего проконсультироваться со специалистами фирмы продавца :D</p>
+
+<p><strong>Олеганос</strong> 27-05-2010</p>
+
+<blockquote>
+  <p>Ты можешь сам собрать систему из компонентов, которые продаются в строительных гипермаркетах, или по и-нету заказать.</p>
+
+  <p>Нужно:</p>
+
+  <ul>
+    <li>
+      <p>RO мембрана + корпус, или несколько, в зависимости от нужной производительности;</p>
+    </li>
+    <li>
+      <p>насос повышения давления;</p>
+    </li>
+    <li>
+      <p>бак для готовой воды;</p>
+    </li>
+    <li>
+      <p>поплавковый выключатель в бак;</p>
+    </li>
+    <li>
+      <p>фильтр предварительной грубой очистки;</p>
+    </li>
+    <li>
+      <p>трубки и краники.</p>
+    </li>
+  </ul>
+
+  <p>Выйдет дешевле атолла, при большей производительности. :)</p>
+
+  <p>При работе на 20% очищенной воды 80% “рассола” идет в канализацию.</p>
+</blockquote>
+
+<p>Вот это очень интересно, да и полезно наверное будет очень многим.</p>
+
+<p>На мой взгляд неплохо было бы создать отдельную тему “изготовление обратно - осмотического фильтра своими руками”, и в ней делиться наработками если у кого есть таковые.</p>
+
+<p>Вообще если я правильно понял суть этого нагромождения всевозможных приблуд, то на срок службы его мембран очень влияет качество предочистки воды.</p>
+
+<p>Вот с этого нужно и начинать :)</p>
+
+<p><strong>цветовод</strong> 28-05-2010</p>
+
+<p>У меня с фильтром уже неделю спец колдует, а обещанных 2,5 куба всё нет и нет. &gt;:( Он и насосы менял и предочистку тоже, а воз и ныне там (1 куб). ???</p>
+
+<p><strong>Олеганос</strong> 28-05-2010</p>
+
+<p>нуу… куб это шикарно :)</p>
+
+<p>в час куб?</p>
+
+<p><strong>цветовод</strong> 28-05-2010</p>
+
+<p>В сутки.</p>
+
+<p><strong>koval.sergei</strong> 28-05-2010</p>
+
+<p>Согласен, что темку такую забацать нужно. Подольше фоток и где кто покупал и как делал.</p>
+
+<p><strong>Mole_Garden</strong> 28-05-2010</p>
+
+<blockquote>
+  <p>У меня с фильтром уже неделю спец колдует, а обещанных 2,5 куба всё нет и нет. &gt;:( Он и насосы менял и предочистку тоже, а воз и ныне там (1 куб). ???</p>
+</blockquote>
+
+<p>Вот так, как всегда обещают горы, а в результате - маленький холмик. :D</p>
+
+<p><strong>Олеганос</strong> 28-05-2010</p>
+
+<p>В сутки мой поболее пропускает…</p>
+
+<p>мембран добавлять не планируете?</p>
+
+<p><strong>цветовод</strong> 28-05-2010</p>
+
+<p>Я в этом ещё только пытаюсь разобраться.</p>
+
+<p><strong>Олеганос</strong> 28-05-2010</p>
+
+<p>…я насколько понял, производительность фильтра напрямую зависит от количества мембран в нем ???</p>
+
+<p>Мембраны энти подсоединяют паралельно, после пред-очистки.</p>
+
+<p>Образно мембрану можно представить в виде иголки от шрица… если к концу поливочного шланга присоеденить такую иголку- напор из нее будет маленьким, но если присобачить две или три, то и струи получится уже две или три, т.е. воды пройдет через них втрое больше.</p>
+
+<p>Если же поставить десять иголок - то получится уже почти что душ :D</p>
+
+<p>Так же и в фильтре: больше мембран- больше суммарный расход воды через них</p>
+
+<p><strong>Садовник</strong> 28-05-2010</p>
+
+<blockquote>
+  <p>…я насколько понял, производительность фильтра напрямую зависит от количества мембран в нем ???</p>
+
+  <p>Мембраны энти подсоединяют паралельно, после пред-очистки.</p>
+
+  <p>Образно мембрану можно представить в виде иголки от шрица… если к концу поливочного шланга присоеденить такую иголку- напор из нее будет маленьким, но если присобачить две или три, то и струи получится уже две или три, т.е. воды пройдет через них втрое больше.</p>
+
+  <p>Если же поставить десять иголок - то получится уже почти что душ :D</p>
+
+  <p>Так же и в фильтре: больше мембран- больше суммарный расход воды через них</p>
+</blockquote>
+
+<p>Совершенно верно. Или больше саму мембрану, или их количество. Пропускная способность всх остальных префильтров и прочего по сравнению с мембраной гораздо выше и не лимитирует установку.</p>
+
+<p><strong>Олеганос</strong> 28-05-2010</p>
+
+<p>А щас сколько мембран в фильтре , который налаживаете?</p>
+
+<p><strong>цветовод</strong> 28-05-2010</p>
+
+<p>Всё выглядит вот так:</p>
+
+<p><a href="http://s2.postimage.org/hftf0.jpg" target="_blank"><img src="http://s2.postimage.org/hftf0.jpg" alt="" /></a></p>
+
+<p>Осмос изнутри:</p>
+
+<p><a href="http://s1.postimage.org/nZSp0.jpg" target="_blank"><img src="http://s1.postimage.org/nZSp0.jpg" alt="" /></a></p>
+
+<p>Насос:</p>
+
+<p><a href="http://s4.postimage.org/zpt40.jpg" target="_blank"><img src="http://s4.postimage.org/zpt40.jpg" alt="" /></a></p>
+
+<p>Мембраны соеденены последовательно.</p>
+
+<p><strong>Олеганос</strong> 28-05-2010</p>
+
+<p>епт! :o</p>
+
+<p>Как последовательно? Паралельно они должны соединяться по идее то???</p>
+
+<p><strong>цветовод</strong> 28-05-2010</p>
+
+<p>Х. З. я с фильтром сталкиваюсь первый раз, сборка заводская, а соединял “спец” ( торгует он фильтрами у нас в городе).</p>
+
+<p><strong>Олеганос</strong> 28-05-2010</p>
+
+<p>Сам подумай: мембрана пропускает тока молекулы воды - так? ;)</p>
+
+<p>Тогда нафига молекулы воды опять же пропускать потом еще через две мембраны? Парадокс!</p>
+
+<p>Ошибка по видимому вкралась тут.</p>
+
+<p><strong>цветовод</strong> 28-05-2010</p>
+
+<p>Если соединить параллельно, то выход увеличится?</p>
+
+<p>А рассола станет больше в процентах? Вторая мембрана пропускает через себя именно рассол.</p>
+
+<p><strong>Mole_Garden</strong> 28-05-2010</p>
+
+<blockquote>
+  <p>Если соединить параллельно, то выход увеличится?</p>
+
+  <p>А рассола станет больше в процентах? Вторая мембрана пропускает через себя именно рассол.</p>
+</blockquote>
+
+<p>Сдается мне Олег дело говорит, если последовательно то это получается как паровозик. Если открыты только первая и последняя дверь, в начале состава и в конце, то всем людям придется очень долго выходить. Если же в паровозе получается, что двери открыты с боков на вход и выход, то люди из поезда очень быстро выйдут. Да и зачем очищать воду еще раз если она уже очищена?</p>
+
+<p><strong>Олеганос</strong> 28-05-2010</p>
+
+<p>Вот же только писали , читаем внимательней, Цветовод:</p>
+
+<p><a href="http://forum.ponics.ru/index.php/topic,67.msg16952.html#msg16952" target="_blank">http://forum.ponics.ru/index.php/topic,67.msg16952.html#msg16952</a></p>
+
+<p>Рассол , как вы выражаетесь, - это есть вода которая через мембрану не пролазит! условно грязная, она выбрасывается в канашку не проходя через мембраны!</p>
+
+<p>Кстати эту воду можно применять для полива огорода или мытья посуды там… машины - кто по счетчику если платит. ;)</p>
+
+<p><strong>Садовник</strong> 28-05-2010</p>
+
+<p>Упс. Кстати да. :-\</p>
+
+<p>Посмотрел на своём фильтре - соеденены последовательно.</p>
+
+<p>То есть после первой мембраны чистая вода идет в трубку чистой воды, а рассол - на вторую мембрану. У меня 2 мембраны, производительность где - то 60 литров в час.</p>
+
+<p>И там есть еще клапан повтора цикла. То есть рассол можно ещё пропускать через те же мембраны и он будет фильтроваться.</p>
+
+<p>Видимо тут аналогия с поездом не подходит. :) Есть особенности работы РО-мембраны.</p>
+
+<p>Честно говоря в подробности не вдавался, работает и пусть работает :)</p>
+
+<p>Если узнаю - отпишусь.</p>
+
+<p><strong>Олеганос</strong> 06-06-2010</p>
+
+<p>че там есть какие новости с со сборкой фильтра -то? ;)</p>
+
+<p><strong>koval.sergei</strong> 06-06-2010</p>
+
+<p>Олеганос, пока неть, решил простенький купить и разобрать и пощупать так сказать :-[</p>
+
+<p><strong>Олеганос</strong> 07-06-2010</p>
+
+<p>технологию украсть вобщем :-\</p>
+
+<p><strong>kil</strong> 07-06-2010</p>
+
+<blockquote>
+  <p>Мембраны соеденены последовательно.</p>
+</blockquote>
+
+<p>Вовсе нет. Мембраны содержатся в двух нижних тубусах, у них характерная крышка “под спецключ”. Каждый тубус с мембраной имеет три коннектора - в один вода входит, из другого уходит рассол, а из третьего - отфильтрованная осмотическая вода. Если подключать входы последующих тубусов с мембраной к “рассольному” выходу предыдущих, то и получится параллельное подключение мембран. Дело в том, что мембраны для работы требуют давления весьма большего, чем водопроводное. И при малой производительности выгоднее такое подключение, чтобы не терять давление…</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

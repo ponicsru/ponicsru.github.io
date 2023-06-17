@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Салат, Aero vs Земля. Закончен. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Салат, Aero vs Земля. Закончен.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Салат, Aero vs Земля. Закончен.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>imba</strong> 10-03-2010</p>
+
+<p>Всем Привет.</p>
+
+<p>Ну, решил заморочится и сделать рэпорт.</p>
+
+<p>Итак, 8,03,10 были замочены 23 миеральные пробки по 3 пассажира в каждой.</p>
+
+<p>Сорт,их два для наглядности это:</p>
+
+<p><a href="http://s2.postimage.org/EhsmA.jpg" target="_blank"><img src="http://s2.postimage.org/EhsmA.jpg" alt="" /></a></p>
+
+<p>В землю были посажены раньше 07,03,10. Фото будут завтра.</p>
+
+<p><strong>mdima</strong> 10-03-2010</p>
+
+<p>Ждем!</p>
+
+<p><strong>rastoman</strong> 10-03-2010</p>
+
+<p>И пакет металезированный и стоит 4 рубля(я ведь правильно понял?) 8)</p>
+
+<p><strong>imba</strong> 13-03-2010</p>
+
+<p>Всем hi.</p>
+
+<p>На сегодня мой салат выглядит так.. (дата 12,03,10)</p>
+
+<p><a href="http://s1.postimage.org/P7NrS.jpg" target="_blank"><img src="http://s1.postimage.org/P7NrS.jpg" alt="" /></a></p>
+
+<p>Пассажиры замочены на простой воде, завтра пересадка в aero, обратите внимание на первые 2 ряда на кассете, это сорт НОВОГДНИЙ, как видим хуже вышел, чем МОСКОВСКИЙ ПАРНИКОВЫЙ, он 3,4 ряд по вертикали.</p>
+
+<p>Ну и конечно фото конкурентов - земля:</p>
+
+<p><a href="http://s1.postimage.org/P8CPS.jpg" target="_blank"><img src="http://s1.postimage.org/P8CPS.jpg" alt="" /></a></p>
+
+<p>Подробности позже.</p>
+
+<p><strong>kossmos</strong> 13-03-2010</p>
+
+<p>Я читаю, продолжай ;)</p>
+
+<p><strong>imba</strong> 14-03-2010</p>
+
+<p>Итак, 14,03,10 числа т.е. вчера пробки были помещены в AeroFlo 14</p>
+
+<p><a href="http://s3.postimage.org/CoGPi.jpg" target="_blank"><img src="http://s3.postimage.org/CoGPi.jpg" alt="" /></a></p>
+
+<p>Прошли сутки как она работает на чистой воде, пора мутить раствор ;)На вашем сайте любезно предоставили такой рецепт NPK-200-80-200. Окей,если у меня Флора Сериес, то треть дозы будет выглядить так, все компоненты (их 3) по 0,7мл/л в пересчете на NPK-это 58-23-79. P.H. буду держать в пределах 6,0,</p>
+
+<p><strong>Mole_Garden</strong> 14-03-2010</p>
+
+<p>Есть еще один вариант раствора для салата, хотя их думаю просто безумное количество, но все же может будет интересно</p>
+
+<p><a href="http://forum.ponics.ru/index.php/topic,336.msg13842.html#msg13842" target="_blank">http://forum.ponics.ru/index.php/topic,336.msg13842.html#msg13842</a></p>
+
+<p>Знакомая установочка, а не растилась ли в ней зелень(петрушка, укроп и еще что-то), осенью примерно или прошлой весной? :D</p>
+
+<p><strong>imba</strong> 14-03-2010</p>
+
+<p>Насчет 2 варианта, почти такой же, да и я в 1 все примерно сделал, главное не борщить.</p>
+
+<p>По-поводу зелени (укропа, петрушки) я не растил, может с кем спутал, возможно с ega. Но если я не ошибаюсь, он немножко с другого ресурса :-X</p>
+
+<p><strong>Mole_Garden</strong> 14-03-2010</p>
+
+<blockquote>
+  <p>По-поводу зелени (укропа, петрушки) я не растил, может с кем спутал, возможно с ega.</p>
+</blockquote>
+
+<p>Ну возможно и ega, просто установка очень похожа и тепличка чем то тоже похожа :D Ни суть. Продолжаем наблюдать!</p>
+
+<p><strong>imba</strong> 14-03-2010</p>
+
+<p>Сегодня приехав в тепличку увидел , что некоторые ростки упали т.к. на них сильно херачили форсунки, а керамзита мало насыпал. Пришлось через таймер полив поменять 30/30 херачит/отдых ну и добавил компрессор, хуже точно не будет.</p>
+
+<p>Итак, условия такие есть тепличка темп. 28/14 д/н, сольнца мало, да прохладно еще, напомню, что я на Урале со всеми вытекающими.</p>
+
+<p><strong>imba</strong> 26-04-2010</p>
+
+<p>Привет всем.</p>
+
+<p>Запоздалый отчет, как говориться лучше поздно, чем никогда.</p>
+
+<p>Итак 16,03</p>
+
+<p><a href="http://s3.postimage.org/332cS.jpg" target="_blank"><img src="http://s3.postimage.org/332cS.jpg" alt="" /></a></p>
+
+<p>22,03</p>
+
+<p><a href="http://s1.postimage.org/sEQLA.jpg" target="_blank"><img src="http://s1.postimage.org/sEQLA.jpg" alt="" /></a></p>
+
+<p>Различий немного, поздний старт-свойственно для гидропона, смотрим дальше:</p>
+
+<p>1,04</p>
+
+<p><a href="http://s4.postimage.org/KM630.jpg" target="_blank"><img src="http://s4.postimage.org/KM630.jpg" alt="" /></a>Сорт Новогодний.</p>
+
+<p><a href="http://s4.postimage.org/KMdxr.jpg" target="_blank"><img src="http://s4.postimage.org/KMdxr.jpg" alt="" /></a>Сорт Московский парниковый.</p>
+
+<p>07,04 Залил на 30литровый бак Микры и Блума по 35мл (1,16мл/л). Поехали дальше:</p>
+
+<p>13,04</p>
+
+<p><a href="http://s2.postimage.org/oHu29.jpg" target="_blank"><img src="http://s2.postimage.org/oHu29.jpg" alt="" /></a> Общий вид.</p>
+
+<p><a href="http://s2.postimage.org/oIyo0.jpg" target="_blank"><img src="http://s2.postimage.org/oIyo0.jpg" alt="" /></a> Новогодний.</p>
+
+<p><a href="http://s3.postimage.org/365gS.jpg" target="_blank"><img src="http://s3.postimage.org/365gS.jpg" alt="" /></a> Земля Московсий парниковый.</p>
+
+<p>Всё остальное завтра.</p>
+
+<p><strong>Mole_Garden</strong> 27-04-2010</p>
+
+<p>Ну что же, очень хорошо, отличный салат за хорошее время. 8)</p>
+
+<p><strong>imba</strong> 27-04-2010</p>
+
+<p>Ну, что можно сказать, разница конечно есть, по времени примерно на 15 % Аеро опережает землю, плюс никаких заморочек (месяц ничего не делал), по весу в среднем с каждого пасадочного места 250г (заменяет ряд салата на земле т.е. экономичнее места), если заметили то доза примерна половина от рекомендуемой (хотел полную, но таки ни успел ну и фиг с ней). Далее по сортам Отлично зарекомендовал себя Новогодний (кудрявый) на картинке вроде не кудрявый, есть еще один новогодний от другого производителя (пачка бумажная) тот ваще другой листовой и он не очень. Московский парниковый хоть хорошо развивался, но он какой то дубовый огромный, а вкусовые качества не очень (горчит). Дубачек плохо развивался видимо к температуре привередлив, когда прохладно тихо растет, когда жарко его размазывает по грядке.</p>
+
+<p>К примеру у нас отказались брать все кроме Новогднего т.к. клиенты все другие сорта не брали (или брали, но плохо), вот вам и узал на своем опыте ;)</p>
+
+<p>Забыл сказать кило в апреле у нас принимают за 120 р. сами реализаторы накидывают еще столько же т.е. 240р обьясняют малым сроком хранения. Всем удачи, дальше больше огурец на DWC.</p>
+
+<p><strong>Mole_Garden</strong> 27-04-2010</p>
+
+<p>8)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

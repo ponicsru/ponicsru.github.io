@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Дом Перцев | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Дом Перцев">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Дом Перцев</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>zorx</strong> 12-04-2014</p>
+
+<p>&gt;:D &gt;:D &gt;:D</p>
+
+<p>Основное - перцы на минвате Гродан (Халапеньо, Поблано, Aji Fantasy, Bolivian Rainbow) семена Fatalii. Полив каплей.</p>
+
+<p>Неосновное:</p>
+
+<p>Торфогрунт - перцы Халапеньо (взял из приправы семена), и какой-то сокол из ОБИ на бонсай.</p>
+
+<ul>
+  <li>ореган, мелисса.</li>
+</ul>
+
+<p>Вермикулит - мандарин, мята.</p>
+
+<p>Периодика: сокол, халапеньо.</p>
+
+<p>Тазик с раствором: кинза, базилик, была руккола.</p>
+
+<p>Светокультура - 16ч день. 400Вт днат. Раствор - перцы по-голландски. Потом рецепт найду - добавлю.</p>
+
+<p>Поливаю все одним раствором разной концентрации. Раствор из солей мешаю.</p>
+
+<p>Много всего на этом форуме прочитано было, так что всем спасибо за информацию. Первый раз вообще что-то выращиваю.</p>
+
+<p>Территориально - Санкт-Петербург.</p>
+
+<p><strong>zorx</strong> 12-04-2014</p>
+
+<p>Фотки</p>
+
+<p>1.Термо проращивалка.</p>
+
+<p>2,3. Орегано с мелиссой.</p>
+
+<p>4,5,6. Периодика.</p>
+
+<p>7,8. Торфогрунт и капля.</p>
+
+<ol>
+  <li>Система “Тазик”</li>
+</ol>
+
+<p>10,11. Первый урожай (грунт)</p>
+
+<p>12.Общий вид</p>
+
+<p><a href="https://t.me/ponics_ru_files/12518" target="_blank"><img src="/attachimages/15911_DSCF8363.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12519" target="_blank"><img src="/attachimages/15913_DSCF8366.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12520" target="_blank"><img src="/attachimages/15915_DSCF8364.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12521" target="_blank"><img src="/attachimages/15917_DSCF8355.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12522" target="_blank"><img src="/attachimages/15919_DSCF8356.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12523" target="_blank"><img src="/attachimages/15921_DSCF8355.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12524" target="_blank"><img src="/attachimages/15923_DSCF8360.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12525" target="_blank"><img src="/attachimages/15925_DSCF8358.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12526" target="_blank"><img src="/attachimages/15927_DSCF8367.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12527" target="_blank"><img src="/attachimages/15929_DSCF8361.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12528" target="_blank"><img src="/attachimages/15931_DSCF8362.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12529" target="_blank"><img src="/attachimages/15933_DSCF8359.jpg" alt="" /></a></p>
+
+<p><strong>Borodach1</strong> 17-04-2014</p>
+
+<p>Ура!!! <em>Dance</em></p>
+
+<p>Перцеводов прибыло!!!</p>
+
+<p><em>Dance</em></p>
+
+<p>А чем кормите, свЕтите?</p>
+
+<p><strong>zorx</strong> 17-04-2014</p>
+
+<p>Кормлю перцами по-голландски, завтра буду концентрат мешать - выложу рецепт. Свечу 400 днат. 16ч.</p>
+
+<p><strong>zorx</strong> 17-04-2014</p>
+
+<p>Общий вид</p>
+
+<p><a href="https://t.me/ponics_ru_files/12530" target="_blank"><img src="/imagehost/thumbs/dscf8372.jpg" alt="" /></a></p>
+
+<p>Халапешка</p>
+
+<p><a href="https://t.me/ponics_ru_files/12531" target="_blank"><img src="/imagehost/thumbs/dscf8375.jpg" alt="" /></a></p>
+
+<p>Так вот листья крутит</p>
+
+<p><a href="https://t.me/ponics_ru_files/12532" target="_blank"><img src="/imagehost/thumbs/dscf8369.jpg" alt="" /></a></p>
+
+<p>Это вообще непонятно что, поговаривают перелив. Может подскажет кто?</p>
+
+<p><a href="https://t.me/ponics_ru_files/12533" target="_blank"><img src="/imagehost/thumbs/dscf8371nen.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 17-04-2014</p>
+
+<p>Перелив. Очень хороший снимок, это надо же суметь добиться такого эффекта :)</p>
+
+<p>Но это не смертельно :)</p>
+
+<p><strong>zorx</strong> 17-04-2014</p>
+
+<blockquote>
+  <p>Перелив. Очень хороший снимок, это надо же суметь добиться такого эффекта :)</p>
+
+  <p>Но это не смертельно :)</p>
+</blockquote>
+
+<p>Свет всему голова ;)</p>
+
+<p>Странно конечно, на момент появления первых признаков топил систему два раза в день по минуте. Сейчас три раза в день.</p>
+
+<p>Да и вот еще отличие одно - в горшках в грунте отцвели и плодоносят уже. А на периодике как-то вяло. Три плода всего.</p>
+
+<p>Правда я перцы на периодике мучал - керамзит всплывал - перцы падали - я их поправлял.</p>
+
+<p>Или грунты фосфор накапливают?</p>
+
+<p>Раствор в обоих случаях пока стандартный, для вегетации, я так понимаю.</p>
+
+<p><strong>zorx</strong> 13-05-2014</p>
+
+<p>Добрался до компьютера. Перцы ем уже. &gt;:D &gt;:D Периодика вдруг дико начала расти, цвести и плодоносить!</p>
+
+<p>Перцы в горшках 4-5 см в длину. В периодике около 8 см.</p>
+
+<p>Растворы такие: Сейчас на стандарте все. Буду на плодоношение переходить на днях.</p>
+
+<p><a href="https://t.me/ponics_ru_files/12534" target="_blank"><img src="/attachimages/16181_solution.png" alt="" /></a></p>
+
+<p><strong>zorx</strong> 08-06-2014</p>
+
+<p>Давно не заходил, ну поехали &gt;:(</p>
+
+<p>Они заполонили всю планету ) Общий вид</p>
+
+<p><a href="https://t.me/ponics_ru_files/12535" target="_blank"><img src="/imagehost/thumbs/dscf8486bfb.jpg" alt="" /></a></p>
+
+<p>Периодика, растет пьет плодоносит. Клюв сокола второй заход. Халапеньо первый.</p>
+
+<p><a href="https://t.me/ponics_ru_files/12536" target="_blank"><img src="/imagehost/thumbs/dscf8488.jpg" alt="" /></a></p>
+
+<p>Халапеньо неизвестный сорт “из приправы семечко” на периодике.</p>
+
+<p><a href="https://t.me/ponics_ru_files/12537" target="_blank"><img src="/imagehost/thumbs/dscf8498.jpg" alt="" /></a></p>
+
+<p>Подрастающие, один подрастающий внезапно взвился на метр с хвостиком. Халапеньо Майлд или халапеньо Там, я их перепутал.</p>
+
+<p><a href="https://t.me/ponics_ru_files/12538" target="_blank"><img src="/imagehost/thumbs/dscf8491.jpg" alt="" /></a></p>
+
+<p>Подрастающий, Боливийская радуга.</p>
+
+<p><a href="https://t.me/ponics_ru_files/12539" target="_blank"><img src="/imagehost/thumbs/dscf8494.jpg" alt="" /></a></p>
+
+<p>Подрастающая пара, Халапеньо Майлд или халапеньо Там :D :D Росли и развивались в одинаковых условиях.</p>
+
+<p>Оба пытаются дико цвести, я их устал обрывать уже.</p>
+
+<p><a href="https://t.me/ponics_ru_files/12540" target="_blank"><img src="/imagehost/thumbs/dscf8495.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12541" target="_blank"><img src="/imagehost/thumbs/dscf8496.jpg" alt="" /></a></p>
+
+<p>Базилик. Растет уже просто на воде. Иногда питашки подкидываю. Подзабил я на него.</p>
+
+<p><a href="https://t.me/ponics_ru_files/12542" target="_blank"><img src="/imagehost/thumbs/dscf8499.jpg" alt="" /></a></p>
+
+<p>Левый фланг, общий вид</p>
+
+<p><a href="https://t.me/ponics_ru_files/12543" target="_blank"><img src="/imagehost/thumbs/dscf8487.jpg" alt="" /></a></p>
+
+<p>Клюв сокола, на пробный бонсай. Ну и перцы ем с него с борщом ) Пара их у меня. Растут цветут плодоносят - без проблем.</p>
+
+<p><a href="https://t.me/ponics_ru_files/12544" target="_blank"><img src="/imagehost/thumbs/dscf8501.jpg" alt="" /></a></p>
+
+<p>Мелкие: розмарин и мандарин, в вермикулите.</p>
+
+<p><a href="https://t.me/ponics_ru_files/12545" target="_blank"><img src="/imagehost/thumbs/dscf8500.jpg" alt="" /></a></p>
+
+<p>Халапеньо неизвестный сорт “из приправы семечко” на грунте</p>
+
+<p><a href="https://t.me/ponics_ru_files/12546" target="_blank"><img src="/imagehost/thumbs/dscf84873.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 08-06-2014</p>
+
+<p>Вы бы разделили вопросы, а то цитировать неудобно, уж очень большие куски…</p>
+
+<p><strong>zorx</strong> 08-06-2014</p>
+
+<p>Плавно переходим к проблемам и авариям.</p>
+
+<p>Поблано, авария :'(</p>
+
+<p><a href="https://t.me/ponics_ru_files/12547" target="_blank"><img src="/imagehost/thumbs/dscf8493.jpg" alt="" /></a></p>
+
+<p>Халапеньо неизвестный сорт “из приправы семечко” на грунте, вот такая беда.</p>
+
+<p><a href="https://t.me/ponics_ru_files/12548" target="_blank"><img src="/imagehost/thumbs/dscf8492.jpg" alt="" /></a></p>
+
+<p>Халапеньо неизвестный сорт “из приправы семечко” на периодике.</p>
+
+<p><a href="https://t.me/ponics_ru_files/12549" target="_blank"><img src="/imagehost/thumbs/dscf8502.jpg" alt="" /></a></p>
+
+<p>Полтора метровый дядя Степа, Халапеньо Майлд или Там. Куполообразность и лист мелковат. Очень много пьет. Может сорт такой?</p>
+
+<p><a href="https://t.me/ponics_ru_files/12550" target="_blank"><img src="/imagehost/thumbs/dscf8497.jpg" alt="" /></a></p>
+
+<p>Прошу совета по проблемам <em>sos</em> <em>sos</em></p>
+
+<p><strong>Coccinella</strong> 08-06-2014</p>
+
+<p>Так с аварией и так все понятно, пустить пасынок и надеяться на лучшее, Вы до этого и без наших подсказок додумались, ведь правда же?</p>
+
+<p><strong>Coccinella</strong> 08-06-2014</p>
+
+<blockquote>
+  <p>Халапеньо неизвестный сорт “из приправы семечко” на грунте, вот такая беда.</p>
+
+  <p><img src="/imagehost/thumbs/dscf8492.jpg" alt="" /></p>
+</blockquote>
+
+<p>Похоже на избыток бора, может быть результатом внезапного падения рН. Если дальше не продолжается, то и хорошо, но на всякий случай пересчитайте содержание бора в растворе.</p>
+
+<p><strong>Coccinella</strong> 08-06-2014</p>
+
+<blockquote>
+  <p>Полтора метровый дядя Степа, Халапеньо Майлд или Там. Куполообразность и лист мелковат. Очень много пьет. Может сорт такой?</p>
+
+  <p><img src="/imagehost/thumbs/dscf8497.jpg" alt="" /></p>
+</blockquote>
+
+<p>Были бы Вы полутораметровым перечным дядей Степой, тоже бы летом много пили. У него одна листовая поверхность чего стоит. А куполится потому, что кальция ему недостает. Или Вы калий в растворе завысили. Или натрий в него нелегалом пробрался… Короче, в листьях мало кальция. Можно критически рассмотреть состав раствора, а можно провести внекорневую обработку.</p>
+
+<p><strong>zorx</strong> 09-06-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>Халапеньо неизвестный сорт “из приправы семечко” на грунте, вот такая беда.</p>
+
+    <p><img src="/imagehost/thumbs/dscf8492.jpg" alt="" /></p>
+  </blockquote>
+
+  <p>Похоже на избыток бора, может быть результатом внезапного падения рН. Если дальше не продолжается, то и хорошо, но на всякий случай пересчитайте содержание бора в растворе.</p>
+</blockquote>
+
+<p>На периодике у того же сорта таких признаков нет. Вечером полью с дренажем посмотрю рН. Но он у меня в основном только рос.</p>
+
+<p><strong>zorx</strong> 09-06-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>Полтора метровый дядя Степа, Халапеньо Майлд или Там. Куполообразность и лист мелковат. Очень много пьет. Может сорт такой?</p>
+
+    <p><img src="/imagehost/thumbs/dscf8497.jpg" alt="" /></p>
+  </blockquote>
+
+  <p>Были бы Вы полутораметровым перечным дядей Степой, тоже бы летом много пили. У него одна листовая поверхность чего стоит. А куполится потому, что кальция ему недостает. Или Вы калий в растворе завысили. Или натрий в него нелегалом пробрался… Короче, в листьях мало кальция. Можно критически рассмотреть состав раствора, а можно провести внекорневую обработку.</p>
+</blockquote>
+
+<p>Калий 330 кальций 170. Может и много ему. Я растворы выкладывал в начале темы.</p>
+
+<p>Сейчас вторым поливаю на плодоношение.</p>
+
+<p><strong>zorx</strong> 09-06-2014</p>
+
+<blockquote>
+  <p>Так с аварией и так все понятно, пустить пасынок и надеяться на лучшее, Вы до этого и без наших подсказок додумались, ведь правда же?</p>
+</blockquote>
+
+<p>Ну с этим да, все понятно. Большое спасибо за ответы.</p>
+
+<p>Еще два задам: :)</p>
+
+<p>Что за белый некроз на периодике? фото в проблемах есть.</p>
+
+<p>И как из базилика сделать дерево? ) по бонсайному методу?</p>
+
+<p><strong>Coccinella</strong> 09-06-2014</p>
+
+<p>Некроз, скорее всего, от кратковременного увядания листа. В середине дня было жарко и воздух сухой, а помочь было некому. Потом растение восстановилось, а часть клеток листа все же погибла.</p>
+
+<p>А дерево из базилика именно по бонсайному методу.</p>
+
+<p><strong>zorx</strong> 11-06-2014</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>Полтора метровый дядя Степа, Халапеньо Майлд или Там. Куполообразность и лист мелковат. Очень много пьет. Может сорт такой?</p>
+
+      <p><img src="/imagehost/thumbs/dscf8497.jpg" alt="" /></p>
+    </blockquote>
+
+    <p>Были бы Вы полутораметровым перечным дядей Степой, тоже бы летом много пили. У него одна листовая поверхность чего стоит. А куполится потому, что кальция ему недостает. Или Вы калий в растворе завысили. Или натрий в него нелегалом пробрался… Короче, в листьях мало кальция. Можно критически рассмотреть состав раствора, а можно провести внекорневую обработку.</p>
+  </blockquote>
+
+  <p>Калий 330 кальций 170. Может и много ему. Я растворы выкладывал в начале темы.</p>
+
+  <p>Сейчас вторым поливаю на плодоношение.</p>
+</blockquote>
+
+<p>Подумал над кальцием, поливал я его тогда мало. Вот ему и не хватало ничего. Сейчас новые листья нормальные растут.</p>
+
+<p><strong>dmitron1036</strong> 14-02-2017</p>
+
+<p>Опыляете перцы как?</p>
+
+<p>(азы плз)</p>
+
+<p>Имею перец в горшке.</p>
+
+<p>цветёт.</p>
+
+<p>Цветки отсыхают.</p>
+
+<p>Тип перца неизвестен (сладкий мясистый, на рынке покупал)</p>
+
+<p>Стратегия полива какая? поливать чтобы ему было комфортно всё время или надо издеваться чтобы получить плоды?</p>
+
+<p><strong>Borodach1</strong> 14-02-2017</p>
+
+<blockquote>
+  <p>Опыляете перцы как?</p>
+
+  <p>(азы плз)</p>
+</blockquote>
+
+<p>Можно никак. Он самоопыляемый.</p>
+
+<p>Можно электрической зубной щёткой. Неплохо получается. Ещё и ж-ж-ж-ж издаёт, на пчёлку похоже. :D</p>
+
+<p><strong>Cyclamech</strong> 20-02-2017</p>
+
+<blockquote>
+  <p>Опыляете перцы как?</p>
+</blockquote>
+
+<p>Постукиванием по стволу. У меня штамбы - потому типа как по дереву постучать.</p>
+
+<p>Поначалу кисточкой опылял, но трудозатратно.</p>
+
+<p><strong>alex76avt</strong> 02-06-2017</p>
+
+<p>Дал ли разноцветные плоды Bolivian Rainbow? Очень интересный сорт. Если есть фото - продемонстрируйте плииз!</p>
+
+<p><strong>Cyclamech</strong> 02-06-2017</p>
+
+<blockquote>
+  <p>Дал ли разноцветные плоды Bolivian Rainbow? Очень интересный сорт. Если есть фото - продемонстрируйте плииз!</p>
+</blockquote>
+
+<p>В сети полно фото.</p>
+
+<p><strong>alex76avt</strong> 02-06-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Дал ли разноцветные плоды Bolivian Rainbow? Очень интересный сорт. Если есть фото - продемонстрируйте плииз!</p>
+  </blockquote>
+
+  <p>В сети полно фото.</p>
+</blockquote>
+
+<p>причем тут сеть? мне интересно удалось ли автору их вырастить. и именно в разноцветном варианте.</p>
+
+<p><strong>Cyclamech</strong> 02-06-2017</p>
+
+<blockquote>
+  <p>и именно в разноцветном варианте.</p>
+</blockquote>
+
+<p>Неразноцветная боливийская радуга? А смысл тогда? <em>crazy</em></p>
+
+<p>В разноцветности плодов перца нет ничего необычного. Вот, например, мой Filius Blue:</p>
+
+<p><a href="https://t.me/ponics_ru_files/12551" target="_blank"><img src="/imagehost2/thumbs/img4204eke.jpg" alt="" /></a></p>
+
+<p><strong>Borodach1</strong> 02-06-2017</p>
+
+<p>Это стадии созревания или они действительно разные в стадии спелости?</p>
+
+<p><strong>Cyclamech</strong> 02-06-2017</p>
+
+<blockquote>
+  <p>Это стадии созревания или они действительно разные в стадии спелости?</p>
+</blockquote>
+
+<p>Бородач, Вы меня удивляете как перцевод перцевода! Конечно, это разные стадии спелости.</p>
+
+<p>Сперва плод плотно налит антоцианом, потому и фиолетового цвета. Потом, с созреванием, антоциан постепенно уходит и плод белеет, одновременно в него начинает поступать красный пигмент, который красит плод через жёлтый, потом оранжевый в конечный спелый красный.</p>
+
+<p><strong>siv237</strong> 02-06-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>и именно в разноцветном варианте.</p>
+  </blockquote>
+
+  <p>Неразноцветная боливийская радуга? А смысл тогда? <em>crazy</em></p>
+
+  <p>В разноцветности плодов перца нет ничего необычного. Вот, например, мой Filius Blue:</p>
+
+  <p><img src="/imagehost2/thumbs/img4204eke.jpg" alt="" /></p>
+</blockquote>
+
+<p>Выглядит очень круто! Я прям задумался о перцах.</p>
+
+<p><strong>Cyclamech</strong> 02-06-2017</p>
+
+<blockquote>
+  <p>Выглядит очень круто! Я прям задумался о перцах.</p>
+</blockquote>
+
+<p>Филиус Блю, впрочем, выделяется некой “элитностью” и “породистостью” в моей “коллекции”. Рекомендую выбирать супершикарные забугорные сорта (боливийская радуга в их числе), победителей конкурсов и прочая… Декоративные NuMex'ы посмотрите обязательно!</p>
+
+<p><strong>Borodach1</strong> 02-06-2017</p>
+
+<p>)))</p>
+
+<p>Я его только на картинках видел. А после того как увидел у китайцев синюю клубнику начал сомневаться.)))</p>
+
+<p>Все мои перцы имели две стадии. Либо зелёный - оранжевый, либо зелёный - красный. Причём смена цвета происходит практически в течение рабочего дня.</p>
+
+<p>А он съедобен? Испытания на капсаициновых маньяках проводились?</p>
+
+<p><strong>siv237</strong> 02-06-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Выглядит очень круто! Я прям задумался о перцах.</p>
+  </blockquote>
+
+  <p>Филиус Блю, впрочем, выделяется некой “элитностью” и “породистостью” в моей “коллекции”. Рекомендую выбирать супершикарные забугорные сорта (боливийская радуга в их числе), победителей конкурсов и прочая… Декоративные NuMex'ы посмотрите обязательно!</p>
+</blockquote>
+
+<p>Спасибо за совет, надеюсь когда я приду и прочитаю эти названия с бумажки продавцу семян он не подумает, что я его обматерил :)</p>
+
+<p><strong>Cyclamech</strong> 02-06-2017</p>
+
+<blockquote>
+  <p>А он съедобен? Испытания на капсаициновых маньяках проводились?</p>
+</blockquote>
+
+<p>Маньяки тут ни к чему: я сам пробовал все свои декоративные - там тыщ 20-30 сковиллов всего. Мне, неманьяку, до слёз. <em>crazy</em> Ну и вкуса никакого - типа просто жёсткая трава. С тем же халапеньо не сравнить - у того вкус свежий и сам он сочный, а острота его больше на тепло похожа.</p>
+
+<p><strong>Cyclamech</strong> 02-06-2017</p>
+
+<blockquote>
+  <p>Спасибо за совет, надеюсь когда я приду и прочитаю эти названия с бумажки продавцу семян он не подумает, что я его обматерил :)</p>
+</blockquote>
+
+<p>По интернету продаются… А у меня по баночке каждого… <em>???</em></p>
+
+<p>Вот хороший пример: какой бы Вы перец создали на своё столетие, если Вы институт по перцеводству?</p>
+
+<p>New Mexico State University выпустили <a href="https://chile.nmsu.edu/details/400" target="_blank">NuMex Centennial</a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12552" target="_blank"><img src="/imagehost2/thumbs/numexcentennial.jpg" alt="" /></a></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

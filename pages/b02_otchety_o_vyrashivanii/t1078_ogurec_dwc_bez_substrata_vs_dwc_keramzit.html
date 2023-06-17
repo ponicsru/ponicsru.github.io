@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Огурец, DWC без субстрата vs DWC керамзит. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Огурец, DWC без субстрата vs DWC керамзит.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Огурец, DWC без субстрата vs DWC керамзит.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>VVS_</strong> 23-06-2011</p>
+
+<p>Растут два огурчика, с разной историей. Тот который справа, без субстрата, достаточно старый, пережил много аварий и проблем с раствором.</p>
+
+<p>Тот который слева, на 3 недели моложе, но хорошо стартанул. В итоге, на данный момент по развитию и скорости роста разницы никакой.</p>
+
+<p>Огурчик который без субстрата(справа) дал первый урожай, съели, заценили, вкусно :)</p>
+
+<p>Но вот вопрос, что с листьями? Не удается победить эту “рельефность” листьев. Уже и кальций увеличивал и магний увеличивал.. Странно как то все.</p>
+
+<p>Вообще этот признак он к чему? В литературе найти не удается.</p>
+
+<p>Сорт Зозуля.</p>
+
+<p>По началу совершенно случайно получились листья идеально ровные, но я не записал что влил в раствор, было несколько коррекций на ходу, не сохранил данные.. :(</p>
+
+<p><a href="https://t.me/ponics_ru_files/5573" target="_blank"><img src="/attachimages/7398_IMG_0787.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5574" target="_blank"><img src="/attachimages/7400_IMG_0788.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5575" target="_blank"><img src="/attachimages/7402_IMG_0789.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5576" target="_blank"><img src="/attachimages/7404_IMG_0790.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5577" target="_blank">rastvor_ogur8.xls</a></p>
+
+<p><strong>VVS_</strong> 13-08-2011</p>
+
+<p>На данный момент, огурцы которые растут в лоджии проигрывают огурцам растущим на открытом балконе с северной стороны. Балконные огурчики вынашивают больше зеленцов за раз, вкус у плодов несоизмеримо лучше, слаще, насыщенней, но плоды и сами растения мельче. И все это при ночных температурах от +3 до +15 градусов и всех тяготах открытой природы, дождь, ветер, туман, прямое солнце рано утром и вечером и т.д. Но по замерам общее количество света за день как минимум в 2 раза больше чем в лоджии с тройным стеклопакетом и “обзором” менее 170 градусов, поэтому имхо, зеленцы растут лучше и вкусней. В лоджии не досвечиваю ничего.</p>
+
+<p>А еще вопрос, как “обновить” растение чтоб в круглогодичном обороте держать? Как правильно формировать для этого?</p>
+
+<p><strong>Coccinella</strong> 15-08-2011</p>
+
+<p>Лучше вырастить новое, проще. Без досветки огурец расти не будет, Зозуля довольно светотребовательна, а дни уже стали заметно короче.</p>
+
+<p><strong>aivar</strong> 14-11-2011</p>
+
+<p>оч. приятно… заочно</p>
+
+<p>молодец <em>8)</em></p>
+
+<p><strong>Acc</strong> 14-11-2011</p>
+
+<p>Замечательное видео <em>8)</em> От души порадовался за коллегу по цеху :) Вадиму Селиванову ака VVS_ респект <em>Bravo</em> <em>Bravo</em> <em>Bravo</em></p>
+
+<p><strong>Mole_Garden</strong> 15-11-2011</p>
+
+<blockquote>
+  <p>Было прикольно найти себя по яндексу, я не думал что они это всерьез, а вышло воно как. (знакомые журналисты).</p>
+
+  <p>Вот чем закончился прошлогодний опыт с огурцами, смотреть видео с 3 минуты :)</p>
+
+  <p><a href="http://kp-tv.tomsk.ru/news/gidroponika" target="_blank">http://kp-tv.tomsk.ru/news/gidroponika</a></p>
+
+  <p>Будем заочно знакомы :)</p>
+</blockquote>
+
+<p>Ты не против если я его перезалью на ютуб?</p>
+
+<p><strong>VVS_</strong> 15-11-2011</p>
+
+<p>Не, я настроен иначе на сегодня.. не светить так широко свою морду. Передумалось. Мне тут посоветовали даже убрать ссылочку. На сайт этой телепередачи все равно мало кто ходит. Про то что она 1 раз была в эфире все давно забыли. Формально, это объясняется тем, что мы с вами владеем технологией, которая может быть использована в недобрых целях.</p>
+
+<p>Так что пусть тут повисит, завтра удалю.</p>
+
+<p>Если кому интересно скачивайте себе на винт, прямая ссылка на flv файл на сайте легко выцарапывается через правую кнопку мыши.</p>
+
+<p>Наша местная теплица, тействительно неплохой пример. Есть на что посмотреть. Я как то не обращал внимания.. раньше не настолько в теме был.</p>
+
+<p><strong>Mole_Garden</strong> 15-11-2011</p>
+
+<p>Ой, удалил.</p>
+
+<blockquote>
+  <p>Не, я настроен иначе на сегодня.. не светить так широко свою морду. Передумалось. Мне тут посоветовали даже убрать ссылочку. На сайт этой телепередачи все равно мало кто ходит. Про то что она 1 раз была в эфире все давно забыли. Формально, это объясняется тем, что мы с вами владеем технологией, которая может быть использована в недобрых целях.</p>
+
+  <p>Так что пусть тут повисит, завтра удалю.</p>
+</blockquote>
+
+<p>В каких это целях и кем использована? Нами? :D Если речь идет про гроверов конопли, то их число в десятки раз превосходит наше, если не в сотни. Кстати, этой технологией еще владели в советском союзе!</p>
+
+<p><strong>Coccinella</strong> 15-11-2011</p>
+
+<p>Жаль, что за музыкой не слышно, что люди говорят. А огурцы у Вас замечательные, хотя … :) (в этот раз критику умолчу :)) Вы действительно молодец!</p>
+
+<p>И что недоброго может быть в выращивании огурцов и салата в квартире? Подрыв мирового рынка томатов? :)</p>
+
+<p>А заметили, чья автоматика в теплицах этого зеленстроя? От Фито!</p>
+
+<p><strong>SergF</strong> 15-11-2011</p>
+
+<p>Голосовая дорожка и музыкальная разнесены по разным каналам, левый - голос, правый музыка, так что можно регулировать как кому удобно :)</p>
+
+<p><strong>valery</strong> 15-11-2011</p>
+
+<p><em>8)</em></p>
+
+<p>А мне было даже любопытней посмотреть не на растения, а на VVS … :)</p>
+
+<p>По постам … несколько иначе себе представлял.</p>
+
+<p>Действительность - порадовала … :D , вполне серьезный молодой человек … :)</p>
+
+<p><strong>valery</strong> 15-11-2011</p>
+
+<p>Извиняюсь, за пост не в теме …</p>
+
+<p>Константин, обратите внимание, в библиотеке появились “битые” ссылки …</p>
+
+<p><strong>SergF</strong> 15-11-2011</p>
+
+<blockquote>
+  <p><em>8)</em></p>
+
+  <p>А мне было даже любопытней посмотреть не на растения, а на VVS … :)</p>
+
+  <p>По постам … несколько иначе себе представлял.</p>
+
+  <p>Действительность - порадовала … :D , вполне серьезный молодой человек … :)</p>
+</blockquote>
+
+<p>Интересно и на других участников посмотреть…</p>
+
+<p>зы. на других форумах не раз пытался создать тему знакомств, пару слов о себе, пару фото… как правило 3-4 человека откликаются, остальные чего то боятся…</p>
+
+<p><strong>VVS_</strong> 15-11-2011</p>
+
+<p>Ну что, развернем знакомство здесь что-ли?:)</p>
+
+<p><strong>Coccinella</strong> 15-11-2011</p>
+
+<blockquote>
+  <p>Голосовая дорожка и музыкальная разнесены по разным каналам, левый - голос, правый музыка, так что можно регулировать как кому удобно :)</p>
+</blockquote>
+
+<p>А попонятней нельзя объяснить? Пожалуйста! Ну не получается и все тут :(.</p>
+
+<p><strong>VVS_</strong> 15-11-2011</p>
+
+<blockquote>
+  <p>А попонятней нельзя объяснить? Пожалуйста! Ну не получается и все тут :(.</p>
+</blockquote>
+
+<p>Музыка в левой колонке. голос в правой колонке играет.</p>
+
+<p>Если что-то не слышно, значит у вас какая-то из колонок не работает или в звуковом микшере звуковой карты (двойной клик по значку динамика около часов) ручка баланса стоит не по центру(двинута вбок).</p>
+
+<p><strong>Mole_Garden</strong> 17-11-2011</p>
+
+<blockquote>
+  <p>Извиняюсь, за пост не в теме …</p>
+
+  <p>Константин, обратите внимание, в библиотеке появились “битые” ссылки …</p>
+</blockquote>
+
+<p>А можно ссылки на то, что не качается, либо просто название книг, не доступных для скачивания.</p>
+
+<p><strong>Mole_Garden</strong> 17-11-2011</p>
+
+<blockquote>
+  <p>А попонятней нельзя объяснить? Пожалуйста! Ну не получается и все тут :(.</p>
+</blockquote>
+
+<p>Подозреваю, что нужно сначала скачать видео себе на компьютер, затем открыть его проигрывателем и там уже регулировать с помощью эквалайзера канал звучания.</p>
+
+<p><strong>valery</strong> 17-11-2011</p>
+
+<blockquote>
+  <p>А можно ссылки на то, что не качается, либо просто название книг, не доступных для скачивания.</p>
+</blockquote>
+
+<p>Константин, может и не “ссылки” - не перебирал, а наткнулся случайно пока на одну - Бентли “Промышленная гидропоника” …</p>
+
+<p>Случайно полез “проверить” одну вещь … а книжки - нету. Говорит что-то о “циклической ссылке” или типа того …</p>
+
+<p><strong>Mole_Garden</strong> 17-11-2011</p>
+
+<blockquote>
+  <p>Константин, может и не “ссылки” - не перебирал, а наткнулся случайно пока на одну - Бентли “Промышленная гидропоника” …</p>
+
+  <p>Случайно полез “проверить” одну вещь … а книжки - нету. Говорит что-то о “циклической ссылке” или типа того …</p>
+</blockquote>
+
+<p>Иногда такое бывает, чаше всего у тех, кто пользуется хромом. Это проблема гугла. Проверил книжку, у меня качается нормально. Если у вас по прежнему есть проблема при скачивание, могу выслать вам ее на электронку.</p>
+
+<p><strong>valery</strong> 17-11-2011</p>
+
+<p>Да нет, Константин, не нужно, она мне не нужна. Просто хотел по быстрому взглянуть на пару страниц.</p>
+
+<p>Пользуюсь действительно “Хромом” … Не знал, что он такой гадкий :o</p>
+
+<p>А чем “надо” пользоваться ?</p>
+
+<p><strong>ProRus</strong> 17-11-2011</p>
+
+<blockquote>
+  <p>А чем “надо” пользоваться ?</p>
+</blockquote>
+
+<p>Мозилой. ;)</p>
+
+<p><strong>orgail</strong> 17-11-2011</p>
+
+<p>хром хороший</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

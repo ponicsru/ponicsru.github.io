@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Установка с замкнутым циклом | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Установка с замкнутым циклом">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Установка с замкнутым циклом</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>NorthStar</strong> 04-04-2014</p>
+
+<p>Добрый день!</p>
+
+<p>Возникла идея сделать установку, которую можно было бы использовать длительное время на одном и том же запасе воды.</p>
+
+<p>Идея в следующем - когда раствор надо менять, то насос прогоняет раствор через фильтр (мб и через Уф лампу) и дозаторы в очищенную воду добавляют новые удобрения.</p>
+
+<p>Думал ли кто-нибудь про такую установку? В идеале хотелось бы создать полностью автоматическую систему чтоб все лето можно было к ней не подходить.</p>
+
+<p>А ВОДОПРОВОД НА БОЛКОН НЕ ПРОВЕСТИ (</p>
+
+<p><strong>Coccinella</strong> 04-04-2014</p>
+
+<p>А как Вы анализ остатков элементов питания в растворе намереваетесь проводить?</p>
+
+<p><strong>Vad</strong> 04-04-2014</p>
+
+<p>нет, он хочет фильтровать старый раствор.. и замешивать новый…</p>
+
+<p>чоб воду из крана на балкон не носить :D</p>
+
+<p>Можно, сложно, дорого, бессмысленно но можно.</p>
+
+<p>Смотря что выращивается.. и в каких количествах..</p>
+
+<p>но.. все равно сомнительный “план”</p>
+
+<p>растения не просто в “воде стоят” чтоб не высохли..</p>
+
+<p>они эту воду расходуют.. и куда сильнее чем “удобрения”.</p>
+
+<p>взросрый томатик, в зависимости от температуры, выпивает 2-3-4 литра воды в сутки…</p>
+
+<p>заничт, на “цикл” от семечки до конца сбора урожая(беру ~ 4-4.5 месяца ).. потребуется ~ 450 - 500 литров воды :D на ОДНИН томат ;)</p>
+
+<p>но если какой-нибудь укроп.. в количестве 5 шт.. то да.. вполне возможно ;)</p>
+
+<p>у укропик пьет около 0,015 литров в сутки :D</p>
+
+<p>запастись водой на 40-60 дней в количествое 1 литра на 1 укроп - не проблема ;)</p>
+
+<p>ну.. на 5 укропов потребуется, соответсвенно… 5 литров ;)</p>
+
+<p><strong>alexxx</strong> 04-04-2014</p>
+
+<blockquote>
+  <p>А ВОДОПРОВОД НА БОЛКОН НЕ ПРОВЕСТИ (</p>
+</blockquote>
+
+<p>Да уж гораздо легче и экономически целесообразнее, чем сделать замкнутую систему.</p>
+
+<p><strong>NorthStar</strong> 04-04-2014</p>
+
+<p>Ну запас воды литров 50-80 можно сделать - для долива.</p>
+
+<p>Меня больше интересует на сколько хватит фильтров при такой эксплуатации, хватит ли обычных или мембрана нужна? Нужна ли УФ лампа.</p>
+
+<p>Ни о какой экономической целесообразности тут речи нет. Это же хобби.</p>
+
+<p><strong>Vad</strong> 04-04-2014</p>
+
+<p>хватит очень не на дого.. ))</p>
+
+<p>50-80 литров это на 1 растение салата?</p>
+
+<p>у вас сколько их?</p>
+
+<p>умножайте</p>
+
+<p><strong>alexxx</strong> 04-04-2014</p>
+
+<blockquote>
+  <p>Ну запас воды литров 50-80 можно сделать - для долива.</p>
+</blockquote>
+
+<p>А еще можно воду из воздуха добывать. <em>8)</em></p>
+
+<blockquote>
+  <p>Ни о какой экономической целесообразности тут речи нет. Это же хобби.</p>
+</blockquote>
+
+<p>Вы просто еще не приценивались, во сколько вам обойдутся ваши пожелания. :D</p>
+
+<p><strong>Vad</strong> 04-04-2014</p>
+
+<blockquote>
+  <p>А еще можно воду из воздуха добывать. <em>8)</em></p>
+</blockquote>
+
+<p>нельзя ;D</p>
+
+<p>влажность воздуха упадет.. и салат помрет :D</p>
+
+<p><strong>alexxx</strong> 04-04-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>А еще можно воду из воздуха добывать. <em>8)</em></p>
+  </blockquote>
+
+  <p>нельзя ;D</p>
+
+  <p>влажность воздуха упадет.. и салат помрет :D</p>
+</blockquote>
+
+<p>А за пределами балкона воздуха разве нет? ;)</p>
+
+<p><strong>Vad</strong> 04-04-2014</p>
+
+<p>&gt;:( не торгать атмосферу!</p>
+
+<p>она у нас одна на всех!</p>
+
+<p>если каждый начнет воду для своих салатов из нее добывать… дождей не будет..</p>
+
+<p>глобальный “клизмокот” случится! :-\</p>
+
+<p><strong>NorthStar</strong> 04-04-2014</p>
+
+<p>ну по цене это не так дорого - насос 16$, фильтр 4500р где-то. Лампа 5000р Ну и плюс трубочки, фитинги всякие.</p>
+
+<p>Если еще автоматику для раствора делать - тоже более или менее терпимо - хороший насос-дозатор 40$*5 где-то, контроллер - вообще копейки ну и опять же обвес.</p>
+
+<p>Датчик TDS - 80$</p>
+
+<p><strong>Vad</strong> 04-04-2014</p>
+
+<p><a href="http://www.youtube.com/watch?v=2kM9V8AP45Q#ws" target="_blank">http://www.youtube.com/watch?v=2kM9V8AP45Q#ws</a></p>
+
+<p><strong>alexxx</strong> 04-04-2014</p>
+
+<blockquote>
+  <p>ну по цене это не так дорого - насос 16$, фильтр 4500р где-то. Лампа 5000р Ну и плюс трубочки, фитинги всякие.</p>
+
+  <p>Если еще автоматику для раствора делать - тоже более или менее терпимо - хороший насос-дозатор 40$*5 где-то, контроллер - вообще копейки ну и опять же обвес.</p>
+
+  <p>Датчик TDS - 80$</p>
+</blockquote>
+
+<p>О, да вы инженер-теоретик!… :D</p>
+
+<p>А как планируете избавляться от не нужных элементов, накапливающихся в рабочем растворе?</p>
+
+<p><strong>Vad</strong> 04-04-2014</p>
+
+<p>написал-же выше.. осмосом их осмосом!</p>
+
+<p><strong>alexxx</strong> 04-04-2014</p>
+
+<blockquote>
+  <p>написал-же выше.. осмосом их осмосом!</p>
+</blockquote>
+
+<p>А вы точно знаете принцип работы осмоса? Дело в том, что там гдето 1/10 проходящей через фильтр воды получается чистой, остальные 9/10 сливаются в канализацию. Можно конечно одну и туже воду гонять через осмос, надеясь что когда воды не останется, соли сами выступят на стенках бака, но я бы не советовал вам этого делать. :D</p>
+
+<p><strong>Vad</strong> 04-04-2014</p>
+
+<p>кстати!</p>
+
+<p>о!</p>
+
+<p>я придумал!</p>
+
+<p>нафиг фильтр!</p>
+
+<p>дистиллятор поставить..</p>
+
+<p>пельтьями охлаждать холодильник … и ими же нагревать испаритель!</p>
+
+<p>замкнутый цыкл! без потерь :-\</p>
+
+<p><strong>alexxx</strong> 04-04-2014</p>
+
+<blockquote>
+  <p>нафиг фильтр!</p>
+
+  <p>дистиллятор поставить..</p>
+
+  <p>пельтьями охлаждать холодильник … и ими же нагревать испаритель!</p>
+
+  <p>замкнутый цыкл! без потерь :-\</p>
+</blockquote>
+
+<p>а попутно еще и самогон гнать. :D <em>8)</em></p>
+
+<p>Пельтье вот только тут не помогут, слишком большая разница температур требуется. Нужен кипятильник и морозильник со змеевиком. <em>8)</em></p>
+
+<p><strong>Vad</strong> 04-04-2014</p>
+
+<p>хорошая идея.. поддерживаю!</p>
+
+<p>Но для самогона - пельёв хватит… больше 60.. ему противопоказано :-\</p>
+
+<p>за одно CO2 на место станет… <em>8)</em></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

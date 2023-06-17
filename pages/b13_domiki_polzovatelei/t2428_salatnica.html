@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Салатница | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Салатница">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Салатница</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>sloov</strong> 03-03-2016</p>
+
+<p>Всем привет, вот и я докатился до гидропоники :D</p>
+
+<p>Написывать тут буду скорее всего больше для себя, чтобы собрать мысли в кучу, а может кто и советом поможет.</p>
+
+<p>Есть устойчивое желание вырастить салат, не на подоконнике, не в кладовке, а в мини-теплице, правда без доступа солнца вообще.</p>
+
+<p>Технологию почти сразу выбрал NFT, собирать буду на кабель-каналах. Чертежи уже все готовые, размеры есть, расход материала посчитан, т.е. в плане оборудования перечень составлен. Освещать там натриевыми лампами у меня не получится, буду пользовать люминесцентные, т.к. светодиоды дорогие. Вот и проверим, возможно ли выращивание такой культуры как салат на люминесцентных лампах, я почему-то уверен, что можно.</p>
+
+<p>Ph И Ec- метры заказаны и в пути. Пока обойдусь индикаторными бумажками, для рихтовки Ph.</p>
+
+<p>Почему-то почти сразу у меня отпала мысль на “купить готовый раствор или порошок, залить в систему и созерцать, как оно будет переть” буду готовить сам, мне это интересно. На этом этапе возник вопрос: соберу я рабочий раствор по рецептам, коих тут как собак нерезаных, понятно, что там не будет набора микроэлементов, кстати после ознакомления со списком оных пыл мой как-то угас, смогу ли я добавив к самодельному раствору добавить например нужный “Унифлор” и не возвращаться к теме микроэлементов? Наверное нет, тогда пойдет перекос по макроэлементам, скорее всего..или не пойдет :D</p>
+
+<p>Существует ли какой состав, который можно добавить к “Formula Dr. Resh California, lettuce 1989-1993 year” и стать счастливым?</p>
+
+<p>А тем временем в унифлоре 21 микроэлемент!</p>
+
+<p><strong>sloov</strong> 03-03-2016</p>
+
+<p>Так, стоять зорька, Буйский завод делает наборы концентрированных микроудобрений, наверняка это выход от “авитаминоза”</p>
+
+<p><strong>Cyclamech</strong> 04-03-2016</p>
+
+<blockquote>
+  <p>…наверняка это выход…</p>
+</blockquote>
+
+<p><a href="https://t.me/ponics_ru_files/17181" target="_blank"><img src="/imagehost2/thumbs/img2178.jpg" alt="" /></a></p>
+
+<p>И концентраты в 3 бутыли:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17182" target="_blank"><img src="/imagehost2/thumbs/img2829.jpg" alt="" /></a></p>
+
+<p><strong>Cyclamech</strong> 04-03-2016</p>
+
+<p>Да, стоит ещё электролит приобрести - всё забываю добавить его на фотографию.</p>
+
+<p><strong>ded_pihto</strong> 04-03-2016</p>
+
+<blockquote>
+  <p>Да, стоит ещё электролит приобрести - всё забываю добавить его на фотографию.</p>
+</blockquote>
+
+<p>гораздо лучше электролита - ортофосфорная кислота .</p>
+
+<p><strong>ded_pihto</strong> 04-03-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>…наверняка это выход…</p>
+  </blockquote>
+
+  <p><img src="/imagehost2/thumbs/img2178.jpg" alt="" /></p>
+
+  <p>И концентраты в 3 бутыли:</p>
+
+  <p><img src="/imagehost2/thumbs/img2829.jpg" alt="" /></p>
+</blockquote>
+
+<p>и солемер у вас PPM измеряет , хотя вобщемто пофигу . но нужно точно знать какйо у него переводной коеффициент для mS</p>
+
+<p><strong>Cyclamech</strong> 04-03-2016</p>
+
+<blockquote>
+  <p>гораздо лучше электролита - ортофосфорная кислота .</p>
+</blockquote>
+
+<p>Поясните эту “гораздость”.</p>
+
+<p><strong>sloov</strong> 04-03-2016</p>
+
+<blockquote>
+  <p>На фотографиях это набор, который можно добавлять к основному питательному раствору, или я что-то недопонял <em>???</em></p>
+</blockquote>
+
+<p><strong>sloov</strong> 04-03-2016</p>
+
+<p>Нужен ли УФ-стерилизатор в бак, если да, то какой. Бак на 200л.</p>
+
+<p><strong>n72black</strong> 04-03-2016</p>
+
+<blockquote>
+  <p>Нужен ли УФ-стерилизатор в бак, если да, то какой. Бак на 200л.</p>
+</blockquote>
+
+<p>Если повторно используете раствор, то может и нужен. Если вдруг для домашнего выращивания, то нет.</p>
+
+<p><strong>n72black</strong> 04-03-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>Да, стоит ещё электролит приобрести - всё забываю добавить его на фотографию.</p>
+  </blockquote>
+
+  <p>гораздо лучше электролита - ортофосфорная кислота .</p>
+</blockquote>
+
+<p>А еще лучше, анализ содержания водопроводной воды(на необходимые элементы) и азотная кислота. :D</p>
+
+<p><strong>Cyclamech</strong> 04-03-2016</p>
+
+<blockquote>
+  <p>На фотографиях это набор, который можно добавлять к основному питательному раствору, или я что-то недопонял <em>???</em></p>
+</blockquote>
+
+<p>Нет. К основному нужно добавить один пакетик (второй ряд фото 1) - комплекс микроэлементов - в данном случае сфотографирован “Аквамикс” “буйских” - его состав подходит.</p>
+
+<p>Основной питательный раствор можно “собрать” из 4-х компонентов верхнего ряда.</p>
+
+<p><strong>Cyclamech</strong> 04-03-2016</p>
+
+<blockquote>
+  <p>…и азотная кислота. :D</p>
+</blockquote>
+
+<p>Ммм… у нас “за углом” её производят (аммиачная селитра же!). :-\ Думаю, можно “отлить”. :-[</p>
+
+<p>В чём преимущество-то? Электролит, понятно, можно в магазине купить; ортофосфорную - “чип и дипы” в деревнях нечасты… Да и серу как-то (традиционно непринято?) учитывать, в отличие от “суперважных” азота и фосфора… <em>crazy</em></p>
+
+<p>Впрочем, я готов перейти на любой вариант, если станет понятна “гораздость”. <em>crazy</em></p>
+
+<p><strong>sloov</strong> 04-03-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>На фотографиях это набор, который можно добавлять к основному питательному раствору, или я что-то недопонял <em>???</em></p>
+  </blockquote>
+
+  <p>Нет. К основному нужно добавить один пакетик (второй ряд фото 1) - комплекс микроэлементов - в данном случае сфотографирован “Аквамикс” “буйских” - его состав подходит.</p>
+
+  <p>Основной питательный раствор можно “собрать” из 4-х компонентов верхнего ряда.</p>
+</blockquote>
+
+<p>Все, спасибо разобрался!</p>
+
+<p>УФ-стерилизатор соберу сам из канализационных труб или помещу лампу в бак.</p>
+
+<p>Очередь за субстратом :)</p>
+
+<p>Осталось выяснить, какой мне нужен для NFT, пока склоняюсь к торф+земля или торф+птичий помет (сухой), у нас этого добра навалом.</p>
+
+<p><strong>Gnevko</strong> 04-03-2016</p>
+
+<p>Ненадо, ни торф+земля, ни торф+птичий помет (сухой) … При NFТ, корни находятся в воде и только в воде, а вот что бы растение не проваливалось в воду целиком, то тут есть варианты, но ни в одном их них нет ни земли, ни помета …</p>
+
+<p><strong>sloov</strong> 05-03-2016</p>
+
+<p>Хм, а на фазе проращивания корней этих корней же нет еще, буду сверху поливать. Проращивать я вообще собрался в земле, ну или в торфе до корней. А какие есть варианты, брать пробки или таблетки из кокоса?</p>
+
+<p>Вчера я ради интереса расколупал горшок агрокомбината московского, там нет внутри: керамзита, вермикулита, мин ваты и перлита. Внутри там очень похоже на торф и корни!</p>
+
+<p>Эти пацаны похоже знают толк в выращивании салатов;)</p>
+
+<p><strong>Gnevko</strong> 05-03-2016</p>
+
+<p>Надеюсь, что землю, помет, навоз и тд вы там тоже не нашли ;)</p>
+
+<p><strong>Coccinella</strong> 05-03-2016</p>
+
+<p>Достаточно одного торфа, точнее торфяного субстрата, обогащенного всеми макро- и микроэлементами. Могут быть и торфяные таблетки из такого субстрата.</p>
+
+<p><strong>sloov</strong> 06-03-2016</p>
+
+<blockquote>
+  <p>Достаточно одного торфа, точнее торфяного субстрата, обогащенного всеми макро- и микроэлементами. Могут быть и торфяные таблетки из такого субстрата.</p>
+</blockquote>
+
+<p>Спасибо вам, вы наверняка самый адекватный агроном на этом ресурсе! $)</p>
+
+<p>В общем я понял так, что или торф или субстрат на основе торфа мне подходит. Можно брать просто торф, но поливать его пит. раствором, а можно брать субстрат и поливать тем же :)</p>
+
+<p>Фракция 0-20 для выращивания салата в горшочках.</p>
+
+<p>Торф верховой, нейтральный.</p>
+
+<p><strong>sloov</strong> 06-03-2016</p>
+
+<p>Порыскав с высунутым языком по доступным магазинам, я быстро пришел к выводу, что мою идею про “самому смешать ингридиенты и получить нормальную основу” придется оставить.</p>
+
+<p>Т.н. стартовый набор химика мне доступен не весь и часть исключительно за безнал.</p>
+
+<p>Первое на что я наткнулся это Акварин-5, позвонил на Буйский, мне сообщили, что его можно использовать для моих целей.</p>
+
+<p>N- 18, причем это кол-во набирается из разных соединений</p>
+
+<p>Р- 7,9</p>
+
+<p>К- 14,9 (К2О)</p>
+
+<p>Mg- 1.2 (МgO)</p>
+
+<p>S- 1.5</p>
+
+<p>+микроэлементы, данные с сайта производителя: <a href="http://www.bhz.kosnet.ru/Rus/Prod/Agrprom/Aquarin.html" target="_blank">http://www.bhz.kosnet.ru/Rus/Prod/Agrprom/Aquarin.html</a></p>
+
+<p>В данной формуле нет Cа, его можно заполучить из кальциевой селитры, в принципе найти можно.</p>
+
+<p>Что нужно сюда еще добавить, кроме Са и воды с нужным pH, чтобы получить полноценное удобрение?</p>
+
+<p>Чьего производства кальциевую селитру лучше использовать?</p>
+
+<p>Как я понимаю, раньше пользовались Кемирой гидро, потом их кто-то купил и теперь то же самое удобрение называется Yara Ferticare, нашел информацию о двух продуктах</p>
+
+<p>Yara Ferticare Гидро 6-14-30</p>
+
+<p>Yara Ferticare Комби 14-11-25</p>
+
+<p>Для огранических и неорганических субстратов, т.к. я выбрал торф, то мне второе. Та же история с кальцием.</p>
+
+<p>Стоить будет явно дороже БХЗ :)</p>
+
+<p>Так же набрел на Valagro Master, тут полная вакхналия, надо разбираться, видов много.</p>
+
+<p><strong>Coccinella</strong> 07-03-2016</p>
+
+<p>Одного нейтрализованного торфа мало, он должен быть заправлен удобрениями. У торфа очень высокая поглотительная способность. Если всего лишь нейтрализованный торф поливать раствором, то поначалу все элементы будут связаны торфом и растениям практически ничего не достанется.</p>
+
+<p>Для раствора вообще-то достаточно Яра 6-14-30 и нитрата кальция, но надо посмотреть, сколько в этой Яре магния (мне недосуг искать), возможно, для полноценного раствора потребуется еще и сульфат магния.</p>
+
+<p><strong>AlexKg</strong> 07-03-2016</p>
+
+<p>Возьмите комплекс (но с повышенным калием - например 12-12-36), кальциевую селитру и сульфат(либо нитрат) магния. и всё вырастет ))</p>
+
+<p>Микроэлементы (Аквамикс или что-то еще) - опционально )</p>
+
+<p>Что касается качества - Буйские хуже, Яровские лучше )) Но все работают)</p>
+
+<p><strong>sloov</strong> 07-03-2016</p>
+
+<blockquote>
+  <p>Для раствора вообще-то достаточно Яра 6-14-30 и нитрата кальция, но надо посмотреть, сколько в этой Яре магния (мне недосуг искать), возможно, для полноценного раствора потребуется еще и сульфат магния.</p>
+</blockquote>
+
+<p>В Yara 6-14-30 Магния 4.3</p>
+
+<p>По торфу все ясно, вопрос с ним закрыт, спасибо!</p>
+
+<p><strong>sloov</strong> 07-03-2016</p>
+
+<blockquote>
+  <p>Возьмите комплекс (но с повышенным калием - например 12-12-36), кальциевую селитру и сульфат(либо нитрат) магния. и всё вырастет ))</p>
+
+  <p>Микроэлементы (Аквамикс или что-то еще) - опционально )</p>
+
+  <p>Что касается качества - Буйские хуже, Яровские лучше )) Но все работают)</p>
+</blockquote>
+
+<p>Спасибо за совет. Среди буйских или яровских комплексных я не нашел 12-12-36.</p>
+
+<p>Тут на форуме я нашел три рецепта под салат</p>
+
+<p>Formula Rijk Zwaan</p>
+
+<p>N-145</p>
+
+<p>P-41</p>
+
+<p>K-275-390</p>
+
+<p>Mg-24</p>
+
+<p>Ca-100-160</p>
+
+<p>Cornell University</p>
+
+<p>N-125</p>
+
+<p>P-31</p>
+
+<p>K-215</p>
+
+<p>Mg-24</p>
+
+<p>Ca-84</p>
+
+<p>Formula Dr. Resh</p>
+
+<p>N-190</p>
+
+<p>P-50</p>
+
+<p>K-210</p>
+
+<p>Mg-20</p>
+
+<p>Ca-200</p>
+
+<p>Воспользуемся формулой доктора Resh-а и примем содержание кальция 200мг/л, тогда согласно калькулятору <a href="http://forum.ponics.ru/index.php?topic=711.0" target="_blank">http://forum.ponics.ru/index.php?topic=711.0</a> получаем, что на 100 литров р-ра мне надо добавить 118гр нитрата кальция.</p>
+
+<p>Т.е. я беру например комплексное удобрение под свои нужды, там нет кальция, я его добавляю согласно расчетам выше, я правильно действую?</p>
+
+<p>Так же тут написали про магний, с ним пока не понятно, в рецептах мг/л, а в удобрениях он в %. Что-то я запутался, пойду отдыхать.</p>
+
+<p><strong>n72black</strong> 07-03-2016</p>
+
+<p>А зачем столько кальция, салату вполне достаточно 130-140. Это если обеспечить нормальные условия для салата.</p>
+
+<p>Но если у вас также тепло и солнечно как в калифорнии, то тогда да. :)</p>
+
+<p><strong>sloov</strong> 07-03-2016</p>
+
+<blockquote>
+  <p>А зачем столько кальция, салату вполне достаточно 130-140. Это если обеспечить нормальные условия для салата.</p>
+
+  <p>Но если у вас также тепло и солнечно как в калифорнии, то тогда да. :)</p>
+</blockquote>
+
+<p>Да, однако мы не к Калифорнии <em>crazy</em></p>
+
+<p>Уменьшим до 135!</p>
+
+<p><strong>ded_pihto</strong> 08-03-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>гораздо лучше электролита - ортофосфорная кислота .</p>
+  </blockquote>
+
+  <p>Поясните эту “гораздость”.</p>
+</blockquote>
+
+<p>в ортофосфорной кислоте есть фосфор а в электролите кроме серной кислоты есть еще наверняка и куча всяких ненужных присадок для растений но полезных для аккумулятора.</p>
+
+<p>а вот в Х.Ч ортофосфорной кислоте ни чего другого нет кроме вышеобозначенной кислоты.</p>
+
+<p><strong>n72black</strong> 09-03-2016</p>
+
+<p>В электролите только х.ч. серная кислота и дистиллированная вода. Свинцово-кислотные аккумуляторы весьма чувствительны к излишним хим. добавкам. :) Кроме того там есть жизненно необходимая для растений сера, ну и серной кислоты нужно в два(может три) раза меньше чем ортофосфорной для того же показателя рН с одинаковой водой.</p>
+
+<p>п.с. да и фосфора то растюхам много не надо, всего-то 30-40 мг/л(в редких исключениях 46-47) пит. раствора. ;)</p>
+
+<p><strong>orgail</strong> 09-03-2016</p>
+
+<p>покажите мне коммерса, который будет присадки добавлять в электролит, но при этом не будет кричать об этом и цену задирать :D :D :D</p>
+
+<p>тут можно грешить только на “грязный” продукт… а присадки.. это фантастика</p>
+
+<p><strong>ded_pihto</strong> 09-03-2016</p>
+
+<blockquote>
+  <p>покажите мне коммерса, который будет присадки добавлять в электролит, но при этом не будет кричать об этом и цену задирать :D :D :D</p>
+
+  <p>тут можно грешить только на “грязный” продукт… а присадки.. это фантастика</p>
+</blockquote>
+
+<p>ню-ню знатоки )))) и весь форум завален вопросами почему ни чего не растет ? да патамушта химия грязная :D</p>
+
+<p><strong>orgail</strong> 09-03-2016</p>
+
+<p>ну, поведайте миру что там за</p>
+<blockquote>
+  <p>куча всяких ненужных присадок для растений но полезных для аккумулятора</p>
+</blockquote>
+
+<p>вынимательно слушаем :D :D :D</p>
+
+<p><strong>sloov</strong> 09-03-2016</p>
+
+<p>Да хрен с ним с этим электролитом, его все используют и будут продолжать использовать! :D</p>
+
+<p><strong>ded_pihto</strong> 09-03-2016</p>
+
+<blockquote>
+  <p>Да хрен с ним с этим электролитом, его все используют и будут продолжать использовать! :D</p>
+</blockquote>
+
+<p>а я использую ортофосфорную кислоту Х.Ч. :) <em>crazy</em></p>
+
+<p><strong>ihands</strong> 09-03-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>покажите мне коммерса, который будет присадки добавлять в электролит, но при этом не будет кричать об этом и цену задирать :D :D :D</p>
+
+    <p>тут можно грешить только на “грязный” продукт… а присадки.. это фантастика</p>
+  </blockquote>
+
+  <p>ню-ню знатоки )))) и весь форум завален вопросами почему ни чего не растет ? да патамушта химия грязная :D</p>
+</blockquote>
+
+<p>Даже еще проще: “патамушта химия”.</p>
+
+<p><strong>sloov</strong> 09-03-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>Да хрен с ним с этим электролитом, его все используют и будут продолжать использовать! :D</p>
+  </blockquote>
+
+  <p>а я использую ортофосфорную кислоту Х.Ч. :) <em>crazy</em></p>
+</blockquote>
+
+<p>Деда вычеркиваем:)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

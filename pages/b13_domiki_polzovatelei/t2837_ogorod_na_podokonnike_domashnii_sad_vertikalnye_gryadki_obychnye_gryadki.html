@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Огород на подоконнике: "Домашний сад", вертикальные грядки, обычные грядки | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Огород на подоконнике: &quot;Домашний сад&quot;, вертикальные грядки, обычные грядки">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Огород на подоконнике: "Домашний сад", вертикальные грядки, обычные грядки</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>oevileye</strong> 17-03-2018</p>
+
+<p>Всем здравствуйте! Наконец и я решила создать свой домик, ибо мой домашний огород расползся на три подоконника.</p>
+
+<p>Итак, у меня есть следующая “живность”.</p>
+
+<ol>
+  <li>Первыми я поставила две вертикальные грядки от Boxsand (системы закрытого типа, 60 см шириной, 120 см высотой, в каждой грядке 24 лунки, полив через верх, хотя сейчас я активно “допиливаю” мужа на доделывание капельного полива, пробуем разные варианты).</li>
+</ol>
+
+<p>В них сейчас растут уже 11 кустов земляники Пайнберри (начиналось с 6-ти, я укоренила усы), 3 шикарных куста чабреца (он же тимьян), 6 кустов душицы (мясистых и пахучих), 3 кусты мяты (весьма средних, с ними надо разбираться, чего им не так), было 4 лунки с луком (мы их уже все съели), 3 куста Мангольда, всякие цветы-фиалки, которые мне отдала бабушка, ну и еще росли всякие “эксперименты” типа магазинных салатов, которые было жалко выкинуть после съедения. Грунт - верховой торф, смешанный с цеолитом 2 к 1 (цеолит дал возможность торфу не так быстро высыхать, и в тоже время намного легче смачивать сухой торф).</p>
+
+<p>Выглядит (выглядело) все это примерно так (подоконник очень большой, глубина около 90 см , там еще и аквариум со стеллажом помещаются <em>crazy</em> <em>crazy</em>).</p>
+
+<p>Около двух месяцев назад:</p>
+
+<p><a href="https://t.me/ponics_ru_files/19159" target="_blank"><img src="/imagehost2/thumbs/twomonthsago.jpg" alt="" /></a> <a href="https://t.me/ponics_ru_files/19160" target="_blank"><img src="/imagehost2/thumbs/img20171213214117ltl.jpg" alt="" /></a></p>
+
+<p>Примерно месяц назад (в тарелке урожай чабреца и душицы, срезала чтобы подсушить и в чай класть).</p>
+
+<p><a href="https://t.me/ponics_ru_files/19161" target="_blank"><img src="/imagehost2/thumbs/onemonthago.jpg" alt="" /></a> <a href="https://t.me/ponics_ru_files/19162" target="_blank"><img src="/imagehost2/thumbs/onemonthago2.jpg" alt="" /></a> <a href="https://t.me/ponics_ru_files/19163" target="_blank"><img src="/imagehost2/thumbs/pineberryphp.jpg" alt="" /></a></p>
+
+<p>Некоторые лунки пришлось освободить из-за того, что при таком вертикальном расположении трудно сделать равномерное и недорогое освещение на уровне 5к+ люксов для каждой лунки. В итоге я остановилась на двух 50Вт белых 6500К светодиодных прожекторах, фитолампе 30 Вт красно-синей(4:1) и одной лампе Uniel для растений 18 Вт. Были еще свеодиодные китайские по 18Вт (дешевые), но они быстренько вышли из строя.</p>
+
+<p>Самодельная “люстра”, на которой все это висит:</p>
+
+<p><a href="https://t.me/ponics_ru_files/19164" target="_blank"><img src="/imagehost2/thumbs/img3ifi.jpg" alt="" /></a></p>
+
+<p>С освещением можно было бы еще повозиться, но так как я вывезу скоро эти грядки на дачу и буду использовать их там под зелень – смысла особого нет. Растут и растут усы, кусты, цветы. Тимьяну вообще отлично, душицам тоже, землянике терпимо (на плоды освещения явно не хватает).</p>
+
+<p>Да, все это хозяйство поначалу активно болело – было нашествие паутинного клеща на землянику и лаванду, потом на лук напали тли. Пришлось обрабатывать каждый раз фитовермом (раза по 3), сейчас живности нет, никто не болеет, тьфу-тьфу.</p>
+
+<p>2) На втором подоконнике в той же комнате у меня стоит “Домашний сад” (гидропоника). В нем с помощью форума и его уважаемых обитателей (особенное спасибо Пресвятому_Джимбиму :-* :-*) я вырастила салаты, укропы и петрушки. Сейчас засажу по новой все салатами.</p>
+
+<p><a href="https://t.me/ponics_ru_files/19165" target="_blank"><img src="/imagehost2/thumbs/domsad1.jpg" alt="" /></a> <a href="https://t.me/ponics_ru_files/19166" target="_blank"><img src="/imagehost2/thumbs/domsad2.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/19167" target="_blank"><img src="/imagehost2/thumbs/ukropuxu.jpg" alt="" /></a></p>
+
+<ol>
+  <li>На третьем подоконнике, который я заняла буквально неделю назад, муж сделал отличную подсветку 20-25к люксов на листьях из недорогих ламп 6500 К. Там сейчас стоят еще два куста душицы, куст лаванды, который благополучно пережил зиму в горшке, 2 розовых куста с цветочками и бутонами и полудохдый мандарин (он всю свою жизнь жил без подсветки, бедняга, а сейчас получил света и резко оживился, начал обрастать молодыми листьями). И там же я планирую экспериментировать с рассадой, огурцами, помидорами и опять земляникой (грунт или гидропоника – по ходу дела будет видно). Два DWC ведра я уже туда водрузила, но пока перцы, огурцы и помидоры на стадии проращивания. Буду смотреть :)</li>
+</ol>
+
+<p>DWC тарахтит, в комнате мне оно не понравилось.</p>
+
+<p>Всем эти “огородничеством” я, видимо, “заболела” надолго :D :D Уже размышляю, как и где на даче сделать летом гидропонику <em>sos</em> <em>sos</em></p>
+
+<p><strong>allex_step</strong> 18-03-2018</p>
+
+<p>А поведайте-ка процедуру домашнего применения Фитоверма</p>
+
+<p><strong>Vad</strong> 18-03-2018</p>
+
+<p>разводишь в воде… да брызгаешь на растюхи…</p>
+
+<p>процедура очень простая))</p>
+
+<p>воняет только непривычно… но запах проходит через сутки</p>
+
+<p><strong>oevileye</strong> 18-03-2018</p>
+
+<p>Фитоверм: разбавляете по инструкции, надеваете “костюм химзащиты” (в моем случае это очки, косынка, маска медицинская, халат, который не жалко выкинуть, перчатки), убираете детей и закрываете/убираете детей и живность типа рыбок/птичек из “области поражения” Фитовермом (у меня на окне с грядками стоит аквариум – закрываю кожухом и выключаю на время компрессор) и начинаете густо поливать все растения из пульверизатора, землю вокруг растений, сами горшки/грядки, обратную сторону листьев обязательно и погуще. Запах от него есть и довольно сильный, но в воздухе Фитоверм не задерживается, часа через 2-3 уже почти не пахнет (особенно если саму комнату проветривать эти самые часа 2-3).</p>
+
+<p>Если очень захочется – можно после того, как перестанет пахнуть, протереть подоконник тряпкой, т.к. Фитоверм действует контактно, не ингаляционно, и как только взвесь с водой после обрызгивания осядет на растения и все остальное (и все остальное протереть тряпкой), нюхать/травиться уже нечем.</p>
+
+<p>“Костюм” желательно после обработки сразу снять и постирать, лицо и руки вымыть. В общем, все <em>8)</em></p>
+
+<p>Мыло в раствор не добавляю, дождей и ветров на окне не бывает.</p>
+
+<p>Рыбки или птички сдохнут, если наглотаются или нанюхаются Фитоверма.</p>
+
+<p><strong>Karolsog</strong> 15-11-2018</p>
+
+<p>с чего начинать посадку. Решила на подоконнике вырастить петрушку и базилик, купила семена, но совершенно не представляю с чего начинать, нужно ли проращивать семена или так сеять, как часто поливать?</p>
+
+<p><strong>siv237</strong> 15-11-2018</p>
+
+<blockquote>
+  <p>с чего начинать посадку. Решила на подоконнике вырастить петрушку и базилик, купила семена, но совершенно не представляю с чего начинать, нужно ли проращивать семена или так сеять, как часто поливать?</p>
+</blockquote>
+
+<p>Эти можно просто кучей сыпать в стакан.</p>
+
+<p><strong>oevileye</strong> 13-01-2019</p>
+
+<p>Мой сад на подоконнике внезапно превратился в клубничную грядку! :D :-*</p>
+
+<p>Подробности я описала в теме про установку Домашний сад.</p>
+
+<p>Завтра сфотографирую, как это выглядит сейчас все вместе.</p>
+
+<p><img src="https://i.postimg.cc/LgXgxwtw/IMG-20190103-202120.jpg" alt="" /></p>
+
+<p><img src="https://i.postimg.cc/cgdnnrrs/IMG-20190103-202135.jpg" alt="" /></p>
+
+<p><img src="https://i.postimg.cc/sQzp4T0C/IMG-20190103-202159.jpg" alt="" /></p>
+
+<p><img src="https://i.postimg.cc/B8kzZf6c/IMG-20181204-193828.jpg" alt="" /></p>
+
+<p><img src="https://i.postimg.cc/sQpCtgcZ/IMG-20181023-111323.jpg" alt="" /></p>
+
+<p><img src="https://i.postimg.cc/dkMKHy8Y/IMG-20190103-202142.jpg" alt="" /></p>
+
+<p><strong>siv237</strong> 14-01-2019</p>
+
+<p>Ну здорово, зимняя ягодка.</p>
+
+<p>Но я бы немного на кальций обратил внимание или кислотность.</p>
+
+<p><strong>Likl</strong> 14-01-2019</p>
+
+<p>Клубника, свежая, дома, представляю как глаз радует хмурым январским днем. <em>Dance</em></p>
+
+<p>А какая судьба у вертикальных грядок?</p>
+
+<p><strong>Expibra</strong> 08-05-2019</p>
+
+<p>У меня который год зимой на подоконнике растет лук зеленый, и уже второй год растет петрушка, до самой новой зелени. А забыла, еще растет второй год горький перец жгучий,мужа радует.</p>
+
+<p><strong>Sharma</strong> 04-07-2019</p>
+
+<p>Как у вас все красиво организованно! Я тоже практикую <a href="https://domsad.guru/ovoshhi/6-prichin-ustroit-mini-ogorod-u-sebya-doma-kak-vyrastit-ovoshhi-zelen-i-dazhe-klubniku-v-kvartire.html" target="_blank">огород на подоконнике</a>, очень довольна, хоть и забот с этим хватает.</p>
+
+<p>Под мини-огород выделяют место. Чтобы сэкономить пространство, используют стеллажи. При недостатке солнечного света применяют специальные лампы, ведь некоторые виды овощей светолюбивы и нуждаются в 10-12 часовом световом дне. Для посадки семян подойдут глиняные емкости. В магазине для садоводов можно найти пластиковые, деревянные и даже торфяные.</p>
+
+<p>Выбор емкости зависит от вида проращиваемых овощей или зелени. Но все горшки должны иметь отверстия для слива лишней влаги. Выращивать в квартире овощи и зелень в обычной земле нельзя. Для комнатного огорода применяют многослойный грунт:</p>
+
+<ul>
+  <li>
+    <p>торф;</p>
+  </li>
+  <li>
+    <p>компост;</p>
+  </li>
+  <li>
+    <p>дерн.</p>
+  </li>
+</ul>
+
+<p>Выбор семян – ответственное занятие. Если одни быстро всходят и дают урожай, то другие могут даже не взойти. Перед устройством мини-огорода полезно изучить информацию о культурах.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

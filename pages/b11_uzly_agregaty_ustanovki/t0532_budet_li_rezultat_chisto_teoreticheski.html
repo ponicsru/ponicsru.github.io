@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Будет ли результат чисто теоретически? | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Будет ли результат чисто теоретически?">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Будет ли результат чисто теоретически?</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Luck</strong> 07-06-2010</p>
+
+<p>Здравствуйте господа гидропонщики!</p>
+
+<p>Наблюдаю за вашим форумом, читаю, интересуюсь. Радует, что люди отзывчивые, помогают советом. Не уверен, что правильно разместил тему, если что не так не ругайтесь :)</p>
+
+<p>Вопрос в следующем: как я понимаю растения в дневное время (при наличие освещения) поглощают СО2 выделяют О2 а при отсутствии освещения процесс обратный. Скажите если к примеру несколько установок (на искусственном освещении) и с одним питательным раствором подключить так, что у одних растений “день” у других “ночь” соответственно одни выделяют кислород другие его поглощают и СО2 тоже самое. Будет ли эффект от этого и насколько растения дышат через корневую систему (планируется что обмен будет через питательный раствор).</p>
+
+<p><strong>Mole_Garden</strong> 07-06-2010</p>
+
+<p>:-\ Интересный вопрос</p>
+
+<p>Сдается мне, что особого эффекта от этого не будет. А через раствор подовать СО2 это, думаю, не самый лучший вариант. В растворе нужен кислород и чем больше тем лучше.</p>
+
+<p><strong>Садовник</strong> 07-06-2010</p>
+
+<p>“Дышат” у растения все органы.</p>
+
+<p>А вот участвуют в фотосинтезе (с выделением кислорода)- только зелёные части.</p>
+
+<p>Дышит растение круглые сутки, а фотосинтез - только “днём”</p>
+
+<p>С чередованием освещения - Интересная тема, можно поэкспериментировать.</p>
+
+<p>Учитывайте следующие моменты:</p>
+
+<p>Это может быть эффективно только для полной светокультуры. Нужно иметь два изолированных от проникновения света помещения и между ними огранизовать циркуляцию воздуха. В одном “день”, в другом - “ночь”. Как минимум будет экономия на освещении. Возможно немного эффекта будет и от СО2 “спящих” растений.</p>
+
+<p>Но “ночь” у спящих должна быть полной. От полумрака больше вреда, чем пользы.</p>
+
+<p><strong>Luck</strong> 07-06-2010</p>
+
+<p>Продумываю установку для северных районов, нам полно пустующих помещений, мало тепла и света зимой тоже не хватает (полярная ночь). Думаю, что модель из шестигранников с отдельным освещением каждого будет наиболее эффективной и тепло (от лампы) и свет весь тут (электричества экономия) ну и вопрос день ночь организовать просто.</p>
+
+<p>Про СО2 поступающий через корни прочитал тут:</p>
+
+<p><a href="http://www.business-st.ru/index.php?option=com_content&amp;view=article&amp;id=1066:promyshlennayaakvak&amp;catid=4:aktualnaya-ekonomika" target="_blank">http://www.business-st.ru/index.php?option=com_content&amp;view=article&amp;id=1066:promyshlennayaakvak&amp;catid=4:aktualnaya-ekonomika</a></p>
+
+<p>Вырезка “ В нашем проекте углекислый газ поступает растениям из-под корней, как в природе, только значительно в больших количествах.</p>
+
+<p>Стоит отметить, что при концентрации углекислоты в 10 и более раз выше, чем в природе, у растений не ограничены возможности фотосинтеза по ее усвоению и они растут по максимуму. В обычных же условиях растения могут усвоить лишь одну треть фотосинтезной энергии света, а то и меньше. Это происходит из-за нехватки углекислого газа. “</p>
+
+<p><strong>Rossich</strong> 07-06-2010</p>
+
+<blockquote>
+  <p>Вырезка “ В нашем проекте углекислый газ поступает растениям из-под корней, как в природе, только значительно в больших количествах.</p>
+
+  <p>Стоит отметить, что при концентрации углекислоты в 10 и более раз выше, чем в природе, у растений не ограничены возможности фотосинтеза по ее усвоению и они растут по максимуму. В обычных же условиях растения могут усвоить лишь одну треть фотосинтезной энергии света, а то и меньше. Это происходит из-за нехватки углекислого газа. “</p>
+</blockquote>
+
+<p>Да, но растения впитывают его СО2 устьицами днем, а не корнями, корням нужен кислород в больших количествах.</p>
+
+<p><strong>Luck</strong> 07-06-2010</p>
+
+<p>Тогда как же в аквапонике живет например осетр и клубника если им обоим нужен кислород? видео тут <a href="http://smotri.com/video/view/?id=v469735a542" target="_blank">http://smotri.com/video/view/?id=v469735a542</a> и там же закрытый аквариум с креветками и водорослями?</p>
+
+<p><strong>Rossich</strong> 07-06-2010</p>
+
+<blockquote>
+  <p>Тогда как же в аквапонике живет например осетр и клубника если им обоим нужен кислород? видео тут и там же закрытый аквариум с креветками и водорослями?</p>
+</blockquote>
+
+<p>А системы аэрации там зачем, и микроводоросли вырабатывающие кислород, поглащая азот и СО2 у креветки</p>
+
+<p><strong>Oxy</strong> 07-06-2010</p>
+
+<p>Мне где-то встречались пропорции поглощения этих газов, по моему, они различаются в разы. То есть если растение днем поглощает кубометр СО2, то ночью поглощает несколько грамм кислорода. В качестве генераторов СО2 выгодно использовать теплокровных животных а не растения. То есть одна собачка может надышать СО2 намного больше, чем выделит неосвещенная плантация. Мне так кажется…</p>
+
+<p><strong>Luck</strong> 07-06-2010</p>
+
+<blockquote>
+  <p>Мне где-то встречались пропорции поглощения этих газов, по моему, они различаются в разы. То есть если растение днем поглощает кубометр СО2, то ночью поглощает несколько грамм кислорода. В качестве генераторов СО2 выгодно использовать теплокровных животных а не растения. То есть одна собачка может надышать СО2 намного больше, чем выделит неосвещенная плантация. Мне так кажется…</p>
+</blockquote>
+
+<p>Вот почему я и задал вопрос, в надежде, что профессионалы подскажут сколько чего поглощать может растение и сколько чего выделять. Может есть у кого данные.</p>
+
+<blockquote>
+  <p>А системы аэрации там зачем, и микроводоросли вырабатывающие кислород, поглащая азот и СО2 у креветки</p>
+</blockquote>
+
+<p>Все таки не пойму что нужно растению (корням) больше кислород или углекислый газ?</p>
+
+<blockquote>
+  <p>…В нашем проекте углекислый газ поступает растениям из-под корней, как в природе, только значительно в больших количествах…</p>
+</blockquote>
+
+<p>как к этому высказыванию относиться?</p>
+
+<p>:)только ногами не бейте :)</p>
+
+<p><strong>Mole_Garden</strong> 07-06-2010</p>
+
+<blockquote>
+  <p>Все таки не пойму что нужно растению (корням) больше кислород или углекислый газ?</p>
+</blockquote>
+
+<p>Эм, всю жизнь, которую занимаюсь растениями думал что кислород :D</p>
+
+<p><strong>orgail</strong> 07-06-2010</p>
+
+<p>где то проскакивала информация, вполне возможно что и в одной из книг из библиотеки..</p>
+
+<p>кислорода корням нужно намного меньше чем со2 верхушке</p>
+
+<p><strong>Rossich</strong> 07-06-2010</p>
+
+<blockquote>
+  <p>А как к этому высказыванию относиться?</p>
+
+  <p>:)только ногами не бейте :)</p>
+</blockquote>
+
+<p>Поставь в систему раствора аэрационный модуль на жидком кислороде и подачу СО2 из баллона через форсунки над растением и увидишь… :D :D что растениям нужны только воздух и вода, они начинают синтезировать ПВ сами из того, что есть вокруг. Пример- мангровые деревья, верблюжья колючка в пустыне.</p>
+
+<p><strong>valery</strong> 07-06-2010</p>
+
+<p>Ну можно еще немножко света добавить, на всякий случай. :)</p>
+
+<p>Ну и чуток питательных элементов. :) :)</p>
+
+<p>Ну еще микроэлементов. :) :) :)</p>
+
+<p>В принципе, можно еще малость “тепла” какого-нибудь :D</p>
+
+<p>Там - влажности :D :D</p>
+
+<p>Можно еще и субстрат, вдруг пригодится :D :D :D</p>
+
+<p>А так - в основном, да. Воздух и вода.</p>
+
+<p>Это я - не для дискусии, а так. Для настроения. ;D</p>
+
+<p><strong>Олеганос</strong> 08-06-2010</p>
+
+<p>в раствор СО2 однозначно не нужен, если конечно не планируете хлореллу выращивать ???</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

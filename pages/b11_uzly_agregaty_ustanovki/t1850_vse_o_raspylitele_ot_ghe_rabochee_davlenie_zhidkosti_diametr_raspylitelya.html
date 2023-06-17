@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Всё о распылителе от GHE: рабочее давление жидкости, диаметр распылителя | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Всё о распылителе от GHE: рабочее давление жидкости, диаметр распылителя">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Всё о распылителе от GHE: рабочее давление жидкости, диаметр распылителя</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>polarbox</strong> 25-09-2013</p>
+
+<p><a href="https://t.me/ponics_ru_files/10960" target="_blank"><img src="/imagehost/thumbs/ghe.jpg" alt="" /></a></p>
+
+<p><strong>polarbox</strong> 25-09-2013</p>
+
+<p>Привет всем) Планирую сделать аэропонную установку многоярусную. Аэропонные системы Aero Flo от GHE мне показались привлекательны, поэтому их технологию беру за образец. Необходимо узнать диаметр распылителя от GHE для того, чтобы подобрать к нему шланг (трубку). Планирую подавать раствор самотеком (без нагнетания давления насосом) в этот шланг с распылителем от GHE следующим способом: из бака (240 литров) через шаровой кран самотеком постоянно равномерно льется раствор, который падает в другой бак (например, 10 литров). Задача этого 10 литрового бака подавать раствор растениям периодично (каждые 10 мин - для рассады, или 20 мин - для взрослого растения), благодаря сифону (шланг скрученный ввиде петли или “знака вопроса”). Как только уровень раствора в 10 литровом баке подымется до верхней точки этого сифона, произойдет полностью вытекание раствора под силой тяжести из этого бака через этот сифон. Таким образом периодично через одинаковые интервалы времени растения будут поливаться раствором из этого 10 литрового бака. Давления жидкости, падающей из 10 литрового бака, будет достаточно для мелкодисперсного распыления раствора через распылитель от GHE?</p>
+
+<p><strong>polarbox</strong> 25-09-2013</p>
+
+<p>высота этого 10 литрового бака (верхней точки сифона), например 30 см.</p>
+
+<p><strong>alexxx</strong> 25-09-2013</p>
+
+<p>У GHE усть еще переходник на шланг, в который вставляется этот распылитель. Рекомендую его тоже купить, он очень удачно врезается в крышку системы.</p>
+
+<p>Диаметр там под стандартный шланг для капельниц, 6мм вроде.</p>
+
+<p>Самотеком раствор через них подавать не получится - будет только капать, а не распыляться. Обычная аквариумная помпа нужна, и по таймеру..</p>
+
+<p><strong>polarbox</strong> 26-09-2013</p>
+
+<p>Спасибо, за ответ. Я на одном сайте поговорил в он-лайн с продавцом. Он сказал мне, что этот распылитель вставляется внутрь шланга-капельницы 6 на 4 (6 - внутренний диаметр, 4 - толщина стенки шланга) и сказал мне, что распылитель GHE под давлением жидкости из шланга не вылетит. Меня интересует будет ли распылитель GHE без переходника держаться под давлением жидкости в этом шланге. В системе Aero Flo от GHE перед тем как попасть в распылитель раствор проделывает путь сначало по шлангу, затем по более тонкому (меньший диаметр) капельнцице-шлангу к распылителю. Я планирую использовать обычный шланг для капельного полива, сделать в нем шилом несколько отверстий и присоединить в них шланги-капельницы. Так же вопрос по давлению, под давлением жидкости шланги-капельницы не отвалятся от шланга или здесь необходимо что-то подобное, как в Aero Flo от GHE (крепления между шлангами резьбовое, плотно закручиваются) и где можно купить это?</p>
+
+<p><strong>alexxx</strong> 26-09-2013</p>
+
+<p>Распылитель вставляется в эту штуку, а она в свою очередь вставляется в отверстие в крышке бака. На сам распылитель трубку вы не натяните.</p>
+
+<p>Аквариумные помпы не дают такого давления, чтоб шланги вылетали. :D</p>
+
+<p><a href="https://t.me/ponics_ru_files/10961" target="_blank"><img src="/attachimages/13909_26-09-2013 17-17-58.gif" alt="" /></a></p>
+
+<p><strong>alexxx</strong> 26-09-2013</p>
+
+<p>Купить всё можно тут: https://dzagigrow.ru/catalog/147/</p>
+
+<p><strong>polarbox</strong> 26-09-2013</p>
+
+<p>Благодарю! На мой взгляд самая простая система полива “центральный шланг-магистраль+шланг-капельница+Переходник трубки полива+распылитель от GHE” для 50 погонных метров (длина проектируемой теплицы) будет состоять из следующих товаров: труба Azud 50 метров диаметр 16 мм (<a href="http://growit.ru/store/azud-kapelnyj-poliv/azud-kapelnyj-poliv/16-truba-50-m-bobina.html" target="_blank">http://growit.ru/store/azud-kapelnyj-poliv/azud-kapelnyj-poliv/16-truba-50-m-bobina.html</a>) + микротрубка Azud 6х4 (<a href="http://growit.ru/store/azud-kapelnyj-poliv/azud-kapelnyj-poliv/korichnevaya-6h4-mikrotrubka-50-m-bobina.html" target="_blank">http://growit.ru/store/azud-kapelnyj-poliv/azud-kapelnyj-poliv/korichnevaya-6h4-mikrotrubka-50-m-bobina.html</a>)+Переходник трубки полива (<a href="https://dzagigrow.ru/catalog/147/1405/" target="_blank">https://dzagigrow.ru/catalog/147/1405/</a>)+распылитель от GHE. Вопрос по давлению жидкости или по мощности насоса. Какой необходим насос для мелкодисперстного распыления раствора в вышеуказанной самодельной системе. Дополнительно сообщаю, насос должен подавать жидкость на высоту (вертикальная плоскость) 40 см и в длину (горизонтальная плоскость) 50 метров, так же необходимо насосу подавать жидкость одновременно сразу на 3 параллельных друг другу “труба Azud 50 метров диаметр 16 мм”, к которой через каждые 11 см подсоединены “микротрубка Azud 6х4”?</p>
+
+<p><strong>polarbox</strong> 26-09-2013</p>
+
+<p>3 вышеуказанные параллельные трубы “труба Azud 50 метров диаметр 16 мм” соединяются “друг с другом” при помощи перпендикулярной к ним трубы “труба Azud 50 метров диаметр 16 мм”, которая имеет длину 1,2 метра. Из этой трубы (длина 1,2 метра) раствор попадает в те 3 параллельные друг другу трубы (длина каждой трубы 50 метров).</p>
+
+<p><strong>polarbox</strong> 26-09-2013</p>
+
+<p>“6 - внутренний диаметр, 4 - толщина стенки шланга”, - я думаю это ошибка (смотрим выше), скорее всего: 6 - внешний диаметр трубы, 4 - внутренний диаметр трубы.</p>
+
+<p><strong>polarbox</strong> 26-09-2013</p>
+
+<p>Предлагаю обсудить следующий насос (<a href="http://www.ebay.com/itm/Pumpe-HX-6550-5580-L-h-200-W-fur-AeroFlo-von-GHE-/110701964471?pt=Pumpen&amp;hash=item19c659ecb7" target="_blank">http://www.ebay.com/itm/Pumpe-HX-6550-5580-L-h-200-W-fur-AeroFlo-von-GHE-/110701964471?pt=Pumpen&amp;hash=item19c659ecb7</a>) в качестве кандидата на работу в вышеупомянутой системе полива.</p>
+
+<p>Pumpe HX-6550</p>
+
+<ul>
+  <li>
+    <p>5580 L/h</p>
+  </li>
+  <li>
+    <p>200 W</p>
+  </li>
+  <li>
+    <p>H = 4,0 m</p>
+  </li>
+  <li>
+    <p>für AeroFlo84, AeroFlo120 und DPS Aero 2m²</p>
+  </li>
+</ul>
+
+<p>Есть подозрения, что мощности этого насоса не хватит, тогда предлагаю идею несколько таких насосов подсоединить параллельно друг другу, чтобы жидкость после выхода из насосов объединялась в единой трубе (при помощи шлангов и фитингов). Сколько таких насосов надо подсоединить параллельно?</p>
+
+<p>Например, в Aero Flo 120 от GHE, которая имеет 2 параллельных друг другу поливочного шланга (я думаю, длина каждого шланга 6,6 метра), 1 перпендикулярный шланг к этим 2 параллельным шлангам (я думаю, длина шланга 0,8 метра), используется в ней этот насос (наверно, в количестве 1 штука). В самодельной системе таких поливочных параллельных друг другу шлангов - 3 шт., правда их длина - 50 метров, 1 перпендикулярный шланг к этим 3 параллельным шлангам (длина шланга 1,2 метра). Итак, самодельная система превосходит Aero Flo 120 от GHE по количеству параллельных шлангов в 1,5 раза (коэффициент = 1,5), по длине параллельного шланга в 7,56 раза (коэффициент = 7,56), по длине перпендикулярного шланга в 1,5 раза (этот коэффициент я не знаю как учесть, учитывать не буду его, думаю, погрешность расчетов будет минимальна). Следовательно, 1 насос умножаем на 1,5 и умножаем на 7,56, получаем 11,34 насосов. Значит для самодельной системы необходимо 12 вышеупомянутых насосов. Хотелось бы узнать внутренний диаметр центрального поливочного шланга/трубы (это тот шланг, который в длину 6,6 метра) в Aero Flo 120 от GHE, чтобы подкорректировать выше приведенные математические расчеты.</p>
+
+<p><strong>cpf</strong> 27-09-2013</p>
+
+<p>Я бы еще предложил подумать вот о чем: <a href="http://yandex.ru/yandsearch?text=%D0%BF%D0%BE%D0%BC%D0%BF%D1%8B+%D0%BE%D1%81%D0%BC%D0%BE%D1%81&amp;clid=1955453&amp;lr=10745" target="_blank">http://yandex.ru/yandsearch?text=%D0%BF%D0%BE%D0%BC%D0%BF%D1%8B+%D0%BE%D1%81%D0%BC%D0%BE%D1%81&amp;clid=1955453&amp;lr=10745</a></p>
+
+<p>и еще в качестве резервуара для полива взял бы мембранный бак от осмотической системы. Тогда можно легко получить примерно 10л раствора под нужным давлением (если нужен больше - их полно до 200л). Поливать - по таймеру, открывая клапан.</p>
+
+<p><strong>alexxx</strong> 27-09-2013</p>
+
+<blockquote>
+  <p>Предлагаю обсудить следующий насос (<a href="http://www.ebay.com/itm/Pumpe-HX-6550-5580-L-h-200-W-fur-AeroFlo-von-GHE-/110701964471?pt=Pumpen&amp;hash=item19c659ecb7" target="_blank">http://www.ebay.com/itm/Pumpe-HX-6550-5580-L-h-200-W-fur-AeroFlo-von-GHE-/110701964471?pt=Pumpen&amp;hash=item19c659ecb7</a>) в качестве кандидата на работу в вышеупомянутой системе полива.</p>
+</blockquote>
+
+<p>А что его обсуждать, обычная китайская Halea 6550, у нас ее раза в 2 дешевле купить можно, чем ценник на ебее.</p>
+
+<p>Такая помпа стоит в aeroflo84</p>
+
+<blockquote>
+  <p>Есть подозрения, что мощности этого насоса не хватит, тогда предлагаю идею несколько таких насосов подсоединить параллельно друг другу, чтобы жидкость после выхода из насосов объединялась в единой трубе (при помощи шлангов и фитингов).</p>
+</blockquote>
+
+<p>Позвольте спросить, зачем такое извращение? Если нужно ставить несколько помп - делайте трубопровод независимым. Например есть 2 помпы и 100 распылителей - ставьте по 50 распылителей на каждую помпу.</p>
+
+<blockquote>
+  <p>Я бы еще предложил подумать вот о чем: <a href="http://yandex.ru/yandsearch?text=%D0%BF%D0%BE%D0%BC%D0%BF%D1%8B+%D0%BE%D1%81%D0%BC%D0%BE%D1%81&amp;clid=1955453&amp;lr=10745" target="_blank">http://yandex.ru/yandsearch?text=%D0%BF%D0%BE%D0%BC%D0%BF%D1%8B+%D0%BE%D1%81%D0%BC%D0%BE%D1%81&amp;clid=1955453&amp;lr=10745</a></p>
+
+  <p>и еще в качестве резервуара для полива взял бы мембранный бак от осмотической системы. Тогда можно легко получить примерно 10л раствора под нужным давлением (если нужен больше - их полно до 200л). Поливать - по таймеру, открывая клапан.</p>
+</blockquote>
+
+<p>Помпа от осмоса очень маленькой производительности. На капельницы пойдет, а на эти распылители нет.</p>
+
+<p><strong>cpf</strong> 27-09-2013</p>
+
+<blockquote>
+  <p>Помпа от осмоса очень маленькой производительности. На капельницы пойдет, а на эти распылители нет.</p>
+</blockquote>
+
+<p>большая производительность - не нужна: за время между поливами (минут 20) - накачает 10-20л под давлением в бак, а далее в распылители - уже из гидроаккумулятора. Главное, чтобы могла накачать нужное давление, а за сколько времени - уже не столь важно.</p>
+
+<p><strong>gena1</strong> 27-09-2013</p>
+
+<p>Мембранный насос от осмоса (ссылку Вам давали уже) + гидроаккумулятор (обязательно) + клапан. Никакие других помпы не подойдут - они либо будут капать все, либо будут первые по длине - лить, потом остальные - ссать, последние - капать…</p>
+
+<p><strong>alexxx</strong> 27-09-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>Помпа от осмоса очень маленькой производительности. На капельницы пойдет, а на эти распылители нет.</p>
+  </blockquote>
+
+  <p>большая производительность - не нужна: за время между поливами (минут 20) - накачает 10-20л под давлением в бак, а далее в распылители - уже из гидроаккумулятора. Главное, чтобы могла накачать нужное давление, а за сколько времени - уже не столь важно.</p>
+</blockquote>
+
+<p>Вообщето данные распылители отличаются большим расходом. Это вам не капельницы по 2 литра в час.</p>
+
+<p><strong>alexxx</strong> 27-09-2013</p>
+
+<blockquote>
+  <p>Мембранный насос от осмоса (ссылку Вам давали уже) + гидроаккумулятор (обязательно) + клапан. Никакие других помпы не подойдут - они либо будут капать все, либо будут первые по длине - лить, потом остальные - ссать, последние - капать…</p>
+</blockquote>
+
+<p>Ну это смотря как вы подсоедините распылители к общей трубе. Если сделаете все отводы к распылителям одинаковой длины - по и раствор пропускать они будут с одинаковой производительностью. Посмотрите как устроена система аэрофло84.</p>
+
+<p>Еще раз повторю - насос от осмоса потянет 2-3 таких распылителя, не больше.</p>
+
+<p><strong>gena1</strong> 27-09-2013</p>
+
+<p>alexxx, я посмотрел аэрофло84 . При таком числе форсунок без г/а - это просто брызгалки (с “дырой”, а не отверстием), как на стёкла автомобиля. Так и тему надо было назвать - брызгалки. Ни о каких распылителях речи не идёт.</p>
+
+<p>Конечно, для брызгалок не нужен г/а , не нужна мембранная помпа. Подбирайте простую помпу аквариумную, ссать будет нормально :)</p>
+
+<p><strong>polarbox</strong> 27-09-2013</p>
+
+<p>“Если вы решили создать аэропонную систему своими руками, попробуйте французские распылители от GHE.</p>
+
+<p>Помпу для вашей системы подбирайте из расчета 70 литров/час на каждый распылитель,” - это советует продавец (<a href="http://www.growmama.ru/component/virtuemart/details/388/91/gidroponnie-sistemi/chasti/raspilitel-ghe" target="_blank">http://www.growmama.ru/component/virtuemart/details/388/91/gidroponnie-sistemi/chasti/raspilitel-ghe</a>)…</p>
+
+<p><strong>polarbox</strong> 27-09-2013</p>
+
+<p>При нескольких сотнях распылителей, спаренных с “труба Azud 50 метров диаметр 16 мм” (длина трубы 50 метров), меня беспокоит пропускная способность этой трубы-магистрали (диаметр трубы 16 мм), что будет, как я полагаю, влиять и на КПД насоса и возможно на неодинаковое количество поступления жидкости на каждый распылитель от GHE (первые распылители получат больше жидкости, последние - меньше). На видео (<a href="http://video.yandex.ru/search?filmId=FWM6Tdh7UXI&amp;where=all&amp;text=Aero%20Flo%20120%20%D0%BE%D1%82%20GHE" target="_blank">http://video.yandex.ru/search?filmId=FWM6Tdh7UXI&amp;where=all&amp;text=Aero%20Flo%20120%20%D0%BE%D1%82%20GHE</a>) видно, что диаметр трубы-магистрали для Аero Flo 20 от GHE, примерно такой же, как и в самодельной системе. Однако, размеры Аero Flo 20 от GHE и самодельной системы, в которой много распылителей GHЕ, сильно различаются!!!</p>
+
+<p><strong>polarbox</strong> 27-09-2013</p>
+
+<p>Промышленная аэропонная системы AeroFlo 120 (<a href="http://agro-logic.ru/shop/system/122" target="_blank">http://agro-logic.ru/shop/system/122</a>) обладает следующими характеристиками:</p>
+
+<p>Мест для посадки 120 шт.</p>
+
+<p>Длина 660 см.</p>
+
+<p>Ширина 120 см.</p>
+
+<p>Высота 32 см.</p>
+
+<p>Объем бака 320 л.</p>
+
+<p><a href="https://t.me/ponics_ru_files/10962" target="_blank"><img src="/imagehost/thumbs/120.jpg" alt="" /></a></p>
+
+<p><strong>polarbox</strong> 27-09-2013</p>
+
+<p>На данный момент у меня очень мало информации о AeroFlo 120, поэтому буду исходить из тех данных, которые есть, возможно, они покажутся кому-то очень недостоверными, но за неимением лучшего довольствуемся тем, что есть. Итак из сообщения выше видно что продавец (agro-logic.ru/shop/system/122) путается в габаритах системы AeroFlo 120 (противоречия данных на фото и на странице сайта). Я, попробую, опираться на эти данные: Длина 660 см.</p>
+
+<p>Ширина 120 см.</p>
+
+<p>Высота 32 см.</p>
+
+<p>Объем бака 320 л.</p>
+
+<p>Если внимательно приглядеться к фото, то можно заметить, что не к каждому посадочному месту для растения подведена трубка-капельница (распылитель GHE) питания (это оказалось для меня неожиданностью). На переднем плане фото трубка-капельница - конкретно к каждому посадочному месту, а на заднем плане - “через одно”. Следовательно, в этой системе на 120 посадочных мест приходится распылителей, примерно, 60 штук (120 мест / 2). Итог, 60 распылителей GHE обслуживает 1 насос (технические характеристики насоса смотрим выше). Так как технология GHE - эталон (образец) для самодельной системы, то сделаем так же - подведем распылитель не к каждому посадочному месту, а подведем - “через одно”. Следовательно в трубе-магистрали сделаем отверстия для трубок-капельниц (в каждой из которых - по распылителю от GHE) на расстоянии 22 см друг от друга. Следовательно, на 50 метрах трубы-магистрали будет приходится 227 штук распылителей GHE (50 метров / 0,22 метра), значит эту магистраль сможет обслуживать без ущерба в качестве распыления 4 таких насоса (227 штук / 60 штук = 3,78 насосов), для всей самодельной системы - 12 таких насосов (4 насоса * 3 магистрали) или 1 насос (примерно, 66 960 литров/час), который в 12 раз мощнее этих насосов (5 580 литров/час).</p>
+
+<p>PS: меня пугают такие источники данных(</p>
+
+<p><strong>polarbox</strong> 27-09-2013</p>
+
+<p>Не знаю насколько достоверна рекомендация продавца по поводу 70 литров/час на каждый распылитель. По моим расчетам мощность насоса должна быть, примерно, на 30% БОЛЬШЕ (5 580 литров в час / 60 штук распылителей = 93 литров в час на 1 распылитель)!!!</p>
+
+<p><strong>alexxx</strong> 27-09-2013</p>
+
+<p>Полдюймовая труба мало. Гоните дюймовую.</p>
+
+<p><strong>polarbox</strong> 27-09-2013</p>
+
+<p>Посоветуйте из какого материала должна быть эта труба-магистраль: ПВХ, ПНД?</p>
+
+<p><strong>cpf</strong> 28-09-2013</p>
+
+<p>Чет я посмотрел “поближе” Ваш насосик: не внушат он мне доверия - “хлипкий” какой-то.</p>
+
+<p>Лучше вот этот гляньте: <a href="http://www.epool.ru/good/84063" target="_blank">http://www.epool.ru/good/84063</a>.</p>
+
+<p>Аналогичный Мультик (2500 л/ч) у меня 3 сезона отпахал без нареканий (а соседний ULTRA TECH - “сдох” через полсезона, сломалась крыльчатка от частых старт/стопов, видимо).</p>
+
+<p><a href="https://t.me/ponics_ru_files/10963" target="_blank"><img src="/imagehost/thumbs/cimg2892.jpg" alt="" /></a></p>
+
+<p>Кстати, там видно, каким должен быть диаметр магистрали.</p>
+
+<p>Думаю, что особой разницы нет ПВХ или ПНД (зависит от доступности и удобства сборки) .</p>
+
+<p>Еще - разбейте свою магистраль на секции (например по длине трубы ПВХ) и подводите раствор к каждой секции</p>
+
+<p>шлангами, через пластиковый распределитель, типа такого:</p>
+
+<p><a href="https://t.me/ponics_ru_files/10964" target="_blank"><img src="/imagehost/thumbs/891.jpg" alt="" /></a></p>
+
+<p>группируя блоки по 3-4 секции на насос (думаю, что 4 секции по 6 метров, по Вашим данным, такой насос потянет без проблем,</p>
+
+<p>а на всю Вашу магистраль понадобятся два таких насоса, или один такой <a href="http://www.epool.ru/good/84069" target="_blank">http://www.epool.ru/good/84069</a>).</p>
+
+<p><strong>alexxx</strong> 28-09-2013</p>
+
+<blockquote>
+  <p>Посоветуйте из какого материала должна быть эта труба-магистраль: ПВХ, ПНД?</p>
+</blockquote>
+
+<p>Вот тут всё купить можно. Фиттинги под клеевые и резьбовые соединения, а также сами трубы. У GHE в системах они же.</p>
+
+<p><a href="http://www.plasttermo.ru/fitingi.php" target="_blank">http://www.plasttermo.ru/fitingi.php</a></p>
+
+<p><strong>monksk</strong> 12-12-2013</p>
+
+<p>Добрый день стоит дома АэроФарм с двумя такими распылителями, система у изголовъя дивана никак не привыкну к ночным (фонтанам,водопадам,ливням) довольно громкая установка. Могу произвести замеры распылителя.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

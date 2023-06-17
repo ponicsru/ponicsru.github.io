@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Домик Вовин | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Домик Вовин">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Домик Вовин</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Wlad2</strong> 24-12-2010</p>
+
+<p>Ну, по советам гуру,дабы не захламлять чужие ветки и в надежде на советы бывалых ,буду пытаться выкладывать инфо о своих “творениях “ что-ли.Стеллаж из JOKER. Полки регулируются, есть куда еще добавить лотки.Высота освещения соответственно тоже.Насос sicce nova 200-800л. тубки- водный уровень, гофры на перелив.Пока посадил “Одесский кучерявец”и “Московский парниковый”(кстати взошел на 1,5 дня позже)</p>
+
+<p><strong>Wlad2</strong> 24-12-2010</p>
+
+<p>Посадил 15.12, через 8 дней получилось следующее. слева Одесский. т.к лампы подключил через день, он успел на 1см вытянуться</p>
+
+<p><strong>Wlad2</strong> 24-12-2010</p>
+
+<p>Лампы поставил FLUORA 2 по 36. Никто не тянется больше. Видимо хватает света. Горит с 10 до 21. Стоят два таймера, один на лампы другой на помпу.</p>
+
+<p><strong>Mole_Garden</strong> 24-12-2010</p>
+
+<blockquote>
+  <p>Лампы поставил FLUORA 2 по 36. Никто не тянется больше. Видимо хватает света. Горит с 10 до 21. Стоят два таймера, один на лампы другой на помпу.</p>
+</blockquote>
+
+<p>Маловато светишь по времени, надо хотя бы часов по 16 светить в день. У тебя так понимаю выходит по 11</p>
+
+<p><strong>Mole_Garden</strong> 24-12-2010</p>
+
+<p>Кстати, не лишнем будет за изолировать емкость с раствором.</p>
+
+<p><strong>Wlad2</strong> 25-12-2010</p>
+
+<p>Ну, насчет света, добавить не проблема. А емкость закрывать- чтобы не зацвела?На будущее приобрел УФ стерилизатор.</p>
+
+<p>Вчера посадил петрушку и базилик 3 горшочка.</p>
+
+<p><strong>Mole_Garden</strong> 25-12-2010</p>
+
+<blockquote>
+  <p>Ну, насчет света, добавить не проблема. А емкость закрывать- чтобы не зацвела?</p>
+</blockquote>
+
+<p>Ага, не смотря на то, что света под столом мало, все же лучше за изолировать.</p>
+
+<p><strong>Wlad2</strong> 25-12-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>Ну, насчет света, добавить не проблема. А емкость закрывать- чтобы не зацвела?</p>
+  </blockquote>
+
+  <p>Ага, не смотря на то, что света под столом мало, все же лучше за изолировать.</p>
+</blockquote>
+
+<p>Угу, спасибо, учту</p>
+
+<p><strong>Wlad2</strong> 27-12-2010</p>
+
+<p>Что-то вроде маленькие для 11 дня? Пойду света до 16 добавлю</p>
+
+<p><strong>Mole_Garden</strong> 27-12-2010</p>
+
+<blockquote>
+  <p>Что-то вроде маленькие для 11 дня? Пойду света до 16 добавлю</p>
+</blockquote>
+
+<p>Ну да, вот моим тоже 11 с момента проклевки</p>
+
+<p><img src="http://img202.imageshack.us/img202/5030/dsc00675m.th.jpg" alt="" /></p>
+
+<p>А как высоко висят лампы? Сколько ppm в растворе? Кстати, покажите светильники с лампами.</p>
+
+<p><strong>Wlad2</strong> 27-12-2010</p>
+
+<p>лампы флюора 2*36 (без рефлекторов, может какую золотку приспособить) от растишек 5-7 см ; в лотки их пересадил(с горшочками переставил) позавчера,</p>
+
+<p><strong>Mole_Garden</strong> 27-12-2010</p>
+
+<blockquote>
+  <p>лампы флюора 2*36 (без рефлекторов, может какую золотку приспособить) от растишек 5-7 см ; в лотки их пересадил(с горшочками переставил) позавчера,</p>
+</blockquote>
+
+<p>А отражателей совсем нет? Надо ставить отражатели по бокам и над лампами, лампы то круглые, так что весь свет уходит в разные стороны, на растения попадает его ооочень мало, нужны отражатели, хотя бы самые примитивные. Я в свое время использовал фольгу и толстую белую бумагу.</p>
+
+<p>Здесь есть немного про отражатели. <a href="http://forum.ponics.ru/index.php/topic,295.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,295.0.html</a></p>
+
+<p>Какой ppm у раствора?</p>
+
+<p><strong>Wlad2</strong> 27-12-2010</p>
+
+<p>1200 РРМ</p>
+
+<p><strong>Mole_Garden</strong> 27-12-2010</p>
+
+<blockquote>
+  <p>1200 РРМ</p>
+</blockquote>
+
+<p>Для такой рассады многовато, держите в районе 700-900, у меня взрослые растения сидят на 1300-1400.</p>
+
+<p>Свою рассаду я поливаю раствором с 700 ppm</p>
+
+<p>А что у вас с pH ?</p>
+
+<p><strong>Wlad2</strong> 27-12-2010</p>
+
+<p>6.8; Понижать? Если электролит, на 15 литров примерно сколько капнуть?</p>
+
+<p><strong>Wlad2</strong> 27-12-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>1200 РРМ</p>
+  </blockquote>
+
+  <p>Для такой рассады многовато, держите в районе 700-900, у меня взрослые растения сидят на 1300-1400.</p>
+
+  <p>Свою рассаду я поливаю раствором с 700 ppm</p>
+
+  <p>А что у вас с pH ?</p>
+</blockquote>
+
+<p>А если непрерывно ростить с заменой сЪеденных ? какое-нибудь среднее значение РРМ может быть?</p>
+
+<p><strong>Mole_Garden</strong> 27-12-2010</p>
+
+<blockquote>
+  <p>6.8; Понижать? Если электролит, на 15 литров примерно сколько капнуть?</p>
+</blockquote>
+
+<p>:D Для салата оптимально 5,8-6,0. 6,8 это явный перебор. Ладно если день, но больше это уже беда.</p>
+
+<p>У каждого своя вода, тут нельзя точно сказать сколько необходимо кислоты, в каждом случае это разные объем.</p>
+
+<p><strong>Wlad2</strong> 27-12-2010</p>
+
+<p>Не, ну в каплях или стаканах? :)</p>
+
+<p><strong>Mole_Garden</strong> 27-12-2010</p>
+
+<blockquote>
+  <p>Не, ну в каплях или стаканах? :)</p>
+</blockquote>
+
+<p>В каплях. У меня вода из скважины. Бочка на 125 литров. На полную бочку добавляю где-то 7-8 мл. Тогда pH с 6,8 падает до 5,8 - 5,9</p>
+
+<p><strong>Wlad2</strong> 27-12-2010</p>
+
+<p>Кстати, насчет РРМ- исходная вода -200 РРМ, Ну вот, работа на завтра- уменьшить рН и сделать отражатель, СПАСИБО за консультацию, а если понижу готовый раствор- критично, или норм?</p>
+
+<p><strong>Mole_Garden</strong> 27-12-2010</p>
+
+<blockquote>
+  <p>Кстати, насчет РРМ- исходная вода -200 РРМ, Ну вот, работа на завтра- уменьшить рН и сделать отражатель, СПАСИБО за консультацию, а если понижу готовый раствор- критично, или норм?</p>
+</blockquote>
+
+<p>У меня примерно такое же количество ppm в исходной воде. Если понижать концентрацию раствора простой водой, то не забудьте проверить после этого pH, он как правило съезжает при таких манипуляциях.</p>
+
+<p><strong>Wlad2</strong> 28-12-2010</p>
+
+<p>приладил рефлектор не мудрствуя из того-же изолона с фольгой, понизил рН , на 15 литров ушло меньше кубика кислоты, после манипуляций ррм 1050 , рн 5.5 Жду урожая :D</p>
+
+<p><strong>Mole_Garden</strong> 28-12-2010</p>
+
+<blockquote>
+  <p>приладил рефлектор не мудрствуя из того-же изолона с фольгой, понизил рН , на 15 литров ушло меньше кубика кислоты, после манипуляций ррм 1050 , рн 5.5 Жду урожая :D</p>
+</blockquote>
+
+<p>Уже хорошо, не забывайте ежедневно проверять pH и минерализацию.</p>
+
+<p><strong>Wlad2</strong> 30-12-2010</p>
+
+<p>Померил сегодня рН - поднялось до 6.8 В чем дело? ррМ1100.</p>
+
+<p><strong>Mole_Garden</strong> 30-12-2010</p>
+
+<p>у меня тоже поднимается pH, точнее плавает, день два, потом стабилизируется. Воду надо отстаивать день два, но я этого не делаю, почему, пока сам не знаю. :D В твоем случае, скорее всего из-за керамзита. Но посмотри, если будет плавать pH постоянно, то точно из-за него, если через день два стабилизируется, то значит это вода.</p>
+
+<p><strong>Wlad2</strong> 30-12-2010</p>
+
+<p>Такой чудный керамзит был, а со временем исправится?</p>
+
+<p><strong>Mole_Garden</strong> 30-12-2010</p>
+
+<blockquote>
+  <p>Такой чудный керамзит был, а со временем исправится?</p>
+</blockquote>
+
+<p>чудный это как? Т.е. он не изменял pH воды? Т.е. вы замачивали его в растворе, на котором у вас растут растения, оставляли его на несколько дней и проверяли pH и он у вас не менялся?</p>
+
+<p><strong>Wlad2</strong> 30-12-2010</p>
+
+<p>Да не, мелкий, в магазине всегда есть, дешевый,потому и чудный, на вату переходить что-ли?</p>
+
+<p><strong>Mole_Garden</strong> 30-12-2010</p>
+
+<blockquote>
+  <p>Да не, мелкий, в магазине всегда есть, дешевый,потому и чудный, на вату переходить что-ли?</p>
+</blockquote>
+
+<p>Нет, просто должным образом его подготовить</p>
+
+<p>Ищем про подготовку керамзита <a href="http://www.ponics.ru/2009/06/fornewbies/" target="_blank">http://www.ponics.ru/2009/06/fornewbies/</a></p>
+
+<p>Видимо зря я не сделал отдельную тему про этот процесс. :-\</p>
+
+<p><strong>Wlad2</strong> 30-12-2010</p>
+
+<p>Насчет микро- увидал в магазине “Аква микс” буйские удобрения. 5гр. Fe-3.84% Mn-2.57% Zn-0.53% Cu-0.53% Ca-2.57% B-0.52% Mo–0.13% Кто юзал?</p>
+
+<p><strong>Mole_Garden</strong> 30-12-2010</p>
+
+<blockquote>
+  <p>Насчет микро- увидал в магазине “Аква микс” буйские удобрения. 5гр. Fe-3.84% Mn-2.57% Zn-0.53% Cu-0.53% Ca-2.57% B-0.52% Mo–0.13% Кто юзал?</p>
+</blockquote>
+
+<p>По описанию не плохо!</p>
+
+<p>“Аквамикс” - водорастворимый комплекс микроэлементов в хелатной форме (Mo и B - в неорганической).Применяется для предотвращения и компенсации недостатка микроэлементов. Используется при протравливании семян зерновых, дражировании семян овощных, корнеплодных культур, некорневых подкормок и внесении с поливом в открытом и защищенном грунте.</p>
+
+<p><strong>Wlad2</strong> 30-12-2010</p>
+
+<p>Тоже понравился на вид, надо забить в калькулятор, попробовать замесить</p>
+
+<p><strong>Mole_Garden</strong> 30-12-2010</p>
+
+<blockquote>
+  <p>Тоже понравился на вид, надо забить в калькулятор, попробовать замесить</p>
+</blockquote>
+
+<p>Пишут, что для капельного полива мешают 1,5-2,5 кг на м3 маточного раствора. Т.е. видимо 1,5 грамма на литр. А в какой пропорции обычно разбавляется маточный раствор до рабочего? Обрати внимание, что там есть кальций!</p>
+
+<p><strong>valery</strong> 30-12-2010</p>
+
+<p>По разному, в зависимости от настроек. Но вроде бы (из “прочитанного” :)) - довольно часто разбавляют 1 к 100.</p>
+
+<p><strong>Wlad2</strong> 01-01-2011</p>
+
+<p>Листики как бы заворачиваются, по виду вроде нормуль, света многовато? лампы наверно поднять?</p>
+
+<p><strong>Mole_Garden</strong> 01-01-2011</p>
+
+<blockquote>
+  <p>Листики как бы заворачиваются, по виду вроде нормуль, света многовато? лампы наверно поднять?</p>
+</blockquote>
+
+<p>да нет, все в норме, выше поднимать не стоит, главное что бы им не было жарко. А листы разворачивает может сорт такой. У меня высота подвеса была примерно 7-10 см.</p>
+
+<p><strong>Coccinella</strong> 02-01-2011</p>
+
+<p>Это не сорт виноват, это что-то с условиями. Надо бы убедиться, что внутри “трубочки” тля не сидит. А если ее там нету (на что я очень надеюсь), то дело в температуре. Вы не знаете, какова температура воздуха в зоне листьев при досветке, без нее и какова температура в корневой зоне?</p>
+
+<p><strong>Wlad2</strong> 02-01-2011</p>
+
+<p>У нас с тлей в это время проблемы ;) Листья не то что в трубочку сворачиваются, а как бы боком поворачиваются, температура ,возможно слегка повышена</p>
+
+<p><strong>Wlad2</strong> 03-01-2011</p>
+
+<p>Ага, вроде сорт- Московский изгибается, на Од.кучер. не заметно.</p>
+
+<p><strong>Wlad2</strong> 06-01-2011</p>
+
+<p>Как бы вроде все растет, кислотность , правда, приходится понижать раз в два дня , видимо, керамзит.</p>
+
+<p>Съел листик, неплохо!</p>
+
+<p><strong>mdima</strong> 06-01-2011</p>
+
+<p>А свет почему фиолетовый?</p>
+
+<p><strong>Wlad2</strong> 07-01-2011</p>
+
+<p>Он скорее красноватый, люмки флюора</p>
+
+<p><strong>Wlad2</strong> 10-01-2011</p>
+
+<p>время идет, домашние подъедают передние листики, насчет света, на фотике баланс белого по листу влом поставить</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

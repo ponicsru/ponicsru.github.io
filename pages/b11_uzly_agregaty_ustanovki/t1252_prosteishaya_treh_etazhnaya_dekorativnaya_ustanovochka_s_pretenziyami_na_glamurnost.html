@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Простейшая трех этажная декоративная установочка, с претензиями на гламурность | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Простейшая трех этажная декоративная установочка, с претензиями на гламурность">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Простейшая трех этажная декоративная установочка, с претензиями на гламурность</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Oxy</strong> 19-11-2011</p>
+
+<p><a href="https://t.me/ponics_ru_files/6705" target="_blank"><img src="/imagehost/thumbs/7oro.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/6706" target="_blank"><img src="/imagehost/thumbs/051220110331.jpg" alt="" /></a></p>
+
+<p>Наверное, статью нужно было бы назвать “Рукоблудие, или когда совершенно нечем заняться”. Короче однажды на днях, прогуливаясь по садоводческим магазинам, я вдруг случайно в секции для пластмассовых горшков увидел некое творение, которое при трезвом рассудке ни в коем случае использовать нельзя - мне оно показалось очень неудобным для земли.</p>
+
+<p>Но зато, явно и резко бросались в глаза все нераскрытые потенциалы этой пластмассины. Ведь состояла она из центрального несущего столба, на который нанизаны три чаши. То есть, с гидродинамической точки зрения, как бы воду не лей, она все равно стечет вниз по центру. Что, в свою очередь являеться очень приятной темой для размышлений и фантазий.</p>
+
+<p>Фантазия не мешкала, и явившись, начала навязчиво бухтеть и перебирать варианты.</p>
+
+<p>[size=14pt][font=courier]Мороз и солнце, лед и пламень.</p>
+
+<p>Кажется, что они были созданы друг для друга.[/font][/size]</p>
+
+<p><a href="https://t.me/ponics_ru_files/6707" target="_blank"><img src="/imagehost/thumbs/2408eke.jpg" alt="" /></a></p>
+
+<p>Изделие как видим состоит из четырех крупных частей.</p>
+
+<ol>
+  <li>
+    <p>Это непосредственно сама трехэтажная Фиговина (кстати 11 баксов дали)</p>
+  </li>
+  <li>
+    <p>Это мега супер-пупер нано ведро, изготовленное по спецзаказу в секретных лабараториях НАСА(5 баксов)</p>
+  </li>
+  <li>
+    <p>Девастатор, или по нашему водородно-нейтринный ускоритель сверхтяжелых частиц, которые в своем потоке увлекают молекулы воды.(Брали на рынке первый попавшийся за 8 баксов. Тот который был за 3 бакса не вытягивал по водяному столбу)</p>
+  </li>
+  <li>
+    <p>Также, естественно есть синхрофазотрон, с несинхронными фазово - распределенными потоками индуктивности материи. Синхрофазотрон в данном случае, мы используем в качестве центрального энергораспределительного узла всей системы. Стоимость неопределена, поскольку собрали из мусора валяющегося под ногами.</p>
+  </li>
+</ol>
+
+<p>Итак, как все выглядит в руках:</p>
+
+<p>[size=14pt][font=courier]Нижняя чаша</p>
+
+<p>После предварительного допроса с легким пристрастием к электроинструментам. [/font][/size]</p>
+
+<p><a href="https://t.me/ponics_ru_files/6708" target="_blank"><img src="/imagehost/thumbs/2410hfh.jpg" alt="" /></a></p>
+
+<p>[size=14pt][font=courier]Подключаем синхрофазотрон к девастатору, и вставляем девастатор в высокотехнологичное Насовское ведро, над чьим составом они скрупулезно бились многими научными институтами.[/font][/size]</p>
+
+<p><a href="https://t.me/ponics_ru_files/6709" target="_blank"><img src="/imagehost/thumbs/2418.jpg" alt="" /></a></p>
+
+<p>[size=14pt][font=courier]Тщетельно прокладываем распределитель потоков в базовую матрицу нижней платформы Фиговины.[/font][/size]</p>
+
+<p><a href="https://t.me/ponics_ru_files/6710" target="_blank"><img src="/imagehost/thumbs/2419pep.jpg" alt="" /></a></p>
+
+<p>[size=14pt][font=courier]Стойки у фиговины по высоте одинаковые,</p>
+
+<p>по диаметру - сужаються к вершине всей колонны. [/font][/size]</p>
+
+<p><a href="https://t.me/ponics_ru_files/6711" target="_blank"><img src="/imagehost/thumbs/2413.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/6712" target="_blank"><img src="/imagehost/thumbs/2411.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/6713" target="_blank"><img src="/imagehost/thumbs/2412.jpg" alt="" /></a></p>
+
+<p>[size=14pt][font=courier]Прифиндячиваем первую стойку.</p>
+
+<p>[/font][/size]</p>
+
+<p><a href="https://t.me/ponics_ru_files/6714" target="_blank"><img src="/imagehost/thumbs/2420.jpg" alt="" /></a></p>
+
+<p>[size=14pt][font=courier]Логично предположить, что на этом не останавливаемся и продолжаем упираться рогом в выбранном направлении.Три раздельных подачи, перелив и слив выполнены в центральном стояке разными диаметрами. Полный цикл наполнения и слива контролирует таймер с шагом 15 стандартных китайских минут.</p>
+
+<p>[/font][/size]</p>
+
+<p><a href="https://t.me/ponics_ru_files/6715" target="_blank"><img src="/imagehost/thumbs/2421ldl.jpg" alt="" /></a></p>
+
+<p>[size=14pt][font=courier]Следующая девайсу нет название.</p>
+
+<p>После многолетних воззваний к Тхулху(мир его щупальцам) из бездны прислали СМС с изображением адской машины которая аккуратно вырезала души грешников. Мы называем его просто: девайс имени Oxy.</p>
+
+<p>[/font][/size]</p>
+
+<p><a href="https://t.me/ponics_ru_files/6716" target="_blank"><img src="/imagehost/thumbs/1ded.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/6717" target="_blank"><img src="/imagehost/thumbs/2bjb.jpg" alt="" /></a></p>
+
+<p>[size=14pt][font=courier]Недавно, на очень авангардной выставке анедграунда удалось с боем купить на аукционе две картины с дешещипательными названиями: “Муки” и “Творчество”</p>
+
+<p>[/font][/size]</p>
+
+<p><a href="https://t.me/ponics_ru_files/6718" target="_blank"><img src="/imagehost/thumbs/3jyj.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/6719" target="_blank"><img src="/imagehost/thumbs/4cpc.jpg" alt="" /></a></p>
+
+<p>[size=14pt][font=courier]Верхняя чаша готова!</p>
+
+<p>[/font][/size]</p>
+
+<p><a href="https://t.me/ponics_ru_files/6720" target="_blank"><img src="/imagehost/thumbs/5qdq.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/6721" target="_blank"><img src="/imagehost/thumbs/6ndn.jpg" alt="" /></a></p>
+
+<p>[size=14pt][font=courier]История о двух мудрецах.</p>
+
+<p>[/font][/size]</p>
+
+<p>Однажды в древней персии встретились два мудреца на рынке. И один другому загадал суперквест:</p>
+
+<p>1)	Проводим диаметр АВ</p>
+
+<p>2)	Из точки А радиусом, равным радиусу окружности R, проводим дугу АС. Точка С =пересечение этой дуги с окружностью</p>
+
+<p>3)	Из точки С опускают перпендикуляр СД на диаметр АВ</p>
+
+<p>4)	Длину перпендикуляра СД откладывают от точки А по окружности .</p>
+
+<p>[size=14pt][font=courier]ПаЛомай сибе мОсК :)</p>
+
+<p>[/font][/size]</p>
+
+<p><a href="https://t.me/ponics_ru_files/6722" target="_blank"><img src="/imagehost/thumbs/291120110191.jpg" alt="" /></a></p>
+
+<p>[size=14pt][font=courier]Нижний ярус, 7 посадочных мест - к полету готов!</p>
+
+<p>[/font][/size]</p>
+
+<p><a href="https://t.me/ponics_ru_files/6723" target="_blank"><img src="/imagehost/thumbs/21xsx.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/6724" target="_blank"><img src="/imagehost/thumbs/2krk.jpg" alt="" /></a></p>
+
+<p>[size=14pt][font=courier]Средний ярус, 5 посадочных мест - готов!</p>
+
+<ul>
+  <li>
+    <p>Все узлы готовы! .</p>
+  </li>
+  <li>
+    <p>Старт! .</p>
+  </li>
+  <li>
+    <p>45-я минута - полет нормальный, все узлы ок!</p>
+  </li>
+</ul>
+
+<p>[/font][/size]</p>
+
+<p><a href="https://t.me/ponics_ru_files/6725" target="_blank"><img src="/imagehost/thumbs/301120110221.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/6726" target="_blank"><img src="/imagehost/thumbs/301120110231.jpg" alt="" /></a></p>
+
+<p>[size=14pt][font=courier]Система перелива - в работе.</p>
+
+<p>Подающая трубка после прекращения подачи</p>
+
+<p>отсасывает до полного <del>осифонивания</del> досуха</p>
+
+<p>раствор обратно[/font][/size]</p>
+
+<p><a href="https://t.me/ponics_ru_files/6727" target="_blank"><img src="/imagehost/thumbs/301120110241.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/6728" target="_blank"><img src="/imagehost/thumbs/301120110251.jpg" alt="" /></a></p>
+
+<p>[size=14pt][font=courier]Наш, так сказать пациент оснащен смыслом и отпущен на некоторое время пожить в естественной среде.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6729" target="_blank"><img src="/imagehost/thumbs/051220110331.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/6730" target="_blank"><img src="/imagehost/thumbs/031220110271.jpg" alt="" /></a></p>
+
+<p>[size=14pt][font=courier]Было много в наличии клонов фиалки безродной.</p>
+
+<p>Знаменем крестным их осенили</p>
+
+<p>И применили таким вот приемом.</p>
+
+<p>Многая лета, младые фиалки!</p>
+
+<p>На тему юмора если брать :)</p>
+
+<p>можно в коммерцию стопы направить <em>Bos</em></p>
+
+<p>деньги на пластик людям обменивать <em>crazy</em></p>
+
+<p>свой карман наполняя <em>8)</em></p>
+
+<p>только лишь совесть скулит по ночам …</p>
+
+<p>песни поет о стыде :-[</p>
+
+<p>[/font][/size]</p>
+
+<p>Есть вторая установочка которая была первой экспериментальной, может там удасться высадить чего-то типа бобовых.</p>
+
+<p>Данный материал представлен исключительно для подкидывания свежих идей в творческие массы. Какая там будет крышка, из каких материалов, или не крышка а гравий, или другой наполнитель - конечно же каждый будет решать сам. Как ее освещать - не спрашивайте меня, этот вопрос явно относиться к тем, кто проектировал пресс-форму :)</p>
+
+<p>Всем удачи!</p>
+
+<p><strong>Mole_Garden</strong> 20-11-2011</p>
+
+<p>Но тут же всплыл вопрос. Как в этом Насовском ведре менять раствор?</p>
+
+<p><strong>cpf</strong> 20-11-2011</p>
+
+<p>Нужен дополнительный водородно-кислородный эжектор с клапаном в нижней части НАСА-ведра или дополнительный распределитель потока для сифонно-вакуумного ускорения… :D</p>
+
+<p>А вообще, OXY, - Спасибо. Что-то подобное хотел соорудить на лето у себя под балконом (стояло простое, не НАСА ведро- поэтому урожай собрать с него не успел :)). Теперь возму эту конструкцию за основу, надо только решить проблему с подводкой электричества (все-таки улица), буду всю зиму думать, как “запрячь” под это дело солнечную энергию… :)</p>
+
+<p><strong>Coccinella</strong> 20-11-2011</p>
+
+<p>У меня такая макитра стоит на даче в открытом грунте, колодец маскирует. Дренаж у нее в оригинальном исполнении не работает нисколько, после хорошего дожля все мои бархатцы-петунии просто плавают. Солнце ее освещает нормально и со всех сторон, но лучше, чтобы она стояла под крышей. Представляете, земляникой ее засадить?</p>
+
+<p>А в исполнении, которое предлагает Оху и комнатном использовании с одной стороны надо подобрать достаточно светлое место в помещении, а как дополнительное, по периметру каждой чаши пустить елочную ледовскую гирлянду. Много света она не даст, но выглядеть все это в сумме будет неплохо. А если еще и растения часто менять, какие-нибудь мелкоцветные луковичные на выгонку, то и вовсе красотища будет!</p>
+
+<p>Короче, Оху, столбите идею, а то опять кто-нибудь украдет.</p>
+
+<p><strong>cpf</strong> 20-11-2011</p>
+
+<p>Точно, Coccinella! Я чувствовал, что чего-то не хватает, теперь понял- зонтика сверху (есть где-то такой из целлулоида, детский…) Спасибо за мысль. OXY, красть идею не хочу - дадите попользоваться? :D</p>
+
+<p><strong>Oxy</strong> 20-11-2011</p>
+
+<blockquote>
+  <p>Но тут же всплыл вопрос. Как в этом Насовском ведре менять раствор?</p>
+</blockquote>
+
+<p>По поводу смены раствора и контроля уровня: Этот модуль еще не прифиндячили. Просто будет прозрачная силиконовая трубка по наружке. Может сегодня сделаю свежие фотки. Потому что, та модель которая была использована в фотосесии, перед съемкой была интенсивно использована по назначению и без. Впрочем как и все модели, поэтому прикуплена новая, еще не пользованная и там уже штатно будут организованы все правильные дырки.</p>
+
+<blockquote>
+  <p>Нужен дополнительный водородно-кислородный эжектор с клапаном в нижней части НАСА-ведра или дополнительный распределитель потока для сифонно-вакуумного ускорения…</p>
+</blockquote>
+
+<p>Будет водородно-кислородный эжектор с переходно-угловым клапаном в нижней части.</p>
+
+<blockquote>
+  <p>комнатном использовании с одной стороны надо подобрать достаточно светлое место в помещении, а как дополнительное, по периметру каждой чаши пустить елочную ледовскую гирлянду.</p>
+</blockquote>
+
+<p>А вот эта идея мне даже в голову не приходила. Я все как-то привычно упирался в ДНАТ100 или ДНАТ150. А с ледами эта штуковина может работать и как ночной светильник. Но мне кажеться, она из-за громоздкости больше подходит к особнякам и офисным центрам а не к простой квартире.</p>
+
+<p>Из культур - только клубнику в такой установке и представлял. Может получиться очень такая себе приличная горка. Также есть варианты - можно верхнюю чашу не заполнять растениями, а оставить открытую и организовать там маленький фонтанчик. В данный момент там именно так и реализовано.</p>
+
+<p>Также из вариантов: во что сажать растюхи: в горшочки которые вставляются в крышку-кольцо , или тупо в насыпанный туда гравий. Я например голосую за аккуратную крышку. Мой товарищ - за гравий.</p>
+
+<p>По поводу воровства идей: Моя идея заключается лишь в том, чтоб накатать статью на форуме. А просверлить несколько отверстий в готовом куске пластика может каждый :)</p>
+
+<p>Так что повторюсь еще раз - это не готовое изделие, это концепт. Так что вооружайтесь паяльниками, шуруповывертами, наждачными шкурками и вперед на магазины пластиковых изделий.</p>
+
+<p><strong>valery</strong> 20-11-2011</p>
+
+<p><em>8)</em></p>
+
+<p>Классно! Супер-устройство и супер-идея!</p>
+
+<p>А “развитая” до “новогодней елочки с гирляндой” и вовсе <em>8)</em></p>
+
+<p>Что значит - “мозговой штурм” …</p>
+
+<p>Тоже позволю себе “добавить” :D</p>
+
+<p>К тексту</p>
+
+<p>“над чьим составом они скрупулезно бились многими научными институтами”</p>
+
+<p>можно бы добавить</p>
+
+<p>“и многими научными сотрудниками” !</p>
+
+<p><strong>Oxy</strong> 21-11-2011</p>
+
+<p>Обновил фото.</p>
+
+<p><strong>Oxy</strong> 30-11-2011</p>
+
+<p>UP! Добавилось <em>8)</em></p>
+
+<p><strong>Coccinella</strong> 01-12-2011</p>
+
+<p>На этом форуме собираются непризнанные литературные самородки :)!</p>
+
+<p>Оху, Вы пишете просто замечательно! (работаете тоже, но это и так всем известно).</p>
+
+<p>Не откажите в любезности продолжить повествование, когда в этой конструкции появятся растения.</p>
+
+<p><strong>Oxy</strong> 01-12-2011</p>
+
+<p>Если будут фотки - конечно же выложу. Дело в том, что это построена первая испытательная. Еще строится вторая, с учетом ошибок первой. Ну и когда обе будут готовы начнем пихать них какие-то растюхи.</p>
+
+<p>Эти установки не мои - я помогаю товарищу. Сейчас пока снег не выпал - можно и клубники в огороде накопать, отмыть корни - и в установку. Вторая версия это натыкать просто фиалок(их тоже есть много).</p>
+
+<p>Короче будет видно :) Лично мое мнение - в каждый стаканчик по три горошины сладкого гороха и вырастить такую громадную пирамиду гороха через месяц. Все равно будет красиво.</p>
+
+<p><strong>Oxy</strong> 05-12-2011</p>
+
+<p><em>Dance</em> Обновилось. На этом можно ставить временную точку. Даже если продолжения не будет, то репорт о постройке можно считать полным. Если есть какие-то неясности или пожелания по ракурсу фотографий, пока есть время пофоткать :)</p>
+
+<p><strong>Coccinella</strong> 05-12-2011</p>
+
+<p>Просто замечательно! $) Но в следующей версии надо что-то делать с цветом ведра, он не соответствует цвету всей этажерки (а уж цвету плитки на полу… :()</p>
+
+<p>А вообще здорово! Вы, как и Россич, стараетесь жить в одном помещении с растениями :) Замечательно!</p>
+
+<p><strong>maikl25</strong> 02-09-2013</p>
+
+<blockquote>
+  <p><em>Dance</em> Обновилось. На этом можно ставить временную точку. Даже если продолжения не будет, то репорт о постройке можно считать полным. Если есть какие-то неясности или пожелания по ракурсу фотографий, пока есть время пофоткать :)</p>
+</blockquote>
+
+<p>Вот обидно <em>Wall</em> что я не увидел данную темку раньше, я искал что то подобное <em>8)</em>, для ампельных петуний возле дома, прям жалко что лето уже кончилось :'( :'( :'(…</p>
+
+<p><em>sos</em>Меня как практика смущает одно, (если я понял это же периодическое затопление) объем у чашь, тем более в количестве трех, довольно не маленький, думаю примерно литров 20, а ведро примерно на 50, то есть при первоначальном заполнении в ведре остается примерно 30 литров, минус высота забора помпы где то 5 литров и того 25 литров в сухом (то есть мокром :D) остатке, при полной загрузке через недельку помпа начнет хватать воздух…</p>
+
+<p>если будет возможность Oxy прокомментируйте пожалуйста :)</p>
+
+<p><strong>Oxy</strong> 10-11-2013</p>
+
+<p>Ведро 25литров - обычное малярное(строительное), объем чаш не такой уж большой, плюс они заполняются не полностью а наполовину(примерно). В трубках подачи может аж 0,5 литра, но наверняка меньше. Мы тестировали на фиалках, но они так медленно вегетируют, что просто ни у кого не хватило терпения дождаться когда закончиться раствор. А потом похолодало, изменились ситуации, и с гидропоникой у этого товарища все закончилось.</p>
+
+<p>Так как это периодика и вообще не автоматизированная, то в любом случае нужна полная замена раствора раз в две-три недели.</p>
+
+<p><strong>Vad</strong> 10-11-2013</p>
+
+<p>ОКСИ ВЕРНУЛСЯ! <em>Dance</em></p>
+
+<p><strong>maikl25</strong> 17-11-2013</p>
+
+<blockquote>
+  <p>Ведро 25литров - обычное малярное(строительное), объем чаш не такой уж большой, плюс они заполняются не полностью а наполовину(примерно). В трубках подачи может аж 0,5 литра, но наверняка меньше. Мы тестировали на фиалках, но они так медленно вегетируют, что просто ни у кого не хватило терпения дождаться когда закончиться раствор. А потом похолодало, изменились ситуации, и с гидропоникой у этого товарища все закончилось.</p>
+
+  <p>Так как это периодика и вообще не автоматизированная, то в любом случае нужна полная замена раствора раз в две-три недели.</p>
+</blockquote>
+
+<p>спасибо, буду пробовать :)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

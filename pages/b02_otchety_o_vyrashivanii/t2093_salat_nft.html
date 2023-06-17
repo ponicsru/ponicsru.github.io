@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Салат. NFT. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Салат. NFT.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Салат. NFT.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Mole_Garden</strong> 14-08-2014</p>
+
+<p>Не уверен, что получится отчет, но попробую все же.</p>
+
+<p>И так, что имеем.</p>
+
+<p>Есть балкон. Есть кабель канал, точнее канал для стока. Имеется ведро на 20 литров. Насос на 12 вольт, но очень хорошо он работает и на 5 вольт при этом создавая очень медленный поток, так сказать, то что нужно. В этот раз решил побаловать себя, ну и растения и попробовать новый субстрат, оазис.</p>
+
+<p>Честно говоря, если бы я был растением, я бы тоже там вырос. Очень приятный на ошупь, мягки, но легко теряет форму если на него надавить.</p>
+
+<p>Удобрения: MasterBlend, Potassium Sulfate, Calcinit, Epsom Salt.</p>
+
+<p>Субстрат: <a href="https://www.google.com/search?q=oasis+hydroponics&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ei=BzvsU9G8L-fTiwLdjIC4CA&amp;sqi=2&amp;ved=0CAsQ_AUoAA&amp;biw=1365&amp;bih=941" target="_blank">Oasis</a></p>
+
+<p>Схема кормления: <a href="http://www.howardresh.com/Hydroponic-Lettuce-Production1.html" target="_blank">Howard Rash</a></p>
+
+<p>N = 180</p>
+
+<p>P = 50</p>
+
+<p>K = 210</p>
+
+<p>Ca = 180-200</p>
+
+<p>Fe = 3-5</p>
+
+<ul>
+  <li>Микро.</li>
+</ul>
+
+<p>EC 1,5 - 2</p>
+
+<p>pH 5.5 - 5.8</p>
+
+<p>Это те значение к которым я буду стремиться.</p>
+
+<p>Семена:</p>
+
+<p><a href="https://t.me/ponics_ru_files/12745" target="_blank"><img src="/imagehost/thumbs/451g.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/12746" target="_blank"><img src="/imagehost/thumbs/3881gpgkg.jpg" alt="" /></a></p>
+
+<p><a href="http://www.johnnyseeds.com/p-7414-two-star-og-leaf-lettuce.aspx]Two Stars[/url] [url=http://www.johnnyseeds.com/p-9099-muir-og-pelleted.aspx" target="_blank">Muir</a></p>
+
+<p>Итак, день первый. Вечер.</p>
+
+<p>Посадка 13.08.2014</p>
+
+<p>Запитал кубики оазиса слабым салатным раствором EC 0.7 pH 5.8</p>
+
+<p><a href="https://t.me/ponics_ru_files/12747" target="_blank"><img src="/imagehost/thumbs/fe9f8363dc16b6b644fd6ce97495hdh.png" alt="" /></a></p>
+
+<p>Посадку производил по 3 семечки. Семена в виде драже. После посадки закрыл крышкой и отправил в темное место. Ждем.</p>
+
+<p><a href="https://t.me/ponics_ru_files/12748" target="_blank"><img src="/imagehost/thumbs/dfed65f4e0b31a5adb5b3ca7141bqkq.png" alt="" /></a><a href="https://t.me/ponics_ru_files/12749" target="_blank"><img src="/imagehost/thumbs/88e4902efe0f63b74de9b144d8eelvl.png" alt="" /></a></p>
+
+<p>Вопросы?</p>
+
+<p>;)</p>
+
+<p><strong>FranK</strong> 16-08-2014</p>
+
+<p>Оазис случаем не с ебея? Ссылочку бы…</p>
+
+<p><strong>Mole_Garden</strong> 16-08-2014</p>
+
+<blockquote>
+  <p>Оазис случаем не с ебея? Ссылочку бы…</p>
+</blockquote>
+
+<p>Нет, не с ебея. Зашел в местный магазин и там уже на месте купил. Смотрел везде, где мог, цены с доставкой дороже получались.</p>
+
+<p>Сайт магазина, где я покупал - <a href="http://www.ehydroponics.com/oasis-rootcubes-plus.html" target="_blank">http://www.ehydroponics.com/oasis-rootcubes-plus.html</a></p>
+
+<p>Самый дешевый вариант нашел здесь, но только если вам надо много - <a href="http://store.amhydro.com/SearchResults.asp?Search=oasis" target="_blank">http://store.amhydro.com/SearchResults.asp?Search=oasis</a></p>
+
+<p>А вообще, не плохой вариант минеральные кубики - <a href="http://www.ehydroponics.com/rockwool-sheets-for-seeds-and-cuttings-grow-media.html" target="_blank">http://www.ehydroponics.com/rockwool-sheets-for-seeds-and-cuttings-grow-media.html</a></p>
+
+<p>они немного дешевле.</p>
+
+<p><strong>Mole_Garden</strong> 17-08-2014</p>
+
+<p>16.08.2014</p>
+
+<p>Пока все находится под крышкой в банке, в своеобразной тепличке. Два дня все это стояло в темном и на сколько возможно прохладном месте.</p>
+
+<p>Сегодня утром выставил это на свет, стоит рядом, с основной рассадой салатов. Завтра надеюсь, уже развернутся семядольные листья и тогда я поставлю их под лампу. Лампа ЭЛС на 40 ватт, высота подвеса порядка 20-25 см.</p>
+
+<p><a href="https://t.me/ponics_ru_files/12750" target="_blank"><img src="/imagehost2/thumbs/034aa5121677f11b0791bdf507b6ene.png" alt="" /></a><a href="https://t.me/ponics_ru_files/12751" target="_blank"><img src="/imagehost2/thumbs/33570dfaebb41786fbb1e2700817ozo.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 20-08-2014</p>
+
+<p>19.08.2014</p>
+
+<p>Уменьшил влажность, путем открытия крышки. :D</p>
+
+<p>Полив EC 0.6-0.7 pH 5.6-5.7</p>
+
+<p><a href="https://t.me/ponics_ru_files/12752" target="_blank"><img src="/imagehost2/thumbs/471d0a759bf627fcd4198c0a34afc109.png" alt="" /></a><a href="https://t.me/ponics_ru_files/12753" target="_blank"><img src="/imagehost2/thumbs/8998607b5bfdf32d079e5eef3ac30089.png" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 21-08-2014</p>
+
+<p>Похожи на шоколадные пирожные с кремом :)</p>
+
+<p><strong>Mole_Garden</strong> 21-08-2014</p>
+
+<p>Вот и я поддался на светодиододвижение. ;)</p>
+
+<p>Купил для пробы, больше ради интереса. Посмотрю какая вырастит рассада салата под этими диодами.</p>
+
+<p>Покупал здесь - <a href="http://www.ebay.com/itm/251320045351?_trksid=p2059210.m2749.l2649&amp;var=550271014081&amp;ssPageName=STRK%3AMEBIDX%3AIT" target="_blank">2W Chips 12W/40W/60W/100W LED Grow Light</a></p>
+
+<p>12 ватт Красный, синий все дела. :D До этого висела люмка на 40 ватт. Теперь светодиоды на 12, посмотрим разницу.</p>
+
+<p>Немного не нравится то, что на одну рассаду попадает больше синего света, а на другую больше красного. Когда растение большое то наверно все равно, а когда такие наверно не очень хорошо. <em>???</em></p>
+
+<p><a href="https://t.me/ponics_ru_files/12754" target="_blank"><img src="/imagehost2/thumbs/07b748a97181aa3688c30d76f14c5792.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12755" target="_blank"><img src="/imagehost2/thumbs/e9992ce77af5547a9510a82bbf98nkn.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 23-08-2014</p>
+
+<p>23.08.2014</p>
+
+<p>Светой день 18.5 часов. Светодиоды 12 ватт.</p>
+
+<p>Полив все такой же.</p>
+
+<p>ЕС 0.7 pH 5.6</p>
+
+<p><a href="https://t.me/ponics_ru_files/12756" target="_blank"><img src="/imagehost2/thumbs/3b10eb42bd940a691d7708c844d012f1.png" alt="" /></a><a href="https://t.me/ponics_ru_files/12757" target="_blank"><img src="/imagehost2/thumbs/6e49012d2161291f05145a8a632b4f5c.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 25-08-2014</p>
+
+<p>Условия те же. Но вид салата меняется не в лучшую сторону.</p>
+
+<p>Подумываю вернуть люмку на 40 ватт и убрать светодиоды.</p>
+
+<p>24.08.2014</p>
+
+<p><a href="https://t.me/ponics_ru_files/12758" target="_blank"><img src="/imagehost2/thumbs/10898748567e63a95a9da2eedb7304f2.png" alt="" /></a><a href="https://t.me/ponics_ru_files/12759" target="_blank"><img src="/imagehost2/thumbs/857bbf70c8fec76573902c595f92a7d0.png" alt="" /></a></p>
+
+<p><strong>Vad</strong> 25-08-2014</p>
+
+<blockquote>
+  <p>Подумываю вернуть люмку на 40 ватт и убрать светодиоды.</p>
+</blockquote>
+
+<p><em>8)</em> <em>8)</em> <em>8)</em></p>
+
+<p>и подсушить чуть чуть.. :-X</p>
+
+<p>кажись слишком они мокрые..</p>
+
+<p><strong>Gnevko</strong> 25-08-2014</p>
+
+<p>Подсушить, микроклимат обеспечить, EC немного поднять - это да, но причем тут светодиоды? <em>???</em></p>
+
+<p><strong>Mole_Garden</strong> 25-08-2014</p>
+
+<blockquote>
+  <p>Подсушить, микроклимат обеспечить, EC немного поднять - это да, но причем тут светодиоды? <em>???</em></p>
+</blockquote>
+
+<p>Микроклимат какой есть, влажность с комнате порядка 50% , там должно быть больше так как влажно. ЕС поднять для таких мелких? они и так на 0.7 сидят, с учетом что для взрослого у меня в среднем порядка 1.2-1.5</p>
+
+<p>Про подсушить наверно соглашусь, попробую проделать процедуры вечерком.</p>
+
+<p><strong>Vad</strong> 25-08-2014</p>
+
+<p>ЕС 0.7 это миф.</p>
+
+<p>дайте им есть! &gt;:(</p>
+
+<p><strong>Mole_Garden</strong> 25-08-2014</p>
+
+<blockquote>
+  <p>ЕС 0.7 это миф.</p>
+
+  <p>дайте им есть! &gt;:(</p>
+</blockquote>
+
+<p>Да еды то мне не жалко, ее у меня полно.</p>
+
+<p><strong>Mole_Garden</strong> 03-09-2014</p>
+
+<p>Что то в этот раз у меня рассада ну никак не получается, вся прошлая была низенькая, коренастая, не тянулась, а эта прям никак не хочет нормально расти. Температура высокая, порядка 28-30 градусов для салата это перебор. Плюс были проблемы с влажностью. Днем неожидано сильно жарит солнце днем дома под 26-27, дома под лампой температура тоже сильно растет. Да и переливы на первых днях жизни наверно хорошо сказались на здоровье и развитии.</p>
+
+<p>Да еще и уезжаем в отпуск, вообще остается одна одиношенька, наверно все загнется, я то думал, что я ее успею высадить на NFT, но не выходит, не подрасла еще, да и место там еще занято.</p>
+
+<p>08.30.2014</p>
+
+<p><a href="https://t.me/ponics_ru_files/12760" target="_blank"><img src="/imagehost2/thumbs/c139b6bea0dcf502b1c9abd9a118ff79.png" alt="" /></a><a href="https://t.me/ponics_ru_files/12761" target="_blank"><img src="/imagehost2/thumbs/4816403e42f2d1ba789bde9811d62aa3.png" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 03-09-2014</p>
+
+<p>Салат трудно выращивать в жару :(</p>
+
+<p><strong>Mole_Garden</strong> 04-09-2014</p>
+
+<blockquote>
+  <p>Салат трудно выращивать в жару :(</p>
+</blockquote>
+
+<p>Да уж, попробую весной возобновить или может быть осенью еще попробую. Но надо будет подумать над досветкой, так как солнышко пока есть, не смотря на то, что его мало оно такое полящее.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

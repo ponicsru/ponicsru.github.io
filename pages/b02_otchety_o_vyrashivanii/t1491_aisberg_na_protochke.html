@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Айсберг на проточке | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Айсберг на проточке">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Айсберг на проточке</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Geus</strong> 28-06-2012</p>
+
+<p>День добрый. Решил занятся гидропоникой год назад. Прочитал кучку форумов и сайтов и решил собрать проточную установку и посадить салат (айсберг).</p>
+
+<p>склонился к данному виду салата по причине обожания моей женой данного вида салата.</p>
+
+<p>выбрал два вида и посадил. проросли быстро и стремительно.</p>
+
+<p>на второй день уже листики наклевывались.</p>
+
+<p>на 14 день пересадил в установку.</p>
+
+<p>дал сперва 30% концентрациии раствора.</p>
+
+<p>раствор делаю из GHE серии для старта решил не проверять свои способности в химии, решил оставить составление растворов на последующие посадки.</p>
+
+<p>через пару дней довел конценрацию до ppm 1100 и ph 6.</p>
+
+<p>слат растет, но что то он меня не сильно радует (фото ниже)</p>
+
+<p>свет стоит один 400 Днат и Led панель на 375 ват. когда покупал в интернет магазине сказали, что по всем параметрам почти одинаковые.</p>
+
+<p>температура в помещении порядка 23-24 градусов пока ниже сбить не удается.</p>
+
+<p>на днях поставлю увлажнитель и СО2 установку надеюсь температура спадет немного.</p>
+
+<p>подскажите чего нехватает и чего лишнее.</p>
+
+<p><strong>Geus</strong> 28-06-2012</p>
+
+<p>фото салата на 16 день</p>
+
+<p><a href="https://t.me/ponics_ru_files/8438" target="_blank"><img src="/attachimages/11167_2012-06-28 19.38.04.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/8439" target="_blank"><img src="/attachimages/11169_2012-06-28 19.38.11.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/8440" target="_blank"><img src="/attachimages/11171_2012-06-28 19.38.25.jpg" alt="" /></a></p>
+
+<p><strong>Nikolai</strong> 28-06-2012</p>
+
+<p>Я бы не стал сажать салат в керамзит (после нескольких неудачных попыток) .</p>
+
+<p><strong>Al-nikoly</strong> 28-06-2012</p>
+
+<p>Здравствуйте, а какая площадь всей установки??? :-\</p>
+
+<p><strong>Geus</strong> 28-06-2012</p>
+
+<p>всего восемь труб по 2,75метра в каждом по 14 посадочных мест</p>
+
+<p><strong>Geus</strong> 28-06-2012</p>
+
+<p>а какой субстракт посоветуете вместо керамзита при условии что проращивать впробках</p>
+
+<p><strong>VVS_</strong> 28-06-2012</p>
+
+<p>В пенопластовых кружках закрепить и затем плотно в распорку вставить в стаканчик установки… Главное чтобы корешки до раствора дотягивались.</p>
+
+<p><strong>Geus</strong> 28-06-2012</p>
+
+<p>еще чуть не забыл</p>
+
+<p>когда переселил с касеты в стаканчики корешки чуть пробились из пробки</p>
+
+<p>сейчас уже день четвертый приходится из проточки делать DWS что б керамзит и пробки не пересохли.</p>
+
+<p>подскажите что в таком случае лучше делать и как часто надо заполнять систему и как надолго.</p>
+
+<p>сейчас заполняю так что б раствора было в стаканчике около 50 мм от дна</p>
+
+<p>оставляю на ночь и днем сливаю, а вечером повторяю процедуру</p>
+
+<p><strong>Geus</strong> 28-06-2012</p>
+
+<p>фото установки</p>
+
+<p><a href="https://t.me/ponics_ru_files/8441" target="_blank"><img src="/attachimages/11177_2012-06-25 19.09.36.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/8442" target="_blank"><img src="/attachimages/11179_2012-06-25 19.09.40.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 28-06-2012</p>
+
+<blockquote>
+  <p>подскажите чего нехватает и чего лишнее.</p>
+</blockquote>
+
+<p>Лишние. GHE, ppm, LED, керамзит, СО2 и температура 23-24.</p>
+
+<p>Салат - культура “прохладного” микроклимата, Айсберг - тем более.</p>
+
+<p><strong>valery</strong> 28-06-2012</p>
+
+<blockquote>
+  <p>сейчас заполняю так что б раствора было в стаканчике около 50 мм от дна</p>
+
+  <p>оставляю на ночь и днем сливаю, а вечером повторяю процедуру</p>
+</blockquote>
+
+<p>50 мм от дна … Раствора в стаканчике - ВЫШЕ дна ? Они у Вас захлебываются, вероятно.</p>
+
+<p>Днем растения пьют, ночью спят (условно, конечно).</p>
+
+<p>Зачем же Вы их на ночь - заливаете, а днем - сливаете ?</p>
+
+<p><strong>valery</strong> 28-06-2012</p>
+
+<p>… забыл. Это был “риторический” вопрос … не обращайте внимания.</p>
+
+<p><strong>Geus</strong> 28-06-2012</p>
+
+<p>Уточняю</p>
+
+<p>GHE лишнее и лучше перейти на самодельные растворы? если да то PNK какой лучше 200/80/200 или другой</p>
+
+<p>LED планирую убрать когда обзаведусь вторым Днат, а Led отправлю на проращивание расады</p>
+
+<p>СО2 лишнее? или все так стоит обзавестись</p>
+
+<p>а по температуре, 23-24 это в комнате проветривание не помогает Днат сильно греет. стоит канальный вентилятор на 350 кубов в час а объем комнаты и до 30 недотягивает</p>
+
+<p><strong>Geus</strong> 28-06-2012</p>
+
+<p>понял</p>
+
+<p>процес полива во времени поменяю</p>
+
+<p><strong>Geus</strong> 28-06-2012</p>
+
+<p>подскажите как проще и оптимальнее сбить температуру до нужной 18-20</p>
+
+<p><strong>valery</strong> 28-06-2012</p>
+
+<p>СО2 хорош когда много света … растение много и активно кушает, быстро выедает углекислый газ и его не хватает с притоком воздуха.</p>
+
+<p>Если света “скромно” - СО2 будет только “мешаться”.</p>
+
+<p>А с температурой … ну что Вы можете сделать с температурой … по большому счету - ничего.</p>
+
+<p>Может быть кто-то подскажет … Лично я - не знаю.</p>
+
+<p><strong>Geus</strong> 28-06-2012</p>
+
+<p>я правильно понял два основных момента</p>
+
+<p>увеличить освещенность и снизить температуру</p>
+
+<p><strong>Geus</strong> 28-06-2012</p>
+
+<p>подскажите сколько свет надо салату в конкретных единицах.</p>
+
+<p>сегодня еще раз просмотрел весь сайт и не нашол такой информации.</p>
+
+<p>есть только инфа как долго светить.</p>
+
+<p>если кто знает подскажите</p>
+
+<p><strong>aivar</strong> 28-06-2012</p>
+
+<p>10 - 14 клюкс</p>
+
+<p><strong>Coccinella</strong> 28-06-2012</p>
+
+<p>Можно и 20 тыс люкс, вреда не будет… Этому, конкретному салатику темно и жарко.</p>
+
+<p><strong>maikl25</strong> 28-06-2012</p>
+
+<p>вечер добрый, до профи мне конечно далеко но опыт небольшой имеется…</p>
+
+<ol>
+  <li>
+    <p>рассаду вы загубили это однозначно (хотя и не смертельно) света им мало было это однозначно (я тоже так первый раз вырастил ;))</p>
+  </li>
+  <li>
+    <p>на фиг вам керамзит если есть пробки, уронил пробку в стаканчик и забыл (уже не первый месяц так пересаживаю), единственное желательно чтобы листочки были пошире(что будет нормой если доведете освещение до нормального) они будут закрывать внутренности стаканчика от света и раствор будет не так цвести…</p>
+  </li>
+  <li>
+    <p>наши ветераны конечно правы и желательно высоту раствора отрегулировать пониже стаканчика, но даже если вы все оставите так как есть салат вырастет, по своему опыту скажу, у меня первый салат вырос при условиях когда пробки были на половину в растворе, температура была около 30 (я не говорю что это хорошо) так что не расстраивайтесь что то точно вырастет… у меня выросли кустики 100-150гр, вполне средний результат…</p>
+  </li>
+</ol>
+
+<p>на будущее нужен хороший свет именно во время появления первых всходов …</p>
+
+<p>хотя я не скажу что у меня был хороший свет, всего 4 штуки 20-ки обычные люминесцентные лампы но расстояние до ламп 15 см. не лучшие показатели конечно (надо стремиться к лучшему) но на первое время не плохой выход.</p>
+
+<p><strong>Geus</strong> 29-06-2012</p>
+
+<p>а при такой мощности света как 20 лукс салат не зажарится?</p>
+
+<p><strong>Coccinella</strong> 29-06-2012</p>
+
+<p>А это зависит от светильника и общих условий. Освещенность и температура связаны не напрямую. В апреле на улице бывает оооочень светло и оооочень прохладно, а в июле - если очень светло, то и очень жарко, а в феврале…. если очень солнечно, то … от холода у деревьев кора лопается.</p>
+
+<p><strong>Geus</strong> 29-06-2012</p>
+
+<p>моя установка стоит в комнате. окна выходят на северную сторону.</p>
+
+<p>лампа Днат 400</p>
+
+<p>хочу в ближайшее время поставить два Дназ 600 и в спарку к ним оставить Led панель на 375 ват.</p>
+
+<p>сегодня посталю увлажнитель воздуха к вентилятору надеюсь температура спадет немного.</p>
+
+<p><strong>Geus</strong> 29-06-2012</p>
+
+<p>как думаете двух Дназ по 600 хватит на полное освещение 4 квадратов</p>
+
+<p><strong>Al-nikoly</strong> 29-06-2012</p>
+
+<p>Вот ссылка <a href="http://forum.ponics.ru/index.php?topic=12.0" target="_blank">http://forum.ponics.ru/index.php?topic=12.0</a> ( только там маКсимум Дназ 400 :-)</p>
+
+<p>Двух должно хватить наверное, все зависит от высоты подвеса над системой!</p>
+
+<p><strong>cpf</strong> 29-06-2012</p>
+
+<blockquote>
+  <p>А с температурой … ну что Вы можете сделать с температурой … по большому счету - ничего.</p>
+
+  <p>Может быть кто-то подскажет … Лично я - не знаю.</p>
+</blockquote>
+
+<p>Поставить кондиционер (что же еще?) :)</p>
+
+<p><strong>Geus</strong> 29-06-2012</p>
+
+<p>обычный кондиционер не вариант.</p>
+
+<p>попрбую поставить автомобильный кондер по результатам отпишусь и выложу фото</p>
+
+<p><strong>Vad</strong> 29-06-2012</p>
+
+<p>это еще почему?</p>
+
+<p>чем автомобильный отличнулся?</p>
+
+<p><strong>ALB</strong> 29-06-2012</p>
+
+<p>автомобильные бывают на модулях пельте - без фреона, да и регулируются более плавно - больше ток сильнее морозят, меньше ток слабее морозят. :D а если перепутать полярность то будет нагревать.</p>
+
+<p><strong>cpf</strong> 29-06-2012</p>
+
+<p>на эффекте пельтье можно только гроубокс охладить и то, если он - без ДНАТ :D</p>
+
+<p><strong>Vad</strong> 29-06-2012</p>
+
+<p>и размером 30х20х50 см… обьемом 30 литров</p>
+
+<p>человек говорит о автомобильном кондере… а не микро холодильничке.. для пива.</p>
+
+<p>видимо считает, что автомобильная 18шка обойдется дешевле банального оконника.. :) (ну</p>
+
+<p>это если сильно экономить :))</p>
+
+<p>на пеельтье не видел ниразу автокондеров… а если они и есть - это сущий бред <em>crazy</em></p>
+
+<p><strong>Geus</strong> 30-06-2012</p>
+
+<p>да оконный ставить нехочется придется пару дырок сверлить да и стоит он весьма не скромно.</p>
+
+<p>а автомобильный мне достанется почти бесплатно у меня друг на разборке работает пообесчал в ближайшую неделю найти один.</p>
+
+<p>ко всему автомобильный компактнее и надеюсь экономичнее. хотя насчет второго не увверен посмотрим когда принесут а там сравним.</p>
+
+<p><strong>cpf</strong> 30-06-2012</p>
+
+<p>…автомобильный компрессор еще крутить чем-то надо+ испаритель (охладитель) - там непонятно какой формы (для воздуховодов конкретной машины) и его необходимо чем-то обдувать+ конденсор - тоже надо охлаждать + логикой управляет блок климат- контроля автомобиля + производительность невысокая (автомобиль - не комната, все-таки)+…+…+…. (т.е. “- “- “-“ сполошные), проще все-таки купить кондей (необязательно оконный или сплит) - есть мощные переносные (напольные), стоят - недорого. Тепло у них можно отводить в вентканал охлаждения ДНАТА (или в окно…)</p>
+
+<p><strong>Geus</strong> 30-06-2012</p>
+
+<p>спасибо приму к сведению</p>
+
+<p><strong>Geus</strong> 05-07-2012</p>
+
+<p>хочу еще раз уточнить по свету.</p>
+
+<p>я замерил то что есть сейчас и получилось:</p>
+
+<p>днат дает 14кл на уровне горшка прямо под лампой</p>
+
+<p>и в радиусе метра составляет не ниже 10кл</p>
+
+<p>завтра возьму еще 3 Дри по 400 ват</p>
+
+<p>на каждую лампу отведу порядка 1м2</p>
+
+<p>надеюсь так хватит или нет или перебор?</p>
+
+<p>а Led панель свою перекину на рассаду</p>
+
+<p>она по документам 175ват по замерам дает 6кл в 20 см от лампы</p>
+
+<p><strong>Geus</strong> 05-07-2012</p>
+
+<p>с температурой буду бороться бытовым кондиционером.</p>
+
+<p>сейчас в процессе подбора.</p>
+
+<p><strong>Geus</strong> 05-07-2012</p>
+
+<p>уважаемые господа подскажите какой мощности надо вентилятор на вытяжку на 30 м2 при условии 4 ламп работающих 16 часов в сутки.</p>
+
+<p>сам не знаю, а в магазинах говорят разное начиная, что хватит и мощьности и в 30 кубов в час, а некоторые говорят и 300 мало будет.</p>
+
+<p>разъясните что к чему..</p>
+
+<p><strong>cpf</strong> 05-07-2012</p>
+
+<p>Думаю, что правы “2-е” :) Считаю, что на 30м2 понадобтся минимум 2-вентилятора (в разных местах помещения) по 300м3/час каждый, или лучше пару по 500 (канальные)…, тогда будет можно пытаться управлять климатом (кстати, можно включать их не на полную мощность, если че ;) )</p>
+
+<p><strong>Geus</strong> 05-07-2012</p>
+
+<p>у меня один канальный на 300м2 на приточке стоит</p>
+
+<p>на неделе хочу собрать отточную систему с началом забора с ламп</p>
+
+<p>а их как ни как четыре 400соткистоять будет</p>
+
+<p><strong>cpf</strong> 06-07-2012</p>
+
+<p>В култубе на 400ку должен стоять не менее 300м3/час, Ø 150 мм (иначе - расплавится :) ), вот и считайте…</p>
+
+<p><strong>Geus</strong> 06-07-2012</p>
+
+<p>култубов нет и наверно не появятся.</p>
+
+<p>а по расчетам получается на отточку надо вентилятор порядка 1200 м3 на 4 лампы</p>
+
+<p>за растения я не боюсь они далеко от ламп, порядка 80 см, а вот общая температура в помещении высокая. сейчас зашкалила за 26 градусов при условии что на улице 19 и приточка не спасает.</p>
+
+<p>хочу заказать рефлекторы а к ним приспособить вытяжные каналы и выгонять все это на улицу.</p>
+
+<p>ну и обзавестись партативным кондиционером</p>
+
+<p><strong>Al-nikoly</strong> 06-07-2012</p>
+
+<blockquote>
+  <p>култубов нет и наверно не появятся.</p>
+
+  <p>сейчас зашкалила за 26 градусов при условии что на улице 19 и приточка не спасает.</p>
+
+  <p>хочу заказать рефлекторы а к ним приспособить вытяжные каналы и выгонять все это на улицу.</p>
+
+  <p>ну и обзавестись партативным кондиционером</p>
+</blockquote>
+
+<p>Только смотрите аккуратнее, чтобы некто не видел, а то температура на улице увеличится и все Вас будут венить, запретят теплый воздух выпускать! ;D</p>
+
+<p>А может как раз попросят чтобы больше горячего воздуха выпускали :-\ :-\ :-\</p>
+
+<p><strong>Anton1977</strong> 12-01-2013</p>
+
+<p>Я знаю, как понизить температуру. Не пользоваться лампами-монстрами, перейти на светодиоды либо в крайнем случае на люминисцентное освещение!</p>
+
+<p>Вопрос по проточной системе. Собираюсь запускать, подобную Вашей. Как там должны стоять горшочки (у меня с базальтовой ватой) по отношению к уровню воды? Касаться-то должны наверняка?</p>
+
+<p><strong>Al-nikoly</strong> 12-01-2013</p>
+
+<blockquote>
+  <p>Я знаю, как понизить температуру. Не пользоваться лампами-монстрами, перейти на светодиоды либо в крайнем случае на люминисцентное освещение!</p>
+
+  <p>Вопрос по проточной системе. Собираюсь запускать, подобную Вашей. Как там должны стоять горшочки (у меня с базальтовой ватой) по отношению к уровню воды? Касаться-то должны наверняка?</p>
+</blockquote>
+
+<p>Светодиоды тоже греются, :P причем не слабо, лучше конечно будет, но все равно не то…. :-[</p>
+
+<p><strong>valery</strong> 12-01-2013</p>
+
+<blockquote>
+  <p>Я знаю, как понизить температуру. Не пользоваться лампами-монстрами, перейти на светодиоды либо в крайнем случае на люминисцентное освещение!</p>
+</blockquote>
+
+<p>Представляете какой ХОРОШИЙ кондиционер потребуется 1,6 киловаттному диоду ?</p>
+
+<p><strong>daemon</strong> 13-01-2013</p>
+
+<p>Светодиоды не то что “тоже греются”.</p>
+
+<p>Лучшие светодиоды на сегодняшний день всего лишь только приблизились по эффективности к натриевым лампам(при том, что далеко не факт, что именно такие светодиоды вам удастся приобрести).</p>
+
+<p>Их преимущество в том, что мощность можно распределить на большую площадь, а так же можно поиграться со спектром.</p>
+
+<p><strong>mitrotech</strong> 13-01-2013</p>
+
+<blockquote>
+  <p>Светодиоды не то что “тоже греются”.</p>
+
+  <p>Лучшие светодиоды на сегодняшний день всего лишь только приблизились по эффективности к натриевым лампам(при том, что далеко не факт, что именно такие светодиоды вам удастся приобрести).</p>
+
+  <p>Их преимущество в том, что мощность можно распределить на большую площадь, а так же можно поиграться со спектром.</p>
+</blockquote>
+
+<p>:)</p>
+
+<p><strong>cpf</strong> 14-01-2013</p>
+
+<blockquote>
+  <p>… а так же можно поиграться со спектром.</p>
+</blockquote>
+
+<p><a href="http://igry-dlya-devochec.ru/shkola-monstrov-spektra-vondergejst/" target="_blank">http://igry-dlya-devochec.ru/shkola-monstrov-spektra-vondergejst/</a> :D</p>
+
+<p><strong>valery</strong> 14-01-2013</p>
+
+<p>Замечательная музыка ! <em>8)</em></p>
+
+<p>( ну и … игра, само собой, … увлекательная … :-[ )</p>
+
+<p><strong>Vad</strong> 14-01-2013</p>
+
+<p>а мне “Даша следопыт” понравилась! она добрая!</p>
+
+<p>А Спектра эта.. :-\ она .. через стены проходит.. :-X</p>
+
+<p>Какого-то не хорошего спектра, эта Спектра!</p>
+
+<p>возможно она… радиоактивная… или дочь Вильгельма и Берты Ренген :o</p>
+
+<p>:-\</p>
+
+<p><strong>artmaximus</strong> 14-01-2013</p>
+
+<p>…дети, чему вас учит Даша?…</p>
+
+<p>…я рюкзак, я рюкзак…(С) ;D</p>
+
+<p><strong>mitrotech</strong> 16-01-2013</p>
+
+<p>Вот блин….. Я на ссылку нажал, там эта блин кукла, я с дуру то не закрыл, а попробовал одеть, а тут жена заходит. Ты чего ахренел совсем? - говорит.</p>
+
+<p><strong>artmaximus</strong> 16-01-2013</p>
+
+<blockquote>
+  <p>Вот блин….. Я на ссылку нажал, там эта блин кукла, я с дуру то не закрыл, а попробовал одеть, а тут жена заходит. Ты чего ахренел совсем? - говорит.</p>
+</blockquote>
+
+<p>… ;D ;D ;D</p>
+
+<p>у меня почти так же…чуть не получилось ;D</p>
+
+<p>…только она прошла мимо…но я подумал как раз об этом же :D …чего она могла подумать ;D ;D ;D</p>
+
+<p><strong>Geus</strong> 21-01-2013</p>
+
+<p>я работал с ватой но минеральной а не базальтовой.</p>
+
+<p>а насчет светодиодов то они реально меньше греют чем днат</p>
+
+<p>к примеру я сравнивал при работающем Днат 400 температура в среднем 26-27</p>
+
+<p>при трех Ледах мощностью два по 100 и один на 175 средняя температура в районе 23-24 градусов</p>
+
+<p>а проточка по моему опыту(маленькому) самая сложная в использовании.</p>
+
+<p>я последнее время на двс перешел и не нарадуюсь.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

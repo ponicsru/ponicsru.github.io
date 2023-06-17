@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Коммуналка для салатов, помидоров и др. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Коммуналка для салатов, помидоров и др.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Коммуналка для салатов, помидоров и др.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Елена А</strong> 22-12-2017</p>
+
+<p>Всем доброго вечера, уважаемые товарищи!</p>
+
+<p>Случайно на YouTube увидела ролик про гидропонику….. с этого момента поняла, что произошло «заражение» вирусом гидропоники. Посмотрела, почитала и решила, что пора действовать - из икеевского ящика соорудила простейшую DWC систему, купила готовые растворы и посадила семена салата и помидор. Старт был дан 26 ноября.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18897" target="_blank"><img src="/imagehost2/thumbs/img6529.jpg" alt="" /></a></p>
+
+<p>Это я потом узнала, что семена надо проращивать на воде, а тогда при старте системы взяла и залила сразу раствор с удобрениями.</p>
+
+<p>Семена благополучно все проросли и дальше пути-дороги растений разошлись – салат остался в DWC, а рассада помидор отправилась в горшки с кокосом+вермикулит+перлит.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18898" target="_blank"><img src="/imagehost2/thumbs/img6687.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18899" target="_blank"><img src="/imagehost2/thumbs/img6691.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18900" target="_blank"><img src="/imagehost2/thumbs/img6692.jpg" alt="" /></a></p>
+
+<p>Питание растения получают из разных готовых смесей. Контроль PH- 5,6-5,9, EC в «салатнице» - 1,2, у помидор-1,5. Освещение салата – 36 ватт биколор, у помидор – 36 ватт fullspectrum. Влажность воздуха – 40%.</p>
+
+<p>Состояние растений на 23 декабря</p>
+
+<p><a href="https://t.me/ponics_ru_files/18901" target="_blank"><img src="/imagehost2/thumbs/img6772flf.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18902" target="_blank"><img src="/imagehost2/thumbs/img6775.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18903" target="_blank"><img src="/imagehost2/thumbs/img6771.jpg" alt="" /></a></p>
+
+<p>На полках с помидорами и салатами сожительствуют еще перцы, лук и огурцы (случайно получилось ☺)</p>
+
+<p><a href="https://t.me/ponics_ru_files/18904" target="_blank"><img src="/imagehost2/thumbs/img6773.jpg" alt="" /></a></p>
+
+<p>Хотелось узнать мнение уважаемых форумчан о состоянии растений. Большая просьба, подскажите, что не так. <em>???</em></p>
+
+<p><strong>orgail</strong> 23-12-2017</p>
+
+<p>да вроде всё так :) только непонятно, что со светом?</p>
+
+<p><strong>siv237</strong> 23-12-2017</p>
+
+<p>Для новичка в гидропонике все растения выглядят отлично. Света пока явно хватает, нарушений питания вроде не заметно.</p>
+
+<p><strong>Елена А</strong> 23-12-2017</p>
+
+<p>Спасибо, что зашли в домик,Siv237 и Orgail! За комментарии-отдельное спасибо!</p>
+
+<p>Для освещения я использую такие лампы <a href="http://minifermer.ru/product_1023.html." target="_blank">http://minifermer.ru/product_1023.html.</a> Для салата-биколор, для томатов-full spektrum. Сначала светила 18 часов, сейчас-12 часов.</p>
+
+<p>С кормлением салата мне все более-менее ясно - есть много рекомендаций и схем по использованию готовых удобрений, которые я использую. А вот с томатами я предвижу будущие проблемы (может, конечно, и ошибаюсь).</p>
+
+<p>Для томатов в кокосе использую удобрения Plagron Cocos a+b в данный период развития растений в дозе А 2,5 мл/л + В 2,5 мл/л. С началом цветения производитель рекомендует перейти на дозировку 3 мл/л каждого компонента.</p>
+
+<p>И вот вопрос-данное соотношение и количество готового удобрения покроют потребности растения или нет? Если “ нет”, то что и в каком количестве необходимо добавить? Как говориться - лучше предупредить проблемы, чем бороться с последствиями.</p>
+
+<p>Не бейте тапками за готовые удобрения :)</p>
+
+<p><strong>siv237</strong> 23-12-2017</p>
+
+<p>С готовыми удобрениями всегда лотерея. Что по сути комплексы, как не смесь простых солей разной чистоты…</p>
+
+<p>По ним что-то говорить сложно. Точно лишь можно сказать, что однокомпонентные (это когда сразу из одной тары сыпешь или льёшь) не могут быть достаточны, так как элементы требуемые растениям вступают в химические реакции друг с другом при высоких концентрациях.</p>
+
+<p><strong>Vad</strong> 23-12-2017</p>
+
+<p>весьма бодрые томаты.. <em>8)</em>… “голову клонят”…</p>
+
+<p>междуузелья короткие… “змейкой” растет…</p>
+
+<p>с температурой что там? :-\</p>
+
+<p>а так все в норме…</p>
+
+<p>только кормить их</p>
+
+<blockquote>
+  <p>EC в «салатнице» - 1,2, у помидор-1,5.</p>
+</blockquote>
+
+<p>нельзя..</p>
+
+<p>нужно еды им.. а то они до цветения дойдут.. и.. “упрутся” в отсутствие еды…</p>
+
+<p>контролируйте дренаж.. там должно быть 2.5-2.9 а то и 3.5-4.0 mS</p>
+
+<p><strong>Елена А</strong> 24-12-2017</p>
+
+<p>Спасибо, Vad,что зашли в домик и за комментарии! Температура днем 24 гр., ночью 19-20 гр., разницу больше сделать не получается.</p>
+
+<p>Согласно вашим рекомендациям по кормлению увеличу дозу удобрений.</p>
+
+<p>А на стадии цветения нужно добавить Plagron PK к базовой смеси Cocos А+В, правильно понимаю? Или можно добавить что-то более бюджетное? Что и в каком количестве?</p>
+
+<p>С калькулятором npk пока не стали друзьями :'(</p>
+
+<p><strong>Елена А</strong> 24-12-2017</p>
+
+<p>Попыталась с помощью калькулятора посчитать NPK при использовании cocos A+B в дозе 2,5 мл каждого на литр. Цифры, которые я получили меня ,мягко сказано, удивили <em>???</em></p>
+
+<p>Может я что-то неправильно посчитала? Или это правда?</p>
+
+<p><a href="https://t.me/ponics_ru_files/18905" target="_blank"><img src="/imagehost2/thumbs/cocosab25ml.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 24-12-2017</p>
+
+<p>а что тут удивительного?</p>
+
+<p>сами писали EC 1.5… ну.. так и есть…</p>
+
+<p>голодно, пока не сильно критично.</p>
+
+<p>что-то накопилось в субстрате.. растения выедают воду.. а соли копятся в субстрате.</p>
+
+<p>по этому и говорю контролируйте дренаж…</p>
+
+<p>что добавлять с началом цветения - дело ваше..</p>
+
+<p>я бы на соли перешел.. собрать набор из 4х солей… вполне бюджетно..</p>
+
+<p>и время пока позволяет..</p>
+
+<p><strong>Cyclamech</strong> 29-12-2017</p>
+
+<blockquote>
+  <p>…а рассада помидор отправилась в горшки с кокосом+вермикулит+перлит.</p>
+</blockquote>
+
+<p>Вы зря добавляете перлит и вермикулит в кокос. Чистый кокос - отличный и, ИМХО, более подходящий и беспроблемный субстрат.</p>
+
+<blockquote>
+  <p>Я пыталась составлять смеси на разных калькуляторах, но, к сожалению, у меня не получается.</p>
+</blockquote>
+
+<p>Жаль, что мы не видели эти попытки: нам было бы понятнее, в чём проблема.</p>
+
+<p>Чтобы изготовить раствор, нужно представлять себе результат: раствор изготавливается согласно профилю питания, иначе говоря - согласно потребностям растения. Вы должны выбрать профиль питания для Вашего растения, например, из рекомендованных. Для каждого растения, стадии, субстрата … существуют свои профили питания, впрочем, при общей примитивности используемой технологии Вы можете попробовать и некий “универсальный” профиль. Вот из <a href="https://app.sqm.com/PDF/SPN/CropKits/SQM-Crop_Kit_Tomato_L-RU.pdf" target="_blank">этой книги</a> Вы можете почерпнуть общую информацию о выращивании и кормлении томатов, а на стр. 43 приведены профили питания для различных стадий (а также “усреднённый базовый”). Калькулятор поможет Вам вручную подобрать навески Ваших ингредиентов под выбранный профиль. При примитивной технологии для более-менее точной реализации профиля Вы можете использовать всего 2 ингредиента: комплексное удобрение (например, хвойный акварин) + кальциевая селитра.</p>
+
+<p><strong>Елена А</strong> 29-12-2017</p>
+
+<p>Спасибо за ответ, Cyclomech! По поводу вермикулита и перлита все поняла, более с кокосом мешать не буду.</p>
+
+<p>Так как предполагалось мое отсутствие дома в течение 2-х дней, а томаты нуждались в поливе, то использовала смесь GHE для томатов</p>
+
+<p><a href="https://t.me/ponics_ru_files/18906" target="_blank"><img src="/imagehost2/thumbs/ghe.jpg" alt="" /></a></p>
+
+<p>За время моего отсутствия были открыты окна и выключен увлажнитель…..Когда прибыла домой, то зафиксировала влажность 20 % и температуру 23 гр.</p>
+
+<p>Томат “Балконное чудо” вырос сантиметров на 5-7 и благополучно обжегся о лампу…</p>
+
+<p>Растения выглядят так:</p>
+
+<p><a href="https://t.me/ponics_ru_files/18907" target="_blank"><img src="/imagehost2/thumbs/img6828rvr.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18908" target="_blank"><img src="/imagehost2/thumbs/img6827rpr.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18909" target="_blank"><img src="/imagehost2/thumbs/img6826.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18910" target="_blank"><img src="/imagehost2/thumbs/img6825.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18911" target="_blank"><img src="/imagehost2/thumbs/img6824ghg.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18912" target="_blank"><img src="/imagehost2/thumbs/img6823eie.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18913" target="_blank"><img src="/imagehost2/thumbs/img6822zqz.jpg" alt="" /></a></p>
+
+<p>Караул! <em>Wall</em></p>
+
+<p>На калькуляторе посчитала смесь Акварина хвойного и кальциевой селитры Фертика</p>
+
+<p><a href="https://t.me/ponics_ru_files/18914" target="_blank"><img src="/imagehost2/thumbs/uwu.jpg" alt="" /></a></p>
+
+<p>Это правильно?</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 30-12-2017</p>
+
+<p>Нехватка серы, но это враньё. В акварине хвойном серы более чем достаточно. Видимо не забили в калькулятор.</p>
+
+<p>Ну и осталось сульфат магния сыпануть и аквамикса.</p>
+
+<p><strong>Елена А</strong> 30-12-2017</p>
+
+<p>Добавила остальные инградиенты и подправила состав Акварина и Аквамикса. Состав аптечного магния сульфата оставила в том виде, какой забит в калькуляторе.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18915" target="_blank"><img src="/imagehost2/thumbs/ooo.jpg" alt="" /></a></p>
+
+<p>В результате получился такой раствор:</p>
+
+<p><a href="https://t.me/ponics_ru_files/18916" target="_blank"><img src="/imagehost2/thumbs/4rrr.jpg" alt="" /></a></p>
+
+<p>Это верно?</p>
+
+<p>А что с растишками? Что за процесс на кончиках листьев? А пятна на листьях огурцов? Это часом не фитофтора?</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 30-12-2017</p>
+
+<p>Аквамикса побольше. Выровняйте по бору.</p>
+
+<p><strong>Елена А</strong> 30-12-2017</p>
+
+<p>При попытке выравнивания дозы Аквамикса по бору резко увеличивается Fe и Mo &gt;:(</p>
+
+<p><strong>Miando</strong> 12-02-2018</p>
+
+<p>Как Ваша комуналочка? Есть результаты?</p>
+
+<p><strong>Елена А</strong> 25-02-2018</p>
+
+<p>Спасибо, Miando, что заглянули в коммуналку ! Результаты есть, благодаря форумчанам и другим неравнодушным людям ☺ Помогли советами по питанию растений, поливу и т.д. Томаты и перцы плодоносят. Про салат даже говорить не буду- растет себе и растет, съедается-высевается новая генерация. Самое интересное- это выращивание томатов, перцев. Были проблемы с завязыванием плодов на перцах. Поставила увлажнитель и перешла на Ripen - в результате перцы стали завязываться.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18917" target="_blank"><img src="/imagehost2/thumbs/img7165.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18918" target="_blank"><img src="/imagehost2/thumbs/img7303.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18919" target="_blank"><img src="/imagehost2/thumbs/img7299.jpg" alt="" /></a></p>
+
+<p><strong>Елена А</strong> 25-02-2018</p>
+
+<p><a href="https://t.me/ponics_ru_files/18920" target="_blank"><img src="/imagehost2/thumbs/img6835.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18921" target="_blank"><img src="/imagehost2/thumbs/img7300mkm.jpg" alt="" /></a></p>
+
+<p><strong>Miando</strong> 25-02-2018</p>
+
+<p>Ого, отличные результаты! Освещение только светодиодами? Тоже пробую выращивать помидоры перец и салат, плюс редиска.</p>
+
+<p><strong>Елена А</strong> 26-02-2018</p>
+
+<p>Освещение только светодиодное. Лампы для зелени- биколор, для остальных растений – фулл и фулл х2. Лампы линейные, мощность 36 ватт (ширина полок – 40 см, длина – 90 см, высота от 40 до 70 см)</p>
+
+<p><strong>Miando</strong> 26-02-2018</p>
+
+<p>Круто! А как на вкус помидорки?)</p>
+
+<p>P.S. скажите ещё пожалуйста длину светового дня для салата и помидор.</p>
+
+<p><strong>Елена А</strong> 26-02-2018</p>
+
+<p>Я-новичок в гидропонике, поэтому не уверена, что все, что я делала соответствует правильному алгоритму. В случае ошибок, надеюсь, опытные товарищи поправят меня. :)</p>
+
+<p>В разные стадии развития растений требуется различная длина светового дня и , как я понимаю, разный спектр.</p>
+
+<p>Я делала следующим образом:</p>
+
+<ol>
+  <li>
+    <p>Семена проращивались без света</p>
+  </li>
+  <li>
+    <p>При появлении всходов – подсвечивание 24 часа лампой биколор</p>
+  </li>
+  <li>
+    <p>Далее переход на подсвечивание 18 часов в сутки лампой биколор до появления 1-го настоящего листочка</p>
+  </li>
+  <li>
+    <p>После появления первого настоящего листочка растения стали досвечиваться 12 часов в сутки лампой биколор</p>
+  </li>
+  <li>
+    <p>По мере подрастания растения переводились на досвечивние 12 часов лампой фулл спектр или фуллх2</p>
+  </li>
+</ol>
+
+<p>Лампы со спектром биколор способствуют наращиванию зеленой массы, для цветения и плодоношения необходим спектр фулл и фуллх2(для огурцов).</p>
+
+<p>Что важно, я использовала данный алгоритм освещения в температурном режиме 23-25 градусов днем.</p>
+
+<p>P.S. Попробовали вчера первую помидорку…… честно разделив на троих ;D Сорт томата Микро Том ( у меня он правда стал Макро Томом). Вкусно! Тонкая кожура, сочный, классная кислинка и вкус томата :)</p>
+
+<p><strong>Елена А</strong> 26-02-2018</p>
+
+<p>Miando, а Вы каким методом выращиваете?</p>
+
+<p><strong>Miando</strong> 26-02-2018</p>
+
+<p>Помидор в торфе, редиска тоже в торфе, в касете, а салат dwc. Перец и огурец тоже в торфе. Микротоматы как то не очень развиваются, а большие еле влазят на полку, хочу попробовать положить стебель и растить горизонтально. Огурец тоже не плохо выглядит, даже странно, т.к. влажность около 30% но это при температуре 18° если температуру поднять, то и влажность будет 50-60%. Редис пока не получался, иду на почту забирать семена 10ти сортов. Посмотрю что лучше в мойом микроклимате растет, но ошибки мне уже указали на форуме, так что направление уже знаю :) Кстати помидоры посадил 40 дней назад. У Вас когда образовались плоды?</p>
+
+<p><strong>Елена А</strong> 26-02-2018</p>
+
+<p>Сроки роста томатов и созревания:</p>
+
+<p>26 ноября посадила семена</p>
+
+<p>13-15 января томат в стадии цветения</p>
+
+<p>17 января – завязываются плоды</p>
+
+<p>20 февраля покраснел 1 помидор</p>
+
+<p>25 февраля созрел первый помидор и началось массовое покраснение плодов</p>
+
+<p><strong>visualife</strong> 27-02-2018</p>
+
+<p>Отличные результаты Елена!</p>
+
+<p>Я тоже томаты посадил и они прекрасно растут при 25гр. На солнышке было 30</p>
+
+<p>А вот с салатом беда ((( я вот даже батарею отключил. Сейчас салат медленно поростает. Не уверенно. А руккола вялая при 20-25 гр. Вытягивалась до 5см и сохла. Посадил новую пробу рукколы в грунт и через сутки под лампу. Сейчас посмотрел появились проростки. Вроде не вытягиваются. Хочу подержать еще 5 дней в парничке под пленкой. Надеюсь что то получится…</p>
+
+<p>А вы руккола пробовали выращивать?</p>
+
+<p><strong>Елена А</strong> 27-02-2018</p>
+
+<p>Доброй ночи,Visualife! Рукколу не выращивала.Зато выращиваю базилик, который собирается сейчас уже зацвести. В ноябре-декабре я выдерживала разницу температур - днем 23-25, вечером снижала до 19-20 гр. Салаты и остальные растения росли хорошо, единственное, базилик у меня в кокосе чувствовал себя неважно. Был пересажен в смесь земли с кокосом- начал расти замечательно. В январе-феврале снижение ночной температуры стало проблематичным. Сейчас все растут в спартанских условиях-24 гр днем, 22-21 вечером. Как-то так….</p>
+
+<p><strong>visualife</strong> 28-02-2018</p>
+
+<p>с базиликом проблем нет, он и в 30 гр себя чувствует отлично у меня. Срываем часто урожай :) жирный, большой</p>
+
+<p><a href="https://t.me/ponics_ru_files/18922" target="_blank"><img src="/attachimages/18472_Screenshot_3.png" alt="" /></a></p>
+
+<p><strong>Miando</strong> 06-03-2018</p>
+
+<p>Елена, скажите пожалуйста, а перцы у Вас острые? Если да, они могут свою остроту передать помидору? У родственников вырос болгарский перец острым, как они сказали “переопылился”. Боюсь свой острый ставить рядом с огурцом и томатом.</p>
+
+<p>P.S. Кого то ещё в коммуналку планируете подселять? :)</p>
+
+<p><strong>Vad</strong> 06-03-2018</p>
+
+<blockquote>
+  <p>могут свою остроту передать помидору?</p>
+</blockquote>
+
+<p>у меня в одном горшке растут 4 куста перца :D</p>
+
+<p>два кайен - хороший, острый…</p>
+
+<p>и два вердана(или вардана.. не помню уже) сладкий болгаский …</p>
+
+<p>и нифига.. они не опыляются..))</p>
+
+<p>хотя сажал с надеждой, что болгарский станет острым…</p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=2770.msg114459#msg114459" target="_blank">http://forum.ponics.ru/index.php?topic=2770.msg114459#msg114459</a></p>
+
+<p>главное рядом с каннабисом не сажать помидоры :-\</p>
+
+<p>а то… если каннабис отдаст свою “остроту” помидору… будет веселый салат :D</p>
+
+<p><strong>Miando</strong> 06-03-2018</p>
+
+<p>1000% можно не боятся? Посадил вот такой: Trinidad Scorpion Moruga” <a href="https://en.wikipedia.org/wiki/Trinidad_moruga_scorpion" target="_blank">https://en.wikipedia.org/wiki/Trinidad_moruga_scorpion</a></p>
+
+<p>Страшновато :)</p>
+
+<p><strong>Vad</strong> 07-03-2018</p>
+
+<p>Бояться нужно всегда.</p>
+
+<p>страх - инстинкт самосохранения.</p>
+
+<p>не будет страха - вид под угрозой вымирания.</p>
+
+<p>:D</p>
+
+<p>чтоб болгарский стал острым… нужно опылить тычинками острого.. пестики болгарского…</p>
+
+<p>дождаться когда завяжется и вырастет плод, созреют семена, ПОСАДИТЬ новые семена… и ТОГДА, МОЖЕТ БЫТЬ, ЕСЛИ ПОВЕЗЕТ…. болгарский “подхватит” свойства острого…</p>
+
+<p>но не факт что он подхватит остроту )) он может подхватить размер… или форму… или цвет :D</p>
+
+<p><strong>Miando</strong> 07-03-2018</p>
+
+<p>Спасибо. Поставлю подальше от помидору и огурца. Пускай попридержит свои тычинки :)</p>
+
+<p><strong>vladindre</strong> 07-03-2018</p>
+
+<blockquote>
+  <p>но не факт что он подхватит остроту</p>
+</blockquote>
+
+<p>По теории должон. Известные опыты Менделя с горохом. Там ведь расщепление свойств вроде как</p>
+
+<p>1/2:1/4:1/4. Так что вероятность как бы есть и немалая.</p>
+
+<p><strong>Vad</strong> 07-03-2018</p>
+
+<p>да какой мендель… он боится, что огурцы и помидоры горькими станут :D</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+
