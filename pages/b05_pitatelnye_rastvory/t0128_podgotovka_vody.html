@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Подготовка воды | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Подготовка воды">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Подготовка воды</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Stasoid</strong> 26-05-2009</p>
+
+<p>Вот наткнулся на статейку ;) Может кому полезно будет !</p>
+
+<p>Хлорамин</p>
+
+<p>Одна из проблем при использовании хлора для очистки воды, состоит в том, что он достаточно быстро улетучивается. Вторая проблема – это то, что он может соединяться с некоторыми органическими соединениями, содержащимися в воде, в результате чего образуются канцерогенные вещества. В результате, многие водоочистные компании применяют хлорамин, вместо хлора. Хлорамин, состоящий из хлора и аммиака, намного более устойчив, чем хлор.</p>
+
+<p>Хлорамин добавляет две существенных головных боли аквариумистам. Во-первых, нейтрализующие хлор химикалии типа тиосульфата натрия нейтрализуют только часть хлорамина - хлор, пренебрегая еще большей проблемой - смертельным аммиаком. Последствия могут быть катастрофичными. Хотя биологический фильтр аквариума в конечном счете преобразует аммиак в нитраты, время для этого требуется больше, чем ваша рыба может выдержать.</p>
+
+<p>Вторая проблема касается регулярных замен воды. Одна из первичных причин для выполнения регулярных замен воды состоит в том, что необходимо удалять нитраты которые являются продуктами жизнедеятельности рыб. Если Ваша вода которая используется для замены содержит аммиак, то невозможно уменьшить уровень нитратов ниже концентрации его в Вашей водопроводной воде. К счастью, концентрация аммиака в водопроводной воде относительно низка (1 или 2 ppm). В вашем аквариуме, вероятно, концентрация нитратов намного выше.</p>
+
+<p>Хлорамин может быть успешно удалён с помощью такого препарата, как Amque, который нейтрализует и аммиак, и хлор, содержащийся в хлорамине. Прим. - Спорное утверждение (из 10 проб удалил только в 7)</p>
+
+<p>Другой метод нейтрализации хлорамина, заключается в биологической фильтрации воды, предварительно обработанной тиосульфатом натрия. Тиосульфат натрия “разбивает” связанные аммиак и хлор и затем хлор и аммиак можно удалить усиленной аэрацией или биофильтрацией в сочетании с аэрацией.</p>
+
+<p>Обратите внимание: перед фильтрацией вы обязательно должны удалить хлор, с помощью тиосульфата натрия, иначе хлор убьёт бактерии в вашем биологическом фильтре.</p>
+
+<p>Альтернативно, аммиак можно удалить фильтрованием воды через цеолит или углерод, перед добавлением её в аквариум. Обратите внимание: люди сообщают о смешанном успехе этого способа.</p>
+
+<p>Тиосульфат натрия : применяется в фотопечати и медицине</p>
+
+<p>Цеолит : в Аптеке продаётся .</p>
+
+<p><strong>Mendes</strong> 26-05-2009</p>
+
+<p>Но самый легкий способ удаления и хлора и хлорамина - это покупка и использование специального кондиционера для воды, который продается в магазине этого форума.</p>
+
+<p>Я так и поступил и нет проблем :)</p>
+
+<p><strong>mdima</strong> 26-05-2009</p>
+
+<p>Статья ориентирована строгона аквариум. При том на аквариум с дискусами или чем-то подобным. Объясню: Хлорамин в воду по нормам СЭС добавляют до концентрации 1 - 1.5 мг/л. При нейтрализации тиосульфатом соответственно образуется менее 1 - 1.5 мг аммиака. Что критично для некоторых видов рыб, но абсолютно безвредно для растений.</p>
+
+<p>[code]</p>
+
+<p>Употребляемый для дезинфекционных целей отечественный хлорамин носит название хлорамина Б, относится к группе</p>
+
+<p>монохлораминов и имеет формулу: C6H5SO2N(NaCl)•H2O. Он представляет собой натриевую соль хлорамида</p>
+
+<p>бензол-сульфокислоты, имеет вид белого мелкокристаллического порошка.</p>
+
+<p>[/code]</p>
+
+<p><strong>ГидроПончик</strong> 25-02-2010</p>
+
+<p>Попался на глаза, такой вот листок бумаги. Мимо пройти, естественно, не смог. Как вам такой растворчик из крана? Фосфора только, почему-то нет.</p>
+
+<p><a href="https://t.me/ponics_ru_files/1282" target="_blank"><img src="/attachimages/1402_DSCN5265.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 25-02-2010</p>
+
+<p>Ну отличный такой составчик. 8)</p>
+
+<p><strong>valery</strong> 25-02-2010</p>
+
+<p>Вот это да …</p>
+
+<p>Спасибо, ГидроПончик, замечательный пример …</p>
+
+<p>А мы еще любим растворы корректировать и друг друга спрашиваем, чего не так …</p>
+
+<p>А тут уже в исходной воде - кальциевую селитру, похоже и вовсе добавлять не нужно … - для салата и так, вполне.</p>
+
+<p>Да и магния - для большинства растворов - хватит.</p>
+
+<p>Натрия - 236, похоже окрошку можно не солить …</p>
+
+<p>Огурцу - нужно не более 30, а здесь - уже 10 доз …</p>
+
+<p>Сульфатов 720 !!!!!! Это 240 ЧИСТОЙ СЕРЫ, огурцу “хотелось бы” не больше 44 …</p>
+
+<p>Хлоридов одних … Да мы в раствор самого востребованного азота или калия не всегда столько добавляем …</p>
+
+<p>И “хелатированием” железа - похоже можно не озабачиваться :D</p>
+
+<p>Вот так, так …</p>
+
+<p>И куды дальше бечь ???</p>
+
+<p>Похоже, прав, с одной стороны mdima, когда делает раствор только на “осмосе”, а с другой стороны - “тепличники”, которые в ОБЯЗАТЕЛЬНОМ порядке делают анализ исходной воды …</p>
+
+<p>А мы - все на авось. И оказывается, что ОЧЕНЬ СИЛЬНО на авось. Вот и соблюдай, после этого, “пропорции” …</p>
+
+<p><strong>Mole_Garden</strong> 25-02-2010</p>
+
+<p>Это получается, что за год можно с экономить порядочное количество удобрений.</p>
+
+<p>Мдя, есть подозрение, что для более менее порядочных тепличек уже лучше делать анализ воды, дешевле выйдет, чем разводить удобрения.</p>
+
+<p><strong>mdima</strong> 25-02-2010</p>
+
+<p>Все правильно.</p>
+
+<p><strong>Колхозьник</strong> 31-12-2011</p>
+
+<p>а что это за единица измерения в таблице <em>&lt;&lt;</em>?</p>
+
+<p><strong>а-ну-ка</strong> 31-12-2011</p>
+
+<blockquote>
+  <p>а что это за единица измерения в таблице <em>&lt;&lt;</em>?</p>
+</blockquote>
+
+<p>Aналогична выше обозначенной.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

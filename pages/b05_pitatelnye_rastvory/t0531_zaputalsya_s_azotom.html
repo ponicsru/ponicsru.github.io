@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>запутался с азотом. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="запутался с азотом.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">запутался с азотом.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>edgarich</strong> 07-06-2010</p>
+
+<p>здравствуйте.</p>
+
+<p>купил недавно нитрат калия (в замен не понравившегося мне сульфата калия).</p>
+
+<p>но возник вопрос по содержанию в нем азота.</p>
+
+<p>не могу понять как его считать? как оксид азота NO3 ? и умножать на 0.23 ?</p>
+
+<p>K2O - 46.2% :</p>
+
+<p>N (NO3)-13.5%</p>
+
+<p>Как правильно понимать ?</p>
+
+<p>N= 13%</p>
+
+<p>или</p>
+
+<p>NO3=13%</p>
+
+<p>тот же вопрос и по нитрату кальция.</p>
+
+<p>Состав в весовых процентах:</p>
+
+<p>Азот (N) 15,5%</p>
+
+<ul>
+  <li>
+    <p>нитратный NO3-N 14,4%</p>
+  </li>
+  <li>
+    <p>аммонийный NH4-N 1,1%</p>
+  </li>
+</ul>
+
+<p>Кальций CaO 26,5%</p>
+
+<p>водорастворимый Ca 19%</p>
+
+<p>Как правильно понимать ?</p>
+
+<p>N = 15.5</p>
+
+<p>или</p>
+
+<p>N= 14.4<em>0.23 + 1.1</em>0.15</p>
+
+<p><strong>WERDNA</strong> 07-06-2010</p>
+
+<p>Азот принято указывать в процентах ЧИСТОГО ЭЛЕМЕНТА т.е. N= 13%. NO3 указывается для того, чтобы понимать, что азот в данном случае в нитратный (а бывает еще аммиачный и амидный). Остальные элементы, как правило указываются в оксидах (Р2О5, К2О), а бывает и в чистых элементах (в основном микроэлементы) тут надо внимательно читать этикетку.</p>
+
+<p><strong>WERDNA</strong> 07-06-2010</p>
+
+<p>Та же история</p>
+
+<p>Азот (N) 15,5%</p>
+
+<ul>
+  <li>
+    <p>нитратный NO3-N 14,4%</p>
+  </li>
+  <li>
+    <p>аммонийный NH4-N 1,1%</p>
+  </li>
+</ul>
+
+<p>Считаем общий азот 15,5%, и понимаем что 14,4% из него нитратного 1,1 амонийного</p>
+
+<p><strong>WERDNA</strong> 07-06-2010</p>
+
+<p>Сульфат калия тоже может понадобиться, если необходимо поднимать калий не поднимая при этом азот</p>
+
+<p><strong>edgarich</strong> 07-06-2010</p>
+
+<p>спасиб.</p>
+
+<p>только этого я и боялся.</p>
+
+<p>не получится два нитрата вместе использовать ,по азоту сразу улетаем в космос.</p>
+
+<p>а другого источника кальция нет?</p>
+
+<p><strong>edgarich</strong> 07-06-2010</p>
+
+<blockquote>
+  <p>Азот принято указывать в процентах ЧИСТОГО ЭЛЕМЕНТА т.е. N= 13%. NO3 указывается для того, чтобы понимать, что азот в данном случае в нитратный (а бывает еще аммиачный и амидный). Остальные элементы, как правило указываются в оксидах (Р2О5, К2О), а бывает и в чистых элементах (в основном микроэлементы) тут надо внимательно читать этикетку.</p>
+</blockquote>
+
+<p>про остальные мне все понятно , спасиб.</p>
+
+<p>а что за зверь такой - амидный азот?</p>
+
+<p><strong>Rossich</strong> 07-06-2010</p>
+
+<blockquote>
+  <p>[</p>
+
+  <p>про остальные мне все понятно , спасиб.</p>
+
+  <p>а что за зверь такой - амидный азот?</p>
+</blockquote>
+
+<p>NH2- для растенюшек просто мёд………. :P</p>
+
+<p><strong>WERDNA</strong> 07-06-2010</p>
+
+<p>Карбамид (или мочевина) например содержат азот в амидной форме (NH2).</p>
+
+<p>Усвоение азота в данной форме в гидропонике вызывает большущие сомнения, не в одном рекомендуемом растворе для гидропоники его (NH2) не встречал, более того, читал что он в гидре не усваивается.</p>
+
+<p>Для листовой подкормки годится.</p>
+
+<p>Все вышеперечисленное мое мнение. На истину в последней инстанции не притендую.</p>
+
+<p><strong>WERDNA</strong> 07-06-2010</p>
+
+<blockquote>
+  <p>спасиб.</p>
+
+  <p>только этого я и боялся.</p>
+
+  <p>не получится два нитрата вместе использовать ,по азоту сразу улетаем в космос.</p>
+
+  <p>а другого источника кальция нет?</p>
+</blockquote>
+
+<p>Кальция или всетаки калия?</p>
+
+<p>Если калия, то монофосфат калия, но в нем фосфор, учтите при расчетах.</p>
+
+<p>А чем плох сульфат калия-то?</p>
+
+<p><strong>edgarich</strong> 07-06-2010</p>
+
+<blockquote>
+  <p>Карбамид (или мочевина) например содержат азот в амидной форме (NH2).</p>
+
+  <p>Усвоение азота в данной форме в гидропонике вызывает большущие сомнения, не в одном рекомендуемом растворе для гидропоники его (NH2) не встречал, более того, читал что он в гидре не усваивается.</p>
+
+  <p>Для листовой подкормки годится.</p>
+
+  <p>Все вышеперечисленное мое мнение. На истину в последней инстанции не притендую.</p>
+</blockquote>
+
+<p>вот и я про применение амидного азота в гидре ничего хорошего не слышал .</p>
+
+<p><strong>edgarich</strong> 07-06-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>спасиб.</p>
+
+    <p>только этого я и боялся.</p>
+
+    <p>не получится два нитрата вместе использовать ,по азоту сразу улетаем в космос.</p>
+
+    <p>а другого источника кальция нет?</p>
+  </blockquote>
+
+  <p>Кальция или всетаки калия?</p>
+
+  <p>Если калия, то монофосфат калия, но в нем фосфор, учтите при расчетах.</p>
+
+  <p>А чем плох сульфат калия-то?</p>
+</blockquote>
+
+<p>чем заменить калий я знаю.</p>
+
+<p>а вот альтернативы кальцию в гидре , кроме нитрата кальция не знаю.</p>
+
+<p>дело в том что имеющийся у меня кальций:</p>
+
+<p>N-15.5</p>
+
+<p>CaO-26.5</p>
+
+<p>при доведении кальция до 250мг получаю почти 205 азота , что ужо не хорошо.</p>
+
+<p>а сульфат калия плох прежде всего своей чистотой, и серой.</p>
+
+<p>монофосфат калия я не пробовал , потому что не могу найти. а вот калиевая селитра</p>
+
+<p>у меня хорошая , и как источник калия я бы ее с удовольствием использовал ,</p>
+
+<p>но тогда надо убирать из состава кальций.замены которому я не знаю.</p>
+
+<p><strong>Rossich</strong> 07-06-2010</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>спасиб.</p>
+
+      <p>только этого я и боялся.</p>
+
+      <p>не получится два нитрата вместе использовать ,по азоту сразу улетаем в космос.</p>
+
+      <p>а другого источника кальция нет?</p>
+    </blockquote>
+
+    <p>Кальция или всетаки калия?</p>
+
+    <p>Если калия, то монофосфат калия, но в нем фосфор, учтите при расчетах.</p>
+
+    <p>А чем плох сульфат калия-то?</p>
+  </blockquote>
+
+  <p>чем заменить калий я знаю.</p>
+
+  <p>а вот альтернативы кальцию в гидре , кроме нитрата кальция не знаю.</p>
+
+  <p>дело в том что имеющийся у меня кальций:</p>
+
+  <p>N-15.5</p>
+
+  <p>CaO-26.5</p>
+
+  <p>при доведении кальция до 250мг получаю почти 205 азота , что ужо не хорошо.</p>
+</blockquote>
+
+<p>Коллеги есть хорошие комплексы корректоры профессиональные:</p>
+
+<p>Келкат Кальций микс EDTA -3% плюс вся микро,</p>
+
+<p>Келкат магний 13% EDTA</p>
+
+<p>Келкат Цинк-15% EDTA</p>
+
+<p>Келкат Бор-21%</p>
+
+<p>Келкат Железо-6% EDDHA</p>
+
+<p>А в общем, есть израильские готовые составы для гидры с кальцием и магнием внутри, с азотом от 3 до 19 для выращивания по типу маточных растворов А и В</p>
+
+<p><strong>Aleksey Kurenin</strong> 07-06-2010</p>
+
+<p>Одно плохо. Цена у них “замечательная”.</p>
+
+<p>Да и без нитрата кальция никак, всё равно, не обойтись.</p>
+
+<p><strong>edgarich</strong> 07-06-2010</p>
+
+<p>“замечательная “ это сколько?</p>
+
+<p><strong>Mole_Garden</strong> 07-06-2010</p>
+
+<blockquote>
+  <p>Коллеги есть хорошие комплексы корректоры профессиональные:</p>
+
+  <p>Келкат Кальций микс EDTA -3% плюс вся микро,</p>
+
+  <p>Келкат магний 13% EDTA</p>
+
+  <p>Келкат Цинк-15% EDTA</p>
+
+  <p>Келкат Бор-21%</p>
+
+  <p>Келкат Железо-6% EDDHA</p>
+
+  <p>А в общем, есть израильские готовые составы для гидры с кальцием и магнием внутри, с азотом от 3 до 19 для выращивания по типу маточных растворов А и В</p>
+</blockquote>
+
+<p>А где все это можно посмотреть и если что приобрести?</p>
+
+<p><strong>Rossich</strong> 07-06-2010</p>
+
+<blockquote>
+  <p>Одно плохо. Цена у них “замечательная”.</p>
+
+  <p>Да и без нитрата кальция никак, всё равно, не обойтись.</p>
+</blockquote>
+
+<p>Здравствуйте Алексей,</p>
+
+<p>Ну почему так сурово… Вот формула</p>
+
+<p>11-9-34+3MgO</p>
+
+<p>19-19-19+3MgO</p>
+
+<p>12-6-28+7CaO</p>
+
+<p>3-10-37+4MgO</p>
+
+<p>Естественно все с микрой +пекацид.</p>
+
+<p>С ценой вы правы 250/кило -ну это как посмотреть.. если работаешь с дорогой культурой, Я не скуплюсь.</p>
+
+<p><strong>Rossich</strong> 07-06-2010</p>
+
+<blockquote>
+  <p>А где все это можно посмотреть и если что приобрести?</p>
+</blockquote>
+
+<p>Я беру на сезон оптом в Новороссийске прям с таможенных складов, а так.. по рознице честно не знаю, на ВДНХ №8 -думаю точно есть.</p>
+
+<p>Да забыл еще есть Келик-Калий EDTA-50%</p>
+
+<p><strong>Aleksey Kurenin</strong> 07-06-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>Одно плохо. Цена у них “замечательная”.</p>
+
+    <p>Да и без нитрата кальция никак, всё равно, не обойтись.</p>
+  </blockquote>
+
+  <p>Здравствуйте Алексей,</p>
+
+  <p>Ну почему так сурово… Вот формула</p>
+
+  <p>11-9-34+3MgO</p>
+
+  <p>19-19-19+3MgO</p>
+
+  <p>12-6-28+7CaO</p>
+
+  <p>3-10-37+4MgO</p>
+
+  <p>Естественно все с микрой +пекацид.</p>
+
+  <p>С ценой вы правы 250/кило -ну это как посмотреть.. если работаешь с дорогой культурой, Я не скуплюсь.</p>
+</blockquote>
+
+<p>Вечер добрый!!</p>
+
+<p>:) Хто?? Я? Сурово? да я верх оптимизма. :D</p>
+
+<p>Просто с кальцием один рецепт, в нём кальция 7? и то оксида, так что без селитры всё равно никуда. Или я не прав? А тогда зачем это всё нужно, если есть отдельно нитрат кальция и комплексное. и всё должно быть дешевле.</p>
+
+<p><strong>Rossich</strong> 07-06-2010</p>
+
+<blockquote>
+  <p>Просто с кальцием один рецепт, в нём кальция 7? и то оксида, так что без селитры всё равно никуда. Или я не прав?</p>
+</blockquote>
+
+<p>Правы. Я лично Селитрой работаю в дополнение к раствору по листу, по необходимости.</p>
+
+<p><strong>edgarich</strong> 07-06-2010</p>
+
+<p>да, но в моем случае что так не получается.</p>
+
+<p>по достижении 250 кальция, по азоту я получаю 205 , и пролетаю жестко.</p>
+
+<p><strong>Aleksey Kurenin</strong> 07-06-2010</p>
+
+<blockquote>
+  <p>да, но в моем случае что так не получается.</p>
+
+  <p>по достижении 250 кальция, по азоту я получаю 205 , и пролетаю жестко.</p>
+</blockquote>
+
+<p>Коллега, чудес на свете не бывает.</p>
+
+<p>Поэтому.</p>
+
+<p>Либо - сульфат калия. (Ну там Монокалий фосфат, если по фосфору пролезете).</p>
+
+<p>Либо более низкие уровни кальция.</p>
+
+<p>Либо более высокие уровни азота.</p>
+
+<p>Выбирайте меньшее зло и вперёд и с песней.</p>
+
+<p>А вообще то? Куда Вам 250 кальция то?</p>
+
+<p><strong>edgarich</strong> 07-06-2010</p>
+
+<p>злой чесноков указывает на это количество и тем самым все портит.</p>
+
+<p><strong>Aleksey Kurenin</strong> 07-06-2010</p>
+
+<p>что расти то будет?</p>
+
+<p><strong>edgarich</strong> 07-06-2010</p>
+
+<p>огурцы.</p>
+
+<p>я ни как не могу подобрать для них ключик по npk.</p>
+
+<p><strong>edgarich</strong> 07-06-2010</p>
+
+<p>сдается мне что я наверно в своих рецептах отпущу кальций в свободное плавание.</p>
+
+<p><strong>Aleksey Kurenin</strong> 07-06-2010</p>
+
+<p>Взгляни <a href="http://www.greentalk.ru/node/578" target="_blank">http://www.greentalk.ru/node/578</a>. для огурца должно быть.</p>
+
+<p>Номер 19</p>
+
+<p><strong>edgarich</strong> 07-06-2010</p>
+
+<p>спасибо!</p>
+
+<p>интересная почиташка. 8)</p>
+
+<p><strong>valery</strong> 07-06-2010</p>
+
+<p>Уважаемый edgarich, а для огурца вроде бы 205 азота вовсе и немного. Вполне можно и больше.</p>
+
+<p>А кальция - напротив, можно заметно меньше. Рецептов много разных, ну вот у меня огурец чувствует себя достаточно терпимо с кальцием 160. Может еще раз “перепроверить” рецепт, все ли правильно прочитали-посчитали ?</p>
+
+<p><strong>edgarich</strong> 07-06-2010</p>
+
+<p>я знаю Valery что 205 для огурца не так уж и много .</p>
+
+<p>просто дело в том что уже 205 , а я еще хотел сульфат калия заменить на нитрат калия.</p>
+
+<p>ну и вот тут не получается. ну не нравится мне мой сульфат калия , грязный собака.</p>
+
+<p>а вот то что у вас огурчик себя хорошо чуйствует на 160 кальция , это интересно.</p>
+
+<p><strong>valery</strong> 07-06-2010</p>
+
+<p>Я тоже пользуюсь обеими селитрами - и кальциевой и калиевой.</p>
+
+<p>В принципе, на огурце в “излишки” азота из-за кальциевой селитры, пока вроде бы не упирался.</p>
+
+<p>Наоборот, приходится добавлять еще немного аммиачной, да еще плюс азотная кислота</p>
+
+<p><strong>Mole_Garden</strong> 08-06-2010</p>
+
+<blockquote>
+  <p>злой чесноков указывает на это количество и тем самым все портит.</p>
+</blockquote>
+
+<p>Раствор Чеснокова это универсальный раствор, А НЕ ПАНАЦЕЯ!</p>
+
+<p><strong>edgarich</strong> 08-06-2010</p>
+
+<p>ни на минуту не сомневаюсь в этом.</p>
+
+<p>просто привел как пример. у меня растишки и 330 азота видели, против 160 чесноковских.</p>
+
+<p>молодых заштормило слегка , а вот стреляные перемолотили как ни странно.</p>
+
+<p>я в поиске оптимальных зон так сказать. сейчас интересна минималка по кальцию.</p>
+
+<p>ибо он якорь , тормозящий процесс.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Подготовка воды | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Подготовка воды">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Подготовка воды</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>VVS_</strong> 25-07-2010</p>
+
+<p>Встал вопрос о качестве воды.</p>
+
+<p>У меня вода в кране 400 ppm, купил умягчающий ионообменный фильтр, после него на выходе 370 ppm.</p>
+
+<p>Спрашиваю друга химика в чем дело, он сказал все Ок, т.к. фильтр отдал ионы натрия в замен того что отфильтровал.</p>
+
+<p>Итого вопрос, допустимо ли нахождение солей натрия в гидропонном растворе? Может воду лучше вообще не фильтровать этим фильтром? Другого нету, на обратноосмотический денег нет.</p>
+
+<p><strong>Rossich</strong> 25-07-2010</p>
+
+<blockquote>
+  <p>Встал вопрос о качестве воды.</p>
+
+  <p>У меня вода в кране 400 ppm, купил умягчающий ионообменный фильтр, после него на выходе 370 ppm.</p>
+
+  <p>Спрашиваю друга химика в чем дело, он сказал все Ок, т.к. фильтр отдал ионы натрия в замен того что отфильтровал.</p>
+
+  <p>Итого вопрос, допустимо ли нахождение солей натрия в гидропонном растворе? Может воду лучше вообще не фильтровать этим фильтром? Другого нету, на обратноосмотический денег нет.</p>
+</blockquote>
+
+<p>А на дистиллят?</p>
+
+<p><strong>VVS_</strong> 25-07-2010</p>
+
+<p>Дистиллят нечем делать, да и электроэнергии сожгу больше чем огурчиков получу ;)</p>
+
+<p>В общем, вопрос про ионообменник.</p>
+
+<p><strong>Садовник</strong> 25-07-2010</p>
+
+<p>Вообще натрий для растюх не есть гуд.</p>
+
+<p>А умягчение - это связывание Са и Mg - нужных растениям веществ. :-\</p>
+
+<p>Поэтому скорее всего лучше вообще не фильтровать, чем так.</p>
+
+<p>Субъективное мнение, может химики поправят.</p>
+
+<p><strong>VVS_</strong> 26-07-2010</p>
+
+<p>Кальция и магния я планирую добавить с удобрениями по норме.</p>
+
+<p>А что у нас в воде не очень ясно т.к. растение попадало и в дефицит магния и в дефицит кальция, когда я не вносил их специально…</p>
+
+<p><strong>ZooMmeR</strong> 01-01-2011</p>
+
+<p>Пожалста поделитесь опытом, кто как готовит воду для р-ра, у меня из-под крана вода почти 700ppm. система на периодике и рабочего объема р-ра 150 литров (для начала), поэтому ни осмос, ни дистилят к сожалению не могу себе позволить. Наверняка все работают с растворами на обычной воде из-под крана, кто как бореться с этой проблемой?</p>
+
+<p><strong>valery</strong> 01-01-2011</p>
+
+<p>Довольно высокая минерализация-концентрация, близказя к предельной, оно же “максимально-допустимой … “</p>
+
+<p>Бороться - никак не нужно, но ОЧЕНЬ желательно сделать анализ (хотя бы - однажды) исходной воды, что бы знать - что в ней творится …</p>
+
+<p><strong>ruslan</strong> 01-01-2011</p>
+
+<p>товарищи оглянитесь вокруг сколько смега,у нево 20ppm и снег нахаляву!</p>
+
+<p><strong>ZooMmeR</strong> 01-01-2011</p>
+
+<p>Спасибо Валелий так не хотелось возиться с анализом, у нас это не быстро )= делается, но видимо придется.</p>
+
+<p>Но меня не так беспокоит сам анализ как то что после этого делать, составлять раствор согласно результатов анализа для меня задача непосильная :-[ Кто-то имеет возможность и желание помочь в этом?</p>
+
+<p>Со снегом в этом году совсем худо, мы его еще не видели. Вот в прошлом году да, во дворе рыл траншеи почти метр глубиной (=</p>
+
+<p><strong>Coccinella</strong> 02-01-2011</p>
+
+<p>Сделайте анализ, там посмотрим, что с Вашей водичкой нужно сделать.</p>
+
+<p><strong>Oxy</strong> 02-01-2011</p>
+
+<p>У меня тоже водопроводная показывает 640-670 ППМ. Но у меня емкостей свободных есть на 50 литров, поэтому топлю снег. Сейчас самый сезон для заготовки прошлогоднего снега :)</p>
+
+<p><strong>ZooMmeR</strong> 02-01-2011</p>
+
+<blockquote>
+  <p>Сделайте анализ, там посмотрим, что с Вашей водичкой нужно сделать.</p>
+</blockquote>
+
+<p>Обязательно, как только все с тормозов сниметься, у нас сейчас практически весь город вымер… числу к 10-му я думаю справлюсь.</p>
+
+<p>И спасибо заранее coccinella :-[</p>
+
+<p><strong>ZooMmeR</strong> 19-01-2011</p>
+
+<p>Сегодня получил на руки результаты анализа своей воды, прошу прокомментировать:</p>
+
+<p>[list]</p>
+
+<p>[li]фосфаты (мг/л) 0,018[/li]</p>
+
+<p>[li]водородный показатель 7,3 Рh[/li]</p>
+
+<p>[li]щелочность обшая, ммоль/л 4,2[/li]</p>
+
+<p>[li]гидрокарботнаты мг/л 256[/li]</p>
+
+<p>[li]жесткость общая ммоль/л 10,0[/li]</p>
+
+<p>[li]железо общее мг/л 0,32[/li]</p>
+
+<p>[li]кальций мг/л 36[/li]</p>
+
+<p>[li]магний мг/л 49[/li]</p>
+
+<p>[li]хлориды мг/л 162[/li]</p>
+
+<p>[li]Аммиак ионы аммония, Нитриты - не обнаружены[/li]</p>
+
+<p>[li]Нитраты (по NO3) мг/л 9[/li]</p>
+
+<p>[li]окисляемость перманганантная мг/л 1,2[/li]</p>
+
+<p>[li]Натрий+Калий (в пересчете на натрий) мг/л 81[/li]</p>
+
+<p>[li]Сульфаты мг/л 220[/li]</p>
+
+<p>[li]Сухой остаток при 150С 785[/li]</p>
+
+<p>[li]Фтор мг/л 0,3[/li]</p>
+
+<p>[/list]</p>
+
+<p><strong>ZooMmeR</strong> 21-01-2011</p>
+
+<p>Господа уважаемые, ну киньте хоть пару фраз относительно поста выше. оч важно ваше мнение, эта вода вообще годиться в дело или лучше искать варианты получше, но подороже?</p>
+
+<p><strong>Mole_Garden</strong> 21-01-2011</p>
+
+<blockquote>
+  <p>Господа уважаемые, ну киньте хоть пару фраз относительно поста выше. оч важно ваше мнение, эта вода вообще годиться в дело или лучше искать варианты получше, но подороже?</p>
+</blockquote>
+
+<p>А какая общая минерализация воды?</p>
+
+<p>Судя из того, что написано, то магния у вас в воде почти хватает. А в остальном, все вроде не плохо, на мой взгляд, могу ошибаться.</p>
+
+<p><strong>Aleksey Kurenin</strong> 21-01-2011</p>
+
+<blockquote>
+  <p>Сегодня получил на руки результаты анализа своей воды, прошу прокомментировать:</p>
+
+  <p>[list]</p>
+
+  <p>[li]фосфаты (мг/л) 0,018[/li][/list] можно пренебречь</p>
+
+  <p>[list][li]водородный показатель 7,3 Рh[/li][/list] не важно.</p>
+
+  <p>[list][li]щелочность обшая, ммоль/л 4,2[/li]</p>
+
+  <p>[li]гидрокарботнаты мг/л 256[/li][/list] многовато, но жить можно. Много кислоты нужно.</p>
+
+  <p>[list][li]жесткость общая ммоль/л 10,0[/li]</p>
+
+  <p>[li]железо общее мг/л 0,32[/li]</p>
+
+  <p>[li]кальций мг/л 36[/li][/list] Нормально</p>
+
+  <p>[list][li]магний мг/л 49[/li][/list] Многовато, но пережить можно.</p>
+
+  <p>[list][li]хлориды мг/л 162[/li][/list] Многовато.</p>
+
+  <p>[list][li]Аммиак ионы аммония, Нитриты - не обнаружены[/li]</p>
+
+  <p>[li]Нитраты (по NO3) мг/л 9[/li][/list] можно пренебречь</p>
+
+  <p>[list][li]окисляемость перманганантная мг/л 1,2[/li][/list] не помню, сколько это, много или мало.</p>
+
+  <p>[list][li]Натрий+Калий (в пересчете на натрий) мг/л 81[/li][/list] Интересно знать, что же это. Натрий или калий.</p>
+
+  <p>[list][li]Сульфаты мг/л 220[/li][/list] Много.</p>
+
+  <p>[list][li]Сухой остаток при 150С 785[/li]</p>
+
+  <p>[li]Фтор мг/л 0,3[/li]</p>
+
+  <p>[/list]</p>
+</blockquote>
+
+<p>В общем вода далеко не лучшая, но для хобби гидропоники пойдёт.</p>
+
+<p><strong>mochalygin</strong> 10-02-2011</p>
+
+<blockquote>
+  <p>Дистиллят нечем делать, да и электроэнергии сожгу больше чем огурчиков получу ;)</p>
+
+  <p>В общем, вопрос про ионообменник.</p>
+</blockquote>
+
+<p>Зачем Вам электричество? В газовой плите много бесплатного газа. На плиту песчаную баню – в ней и греть.</p>
+
+<p>Либо используйте дождевую воду/топлёный снег.</p>
+
+<p><strong>ринат</strong> 10-02-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Встал вопрос о качестве воды.</p>
+
+    <p>У меня вода в кране 400 ppm, купил умягчающий ионообменный фильтр, после него на выходе 370 ppm.</p>
+
+    <p>Спрашиваю друга химика в чем дело, он сказал все Ок, т.к. фильтр отдал ионы натрия в замен того что отфильтровал.</p>
+
+    <p>Итого вопрос, допустимо ли нахождение солей натрия в гидропонном растворе? Может воду лучше вообще не фильтровать этим фильтром? Другого нету, на обратноосмотический денег нет.</p>
+  </blockquote>
+
+  <p>А на дистиллят?</p>
+</blockquote>
+
+<p>а что дистилированная вода неужели лучше ?</p>
+
+<p><strong>ринат</strong> 10-02-2011</p>
+
+<p>:) дело в том что если это хобби то можно тупо перегнать через самогонный аппарат :P</p>
+
+<p><strong>Mole_Garden</strong> 10-02-2011</p>
+
+<blockquote>
+  <p>:) дело в том что если это хобби то можно тупо перегнать через самогонный аппарат :P</p>
+</blockquote>
+
+<p>Если это хобби, то можно использовать воду и из под крана, с не очень большим ppm 300-450 допустимо</p>
+
+<p><strong>ринат</strong> 10-02-2011</p>
+
+<p>я про то что если качество воды совсем уж плохое а вот интересно если заменить воду из под крана на дистилированную как это отразиться на растениях?</p>
+
+<p><strong>Mole_Garden</strong> 10-02-2011</p>
+
+<blockquote>
+  <p>я про то что если качество воды совсем уж плохое а вот интересно если заменить воду из под крана на дистилированную как это отразиться на растениях?</p>
+</blockquote>
+
+<p>Если вода из под крана не очень плохая, то никак.</p>
+
+<p><strong>ринат</strong> 12-02-2011</p>
+
+<p>то есть дистилированную лучше но это дорого да как вариант зпишем себе</p>
+
+<p><strong>Coccinella</strong> 12-02-2011</p>
+
+<p>Дистиллированную не лучше, получается раствор с низкой буферностью. Это Алексей уже объяснял на гринтоуке в теме о теплицах в Сахаре.</p>
+
+<p>Питательные растворы для растений должны обладать некоторой буферностью, иначе рН будет скакать, как блоха, а вслед за ней - поступление элементов в растение.</p>
+
+<p><strong>Олеганос</strong> 12-02-2011</p>
+
+<p>Во- первых неплохо было бы уточнить о каких объемах воды идет речь?</p>
+
+<p>Почему -то все молчат про фильтра обратного осмоса :-\</p>
+
+<p>Убиваем сразу двух зайцев:</p>
+
+<p>1)получаем всегда кристально-чистую воду для питья и приготовления пищи , при этом забываем о камнях и песке в почках и многое другие болячки!</p>
+
+<p>2) такую же воду для гидропоники!</p>
+
+<ul>
+  <li>я в аккумуляторы доливаю на протяжении года в разные автомобили, и ни каких ,при этом, негативных последствий не нажил вроде еще <em>8)</em>.</li>
+</ul>
+
+<p>Ринат читаем тут: <a href="http://forum.ponics.ru/index.php/topic,67.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,67.0.html</a></p>
+
+<p><strong>mochalygin</strong> 12-02-2011</p>
+
+<blockquote>
+  <p>Дистиллированную не лучше, получается раствор с низкой буферностью. Это Алексей уже объяснял на гринтоуке в теме о теплицах в Сахаре.</p>
+
+  <p>Питательные растворы для растений должны обладать некоторой буферностью, иначе рН будет скакать, как блоха, а вслед за ней - поступление элементов в растение.</p>
+</blockquote>
+
+<p>Буферность – это не следствие “только из-под крана”. Чтобы получить буферный раствор, надо смешать слабую кислоту и её соль (для получения щелочного буфера – слабое основание и его соль). Дигидрофосфат, например, при растворении обеспечивает буферные свойства.</p>
+
+<p>Потому что он как кислота может диссоциировать:</p>
+
+<p>H2PO4+ (кислота) &lt;=&gt; HPO42+(соль) + H+</p>
+
+<p>При этом гидрофосфат-ион HPO42+ так же проявляет кислотные свойства и может диссоциировать дальше (но пренебрежительно мало)</p>
+
+<p>Википедия:</p>
+
+<p><a href="http://ru.wikipedia.org/wiki/" target="_blank">http://ru.wikipedia.org/wiki/</a>Буферный_раствор</p>
+
+<blockquote>
+  <p>Во- первых неплохо было бы уточнить о каких объемах воды идет речь?</p>
+
+  <p>Почему -то все молчат про фильтра обратного осмоса :-\</p>
+
+  <p>Убиваем сразу двух зайцев:</p>
+
+  <p>1)получаем всегда кристально-чистую воду для питья и приготовления пищи , при этом забываем о камнях и песке в почках и многое другие болячки!</p>
+
+  <p>2) такую же воду для гидропоники!</p>
+
+  <ul>
+    <li>я в аккумуляторы доливаю на протяжении года в разные автомобили, и ни каких ,при этом, негативных последствий не нажил вроде еще <em>8)</em>.</li>
+  </ul>
+
+  <p>Ринат читаем тут: <a href="http://forum.ponics.ru/index.php/topic,67.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,67.0.html</a></p>
+</blockquote>
+
+<p>Да, хорошая штука. по крайней мере теоретически.</p>
+
+<p><strong>Dozik</strong> 01-03-2011</p>
+
+<p>Имеем из под крана 160ppm. Я замораживаю на балконе 1,5л бутылки до полной замерзания. Потом постепенно размораживаю в микроволновке (например ставлю на 2-3 минуты), то что разморозилось сливаю (вода мутная и с приличным осадком и хлопьями) и так далее размораживаю и сливаю (до тех пор пока не останется чистый на вид лед, он крайне тяжело размораживается в микроволновке) . Обычно первая размороженная вода на выходе может иметь от 250 до 550 ppm. Вот этот остаточный лед, при разморозке имеет на выходе от 1ppm до 40ppm. C 1,5л бутылки получается примерно 0,5л чистой воды. Кто сможет попробуйте мне интересно у кого так же получится.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 30-03-2011</p>
+
+<p>я пока только освоил инженерную часть ! ( профессия у меня такая ), и про осмос проверил на выходе из фильтра идет 040 ppm при ph 7,1 живу в москве !</p>
+
+<p>подскажите пожалуйста про растворы в магазине есть только для декоративных растений и гидропоники немецкой фирмы greenworld 500ml банка как узнать подойдет оно для начала работ или все опять эксперементальным путем</p>
+
+<p><strong>Mole_Garden</strong> 01-04-2011</p>
+
+<blockquote>
+  <p>я пока только освоил инженерную часть ! ( профессия у меня такая ), и про осмос проверил на выходе из фильтра идет 040 ppm при ph 7,1 живу в москве !</p>
+
+  <p>подскажите пожалуйста про растворы в магазине есть только для декоративных растений и гидропоники немецкой фирмы greenworld 500ml банка как узнать подойдет оно для начала работ или все опять эксперементальным путем</p>
+</blockquote>
+
+<p>Повторяю! Для гидропоники годятся все водорастворимые удобрения или жидкие минеральные! Но для полноценного питания, как правило нужно как минимум 3 вида удобрений, одно с повышенным содержанием азота, другое с фосфором, калием и третье с кальцием + еще необходим магний и микро! Если мечтаете отделаться одной бутылочкой и получить хороший урожай! это мечты!</p>
+
+<p><strong>ALadin</strong> 01-04-2011</p>
+
+<blockquote>
+  <p>я пока только освоил инженерную часть ! ( профессия у меня такая ), и про осмос проверил на выходе из фильтра идет 040 ppm при ph 7,1 живу в москве !</p>
+
+  <p>подскажите пожалуйста про растворы в магазине есть только для декоративных растений и гидропоники немецкой фирмы greenworld 500ml банка как узнать подойдет оно для начала работ или все опять эксперементальным путем</p>
+</blockquote>
+
+<p>Для тех кто в Москве, на форуме flowersweb.info в разделе “Доска объявлений” есть 2 женщины которые продают большое количество удобрений, и еще много чего. Лично сам брал у них “Плантафол”,”Кальциевую селитру”, торф, кокос т.д. и т.п.. Продают они все это дело, по предварительной договоренности, на станции метро “Китай-город” по средам. Если Константин не будет ругаться вот ссылка: <a href="http://www.flowersweb.info/forum/forum10/topic113632/messages/" target="_blank">http://www.flowersweb.info/forum/forum10/topic113632/messages/</a> и <a href="http://www.flowersweb.info/forum/forum10/topic111118/messages/" target="_blank">http://www.flowersweb.info/forum/forum10/topic111118/messages/</a> . Не рекламы ради, а пользы для :D. Может кому и пригодиться, цены конечно не самые дешевые, но за неимением ничего лучшего вполне нормально.</p>
+
+<p><strong>Mole_Garden</strong> 02-04-2011</p>
+
+<p>Эм, ну цены там на тот же Нутриван честно сказать шокирующие! 80 рублей за 100 грамм, это килограмм выходит аж 800 рублей!!! Проще уж покупать на “любимый” GHE <em>crazy</em></p>
+
+<p><strong>ALadin</strong> 02-04-2011</p>
+
+<p>Да цены действительно завышены, но зато много чего можно приобрести. Например взял себе кальциевую селитру YaraLiva, за 50 рублей 200 грамм, думаю не сильно разорюсь, ее же в других магазинах просто нет. Иле тот же “Master VALAGRO” где его еще приобрести. Конечно для большого объема выращивания это не подойдет, но для начинающих которые постоянно ищут и не могут найти самое то. Большой выбор субстрата и удобрений и все в одном месте.</p>
+
+<p><strong>Mole_Garden</strong> 02-04-2011</p>
+
+<blockquote>
+  <p>Да цены действительно завышены, но зато много чего можно приобрести. Например взял себе кальциевую селитру YaraLiva, за 50 рублей 200 грамм, думаю не сильно разорюсь, ее же в других магазинах просто нет. Иле тот же “Master VALAGRO” где его еще приобрести. Конечно для большого объема выращивания это не подойдет, но для начинающих которые постоянно ищут и не могут найти самое то. Большой выбор субстрата и удобрений и все в одном месте.</p>
+</blockquote>
+
+<p>Ну если только для совсем начинающих, а так по-моему есть все это на рынке садовод.</p>
+
+<p><strong>ALadin</strong> 02-04-2011</p>
+
+<p>На садовод я тоже частенько заглядываю, но вот селитру когда искал нашел у них только “буйскую” :(, до сих пор валяется. Да и тот же “кокос” на садоводе ну никак не дешевле.</p>
+
+<p><strong>Coccinella</strong> 02-04-2011</p>
+
+<p>Даа, народ заелся… :) Буйские удобрения им не нравятся :) А как мы работали 20 лет назад вообще без никакой калиевой и кальциевой селитры? На одной аммиачке, суперфосфате и известковом молоке?</p>
+
+<p>И были счастливы, если удавалось достать пару тонн Буйского кристаллона? :)</p>
+
+<p>Самое забавное, что урожай у современных взыскательных гидропонщиков на том же уровне :)</p>
+
+<p><strong>lantech</strong> 07-04-2011</p>
+
+<blockquote>
+  <p>На садовод я тоже частенько заглядываю, но вот селитру когда искал нашел у них только “буйскую” :(, до сих пор валяется. Да и тот же “кокос” на садоводе ну никак не дешевле.</p>
+</blockquote>
+
+<p>А чем буйские плохие? Выбор-то у них хороший</p>
+
+<p><strong>lantech</strong> 07-04-2011</p>
+
+<blockquote>
+  <p>Имеем из под крана 160ppm. Я замораживаю на балконе 1,5л бутылки до полной замерзания. Потом постепенно размораживаю в микроволновке (например ставлю на 2-3 минуты), то что разморозилось сливаю (вода мутная и с приличным осадком и хлопьями) и так далее размораживаю и сливаю (до тех пор пока не останется чистый на вид лед, он крайне тяжело размораживается в микроволновке) . Обычно первая размороженная вода на выходе может иметь от 250 до 550 ppm. Вот этот остаточный лед, при разморозке имеет на выходе от 1ppm до 40ppm. C 1,5л бутылки получается примерно 0,5л чистой воды. Кто сможет попробуйте мне интересно у кого так же получится.</p>
+</blockquote>
+
+<p>По-моему идеально замораживать не до полного замерзания, тогда растопленный лед станет дистиллятом.</p>
+
+<p><strong>Сергей Альянов</strong> 02-10-2011</p>
+
+<p>Послушайте, народ. Здесь есть кто-нибудь живой или все уже высохли? Так вот, если кто в состоянии ответить, то мне будет весьма любопытно узнать, для чего в гидропонике вся эта возня с минералами? Не будучи великим специалистом в ботанике, я видел, что делал мой сосед по выращиванию клубники “лесенкой” методом гидропоники у себя на участке. Он в обычной дождевой воде несколько раз растворил (на сколько это получилось) годовалый компост (скошенная трава, ботва, какашки, кухня и пр.) Потом все это удовольствие разбавлял дождевой водой из той же бочки, откуда брал и первичную воду и все это запускал в оборот. В течение лета он готовит такой раствор 3 - 4 раза и его клубникой можно залюбоваться. Я задумался: может быть эту технологию стоит попробовать для выращивания по-голландки?</p>
+
+<p><strong>begunok</strong> 02-10-2011</p>
+
+<p>правильно, в навозе сила</p>
+
+<p>Сразу вспомнился чонкин и селекционер, не помню как его звали</p>
+
+<p><strong>valery</strong> 02-10-2011</p>
+
+<blockquote>
+  <p>Послушайте, народ. Здесь есть кто-нибудь живой или все уже высохли?</p>
+</blockquote>
+
+<p>Кхм … Чего это Вы, Сергей, так рассерчали ? Под осенним дождем промокли ? …</p>
+
+<p>Предложенный метод, скорее будет “по соседски”, а не “по голландски” … Пожалуй. :-\</p>
+
+<p>А по существу -</p>
+
+<p>Цитата (Известный фильм)</p>
+
+<p>“Это все от таланта зависит.</p>
+
+<p>Один мой друг, тоже ученый, у него три класса образования … Так он за полчаса десятку так нарисует, от настоящей не отличишь”</p>
+
+<p>Но что-то замечательное, в этом, конечно есть … <em>8)</em></p>
+
+<p><strong>valery</strong> 02-10-2011</p>
+
+<p>Гладышев, Геракл Кузьмич.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

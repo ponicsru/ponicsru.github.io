@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Выбросил субстрат из DWC | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Выбросил субстрат из DWC">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Выбросил субстрат из DWC</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>VVS_</strong> 27-04-2011</p>
+
+<p>По причине проблем с раствором, был вынужден высыпать керамзит и радикально промыть корневую и всю установку, но решил попробовать закрепить растения в пенопласте в надкорневой части и не засыпать больше керамзит.</p>
+
+<p>Огурчик резко пошел на поправку и стал расти, томатик пока только только поднял ушки и медленно пошел на поправку.</p>
+
+<p>Огурец окутал дырявое дно горшочка корнями и прочно вцепился в него, пустив корни в емкость.</p>
+
+<p>Вопрос, а нужен ли вообще субстрат в DWC с аэрацией?</p>
+
+<p><strong>valery</strong> 27-04-2011</p>
+
+<p>Нет.</p>
+
+<p>Другое дело, что сама DWC для огурца/томата крайне нехороша.</p>
+
+<p><strong>VVS_</strong> 27-04-2011</p>
+
+<p>Но растения чувствуют себя замечталеьно в двц..</p>
+
+<p>По одной из ваших теорий год назад, главное свет, а способ питания вторичен. То есть они смогут взять все что нужно в полном объеме и из DWC. Или не смогут? Чем именно нехороша DWC?</p>
+
+<p>Я могу переделать ее в переодику, но без полного слива раствора. То есть в режима паузы в емкости будет 1\3 раствора в режиме подачи до 100%. Когда корни достанут до дна, часть корней будет постоянно в растворе и не будет осушаться. Для актуальности и упрощения, уберу аэрацию.</p>
+
+<p>Можно ли так?</p>
+
+<p><strong>valery</strong> 27-04-2011</p>
+
+<p>Ну вырастут, конечно, если стараться … Куда же им деваться …</p>
+
+<p>Здесь все же речь скорее не именно о питании, а о состоянии корневой системы …</p>
+
+<p>И ведь растение растению рознь - одни довольно равнодушны к переливам, другие нет …</p>
+
+<p>Посмотрим на салат - ВСЕ терпит и переносит - от NFT и DWS вплоть до “противоположной” классической аэропоники …</p>
+
+<p>Все же ОВОЩИ (по крайней мере - некоторые) предъявляют несколько другие требования к “корнеобитаемой среде”, посмотрите по скольку они</p>
+
+<p>“качают” литров в день - от 1,5-2 и до 4-5-6-ти … Вполне хорошенький насос.</p>
+
+<p>Корневая должна находиться в субстрате РАЗНОЙ влажности - и в течение “периодов” жизни и в течение суток, корневое давление должно меняться, ЕС “субстратного” раствора в течение дня должно меняться, корни должны то “кайфовать”, то обновляться, то “искать” воду, то еще чего, то тянуть “раствор” легко , то с усилием, поливы должны меняться со светом, корневую нужно “будить-стимулировать” и укладывать баиньки на ночь … Ну и так далее. Много разных “штук”, на которые мы редко обращаем внимание, а они (оказывается) крайне важны. Просто мы про них не помним и не думаем, иногда - не знаем … Спрашиваем друг друга - “что случилось”, а во многих случаях виновато просто СОСТОЯНИЕ и работоспособность корневой - то они “вялые”, то “ленивые”, то неработоспособны, то рвут клетки высоким давлением (типа “гидроударов”) то еще чего, не видного на глаз …</p>
+
+<p>Без субстрата - заметную часть подобных манипуляций выполнить невозможно вообще, а оставшееся - сделать можно, но затруднительно и обременительно.</p>
+
+<p>Как-то так. (На всякий случай - я не спорю).</p>
+
+<p><strong>VVS_</strong> 27-04-2011</p>
+
+<p>ааа.. я понял в чем соль.</p>
+
+<p>Фитопирамида, та же бодяга, но без субстрата.</p>
+
+<p>Пока солнышко светит, затапливаем корни раз в 15 минут, как только ночь на подходе, раз в час. Вот и шоковая терапия для корней.</p>
+
+<p>Кстати на примере огурца в керамзте, на ДВЦ, он очень сильно не любит переувлажденный керамзит, корни в нем загнивают. Те корни что снаружи и погружены в раствор постоянно - все замечательно, теперь когда керамзита нету, все замечательно везде.</p>
+
+<p>Подозреваю это из за локальных скачков ПШ ЕС в субстрате, которые я никогда не отслеживал ибо нечем, мерил только раствор.</p>
+
+<p>Ну что-ж, буду думать в сторону кусочка фитопирамиды. Опять за паяльник браться…</p>
+
+<p><strong>Юка</strong> 27-04-2011</p>
+
+<blockquote>
+  <p>Корневая должна находиться в субстрате РАЗНОЙ влажности - и в течение “периодов” жизни и в течение суток, корневое давление должно меняться, ЕС “субстратного” раствора в течение дня должно меняться, корни должны то “кайфовать”, то обновляться, то “искать” воду, то еще чего, то тянуть “раствор” легко , то с усилием, поливы должны меняться со светом, корневую нужно “будить-стимулировать” и укладывать баиньки на ночь … Ну и так далее. Много разных “штук”, на которые мы редко обращаем внимание, а они (оказывается) крайне важны. Просто мы про них не помним и не думаем, иногда - не знаем … Спрашиваем друг друга - “что случилось”, а во многих случаях виновато просто СОСТОЯНИЕ и работоспособность корневой - то они “вялые”, то “ленивые”, то неработоспособны, то рвут клетки высоким давлением (типа “гидроударов”) то еще чего, не видного на глаз …</p>
+</blockquote>
+
+<p>Вот бы ещё научиться понимать СОСТОЯНИЕ растения в режиме реального времени, методы БОС (биологической обратной связи) для животного мира давно используются, а как перенести эти методики в растительный мир, может, на первых порах, попытаться использовать человека как промежуточное звено в цепочке БОС??? Или данная ветвь считается тупиковой в связи с отсутствием у расстений нервной системы? Вопрос к знатокам, какие признаки реакции растений на то или иное воздействие и через какой промежуток времени можно наблюдать (или измерять)???</p>
+
+<p><strong>VVS_</strong> 27-04-2011</p>
+
+<p>Я замеряю скорость роста листьев у огурца. Если все хорошо то молодой лист в длинну прибавляет 1 мм за 1.5-2 часа.</p>
+
+<p>Если плохо, то первый признак остановка роста.</p>
+
+<p>А дальше гадаешь что не так, меняешь раствор на воду или просто меняешь раствор или промываешь корневую вместе с установкой и потом старт с чистой водички с ph 6 :)</p>
+
+<p>с плавным повышением концентрации до рабочей.. В любом случае шоковая терапия обеспечена;)</p>
+
+<p><strong>valery</strong> 27-04-2011</p>
+
+<blockquote>
+  <p>Вот бы ещё научиться понимать СОСТОЯНИЕ растения в режиме реального времени…</p>
+
+  <p>… какие признаки реакции растений на то или иное воздействие и через какой промежуток времени можно наблюдать (или измерять)???</p>
+</blockquote>
+
+<p>Не “знаток”, поэтому фиг его знает. А из того, что первым приходит на ум - видимо по “влажности” можно отслеживать - растет/падает транспирация, по СО2, по сужению/захлопыванию устьиц, по (как мы недавно читали на Гринтоке) ксилемному потоку … Потере тургора, по листочкам вверх/вниз … Кто его знает по чему …</p>
+
+<p>На ярко выраженную стрессовую ситуацию растение способно отреагировать уже через 10-30 минут … В умной книжке читал, не помню в какой. Наверное, “Физиология” какая-нибудь.</p>
+
+<p><strong>Coccinella</strong> 27-04-2011</p>
+
+<p>А просто внимательно наблюдать за растениями не пробовали? На гидропонике все меняется очень быстро, это и плюс ее, и минус, но и при этом много можно увидеть. Я определенно ЗА измерения и приборы, но просто наблюдения дают очень много информации. За своими растениями, за чужими, за сорняками на газоне, на даче у тещи, у соседей, в интернете… За всеми растениями, это удивительно интересное и полезное занятие. И очень информативное!</p>
+
+<p><strong>valery</strong> 27-04-2011</p>
+
+<blockquote>
+  <p>Опять за паяльник браться…</p>
+</blockquote>
+
+<p>По поводу бодяги с фитопирамидой не понял ничего. Наверное, отзвуки каких-то наших “мирных дружеских бесед за чашкой чая с бубликом” о “перспективах промышленных Фитопирамид” ? :)</p>
+
+<p>Насчет “шоков” от промывания корневой водой - это верно. Восстанавливаться им придется и удастся ли избежать “последствий” - не факт …</p>
+
+<p>А остальное - я ж “не спорю”. Просто по-умничать хотелось, вот и написал …</p>
+
+<p>А чем измеряете листья ? Умудряетесь линейкой-штангенциркулем ? Или сумели обзавестись чем-то “интересным” ? Делитесь …</p>
+
+<p><strong>valery</strong> 27-04-2011</p>
+
+<blockquote>
+  <p>За всеми растениями, это удивительно интересное и полезное занятие. И очень информативное!</p>
+</blockquote>
+
+<p>Без всякого сомнения, это важное и даже ГЛАВНОЕ.</p>
+
+<p>И все же, человеку (любителю) без базового образования, без практического опыта работы в теплице, без общения с грамотным агрономом “вживую”, когда тебя могут “потыкать носом” … сложно.</p>
+
+<p>“Наблюдения” - есть, а сделать вывод … :-\</p>
+
+<p><strong>VVS_</strong> 27-04-2011</p>
+
+<p>Измеряю просто линейкой :))</p>
+
+<p>По поводу фитопирамиды.. Я имел ввиду периодику без субстрата. Тот же перфорированный стаканчик с корневой и растением перенести в установку которая будет его переодически затапливать.</p>
+
+<p>Для этого надо взять две емкости, в одной помпа и раствор, в другой переливной шланг в первую. Полно конструкций здесь было.</p>
+
+<p>А при помощи паяльника придется сделать таймер.</p>
+
+<p><strong>Coccinella</strong> 27-04-2011</p>
+
+<blockquote>
+  <p>…Для этого надо взять две емкости, в одной помпа и раствор, в другой переливной шланг в первую. Полно конструкций здесь было.</p>
+
+  <p>А при помощи паяльника придется сделать таймер.</p>
+</blockquote>
+
+<p>А сколько школьников во всем мире считают задачку про две трубы и бассейн редким занудством … :)</p>
+
+<p><strong>VVS_</strong> 27-04-2011</p>
+
+<p>Сообщающиеся сосуды, можно и так конечно. Если датчик уровня добавить.</p>
+
+<p><strong>VVS_</strong> 01-05-2011</p>
+
+<p>Перевел проблемный томат в режим “аэропоники” приподнял над раствором, теперь корни полностью в воздухе и на них попадают только брызги от лопающихся пузырьков аэрации</p>
+
+<p>Наблюдается существенное улучшение и скачек роста. Погруженный в раствор полностью он сидел и чах, ни туда ни сюда, еще и ножка сильно чернела (от корневой до первого листа).</p>
+
+<p>Огурчик тоже приподнял, но разницы пока не вижу, ему одинаково что так что эдак, отлично растет.</p>
+
+<p>У томата 650 ppm у огурчика 850 ppm.</p>
+
+<p>У кого томаты на DWC вырастали до плодоношения? Сколько ppm лили? Вроде в отчетах видел, но на счет плодов не помню. Судя по поведению моего “Черри” он вообще не способен расти с погруженными в раствор корнями.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

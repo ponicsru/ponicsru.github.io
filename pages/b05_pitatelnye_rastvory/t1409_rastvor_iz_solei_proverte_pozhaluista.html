@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Раствор из солей. Проверьте пожалуйста. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Раствор из солей. Проверьте пожалуйста.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Раствор из солей. Проверьте пожалуйста.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>klabs</strong> 05-04-2012</p>
+
+<p>Здравствуйте! 1 февраля узнал о гидропонике. Заинтересовался. Эксперементирую с томатами ( предположительно сорт Алези). Томаты в фазе цветения и плодоношения. 6 кустов в гроубоксе.Полная светокультура. Переодическое затопление. t-22-23, влажность 50-60,свет 16 часов день,Ph-5,8-6,1.</p>
+
+<p>Сейчас томаты крупнее чем на фото раз в 5. Начали опадать соцветия. Очередной рецепт раствора выглядит так:</p>
+
+<p>Томат</p>
+
+<p>Ca(NO3)2 - 0.82 g\l (29.52)</p>
+
+<p>MgSO4 - 0.46 g\l (16.56)</p>
+
+<p>KH2PO4 - 0.22 g\l (7.92)</p>
+
+<p>NH4NO3 - 0.1 g\l (3.6)</p>
+
+<p>KNO3 - 0.27 g\l (9.72)</p>
+
+<p>K2SO4 - 0.44 g\l (15.8)</p>
+
+<p>N P K Ca Mg S</p>
+
+<p>211 50 364 200 45 141</p>
+
+<p>Пожалуйста оцените и сделайте замечания. Соли химически чистые. В скобках для себя на 36 литров.</p>
+
+<p><a href="https://t.me/ponics_ru_files/7727" target="_blank"><img src="/imagehost/thumbs/5zdz.jpg" alt="" /></a></p>
+
+<p><strong>VVS_</strong> 05-04-2012</p>
+
+<p>Лист томата говорит сам за себя. Все просто отлично. А микроэлементы добавляете?</p>
+
+<p><strong>klabs</strong> 05-04-2012</p>
+
+<p>Да. Миксую по Чеснокову.</p>
+
+<p><strong>valery</strong> 05-04-2012</p>
+
+<p>Состав как состав, все вполне в пределах нормы. Можно немножко сульфата убрать … а можно и оставить.</p>
+
+<p><strong>klabs</strong> 05-04-2012</p>
+
+<p>Спасибо! Я хочу уточнить,насколько верны мои расчеты г\л солей количество вещества в растворе.</p>
+
+<p><strong>valery</strong> 05-04-2012</p>
+
+<p>Если Вы имеете в виду “проверить-пересчитать” … придется немного уточнить по “солям”, которыми Вы пользуетесь.</p>
+
+<p>В частности, что за кальциевая селитра и что за сульфат магния. Производитель какую-то информацию дает ?</p>
+
+<p><strong>klabs</strong> 05-04-2012</p>
+
+<p>Точно Valery! Селитра кальцевая не соль у меня,а удобрюха. Остальные прикупил в магазине хим.реактивов. Эту проверю. MgSO4*7H2O чда. Кстати, кальций азотнокислый бывает химически чистый? А то мне предложили кальций углекислый, но ведь это мел. Много осадка. Или я ошибаюсь?</p>
+
+<p><strong>ашдвао</strong> 24-06-2012</p>
+
+<blockquote>
+  <p>Очередной рецепт раствора выглядит так:</p>
+
+  <p>Томат</p>
+
+  <p>Ca(NO3)2 - 0.82 g\l (29.52)</p>
+
+  <p>MgSO4 - 0.46 g\l (16.56)</p>
+
+  <p>KH2PO4 - 0.22 g\l (7.92)</p>
+
+  <p>NH4NO3 - 0.1 g\l (3.6)</p>
+
+  <p>KNO3 - 0.27 g\l (9.72)</p>
+
+  <p>K2SO4 - 0.44 g\l (15.8)</p>
+</blockquote>
+
+<p>Вот заметил, а может и не прав? Что нет иона хлора. Он нужен/ненужен?</p>
+
+<p>Если берётся за основу крановая вода - то там он есть. А если дистиллят?</p>
+
+<p>Как быть с хлором?</p>
+
+<p><strong>cpf</strong> 25-06-2012</p>
+
+<p>Соляной кислоты капните (если так нужны хлор-ионы :D )</p>
+
+<p><strong>Coccinella</strong> 25-06-2012</p>
+
+<p>Не надо соляной, это опасно! Лучше добавить аптечного хлористого кальция, “если так нужны хлор-ионы”. Обычно они нужны в очень небольшом количестве, чтобы предотвратить избыточное поступление нитрат-иона в растение.</p>
+
+<p><strong>cpf</strong> 25-06-2012</p>
+
+<p>Согласен полностью (про аптечный хлорид кальция). Про соляную кислоту: это был - совет мальчиша-плохиша! :-[ (Я забыл, что не все знают правила безопасности, при обращении с реактивами <em>???</em> )</p>
+
+<p><strong>Coccinella</strong> 25-06-2012</p>
+
+<p>У нас в одном хозяйстве лет 5 назад вот так работник кислоты перепутал. В результате и сам оказался в больнице (хорошо, спасли) и рассаду огурца на 2 га сгубил.</p>
+
+<p><strong>ашдвао</strong> 25-06-2012</p>
+
+<blockquote>
+  <p>Согласен полностью (про аптечный хлорид кальция). Про соляную кислоту: это был - совет мальчиша-плохиша! :-[ (Я забыл, что не все знают правила безопасности, при обращении с реактивами <em>???</em> )</p>
+</blockquote>
+
+<p>Та ну нафик. Что с азоткой что с солянкой (концентрированными) общаются стандартно и на Вы.</p>
+
+<p>Только фишка в том(или я устарел в знаниях) что наличие оных у себя - это интерес для полицаев…</p>
+
+<p><img src="http://img94.imageshack.us/img94/9108/originalgk.jpg" alt="" /></p>
+
+<p>И достать их просто нереал у меня сейчас. Но есть старые запасы…</p>
+
+<p>А на счёт хлоридов… сколько их должно быть в растворе для томатов?</p>
+
+<p>Сорри, если я чтото не досмотрел.</p>
+
+<p><strong>Coccinella</strong> 25-06-2012</p>
+
+<p>Хлор в поливном растворе для томатов 50 ппм (мг/л), в зоне корней 100 ппм (мг/л). Больше не стоит.</p>
+
+<p><strong>ашдвао</strong> 25-06-2012</p>
+
+<p>Ребята - не пинать.</p>
+
+<p>Я пока новичок… в гидре тем более.</p>
+
+<p>Но дошло - а как же с ионным балансом натрий/калий?</p>
+
+<p>Если я буду, а буду… на дистилляте мешать, то там у меня ТДС изначально ноль!</p>
+
+<p>А в составе натрия аж ни миллиграмма?</p>
+
+<p>Ладно с хлором разобрались.</p>
+
+<p>Тогда тупо посчитать по хлору - и вбухать банально натрия хлорид?</p>
+
+<p>Или так все делают и нет никаких проблемсов при отсутствии натрия вообще как такового?</p>
+
+<p>Вероятно все “коломпоцают” на осмосе, а он с приработанной мембраной</p>
+
+<p>дает у меня 40 ppm-ов. Это и есть натриевые соли кажется…</p>
+
+<p>Что скажете?</p>
+
+<p><strong>Vad</strong> 26-06-2012</p>
+
+<p>скажем так.</p>
+
+<p>надо TDS подарить в детский дом…(садик, огородик, дачу)</p>
+
+<p>а себе купить измерялку EC.</p>
+
+<p>с хлором, ясно…</p>
+
+<p>но поясните, зачем натрий в растворе?</p>
+
+<p>просто, шоб був? :D</p>
+
+<p><strong>ашдвао</strong> 26-06-2012</p>
+
+<blockquote>
+  <p>надо TDS подарить в детский дом…(садик, огородик, дачу)</p>
+
+  <p>а себе купить измерялку EC.</p>
+
+  <p>с хлором, ясно…</p>
+
+  <p>но поясните, зачем натрий в растворе?</p>
+
+  <p>просто, шоб був? :D</p>
+</blockquote>
+
+<p>Ну мне проще помножить на 2 чтоб получить ЕС, ну и нулики пересчитать.</p>
+
+<p>Зачем натрий? - я сам не курю.</p>
+
+<p>Но по физиологии (животных) знаю что он нужен для работы клетки.</p>
+
+<p>Вот с растениями не сталкивался. Поэтому и беспокоит гондурас тот…</p>
+
+<p><a href="http://molbiol.ru/wiki/(){:target=&quot;_blank&quot;}жр">http://molbiol.ru/wiki/(</a>_РАСТИТЕЛЬНАЯ_КЛЕТКА</p>
+
+<blockquote>
+  <p>В изменении проницаемости мембран для ионов натрия и калия состоит механизм распространения клеточного возбуждения — возникновения и перемещения биотока. К поверхности мембраны присоединено большое количество катионов, главным образом ионов калия. Поэтому она несет снаружи положительный заряд. Под влиянием раздражителей ионы калия отщепляются от участка, подвергшегося воздействию, заряд участка падает и он становится электроотрицательным по отношению к соседним участкам мембраны.</p>
+</blockquote>
+
+<p><strong>Vad</strong> 26-06-2012</p>
+
+<blockquote>
+  <p>Ну мне проще помножить на 2 чтоб получить ЕС, ну и нулики пересчитать.</p>
+</blockquote>
+
+<p>все так просто? просто помножить на два?</p>
+
+<p>а мне умные люди говорили, помножить на два, разделить на 8 возвести в степень температуры деленой на влажность, все разделить на количество летающий мух вокруг лампочки… и… купить нормальный EC метр :)</p>
+
+<p><strong>ашдвао</strong> 26-06-2012</p>
+
+<blockquote>
+  <p>а мне умные люди говорили</p>
+</blockquote>
+
+<p>Я так понимаю (не ошибаюсь ли?) что ЕС-цифро это электропроводность делённая на тыщщу.</p>
+
+<p>Что меряет прибор? Конечно электропроводность?</p>
+
+<p>Простота калибровки в чем? Неее, мы пасана бюджетныя.</p>
+
+<p>Сидим на калибровке по фиксаналу(Госстандарту :o)? ) натрия хлорида.</p>
+
+<p>Ну а раз такой винегрет, тогда ой…</p>
+
+<p><img src="http://img4.imageshack.us/img4/4912/condtotds.jpg" alt="" /></p>
+
+<p>пожалуйста - в любом прОтоколе измерений…</p>
+
+<p>Нет, ну конечно можно и на дисер потянуть начав так…</p>
+
+<blockquote>
+  <p>Есть различные подходы к пересчету удельной проводимости в солесодержание. Обычно это величина определяется расчетным путем. В приборах используется такая формула. Не знаю только, как лучше написать ее здесь. Попробуем так:</p>
+
+  <p>CNaCl = 1000000/((sqrt((2,1549*k/x)+1,563)-1,25)^2),</p>
+
+  <p>k = 1+ 0,01996<em>(t-25) + 0,0000584</em>(t-25)^2,</p>
+
+  <p>где CNaCl- значение солесодержания, мг/л;</p>
+
+  <p>sqrt - функция, корень квадратный;</p>
+
+  <p>^ - функция, возведение в степень</p>
+
+  <p>k - температурный коэффициент, см. формулу;</p>
+
+  <p>t - температура в град. С;</p>
+
+  <p>x - значение удельной электрической проводимости (УЭП) при температуре раствора t, См/см.</p>
+</blockquote>
+
+<p>Но нафига?</p>
+
+<p><strong>valery</strong> 26-06-2012</p>
+
+<blockquote>
+  <p>Но нафига?</p>
+</blockquote>
+
+<p>Так ведь ИМЕННО ЭТО Вам и пытается объянить Vad ! На фига ?</p>
+
+<p>Ваш прибор - кондуктометр ли, ТДС-метр ли, неважно … пропускает между электродами электрический ток и определяет удельную электропроводность раствора … ВСЕ ! Так ее и смотрите.</p>
+
+<p>ТДС-метр - измеряет то же самое. Затем, по встроенному коэффициенту (который НИЧЕМУ не соответствует, смотрите Ваш собственный пост) пытается это показание - электропроводность, выразить в “солесодержании” … - пальцем в небо - разные соли, разные концентрации, разные составы.</p>
+
+<p>Затем Вы еще раз пытаетесь эту ЛЮБУЮ С ПОТОЛКА цифру - перевести обратно в ЕС и узнать, что же в действительности измерил Ваш прибор - и ЕЩЕ РАЗ ПЕРЕВОДИТЕ обратно с коэффициентом … каким ? который попался под руку … который больше понравился … или который “встроен” (если Вы его знаете) - и ВСЕ РАВНО еще раз пальцем в небо !!!</p>
+
+<p>А потом еще и пытаетесь “обменяться информацией” с “товарищами по несчастью” - у которых свои растворы, свои соли, свои коэффициенты и свои пальцы.</p>
+
+<p>Смотрите сразу ЕС - и общайтесь.</p>
+
+<p>Или смотрите “что придется” … но зачем же тогда морочить друг другу голову … На фига?</p>
+
+<p><strong>ашдвао</strong> 26-06-2012</p>
+
+<blockquote>
+  <p>… На фига?</p>
+</blockquote>
+
+<p>Суть уловил. Да и я о том же, только как то по разному на разных языках.</p>
+
+<p>Я к тому что бюджет не позволяет купить отдельный ЕС кондуктометр.</p>
+
+<p>Вот и буду ЕС смотреть через Жо.. через ррм…. <em>crazy</em></p>
+
+<p>Жаль что нет кнопки “спасибо”.</p>
+
+<p><strong>cpf</strong> 26-06-2012</p>
+
+<p>Натрий специально не надо использовать (для растений - в лучшем случае - бесполезен). Хлорид кальция (из аптеки) - более “безобидный” способ внесения хлора (если уж так он Вам нужен :) )</p>
+
+<p><strong>ашдвао</strong> 26-06-2012</p>
+
+<blockquote>
+  <p>Натрий специально не надо использовать (для растений - в лучшем случае - бесполезен).</p>
+</blockquote>
+
+<p>Тоесть никак я не могу услышать: - что “делали всё на дистилляте без единого миллиграмма натрия и всё было успешно”…</p>
+
+<p>Так было?</p>
+
+<p>Спасибо всем за ответы и разъяснения.</p>
+
+<p><strong>cpf</strong> 27-06-2012</p>
+
+<p>“делали все на обычной воде из-под крана, натрия специально не добавляли ни миллиграмма, - все росло отлично” <em>Dance</em> Так надо говорить? :D</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

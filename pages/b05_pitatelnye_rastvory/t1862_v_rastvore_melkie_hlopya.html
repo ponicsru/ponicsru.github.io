@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>В растворе мелкие хлопья | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="В растворе мелкие хлопья">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">В растворе мелкие хлопья</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Ehoist</strong> 13-10-2013</p>
+
+<p>Ребят, всем привет ! Купил Фертика люкс 20 гр. . Размешал 10 гр. на 5 литров воды. Проглядываю бутыль на просвет, в воде плавают очень мелкие светлые точечки. Написано, что полностью растворимое . Таким должен быть раствор или что то не так ? :(</p>
+
+<p><strong>Coccinella</strong> 14-10-2013</p>
+
+<p>Не должен он таким быть. Видимо, примеси в воде. А какое рН раствора?</p>
+
+<p><strong>покерист</strong> 14-10-2013</p>
+
+<p>Пробовал разводить Фертика люкс !!!!! имеется в виду (водорастворимое удобрение для овощей,цветов рассады)</p>
+
+<p>Раствор получился прозрачный слегка розоватый!!!!!!!</p>
+
+<p><strong>Ehoist</strong> 14-10-2013</p>
+
+<p>Пш 8.0 . вода ичищенная ппм изначальный воды 380. после разбавления фертика люкс для овощей и рассады ппм 1400. развел два раза. второй раз результат такой же , плавают мелкие. хлопья</p>
+
+<p><strong>покерист</strong> 14-10-2013</p>
+
+<blockquote>
+  <p>Пш 8.0 . вода ичищенная ппм изначальный воды 380. после разбавления фертика люкс для овощей и рассады ппм 1400. развел два раза. второй раз результат такой же , плавают мелкие. хлопья</p>
+</blockquote>
+
+<p>Попробуй РН воды сделать 5,5 затем разводить фертику!!!!!</p>
+
+<p><strong>Ehoist</strong> 14-10-2013</p>
+
+<p>Ок попробую, но уже завтра. Сейчас размешал Фертика кристалон универсальный. Хлопьев меньше, но все равно просматриваются на просвет. Я так понимаю из- за высокого ПШ может что нить выпадать в осадок ?</p>
+
+<p><strong>Ehoist</strong> 14-10-2013</p>
+
+<p>Завтра хочу спросить на очистной станции распечатку с составом воды до очистки и после. До очистки вода ППМ 1380, после очистки ППМ 380.</p>
+
+<p><strong>покерист</strong> 14-10-2013</p>
+
+<p>Сам ей пользуюсь! нареканий никаких нет!!!!!!!!!!!</p>
+
+<p>Решил провести эксперимент в раствор добавил не фертику а СОТКА для комнатных цветов и рассады!!!!!!!</p>
+
+<p>Результат полное г_____о!!!!!!!!!!!!!</p>
+
+<p>Хотя по калькулятору состав один и тот же собрал!!!!</p>
+
+<p><strong>Ehoist</strong> 20-10-2013</p>
+
+<p>Разбавил воду электролитом, довел ПШ до 3х. Затем добавил фертику, ПШ стал 7.5 . Довел электролитом ПШ до 6.7. Хлопьев нет. Спасибо большое за помощь <em>Dance</em></p>
+
+<p><strong>Vad</strong> 20-10-2013</p>
+
+<p>Алексей, сколько же теперь серы в растворе? :-\</p>
+
+<p>сколько электролита влито?</p>
+
+<p><strong>cpf</strong> 20-10-2013</p>
+
+<blockquote>
+  <p>Алексей, сколько же теперь серы в растворе? :-\</p>
+
+  <p>сколько электролита влито?</p>
+</blockquote>
+
+<p>серы как в Аду: ацкий раствор получился &gt;:D <em>crazy</em> :D</p>
+
+<p><strong>Ehoist</strong> 21-10-2013</p>
+
+<p>На 5 литров воды влил около 2х миллилитров электролита . Шо, много ? :o</p>
+
+<p><strong>Vad</strong> 21-10-2013</p>
+
+<p>H2SO4</p>
+
+<p>H2 1</p>
+
+<p>S1 32</p>
+
+<p>O4 16</p>
+
+<p>2+32+64=98/100%=0.98%</p>
+
+<p>H=2%</p>
+
+<p>S=32.6%</p>
+
+<p>O=65.3%</p>
+
+<p>электролит при плотности 1.27 имеет концентрацию .. 40%(кажется, точно не помню)</p>
+
+<p>32.6/100=0.326*40=13.04%</p>
+
+<p>в 1 грамме электолита 130.4 мгсеры</p>
+
+<p>на 5 литров 2 кубика</p>
+
+<p>2/5=0,4грамма на литр…или 400мг из них 13% сера</p>
+
+<p>400/100*13=52 мг на литр</p>
+
+<p>это без учета того что 1 кубик весит не 1 грамм.. а 1.27 грамма.. фактически получится 0.5 грамм на литр..</p>
+
+<p>500/100*13=65 мг на литр</p>
+
+<p>мало? :-\</p>
+
+<p><strong>Ehoist</strong> 21-10-2013</p>
+
+<p>Вадим, чем тогда понижать ПШ, что бы серы было мало ?</p>
+
+<p><strong>Vad</strong> 21-10-2013</p>
+
+<p>азотной, ортофосфорной.. :-\</p>
+
+<p>серная - это крайняя мера..</p>
+
+<p><strong>Ehoist</strong> 21-10-2013</p>
+
+<p>Электролит я в автомагазине купил, а азотную или ортофосфорную где примерно искать ?</p>
+
+<p><strong>Vad</strong> 21-10-2013</p>
+
+<p>азотную - не знаю.. зависит от региона.. и возможностей..</p>
+
+<p>а ортофосфорную спросить в магазинах радиодеталей (это флюс для пайки)</p>
+
+<p><strong>Ehoist</strong> 21-10-2013</p>
+
+<p>Вадим спасибо !</p>
+
+<p><strong>Vad</strong> 21-10-2013</p>
+
+<p>Да .. как ..бы.. :-[ не за что <em>???</em></p>
+
+<p>;)</p>
+
+<p><strong>Serg17</strong> 13-11-2013</p>
+
+<p>А кипятить воду не пробовал? Скорее всего это гидрокарбонат кальция. При кипячении выпадет в осадок.</p>
+
+<p>Если достанешь азотную кислоту, то можно и не кипятить, а иметь ввиду, что некоторое количество кальция уже есть в растворе изначально.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

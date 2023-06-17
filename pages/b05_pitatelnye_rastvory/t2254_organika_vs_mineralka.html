@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Органика VS Минералка | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Органика VS Минералка">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Органика VS Минералка</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Ov4innikov</strong> 10-05-2015</p>
+
+<p>Ребята, решили мы с другом провести эксперемент на салате.</p>
+
+<p>Ситуация такая:</p>
+
+<p>Органика:</p>
+
+<p>1.Субстрат: Кокос (Горшок с кокосом 4 л.)</p>
+
+<ol>
+  <li>Удо GHE Thrive (Grow, Bloom, BM) По инструкции</li>
+</ol>
+
+<p>Минералка:</p>
+
+<ol>
+  <li>
+    <p>Субстрат: Керамзит (пролеченный) (DWC система на ведре 10 л.)</p>
+  </li>
+  <li>
+    <p>Удо: ProBioTech (Grow, Micro, Bloom) По инструкции</p>
+  </li>
+</ol>
+
+<p>Семечки салата проращены в мин.вате со слабым раствором корневина. Всходы одновременные, дождался первый настоящих листиков и высадил собственно в кокос и гидропонику. Бокс один, свет одинаковый.</p>
+
+<p>Поливал пробки мин.ваты сверху что бы всегда были влажные. Первую неделю все было одинаково, но сейчас на кокосе салат реально растет быстрее.</p>
+
+<p>Пошла третья неделя (на гидре корни уже давно проросли и питаются как нужно) PH -5.5-6</p>
+
+<p>Как считаете, гидропоника почему отстает? Неужели органика в этом случае лучше?</p>
+
+<p><strong>lidia</strong> 10-05-2015</p>
+
+<p>А почему удобрения разные? Если сравниваете DWC с кокосом, то всё остальное должно быть одинаковое. Иначе как-то некорректно, по-моему… <em>???</em></p>
+
+<p>А фотки можете показать?</p>
+
+<p><strong>Gnevko</strong> 10-05-2015</p>
+
+<p>Не может быть на кокосе и DWC одинаковых удобрений, разные системы субстрата требуют разного состава удобрений.</p>
+
+<p><strong>lidia</strong> 10-05-2015</p>
+
+<p>Так GHE для гидропоники же есть. Хотя бы производитель один… Я не говорю про состав…</p>
+
+<p><strong>lidia</strong> 10-05-2015</p>
+
+<p>А ProBioTech и для кокоса можно применять…</p>
+
+<p><strong>а-ну-ка</strong> 10-05-2015</p>
+
+<p>Бред…,начиная с названия темы.</p>
+
+<p><strong>Coccinella</strong> 10-05-2015</p>
+
+<p>Да, я тоже не вижу в этом сравнении никакой органики, кроме кокоса. Понятие “органическое выращивание” или “органика” имеет совсем иной смысл.</p>
+
+<p>А состав NPK+ от вида субстрата практически не зависит, если речь не идет о торфе. У торфа очень высокая поглотительная способность, поэтому дозы вносимых элементов намного выше. Для всех инертных субстратов, а кокос первого года использования тоже к ним причисляется, состав раствора +/- близкий. Разница обычно в режимах полива - дозы, интервалы.</p>
+
+<p><strong>Ov4innikov</strong> 10-05-2015</p>
+
+<p>Есть и GHE Flora но по сути они с ProBioTech одинаковы по составу.</p>
+
+<p>Суть в том, что на органическом удобрении в инертном субстрате салат растет быстрее чем в DWC с минеральными. Вот и все.</p>
+
+<p>Я не хотел никого обидеть или задеть) Просто спросил почему так ? Я всегда был уверен что на гидропонике растут салаты быстрее.</p>
+
+<p>Фото покажу… завтра сфоткаю.</p>
+
+<p><strong>caiman</strong> 11-05-2015</p>
+
+<blockquote>
+  <p>А ProBioTech и для кокоса можно применять…</p>
+</blockquote>
+
+<p>конечно ДА, я применял, но дорого получается…..а так-то конечно очень хорошо растут растюхи.</p>
+
+<p><strong>Ov4innikov</strong> 11-05-2015</p>
+
+<p>Вот собственно фото. На фото растишкам 12 дней от всходов.</p>
+
+<p>Свет один и тот же просто телефон так передал экспозамер.</p>
+
+<p>По сути я сравниваю не кокос и DWC а именно минеральные и органические удобрения.</p>
+
+<p>Да и это не жесточайший эксперимент, это больше для себя, да и с вами поделиться.</p>
+
+<p>Салат один и тот же “Майская королева”</p>
+
+<p><strong>lidia</strong> 11-05-2015</p>
+
+<p>Давайте подождем ещё пару недель, пока я почему-то не вижу, что на кокосе лучше (или совсем плоха стала? <em>???</em>)</p>
+
+<p>А почему Вы считаете, что кустик в ведре хуже, чем в горшке?</p>
+
+<p><strong>Ov4innikov</strong> 11-05-2015</p>
+
+<blockquote>
+  <p>Давайте подождем ещё пару недель, пока я почему-то не вижу, что на кокосе лучше (или совсем плоха стала? <em>???</em>)</p>
+
+  <p>А почему Вы считаете, что кустик в ведре хуже, чем в горшке?</p>
+</blockquote>
+
+<p>На то время как писал сообщение он был меньше, сейчас вижу разницу но даже уже не уверен что на DWC он хуже. Он меньше но гараздо плотнее.</p>
+
+<p>Ждем) Сейчас раствор 560ppm, завтра буду менять, как считаете сколько уже давать?!</p>
+
+<p>п.с. Понравился мне такой компотик: N140, P40-50, K200 Ca 130 mg 50</p>
+
+<p>Возник вопрос, по моим удо (ProBioTech) в калькуляторе я высчитал такую вот штуку:</p>
+
+<p>все правильно? Как то “bloom” многовато, он же вроде как для цветения…</p>
+
+<p>Или такой вариант, если “забить” на Ca и Mg</p>
+
+<p>Что лучше?!</p>
+
+<p><strong>lidia</strong> 11-05-2015</p>
+
+<p>О, про калькулятор - это пока не ко мне. Пользуюсь готовыми GHE по инструкции. Для салата - ЕС 2,0 - 2,3 (в том числе вода дает 0,34 - 0,4). Растёт прекрасно. В ppm не знаю, какой у Вас коэффициент пересчета.</p>
+
+<p><strong>Coccinella</strong> 11-05-2015</p>
+
+<p>“Если на клетке льва видишь надпись “Буйвол”, не верь глазам своим”/ К.Прутков/ :)</p>
+
+<p>Да не надо верить этим надписям Вега, Блум, это все от Иблиса! Надо обращать внимание на объективное содержание элементов в растворе.</p>
+
+<p>Нельзя! НЕЛЬЗЯ! Забивать и забывать о кальции и магнии. Вам урожай нужен или как? Мне не нравится соотношение К:Са в первом варианте, мало кальция. Второй вариант вообще не стоит дискуссии.</p>
+
+<p><strong>Ov4innikov</strong> 11-05-2015</p>
+
+<blockquote>
+  <p>“Если на клетке льва видишь надпись “Буйвол”, не верь глазам своим”/ К.Прутков/ :)</p>
+
+  <p>Да не надо верить этим надписям Вега, Блум, это все от Иблиса! Надо обращать внимание на объективное содержание элементов в растворе.</p>
+
+  <p>Нельзя! НЕЛЬЗЯ! Забивать и забывать о кальции и магнии. Вам урожай нужен или как? Мне не нравится соотношение К:Са в первом варианте, мало кальция. Второй вариант вообще не стоит дискуссии.</p>
+</blockquote>
+
+<p>А как посоветуете?</p>
+
+<p>Как в литературе</p>
+
+<p>200:80:200 Ca200 Mg50 ? Сколько уже читаю, везде придерживаются этого, но на практики в отчетах совершенно разные цифры которые вводят в заблуждение.</p>
+
+<p><strong>Ov4innikov</strong> 11-05-2015</p>
+
+<blockquote>
+  <p>О, про калькулятор - это пока не ко мне. Пользуюсь готовыми GHE по инструкции. Для салата - ЕС 2,0 - 2,3 (в том числе вода дает 0,34 - 0,4). Растёт прекрасно. В ppm не знаю, какой у Вас коэффициент пересчета.</p>
+</blockquote>
+
+<p>Я день потратил но понял для себя то что все эти GHE, ProBioTech выкачивание денежных средств))))</p>
+
+<p>Буду пробовать самомес. Нашел где все по 0.5 кг купить. Только пока не знаю, включать в состав Valargo или все совсем по отдельности колотить. И про микро, тоже в процессе)</p>
+
+<p><strong>lidia</strong> 11-05-2015</p>
+
+<blockquote>
+  <p>Я день потратил но понял для себя то что все эти GHE, ProBioTech выкачивание денежных средств))))</p>
+</blockquote>
+
+<p>Да это понятно. Но пока не кончатся готовые - не смогу себя заставить из солей делать. Хотя уже всё в наличии :D - и соли, и весы, и рецепты, и кучка калькуляторов… Ещё б время и мозги приложить :).</p>
+
+<p><strong>Ov4innikov</strong> 17-05-2015</p>
+
+<p>Ну вот. сегодня явный перевес на стороне гидропоники. Как я и ожидал, корневая развилась и вперед) Ждем дальше.</p>
+
+<p><strong>Ov4innikov</strong> 20-05-2015</p>
+
+<p>Ребята, подскажите пожалуйста, появляются краевые ожоги внутри на молодых листьях. Что может быть причиной? И на гидре и на кокосе.</p>
+
+<p><strong>Coccinella</strong> 21-05-2015</p>
+
+<p>Это недостаток кальция в клетках листа. Причины:</p>
+
+<p>1)недостаток его в растворе</p>
+
+<p>2) высокая температура воздуха</p>
+
+<p>3)редкие и недостаточные поливы</p>
+
+<p>4)высокая ЕС раствора</p>
+
+<p>Может быть одна из названных причин, несколько или все вместе.</p>
+
+<p><strong>Ov4innikov</strong> 21-05-2015</p>
+
+<blockquote>
+  <p>Это недостаток кальция в клетках листа. Причины:</p>
+
+  <p>1)недостаток его в растворе</p>
+
+  <p>2) высокая температура воздуха</p>
+
+  <p>3)редкие и недостаточные поливы</p>
+
+  <p>4)высокая ЕС раствора</p>
+
+  <p>Может быть одна из названных причин, несколько или все вместе.</p>
+</blockquote>
+
+<p>Хм, кальция?! Я думал недостаток калия или избыток магния в следствии чего опять таки не полное усвоение калия.</p>
+
+<p><strong>Ov4innikov</strong> 25-05-2015</p>
+
+<p>Сегодня срезал салатики, так как тот что на гидропонике был начал пускать стрелку. Сорт майская королева скороспелый. В итоге получилось вырастить на dwc 97 грамм кустик, а в кокосе 65 грамм. На вкус оба отличные, но на кокосе чуть больше горечи.</p>
+
+<p><strong>lidia</strong> 26-05-2015</p>
+
+<p>30% в пользу dwc <em>8)</em></p>
+
+<p><strong>Strangeman</strong> 26-05-2015</p>
+
+<p>Кокос был суховат?</p>
+
+<p><strong>orgail</strong> 26-05-2015</p>
+
+<p>Кто то забывал по(д)ливать… :D :D :D Салат не соврёт ;)</p>
+
+<p><strong>Ov4innikov</strong> 26-05-2015</p>
+
+<blockquote>
+  <p>Кто то забывал по(д)ливать… :D :D :D Салат не соврёт ;)</p>
+</blockquote>
+
+<p>Да нет))) все четко день в день!!!)</p>
+
+<p><strong>Ov4innikov</strong> 26-05-2015</p>
+
+<blockquote>
+  <p>Кокос был суховат?</p>
+</blockquote>
+
+<p>Нет,знаю что если не доливать то будет горечь. Поливал каждыйдень. Кокос всегда влажный был!</p>
+
+<p><strong>wlad</strong> 24-03-2016</p>
+
+<p>Принято считать, что выращенное на почве и органике - чистое, безвредное. А то, что продается в супермаркетах - сплошная химия. Почему гидропоника - это не та же химия, что в супермаркете? Что еще добавляют промышленники кроме стартового списка солей и прочего, что “портит” их продукт?</p>
+
+<p><strong>Vad</strong> 24-03-2016</p>
+
+<blockquote>
+  <p>Принято считать, что выращенное на почве и органике - чистое, безвредное. А то, что продается в супермаркетах - сплошная химия.</p>
+</blockquote>
+
+<p>кем принято?</p>
+
+<p>аборигенами?</p>
+
+<p>первобытными людями? :D</p>
+
+<p>всеумными журналистами? :D</p>
+
+<blockquote>
+  <p>Почему гидропоника - это не та же химия, что в супермаркете?</p>
+
+  <p>Что еще добавляют промышленники кроме стартового списка солей и прочего, что “портит” их продукт?</p>
+</blockquote>
+
+<p>Нитраааттыыы <em>crazy</em></p>
+
+<p><strong>Cyclamech</strong> 24-03-2016</p>
+
+<blockquote>
+  <p>Принято считать, что выращенное на почве и органике - чистое, безвредное. А то, что продается в супермаркетах - сплошная химия.</p>
+</blockquote>
+
+<p>Разве Ваш тезис - не плод нечестной конкуренции [одних производителей удобрений с другими]? Вообще-то зелёные растения не умеют [по большому счёту] усваивать органику…</p>
+
+<p>…</p>
+
+<p>Сложно продать квадратное колесо (круглое - ещё сложнее): приходится вкладывать средства в “мифологию” [как всегда в ущерб производству]. <em>crazy</em></p>
+
+<p>…</p>
+
+<p>Впрочем, неавтоматизированное выращивание в кокосе я считаю одной из разновидностей гидропоники - бенгальский метод.</p>
+
+<p><strong>hakasija</strong> 08-05-2016</p>
+
+<p>Старт был быстрее в емкости более крупной? Если так, то в этом и дело видимо.</p>
+
+<p><strong>hakasija</strong> 08-05-2016</p>
+
+<p>Если я правильно понял, то всходы появились в последний день апреля, а срезали 25 мая. И при этом салат пошел в стрелку… хм жестоко как то со стороны салата стрелковаться на 26 день. Ну прям очень неправильные пчелы…</p>
+
+<p><strong>hakasija</strong> 08-05-2016</p>
+
+<p>На счет: “принято считать, что…”. Есть мнение, сети задавили торговлю. Сетям не интересно работать с производителями из за сезонности работы производителей. Сети снабжают посредники. Посредники живут на марже. Чем выше маржа тем веселее посреднику и сети. Тем выше маржа чем дешевле товар. Тем дешевле товар, чем его больше. А кого интересует качество если даже в мороженом пальмовое масло? Поэтому кушайте, что сами ростите и не парьтесь о проблемах освоения космоса.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

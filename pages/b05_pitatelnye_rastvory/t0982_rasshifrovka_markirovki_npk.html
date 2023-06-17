@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Расшифровка маркировки NPK | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Расшифровка маркировки NPK">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Расшифровка маркировки NPK</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>lantech</strong> 23-04-2011</p>
+
+<p>На разных удобрениях разная маркировка, например 18-12-20, или 7,1:3:4. При этом в таблице указано например 140-40-190. Как это переводить?</p>
+
+<p>И еще. Можно ли смешивать разные удобрения для получения в результате нужного NPK?</p>
+
+<p><strong>valery</strong> 23-04-2011</p>
+
+<p>Конечно. Как же Вы еще получите нужный именно Вам NPK ?</p>
+
+<p>Не МОЖНО, а НУЖНО !</p>
+
+<p>На удобрениях - указано (как правило) в процентах - азот, фосфор, калий (и так далее).</p>
+
+<p>Нужно обращать внимание - азот указывается как “элемент”, а фосфор, калий, магний - как ОКСИДЫ ! (обычно).</p>
+
+<p>В рецептуре состава, ту что Вы привели - уже указано не в “процентах”, а непосредственно в “граммах” (миллиграммах на литр или в ppm - практически тоже самое,</p>
+
+<p>что и мг/л. На самом деле - не совсем именно так, но разница ничтожна и ей обычно “пренебрегают”).</p>
+
+<p>Вот с рецептом - нужно уже ВНИМАТЕЛЬНЕЕ ! Как ПРАВИЛО - там уже все указано в элементах, но иногда можно встретить и в ОКСИДАХ ! Лучше лишний раз убедиться, что “имел в виду автор” …</p>
+
+<p>Например, указан кальций Ca = 160 для “томатного” раствора - с БОЛЬШОЙ долей вероятности можно ожидать, что это “элемент” …</p>
+
+<p>А если (как в соседней ветке у begunok, кальция нужно аж 360 … Повод задуматься. Скорее всего это уже указание в “оксиде”, хотя тоже не факт, нужно “смотреть” …</p>
+
+<p>Как-то так.</p>
+
+<p>Наиболее “безошибочны” и однозначно “читаемы” - указания в молях (миллимолях, микромолях) - там “неважно” в “каком виде” (правда, несколько непривычно-неудобно поначалу) …</p>
+
+<p>Ну и кроме этого, чтобы не было “разночтений” - можно ориентироваться по “соотношениям”, “пропорциям” элементов - профессионалы, профессиональные агрономы, НОРМАЛЬНЫЕ семеноводческие компании, тепличные специалисты в “профессиональных рецептах” - как правило такой “полный расклад” и дают.</p>
+
+<p><strong>lantech</strong> 23-04-2011</p>
+
+<p>Вот скажем мне надо 180 80 280 (это из таблицы рекомендаций NPK для разных культур), а на удобрениях написано в виде 17-17-17. Как это перевести?</p>
+
+<p>Или ориентироваться по соотношениям и доводить до нужной концентрации солей (ppm). Только нужная это сколько, для томатов, огурцов и т.п. Нашел таблицу только по декоративным растениям</p>
+
+<p><strong>valery</strong> 23-04-2011</p>
+
+<p>Переводить ничего не нужно, уже все переведено. В 1 грамме Вашего удобрений - 17% азота, 17% оксида фосфора, 17% оксида калия.</p>
+
+<p>Считайте с помощью калькулятора или в столбик, сколько Вам нужно взять грамм (миллиграмм) на литр - чтобы получить нужные Вам значения (точные - не получите, только “близкие”). Лучше начать с фосфора. Если хотите “точного” - рихтуйте другими солями.</p>
+
+<p>Грубо - если хотите азота 180, возьмете грамм Вашего удобрения на литр воды - получите 170 азота. Остальное - считайте.</p>
+
+<p><strong>valery</strong> 23-04-2011</p>
+
+<p>Ну возьмите 1,1 грамм. Получите практически “нужное” по азоту и фосфору. А калий нужно будет добавлять - сульфатом калия.</p>
+
+<p><strong>Mole_Garden</strong> 23-04-2011</p>
+
+<p>Практически никогда нельзя обойтись одним удобрением для получения полноценного раствора для растения! По этому удобрения надо смешивать, когда смешиваешь нужно понимать, чего и сколько ты кинул и какой концентрации получится раствор, иначе может выпасть осадок.</p>
+
+<p><strong>lantech</strong> 23-04-2011</p>
+
+<blockquote>
+  <p>Практически никогда нельзя обойтись одним удобрением для получения полноценного раствора для растения! По этому удобрения надо смешивать, когда смешиваешь нужно понимать, чего и сколько ты кинул и какой концентрации получится раствор, иначе может выпасть осадок.</p>
+</blockquote>
+
+<p>А какой концентрации можно делать раствор чтобы не выпадал осадок?</p>
+
+<p><strong>lantech</strong> 24-04-2011</p>
+
+<blockquote>
+  <p>Переводить ничего не нужно, уже все переведено. В 1 грамме Вашего удобрений - 17% азота, 17% оксида фосфора, 17% оксида калия.</p>
+
+  <p>Считайте с помощью калькулятора или в столбик, сколько Вам нужно взять грамм (миллиграмм) на литр - чтобы получить нужные Вам значения (точные - не получите, только “близкие”). Лучше начать с фосфора. Если хотите “точного” - рихтуйте другими солями.</p>
+
+  <p>Грубо - если хотите азота 180, возьмете грамм Вашего удобрения на литр воды - получите 170 азота. Остальное - считайте.</p>
+</blockquote>
+
+<p>Спасибо.</p>
+
+<p>А какие NPK Ca Mg для кабачков, укропа, арбуза и дыни?</p>
+
+<p><strong>Mole_Garden</strong> 24-04-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Практически никогда нельзя обойтись одним удобрением для получения полноценного раствора для растения! По этому удобрения надо смешивать, когда смешиваешь нужно понимать, чего и сколько ты кинул и какой концентрации получится раствор, иначе может выпасть осадок.</p>
+  </blockquote>
+
+  <p>А какой концентрации можно делать раствор чтобы не выпадал осадок?</p>
+</blockquote>
+
+<p>Предложил бы воспользоватся поиском и прочитать хотя бы одну книжку, но боюсь, что это не то чего ты ждешь! <em>crazy</em></p>
+
+<p><strong>lantech</strong> 24-04-2011</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>Практически никогда нельзя обойтись одним удобрением для получения полноценного раствора для растения! По этому удобрения надо смешивать, когда смешиваешь нужно понимать, чего и сколько ты кинул и какой концентрации получится раствор, иначе может выпасть осадок.</p>
+    </blockquote>
+
+    <p>А какой концентрации можно делать раствор чтобы не выпадал осадок?</p>
+  </blockquote>
+
+  <p>Предложил бы воспользоватся поиском и прочитать хотя бы одну книжку, но боюсь, что это не то чего ты ждешь! <em>crazy</em></p>
+</blockquote>
+
+<p>Это первое что я сделал. А жду я сейчас советов от практиков, кто сам смешивал растворы</p>
+
+<p><strong>ProRus</strong> 25-04-2011</p>
+
+<blockquote>
+  <p>Это первое что я сделал. А жду я сейчас советов от практиков, кто сам смешивал растворы</p>
+</blockquote>
+
+<p>Мне кажется, что Coccinella старалась не зря и написал замечательную, понятную статью <a href="http://www.ponics.ru/2011/01/podbor_udobrenij/" target="_blank">http://www.ponics.ru/2011/01/podbor_udobrenij/</a>.</p>
+
+<p>Подробно написано, с чего начать и сколько мешать, от чего оттолкнуться…</p>
+
+<p>Но нужно вчитаться и понять что к чему. Если хоть один пункт не понятен, изучать дальше мат. часть.</p>
+
+<p><strong>lantech</strong> 25-04-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Это первое что я сделал. А жду я сейчас советов от практиков, кто сам смешивал растворы</p>
+  </blockquote>
+
+  <p>Мне кажется, что Coccinella старалась не зря и написал замечательную, понятную статью <a href="http://www.ponics.ru/2011/01/podbor_udobrenij/" target="_blank">http://www.ponics.ru/2011/01/podbor_udobrenij/</a>.</p>
+
+  <p>Подробно написано, с чего начать и сколько мешать, от чего оттолкнуться…</p>
+
+  <p>Но нужно вчитаться и понять что к чему. Если хоть один пункт не понятен, изучать дальше мат. часть.</p>
+</blockquote>
+
+<p>Спасибо, но в статье вообще-то речь идет совсем не о том. Там речь о рабочем растворе и концентрации, допустимой для растений. А я о маточном и концентрации, допустимой для того чтобы не было осадка. Чтоб хранить было проще.</p>
+
+<p><strong>Mole_Garden</strong> 26-04-2011</p>
+
+<blockquote>
+  <p>Спасибо, но в статье вообще-то речь идет совсем не о том. Там речь о рабочем растворе и концентрации, допустимой для растений. А я о маточном и концентрации, допустимой для того чтобы не было осадка. Чтоб хранить было проще.</p>
+</blockquote>
+
+<p>Тут отдельный разговор. Есть таблица растворимости, надо посидеть и покумекать с учебником химии. Вот по этому и говорят, берите комплексные удобрения!</p>
+
+<p><strong>Aleksey Kurenin</strong> 26-04-2011</p>
+
+<p>Проблем с растворимостью нитратов быть не должно. очень высокие цифры там. Проблемы могут быть с сульфатом калия, у него наименьшая растворимость по моему. около 120 гр\л и то у хорошего. то есть больше 120 кг кульфата калия на куб раствора нельзя. к тому же надо учитывать другие сульфаты и соли калия. (сульфат магния, нитрат калия, монокалий фосфат).</p>
+
+<p><strong>Coccinella</strong> 27-04-2011</p>
+
+<blockquote>
+  <p>Проблем с растворимостью нитратов быть не должно. очень высокие цифры там. Проблемы могут быть с сульфатом калия, у него наименьшая растворимость по моему. около 120 гр\л и то у хорошего. то есть больше 120 кг кульфата калия на куб раствора нельзя. к тому же надо учитывать другие сульфаты и соли калия. (сульфат магния, нитрат калия, монокалий фосфат).</p>
+</blockquote>
+
+<p>Да еще состав воды надо учитывать - содержание кальция и рН, не то гипс выпадет в осадок.</p>
+
+<p><strong>ParaZZit</strong> 08-04-2013</p>
+
+<p>Добрый день всем. Прошу помощи и наставлений на путь истиный :) Я наконец обзавёлся кондуктометром и с лука хочу перепрыгнуть на базилик и, возможно, редис. Прочитал статью уважаемой Coccinella и форум, прошу проверить правильность моих измышлений.</p>
+
+<p>Для базилика рекомендации взял здесь: <a href="http://www.ponics.ru/2009/04/herbs/" target="_blank">http://www.ponics.ru/2009/04/herbs/</a> Есть комплексное удобрение Мастер 18:18:18. <a href="http://www.poliv64.ru/index.php/articles/101--valagro-.html" target="_blank">http://www.poliv64.ru/index.php/articles/101–valagro-.html</a> Если я его беру 0,5 грамма на литр воды, то получаю NPK по 90 ppm каждого в растворе, плюс микро и хелаты. С фосфором попадаем, теперь нужно добавить азота, калия и кальция.</p>
+
+<p>Добавим калия сульфатом калия (?). В нём 48% K2O, значит в 480 грамм в кг. Отношение М. массы к А. массе у K2O 1.205. Делим наши 480/1,205= 398 грамм полезного калия в кг. Мне нужно добросить к мастеру 200-240 ppm калия. Т.е. это примерно 0,5-0,6 грамма на литр раствора.</p>
+
+<p>В кальциевой селитре 19% кальция, значит её нужно добавить 1г на литр, что-бы получить 190ppm кальция.</p>
+
+<p>Ещё азот остаётся.</p>
+
+<p>Если вместо Сульфата Калия брать Калиевую селитру, то нужно учесть, что в ней ещё 13% N-NO3. И у кальциевой селитры написано N-NO3 15.5%. Объясните, пожалуйста, имеется ввиду чистого азота или всё-же соединения азота с кислородом и его нужно пересчитать в чистый азот? А остаток азота добавить карбамидом, например?</p>
+
+<p><strong>Coccinella</strong> 08-04-2013</p>
+
+<p>Никакого карбамида! Азот ВСЕГДА!!! указывается по элементу.</p>
+
+<p><strong>ParaZZit</strong> 08-04-2013</p>
+
+<p>Т.е. если у Калиевой селитры указано, что азота там 13%, то это именно Азота 13%, его и считаем. Я правильно понял?</p>
+
+<p>Почему не карбамид? А я его в воду для лука сейчас подсыпаю немного, лук растёт быстрее и зеленее. Тогда азот добрасывать аммиачной селитрой?</p>
+
+<p>А остальной ход мыслей у меня правильный?</p>
+
+<p>Я просто несколько туповат в химии, тяжко она мне даётся :(</p>
+
+<p><strong>Coccinella</strong> 08-04-2013</p>
+
+<p>Верной дорогой идете, товарищ ! :)</p>
+
+<p>Карбамид так не усваивается, он должен сначала перейти в нитратную форму, а это требует времени и наличия нитрофицирующих бактерий (и иже с ними).</p>
+
+<p><strong>valery</strong> 08-04-2013</p>
+
+<p>Ход мыслей правильный. В самом расчете - некоторые ошибки.</p>
+
+<p>Аббревиатура NPK обычно указывает азот в “элементе”, фосфор, калий - в оксидах. (P2O5 и K2O)</p>
+
+<p>Таким образом 1 г Вашего “Мастера” в литре воды даст</p>
+
+<p>180 мг/л азота</p>
+
+<p>77-78 мг/л фосфора ( 180<em>0,43 или 180</em>0,44 … примерно)</p>
+
+<p>150 мг/л калия ( 180*0.83)</p>
+
+<p>или соответственно 0,5 г “Мастера” 18/18/18 дадут</p>
+
+<p>90 мг азота</p>
+
+<p>39 мг фосфора (что замечательно)</p>
+
+<p>75 мг калия</p>
+
+<p>Кальций (естественно) дадите кальциевой селитрой. 1 г - 190 мг кальция и 155 мг (азота). Что собственно говоря, Вашу (или Ваших растений) потребность в азоте - полностью</p>
+
+<p>закроет. Маловероятно, что возникнет необходимость добавлять азот еще …</p>
+
+<p>Калий добавите монофосфатом (если решите, что фосфора “мало). Или сульфатом - если решите, что фосфора “нормально”. Или калиевой селитрой, если посчитаете, что добавить азот - все же не лишне …</p>
+
+<p>Остальные Ваши соли - проверьте по аналогии … Лучше не пользоваться “понятием” оксид, а считать сразу “чистый” действующий элемент (исходя из химической формулы соли) - не запутаетесь и сделаете меньше ошибок.</p>
+
+<p>Или … совсем не сделаете … :(</p>
+
+<p><strong>ParaZZit</strong> 08-04-2013</p>
+
+<p>Огромное спасибо Вам!!!!!!!!!!!! Вроде начинает мозаика в что-то целое складываться в голове.</p>
+
+<p>Валерий, такой ещё вопрос.</p>
+
+<p>77-78 мг/л фосфора ( 180<em>0,43 или 180</em>0,44 … примерно)</p>
+
+<p>Вот эти 0,43 они откуда взялись? Вы как-то те-же цифры насчитываете, но другим методом, видимо? Я считаю, как писал выше, через отношение молярной к атомарной массе.</p>
+
+<p>Ну и вот ещё вопрос. Ещё у меня в заначке есть мастер же. 3,11,38. Я посчитал, что если намешивать на литр воды 1 грамм 18:18:18 и полграмма 3:11:38, то получается очень просто прямо по рецепту. Только вот если добавить ещё грамм кальциевой селитры, то общий азот будет 360 мг/л. В рекомендациях 200-220. Это, наверное, совсем слишком? А так бы легко раствор намешался бы… Или может есть способ докинуть кальция без такого количества азота?</p>
+
+<p><strong>valery</strong> 10-04-2013</p>
+
+<p>Откуда взялись ?</p>
+
+<p>Да оттуда же, откуда и Вы считали.</p>
+
+<p>Считали Вы - правильно, только не досчитали до конца.</p>
+
+<p>Содержание фосфора в удобрении (NPK) указывается в виде оксида P2O5 - то есть 39<em>2+16</em>5=142, чистого фосфора в этом “оксиде”, соответственно 39*2=78. То есть “примерно”</p>
+
+<p>43,6%. Или можем обозвать это “коэффициентом” 0,43-0,44.</p>
+
+<p>Так же и калий</p>
+
+<p>выражен в К2O или 39<em>2+16=94 … калия там 39</em>2=78 … или 83%. Или “коэффициент” 0,83 …</p>
+
+<hr />
+
+<p>Мастер 3-11-38 … как раз из серии “самое оно” ( для наших целей ).</p>
+
+<p>Нам ведь и нужно “комплексное” с минимальным азотом - как раз для нормального внесения кальция.</p>
+
+<p><strong>Coccinella</strong> 10-04-2013</p>
+
+<p>Ну почему я все это не “с того” компа читаю? :( Эти комментарии Валерия надо выносить в отдельный ликбез. Ох, как жаль, что Mole_Garden сейчас не до форума! И остальным модераторам тоже недосуг - весна :)</p>
+
+<p><strong>Mole_Garden</strong> 17-04-2013</p>
+
+<blockquote>
+  <p>Ну почему я все это не “с того” компа читаю? :( Эти комментарии Валерия надо выносить в отдельный ликбез. Ох, как жаль, что Mole_Garden сейчас не до форума! И остальным модераторам тоже недосуг - весна :)</p>
+</blockquote>
+
+<p>Я иногда заглядываю :-[</p>
+
+<p>Это уже ни раз писалось и вот это уже есть - <a href="http://forum.ponics.ru/index.php?topic=430.msg16597#msg16597" target="_blank">http://forum.ponics.ru/index.php?topic=430.msg16597#msg16597</a></p>
+
+<p>Я же правильно понимаю, что вы это и имели в виду?</p>
+
+<p>Я не всегда могу отследить происходящее, по этому, если встречаются записи подобного характера и вы или любой другой считаете, что это пригодится для новичков, просто кидайте ссылку на пост, если не трудно, мне в личку. Не сразу, но как только будет время сделаю и добавлю в F.A.Q.</p>
+
+<p><strong>Coccinella</strong> 18-04-2013</p>
+
+<p>Да, именно это и имела в виду, спасибо, Константин!</p>
+
+<p><strong>ParaZZit</strong> 19-04-2013</p>
+
+<p>Да, вот теперь понял :) FAQ может и не помешает. но форум и сайт большой. инфы много и не всегда получается её нарыть сходу, потом уже оказывается, что что-то где-то писалось. Читаю этот форум уже скоро год как, но до сих пор не всё и не везде понимаю, потому и спрашиваю ещё раз.</p>
+
+<p>Спасибо огромное!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+
+<p><strong>Coccinella</strong> 19-04-2013</p>
+
+<p>А у меня вообще складывается впечатление, что F.A.Q. обычно редко читают :) не только здесь, везде :)</p>
+
+<p>Большинство действует по одному из законов Мэрфи “Если ничего уже не помогает, прочтите, наконец, инструкцию” :)</p>
+
+<p><strong>ParaZZit</strong> 19-04-2013</p>
+
+<p>Как человек, занимающийся радиоэлектроникой и музыкой (бас-гитарист) и постоянно обитающий на профильных форумах, тоже часто помогаю новичкам и знаю, что сколько ФАК не пиши и не разжёвывай, у новичков нередко бывают совершенно неожиданные вопросы, которые тебе, как опытному человеку, кажутся чем-то самим собой разумеющимся. Поэтому и ФАКи хоть и читают, но нередко не понимают добрую половину там написанного. Так вопросы всё равно будут. даже если много читать, этим и хорошо общение (форум или ещё как-то), у книги непонятное место не переспросишь по другому :(</p>
+
+<p><strong>Mole_Garden</strong> 19-04-2013</p>
+
+<blockquote>
+  <p>Да, вот теперь понял :) FAQ может и не помешает. но форум и сайт большой. инфы много и не всегда получается её нарыть сходу, потом уже оказывается, что что-то где-то писалось. Читаю этот форум уже скоро год как, но до сих пор не всё и не везде понимаю, потому и спрашиваю ещё раз.</p>
+
+  <p>Спасибо огромное!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+</blockquote>
+
+<p>Не за что, мы же не злые, помогаем как можем. ;)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

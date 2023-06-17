@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Приготовление питательного раствора (крик о помощи) | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Приготовление питательного раствора (крик о помощи)">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Приготовление питательного раствора (крик о помощи)</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Чингиз</strong> 21-05-2010</p>
+
+<p>Доброго времени суток всем форумчанам.</p>
+
+<p>Создать тему меня заставили личные проблемы в составлении растворов, ну и соответственно в выращивании этих самых огурцов, томатов и т.д.</p>
+
+<p>Так как по образованию я никак не химик, а чистой воды гуманитарий и по роду деятельности тоже от этого далек - я госслужащий, то понять как ни старался принципы составления растворов не очень-то и получается. Пока развожу готовые, но результаты очень и очень не радуют, что конечно не есть гуд.</p>
+
+<p>На просторах форума, есть инструкция по приготовлению раствора для салата от Дмитрия, но только для салата.</p>
+
+<p>Я помню, что на вопросы кого-то из новичков, очень мною уважаемые за готовность откликнуться на призыв о помощи, модераторы форума как-то Моле, Дмитрий и т.д. дали достаочно резкую на мой взгляд отмашку, дескать человек должен сам до всего доходить, а иначе интереса нет.</p>
+
+<p>Продолжу после обеда… :)</p>
+
+<p><strong>Mole_Garden</strong> 21-05-2010</p>
+
+<blockquote>
+  <p>Я помню, что на вопросы кого-то из новичков, очень мною уважаемые за готовность откликнуться на призыв о помощи, модераторы форума как-то Моле, Дмитрий и т.д. дали достаочно резкую на мой взгляд отмашку, дескать человек должен сам до всего доходить, а иначе интереса нет.</p>
+</blockquote>
+
+<p>Прошу прощения, но на мой взгляд на форуме очень много всего написано по растворам и их приготовлению, так же на сайте опубликованы различные таблицы, помню еще через личку общались на эту тему. Старался давать исчерпывающие ответы. А в итоге оказалось, что отмахнулись?</p>
+
+<p>Чуть внимательней почитайте форум, возможно стоит перечитать еще раз книгу, если читали, под названием Д. Вахмистров <a href="http://ponics.ru/lib/Rastenia_bezpochvy.pdf" target="_blank">Растения без почвы</a> В ней очень много полезного материала и по приготовлению растворов в том числе. Правда некоторые удобрения нужно будет заменить на другие, к примеру заменить суперфосфат, на монофосфат и так далее.</p>
+
+<p>Так же вот ссылки на темы в форуме где обсуждаются растворы.</p>
+
+<p><a href="http://forum.ponics.ru/index.php/topic,483.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,483.0.html</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php/topic,471.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,471.0.html</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php/topic,63.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,63.0.html</a> - если нужно для томатов, то берем калькулятор и рассчитываем нужную концентрацию.</p>
+
+<p>О том как считается количество нужного удобрения можно посмотреть здесь <a href="http://forum.ponics.ru/index.php/topic,430.msg16597.html#msg16597" target="_blank">http://forum.ponics.ru/index.php/topic,430.msg16597.html#msg16597</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php/topic,52.msg15134.html#msg15134" target="_blank">http://forum.ponics.ru/index.php/topic,52.msg15134.html#msg15134</a> - Здесь Валерий рассказывает как за две минуты делается самый простой и очень хороший раствор, для огурцов или для тех же томатов.</p>
+
+<p><strong>Чингиз</strong> 21-05-2010</p>
+
+<p>Блин, вот опять, из-за нехватки времени, чуток не так выразил свою мысль и обидел хорошего человека.</p>
+
+<p>Константин, приношу свои искренние извинения, ни в коем случае не хотел обидеть.</p>
+
+<p>Скажу более, с удовольствием читаю форум, но к сожалению за всем углядеть не получается.</p>
+
+<p>Моя мысль (которую я не успел закончить из-за обеденного перерыва, а потом ревизоры прицепились) заключалась в следующем:</p>
+
+<ol>
+  <li>
+    <p>Форум очень сильно разросся (что наверное только хорошо) и не все возможно прочесть.</p>
+  </li>
+  <li>
+    <p>Отдельные материалы сильно разрознены по различным темам и чтобы получить ответы на свои вопросы, приходится просматривать очень много материалов.</p>
+  </li>
+  <li>
+    <p>Предлагаю создать тему (раздел) где бы были собраны:</p>
+  </li>
+</ol>
+
+<ul>
+  <li>
+    <p>пошаговая инструкция по приготовлению растворов для различных культур</p>
+  </li>
+  <li>
+    <p>контрольные (хотя бы приблизительно) сроки при выращивании растюх (посев, рассада, вега, цветение и т.д.)</p>
+  </li>
+</ul>
+
+<p>Я понимаю, что человек должен сам дойти до всего, но в начале так хочется попробовать и увидеть плоды своих трудов, а их к сожалению нет или не очень-то они и радуют.</p>
+
+<p>В дальнейшем, человеку будет интересно, почему так, а не по другому и он уже будет глубже изучать тему, поверьте, это так и есть и он сделает все, чтобы улучшить свои результаты, но в начале надо ему помочь.</p>
+
+<p>Это касается не только меня, а думаю всех новичков.</p>
+
+<p>Блин, опять к руководству вызывают. :(</p>
+
+<p><strong>alkash</strong> 23-05-2010</p>
+
+<ol>
+  <li>Предлагаю создать тему (раздел) где бы были собраны:</li>
+</ol>
+
+<ul>
+  <li>пошаговая инструкция по приготовлению растворов для различных культур</li>
+</ul>
+
+<p>Поддерживаю…</p>
+
+<p><strong>davyd</strong> 24-05-2010</p>
+
+<blockquote>
+  <p>Прошу прощения, но на мой взгляд на форуме очень много всего  написано…</p>
+</blockquote>
+
+<p>((</p>
+
+<p>хотелось бы всего поменьше, а о гидропонике побольше…</p>
+
+<p>чингиз, поддерживаю ;)</p>
+
+<p>ИМХО: для начала б структурировать ФАК</p>
+
+<p><strong>Mole_Garden</strong> 24-05-2010</p>
+
+<blockquote>
+  <p>ИМХО: для начала б структурировать ФАК</p>
+</blockquote>
+
+<p>Пожалуйста, вот уже создана тема про ФАК <a href="http://forum.ponics.ru/index.php/topic,430.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,430.0.html</a></p>
+
+<p>Можно дополнять.</p>
+
+<p><strong>Чингиз</strong> 24-05-2010</p>
+
+<p>И в первую очередь, я хотел бы попросить наших уважаемых ГУРУ, Старожилов и т.д., т.е. тех людей, которые знают о гидропонике достаточно много, имеют опыт, поделится этим опытом, а мы будем коллективно и в отдельности благодарны</p>
+
+<p><strong>цветовод</strong> 24-05-2010</p>
+
+<p>Лично я перечитал весь форум и пару книжек из библиотеки, которые многие советуют (была сломана нога летом 2009 г.), т. е. время было достаточно, да и сайт и форум был поменьше.</p>
+
+<p>Конечно, новичку хотелось бы всё и сразу, но, к сожалению так не бывает. ???</p>
+
+<p>Моё мнение - надо читать!!! 8)</p>
+
+<p>На конкретные вопросы (где и что не понятно) вам ответят действительно профессионалы 8), но для того чтобы они (вопросы) возникли - нужно что-то пробовать выращивать.</p>
+
+<p>А чтобы пробовать выращивать - нужно читать!!! ;)</p>
+
+<p>Информации очень много и вполне достаточно.</p>
+
+<p>Сорри, если кого огорчил.</p>
+
+<p><strong>Mole_Garden</strong> 24-05-2010</p>
+
+<blockquote>
+  <p>А чтобы пробовать выращивать - нужно читать!!! ;)</p>
+
+  <p>Информации очень много и вполне достаточно.</p>
+
+  <p>Сорри, если кого огорчил.</p>
+</blockquote>
+
+<p>Вот именно я об этом пытаюсь сказать. :'(</p>
+
+<p><strong>ruslan</strong> 21-11-2010</p>
+
+<p>добрый вечер всем участником форума! уважаймые колеги скажите пожалуста почему при пригодвлении питательного раствора все соли по отдельности расторяютца отлично! но при смешевание (кальцый азотнокислый) с (магний сернокислый семиводный) идет реакцыя ивыподает в осадок! может неправельная последовотельнасть смешевания, у меня она такая кальцый азотнокислый,магний сернокислый,аммоний азотнокислый,калий азотнокислый,калия монофосфат</p>
+
+<p><strong>Садовник</strong> 21-11-2010</p>
+
+<p>Кальциевую сельтру в маточном растворе с другими рстворами не смешивают. Их по отдельности добавляют в рабочий раствор. Там концентрация меньше и осадок не выпадает.</p>
+
+<p><strong>WERDNA</strong> 22-11-2010</p>
+
+<p>Ага, и еще воду для приготовления раствора предварительно закислить - и все нормально, никакого гипса в растворе.</p>
+
+<p><strong>ruslan</strong> 22-11-2010</p>
+
+<p>добрый день уважаймые колеги! я так понимаю что при приготовлении концытрата для маточного раствора имено кальцый азотнокислый в концытрат вносить котегорически нельзя,а нужно хранить отдельно и вносить непосрецтвено в маточный раствор!</p>
+
+<p><strong>WERDNA</strong> 22-11-2010</p>
+
+<p>Концентрат и маточный раствор в данном случае синонимы.</p>
+
+<p><strong>WERDNA</strong> 22-11-2010</p>
+
+<p>Можно сделать несколько маточных растворов. Нельзя в концентрированном виде совмещать кальций и сульфаты - гипс выпадет в осадок.</p>
+
+<p><strong>Колхозьник</strong> 25-03-2011</p>
+
+<blockquote>
+  <p>И в первую очередь, я хотел бы попросить наших уважаемых ГУРУ, Старожилов и т.д., т.е. тех людей, которые знают о гидропонике достаточно много, имеют опыт, поделится этим опытом, а мы будем коллективно и в отдельности благодарны</p>
+</blockquote>
+
+<p>собственно весь форум для этого</p>
+
+<p>Я тоже по началу бесился, да и щас что таить, подбешиваюсь, но пока сам неразберёшся, не попробуюшь,непрожуёшь, непоймёшь. Учится Учится и ещё раз учится. Читать Повторять Читать Повторять Читать Повторять</p>
+
+<p><strong>Mole_Garden</strong> 25-03-2011</p>
+
+<blockquote>
+  <p>собственно весь форум для этого</p>
+
+  <p>Я тоже по началу бесился, да и щас что таить, подбешиваюсь, но пока сам неразберёшся, не попробуюшь,непрожуёшь, непоймёшь. Учится Учится и ещё раз учится. Читать Повторять Читать Повторять Читать Повторять</p>
+</blockquote>
+
+<p>А что беситься то? Все таблицы и расклады есть, еще не хватало за вас высчитывать растворы и количество удобрений в граммах и милиграммах, ну это же уже совсем наглость!</p>
+
+<p><strong>Юрий Иваныч</strong> 04-04-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>собственно весь форум для этого</p>
+
+    <p>Я тоже по началу бесился, да и щас что таить, подбешиваюсь, но пока сам неразберёшся, не попробуюшь,непрожуёшь, непоймёшь. Учится Учится и ещё раз учится. Читать Повторять Читать Повторять Читать Повторять</p>
+  </blockquote>
+
+  <p>А что беситься то? Все таблицы и расклады есть, еще не хватало за вас высчитывать растворы и количество удобрений в граммах и милиграммах, ну это же уже совсем наглость!</p>
+</blockquote>
+
+<p>Абсолютно согласен!!! Учится Учится и ещё раз учится. Читать, читать и еще</p>
+
+<p><strong>Юрий Иваныч</strong> 04-04-2011</p>
+
+<p>раз читать. (Извиняюсь за разорванное сообщение, ребенок случайно нажала Enter). “Помошница” :-*.</p>
+
+<p>Я сам закончил 2 ВУЗа (второй, Воронежский Государственный Аграрный Университет), но нас там растворы для гидропоники составлять не учили <em>crazy</em>, а жаль :'(. Форум и сайт читаю уже несколько месяцев и только-только осознание процесса начинает подкрадываться. Ресурс разросся колосально(это очень ХОРОШО) и просто по этой причине не сразу можно найти нужную инфу. Огромное спасибо создателям сайта и форума и низкий им поклон. <em>8)</em> <em>Bravo</em>. Я не кощунствую, а говорю искренне.</p>
+
+<p><strong>lantech</strong> 13-04-2011</p>
+
+<blockquote>
+  <p>Кальциевую сельтру в маточном растворе с другими рстворами не смешивают. Их по отдельности добавляют в рабочий раствор. Там концентрация меньше и осадок не выпадает.</p>
+</blockquote>
+
+<blockquote>
+  <p>Ага, и еще воду для приготовления раствора предварительно закислить - и все нормально, никакого гипса в растворе.</p>
+</blockquote>
+
+<p>Вот блин. Я уже задолбался по нескольку раз переделывать раствор. Может есть где инструкция по приготовлению?</p>
+
+<p>Черт возьми, еще реактивы все истратил. Теперь новые покупать</p>
+
+<p><strong>valery</strong> 13-04-2011</p>
+
+<p>А что именно у Вас не получается ? В чем сложность ?</p>
+
+<p><strong>lantech</strong> 14-04-2011</p>
+
+<blockquote>
+  <p>А что именно у Вас не получается ? В чем сложность ?</p>
+</blockquote>
+
+<p>В первом растворе был нерастворимый осадок из суперфосфата, по рекомендациям заменил суперфосфат на монофосфат калия, все смешал и опять нерастворимый осадок, только в этот раз после смешивания всех компонентов.</p>
+
+<p><strong>valery</strong> 14-04-2011</p>
+
+<p>ЧТО именно смешиваете, в каком количестве (в граммах), в КАКОМ количестве воды (в литрах), КАКИМ образом (в одной емкости последовательно, или сначала разные соли - в разных …) Ну и так далее.</p>
+
+<p>Просто опишите доступными словами САМ ПРОЦЕСС … Чудес ведь не бывает … И ясновидящих на форуме не очень много, конкретно Вашу ситуацию никто не видит.</p>
+
+<p>Может что-то разводите в ледяной воде или напротив - в кипятке … Всякое бывает. Словом - опишите подробней.</p>
+
+<p><strong>ruslan</strong> 14-04-2011</p>
+
+<p>кальцый азотнокислый смешевать с остольными компонентами тобиж с сульфатами в концентрированом виде нельзя выподает в осадок!</p>
+
+<p><strong>lantech</strong> 14-04-2011</p>
+
+<blockquote>
+  <p>ЧТО именно смешиваете, в каком количестве (в граммах), в КАКОМ количестве воды (в литрах), КАКИМ образом (в одной емкости последовательно, или сначала разные соли - в разных …) Ну и так далее.</p>
+
+  <p>Просто опишите доступными словами САМ ПРОЦЕСС … Чудес ведь не бывает … И ясновидящих на форуме не очень много, конкретно Вашу ситуацию никто не видит.</p>
+
+  <p>Может что-то разводите в ледяной воде или напротив - в кипятке … Всякое бывает. Словом - опишите подробней.</p>
+</blockquote>
+
+<p>На самом деле я вроде понял в чем ошибка. Я разводил раствор, предназначенный для 500 литров раствора в 10 литрах, готовил концентрат. Кальциевая селитра (полкило), сульфаты в высоких концентрациях в одной емкости.</p>
+
+<p>А что нельзя разбавлять кипятком? А то так удобнее, быстрее растворяется. Хотя я пока растворял теплой, пополам комнатной и кипятка.</p>
+
+<p><strong>Coccinella</strong> 15-04-2011</p>
+
+<p>Кипятком растворять можно, только когда раствор остывает, выпадает осадок из перенасыщенного раствора :(.</p>
+
+<p>Поэтому лучше растворять в воде той температуры, которой поливать будете.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>уважаемые гуру гидропоники предлагаю создать видео ролик по приготовлению растворов из имеющихся в продаже и всем доступным компонентам монтаж беру на себя да и кусочек видео от себя вставлю в кадре руки весы сами компоненты и посуда для конечного продукта принимаются записи с мобильного телефона видеокамеры в цифровом формате а так же фото для вставки замирающих картинок типа название компонента или внешний вид упаковки !!!!!!!!!</p>
+
+<p>с миру по нитке мы создадим таки видеоинструкцию для всех и зацветут балконы по всей РОССИИ матушке</p>
+
+<p>разными цверами от помидор огурцов (и чуть не сказал салата хотя и это не чудо) <em>Dance</em></p>
+
+<p><strong>Coccinella</strong> 15-04-2011</p>
+
+<p>Цветущий салат не чудо, а огорчение :)</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>мддаааа предложений мореее !!!!!!!!! <em>8)</em></p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 15-04-2011</p>
+
+<p>я знаю кому кричать Константиииин! посмотри мое предложение <em>Dance</em> <em>Bravo</em></p>
+
+<p><strong>lantech</strong> 15-04-2011</p>
+
+<blockquote>
+  <p>Цветущий салат не чудо, а огорчение :)</p>
+</blockquote>
+
+<p>Кстати у меня на гидропонике салат как раз одно огорчение, в земле нормально, в керамзите плохо, на аэропонике тоже, черная ножка появляется. Не знаю почему, но это ладно, не сильно беспокоит.</p>
+
+<p>А по поводу материалов я в следующий раз когда буду его готовить (скоро, надо только селитры купить) могу снять видео или фото. Правда в растворах я совсем не гуру, не знаю ко мне это крик относится? <em>???</em></p>
+
+<p><strong>РенаТ_ТТ</strong> 21-04-2011</p>
+
+<blockquote>
+  <p>я знаю кому кричать Константиииин! посмотри мое предложение <em>Dance</em> <em>Bravo</em></p>
+</blockquote>
+
+<p>Не услышал (((</p>
+
+<p><strong>РенаТ_ТТ</strong> 21-04-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>собственно весь форум для этого</p>
+
+    <p>Я тоже по началу бесился, да и щас что таить, подбешиваюсь, но пока сам неразберёшся, не попробуюшь,непрожуёшь, непоймёшь. Учится Учится и ещё раз учится. Читать Повторять Читать Повторять Читать Повторять</p>
+  </blockquote>
+
+  <p>А что беситься то? Все таблицы и расклады есть, еще не хватало за вас высчитывать растворы и количество удобрений в граммах и милиграммах, ну это же уже совсем наглость!</p>
+</blockquote>
+
+<p>Объяснить же можно… ЧТО и из ЧЕГО берется.</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 21-04-2011</p>
+
+<p>я как раз занимаюсь тем , чтоб можно было предложить что то более универсальное и достоверно работающее.</p>
+
+<p>пока тестирую то чего я намутил в моем домике есть отчет можеш зайти посмотреть если понравится напишу как сделать и из чего я это делаю могу фотки поэтапно</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 21-04-2011</p>
+
+<p>я конечно не притендую на звание народного но кое какие результаты тестов уже есть</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 21-04-2011</p>
+
+<p>вот первый !</p>
+
+<p>кемира плюс работает лучше чем кемира люкс 1.</p>
+
+<p>селитра кальциевая буйского завода попадается партиями то супер то с мусором 2.</p>
+
+<p>если не добавить на 5 литров сульфат магния почти ничего не происходит а вот если добавить на 5 литров 3 ампулы по 0,25мл то на растениях листья потихоньку превращаются в мумию 3.</p>
+
+<p>хелатные добавки от покон результата видимого не дают 4.</p>
+
+<p>такие же добавки от бона форте вонючие но на пожелтевшие листья от недостатка света действуют положительно почти 90% восстановился цвет 5.</p>
+
+<p>и много еще чего интересного !</p>
+
+<p><strong>РенаТ_ТТ</strong> 21-04-2011</p>
+
+<blockquote>
+  <p>я как раз занимаюсь тем , чтоб можно было предложить что то более универсальное и достоверно работающее.</p>
+
+  <p>пока тестирую то чего я намутил в моем домике есть отчет можеш зайти посмотреть если понравится напишу как сделать и из чего я это делаю могу фотки поэтапно</p>
+</blockquote>
+
+<p>СпС. Только вникаю в гидру… Если где буду тупить не огорчайся только (заранее) :-[ Ссылку дай на отчеты. Еще хочу спросить: опыт по капусте есть ( пекинской)? Или она как салат?</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 21-04-2011</p>
+
+<p>пекинская капуста? ммм интересно вот освобожу стилаж от огурцов можно и капустой заняться на след. неделе думаю и начнем !</p>
+
+<p>надо нагуглить для нее пит раствор а может чего из народного подойдет посмотрю надосуге !</p>
+
+<p><strong>РенаТ_ТТ</strong> 21-04-2011</p>
+
+<p>Я пока семена высадил. В питательный грунт. Взошли через два дня. Потери примерно 20-25%. Пока так. Не знаю как дальше. На клонировании, на аэро или DWC?! <em>Wall</em></p>
+
+<p><strong>lantech</strong> 21-04-2011</p>
+
+<blockquote>
+  <p>пекинская капуста? ммм интересно вот освобожу стилаж от огурцов можно и капустой заняться на след. неделе думаю и начнем !</p>
+
+  <p>надо нагуглить для нее пит раствор а может чего из народного подойдет посмотрю надосуге !</p>
+</blockquote>
+
+<p>Для китайской капусты думаю такой же, как и для салата</p>
+
+<p><strong>РенаТ_ТТ</strong> 21-04-2011</p>
+
+<blockquote>
+  <p>Для китайской капусты думаю такой же, как и для салата</p>
+</blockquote>
+
+<p>Кстати, хотел узнать: к ГУМУСу какое отношение? Из него раствор нормальный получится? Может кто пробовал?</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 21-04-2011</p>
+
+<p>из гумуса получится го…но только через муки и разочарования а так отношение мое к гумусу как к первому моему разу когда я на грабли наступил в самом первом моем эксперементе я пробовал агриколу на гумосе она вырастил кучу всяких соплей причем разного цвета еле все отмыл от них !</p>
+
+<p><strong>РенаТ_ТТ</strong> 21-04-2011</p>
+
+<blockquote>
+  <p>из гумуса получится го…но только через муки и разочарования а так отношение мое к гумусу как к первому моему разу когда я на грабли наступил в самом первом моем эксперементе я пробовал агриколу на гумосе она вырастил кучу всяких соплей причем разного цвета еле все отмыл от них !</p>
+</blockquote>
+
+<p>Понятно. Отправлю тетке на огород тогда. Хотя я о БиоГУМУСЕ, а не о Гумусе. Может между ними разница есть? Он же в виде раствора…</p>
+
+<p><strong>Дмитрий (зеленый еще)</strong> 21-04-2011</p>
+
+<p>как сказала coccinnela гумос не пришей кобыле хвост</p>
+
+<p>помоему достаточно чтоб переключить свое внимание в правильное русло</p>
+
+<p><strong>РенаТ_ТТ</strong> 21-04-2011</p>
+
+<blockquote>
+  <p>как сказала coccinnela гумос не пришей кобыле хвост</p>
+
+  <p>помоему достаточно чтоб переключить свое внимание в правильное русло</p>
+</blockquote>
+
+<p>а как насчет FloraMicro (GHE) ? или Flora Gro (GHE) ?</p>
+
+<p><strong>Svyatoy_nv</strong> 21-04-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>как сказала coccinnela гумос не пришей кобыле хвост</p>
+
+    <p>помоему достаточно чтоб переключить свое внимание в правильное русло</p>
+  </blockquote>
+
+  <p>а как насчет FloraMicro (GHE) ? или Flora Gro (GHE) ?</p>
+</blockquote>
+
+<p>Вот бы и мне такую зарплату.. Только я б тогда не GHE выписал, а личного садовника из Китая <em>crazy</em></p>
+
+<p><strong>РенаТ_ТТ</strong> 21-04-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Вот бы и мне такую зарплату.. Только я б тогда не GHE выписал, а личного садовника из Китая <em>crazy</em></p>
+  </blockquote>
+
+  <p>Так он ( продаваемый концентрат) разве не разбавляется водой? Не пойму как люди подбирают компоненты для растворов? Где они их берут?</p>
+</blockquote>
+
+<p><strong>Svyatoy_nv</strong> 21-04-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Вот бы и мне такую зарплату.. Только я б тогда не GHE выписал, а личного садовника из Китая <em>crazy</em></p>
+  </blockquote>
+
+  <p>Так он ( продаваемый концентрат) разве не разбавляется водой? Не пойму как люди подбирают компоненты для растворов? Где они их берут?</p>
+</blockquote>
+
+<p>Ну мне как-то не плохую ссылку Константин дал - <a href="http://www.agrosprom.ru/index.php?option=com_virtuemart&amp;page=shop.browse&amp;category_id=8&amp;Itemid=1&amp;vmcchk=1&amp;Itemid=1" target="_blank">http://www.agrosprom.ru/index.php?option=com_virtuemart&amp;page=shop.browse&amp;category_id=8&amp;Itemid=1&amp;vmcchk=1&amp;Itemid=1</a></p>
+
+<p>там хоть кальциевую селитру взять можно (150р/кг, которого хватит в разы больше, а стоит в разы меньше), ну и я poly-feed взял сухой. Но вот считаю я в калькуляторе и что-то N у меня многовато получается, надо что-то еще добрать (наверное green-go 6 тогда взять стоило, а сейчас уж поздно - минимум 500 р заказ). А компоненты считают в калькуляторе, подгоняя под рецепт. Вродь на основной странице сайта (ponics.ru) было и то и другое…</p>
+
+<p><strong>РенаТ_ТТ</strong> 21-04-2011</p>
+
+<p>Огромное спс за разъяснения! Калькулятор видел, тока не пойму как им пользоваться, тк не допонимаю как они достают чистые элементы в виде N? K? P? Ca? Fe? Mg и тд??? Вот в чем у меня вопрос. Или все это можно купить в каких-то спец магах? Подскажите. <em>sos</em></p>
+
+<p><strong>Svyatoy_nv</strong> 21-04-2011</p>
+
+<blockquote>
+  <p>Огромное спс за разъяснения! Калькулятор видел, тока не пойму как им пользоваться, тк не допонимаю как они достают чистые элементы в виде N? K? P? Ca? Fe? Mg и тд??? Вот в чем у меня вопрос. Или все это можно купить в каких-то спец магах? Подскажите. <em>sos</em></p>
+</blockquote>
+
+<p>Не знаю, как отнесутся знающие люди (мне просто спать не охота вот из вздумал тут “саветавать”) но вот что я накопал:</p>
+
+<p>KH2PO4 (Калия монофосфат) - <a href="http://rushim.ru/product_info.php?products_id=1120" target="_blank">http://rushim.ru/product_info.php?products_id=1120</a></p>
+
+<p>Ca(NO3)2*4H2O (Кальциевая селитра, нитрат кальция) - <a href="http://www.agrosprom.ru/index.php?page=shop.product_details&amp;flypage=flypage.tpl&amp;product_id=61&amp;category_id=8&amp;option=com_virtuemart&amp;Itemid=2&amp;vmcchk=1&amp;Itemid=2" target="_blank">http://www.agrosprom.ru/index.php?page=shop.product_details&amp;flypage=flypage.tpl&amp;product_id=61&amp;category_id=8&amp;option=com_virtuemart&amp;Itemid=2&amp;vmcchk=1&amp;Itemid=2</a> (на складе 13)</p>
+
+<p>KNO3 (Калиевая селитра, нитрат калия) - ??? можно и похимичить :D, не знаю правда можно ли это для выращивания (статья о пиротехнике) <a href="http://www.daslife.ru/index.php/2009-10-06-10-04-55" target="_blank">http://www.daslife.ru/index.php/2009-10-06-10-04-55</a></p>
+
+<p>Микроэлементы в масштабах хобби, мне кажется, разумнее брать в виде комплекса (который почти в каждом магазине) а то и вообще в каком-нить поли-фиде, и все же:</p>
+
+<p>K2SO4 (Сульфат калия, калий сернокислый) - <a href="http://rushim.ru/product_info.php?products_id=497" target="_blank">http://rushim.ru/product_info.php?products_id=497</a></p>
+
+<p>MgSO4*7H2O (Сульфат магния, магний сернокислый) - <a href="http://rushim.ru/product_info.php?products_id=145" target="_blank">http://rushim.ru/product_info.php?products_id=145</a></p>
+
+<p>FeSO4*7H2O (Железный купорос, сульфат железа II, железо сернокислое двухвалентное ) - <a href="http://rushim.ru/product_info.php?products_id=105" target="_blank">http://rushim.ru/product_info.php?products_id=105</a></p>
+
+<p>H3BO3 (Борная кислота) - <a href="http://rushim.ru/product_info.php?products_id=79" target="_blank">http://rushim.ru/product_info.php?products_id=79</a></p>
+
+<p>MnSO4<em>5H2O (Сульфат марганца, марганец сернокислый) - <a href="http://rushim.ru/product_info.php?products_id=148" target="_blank">http://rushim.ru/product_info.php?products_id=148</a> только там вродь Mn</em>SO4*H2O</p>
+
+<p>ZnSO4*7H2O (Сульфат цинка, цинк сернокислый) - <a href="http://rushim.ru/product_info.php?products_id=506" target="_blank">http://rushim.ru/product_info.php?products_id=506</a></p>
+
+<p>CuSO4*5H2O (Медный купорос, сульфат меди, медь сернокислая) - ??? можно самому накрайняк - электролит + провод</p>
+
+<p>(NH4)2MoO4*4H2O (Аммоний молебденовокислый, молебдат аммония) - <a href="http://rushim.ru/product_info.php?products_id=492" target="_blank">http://rushim.ru/product_info.php?products_id=492</a></p>
+
+<p>Co(C2H3O2)2*4H2O (Ацетат кобальта, кобальт уксуснокислый) - <a href="http://rushim.ru/product_info.php?products_id=815" target="_blank">http://rushim.ru/product_info.php?products_id=815</a></p>
+
+<p>Есть калькулятор для подбора соотношений комплексных удобрений. <a href="http://narod.ru/disk/10807006001/Calc.rar.html" target="_blank">http://narod.ru/disk/10807006001/Calc.rar.html</a> Хотя я там всю базу удалил, когда себе поставил и внес несколько, которые есть в ближайшем магазине.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

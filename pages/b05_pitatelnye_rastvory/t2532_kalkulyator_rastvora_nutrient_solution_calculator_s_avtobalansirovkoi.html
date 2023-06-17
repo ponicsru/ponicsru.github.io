@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Калькулятор раствора Nutrient Solution Calculator с автобалансировкой | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Калькулятор раствора Nutrient Solution Calculator с автобалансировкой">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Калькулятор раствора Nutrient Solution Calculator с автобалансировкой</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>FertilizerCalculator</strong> 13-09-2016</p>
+
+<p>Калькулятор раствора с автаматическим балансиром удобрений.</p>
+
+<p><a href="http://storage.googleapis.com/wzukusers/user-23754587/documents/57d809130234bjTQvYyw/Nutrient%20Solution%20Calculator%20Flower.zip" target="_blank">Nutrient Solution Calculator.zip</a></p>
+
+<p>Для запуска может потребоваться установить Microsoft .NET Framework 4:</p>
+
+<p><a href="http://storage.googleapis.com/wzukusers/user-23754587/documents/57cf15f5dfadd2FMbF7Y/Microsoft%20.NET%20Framework%204.exe]автономный установщик[/url] или [url=https://www.microsoft.com/ru-ru/download/details.aspx?id=17851" target="_blank">веб-установщик</a></p>
+
+<p>Принцип работы предельно прост:</p>
+
+<ol>
+  <li>В левой части окна выбираете те удобрение, которые у вас есть и делаете двойной клик, тем самым добавяя их к расчету.</li>
+</ol>
+
+<p><a href="https://t.me/ponics_ru_files/17821" target="_blank"><img src="/imagehost2/thumbs/1qfq.jpg" alt="" /></a></p>
+
+<ol>
+  <li>
+    <p>Далее щелкаете на название культуры, для которой хотите совершить расчет.</p>
+  </li>
+  <li>
+    <p>В окне элементвного состава раствора можете попробовать задать приоритет расчета элементов, тем самым изменив баланс удобрений в конечном растворе.</p>
+  </li>
+</ol>
+
+<p>КРАСНАЯ СТРОЧКА - есть передозировка не более чем в 1,5, либо невозможно отбалансировать элемент.</p>
+
+<p>КРАСНАЯ КНОПКА - Данный компонент мешает балансирове других элементов и можно изменить его значимость, тем самым позволив лучше отбалансировать другие элементы.</p>
+
+<p>ЗЕЛЕНАЯ СТРОЧКА- все в пределах нормы.</p>
+
+<p><a href="https://t.me/ponics_ru_files/17822" target="_blank"><img src="/imagehost2/thumbs/2zoz.jpg" alt="" /></a></p>
+
+<ol>
+  <li>Смотрите полученый результат в граммах на указанное вами количество литров</li>
+</ol>
+
+<p><strong>Cyclamech</strong> 13-09-2016</p>
+
+<p>Правильно ли я понимаю, что этот кальк можно отнести к классу калькуляторов, которые “мешают растворы из всего подряд” (типа NPKcalc 1.27, Hydroodo, ect.)? Понятно, что сделана попытка автоматизировать “подбор навесок” по каким-либо правилам, ибо результаты работы “автоматики” Hydroodo оставляют желать лучшего… <em>crazy</em></p>
+
+<p><strong>FertilizerCalculator</strong> 13-09-2016</p>
+
+<blockquote>
+  <p>Правильно ли я понимаю, что этот кальк можно отнести к классу калькуляторов, которые “мешают растворы из всего подряд” (типа NPKcalc 1.27, Hydroodo, ect.)? Понятно, что сделана попытка автоматизировать “подбор навесок” по каким-либо правилам, ибо результаты работы “автоматики” Hydroodo оставляют желать лучшего… <em>crazy</em></p>
+</blockquote>
+
+<p>А вы попробуйте, я думаю результат вас приятно удивит )).</p>
+
+<p>Собственно для этого и писалась эта программа, потаму что все остальные не давали достаточно хорошего результата.</p>
+
+<p><strong>Cyclamech</strong> 13-09-2016</p>
+
+<blockquote>
+  <p>А вы попробуйте, я думаю результат вас приятно удивит )).</p>
+</blockquote>
+
+<p>Ммм… А Вы лично выращиваете растения?</p>
+
+<p><strong>Gamelander</strong> 13-09-2016</p>
+
+<p>Нет расчета по аммиачке, в элементах вместо NH4 стоит NO4, соответственно аммиачная селитра не считается, не считается процент аммонийного азота от общего, а надо.</p>
+
+<p>В целом неплохо, удобно. Только пока не считает как нужно.</p>
+
+<p><strong>FertilizerCalculator</strong> 18-09-2016</p>
+
+<p>Новая версия</p>
+
+<p><a href="http://storage.googleapis.com/wzukusers/user-23754587/documents/57deddc57ff08wmfNTvw/NSCv1.0.2.41272.zip" target="_blank">Скачать Nutrient Solution Calculator v1.0.2.41272</a></p>
+
+<p>Исправлены коэфициенты соединений на более точные, добавлен расчет по разным формам азота, добавлена возможность переименования веществ и соединений, а так же мелкие правки.</p>
+
+<p><strong>FertilizerCalculator</strong> 24-09-2016</p>
+
+<p>Новая версия.</p>
+
+<p>Импортирована база удобрений Hydrodo, а также несколько незначительных оптимизаций.</p>
+
+<p><a href="http://storage.googleapis.com/wzukusers/user-23754587/documents/57e68274a6a02oYQFshw/NSCv1.0.3.33476.zip" target="_blank">Nutrient Solution Calculator 1.0.3.33476</a></p>
+
+<p><strong>siv237</strong> 25-09-2016</p>
+
+<p>Жаль в wine и в mono не работает.</p>
+
+<p><strong>FertilizerCalculator</strong> 17-10-2016</p>
+
+<p>1.0.4 - [База удобрений] исправлены баги в составах импортированных удобрений из Hydrodo.</p>
+
+<p><a href="https://www.dropbox.com/s/5xkpfxhaglfxq7j/NSCv1.0.4.zip?dl=1" target="_blank">NSCv1.0.4</a></p>
+
+<p><strong>FertilizerCalculator</strong> 17-10-2016</p>
+
+<blockquote>
+  <p>Жаль в wine и в mono не работает.</p>
+</blockquote>
+
+<p>Согласен, но покачто поддержа Linux систем не предвидиться. Мягкотелые вроде делают попытки переноса их NET платформы на Linux системы, однако покачто все это рабодает достаточно криво.</p>
+
+<p><strong>FertilizerCalculator</strong> 29-10-2016</p>
+
+<p>Новая версия <a href="https://www.dropbox.com/s/r1107ygzqoxa4bm/NSCv1.0.5.zip?dl=1" target="_blank">Nutrient Solution Calculator 1.0.5</a></p>
+
+<p>Добавлен режим ручного управления весами удобрения, а так же возможность полностью ручного режима работы по типу (NPKCaMg)</p>
+
+<p><strong>FertilizerCalculator</strong> 29-10-2016</p>
+
+<p>Есть смысл дальше выкладывать новые версии? Есть тут кто живой?</p>
+
+<p><strong>cpf</strong> 29-10-2016</p>
+
+<blockquote>
+  <p>Есть смысл дальше выкладывать новые версии? Есть тут кто живой?</p>
+</blockquote>
+
+<p>Сейчас - не сезон (калькулировать нечего :D)</p>
+
+<p><strong>orgail</strong> 29-10-2016</p>
+
+<p>выкладывайте, конечно!</p>
+
+<p>тут больше читателей пока, чем писателей..</p>
+
+<p><strong>Gamelander</strong> 29-10-2016</p>
+
+<p>Да, ваш калькулятор несомненно представляет интерес. Последняя выложенная версия уже достаточно работоспособна, видны доделки с прошлых релизов.</p>
+
+<p>Тормозит, правда, жутко, когда список удобрений листаешь.</p>
+
+<p><strong>Cyclamech</strong> 29-10-2016</p>
+
+<p>Больше кальков, всяких и разных! <em>crazy</em></p>
+
+<p><strong>FertilizerCalculator</strong> 29-10-2016</p>
+
+<blockquote>
+  <p>Да, ваш калькулятор несомненно представляет интерес. Последняя выложенная версия уже достаточно работоспособна, видны доделки с прошлых релизов.</p>
+
+  <p>Тормозит, правда, жутко, когда список удобрений листаешь.</p>
+</blockquote>
+
+<p>Поправил этот баг.</p>
+
+<p>1.0.6 - HOTFIX Устранены лаги интерфейса при промотке листа основной базы удобрений [спс Forthewin]</p>
+
+<p><a href="https://www.dropbox.com/s/hx9i910sfdgnimi/NSCv1.0.6.rar?dl=1" target="_blank">Скачать Nutrient Solution Calculator 1.0.6</a></p>
+
+<p><strong>Gamelander</strong> 30-10-2016</p>
+
+<p>А, вот еще, самое главное.</p>
+
+<p>Ваш калькулятор не дает забить Целевой раствор со значением количества элемента более 1000 миллиграмм/литр. И обязательно округляет до целых грамм количество в грамм/литр. То есть получить значение 1.3 гр/литр или 1300 мг/литр я не могу ни в каком случае. Это специально так сделано?</p>
+
+<p>Я Вам скажу, что это КРАЙНЕ плохо. Из-за этого я в тесте считал кое-что, начинал на дефлораторе, продолжал на NPKcalculator. А перед этим количество нужного NH4 в своем экселевском файлике.</p>
+
+<p><strong>Gamelander</strong> 30-10-2016</p>
+
+<p>И еще. Нельзя ли сделать экспорт результатов расчета? В txt какой-нибудь, например.</p>
+
+<p><strong>FertilizerCalculator</strong> 04-11-2016</p>
+
+<p>Новая версия. 1.0.7 - Исправлен баг не позволяющий делать целевой раствор с концентрацией элементов более 1000 миллиграмм/литр, добавлена возможность экспорта результата расчета в текст [спс Forthewin]. А так же подсказка о составе удобрений [спс freewind].</p>
+
+<p><a href="https://www.dropbox.com/s/cnrlol5i4th57xs/NSCv1.0.7.zip?dl=1" target="_blank">NSCv1.0.7.zip</a></p>
+
+<p><strong>Gamelander</strong> 04-11-2016</p>
+
+<p>Проверил на гарантированно правильных расчетах - считает верно. Спасибо, отличная работа!</p>
+
+<p><strong>ihands</strong> 06-11-2016</p>
+
+<p>Отловленный баг :-[:</p>
+
+<p>При экспорте в буфер для форумов не учитывается количество литров, на которые произведен расчет раствора, всегда пишет “Используемые удобрения на 1л воды”, при этом навески солей соответствуют другому литражу, который выбрал пользователь в калькуляторе.</p>
+
+<p><strong>FertilizerCalculator</strong> 10-11-2016</p>
+
+<p>Новая версия <a href="https://www.dropbox.com/s/bd94dmy7af9pvrx/NSCv1.1.4.zip?dl=1" target="_blank">Nutrient Solution Calculator 1.1.4</a></p>
+
+<p>[BUGFIX] При экспорте в тект и на форум, неправильно указывался целевой объем раствора (спс ihands). При ручном режиме расчета кнопки приоритета теперь не активны. При полностью ручном режиме расчета, нельзя было сменить целевой раствор.</p>
+
+<p>[NEW] Добавлена возможность отображать элементы не учавствующие в расчете. Добавлены несколько новых растворов.</p>
+
+<p><strong>FertilizerCalculator</strong> 22-11-2016</p>
+
+<p>Новая версия <a href="https://www.dropbox.com/s/npqwztp8xwuujcx/NSCv1.1.5.zip?dl=1" target="_blank">Nutrient Solution Calculator 1.1.5</a></p>
+
+<p>[Added]</p>
+
+<p>Реализована проверка наличия базы удобрений и ее корректность при запуске приложения.</p>
+
+<p>Добавлены новые растворы.</p>
+
+<p>Реализованна проверка наличия новой версии ПО и автоматическое обновление (Можно отключить в настройках).</p>
+
+<p>[Fixed]</p>
+
+<p>В текст сохранялись удобрения с нулевым расчетным весом.</p>
+
+<p>При полностью ручном расчете не отображались элементы с нулевым весом.</p>
+
+<p>[Changed]</p>
+
+<p>Проверка правильности вводимых даных в контролы веса.</p>
+
+<p><strong>Cyclamech</strong> 03-12-2016</p>
+
+<p>Кривая логика:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17823" target="_blank"><img src="/imagehost2/thumbs/234.png" alt="" /></a></p>
+
+<p>и неверные данные в базе удобрений. Пока низачот. <em>???</em></p>
+
+<p>Размышляем дальше:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17824" target="_blank"><img src="/imagehost2/thumbs/235.png" alt="" /></a></p>
+
+<p>если, конечно, действительно программист… <em>crazy</em></p>
+
+<p>“Donate” пока вообще лучше убрать, ибо на данном этапе хочется минуснуть кошелёк автора на самом деле. <em>crazy</em></p>
+
+<p><strong>Cyclamech</strong> 03-12-2016</p>
+
+<blockquote>
+  <p>…можете попробовать задать…</p>
+</blockquote>
+
+<p>Ммм… Вы правда надеетесь, что безумный пользователь сделает это лучше умной машины?</p>
+
+<p>А зачем тогда “калькуляторы” вообще?</p>
+
+<p><strong>Gamelander</strong> 03-12-2016</p>
+
+<p>Все рецепты, что я считал на этом калькуляторе, сходятся с большой точностью с ручными расчетами, если не доводить до абсурда и надписи “Невозможно сбалансировать”, используя всего одно удобрение.</p>
+
+<p>Чисто для плезира хотелось бы, чтобы единицей добавления навески в ручном режиме была не 0,1 грамма, а 0,01 грамма.</p>
+
+<p>Автору спасибо.</p>
+
+<p><strong>Cyclamech</strong> 03-12-2016</p>
+
+<p>“Я проверил на счётах” :-* <em>crazy</em></p>
+
+<p><strong>Cyclamech</strong> 03-12-2016</p>
+
+<blockquote>
+  <p>…если не доводить до абсурда…используя всего одно удобрение.</p>
+</blockquote>
+
+<p>Это не абсурд, а стандартный “предельный” тест.</p>
+
+<p>“Молотилке”, видимо, пофиг, сколько там компонентов - все они “считаются” по одинаковому принципу. Задав один компонент - мы пытаемся увидеть принцип. Вам просто везёт в Ваших проверках, ибо Вы, видимо, используете достойный набор компонентов, который позволяет реализовать весьма широкое поле профилей (по крайней мере, он легко реализует все те профили, которые Вы “попробовали”). “Молотилка” на самом деле по неверному принципу отвешивает Вам такой вариант, который Вам лишь кажется похожим на верный. <em>Bos</em> :-*</p>
+
+<p><strong>FertilizerCalculator</strong> 03-12-2016</p>
+
+<blockquote>
+  <p>“Donate” пока вообще лучше убрать, ибо на данном этапе хочется минуснуть кошелёк автора на самом деле. <em>crazy</em></p>
+</blockquote>
+
+<p>Если вам станет от этого легче то на кошелек пришло примерно 0,3$ пожертвований. Что на самом деле достаточно грустно, я думал гроверы оценят труды коллеги. <em>???</em></p>
+
+<p>Однако программа всетаки и писалась изначально как бесплатная, с возможностью отблагодарить автора по желанию, поэтому я сильно не переживаю на счет доната, для меня он стал неким показателем нужности вложений своих сил в бесплатный софт. :D</p>
+
+<p>Если вам был интересен алгоритм могли бы просто спросить. Алгоритмы балансировки лежат в области задач нахождения экстремумов целевой функции в конечном векторном простаранстве.</p>
+
+<p>Я всегда рад конструктивной критике но пытаться оптимизировать единственную переменную в уравнении это как умножать 2*2 и хотеть что бы получилось 10. Рано или поздно вы и сами придете к этому выводу.</p>
+
+<p><strong>Cyclamech</strong> 03-12-2016</p>
+
+<blockquote>
+  <p>…но пытаться оптимизировать единственную переменную в уравнении это как…</p>
+</blockquote>
+
+<p>Нет, не так. Немножко сложнее. <em>???</em></p>
+
+<p>Здесь думанья мало, тут нужно подключать мышление.</p>
+
+<p><strong>Cyclamech</strong> 03-12-2016</p>
+
+<p>Но мне нравится, что Вы начали “ответ” именно с кошелька.</p>
+
+<p>Значит, всё остальное удачно растворилось…</p>
+
+<p><strong>FertilizerCalculator</strong> 04-12-2016</p>
+
+<p>Народ есть тут среди вас химики? Надо расписать алгоритм нахождения водородного показателя раствора.</p>
+
+<p>Насколько я понял из букварей, что бы вычислить PH нужно знать количественное значение дисассоциированных молекул водорода в жидкости. И все бы ничего, но есть одно но. На большенстве удобрений указывается лишь компоненты, а не полное название солей их сожержащих (исключение составляют NH4 и NO3 их иногда указывают). Например в составе кислоты H2SO4 = 2H[1+] + SO4[2-]. Однако сера может быть и в составе другого соединения например соль этой кислоты CaSO4 = Ca[2+] + SO4[2- ].</p>
+
+<p>Вот и получатся что сера в составе одного вещества будет изменять баланс PH, а в составе другого вещества не будет менять баланс PH.</p>
+
+<p>С другой стороны наибольшее движение PH вызывает имменно баланс аммонитов к нитратам, т.к. растение ест их неравномерно и возможно стоит придерживать баланс именно аммонитов к нитратам, т.к. отавльные компоненты в количественном отношении к ним пренебрежительно малы и не могут сколько либо сильно повлиять на водородный баланс. В любом случае мировая индустрия придерживается мнения что PH нужно поддерживать либо добавлением сьеденых элементов либо путем добавления буфферных растворов, достать которые у нас не так то просто.</p>
+
+<p>Так что чисто теоретически можно вывереть режим кормления при котором можно будет добавлять по больше части азот в нужной форме что NH4 / NO3 а он в свою очередь будет править PH до необходимого уровня, но это лишь предположение требующее тестов в реальных условиях.</p>
+
+<p><strong>Gamelander</strong> 04-12-2016</p>
+
+<p>Вычисление рН вряд ли необходимо при расчете раствора.</p>
+
+<p>Процент азота в аммонийной форме должен быть изначально 6-7% от общего, уже многократно проверено. Лично я склоняюсь всегда к 7%.</p>
+
+<p>Здорово было бы, если бы в калькуляторе можно было опционально задавать не строгое количество нитратной и аммонийной формы, а общий азот и процент аммония, чтобы кальк сам раскадывал на NO3 и NH4, а то это соотношение приходится считать в отдельном файлике. Ну это так, необязательно.</p>
+
+<p>Гораздо важнее и нужнее, если калькулятор будет показывать ЕС рассчитанного раствора (без учета воды, конечно). У Cyclamech в экселевском “Дефлораторе” это очень неплохо вышло.</p>
+
+<p>И, пожалуйста, в следующем билде обратите внимание на просьбу “… хотелось бы, чтобы единицей добавления навески в ручном режиме была не 0,1 грамма, а 0,01 грамма.” Это при добавлении путем “стрелочка вверх-вниз кликом мышкой”.</p>
+
+<p>Спасибо.</p>
+
+<p><strong>Cyclamech</strong> 04-12-2016</p>
+
+<blockquote>
+  <p>И, пожалуйста, в следующем билде обратите внимание на просьбу “… хотелось бы, чтобы единицей добавления навески в ручном режиме была не 0,1 грамма, а 0,01 грамма.” Это при добавлении путем “стрелочка вверх-вниз кликом мышкой”.</p>
+
+  <p>Спасибо.</p>
+</blockquote>
+
+<p>Да и вообще хотелось бы динамические (“умные”) шаги спиннеров иметь… :D</p>
+
+<p><strong>Cyclamech</strong> 04-12-2016</p>
+
+<blockquote>
+  <p>Здорово было бы, если бы в калькуляторе можно было…</p>
+</blockquote>
+
+<p>Здорово было бы, если бы можно было бы создавать и/или редактировать профили в удобных представлениях и специальном интерфейсе, манипулируя при желании этими “удобными представлениями”.</p>
+
+<p>Сегодня Вы хотите процент аммонийной формы задавать, а завтра захотите задавать ещё и ЕС и соотношения элементов. А потом ещё захотите и проверять свежесозданный профиль на сбалансированность. Пройдено ведь уже. <em>crazy</em></p>
+
+<p><strong>Cyclamech</strong> 04-12-2016</p>
+
+<blockquote>
+  <p>Да и вообще хотелось бы динамические (“умные”) шаги спиннеров иметь… :D</p>
+</blockquote>
+
+<p>Что здесь можно предложить из самого простого?</p>
+
+<p>Во-первых, подумать, чем отвешивает навески пользователь? На десятку литров он может хотеть (иметь возможность) отвешивать на электронных весах с точностью до 0,01 грамма (потому, вероятно, пользователь и просит изменить шаг спиннера на такой), а в некоторых случаях - до 0,001 грамма. Отсюда следует, что есть некий оптимальный шаг, который можно выбрать за дефолтный. В пределе - позволить пользователю задавать это дефолтное значение в конфиге.</p>
+
+<p>Во-вторых, добавить “динамики”: при отвешивании навесок, например, на 100 литров раствора может захотеться иной точности (иного шага спиннера). Стоит попробовать его изменять пропорционально количеству литров раствора, не? <em>???</em></p>
+
+<p><strong>Cyclamech</strong> 05-12-2016</p>
+
+<p>Я тестирую свои алгоритмы оптимизации, потому интересно сравнить.</p>
+
+<p>Мы “усложнили” задачу: теперь тестируются 2 компонента, имитируя реальность. Это кристалон + кальцинит.</p>
+
+<p>Задали произвольный профиль, задали процентовки коричневого кристалона и кальцинита. Запускаем:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17825" target="_blank"><img src="/imagehost2/thumbs/236.png" alt="" /></a></p>
+
+<p>Кальк предложил дефолтный вариант, который не подходит сразу: он “дознёт” наши растения. <em>crazy</em> Т.е., не стоило и предлагать, тем более по дефолту.</p>
+
+<p>Попробуем запретить превышение по калию?</p>
+
+<p><a href="https://t.me/ponics_ru_files/17826" target="_blank"><img src="/imagehost2/thumbs/237.png" alt="" /></a></p>
+
+<p>Вроде как лучше, но почему-то кальк постеснялся добавить ещё кальцинита. <em>???</em></p>
+
+<p>А вот так у меня получилось ручками подобрать:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17827" target="_blank"><img src="/imagehost2/thumbs/238.png" alt="" /></a></p>
+
+<p>Не кажется ли вам, что пока мои “наколенные счёты” выигрывают у “умной машины”? <em>crazy</em></p>
+
+<p><strong>FertilizerCalculator</strong> 06-12-2016</p>
+
+<blockquote>
+  <p>А вот так у меня получилось ручками подобрать:</p>
+
+  <p><a href="https://t.me/ponics_ru_files/17828" target="_blank"><img src="/imagehost2/thumbs/238.png" alt="" /></a></p>
+
+  <p>Не кажется ли вам, что пока мои “наколенные счёты” выигрывают у “умной машины”? <em>crazy</em></p>
+</blockquote>
+
+<p>У меня получилось так в авто режиме:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17829" target="_blank"><img src="/imagehost2/thumbs/yyy.png" alt="" /></a></p>
+
+<p>Ограничил передозировку по калию нажав “Запретить повышеную дозировку”, а Ca сделал обязательным в расчете нажав кнопочку. “Сделать обязательным компонентом”</p>
+
+<p><strong>Cyclamech</strong> 06-12-2016</p>
+
+<p>Крутые бирюльки, чо! Только смысл? :D</p>
+
+<p>Вопрос мой был в том, почему “хитроумный оптимизатор” предлагает оптимальный вариант только на 3-м шаге при условии, что пользователь угадает эти шаги. Я бы хотел получать оптимальный ответ сразу, к чему мне этот не вполне осознанный перебор вариантов осуществлять?</p>
+
+<p>…</p>
+
+<p>Получаем тот же Hydroodo, вид сбоку. <em>???</em></p>
+
+<p><strong>siv237</strong> 06-12-2016</p>
+
+<blockquote>
+  <p>Крутые бирюльки, чо! Только смысл? :D</p>
+
+  <p>Вопрос мой был в том, почему “хитроумный оптимизатор” предлагает оптимальный вариант только на 3-м шаге при условии, что пользователь угадает эти шаги. Я бы хотел получать оптимальный ответ сразу, к чему мне этот не вполне осознанный перебор вариантов осуществлять?</p>
+
+  <p>…</p>
+
+  <p>Получаем тот же Hydroodo, вид сбоку. <em>???</em></p>
+</blockquote>
+
+<p>Иллюзия причастности к результату. Типа полуавтомат.</p>
+
+<p><strong>Cyclamech</strong> 06-12-2016</p>
+
+<blockquote>
+  <p>Иллюзия причастности к результату. Типа полуавтомат.</p>
+</blockquote>
+
+<p>Ммм… Сперва хотелось бы полного автомата (для широкого круга пользователей, 99%), а потом “энтузиастам” уже можно и “типтроник” предлагать… :D</p>
+
+<p><strong>FertilizerCalculator</strong> 06-12-2016</p>
+
+<blockquote>
+  <p>Крутые бирюльки, чо! Только смысл? :D</p>
+
+  <p>Вопрос мой был в том, почему “хитроумный оптимизатор” предлагает оптимальный вариант только на 3-м шаге при условии, что пользователь угадает эти шаги. Я бы хотел получать оптимальный ответ сразу, к чему мне этот не вполне осознанный перебор вариантов осуществлять?</p>
+
+  <p>…</p>
+
+  <p>Получаем тот же Hydroodo, вид сбоку. <em>???</em></p>
+</blockquote>
+
+<p>Можно найти оптимальное соотношение когда у вас не 2 удобрения скажем 7 и на все про все у вас уйдет за 3 щелчка мышкой.</p>
+
+<p>Hydroodo считал оптимальный состав методом перебора вариантов из за чего у него был огрничено количество удобрений которые он мог одновременно оптимизировать (если не ошибаюсь что то около 7 или 10).</p>
+
+<p>Мой софт оптимизирует абсолютно любое количество удобрений с точностью до миллионных долей всего за пару кликов.</p>
+
+<p>Возможность ручного выбора приоритета компонетов оставлена намеренно для того чтобы можно было намеренно разрешить передоз по некоторым микроэлементам.</p>
+
+<p>А самое главное что калькулятором удобно пользоваться мне ;).</p>
+
+<p><strong>Cyclamech</strong> 06-12-2016</p>
+
+<blockquote>
+  <p>А самое главное что калькулятором удобно пользоваться мне ;).</p>
+</blockquote>
+
+<p>Да, мне тоже так сказали, что калькуляторостроители пишут кальки для себя. <em>crazy</em></p>
+
+<p>Калькуляторе на 20-м мне всё-таки захотелось сделать “для людей”.</p>
+
+<p><strong>Cyclamech</strong> 06-12-2016</p>
+
+<blockquote>
+  <p>Можно найти оптимальное соотношение когда у вас не 2 удобрения скажем 7 и на все про все у вас уйдет за 3 щелчка мышкой.</p>
+</blockquote>
+
+<p>Разработанный нами оптимизатор выдаёт оптимальное решение сразу при произвольном количестве компонентов… Без участия пользователя… <em>???</em></p>
+
+<p>Впрочем, так же делает и решатель в экселе:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17829" target="_blank"><img src="/imagehost2/thumbs/239.png" alt="" /></a></p>
+
+<p><em>Bos</em> <em>???</em></p>
+
+<p><strong>Cyclamech</strong> 06-12-2016</p>
+
+<blockquote>
+  <p>Мой софт оптимизирует абсолютно любое количество удобрений с точностью до миллионных долей всего за пару кликов.</p>
+</blockquote>
+
+<p>Я не заметил этой радости: Ваши “пару кликов” для пользователя оборачиваются квестом на самом деле. Избавьте от этого квеста - и жизнь станет проще.</p>
+
+<p><strong>Cyclamech</strong> 06-12-2016</p>
+
+<blockquote>
+  <p>А самое главное что калькулятором удобно пользоваться мне ;).</p>
+</blockquote>
+
+<p>А разве Вы умеете выращивать растения? :-\</p>
+
+<p><strong>Gamelander</strong> 11-12-2016</p>
+
+<p>В редакторе базы невозможно добавить удобрение, элементы и соединения в котором выражены в граммах/литр или мг/литр, добавляются в любом случае только %, калькулятор сам преобразовывает в % вернее.</p>
+
+<p><strong>Cyclamech</strong> 12-12-2016</p>
+
+<blockquote>
+  <p>В редакторе базы невозможно добавить удобрение, элементы и соединения в котором выражены в граммах/литр или мг/литр, добавляются в любом случае только %, калькулятор сам преобразовывает в % вернее.</p>
+</blockquote>
+
+<p>Удобрения характеризуются только процентовками.</p>
+
+<p><strong>Cyclamech</strong> 14-12-2016</p>
+
+<p>Вот вам, видимо, и конструктивная критика - аффтара уже неделю не видать чойта. <em>???</em> :D</p>
+
+<p>Не подумайте плохого…</p>
+
+<p><strong>siv237</strong> 14-12-2016</p>
+
+<blockquote>
+  <p>Вот вам, видимо, и конструктивная критика - аффтара уже неделю не видать чойта. <em>???</em> :D</p>
+
+  <p>Не подумайте плохого…</p>
+</blockquote>
+
+<p>Ну тут как бы критика от конкурента, который точно не будет использовать решение.</p>
+
+<p>Нормальный процесс, у каждого свои идеи и принципы. Я бы тоже покритиковал бы кальк или похвалил, но запускать винду каждый раз лень а в вайне оно не пашет :(</p>
+
+<p>Хотя моя критика будет еще менее продуктивна ибо я предпочитаю использовать собственный кальк который даже не кальк, а просто проверочная таблица в экселе и все навески я люблю подбирать ручками и смотреть на результат.</p>
+
+<p>Так что по сути от реальных пользователей то особо фидбека и нету тут, вот автор и не парится да и делает для себя. А то, что выкладывает и бесплатно, достойно только похвалы. Сколько людей способны создать в этом мире хоть что-то полезное? А сколько из них готовы отдать это безвозмездно всем желающим?</p>
+
+<p>Так, что давайте проявлять терпимость и уважение к таким людям, как говорится художника обидеть может каждый.</p>
+
+<p><strong>FertilizerCalculator</strong> 18-12-2016</p>
+
+<p><a href="https://www.dropbox.com/s/frqy9glzw75ips6/NSCv1.1.6.zip?dl=1" target="_blank">Скачать NSCalc v1.1.6</a></p>
+
+<p>[Added]</p>
+
+<p>Добавлена возможность изменять значение шага веса, при ручном подборе веса удобрения. [спс Forthewin]</p>
+
+<p>[Fixed]</p>
+
+<p>Удобрения с нулевым рассчитанным весом теперь не экспортируются в TXT и на форум.</p>
+
+<p>Более точное отображение размера передорзировки.</p>
+
+<p>[Changed]</p>
+
+<p>Уменьшен рамер инкремента ручного ввода веса удобрения по умолчанию.</p>
+
+<p><strong>Cyclamech</strong> 18-12-2016</p>
+
+<p>Приятно быть понятым. :)</p>
+
+<p>Как дела с алгоритмом подбора?</p>
+
+<p><strong>FertilizerCalculator</strong> 18-12-2016</p>
+
+<blockquote>
+  <p>В редакторе базы невозможно добавить удобрение, элементы и соединения в котором выражены в граммах/литр или мг/литр, добавляются в любом случае только %, калькулятор сам преобразовывает в % вернее.</p>
+</blockquote>
+
+<p>Солидарен с Cyclamech, состав удобрения в основном указываются в процентовке.</p>
+
+<p>Я видел случаи когда это было не так, однако попадаются такие ооочень редко.</p>
+
+<p>В общем случае всегда можно перевести граммы/миллиграмм в проценты. Если что то подобное попадется пишите, переведу в проценты. Поставлю эту задачу в todo лист, возможно когда то реализую перевод [вес в %] в коде.</p>
+
+<p><strong>Cyclamech</strong> 18-12-2016</p>
+
+<blockquote>
+  <p>В общем случае всегда можно перевести граммы/миллиграмм в проценты. Если что то подобное попадется пишите, переведу в проценты. Поставлю эту задачу в todo лист, возможно когда то реализую перевод [вес в %] в коде.</p>
+</blockquote>
+
+<p>Это, ИМХО, лишнее: граммы и миллиграммы заданы на литр, т.е., это тысячные доли литра. Промилле, если “по науке”. Передвигая “в уме” десятичную запятую на разряд влево(?), мы получим проценты, ибо 10 промилле - 1 процент.</p>
+
+<p><strong>Gamelander</strong> 18-12-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>В редакторе базы невозможно добавить удобрение, элементы и соединения в котором выражены в граммах/литр или мг/литр, добавляются в любом случае только %, калькулятор сам преобразовывает в % вернее.</p>
+  </blockquote>
+
+  <p>Солидарен с Cyclamech, состав удобрения в основном указываются в процентовке.</p>
+
+  <p>Я видел случаи когда это было не так, однако попадаются такие ооочень редко.</p>
+
+  <p>В общем случае всегда можно перевести граммы/миллиграмм в проценты. Если что то подобное попадется пишите, переведу в проценты. Поставлю эту задачу в todo лист, возможно когда то реализую перевод [вес в %] в коде.</p>
+</blockquote>
+
+<p>Не надо в туду, кальк и так сам правильно переводит в проценты при указании г/л.</p>
+
+<p><strong>Gamelander</strong> 18-12-2016</p>
+
+<p>Верно ли я понимаю, что в принципе достаточно EXE новый закинуть их сборки и калькулятор с имеющейся базой будет нормально работать?</p>
+
+<p>Если нет, то каковы пути обновления на новую версию с сохранением всего, что добавлено?</p>
+
+<p><strong>FertilizerCalculator</strong> 18-12-2016</p>
+
+<p><a href="https://www.dropbox.com/s/ndec6l258gvvxh3/NSCv1.1.7.zip?dl=1" target="_blank">Скачать NSCalc v1.1.7</a></p>
+
+<p>Нашел багу приводящую к падению проги в некоторых случаях, пришлось новый билд сделать.</p>
+
+<p><strong>FertilizerCalculator</strong> 18-12-2016</p>
+
+<blockquote>
+  <p>Не надо в туду, кальк и так сам правильно переводит в проценты при указании г/л.</p>
+</blockquote>
+
+<p>Кстати да, полез смотреть оказалось что уже реализовано ))</p>
+
+<p><strong>FertilizerCalculator</strong> 18-12-2016</p>
+
+<blockquote>
+  <p>Верно ли я понимаю, что в принципе достаточно EXE новый закинуть их сборки и калькулятор с имеющейся базой будет нормально работать?</p>
+
+  <p>Если нет, то каковы пути обновления на новую версию с сохранением всего, что добавлено?</p>
+</blockquote>
+
+<p>Верно. Файл с базой - FertilizerDatabase.db. Его закидываете в папку с новой версией и все. Либо пользуетесь автоабновлением.</p>
+
+<p><strong>vladindre</strong> 27-02-2017</p>
+
+<p>Уважаемый , FertilizerCalculator. Посмотрел Ваш калькулятор NSC 1.1.7. Удобрение Акварин хвойный без азота. Пытался отредактировать - заводил N и процент -3%. Отказывается добавлять. Это правильно или как ?</p>
+
+<p>Интересно , что в предыдущих версиях этот Акварин редактируется , а в последнем что-то не хочет. Но хотелось бы поиграться с самой последней более продвинутой версией.</p>
+
+<p>И еще -выводит микроэлементы в составе смеси как несуществующие(серый цвет) хотя Акварин с добавками микроэлементов. Или я что-то не понимаю</p>
+
+<p><strong>vladindre</strong> 27-02-2017</p>
+
+<p>Разобрался таки с занесением данных. Надо было дважды нажимать кнопку добавить/изменить.</p>
+
+<p>Но вот новая непонятность. В колонке “ рассчитано “ калькулятор не суммирует аммиачную и нитратную составляющие. На вид вроде как правильно считает , но не суммирует. Может это какой мелкий программный косяк ? Причем так получается и в автоматическом и в ручном режиме.</p>
+
+<p>Экран не прикрепляется “ Папка upload заполнена. Попробуйте файл меньшего размера или свяжитесь с Администратором.”</p>
+
+<p><strong>Cyclamech</strong> 27-02-2017</p>
+
+<blockquote>
+  <p>Экран не прикрепляется “ Папка upload заполнена. Попробуйте файл меньшего размера или свяжитесь с Администратором.”</p>
+</blockquote>
+
+<p><a href="https://t.me/ponics_ru_files/17830" target="_blank"><img src="/imagehost2/thumbs/324.png" alt="" /></a></p>
+
+<p>Местная “фича”. <em>crazy</em></p>
+
+<p><strong>vladindre</strong> 27-02-2017</p>
+
+<p>Спасибо , Cyclamech.</p>
+
+<p><a href="https://t.me/ponics_ru_files/17831" target="_blank"><img src="/imagehost2/thumbs/1rwr.jpg" alt="" /></a></p>
+
+<p><strong>Cyclamech</strong> 27-02-2017</p>
+
+<p>Не думаю, что нам с Вами стоит разбирать здесь все косяки этой поделки… <em>???</em> Ведь Вы используете ручной подбор, а автор озвучивал свою цель выше.</p>
+
+<p>Вам лучше понять мои замечания к Вашему рецепту. Фантастический калькулятор мог бы сам Вам выразить эти претензии.</p>
+
+<p>Понимаете ли, любое комплексное удобрение - это реализация какого-либо конкретного профиля, набора профилей или, скажем проще, реализация конкретной идеи по питанию. Если грубо - то хвойный акварин - для отращивания хвои. <em>crazy</em></p>
+
+<p>Нам же наделали калькуляторов, которые якобы позволяют из хвои помидоры получать. :-\ Ну отчасти это правдиво. <em>crazy</em></p>
+
+<p>Я вижу по набору ингредиентов, что Вы выбрали двухкомпонентную схему, подразумевающую смешивание комплекса с кальциевой селитрой. Вы, вероятно, слышали (или узнали на практике), что комплексы частенько содержат недостаток магния, потому Вы решили поднимать магний дополнительно - магниевым корректором (сульфат магния, действительно, хорош в этой роли). Нормально. Только вопрос, почему Вы сразу не включили в комплект своих ингредиентов и корректор аммония, например, аммиачную селитру или сульфат аммония?</p>
+
+<p>Про магний в комплексах Вы знаете, а почему не знаете про фосфор? Его обычно обратно магнию - слишком много. Потому, при тупых автоматах в кальках, комплекс просто упирается в уровень фосфора - и стоп навеска. Не бойтесь его превысить - 0,7 г/л маловато для комплекса: он дал Вам мизер микроэлементов, дал мало азота, не дал нужного количества калия и т.д. Зато Вы кальциевой селитры набухали от души! Вот её лучше насыпать ровно по уровень кальция, а остальное - досыпать комплексом, потом магний подровнять.</p>
+
+<p><strong>vladindre</strong> 28-02-2017</p>
+
+<p>Уважаемый , Cyclamech. Благодарю за анализ моего состава. Выбор хвойного обоснован его составом 3 11 35.</p>
+
+<p>Это традиционная популярная основа для “ добития его “ до нужного раствора. Обычно используют Valagro Master 3 11 35(38)+Mg. Но у нас валагро не водится , а зато Акварина полно. Не вижу ничего страшного в использовании Акварина. Главное ведь состав , А то что назвали хвойный это обычные маркетинговые штучки. Надо ведь сбывать товар вот и наизобретают всяких названий – для фиалок , картохи , овощей , земляничный , для перца и так до бесконечности. Эти названия для обывателей , которым неинтересно и неохота разбираться со всей этой кухней. “ Просто добавь воды “. Главное ведь состав. Вы же это прекрасно знаете.</p>
+
+<p>Насчет аммиачки неверно. У меня правда не Буйская селитра , а Фертика. Но состав почти как Буйская гранулированная (14,2 NO3+0,7NH4)/. У Фертика 14,5+1. Так что с аммиачной составляющей дело обстоит неплохо. Тем более Вы же видели в составе 13,8 мг/л аммиачки .</p>
+
+<p>Раньше я пользовался Агриколой по причине лени. Но у него ужасный недобор по существенным элементам. Главный – это отсутствие кальция как у всех комлексных , а это уже полный out. Нет железа. Выращивать при таких дефицитах абсурдно.</p>
+
+<p>Я проращиваю в торфе и надеюсь как бы , что он что-то даст. Но в торфе изначально нет кальция и много чего другого. Так как все перевожу на гидропонику , то пришлось пересилить лень и затарится почти всем необходимым . Месить из чистых солей весь состав пока не готов морально( но со временем к нему и приду). Пока попользуюсь промежуточным вариантом Полагаю вариант комплексное + добавки нужные тоже неплохой вариант. И по случаю вопрос.</p>
+
+<p>Поскольку кальциевая селитра страшно гигроскопична , то вариант хранения только один – в растворе. Вопрос в концентрации – как максимально утрамбовать ее в воду ? Пока планирую в емкости 5л растворить 0,5кг селитры( типа 1:10 ). А можно ли туда загнать весь 1 кг(пакет) , чтобы поменьше плодить емкостей , а то у меня уже бардак как в химлаборатории – бутылки , банки , коробки. Ужос.</p>
+
+<p>Думаю можно , так как это ведь не смешивание готового раствора . Это в готовом при неправильном приготовлении могут быть осадки из кальция и еще чего-нибудь. А чистые вещества можно намесить до предела растворимости и разумеется с учетом возможных понижений температуры хранения. Интересно каков срок хранения таких суперконцентратов чистых веществ.</p>
+
+<p>И забыл – тогда уж сразу вопрос по микроэлементам. При использовании комплексного не удается догнать почти по всем микроэлементам и особенно по железу . Получается в районе 0,4мг/л. Если добить железо Аквамиксом , то не будет ли сильный передоз по другим , особенно по бору. Хелата железа у меня нет. А приготовить его пока не сподобился . В продаже тоже не видать. Потом думаю сам замесить , но пока нет.</p>
+
+<p>Вообще мне больше всего нравится Hydroodo , а кальк NSC попробовал из любопытства. Посмотреть на что способно очередное творение людей. Испытывал Ваши калькуляторы , но толком ничего не понял.</p>
+
+<p>Варианты меняются как в калейдоскопе. Да и откровенно говоря не сильно дружен я с Excel и с его невразумительным языком программирования несмотря на мой долгий и многолетний опыт программирования в других областях (контроллеры , панели , Matlab и прочие специализированные штучки).</p>
+
+<p><strong>siv237</strong> 28-02-2017</p>
+
+<blockquote>
+  <p>Поскольку кальциевая селитра страшно гигроскопична , то вариант хранения только один – в растворе. Вопрос в концентрации – как максимально утрамбовать ее в воду ? Пока планирую в емкости 5л растворить 0,5кг селитры( типа 1:10 ). А можно ли туда загнать весь 1 кг(пакет) , чтобы поменьше плодить емкостей , а то у меня уже бардак как в химлаборатории – бутылки , банки , коробки. Ужос.</p>
+</blockquote>
+
+<p>Вот недавно растворял соли стараясь быть близким к пределам растворения для 10 градусов цельсия. Таблица результатов:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17832" target="_blank"><img src="/imagehost2/thumbs/20170227200728.png" alt="" /></a></p>
+
+<p>Если температура раствора упадет ниже 10 градусов, то начнется перекристаллизация, потому хранить в тепле.</p>
+
+<p>Метод растворения такой, берем пачку соли, взвешиваем, высыпаем в канистру, взвешиваем пакетик. Определяем сколько точно насыпали соли. Вливаем расчетное колличество воды. Кидаем в канистру помпу, а саму канистру в тазик с горячей водой. Включаем помпу. Минут через 10 полное растворение без трудозатрат.</p>
+
+<p>Выливаем все это дело по бутылкам. Замеряем точный вес полученного раствора ровно по метке объема. Например полтора литра раствора весит Х грамм, а аналогичный вес чистой воды 1500 грамм. Получаем делим Х/1500 и получаем коэффициент веса или плотность относительно воды. Дальше взвешиваем ваши емкости (не забудте отнять вес тары) и зная коэффициент веса легко получаем объем в миллилитрах. Зная объем в мл и вес насыпанного удобрения определяем главный параметр, граммы на литр.</p>
+
+<p>Теперь зная этот параметр можно любой рецепт отмерять шприцом в мл. или используя коэффициент веса отмерять раствор соли простыми весами.</p>
+
+<p><strong>vladindre</strong> 28-02-2017</p>
+
+<p>Благодарю , siv237. Именно так я и собираюсь делать - с учетом всех весов и объемов на случай разных способов дозирования исходных веществ. Или по объему или по весу. Люди разбиты на два лагеря - “ объемщики “ и “ весовщики “. Я обычно на весах взвешивал. Но теперь при наличии концентратов посмотрю , что будет удобней - шприц или весы. :(</p>
+
+<p><strong>Cyclamech</strong> 28-02-2017</p>
+
+<blockquote>
+  <p>Люди разбиты на два лагеря - “ объемщики “ и “ весовщики “. Я обычно на весах взвешивал. Но теперь при наличии концентратов посмотрю , что будет удобней - шприц или весы. :(</p>
+</blockquote>
+
+<p>Я давно предложил основу для объединения “лагерей”: на выходе всех расчётов у siv237 должны получиться процентовки монораствора. Зная плотность, эти процентовки можно представить весовыми и объёмными. Теперь можно просто занести монораствор в любой калькулятор как удобрение и использовать его идентично остальным. Если занести весовые процентовки, то кальки будут считать в граммах, а если объёмные - то в миллилитрах.</p>
+
+<p><strong>Cyclamech</strong> 28-02-2017</p>
+
+<blockquote>
+  <p>Насчет аммиачки неверно. У меня правда не Буйская селитра , а Фертика.</p>
+</blockquote>
+
+<p>Я смотрю на скриншот, а не Вам в шкаф… <em>???</em></p>
+
+<blockquote>
+  <p>Так что с аммиачной составляющей дело обстоит неплохо. Тем более Вы же видели в составе 13,8 мг/л аммиачки .</p>
+</blockquote>
+
+<p>Я видел и даже попытался Вам объяснить, но, видимо, есть какая-то проблема.</p>
+
+<p>Вы использовали кальциевую селитру как основной (и единственный) источник аммония, что неверно: кальциевая селитра - это основной источник кальция и нитрата, аммоний там просто “примешан” (ведь разговор идёт о гранулированной кальциевой селитре, в которую добавляется аммиачная селитра для повышения потребительских свойств). Вы же извратили принцип, при этом нагло превысили уровень кальция, а ведь его уровень очень важен!</p>
+
+<p><strong>siv237</strong> 28-02-2017</p>
+
+<p>Вот универсальная проверка раствора на пригодность, выведенная мной статистически.</p>
+
+<p>K/Mg &lt; 10 ед.</p>
+
+<p>1&lt;K/Ca&lt;2</p>
+
+<p>N/Ca &lt;1,5</p>
+
+<p>K/Ca &gt;= N/Ca</p>
+
+<p>Возможно она и не аксиома, но точно в неё входят большинство профилей питания вызывающих мое доверие. Проверьте свой профиль по ним.</p>
+
+<p><strong>Cyclamech</strong> 28-02-2017</p>
+
+<blockquote>
+  <p>Возможно она и не аксиома, но точно в неё входят большинство профилей питания вызывающих мое доверие. Проверьте свой профиль по ним.</p>
+</blockquote>
+
+<p>Смысл? Профиль указан на скриншоте - перечный с поникс.ру</p>
+
+<p><strong>vladindre</strong> 28-02-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Насчет аммиачки неверно. У меня правда не Буйская селитра , а Фертика.</p>
+  </blockquote>
+
+  <p>Я смотрю на скриншот, а не Вам в шкаф… <em>???</em></p>
+
+  <blockquote>
+    <p>Так что с аммиачной составляющей дело обстоит неплохо. Тем более Вы же видели в составе 13,8 мг/л аммиачки .</p>
+  </blockquote>
+
+  <p>Я видел и даже попытался Вам объяснить, но, видимо, есть какая-то проблема.</p>
+
+  <p>Вы использовали кальциевую селитру как основной (и единственный) источник аммония, что неверно: кальциевая селитра - это основной источник кальция и нитрата, аммоний там просто “примешан” (ведь разговор идёт о гранулированной кальциевой селитре, в которую добавляется аммиачная селитра для повышения потребительских свойств). Вы же извратили принцип, при этом нагло превысили уровень кальция, а ведь его уровень очень важен!</p>
+</blockquote>
+
+<p>Ну что ж. Наверное добавлю в состав нитрат аммония.</p>
+
+<p><strong>Cyclamech</strong> 28-02-2017</p>
+
+<blockquote>
+  <p>Я давно предложил основу для объединения “лагерей”: на выходе всех расчётов у siv237 должны получиться процентовки монораствора. Зная плотность, эти процентовки можно представить весовыми и объёмными. Теперь можно просто занести монораствор в любой калькулятор как удобрение и использовать его идентично остальным. Если занести весовые процентовки, то кальки будут считать в граммах, а если объёмные - то в миллилитрах.</p>
+</blockquote>
+
+<p>Нужен простой калькулятор, вычисляющий процентовки монорастворов, и таблица растворимости.</p>
+
+<p>Далее заносим, например, в гидроодо и пользуем как рядовой компонент:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17833" target="_blank"><img src="/imagehost2/thumbs/321mem.png" alt="" /></a></p>
+
+<p><strong>Cyclamech</strong> 28-02-2017</p>
+
+<p>Впрочем, и здесь лишнее. Достаточно простых счёт:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17834" target="_blank"><img src="/imagehost2/thumbs/322ooo.png" alt="" /></a></p>
+
+<p><em>crazy</em></p>
+
+<p><strong>FertilizerCalculator</strong> 28-02-2017</p>
+
+<blockquote>
+  <p>Разобрался таки с занесением данных. Надо было дважды нажимать кнопку добавить/изменить.</p>
+
+  <p>Но вот новая непонятность. В колонке “ рассчитано “ калькулятор не суммирует аммиачную и нитратную составляющие. На вид вроде как правильно считает , но не суммирует. Может это какой мелкий программный косяк ? Причем так получается и в автоматическом и в ручном режиме.</p>
+
+  <p>Экран не прикрепляется “ Папка upload заполнена. Попробуйте файл меньшего размера или свяжитесь с Администратором.”</p>
+</blockquote>
+
+<p>Азот действительно не суммируется, это не глюк.</p>
+
+<p>Если вносите азот в удобрение по формам, то обязательно нужно внести и суммарный азот, попробую в будущих версиях что то с этим сделать, но пока только так.</p>
+
+<p><strong>vladindre</strong> 01-03-2017</p>
+
+<p>Теперь понятно. Это не очень страшный просчет.</p>
+
+<p><strong>Gamelander</strong> 01-03-2017</p>
+
+<p>Считаю, что это как раз правильное решение, чтобы не было путаницы. Вносите азот по формам и всё будет хорошо.</p>
+
+<p>Вот что было бы очень интересно иметь в калькуляторе, так это возможность ввести количество общего азота и процент аммонийного азота, чтобы кальк сам пересчитывал и выдавал уже 3 значения - N общий, NO3, NH4.</p>
+
+<p>В остальном считаю калькулятор идеальным решением для начинающих.</p>
+
+<p><strong>siv237</strong> 01-03-2017</p>
+
+<blockquote>
+  <p>Считаю, что это как раз правильное решение, чтобы не было путаницы. Вносите азот по формам и всё будет хорошо.</p>
+
+  <p>Вот что было бы очень интересно иметь в калькуляторе, так это возможность ввести количество общего азота и процент аммонийного азота, чтобы кальк сам пересчитывал и выдавал уже 3 значения - N общий, NO3, NH4.</p>
+
+  <p>В остальном считаю калькулятор идеальным решением для начинающих.</p>
+</blockquote>
+
+<p>раз предлагаете корректировать исходный профиль по аммонию то тогда уж сразу задавать и контролировать все 3 соотношения K:Mg, K:Ca, N:Ca ну и форму азота NH4:NO3</p>
+
+<p>Вот мой корректор профиля прототип, позволяющий сравнить и изменить любой профиль по 3м соотношениям:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17835" target="_blank"><img src="/imagehost2/thumbs/20170301155827.png" alt="" /></a></p>
+
+<p><strong>Gamelander</strong> 01-03-2017</p>
+
+<p>Ну, я ратую для доступность и простоту для начинающих. В этом плане Nutrient Solution Calculator как раз самое оно.</p>
+
+<p>А для уже разобравшихся и с опытом получше будет калькулятор от Цикламеха. Там и соотношения и доли, да, в принципе, полная свобода действий, Excel же.</p>
+
+<p><strong>siv237</strong> 01-03-2017</p>
+
+<blockquote>
+  <p>Ну, я ратую для доступность и простоту для начинающих. В этом плане Nutrient Solution Calculator как раз самое оно.</p>
+
+  <p>А для уже разобравшихся и с опытом получше будет калькулятор от Цикламеха. Там и соотношения и доли, да, в принципе, полная свобода действий, Excel же.</p>
+</blockquote>
+
+<p>Ну вообще-то расчет ЕС, вернее коррекция профиля под нужный ЕС для начинающих довольно важная функция. Часто пишут берем профиль такой-то, и льем ЕС такой-то, потом поднимаем ЕС при таких-то обстоятельствах.</p>
+
+<p>И как новичку определить сколько чего сыпать, чтобы ЕС например сошелся с рекомендуемым, водой разбавлять? Тогда фосфор поплывет, а он от ЕС не должен зависеть.</p>
+
+<p>В ручную пересчитать весь профиль новичку врятли удастся, если бы он умел руками считать нафига ему калькулятор :)</p>
+
+<p>У Цикламеха не калькулятор а математическая модель калькулятора и именно это представляет трудности - отсутствие интерфейса, а вовсе не лишние для новичка возможности.</p>
+
+<p><strong>Gamelander</strong> 01-03-2017</p>
+
+<p>Я знаком с массой гидропонщиков в наших краях, они тут у коллег пасутся )) Поверьте, им надо только циферки профиля и сколько грамм сыпать. ЕС туда-сюда плюс-минус, растет - уже хорошо, никто на уровень фосфора, поднимающийся при повышении ЕС не обращает внимания :D</p>
+
+<p><strong>siv237</strong> 01-03-2017</p>
+
+<blockquote>
+  <p>Я знаком с массой гидропонщиков в наших краях, они тут у коллег пасутся )) Поверьте, им надо только циферки профиля и сколько грамм сыпать. ЕС туда-сюда плюс-минус, растет - уже хорошо, никто на уровень фосфора, поднимающийся при повышении ЕС не обращает внимания :D</p>
+</blockquote>
+
+<p>Вообще теория любительской гидропоники шагает семимильными шагами. Я вот прочел старые форумы 2009-2010 годов, там про профили вообще не заикались особо. Продвинутые собирали кнопа, новичкам хватало известного уже тогда трехбутылочного бренда.</p>
+
+<p>По сути именно этот бренд и вывел гидропонику в массы, начав с узкого направления самой, что не наесть большой армии домашних выращивателей веселой травы.</p>
+
+<p>Сейчас тот период, когда теория активно развивается и покрывается инструментами типа калькуляторов. Что умеет понятный калькулятор, то и нужно новичкам. В общем движение идет не снизу.</p>
+
+<p>Я сам когда начал изучать вопросы гидропоники все эти калькуляторы казались космосом.</p>
+
+<p>Все что я хотел это выбрать огурец и список того, что можно купить. По началу правда еще хотел, чтобы калькулятор подсчитал из того, что я уже купил.</p>
+
+<p>И самым простым для меня решением оказался калькулятор под андроид на телефоне, в нем хоть названия были в кармане. Я мог придя в магазин покрутить списочек и найти на полке нужное удобрение. Его и купить. Правда ничего не вышло, список не совпал.</p>
+
+<p>Сейчас я понимаю, что это порочная была схема, но что-бы это понять нужно было перелопатить огромный слой информации.</p>
+
+<p>Вот если бы было написано, купи это, это и это, а желательно и с распечаткой нужного что-бы продавцу список дать, да еще и с приоритетом производителей, вот это новичку надо.</p>
+
+<p>Ну а чтобы лучше все получалось у новичков ведь не очень сложно любой профиль подредактировать. Сперва ЕС поменьше при прорастании, затем ЕС побольше, фосфора побольше для развития корневой и до цветения, затем фосфор убавить калий поднять, азот уменьшить пока плодоносит. То бишь человек выбирает стадию и выполняется коррекция.</p>
+
+<p>Ну или не выбирает, зависит от степени лени.</p>
+
+<p>В общем это мое мнение и скорее всего оно не очень презентативное. Мне оказалось проще сделать свой калькулятор, чем разобраться в чужих. Большинству наверно действительно будет лишним, фазы роста, коррекции нарушений и прочее. Хотя ввести это была бы фишка этого калька.</p>
+
+<p><strong>Cyclamech</strong> 01-03-2017</p>
+
+<p>siv237, всё верно Вы говорите. АСУ разрабатывается именно как подобная штука.</p>
+
+<p><strong>demidoff</strong> 08-07-2017</p>
+
+<p>В данном калькуляторе используется два вида написания азота, в первом случае NH4 и NO3, а во втором случае N(NH4) и N(NO3). В чем принципиальная разница?</p>
+
+<p>Правильно ли я ввел состав аммиачной селитры?</p>
+
+<p><a href="https://t.me/ponics_ru_files/17836" target="_blank"><img src="/imagehost2/thumbs/aya.jpg" alt="" /></a></p>
+
+<p><strong>demidoff</strong> 08-07-2017</p>
+
+<p>Занес в калькулятор все свои удобрения, и попробовал рассчитать состав для огурца.</p>
+
+<p>В результате у части удобрений масса получилась отрицательная! Как это понимать?</p>
+
+<p><a href="https://t.me/ponics_ru_files/17837" target="_blank"><img src="/imagehost2/thumbs/rnr.jpg" alt="" /></a></p>
+
+<p><strong>allex_step</strong> 08-07-2017</p>
+
+<blockquote>
+  <p>В данном калькуляторе используется два вида написания азота, в первом случае NH4 и NO3, а во втором случае N(NH4) и N(NO3). В чем принципиальная разница?</p>
+</blockquote>
+
+<p>никакой разницы - азот аммиачный и азот нитратный</p>
+
+<p><strong>FertilizerCalculator</strong> 10-07-2017</p>
+
+<blockquote>
+  <p>В данном калькуляторе используется два вида написания азота, в первом случае NH4 и NO3, а во втором случае N(NH4) и N(NO3). В чем принципиальная разница?</p>
+
+  <p>Правильно ли я ввел состав аммиачной селитры?</p>
+
+  <p><img src="/imagehost2/thumbs/aya.jpg" alt="" /></p>
+</blockquote>
+
+<p>NH4 и NO3 - Это соединения, Аммоний и Нитрат</p>
+
+<p>N(NH4) и N(NO3) - Это Азот как вещество в составе соединения NH4 или NO3</p>
+
+<p>Разделение азта на 2 вида необходимо для возможности разделього просчета амонийного и нитратного азота. Если не нужно считать их отдельно то можно заносить все общим азотом N.</p>
+
+<p>;)</p>
+
+<p><strong>demidoff</strong> 11-07-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>В данном калькуляторе используется два вида написания азота, в первом случае NH4 и NO3, а во втором случае N(NH4) и N(NO3). В чем принципиальная разница?</p>
+
+    <p>Правильно ли я ввел состав аммиачной селитры?</p>
+
+    <p><img src="/imagehost2/thumbs/aya.jpg" alt="" /></p>
+  </blockquote>
+
+  <p>NH4 и NO3 - Это соединения, Аммоний и Нитрат</p>
+
+  <p>N(NH4) и N(NO3) - Это Азот как вещество в составе соединения NH4 или NO3</p>
+
+  <p>Разделение азта на 2 вида необходимо для возможности разделього просчета амонийного и нитратного азота. Если не нужно считать их отдельно то можно заносить все общим азотом N.</p>
+
+  <p>;)</p>
+</blockquote>
+
+<p>Понял. Спасибо.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

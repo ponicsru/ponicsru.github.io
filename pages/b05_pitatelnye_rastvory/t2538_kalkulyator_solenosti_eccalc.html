@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Калькулятор солености EC-Calc | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Калькулятор солености EC-Calc">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Калькулятор солености EC-Calc</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>siv237</strong> 30-09-2016</p>
+
+<p>Программа - Калькулятор солености раствора.</p>
+
+<p>Позволяет рассчитать необходимые объемы смешиваемых жидкостей для получения нужного значения ЕС рабочего раствора.</p>
+
+<p>Упрощает расчет доливки или разбавления раствора для выхода на нужное значение EC уже имеющегося остаточного объема.</p>
+
+<p><a href="https://t.me/ponics_ru_files/17869" target="_blank"><img src="/imagehost2/thumbs/20160930173618.png" alt="" /></a></p>
+
+<p><a href="https://drive.google.com/file/d/0B34nmasYJJ-ZME5wX3M0Mnk4YVE" target="_blank">Windows X86_32</a></p>
+
+<p><a href="https://drive.google.com/file/d/0B34nmasYJJ-ZcFAxSzBiVmh5cHM" target="_blank">Windows X86_64</a></p>
+
+<p><a href="https://drive.google.com/file/d/11sPhtmVmXv_ccvWaWEAJk3woEGlR6a_r/view?usp=sharing" target="_blank">Linux X86_64</a></p>
+
+<p><a href="https://www.dropbox.com/s/ivtwi7i20kdvq6p/EC-calc.dmg?dl=0" target="_blank">для Мака (под Сиеррой 10.12.5)</a></p>
+
+<p>Исходные коды для Lazarus: https://github.com/siv237/EC-Calc</p>
+
+<p>Прошу не судить строго, это моя первая программа с графическим интерфейсом, там точно есть ошибки.</p>
+
+<p>Один из примеров использования:</p>
+
+<p>Известно, что в ёмкости с рабочим раствором осталось 5 литров с показателем EC 1.5</p>
+
+<p>Заполняем эти значения в соответствующие поля в блок “До”</p>
+
+<p>Необходимо рассчитать объем воды и удобрений таким образом, что-бы добавих их в имеющийся раствор получить объем 15 литров с EC 1.95</p>
+
+<p>С помощью полей групп “раствор” и “вода” подбираем значения, таким образом, что нужные нам результаты появились в полях блока “После”.</p>
+
+<p><strong>Cyclamech</strong> 30-09-2016</p>
+
+<p><a href="http://festival.1september.ru/articles/212299/" target="_blank">Школьные годы чудесные!</a> <em>crazy</em></p>
+
+<p>Когда-то я был сообразительным мальчиком и любил решать задачки на скорость в рамках “соцсоревнования”…</p>
+
+<p>Ну да к чёрту ностальгию!</p>
+
+<p>К теме: вот такая проблема под XP:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17870" target="_blank"><img src="/imagehost2/thumbs/149upu.png" alt="" /></a></p>
+
+<p><strong>Cyclamech</strong> 30-09-2016</p>
+
+<blockquote>
+  <p>С помощью полей групп “раствор” и “вода” подбираем значения, таким образом, что нужные нам результаты появились в полях блока “После”.</p>
+</blockquote>
+
+<p>Ммм… ИМХО, программное обеспечение должно освобождать человека прежде всего от рутинных действий. Можно ли ручной подбор заменить автоматизированными вычислениями?</p>
+
+<p>…</p>
+
+<p><a href="http://www.megapascal.ru/info/raschet_koncentracii_smesi_rastvora/" target="_blank">Или я чего-то недопонял?</a> Софтинку-то пока запустить не могу…</p>
+
+<p>…</p>
+
+<p>Кстати, насколько мне известно, файлы *.jar отлично исполняются как в среде Windows, так и Linux. По-моему, это промежуточный код, который java-машина компилирует “на лету”, потому и кроссплатформенность…</p>
+
+<p><strong>siv237</strong> 30-09-2016</p>
+
+<blockquote>
+  <p><a href="http://festival.1september.ru/articles/212299/" target="_blank">Школьные годы чудесные!</a> <em>crazy</em></p>
+
+  <p>Когда-то я был сообразительным мальчиком и любил решать задачки на скорость в рамках “соцсоревнования”…</p>
+
+  <p>Ну да к чёрту ностальгию!</p>
+
+  <p>К теме: вот такая проблема под XP:</p>
+
+  <p><img src="/imagehost2/thumbs/149upu.png" alt="" /></p>
+</blockquote>
+
+<p>Наверно нужно 64 битную ось, у меня нет под рукой XP, чтобы скомпилировать. Есть только ubuntu и win7 x64. А кроскомпилирование я еще не освоил :( Третий день lazarus изучаю.</p>
+
+<p>Вот тут исходные коды https://drive.google.com/file/d/0B34nmasYJJ-ZWm5GS0tUckh3WDA/view?usp=sharing</p>
+
+<p>Для Lazarus</p>
+
+<p>Можно собрать вроде как под любую ось из кучи поддерживаемых.</p>
+
+<p><strong>siv237</strong> 30-09-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>С помощью полей групп “раствор” и “вода” подбираем значения, таким образом, что нужные нам результаты появились в полях блока “После”.</p>
+  </blockquote>
+
+  <p>Ммм… ИМХО, программное обеспечение должно освобождать человека прежде всего от рутинных действий. Можно ли ручной подбор заменить автоматизированными вычислениями?</p>
+
+  <p>…</p>
+
+  <p><a href="http://www.megapascal.ru/info/raschet_koncentracii_smesi_rastvora/" target="_blank">Или я чего-то недопонял?</a> Софтинку-то пока запустить не могу…</p>
+
+  <p>…</p>
+
+  <p>Кстати, насколько мне известно, файлы *.jar отлично исполняются как в среде Windows, так и Linux. По-моему, это промежуточный код, который java-машина компилирует “на лету”, потому и кроссплатформенность…</p>
+</blockquote>
+
+<p>Ну давно хотел начать изучать программирование ну и какую-нить простую программку написать. А то экселем надоело считать, неудобно. Мне эта реализация кажется удобной для меня. Хотелось именно мышкой щелкать и сразу видеть изменения, а не вбивать в поля значения.</p>
+
+<p>На яве можно конечно, но хочется нативный софт без всяких яв фреймворков и прочего. Чтоб сразу работал на целевой системе и не требовал кучи библиотек вытягивать ради мизерной софтины.</p>
+
+<p><strong>Cyclamech</strong> 30-09-2016</p>
+
+<blockquote>
+  <p>Есть только ubuntu и win7 x64. А кроскомпилирование я еще не освоил :( Третий день lazarus изучаю.</p>
+</blockquote>
+
+<p>Ознакомьтесь с текстом Википедии:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17871" target="_blank"><img src="/imagehost2/thumbs/150ili.png" alt="" /></a></p>
+
+<p>Не нужно ничего компилировать под конкретную платформу - в том кагбэ и соль JVM или, например, .net.</p>
+
+<p>…</p>
+
+<p>По-моему, это какой-то прошлый век… Обджект Паскаль… Делфи… $)</p>
+
+<p><a href="https://t.me/ponics_ru_files/17872" target="_blank"><img src="/imagehost2/thumbs/151grg.png" alt="" /></a></p>
+
+<p>Мне почему-то подумалось, что Вы пишете на Java… :-[</p>
+
+<p><strong>siv237</strong> 30-09-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>Есть только ubuntu и win7 x64. А кроскомпилирование я еще не освоил :( Третий день lazarus изучаю.</p>
+  </blockquote>
+
+  <p>Ознакомьтесь с текстом Википедии:</p>
+
+  <p><img src="/imagehost2/thumbs/150ili.png" alt="" /></p>
+
+  <p>Не нужно ничего компилировать под конкретную платформу - в том кагбэ и соль JVM или, например, .net.</p>
+
+  <p>…</p>
+
+  <p>По-моему, это какой-то прошлый век… Обджект Паскаль… Делфи… $)</p>
+
+  <p><img src="/imagehost2/thumbs/151grg.png" alt="" /></p>
+
+  <p>Мне почему-то подумалось, что Вы пишете на Java… :-[</p>
+</blockquote>
+
+<p>Я слишком часто сталкиваюсь с явой и программах на ней по работе, чтобы не любить ёё, Особенно после того, что с ней сотворил оракл :)</p>
+
+<p>Но думаю тему нет смысла развивать ибо оффтопик.</p>
+
+<p><strong>siv237</strong> 30-09-2016</p>
+
+<p>Версия для Windows X86_32 <a href="https://drive.google.com/file/d/0B34nmasYJJ-ZME5wX3M0Mnk4YVE/view?usp=sharing" target="_blank">https://drive.google.com/file/d/0B34nmasYJJ-ZME5wX3M0Mnk4YVE/view?usp=sharing</a></p>
+
+<p><strong>orgail</strong> 30-09-2016</p>
+
+<p>В wine на федоре заработало ;)</p>
+
+<p><strong>orgail</strong> 30-09-2016</p>
+
+<p>нативная под линь заработало, но ругалось на неверный флоат в контролах, возможно как обычно - точка/запятая как разделитель не удовлетворяет. Но работает</p>
+
+<p><strong>siv237</strong> 30-09-2016</p>
+
+<blockquote>
+  <p>нативная под линь заработало, но ругалось на неверный флоат в контролах, возможно как обычно - точка/запятая как разделитель не удовлетворяет. Но работает</p>
+</blockquote>
+
+<p>У меня на хубунте разделитель там точка.Но думаю тут больше от текущей локали зависит.</p>
+
+<p><strong>siv237</strong> 30-09-2016</p>
+
+<p>На виндах у когонибудь запустилось?</p>
+
+<p><strong>Cyclamech</strong> 30-09-2016</p>
+
+<p>Под ХР х86 работает. Работа десятичного разделителя понравилась, вспоминая другие калькуляторы, особо косяк Hydroodo. У меня в вашей программе десятичный разделитель отображается всегда как запятая, независимо от того, точку вводить или запятую, независимо от языка. Это верный ход.</p>
+
+<p><strong>allex_step</strong> 25-05-2017</p>
+
+<p>Можно Mac OS X (Sierra) версию?</p>
+
+<p><strong>siv237</strong> 25-05-2017</p>
+
+<blockquote>
+  <p>Можно Mac OS X (Sierra) версию?</p>
+</blockquote>
+
+<p>Качете lazarus для Mac <a href="https://www.lazarus-ide.org/index.php?page=downloads" target="_blank">https://www.lazarus-ide.org/index.php?page=downloads</a></p>
+
+<p>Качаете сорсы выше и собираете себе мак версию и можете с другими поделиться. У меня мака нет я собрать под него не могу.</p>
+
+<p><strong>allex_step</strong> 28-06-2017</p>
+
+<p>скомпилил для Мака (под Сиеррой 10.12.5) <a href="https://www.dropbox.com/s/ivtwi7i20kdvq6p/EC-calc.dmg?dl=0" target="_blank">https://www.dropbox.com/s/ivtwi7i20kdvq6p/EC-calc.dmg?dl=0</a></p>
+
+<p><strong>simiko</strong> 12-06-2018</p>
+
+<p>siv237 огромное Вам спасибо за калькулятор солености. <em>8)</em> Открыл Ваш калькулятор в Винде (поругалась правда безопасность))). Вопрос. А нельзя ли создать возможность забивать в “после” требуемый объем и ЕС, в “вода “ и в “раствор” только ЕС, и чтобы объем воды и раствора рассчитывался автоматом?</p>
+
+<p><strong>siv237</strong> 12-06-2018</p>
+
+<p>Можно почти любую задачу разбавления, решить путем нажатия на стрелочки вверх и вниз у полей промежуточного разбавления.</p>
+
+<p><strong>simiko</strong> 12-06-2018</p>
+
+<p>У меня почему-то поля в “после” вообще не активны((</p>
+
+<p><strong>siv237</strong> 12-06-2018</p>
+
+<p>мне лень было формулу обратного пересчета делать, да и неоднозначное решение, так как итог может быть разными вариантами получиться. попробуйте играть стрелочками на других полях пока итог вас не устроит.</p>
+
+<p><strong>simiko</strong> 12-06-2018</p>
+
+<p>Ага. Хорошо)) Только почему разными?? Вариант будет только один))</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

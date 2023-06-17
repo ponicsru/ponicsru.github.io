@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Про то, как я pH метр надо мной издевался :) | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Про то, как я pH метр надо мной издевался :)">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Про то, как я pH метр надо мной издевался :)</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>gena1</strong> 16-08-2011</p>
+
+<p>У меня постоянно мониторится pH раствора электродом. Через некоторое время я начал замечать, что днем, когда светло pH резко изменяется. Когда это были небольшие колебания, я не обращал на это внимания, но потом вместо показаний начался откровенный бред…</p>
+
+<p>Я провел эксперимент - ночью включил лампу рядом с резервуаром с питательным раствором (он у меня прозрачный, конечно так нельзя, но для мини экспериментов можно :) ) и pH упал за минуту на -2. Через несколько минут я выключил лампу и pH вернулся “вверх”… Мой мозг не знал что придумать в обоснование…. Думал уже, что погиб электрод.</p>
+
+<p>И только сейчас я допер - вынул электрод и оказалось, что его “шарик” покрылся “слизью” и давно уже измеряет pH этой микро или уже макро флоры, или фауны :).</p>
+
+<p>Сейчас окунул электрод в электролит, пусть всё умрет :)</p>
+
+<p>Но я так и не понял почему pH именно падал от света, а не рос. Логичнее (с моей точки зрения) было бы чтобы рос…</p>
+
+<p><strong>андрей п</strong> 16-08-2011</p>
+
+<p>А в электролит не опасно для прибора?Я такой налёт удаляю ваточкой,смоченной в дистиллированной воде.Мне кажется в ощутимых пределах от освещения Рн не должен зависеть. $)</p>
+
+<p><strong>gena1</strong> 16-08-2011</p>
+
+<blockquote>
+  <p>А в электролит не опасно для прибора?</p>
+</blockquote>
+
+<p>Ну не в электролит, а в кислоту - переиодически замачивать на сутки просто необходимо электроду. Это даже в инструкции написано.</p>
+
+<p>P.S. Я про сам электрод отдельный, о ph-метрах в сборе не знаю ничего. Скорее всего там тоже самое.</p>
+
+<p><strong>Coccinella</strong> 16-08-2011</p>
+
+<p>А Вы температуру под лампой не измеряли? Температуру раствора?</p>
+
+<p><strong>gena1</strong> 16-08-2011</p>
+
+<blockquote>
+  <p>А Вы температуру под лампой не измеряли? Температуру раствора?</p>
+</blockquote>
+
+<p>Нет, температура непричем. Ночью за несколько минут на расстоянии 20 см я её лампой даже с лупой и на десятую долю градуса не нагрел бы. :)</p>
+
+<p>Либо электрод, либи слизь на нём, либо что-то в “преобразователе” в цифру (не исключено, т.к. всё на “соплях”, лишь бы работало :) ). Досканально изучать причину не хочется, т.к. буду всё принципиально переделывать. Но очень хочется верить, что была виновата слизь на шарике :)</p>
+
+<p><strong>valery</strong> 16-08-2011</p>
+
+<blockquote>
+  <p>Но очень хочется верить, что была виновата слизь на шарике :)</p>
+</blockquote>
+
+<p>Хорошо, если так … :(</p>
+
+<p>Меня тоже давно мучает этот вопрос. При включении ПОЛНОГО освещения в полдень, растворы съезжают с 5,8 близехонько к 4 с небольшими копейками, в течение получаса-часа (по разному) …</p>
+
+<p>Пока я заподозрил хлор. По крайней мере обратил на это уж очень ЯВНОЕ внимание после того, как стал “увлекаться” хлором …</p>
+
+<p>До этого, как и Геннадий - отмахивался и считал мелкими “бзиками”, а с хлором тоже начался “полный бред” …</p>
+
+<p>Хлор - поглощает квант света и вступает во всякие немыслимые реакции (обратимые) … (чуть не брякнул в “немыслимые связи”, но вовремя спохватился … :D )</p>
+
+<p>В отсутствии света - реакции протекают в обратную сторону, pH восстанавливается …</p>
+
+<p>Правда у меня в полдень и температура растет, что тоже сказывается на рН, но все же не столь значительно.</p>
+
+<p>А может быть я все придумал, неправильно прочитал и ничего не понял … и хлор тут ни причем … не понятно. :-\</p>
+
+<p>Мудреная штука - химия :-\</p>
+
+<p>Да и ботаника - тоже мудреная штука :-\</p>
+
+<p>Хотя и эта … как ее … - а, физика, вот. И математика. :-\ И вообще …</p>
+
+<p><strong>gena1</strong> 16-08-2011</p>
+
+<p>А я думал что только у меня такие “странности” с раствором :)</p>
+
+<p>Впринципе, я бы на эту тему даже и не заморачивался, но если делать автокоррекцию pH, то … даже не знаю как различать временный “бред” показаний от истинных :) Только по силе света ? :) Тогда это получится бред, наложенный на бред …. Ладно, сделаю когда по-человечески, тогда будет понятно.</p>
+
+<p><strong>valery</strong> 16-08-2011</p>
+
+<p>Я тоже думал, что “только у меня” … :)</p>
+
+<p>Случайно наткнулся на Ваш пост. Оказалось - “не только” … :D</p>
+
+<p>Более того, одно время (до хлора) подозревал больше температуру. Даже вместо китайских “нонеймовых” рН-метров пришлось купить Ханну с термокомпенсацией …</p>
+
+<p>Ситуация - не исправилась, только деньги зря потратил :(</p>
+
+<p>На “хлор” - не обращайте внимания. Про хлор упомянул просто потому, что больше ничего в голову не пришло …</p>
+
+<p>Еще “рассуждение”.</p>
+
+<p>В мате “Гродан” такого - не происходит.</p>
+
+<p>Во-первых он закрыт от света светоотражающей пленкой, во-вторых “дренажи” сбрасывают излишки накапливающихся солей в плите. В числе прочего “лишнего” - серу, натрий и хлор.</p>
+
+<p>А вот в “дренаже” из мата (стоит в открытой емкости на свету) - такое тоже случается.</p>
+
+<p>И в проточной системе - особенно.</p>
+
+<p>Исходный бак для “проточки” - открыт свету. Кроме этого в проточной системе при “рециркуляции” - хлор (как и натрий и сульфаты) накапливается очень быстро.</p>
+
+<p>В общем, хорошо бы проверить - на “осмосе” и безхлорных удобрениях. А потом еще чего “заподозревать” :D</p>
+
+<p><strong>orgail</strong> 16-08-2011</p>
+
+<p>надо задать ключевые вопросы:</p>
+
+<p>раствор не участвующий в системе реагирует так на свет?</p>
+
+<p>дренаж сцеженный из системы отдельно реагирует так на свет?</p>
+
+<p>раствор реагирует так только в присутствии корневой системы в системе?</p>
+
+<p>ну и самое трудное :D реагирует ли так неосвещенный раствор при освещенном растении?</p>
+
+<p>ответив, наверное можно найти “виновника”</p>
+
+<p><strong>d74mt</strong> 16-08-2011</p>
+
+<p>а если раствор на свету перемешивать при измерении PH, он тоже будет изменяться? или это просто локальное событие в стоячей воде?</p>
+
+<p><strong>valery</strong> 16-08-2011</p>
+
+<blockquote>
+  <p>надо задать ключевые вопросы:</p>
+
+  <p>…</p>
+
+  <p>ответив, наверное можно найти “виновника”</p>
+</blockquote>
+
+<p>Видимо, “да”.</p>
+
+<p>Правда для этого нужно “озаботиться всерьез” … Лично у меня до этого руки не доходят, не всегда успеваешь выполнить элементарный “уход” за растениями …</p>
+
+<blockquote>
+  <p>раствор не участвующий в системе реагирует так на свет?</p>
+</blockquote>
+
+<p>В моем случае “неучаствующих” растворов нет, сложно сказать.</p>
+
+<blockquote>
+  <p>дренаж сцеженный из системы отдельно реагирует так на свет?</p>
+</blockquote>
+
+<p>Да. Пример с матом - выше.</p>
+
+<blockquote>
+  <p>раствор реагирует так только в присутствии корневой системы в системе?</p>
+</blockquote>
+
+<p>Да это … “а хрен его знает” (извиняюсь).</p>
+
+<p>В дренаже, естественно, корневая отсутсвует …</p>
+
+<p>Но полностью и определенно исключить влияние корневой все-таки нельзя …</p>
+
+<p>Часть активно сосущих волосков, естественно, проглядывает несколько в дренажные отверстия и какое-то время (5-10 минут, не знаю …) находится в появляющемся после третьего полива (и стекающего затем по лотку в емкость) дренаже …</p>
+
+<blockquote>
+  <p>ну и самое трудное :D реагирует ли так неосвещенный раствор при освещенном растении?</p>
+</blockquote>
+
+<p>Да тоже это … В смысле - “неизвестно” :(</p>
+
+<p>По идее, как бы - нет. См. тот же пример с матом (выше) …</p>
+
+<p>Более того, меня чаще беспокоит некоторый РОСТ рН в нижнем слое мата (до 6,1-6,2) (Обычно рабочий раствор из капельницы в районе 5,8)</p>
+
+<blockquote>
+  <p>а если раствор на свету перемешивать при измерении PH, он тоже будет изменяться? или это просто локальное событие в стоячей воде?</p>
+</blockquote>
+
+<p>Нет, не локальное. Раствор в рабочих баках постоянно перемешивается. Помпами и аэраторами. В проточке, кроме этого и естественными - сливом/подачей …</p>
+
+<p>Кроме этого, активное взбалтывание рН-метром в стаканчике для измерения рН подает добавочный кислород бактериям (возможно, но не обязательно, находящимся в растворе. Если речь о “вытяжке” или “дренаже”. То ли аэробным, то ли анаэробным, уже не помню … Это может быстро (в секунды) сбивать вниз рН …)</p>
+
+<p>“Ренат” на Гринтоке как-то упоминал такую ситуацию, описывая работу с с кокосом.</p>
+
+<p><strong>orgail</strong> 17-08-2011</p>
+
+<p>как я понял варианты?</p>
+
+<p>микробиологическое влияние при освещении (раствор в системе чтобы там ни говорили не такой уж и чисто минеральный)</p>
+
+<p>химическая реакция исходных элементов, скопившихся в достаточном количестве в дренаже</p>
+
+<p>появление в растворе новых компонент типа выделений из корневой системы, которые могли бы реагировать на свет</p>
+
+<p><strong>Coccinella</strong> 17-08-2011</p>
+
+<p>Orgail, ко всему перечисленному еще влияние температуры. Лампы-то у всех разные. А изменение рН в зависимости от температуры известно давно и тут дело не только в наличии/отсутствии термокомпенсации. Хорошо известно, что рН почвы в открытом грунте меняется в течение сезона, то есть весной и осенью бывает выше, чем в середине лета, когда почва горячая. Хотя в открытом грунте на рН еще и много других факторов влияет, конечно.</p>
+
+<p><strong>valery</strong> 17-08-2011</p>
+
+<p>Возможно и температура, несмотря на “термокомпенсацию”… В частности и количество растворенных в воде газов, типа СО2 с ростом температуры уменьшается …</p>
+
+<p>Куда он (лишний) девается ? Улетучивается в атмосферу ? Вступает в реакцию и образует угольную кислоту ?..</p>
+
+<p>Или несколько различных факторов из перечисленных, время от времени неудачно складывающихся в “одном направлении” с ростом температуры/освещенности …</p>
+
+<p>Или разная скорость поглощения аммония … Или ускорение процессов дыхания, в том числе и в корневой зоне с выделением углекислого газа, которому, опять же “некуда деваться” в более “теплом”, уже насыщенном, растворе …</p>
+
+<p>Можно попытаться проверить и по другому - свет усилить, а температуру - снизить. :-\</p>
+
+<p><strong>orgail</strong> 17-08-2011</p>
+
+<p>про температуру я сразу подумал, но вроде сказали что она не изменялась <em>???</em></p>
+
+<p><strong>valery</strong> 17-08-2011</p>
+
+<p>Как у Геннадия - не знаю, похоже - не меняется.</p>
+
+<p>В моем случае - растет, но не очень значительно - на 1, максимум 1,5 градуса … Ну крайне редко - на два.</p>
+
+<blockquote>
+  <p>Более того, одно время (до хлора) подозревал больше температуру. Даже вместо китайских “нонеймовых” рН-метров пришлось купить Ханну с термокомпенсацией …</p>
+
+  <p>Ситуация - не исправилась, только деньги зря потратил :(</p>
+</blockquote>
+
+<p>Ладно бы она скакала на десяток градусов, а рН падал бы на пару-тройку десятых … Но никак не на 1,5 и более.</p>
+
+<p>Ночные 19-19,5, дневные 20,5-21</p>
+
+<p>Ночные 25, дневные 27 - это было в пик жары в начале лета … Приборы калиброваны при 25 градусах. Три разнокалиберных китайца (два некомпенсированных, третий якобы с какой-то термокомпенсирующей биметаллической железкой) и одна Ханна (“нормальная” термокомпенсация) - показания схожие, бывает и разнятся, но не больше, чем на 0,1.</p>
+
+<p><strong>orgail</strong> 17-08-2011</p>
+
+<p>а если взять дренаж, продезинфицировать его (только вот как, чтобы поубивало тока животину возможную без влияния на химсостав) и его протестировать еще раз? :)</p>
+
+<p><strong>valery</strong> 17-08-2011</p>
+
+<p>Если ничего другого не придумаю, попробую так …</p>
+
+<p>Да я же говорю, Максим, - серьезно не озабачивался и не занимался …</p>
+
+<p>Случайно столкнулся … Ну удивился, и пошел … Ну почесал затылок, и куда-нибудь полез … Вот главное телодвижение было - купил новый прибор.</p>
+
+<p>Обычная реакция какая ? Поматеришься себе под нос, решишь - белиберда какая-то, небось прибор неисправен (грязный, мокрый, вредный, батарейка села), и дальше.</p>
+
+<p>Или просто разозлишься, залезешь на ящики и в отместку отрежешь у помидора здоровую плеть, вместо старого листа … Ну и все, вопрос исчерпан.</p>
+
+<p>А тут читаю - еще один выращиватель столкнулся с похожим … Удивило.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

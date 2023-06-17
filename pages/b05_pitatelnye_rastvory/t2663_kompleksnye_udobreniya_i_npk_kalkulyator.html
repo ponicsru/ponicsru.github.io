@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Комплексные удобрения и NPK калькулятор | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Комплексные удобрения и NPK калькулятор">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Комплексные удобрения и NPK калькулятор</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Evgeny41</strong> 30-06-2017</p>
+
+<p>Я совсем не профи в расчете удобрений и в химии особо не понимаю, с первых дней увлечения гидропоникой пользуюсь NPKcalculator v1.26, думаю многие про нее знают. Все просто - забил состав удобрения как он указан на пачке и подгоняешь раствор под нужные смешивая удобрения. Все понятно, но сегодня что-то стал пересчитывать состав раствора и понял, что что-то не понимаю) Извиняюсь может вопрос глупый и элементарный, но я что-то не догоняю</p>
+
+<p>В общем на примере комплексного удобрения Кристалон. На оф. сайте указан состав: N - 7,5, P2O5 - 12, K2O -36, MgO - 4,5, SO3 - 10. Т.е. NPK = 7,5:12:36. Открываем NPK калькулятор, такое удобрение уже есть в справочнике и там состав указан так же - N - 7,5, P2O5 - 12, K2O -36. Но азот считается как просто элемент N, а Фосфор, например, это оксид P2O5. Соответственно при расчете дозы удобрения, допустим 1 гр на литр получаем N 75 мг, P 52,32 мг, K 298,8 мг. Куда делась пропорция 7,5:12:36? Я так понимаю в оксиде P2O5 содержится только 43,6% элемента P, поэтому мы и получаем не 120 а 52,32мг? допустим… Но почему азот считается в чистом виде, а фосфор и калий в оксидах? (во всяком случае в NPK калькуляторе в справочнике удобрений так. это ошибка?). Может и азот нужно считать как NO3? - он именно в такой форме в этом удобрении. Но и тогда баланс все равно не сойдется с 7,5:12:36. В общем никак не пойму каков же всетаки итоговый состав удобрения?</p>
+
+<p><strong>allex_step</strong> 30-06-2017</p>
+
+<p>часто указаны цифры для несколько некорректной формы - где-то уже упоминалось про оксиды, что производители пишут по привычке, не обращая внимание на несоответствие истине и “ковыряния” гидропонщиков ;)</p>
+
+<p>с азотом так же - могут показать форму азота, а цифры про сам азот</p>
+
+<ul>
+  <li>еще учитывать чистоту самого удобрения</li>
+</ul>
+
+<p><strong>Evgeny41</strong> 30-06-2017</p>
+
+<p>Странно что это может быть просто “ошибкой”, ведь удобрение от довольно именитой фирмы да и позиционируется как удобрение для фертикации</p>
+
+<p>Вот нашел такую презентацию:</p>
+
+<p><a href="https://t.me/ponics_ru_files/18610" target="_blank"><img src="/imagehost2/thumbs/ydy.png" alt="" /></a></p>
+
+<p>Здесь есть азот общий 7,5 то есть как бы “чистый”? и потом расписывается что это нитратный, то есть элемента N тут уже явно не 7,5%</p>
+
+<p>По Mg и S указано 2,8 и 4 %, а по MgO и SO3 - 4,5 и 10%.</p>
+
+<p>Вроде начинаю понимать… т.е. NPK это не соотношение чистых элементов, а соотношение солей содержащих азот, фосфор, калий, причем для азота содержание чистого N может варьироваться от того в какой оно форме (нитратной, аммонийной и т.п.)?</p>
+
+<p>И соответственно в калькулятор нужно бить не N в количестве 7,5 а именно NO3 в количестве 7,5? Или например по магнию бить или 2,8 Mg, или 4,5 MgO - на выходе получим одно и то же?</p>
+
+<p><strong>allex_step</strong> 30-06-2017</p>
+
+<p>раньше считали что элементы усваиваются в виде оксидов - так и цифры писали</p>
+
+<p>сейчас мнение поменялось - а “привычка” писать-считать осталась на совести производителей, и далеко не все пишут такую информацию про свои “детища” которая устраивает гидропонщиков</p>
+
+<p>По магнию - да, можно в кальк забить в любой форме соответствующую цифру, он пересчитает (если умеет); для указанных цифр оно почти верно (4,5 MgO содержит 2,713662 Mg)</p>
+
+<p>NPK - таки соотношение самих чистых элементов</p>
+
+<p>азот разнится по форме и в зависимости того аммонийная или нитратная форма он работает по-другому - потому забивать в кальк нужно КАЖДУЮ форму отдельно, и забиваются они соответственно в аммонийной и нитратной форме без пересчета на сам азот</p>
+
+<p><strong>Borodach1</strong> 30-06-2017</p>
+
+<blockquote>
+  <p>Здесь есть азот общий 7,5 то есть как бы “чистый”? и потом расписывается что это нитратный, то есть элемента N тут уже явно не 7,5%</p>
+</blockquote>
+
+<p>7,5% азота это именно 7,5% азота. Указывается, что этот азот в удобрении присутствует только в нитратной форме. Потому, что бывает ещё аммонийная форма и амидная форма. Много аммонийной формы азота будет закислять нам раствор, а амидная форма нам вообще не нужна. Амидной формой питаются бактерии в почве, которых у нас нет.</p>
+
+<p><strong>Borodach1</strong> 30-06-2017</p>
+
+<blockquote>
+  <p>И соответственно в калькулятор нужно бить не N в количестве 7,5 а именно NO3 в количестве 7,5? Или например по магнию бить или 2,8 Mg, или 4,5 MgO - на выходе получим одно и то же?</p>
+</blockquote>
+
+<p>В калькулятор бить то, что написано на упаковке. Общий азот - как азот.</p>
+
+<p>MgO - как MgO. Для тех кому не нравится MgO производитель пересчитал в чистый Mg. Тогда бить Mg - как Mg. Оба вбивать не нужно.</p>
+
+<p>С серой то же самое.</p>
+
+<p><strong>allex_step</strong> 30-06-2017</p>
+
+<p>и это еще раз подчеркивает одну из причин почему нам следует избегать употребления комплексных удобрений и отдавать предпочтение однокомпонентным (которые уже “обсосаны” гидропонщиками вдоль и поперек)… <em>???</em></p>
+
+<p><strong>Evgeny41</strong> 30-06-2017</p>
+
+<blockquote>
+  <p>азот разнится по форме и в зависимости того аммонийная или нитратная форма он работает по-другому - потому забивать в кальк нужно КАЖДУЮ форму отдельно, и забиваются они соответственно в аммонийной и нитратной форме без пересчета на сам азот</p>
+</blockquote>
+
+<blockquote>
+  <p>7,5% азота это именно 7,5% азота.</p>
+</blockquote>
+
+<p>не совсем понимаю, что значит без пересчета на сам азот? т.е. 7,5% NO3 учитывать как 7,5% Азота (просто N)? Просто если я в калькулятор вбиваю 7,5% NO3 то он мне считает, что с одного грамма удобрения на литр выйдет 17,25мг N (вместо 75).</p>
+
+<p>Это какая-то “фишка” азота?:) что его нужно считать как просто N вне зависимости от формы. Ведь та же сера и магний считаются как оксиды и из оксидов вычитается масса кислорода. А из азота получается не нужно вычитать? Наверно для понимающих людей я пишу какой-то бред, но что-то не могу разобраться)</p>
+
+<p><strong>Evgeny41</strong> 30-06-2017</p>
+
+<blockquote>
+  <p>и это еще раз подчеркивает одну из причин почему нам следует избегать употребления комплексных удобрений и отдавать предпочтение однокомпонентным (которые уже “обсосаны” гидропонщиками вдоль и поперек)… <em>???</em></p>
+</blockquote>
+
+<p>Думаю нужно просто в этом деле досканально разобраться :) Оно то конечно “правильней” с однокомпонентными работать но комплесное тем хорошо, что не нужно с кучей пробирок разводить все, а замешал комплексное, добавил кальция и вот он готовый раствор. Те же фертикеа и кристалон и предназначены для упрощения работы небольших хозяйств</p>
+
+<p><strong>Borodach1</strong> 30-06-2017</p>
+
+<p>Посмотрите на свою же фотку. Общий азот 7,5%. У вас всего 7,5% азота. Далее они расшифровывают из чего он состоит. Он состоит из нитратного азота(NO3) - 7,5% и аммиачного (NH4) - 0%.</p>
+
+<p>Тоесть, другими словами, весь азот в удобрении представлен в нитратной форме. Всего азота (а не NO3) в удобрении 7,5%.</p>
+
+<p>Если очень хотите вносить именно как NO3, то нужно домножить на 4,43. Получится:</p>
+
+<p>7,5*4,43= 33,225</p>
+
+<p><strong>Borodach1</strong> 30-06-2017</p>
+
+<blockquote>
+  <p>и это еще раз подчеркивает одну из причин почему нам следует избегать употребления комплексных удобрений и отдавать предпочтение однокомпонентным (которые уже “обсосаны” гидропонщиками вдоль и поперек)… <em>???</em></p>
+</blockquote>
+
+<p>Ничего это не подчёркивает. :-X</p>
+
+<p><strong>Evgeny41</strong> 30-06-2017</p>
+
+<blockquote>
+  <p>Посмотрите на свою же фотку. Общий азот 7,5%. У вас всего 7,5% азота. Далее они расшифровывают из чего он состоит. Он состоит из нитратного азота(NO3) - 7,5% и аммиачного (NH4) - 0%.</p>
+
+  <p>Тоесть, другими словами, весь азот в удобрении представлен в нитратной форме. Всего азота (а не NO3) в удобрении 7,5%.</p>
+
+  <p>Если очень хотите вносить именно как NO3, то нужно домножить на 4,43. Получится:</p>
+
+  <p>7,5*4,43= 33,225</p>
+</blockquote>
+
+<p>Доходчиво :) Теперь понятно <em>8)</em></p>
+
+<p><strong>siv237</strong> 30-06-2017</p>
+
+<p>Просто это и есть бред и не только для понимающих. Это традиции :)</p>
+
+<p>Корень путаницы в том, что для растений важно в какой форме находится нужный элемент иначе они просто не усваиваются, даже если они есть в растворе. Потому именно для удобрений стали использовать запись в виде иона.</p>
+
+<p>Но формы усваиваемых ионов в основном одни и те-же у разных солей потому в случае использования множества солей, оказалось проще - считать по весу атомов.</p>
+
+<p>И все бы хорошо, но вот с азотом оказалось сложнее, так-как растение может усваивать разные ионы содержащие азот при этом с разными последствиями для развития.</p>
+
+<p>Ну и потому, азот продолжили считать в виде атома но указывая ион в котором он содержится.</p>
+
+<p>Некоторые первые расчеты и калькуляторы не учитывали форму азота, поскольку были лишь попыткой пересчитать известные профили из доступных комплексных удобрений для земли, в которых форма азота не указывалась.</p>
+
+<p>В общем понимание в широких массах важности правильного расчета с учетом формы азота пришло не так давно и в основном благодаря практикам - энтузиастам.</p>
+
+<p>Хотя все теории написаны и обоснованны в научных работах еще в середине прошлого века. Но кто же их читает :)</p>
+
+<blockquote>
+  <p>Если очень хотите вносить именно как NO3, то нужно домножить на 4,43. Получится:</p>
+
+  <p>7,5*4,43= 33,225</p>
+</blockquote>
+
+<p>Точнее 33,201 :-[</p>
+
+<p><strong>Evgeny41</strong> 30-06-2017</p>
+
+<p>А вот такой еще момент, получается цифры на упаковке, допустим 1:1:1 это не N:P:K, а N:P2O5:K2O? То-есть если нам нужно для культуры соотношение азота, фосфора и калия как 1:1:1 (и предположим, что мы больше никаких удобрений добавлять не будем и обойдемся только комплексным), то нам нужно искать удобрение 1:2,3:1,2 ?</p>
+
+<p><strong>Borodach1</strong> 30-06-2017</p>
+
+<blockquote>
+  <p>А вот такой еще момент, получается цифры на упаковке, допустим 1:1:1</p>
+</blockquote>
+
+<p>Цифры на упаковке ни о чём не говорят. Нужно смотреть состав.</p>
+
+<p>Впринципе, когда Вы идёте по магазину через длинный ряд с удобрениями, то можно ориентироваться по первой цифре. Если она больше 6 - 7, то это комплексное удобрение нам не годится. Проходим мимо. Если первая цифра больше 10, то… смело проходим мимо! :D</p>
+
+<p><strong>siv237</strong> 30-06-2017</p>
+
+<blockquote>
+  <p>А вот такой еще момент, получается цифры на упаковке, допустим 1:1:1 это не N:P:K, а N:P2O5:K2O? То-есть если нам нужно для культуры соотношение азота, фосфора и калия как 1:1:1 (и предположим, что мы больше никаких удобрений добавлять не будем и обойдемся только комплексным), то нам нужно искать удобрение 1:2,3:1,2 ?</p>
+</blockquote>
+
+<p>1:1:1 = 1:(1<em>0.436):(1</em>0.83)</p>
+
+<p><strong>Evgeny41</strong> 30-06-2017</p>
+
+<p>Спасибо всем <em>8)</em></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

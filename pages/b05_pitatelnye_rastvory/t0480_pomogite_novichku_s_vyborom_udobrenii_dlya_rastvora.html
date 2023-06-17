@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Помогите новичку с выбором удобрений для раствора. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Помогите новичку с выбором удобрений для раствора.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Помогите новичку с выбором удобрений для раствора.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Kid_1985</strong> 06-04-2010</p>
+
+<p>Добрый день. Я новичёк в гидропонике, посвятил этому делу выходные нашел много информации. Сам вместе с бабкой и деткой с приходом тепла начал копать участок и паралельно задумыватся о рентабельности этого дела! Выпросил себе бывшую тепличку с згнившым каркасом без навеса, обработал землю и 1-го апреля посеял различную зелень. Изначально упор делался на листья салата (собственно поэтому и пишу тут). Исходя из всего вышепрочитанного решил построить горизонтальную NFT из сантех. труб 50 на открытом воздухе, освещатся будет прямым естественным светом приблизительно 3-4 часа потом установка уйдет в тень. На случай дождей будет предусмотрен плёночный навес. Поскольку основное количество семян уже посеял то дождусь пока прорастут и сформируются корни, в последствии пересажу в стаканчики (наполнитель проваренный и промытый керамзит). В процессе осмысления идеи стал вопрос о растворе. Насколько я понял Тони использует только GHE Flora Series разведя по инструкции в воде. И все? Нашел я это удобрение в отечественных интернет-магазинах по цене 179 грн за литр. Для меня как для аспиранта со стипендией в 900 грн вариант немного дорогой (если учесть что Тони использует три вида!!!). Возможно ли пока что обойтись одним видом так как высаживать в установку я буду уже сформировавшееся растение (насколько я понял лучше всего подойдет FloraGro)? В четверг проведу рейд по садоводческим магазинам и рынкам в поисках удобрений и уточнения цен. Уверен что GHE Flora Series не найду, но скорее всего предложат заменители. Может кто подскажет что лучше брать?</p>
+
+<p>Если летний период даст положительные результаты то найду помещение куда перенести установку и продолжить разведение салата в зимний перриод с дозакупкой соответствущего оборудования.</p>
+
+<p>Возможно я что-то не учел, надюсь и уповаю на Вашу помошь советом. По мере продвижения дел буду отписываться)</p>
+
+<p><strong>valery</strong> 07-04-2010</p>
+
+<p>Если у Вас участок, тепличка, да еще и о “рентабельности” задумываетесь - Вам не нужны “жидкие” концентраты, тем более GHE.</p>
+
+<p>На “растворах” разоритесь. У них ведь совершенно другая “целевая” аудитория, ничего общего с “овощной” не имеющая.</p>
+
+<p><strong>Kid_1985</strong> 07-04-2010</p>
+
+<p>Тогда что вы порекомендуете искать? Самому смешивать питательные растворы?</p>
+
+<p>Для начала хотелось бы все таки устранить фактор неправильного подбора раствора взяв готовый концентрат и после полученя положительного результата перейти на самостоятельно изготовленные растворы.</p>
+
+<p><strong>Mole_Garden</strong> 07-04-2010</p>
+
+<blockquote>
+  <p>Добрый день. Я новичёк в гидропонике, посвятил этому делу выходные нашел много информации.</p>
+</blockquote>
+
+<p>:D А я вот уже больше 1,5 года как занимаюсь, перечитал уже не одну умную книжку и до сих пор много чего еще не понимаю и не знаю. Потому что каждый день новости.</p>
+
+<blockquote>
+  <p>Возможно ли пока что обойтись одним видом так как высаживать в установку я буду уже сформировавшееся растение (насколько я понял лучше всего подойдет FloraGro)?</p>
+</blockquote>
+
+<p>А ты хоть знаешь почему он пользуется тремя компонентами, а не одним как хочешь ты? В одном Азот и очень мало фосфора, в другом, калий и фосфор и почти нет азота, в третьем кальций, магний, железо, марганец и прочее. Попробуй испечь пирог с картошкой из муки и воды, без яиц, картошки, соли, масла и других ингредиентов. Для начала рекомендую все же прочитать теорию <a href="http://www.ponics.ru/2009/06/lib/" target="_blank">http://www.ponics.ru/2009/06/lib/</a></p>
+
+<p>Вы не думайте, что я пытаюсь от вас избавиться или съехать с разговора, просто после прочтений 50% вопросов: почему? что? как? - отпадут сами собой. А если еще останутся те, на которые ты не нашел ответы, будем разбирать.</p>
+
+<p>Еще информация для тебя по растворам:</p>
+
+<p><a href="http://forum.ponics.ru/index.php/topic,471.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,471.0.html</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php/topic,409.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,409.0.html</a></p>
+
+<p><strong>Kid_1985</strong> 07-04-2010</p>
+
+<p>Собственно перечитав состав я естественно видел нехватку компонентов. Теорию перечитывал как раз когда увидел Ваше сообщение, информацию по растворам перечитал фактически в первый же день, собственно в этом у меня и загвоздка. тут уж без теории не обойдешся, поэтому отложил все и взялся грызть гранит науки)</p>
+
+<p><strong>Mole_Garden</strong> 07-04-2010</p>
+
+<blockquote>
+  <p>Собственно перечитав состав я естественно видел нехватку компонентов. Теорию перечитывал как раз когда увидел Ваше сообщение, информацию по растворам перечитал фактически в первый же день, собственно в этом у меня и загвоздка. тут уж без теории не обойдешся, поэтому отложил все и взялся грызть гранит науки)</p>
+</blockquote>
+
+<p>Вот это правильно! 8)</p>
+
+<p><strong>Tony_85</strong> 07-04-2010</p>
+
+<p>Я использую удобрениями GHE Flora Series только потому что купил я их в Италии, где цена на них в разы дешевле, и не платил за доставку в Украину. А если покупать у нас то тогда салат будет золотым. У нас есть в продаже еще удобрения ProBioTech delta9 MASTER PRO. Они будут дешевле. Было время я ими пользовался. Салат рос нормально.</p>
+
+<p>Успехов вам. Главное не сдавайтесь сразу если что-то не получится.</p>
+
+<p><strong>Kid_1985</strong> 07-04-2010</p>
+
+<p>Отлично! Цена по сравнению с GHE Flora Series 175 против 85грн. Наверное на них и остановлюсь. Спасибо за рекомендацию.</p>
+
+<p>Я уж думал что придёться самому делать раствор, остановился на растворе кнопа для начала с последующим добавлением элементов опытным путем)) не самый лгкий способ. Тем не менее начитался книжек и пришел в ужас, чем дальше в лес тем злее дятлы! Информации много, и вроде-бы вся нужная. Ну что-ж, буду разбираться. Пока что пробегусь по магазинам и узнаю цену вопроса…</p>
+
+<p><strong>Sliva</strong> 12-06-2010</p>
+
+<p>год назад я за 100 гривен купил 5 солей и отдельно микроэлементы, этого хватает минимум на 1000 литров любого раствора и ограничено кальциевой селитрой, а остальных солей расход меньше. еще 12 грн банка электролита или азотка ~30 грн за литр(на 1000 литров хватит полюбому).</p>
+
+<p>Для составления раствора из пробиотека нужно 3 разных баночки и понадобится скорее всего еще PH-down или PH-up, а может и оба.</p>
+
+<p>Разница получается немаленькая. Кемира гидро+кальциевая селитра=полноценный раствор. Или какой-нибудь “Мастер” от волагро и 2-3 соли и получаем опять таки полноценный раствор.</p>
+
+<p>Рано или позно придется с растворами все равно разбиратся, если вы захотите этим заниматся дальше. лучше съэкономить деньги и купить электронный PH-метр, т.к. без него будет тяжко</p>
+
+<p><strong>Юка</strong> 13-06-2010</p>
+
+<p>Вырастил на GHE огурчики на подоконике в мате - урожай уже пробуем, помидорки в самодельной мобильной установке с периодическим проливом уже краснеют, но когда подсчитал затраты на раствор (т.к. установка дала течь)… решил перейти на Кемиру люкс, вчера готовил раствор пока без кальциевой селитры но пришлось на 20 л раствора добавить 2,5 лимона т.к. PH резко подскочила учтите при переходе. Если великие гуру не остановят, завтра поменяю раствор и да простят меня зажиревшие на GHE томатики.</p>
+
+<p><strong>Олеганос</strong> 13-06-2010</p>
+
+<p>И все-же GHE - есть GHE…</p>
+
+<p>Ни какими Кемирами и Кикимрами его не заменишь…</p>
+
+<p>Если нет желания заморачиваться с приготовлением раствора самостоятельно - я бы, Лично, использовал GHE.</p>
+
+<p>Конечно можно добавить в Кемиру кальциевую силитру и проч., НО!!! - при этом из нее никогда не получится в итоге -GHE( если ты не офигенный химик и при этом не прямой потомок Менделеева) ;D</p>
+
+<p><strong>цветовод</strong> 14-06-2010</p>
+
+<p>Кемира-гидро (не путать с кемира-люкс) производится для тепличных хозяйств, для агрономов (профессионалов), и насколько я знаю, специалисты отзываются о ней неплохо. Лично я, не знаю ни одного хозяйства, которое пользовалось GHE. ??? Я пользуюсь кемирой-гидро, проще не бывает. 8)</p>
+
+<p><strong>Mole_Garden</strong> 16-06-2010</p>
+
+<blockquote>
+  <p>Вырастил на GHE огурчики на подоконике в мате - урожай уже пробуем, помидорки в самодельной мобильной установке с периодическим проливом уже краснеют, но когда подсчитал затраты на раствор (т.к. установка дала течь)… решил перейти на Кемиру люкс, вчера готовил раствор пока без кальциевой селитры но пришлось на 20 л раствора добавить 2,5 лимона т.к. PH резко подскочила учтите при переходе.</p>
+</blockquote>
+
+<p>А где было написано что кемиру люкс вообще можно использовать для гидропоники? Сами придумали? Валера уже ни раз говорил, что там слишком много амидного азота, вроде так он называется, а он и меняет пш. Эта кемира для земли!</p>
+
+<p><strong>Юка</strong> 17-06-2010</p>
+
+<p>Придумывать мне ещё рано, к изучению химии охоту ещё в школе отбили, а желание поэкпериментировать осталось. Про Кемиру-люкс для гидропоники - нашел на другом сайте. Установку заправил - пока все живы. Раствор готов сменить сразу как только смогу найти Кемиру-гидро. В Питере проблема хоть в финку езжай ближе не нашёл. Если кто сможет помочь - заранее благодарен. Или посоветуйте как приготовить раствор если из знания химии только одна фраза “грамм-градус на массу рыла”</p>
+
+<p><strong>VVS_</strong> 21-06-2010</p>
+
+<p>Кемиру забываем. Акварин пользуем. :) Все микроэлементы в хелатной форме и их больше + легко выбрать нужное соотношение смешиванием разных удобрений этой серии, у меня щас на нем растет огурец уже 8 см высотой, 6 дней с момента посадки семечка в керамзит. Акварин + калц селитра. Расчетка с разными “акваринами” в этой теме</p>
+
+<p><a href="http://forum.ponics.ru/index.php/topic,552.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,552.0.html</a> попадание довольно точное.</p>
+
+<p>Хочу привлечь внимание общественности для обсуждения т.к. сомневаюсь в правильности расчетов концентрации, но допереть сам не могу. К сожалению никто не хочет меня поправить…</p>
+
+<p><strong>Юка</strong> 21-06-2010</p>
+
+<p>И где будем брать Акварин если в маг.только “Растворин” и “AVA для овощей” ну и “Кемира-люкс”. Может кто подскажет, как работать с готовыми удобрениями при нулевых знаниях химии?</p>
+
+<p><strong>VVS_</strong> 22-06-2010</p>
+
+<p>Я тоже не химик. Но взяв книжку Алиева с горем пополам сделал расчетку элементов в экселе. Пользуйтесь и не заморачивайтесь.</p>
+
+<p>А теперь можно забить туда в желтое поле состав кемиры и подбирать к ней что-то помимо кальциевой селитры чтобы NPK выровнять.</p>
+
+<p>По моим последним расчетам кемира + 0,3 доли акварина + 0,2 доли кальциевой селитры + 0,06 монофосфата калия получается неплохо. (за точность цифр не ручаюсь расчеты дома а я на работе, поэтому считайте все сами)</p>
+
+<p>Если акварина нет, искать что-то с малым содержанием фосфора, чтобы разбавить кемиру и выровнять NPK смеси (снизить фосфор).</p>
+
+<p>Во всех расчетах у меня получалась полная концентрация солей в сухом замесе в районе 50%(сделайте сумму всей строчки с процентами и микроэлементами). так что итоговый замес в пересчете грамм/литр можно брать в двойном весовом размере, единственное, с дозами поосторожнее, у меня пока огурчик растет на 1.1 г/литр. оптимум 1.6 г/литр.</p>
+
+<p><strong>maxsoft</strong> 22-06-2010</p>
+
+<blockquote>
+  <p>Я тоже не химик. Но взяв книжку Алиева с горем пополам сделал расчетку элементов в экселе…</p>
+</blockquote>
+
+<p>а чем NPK калькулятор не понравился?</p>
+
+<p><strong>VVS_</strong> 22-06-2010</p>
+
+<blockquote>
+  <p>а чем NPK калькулятор не понравился?</p>
+</blockquote>
+
+<p>Если честно, просто не смог его найти ;) Дайте ссылку прямую, посмотрю что за штука.</p>
+
+<p><strong>maxsoft</strong> 22-06-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>а чем NPK калькулятор не понравился?</p>
+  </blockquote>
+
+  <p>Если честно, просто не смог его найти ;) Дайте ссылку прямую, посмотрю что за штука.</p>
+</blockquote>
+
+<p>скорее не искали ;)</p>
+
+<p>волшебный яндекс вам поможет <a href="http://yandex.ru/yandsearch?text=%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C+NPK+%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80&amp;lr=2" target="_blank">первый же линк</a></p>
+
+<p><strong>VVS_</strong> 22-06-2010</p>
+
+<p>Скачал. посмотрел. В интерфейсе запутался.. не все прозрачно (</p>
+
+<p>Я выложил новый файлик с расчетами в соседней теме, посмотрите плиз…</p>
+
+<p><strong>maxsoft</strong> 22-06-2010</p>
+
+<blockquote>
+  <p>Скачал. посмотрел. В интерфейсе запутался.. не все прозрачно (</p>
+</blockquote>
+
+<p>там в папке есть Help.doc</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

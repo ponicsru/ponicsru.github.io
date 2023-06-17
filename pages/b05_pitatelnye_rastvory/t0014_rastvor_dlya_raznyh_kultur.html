@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Раствор для разных культур. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Раствор для разных культур.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Раствор для разных культур.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Mole_Garden</strong> 08-04-2009</p>
+
+<p>Тут вот нашел такой вопрос: “Хочу узнать состав питательного раствора для лука? “</p>
+
+<p>И последовал ответ:</p>
+
+<p>Например в миллимолях:</p>
+
+<p>N 10.7</p>
+
+<p>P 1.55</p>
+
+<p>K 5.37</p>
+
+<p>Ca 3.2</p>
+
+<p>Mg 1.3</p>
+
+<p>в пикомолях:</p>
+
+<p>Fe 54</p>
+
+<p>B 46</p>
+
+<p>Zn 2.5</p>
+
+<p>Mn 9</p>
+
+<p>Cu 2.5</p>
+
+<p>Mo 1</p>
+
+<p>И так теперь вопрос от меня, а сколько это в [size=12pt]мг/л[/size] ? И это для какого лука? Из семян или из севка или ?</p>
+
+<p>p.s. Думаю некоторые уже привыкли к моим таким вопросам. :D</p>
+
+<p><strong>mdima</strong> 08-04-2009</p>
+
+<p>В мг/л (или ppm) это выглядит так:</p>
+
+<p>N	150</p>
+
+<p>P	48</p>
+
+<p>K	210</p>
+
+<p>Ca	128</p>
+
+<p>Mg	31,5</p>
+
+<p>Fe	3,</p>
+
+<p>B	0,5</p>
+
+<p>Zn	0,16</p>
+
+<p>Mn	0,5</p>
+
+<p>Cu	0,16</p>
+
+<p>Mo	0,1</p>
+
+<p><strong>Mole_Garden</strong> 08-04-2009</p>
+
+<blockquote>
+  <p>В мг/л (или ppm) это выглядит так:</p>
+
+  <p>N	150</p>
+
+  <p>P	48</p>
+
+  <p>K	210</p>
+
+  <p>Ca	128</p>
+
+  <p>Mg	31,5</p>
+
+  <p>Fe	3,</p>
+
+  <p>B	0,5</p>
+
+  <p>Zn	0,16</p>
+
+  <p>Mn	0,5</p>
+
+  <p>Cu	0,16</p>
+
+  <p>Mo	0,1</p>
+</blockquote>
+
+<p>Так просто отмазаться не получиться, а если еще где встретиться такая же инфа с миллимолях, расскажи нам как это так посчиталось?</p>
+
+<p><strong>mdima</strong> 08-04-2009</p>
+
+<p>По таблице Менделеева</p>
+
+<p>Для примера N (атомный вес по таблице 14) итого 10.7 mM = 10.7*14=149.8мг</p>
+
+<p><strong>Mole_Garden</strong> 08-04-2009</p>
+
+<blockquote>
+  <p>По таблице Менделеева</p>
+
+  <p>Для примера N (атомный вес по таблице 14) итого 10.7 mM = 10.7*14=149.8мг</p>
+</blockquote>
+
+<p>Спасибо, так более понятно. Не все мы химики и школьную программу уже давно забыли. :)</p>
+
+<p><strong>Олеганос</strong> 08-04-2009</p>
+
+<p>А кто-то вместо уроков химии в пивнушку гонял…. ;D</p>
+
+<p><strong>Mendes</strong> 10-04-2009</p>
+
+<p>Купил сегодня рн-тест. Оказалось показатель водопроводной воды почти 8. У меня нет серной кислоты для уменьшения рн. Можно ли это сделать соляной кислотой?</p>
+
+<p><strong>Олеганос</strong> 10-04-2009</p>
+
+<p>Соляной нельзя ни в коем разе. :o!!!</p>
+
+<p>Лимонной разведи и налей чуть-чуть. :)</p>
+
+<p><strong>Mole_Garden</strong> 10-04-2009</p>
+
+<blockquote>
+  <p>Соляной нельзя ни в коем разе. :o!!!</p>
+
+  <p>Лимонной разведи и налей чуть-чуть. :)</p>
+</blockquote>
+
+<p>Соляной нельзя, там хлор, лимонной тоже не стоит - это органика, раствор быстро затухнет, можете Азотной(если идет вега) или Фосфорной(если уже цветет).</p>
+
+<p><strong>Олеганос</strong> 10-04-2009</p>
+
+<p>:D Ладнаа! Ни че не затухнет - я же сыпал аж 50 грамм на тонну воды.</p>
+
+<p>А потом еще и литр электролита в эту же воду. Вода у меня РН- 8,4 в крану.</p>
+
+<p>правда воду потом менял…</p>
+
+<p><strong>Mole_Garden</strong> 10-04-2009</p>
+
+<blockquote>
+  <p>Купил сегодня рн-тест. Оказалось показатель водопроводной воды почти 8.</p>
+</blockquote>
+
+<p>А вы что думали? :) это реальность, а не рай</p>
+
+<p><strong>Mole_Garden</strong> 10-04-2009</p>
+
+<blockquote>
+  <p>:D Ладнаа! Ни че не затухнет - я же сыпал аж 50 грамм на тонну воды.</p>
+
+  <p>А потом еще и литр электролита в эту же воду. Вода у меня РН- 8,4 в крану.</p>
+
+  <p>правда воду потом менял…</p>
+</blockquote>
+
+<p>И? зачем же ты воду менял? сразу бы залил в аккумуляторы. :D</p>
+
+<p>Нет, не стоит использовать лимонную кислоту!!!</p>
+
+<p>Я лишь советую, смотрите сами.</p>
+
+<p><strong>mdima</strong> 10-04-2009</p>
+
+<p>Вообще подкисляют обычно смесью азотной и фосфорной. Можно серной. На счет лимонной кислоты - совет дал я, как срочная мера, при отсутствии остальных. (Лежу с гриппом+ангиной поэтому немногословен)</p>
+
+<p><strong>Mendes</strong> 10-04-2009</p>
+
+<p>Дмитрий, желаю вам скорейшего выздоровления. Надеюсь, в этом вам помогут перчики с подоконника…наверняка, они уже вплоне способны на это :)</p>
+
+<p><strong>Aleksey Kurenin</strong> 10-04-2009</p>
+
+<p>Регулировать рН можно любой кислотой, только она должна быть чистая (пищевая, можно сказать). Вы же потом “Это” будете кушать.</p>
+
+<p>Применение Солянойкислоты очень ограничено, так как много хлора растениям может быть вредно, особенно огурцам или салатным.</p>
+
+<p>Лучше всего конечно азотка или ортофосфорная. Орто - Фосфорная кислота - самый дешёвый источник фосфора. Азотная дешевле в принципе. Серная и Соляная используются редко. МОжно и лимонной, но опыта у меня нет.</p>
+
+<p><strong>Олеганос</strong> 10-04-2009</p>
+
+<p>спасибо :)</p>
+
+<p><strong>mdima</strong> 10-04-2009</p>
+
+<p>Лимонную кислоту постоянно использовать, конечно, не следует. Я ее привел, как слабый аналог “Трилон Б”. Лимонная кислота образует слабые комплексы - цитраты. Опыт кратковременного использования у меня был, когда изучал различные комплексоны/хелаторы.</p>
+
+<p><strong>Олеганос</strong> 10-04-2009</p>
+
+<p>Так,так, так… а можно с этого места по- подробнее?! ;)</p>
+
+<p>Что есть - комплексоны, цитраты, хелаторы, да и хелаты тоже.</p>
+
+<p>И желательно даже ОЧЕНЬ сильно по- подробнее, а то я ,лично, вообще не в зуб ногой, :-[ и похоже что не только я один:D</p>
+
+<p><strong>Egor</strong> 23-04-2009</p>
+
+<blockquote>
+  <p>Купил сегодня рн-тест. Оказалось показатель водопроводной воды почти 8. У меня нет серной кислоты для уменьшения рн. Можно ли это сделать соляной кислотой?</p>
+</blockquote>
+
+<p>В случае нехватки фирменных понизителей, обычно и пользуется электролит для аккумуляторов.</p>
+
+<p><strong>DimaM</strong> 26-06-2009</p>
+
+<p>Приобрел наконец-то приборы ph и tds. Замерил тдс свежеприготовленного раствора для томатов по рецепту 6мл/литр каждого компонента как написано в инструкции в магазине для стадии созревания первых плодов, оказалось 850. Не мало ли это?</p>
+
+<p>В инструкции на концентрат написано что ЕС надо поддерживать на уровне от 1.5, т.е тдс от 1050.</p>
+
+<p>Почему же тогда написано что компонентов концентрата надо по 6мл на литр?</p>
+
+<p><strong>DimaM</strong> 26-06-2009</p>
+
+<p>А в этой статье <a href="http://www.ponics.ru/2009/03/ph_tds/" target="_blank">http://www.ponics.ru/2009/03/ph_tds/</a> написано что в стадии плодоношения ЕС должен быть от 2.5 до 3, т.е. тдс от 1750 до 2100. Значит мне более чем в два раза больше надо концентрата наливать на литр, т.е. 12-15мл/литр? Что-то неувязочки какие-то. Разъясните пожалуйста.</p>
+
+<p><strong>Mole_Garden</strong> 26-06-2009</p>
+
+<p>Давайте дождемся Дмитрия, я думаю он разъяснит ситуацию. Без паники.</p>
+
+<p><strong>mdima</strong> 26-06-2009</p>
+
+<p>Перевод из сименсов в TDS неоднозначный, везде даны примерные значения. 850 ppm - это хороший уровень для растения до цветения. Статьи на сайте из различных источников. В каждом хозяйстве агрохимик дает свои рекоммендации, вплоть до того, какая сегодня освещенность. Так, что не переживайте. Если будут проблеммы с растением или вопросы, то пишите, звоните и т.д.</p>
+
+<p><strong>Mole_Garden</strong> 26-06-2009</p>
+
+<p>И еще в дополнение к выше сказанному, перец, про который висит репорта на главной странице, вырос и дал такой урожай и здоровые, хорошие плоды именно при таком показание TDS метра - 850ppm</p>
+
+<p><strong>valery</strong> 26-06-2009</p>
+
+<p>Обычно даются усредненные и достаточно приблизительные уровни концентрации и даже кислотности, больше как ориентир.</p>
+
+<p>Кроме того эти уровни отличаются и по способам выращивания - в проточных технологиях - одни, в минвате совершенно другие.</p>
+
+<p>Даже на одном субстрате - у разных компаний производителей - свои требования и взгляды. Например, если читали ветку Алексея Куренина о вате “Гродан” - у них свои требования к концентрации и рН.</p>
+
+<p>Требования компании “Культилен” (финский производитель, тоже хорошая вата, хотя попроще “Гродана”, я правда долго думал, что круче “культилена” писка нет) - у них к своей вате требования отличаются очень даже сильно от “гродановских”.</p>
+
+<p>А серьезный импортный производитель семян - и вовсе дает “третьи” рекомендации и требования, да еще разные к “разным” классам, скажем, огурца.</p>
+
+<p>А на месте выращивания, действительно, местный агроном еще и смотрит на свои конкретные условия и уже свои коррективы привносит.</p>
+
+<p>Так что не расстраивайтесь, просто берите за “примерную” основу, а в основном ориентируйтесь на самочувствие Ваших растений.</p>
+
+<p><strong>DimaM</strong> 26-06-2009</p>
+
+<p>Спасибо. А то я уже испугался, что концентрата надо в два раза больше лить, тогда бы он оказался бы слишком дорогим, около 5-6 руб за литр готового раствора.</p>
+
+<p><strong>Mendes</strong> 26-06-2009</p>
+
+<p>У меня кондуктометра так и нет :(</p>
+
+<p>Лью как сказано на этикетке и …гложат меня сомнения. DimaM говорит о 6мл/л, а у меня написано 5мл/л. Он пользуется концентратами от другого производителя или у меня устаревшая информация.</p>
+
+<p>Проясните, пожалуйста.</p>
+
+<p>И еще, если мне не жалко за раствор и 5-6 рублей за литр, может мне удвоить концентрацию. Так, на всякий случай.</p>
+
+<p><strong>DimaM</strong> 26-06-2009</p>
+
+<p>использую концентрат из местного магазина.</p>
+
+<p><strong>Mole_Garden</strong> 26-06-2009</p>
+
+<blockquote>
+  <p>У меня кондуктометра так и нет :(</p>
+
+  <p>Лью как сказано на этикетке и …гложат меня сомнения. DimaM говорит о 6мл/л, а у меня написано 5мл/л. Он пользуется концентратами от другого производителя или у меня устаревшая информация.</p>
+
+  <p>Проясните, пожалуйста.</p>
+</blockquote>
+
+<p>Вы льете точно такой же для тех же самых культур?</p>
+
+<p>Вроде как у вас пока огурцы, а DimaM томаты, или ошибаюсь?</p>
+
+<blockquote>
+  <p>И еще, если мне не жалко за раствор и 5-6 рублей за литр, может мне удвоить концентрацию. Так, на всякий случай.</p>
+</blockquote>
+
+<p>А что у вас есть признаки недостатка элементов?</p>
+
+<p><strong>Mendes</strong> 26-06-2009</p>
+
+<blockquote>
+  <p>использую концентрат из местного магазина.</p>
+</blockquote>
+
+<p>Вы уверены, что написано 6мл/л?!!! У меня точно 5.</p>
+
+<p><strong>Mole_Garden</strong> 26-06-2009</p>
+
+<blockquote>
+  <blockquote>
+    <p>использую концентрат из местного магазина.</p>
+  </blockquote>
+
+  <p>Вы уверены, что написано 6мл/л?!!! У меня точно 5.</p>
+</blockquote>
+
+<p>Какой у вас раствор? для какой культуры? Думаю, есть разница, помидор или огурец.</p>
+
+<p><strong>Mendes</strong> 26-06-2009</p>
+
+<p>У меня 12 кустов огурцов и 10 - томатов. У меня концентраты из местного магазина для обоих культур.</p>
+
+<p>А есть ли признаки, нет ли признаков недостатка науке это неизвестно :) В роли науки тут я.</p>
+
+<p>Серьезно. Я не знаю, по каким критериям судить о недостатках? Вроде все красиво растет.</p>
+
+<p><strong>Mole_Garden</strong> 26-06-2009</p>
+
+<blockquote>
+  <p>У меня 12 кустов огурцов и 10 - томатов. У меня концентраты из местного магазина для обоих культур.</p>
+</blockquote>
+
+<p>И на обоих написано что лить по 5мл?</p>
+
+<p>вот что написано в магазине в частности про томаты</p>
+
+<blockquote>
+  <ol>
+    <li>
+      <p>После посадки и до появления второй пары настоящих листьев по 4мл концентратов “А” и “Б” на литр воды.</p>
+    </li>
+    <li>
+      <p>После посадки и до образования первых плодов по 5мл концентратов “А” и “Б” на литр воды.</p>
+    </li>
+    <li>
+      <p>До созревания плодов на второй кисти по 6мл концентратов “А” и “Б” на литр воды.</p>
+    </li>
+    <li>
+      <p>До образования плодов на третьей и следующих кистях по 7мл концентратов “А” и “Б” на литр воды.</p>
+    </li>
+  </ol>
+</blockquote>
+
+<p>На какой стадии у вас сейчас находятся томаты? 1 - 2 - 3 - 4?</p>
+
+<blockquote>
+  <p>А есть ли признаки, нет ли признаков недостатка науке это неизвестно Улыбающийся В роли науки тут я.</p>
+
+  <p>Серьезно. Я не знаю, по каким критериям судить о недостатках? Вроде все красиво растет.</p>
+</blockquote>
+
+<p>Если бы были проблемы по питанию, вы бы это увидели сразу. При недостатке появляются не здорового цвета листья, сохнут, отпадают, закручиваются и т.д.</p>
+
+<p><strong>Mendes</strong> 26-06-2009</p>
+
+<p>У меня на огруцовых и томатовых растворах только два первых пункта. Про 6 и 7 мл ни слова.</p>
+
+<p>Мои помидоры еще ни на какой кисти не созрели. На первой самый большой плодик диаметром около 2-х см.</p>
+
+<p>Признаков, вероятно, нет. Все выглядит здоровым и довольным.</p>
+
+<p><strong>Mole_Garden</strong> 26-06-2009</p>
+
+<p>Значит у вас пока все хорошо, особо переживать не стоит.</p>
+
+<p><strong>Mendes</strong> 26-06-2009</p>
+
+<p>Спасибо. теперь переживать не буду.</p>
+
+<p>А до 6 мл/л все таки доведу :)</p>
+
+<p><strong>mdima</strong> 26-06-2009</p>
+
+<p>Под разные культуры разные разбавления. В основном идут 5мл/л. Есть и 6 мл/л. Еще от партии зависит. На задней наклейке все написано для каждой конктретной партии.</p>
+
+<p><strong>DimaM</strong> 27-06-2009</p>
+
+<blockquote>
+  <p>Под разные культуры разные разбавления. В основном идут 5мл/л. Есть и 6 мл/л. Еще от партии зависит. На задней наклейке все написано для каждой конктретной партии.</p>
+</blockquote>
+
+<p>А у меня нет никакой задней наклейки на томатном концентрате, поэтому лью как написано в описании концентрата на сайте. Первые еще зеленые плоды образовались, значит как я понимаю у меня стадия 3.</p>
+
+<p>Хотелось бы увидеть NPK в мг/литр у раствора из концентратов при например 5 или 6 мл концентратов на литр.</p>
+
+<p><strong>mdima</strong> 27-06-2009</p>
+
+<p>Как правильно сказал valery концентрации все равно ориентировочные. если TDS 850 ppm - то до цветения самый то.</p>
+
+<p><strong>DimaM</strong> 28-06-2009</p>
+
+<p>А если уже отцвели и помидорки растут, то какая должна быть концентрация или тдс? Так и не понял повышать мне кол-во концентратов для увеличения тдс или нет.</p>
+
+<p><strong>mdima</strong> 28-06-2009</p>
+
+<p>Нужно смотреть на состояние растения. Если первая кисть завязалась, то можно поднять до 1200 ppm.</p>
+
+<p><strong>solod</strong> 29-06-2009</p>
+
+<p>здравствуйте , подскажите пожайлуста стоит брать спец. расстворы для понижения рН или можно это делать азотной кислотой постоянно?</p>
+
+<p><strong>Mole_Garden</strong> 29-06-2009</p>
+
+<blockquote>
+  <p>здравствуйте , подскажите пожайлуста стоит брать спец. расстворы для понижения рН или можно это делать азотной кислотой постоянно?</p>
+</blockquote>
+
+<p>Спец растворы это pH Down ? если да, то не обязательно, так как с этой ролью хорошо справляются азотная(на веге), ортофосфорная(на цветение) или серная кислота в любой стадии роста.</p>
+
+<p><strong>solod</strong> 29-06-2009</p>
+
+<p>Спасибо, а удобрения для гидропоники какие лучше, брать Флору(дорогие) или попытаться сделать самому по рецептам описанным на форуме.</p>
+
+<p><strong>Mole_Garden</strong> 29-06-2009</p>
+
+<blockquote>
+  <p>Спасибо, а удобрения для гидропоники какие лучше, брать Флору(дорогие) или попытаться сделать самому по рецептам описанным на форуме.</p>
+</blockquote>
+
+<p>мало того, что флора дорогая, так из нее, как показывает практика, не получается сделать полноценный хороший раствор для плодоовощных растений. Можно самому сделать, если знаете, что, как и в каких пропорциях мешать, можно воспользоваться и готовыми под конкретную культуру из<a href="http://shop.ponics.ru/solution-c-7.html" target="_blank"> нашего магазина </a> тут есть концентраты почти для любых овощей. Смотрите сами, как вам будет удобней.</p>
+
+<p><strong>solod</strong> 29-06-2009</p>
+
+<p>спасибо</p>
+
+<p><strong>solod</strong> 05-07-2009</p>
+
+<p>здравствуйте, подскажите пожайлуста</p>
+
+<p>рН воды меняется после добавления удобрений, нужно ли доводить его до прежнего уровня.</p>
+
+<p><strong>Mole_Garden</strong> 05-07-2009</p>
+
+<blockquote>
+  <p>здравствуйте, подскажите пожайлуста</p>
+
+  <p>рН воды меняется после добавления удобрений, нужно ли доводить его до прежнего уровня.</p>
+</blockquote>
+
+<p>Да, конечно нужно. Ваш раствор после все манипуляций должен быть 5,5 -6,0</p>
+
+<p><strong>solod</strong> 05-07-2009</p>
+
+<p>спасибо.</p>
+
+<p><strong>ladalodar</strong> 21-10-2009</p>
+
+<p>Правильно ли я понял, что можно купить азотную кислоту в конторе химреактивов и ей понижать pH? (например, <a href="http://www.vekton.ru/e_sale/index.aspx" target="_blank">http://www.vekton.ru/e_sale/index.aspx</a>) И подскажите сколько (примерно) необходимо кислоты чтобы понизить pH на один пункт в растворе объемом 30 литров. Заранее спасибо.</p>
+
+<p><strong>Mole_Garden</strong> 21-10-2009</p>
+
+<blockquote>
+  <p>Правильно ли я понял, что можно купить азотную кислоту в конторе химреактивов и ей понижать pH? (например, И подскажите сколько (примерно) необходимо кислоты чтобы понизить pH на один пункт в растворе объемом 30 литров. Заранее спасибо.</p>
+</blockquote>
+
+<p>Все зависит от вашей воды, кому то потребуется 1мл, кому то 1,5мл, а кому-то и 5мл -тут понимаете ли все очень индивидуально.</p>
+
+<p><strong>ASK</strong> 18-02-2010</p>
+
+<p>Все же! перерыл весь сайт и не могу найти раствор для петрушки и прочей эфирно-масленной зелени PPМ есть а состав?</p>
+
+<p><strong>Mole_Garden</strong> 19-02-2010</p>
+
+<blockquote>
+  <p>Все же! перерыл весь сайт и не могу найти раствор для петрушки и прочей эфирно-масленной зелени PPМ есть а состав?</p>
+</blockquote>
+
+<p>Растворы, составы, таблицы и прочее ищется не на форуме, а на основной сайте <a href="http://ponics.ru" target="_blank">http://ponics.ru</a></p>
+
+<p>В частности про ваш вопрос про зелень</p>
+
+<p><a href="http://www.ponics.ru/2009/04/agro_trip1/" target="_blank">http://www.ponics.ru/2009/04/agro_trip1/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/04/herbs/" target="_blank">http://www.ponics.ru/2009/04/herbs/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/04/parsley/" target="_blank">http://www.ponics.ru/2009/04/parsley/</a></p>
+
+<p><strong>ASK</strong> 19-02-2010</p>
+
+<blockquote>
+  <p>В частности про ваш вопрос про зелень</p>
+</blockquote>
+
+<p>Спасибо!</p>
+
+<p><strong>alexxss</strong> 13-06-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Спасибо, а удобрения для гидропоники какие лучше, брать Флору(дорогие) или попытаться сделать самому по рецептам описанным на форуме.</p>
+  </blockquote>
+
+  <p>мало того, что флора дорогая, так из нее, как показывает практика, не получается сделать полноценный хороший раствор для плодоовощных растений. Можно самому сделать, если знаете, что, как и в каких пропорциях мешать, можно воспользоваться и готовыми под конкретную культуру из<a href="http://shop.ponics.ru/solution-c-7.html" target="_blank"> нашего магазина </a> тут есть концентраты почти для любых овощей. Смотрите сами, как вам будет удобней.</p>
+</blockquote>
+
+<p>А для клубники\земляники растворы в вашем магазине будут?</p>
+
+<p><strong>Mole_Garden</strong> 13-06-2011</p>
+
+<blockquote>
+  <p>А для клубники\земляники растворы в вашем магазине будут?</p>
+</blockquote>
+
+<p>Вопросы по магазину и ассортименту задавай в теме про магазин. Магазин к форуму и ресурсу отношения не имеет.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

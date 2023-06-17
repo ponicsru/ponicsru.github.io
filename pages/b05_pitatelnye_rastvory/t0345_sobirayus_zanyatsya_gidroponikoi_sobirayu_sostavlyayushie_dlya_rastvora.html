@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Собираюсь заняться гидропоникой, собираю составляющие для раствора | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Собираюсь заняться гидропоникой, собираю составляющие для раствора">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Собираюсь заняться гидропоникой, собираю составляющие для раствора</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Mole_Garden</strong> 21-11-2009</p>
+
+<p>Вот такое письмо пришло мне сегодня в личку, решил его опубликовать здесь, так как возможно есть люди, у которых такие же планы.</p>
+
+<p>Добрый день, Mole_Garden</p>
+
+<p>Проживаю в Новороссийске,потихоньку собираю всё необходимое для гидропоники,так же многое присмотрел в вашем магазине.Но честно говоря хотелось бы поэкперементировать и забадяжить(это первый опыт:)) самому.</p>
+
+<p>Нашёл пару контор,скинул им все составляющие, а они мне вот что( в файле)-сказали это всё что они могут мне предоставить..я просмотрел и нашёл только одно соответствие или я ошибаюсь..У меня просьба, проконсультируйте меня ,как профи толи они мне тулят или я просто слаб в химии.</p>
+
+<blockquote>
+  <p>Добрый день, Mole_Garden</p>
+</blockquote>
+
+<p>Вечер добрый.</p>
+
+<blockquote>
+  <p>Проживаю в Новороссийске,потихоньку собираю всё необходимое для гидропоники,так же многое присмотрел в вашем магазине.Но честно говоря хотелось бы поэксперементировать и забадяжить(это первый опыт:)) самому.</p>
+</blockquote>
+
+<p>Если у вас нет опыта в химии, то это будет не самый удачный эксперимент, так как для более менее хорошего результата надо иметь знания и хотя бы минимальный опыт в гидропонике, а так же уметь составлять и комбинировать элементы, нужно понимать, что с чем можно смешивать, а что нет, что бы не выпадало в осадок. Поэтому, для начинающих лучше использовать уже готовые удобрения или растворы. Рекомендую все же остановиться на готовых продуктах, а через 2-3 цикла выращивания вы уже поймете в чем соль, появится опыт и вот тогда можно уже будет экспериментировать с самостоятельным составлением растворов из солей. К стати, не стоит забывать, что для самостоятельного приготовления нужны не только соли, но и некоторое оборудование, к примеру точные весы для взвешивания микро элементов.</p>
+
+<p>Тут можно чуть подробней прочитать про самостоятельное приготовление растворов <a href="http://www.ponics.ru/2009/05/simple_solution/" target="_blank">http://www.ponics.ru/2009/05/simple_solution/</a></p>
+
+<blockquote>
+  <p>Нашёл пару контор,скинул им все составляющие, а они мне вот что( в файле)-сказали это всё что они могут мне предоставить..я просмотрел и нашёл только одно соответствие или я ошибаюсь..У меня просьба,проконсультируйте меня ,как профи толи они мне тулят или я просто слаб в химии.</p>
+</blockquote>
+
+<p>А с данным документом лучше к химикам</p>
+
+<p><img src="http://img695.imageshack.us/img695/8404/1miunj460bcf7a72f20c271.th.jpg" alt="" /></p>
+
+<p><strong>Олеганос</strong> 21-11-2009</p>
+
+<p>:D Вы не торопитесь, уважаемый(ая). Для первого опыта погодили бы закупать химикаты-то.</p>
+
+<p>Набейте сначала руку в просто гидропонном выращивании( без изготовления растворов , то есть). Сделайте или приобретите установку, со светом решите вопросы, ну и повыращиванйте на готовых концентратах. На каких концентратах остановиться - решайте сами, благо выбор есть. Я растворы в местном магазе беру- не в претензиях. НЕ РЕКЛАМА :-\</p>
+
+<p><strong>mike1974</strong> 25-11-2009</p>
+
+<p>Я бы рад, но магазин не работает..Тем более я просчитал стоимость простенького концетрата на 1000л по ценам составляющих предлагаемых в нашем регионе и в итоге дешевле и безопаснее наверное будет приобрести в вашем магазине- всё будет зависеть от стоимости доставки в Краснодарский край.</p>
+
+<p><strong>Mole_Garden</strong> 25-11-2009</p>
+
+<p>Да, к сожалению, магазин пока не работает. Более подсказать не могу.</p>
+
+<p><strong>цветовод</strong> 25-11-2009</p>
+
+<p>Может быть есть смысл попробовать это:</p>
+
+<p><a href="http://s4.postimage.org/17h5Ri.jpg" target="_blank"><img src="http://s4.postimage.org/17h5Ri.jpg" alt="" /></a></p>
+
+<p>плюс кальциевая селитра, например такая:</p>
+
+<p><a href="http://s2.postimage.org/6t0PS.jpg" target="_blank"><img src="http://s2.postimage.org/6t0PS.jpg" alt="" /></a></p>
+
+<p>Это конечно не “фонтан”, но перебиться можно.</p>
+
+<p><strong>valery</strong> 25-11-2009</p>
+
+<p>:)</p>
+
+<p>Ничего себе “перебиться” и не “фонтан”.</p>
+
+<p>Кемира ГроуХау - не самый, может быть, но один из ведущих производителей. “Кемира Гидро” как раз для малообъемного способа, капельного полива, словом вполне прекрасно подходит для гидропоники, капельниц не засоряет, все что нужно - хелатировано.</p>
+
+<p>Кальциевая селитра “Яра лива” - вообще одна из лучших. По крайней мере тепличные “профессионалы” всегда упоминают ее на первом месте. А “внешний вид” - просто песня. Хочется не в раствор сыпать, а в чай ложить.</p>
+
+<p><strong>цветовод</strong> 25-11-2009</p>
+
+<p>Сорри. Сам не разбираюсь в химии, просто в садово-огородном магазине посоветовали, и я купил. Сказали: “можно применять для гидропоники” и всё. Я в шоке, что это так просто.</p>
+
+<p><strong>valery</strong> 25-11-2009</p>
+
+<p>Значит, Вам удачно повезло. Или в Ваших краях замечательные садово-огородные магазины. А мне пришлось долго договариваться из Воркуты с московской компанией-импортером, что бы согласились отгрузить такую “микроскопическую” партию именно “картинок” из Вашего поста.</p>
+
+<p><strong>Олеганос</strong> 26-11-2009</p>
+
+<p>Однако кучеряво вы там в Оренбурге живете ;), продавцы в магазинах слово гидропоника понимают… :( А у нас другая картинка</p>
+
+<p><strong>цветовод</strong> 27-11-2009</p>
+
+<p>В садово-огородном магазине советовали не продавцы, а директор (являюсь постоянным оптовым клиентом). Тему гидропоники он действительно знал, как оказалось.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

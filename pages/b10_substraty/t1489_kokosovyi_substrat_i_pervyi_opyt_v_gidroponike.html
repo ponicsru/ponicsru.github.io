@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Кокосовый субстрат и первый опыт в гидропонике | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Кокосовый субстрат и первый опыт в гидропонике">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Кокосовый субстрат и первый опыт в гидропонике</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>nickla</strong> 25-06-2012</p>
+
+<p>Сегодня наконецтаки получил свой pH метр и решил начинать. Что было сделано:</p>
+
+<ol>
+  <li>
+    <p>Взял 4 зерна огурца зозули. Сделал воду с pH=5.5 EC=2.3 и барботировал в ней в течении 8 часов. pH в итоге повысился почемуто до 6.0.</p>
+  </li>
+  <li>
+    <p>Развел кокосовый пресованый субстракт в воде и положил в горшок. Не кипятил и не очищал - делал как есть. Кстати, пах этот субстракт землей почемуто. Скажите, это критично если я его не прокипятил и не прочистил?</p>
+  </li>
+  <li>
+    <p>Воткнул зерна, залил раствором pH=5.5 EC=2.5 на 30% от общей высоты. Это ниже чем уровень на который я посадил.</p>
+  </li>
+  <li>
+    <p>Укрыл плотно горшок полиэтиленом сверху и скотчем изолировал. От полиэтилена до поверхности субстракта 4-5см.</p>
+  </li>
+</ol>
+
+<p>Так как я новичек во всем этом и процесс проращивания из зерен в саженцы я представляю лишь в теории вычитаной на форумах то вопрос - сделал ли я все правильно? Когда снимать полиэтилен?</p>
+
+<p>Везде описывался метод выращивания на кубиках минваты, так что примерно по догадке действую. Очень хочется получить всходы и не разочароваться.</p>
+
+<p><strong>Coccinella</strong> 25-06-2012</p>
+
+<p>И зачем надо было барботировать семена огурца? Они и так всходят на третий день при оптимальной температуре и достаточной влажности. Если сырость до семян не достает, то и толку не будет. Как взойдут, то есть над поверхностью кокоса появятся, так пленку и снимайте.</p>
+
+<p><strong>nickla</strong> 25-06-2012</p>
+
+<p>Т.е. мне стоит долить воду до уровня семян? Вроде читал гдето что кокос имеет свойство быть влажным по всей своей высоте…</p>
+
+<p><strong>caiman</strong> 25-06-2012</p>
+
+<p>Кокос хорошо впитывает воду при условии, что он весь влажный, а вот сухой пропитывается не сразу и не по всему объему. В кокосе главное условие - НЕ ПЕРЕЛИВАТЬ.</p>
+
+<p><strong>nickla</strong> 25-06-2012</p>
+
+<p>Дык я его сначала ж в воде размочил, а потом положил в горшок. Он весь влажный.</p>
+
+<p>Я сейчас волнуюсь как ребенок хочу чтобы взошли. Дочь с женой когда из роддома забирал так не волновался…</p>
+
+<p><strong>а-ну-ка</strong> 25-06-2012</p>
+
+<p>Под полиэтилен ~~ложим ~~ помещаем термометр,наблюдаем,поддерживаем 25-28*.И все взойдёт.</p>
+
+<p><strong>nickla</strong> 26-06-2012</p>
+
+<p>Мда.. пойду теперь покупать термометр с измерением влажности.</p>
+
+<p><strong>nickla</strong> 28-06-2012</p>
+
+<p>Они взошли! Причем все и сразу. С утра посмотрел - торчали зеленые кончики гдето по полсантиметра. Через 3 часа глянул - там уже 2 сантиметра и они распрямляются пытаясь выкинуть первые листы.</p>
+
+<p>Снимать пленку уже?</p>
+
+<p><strong>Coccinella</strong> 28-06-2012</p>
+
+<p>Конечно! Иначе вытянутся!</p>
+
+<p><strong>nickla</strong> 28-06-2012</p>
+
+<p>Я снял пленку. Да, вы были правы - вытянулись так и не распустив первые 2 листа. Самый большой уже 3 сантиметра. Растут на глазах. Эксперимент идет удачно. Жду когда распустят листы :)</p>
+
+<p>Субстракт все еще влажный но судя по жаре он будет быстро сохнуть. Я хочу навести немного раствора примерно 30% от требуемого чтобы насыщать субстракт влагой. Стоит ли уже начинать подкармливать слабым раствором или держать на воде или же уже сразу можно давать нормальную дозу раствора? В субстракт было примерно добавлено с водой незначительное количество раствора уже при посадке.</p>
+
+<p><strong>Coccinella</strong> 28-06-2012</p>
+
+<p>Срочно помещайте на самый яркий свет, лучше всего на подоконник.</p>
+
+<p>(Извините, но в слове субстрат нет буквы К, это в слове экстракт она есть :))</p>
+
+<blockquote>
+  <p>В субстракт было примерно добавлено с водой незначительное количество раствора уже при посадке.</p>
+
+  <p>:)</p>
+
+  <p>Примерно незначительно - это сколько?</p>
+</blockquote>
+
+<p><strong>nickla</strong> 28-06-2012</p>
+
+<p>Незначительно это примерно 3-5мл на 2 литра воды. Требуется 10мл на 1 литр. Я купил бутыль готового раствора в магазине что продавал autopot в Англии. Сейчас уже собираюсь мешать уже сам, так как это дорогое удовольствие - покупать такие бутылочки.</p>
+
+<p>Как назло сегодня солнце за тучами. Но переселил их на окно. За пару часов уже тянутся к свету (по крайне мере самый высокий выдал крен в сторону окна). Те что находятся на свету начали распускать первые 2 листа. Один в затененной области горшка пока с этим не спешит.</p>
+
+<p>Поставил вебкамеру и написал программу для создания скриншотов каждые 10 минут. Потом смонтирую в видео если получится. Ощущаю себя юным натуралистом :)</p>
+
+<p>По субстрату скажу что раз все взошло и растет - значит все хорошо. Единственный вопрос пока мне не понятный: чем стоит поливать ростки в кокосе? Раствором или водой? На упаковке субстрата было написано что в нем есть уже какие-то питательные элементы и азот насколько я помню. К сожалению, упаковку я уже выкинул.</p>
+
+<p><strong>Coccinella</strong> 28-06-2012</p>
+
+<blockquote>
+  <p>Незначительно это примерно 3-5мл на 2 литра воды. Требуется 10мл на 1 литр. Я купил бутыль готового раствора в магазине что продавал autopot в Англии.</p>
+
+  <p>К сожалению, упаковку я уже выкинул.</p>
+</blockquote>
+
+<p>Ну-ну, с упаковкой Вы поторопились, на ней была важная информация. Видите ли, то, что Вы именуете первыми 2 листочками, на самом деле - семядольные листья, их задача обеспечить проростку питание и фотосинтез в самом начале. Вроде ясель в самом младшем возрасте детишек. В этот период (несколько дней) растению хватает чистой воды. Но он преходящ и очень скоро растению требуется пища, то есть NPK + micro. По идее, в субстрате следует содержаться какому-то стартовому количеству элементов, но это по идее. По факту бывает всяко.</p>
+
+<p>Короче, я бы рекомендовала начать поливы стартовым раствором в 30-50% концентрации. С другой стороны, а что, собственно написано на этикетке бутылочки с концентратом раствора? А то я тут сейчас нарекомендую :)</p>
+
+<p><strong>nickla</strong> 28-06-2012</p>
+
+<p><a href="http://s11.postimage.org/9v9pbslyr/bormotuha.jpg" target="_blank"><img src="http://s11.postimage.org/9v9pbslyr/bormotuha.jpg" alt="" /></a></p>
+
+<p>Вот сейчас сфоткал.</p>
+
+<p><strong>Coccinella</strong> 29-06-2012</p>
+
+<p>Да, пожалуй, этим можно и сразу поливать, как написано, 10 мл/л воды.</p>
+
+<p><strong>caiman</strong> 29-06-2012</p>
+
+<blockquote>
+  <p>Субстракт все еще влажный но судя по жаре он будет быстро сохнуть. Я хочу навести немного раствора примерно 30% от требуемого чтобы насыщать субстракт влагой. Стоит ли уже начинать подкармливать слабым раствором или держать на воде или же уже сразу можно давать нормальную дозу раствора? В субстракт было примерно добавлено с водой незначительное количество раствора уже при посадке.</p>
+</blockquote>
+
+<p>не торопитесь поливать кокос, он очень гигроскопичный…. сверху вроде бы сухой, а у корней мокрый… самая большая ошибка при работе с кокосом - ПЕРЕЛИВ!!!!!!! &gt;:D</p>
+
+<p><strong>Gnevko</strong> 29-06-2014</p>
+
+<p>Вытащу ка я эту темку из подвала на свет божий, так как тут прозвучало несколько раз - что главное не переливать кокос. С другой стороны на зарубежных форумах часто пишут, что основная ошибка при работе с кокосом, что его держат слишком сухим, так как перелить его нельзя - все уходит в дренаж. Где же истина?</p>
+
+<p>Более того, как и при работе с мин ватой рекомендуют дренаж 20%, но дренаж в любом виде - это всегда мокрый субстрат (только ночью разве что подсохнуть может). В общем как то все не понятно.</p>
+
+<p><strong>caiman</strong> 29-06-2014</p>
+
+<blockquote>
+  <p>Вытащу ка я эту темку из подвала на свет божий, так как тут прозвучало несколько раз - что главное не переливать кокос. С другой стороны на зарубежных форумах часто пишут, что основная ошибка при работе с кокосом, что его держат слишком сухим, так как перелить его нельзя - все уходит в дренаж. Где же истина?</p>
+
+  <p>Более того, как и при работе с мин ватой рекомендуют дренаж 20%, но дренаж в любом виде - это всегда мокрый субстрат (только ночью разве что подсохнуть может). В общем как то все не понятно.</p>
+</blockquote>
+
+<p>Попытаюсь объяснить насчет перелива кокоса: кокос можно перелить если нет дренажа , как в матах например, если не сделать надрезы снизу-сбоку, то перелив не исключен. Или если кокосом заполнена емкость без дренажных отверстий…. А какой смысл делать большой дренаж раствора? В чем смысл дренажа? Мы ж с помощью раствора производим кормление и питье корням растюхи, а не “моем ноги” любимому созданию…. По моему так….</p>
+
+<p><strong>Gnevko</strong> 29-06-2014</p>
+
+<p>Смысл дренажа, если правильно понимаю, вымыть накопившиеся соли. Особенно актуально, если вода содержит натрий (кажись), который растения не потребляют и он накапливается до неприличных концентраций. Но поскольку я использую осмос, то ваша схема - “3/1” (позвольте дать ей такое название) очень даже мне нравится и должна работать (коль у вас работает). Правда чистый осмос лить наверное не есть гуд, поэтому придется просто оочень сильно понижать концентрацию.</p>
+
+<p><strong>Coccinella</strong> 29-06-2014</p>
+
+<p>Нет-нет-нет! Смысл дренажа в том, чтобы обеспечить всем растениям на большой площади (это же десятки тысяч растений!) одинаковое количество раствора с каждым поливом. Вот и все! Если у Вас пара растений, то и дренаж не обязателен. Только, чтобы убедиться, что раствора растению достаточно. А натрий опасен только при рециркуляции раствора. Если все так в канализацию уходит, то и натрий не страшен.</p>
+
+<p><strong>caiman</strong> 29-06-2014</p>
+
+<p>полностью согласен….. все гениальное просто</p>
+
+<p><strong>Гир</strong> 29-06-2014</p>
+
+<blockquote>
+  <p>Нет-нет-нет! Смысл дренажа в том, чтобы обеспечить всем растениям на большой площади (это же десятки тысяч растений!) одинаковое количество раствора с каждым поливом. Вот и все! Если у Вас пара растений, то и дренаж не обязателен. Только, чтобы убедится, что раствора растению достаточно. А натрий опасен только при рециркуляции раствора. Если все так в канализацию уходит, то и натрий не страшен.</p>
+</blockquote>
+
+<p>Определенно! <em>8)</em></p>
+
+<p><strong>Gnevko</strong> 29-06-2014</p>
+
+<p>Погодите, что то я совсем запутался, с распределением питательного раствора я еще как то логически могу согласиться, хотя если в каждом мате возле каждого растения стоит своя капельница, то проблем с распределением быть как бы вообще не должно, пусть растений там хоть мульон будет. Далее, если нет дренажа, то куда девается натрий? С дренажем он вымывается, при рециркуляции накапливается, но если нет дренажа (для пары растений) то куда ж он девается? Тут ведь даже поливы просто водой не помогут - воду то выпьют растения, натрий то останется … или как?</p>
+
+<p>И самый главный вопрос, не обязательность дренажа для пары растений справедлива только для кокоса или же и для мин ваты тоже?</p>
+
+<p><strong>а-ну-ка</strong> 30-06-2014</p>
+
+<p>…да не переживайте Вы так-</p>
+
+<blockquote>
+  <p>В золе томатов содержатся соли (%): калия - 38,1, натрия - 17, фосфора - 9,4, магния - 8,6, кальция - 6,1, а также железо, сера, кремний, хлор, йод, ванадий, кобальт, цинк и др.</p>
+</blockquote>
+
+<p>отсюда <a href="http://www.ogorodniky.ru/tomaty-2006/himicheskiy-sostav-i-pischevaya-tsennost-tomatov.html" target="_blank">http://www.ogorodniky.ru/tomaty-2006/himicheskiy-sostav-i-pischevaya-tsennost-tomatov.html</a></p>
+
+<p>и по хлору интересные есть</p>
+
+<p><a href="http://www.u-lekar.ru/content/view/833/2/" target="_blank">http://www.u-lekar.ru/content/view/833/2/</a></p>
+
+<p>…еще по составу-</p>
+
+<p><a href="http://www.udec.ru/tomat/index.php" target="_blank">http://www.udec.ru/tomat/index.php</a></p>
+
+<p><strong>Coccinella</strong> 30-06-2014</p>
+
+<blockquote>
+  <p>…если в каждом мате возле каждого растения стоит своя капельница, то проблем с распределением быть как бы вообще не должно, пусть растений там хоть мульон будет. Далее, если нет дренажа, то куда девается натрий? С дренажем он вымывается, при рециркуляции накапливается, но если нет дренажа (для пары растений) то куда ж он девается? Тут ведь даже поливы просто водой не помогут - воду то выпьют растения, натрий то останется … или как?</p>
+
+  <p>И самый главный вопрос, не обязательность дренажа для пары растений справедлива только для кокоса или же и для мин ваты тоже?</p>
+</blockquote>
+
+<p>:( Ключевое слово “как бы”. На практике неравномерность бывает довольно значительной. Особенно, если выращивают не в подвесных лотках, а на полу. Он всегда недостаточно ровный. Но и в подвесных лотках никто не застрахован от засорения капельниц солями и водорослями. Поэтому так актуальна тема перекиси водорода, кислот и других средств промывки системы по живым растениям. Вплоть до активированной воды!.</p>
+
+<p>Да сколько у Вас в воде того натрия? Вон испанцы опресненную морскую воду потом специально досаливают (поваренной солью), чтобы поднять ЕС до нужного им уровня. Растение потребляет натрий в каком-то количестве, для нас главное, чтобы этот натрий не мешал поступлению калия, кальция и магния, ну и прочих катионов.</p>
+
+<p>Я лично знаю несколько хозяйств, которые выращивают в минвате с минимальным дренажом. У них маты лежат на полу, щели прорезаны, дренаж уходит в канавки на полу, но никто из их агрономов никогда в жизни даже не озадачивался вопросом, а какой у них дренаж в каком поливе. Да, урожаи у них не рекордные, но там комплекс причин, поэтому так однозначно им не докажешь, что они в этом вопросе ошибаются :(</p>
+
+<p><strong>Gnevko</strong> 30-06-2014</p>
+
+<blockquote>
+  <p>…да не переживайте Вы так</p>
+</blockquote>
+
+<p>Да не то, что бы я переживал, просто “физику процесса” хочеть все же понять. А так, это ж хобби, если еще и из-за него переживать, то совсем грустно будет :).</p>
+
+<p>Хотя конечно повод расстроится есть - думал, что понимаю, что такое дренаж и зачем он нужен, а оказывается … Хотя все же не понятно тогда прему зимой 3% дренажа бывает много, а летом и 30% - мало. Всетаки наверное с вымыванием солей это как то тоже связано. Если бы речь шла только о равномерном по(про)ливе, то круглогодично было бы, скажем, 20% и все.</p>
+
+<p><strong>Coccinella</strong> 30-06-2014</p>
+
+<p>В производстве дренаж считается от общего количества раствора на теплицу, а измеряется по нескольким растениям. Результаты измерений не очень репрезентативны, хотя и лучше, чем полное отсутствие информации.</p>
+
+<p>Микроклимат в теплице недостаточно равномерный, как над этим ни бьются лучшие умы многих фирм. Испарение разное. Поэтому, чем выше температура и больше водопотребление, тем важнее, чтобы все растения получали достаточно воды. Отсюда и возрастание дренажа.</p>
+
+<p><strong>Gnevko</strong> 01-07-2014</p>
+
+<p>В догонку разговора про натрий - попалась мне в инете такая вот картинка, может кому и пригодится:</p>
+
+<p><a href="https://t.me/ponics_ru_files/8433" target="_blank"><img src="/imagehost/thumbs/table1sodiumchloride.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 01-07-2014</p>
+
+<p>К сожалению, там не говорится именно о натрии или именно о хлоре, речь идет о хлориде натрия. И опять-таки, неизвестно, о какой концентрации.</p>
+
+<p>В моей практике был случай, когда огурцы вообще не заметили концентрацию натрия в торфяном субстрате на уровне 200 мг/л (практически одинаково с азотом) и была пара сезонов, когда единственным доступным мне азотным удобрением был нитрат натрия (содержащий 8% хлора). Представляете регулярные подкормки огурца удобрением, содержащим 8% поваренной соли? :)</p>
+
+<p>По внешнему виду растений это совершенно не было заметно. :)</p>
+
+<p>Но это все было давно, в грунтовых пленочных теплицах, в неограниченном объеме субстрата и при общем уровне урожайности огурца 15-17 кг/м2 за сезон.</p>
+
+<p><strong>Expibra</strong> 01-05-2019</p>
+
+<p>Про такое первый раз слышу. Зачем так экспериментировать? Если сухо добавьте мох или используйте субстрат с серамисом.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

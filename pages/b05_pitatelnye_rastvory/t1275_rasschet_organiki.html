@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>рассчет органики | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="рассчет органики">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">рассчет органики</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>begunok</strong> 05-12-2011</p>
+
+<p>Добрый день всем. Помогите рассчетом</p>
+
+<p>Дано -томаты, выпивают 1 литр в день. Скажем формула 160:70:300</p>
+
+<p>При этом само органическое удобрение жидкое и имеет формулу 0,16 г/литр Азота 0,66 г/литр Фосфора 1,6 г/литр Калия.</p>
+
+<p>Надо рассчитать оптимальную формулу -ну то есть как разбавлять это водичку? Производитель предлагает разбавлять 1:30 - 1:50. Я посчитал, даже если развести 1:100 то по фосфору получается передоз в 10 раз, по калию в 5 раз.</p>
+
+<p>Я понимаю, что органика так не работает, как неорганика. Все как бог пошлет))) но интересно, может я просто корячо считаю?</p>
+
+<p><strong>valery</strong> 05-12-2011</p>
+
+<p>Хм … Как работает органика, куда и как ее применять … касаться не будем …</p>
+
+<p>Но почему “передоз” ? Разведем 1 литр этой органики на ведро воды (1:10) получим всего 160 мг калия - совсем не много, в наших гидро-растворах - больше.</p>
+
+<p>Фосфора получим всего 66 мг на литр …</p>
+
+<p>:-\</p>
+
+<p>Напротив - “всего” совсем не много. А что за “органика” - в чем это все указано ? Мочевина? Гуматы калия ? Фосфор-калий в чем указаны ?</p>
+
+<p><strong>valery</strong> 05-12-2011</p>
+
+<p>Хотел спросить - фосфор/калий как оксиды или элементы ? Что значит фосфор 0,66 г, калий 1,6 г ?</p>
+
+<p>Если как оксиды, так и еще меньше будет …</p>
+
+<p><strong>Coccinella</strong> 05-12-2011</p>
+
+<p>Если я Вас вообще правильно понимаю, то при разбавлении 100 мл в 1 л раствора (в 900 мл воды), получается 16 - 66-160. И больше 100 мл в раствор лить не стоит, потому что фосфор зашкалит. Значит недостающий азот и калий надо вносить отдельно.</p>
+
+<p>А вопрос Валерия действительно интересен. Я считала по элементам.</p>
+
+<p><strong>begunok</strong> 05-12-2011</p>
+
+<blockquote>
+  <p>Хотел спросить - фосфор/калий как оксиды или элементы ? Что значит фосфор 0,66 г, калий 1,6 г ?</p>
+
+  <p>Если как оксиды, так и еще меньше будет …</p>
+</blockquote>
+
+<p>В анализе, подписанным профессором бубликовым, сказано фосфор и калий. Не сказано что в оксидах.</p>
+
+<p>получается 1 литре жидкости этой - 0,66 г фосфора.</p>
+
+<p><strong>begunok</strong> 05-12-2011</p>
+
+<blockquote>
+  <p>Если я Вас вообще правильно понимаю, то при разбавлении 100 мл в 1 л раствора (в 900 мл воды), получается 16 - 66-160. И больше 100 мл в раствор лить не стоит, потому что фосфор зашкалит. Значит недостающий азот и калий надо вносить отдельно.</p>
+
+  <p>А вопрос Валерия действительно интересен. Я считала по элементам.</p>
+</blockquote>
+
+<p>Уважаемя Кокцинелла -а чем органическим можно внести калий?</p>
+
+<p><strong>valery</strong> 05-12-2011</p>
+
+<blockquote>
+  <p>В анализе, подписанным профессором бубликовым, сказано фосфор и калий. Не сказано что в оксидах.</p>
+
+  <p>получается 1 литре жидкости этой - 0,66 г фосфора.</p>
+</blockquote>
+
+<p>И я считал в элементах. Но то, что сказано в анализе словами фосфор … - далеко не факт, нужно обязательно разобраться.</p>
+
+<p>На удобрениях для почвы тоже пишут - фосфор столько-то, калий столько-то … часто имея в виду КАК РАЗ оксид.</p>
+
+<p>Например … <a href="http://www.greentalk.ru/node/1128#comment-4331" target="_blank">http://www.greentalk.ru/node/1128#comment-4331</a></p>
+
+<p>Более уверенно можно себя чувствовать, если указано не “словом”, а явно К= … г/л или К2О= … г/л</p>
+
+<p>А если здесь “гуматы калия” - так и вовсе, черт ногу сломит … Соли гуминовых кислот … состав всегда разный (разные молекулы даже из одного “источника” - торфа, бурого угля и прочее )</p>
+
+<p><strong>Coccinella</strong> 05-12-2011</p>
+
+<p>Да мне кажется, что именно в таком смысле калий органическим вообще не бывает :) Калий, он и есть калий - минеральный элемент. В Европейских нормативных актах, регулирующих органическое земледелие, четко сказано, “в органическом земледелии гидропоника запрещена”. А для почвенных культур допускается применение калиймагнезии, сильвинита и еще чего-то (наизусть не помню, искать лень :))</p>
+
+<p>Но мне лично идея растворять калий магнезию и особенно сильвинит совершенно не нравится. Мало того, что их процеживать придется, так еще и ЕС будет непрогнозируемо высокой.</p>
+
+<p>А Вы не хотите эту органику применить в комбинации с минеральными удобрениям? Ну хотя бы для начала?</p>
+
+<p><strong>begunok</strong> 05-12-2011</p>
+
+<p>Вообщем производитель говорит</p>
+
+<p>1 смешать землю с биогумусом</p>
+
+<p>2 добавить кальция с помощью разных мук( ну муки костной, рыбной и прочей)</p>
+
+<p>3 поливать раз в неделю по 100 мл с разбавлением в 1 литр - 20-30 мл раствора</p>
+
+<p>Вспомнил один эксперимент на органике. Человек даже поливал не по расписанию -ведь дождь то идет, когда ему вздумается))))) странно, что он гром не использовал, тоже-ведь фактор</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

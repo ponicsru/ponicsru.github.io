@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>тепличка для начала | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="тепличка для начала">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">тепличка для начала</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>студент</strong> 05-04-2011</p>
+
+<p>доброе утро всем форумчанам, т.е. гидропонщикам и органопонщикам.</p>
+
+<p>как я понял из постов здесь многие в целях эксперимента занимаются гидропоникой,</p>
+
+<p>а основное занятие - это выращивание овощей и зелени на органике имхо.</p>
+
+<p>вот тоже решил стать вам коллегой. для начала начал строительство теплички 7,4*12 высота в коньке 4м.</p>
+
+<p>не высоковато ли</p>
+
+<p><a href="https://t.me/ponics_ru_files/5186" target="_blank"><img src="/attachimages/6465_1111.jpg" alt="" /></a></p>
+
+<p><strong>студент</strong> 05-04-2011</p>
+
+<p>на осень теперь планирую теплицу 10*30</p>
+
+<p>лишь бы финансово осилить.</p>
+
+<p>зимой собрал прокатный станок для изготовления арок из профильных труб.</p>
+
+<p>замечательная штука.</p>
+
+<p>результатами выращивания пока не могу похвастаться - рано для меня.</p>
+
+<p>но планы грандиозные</p>
+
+<p><strong>андрей п</strong> 05-04-2011</p>
+
+<p>Относительно высоты, смотря что выращивать собираетесь.Ну и чем больше объём-тем больше затрат на отопление,если оно подразумевается изначально.Удачи Вам! $)</p>
+
+<p><strong>Coccinella</strong> 05-04-2011</p>
+
+<p>Действительно, грандиозные планы :)</p>
+
+<p>Высота 4 м в коньке очень хороша для растений. Будет трудно натягивать пленку, но если взять многолетнюю, то эту работу придется делать не так часто. И продумайте, как и на какой высоте будете крепить горизонтальную шпалеру. Для работы с пола высота шпалеры больше 2,2 м неудобна. Если есть возможность использовать какие-то тележки (а значит потребуются рельсы для них), то шпалеру можно сделать повыше.</p>
+
+<p>Будет время, почитайте, как подобные теплицы построили и используют другие, там и картинки есть</p>
+
+<p><a href="http://www.greentalk.ru/node/1819" target="_blank">http://www.greentalk.ru/node/1819</a></p>
+
+<p><strong>Coccinella</strong> 05-04-2011</p>
+
+<p>Андрей, не совсем так. Чем больше объем воздуха, тем медленнее он остывает, поэтому фактические затраты на обогрев в больших объектах ниже. Это проверено на практике.</p>
+
+<p><strong>студент</strong> 05-04-2011</p>
+
+<p>шпалера будет на высоте 3м. но рельсы для меня уже слишком. заварю из остатков профиля стремянку-табуретку да и жена у меня ростом не из самых маленьких, почти под 1,8м. справится</p>
+
+<p>покрытие сотовый поликарбонат. приобрел еще осенью, так что без вариантов.</p>
+
+<p>на территории теплицы уже существует подпочвенный обогрев (наследие от старого балагана. использовал подпочвенный и воздушный обогрев).</p>
+
+<p>нынче хочу ко всему этому добавить и паровое отопление( имхо чем больше объем теплоносителя тем инертнее система отопления, т.е. стабильнее будет работать)</p>
+
+<p>на счет отопления согласен чем больше объем воздуха тем лучше</p>
+
+<p><strong>koval.sergei</strong> 05-04-2011</p>
+
+<p>студент.</p>
+
+<p>Подумай про тёплый пол, это ещё будут ++++</p>
+
+<p><strong>студент</strong> 05-04-2011</p>
+
+<p>да и существующий подпочвенный подогрев меня вполне устраивает( это и есть моя система теплого пола)</p>
+
+<p><strong>sashko</strong> 05-04-2011</p>
+
+<p><em>8)</em></p>
+
+<p><strong>студент</strong> 06-04-2011</p>
+
+<p>может все и не плохо. но для меня все самое тяжелое только начинается.</p>
+
+<p>приобрести капельницы(для огурцов), лотки(для салата) ну все остальное.</p>
+
+<p>проще построить теплицу чем оборудовать его</p>
+
+<p><strong>caiman</strong> 06-04-2011</p>
+
+<blockquote>
+  <p>может все и не плохо. но для меня все самое тяжелое только начинается.</p>
+
+  <p>приобрести капельницы(для огурцов), лотки(для салата) ну все остальное.</p>
+
+  <p>проще построить теплицу чем оборудовать его</p>
+</blockquote>
+
+<p>Лотки: ООО “Электротехническая компания E.NEXT.UKRAINE”</p>
+
+<p>Тел./ф.: (044) 507-2620 (многоканальный)</p>
+
+<p>455-7119</p>
+
+<p>455-7110</p>
+
+<p>455-7109</p>
+
+<p>507-2620</p>
+
+<p><a href="http://www.enext.ua" target="_blank">www.enext.ua</a></p>
+
+<p>sales126@enext.ua</p>
+
+<p>Капельницы, лента и т.д.:propoliv.com Это в Украине, есть всё, даже теплицы… <em>8)</em></p>
+
+<p><strong>студент</strong> 07-04-2011</p>
+
+<p>на украине это для меня очень далеко.</p>
+
+<p>мне бы где нидб поближе к чебоксарам</p>
+
+<p><strong>caiman</strong> 07-04-2011</p>
+
+<p>Извини, я тебя перепутал с Федором, он из Украины.</p>
+
+<p>Про капельницы Тоже самое, набери Фармгарден Самара там все есть… :D</p>
+
+<p>по лоткам, где-то я видел, но не могу найти, сам поищи: кабельканалы 100х60 Россия.</p>
+
+<p>Вот спец для тебя нашел:Кабель-канал 100х60 “ЭЛЕКОР” U060806026 ― К-Сервис Электро</p>
+
+<p>В нашем магазине можно купить Кабель-канал 100х60 “ЭЛЕКОР” U060806026 с доставкой в любой регион России. Для заказа Кабель-канал 100х60 “ЭЛЕКОР” U060806026 …</p>
+
+<p>kservis-electro.ru/index.php?productID=7306</p>
+
+<p>Удачи.</p>
+
+<p><strong>Mole_Garden</strong> 07-04-2011</p>
+
+<blockquote>
+  <p>на украине это для меня очень далеко.</p>
+
+  <p>мне бы где нидб поближе к чебоксарам</p>
+</blockquote>
+
+<p>Попробуй обратиться в Юрат, они вроде как позиционируют себя как светотенхическая контора. А вообще, если много ламп надо, до дешевле будет заказать в инет магазине.</p>
+
+<p><strong>igor52</strong> 07-04-2011</p>
+
+<blockquote>
+  <p>Извини, я тебя перепутал с Федором, он из Украины.</p>
+
+  <p>Про капельницы Тоже самое, набери Фармгарден Самара там все есть… :D</p>
+
+  <p>по лоткам, где-то я видел, но не могу найти, сам поищи: кабельканалы 100х60 Россия.</p>
+
+  <p>Вот спец для тебя нашел:Кабель-канал 100х60 “ЭЛЕКОР” U060806026 ― К-Сервис Электро</p>
+
+  <p>В нашем магазине можно купить Кабель-канал 100х60 “ЭЛЕКОР” U060806026 с доставкой в любой регион России. Для заказа Кабель-канал 100х60 “ЭЛЕКОР” U060806026 …</p>
+
+  <p>kservis-electro.ru/index.php?productID=7306</p>
+
+  <p>Удачи.</p>
+</blockquote>
+
+<p>Здравствуйте caiman!А как вы думаете кабель каналы например 80<em>60 или 60</em>60 не подойдут для выращивания салата?Я тут с одним производителем из Перми списывался задавал вопрос о возможности изготовления длины каналов 4м что б не склеивать .Так вот никаких проблем как я понял наверное и длиннее тоже сделают.Я пока дальше тему развивать не стал пока дело не дошло до больших объемов.Минимальная партия при изменении длины 1000м цена за 1м если правильно помню 60*80 около 70руб.</p>
+
+<p><strong>caiman</strong> 08-04-2011</p>
+
+<p>Может и подойдут, я не ращу в каналах на проточке, у меня кокос. Тут главное удобство для установки стаканчика и чтобы корни не забили канал.</p>
+
+<p>Думаю, как-то так. :D</p>
+
+<p><strong>студент</strong> 08-04-2011</p>
+
+<p>тут капельницы искал, кроме СХА Тимирязево в москве так ничего и не нашел</p>
+
+<p>кабель каналы нашел в Мега-Строе, но они 2м</p>
+
+<p>буду искать</p>
+
+<p><strong>студент</strong> 09-04-2011</p>
+
+<p>вопрос к уважаемым форумчанам:</p>
+
+<p>кто нибудь отапливал теплицу отработкой, и какой горелкой кто пользовался :-[</p>
+
+<p><strong>ASK</strong> 09-04-2011</p>
+
+<blockquote>
+  <p>кто нибудь отапливал теплицу отработкой</p>
+</blockquote>
+
+<p>А какая планируется мощность? Я с отработкой дело не имел, но думается, что ее нужно будет жд цистерну и не одну на зиму</p>
+
+<p><strong>Садовник</strong> 09-04-2011</p>
+
+<blockquote>
+  <p>вопрос к уважаемым форумчанам:</p>
+
+  <p>кто нибудь отапливал теплицу отработкой, и какой горелкой кто пользовался :-[</p>
+</blockquote>
+
+<p>Я отапливал в своё время, но не горелкой, а “Т-603” - в ней капельница.</p>
+
+<p>Честно говоря- врагу не пожелаешь. :D</p>
+
+<p>Единственный плюс - относительная дешевизна топлива.</p>
+
+<p>Выматывает ежедневная чистка сажи поройходил черный, как негр.</p>
+
+<p>Осталась пара кубов отработки.</p>
+
+<p>Так и не смог себя заставить её использовать как топливо.</p>
+
+<p>Автоматические горелки по-моему неоправданно дороги. Всё-таки отработка - дешевое, но не бесплатное топливо, если нет своей сети сервисов замены масла :D</p>
+
+<p>Регулярный сбор по сервисам и ворочание бочек - тоже удовольствие еще то.</p>
+
+<p>Еще, из общения на форумах есть нюанс - электроника в горелках довольно капризная и в нашей электро-сети часто бывает “летит”. По закону подлости в самые морозы.</p>
+
+<p>Стоит довольно дорого, а “разборки с гарантией” или даже платная поставка замены могут длиться неделями и месяцами, всё-таки оборудование импортное и малораспространённое.</p>
+
+<p><strong>студент</strong> 09-04-2011</p>
+
+<p>зачем жд цистерны.</p>
+
+<p>1 литр отработки выдает 10 квт энергии. но вот как эфективно и без геммора это использовать - вот в чем вопрос. на этот счет есть одна мысля, оправдает себя - отпишусь.</p>
+
+<p><strong>студент</strong> 09-04-2011</p>
+
+<p>в планах воплотить импортную горелку своими руками и на свой лад и без капризной</p>
+
+<p>электроникой. т.е. вообще без электроники.</p>
+
+<p>принцып схож с аэропоникой</p>
+
+<p><strong>ASK</strong> 10-04-2011</p>
+
+<blockquote>
+  <p>зачем жд цистерны.</p>
+
+  <p>1 литр отработки выдает 10 квт энергии. но вот как эфективно и без геммора это использовать - вот в чем вопрос. на этот счет есть одна мысля, оправдает себя - отпишусь.</p>
+</blockquote>
+
+<p>Ну вот, а сколько надо по тепловому расчету на теплицу? Умножаем на 2 получаем ну пусть 70 кВт в час (!) т.е. за час печка должна съедать 7 литров отработки. или за сутки 168 литров. За месяц 5040л. ПЯТЬ тонн отработки… ух..</p>
+
+<p>Может я в расчетах ошибся? <em>???</em></p>
+
+<p><strong>ASK</strong> 10-04-2011</p>
+
+<blockquote>
+  <p>в планах воплотить импортную горелку своими руками и на свой лад и без капризной</p>
+
+  <p>электроникой. т.е. вообще без электроники.</p>
+
+  <p>принцып схож с аэропоникой</p>
+</blockquote>
+
+<p>А если не получиться? Расскажи идею хоть?</p>
+
+<p>И еще, профиль какой на арки использовал? И как выполнен фундамент и цоколь, как арки привязаны к фундаменту? Пол земляной?</p>
+
+<p><strong>студент</strong> 11-04-2011</p>
+
+<p>арку гнул из профиля 40*20.</p>
+
+<p>фундамент до грунта железобетон, см20 выше легкий бетон, цоколь кирпичный.</p>
+
+<p>по периметру цоколь пробурил буром 10мм и забил 12мм рифленую арматуру на глубину см20-25</p>
+
+<p>а на счет горелки - должно получиться.</p>
+
+<p>поток воздуха разрывает масляную пленку и эта дисперсия поступает в горелку, т.е. горят не пары масла, а воздушно топливная смесь(в мелко дисперсном состоянии)</p>
+
+<p><strong>студент</strong> 11-04-2011</p>
+
+<p>ask а какой площадь теплицы у тебя.</p>
+
+<p>а на счет дров - больше 100 кубов за сезон тоже оптимизма не внушает</p>
+
+<p>если я не ошибаюсь то с хорошим теплообменником, т.е. с хорошим паровым отоплением 1квт энергии вполне хватает на 10 кв м. но должен быть резерв энергии по мощности</p>
+
+<p><strong>Садовник</strong> 11-04-2011</p>
+
+<blockquote>
+  <p>ask а какой площадь теплицы у тебя.</p>
+
+  <p>а на счет дров - больше 100 кубов за сезон тоже оптимизма не внушает</p>
+
+  <p>если я не ошибаюсь то с хорошим теплообменником, т.е. с хорошим паровым отоплением 1квт энергии вполне хватает на 10 кв м. но должен быть резерв энергии по мощности</p>
+</blockquote>
+
+<p>1 кВт на 10м2 справедливо для хорошо утепленного жилого дома.</p>
+
+<p>Для теплицы грубо нужно умножить на 2-3.</p>
+
+<p>Теплоёмкость топлива - величина постоянная, зависящая от качества самого топлива, и никак не зависит от типа отопления.</p>
+
+<p>Если не хватает теплообменника - автоматика вырубает подачу топлива и оно просто не расходуется, или наоборот, расходуется, пока не нагреется теплообменник.</p>
+
+<p>Так что 100-150 литров отработки в день обём вполне реальный. И заготавливать её начинать нужно с весны-лета. Берёшь 200 л бочку в прицеп и на на сервис замены масла, бочка для сбора у них обычно в яме стоит. Маслостойкий шланг, ручной или электрический шестирёнчатый насос и вперёд, качать. Обычно бочка в неделю набегает.</p>
+
+<p>И берегись природоохранной прокуратуры. :-X</p>
+
+<p>Когда интересовался темой отработки, находил американца, который продавал электронную книгу, как самому собрать отопитель на отработке как раз на твоём принципе (распылитель) из металлолома и простых узлов из хозмага.</p>
+
+<p>Недорого стоила, несколько баксов.</p>
+
+<p><a href="https://t.me/ponics_ru_files/5187" target="_blank"><img src="/imagehost/thumbs/18731.jpg" alt="" /></a></p>
+
+<p>Может и сейчас продаёт на И-бэе, посмотри.</p>
+
+<p><strong>ASK</strong> 12-04-2011</p>
+
+<blockquote>
+  <p>ask а какой площадь теплицы у тебя.</p>
+
+  <p>а на счет дров - больше 100 кубов за сезон тоже оптимизма не внушает</p>
+
+  <p>если я не ошибаюсь то с хорошим теплообменником, т.е. с хорошим паровым отоплением 1квт энергии вполне хватает на 10 кв м. но должен быть резерв энергии по мощности</p>
+</blockquote>
+
+<p>Садовник уже сказал, 10 кв это очень много на 1 кВт Если с ветром то думаю расчитывать нужно на 3 квадрата всего…</p>
+
+<p>С дровами их хоть куда-то сложить можно а где цистерну взять под отработку? Про прокуратуру тоже правильное замечание…</p>
+
+<p>У меня теплица 2х3м :D</p>
+
+<p>Строю сейчас 7х18 пока… + 3х7 подсобка.</p>
+
+<p>Арки типа как у Росича фермами только полный полукруг. Сфоткаю как-нить. Покрытие 10 СПК</p>
+
+<p>Фундамент будет столбчатый. цоколь утеплный пенополистеролом 0,5 м от земли и столько же в землю</p>
+
+<p><strong>orgail</strong> 12-04-2011</p>
+
+<p>расчеты по теплице имеются и в книжке из библиотечки</p>
+
+<p>https://docs.google.com/leaf?id=0ByT98IObPsIBZDJlNWFlMjgtZWI5My00Y2M2LWIyZGUtZDY0YWQzNzU3OTUx&amp;sort=name&amp;layout=list&amp;num=50</p>
+
+<p>Прищеп Л. Г. Эффективная электрификация защищенного грунта</p>
+
+<p>книжка немного старая, но расчеты “вечны”</p>
+
+<p><strong>студент</strong> 13-04-2011</p>
+
+<p>премного благодарен за ценную информацию $)</p>
+
+<p><strong>koval.sergei</strong> 18-04-2011</p>
+
+<p>студент, а какой краской планируешь красить каркас?</p>
+
+<p>Я лично думаю красить резиновой краской, есть ещё вариант жидкий пластик.</p>
+
+<p><strong>Alex123</strong> 18-04-2011</p>
+
+<blockquote>
+  <p>Здравствуйте caiman!А как вы думаете кабель каналы например 80<em>60 или 60</em>60 не подойдут для выращивания салата?Я тут с одним производителем из Перми списывался задавал вопрос о возможности изготовления длины каналов 4м что б не склеивать .Так вот никаких проблем как я понял наверное и длиннее тоже сделают.Я пока дальше тему развивать не стал пока дело не дошло до больших объемов.Минимальная партия при изменении длины 1000м цена за 1м если правильно помню 60*80 около 70руб.</p>
+</blockquote>
+
+<p>На самом деле производители обычно пилят кабель-канал по 8 метров длиной, а пилят их на “покороче” уже на местах - на оптовых базах и в магазинах.</p>
+
+<p>Вообще из экструдера кабель-канал лезет непрерывно - его хоть по 100 метров режь, просто возить его будет невозможно…</p>
+
+<p><strong>студент</strong> 18-04-2011</p>
+
+<blockquote>
+  <p>студент, а какой краской планируешь красить каркас?</p>
+
+  <p>Я лично думаю красить резиновой краской, есть ещё вариант жидкий пластик.</p>
+</blockquote>
+
+<p>да я бы с удовольствием одной из этих красок покрасил бы, да только я даже не слышал про такое</p>
+
+<p>планировал красить в три слоя грунт-эмаль по ржавчине “3 в 1”</p>
+
+<p>я этой краской дома все металлические конструкции. качеством очень доволен. прошло 3-4 года, ржавчины не видно :)</p>
+
+<p><strong>koval.sergei</strong> 19-04-2011</p>
+
+<p>Мало по малу метал конструкция шатается, на стыках сварки будут трещины если красить обычной краской, это будет не гут. Значит надо эластичной краской красить.</p>
+
+<p>А что за грунт-эмаль по ржавчине 3 в 1 название какое?</p>
+
+<p><strong>студент</strong> 19-04-2011</p>
+
+<p>так и называется грунт-эмаль по ржавчине “3 в 1”.</p>
+
+<p>новобытхим - петербургский производитель. из характеристик: покрытие, образуемое грунт-эмалью, устойчиво к воздействию атмосферных факторов, соленой воды, масла.</p>
+
+<p>состав: органические растворители, синтетические смолы, пластификатор, антикоррозийные пигменты, полезные добавки</p>
+
+<p><strong>koval.sergei</strong> 19-04-2011</p>
+
+<p>Ага понял, будем думать дальше.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Детальные требования к растворам | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Детальные требования к растворам">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Детальные требования к растворам</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Mendes</strong> 14-04-2009</p>
+
+<p>В литературе часто дают рекомендации по поддержанию концентрации в растоврах отдельных элементов на строго определенном уровне(например, “концентрацию фосфора рекомендуется поддерживать на уровне 80 ppm”). Как можно этого добиться? У меня складывается впечатление, что без соблюдения этих и прочих рекомндаций, особо расчитывать на результат не приходится.</p>
+
+<p><strong>mdima</strong> 14-04-2009</p>
+
+<p>имеется ввиду создать концентрацию P = 80 ppm</p>
+
+<p><strong>Mendes</strong> 14-04-2009</p>
+
+<p>Это я понял. Но какими средствами измерять концентрацию каждого элемента в растворе?!! Вот в чем вопрос!</p>
+
+<p><strong>mdima</strong> 14-04-2009</p>
+
+<p>Средств много. Есть ионоселективные электроды - это дорого. Есть колометрические тесты - это дешево. Но… и то и другое не нужно. Вы же не исследовать поглощение элементов собрались. Выявление поглощения различных ионов растениям требуется при рециркуляции дренажа при капельном поливе. И то, скорее, как исключение, чем как правило. (Обычно капельный дренаж не рециркулируют). Если Вы сделаете правильный раствор и будете регулярно его менять, то Вам не следует думать о поглощении различных ионов.</p>
+
+<p><strong>Mendes</strong> 14-04-2009</p>
+
+<p>Спасибо. Успокоили :)</p>
+
+<p><strong>Aleksey Kurenin</strong> 14-04-2009</p>
+
+<p>Старайтесь не углубляться слишком с питательные растворы.Это совсем не нужно. Следите за основнями параметрами Ес и рН. Но следите за ним хорошо и внимательно. Ну и питательный раствор должен иметь правильные соотношения элементов питания (более менее). Растение само решит что ему взять побольше а чего поменьше. 8)</p>
+
+<p><strong>Stasoid</strong> 18-04-2009</p>
+
+<p>Всем участникам форума привет !</p>
+
+<p>Кто нибудь встречал подробное описание микроудобрение “Микрасса” в смысле количество грамм каждого микроэлемента в таблетке , просто из микроэлементов в Магазинах есть только этот продукт .</p>
+
+<p>Можно ли использовать клюконат кальция в ампулах , в качестве добавки кальция в раствор .</p>
+
+<p><strong>mdima</strong> 18-04-2009</p>
+
+<p>“Мирассу” не видел. У нас “флорист-микро” все завалено.</p>
+
+<p>Кальция глюконат лично использовал в таблетках. Если система здоровая и с биофильтром эффект положительный. А если система нестабильная, то - органика, опасно.</p>
+
+<p><strong>Batat</strong> 01-06-2009</p>
+
+<blockquote>
+  <p>Средств много. Есть ионоселективные электроды - это дорого. Есть колометрические тесты - это дешево. Но… и то и другое не нужно. Вы же не исследовать поглощение элементов собрались. Выявление поглощения различных ионов растениям требуется при рециркуляции дренажа при капельном поливе. И то, скорее, как исключение, чем как правило. (Обычно капельный дренаж не рециркулируют). Если Вы сделаете правильный раствор и будете регулярно его менять, то Вам не следует думать о поглощении различных ионов.</p>
+</blockquote>
+
+<p>Добрый день, mdima.</p>
+
+<p>В моем случае, при рециркуляции дренажа, необходимо представлять степень поглощения основных элементов(я так думаю).</p>
+
+<p>Пожалуйста, поподробней об ионоселективных электродах и насколько это дорого?</p>
+
+<p>А также, о колометрических тестах и насколько это дешево?</p>
+
+<p>И какой из методов дешевле, проще, быстрее, точнее?</p>
+
+<p>Что Вы порекомендуете для обычного пользователя претендующего в будущем на продвинутость?</p>
+
+<p>Мне бы хотелось дешево, просто и быстро.</p>
+
+<p>Есть ли такие способы и средства?</p>
+
+<p><strong>mdima</strong> 01-06-2009</p>
+
+<p>Дешево просто и быстро - это менять раствор каждые 2 недели. На самом деле все немного проще: По электропроводности воды мы можем судить об общей минерализации раствора. Например, минерализация 1000 ppm. Если минерализация упала до 800 ppm - добавляем концентрат. Поддерживать концентрацию иона на строго определенном уровне можно, но оно того не стоит. Ион будет потребляться и при меньшей и при большей его относительной доли в растворе. Просто растворы обычно изготавливают под культуру так, чтобы потребление элементов было пропорциональным.</p>
+
+<p>Колометрический тест - это реакция окрашивания, т.е. придобавлении определенного индикатора определенный ион вступает с ним в реакцию и вызывает окрашивание раствора. Чем больше иона, тем интенсивней окраска. Доступные тесты на аммиак, нитриты, нитраты и фосфаты есть у компании Sera такие тесты продают для аквариумов в зоомагазинах. Определение концентрации иона идет путем визуального сравнения окраски раствора со шкалой.</p>
+
+<p>Есть колориметры, в которых анализ цветности проводит контроллер цена 30-150 т.р. зависит от количества различных тестов на разные ионы (могу поспособствовать приобрести дешевле)</p>
+
+<p>Ионселективные электроды тоже требуют контроллер и регулярного обслуживания, используются на больших автоматизированных предприятиях</p>
+
+<p>На большинстве же тепличных предприятий используют хим лабораторию, гда определяют ионы методом титрования, т.е. по каплям добавляют реактив, пока не изменится окраска.</p>
+
+<p><strong>valery</strong> 01-06-2009</p>
+
+<p>Вообще существует мнение (не бесспорное, конечно. мнений много), что рециркуляция и коррекция раствора (с проведением “анализов”) вещь неоднозначная, даже с точки зрения экономии. Или экономики. Или как нравится.</p>
+
+<p>Зато увеличивает риск “подцепить” и “распространить” заразу.</p>
+
+<p><strong>mdima</strong> 01-06-2009</p>
+
+<p>Да, но это на гектарных хозяйствах. В журнале райк цваана написано про рециркуляцию с биофильтром и УФ стерилизацией. ;)</p>
+
+<p><strong>Batat</strong> 01-06-2009</p>
+
+<blockquote>
+  <p>Да, но это на гектарных хозяйствах. В журнале райк цваана написано про рециркуляцию с биофильтром и УФ стерилизацией. ;)</p>
+</blockquote>
+
+<p>УФ стерилизация - понятно.</p>
+
+<p>Что такое биофильтр?</p>
+
+<p><strong>Mole_Garden</strong> 01-06-2009</p>
+
+<p>здрастье <a href="http://www.ponics.ru/2009/03/biofilter/" target="_blank">Биофильтр</a></p>
+
+<p>там описан простейший. Есть магазинные они по сложней будут в конструкции, но суть таже.</p>
+
+<p><strong>Batat</strong> 01-06-2009</p>
+
+<blockquote>
+  <p>здрастье <a href="http://www.ponics.ru/2009/03/biofilter/" target="_blank">Биофильтр</a></p>
+
+  <p>там описан простейший. Есть магазинные они по сложней будут в конструкции, но суть таже.</p>
+</blockquote>
+
+<p>Спасибо.</p>
+
+<p>Я увидел обычный песочный фильтр. Просто и наверное надежно.</p>
+
+<p><strong>Олеганос</strong> 04-06-2009</p>
+
+<p>:) так вот то что мне надо, походу ???</p>
+
+<p>Что тута про ионы поглощенные, можно попонятнее? ;)</p>
+
+<p><strong>mdima</strong> 04-06-2009</p>
+
+<p>Есть тесты для аквариумов для определения концентрации нитратов, фосфатов. Я считаю, что следует просто поддерживать раствор в заданном корридоре значений ppm (можно, конечно для надежности контролировать уровень нитратов и фосфатов), а полную смену проводить 1 раз в 2-3 месяца.</p>
+
+<p><strong>Mole_Garden</strong> 04-06-2009</p>
+
+<p>Это все хорошо и экономически оправданно, но как определить чего нужно то растению, чего оно съело больше, а чего еще навалом?</p>
+
+<p>А то через 3 месяца получится раствор с таким же содержанием ppm как в самом начале, но зато фосфора будет в 2 раза больше чем надо, согласен, что это сразу можно будет увидеть, но ведь не получится понять во сколько раз то его больше по виду растений.</p>
+
+<p><strong>mdima</strong> 04-06-2009</p>
+
+<p>поэтому и пишу, что можно контролировать уровень нитратов и фосфатов. Избыток калия существенного вреда не принесет, а недостаток калия быстро себя проявляет и легко компенсируется.</p>
+
+<p>Другой вопрос, что при больших объемах выращивания, использование дренажа вообще под вопросом, но из за других причин, а именно переноса болезнетворных организмов.</p>
+
+<p><strong>Mendes</strong> 04-06-2009</p>
+
+<p>в таком случае, возникает вопрос. При использовании ваших растворов какой уровень калия, фосфора и прочего нужно поддерживать?</p>
+
+<p><strong>mdima</strong> 04-06-2009</p>
+
+<p>Еще раз объясняю. Намного проще и правильней растить регулируя только pH и TDS, а раствор менять либо при проявлении нехватки элементов, либо раз в 2-3 месяца.</p>
+
+<p><strong>Mendes</strong> 04-06-2009</p>
+
+<p>нехватка или избыток тех или иных элементов у разных растений проявляется по разному или у всех примерно одинаково?</p>
+
+<p>Вот бы статью почитать, где был бы перечень проявлений нехватки/избытки с фотами. Вот что можно было бы обрамить в раму и на стену в теплице.</p>
+
+<p><strong>mdima</strong> 04-06-2009</p>
+
+<p>Статью сделаю, а пока можно <a href="http://www.ponics.ru/upd-base/" target="_blank">моей программой</a> воспользоваться</p>
+
+<p>Она с фотками</p>
+
+<p><strong>volkov</strong> 04-06-2009</p>
+
+<p>А что вы можете сказать про это устройство, если его использовать с ионселективным электродом по каждому отдельному иону?</p>
+
+<p><a href="http://www.chemport.ru/labequipment_products2639.html" target="_blank">http://www.chemport.ru/labequipment_products2639.html</a></p>
+
+<p><strong>mdima</strong> 04-06-2009</p>
+
+<p>Из интересующих нас ионов оно меряет только калий и нитрат…..</p>
+
+<p><strong>volkov</strong> 04-06-2009</p>
+
+<p>Спасибо за ответ, не то заморочился покупкой данного устройства…</p>
+
+<p><strong>Batat</strong> 05-06-2009</p>
+
+<blockquote>
+  <p>А что вы можете сказать про это устройство, если его использовать с ионселективным электродом по каждому отдельному иону?</p>
+
+  <p><a href="http://www.chemport.ru/labequipment_products2639.html" target="_blank">http://www.chemport.ru/labequipment_products2639.html</a></p>
+</blockquote>
+
+<p>Спасибо, за информацию по прибору. Я такой или подобный как раз ищу.</p>
+
+<p>Сколько может стоить такой приборчик?</p>
+
+<p><strong>Mole_Garden</strong> 05-06-2009</p>
+
+<p>450$ в среднем</p>
+
+<p><strong>Batat</strong> 06-06-2009</p>
+
+<blockquote>
+  <p>450$ в среднем</p>
+</blockquote>
+
+<p>Не дешево…</p>
+
+<p>Но с таким, и в ресторан не стыдно пойти! :D</p>
+
+<p>Кто - нибудь уже пользовался таким или подобным прибором?</p>
+
+<p>Как впечатления?</p>
+
+<p><strong>lifecolor</strong> 18-02-2010</p>
+
+<p>А как зная состав р-ра, и зная: насколько упал ППМ в р-ре и сколько всего осталось р-ра. Расчитать сколько влить каждого компонента чтобы снова поднялось ппм, до нужного нам уровня?</p>
+
+<p><strong>Mole_Garden</strong> 18-02-2010</p>
+
+<blockquote>
+  <p>А как зная состав р-ра, и зная: насколько упал ППМ в р-ре и сколько всего осталось р-ра. Расчитать сколько влить каждого компонента чтобы снова поднялось ппм, до нужного нам уровня?</p>
+</blockquote>
+
+<p>:D Для этого нужно знать на сколько ppm поднимает тот или иной грамм соли. А вообще мне тут видится два способа решения вашей задачи.</p>
+
+<p>Первый. Если вы используете двух или более компонентный сбалансированный концентрат. Путем добавления его в одинаковом количестве вы просто доводите раствор до нужного значения, я собственно так и делаю. Так как у меня для составления требуется добавить раствор А и Б в равных пропорциях.</p>
+
+<p>Второй. Берете, к примеру, литр воды и делаете в этой бутылке полноценный раствор как для 10 литров, т.е. воды в 10 раз меньше, а удобрений столько же и у вас получится некий концентрат сбалансированного раствора и им уже доводите концентрацию в основном баке до нужного значения. Обратите внимание, что количество воды для концентрата должно быть такое, что бы не выпадал осадок солей.</p>
+
+<p>Мне видится вот такие два метода решения задачи. Может у кого нибудь будут другие варианты.</p>
+
+<p><strong>Oxy</strong> 19-02-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>А как зная состав р-ра, и зная: насколько упал ППМ в р-ре и сколько всего осталось р-ра. Расчитать сколько влить каждого компонента чтобы снова поднялось ппм, до нужного нам уровня?</p>
+  </blockquote>
+
+  <p>:D Для этого нужно <em>** два способа **</em>.</p>
+
+  <p>Первый. Если вы ***</p>
+
+  <p>Второй. Берете, к примеру, ***, что бы не выпадал осадок солей.</p>
+
+  <hr />
+</blockquote>
+
+<p>Моле, предлагаю в первом сообщении темы накопительно обновлять информацию в виде списка “детальные требования к растворам”. Потому что сейчас вы написали очень хорошее детальное требование, я подумал что потом будет сложно вылавливать такие требования среди всех остальных сообщений. И вопрос хороший, впследствии может пригодится многим. Короче говоря очень хороший материал для FAQ.</p>
+
+<p><strong>Mole_Garden</strong> 19-02-2010</p>
+
+<p>Хорошо, попробую взять на заметку :D</p>
+
+<p><strong>lifecolor</strong> 31-05-2010</p>
+
+<p>нашёл решение задачи в учебники неорганической химии.</p>
+
+<p>к примеру мы имеем формулу 2мл удобрения А и 4 мл удобрения Б на литр воды.</p>
+
+<p>Бак к примеру 50 литров. ппм после замеса раствора состовляет 1000.</p>
+
+<p>Упал у нас ппм до 800, такая формула.</p>
+
+<p>((1000-800)/1000)<em>2</em>50=20 мл удобрения А нужно влить в 50 литров р-ра.Чтобы определить сколько нужно влить удобрения Б в раствор можно просто умножить на 2 ,т.к. исходный у нас 2 мл удобрения А и 4 мл удобрения Б. Или так же посчитать по формуле, через коэффициент.</p>
+
+<p>Но нужно знать объем раствора, обычно растение и воду и удобрения хавает. Так что доливаем до 50 литров воды меряем ппм и считаем.</p>
+
+<p><strong>lifecolor</strong> 31-05-2010</p>
+
+<p>А про вопрос то я забыл =) Есть какой-то прибор который меряет количество или отношение ионов , т.е. отношение катионов к анионам, и можно понять чего больше растение кушает……. А уж какие элементы катионы а какие анионы мы знаем, и можем сделать выводы ……Только вот что это за прибор….</p>
+
+<p><strong>VVS_</strong> 21-06-2010</p>
+
+<p>На что влияет форма N-NH2 для огурца?</p>
+
+<p>Не во всех растворах для огурца она присутствует.</p>
+
+<p><strong>AndreuSeveR</strong> 29-11-2010</p>
+
+<p>Здравствуйте , моё мнение по данному вопросу : если при стабильном уровне ППМ ,</p>
+
+<p>растение выедает из раствора Анионы (No3,P,S)- раствор защелачивается , соответственно</p>
+
+<p>когда потребляется более Катионов (NH4,K,Ca,Mg)- раствор закисляется .</p>
+
+<p>Таким образом по показателям пш и ппм и внешнему виду растения ,</p>
+
+<p>можно судить о недостатках или избытках каких либо веществ .</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

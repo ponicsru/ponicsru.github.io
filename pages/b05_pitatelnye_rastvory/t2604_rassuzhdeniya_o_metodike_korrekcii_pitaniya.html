@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Рассуждения о методике коррекции питания. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Рассуждения о методике коррекции питания.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Рассуждения о методике коррекции питания.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>siv237</strong> 20-02-2017</p>
+
+<p>Думаю над методом пересчета профиля питания, для коррекции раствора по выявленным нарушениям питания.</p>
+
+<p>Основная идея использовать не признаки голодания, а признаки взаимной блокировки.</p>
+
+<p>Что нам известно про взаимные блокировки макроэлементов еще по Чеснокову:</p>
+
+<p>Калий блокирует: Кальций, Магний</p>
+
+<p>Магний блокирует: Кальций</p>
+
+<p>Кальций блокирует: Азот, Калий</p>
+
+<p>Фосфор никого не блокирует из макроэлементов и является общим катализатором биореакций</p>
+
+<p>Сера, Хлор - побочные продукты сульфадов и хлоридов и особо не учитываются. Про серу известно, что она должна быть не меньше меньшего, а хлора не больше большего для разных культур.</p>
+
+<p>Остается система N, K, Ca, Mg сумму которых можно принять за 100%, и выделить доли каждого из них.</p>
+
+<p>Но раз элементы из этой группы блокируют друг друга, произвольно менять долю любого из них было-бы наверно не очень правильно, соответственно нужно оперировать соотношениями их друг к другу.</p>
+
+<p>Из списка выше вытекают самые очевидные соотношения:</p>
+
+<p>K:Ca K:Mg Mg:K Ca:N Ca:K</p>
+
+<p>Пары K:Mg Mg:K и K:Ca Ca:K математически равнозначны и достаточно одного из каждой группы</p>
+
+<p>Оставим например: K:Mg, K:Ca, N:Ca</p>
+
+<p>Составим систему уравнений, где каждое соотношение выразим через x,y,z а их сумму примем за 100% т.е. единицу.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18166" target="_blank"><img src="/imagehost2/thumbs/20170221094537.png" alt="" /></a></p>
+
+<p>Решение системы позволяет выразить процентное соотношение каждого элемента через коэффициенты соотношений.</p>
+
+<p>Таким образом зная соотношения из исходного профиля мы можем восстановить этот профиль по 3м соотношениям, но только пропорционально. Результат не будет нести данных о весе каждого элемента. Нужно добавить навеску соответствующую долям.</p>
+
+<p>Наиболее практичным смыслом для гидропоники выражающей вес элементов является такой параметр как ЕС</p>
+
+<p><strong>siv237</strong> 21-02-2017</p>
+
+<p>Что известно про расчет ЕС.</p>
+
+<p>Варианты известные мне - формула Зоневельда (кроме как на этом форуме не встречал, может плохо искал) и упрощенная формула из брошуры по выращиванию на гидропонике GREENHOUSE CROPS</p>
+
+<p>Я обе эти формулы привел к варианту позволяющему проводить численные вычисления подставляя значения в мг/л из профиля:</p>
+
+<p><a href="https://t.me/ponics_ru_files/18167" target="_blank"><img src="/imagehost2/thumbs/20170221101300.png" alt="" /></a></p>
+
+<p>При этом формула Зонневельда эмпирическая и вроде как более точная, так как учитывает фактическое взаимное влияние солей на электропроводность при разных концентрациях. Но в ней используются только анионы, потому применима такая формула только при уравновешенном состоянии с катионами.</p>
+
+<p>Таким образом, подставив значения навесок из профиля в одну из формул, мы сможем определить ЕС исходного профиля.</p>
+
+<p>Для того, чтобы сделать наоборот и получить из соотношений элементов навески профиля задав желаемый ЕС, нужно выделить аммонийную часть из общего азота, заданного процентами.</p>
+
+<p>Например обычно для удерживания раствора стабильном pH по мере потребления вводится соотношение форм азота NH4/NO3 ~6-10%</p>
+
+<p>Используя это уравнение и задав предварительно значение соотношения форм азота мы сможем выделить аммонийную долю:</p>
+
+<p><a href="https://t.me/ponics_ru_files/18168" target="_blank"><img src="/imagehost2/thumbs/20170221102747.png" alt="" /></a></p>
+
+<p>Теперь, для того, чтобы наполнить соотношения физическим весом, соответствующем заданному нами ЕС нам нужно каждый элемент домножить на некий коэффициент.</p>
+
+<p>Для вычисления коэффициента перевода процентовки элементов в реальные веса я вывел такую формулу из формулы Зонневельда:</p>
+
+<p><a href="https://t.me/ponics_ru_files/18169" target="_blank"><img src="/imagehost2/thumbs/20170221103651.png" alt="" /></a></p>
+
+<p>Где значения NH4, K, Ca, Mg в процентах,</p>
+
+<p>ЕС - значение нужного ЕС</p>
+
+<p><strong>siv237</strong> 21-02-2017</p>
+
+<p>Теперь можно переходить к оставшимся элементам, которые от ЕС раствора зависеть не должны, так как задаются предельными и минимальными значениями в граммах на литр, такие как фосфор, сера и хлор.</p>
+
+<p>Для получения полного веса профиля домножим переменные элементы выраженные в процентах на коэффициент перевода ЕС (k), а статичные концентрации оставим без изменения:</p>
+
+<p>NH4<em>k, NO3</em>k, P, K<em>k, Ca</em>k, Mg*k, Cl</p>
+
+<p>А серу будем вычислять.</p>
+
+<p>Зная уравнение баланса раствора (по равенству катионов и анионов) мы можем вычислить любой недостающий элемент уравнения:</p>
+
+<p><a href="https://t.me/ponics_ru_files/18170" target="_blank"><img src="/imagehost2/thumbs/20170221105105.png" alt="" /></a></p>
+
+<p>Вычислим серу.</p>
+
+<p>Таким образом в итоге алгоритм действий выглядит так:</p>
+
+<ol>
+  <li>
+    <p>Берем свой профиль на котором мы видим признаки нарушения развития растения.</p>
+  </li>
+  <li>
+    <p>Визуально определяем по какому элементу голодание.</p>
+  </li>
+  <li>
+    <p>Вычисляем из своего профиля ЕС и соотношения переменных элементов N K Ca Mg</p>
+  </li>
+  <li>
+    <p>Изменяем соотношения в которых участвует этот элемент таким образом, что-бы он вырос (уменьшаем элементы его блокирующие).</p>
+  </li>
+  <li>
+    <p>Пересчитываем профиль с сохранением ЕС и элементов с постоянной концентрацией</p>
+  </li>
+  <li>
+    <p>Готовим новый раствор</p>
+  </li>
+  <li>
+    <p>Смотрим, делаем выводы.</p>
+  </li>
+</ol>
+
+<p><strong>siv237</strong> 21-02-2017</p>
+
+<p>Кроме того я провел анализ соотношений большинства профилей питания доступных для разных культур, которые свел в этот список: <a href="https://docs.google.com/spreadsheets/d/1k2ow9VklNIpZtDiwHUT3sEcNFQqgg0M1pamIIHWTtcY/edit#gid=0" target="_blank">https://docs.google.com/spreadsheets/d/1k2ow9VklNIpZtDiwHUT3sEcNFQqgg0M1pamIIHWTtcY/edit#gid=0</a></p>
+
+<p>В результате заметил некие закономерности типовых соотношений K/Ca. Где по мере возрастания доли калия расположены культуры плодоносящие, по мере уменьшения различная зелень.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18171" target="_blank"><img src="/imagehost2/thumbs/20170221111622.png" alt="" /></a></p>
+
+<p>Соотношение магния к азоту какой-то уловимой зависимости по культурам не дает и можно его в среднем принять как ~0.24</p>
+
+<p>По этим коэффициентам можно альтернативно определить доли и просчитать по методике описанной выше среднестатистический профиль. Имеется ли в нем практический смысл не ясно.</p>
+
+<p>В общем методику расчета расписанной в этой теме я реализовал в листе экселя. Доступно онлайн тут: <a href="https://docs.google.com/spreadsheets/d/1k2ow9VklNIpZtDiwHUT3sEcNFQqgg0M1pamIIHWTtcY/edit#gid=1655608898" target="_blank">https://docs.google.com/spreadsheets/d/1k2ow9VklNIpZtDiwHUT3sEcNFQqgg0M1pamIIHWTtcY/edit#gid=1655608898</a></p>
+
+<p>Или скачать тут: <a href="https://drive.google.com/file/d/0B34nmasYJJ-ZVGtEemlYTUNsLVE/view?usp=sharing" target="_blank">https://drive.google.com/file/d/0B34nmasYJJ-ZVGtEemlYTUNsLVE/view?usp=sharing</a></p>
+
+<p>Основные идеи взяты с этого форума, с книги Чеснокова и методики Cyclamech.</p>
+
+<p>Пока на практике подтвердил и устранил проблему в развитии петрушки листовой, у которой была явная проблема с усвоением кальция по причине высокого содержания калия в огуречном растворе.</p>
+
+<p>Сейчас стараюсь выявить по этой методике раствор для винограда, который на огуречном растворе постоянно испытывает дифицит магния. Причем это делает еще с лета и с самого начала своего роста с прошлой весны.</p>
+
+<p><strong>siv237</strong> 27-02-2017</p>
+
+<p>Анализ известных профилей на аномальные (не линейные) изменения коэффициентов вылились в такие критерии:</p>
+
+<p>В этих пределах в независимости от культуры и фазы расположены большинство профилей вызывающих доверие.</p>
+
+<p>K:Mg &lt; 10 ед.</p>
+
+<p>1&lt;K:Ca&lt;2</p>
+
+<p>N:Ca &lt;1,5</p>
+
+<p>K:Ca &gt;= N:Ca”</p>
+
+<p>По поводу доли фосфора и её влияния.</p>
+
+<p>Не нашел предельные значения по фосфору, обычно его не более 50 мг/л для большинства схем питания. В источниках в том числе по Чеснокову сказано, что фосфор блокирует железо и цинк.</p>
+
+<p>Собрав профиль тремя солями для клубники по лечению проблемы блокировки кальция изменением соотношения K/Ca полностью прошла проблема чернеющих кончиков у молодых листиков, но получил проблему железного голодания. Новые листики идут равномерно желтые.</p>
+
+<p>Фосфор при этом составил 135 мг/л, что почти в 3 раза больше нормы. При этом киви такой эффект не продемонстрировал и аналогичная проблема с кальцием закрылась</p>
+
+<p>NO3	NH4	P	K	Ca	Mg	S</p>
+
+<p>104	5	135	170	142	85	112</p>
+
+<p>Сульфат магния семиводный MgSO4*7H2O	0,86</p>
+
+<p>Монофосфат калия KH2PO4 P2O5 - 50%, K2O - 33%	0,62</p>
+
+<p>Селитра кальциевая Ca(NO3)2 N-14,9% CaO 27%	0,735</p>
+
+<p>Таким образом вполне можно сократить число солей до 3 для низкокаллийного макропрофиля за счет роста фосфора, но у некоторых культур вылезает железный хлороз.</p>
+
+<p><strong>Cyclamech</strong> 27-02-2017</p>
+
+<blockquote>
+  <p>Что известно про расчет ЕС.</p>
+
+  <p>Варианты известные мне - формула Зоневельда (кроме как на этом форуме не встречал, может плохо искал) и упрощенная формула из брошуры по выращиванию на гидропонике GREENHOUSE CROPS</p>
+</blockquote>
+
+<p><a href="https://www.amazon.com/Plant-Nutrition-Greenhouse-Crops-Sonneveld/dp/9048125316" target="_blank">Книжка Зонневельда</a>, на которую куча ссылок отовсюду:</p>
+
+<p><img src="https://images-na.ssl-images-amazon.com/images/I/51mc45gC-eL._SX330_BO1,204,203,200_.jpg" alt="" /></p>
+
+<p><strong>siv237</strong> 03-03-2017</p>
+
+<p>В общем выложил свои наработки по которым я рассчитываю и замешиваю растворы.</p>
+
+<p>Кратко, многолистовый файл в формате эксель содержит:</p>
+
+<ol>
+  <li>
+    <p>Список профилей найденных на просторах сети под разные культуры</p>
+  </li>
+  <li>
+    <p>Модификатор профиля, в который заносим в поля нужный профиль. Он считает соотношения в нем и ЕС. Указываем рядом желаемые соотношения и нужный ЕС и получаем новый профиль по этим соотношениям. Кроме того еще один эксперементальный профиль в котором соотношения близки к наиболее частым.</p>
+  </li>
+  <li>
+    <p>Содержит базу удобрений как в сухом так и в жидком виде. Свои удобрения вносим в лист с базой, задаем в процентах по чистым атомам элементов, указываем граммы на литр если это раствор.</p>
+  </li>
+  <li>
+    <p>Содержит расчетные листы по растворам, в которые вставляется нужный профиль, удобрения выбираются из выпадающего списка, навеска вводится в ручную в граммах на литр. Проверка ведется по строке отклонение в %. Все действия выполняются вручную. Новый рецепт делается простым дублированием листа.</p>
+  </li>
+  <li>
+    <p>Содержит схему создания растворов чистых солей по пределам растворимости</p>
+  </li>
+  <li>
+    <p>Содержит калькулятор 3-х емкостных концентратов маточных растворов солей.</p>
+  </li>
+</ol>
+
+<p>Расчетную схему я веду в другом формате, а в этот сделал выгрузку поэтому есть куча проблем с оформлением. Потому выкладываю как есть, чтобы давать тем кто спрашивает ссылку сюда. Если кто приведет в порядок буду не против.</p>
+
+<p>https://drive.google.com/file/d/0B34nmasYJJ-ZMWt6UTJhSEdPc0U/view?usp=sharing</p>
+
+<p><strong>ros</strong> 21-11-2017</p>
+
+<p>Странная логика… На основе визуальных признаков дефицита (качественных) пытаться произвести вычисления и получить количественный результат. Вообще это делают так: Поливают раствором, делают анализ выжимки из субстрата или дренажа и корректируют раствор. Или поливают раствором с избытком, на промыв, в субстрате остаётся оптимальный раствор.</p>
+
+<p><strong>siv237</strong> 21-11-2017</p>
+
+<blockquote>
+  <p>Странная логика… На основе визуальных признаков дефицита (качественных) пытаться произвести вычисления и получить количественный результат. Вообще это делают так: Поливают раствором, делают анализ выжимки из субстрата или дренажа и корректируют раствор. Или поливают раствором с избытком, на промыв, в субстрате остаётся оптимальный раствор.</p>
+</blockquote>
+
+<p>Расскажите подробнее, как в домашних условиях сделать анализ дренажа и каким вдруг образом при избыточном поливе раствор становится оптимальным? :o</p>
+
+<p><strong>ros</strong> 21-11-2017</p>
+
+<p>Я сдавал на анализ в лабораторию, где проводят анализ питьевой воды. Сделали по моему списку параметров. А про полив, так делают в теплицах на малообъёмной гидропонике, поливают раствором с правильной концентрацией с избытком процентов 20-30, разбалансированый раствор частично вымывается и замещается свежим. Можно подобрать частоту полива и коэффициент избыточности так, чтобы в субстрате был всё время раствор с приемлемым составом.</p>
+
+<p><strong>siv237</strong> 21-11-2017</p>
+
+<blockquote>
+  <p>Я сдавал на анализ в лабораторию, где проводят анализ питьевой воды. Сделали по моему списку параметров. А про полив, так делают в теплицах на малообъёмной гидропонике, поливают раствором с правильной концентрацией с избытком процентов 20-30, разбалансированый раствор частично вымывается и замещается свежим. Можно подобрать частоту полива и коэффициент избыточности так, чтобы в субстрате был всё время раствор с приемлемым составом.</p>
+</blockquote>
+
+<p>Речь не идет о том, соответствует ли текущее питание заданному профилю. Речь идет о том, как создать тот самый профиль, контролировать соответствие которому вы хотите.</p>
+
+<p>По сути обратная задача.</p>
+
+<p><strong>ros</strong> 21-11-2017</p>
+
+<p>Ну, создать оптимальный профиль это вполне себе полноценная научная работа. Если хорошенько порыться в сети, можно найти готовые решения, я себе искал по научным работам на английском и нидерландском, через гугл-переводчик. Ну и скайхаб- наше всё.</p>
+
+<p><strong>siv237</strong> 21-11-2017</p>
+
+<blockquote>
+  <p>Ну, создать оптимальный профиль это вполне себе полноценная научная работа.</p>
+</blockquote>
+
+<p>Именно поэтому слежение за признаками нарушения питания (отзыв растения) - практически единственный доступный способ подбора профиля.</p>
+
+<p><strong>ros</strong> 21-11-2017</p>
+
+<p>Нарушение питания, когда желтеть начинает или хлороз- это уже крайности. Обычно в научных работах, что я читал, берут 6- 10 контрольных групп растений, поливают каждую своим раствором, наблюдают от нескольких месяцев до года и делают выводы. Это когда состав раствора примерно ясен, а нужно оптимизировать. Сравнивают размеры, число листьев, цветков и далее по вкусу. Это тоже вполне себе может быть неплохим хобби. У меня задача стояла просто найти правильный раствор. :)</p>
+
+<p><strong>Borodach1</strong> 21-11-2017</p>
+
+<p>Если я дам чертёж табурета… и даже не просто чертёж, а ещё и сборочный чертёж с размерами каждой делали, то любой сможет сделать табурет. Даже если я не скажу каким инструментом его делать. Один будет пилить ножовкой, другие лобзиком или лучковой пилой. Получится всё равно табурет.</p>
+
+<p>У нас сложнее…</p>
+
+<p>Всё дело в том, что кроме элементного состава раствора в процессе участвуют ещё температура, влажность, освещённость, концентрация углекислого газа и доступность воздуха в корневой зоне. Плюс ещё и сорт растения.</p>
+
+<p>Ни в одном исследовании не приводят эти данные. Поэтому с достаточной степенью вероятности все эти исследования годятся только для той теплицы где происходили испытания. И если мы пользуемся чьими то изысканиями, то совсем не факт что мы получим такой же результат как и у исследователей.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+
