@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Помощь в установке дома | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Помощь в установке дома">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Помощь в установке дома</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>newbie</strong> 02-03-2015</p>
+
+<p>Приветствую форумчане. Хочу создать дома уменьшенную копию того, что уже предлагается в интернете. C небольшим отличием - весь пластик я хотел бы заменить на стекло, а так же создать воздушный фильтр. По этому все растения должны произрастать в закрытом “фюзеляже”.</p>
+
+<p>В виду отсутствия знаний по химии, а так же времени на изучения (уж простите меня, приходится работать), хотел найти гуру, который имеет реальный, положительный опыт выращивания дома.</p>
+
+<p>Было бы хорошо получить консультацию через Skype. Если потребуется, то за услуги я готов заплатить.</p>
+
+<p>Если кто-то может помочь, то в ЛС напишу номер скайпа.</p>
+
+<p>Спасибо.</p>
+
+<p><strong>Юка</strong> 02-03-2015</p>
+
+<p>Уважаемый, newbie, вдох-выдох, попробуйте, отключив эмоциональность, сформулировать задачу… что желаете выращивать?, в каких условиях??</p>
+
+<p>Не всё можно понять из Вашего “"”Хочу создать дома уменьшенную копию того, что уже предлагается в интернете. C небольшим отличием - весь пластик я хотел бы заменить на стекло, а так же создать воздушный фильтр. По этому все растения должны произрастать в закрытом “фюзеляже”.</p>
+
+<p>Извините .</p>
+
+<p><strong>Strangeman</strong> 02-03-2015</p>
+
+<p>newbie, фото “того, что уже предлагается в Интернете” или ссылка на примеры тоже будут полезны.</p>
+
+<p>Не спешите кого-то звать в online и расставаться с деньгами. Поверьте, Вам все равно придется вникать в премудрости, либо нанимать человека, который все это сделает, а потом будет поддерживать. Полагаю, второе не входит в Ваши планы?</p>
+
+<p>Почитайте этот форум - здесь есть практически все, но плохая систематизация. Попробуйте пройтись поиском.</p>
+
+<p>Сделайте набросок проекта и покажите его - Вам сразу подскажут, где слабые места и что можно улучшить.</p>
+
+<p>Общение при помощи Skype имеет смысл для целей оперативной диагностики состояния растений или установки. По установке, если понадобится, я попробую подсказать.</p>
+
+<p>Что касается растений - здесь немного людей, способных полноценно оказать такую помощь. Вероятность ее получения невелика, но и не нулевая. Впрочем, может обойтись и без этого.</p>
+
+<p>PS Некоторые советчики будут вводить Вас в заблуждение и Вам придется выбирать, на какие советы ориентироваться. Это суровая действительность. Это я к тому, что времени на изучение нет, но придется изыскивать. Что касается химии - на форуме и сайте имеется множество готовых рецептов растворов.</p>
+
+<p><strong>Ru7tam</strong> 02-03-2015</p>
+
+<p>Называется эта Ваша конструкция “гроубокс”. :)</p>
+
+<p><strong>Borodach1</strong> 02-03-2015</p>
+
+<p>В чем заключается идея замены пластика на стекло? На какое-то особенное стекло?</p>
+
+<p><strong>newbie</strong> 08-03-2015</p>
+
+<p>Прошу прощение за поздний ответ.</p>
+
+<p>См. в приложение фото. При помощи этих вещей, а так же другого стекла, в “закрытом фюзеляже” я хотел бы выращивать зелень. Как я понимаю, проточным способом.</p>
+
+<p>Так же хотел бы установить фильтр для воздуха и систему климат контроль.</p>
+
+<p>У кого есть идеи?</p>
+
+<p><img src="https://file-up.net/big_8b128794205b2ed50d20150308101955.jpg" alt="" /></p>
+
+<p><img src="https://file-up.net/big_1d8a7bcf9ba047973220150308102320.jpg" alt="" /></p>
+
+<p><strong>Вик</strong> 08-03-2015</p>
+
+<p>проточный метод с первого взгляда только кажется легким….. (подводных камней мама не горюй)</p>
+
+<p>попробуйте для начала каплю (сложностей не намного меньше, но не так будете привязаны по времени к Вашему “огороду”)</p>
+
+<p>да и в случае каких либо ошибок с р-ром хоть маленькая но есть буферность… а ошибок будет ……… <em>crazy</em></p>
+
+<p><strong>Borodach1</strong> 08-03-2015</p>
+
+<p>Какой глубинный смысл в фотке с банками- бутылками? Куда Вы их собираетесь применить?</p>
+
+<p><strong>newbie</strong> 09-03-2015</p>
+
+<p>Об этом я хотел Вас спросить.</p>
+
+<p>Какую часть лучше использовать и для чего?</p>
+
+<p><strong>Borodach1</strong> 09-03-2015</p>
+
+<p>Никакую.</p>
+
+<p>Задумка конечно красивая. Прозрачные трубы, бегущий раствор, красивые корни… Красота! Как на выставке ВДНХ!</p>
+
+<p>Только всё это стекло в очень скором времени изнутри заростет водорослями. Чтобы они не росли прийдется всё это стекло заклеивать чем нибудь не пропускающим свет… Спрашивается, зачем нам эти проблемы? Может лучше сразу всё сделать из не прозрачного пластика? ;)</p>
+
+<p><strong>newbie</strong> 09-03-2015</p>
+
+<p>Потому что я не люблю пластик, а стекло я накрою фольгой. Сверху будет прикрывать растение.</p>
+
+<p>Прошу помочь советом в осуществление мною намеченного стеклянного безобразия, а не его убийстве.</p>
+
+<p><strong>Ru7tam</strong> 09-03-2015</p>
+
+<blockquote>
+  <p>Прошу помочь советом в осуществление мною намеченного стеклянного безобразия, а не его убийстве.</p>
+</blockquote>
+
+<p>Нарисуйте схему проточного метода с использованием только стеклянных деталей. Есть подозрение, что для начала Вам придется освоить мастерство стеклодува. Пластик, при грамотном использовании, совсем не так плох, как это пытаются нам показывать. :)</p>
+
+<p><strong>Вик</strong> 09-03-2015</p>
+
+<p>ну Вам все равно придется использовать пластиковые и резиновые части, под сами растения бутылочки не подойдут, как минимум 2х литровые банки. В них засверливать отверстия минимум 15мм диаметром (еще тот гемор), или из листового стекла делать короба (типа аквариумов только очень низеньких). в зависимости от кол-ва кустов высверливать размер отверстия под слив. далее подготовка стаканов под рассаду. Кстати я никак не могу представить как в стаканах под рассаду нарежете прорези для корней??? их много надо будет резать на каждом стакане. если подвод и отток р-ра тоже стеклянными трубками делать то надо будет подумать о монолитности всей конструкции, особенно стола на котором всё это будет располагаться. затем насос….. :-\ ну…. насос из стекла это круто!!!!! (правда придется изготавливать самому, в продаже такого наверное нет). ну и затем всё обклеить фольгой ( кстати учтите что даже пары р-ра хорошо жрут люминий :D ). после ввода в эксплуатацию Вы вдруг начнете понимать что не всё правильно сделали-рассчитали - начнете переделывать-перепиливать добиваясь более удобных параметров установки и если руки не опустите то всё у Вас получится!</p>
+
+<p>труд титанический, и очень жаль будет когда в один прекрасный день на установку вдруг что то уроните….. :'( :'( :'( урожай погибнет……..( извиняюся за мрачные мысли)</p>
+
+<p>не сочтите что пытаюсь Вас отговорить или высмеять, просто на мой взгляд время потраченное на изготовление установки из стекла лучше потратить на чтение форума и сооружения простой (пластиковой) установки. конечно если Вы хотите получать урожаи а не выставлять на выставках саму установку.</p>
+
+<p>в принципе можно использовать поликарбонат - он почти не “пылит” и легко обрабатывается - имеет свойства и стекла и пластика</p>
+
+<p><strong>newbie</strong> 11-03-2015</p>
+
+<p>Большое спасибо за комментарии.</p>
+
+<p>К слову сказать, я часто бываю на стекольных фабриках.</p>
+
+<p>Безусловно Вы правы, но я не собирался делать каждую деталь из стекла. Если саму протоку нельзя будет сделать из стекла в виде треугольника “V” или буквы “П”, то я безусловно заменю ее на что-то другое. Но как минимум фюзеляж, полку для горшочков и сами горшки можно сделать из стекла. Насос, форсунки(если надо), терморегулятор и т.д. конечно же будут из других материалов.</p>
+
+<p>Давайте все же рассмотрим вариант “для” выставки. Ну должна же быть хоть какая-то изюминка в своем проекте. Вы не подумайте лишнего, в моем доме животных не водится. Компанию мне составляет только дрозд, который живет в клетке (нет, не стеклянной). Из вещей падает только пыль, как раз в том месте, где я планирую поставить сие чудо. Если очень потребуется, то я смогу сделать верхнюю часть фюзеляжа из толстого или двухслойной стекла, а может просто накрыть прозрачным пластиковым листом.</p>
+
+<p>По поводу фольги, Вы, конечно, удручили. Надо придумать что-то еще. Если раствор ест все, то может нержавейкой накрыть.</p>
+
+<p>Сверления стекла и других вашей я не боюсь, так как под домом очень много соответствующих мастерских. Кроме того, я уже изготовил специальный станок для его сверления стекла.</p>
+
+<p>Почему под салат нужны такие большие емкости?! Разве не подойдет часть той банки, что я уже проверил? Мне кажется, что горлышко идеально соответствует Вашему описанию.</p>
+
+<p><strong>Вик</strong> 11-03-2015</p>
+
+<p>прозрачное нельзя!!! корни погибнут от водорослей!</p>
+
+<p>можно попробовать темное “пивное” стекло, или покрытие акрилом с добавлением не прозрачных компонентов в первый слой (слоев как минимум 2: темный светозащищающий и светлый от перегрева солнечными лучами, или “автомобильная” краска но с длительной просушкой на солнце</p>
+
+<p>V-образный лоток не пойдет, площадь дна при проточной культуре должна быть как можно больше (по моим наблюдениям минимум 20х20 на одну растюху(огурец) и 8х8 на салат), а вот высота не должна быть большой 7-10см пойдет, более меньшие площади это для других методов :-[</p>
+
+<p><strong>Borodach1</strong> 11-03-2015</p>
+
+<blockquote>
+  <p>Давайте все же рассмотрим вариант “для” выставки.</p>
+</blockquote>
+
+<p>Вы просто ещё не понимаете что хотите… :'(</p>
+
+<p>Сделайте что нибудь простое. Ну например - ведро, горшок и аквариумный распылитель. Вы сразу поймёте, что дело не в том из чего сделано, а в том, как осветить, поддержать микроклимат и иногда побороться с какими нибудь клещами.</p>
+
+<p>А пока будете решать насущные проблемы, в перерыве можно и помозговать про стеклянный дом. Только… я уверен, что Вы от этой идеи откажетесь. :(</p>
+
+<p><strong>Вик</strong> 11-03-2015</p>
+
+<p>к сожалению да…. Вы неоднократно будете переделывать свой огород (т.к. нету универсальной конструкции которая удовлетворяла каждого человека и каждый вид растения) всё очень индивидуально….. а эстетика внешнего вида это дело восьмое….. не всё что удобно и красиво для человека удобно и для растения (чаще наоборот)</p>
+
+<p><strong>Milkon10</strong> 17-03-2015</p>
+
+<p>Идея, безусловно, красивая, но все уже сказали выше.</p>
+
+<p>А вот микроклимат и правильный свет, да, это точно самое главное!</p>
+
+<p>Я поначалу думал, что гидропоника - это обязательно что-то должно булькать и переливаться. Однако, “деградировал” до того, что посадил все в кокос с перлитом, в обычные горшки и поливаю раз в день раствором. По моим наблюдениям, растет все едва ли не лучше, чем в DWC. Только правильного света побольше давай :)</p>
+
+<p>А эстетика … я долго думал, как красиво сделать периодику. Сделал. Изумительно красиво и толково выглядело, душа радовалась! И главное, все как по науке и по гидропоническим книгам. Однако, сегодня, после 2 месяцев роста растений, пришлось разобрать установку - жаль было смотреть на застывшие в развитии растения …</p>
+
+<p>Такую же историю пережил и с аэропоникой. Две установки делал. С обеими ничего не вышло.</p>
+
+<p>Так что, Капля - это лучшее, что можно сделать. Именно поэтому в промышленных теплицах используют исключительно маты и каплю.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

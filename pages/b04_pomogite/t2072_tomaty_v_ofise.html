@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Томаты в офисе | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Томаты в офисе">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Томаты в офисе</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Shmel</strong> 01-07-2014</p>
+
+<p>Привет.</p>
+
+<p>Есть идея вырастить в офисе, при полностью искусственном освещении и на гидропоннике, томаты (1 куст).</p>
+
+<p>Видится это примерно так:</p>
+
+<ol>
+  <li>
+    <p>Конструкция. Ёмкость-горшок в которую помещена вторая ёмкость (сетчатая /с отверстиями) с субстратом (мин. вата / кокосовое волокно). Выше размещена емкость с питательным раствором которая через капельную систему поступает на субстрат. Ниже размещена ещё одна ёмкость — для сбора избытков питательного раствора. Слив в последнюю ёмкость из ёмкости-горшка осуществляется с уровня +3-4 см от дна благодаря чему на дне постоянный слой питательного раствора, а в нём — аквариумный терморегулятор (для поддержания постоянно-повышенной температуры в прикорневой зоне.</p>
+  </li>
+  <li>
+    <p>Свет. Прожектор 12Вт (LED, <a href="http://www.ebay.com/itm/12W-40W-60W-100W-LED-Grow-Light-Lamp-for-flower-plant-herbs-vegetable-/251320043955?pt=UK_Baby_Baby_Feeding_Bottle_Warmers_Coolers_LE&amp;var=&amp;hash=item3a83d789b3" target="_blank">http://www.ebay.com/itm/12W-40W-60W-100W-LED-Grow-Light-Lamp-for-flower-plant-herbs-vegetable-/251320043955?pt=UK_Baby_Baby_Feeding_Bottle_Warmers_Coolers_LE&amp;var=&amp;hash=item3a83d789b3</a>) + лампа 54Вт (LED, такого плана: <a href="http://www.ebay.com/itm/15W-21W-27W-36W-45W-54W-E27-LED-Plant-Grow-Light-Red-Blue-Hydroponic-Flowering-/251468362514?pt=US_Hydroponics&amp;var=&amp;hash=item3a8caeb312" target="_blank">http://www.ebay.com/itm/15W-21W-27W-36W-45W-54W-E27-LED-Plant-Grow-Light-Red-Blue-Hydroponic-Flowering-/251468362514?pt=US_Hydroponics&amp;var=&amp;hash=item3a8caeb312</a>). Вкл/выкл — механическим суточным таймером.</p>
+  </li>
+  <li>
+    <p>Питательный раствор. Из готовых, предлагаемых на eBay, например. Подготовка — по инструкции. Вода — осмос. +доводка с помощью PH и TDS метров. Подготовленный питатетльный раствор помещается в верхнюю ёмкость и самотеком, через капельницу, попадает на субстрат. Затем собирается на дне горшка, откуда переливаясь попадает в нижнюю ёмкость. Затем, с некоторой заданной регулярностью (например раз в три дня), приборами контрлируется кондиция раствора в нижней ёмкости, доводится до идеала и заливается обратно в верхнюю ёмкость. Раз в N дней раствор полностью заменяется.</p>
+  </li>
+  <li>
+    <p>Субстрат. Мин. вата или кокосовый субстрат или… Кокосовый субстрат уже есть в наличии. Преимущества/недостатки пока неочевидны.</p>
+  </li>
+  <li>
+    <p>Томат. Тоже не всё ясно. Пока был выбран такой: <a href="http://www.ebay.com/itm/VEGETABLE-TOMATO-RED-ROBIN-WINDOWSILL-CROP-20-Seed-/360887699992?pt=UK_HomeGarden_Garden_PlantsSeedsBulbs_JN&amp;hash=item5406954a18" target="_blank">http://www.ebay.com/itm/VEGETABLE-TOMATO-RED-ROBIN-WINDOWSILL-CROP-20-Seed-/360887699992?pt=UK_HomeGarden_Garden_PlantsSeedsBulbs_JN&amp;hash=item5406954a18</a></p>
+  </li>
+</ol>
+
+<p>Ну, собственно, как принято в таких случаях — советы и здравая критика проекта приветствуются.</p>
+
+<p>Так же есть несколько вопросов к общественности.</p>
+
+<ol>
+  <li>
+    <p>Какую можно использовать капельницу для подачи питательного раствора?</p>
+  </li>
+  <li>
+    <p>Какой готовый питательный раствор взять (по возможности ссылка на eBay)?</p>
+  </li>
+  <li>
+    <p>Сейчас стали доступны недорогие (<a href="http://www.ebay.com/itm/Handheld-Digital-LCD-EC-Conductivity-Meter-Water-Quality-Tester-Pen-0-9999-s-cm-/351009664242?pt=LH_DefaultDomain_0&amp;hash=item51b9ce6cf2" target="_blank">http://www.ebay.com/itm/Handheld-Digital-LCD-EC-Conductivity-Meter-Water-Quality-Tester-Pen-0-9999-s-cm-/351009664242?pt=LH_DefaultDomain_0&amp;hash=item51b9ce6cf2</a>) PH и TDS(EC)-метры. Они подходят для контроля параметров питательного раствора?</p>
+  </li>
+</ol>
+
+<p>Заранее всем спасибо.</p>
+
+<p><strong>Gnevko</strong> 01-07-2014</p>
+
+<p>1) Конструкция. Не понятно зачем такие сложности? Если это все будет стоять на работе, то терморегулятор вам не понадобиться, так как скорее всего тепло будет и так. Зачем емкость с питательным раствором выше растения? Это оправдано только при применении блюматов, а так вы все время будете поливать свой томат, даже когда ему это не нужно. Лучше уж маленький насос и капельница из шприца + поливы только днем + реле времени. Не понятно, будете ли вы использовать дренаж повторно, если да - то на кокосе это, говорят, признак “плохого тона”.</p>
+
+<p>2) Свет в 54 ватта светодиодов одному томату хватит за глаза, если речь идет о кустовом виде томатов.</p>
+
+<p>3) Питательный раствор. Лучше купите нужные соли + пару комплексых удобрений от YARA и мешайте сами. Это не сложно. Ради эксперимента можно взять и готовые удобрения (но нужно расчитывать, что они гововяться в основной своей массе для нужд веселых растений, хотя у меня и томаты на них в принципе росли, а так же это будет намного дороже, чем ручками 3-4 компонента самому смешать)</p>
+
+<p>4) Сбстрат (как же хочется туда букву “к” влепить ))). “Преимущества/недостатки пока неочевидны.” - возьмите два томата, один на кокосе, а второй на мин вате и через месяцев 5-6 все будет весьма очевидно. Технология полива совершенно разная, и при условии соблюдения оной как для кокоса, так и для мин ваты урожай вы получите приблизительно одинаковый (в рамках выращивания в домашних условиях).</p>
+
+<p>5) Не гонитесь за недорогими PH и EC метрами (именно EC, а не TDS).</p>
+
+<p>6) Если хочется попробовать все же готовый раствор, то могу сказать лишь, что использовал в начале от фирмы CANNA (название как бы намекает). Сейчас буду ставить эксперимент на кокосе + CANNA COCO A&amp;B. Судя по калькулятору, там весьма вменяемые дозы элементов (как минимум для огурца).</p>
+
+<p><strong>Shmel</strong> 01-07-2014</p>
+
+<p>Усложнение конструкции для упрощения ухода. Хочу отрегулировать подачу питательного раствора один раз и забыть об этом. Да, дренаж — повторно. Следовательно, лучше — мин вата?</p>
+
+<p>Подготовка питательного раствора. Поначалу хотелось бы на чем-нибудь готовеньком. Есть что-нибудь проверенное для томатов на гидропонике?</p>
+
+<p>Субстрат. Не, экспериментов не хочется. Хочется сразу как лучше. Я правильно понял, что мин вата перспективней (если дренаж повторно использовать)?</p>
+
+<p>Приборы. Есть какой-нибудь оптимум? Конкретные, не слишком дорогие, но рекомендованные образцы?</p>
+
+<p><strong>Gnevko</strong> 01-07-2014</p>
+
+<p>Боюсь, что я вас разочарую, причем сильно. Вам не удастся настроить подачу питательного раствора один раз и забыть об этом, особенно таким образом (как в прочем и любым другим).</p>
+
+<p>Мин вата не лучше, равно как и не хуже. Но… мин ватой нужно управлять, каждый день, причем не один раз на день. У вас же нет и не будет оборудования, которое для этого нужно (и которое могут себе позволить промышленные тепличные хозяйства), ибо стоит оно много много тысяч и не рублей. Да и штат агрномов вы навряд ли сможете содержать, которые б умели и знали как то оборудование использовать. Без этого “управлять” мин ватой у вас скорее всего не получится, и соответственно она становиться ничем не лучше всех остальных субстратов. Тем более не при повторном использовании дренажа и выбранного вами способа полива.</p>
+
+<p>Вот темка на этом форуме про мин вату - почитайте, многое узнаете - <a href="http://forum.ponics.ru/index.php?topic=18.0" target="_blank">http://forum.ponics.ru/index.php?topic=18.0</a>.</p>
+
+<p>А вот темка про кокосовые чудеса без дренажа на каймановых полях - тоже весьма интересная <a href="http://forum.ponics.ru/index.php?topic=312.0," target="_blank">http://forum.ponics.ru/index.php?topic=312.0,</a> более того, хозяин темки человек весьма отзывчивый и посещает форум часто, что всяко повышает ваши шансы получить у него ответы на ваши же вопросы, если вы вдруг решите растит на кокосе.</p>
+
+<p>По поводу ЕС и РН метров - я использую ADWA. В Европе стоит около 45 Евро, что ЕС, что РН (например <a href="http://www.amazon.de/ADWA-AD31-EC-Messger&#228;t-bestimmen-Temperatur/dp/B00C6WBW3Y" target="_blank">http://www.amazon.de/ADWA-AD31-EC-Messgerät-bestimmen-Temperatur/dp/B00C6WBW3Y</a>).</p>
+
+<p><strong>Юка</strong> 02-07-2014</p>
+
+<blockquote>
+  <p>Привет.</p>
+
+  <p>Есть идея вырастить в офисе, при полностью искусственном освещении и на гидропоннике, томаты (1 куст).</p>
+
+  <p>Видится это примерно так:</p>
+
+  <ol>
+    <li>
+      <p>Конструкция. Ёмкость-горшок в которую помещена вторая ёмкость (сетчатая /с отверстиями) с субстратом (мин. вата / кокосовое волокно). Выше размещена емкость с питательным раствором которая через капельную систему поступает на субстрат. Ниже размещена ещё одна ёмкость — для сбора избытков питательного раствора. Слив в последнюю ёмкость из ёмкости-горшка осуществляется с уровня +3-4 см от дна благодаря чему на дне постоянный слой питательного раствора, а в нём — аквариумный терморегулятор (для поддержания постоянно-повышенной температуры в прикорневой зоне.</p>
+    </li>
+    <li>
+      <p>Свет. Прожектор 12Вт (LED, <a href="http://www.ebay.com/itm/12W-40W-60W-100W-LED-Grow-Light-Lamp-for-flower-plant-herbs-vegetable-/251320043955?pt=UK_Baby_Baby_Feeding_Bottle_Warmers_Coolers_LE&amp;var=&amp;hash=item3a83d789b3" target="_blank">http://www.ebay.com/itm/12W-40W-60W-100W-LED-Grow-Light-Lamp-for-flower-plant-herbs-vegetable-/251320043955?pt=UK_Baby_Baby_Feeding_Bottle_Warmers_Coolers_LE&amp;var=&amp;hash=item3a83d789b3</a>) + лампа 54Вт (LED, такого плана: <a href="http://www.ebay.com/itm/15W-21W-27W-36W-45W-54W-E27-LED-Plant-Grow-Light-Red-Blue-Hydroponic-Flowering-/251468362514?pt=US_Hydroponics&amp;var=&amp;hash=item3a8caeb312" target="_blank">http://www.ebay.com/itm/15W-21W-27W-36W-45W-54W-E27-LED-Plant-Grow-Light-Red-Blue-Hydroponic-Flowering-/251468362514?pt=US_Hydroponics&amp;var=&amp;hash=item3a8caeb312</a>). Вкл/выкл — механическим суточным таймером.</p>
+    </li>
+    <li>
+      <p>Питательный раствор. Из готовых, предлагаемых на eBay, например. Подготовка — по инструкции. Вода — осмос. +доводка с помощью PH и TDS метров. Подготовленный питатетльный раствор помещается в верхнюю ёмкость и самотеком, через капельницу, попадает на субстрат. Затем собирается на дне горшка, откуда переливаясь попадает в нижнюю ёмкость. Затем, с некоторой заданной регулярностью (например раз в три дня), приборами контрлируется кондиция раствора в нижней ёмкости, доводится до идеала и заливается обратно в верхнюю ёмкость. Раз в N дней раствор полностью заменяется.</p>
+    </li>
+    <li>
+      <p>Субстрат. Мин. вата или кокосовый субстрат или… Кокосовый субстрат уже есть в наличии. Преимущества/недостатки пока неочевидны.</p>
+    </li>
+    <li>
+      <p>Томат. Тоже не всё ясно. Пока был выбран такой: <a href="http://www.ebay.com/itm/VEGETABLE-TOMATO-RED-ROBIN-WINDOWSILL-CROP-20-Seed-/360887699992?pt=UK_HomeGarden_Garden_PlantsSeedsBulbs_JN&amp;hash=item5406954a18" target="_blank">http://www.ebay.com/itm/VEGETABLE-TOMATO-RED-ROBIN-WINDOWSILL-CROP-20-Seed-/360887699992?pt=UK_HomeGarden_Garden_PlantsSeedsBulbs_JN&amp;hash=item5406954a18</a></p>
+    </li>
+  </ol>
+
+  <p>Ну, собственно, как принято в таких случаях — советы и здравая критика проекта приветствуются.</p>
+
+  <p>Так же есть несколько вопросов к общественности.</p>
+
+  <ol>
+    <li>
+      <p>Какую можно использовать капельницу для подачи питательного раствора?</p>
+    </li>
+    <li>
+      <p>Какой готовый питательный раствор взять (по возможности ссылка на eBay)?</p>
+    </li>
+    <li>
+      <p>Сейчас стали доступны недорогие (<a href="http://www.ebay.com/itm/Handheld-Digital-LCD-EC-Conductivity-Meter-Water-Quality-Tester-Pen-0-9999-s-cm-/351009664242?pt=LH_DefaultDomain_0&amp;hash=item51b9ce6cf2" target="_blank">http://www.ebay.com/itm/Handheld-Digital-LCD-EC-Conductivity-Meter-Water-Quality-Tester-Pen-0-9999-s-cm-/351009664242?pt=LH_DefaultDomain_0&amp;hash=item51b9ce6cf2</a>) PH и TDS(EC)-метры. Они подходят для контроля параметров питательного раствора?</p>
+    </li>
+  </ol>
+
+  <p>Заранее всем спасибо.</p>
+</blockquote>
+
+<p>Уважаемый Shmel, а почему Вы остановили свой выбор на капельном поливе?? томат, он многолетний и сверх вынослив…можно и периодическое затопление или, ещё более простой способ периодический пролив сверху организовать и если в качестве субстрата выбрать, к примеру, керамзит (можно туда и немного кокоса добавить, чтобы сутки-двое без электричества прожить)….Три емкости(одна с отверстиями) + суточный таймер + самая маломощная помпа аквариумная… единожды настроив можно несколько дней даже отсутствовать…..как-то так…</p>
+
+<p><strong>caiman</strong> 03-07-2014</p>
+
+<blockquote>
+  <p>А вот темка про кокосовые чудеса без дренажа на каймановых полях - тоже весьма интересная <a href="http://forum.ponics.ru/index.php?topic=312.0," target="_blank">http://forum.ponics.ru/index.php?topic=312.0,</a> более того, хозяин темки человек весьма отзывчивый и посещает форум часто, что всяко повышает ваши шансы получить у него ответы на ваши же вопросы, если вы вдруг решите растит на кокосе.</p>
+</blockquote>
+
+<p>Ух ты! И меня в пример поставили :-[ :-[ :-[ Я спец не великий, но подсказать могу. Тем более, что у меня дома на подоконнике томаты росли на подпоре кажется…. Так помидоры были всю зиму и оборудование все: метровый цветочный ящик, аэратор аквариумный, кусок пенопласта сверху ящика и три горшка с отверстиями и керамзитом в них. ВСЁ!!! и росло на ура <em>Dance</em></p>
+
+<p><strong>Седой</strong> 03-07-2014</p>
+
+<p>Было бы интересно послушать и посмотреть.</p>
+
+<p><strong>caiman</strong> 04-07-2014</p>
+
+<blockquote>
+  <p>Было бы интересно послушать и посмотреть.</p>
+</blockquote>
+
+<p>Это ко мне относится? Мои опыты хотите посмотреть и меня послушать? Так это давно было, на заре моего увлечения гидропоникой. Сейчас уже всего и не упомнишь… И фоток не найдешь, но я постараюсь…. Только с мыслями соберусь….</p>
+
+<p><strong>Седой</strong> 04-07-2014</p>
+
+<blockquote>
+  <p>Это ко мне относится?</p>
+</blockquote>
+
+<p>Конечно,уважаемый. Я читал в твоем домике. Но там больше про огород. Очень удивило многоразовое использование кокоматов.</p>
+
+<p><strong>Gnevko</strong> 04-07-2014</p>
+
+<p>Особенно хотелось было бы послушать истории о том, что не получилось и почему не получилось. Истории успеха тоже хороши, но на них как правило не научишься особо. Так что присоединяюсь к просьбе ;)</p>
+
+<p><strong>caiman</strong> 05-07-2014</p>
+
+<blockquote>
+  <p>Особенно хотелось было бы послушать истории о том, что не получилось и почему не получилось. Истории успеха тоже хороши, но на них как правило не научишься особо. Так что присоединяюсь к просьбе ;)</p>
+</blockquote>
+
+<p>Берем метровый пластиковый цветочный лоток, аквариумный самый простой аэратор+90см распылитель к аэратору, три горшка пластиковых цветочных(таких, чтобы помещались в лоток), лист пенопласта, керамзит. Вот и все приспособы для выращивания томатов.</p>
+
+<p>Вырезаем пенопласт как крышку на лоток с запасом в 1см со всех сторон. В этой крышке вырезаем посадочные места под горшочки. Вставляем горшочки на места. На дно лотка крепим аэраторный распылитель и подсоединяем его к трубочке, которая идет к аэратору, пропустив ее ч/з отверстие в крышке. ВСЁ!!! установка готова. Наливаем раствор с таким расчетом, чтобы он доходил до дна горшка или. если по простому, то половину лотка. Накрываете лоток крышкой, вставляете горшки, насыпаете керамзит(вниз - крупнее, наверх - мельче), проверяете, т.е. включаете аэратор и смотрите как промокает керамзит. Если всё нормально, то садите рассаду томата, включаете установку и … <em>Dance</em> <em>Dance</em> <em>Dance</em> Будет вам счастье. Да, чуть не забыл, нужно еще сделать отверстие для залива раствора в лоток, которое затыкается пробочкой и посадочное место томата накрыть чем-то для уменьшения испарения раствора через керамзит…..</p>
+
+<p>Вот как-то так. Успехов! Будут вопросы - отвечу, если знать буду ответ :D</p>
+
+<p><strong>Седой</strong> 05-07-2014</p>
+
+<p>Каким образом производим контроль за раствором(ЕС,ПШ,уровень)?</p>
+
+<p><strong>caiman</strong> 05-07-2014</p>
+
+<blockquote>
+  <p>Каким образом производим контроль за раствором(ЕС,ПШ,уровень)?</p>
+</blockquote>
+
+<p>Это из раздела “УСЛОЖНЯТЬ”…. а тут каждый сам себе полководец. Я ничего не измерял, я делал готовый и заливал…. Да и “бороду” корням подстригал…. Это все, что я делал, а вы подумайте как можно усовершенствовать и довести до ума кустарное изделие…. Вам и карты в руки…. <em>8)</em></p>
+
+<p>Для примера: РН и ЕС измеряются выносными электродами, помещенными в лоток, а уровень раствора??? Можно вклеить в лоток смотровое окно и через него смотреть, можно как в сливном бачке + пищалку придумать как сигнал…. извращайтесь…. мне не сложно было раз в одну - две недели заглянуть и долить три- четыре литра раствора….</p>
+
+<p><strong>Седой</strong> 05-07-2014</p>
+
+<p>Так,давай теперь по порядку.</p>
+
+<p>Как я понял ты раствор не корректировал,один раз залив,только менял его на новый,так?</p>
+
+<p>Через какой период была замена?</p>
+
+<p>Сколько примерно был общий объем залитого раствора?</p>
+
+<p>Если один взрослый томат за день съедает литр раствора,то сколько надо раствора в установке,что бы заглядывать туда один раз в неделю.</p>
+
+<p><strong>caiman</strong> 05-07-2014</p>
+
+<blockquote>
+  <p>Так,давай теперь по порядку.</p>
+
+  <p>Как я понял ты раствор не корректировал,один раз залив,только менял его на новый,так?</p>
+
+  <p>Через какой период была замена?</p>
+
+  <p>Сколько примерно был общий объем залитого раствора?</p>
+
+  <p>Если один взрослый томат за день съедает литр раствора,то сколько надо раствора в установке,что бы заглядывать туда один раз в неделю.</p>
+</blockquote>
+
+<ol>
+  <li>
+    <p>Не менял на новый, а доливал.</p>
+  </li>
+  <li>
+    <p>Период??? Давно это было… не помню точно</p>
+  </li>
+</ol>
+
+<p>3..Общий объем раствора? Фиг его знает… наливаешь половина лотка. так, чтобы раствор касался или чуть прикрывал дно горшков с растюхами</p>
+
+<ol>
+  <li>Не съедает томат литр раствора…. Если у вас съест, то заглядывать придется чаще….</li>
+</ol>
+
+<p>И еще, я никогда не занимался математикой расчета раствора и кол-вом его потребления, делал все проще и приземленней. Нет раствора - долил. Какие-то траблы с растюхами - исправляю по мере возникновения проблем.</p>
+
+<p>Как-то так….</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

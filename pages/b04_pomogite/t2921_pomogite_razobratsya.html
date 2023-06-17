@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Помогите разобраться. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Помогите разобраться.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Помогите разобраться.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Седой</strong> 27-07-2018</p>
+
+<p><a href="https://t.me/ponics_ru_files/19479" target="_blank"><img src="/imagehost2/thumbs/img20180727170907.jpg" alt="" /></a></p>
+
+<p>Други, помогите разобраться. По случаю приобрел эти удобряшки. В инструкции написано, что надо 2мл каждого на 1 литр воды. Добавляю, измеряю выходит 0,8 мСм. Начинаю добавлять еще, раствор мутнеет. Как же мне довести раствор до 2мСм?</p>
+
+<p><strong>Toshikas</strong> 01-08-2018</p>
+
+<p>We are very pleased to be part of this discussion, which gives us more knowledge.</p>
+
+<p><strong>allex_step</strong> 01-08-2018</p>
+
+<blockquote>
+  <p><img src="/imagehost2/thumbs/img20180727170907.jpg" alt="" /></p>
+
+  <p>Други, помогите разобраться. По случаю приобрел эти удобряшки. В инструкции написано, что надо 2мл каждого на 1 литр воды. Добавляю, измеряю выходит 0,8 мСм. Начинаю добавлять еще, раствор мутнеет. Как же мне довести раствор до 2мСм?</p>
+</blockquote>
+
+<p>так Вы таки не желаете придерживаться инструкции..?</p>
+
+<p><strong>Седой</strong> 25-08-2018</p>
+
+<p>Я, таки очень хочу придерживаться инструкции. Но вопрос в том, каким образом мне добиться нужной концентрации раствора(1.5 -1.8 мСм),если по инструкции получается раствор ниже 1мСм. А при большем добавлении удобрения в раствор,последний просто мутнеет, что уже не есть хорошо. Я пробовал поливать таким раствором, как в инструкции написано. Но на лицо измельчание точки роста. и отсыхание плодов. Явный признак нехватки еды.</p>
+
+<p><strong>siv237</strong> 25-08-2018</p>
+
+<blockquote>
+  <p>Я, таки очень хочу придерживаться инструкции. Но вопрос в том, каким образом мне добиться нужной концентрации раствора(1.5 -1.8 мСм),если по инструкции получается раствор ниже 1мСм. А при большем добавлении удобрения в раствор,последний просто мутнеет, что уже не есть хорошо. Я пробовал поливать таким раствором, как в инструкции написано. Но на лицо измельчание точки роста. и отсыхание плодов. Явный признак нехватки еды.</p>
+</blockquote>
+
+<p>Вам не кажется, что вы используете левый контрафакт?</p>
+
+<p><strong>Седой</strong> 26-08-2018</p>
+
+<p>Контрафакт,да еще и левый?!!! Это конечно, круто. Ничего не могу добавить. Но куплен был в довольно приличном магазине для гидропоники. Да и еще,я забил название в поисковик и везде где нашел инфу по этому удобрению,написано разводить 2мл на литр. Просто подумал, может это какое нибудь удобрение нового поколения, где не нужно следить за концентрацией :-\, написано удобрение премиум класса.</p>
+
+<p><strong>siv237</strong> 26-08-2018</p>
+
+<blockquote>
+  <p>Контрафакт,да еще и левый?!!! Это конечно, круто. Ничего не могу добавить. Но куплен был в довольно приличном магазине для гидропоники. Да и еще,я забил название в поисковик и везде где нашел инфу по этому удобрению,написано разводить 2мл на литр. Просто подумал, может это какое нибудь удобрение нового поколения, где не нужно следить за концентрацией :-\, написано удобрение премиум класса.</p>
+</blockquote>
+
+<p>Может там все в хелатной форме вместо солей? Состав есть у этого чуда?</p>
+
+<p>ps ну точно…</p>
+
+<blockquote>
+  <p>BioNova Coco Forte A&amp;B – удобрение премиум-класса, разработанное с учетом всех особенностей выращивания на кокосовом субстрате. Содержит только легкоусвояемые компоненты в хелатной форме, простейшее решение для выращивания! Стабилен по pН. Содержит специальные добавки органического происхождения для гарантии оптимального роста и впечатляющего цветения!</p>
+
+  <p>Не засаливает кокосовый субстрат и позволяет использовать его снова после небольшой промывки!</p>
+</blockquote>
+
+<p>В общем это органика превращающая кокос в землю :) Очередная дурилка для поклонников “органического” выращивания. Наверняка эта жижа еще и кишит всякой биокультурой.</p>
+
+<p><strong>allex_step</strong> 26-08-2018</p>
+
+<p>[size=2]ну вот… всё как я и предполагал - товарисч просто не желает придерживаться инструкции……. <em>???</em></p>
+
+<p><img src="http://i.piccy.info/i9/0040d80537be7150ac1c1e1dfc951e8c/1535298367/7932/1149857/Screen_Shot_2018_08_26_at_18_45_37.png" alt="" /><img src="http://i.piccy.info/a3/2018-08-26-15-46/i9-12576735/263x59-r/i.gif" alt="" /></p>
+
+<p>вот считайте (тут нормально виден состав)</p>
+
+<p><a href="http://forum.ponics.ru/go.php?url=aHR0cDovL3d3dy5ob2xsYW5kcy1nbG9yaWUubmV0L3IvcHJvZHVjdHMvVjIxMDVfb3JpZ2luZWVsLmpwZw==" target="_blank">www.hollands-glorie.net/…rigineel.jpg</a>[/size]</p>
+
+<p>[size=2][font=Verdana]обычный концентрат А+Б с хелатной микрой (вот только БОР, похоже, положить забыли [/font] :D [font=Verdana])[/font][/size]</p>
+
+<p><strong>Седой</strong> 26-08-2018</p>
+
+<p>На счет биокультуры ничего не скажу. Жижа, как ты выразился, имеет очень даже прозрачный вид. Сделать более точный анализ нет возможности.</p>
+
+<p><em>**</em> 26-08-2018</p>
+
+<blockquote>
+  <p>[size=2]ну вот… всё как я и предполагал - товарисч просто не желает придерживаться инструкции……. <em>???</em></p>
+
+  <p><img src="http://i.piccy.info/i9/0040d80537be7150ac1c1e1dfc951e8c/1535298367/7932/1149857/Screen_Shot_2018_08_26_at_18_45_37.png" alt="" /><img src="http://i.piccy.info/a3/2018-08-26-15-46/i9-12576735/263x59-r/i.gif" alt="" /></p>
+
+  <p>вот считайте (тут нормально виден состав)</p>
+
+  <p><a href="http://forum.ponics.ru/go.php?url=aHR0cDovL3d3dy5ob2xsYW5kcy1nbG9yaWUubmV0L3IvcHJvZHVjdHMvVjIxMDVfb3JpZ2luZWVsLmpwZw==" target="_blank">www.hollands-glorie.net/…rigineel.jpg</a>[/size]</p>
+
+  <p>[size=2][font=Verdana]обычный концентрат А+Б с хелатной микрой (вот только БОР, похоже, положить забыли [/font] :D [font=Verdana])[/font][/size]</p>
+</blockquote>
+
+<p>Попробуй еще раз доходчиво объяснить мне,в чем я не желаю придерживаться инструкции. А то я видать к вечеру тупею малость.</p>
+
+<p><strong>allex_step</strong> 27-08-2018</p>
+
+<p><img src="http://www.hollands-glorie.net/r/products/V2105_origineel.jpg" alt="" />по инструкции 2мл на 1л - так зачем стремиться к какому-то ЕС?..</p>
+
+<p><strong>VVS_</strong> 27-08-2018</p>
+
+<p>Зашибись. Еще и в готовое удобрение борную кислоту ложить надо. Хорошо хоть состав написан, можно коррекции вносить.</p>
+
+<p><strong>Седой</strong> 27-08-2018</p>
+
+<p>Ну как же? Одно дело когда у тебя огурец в начале плодоношения, и другое, когда так сказать пик. Разве не меняем ЕС раствора? Ведь тут и хомячку понятно, что при большой плодовой нагрузке и питание должно быть усиленно. Или я не прав?</p>
+
+<p><strong>VVS_</strong> 28-08-2018</p>
+
+<p>Малышам ес около 1.5, плодоносящим 2..2.2, выше уже могут вянуть. Раствор для плодоносящих отличается чуть польшим уровнем калия, именно калий определяет. ЕС вторично.</p>
+
+<p><strong>allex_step</strong> 28-08-2018</p>
+
+<p>… а именно эту бодягу и позиционируют как “фсем на фсе периоды”</p>
+
+<p><strong>Седой</strong> 28-08-2018</p>
+
+<p>Ну наконец то, меня услышали. Значит таки я не ошибался когда подумал, что вся эта премиум -бадяга, просто надувательство?Смутило только, инновационные технологии, применяемые товарищами голландцами в данном удобрении. Ну да флаг им в руки.</p>
+
+<p><strong>VVS_</strong> 28-08-2018</p>
+
+<p>Товарищи голландцы такую бодягу не используют. Они профи и считают растворы сами. Зато нам такуб бодягу впаривают они легко)</p>
+
+<p><strong>allex_step</strong> 29-08-2018</p>
+
+<p>ну, может сами голландцы и профи, а вот нидерландцы - похоже не совсем… а Валвейк, в котором, судя по обозначенному на ярлыке, производят эту бодягу, чуточку далеко от Голландии</p>
+
+<p><strong>Coccinella</strong> 02-09-2018</p>
+
+<p>Господа, судя по составу, это нитрат кальция и магния. Его надо дополнять всем прочим. При разведении в более высокой концентрации, чем указано на этикетке, очевидно, выпадает осадок с примесями, содержащимися в воде, вот раствор и мутнеет.</p>
+
+<p><strong>allex_step</strong> 02-09-2018</p>
+
+<blockquote>
+  <p>Господа, судя по составу, это нитрат кальция и магния. Его надо дополнять всем прочим. При разведении в более высокой концентрации, чем указано на этикетке, очевидно, выпадает осадок с примесями, содержащимися в воде, вот раствор и мутнеет.</p>
+</blockquote>
+
+<p>там правее вторая канистра “В” - в ней фосфор, калий, сера</p>
+
+<p><strong>VVS_</strong> 03-09-2018</p>
+
+<p>Буйские удобрения рулят. Чистые соли + Аквамикс-М (гидропонный). + борная кислота, и все у вас в шоколаде + микра правильная.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

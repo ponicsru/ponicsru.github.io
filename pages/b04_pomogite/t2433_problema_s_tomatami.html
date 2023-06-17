@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Проблема с томатами. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Проблема с томатами.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Проблема с томатами.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Iansafa</strong> 13-03-2016</p>
+
+<p>Выращиваю томат на DWC. Состав расвора такой N=219, P=55, K-354, Ca=170, Mg=50, S=128 и 0,8 грамма микроэлеменнтов аквамикс на 14 литров раствора, pH=6, TDS=1250. Что то с томатом не то, листья стали подсыхать, какие то очаги на листьях появились и одна помидорка ваще почти померла, один стебель остался!(</p>
+
+<p><a href="https://t.me/ponics_ru_files/17265" target="_blank"><img src="/imagehost2/thumbs/img0591.jpg" alt="" /></a> <a href="https://t.me/ponics_ru_files/17266" target="_blank"><img src="/imagehost2/thumbs/img0599.jpg" alt="" /></a> <a href="https://t.me/ponics_ru_files/17267" target="_blank"><img src="/imagehost2/thumbs/img0592.jpg" alt="" /></a> <a href="https://t.me/ponics_ru_files/17268" target="_blank"><img src="/imagehost2/thumbs/img0594qeq.jpg" alt="" /></a></p>
+
+<p>Вот не пойму в чем дело, то ли раствор виноват, толи болезнь какая.</p>
+
+<p><strong>Coccinella</strong> 13-03-2016</p>
+
+<p>Состав в каких единицах? в мг/л? Очень похоже на резкий дефицит фосфора.</p>
+
+<p>Кстати сообщите данные о микроклимате.</p>
+
+<p><strong>Iansafa</strong> 13-03-2016</p>
+
+<blockquote>
+  <p>Состав в каких единицах? в мг/л? Очень похоже на резкий дефицит фосфора.</p>
+
+  <p>Кстати сообщите данные о микроклимате.</p>
+</blockquote>
+
+<p>Да, мг/л. Темперутара в интервале 22-25 гр., влажность скачет от 45-70%. Сегодня тогда подкормлю монофосфатом. У меня кстати недавно упал довольно резко pH с 6 до 5,6, я его поднял карбонатом калия. Может фосфор растиха резко сожрала из расвора?</p>
+
+<p><strong>Gnevko</strong> 13-03-2016</p>
+
+<p>Это он у вас не упал, РН то есть, это он у вас в норму пришел.</p>
+
+<p><strong>Borodach1</strong> 14-03-2016</p>
+
+<blockquote>
+  <p>… я его поднял карбонатом калия. Может фосфор растиха резко сожрала из расвора?</p>
+</blockquote>
+
+<p>А может ещё и кальций с магнием этим карбонатом вывалили в осадок. Да ещё и половину микры в придачу. <em>???</em></p>
+
+<p><strong>Iansafa</strong> 14-03-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>… я его поднял карбонатом калия. Может фосфор растиха резко сожрала из расвора?</p>
+  </blockquote>
+
+  <p>А может ещё и кальций с магнием этим карбонатом вывалили в осадок. Да ещё и половину микры в придачу. <em>???</em></p>
+</blockquote>
+
+<p>Выше 6.1 pH не прыгал, разве при таком показатели может кальций и др. в осадок выпасть? Где то пишут pH в интервале 6.0-6.3, где то 5.5-6.0, так сколько брать лучше? Вчера добавил монофосфата, pH был 5.6, посмотрим как растиха себя сегодня будет чувтсвовать, если не поможет сменю раствор полностью.</p>
+
+<p><strong>n72black</strong> 14-03-2016</p>
+
+<p>Помоему калий еще частично блокирует кальций, при таких то уровнях. Как по мне, лучше сейчас убавить калий до 250-270, пока перывые бутоны не появятся, фостор тоже можно снизить до 40-45, можно и кальций поднять до 190-200, если плоды от 60-70гр в весе.</p>
+
+<p>А что у вас с освещением, хватает ли томатам?</p>
+
+<p><strong>Borodach1</strong> 14-03-2016</p>
+
+<blockquote>
+  <p>Выше 6.1 pH не прыгал, разве при таком показатели может кальций и др. в осадок выпасть?</p>
+</blockquote>
+
+<p>Кальций и др выпадают в осадок не от рН, а от карбонат-иона, который вы карбонатом калия добавляете.</p>
+
+<p>рН 5,6 вполне себе нормальный.</p>
+
+<p>Скакнуть могло из-за бешенного аммонийного азота. Какую часть из N=219 составляет аммонийный азот?</p>
+
+<p><strong>Borodach1</strong> 14-03-2016</p>
+
+<p>.</p>
+
+<p><strong>Coccinella</strong> 14-03-2016</p>
+
+<p>Такие сухие пятна на листиьях характерны для дефицита фосфора. Какая-то его часть могла выпасть в осадок в результате скачков рН. Если бы растение его потребило, то таких пятен не было бы.</p>
+
+<p><strong>Iansafa</strong> 14-03-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>Выше 6.1 pH не прыгал, разве при таком показатели может кальций и др. в осадок выпасть?</p>
+  </blockquote>
+
+  <p>Кальций и др выпадают в осадок не от рН, а от карбонат-иона, который вы карбонатом калия добавляете.</p>
+
+  <p>рН 5,6 вполне себе нормальный.</p>
+
+  <p>Скакнуть могло из-за бешенного аммонийного азота. Какую часть из N=219 составляет аммонийный азот?</p>
+</blockquote>
+
+<p>Вот значит в этом дело, нельзя значит юзать калия карбонат, буду знать. А что оптимально использовать, гидроксид калия? Аммонийного азота в районе 20%. Фосфором я подкормил, сульфата магния тоже добавлю, вот как кальция добавить не повышая азот?</p>
+
+<p><strong>Borodach1</strong> 14-03-2016</p>
+
+<blockquote>
+  <p>Вот значит в этом дело, нельзя значит юзать калия карбонат, буду знать. А что оптимально использовать, гидроксид калия?</p>
+</blockquote>
+
+<p>А хрен редьки не слаще. И то и то будет стремить сделать осадок в растворе. Гидроксиды и карбонаты только щелочных металлов растворимы в воде. Поэтому в эту сторону рН лучше не спускаться. Лучше уж в обратную.</p>
+
+<p>Все нитраты растворимые, поэтому сверху вниз азотной кислотой можно смело спускать рН без последствий.</p>
+
+<blockquote>
+  <p>Аммонийного азота в районе 20%….вот как кальция добавить не повышая азот?</p>
+</blockquote>
+
+<p>Аммонийного азота очень много. Вот потому и скакнул рН вниз. Снизить аммонийный азот до 7 - 9 %. Как раз и кальций и азот сможете поднять селитрой. Немного, без фанатизма, кальций можно хлористым кальцием поднять.</p>
+
+<p><strong>n72black</strong> 14-03-2016</p>
+
+<p>И всё же хотелось бы узнать по поводу освещения. :-\</p>
+
+<p>И какие соли используются для приготовления раствора?</p>
+
+<p><strong>Iansafa</strong> 14-03-2016</p>
+
+<blockquote>
+  <p>И всё же хотелось бы узнать по поводу освещения. :-\</p>
+
+  <p>И какие соли используются для приготовления раствора?</p>
+</blockquote>
+
+<p>Свет 9 штук 3 Вт полноспнектральных светодиода плюс лампа ЭСЛ 15 Вт 2700K. Площадь бокса 40х40 см, свет только искуственный.</p>
+
+<p>Мучу новый раствор, вот такой состав. Старый был из тех же самых компонентов, тако в других пропорциях.</p>
+
+<p><a href="https://t.me/ponics_ru_files/17269" target="_blank"><img src="/imagehost2/thumbs/rur.png" alt="" /></a></p>
+
+<p><strong>n72black</strong> 14-03-2016</p>
+
+<p>Тогда еще вопрос, какое расстояние от светодиодов до верхушек томатов?</p>
+
+<p>Сульфат калия немешало бы проверить, возьмите его щепотку и капните туда кислоты(ну всмысле то чем подкисляете воду). :-\ Если не зашипит, то хорошо.</p>
+
+<p>И воду для раствора какую используете?</p>
+
+<p><strong>Iansafa</strong> 15-03-2016</p>
+
+<blockquote>
+  <p>Тогда еще вопрос, какое расстояние от светодиодов до верхушек томатов?</p>
+
+  <p>Сульфат калия немешало бы проверить, возьмите его щепотку и капните туда кислоты(ну всмысле то чем подкисляете воду). :-\ Если не зашипит, то хорошо.</p>
+
+  <p>И воду для раствора какую используете?</p>
+</blockquote>
+
+<p>Расстояние делал разное от 5 до 20 см. Сейчас оставил около 10см. Вода из осмоса. Сульфат калия не очень, но без него никак калий не получить. Писал про него <a href="http://forum.ponics.ru/index.php?topic=409.msg99191#msg99191" target="_blank">Тут</a>.</p>
+
+<p><strong>Cyclamech</strong> 15-03-2016</p>
+
+<blockquote>
+  <p>Сульфат калия не очень, но без него никак калий не получить. Писал про него <a href="http://forum.ponics.ru/index.php?topic=409.msg99191#msg99191" target="_blank">Тут</a>.</p>
+</blockquote>
+
+<p>Калий можно получить из калиевой селитры, пожертвовав уровнем кальция - его окажется недостаток.</p>
+
+<p><strong>ihands</strong> 15-03-2016</p>
+
+<blockquote>
+  <p>Сульфат калия не очень, но без него никак калий не получить. Писал про него <a href="http://forum.ponics.ru/index.php?topic=409.msg99191#msg99191" target="_blank">Тут</a>.</p>
+</blockquote>
+
+<p>Не очень понимаю, зачем всем так сдался этот сульфат калия? Я лично обхожусь калиевой селитрой и монофосфатом. :-\</p>
+
+<p><strong>Iansafa</strong> 15-03-2016</p>
+
+<p>Без сульфата уровень кальция был в районе 100 мг/л, либо азот завышать. Буду заказывать сульфат калия с хим. мага, надеюсь он чистым будет.</p>
+
+<p><strong>ihands</strong> 15-03-2016</p>
+
+<blockquote>
+  <p>Без сульфата уровень кальция был в районе 100 мг/л, либо азот завышать. Буду заказывать сульфат калия с хим. мага, надеюсь он чистым будет.</p>
+</blockquote>
+
+<p>Еще есть вариант с хлоридом калия, это доступный реагент. Тем более у вас вода из осмоса.</p>
+
+<p><strong>Iansafa</strong> 15-03-2016</p>
+
+<blockquote>
+  <p>Еще есть вариант с хлоридом калия, это доступный реагент. Тем более у вас вода из осмоса.</p>
+</blockquote>
+
+<p>Говорят опасно переборщить хлором. Какая предельная концентрация хлорида калия в мг/л?</p>
+
+<p><strong>Cyclamech</strong> 15-03-2016</p>
+
+<blockquote>
+  <p>Говорят опасно переборщить хлором. Какая предельная концентрация хлорида калия в мг/л?</p>
+</blockquote>
+
+<p>Хлорида калия много не насыпешь, а вот дозировку по фосфору, думается, можно некритично превысить, получив таким образом дополнительный калий из монофосфата, уменьшив дозу калиевой селитры и увеличив долю кальциевой, подтянув немного кальций. Ну а дальше уже можно пробовать “натягивать” азот.</p>
+
+<p>…</p>
+
+<p>Мне в общем и целом непонятны профили, где уровень кальция намного превышает уровень азота: если у нас кальциевая селитра выступает единственным источником кальция, а пропорции азот/кальций в ней фиксированные, то мы в предельном случае можем задать соотношение в профиле равным соотношениям в кальциевой селитре. Во всех остальных случаях пропорция азот/кальций должна быть больше (в сторону азота - его источников много).</p>
+
+<p><strong>а-ну-ка</strong> 15-03-2016</p>
+
+<p>На томатах Сl- можно до 100 мг/л.По иным растюхам - смотреть на солеустойчивость и граничный Ес… А вот фосфор выше вашего - уже не желательно.</p>
+
+<p><strong>Cyclamech</strong> 15-03-2016</p>
+
+<blockquote>
+  <p>…По иным растюхам - смотреть на солеустойчивость и граничный Ес…</p>
+</blockquote>
+
+<p>Не подскажите ли типичный диапазон? Ведь в случае ощутимых значений, отличным компонентом для растворов становится хлорид кальция… :-\</p>
+
+<p>…</p>
+
+<p>Что-то вспоминается расчёт: при низких значения хлора (10-20) нет особой разницы для уровня кальция, что будет источником хлора - хлорид калия или хлорид кальция. :-\</p>
+
+<p><strong>а-ну-ка</strong> 16-03-2016</p>
+
+<p>Для пользователей осмосом желательно присмотреться к рекомендуемым допускам по наличию элементов в поливной воде…</p>
+
+<p><strong>а-ну-ка</strong> 16-03-2016</p>
+
+<p>От Куренина, возможно - <a href="http://forum.vinograd.info/showpost.php?p=1120609&amp;postcount=2842" target="_blank">http://forum.vinograd.info/showpost.php?p=1120609&amp;postcount=2842</a></p>
+
+<p><strong>n72black</strong> 16-03-2016</p>
+
+<p>Ну да, лучше сульфат калия убрать и пользоваться, временно, хлоридом кальция аптечным. 1мл на литр раствора нормально будет. Предполагаю что в вашем сульфате может быть и натрий. :-\</p>
+
+<p><strong>Iansafa</strong> 16-03-2016</p>
+
+<p>Что-то моим томатов не стало лучше. На старых листьях остались эти очаги повреждений и даже увеличились. Вчера побрызгал даже средством Циркон. Новые листья тоже странные, бледные какие то, цвет неравномерный, по краям участки светлозеленые. Ума не приложу, не уж то сульфат калия совсем плохой!</p>
+
+<p><strong>n72black</strong> 16-03-2016</p>
+
+<p>Сульфат калия должен иметь рН в районе 4.5, убирайте из рациона. :)</p>
+
+<p>А старые листья и не восстановятся, можете разве что свет поближе к макушкам сделать, что б новым хватало.</p>
+
+<p><strong>Iansafa</strong> 17-03-2016</p>
+
+<p>Не нравятся мне как листья выглядят!</p>
+
+<p><a href="https://t.me/ponics_ru_files/17270" target="_blank"><img src="/imagehost2/thumbs/1ljl.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/17271" target="_blank"><img src="/imagehost2/thumbs/2mjm.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/17272" target="_blank"><img src="/imagehost2/thumbs/3rjr.jpg" alt="" /></a></p>
+
+<p>Почему они такой цыет неравномерный имеют? На какой элемент это указывает?</p>
+
+<p><strong>а-ну-ка</strong> 17-03-2016</p>
+
+<p>Если с вечера вштырить, то на утро иного и не стоит ожидать…</p>
+
+<p><strong>Iansafa</strong> 05-04-2016</p>
+
+<p>Поменял раствор, исключил непонятный сульфат калия и снизил концентрацию (N=70, P=40, Ca=85, Mg=24, K=180) и помидорка задышала. Появилось много бутонов, на одном вроде даже, что то завязалось!</p>
+
+<p><strong>Iansafa</strong> 09-06-2016</p>
+
+<p>Если кому интерсно то собрал я урожай, получилось аж 9 или 10 штук помидорок, думаю было бы больше, но плохо опылял, завязи было много. На вкус как с огорода. Поделюсь своими мыслями про эффективность. Отсчет идет с 10 января 2016 года, получуется что с момента всхода семян прошло 5 месяцев. По сути это очень долго, но правильный состав раствора я подобрал только в начале апреля, если бы раствор был изначльно правильный томат бы вырос до размеров трехмесячного меньше чем за месяц. В начале мая на кусту уже весели все сформированные томаты, они достигли почти максимального размера, но были зеленые, весь май они краснели, но в принципе сорвать помидоры можно было уже в 10 числах мая. И плюс к этому надо сказать что я не менял расвтор в конце около 1,5 месяцов, только доливал воду из крана. Свет был полностью искуственный, 9х3 Вт full спектр свтодиоды и начинаю с апреля 15 Вт энергосберегающая лампа 2700K. По деньгам подсветка + компрессор + куллер сожрали электроэнегрии на 230 рублей. Плюс ко всему когда менял раствор в последний раз обработал корни корневином и брызгал растение Эпином, Цирконом и Бутоном.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

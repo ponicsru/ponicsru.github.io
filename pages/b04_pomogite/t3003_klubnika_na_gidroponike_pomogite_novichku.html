@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Клубника на гидропонике. Помогите новичку! | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Клубника на гидропонике. Помогите новичку!">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Клубника на гидропонике. Помогите новичку!</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Vlad of Vlad</strong> 26-11-2018</p>
+
+<p>Всем привет. Помогите разобраться.</p>
+
+<p>Высадил клубнику на кокосовом субстрате, но столкнулся вот с такой проблемой - кусты сохнут и дохнут, есть идеи как исправить положение?</p>
+
+<p><img src="https://i.postimg.cc/dDXjhjMD/IMG-20181123-101259.jpg" alt="" /></p>
+
+<p><img src="https://i.postimg.cc/pmQf1Nmn/IMG-20181123-101310.jpg" alt="" /></p>
+
+<p><img src="https://i.postimg.cc/BXKcHPsp/IMG-20181123-101321.jpg" alt="" /></p>
+
+<p><img src="https://i.postimg.cc/MnJ0DZpS/IMG-20181123-101401.jpg" alt="" /></p>
+
+<p><strong>siv237</strong> 26-11-2018</p>
+
+<p>Что с pH и ЕС дренажа и составом раствора? Кальций есть в нем?</p>
+
+<p>Вы до этого выращивали клубнику на гидропонике с положительным результатом?</p>
+
+<p><strong>Vlad of Vlad</strong> 26-11-2018</p>
+
+<p>Кальций есть, 1600 г/м3. pH около 6,0, ЕС - 2,3. Опыта пока нет.</p>
+
+<p><strong>siv237</strong> 26-11-2018</p>
+
+<blockquote>
+  <p>Кальций есть, 1600 г/м3. pH около 6,0, ЕС - 2,3. Опыта пока нет.</p>
+</blockquote>
+
+<p>Что такое кальций 1600 г/м3? Полтора килограмма на тонну воды кальциевой селитры или что?</p>
+
+<p>Давайте для общения на одном языке, вы изучите faq у меня в подписи, а затем напишете профиль раствора и рецепт, из чего вы его приготовили. Опишите вашу систему, как я понимаю тут что-то типа капельного полива, но трубок не видно, зато видно пересохший кокос, чего категорически не должно с кокосом происходить иначе затем он не впитывает влагу.</p>
+
+<p>Да и кокос странный. А еще я вижу, что ваши брикеты с кокосом явно не герметичные при этом лежат в оцинкованном поддоне и возможно этот поддон смачивается раствором? Еще видно, что в некоторых местах вообще нет кокоса и короб полый.</p>
+
+<p>В общем хотите совет, описывайте вашу задумку желательно с эскизом для понимания, потому как по фоткам суть уловить сложновато и тогда вам скорее всего подскажут, в чем именно проблема и как её исправить.</p>
+
+<p><strong>allex_step</strong> 26-11-2018</p>
+
+<p>1600 ppm??? :o кальцинированная клубничка?</p>
+
+<p>[size=2px]<img src="http://i.piccy.info/i9/85b6e7766e96e5feabb871175479adc4/1543264988/80201/1269260/Screen_Shot_2018_11_26_at_22_40_52.png" alt="" /><img src="http://i.piccy.info/a3/2018-11-26-20-43/i9-12797957/794x376-r/i.gif" alt="" />[/size]</p>
+
+<blockquote>
+  <p>[font=verdana]как я понимаю тут что-то типа капельного полива, но трубок не видно[/font]</p>
+</blockquote>
+
+<p>[font=verdana]на третьем фото видна труба в коробе - полив? капля?[/font]</p>
+
+<p><strong>Vlad of Vlad</strong> 27-11-2018</p>
+
+<blockquote>
+  <p>на третьем фото видна труба в коробе - полив? капля?</p>
+</blockquote>
+
+<p>Да, это капельный полив.</p>
+
+<p><strong>Vlad of Vlad</strong> 27-11-2018</p>
+
+<blockquote>
+  <p>напишете профиль раствора и рецепт, из чего вы его приготовили</p>
+</blockquote>
+
+<p>Рецепт раствора такой:</p>
+
+<p>Рецепт на куб воды такой:</p>
+
+<p>Ca(NO3)2*4H2O (Кальциевая селитра, нитрат кальция) - 1600 г.</p>
+
+<p>MgSO4*7H2O (Сульфат магния, магний сернокислый) - 510 г.</p>
+
+<p>K4PO4 (Калия пирофосфат) - 485 г.</p>
+
+<p>NH4NO3 (Аммиачная селитра, нитрат аммония) - 40 г.</p>
+
+<p>по элементам расклад такой:</p>
+
+<p>Ca - 280, N - 210, K - 140, P - 110, Mg - 50.</p>
+
+<p><strong>siv237</strong> 27-11-2018</p>
+
+<blockquote>
+  <blockquote>
+    <p>напишете профиль раствора и рецепт, из чего вы его приготовили</p>
+  </blockquote>
+
+  <p>Рецепт раствора такой:</p>
+
+  <p>Рецепт на куб воды такой:</p>
+
+  <p>Ca(NO3)2*4H2O (Кальциевая селитра, нитрат кальция) - 1600 г.</p>
+
+  <p>MgSO4*7H2O (Сульфат магния, магний сернокислый) - 510 г.</p>
+
+  <p>K4PO4 (Калия пирофосфат) - 485 г.</p>
+
+  <p>NH4NO3 (Аммиачная селитра, нитрат аммония) - 40 г.</p>
+
+  <p>по элементам расклад такой:</p>
+
+  <p>Ca - 280, N - 210, K - 140, P - 110, Mg - 50.</p>
+</blockquote>
+
+<p>Серьёзно, именно пирофосфат калия? Может все-же KH2PO4 (монофосфат калия)?</p>
+
+<p>У пирофосфата калия другая формула и его в растениеводстве не используют, это довольно активный консервант.</p>
+
+<p>И куда пропала из рецепта калиевая селитра KNO3, около 300-400 грамм?</p>
+
+<p>И вообще ничего из микроэлементов нет? Где железо и бор, самые важные для клубники микроэлементы?</p>
+
+<p>А еще капельный полив потому и капельный, что подается каждому растения непосредственно к корню очень понемногу “по капельке” не вымачивая почву, а на фотках у вас там шланги висят или там еще что-то?</p>
+
+<p><strong>allex_step</strong> 27-11-2018</p>
+
+<blockquote>
+  <p>Кальций есть, 1600 г/м3.</p>
+</blockquote>
+
+<blockquote>
+  <p>Рецепт на куб воды такой:</p>
+
+  <p>Ca(NO3)2*4H2O (Кальциевая селитра, нитрат кальция) - 1600 г.</p>
+</blockquote>
+
+<p>это две совершено разные весчи…</p>
+
+<p>кальциевая селитра (ХЧ) имеет 16,9715% кальция =&gt; отсюда ppm кальция какой таки у Вас будет..?</p>
+
+<p><strong>Cyclamech</strong> 27-11-2018</p>
+
+<p>Забавно выходит: FAQ написан, а вопросы всё те же. :-\</p>
+
+<p>Не помогло.</p>
+
+<p><strong>VVS_</strong> 27-11-2018</p>
+
+<p>Забавность в гигантомании начинающих..</p>
+
+<p>Хоть бы на трех кустиках поупражнялись пару лет хотя-бы.</p>
+
+<p>Клубника самая капризная из всех культур.</p>
+
+<p><strong>Vlad of Vlad</strong> 27-11-2018</p>
+
+<blockquote>
+  <p>И вообще ничего из микроэлементов нет? Где железо и бор, самые важные для клубники микроэлементы?</p>
+</blockquote>
+
+<p>Микроэлементы добавляются в виде комплексных удобрений, а монофосфат на некоторое время заменили пирофосфатом в виду отсутствия оного. А могла эта замена так отразиться на растениях?</p>
+
+<p><strong>Vlad of Vlad</strong> 27-11-2018</p>
+
+<blockquote>
+  <p>на фотках у вас там шланги висят или там еще что-то?</p>
+</blockquote>
+
+<p>Да, от шлангов идут капельные ленты. Система выглядит следующим образом - в кубовую емкость добавляются перечисленные соли и микроэлементы и в течении десяти-двенадцати дней этот раствор подается в пластиковые лотки с кокосом и растениями, остатки раствора сливаются в канализацию. Система досталась мне неожиданно, опыта с гидропоникой, как я уже говорил - нет. Поэтому сейчас срочно пытаюсь заткнуть дыру в образовании и наладить работу плантации.</p>
+
+<p><strong>siv237</strong> 27-11-2018</p>
+
+<blockquote>
+  <blockquote>
+    <p>И вообще ничего из микроэлементов нет? Где железо и бор, самые важные для клубники микроэлементы?</p>
+  </blockquote>
+
+  <p>Микроэлементы добавляются в виде комплексных удобрений, а монофосфат на некоторое время заменили пирофосфатом в виду отсутствия оного. А могла эта замена так отразиться на растениях?</p>
+</blockquote>
+
+<p>Возможно и повлиял. В любом случае удобрение менять срочно, все промывать, хотя наверно уже поздно и этих растюх не спасти.</p>
+
+<p>Если нет желания заморачиваться с раствором на первых этапах, найдите кальциевую селитру и хвойный акварин от БХЗ по 1 кг на тонну воды каждого только растворяйте в разных объемах, а потом заливайте уже в основной объем воды иначе часть прореагирует.</p>
+
+<p>А пока просто на воду переводите, это все равно лучше чем то, что сейчас и цинковые поверхности не должны контачить с раствором.</p>
+
+<p><strong>allex_step</strong> 27-11-2018</p>
+
+<blockquote>
+  <p>этот раствор подается в пластиковые лотки с кокосом и растениями</p>
+</blockquote>
+
+<p>так это пластик..?</p>
+
+<p>а мы уж было подумали шо это оцинковка…….. :-\</p>
+
+<p><strong>Vlad of Vlad</strong> 28-11-2018</p>
+
+<blockquote>
+  <blockquote>
+    <p>этот раствор подается в пластиковые лотки с кокосом и растениями</p>
+  </blockquote>
+
+  <p>так это пластик..?</p>
+
+  <p>а мы уж было подумали шо это оцинковка…….. :-\</p>
+</blockquote>
+
+<p>Я думал, что на фото видно, что пластиковые лотки стоят в желобах из оцинковки.</p>
+
+<p><strong>Vlad of Vlad</strong> 28-11-2018</p>
+
+<blockquote>
+  <p>цинковые поверхности не должны контачить с раствором.</p>
+</blockquote>
+
+<p>Так этот раствор после контакта с оцинковкой к растениям все равно больше не возвращается, есть ли смысл все переделывать?</p>
+
+<p><strong>Vlad of Vlad</strong> 28-11-2018</p>
+
+<p>Подводя итог всему что сказано выше:</p>
+
+<p>Заменить пирофосфат монофосфатом и добавить в раствор калийную селитру (а азотом не будет перебора?).</p>
+
+<p>Загерметизировать субстрат.</p>
+
+<p>Вроде из дельных рекомендаций больше ничего не было, или есть что еще добавить?</p>
+
+<p><strong>Cyclamech</strong> 28-11-2018</p>
+
+<blockquote>
+  <p>Заменить пирофосфат монофосфатом и добавить в раствор калийную селитру (а азотом не будет перебора?).</p>
+
+  <p>…или есть что еще добавить?</p>
+</blockquote>
+
+<p>Вам стоит научиться понимать, что такое профиль питания, научиться пользоваться NPK-калькулятором, в частности, правильно задавать процентовки используемых ингредиентов для раствора и обращать внимание на соотношение форм азота. Например, Вам стоит выяснить состав своей кальциевой селитры.</p>
+
+<p><strong>allex_step</strong> 28-11-2018</p>
+
+<p>[size=2]таки не совсем понятно: 1. пластиковые лотки в желобах из оцинковки, а 2. раствор [font=verdana]после контакта с оцинковкой к растениям не возвращается[/font][/size]</p>
+
+<p>[size=2][font=verdana] - как оно все таки устроено-функционирует?.. раствор после контакта с оцинковкой (каким путем если таки субстрат в пластиковых лотках?) моментально убирается или хде..?[/font][/size]</p>
+
+<p><strong>siv237</strong> 28-11-2018</p>
+
+<blockquote>
+  <p>[size=2]таки не совсем понятно: 1. пластиковые лотки в желобах из оцинковки, а 2. раствор [font=verdana]после контакта с оцинковкой к растениям не возвращается[/font][/size]</p>
+
+  <p>[size=2][font=verdana] - как оно все таки устроено-функционирует?.. раствор после контакта с оцинковкой (каким путем если таки субстрат в пластиковых лотках?) моментально убирается или хде..?[/font][/size]</p>
+</blockquote>
+
+<p>Да они как я понял просто льют из бака в растения, а излишний дренаж сразу в канализацию по желобам оцинкованным стекает. Нереверсивная капля.</p>
+
+<p>Пластиковые контейнеры типа импровизация на тему кокосовых матов, которые просто в нем лежат. При этом, судя по пустотам, все это со значительной экономией кокоса и скорее всего не промытого от хлорида натрия. Возможно именно это основная причина состояния клубники - отравление натрием.</p>
+
+<blockquote>
+  <p>Вроде из дельных рекомендаций больше ничего не было, или есть что еще добавить?</p>
+</blockquote>
+
+<p>Откуда кокос? Как его готовили, проверяли? Кокосовое волокно в том виде, как оно поставляется (сушеные брикеты) очень сильно пересолено морской водой, так как его именно в ней промывают в процессе подготовки и очистить от неё довольно сложно, особенно большие объемы. Потому теплицы закупают не сам кокос, а специальные готовые кокосовые маты для выращивания растений на капельном поливе.</p>
+
+<p>Проверить степень засоленности кокосового волокна очень просто, достаточно растворить немного образца, в воде с заранее измеренным ЕС и сверить показания прибора до и после внесения. Правильно подготовленный кокос не должен повышать ЕС.</p>
+
+<p><strong>allex_step</strong> 29-11-2018</p>
+
+<p>ну так и контакт с оцинковкой таки вроде как не односторонний совсем - диффузия ведь имеет место быть</p>
+
+<p><strong>siv237</strong> 29-11-2018</p>
+
+<blockquote>
+  <p>ну так и контакт с оцинковкой таки вроде как не односторонний совсем - диффузия ведь имеет место быть</p>
+</blockquote>
+
+<p>Оцинковка думаю не так страшна при краткосрочном выращивании (сам видел как растят в оцинкованных горшках цветы), ну если есть возможность избежать контакта раствора то лучше это сделать.</p>
+
+<p><strong>Vlad of Vlad</strong> 29-11-2018</p>
+
+<blockquote>
+  <p>Проверить степень засоленности кокосового волокна очень просто, достаточно растворить немного образца, в воде с заранее измеренным ЕС и сверить показания прибора до и после внесения. Правильно подготовленный кокос не должен повышать ЕС.</p>
+</blockquote>
+
+<p>Вот за это спасибо большое - не знал, завтра же проверю. Хотя этой плантации уже не первый месяц, может такое быть что растения вначале неплохо росли, а потом вдруг отравились натрием? Может это какое заболевание? Никто с подобным не сталкивался?</p>
+
+<p><strong>Vlad of Vlad</strong> 29-11-2018</p>
+
+<blockquote>
+  <p>таки не совсем понятно: 1. пластиковые лотки в желобах из оцинковки, а 2. раствор после контакта с оцинковкой к растениям не возвращается</p>
+
+  <ul>
+    <li>как оно все таки устроено-функционирует?.. раствор после контакта с оцинковкой (каким путем если таки субстрат в пластиковых лотках?) моментально убирается или хде..?</li>
+  </ul>
+</blockquote>
+
+<p>Кокосовый субстрат находится в пластиковых лотках (заводских, кстати), лотки лежат в металлических оцинкованных желобах, установленных с небольшим наклоном. избыток раствора вытекает из лотков и по желобу стекает в канализацию. Теперь понятно? Завтра еще сделаю фото системы.</p>
+
+<p><strong>siv237</strong> 29-11-2018</p>
+
+<blockquote>
+  <blockquote>
+    <p>таки не совсем понятно: 1. пластиковые лотки в желобах из оцинковки, а 2. раствор после контакта с оцинковкой к растениям не возвращается</p>
+
+    <ul>
+      <li>как оно все таки устроено-функционирует?.. раствор после контакта с оцинковкой (каким путем если таки субстрат в пластиковых лотках?) моментально убирается или хде..?</li>
+    </ul>
+  </blockquote>
+
+  <p>Кокосовый субстрат находится в пластиковых лотках (заводских, кстати), лотки лежат в металлических оцинкованных желобах, установленных с небольшим наклоном. избыток раствора вытекает из лотков и по желобу стекает в канализацию. Теперь понятно? Завтра еще сделаю фото системы.</p>
+</blockquote>
+
+<p>Влияние материала поддона при такой схеме можно исключить анализом разницы в состоянии растений в верхней части склона и в нижней. Логично, что в нижней части растения бы получали больше вреда за счет более долгого контакта воды с поддоном. Если разницы не заметно то эту версию можно исключить.</p>
+
+<p>Я всё-же склоняюсь к проблемам с раствором. Обычно, если человек “плавает” в описании состава, то и раствор наверняка собран неверно.</p>
+
+<p>Если вы распишите подробно имеющиеся у вас компоненты, то скорее всего получите рекомендацию по замешиванию и/или замене компонента. Подробно, это значит значения с пачек где написаны процентовки.</p>
+
+<p><strong>Likl</strong> 14-01-2019</p>
+
+<blockquote>
+  <p>Вот за это спасибо большое - не знал, завтра же проверю. Хотя этой плантации уже не первый месяц, может такое быть что растения вначале неплохо росли, а потом вдруг отравились натрием?</p>
+</blockquote>
+
+<p>Как результаты проверки?</p>
+
+<p><strong>Alexey777</strong> 17-01-2019</p>
+
+<blockquote>
+  <blockquote>
+    <p>этот раствор подается в пластиковые лотки с кокосом и растениями</p>
+  </blockquote>
+
+  <p>так это пластик..?</p>
+
+  <p>а мы уж было подумали шо это оцинковка…….. :-\</p>
+</blockquote>
+
+<p>А поддоны из оцинковки не подходят для гидропоники?</p>
+
+<p><strong>siv237</strong> 17-01-2019</p>
+
+<blockquote>
+  <p>А поддоны из оцинковки не подходят для гидропоники?</p>
+</blockquote>
+
+<p>Цинк микроэлемент потребляемый растениями требующийся в мизерных количествах. Любые превышения или недостатки элементов (перекосы) влияют на усвоение всего комплекса.</p>
+
+<blockquote>
+  <p>Избыток цинка вызывает подавление роста растений, синтеза хлорофилла, деградацию хлоропластов, нарушения я поглощении питательных элементов. Активность РБФ-карбоксилазы подавлена вследствие конкуренции цинка с магнием. Низкая активность ФС 2 обусловлена конкуренцией цинка с марганцем в тилакоидных мембранах хлоропластов. Типично проявление хлороза.</p>
+
+  <p>Проявление симптомов отравления зависит от вида/генотипа растений. В кислых почвах злаки устойчивее к избытку цинка по сравнению с двудольными растениями, в щелочных почвах — обратная закономерность. В пределах вида генотипические различия о устойчивости выявлены у сои и риса.</p>
+</blockquote>
+
+<p>Но вам для лука не важно, лук на перо все берет из запасов луковицы. Его даже на морской воде мертвого моря можно выгонять :)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

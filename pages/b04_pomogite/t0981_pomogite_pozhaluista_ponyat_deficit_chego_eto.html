@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>помогите, пожалуйста, понять -дефицит чего это | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="помогите, пожалуйста, понять -дефицит чего это">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">помогите, пожалуйста, понять -дефицит чего это</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>begunok</strong> 22-04-2011</p>
+
+<p>на млодом листе томата сегодня заметил вот это</p>
+
+<p>Другие листы не поражены пока</p>
+
+<p>Помогите, пожалуйста, определить чего не хватает</p>
+
+<p><a href="https://t.me/ponics_ru_files/5301" target="_blank"><img src="/attachimages/6671_фотография (3).jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 22-04-2011</p>
+
+<p>Пожалуйста, к таким вопросам давайте сразу полную историю болезни - сорт, субстрат, состав раствора, температура, режим освещения. Такие вещи на глаз без анализа достоверно определить вообще невозможно. Мы все (агрономы) обычно действуем методом исключения и это дает результат, получается “вычислить” причину. Я сейчас на 4 дня уезжаю на дачу, раньше вечера в понедельник до интернета не доберусь.</p>
+
+<p>Может, за это время Вам Россич подскажет или Алексей, но и им нужна информация.</p>
+
+<p><strong>begunok</strong> 22-04-2011</p>
+
+<blockquote>
+  <p>Пожалуйста, к таким вопросам давайте сразу полную историю болезни - сорт, субстрат, состав раствора, температура, режим освещения. Такие вещи на глаз без анализа достоверно определить вообще невозможно. Мы все (агрономы) обычно действуем методом исключения и это дает результат, получается “вычислить” причину. Я сейчас на 4 дня уезжаю на дачу, раньше вечера в понедельник до интернета не доберусь.</p>
+
+  <p>Может, за это время Вам Россич подскажет или Алексей, но и им нужна информация.</p>
+</blockquote>
+
+<p>Спасибо большое</p>
+
+<p>Это гидропоника, сорт F1 Биатлон -скороспелый , удобряется валагрой, по схеме с поникса <a href="http://www.ponics.ru/2009/06/npk_cultures/." target="_blank">http://www.ponics.ru/2009/06/npk_cultures/.</a> Я знаю, были проблемы недели полторы назад -нехватка кальция и калия, были краевые ожоги, но вроде, все прошло, А вот сегодня увидел эти листки</p>
+
+<p>Притом пока только в одном месте</p>
+
+<p><strong>Rossich</strong> 22-04-2011</p>
+
+<blockquote>
+  <p>А вот сегодня увидел эти листки</p>
+
+  <p>Притом пока только в одном месте</p>
+</blockquote>
+
+<p>Сколько фосфора в чистом виде?</p>
+
+<p><strong>begunok</strong> 22-04-2011</p>
+
+<p>Готовил раствор позавчера, по формуле</p>
+
+<p>N 180</p>
+
+<p>P 80</p>
+
+<p>K 280</p>
+
+<p>Ca 360</p>
+
+<p>Mg 60</p>
+
+<p><strong>Rossich</strong> 22-04-2011</p>
+
+<blockquote>
+  <p>Готовил раствор позавчера, по формуле</p>
+
+  <p>N 180</p>
+
+  <p>P 80</p>
+
+  <p>K 280</p>
+
+  <p>Ca 360</p>
+
+  <p>Mg 60</p>
+</blockquote>
+
+<p>В чем сидят-субстрат какой? Внешне походит на передоз фосфора, или перегрев (краевой ожег) от солнца,</p>
+
+<p>Состав, если у Вас стадия вегетации до первой кисти, можно скорректировать до</p>
+
+<p>N-150</p>
+
+<p>P-50</p>
+
+<p>K-270-300</p>
+
+<p>Ca 180</p>
+
+<p>Mg-50</p>
+
+<p><strong>valery</strong> 22-04-2011</p>
+
+<blockquote>
+  <p>Притом пока только в одном месте</p>
+</blockquote>
+
+<p>И у меня подобное бывает. И не на одном листе. В чем дело - не могу выяснить. Тоже “интересуюсь” …</p>
+
+<blockquote>
+  <p>Готовил раствор позавчера, по формуле</p>
+
+  <p>N 180</p>
+
+  <p>Ca 360</p>
+</blockquote>
+
+<p>Объясните, пожалуйста, (ну никак не могу понять), как Вы умудряетесь (да и не только Вы, а “вообще”) - “воткнуть” в раствор 360 кальция, при 180 азота ?</p>
+
+<p>Кальциевой селитрой … Это ж будет почти два грамма на литр одной только кальциевой селитры … И уже азота получим под 300 …</p>
+
+<p>На субстратах - еще понятно, “раскислим” там, не знаю чем, костной мукой, доломитовой мукой, молотым известняком и еще и еще и еще … чем-то.</p>
+
+<p>А в растворе ? Одним “хлоридом” ? Так “выскочим” по хлору ?</p>
+
+<p>Как “сделали” 360 ? И не многовато ли это для томата ? Не затормозит ли поступление других элементов, в частности калия ? (Или может кальций сам скорей затормозится ?.. ) :-\ :-\ :-\</p>
+
+<p>И почему вообще кальция больше, чем калия ?</p>
+
+<p><strong>begunok</strong> 22-04-2011</p>
+
+<blockquote>
+  <p>Объясните, пожалуйста, (ну никак не могу понять), как Вы умудряетесь (да и не только Вы, а “вообще”) - “воткнуть” в раствор 360 кальция, при 180 азота ?</p>
+
+  <p>Как “сделали” 360 ? И не многовато ли это для томата ? Не затормозит ли поступление других элементов, в частности калия ? (Или может кальций сам скорей затормозится ?.. ) :-\ :-\ :-\</p>
+
+  <p>И почему вообще кальция больше, чем калия ?</p>
+</blockquote>
+
+<p>У меня брексил кальция от валагро. Я не очень большой специалист, но мне кажется, кальция можно догнать до 360 -по крайней мере все растворяется.</p>
+
+<p>По поводу затормозитя или нет -не знаю. Топик по томатам -http://forum.ponics.ru/index.php?topic=572.0 -никто и не пришел к единому мнению))) <em>Dance</em></p>
+
+<p>Если скажите, что нужно кальция 180 -сделаем в следующий раз 180)))</p>
+
+<p><strong>begunok</strong> 22-04-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Готовил раствор позавчера, по формуле</p>
+
+    <p>N 180</p>
+
+    <p>P 80</p>
+
+    <p>K 280</p>
+
+    <p>Ca 360</p>
+
+    <p>Mg 60</p>
+  </blockquote>
+
+  <p>В чем сидят-субстрат какой? Внешне походит на передоз фосфора, или перегрев (краевой ожег) от солнца,</p>
+
+  <p>Состав, если у Вас стадия вегетации до первой кисти, можно скорректировать до</p>
+
+  <p>N-150</p>
+
+  <p>P-50</p>
+
+  <p>K-270-300</p>
+
+  <p>Ca 180</p>
+
+  <p>Mg-50</p>
+</blockquote>
+
+<p>у меня завязи уже, а на 1 кисти помидорка размером с рублевую монету</p>
+
+<p>Россич, подскажите, какой бы состав вы поррекомендуете?</p>
+
+<p><strong>valery</strong> 22-04-2011</p>
+
+<blockquote>
+  <p>У меня брексил кальция от валагро. Я не очень большой специалист, но мне кажется, кальция можно догнать до 360 -по крайней мере все растворяется.</p>
+</blockquote>
+
+<p>То есть, хотите сказать, что добавляли Брексил в раствор ??? И доводили кальций до 360 ? Как элемента, или как оксида ?</p>
+
+<p>Сколько, конкретно, разводили Брексила ?</p>
+
+<p>Насколько я понимаю, линейка Брексилов - “органические” хелаты, для ЛИСТОВЫХ подкормок …</p>
+
+<p>Вы же там получили, пожалуй, МНОГО ДЕСЯТИКРАТНЫЕ превышения по бору … Они у Вас бором не “траванулись”, случаем ?</p>
+
+<p><strong>valery</strong> 23-04-2011</p>
+
+<p>Так что с Брексилом, Кальцием и Бором ? Поделитесь, пожалуйста …</p>
+
+<p><strong>begunok</strong> 23-04-2011</p>
+
+<blockquote>
+  <p>Так что с Брексилом, Кальцием и Бором ? Поделитесь, пожалуйста …</p>
+</blockquote>
+
+<p>Валера, добрый день, спасибо вам огромное. Судя по нпк калькулятору 1.21 в брексиле кальция CaO 20% и B 0.5% итого я бы получил 14 мг/л бора.</p>
+
+<p>Что означает 50 кратное превышение потребности.</p>
+
+<p>Но… все мы тупим, и я не исключение)) При приготовлении растора я положил брексила в 10 раз меньше, что дало Ca 70 и бора 3.22 - что превысило норму “всего” в 10 раз.</p>
+
+<p><strong>Rossich</strong> 23-04-2011</p>
+
+<blockquote>
+  <p>Россич, подскажите, какой бы состав вы поррекомендуете?</p>
+</blockquote>
+
+<p>Я уже давал состав в этой ветке <a href="http://forum.ponics.ru/index.php?topic=572.0," target="_blank">http://forum.ponics.ru/index.php?topic=572.0,</a> для крупноплодных делаю более высокое содержание ЕС 3,8</p>
+
+<p><strong>sprut</strong> 07-09-2011</p>
+
+<p>не хотел создавать новую ветку, нашел подходящую )</p>
+
+<p>Беспокоит: эррозия листьев рукколы. Как не всматривался в листья - никого живого не нашел.</p>
+
+<ol>
+  <li>
+    <p>Выглядят как вмятины с обоих сторон листа. Дефект проявился за 1 сутки. Условия не менялись (раствор/свет/темп-ра). Пораженные листья сильно увядшие :(</p>
+  </li>
+  <li>
+    <p>Появились для 1.5 назад. Листья упругие (как нормальные). При некоторых углах падения света - блестят (отражают свет).</p>
+  </li>
+</ol>
+
+<p><a href="http://www.ponics.ru/2009/03/micro-def-table/]Таблицу дефицита микроэлементов[/url] и [url=http://www.ponics.ru/2009/07/poisoned_plante/" target="_blank">Симптомы минерального отравления растений</a> смотрел, но не нашёл ничего подходящего.</p>
+
+<p>Это первая попытка ) Не судите строго если что не так :)</p>
+
+<p>Что есть: Комната с окном, прямого солнца на растения не попадает. Не прямое светит ~4.5 часа/день. До первого настоящего листа выращивались в смеси земли/торфа. В систему пересажены 4 дня назад без проблем и увяданий после тщательного промытия корней.</p>
+
+<p>Система: в растворе аэрат камень (включен 24часа), стаканчик на ~2см выше раствора - смачивается лопающимися пузырями.</p>
+
+<p>Раствор: Чесноков (N: +18%). Собран по калькулятору (фото3). Вода пользовалась фильтрованная (tds=18). Раствор разведен до tds=420, ph=5.9.</p>
+
+<p>Свет: ЭСЛ (30Вт, 4300К) в 7-10 см от верхушек. Включен 15д/9н.</p>
+
+<p>Температура: ночью ~23-24, днем ~25-26.</p>
+
+<ol>
+  <li>обе стороны листа:</li>
+</ol>
+
+<p><img src="http://desmond.imageshack.us/Himg23/scaled.php?server=23&amp;filename=73455943.jpg&amp;res=gal" alt="" /> <img src="http://desmond.imageshack.us/Himg263/scaled.php?server=263&amp;filename=35106906.jpg&amp;res=gal" alt="" /></p>
+
+<ol>
+  <li>светлые, блестящие пятна:</li>
+</ol>
+
+<p><img src="http://desmond.imageshack.us/Himg847/scaled.php?server=847&amp;filename=26248158.jpg&amp;res=gal" alt="" /></p>
+
+<ol>
+  <li>раствор:</li>
+</ol>
+
+<p><img src="http://img217.imageshack.us/img217/7660/93996189.th.png" alt="" /></p>
+
+<p><strong>Coccinella</strong> 07-09-2011</p>
+
+<p>Очень похоже на ложную мучнистую росу. Для капустной рассады, рукколы и редиса - вполне характерное заболевание при высокой температуре и относительной влажности воздуха. Была бы капустная рассада, можно было бы что-то предпринять с Превикуром, но рукколу лучше просто удалить и пересеять. На будущее старайтесь держать для рукколы температуру пониже (в пределах 18-22оС) и получше проветривать.</p>
+
+<p><strong>sprut</strong> 07-09-2011</p>
+
+<p>Спасибо за оперативность! <em>8)</em></p>
+
+<p>Прочитал про ложную мучнистую росу - у меня обратная стороная такая же как лицевая - чистая, без пушка/налёта.</p>
+
+<p>Влажность ~55%</p>
+
+<p>Обрезал поврежденные листья и оставил пока доживать. Новая партия уже проклюнулась - знал же что нифига сразу не выйдет - где-то накосячу )</p>
+
+<p>Перед посадкой новых руккол керамзит из под этих чем-то обрабатывать?</p>
+
+<p><strong>Coccinella</strong> 07-09-2011</p>
+
+<p>Пушок там не сразу появляется, а вот такие пятна на листьях и увядание - в первую очередь.</p>
+
+<p>Керамзит можно кипятком прошпарить, но вообще-то инфекция присутствует в воздухе, ветер споры разносит.</p>
+
+<p><strong>sprut</strong> 10-09-2011</p>
+
+<p>Вечер добрый снова )</p>
+
+<p>Тут в сторонке ростет редис.. земля магазинная универсальная. поливаю чесноковым (<a href="http://forum.ponics.ru/index.php?topic=981.msg39108#msg39108" target="_blank">тут</a> рецепт) ~420ppm, ph~5.7-5.9.</p>
+
+<p>Стали желтеть молодые листья (начинают с основания). Старые немного посветлели. Подскажите опытным глазом чего они недоедеют :)</p>
+
+<p>ЗЫ: Света им маловато, можнт быть это из-за освещения? Температура ~23-24, влажность ~48-52%.</p>
+
+<p><img src="http://img8.imageshack.us/img8/5116/zx1fj.th.jpg" alt="" /><img src="http://img98.imageshack.us/img98/9109/zx2x.th.jpg" alt="" /></p>
+
+<p>Спасибо заранее :)</p>
+
+<p><strong>gena1</strong> 10-09-2011</p>
+
+<p>В земле же итак все элементы есть. Зачем ещё и раствор ???</p>
+
+<p>Я думаю логичный передоз.</p>
+
+<p><strong>sprut</strong> 10-09-2011</p>
+
+<p>Спасибо )</p>
+
+<p>Думал что настолько разбавленный раствор не повредит. С завтра буду водой поливать - поглядим )</p>
+
+<p><strong>VSR</strong> 13-09-2011</p>
+
+<p>Просто поднимите ph раствора до 7. Для грунта раствор слишком кислый, да еще не понятно может у вас они в еще и в кислом торфе сидят (смотрим, что пишут про ph на упаковке этой “земли”).</p>
+
+<p>И, кстати, когда будет передоз они у вас полягут, а не будут весело торчать.</p>
+
+<p>Раствором через раз поливайте или через два раза более чем достаточно. Иначе засолите быстро свой универсальный торф.</p>
+
+<p><strong>Coccinella</strong> 14-09-2011</p>
+
+<p>Вот не люблю “земли”, никогда не знаешь, чего туда намешали и что в итоге содержится, да и производители сами этого не знают.</p>
+
+<p>Вообще, для редиса рН 7 слишком много, да и торф засолить не так легко :). В данном случае больше похоже, что просто сама земля неравномерно перемешана и рН в каждой ячейке отличается.</p>
+
+<p>А для растений лучше, если их чистой водой вообще не поливают, все время только питательным раствором, но согласовывая ЕС с условиями среды.</p>
+
+<p><strong>begunok</strong> 23-09-2011</p>
+
+<p>У меня новая проблема</p>
+
+<p>Похоже, что бактериальная инфекция, интересно, заразит ли эти листья другие растения? Может кто помочь</p>
+
+<p><a href="https://t.me/ponics_ru_files/5302" target="_blank"><img src="/attachimages/8502_SDC11853.jpg" alt="" /></a></p>
+
+<p><strong>Юка</strong> 24-09-2011</p>
+
+<p>Наберите в гугле “кладоспориоз” или дождитесь разъяснений от Coccinella.</p>
+
+<p><strong>begunok</strong> 24-09-2011</p>
+
+<p>Спасибо огромное!</p>
+
+<p>погуглил, по фоткам вроде не похоже, но фотки что -по ним никогда не похоже))</p>
+
+<p>больше похоже на бактериальную точечность вроде</p>
+
+<p><strong>Rossich</strong> 24-09-2011</p>
+
+<blockquote>
+  <p>У меня новая проблема</p>
+
+  <p>Похоже, что бактериальная инфекция, интересно, заразит ли эти листья другие растения? Может кто помочь</p>
+</blockquote>
+
+<p>Прогноз Юки подтверждаю…он же бурая пятнистость. Снижает урожайность поражает соседние растения. Старые листья удалить и опрыскать растения медьсодержащим фунгицидом.</p>
+
+<p><strong>Coccinella</strong> 24-09-2011</p>
+
+<p>На лаптопе картинку видно плохо, но с Россичем и Юкой согласна.</p>
+
+<p><strong>Mole_Garden</strong> 26-09-2011</p>
+
+<blockquote>
+  <p>Наберите в гугле “кладоспориоз” или дождитесь разъяснений от Coccinella.</p>
+</blockquote>
+
+<p>А можно и просто на сайт прогуляться <a href="http://www.ponics.ru/2011/08/fulvia_fulva/" target="_blank">http://www.ponics.ru/2011/08/fulvia_fulva/</a></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

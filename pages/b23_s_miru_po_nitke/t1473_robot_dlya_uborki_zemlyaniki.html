@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Робот для уборки земляники | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Робот для уборки земляники">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Робот для уборки земляники</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Coccinella</strong> 06-06-2012</p>
+
+<p>Вот, полюбуйтесь</p>
+
+<p><a href="http://www.freshplaza.com/news_detail.asp?id=97155" target="_blank">http://www.freshplaza.com/news_detail.asp?id=97155</a></p>
+
+<p>а когда я , студенткой, сказала, что необходима механизация уборочных работ, препод мне в ответ заявил, что невозможно механизировать уборку земляники :'( Вот так и душат молодых :'(</p>
+
+<p><strong>orgail</strong> 06-06-2012</p>
+
+<p>да, но такое чувство что он частенько промахивается и собирает зеленку? <em>???</em></p>
+
+<p>или ее потом дозреют?</p>
+
+<p><strong>Coccinella</strong> 06-06-2012</p>
+
+<p>Так ведь робот :)</p>
+
+<p><strong>Vad</strong> 06-06-2012</p>
+
+<p>машина классная <em>8)</em></p>
+
+<p>ну с тех пор… технологии двинулись вперед :-[</p>
+
+<p>это, я - это…</p>
+
+<p>ну, в смысле с моего, например, студенчества… многое изменилось :)</p>
+
+<p>появились транзисторы… многооООО транзисторов… потом они стали слипаться в колонии… эти колонии назвали микросборками, потом микросхемами… потом у них отвалились ноги… и так далее и так далее.. :)</p>
+
+<p>это я к чему..</p>
+
+<p>сравнить возможности Электроника MK-61 и телефона, скажем… 2008 года ;D …</p>
+
+<p><strong>valery</strong> 06-06-2012</p>
+
+<blockquote>
+  <p>( Вот так и душат молодых :'(</p>
+</blockquote>
+
+<p>$) $) $) $) $)</p>
+
+<p><strong>artmaximus</strong> 06-06-2012</p>
+
+<p>…агробот :D</p>
+
+<p>боты окружают… :D</p>
+
+<p>…как восстанут…боты :Dи заставят людей работать на ботов :D</p>
+
+<p><strong>Coccinella</strong> 06-06-2012</p>
+
+<p>Нее-а, три закона роботехники Азимов зря, что ли сформулировал? Чуть только эти боты наберутся мозгов, так в них этот предохранитель и вставят. В эту-то железяку незачем, там все равно дяденька сидит, ягодки в коробочки укладывает :)</p>
+
+<p>Однако, сегодня умер Рэй Брэдбери, один из моих любимых писателей. Писал не о роботах, но об очень важных вещах…</p>
+
+<p><strong>Vad</strong> 06-06-2012</p>
+
+<p>а я не так уверен по поводу тех трех законов.. :)</p>
+
+<p>в нашей стране закон - это такая желеобразная питательная масса для коррупции :)</p>
+
+<p>но пока мы в безопасности… у нас нет ни роботов ни компьютеров…</p>
+
+<p>а вражеские на нашей земле быстро помрут… им то и не вдомек.. что в розетке может быть от 80 до 360в.. <em>???</em> и то не каждый день ;D</p>
+
+<p>а “Дорога – обустроенная или приспособленная и используемая для движения транспортных средств полоса земли” цитата из Правил Дорожного Движения ;D</p>
+
+<p>ОНИ не пройдут! &gt;:(</p>
+
+<p>Бредбери … Светлая память…</p>
+
+<p><strong>ALB</strong> 06-06-2012</p>
+
+<blockquote>
+  <p>а я не так уверен по поводу тех трех законов.. :)</p>
+
+  <p>в нашей стране закон - это такая желеобразная питательная масса для коррупции :)</p>
+
+  <p>но пока мы в безопасности… у нас нет ни роботов ни компьютеров…</p>
+
+  <p>а вражеские на нашей земле быстро помрут… им то и не вдомек.. что в розетке может быть от 80 до 360в.. <em>???</em> и то не каждый день ;D</p>
+
+  <p>а “Дорога – обустроенная или приспособленная и используемая для движения транспортных средств полоса земли” цитата из Правил Дорожного Движения ;D</p>
+
+  <p>ОНИ не пройдут! &gt;:(</p>
+
+  <p>Бредбери … Светлая память…</p>
+</blockquote>
+
+<p>это нашим роботам как правило не вдомёк , а буржуйские твари живучие - сказано хавать что дают - он и будет хавать :D - у меня PDA в поезде заряжался от резетки в которой было 50вольт только зарядник грелся больше обычного :-[ .</p>
+
+<p>Рэй Брэдбери - жаль, читал когда то давно и даже нравилось, но перечитывать теперь не стану - восприятие будет совсем другое, я наверное тоже старею :-\</p>
+
+<p><strong>artmaximus</strong> 08-06-2012</p>
+
+<blockquote>
+  <p>Нее-а, три закона роботехники Азимов зря, что ли сформулировал? Чуть только эти боты наберутся мозгов, так в них этот предохранитель и вставят. В эту-то железяку незачем, там все равно дяденька сидит, ягодки в коробочки укладывает :)</p>
+
+  <p>Однако, сегодня умер Рэй Брэдбери, один из моих любимых писателей. Писал не о роботах, но об очень важных вещах…</p>
+</blockquote>
+
+<p>…не…не “наш” человек… <em>crazy</em></p>
+
+<p>“наш” человек…пол урожая в рот бы… сложил :D…часть уронил бы :D</p>
+
+<p>ну и четверть…с ботвой :D…в коробочки :D</p>
+
+<p>а коробочки в земле должны быть (классика :D) после того как уронил бы на землю пару раз их :D…“по аккуратности” :D</p>
+
+<p><strong>Oxy</strong> 04-07-2012</p>
+
+<p>Я когда-то выкладывал видео работы японского робота, тот действительно настоящий робот а не автоматический трактор :D И японский не требует присутствие сортировщика, не ошибаеться и работает в темноте, правда насколько я понял то была экспериментальная модель, а эта уже готовая промышленная. Меня больше заинтересовало как у них на видео гринхауз устроен, но рассмотреть не смог. По бокам слабые сетки для приличия, а сверху что, пленка?</p>
+
+<p><strong>Coccinella</strong> 05-07-2012</p>
+
+<p>Ну да, пленка. Там ведь главное от града и ливня эту землянику защитить.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

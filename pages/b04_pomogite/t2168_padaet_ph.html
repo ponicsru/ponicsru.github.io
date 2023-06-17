@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Падает PH | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Падает PH">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Падает PH</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>veresk</strong> 27-12-2014</p>
+
+<p>Вот такая беда, пытаюсь вырастить огурчики. Беда не в том что я их хочу вырастить, а в том что, после того как появились зеленцы, начал падать PH.</p>
+
+<p>Падает за сутки с 5.6 до 3.8. Не могу понять причину.</p>
+
+<p>Помогите решить эту проблему.</p>
+
+<p><strong>Gnevko</strong> 27-12-2014</p>
+
+<p>Больше информации нужно бы нам.</p>
+
+<p><strong>Vad</strong> 27-12-2014</p>
+
+<p>недостаток кислорода в растворе..-&gt;анаэробные бактерии..-&gt;брожение.. -&gt; кислота в растворе = низкий pH</p>
+
+<p><strong>veresk</strong> 28-12-2014</p>
+
+<p>Конструкция такова, две трубы 110. Раствор подается в верхнию трубу и сливается с нижней обратно в бак.</p>
+
+<p>В баке стоят два камня, компрессор работает постоянно. Раствор прозрачный, корешки огурцов белые и крепкие.</p>
+
+<p>Несколько дней назад поменял раствор, PH продержался на уровне 6.2 сутки, потом опять сьехал до 3.8. Поднимаю PH KOH.</p>
+
+<p>Состав раствора, комплексное водорастворимое удобрение витамикс, кальциевая селитра, магний сернокислый, ну и немного железа из купороса с лимонной кислотой.</p>
+
+<p>Температура 25 ночью 29 днем. Влажность низкая 11-25%. (вчера пришли туманообразователи попробую поднять влажность). ЕС 2.8 сейчас поднялось до 3.2, может потому что я пытался поднять PH содой.</p>
+
+<p><strong>Coccinella</strong> 28-12-2014</p>
+
+<p>Однако тепло у вас в Норильске… Убрали бы Вы из состава лимонную кислоту, это ее шалости, скорее всего.</p>
+
+<p><strong>Vad</strong> 28-12-2014</p>
+
+<p>на сколько я понял лимонка там в качестве хелата для железа ..</p>
+
+<p>вероятно ее там совсем мизерное кол-во… может ли оно повлиять? :-\</p>
+
+<p>интересно а сколько аммонийного азота в удобрении?</p>
+
+<p>они его могут есть и pH будет валиться</p>
+
+<p>я не нашел состав “витамикс”</p>
+
+<p>перепишите с этикетки.. чего там сколько..</p>
+
+<p><strong>veresk</strong> 28-12-2014</p>
+
+<p>Да, лимонка в качестве хеллата. На 50 литров 1.7 гр.</p>
+
+<p>Вот состав</p>
+
+<p>Думаю перевести на воду, на пару дней, промыть корневую. Может и правда там завелась какая то зараза.</p>
+
+<p><a href="https://t.me/ponics_ru_files/13541" target="_blank"><img src="/attachimages/17473_vita_mix_ovoschnoy_100gr_biomaster.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 28-12-2014</p>
+
+<p>не надо на воду..!</p>
+
+<p>это все равно, что кувалдой по пальцам :D</p>
+
+<p><strong>Vad</strong> 28-12-2014</p>
+
+<blockquote>
+  <p>Да, лимонка в качестве хеллата. На 50 литров 1.7 гр.</p>
+</blockquote>
+
+<p>лимонку отдельно чтоль сыплете?</p>
+
+<p><strong>veresk</strong> 28-12-2014</p>
+
+<p>Нет, отдельно развожу и в нее купорос, потом в бак.</p>
+
+<p><strong>Vad</strong> 28-12-2014</p>
+
+<p>ясно</p>
+
+<p>хелат железа EDTA (Этилендиаминтетрауксусная кислота - мечта а не название <em>8)</em>)должен быть доступен в садовых магазинах.. в крайнем случае сыпьте купорос без лимонки..</p>
+
+<p>она в таких концентрациях не сильно повлияет.. но и правда, не место ей там.. :-\</p>
+
+<p>и так pH не высок ;)</p>
+
+<p><strong>veresk</strong> 28-12-2014</p>
+
+<p>Ну, у нас как бы нет садовых магазинов, обещали выслать хелат, жду. Значит попробую без лимонки, хотя до этого все вроде нормально было.</p>
+
+<p><strong>Coccinella</strong> 28-12-2014</p>
+
+<p>Существует риск, что с лимонкой в раствор попадают микроорганизмы, которые ее производят. А дальше все идет по сценарию, описанному Вадом, вот рН и падает. Да не так страшен сульфат железа в чистом виде, как обычно думают. Объемы раствора у любителей маленькие, расходуются быстро, риск перехода железа в недоступную для растений форму ниже, чем в крупном производстве.</p>
+
+<p><strong>veresk</strong> 28-12-2014</p>
+
+<p>А кто нибудь ставил туманообразователь в горшок, как бы аэропоника получается. Хочу попробовать, а то пришло 5 штук туманообразователей, может что получится.</p>
+
+<p><strong>Vad</strong> 28-12-2014</p>
+
+<p>они дохнут от раствора… не знаю почему</p>
+
+<p><strong>veresk</strong> 02-01-2015</p>
+
+<p>Всех с НОВЫМ ГОДОМ!!!</p>
+
+<p>А это мои замученные PHем огурцы, сменил раствор, убрали лимонку, один черт PH за сутки стремится к 3.5.</p>
+
+<p><a href="https://t.me/ponics_ru_files/13542" target="_blank"><img src="/attachimages/17502_Огур.jpg" alt="" /></a></p>
+
+<p><strong>Gnevko</strong> 02-01-2015</p>
+
+<p>Да шо б у меня были такие “замученные” огурцы :D</p>
+
+<p><strong>OLIVER</strong> 02-01-2015</p>
+
+<blockquote>
+  <p>Да шо б у меня были такие “замученные” огурцы :D</p>
+</blockquote>
+
+<p>ага <em>8)</em></p>
+
+<p><strong>veresk</strong> 02-01-2015</p>
+
+<p>Ну это я ракурс удачный выбрал, на самом деле все намного хуже.</p>
+
+<p><strong>Coccinella</strong> 02-01-2015</p>
+
+<p>Вдруг вспомнила, что вереск (растение) любит низкий рН, может, яхту неправильно назвали? :)</p>
+
+<p>А если серьезно, что у Вас за вода? Часом не дистиллированная, если настолько безбуферный раствор?</p>
+
+<p><strong>veresk</strong> 03-01-2015</p>
+
+<p>Вода из под крана, а откуда она в кран попадает не знаю :)</p>
+
+<p>Третий раз сменил раствор, за 38 часов PH упал с 6.3 на 5.7.</p>
+
+<p>Уже прогресс :)</p>
+
+<p>Вот книжку недавно скачал, мне понравилась. Может кому и надо.</p>
+
+<p><a href="https://t.me/ponics_ru_files/13543" target="_blank">Knig17283_Sad.zip</a></p>
+
+<p><a href="https://t.me/ponics_ru_files/13544" target="_blank">Knig17283_Sad.z02</a></p>
+
+<p><a href="https://t.me/ponics_ru_files/13545" target="_blank">Knig17283_Sad.z01</a></p>
+
+<p><strong>Milkon10</strong> 10-01-2015</p>
+
+<p>veresk, большое Вам спасибо за то, что поделились книгой!</p>
+
+<p><strong>cpf</strong> 11-01-2015</p>
+
+<blockquote>
+  <p>Вода из под крана, а откуда она в кран попадает не знаю :)</p>
+
+  <p>Третий раз сменил раствор, за 38 часов PH упал с 6.3 на 5.7.</p>
+
+  <p>Уже прогресс :)</p>
+</blockquote>
+
+<p>Два вопроса:</p>
+
+<ol>
+  <li>
+    <p>Субстрат какой? (случайно не керамзит необработанный заранее?)</p>
+  </li>
+  <li>
+    <p>Углекислый газ не может попадать в раствор? (сода+ кислота или в результате “аэрации”?)</p>
+  </li>
+</ol>
+
+<blockquote>
+  <p>А это мои замученные PHем огурцы, сменил раствор, убрали лимонку, один черт PH за сутки стремится к 3.5.</p>
+</blockquote>
+
+<p>Не должен pH так “метаться” (может промыть водичкой надо всю систему, прежде чем раствор поменять?)</p>
+
+<p><strong>Strangeman</strong> 11-01-2015</p>
+
+<p>Что там с амонийным азотом осталось загадкой. На упаковке только общий указан.</p>
+
+<p><strong>veresk</strong> 17-01-2015</p>
+
+<p>Субстрат, вермулит и агроперлит. Компрессор стоит рядом с баком, в комнате, думаю там СО нету.</p>
+
+<p>Промыть хотел, но сказали что это стресс для огурцов.</p>
+
+<p>Сейчас вообще печальная картина, думаю несколько огурчиков доспеют и срежу.</p>
+
+<p>Вот думаю может быть в кокосовый субстрат посадить с капельным поливом и без реверса. Только пока не знаю сколько раз поливать и по сколько.</p>
+
+<p>Срежу и посмотрю на корни, может они гниют, поэтому и PH падает.</p>
+
+<p><strong>Ru7tam</strong> 17-01-2015</p>
+
+<blockquote>
+  <p>Субстрат, вермулит и агроперлит.</p>
+</blockquote>
+
+<p>Перлит - нейтральный, а вермикулит (сделанный в СПб) - щелочит, если его не промывать.</p>
+
+<p>Но! Поскольку технология изготовления перлита и вермикулита - обжиг в колонне с кипящим слоем, то кислотность что одного, что второго могут зависеть еще и от топлива, которое использовалось… Если вместо газа использовали мазутные горелки, да мазут с повышенным содержанием серы - то на субстрате запросто может оказаться сернистая кислота…</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

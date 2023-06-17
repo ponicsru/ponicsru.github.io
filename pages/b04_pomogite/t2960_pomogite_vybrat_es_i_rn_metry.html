@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Помогите выбрать ЕС и рН метры | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Помогите выбрать ЕС и рН метры">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Помогите выбрать ЕС и рН метры</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>NVB</strong> 26-09-2018</p>
+
+<p>Я хочу попробовать гидропонику.</p>
+
+<p>Выращивать буду не очень требовательную культуру.</p>
+
+<p>На Алиэкспрес богатый выбор…</p>
+
+<p>Помогите выбрать ЕС и рН метры.</p>
+
+<p>Я бы хотел услышать не просто совет - покупай второй, а отзывы людей у которых МНОГОЛЕТНИЙ опыт, по какой причине второй лучше первого.</p>
+
+<p>ЕС метры</p>
+
+<p>рН метры</p>
+
+<p>Какой рН метр подойдет для начинающего, плюс чтобы приборчик был более-менее долгоживущий?</p>
+
+<p>Я нацелился на желтенькие.</p>
+
+<p>Изготавливаются они разными фирмами -</p>
+
+<p>KETOTEK</p>
+
+<p>JUANJUAN</p>
+
+<p>PEAKMETER</p>
+
+<p>Yieryi</p>
+
+<p>WAZYQ ph-107 / ph-009</p>
+
+<p>Какая фирма лучше?</p>
+
+<p>Ниже самый дешевый зонд для рН метра.</p>
+
+<p>Можно ли сказать что такой зонд + рН метр, лучше, чем выше приведенные карманные рН метры?</p>
+
+<p><strong>allex_step</strong> 26-09-2018</p>
+
+<p>1) ИМХО лучше TDS&amp;EC чем просто ЕС (у меня таки номер 2)</p>
+
+<p>2) у меня номер 3 - не жалуюсь</p>
+
+<p>3) по пробнику pH - это только половина того что нужно чтобы считывать pH ардуиной. еще ну нужна “платка” на которую BNC цепляется - погуглите или посмотрите на том же Али, и еще раз подумайте нужно ли оно Вам</p>
+
+<p><strong>siv237</strong> 26-09-2018</p>
+
+<p>EC - 2й</p>
+
+<p>pH - 4й</p>
+
+<p>Критических нареканий нет за 3 года ЕС врет при измерении выше 4 мСм/см, а pH не имеет термокомпенсации.</p>
+
+<p>Сейчас бы взял pH 5й или 6й, так-как они имеют термокомпенсацию, а ЕС для точных измерений лучше самому собрать.</p>
+
+<p><strong>NVB</strong> 27-09-2018</p>
+
+<blockquote>
+  <p>2) у меня номер 3 - не жалуюсь</p>
+</blockquote>
+
+<p>Сколько лет проработал?</p>
+
+<p><strong>NVB</strong> 27-09-2018</p>
+
+<p>Допустим я купил pH метр - 3 или 4й</p>
+
+<p>Он не вечный.</p>
+
+<p>Через сколько лет придется купить новый рН метр?</p>
+
+<blockquote>
+  <p>ЕС врет при измерении выше 4 мСм/см,</p>
+</blockquote>
+
+<p>Как проверяли, выпаривали питательный раствор?</p>
+
+<p>Врет предсказуемо?</p>
+
+<p>Допустим показания ЕС 5 мСм/см, какая приблизительно погрешность?</p>
+
+<blockquote>
+  <p>ЕС для точных измерений лучше самому собрать.</p>
+</blockquote>
+
+<p>В какой именно гидропонике нужны точные измерения ЕС ?</p>
+
+<p>Я могу сам спаять, только вот не знаю из какого металла сделать электроды?</p>
+
+<p><strong>siv237</strong> 27-09-2018</p>
+
+<blockquote>
+  <blockquote>
+    <p>Допустим я купил pH метр - 3 или 4й</p>
+
+    <p>Он не вечный.</p>
+
+    <p>Через сколько лет придется купить новый рН метр?</p>
+  </blockquote>
+
+  <p>При освоении техники изготовления растворов pH метр становится очень редкоиспользуемым прибором.</p>
+
+  <blockquote>
+    <p>ЕС врет при измерении выше 4 мСм/см,</p>
+  </blockquote>
+
+  <p>При ЕС=5 врет на 20%.</p>
+
+  <blockquote>
+    <p>Как проверяли, выпаривали питательный раствор?</p>
+
+    <p>Врет предсказуемо?</p>
+
+    <p>Допустим показания ЕС 5 мСм/см, какая приблизительно погрешность?</p>
+  </blockquote>
+
+  <p>Проверяется изготовлением калибровочных растворов чистыми солями. Смотрите мою тему контроль удобрений в подписи.</p>
+
+  <p>Там первым шагом проводится калибровка прибора по чистой соли, например аптечному хлориду кальция.</p>
+
+  <blockquote>
+    <p>ЕС для точных измерений лучше самому собрать.</p>
+  </blockquote>
+
+  <p>В какой именно гидропонике нужны точные измерения ЕС ?</p>
+
+  <p>Я могу сам спаять, только вот не знаю из какого металла сделать электроды?</p>
+</blockquote>
+
+<p>Точные измерения ЕС нужны тогда, когда есть желание рассчитать потребление солей растением. Чем быстрее оно потребляет соли тем эффектвнее растет. Для этого помимо измерения ЕС нужно измерять точный остаток раствора. График ЕС в мсм/см * остаток в литрах покажет динамику потребления соли, а значит оптимальность условий роста. Объем потребленной соли напрямую связан с приростом массы растения.</p>
+
+<p><strong>Miando</strong> 27-09-2018</p>
+
+<p>Вы встречали датчики для ардуинке, уровня воды? Или может есть в продаже готовое устройство?</p>
+
+<p><strong>NVB</strong> 27-09-2018</p>
+
+<blockquote>
+  <p>Точные измерения ЕС нужны тогда, когда есть желание рассчитать потребление солей растением.</p>
+</blockquote>
+
+<p>Такое желание у меня есть.</p>
+
+<p>Еще есть электроды от советского-старого прибора (рН метра…).</p>
+
+<p>Я в них еще не разобрался.</p>
+
+<p>По памяти - один толстый покрытый серой пылью(платиновый), второй стеклянный на кончике маленький шарик светлого металла(платиновый), несколько с стеклянными шариками, один в который нужно залить раствор соли…(электрод сравнения).</p>
+
+<p>Если знаете, дайте ссылку на статью “как сделать” на любом языке,</p>
+
+<p><strong>siv237</strong> 27-09-2018</p>
+
+<blockquote>
+  <p>Вы встречали датчики для ардуинке, уровня воды? Или может есть в продаже готовое устройство?</p>
+</blockquote>
+
+<p>Пока самое точное из того, что я пробовал, это ультразвуковой датчик HC-SR04 с кальмановским фильтром (точность до микрометра за 10 минут), но так-же неплох лазерный дальномер VL53L0X . Но тут нужен особый подход к конструкции и поплавок-отражатель, так как от поверхности воды лазер не отражается.</p>
+
+<p><strong>Miando</strong> 27-09-2018</p>
+
+<p>Тю, точно, ультразвукової датчик!!!</p>
+
+<p>Для него поплавок не нужен?</p>
+
+<p><strong>siv237</strong> 27-09-2018</p>
+
+<blockquote>
+  <p>Тю, точно, ультразвукової датчик!!!</p>
+
+  <p>Для него поплавок не нужен?</p>
+</blockquote>
+
+<p>Нет, поверхность воды отличный отражатель ультразвука. Единственно, нужно что-бы емкость была на всю глубину достаточно широкой. В узкой вертикальной трубе датчик почти не работает из-за переотражений.</p>
+
+<p><strong>Miando</strong> 27-09-2018</p>
+
+<p>Спасибо большое! Будет время, поиграюсь :)</p>
+
+<p><strong>NVB</strong> 03-10-2018</p>
+
+<blockquote>
+  <blockquote>
+    <p>Точные измерения ЕС нужны тогда, когда есть желание рассчитать потребление солей растением.</p>
+  </blockquote>
+
+  <p>Если знаете, дайте ссылку на статью “как сделать” на любом языке,</p>
+</blockquote>
+
+<p>Сам нашел</p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=2645.0" target="_blank">http://forum.ponics.ru/index.php?topic=2645.0</a></p>
+
+<p>и еще несколько других.</p>
+
+<hr />
+
+<p>siv237, спасибо за обьяснения.</p>
+
+<p><strong>siv237</strong> 03-10-2018</p>
+
+<p>Для определения оптимальных размеров электродов и сопротивлений, можно использовать формулы:</p>
+
+<p><img src="https://i.postimg.cc/w7LMJ7MG/ecmath.png" alt="" /></p>
+
+<p><strong>serge mat</strong> 03-10-2018</p>
+
+<p>Я два раза покупал tds-3 (номер 1) Один для школы, другой домой. Оба работают без проблем. Только батарейки менять приходится.</p>
+
+<p>Я покупал рН-метры 3 и 4. Который 4 очень быстро начал дурить. Очень сложен в калибровке. И скоро поломался. Те, которые 3 я купил уже наверное штук 8. (Опять же для школы). За три года сломался один. Работают черти!</p>
+
+<p>Зонды (7) тоже покупал. Три штуки. Но они меня не радуют. Очень не стабильно работают. И уж точно они не пригодны для постоянного измерения на автоматике. Их надо регулярно вынимать из измерений и выдерживать в растворе KCl, без этого они начинают дурить (давать нестабильные показания). Вариант, поставить их на автоматику, не катит. Надо их регулярно обслуживать. Я мерить руками проще с более простыми. ИМХО</p>
+
+<p><strong>NVB</strong> 04-10-2018</p>
+
+<blockquote>
+  <p>Я два раза покупал tds-3 (номер 1) Оба работают без проблем.</p>
+</blockquote>
+
+<p>tds-3 (номер 1)/ Не заметили, врут при измерении выше… как ЕС - 4 мСм/см. ?</p>
+
+<blockquote>
+  <p>… рН-метр 4 очень быстро начал дурить. Очень сложен в калибровке.</p>
+
+  <p>И скоро поломался.</p>
+</blockquote>
+
+<p>Что именно сломалось:</p>
+
+<ul>
+  <li>
+    <p>шарик лопнул,</p>
+  </li>
+  <li>
+    <p>гель рассосался,</p>
+  </li>
+  <li>
+    <p>электроника,</p>
+  </li>
+  <li>
+    <p>кнопки?</p>
+  </li>
+</ul>
+
+<p>siv237 Хотелось бы услышать ваше мнение о калибровке.</p>
+
+<p>Что лучше подходит для меня:</p>
+
+<ul>
+  <li>
+    <p>по одной точке или</p>
+  </li>
+  <li>
+    <p>по двум точкам?</p>
+  </li>
+</ul>
+
+<p><strong>siv237</strong> 04-10-2018</p>
+
+<p>Думаю для бытовых измерений достаточно одной точки (той в которой вы обычно держите свой раствор или стремитесь к которой).</p>
+
+<p>Ну и имеет смысл раз проверить то, когда прибор начинает сильно врать, за пределами какого диапазона.</p>
+
+<p><strong>serge mat</strong> 10-10-2018</p>
+
+<blockquote>
+  <p>… рН-метр 4 очень быстро начал дурить. Очень сложен в калибровке.</p>
+
+  <p>И скоро поломался.</p>
+
+  <p>Что именно сломалось:</p>
+
+  <ul>
+    <li>
+      <p>шарик лопнул,</p>
+    </li>
+    <li>
+      <p>гель рассосался,</p>
+    </li>
+    <li>
+      <p>электроника,</p>
+    </li>
+    <li>
+      <p>кнопки?</p>
+    </li>
+  </ul>
+</blockquote>
+
+<p>Я могу верить прибору, когда он показывает цифру, ну или она варьируется на одну -две единицы. Когда показания скачут как белки по лесу, я понимаю, что верить прибору нельзя.</p>
+
+<p>Может быть гель рассосался, а может в мозгах дело…</p>
+
+<p>Но перед этим мы намучились в калибровке. Там надо нажимать кнопки по нескольку раз, держать их определенное время – это не всегда срабатывает. Дело становится очень занудное… Одним словом, я не хочу возвращаться к этому прибору.</p>
+
+<p>И, кстати, точность его не столь высока. Он просто показывает на одну цифру больше. Но эта цифра получается не стабильной. Всё равно верить можно только одной цифре после запятой.</p>
+
+<p><strong>siv237</strong> 10-10-2018</p>
+
+<p>Ну речь все же о том, что показания имеют хорошую кучность при повторных измерениях, но отличаются от фактических с нарастающей погрешностью, но по предсказуемой зависимости. Такое вполне можно скорректировать уже после измерений.</p>
+
+<p><strong>NVB</strong> 10-10-2018</p>
+
+<blockquote>
+  <p>показания скачут как белки по лесу, я понимаю, что верить прибору нельзя.</p>
+</blockquote>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=336.6540" target="_blank">http://forum.ponics.ru/index.php?topic=336.6540</a></p>
+
+<ul>
+  <li>Прыгающие показания обычно говорят о дребезге контакта.</li>
+</ul>
+
+<p>Где-то проводок отходит. Хорошо, если это проводок питания.</p>
+
+<p>Тогда надо вынуть блок батареек и поставить его еще раз,</p>
+
+<p>постаравшись все контакты замкнуть в правильном порядке и надежно.</p>
+
+<p>Если дело не в питании, то обычно уже не лечится.</p>
+
+<p>В смысле надо разбирать прибор, а он не предназначен для разборки.</p>
+
+<ul>
+  <li>/желтом китайце / электрод сравнения мог просто вытечь или высохнуть.</li>
+</ul>
+
+<p>выдергиваете вот тот белый пористый шпынек, шприцем туда вливаете дистиллированную воду.</p>
+
+<p>промываете хорошо, вытряхиваете все и тем же шприцем заправляете свеженькую жижу KCl</p>
+
+<p>шпынек суем на место… калибруем…</p>
+
+<p>и … приблизительно на год нормально-активного пользования хватает…</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

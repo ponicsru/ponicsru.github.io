@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Что с кондуктометром | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Что с кондуктометром">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Что с кондуктометром</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Soldatic</strong> 05-11-2013</p>
+
+<p>Добрый день, приобрел кондуктометр Hanna HI 98309 PWT, не могу понять опускаю в обычную воду показывает 150 ms/cm в раствор показывает что перебор, по ppm всего 200, или он просто не подходит для измерения раствора??????????? <em>sos</em></p>
+
+<p><strong>Vad</strong> 05-11-2013</p>
+
+<p>эта модель предназначена для контроля дистиллированной воды.</p>
+
+<p>предел измерения всего 99.9 μS/cм это МИКРОсименс что равно (0.099 миллисименс)</p>
+
+<p>это не просто мало… это катастрофически мало!</p>
+
+<p>нам нужно измерять значения в 50-100 раз выше…</p>
+
+<p>милисеменсы нам нужны (mS) хотя бы до 6-9 mS</p>
+
+<p><strong>Soldatic</strong> 06-11-2013</p>
+
+<p>АААААА… Кто может помочь… Постояльцы обращаюсь к Вам, кто живет в Москве, хочу договориться с фирмой у которой брал и сделать возврат, если на фирму делать думаю будет слишком долго и они пока отправят назад, а времени нет уже высадил семена в детскую, пока сделал раствор по калькулятору, воспользовался старым прибором измеряющий ррм вроде пока норма, так суть вопроса я отправляю на того кто откликнится помочь, прибор со всеми документами, да кстати хочу обменять вот на этот прибор он подойдет <a href="http://www.bioscorp.ru/shop/UID_13817_konduktometr_hanna_dist_6_hi_98312.html" target="_blank">http://www.bioscorp.ru/shop/UID_13817_konduktometr_hanna_dist_6_hi_98312.html</a> если нет посоветуйте какой с этого сайта. Человеку надо будет с ними созвониться и обсудить уже условия как удобнее забрать и отправить на меня… Они находятся они г. Москва, ул. Кусковская, д.20А, 3 подъезд, офис 706Г. Выручайте живу на краю света, другого варианта нет…</p>
+
+<p><strong>valery</strong> 06-11-2013</p>
+
+<blockquote>
+  <p>да кстати хочу обменять вот на этот прибор он подойдет <a href="http://www.bioscorp.ru/shop/UID_13817_konduktometr_hanna_dist_6_hi_98312.html" target="_blank">http://www.bioscorp.ru/shop/UID_13817_konduktometr_hanna_dist_6_hi_98312.html</a> если нет посоветуйте какой с этого сайта.</p>
+</blockquote>
+
+<p>Модель, указанная в ссылке, по диапазону - подойдет. Более чем.</p>
+
+<p>Возможно, разумнее в таком случае взять комбо-прибор (ЕС, рН) - типа вот этого Кондуктометр Hanna НI 98130 (Combo)</p>
+
+<p>Но.</p>
+
+<p>Что-то не очень мне “приглянулись” ценники в фирме, куда Вы обратились.</p>
+
+<p>Все тот же Hanna НI 98130 (Combo) - несколько более дорогая и сложная модель, чем та, на которую Вы обратили внимание обходится при покупках на eBay примерно в 100 с небольшим долларов (120-130 … что-то около этого), а в данной фирме за него “скромно” требуют 12 тысяч с лишним деревянных … :o</p>
+
+<p>Как-то это … не эгегей … :-\</p>
+
+<p>Ну вот например, по ссылке попался 128 долларов и около 30 доставка ( четыре тысячи плюс тысяча)</p>
+
+<p><a href="http://www.ebay.com/itm/Hanna-Instruments-HI98130-pH-Conductivity-TDS-Tester-/331058289046?pt=LH_DefaultDomain_0&amp;hash=item4d149c9996" target="_blank">http://www.ebay.com/itm/Hanna-Instruments-HI98130-pH-Conductivity-TDS-Tester-/331058289046?pt=LH_DefaultDomain_0&amp;hash=item4d149c9996</a></p>
+
+<p>При желании, немного “поохотившись” можно найти эту же модель долларов за 70. Правда, в этом случае не всякий продавец соглашается отправлять в Россию :(</p>
+
+<p>А упомянутая Вами модель, там же на eBay <a href="http://www.ebay.com/itm/HANNA-HI-98312-DiST-6-EC-TDS-C-F-Tester-Meter-HI98312-/221277723521?pt=LH_DefaultDomain_0&amp;hash=item33852e1b81" target="_blank">http://www.ebay.com/itm/HANNA-HI-98312-DiST-6-EC-TDS-C-F-Tester-Meter-HI98312-/221277723521?pt=LH_DefaultDomain_0&amp;hash=item33852e1b81</a> обойдется в 2800 руб плюс доставка.</p>
+
+<p>Тоже не “задаром”, но все же и не шесть шестьсот как по ссылке …</p>
+
+<p><strong>Soldatic</strong> 07-11-2013</p>
+
+<blockquote>
+  <p>Тоже не “задаром”, но все же и не шесть шестьсот как по ссылке …</p>
+</blockquote>
+
+<p>Да понимаю это, но надо было быстро все оформить и купить пока человек был в Москве, так как времени уже не было, посылки из Москвы до нас идут по 1,5 месяца из заграницы я думаю месяца 3,4 это долго. Да и сейчас вариант только вернуть, и доплатить 2 тысячи, другого варианта нет, на будущее буду умнее… Время учит и время делает умнее…..Главное найти вариант как вернуть)))</p>
+
+<p><strong>Soldatic</strong> 11-11-2013</p>
+
+<p>Подскажите подойдет данный кондуктометр <a href="http://www.bioscorp.ru/shop/UID_13815_konduktometr_hanna_dist_4_hi_98304.html" target="_blank">http://www.bioscorp.ru/shop/UID_13815_konduktometr_hanna_dist_4_hi_98304.html</a> ??? Если обменивать он хотя бы без доплаты…. А то уже боюсь ошибиться.. меня смущают технические характеристики</p>
+
+<p>Технические характеристики DIST 4:</p>
+
+<p>Диапазон рН (1) 19.99 г/л</p>
+
+<p>Диапазон рН (2) 3999 мг/л</p>
+
+<p>Разрешение рН (1) 0.01 г/л</p>
+
+<p>Разрешение рН (2) 1 мг/л</p>
+
+<p>Погрешность +/- 2 п.ш.</p>
+
+<p>Не могу понять причем тут рН</p>
+
+<p>На этом сайте <a href="http://dop.uchebalegko.ru/docs/index-14946.html?page=2" target="_blank">http://dop.uchebalegko.ru/docs/index-14946.html?page=2</a> про не го написано</p>
+
+<p>DIST 4 (HI 98304) Кондуктометр 0.01 -19.99 mS/см</p>
+
+<p>Немного запутался….</p>
+
+<p><strong>Vad</strong> 11-11-2013</p>
+
+<p>нужно позвонить в контору и узнать.. сколько метров рублей нужно отмотать за него :D</p>
+
+<p>какое-то “опасное” описание :-\</p>
+
+<p>того гляди и вправду.. будет pH в граммах мерить <em>crazy</em></p>
+
+<p><strong>valery</strong> 11-11-2013</p>
+
+<p>Вероятно прибор “подходит” и описание - УДИВИТЕЛЬНАЯ опечатка … :-\</p>
+
+<p>Но лучше действительно - звонить…</p>
+
+<p>Характерная какая-то “опечатка”, ну как можно ТАК относиться к описаниям … :-\</p>
+
+<p><strong>Coccinella</strong> 11-11-2013</p>
+
+<p>Да просто девушка, которая печатала описание, любит пользоваться клавишами Copy-Paste :), а тут ей еще мама по телефону позвонила, чтобы последние новости пересказать о наводнении где-нибудь в Южном полушарии, вот девушка и брякнула пальчиками не туда :)</p>
+
+<p>Нормальный это прибор (у Ханны других не бывает :)), вот здесь <a href="http://www.hannainst.com/usa/prods2.cfm?id=024001&amp;ProdCode=HI%2098304" target="_blank">http://www.hannainst.com/usa/prods2.cfm?id=024001&amp;ProdCode=HI%2098304</a></p>
+
+<p>более грамотное описание.</p>
+
+<p><strong>Coccinella</strong> 11-11-2013</p>
+
+<p>Вот ехидствую над другими, а сама в предыдущем сообщении с пяток опечаток насажала, три раза исправляла :) до нормального вида.</p>
+
+<p><strong>Soldatic</strong> 12-11-2013</p>
+
+<p>Еще вопрос, одни вопросы.))).. Пользуюсь пока старым TDS метром измеряю ррм, но ввиду того что он долго не использовался, да и калибровочный раствор закончился, прибор не калибровался, существует вероятность погрешности, причем не маленькой, можно как нибудь его откалибровать без специального калибровочного раствора, возможно в дистиллированной воде???</p>
+
+<p><strong>diman73rus</strong> 12-11-2013</p>
+
+<p>весы-то есть ? растворите 1г поваренной соли в 1 литре дистиллированной воды. :-X должно быть 1000 ppm.</p>
+
+<p><strong>Soldatic</strong> 12-11-2013</p>
+
+<blockquote>
+  <p>весы-то есть ? растворите 1г поваренной соли в 1 литре дистиллированной воды. :-X должно быть 1000 ppm.</p>
+</blockquote>
+
+<p>Что есть, то есть, спасибо <em>8)</em></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

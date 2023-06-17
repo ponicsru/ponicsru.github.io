@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Освещение для Зеленушки | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Освещение для Зеленушки">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Освещение для Зеленушки</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>тимофей</strong> 12-09-2011</p>
+
+<p>Доброго времени суток!!!</p>
+
+<p>Необходима небольшая консультация от бывалых и знающих людей, таких как вы !!! <em>Bravo</em> <em>Bravo</em> <em>Bravo</em></p>
+
+<p>У нас на работе получил добро на выращивание зелени такой как (розмарин, тимьян, базилик, кинза, мята) в комнатке 10м2.</p>
+
+<p>1) В интернете нашел <a href="http://www.growlight.ru/...ui_svet/item_166/" target="_blank">www.growlight.ru/…ui_svet/item_166/</a> пишут что 1 лампа может освещать 15.м2. Это правда или развод для незнающих?</p>
+
+<p>2) Второй вариант это <a href="http://www.artleds.ru/pa...qoCFWiK5godTX927w" target="_blank">www.artleds.ru/pa…qoCFWiK5godTX927w</a> этот вариант освещает 2.м2- при стоймости почти в 15тыс…</p>
+
+<p>Хочется услышать от вас, может вы можете дать совет какая из них будет лучше для такой комнатки? Еще в дальнейшем после опыта на комнатке хочу попробовать в промышленном производстве на больших площадях от 100м2.</p>
+
+<p>Большое спасибо, за уделенное внимание моим вопросам! $) $) $)</p>
+
+<p><strong>SergF</strong> 12-09-2011</p>
+
+<p>По ссылкам у меня ничего не показывает, но не важно, суть понятна…</p>
+
+<p>там где производитель пишет 15м2 на одну лампу, он мягко говоря лукавит, видимо имея ввиду досветку хорошо освещенного помещения :)</p>
+
+<p>для 100% светокультуры нужно не менее 100Вт на м2 светодиодного света, для плодоносящих желательно еще больше, для зелени можно меньше, у меня при 40Вт зелень росла нормально, но бокс небольшой и имел светоотражающие поверхности, в комнате 50-60Вт/м2 для зелени минимум… ИМХО.</p>
+
+<p>для промышленного производства цены на светильники пока высоки…</p>
+
+<p>помещение имеет естественное освещение?</p>
+
+<p><strong>тимофей</strong> 12-09-2011</p>
+
+<blockquote>
+  <p>для промышленного производства цены на светильники пока высоки…</p>
+
+  <p>помещение имеет естественное освещение?</p>
+</blockquote>
+
+<p>А что из освещения можете посоветовать цена\качество?</p>
+
+<p>В помещении нет естественного освещения т.к это подвал :-\</p>
+
+<p>Возможность светоотражающее покрытие сделать есть :)</p>
+
+<p>у первого светильника<a href="http://www.artleds.ru/page/ldp.html?gclid=CODvgbvM2qoCFWiK5godTX927w" target="_blank">http://www.artleds.ru/page/ldp.html?gclid=CODvgbvM2qoCFWiK5godTX927w</a> цена 15 тыс</p>
+
+<p>у второго светильника <a href="http://www.growlight.ru/shop/plazmenui_svet/item_166/" target="_blank">http://www.growlight.ru/shop/plazmenui_svet/item_166/</a> цена 19 тыс</p>
+
+<p><strong>SergF</strong> 12-09-2011</p>
+
+<blockquote>
+  <p>А что из освещения можете посоветовать цена\качество?</p>
+</blockquote>
+
+<p>Сложный вопрос… большинство на этом форуме скажут: “ставь ДНАТ и не парься” и видимо будут правы на сегодняшний день, стоимость альтернативных ламп высоковата, на помещение в 10 м2 их нужно несколько, пока не существует ламп способных потребляя 200Вт выдать необходимый для нормального развития растений свет в светокультуре на 15 м2.</p>
+
+<p>Так же у меня вызывает сомнение целесообразность группирования светодиодов по 100-200-400 в одном светильнике, особенно если растить зелень, намного эффективней было бы “разбросать” их по всей поверхности, как я у себя и сделал, но производителю не выгодно делать лампы с небольшим количеством светодиодов, если самому мастерить разве что :)</p>
+
+<p>кстати половину светодиодов я покупал как раз по этой ссылке, обычные Китайские светики, работают пол года без проблем пока, че им сделается, растюхи растут намана, но это бокс… скоро тож подвал осваивать стану, вот там и посмотрим че да как…</p>
+
+<p><strong>Coccinella</strong> 12-09-2011</p>
+
+<p>А как в этом подвале с теплоизоляцией? ДНАТ такую комнатенку сильно нагреет, а зелень избыточной жары не любит. Да и о проветривании подумать следует.</p>
+
+<p><strong>тимофей</strong> 12-09-2011</p>
+
+<blockquote>
+  <p>А как в этом подвале с теплоизоляцией? ДНАТ такую комнатенку сильно нагреет, а зелень избыточной жары не любит. Да и о проветривании подумать следует.</p>
+</blockquote>
+
+<p>Дело в том что комнату я еще в глаза не видел, но знаю, что подвал в ново построенном капитальном здании. Насчет проветривании тоже ничего не известно.. что посоветуете? думаю это будет просто комната с входной дверью выходящей на проходной коридор :-. думаю в комнате будет своя температура градусов 5-8…</p>
+
+<p><strong>тимофей</strong> 12-09-2011</p>
+
+<blockquote>
+  <p>Так же у меня вызывает сомнение целесообразность группирования светодиодов по 100-200-400 в одном светильнике, особенно если растить зелень, намного эффективней было бы “разбросать” их по всей поверхности, как я у себя и сделал, но производителю не выгодно делать лампы с небольшим количеством светодиодов, если самому мастерить разве что</p>
+
+  <p>кстати половину светодиодов я покупал как раз по этой ссылке, обычные Китайские светики, работают пол года без проблем пока, че им сделается, растюхи растут намана, но это бокс… скоро тож подвал осваивать стану, вот там и посмотрим че да как…</p>
+</blockquote>
+
+<p>А если не секрет сколько цена выходила если своими руками вы сделали не помнишь случайно :-[ ?</p>
+
+<p><strong>gorby777</strong> 12-09-2011</p>
+
+<blockquote>
+  <p>А если не секрет сколько цена выходила если своими руками вы сделали не помнишь случайно :-[ ?</p>
+</blockquote>
+
+<p>На и-бее полтора доллара за диод 1Вт (ежели оптом)</p>
+
+<p>Сто диодов плюс пять драйверов по 10 баксов .Еще радиаторы для светильников (я использую широкие алюминиевые пороги для ламинатных полов). Да и по мелочам (провода, вилки, таймер, клей, паста, припой и пр.) = еще баксов 20</p>
+
+<p>Это на ОДИН квадратный метр</p>
+
+<p><strong>тимофей</strong> 12-09-2011</p>
+
+<blockquote>
+  <p>На и-бее полтора доллара за диод 1Вт (ежели оптом)</p>
+
+  <p>Сто диодов плюс пять драйверов по 10 баксов = две штуки зеленых</p>
+
+  <p>Еще радиаторы для светильников (я использую широкие алюминиевые пороги для ламинатных полов). Да и по мелочам (провода, вилки, таймер, клей, паста, припой и пр.) = еще баксов 100-120</p>
+</blockquote>
+
+<p>Мда дофига мороки получается для кустарного производства :), надо искать готовые варианты для моей комнатушки без вентиляции :)… что бы выбрать.. Все таки Днат??</p>
+
+<p><strong>gorby777</strong> 12-09-2011</p>
+
+<p>У ДНаТа только один недостаток - высокое энергопотребление. Ну еще тепловыделение, может. В остальном одни достоинства <em>8)</em></p>
+
+<p><strong>тимофей</strong> 12-09-2011</p>
+
+<blockquote>
+  <p>У ДНаТа только один недостаток - высокое энергопотребление. Ну еще тепловыделение, может. В остальном одни достоинства</p>
+</blockquote>
+
+<p>Ну это хорошо! А какие то еще альтернативы есть ему???</p>
+
+<p><strong>SergF</strong> 12-09-2011</p>
+
+<blockquote>
+  <p>А если не секрет сколько цена выходила если своими руками вы сделали не помнишь случайно :-[ ?</p>
+</blockquote>
+
+<p>27 руб. за диод, никаких драйверов, все запитаны от б/у PC блока питания на 350Вт, радиаторы - обрезки профиля для шкафов купе, тож на халяву… короче только диоды покупал, так выгодно получается, а готовые LED светильники не очень пока, надо ждать када братья китайцы в промышленных масштабах клепать начнут:)</p>
+
+<p><strong>тимофей</strong> 12-09-2011</p>
+
+<p>Электронный cветильник <a href="http://rastok.net/index.php/liht/svet-v-teplice" target="_blank">http://rastok.net/index.php/liht/svet-v-teplice</a> - КАК думаете такой светильник хорошее решение? аль чего лучше подойдет? <em>???</em></p>
+
+<p><strong>Oxy</strong> 13-09-2011</p>
+
+<blockquote>
+  <p>Электронный cветильник <a href="http://rastok.net/index.php/liht/svet-v-teplice" target="_blank">http://rastok.net/index.php/liht/svet-v-teplice</a> - КАК думаете такой светильник хорошее решение? аль чего лучше подойдет? <em>???</em></p>
+</blockquote>
+
+<blockquote>
+  <p>Оснащен лампой Sylvania Gro-Lux 600W</p>
+</blockquote>
+
+<p>Это ж ДНАТ и есть. Самое то, что надо. У меня таких две лампы проработали интенсивно около двух лет. И сейчас рабочие, но уже излучение не то. Бери такую лампу, и тебе все обзавидуються и с растюхами проблем не будет.</p>
+
+<p>Вот же ж они на том же сайте рядом все расписали:http://rastok.net/index.php/liht/dnat-</p>
+
+<p><strong>arundo</strong> 13-09-2011</p>
+
+<p>а на какую площадь хватит ДНАТ 600W светящей с высоты 2,5-3м для освещения салата? там в статье есть инфа, но там досвет, а если он исползуется как единственное освещение?</p>
+
+<p><strong>Tony_85</strong> 13-09-2011</p>
+
+<blockquote>
+  <p>а на какую площадь хватит ДНАТ 600W светящей с высоты 2,5-3м для освещения салата? там в статье есть инфа, но там досвет, а если он исползуется как единственное освещение?</p>
+</blockquote>
+
+<p>Высоковато будет если единственное освещение. Днат 600 хватает где-то на 4 кв. м., тоесть на квадрат 2х2м. Висота 1-1.5м от растений.</p>
+
+<p><strong>тимофей</strong> 14-09-2011</p>
+
+<blockquote>
+  <p>Это ж ДНАТ и есть. Самое то, что надо. У меня таких две лампы проработали интенсивно около двух лет. И сейчас рабочие, но уже излучение не то. Бери такую лампу, и тебе все обзавидуються и с растюхами проблем не будет.</p>
+
+  <p>Вот же ж они на том же сайте рядом все расписали:http://rastok.net/index.php/liht/dnat-</p>
+</blockquote>
+
+<p>Спасибо <em>8)</em></p>
+
+<p>С освещением решилось :)</p>
+
+<p>Уверен что света от 2 ламп будет достаточно для травы она вроде не очень капризная к солнцу :-\</p>
+
+<p><strong>ProRus</strong> 14-09-2011</p>
+
+<p>Освещая Днат'ом не забудьте заранее позаботиться об отводе тепла.</p>
+
+<p>Хотя мне кажется что ДНАТ не очень подходит для зеленухи, она ведь в красном спектре, лучше будет лампа с более синим спектром (например ДРЛ).</p>
+
+<p><strong>тимофей</strong> 14-09-2011</p>
+
+<blockquote>
+  <p>Освещая Днат'ом не забудьте заранее позаботиться об отводе тепла.</p>
+
+  <p>Хотя мне кажется что ДНАТ не очень подходит для зеленухи, она ведь в красном спектре, лучше будет лампа с более синим спектром (например ДРЛ).</p>
+</blockquote>
+
+<p>Спасибо!</p>
+
+<p>Еще ребята поделитесь мнениями по этому поводу???</p>
+
+<p>Я еще полный делитант <em>???</em></p>
+
+<p><strong>Mole_Garden</strong> 26-09-2011</p>
+
+<blockquote>
+  <p>Освещая Днат'ом не забудьте заранее позаботиться об отводе тепла.</p>
+
+  <p>Хотя мне кажется что ДНАТ не очень подходит для зеленухи, она ведь в красном спектре, лучше будет лампа с более синим спектром (например ДРЛ).</p>
+</blockquote>
+
+<p>Не, нормуль будет. ДРЛ меньше освещенность и больше тепла. Как показывает практика, ДРЛ можно как плюс к ДНАТУ, но не в место него.</p>
+
+<p><strong>тимофей</strong> 27-09-2011</p>
+
+<p>Вот ребята посмотрите у меня есть такой вариант освещения моей комнатушки…</p>
+
+<p>Возможно 1 лампа в середине лотков будет с синим спектром, а две по бокам белые.. или наоборот.. <em>???</em></p>
+
+<p>Что скажете по этому поводу?</p>
+
+<p><a href="https://t.me/ponics_ru_files/6426" target="_blank"><img src="/imagehost/thumbs/eie.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 27-09-2011</p>
+
+<p>Что тут скажешь, надо пробовать.</p>
+
+<p><strong>Юка</strong> 27-09-2011</p>
+
+<p>А почему Вы не хотите поставить спец. лампы, например FLUORA , продаются у аквариумистов (подсветка для черепах … т. к. про гидропонику не всегда понимают)?</p>
+
+<p><strong>тимофей</strong> 27-09-2011</p>
+
+<blockquote>
+  <p>А почему Вы не хотите поставить спец. лампы, например FLUORA 1400 lm, продаются у аквариумистов (подсветка для черепах … т. к. про гидропонику не всегда понимают)?</p>
+</blockquote>
+
+<p>Дык я не слышал ничего толком про эти лампы… :-[</p>
+
+<p><strong>Юка</strong> 28-09-2011</p>
+
+<p>Дык надо поискать, для того и форум. Вариантов много, у меня , например, такой OSRAM-FLUORA L36W/77 1400 lm . OSRAM - немецкая фирма, FLUORA- название лампы(Флора), 36W- э/мощность лампы, /77 значит для растений, 1400 люменов- световая мощность.</p>
+
+<p><strong>ProRus</strong> 28-09-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>А почему Вы не хотите поставить спец. лампы, например FLUORA 1400 lm, продаются у аквариумистов (подсветка для черепах … т. к. про гидропонику не всегда понимают)?</p>
+  </blockquote>
+
+  <p>Дык я не слышал ничего толком про эти лампы… :-[</p>
+</blockquote>
+
+<p>Я сейчас использую:</p>
+
+<ol>
+  <li>
+    <p>OSRAM L 58W/765 - больше синего спектра (4000 lm).</p>
+  </li>
+  <li>
+    <p>OSRAM L 58W/77 FLUORA боле “цветочного” спектра (2250 lm).</p>
+  </li>
+</ol>
+
+<p>Длина у обоих 1500 мм, световой поток приличный.</p>
+
+<p>Для вашего варианта я бы (ИМХО) поставил в середине 58W/77 FLUORA, по краям 58W/765.</p>
+
+<p><strong>тимофей</strong> 28-09-2011</p>
+
+<p>спс! А если не сложно, то можно ссылочку на сайт с продавцом таких светильников??? $)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

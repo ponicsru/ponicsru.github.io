@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Это и есть краевой ожог??? | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Это и есть краевой ожог???">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Это и есть краевой ожог???</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Danila@irk</strong> 15-04-2011</p>
+
+<p>Посмотрите, пожалуйста - это и есть краевой ожог???</p>
+
+<p><a href="https://t.me/ponics_ru_files/5271" target="_blank"><img src="/attachimages/6607_150420112045.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 15-04-2011</p>
+
+<p>Это больше похоже на острый дефицит фосфора или на начало ложной мучнистой росы (она часто бывает в жару при плохом проветривании).</p>
+
+<p><strong>Danila@irk</strong> 15-04-2011</p>
+
+<p>Как раз наоборот забыл окно на ночь закрыть. Может просто померзли??? Днем то нормальная температура</p>
+
+<p>по фосфору - добавлено флоры гро 1.2 мл на литр - фосфора там 1%. флоры блум 0.6 мл. на литр. там уже 5%</p>
+
+<p>это мало?? извините НПК пока там и не могу научиться считать)))</p>
+
+<p><strong>Coccinella</strong> 15-04-2011</p>
+
+<p>Да, фосфора должно хватать, но если ночью при открытом окне температура раствора сильно упала и утром он согревался какое-то время, то фосфор мог и затормозиться. Если ночью за бортом были минусы, то могло и морозом прихватить, хотя салат очень холодостоек.</p>
+
+<p>А рН раствора какой?</p>
+
+<p><strong>Danila@irk</strong> 15-04-2011</p>
+
+<p>Тут плоховато видно. но все листы в каких то пятнышках(((</p>
+
+<p>не минус вряд ли в комнате был.</p>
+
+<p>РН - эталонный - 6.0!! а может что я сразу кислоты многовато добавил. а потом соду обычую подсыпал быть из за этого проблемы?</p>
+
+<p><a href="https://t.me/ponics_ru_files/5272" target="_blank"><img src="/attachimages/6609_150420112047.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 15-04-2011</p>
+
+<p>На последней фотографии лист справа внизу - действительно похож на краевой ожог, но вот пятнышки все же больше напоминают дефицит фосфора. Краевой ожог всегда начинается на верхних , самых молодых листьях, на более старших кайма по краю может быть от ранее незамеченного дефицита калия, но это из разряда предположений…</p>
+
+<p><strong>Владимир 59</strong> 16-04-2011</p>
+
+<p>Добрый день! Как опытный агроном, специалист, ветеран подскажите пожалуйста, огурцы чем то болеют, не поймём чем! Помогите разобраться!</p>
+
+<p><a href="https://t.me/ponics_ru_files/5273" target="_blank"><img src="/attachimages/6612_DSC07635.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5274" target="_blank"><img src="/attachimages/6614_DSC07642.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5275" target="_blank"><img src="/attachimages/6616_DSC07646.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5276" target="_blank"><img src="/attachimages/6618_DSC07648.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5277" target="_blank"><img src="/attachimages/6620_DSC07649.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5278" target="_blank"><img src="/attachimages/6622_DSC07651.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5279" target="_blank"><img src="/attachimages/6624_DSC07652.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5280" target="_blank"><img src="/attachimages/6626_DSC07654.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5281" target="_blank"><img src="/attachimages/6628_DSC07655.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 16-04-2011</p>
+
+<p>Для кучи еще сообщил бы состав раствора, параметры окружающей среды, возраст растения и этих листьев в частности, они молодые или старые?</p>
+
+<p><strong>Coccinella</strong> 17-04-2011</p>
+
+<p>Константин совершенно прав, огласите, пожалуйста, всю историю болезни.</p>
+
+<p><strong>Владимир 59</strong> 17-04-2011</p>
+
+<p>Проращивали в шайбах, выращиваем в вёдрах без рециркуляции, субстрат керамзит, трёх фракций от 20мм, до 1-5мм.,(раствор не задерживается), питание терафлекс универсал, готовил сам раствор по чеснокого и базыриной, пробовал разные составы раствора, макро составлял сам, микро брал флорист микро, но кончился, покупал аквадон (Питерский), но после растворения раствор мутнеет и от него отказался. ЕС-1,8-2,0; РН-5,5-6; температура ночью 18-20 градусов, днём 24-30, посажено 22 февраля, полив 2-3 раза в день лейкой, в основном страдают старые листья и примерно 3/4 растения в целом, точка роста - кончики листьев белеют толи желтеют, на старых листьях стали появлятся бледно зелёные пятна на кончиках или по краям а дальше желтеют кольцами - желтое, коричневое;совсем плохо - лист высых только основные жилки темно зелёные, сажал кураж мурашко и герман корнишен. Не болеет только герман, но по краю листа ярко зелёная кромка!Сейчас пробую раствор с интернет магазина ponics.ru; ЕС 1,2-1,3; РН 5,5-6 макушки ожили боковые побеги не растут, наверно перекормил но не пойме чем!</p>
+
+<p><strong>Mole_Garden</strong> 18-04-2011</p>
+
+<blockquote>
+  <p>Сейчас пробую раствор с интернет магазина ponics.ru;</p>
+</blockquote>
+
+<p>Повторюсь, не с магазина PONICS.RU А из магазина SHOP.PONICS.RU - это разные вещи</p>
+
+<p><strong>gorby777</strong> 10-05-2011</p>
+
+<p>Я также содой подщелачивал, пока не приобрёл гидроокись калия. И на листьях огурца у меня похожие пятна: не хлороз а местное высыхание. Лист крошится. Могу предположить с натяжкой, что проблема именно в соде</p>
+
+<p><strong>Coccinella</strong> 10-05-2011</p>
+
+<p>Локальное высыхание листа с последующим выкрашиванием мертвой ткани может оказаться антракнозом, но скорее всего это дефицит фосфора.</p>
+
+<p>На фотографиях, с которых начинается тема очень хорошо видно самое начало аскохитоза, но проблема не в нем. Из-за колебаний рН (в результате экспериментов с содой) нарушается поступление микроэлементов, поэтому старшие листья пестреют. А сухие пятна могут быть и оптическими ожогами в результате полива из лейки</p>
+
+<p>Я не знаю, почему сразу не ответила, наверно ждала дополнительной информации :)</p>
+
+<p><strong>gorby777</strong> 10-05-2011</p>
+
+<p>Спасибо :)</p>
+
+<p>Осталось только понять: антракноз, аскохитоз, фосфор или сода :)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>DWC vs Периодика vs капельный vs... | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="DWC vs Периодика vs капельный vs...">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">DWC vs Периодика vs капельный vs...</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Rew432</strong> 24-09-2018</p>
+
+<p>Раньше , очень давно имел дело с ДВЦ - сейчас дома хочу замутить салат, укроп и т д по зелени. Конечно, можно не замарачиватся и пойти по пути наименьшего сопротивления - растет - и собственно радуйся.</p>
+
+<p>Скорее всего так и будет, но во первых - это скорее хобби, и не цель просто поесть салата, а во вторых хотелось бы понять отличия систем в чем конкретные плюсы? Почитав несколько статей (например <a href="https://agrodom.com/advice/tipy-gidroponnykh-sistem/" target="_blank">https://agrodom.com/advice/tipy-gidroponnykh-sistem/</a> )так и не пришел к определенному выводу, потому что конкретно нкто до конца не разжевал. Т к купил сейчас емкости с Китая, <a href="https://www.aliexpress.com/item/12-Holes-Plant-Site-Hydroponic-Garden-Pots-Planters-System-Indoor-Garden-Cabinet-Box-Grow-Kit-Bubble/32823180508.html?spm=2114.search0603.3.69.cc7d2145bf2wg6&amp;ws_ab_test=searchweb0_0,searchweb201602_2_10065_10068_10059_10884_10887_10696_100031_10084_10083_10103_10618_10307_10301_448,searchweb201603_45,ppcSwitch_2&amp;algo_expid=c311e8b6-9328-4cd3-8bdc-b9d0e9099f96-9&amp;algo_pvid=c311e8b6-9328-4cd3-8bdc-b9d0e9099f96&amp;transAbTest=ae803_2&amp;priceBeautifyAB=0" target="_blank">жду доставки</a> в результате из них можно сделать хоть ДВЦ, хоть периодику, хоть капельный даже НФТ по идее можно.</p>
+
+<p>Я тут немного порассуждаю - а вы меня поправьте, или обьясните тема для этого и создалась. Мне собственно не понятно для чего некоторые выбирают периодику или капельный а тем более НФТ если и с ДВЦ все растет?</p>
+
+<p>Предположу, что все эти сложности ради эффективности роста растений в разных системах и (или) доступность к раствору, иначе наверно не совсем понятно зачем городить огород. Коренное отличие ДВЦ и остальных приведенных систем - бОльшая доступность кислорода к корням.</p>
+
+<p>Так насколько усложненные системы эффективнее ДВЦ ? Стоит оно того если растить салат с укропом? Хотелось бы руколу, но как вижу у всех она загибается.</p>
+
+<p>ПС . Так, в качестве флуда, если дело в кислороде, подумалось по поводу ультрапоники. Дело в том что по роду деятельности имею отношение к световому оборудованию для концертов, различных мероприятий, и по ходу работы изготовлял хейзеры - это такие приборы создающие дымку для видимости лазеров, световых лучей приборов и т д. Самые эффективные получались именно с помощью ультразвуковых испарителей. Погуглил - тема не популярная из за трех проблем - нагрев раствора, намокание корневой вблизи испарителя с последующим гниением, и ненадежность самих испарителей. ИМХо проблемы легко решаются вынесением испарителей в отдельный сосуд и использованием канального вентилятора, этакая аэропериодика-НФТ. Проблема нагревания раствора не кардинальная, и во время транспортировки вентилятором капли охладятся, намокание корней решается подгонкой и балансированием времени работы вентилятора с временем работы испарителя по таймеру, а по надежности последние испарители отработали у меня свадебный сезон.</p>
+
+<p>Кто что думает, имели дело с этим?</p>
+
+<p><strong>Merlon</strong> 24-09-2018</p>
+
+<p>Хм. Отлично растёт руккола… Точнее росла, уже съели.</p>
+
+<p>Хоть и небольшой у меня опыт, но я для себя понял, что чем меньше заморочек, тем лучше. Хороший свет, хорошее питание, а установка - это уже дело третье.</p>
+
+<p><a href="https://t.me/ponics_ru_files/19502" target="_blank"><img src="/imagehost2/thumbs/1vdv.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/19503" target="_blank"><img src="/imagehost2/thumbs/2rzr.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/19504" target="_blank"><img src="/imagehost2/thumbs/5yyy.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/19505" target="_blank"><img src="/imagehost2/thumbs/6uyu.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/19506" target="_blank"><img src="/imagehost2/thumbs/7gig.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/19507" target="_blank"><img src="/imagehost2/thumbs/8prp.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/19508" target="_blank"><img src="/imagehost2/thumbs/12zcz.jpg" alt="" /></a></p>
+
+<p><strong>Wildcat</strong> 24-09-2018</p>
+
+<p>Основной недостаток DWC для меня - шум. Потому и использую периодику - установка стоит в спальне, поливает каждые 20 минут и никого не напрягает.</p>
+
+<p>Сама установка простая как гвоздь - емкость, насос, таймер. И раствор доступен растениям, и кислорода по максимуму.</p>
+
+<p>Еще пробовал капельный полив на кокосе. Ну как капельный… Раз-два в день по поллитра в горшок перцам залил - и хорошо. Это скорее даже кокос на подпоре - пусть специалисты лучше классифицируют. Перцы росли и плодоносили отлично.</p>
+
+<p>В бОльших масштабах пока думаю довести это до Dutch bucket и финских колбасок в пластиковом ящике.</p>
+
+<p>Но по сути да - пофиг, какая установка. Дай им жрать и энергию для роста - оно и в стакане вырастет.</p>
+
+<p><strong>VVS_</strong> 24-09-2018</p>
+
+<p>Либо “проточная DWC”. Та же самая DWC, но аэратор заменяется насосом, который гоняет раствор по кругу(перемешивает) или через общий накопительный бак циркуляция. На ночь можно выключать. Аквариумная помпа вообще не шумит.</p>
+
+<p>Самой капризной клубнике нравится. А раз так, значит все что угодно будет расти.</p>
+
+<p><strong>Letalis</strong> 24-09-2018</p>
+
+<p>Рукколе действительно просто нужно много света, и вырастет даже в стаканчике, проверено) Вообще здорово было бы увидеть в параметрах растворов для культур, где-то в стороне, в скобочках, количество света на листик ;D и если что-то не растет - эту циферку проверять вместе с ЕС и PH :D</p>
+
+<p><strong>Rew432</strong> 25-09-2018</p>
+
+<p>Короче я правильно понимаю что заморачиватся нет смысла и ДВЦ вполне себе не уступает остальным? А проточная ДВЦ лучше чем просто ДВЦ? Аэропонику может когда нибудь попробую…</p>
+
+<p><strong>allex_step</strong> 25-09-2018</p>
+
+<p>наверное таки причина разных систем - в разном “объеме” корневой… <em>???</em></p>
+
+<p><strong>visualife</strong> 25-09-2018</p>
+
+<p>Если это хобби, как вы пишите выше, и цель не поесть петрушку, делайте разные установки и наслождайтесь процессом :)</p>
+
+<p>ДВЦ - шум и камень аэратора забивается постоянно.</p>
+
+<p>Периодика - большой объем раствора. Хотя это может быть и плюсом, потому что буферность большого объема выше. ПиАш у меня вообще не скачет. И можно один бак на много полок в стеллаже в разные периоды времени проливать.</p>
+
+<p>Сейчас для себя сделал несколько капельных и для зелени хочу большую капельную на подоконник :) буду пробовать.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

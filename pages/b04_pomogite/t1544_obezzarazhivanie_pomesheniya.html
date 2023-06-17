@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Обеззараживание помещения | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Обеззараживание помещения">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Обеззараживание помещения</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>VVS_</strong> 21-09-2012</p>
+
+<p>Хочу сделать включение по таймеру кварца или озонатора на постоянку. Против грибка и иной заразы.</p>
+
+<p>Вопрос, что лучше, кварц открытого типа или озонатор закрытого типа? Озонатор на УФ лампе или электроразрядный?</p>
+
+<p>Ну и как растения к этому отнесутся? Какие периоды включения-выключения можно задать?</p>
+
+<p><strong>VVS_</strong> 05-10-2012</p>
+
+<p>Отвечаю сам на свой вопрос.</p>
+
+<p>Сделал озонатор на принципе ионного вентилятора (сетка и иголки под высоким ВЧ напряжением). Штука оказалась чрезвычайно эффективна против плесени/грибка, который начал появляться на моей земляничке и на мокрых трубах в туалете. Буквально 3 часа поработал вечером, на утро от грибка одни “ошметки”, к вечеру вообще ни следа. А ранее все отмершие ткани земляники были окутаны такой паутинкой (плесень).</p>
+
+<p>УФ лампа открытого типа хоть и дает озон, но против грибка оказалась бесполезной. Видимо какой-то разный озон получается у этих устройств, либо получается еще что-то попутно.</p>
+
+<p>То что я сделал может называться в магазине ионизатор воздуха или люстра чижевского, главное чтобы принцип действия был основан не на УФ лампе, а на высоковольтном разряде.</p>
+
+<p>Так что если у вас в доме на стенах плесень - ионизатор/озонатор поможет 100%. Больше ничто эту плесень не берет, даже медный купорос ненадолго помогает.</p>
+
+<p><strong>Coccinella</strong> 05-10-2012</p>
+
+<p>Есть же талантливые люди на белом свете… $)</p>
+
+<p><strong>VVS_</strong> 07-10-2012</p>
+
+<p>Может озонатор и фитафтору в тепличке прибъет?</p>
+
+<p>Вот интересный патент</p>
+
+<p><a href="http://ntpo.com/patents_harvest/harvest_1/harvest_34.shtml" target="_blank">http://ntpo.com/patents_harvest/harvest_1/harvest_34.shtml</a></p>
+
+<p><strong>orgail</strong> 07-10-2012</p>
+
+<p>только поосторожней самим быть</p>
+
+<p><strong>VVS_</strong> 07-10-2012</p>
+
+<p>Ну дома я включаю дозированно, чтобы не сильно пахло озоном. минут на 10 вечером и все.</p>
+
+<p>Это только первый раз я закрыл лоджию на несколько часов :)</p>
+
+<p>…А в тепличках никто кроме растений не обитает :) Разнесем по времени обработку.</p>
+
+<p><strong>orgail</strong> 07-10-2012</p>
+
+<p>ну растючкам тоже атомарный кислород не по-вкусу :D</p>
+
+<p><strong>begunok</strong> 07-10-2012</p>
+
+<p>Вадим, расскажите про озонатор. У меня руки кривые, поэтому хочется что-нибудь уже готовое купить))</p>
+
+<p><strong>ProRus</strong> 08-10-2012</p>
+
+<p>А фоточкой поделитесь? И какую площадь такая штука способна обработать?</p>
+
+<p><strong>VVS_</strong> 08-10-2012</p>
+
+<p>Хорошо, вечером фото и схему положу.</p>
+
+<p><strong>VVS_</strong> 10-10-2012</p>
+
+<p>К сожалению раньше выходных не получается с отчетом. Работой завалили.</p>
+
+<p>про генератор на IR2153 подробно изложено здесь. Схема в конце страницы, полумост.</p>
+
+<p>Нагружать на ТВС-110ПЦ15(или 16) предваритьельно намотав свою первичную обмотку на свободном керне 80 витков. рабочая частота 25 кГц, выставляется R-C цепью у IR2153.</p>
+
+<p>Далее берется сетка нержавеющая с ячейкой 2-3 мм и заземняется на “холодный” конец ВВ обмотки транса, а “горячий (потенциальный)” колец идет на “иголки” которые делаются путем “распушения” обычного монтажного провода. РАсстояние между иголками 1-2 см. расстояние между сетокй и иголками по возможности минимальное, найти расстояние при котором пробивает дуга и отступить в 1.5 раза.</p>
+
+<p>Пробой дуги сразу сжигает 1 иголочку.. так что надо поэкономить попытки.</p>
+
+<p><strong>VVS_</strong> 12-10-2012</p>
+
+<p>Фото озонатора</p>
+
+<p><a href="https://t.me/ponics_ru_files/9406" target="_blank"><img src="/attachimages/11755_IMG_2438.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9407" target="_blank"><img src="/attachimages/11757_IMG_2439.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9408" target="_blank"><img src="/attachimages/11759_IMG_2440.jpg" alt="" /></a></p>
+
+<p><strong>VVS_</strong> 12-10-2012</p>
+
+<p>Схема генератора есть вот тут, 4 от конца сообщение</p>
+
+<p><a href="http://flyback.org.ru/viewtopic.php?t=981" target="_blank">http://flyback.org.ru/viewtopic.php?t=981</a></p>
+
+<p>(Добавлено: Sat Jan 27, 2007 4:07 pm)</p>
+
+<p>Только рабочую частоту надо выставить 25 кГц, путем подбора резистора R2</p>
+
+<p><strong>avgust63</strong> 12-10-2012</p>
+
+<p>Препарат МЕЛИКОНС - от грибка, плесени, бактерий и т.д.</p>
+
+<p><strong>VVS_</strong> 12-10-2012</p>
+
+<p>Препарат наносится на стены и убивает гриб навсегда? Я перепробовал всякого противогрибкового строительного, хватает на месяц и все.</p>
+
+<p>Лучше всего был медный купорос - 3 месяца.</p>
+
+<p>Конечно первоисточник гриба влага, но есть места откуда влагу не убрать (конденсат на трубах например).</p>
+
+<p><strong>avgust63</strong> 12-10-2012</p>
+
+<p>Конечно не навскгда , но производитель пишет - надолго. По крайней мере более безопасно для окружающих. А озонатор - это то примерно то же , что и кварцевание в больнице- убивает бактерии и создает стерильность.</p>
+
+<p><strong>VVS_</strong> 12-10-2012</p>
+
+<p>Зато никакой химии. Раз в недельку включать на 15 минут и закрывать помещение.</p>
+
+<p><strong>orgail</strong> 12-10-2012</p>
+
+<p>седня прям день свершений на форуме :)</p>
+
+<p><em>8)</em></p>
+
+<p><strong>Nikolai</strong> 12-10-2012</p>
+
+<blockquote>
+  <p>Конечно не навскгда , но производитель пишет - надолго. По крайней мере более безопасно для окружающих. А озонатор - это то примерно то же , что и кварцевание в больнице- убивает бактерии и создает стерильность.</p>
+</blockquote>
+
+<p>Не совсем, кварцеватель это УФ излучение, а озонатор - генератор ядовитого газа. И для человека тоже ядовитого.</p>
+
+<p><strong>VVS_</strong> 12-10-2012</p>
+
+<p>Ну да. УФ бессилен против грибка.</p>
+
+<p>Однако существует же люстра Чижевского. И вроде доказана полезность для здоровья.</p>
+
+<p>Вопрос лишь в концентрациях.</p>
+
+<p>Конечно нельзя включать озонатор на весь день и сидеть рядом, и тем более включать на ночь и спать рядом.</p>
+
+<p><strong>orgail</strong> 12-10-2012</p>
+
+<p>ну а о вреде и пользе озона обязательно читать перед использованием! это не шутки</p>
+
+<p>только там не газ ядовитый, просто кислород, но в виде очень опасном</p>
+
+<p>кварцевание обычно также вызывает появление озона</p>
+
+<p><strong>VVS_</strong> 12-10-2012</p>
+
+<p>Ну короче, растения от него не умирают, а вот паразиты умирают. Чем не способ излечить растение без применения химии?</p>
+
+<p>Людям в этом помещении находиться не нужно.</p>
+
+<p>Производительность установки внушительна. через 2 минуты после включения воняет во всей 3 комнатной квартире (если не закрывать лоджию).</p>
+
+<p>Но это не самый производительный вариант. ЛУчше всего озон генерится на поверхности диэлектрика между электродами. То есть стекло, а с двух сторон сетка, на сетку подается напряжение и шшш… концентрация такая что сразу дыхание перехватывает.</p>
+
+<p>Но такие установки ставят на выходе систем вентиляции для доочистки выбросов.</p>
+
+<p>А то что сделал я называется “Ионный вентилятор” т.к. электрический разряд провоцирует толчек воздуха и создается небольшой ветер. Он дует свой озон направленно. Вот я им прям на растения и дую.</p>
+
+<p><strong>orgail</strong> 12-10-2012</p>
+
+<p>вообщем воздействие сильного газообразного окислителя губительно влияет на живые организмы.</p>
+
+<p>соблюдайте меры предосторожности! &gt;:D</p>
+
+<p>озоном не дышать! &gt;:D</p>
+
+<p>вы все нам тут здоровые нужны! :)</p>
+
+<p><strong>VVS_</strong> 12-10-2012</p>
+
+<p>Спасибо, буду всегда закрывать лоджию.</p>
+
+<p>Влияет ли он губительно на растения? Может это из за озона со вкусом и ароматом трабла случилась?:)</p>
+
+<p><strong>Coccinella</strong> 12-10-2012</p>
+
+<p>Атомарный кислород выделяется и из перекиси водорода - очень распространенного дезсредства в медицине и теплицах. Только в теплицах им растения обрабатывают исключительно через систему полива и не каждый день. На ГТ на эту тему не так давно была дискуссия. А тотальную обработку теплицы проводят после удаления растений.</p>
+
+<p>Мы в свое время опрыскивали томаты марганцовкой против бактериоза. Мы сами считали, что там активный элемент марганец, но один мой коллега недавно убедительно доказал мне, что и в этом случае выделяется атомарный кислород. Мы марганцовку применяли в очень низкой концентрации (20 г/400 л), однако бывали ожоги растений.</p>
+
+<p><strong>VVS_</strong> 12-10-2012</p>
+
+<p>Может вся фишка в том что время жизни озона очень ограничено? Он только поверхностно бьет, дальше уже становится нормальным кислородом и все.</p>
+
+<p><strong>Coccinella</strong> 12-10-2012</p>
+
+<p>Вот-вот!</p>
+
+<p><strong>Nikolai</strong> 13-10-2012</p>
+
+<p>Все-таки, прежде чем активно пользоваться озоном, почитайте хотя бы википедию про него.</p>
+
+<p>“Озон является очень сильным окислителем и чрезвычайно ядовит даже в низких концентрациях. Озон относится к самому высокому классу опасности вредных веществ, поэтому его использование должно контролироваться специальными датчиками.”</p>
+
+<p><strong>dym32</strong> 16-12-2012</p>
+
+<p>можно ли с помощью озона избавить помещение от паутиного клеща.</p>
+
+<p><strong>Coccinella</strong> 16-12-2012</p>
+
+<p>Нет!</p>
+
+<p><strong>dym32</strong> 17-12-2012</p>
+
+<p>понятно.пулевизатор со спиртом поможет мне .всё вымою перемою.</p>
+
+<p><strong>alexxx</strong> 17-12-2012</p>
+
+<p>Вчера смотрел по науке (тв), как фермер обрабатывает свои свинарники концентратом бактерий. Ну обычных, которые везде есть. Так вот, эти бактерии заполняют собой всё, и не дают размножаться другим патогенным бактериям. Типа он уже антибиотики свиньям давно не колет, а в пищу им теже бактерии сыпет. Название бактерии не запомнил к сожалению…</p>
+
+<p><strong>Vad</strong> 17-12-2012</p>
+
+<p>спирт лучше! ;D</p>
+
+<p><strong>Tony_85</strong> 14-11-2013</p>
+
+<p>Подскажите пожалуйста, озонатор с мощностью 10 г озона в час это много? Нужно в профилактических целях время от времени обрабатывать мяту от грибков. Растет в финских колбасках длиной по 15 метров. Идея в том чтобы временно накрывать их пленкой, делая туннель и пропускать через него озон.</p>
+
+<p>Нашел на ebay китайский озонатор <a href="http://www.ebay.com/itm/NEW-AC-220V-10g-Ozone-Generator-Ozone-Ceramic-Plates-DIY-10g-hr-for-Air-Purifier-/321170206230?pt=LH_DefaultDomain_0&amp;hash=item4ac73c6e16" target="_blank">http://www.ebay.com/itm/NEW-AC-220V-10g-Ozone-Generator-Ozone-Ceramic-Plates-DIY-10g-hr-for-Air-Purifier-/321170206230?pt=LH_DefaultDomain_0&amp;hash=item4ac73c6e16</a></p>
+
+<p>Или все же попытатся собрать самодельный как VVS_ ?</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

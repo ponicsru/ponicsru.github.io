@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Новости форума. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Новости форума.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Новости форума.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Mole_Garden</strong> 15-05-2009</p>
+
+<p>Дорогие друзья и постояльцы, рад сообщить о некоторых новых возможностях нашего форума, которые появились не так давно. Было проведено тестирование и теперь я готов рассказать вам о них.</p>
+
+<p>И так, новшество номер один:</p>
+
+<p>Теперь вы совершенно спокойно и свободно можете вставлять видео с разных ресурсов, таких как youtube.com, video.mail.ru, video.google.ru, rutube.ru - если кто-то использует другие сервера для хранения видео, сообщите, по возможности добавим в разрешенные.</p>
+
+<p>Теперь для вставки видео достаточно вставить код, который выглядит примерно так -</p>
+
+<p>[code]http://rutube.ru/tracks/1899999.html?v=85a7f2cbd18d73019e5f430e9a7ad5e9[/code] это для rutube.ru</p>
+
+<p>или так [code]http://video.mail.ru/mail/smolenskaya_nat/51/58.html[/code] это для video.mail.ru</p>
+
+<p>Для того что бы увидеть этот код, как правило достаточно нажать на кнопку вида: Ссылка и код или URl или что то в этом роде, очень жаль, но для разных сайтов называются они по разному.</p>
+
+<p>Второй момент, если вы вставляете ссылку, а она у вас не отображается в виде окна видео, то попробуйте скопировать код плеера, он будет значительно больше простой ссылки, но зато точно работает, скопированный код вставляете на сайт, НО обращаю ваше внимание это еще не все, для того что бы он заработал, нужно что бы были теги [code][html][/html][/code]</p>
+
+<p>Выглядит это примерно так [code][html] код плеера, который скопировали [/html][/code]</p>
+
+<p>Новшество номер два:</p>
+
+<p>Теперь для тех у кого медленный интернет или если кто-то находится в дороге, но ему ужасно хочется почитать, чего мы тут на придумывали и на рассказывали, а трафик дорогой, вот специально для них и не только, доступна текстовая версия нашего форума.</p>
+
+<p>Воспользоваться ей можно по следующим ссылкам:</p>
+
+<p>http://forum.ponics.ru/index.php?imode</p>
+
+<p><a href="http://forum.ponics.ru/index.php?wap" target="_blank">http://forum.ponics.ru/index.php?wap</a></p>
+
+<p><a href="http://forum.ponics.ru/index.php?wap2" target="_blank">http://forum.ponics.ru/index.php?wap2</a> - лично мне понравилось больше всего версия wap2</p>
+
+<p>Этими ссылками можно пользоваться как на коммуникаторах, так и на компьютерах, работоспособность была проверена в браузерах: мозила, опера и интернет эксплорер 7</p>
+
+<p>P.S. Если у кого-то появились вопросы или вдруг что-то не понятно, пишите в личку, с подробным указанием проблемы.</p>
+
+<p>P.P.S. В данный момент ведется работа над решением проблемы с отображением фото.</p>
+
+<p><strong>Mole_Garden</strong> 21-05-2009</p>
+
+<p>Хотелось бы заранее предупредить, завтра днем возможно проблемы с доступом на форум. Дело в том, что будет производится плановое обновление движка. Очень надеемся, что на это не потребуется много времени.</p>
+
+<p>[right]Приносим свои извинения за возможные временные неудобства.[/right]</p>
+
+<p><strong>Mole_Garden</strong> 22-05-2009</p>
+
+<p>сегодня в 13.30 форум будет временно закрыт на обновление, просим сохранять спокойствие, постараемся как можно быстрей вернуться к работе.</p>
+
+<p><strong>Mole_Garden</strong> 22-05-2009</p>
+
+<p>Обновление завершено.</p>
+
+<p><strong>Mole_Garden</strong> 23-05-2009</p>
+
+<p>В связи с переездом на другой хостинг возможна пропажа некоторых сообщений. Просьба не паниковать, а просто уведомлять, что сообщение пропало, будем пробовать вернуть их. Спасибо за понимание.</p>
+
+<p><strong>Mole_Garden</strong> 24-05-2009</p>
+
+<p>На данный момент переезд можно считать оконченным, но возможно у кого то возникнут какие-то трудности или проблемы, если что пишите, будем помогать и решать.</p>
+
+<p><strong>Mole_Garden</strong> 01-07-2009</p>
+
+<p>Дорогие друзья, гости и постояльцы нашего форума, хочу сделать маленькое объявление.</p>
+
+<p>Несмотря на защиту, спам продолжает появляться на нашем форуме, хотя уже и в гораздо меньших количествах. В связи с этим пришлось ужесточить правила для новичков.</p>
+
+<p>Теперь для создания новичком новой темы ему придется вначале отписаться в других темах и оставить не меньше 3 сообщений и поверьте уважаемые новички, в ваших интересах писать по делу. ;)</p>
+
+<p>Если же у Вас срочная проблема и нет времени для писанины, пишите в личку, обязательно поможем в создание темы лично.</p>
+
+<p>p.s. если у кого-то из существующих постояльцев возникли какие либо трудности в создание новых тем дайте знать!</p>
+
+<p><strong>Mole_Garden</strong> 28-09-2009</p>
+
+<p>Для все кто мучается с размещением фоток!</p>
+
+<p>Нашел очень удобный плагин для мозилы, установив его вам больше не придется сохранять фотку на компьютер для того, что бы ее показать другим, теперь будет достаточно нажать на фотку правой кнопкой и выбрать пункт загрузить ее на фото сервер, особенно это удобно если вы хотите поделиться фоткой, которую нашли на каком нить форуме, так как без регистрации на том форуме эта фотка не будет доступна другим.</p>
+
+<p>вот фото сервер http://imageshack.us/ , где можно зарегистрироваться и создать свой фото альбом, хотя можно и не регистрироваться, но потом если что вы просто не найдете своих фоток.</p>
+
+<p>вот плагин для мозилы <a href="https://addons.mozilla.org/ru/firefox/addon/6506" target="_blank">addons.mozilla</a></p>
+
+<p>p.s. если у кого-то возникнут вопросы пишите, помогу разобраться.</p>
+
+<p><strong>Mole_Garden</strong> 06-11-2009</p>
+
+<p>Уважаемые постояльцы и гости форума, так у как меня возникли проблемы с фото сервером возможна пропажа некоторых фотографий из моих сообщений на страницах форума, если вдруг такое будет замечено дайте пожалуйста знать, постараюсь все восстановить. Спасибо за понимание.</p>
+
+<p><strong>Mole_Garden</strong> 28-12-2009</p>
+
+<p>Будьте бдительны, на данный момент возможно атака вирусов! На форуме завелась какая-то тварь!!!</p>
+
+<p><strong>Mole_Garden</strong> 30-12-2009</p>
+
+<p>Все бяки были леквидированы! Форум и Сайт работают в штатном режиме!</p>
+
+<p>Приносим извинения за предоставленные неудобства! :-[</p>
+
+<p>p.s. Всем рекомендую почистить кеш свои браузеров!</p>
+
+<p><strong>Mole_Garden</strong> 20-01-2010</p>
+
+<p>На форуме открыт новый раздел под названием - Реализованные установки</p>
+
+<p>Первой, собственно открывающей этот раздел, является тема МВТУ «Фитопирамида» Автор Bata</p>
+
+<p>Подробней про нее вы можете прочитать на дружественном ресурсе http://fitopiramida.com/stati/</p>
+
+<p>Всем рекомендую не пожалеть времени и почитать, так как статья объемная, интересная и есть, что по обсуждать.</p>
+
+<p>Обсуждение, критика, замечания, пожелания здесь - <a href="http://forum.ponics.ru/index.php/topic,397.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,397.0.html</a></p>
+
+<p><strong>Mole_Garden</strong> 07-03-2010</p>
+
+<p>$) Поздравляю всех постояльцев с миллионным посетителем нашего ресурса!!!</p>
+
+<p><strong>Mole_Garden</strong> 30-03-2010</p>
+
+<p>Сегодня, была замечена проблема с форумом! На данный момент все устранено, если обнаружите ошибку дайте об этом знать.</p>
+
+<p>Спасибо за понимание и сотрудничество!</p>
+
+<p><strong>Mole_Garden</strong> 26-04-2010</p>
+
+<p>В очередной раз наш ресурс был взломан! :'(</p>
+
+<p>В связи с тем, что Дмитрий в это время находился в больнице под капельницей, а у меня не было необходимых полномочий, паролей и я был частично занят ребенком, мы не сумели оперативно отреагировать, за что и поплатились! Так как вирус делал свое черное дело пока мы были заняты и устроил перегруз серверов хостера, на этом основании нам отключил площадку на которой базируется наш ресурс.</p>
+
+<p>С вечера пятницы и по сегодняшний день велась работа по ликвидации возникшей ситуации. Были пролечены все зараженные файлы, после чего пришлось очень долго общаться с тех поддержкой хостинга и объяснять, что было сделано для ликвидации проблемы, для того что, бы они включили нашу площадку!</p>
+
+<p>И о чудо - Мы снова ОН ЛАЙН</p>
+
+<p>p.s. Всем постояльцам приносим глубокие извинения, постараемся сделать все, что бы такого в дальнейшем не повторилось! :'(</p>
+
+<p><strong>Mole_Garden</strong> 06-05-2010</p>
+
+<p>Профилактические работы хостера закончены и мы снова он лайн!</p>
+
+<p><strong>Mole_Garden</strong> 24-12-2010</p>
+
+<p>После обновления форума достаточно продолжительное время небыли доступны некоторые возможности. На данный момент все функции форума восстановлены. А именно:</p>
+
+<p>1) Вставка изображений при написание сообщения, обратите внимание на строчку Добавить изображение под смайлами</p>
+
+<p>2) Вставка видео прямой ссылкой и отображение его в виде плеера на форуме.</p>
+
+<p>3) Восстановлена работа мода по отображению картинок при клике на них</p>
+
+<p>4) Восстановлена функция просмотра пользователей за сегодня. Для просмотра работы мода необходимо перейти на главную страницу и спуститься в самый низ.</p>
+
+<p>p.s. Если что то забыл вернуть на место пишите в личку.</p>
+
+<p><strong>Mole_Garden</strong> 26-12-2010</p>
+
+<p>Во время исправлений и косметического ремонта форума было приделано еще несколько новых модов, один из них позволяет переводить форум на различные языки, так что надеюсь, нас теперь будут читать не только русскоговорящие гидропонщики. Мод можно увидеть в любой теме в правом верхнем углу в виде флагов. Флаг означает язык перевода.</p>
+
+<p><strong>Mole_Garden</strong> 04-01-2011</p>
+
+<p>На нашем сайте и форуме появились не большие обновления! Так сказать развития ради, а не рекламы для!</p>
+
+<p>На сайте <a href="http://www.ponics.ru" target="_blank">www.ponics.ru</a> с правой стороны появилась менюшка в которой отображаются три послдених сообщения на форуме + появилась возможность поделиться заинтересовавшей или понравившейся вам статьей с друзьями из социальных сетей(одноклассники, твитер, мир майл, фейсбук, в контакте). Кнопки социальных сетей находятся под статьями.</p>
+
+<p>На форуме чуть скромнее, в самом низу страницы находятся кнопки социальных сетей в контакте и мир майл.</p>
+
+<p>Надеюсь на вашу помощь, в развитие нашего ресурса, чем больше о нас знаю, тем больше интересных рассказов и экспериментов мы увидим! Так что делитесь материалами с друзьями и не только…</p>
+
+<p><strong>mdima</strong> 23-01-2011</p>
+
+<p>Дорогие друзья, посетители форума и просто гости, хочется с радостью сообщить вам что у нашего форума появился свой виджет.</p>
+
+<p>Большая часть людей посещающих наш форум пользуются страницей ЯНДЕКСА как стартовой и для поиска, думаю, вы уже обратили внимание, что на ней есть блоки и разделы, где рассказывается про погоду, новости и прочие интересности. Это называется виджетом. Так вот теперь у нас есть тоже свой виджет для яндекса. Вам достаточно нажать на картинку, которая расположена ниже этого сообщения и затем выбрать место где вы хотите расположить информационный блок с нашего форума:</p>
+
+<p>[html]&lt;h3&gt;+ <a href="http://www.yandex.ru?add=46715&amp;from=promocode" target="_blank">Форум о гидропонике</a>&lt;/h3&gt;<a href="http://www.yandex.ru?add=46715&amp;from=promocode" target="_blank"><img style="float: left; padding: 0 10px 10px 0;" src="http://wimg.yandex.net/46/71/t-46715.png" alt="" border="0" /></a>&lt;p&gt;Последние сообщения с форума о гидропоники. Свежий огурчик и зелень круглый год. Дома и в теплице.&lt;/p&gt;<a style="display: block; margin-top: 0.5em;" target="_blank" href="http://www.yandex.ru?add=46715&amp;from=promocode"><img src="http://img.yandex.net/i/service/wdgt/yand-add-b.png" border="0" alt="добавить на Яндекс" /></a>[/html]</p>
+
+<p>p.s. мы растем и мы становимся ближе…</p>
+
+<p><strong>mdima</strong> 17-02-2011</p>
+
+<p>Чуть-чуть подкрутил форум. должен стать побыстрее…</p>
+
+<p><strong>Mole_Garden</strong> 12-11-2011</p>
+
+<p>Сегодня, на наш форум была совершена дос атака, в связи с этим он либо у кого-то не работал, либо очень медленно отображались страницы. Радует, что на данный момент она прекратилась. <em>Dance</em></p>
+
+<p><strong>Mole_Garden</strong> 13-11-2011</p>
+
+<p>Рано обрадовался, атака продолжается. Ждем и терпим… Форум опять еле ползает. :'(</p>
+
+<p><strong>Mole_Garden</strong> 31-10-2012</p>
+
+<p>Всем привет!</p>
+
+<p>Давно тут уже ничего не писалось, так как новостей особо нет.</p>
+
+<p>Так случилось, что мне удалось подписаться на 6 месяцев на журнал <a href="http://hydroponics.com.au/" target="_blank">Practical Hydroponics and Greenhouses</a></p>
+
+<p>В связи с этим могу поделиться журналом, запрос на журнал присылать в личку.</p>
+
+<p>Так же для сообразительных пользователей вот ссылка как можно подписаться на журнал самому - <a href="http://hydroponics.com.au/students/" target="_blank">http://hydroponics.com.au/students/</a></p>
+
+<p>p.s. журнал на английском языке</p>
+
+<p><img src="http://hydroponics.com.au/wordpress/wp-content/uploads/2012/08/PHG_iSubscribe_126-229x300.jpg" alt="" /></p>
+
+<p><strong>mdima</strong> 31-12-2012</p>
+
+<p>С наступающим Новым Годом всех!!!!</p>
+
+<p><strong>Mole_Garden</strong> 21-02-2013</p>
+
+<p>Вышел новый номер журнала</p>
+
+<p><img src="http://hydroponics.com.au/wordpress/wp-content/uploads/2012/12/PHG_iSubscribe_128-229x300.jpg" alt="" /></p>
+
+<p>p.s. Запрос на журнал, все так же в личку и не отчаивайтесь, если я вам не отвечу в тот же день, на форуме бываю редко, но бываю.</p>
+
+<p><strong>mdima</strong> 01-03-2013</p>
+
+<p>Маленько подкрутил скорость форума</p>
+
+<p><strong>mdima</strong> 26-04-2013</p>
+
+<p>Нас опять взломали. Ломали долго и тщательно…. Cwerb!</p>
+
+<p><strong>Mole_Garden</strong> 16-10-2014</p>
+
+<p>В связи с тем, что на форуме очень часто стали появляться темы связанные с политикой, которые переходят в полнейший и жесткий срач, некоторые темы, топики и ответы были удалены. Пользователи заблокированы.</p>
+
+<p>Кому не нравится, что на форуме про ГИДРОПОНИКУ не дают обсуждать политику и сраться на этой почве - свободны.</p>
+
+<p>Кому не нравятся, что их сообщения про Украину, Россию, про войну и майдан, были удалены - свободны.</p>
+
+<p><strong>Mole_Garden</strong> 28-10-2014</p>
+
+<p>Последнее предупреждение!</p>
+
+<p>Убрать из подписей: нацист, новоросия, ссылки на стороние ресурсы касающиеся политики и связанные с упоминанием Украины и России.</p>
+
+<p>Вы сами лишаете себя своих подписей!</p>
+
+<p>Для всего этого предлагаю выделить 5 дней.</p>
+
+<p>p.s. Я за чистоту и порядок на форуме во всех смыслах!</p>
+
+<p><strong>Coccinella</strong> 26-11-2014</p>
+
+<p>Константин! Спасибо за перевод Рэша! Это огромная, очень трудоемкая работа и очень полезная всем начинающим. При всем моем уважении к Чеснокову пора переходить на более современные источники. Вы молодец и, пожалуйста, продолжайте.</p>
+
+<p>Народ пока молчит, но со временем проникнутся :)</p>
+
+<p><strong>Mole_Garden</strong> 01-10-2018</p>
+
+<p>Всем привет. Похоже недавно наш форум взломали/поломали по этому было проведено его востановление и форум был обновлен до последний стабильной версии. В связи с чем, скорее всего, всплывую косяки. Не пугайтесь.</p>
+
+<p>Так, же хотел обратить ваше внимание на то, что была обновлена процедура регистрации новых пользователей.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

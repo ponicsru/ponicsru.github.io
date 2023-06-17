@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>С миру по нитке | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="С миру по нитке">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">С миру по нитке</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><a href="b23_s_miru_po_nitke/t0249_eti_poleznye_nitraty.html">Эти полезные нитраты…</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0250_chitat_vsem_pered_sozdaniem_tem_v_etom_razdele.html">Читать всем перед созданием тем в этом разделе.</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0251_vertikalnye_fermy_v_vysotkah_nakormyat_zhitelei_gorodov.html">Вертикальные фермы в высотках накормят жителей городов</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0252_kuhonnaya_reka_rastit_zelen_i_rybu_k_stolu.html">Кухонная река растит зелень и рыбу к столу</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0253_yaponcy_poluchayut_znaniya_na_gryadkah_pod_zemlei.html">Японцы получают знания на грядках под землёй</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0254_fermyneboskreby_vnov_probuyut_uvlech_polya_v_nebo.html">Фермы-небоскрёбы вновь пробуют увлечь поля в небо</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0257_zhitelyami_goroda_svinei_mogla_by_nasytitsya_vsya_evropa.html">Жителями города свиней могла бы насытиться вся Европа</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0258_svetodiodnaya_naciya_dobilas_polnoi_nezavisimosti_ot_energosetei.html">Светодиодная нация добилась полной независимости от энергосетей</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0259_heineken_vypuskal_pivnye_butylki_dlya_stroitelstva_domov.html">Хейнекен выпускал пивные бутылки для строительства домов</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0264_izmeneniya_klimata_zaderzhat_belye_kryshi_i_vodorosli_na_domah.html">Изменения климата задержат белые крыши и водоросли на домах</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0265_philips_biotower.html">Philips Biotower</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0420_samuyu_seksualnuyu_fermershu_vybrali_v_velikobritanii.html">Самую сексуальную фермершу выбрали в Великобритании.</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0428_novosti_paralelnoi_gidroponiki.html">Новости паралельной гидропоники</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0442_agroholding_moskovskii_ekskursiya.html">Агрохолдинг Московский. Экскурсия.</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0444_toyota_vypuskaet_novyi_kustarnik_dlya_krysh.html">Toyota выпускает новый кустарник для крыш</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0447_rynok_cvetov_pod_napryazheniem.html">Рынок цветов под напряжением</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0470_teplicy_ili_kak_zhivetsya_fermeru_zimoi.html">Теплицы или как живется фермеру зимой!</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0476_teplica_noveishego_pokoleniya_postroena_pod_tambovom.html">Теплица новейшего поколения построена под Тамбовом</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0477_sedmaya_mezhdunarodnaya_specializirovannaya_vystavka_zashishennyi_grunt_rossii2010.html">Седьмая Международная специализированная выставка “Защищенный грунт России-2010”</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0496_v_kenii_izza_vulkana_na_pomoiku_vybrasyvayut_milliony_alyh_roz.html">В Кении из-за вулкана на помойку выбрасывают миллионы алых роз</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0526_ogurcyoborotni.html">“Огурцы-оборотни”</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0554_neobychnye_istorii_iz_sobstvennoi_praktiki.html">Необычные истории из собственной практики.</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0576_volshebnye_knopki_zheleznyi_yashik_i_goluboi_ekran.html">Волшебные кнопки, железный ящик и голубой экран.</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0598_pritchi.html">Притчи</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0732_v_ufimskom_limonarii_sozrela_mushmula.html">В Уфимском лимонарии созрела мушмула</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0761_uchenye_sozdali_svetyasheesya_derevo_sposobnoe_zamenit_ulichnyi_fonar.html">Ученые создали светящееся дерево, способное заменить уличный фонарь</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1142_gollandcy_nachinayut_promyshlenno_vyrashivat_salat_v_mnogoetazhnyh_ustanovkah.html">Голландцы начинают промышленно выращивать салат в многоэтажных установках</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0796_promyshlennoe_vyrashivanie_prorostkov.html">Промышленное выращивание проростков</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0817_principialno_novyi_datchik_dlya_izmereniya_ph.html">принципиально новый датчик для измерения pH</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t0984_v_rossii_to_zhe_chtoto_uzhe_delaetsya_i_eto_horosho.html">В России то же что-то уже делается и это хорошо.</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1029_ne_vse_polezno_chto_v_rot_polezlo.html">Не все полезно, что в рот полезло!</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1111_kollegi_tak_skazat.html">“Коллеги” так сказать..</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1119_firma_enza_zaden_testiruet_sorta_salata_dlya_gidroponiki.html">Фирма Энза Заден тестирует сорта салата для гидропоники</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1150_kryshi_berlina_prevratilis_v_ogorod.html">Крыши Берлина превратились в огород</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1151_eshe_odin_ponics.html">Еще один ponics</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1153_s_miru_po_nitke.html">С миру по нитке!</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1163_fotografii_na_temu.html">Фотографии на тему</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1184_gollandcy_sproektirovali_teplicu_dlya_tropikov.html">Голландцы спроектировали теплицу для тропиков</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1196_sto_tysyach_v_mesyac_salaty_mne_prinosyat_legko.html">«Сто тысяч в месяц салаты мне приносят легко!»</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1210_knizhki_po_teplichnoi_teme_i_ne_tolko.html">Книжки по тепличной теме и не только</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1222_suhaya_gidroponika.html">Сухая гидропоника</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1280_osnovnye_momenty_teplichnogo_hozyaistva_po_vygonke_zelenogo_luka_pera_v_zimnii_per.html">Основные моменты тепличного хозяйства по выгонке зелёного лука пера в зимний пер</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1290_priznaki_deficita_pitaniya_na_dekorativnyh_rasteniyah.html">Признаки дефицита питания на декоративных растениях</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1295_nashi_lyudi_v_kosmose.html">Наши люди в космосе</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1317_zelenye_steny.html">Зеленые стены</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1366_vyrashivanie_na_vode.html">Выращивание на воде</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1451_mnenie_forumchan_o_sleduyushei_organizacii_ih_saite_i_t_d.html">Мнение форумчан о следующей организации, их сайте и т д.</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1454_pryamoi_posev_zeleni_na_gidroponike.html">Прямой посев зелени на гидропонике</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1458_floriade_2012.html">Floriade 2012</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1462_ovoshnye_vse_nitraty_vitaminami_bogaty.html">Овощные все нитраты витаминами богаты…</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1473_robot_dlya_uborki_zemlyaniki.html">Робот для уборки земляники</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1477_vyrashivanie_zemlyaniki_v_anglii.html">Выращивание земляники в Англии</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1509_zloveshaya_taina_pomidora_raskryta.html">Зловещая тайна помидора раскрыта</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1513_rasteniya_i_gripp.html">Растения и грипп</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1540_konferenciya_o_gidroponike_2425_sentyabrya_japan_house_moskva.html">Конференция о гидропонике 24-25 сентября Japan House, Москва</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1581_gmo_obyasnyaet_profi_prosto_i_ponyatno.html">ГМО, объясняет профи. Просто и понятно</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1649_gidroponika_v_indii.html">Гидропоника в Индии</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1690_kivi_svobodno_rastet_na_ukraine_znachit_mozhno_i_v_gidropone.html">Киви свободно растет на Украине! Значит, можно и в гидропоне.</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1737_vystavka_hydroponeast_v_moskve.html">Выставка HydroponEast в Москве.</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1762_primenenie_svetodiodov_v_promyshlennyh_teplicah.html">Применение светодиодов в промышленных теплицах</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1766_uvlechenie_zdeshnih_postoyalcev_v_mezhdunarodnoi_presse.html">Увлечение здешних постояльцев в международной прессе</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1787_instructablescom.html">instructables.com</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1833_gorodskoe_sadovodstvo_na_praktike.html">Городское садоводство на практике</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1840_ukorenenie_cirusovyh.html">Укоренение цирусовых</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1848_novyi_spravochnik_po_udobreniyam_i_stimulyatoram_rosta.html">Новый справочник по удобрениям и стимуляторам роста</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1852_the_tomtato__tomat_i_kartoshka_v_odnom_rastenie.html">The TomTato - томат и картошка в одном растение.</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1869_interesnye_applikacii.html">Интересные аппликации</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1876_plavayushaya_gidroponika.html">Плавающая гидропоника</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1895_ph_indikator_svoimi_rukami_esli_komu_sovsem_nechem_zanyatsya.html">Ph индикатор своими руками. Если кому совсем нечем заняться</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1924_kak_vyrashivat_les.html">Как выращивать лес.</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1937_zabavnaya_igrushka__parrot_flower_power.html">Забавная игрушка - Parrot Flower Power</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1977_poluchenie_elektroenergii_iz_salatnyh_prorostkov.html">Получение электроэнергии из салатных проростков</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t1992_kitaiskie_semenamif_ili_realnost.html">Китайские семена-миф или реальность</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2007_eshe_odna_super_tumbochka_s_arduino.html">Еще одна супер тумбочка с Ардуино</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2092_razvedenie_dolgonosikov_v_gidroponnoi_teplice.html">Разведение долгоносиков в гидропонной теплице</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2074_kak_vyrashivayut_vanil.html">Как выращивают ваниль</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2080_gidroponika_bez_elektrichestva_pomp_nasosov.html">Гидропоника без электричества, помп, насосов</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2084_cornell_university.html">Cornell University</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2086_duraki_o_gidroponike.html">Дураки о гидропонике</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2090_cadenciklopediya_v_velikobritanii.html">Cад-энциклопедия в Великобритании</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2100_hydroponics_trialing_at_johnnys_selected_seeds.html">Hydroponics Trialing at Johnny’s Selected Seeds</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2106_hobbyhydroponicssecondedition.html">HOBBY_HYDROPONICS(second_edition)</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2115_volki_i_rasteniya.html">Волки и растения</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2124_practical_hydroponics__greenhouses_magazine_and_back_issues.html">Practical Hydroponics &amp; Greenhouses magazine and back issues</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2141_eshe_odna_zabavnaya_igrushka_plantui_plantation.html">Еще одна забавная игрушка Plantui Plantation</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2153_vodyanye_rasteniya__pochti_vechnyi_dvigatel.html">Водяные растения - почти вечный двигатель</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2161_zhurnal_practical_hydroponics__greenhouses.html">Журнал “Practical Hydroponics &amp; Greenhouses”</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2176_plavayushie_teplicy.html">Плавающие теплицы</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2179_zhurnal_ot_practical_hydroponics__greenhouse.html">Журнал от “Practical Hydroponics &amp; Greenhouse”</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2180_ekonomiya_odnako.html">Экономия однако</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2186_ogorod_na_balkone.html">Огород на балконе</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2197_amerikanec_na_4_sotkah_sobiraet_3_tonny_ovoshei_i_kormit_vse_restorany_goroda.html">Американец на 4 сотках собирает 3 тонны овощей и кормит все рестораны города</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2218_smallscale_aquaponic_food_production.html">Small-scale aquaponic food production</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2219_zhurnal_ot_practical_hydroponics__greenhouse.html">Журнал от “Practical Hydroponics &amp; Greenhouse”</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2225_nuzhna_kniga.html">Нужна книга.</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2247_v_genome_batata_nashli_geny_iz_agrobakterii.html">В геноме батата нашли гены из агробактерии</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2262_zhurnal_ot_practical_hydroponics__greenhouse.html">Журнал от “Practical Hydroponics &amp; Greenhouse”</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2264_vyrashivanie_zemlyanikiklubniki_po_gollandskoi_tehnologii.html">Выращивание земляники(клубники) по голландской технологии</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2277_zanimatsya_lukom_po_vzroslomu.html">Заниматься луком по взрослому!</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2283_podvodnaya_gidroponika.html">Подводная гидропоника</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2289_horoshaya_elektronnaya_kniga.html">Хорошая электронная книга</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2356_ocherednaya_tumbochka_dlya_rastenii.html">Очередная тумбочка для растений</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2536_kak_rastet_bazelik_pod_led_osvesheniem.html">Как растет базелик под ЛЕД освещением</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2543_chto_my_znaem_o_gribah_prakticheski_nichego.html">Что мы знаем о грибах? Практически ничего!</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2584_programa_na_telefon_dlya_opredeleniya_boleznei.html">Програма на телефон для определения болезней</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2610_pochemu_rabotniki_teplic_ne_edyat_svoi_pomidory.html">Почему работники теплиц не едят свои помидоры</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2637_dvadcat_rastenii_iz_odnogo_lista.html">ДВАДЦАТЬ РАСТЕНИЙ ИЗ ОДНОГО ЛИСТА</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2636_gidroponaya_ustanovka_na_1000_kgsutki.html">Гидропоная установка на 1000 кг/сутки</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2799_kanalizacionnye_trubysovmestimy_li.html">канализационные трубы,совместимы ли?….</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t2858_new_balance_1500.html">new balance 1500</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t3101_batat_na_gidroponike.html">Батат на гидропонике</a></p>
+
+<p><a href="b23_s_miru_po_nitke/t5305_budushee_gidroponiki__sovremennye_avtomatizirovannye_sistemy.html">Будущее гидропоники . Современные автоматизированные системы (?)</a></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

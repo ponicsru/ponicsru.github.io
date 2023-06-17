@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Хочу дыню! | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Хочу дыню!">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Хочу дыню!</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Mendes</strong> 19-05-2009</p>
+
+<p>Да, господа.</p>
+
+<p>Увлекся я. А это всегда серьезно.</p>
+
+<p>Так вот купил я сегодня семена дыни. А вот как ее растить на гидре не знаю. Ничего нигде не попадалось.</p>
+
+<p>Может есть знатоки?! Хотя бы теоретики :)</p>
+
+<p><strong>mdima</strong> 19-05-2009</p>
+
+<p>Если теоретически, то примерно как огурец. :) Можно почитать про бахчевые.</p>
+
+<p><strong>Mendes</strong> 19-05-2009</p>
+
+<p>и правда! Как же сам не сообразил. Перезревший огурец - точно дыня! Спасибо. Скорее, и огуречный раствор подойдет. Почитаю.</p>
+
+<p>И еще Дмитрий, я хотел вас спросить. Перец вас рос (и растет) на какой системе? Я тоже решил зарядить пять кустиков.</p>
+
+<p><strong>mdima</strong> 19-05-2009</p>
+
+<p>Система такая: поливается из трубочки субстрат, по корням стекает раствор обратно в ведро.</p>
+
+<p><strong>koval.sergei</strong> 19-05-2009</p>
+
+<p>в инете находил, что паренёк ананас выростил, может и байка это</p>
+
+<p><strong>Mole_Garden</strong> 19-05-2009</p>
+
+<p>На данный момент мне попадался всего один репорт по выращиванию бахчевых, арбуза, который закончился не очень удачно. А вот Дмитрий Денисов утверждает, что выращивал дыню, но вырастают они маленькие, уж больно много с ними хлопот. Да и листья у них большие, места надо много.</p>
+
+<p><strong>tiounaev</strong> 19-05-2009</p>
+
+<p>а я арбузы хотел вырастить :(</p>
+
+<p><strong>Mole_Garden</strong> 19-05-2009</p>
+
+<blockquote>
+  <p>а я арбузы хотел вырастить :(</p>
+</blockquote>
+
+<p>ну тогда готовьте киловатты электричества. Сами подумайте, растут то они обычно где? на юге, где солнышка ну просто мега много.</p>
+
+<p><strong>tiounaev</strong> 19-05-2009</p>
+
+<p>думаю не так много и понадобится, не больше чем обычно</p>
+
+<p><strong>valery</strong> 19-05-2009</p>
+
+<p>Дыню не выращивал, но тоже хочу. Даже собираюсь. Даже семена купил. Даже хотел привезти.</p>
+
+<p>Но не привез. Выпить что-ли с горя.</p>
+
+<p>Дыню можно растить как огурец в мате на шпалере. Техника выращивания очень похожая, хотя подробностей не знаю. На плод (дыньку), если завяжется - одевается мягкая капроновая (или типа поролона) сетка и тоже подвешивается, можно к той же шпалере.</p>
+
+<p>Однако в комнате вырастить действительо очень трудно. Света нужно и впрямь много.</p>
+
+<p>Мнение, что “не больше, чем обычно”, на мой взгляд немного “шапкозакидательское”. 600-е ДНАТы хороший плод не потянут, нужны киловаттники. Или много естественного света, желательно нормального солнца.</p>
+
+<p><strong>koval.sergei</strong> 19-05-2009</p>
+
+<p>Валерий насчёт подвешивания дыни на шпалере врядли , что получиться если не подвесить поднос к дыне</p>
+
+<p><strong>valery</strong> 19-05-2009</p>
+
+<p>Сергей, не совсем понял про поднос. Это как ? Или это шутка, а я туплю?</p>
+
+<p>Насчет шпалеры, почему же, очень даже подвешивают. Шпалера находится гораздо ниже огуречной или тем более томатной, около полутора метров. Натягивается из тонкого тросика. На завязавшийся цветок одевается сетка - как в овощных отделах магазинов дыни импортные продаются - и к шпалере цепляется сама эта сеточка. По мере роста плода она растягивается. Плод дыни висит в воздухе, подвешенным к шпалере (опять же, не сам плод, а сетка) и не нагружает ветви/плети. Сами плети прищипываются очень коротко, гораздо короче огурцов, на 1-2, максимум 3 листа.</p>
+
+<p><strong>koval.sergei</strong> 19-05-2009</p>
+
+<p>насчёт подноса была шутка, но шпалера выдержет ли, опять всё зависит от сорта и количества дынь, если что не так извеняюсь</p>
+
+<p><strong>koval.sergei</strong> 19-05-2009</p>
+
+<p>у нас есть сорта дынь очень много, сам я бывший из средней азии, дынь видел много рекорд видел 25кг, арбуз 47кг. и необхватиш</p>
+
+<p><strong>tiounaev</strong> 20-05-2009</p>
+
+<p>да сортов то много разных бывает, только не все они подходят для гидропоники.</p>
+
+<p><strong>Hrun</strong> 04-06-2009</p>
+
+<p>Идеальный вариант выращивания дыни, арбуза или огурца это делать подвой на тыкву.</p>
+
+<p>Получается мощное растение, только не все выживают.</p>
+
+<p><strong>Mendes</strong> 04-06-2009</p>
+
+<p>то есть, корни тыквы, а верх дыни?!</p>
+
+<p>И в каком возрасте того и другого нужно это делать?</p>
+
+<p><strong>mdima</strong> 04-06-2009</p>
+
+<p>Читай <a href="http://www.supersadovnik.ru/masterclass.aspx?id=55" target="_blank">тут</a></p>
+
+<p><strong>Mendes</strong> 24-09-2009</p>
+
+<p>Господа, моя дынька взрослеет. До сих пор я ее кормил чем попало, и вот теперь подошли концентраты made by mdima, и я их посадил на …огурцовый раствор. Это самый близкий родственник дыни из имеющих спецрастворы. Может я ошибся?!! Нигде не сказаны необходимые NPK и микроэлементы для нее. Посоветуйте. Может, мне подкорректировать огуречный раствор?</p>
+
+<p><strong>Mole_Garden</strong> 24-09-2009</p>
+
+<blockquote>
+  <p>Господа, моя дынька взрослеет. До сих пор я ее кормил чем попало, и вот теперь подошли концентраты made by mdima, и я их посадил на …огурцовый раствор. Это самый близкий родственник дыни из имеющих спецрастворы. Может я ошибся?!! Нигде не сказаны необходимые NPK и микроэлементы для нее. Посоветуйте. Может, мне подкорректировать огуречный раствор?</p>
+</blockquote>
+
+<p>:D Боюсь вам и придется выяснить необходимое количество элементов, сколько ни читал ни где не встречал рекомендаций на этот счет. А где же фото мега дыни? Слышал, что выращивали арбузы, точней пытались, но дыни еще вроде никто не растил, так что удачи вам и большого сладкого урожая!</p>
+
+<p><strong>mdima</strong> 25-09-2009</p>
+
+<p>Думаю, действительно огуречный самый близкий, единственно, что… думаю для дыни концентрация должна быть немного выше.</p>
+
+<p><strong>Mendes</strong> 25-09-2009</p>
+
+<p>а немного это сколько?</p>
+
+<p>У меня пока 5мл на 1 литр</p>
+
+<p><strong>mdima</strong> 28-09-2009</p>
+
+<p>по TDS-метру я бы держал где-то 2000 ppm</p>
+
+<p><strong>Mendes</strong> 28-09-2009</p>
+
+<p>я бы тоже держал…если бы у меня был TDS-метр :(</p>
+
+<p>А мл на литр вашего концентрата это сколько?</p>
+
+<p><strong>koval.sergei</strong> 28-09-2009</p>
+
+<p>TDS-метр ;D</p>
+
+<p><strong>koval.sergei</strong> 28-09-2009</p>
+
+<p>Я с водичкой замучился, какая нужна,а Вы и без TDS-метр, и у вас дыньки 8)</p>
+
+<p><strong>Mendes</strong> 29-09-2009</p>
+
+<p>ну, вот как-то выросла. Небольшая, правда, но дыня.</p>
+
+<p><strong>koval.sergei</strong> 29-09-2009</p>
+
+<p>Фото в студию, пока не съели дыньку, народ слюну хоть проглотит вместе со мной.</p>
+
+<p><strong>artmaximus</strong> 06-05-2012</p>
+
+<p>чего тема заглохла?</p>
+
+<p>прошло несколько лет!!!! :o</p>
+
+<p>что никто и не выращивал больше?</p>
+
+<p>тоже хочу попробовать :D</p>
+
+<p>Mendes …так фоток и не было :(…“печалька”</p>
+
+<p><strong>ALB</strong> 06-05-2012</p>
+
+<p>бахчевые трудно выращивать - много места надо, а специальных сортов пока нет.</p>
+
+<p><strong>d74mt</strong> 07-05-2012</p>
+
+<p>Изгаляюсь в этом году с семечками дыни сорта- Калмычка. Эт её в башкирии так на ценниках рисуют.</p>
+
+<p>Вермикулит- две недели от всхода и скончалась.</p>
+
+<p>Земля- Росла весело пока поливал раствором Агрикола для лука и чеснока+ кальциевая селитра. Поменял раствор на Агрикола- для томатов- Что то стала увядать(эт я свою чюду юду помидорную решил на другой раствор перевести. Изначально обе растишки из одной бутылки питались). Попробую вновь вернуть старый раствор. Если не оклемается- подрежу оба побега второго порядка. Может корень даст побеги третьего порядка. И в планах переезд дыньки на другой подоконник. Более южный</p>
+
+<p><strong>artmaximus</strong> 08-05-2012</p>
+
+<p>а я , вот с арбузов начал…</p>
+
+<p>места нет :(</p>
+
+<p>хочется и дынькой “позаниматься”</p>
+
+<p>Всех с праздником ПОБЕДЫ!!!!</p>
+
+<p><strong>klabs</strong> 10-05-2012</p>
+
+<p>Здравствуйте! Что за концентраты от mdima ? Дайте ссылку на магазин.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

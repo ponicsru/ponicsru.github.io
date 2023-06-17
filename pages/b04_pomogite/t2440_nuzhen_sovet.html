@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Нужен совет | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Нужен совет">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Нужен совет</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Ustim</strong> 17-03-2016</p>
+
+<p>Добрый день! В недавнем времени построил себе гидропонную установку и стал выращивать огурцы.</p>
+
+<p>Вопрос такой хорошо ли растут ростки? (сегодня им 7 дней) А то беспокоит что у них края пожелтели. Может что надо добавить. Химия GHE SERIES 3 компонента. Добавил на 15л по 3,75мл каждого раствора. PH в норме 6.0. Температура 23 С. Свет две лампы био по 36W. За ранее благодарен.</p>
+
+<p><a href="https://t.me/ponics_ru_files/17300" target="_blank"><img src="/imagehost2/thumbs/img3326.jpg" alt="" /></a></p>
+
+<p><strong>n72black</strong> 17-03-2016</p>
+
+<p>Света маловато, росток вытянулся, какое расстояние от ламп до растения?. Удобрений, кажись, втрое больше нужно на такой обьем. Поищите в инете таблицу по дозировке флоры(если инструкции нету). А рН лучше поддерживать на уровне 5.5-5.8.</p>
+
+<p><strong>Coccinella</strong> 17-03-2016</p>
+
+<p>И поднимите влажность воздуха.</p>
+
+<p><strong>mr.maloi84</strong> 17-03-2016</p>
+
+<p>Раньше всех ответов прочел пост и тоже слонился к нехватки света,но побоялся ошибиться из-за неопытности. А оказывается что-то даже могу и посоветовать :D :D :D :D</p>
+
+<p><strong>Ustim</strong> 17-03-2016</p>
+
+<p>Расстояние 40 см</p>
+
+<p><strong>Ustim</strong> 17-03-2016</p>
+
+<p>Вроде питательные растворы по инструкции залил. в таблице прописано 0.25 мл/л. каждого) Вот с влажностью завтра посмотрю. Как мне сказали влажность должна быть около 65, верно?</p>
+
+<p><strong>Oxy</strong> 17-03-2016</p>
+
+<blockquote>
+  <p>Расстояние 40 см</p>
+</blockquote>
+
+<p>дело не в том, что лампы якобы “био”, или “суперагро”, если бы вы спросили лампы для огурцов, то они с удовольствием продали бы вам специальные “био-супер-агро-кукумбер-без гмо”.</p>
+
+<p>если трубчатая люмка, до верхушки растения должно быть ДО 5 см. 2-3см норма. Для 40 см это как минимум ДНАТ250 должен быть</p>
+
+<p>пока первый лист-два не покажутся можно вообще не кормить, после первого листа грубо половинная концентрация</p>
+
+<p>По поводу влажности - можешь вообще не смотреть, накрой каждую растюху пластиковым бокалом для пива, и вот и все. Всегда так делаю. Если лень покупать бокалы(там где пиво на розлив продают), повырезай их из пластиковых бутылок.</p>
+
+<p><strong>n72black</strong> 18-03-2016</p>
+
+<p>Ustim, а сорт/гибрид огурцов как называется? И площадь растильни какая?</p>
+
+<p><strong>Ustim</strong> 18-03-2016</p>
+
+<p>Спасибо всем что откликаетесь.</p>
+
+<p>Сорт огурцов Адам F1 Гавриш. Площадь где-то 0,5 м на 1,5м. А по поводу расстояние от лампы до растишки хотел уточнить, не маловато ли до 5см? Может надо хотя бы 10-15 см. Как никак лампа тоже какое то тепло выделяет.</p>
+
+<p><strong>Gamelander</strong> 18-03-2016</p>
+
+<blockquote>
+  <p>Вроде питательные растворы по инструкции залил. в таблице прописано 0.25 мл/л. каждого) Вот с влажностью завтра посмотрю. Как мне сказали влажность должна быть около 65, верно?</p>
+</blockquote>
+
+<p>Еще раз проштудируйте инструкцию, у вас очень низкая концентрация раствора.</p>
+
+<p><strong>Ustim</strong> 18-03-2016</p>
+
+<p>Пользуюсь вот этой таблицей. Если надо по какой то другой пришлите)</p>
+
+<p><a href="https://t.me/ponics_ru_files/17301" target="_blank"><img src="/imagehost2/thumbs/1415693735floraseriesgidra.jpg" alt="" /></a></p>
+
+<p><strong>Ustim</strong> 18-03-2016</p>
+
+<p>Вот нашел еще таблицу. Может надо по этой?</p>
+
+<p><a href="https://t.me/ponics_ru_files/17302" target="_blank"><img src="/imagehost2/thumbs/full58cc59061705d399251159a79811.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 18-03-2016</p>
+
+<p>так можно долго “угадывать”…</p>
+
+<p>лучше всего по “этой”</p>
+
+<p><img src="http://shop.jesti.in/1620-thickbox_default/4-v-1-ph-tds-ec-konduktometr-hanna-hi-98130-98129-combo.jpg" alt="" /></p>
+
+<p><strong>Borodach1</strong> 18-03-2016</p>
+
+<p>А чего там угадывать? <em>???</em></p>
+
+<p>По второму варианту в огурце азота получится 39, ну и фосфора примерно столько же - 38. :o :D</p>
+
+<p>Зато калия в 4,5 раза больше чем азота. <em>crazy</em></p>
+
+<p>Или эти рекомендации болваны пишут, или они знают что на самом деле находится в этих бутылках, но от нас тщательно скрывают. :D</p>
+
+<p><strong>Ustim</strong> 18-03-2016</p>
+
+<p>Тогда делаю все по первой таблице. Лампу опустил. Теперь расстояние 15см. + досветка с окна. Раствор пока не меняю. ТДС померить пока не могу. Заказал его, на днях должен прийти.</p>
+
+<p><strong>Vad</strong> 18-03-2016</p>
+
+<p>а азот он из воздуха возьмет <em>8)</em></p>
+
+<p><strong>Borodach1</strong> 18-03-2016</p>
+
+<blockquote>
+  <p>Тогда делаю все по первой таблице. Лампу опустил. Теперь расстояние 15см. + досветка с окна. Раствор пока не меняю. ТДС померить пока не могу. Заказал его, на днях должен прийти.</p>
+</blockquote>
+
+<p>Первая таблица примерно в 2,5 раза хуже плохой второй таблицы. :D</p>
+
+<p><strong>Borodach1</strong> 18-03-2016</p>
+
+<p>О! Сейчас нашёл, что оказывается флора гро бывает с 2% азота, но бывает и с 10% азота.</p>
+
+<p>В варианте с 10% может что нибудь и получится.</p>
+
+<p><strong>Ustim</strong> 18-03-2016</p>
+
+<p>Пришлите плиз тогда адекватную таблицу по Флоре для огурцов. Флора у меня</p>
+
+<p>GRO Азот 3%; фосфор 1%; калий 6%; Магний 0.8%</p>
+
+<p>MICRO Азот 5%; калий 1,3%; Бор 0,01%; кальций 1,4%; Медь 0,01%; Железо 0,12%; марганец 0,05%; Молибден 0,004%; цинк 0,015%</p>
+
+<p>BLOOM Фосфор 5%; Калий 4%; Магний 3%; Сера 5%</p>
+
+<p>Или скажите на данном этапе в какой пропорции залить? (на литр)</p>
+
+<p><strong>Ustim</strong> 18-03-2016</p>
+
+<p>18 часов подсветки норм? Или снизить?</p>
+
+<p><strong>Vad</strong> 18-03-2016</p>
+
+<p><a href="https://www.youtube.com/watch?v=rLIYakjyrnc" target="_blank">https://www.youtube.com/watch?v=rLIYakjyrnc</a></p>
+
+<blockquote>
+  <p>Или скажите на данном этапе в какой пропорции залить? (на литр)</p>
+</blockquote>
+
+<p><strong>Borodach1</strong> 18-03-2016</p>
+
+<blockquote>
+  <p>Пришлите плиз тогда адекватную таблицу по Флоре для огурцов. Флора у меня</p>
+
+  <p>GRO Азот 3%; фосфор 1%; калий 6%; Магний 0.8%</p>
+
+  <p>MICRO Азот 5%; калий 1,3%; Бор 0,01%; кальций 1,4%; Медь 0,01%; Железо 0,12%; марганец 0,05%; Молибден 0,004%; цинк 0,015%</p>
+
+  <p>BLOOM Фосфор 5%; Калий 4%; Магний 3%; Сера 5%</p>
+
+  <p>Или скажите на данном этапе в какой пропорции залить? (на литр)</p>
+</blockquote>
+
+<p>Адекватных таблиц по флоре не бывает. Флора сама неадекватная.</p>
+
+<p>Переходите на обычные соли. Дешевле получится раз в двадцать.</p>
+
+<p>Посчитать смогу только в понедельник. Всё осталось на работе, а считать в столбик лень. :)</p>
+
+<p><strong>Ustim</strong> 18-03-2016</p>
+
+<p>Да калькулятор может и норм но не для ФЛОРЫ. Хрен отрегулируешь. Где то убавляется а где то наоборот. <em>crazy</em> дурдом. Из этого прихожу к выводу что надо израсходовать Флору Сериес и самому бодяжить химию.</p>
+
+<p>Borodach1, жду с нетерпением расчеты.</p>
+
+<p><strong>Vad</strong> 18-03-2016</p>
+
+<blockquote>
+  <p>Да калькулятор может и норм но не для ФЛОРЫ. Хрен отрегулируешь. Где то убавляется а где то наоборот. <em>crazy</em> дурдом.</p>
+</blockquote>
+
+<p>ну да.. )) калькулятор виноват ))</p>
+
+<p><strong>Oxy</strong> 18-03-2016</p>
+
+<blockquote>
+  <p>Тогда делаю все по первой таблице. Лампу опустил. Теперь расстояние 15см. + досветка с окна.</p>
+</blockquote>
+
+<p>Вы так написали будто торгуетесь :) Может надо, а может не надо, а может она греется. Я вам точно скажу - они сорее замерзнут от наледи, чем сгорят. Вот не выдержал, спешиал фо ю, только что пошел и сфоткал свой беспредел:</p>
+
+<p>Уж поверьте мне на слово, до лампы от верхушки самого высокого - ровно 5 см.</p>
+
+<p><a href="http://s020.radikal.ru/i711/1603/ee/093752103e56.jpg][img alt=http://s020.radikal.ru/i711/1603/ee/093752103e56.jpg]http://s020.radikal.ru/i711/1603/ee/093752103e56t.jpg[/img][/url][font=verdana][size=1em][url=http://s017.radikal.ru/i415/1603/fa/b4be0814c440.jpg][img alt=http://s017.radikal.ru/i415/1603/fa/b4be0814c440.jpg]http://s017.radikal.ru/i415/1603/fa/b4be0814c440t.jpg[/img][/url][/size][/font][/size][size=1em][font=verdana][url=http://s020.radikal.ru/i716/1603/43/f9dca1b727ab.jpg][img alt=http://s020.radikal.ru/i716/1603/43/f9dca1b727ab.jpg" target="_blank">http://s020.radikal.ru/i716/1603/43/f9dca1b727abt.jpg[/img]</a>[/font][/size][size=1em]</p>
+
+<p>[font=verdana]</p>
+
+<p>[font=Verdana][/size][size=1em]Видно и расстояние до лампы, ближе просто физически не могу приблизить, но если б мог - воткнул бы их прямо в светильник. Лампы у меня супер специальные “агро-био-мега-перец”, сам Стив Джобс, по моей личной просьбе лично разрабатывал(читай - первые попавшиеся). Все растет как всегда в кокосе, рассада как всегда передержанная, полив как всегда нижний, и как всегда чем попало в режиме как вспомню -так долью(плюс-минус два-три дня). Вот скажите, разве по растениям скажешь, что им плохо? Что им жарко? Что у них перелив? Да, есть момент, что им тупо не хватает света, но у меня есть для них отмазка - лампам уже пять лет, и они несколько раз себя уже изжили, просветив перед этим еще несколько лет в магазине.[/size][size=1em][/font][/font]</p>
+
+<p><strong>Ustim</strong> 18-03-2016</p>
+
+<p>Vad калькулятор не виноват, калькулятор гуд <em>8)</em> Виновата по моему мнению Флора. Благодарствую за него, в скором времени пригодиться) Прога никогда не помешает.</p>
+
+<p>Oxy Хорошая рассада у Вас. У меня основной вопрос почему края ростков пожелтели или не обращать внимания на семядольные. Из за этого и грешил на лампу.</p>
+
+<p>С лампой разобрался и с подсветкой разобрался</p>
+
+<p>Если я что не так пишу то извиняйте. :-[ Я новичок</p>
+
+<p><strong>Oxy</strong> 18-03-2016</p>
+
+<p>да ты не подумай, что я на тебя гоню - просто такой стиль :) И не извиняйся ни за что. Тебе не за что извиняться, кто не падал на велосипеде - пусть первым кинет в меня брусок прессованного кокоса :)</p>
+
+<p>Практически каждый гровер прошел по этому пути, причем многие типа меня идут буквально в метре перед тобой, просто в связи с тем, что мы бредем толпой в густом интернет-тумане, всегда кажется что ты одинок. Но поверь мне, стоит тебе замешкаться, и об тебя споткнуться еще пару десятков человек с защелоченным, но нежно промытым керамзитом в ладонях.</p>
+
+<p>когда я в свое время обломался об керамзит, тут на форуме пожестче высказывались на эту тему, и я был уверен, что вот тогда точно эпоха керамзита закончилась. Но годы идут, а “старушки все падают и падают”.</p>
+
+<p>:) Не ошибается тот, кто ничего не делает, так что главное - не останавливаться и не извинятся :)</p>
+
+<blockquote>
+  <p>У меня основной вопрос почему края ростков пожелтели или не обращать внимания на семядольные. Из за этого и грешил на лампу.</p>
+</blockquote>
+
+<p>[size=1em][font=verdana]Пошагово:[/font][/size]</p>
+
+<p>[size=1em][font=verdana]А. забить…[/font][/size]</p>
+
+<p>[size=1em][font=verdana]Б. Дождаться появления первых настоящих листьев[/font][/size]</p>
+
+<p>[size=1em][font=verdana]В. Пока ждешь, сажай другие семена.[/font][/size]</p>
+
+<p><strong>Vad</strong> 18-03-2016</p>
+
+<blockquote>
+  <p>не падал на велосипеде - пусть первым кинет в меня брусок прессованного кокоса :)</p>
+</blockquote>
+
+<p>не надо в окси кидать!</p>
+
+<p>нужно кидать в меня! упаковкой минваты! (большой ;))</p>
+
+<p><strong>n72black</strong> 18-03-2016</p>
+
+<p>И лампу днат на 100-150вт еще поцепить, корнишонного типа огурец как накак.</p>
+
+<p><strong>Gnevko</strong> 18-03-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>не падал на велосипеде - пусть первым кинет в меня брусок прессованного кокоса :)</p>
+  </blockquote>
+
+  <p>не надо в окси кидать!</p>
+
+  <p>нужно кидать в меня! упаковкой минваты! (большой ;))</p>
+</blockquote>
+
+<p>Вад, давайте я вам кину … 3 мата мин ваты (кажись cultilene), так как рощу на кокосе в основном, правда кубиков у меня нет больших :'(</p>
+
+<p><strong>Ustim</strong> 18-03-2016</p>
+
+<p>Спасибо за ответы. Буду ждать первых листов.</p>
+
+<p><strong>n72black</strong> 19-03-2016</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>не падал на велосипеде - пусть первым кинет в меня брусок прессованного кокоса :)</p>
+    </blockquote>
+
+    <p>не надо в окси кидать!</p>
+
+    <p>нужно кидать в меня! упаковкой минваты! (большой ;))</p>
+  </blockquote>
+
+  <p>Вад, давайте я вам кину … 3 мата мин ваты (кажись cultilene), так как рощу на кокосе в основном, правда кубиков у меня нет больших :'(</p>
+</blockquote>
+
+<p>Ну дык, полмата одного порезать на кубики, для начала хватит. :D</p>
+
+<p><strong>Vad</strong> 19-03-2016</p>
+
+<p>:o</p>
+
+<p>это шутка была…</p>
+
+<p>шутка…</p>
+
+<p>не надо кидать в меня ничего :D</p>
+
+<p><strong>n72black</strong> 20-03-2016</p>
+
+<p>Может с ибэя дешевле будет заказать маты? :D</p>
+
+<p>Или еще где забугром…</p>
+
+<p><strong>Gnevko</strong> 20-03-2016</p>
+
+<blockquote>
+  <p>:o</p>
+
+  <p>это шутка была…</p>
+
+  <p>шутка…</p>
+
+  <p>не надо кидать в меня ничего :D</p>
+</blockquote>
+
+<p>Ну вот, только хотел чего нить хорошего сделать, в общем как надумаете, сбросьте адрес почтовый в личку, с меня 4 мата (4тый на кубики), с вас отчет с пристрастием и подробностями.</p>
+
+<p><strong>Ustim</strong> 21-03-2016</p>
+
+<p>Всем привет! Хотел уточнить а какой уровень раствора должен быть в гидропонике? Ниже горшка, вровень с горшком или затапливать горшок 1-2 см.?</p>
+
+<p><strong>Borodach1</strong> 22-03-2016</p>
+
+<blockquote>
+  <p>Хотел уточнить а какой уровень раствора должен быть в гидропонике?</p>
+</blockquote>
+
+<p>Уточните, что конкретно Вы хотите сделать?</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

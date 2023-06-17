@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Болеют помидорки | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Болеют помидорки">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Болеют помидорки</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Павел_32</strong> 15-09-2015</p>
+
+<p>Доброго времени суток, уважаемые форумчане.</p>
+
+<p>Помогите пожалуйста. После образования завязи маленькие помидорки стали чернеть (ниже выложу фотки). Еще на мой взгляд листья немного закручены внутрь.</p>
+
+<p>Система периодического затопления 15 минут через 60 минут.</p>
+
+<p>Питательный раствор - флора сириес, pH - 5,8-6,2</p>
+
+<p>Освещение - 15 часов 2 ДНАТ 70 вт, 3 люминисцентных camelion 36w bio, 2 philips 36w/33-640</p>
+
+<p>T - 24 -26 0C</p>
+
+<p>Влажность 40-60%</p>
+
+<p>Дважды обрабатывал от фитофтороза, результат 0. Прочитал, что может быть недостаток Са - серая гниль</p>
+
+<p>Помогите советом!!! <em>sos</em> <em>sos</em> <em>sos</em></p>
+
+<p><strong>Павел_32</strong> 15-09-2015</p>
+
+<p><a href="https://t.me/ponics_ru_files/16507" target="_blank"><img src="/imagehost2/thumbs/004dud.jpg" alt="" /></a></p>
+
+<p><strong>Павел_32</strong> 15-09-2015</p>
+
+<p><a href="https://t.me/ponics_ru_files/16508" target="_blank"><img src="/imagehost2/thumbs/005ngn.jpg" alt="" /></a></p>
+
+<p><strong>Павел_32</strong> 15-09-2015</p>
+
+<p><a href="https://t.me/ponics_ru_files/16509" target="_blank"><img src="/imagehost2/thumbs/006sns.jpg" alt="" /></a></p>
+
+<p><strong>Павел_32</strong> 15-09-2015</p>
+
+<p><a href="https://t.me/ponics_ru_files/16510" target="_blank"><img src="/imagehost2/thumbs/007gwg.jpg" alt="" /></a></p>
+
+<p><strong>Павел_32</strong> 15-09-2015</p>
+
+<p><a href="https://t.me/ponics_ru_files/16511" target="_blank"><img src="/imagehost2/thumbs/010sms.jpg" alt="" /></a></p>
+
+<p><strong>Borodach1</strong> 15-09-2015</p>
+
+<blockquote>
+  <p>Питательный раствор - флора сириес, pH - 5,8-6,2</p>
+
+  <p>Прочитал, что может быть недостаток Са - серая гниль</p>
+
+  <p>Помогите советом!!! <em>sos</em> <em>sos</em> <em>sos</em></p>
+</blockquote>
+
+<p>Недостаток кальция вызывает вершинную гниль. Чернеет кончик плода.</p>
+
+<p>А сколько кальция в Вашей Флоре сириес? ;)</p>
+
+<p><strong>Gamelander</strong> 15-09-2015</p>
+
+<p>В ГХЕ с кальцем плохо, в Блум и Гроу его вообще нет.</p>
+
+<p>Вспомнился недавний разговор с одним человеком. Он делал выбор то ли купить ГХЕ Флору, то ли готовый раствор местного производителя. Флора 1 бутылка стоит грубо 650 руб, наш - 290.</p>
+
+<p>Товарищ свято верил, что капнув 10 мл на 10 литров Флоры Блум, он дешево и сердито вырастит урожай. Уперся и посадил на Флоре. Жду теперь когда придет. :D</p>
+
+<p><strong>Borodach1</strong> 15-09-2015</p>
+
+<blockquote>
+  <p>В ГХЕ с кальцем плохо, в Блум и Гроу его вообще нет.</p>
+</blockquote>
+
+<p>Ну так не честно! :'(</p>
+
+<p>Человек сомневается в недостатке кальция в его растворе, а Вы ему не даёте посмотреть что написано на бутылке. :D</p>
+
+<p>А вдруг GHE что то новое придумали, а мы не знаем? ;)</p>
+
+<p><strong>Павел_32</strong> 15-09-2015</p>
+
+<p>На 10 литров воды 25 мл Micro,19 мл Gro, 15,5 мл Bloom</p>
+
+<p><a href="https://t.me/ponics_ru_files/16512" target="_blank"><img src="/imagehost2/thumbs/004fwf.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/16513" target="_blank"><img src="/imagehost2/thumbs/005eoe.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/16514" target="_blank"><img src="/imagehost2/thumbs/006ene.jpg" alt="" /></a></p>
+
+<p><strong>Павел_32</strong> 15-09-2015</p>
+
+<p>Я ведь у вас совета спрашиваю, что это может быть!? Если считаете, что проблема из за раствора, тогда подскажите что то добавить в имеющийся или другой приготовить. Если это какое то заболевание то как с ним нужно бороться… Посмеяться конечно можно над новичком, я тоже ценю чувство юмора, только подскажите, что делать, у меня уже вторые помидоры с такими симптомами и ни кто ничего дельного не предложил.</p>
+
+<p><strong>Borodach1</strong> 15-09-2015</p>
+
+<p>А Вы так и не ответили на вопрос.</p>
+
+<p>Так сколько же у Вас в растворе кальция?</p>
+
+<p>Я сейчас в телефоне читаю и картинок не вижу. :(</p>
+
+<p><strong>Павел_32</strong> 15-09-2015</p>
+
+<p>В Micro не менее 1,4% (по инструкции), а вот сколько это в мг не знаю…</p>
+
+<p>Купил сегодня калийную селитру, подскажите сколько мг на литр воды добавить?</p>
+
+<p><strong>Павел_32</strong> 15-09-2015</p>
+
+<p>Ой, опечатка кальциевую селитру.</p>
+
+<p><strong>Gamelander</strong> 15-09-2015</p>
+
+<p>По имеющимся от Вас данным раствор имеет следующие характеристики:</p>
+
+<p>N 182</p>
+
+<p>P 42</p>
+
+<p>K 189</p>
+
+<p>Mg 27.6</p>
+
+<p>Ca 25</p>
+
+<p>Как видите, кальция катастрофически не хватает.</p>
+
+<p>Я вообще балдею с этих GHE, подсадили на свои компоты полстраны.</p>
+
+<p>Сыпаните 0,5 грамма на литр кальциевой селитры. Азот прибавится, Калия будет не хватать, но что уж теперь…</p>
+
+<p>То, что болеет уже не поправишь, а на будущее поможет.</p>
+
+<p>В общем, не пользуйтесь больше Флорой.</p>
+
+<p>З.Ы. И по листу проходите кальциевой селитрой каждые 10 дней 1-2% раствором.</p>
+
+<p><strong>Borodach1</strong> 15-09-2015</p>
+
+<p>Не калийную, а калиевую. Её не надо.</p>
+
+<p>Кальциевую надо. Только она Вам азот бешено поднимет. Это всё прелести GHE. :(</p>
+
+<p>Если не считать кальция, который поступает из жесткости воды, то кальция у Вас в 20 литрах примерно столько, сколько должно быть в 1.5 литрах. Тоесть у вас его там примерно в 14 раз меньше чем нужно.</p>
+
+<p>Так что лекарства Вам не помогут. Нужен кальций.</p>
+
+<p><strong>Павел_32</strong> 15-09-2015</p>
+
+<p>Огромное спасибо, пойду добавлять Са!!!</p>
+
+<p><strong>Borodach1</strong> 15-09-2015</p>
+
+<p>Так что осталось только экспериментировать. Кальциевой селитры Вам нужно 0.8 - 1 грамм на литр. Но к чему приведет такой подъём азота неизвестно. Увидите сами. Выхода всё равно нет. :(</p>
+
+<p>Вернее есть, но скорее всего Вы этим путем не пойдете. Тем более, что Вы путаете калий и кальций. :(</p>
+
+<p>Нужно отложить в сторону GHE и делать раствор из простых солей.</p>
+
+<p><strong>Павел_32</strong> 15-09-2015</p>
+
+<p>Я по специальности врач и поэтому К с Са не путаю, это была опечатка! А вот про путь по которому я не пойду, я с удовольствием выслушаю. В новых делах всегда стараюсь прислушиваться к мнению опытных людей, поэтому и обращаюсь к вам всем за советом!</p>
+
+<p><strong>valery</strong> 15-09-2015</p>
+
+<p>Павел, как врач, Вы наверняка знакомы с хлористым кальцием и сульфатом магния.</p>
+
+<p>Опять же как врач, наверняка разведете эти компоненты в воде не хуже “специалистов” из ЖХЕ ( ну и аббревитурка).</p>
+
+<p>Даже если все это удовольствие будет аптечным (сравнительно дорогим) на аптечной же дистиллированной воде (опять же сравнительно дорогой), плюс уже имеющаяся у Вас кальциевая селитра ( калиевая селитра, монофосфат калия, сульфат калия, возможно немного аммиачной селитры и комплекс микроэлементов) Вы получите раствор раз в 100 дешевле, чем “волшебный эликсир”.</p>
+
+<p>Волшебства в Вашем растворе будет меньше, а толку больше.</p>
+
+<p>Можно поступить (на первое время) и еще проще.</p>
+
+<p>Около грамма кальциевой селитры (0,8-1,0) и около грамма (1,0-1,2) хорошего полностью водорастворимого комплексного удобрения с минимальным содержанием нитратного азота и полным отсутствием аммиачного нормального производителя типа Кемира-Фертика-Мастер-Яра(Кристалон-Фертикейр) и так далее …</p>
+
+<p>… и Вашим~~ помидорам :-[~~ … прошу прощения, Вашим томатикам настанет “щастье” …</p>
+
+<p>Да и Вы, глядя на них, повеселеете :)</p>
+
+<p><strong>Павел_32</strong> 15-09-2015</p>
+
+<p>Валерий, спасибо.</p>
+
+<p>Сижу изучаю способы изготовления растворов, как я понял мой раствор не питательный, а убийственный! &gt;:D :D</p>
+
+<p><strong>Borodach1</strong> 16-09-2015</p>
+
+<blockquote>
+  <p>Валерий, спасибо.</p>
+
+  <p>Сижу изучаю способы изготовления растворов, как я понял мой раствор не питательный, а убийственный! &gt;:D :D</p>
+</blockquote>
+
+<p>Ну почему убийственный? <em>???</em> Просто “вегетарианский” по отношению к кальцию. :D</p>
+
+<p>Вот тут вот совсем недавно про удобрения разговаривали:</p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=679.msg94601#msg94601" target="_blank">http://forum.ponics.ru/index.php?topic=679.msg94601#msg94601</a></p>
+
+<p>Вот тут коллекционирум формулы растворов:</p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=2109.0" target="_blank">http://forum.ponics.ru/index.php?topic=2109.0</a></p>
+
+<p>Чтоб упростить расчёт пользуемся калькуляторами. Немного с ними поиграться и всё становится ясно. Я пользуюсь вот таким:</p>
+
+<p><a href="http://forum.ponics.ru/index.php?topic=1720.0" target="_blank">http://forum.ponics.ru/index.php?topic=1720.0</a></p>
+
+<p>Там много удобрений уже вбито, но желательно перепроверять Потому что бывают иногда опечатки, а иногда и производители чудить начинают. Кстати, состав ипортной флоры и отечественной, не помню уже в чём, но немного отличаются. Может опечатка на русском сайте, а может и действительно разные. <em>???</em></p>
+
+<p>Следить за тем в чём указан состав удобрений. Иногда указывают в элементах, а иногда в оксидах. <em>crazy</em> А иногда путаются и указывают вроде в элементах, а на самом деле в оксидах. <em>Wall</em></p>
+
+<p>Кстати, Ваши 1,5% кальция указаны в оксиде как СаО. Так что на самом деле именно кальция Са в той флоре всего 1%.</p>
+
+<p><strong>Borodach1</strong> 16-09-2015</p>
+
+<p>Вот кстати интересная книжечка с картинками. Там даже есть фотки Ваших томатов. :)</p>
+
+<p><a href="http://www.sqm.com/Portals/0/pdf/cropKits/SQM-Crop_Kit_Tomato_L-RU.pdf" target="_blank">http://www.sqm.com/Portals/0/pdf/cropKits/SQM-Crop_Kit_Tomato_L-RU.pdf</a></p>
+
+<p><strong>n72black</strong> 16-09-2015</p>
+
+<p>Павел_32, здравствуйте.</p>
+
+<p>Хотел поинтерисоваться, а что за сорт/гибрид томата растите и какую воду используете(водопроводную/осмос), если водопроводную, то какой у неё ЕС(ну или ррм)?</p>
+
+<p>Да, вот еще мелочь одна, судя по фото у вас может быть освещения маловато на такую площадь(визуально, навскидку), для такого освещения и температуру пониже желательно(22-23 хотябы), да влажность воздуха лучше 60-65 % держать. Эти факторы могли также ухудшить поступление кальция.</p>
+
+<p>Просто как то недавно сам растил кустик томата, Лампа ДНАТ 250 вт на 0.6 м.кв., но благодаря несколько несколько завышенным температурам(примерно 26-27 дневная, иногда 28) и пониженной влажности воздуха получил вершинную гниль( при этом кальция в растворе было примерно 200 мг/л, калия 320). <em>???</em></p>
+
+<p><strong>lidia</strong> 16-09-2015</p>
+
+<p>Павел_32, если купили Флору сириес в больших бутылках (0,5 - 1 литр) и её всё равно надо извести, так как не дешовая, то есть смысл (уворачиваюсь от летящих тапок :D) приобрести 0,5 л Флоры Микро для мягкой воды. Там повышенное содержание кальция - 7 % (если правильно помню). Моим растишкам помогло, и томатам, и салатам, и пр.</p>
+
+<p>Ну и все советы выше актуальны :).</p>
+
+<p><strong>Павел_32</strong> 16-09-2015</p>
+
+<p>Уважаемые форумчане. Спасибо за помощь!</p>
+
+<p>Воду использую водопроводную 280 ppm. Вчера добавил Са селитры, посмотрим, что получится. Подходит время полной замены раствора, думаю нужно уходить от флоры. Мне посоветовали travki-pripravki классный сайт, можно попробовать для начала, а так буду изучать мат.часть :D закупать и буду сам делать растворы.</p>
+
+<p><strong>Павел_32</strong> 16-09-2015</p>
+
+<p>Помидорки сейчас розовые - хурмовидные.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

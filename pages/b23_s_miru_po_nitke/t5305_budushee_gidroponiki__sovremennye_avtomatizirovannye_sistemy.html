@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Будущее гидропоники . Современные автоматизированные системы (?) | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Будущее гидропоники . Современные автоматизированные системы (?)">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Будущее гидропоники . Современные автоматизированные системы (?)</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>woodmack</strong> 21-01-2020</p>
+
+<p>Привет всем! Спустя пару лет вновь вернулся к занимательной теме гидропоники :)</p>
+
+<p>Почитал новостей , обработал много информации , зашёл на старый добрый форум , узнать мнение специалистов)</p>
+
+<p>Технологии технологиями , методы методами , но все же , какое будущее у гидропоники ? Некоторые говорят что все это не более чем “баловство “ , и хобби для садоводов . Другие , что за этим будущее … Так всё же , где истинна ?</p>
+
+<p>Маск запускает ракеты в космос , планирует колонизировать Марс , и утверждает что на сегодняшний день , на нашей планете уже есть технологии по выращиванию овощей и фруктов без почвы . Подозреваю что речь шла о гидропонике )</p>
+
+<p>Ну да ладно , космос космосом …</p>
+
+<p>У меня сложилось мнение что последние годы , тренд на использование в пище микрогрина,салатов,рукколы,шпината,базилика (и т.д) только растет . И “мода” на это только растет . Или я себе сам такое накрутил . Как говорит мой друг “эффект вакуума “ )</p>
+
+<p>Короче , вопрос у меня в следующем , уважаемые форумчане ! За последние 2 недели , наткнулся на три проекта , (ссылки внизу ) , почитайте . Суть в промышленном производстве автоматизированных гидропонных установок . Понятно что цена у этих “контор” будет заоблачная на них и т.д, но суть не в этом . Хочу узнать Ваше мнение по поводу этого . Как Вы видите будущее ? Видите ли Вы через 10 лет такие установки в каждом доме , офисе , ресторане ? Имеет ли право это на жизнь ? Интересно было бы услышать мнение каждого . Уж очень заинтересовала меня эта тема .</p>
+
+<p>https://www.eden.farm/</p>
+
+<p>http://www.lgnewsroom.com/2019/12/lg-leverages-appliance-know-how-to-develop-first-indoor-vegetable-cultivator/</p>
+
+<p>https://www.slashgear.com/samsung-indoor-gardening-appliance-revealed-at-ces-2020-09606441/</p>
+
+<p>https://youtu.be/69DF557Ci-c</p>
+
+<p>Ссылки на данные проекты .</p>
+
+<p>Жду мнение каждого ) ;)</p>
+
+<p><strong>woodmack</strong> 21-01-2020</p>
+
+<p>Также было бы интересно узнать мнение о теме вертикальных ферм . Как Вы считаете, это конечная точка промышленного производства ? Или что-то более технологичное и практичное будет в ближайшем будущем ?</p>
+
+<p>http://www.hh.farm/ Это вертикальная ферма в Киеве . Также читал что в конце прошлого года , в Москве тоже открылось огромное производство по выращиванию зелени .</p>
+
+<p><strong>а-ну-ка</strong> 21-01-2020</p>
+
+<p>Все упрется в качество и неприоодность воды.</p>
+
+<p><strong>serge mat</strong> 03-03-2020</p>
+
+<blockquote>
+  <p>Хочу узнать Ваше мнение по поводу этого . Как Вы видите будущее ? Видите ли Вы через 10 лет такие установки в каждом доме , офисе , ресторане ? Имеет ли право это на жизнь ? Интересно было бы услышать мнение каждого . Уж очень заинтересовала меня эта тема .</p>
+</blockquote>
+
+<p>Сельское хозяйство это область производства с высоким риском и низкой прибылью. Автоматизация сюда пробивается с большим трудом, поскольку дорогие решения никогда не окупятся. Надо придумывать что-то простое и желательно сразу на много гектаров.</p>
+
+<p>Обратите внимание, микрозелень развивается быстрее огурцов и помидоров. Ведь микрозелень - это скорее шарм, чем калории. она востребована в относительно дорогих ресторанах. И спрос на нее будет ровно до того момента, пока в дорогих ресторанах есть публика.</p>
+
+<p>Выращивание для себя показывает, что гидропоника требует гораздо больше внимания, образования, а порой и затрат, например на досветку.</p>
+
+<p>Шкафы для выращивания помидор в офисе - мертвое направление. Это то же самое, что и аквариум в офисе. Никто же не думает, что рыбки в аквариуме выращиваются для стола. Так и помидорки - будут пару раз в году на столе, но они скорее для шарма.</p>
+
+<p>Гидропоника будет широко использоваться в сельском хозяйстве, но в больших теплицах, а не на подоконнике. Только большие масштабы могут вывести ее на рентабельность.</p>
+
+<p><strong>cpf</strong> 11-03-2020</p>
+
+<p>Эта тема меня тоже интересует давно (несколько лет точно… :-).</p>
+
+<p>Мысли такие:</p>
+
+<ol>
+  <li>Гидропонные установки, условно, можно разделить на два типа:</li>
+</ol>
+
+<ul>
+  <li>
+    <p>домашние (для использования в некоммерческих целях)</p>
+  </li>
+  <li>
+    <p>промышленные (для ведения бизнеса - получения прибыли).</p>
+  </li>
+</ul>
+
+<p>И те, и другие, КМК имеют право на жизнь.</p>
+
+<p>Домашние установки, имеют как “декоративные”, так и “витаминные” функции. Их создание и использование, скорее, является разновидностью хобби и фетиша.</p>
+
+<p>Промышленные установки выполняют “производственную” роль. Их задача обеспечить потребность в заданном продукте, с заданной рентабельностью.</p>
+
+<p>Конечно, разработка и производство “домашних” ГП установок - это само по себе может быть бизнесом (также как производство бытовой техники). Насколько это направление будет востребовано рынком - вопрос к маркетологам (это такие специалисты, которые за деньги объясняют всем, зачем им нужно покупать всякую “хрень” :D). При хорошем соотношении цена\потребительские свойства (удачной конструкции), вполне, могут иметь успех.</p>
+
+<p>Промышленные установки на искусственном освещении (типа Киевских “подвальных” ферм) вряд ли будут показывать “выдающуюся” рентабельность (КМК, затраты на освещение - весьма значительны, и глупо не использовать Солнце в качестве бесплатного источника). КМК, лучше строить подобные фермы на крышах жилых домов (их площадь практически не используется), и утилизировать выделяемое домами тепло (через вентиляционные стояки) для отопления в холодне время.</p>
+
+<p><strong>prus7</strong> 14-10-2020</p>
+
+<p>В домашней установке вполне может быть практический смысл.</p>
+
+<p>Н балконе, например, вышло 15 кг огурцов с 2-х растений за 3 месяца ))</p>
+
+<p>Схема универсальной установки - растет все:</p>
+
+<p><a href="https://t.me/ponics_ru_files/19948" target="_blank"><img src="/attachimages/20759_установка_1.jpg" alt="" /></a></p>
+
+<p><strong>Dorian</strong> 02-03-2021</p>
+
+<p>Понимаете, у любой гидропоники есть один единственный камень преткновения. Для того, чтобы вырастить в ней что то, нужно хотя бы немного понимать, как это делать. А это подразумевает знания и умения, а для их получения нужно время и желание. Как вы понимаете, большинство не имеет ни того ни другого, ведь, намного проще пойти и купить огурец, чем потратить месяцы на самообразование и опыты, чтобы этот огурец вырастить. От сюда следует вывод, - домашнее гидропонное выращивание останется уделом избранных до тех пор пока, либо, технология дорастёт до уровня работы с дебилами (положил семечко томата и выросли помидоры гроздями), либо у людей возникнет острая нужда кушать вкусные овощи зимой. К сожалению в гидре нет и не будет решений, проще горшка с землёй.</p>
+
+<p><strong>siv237</strong> 03-03-2021</p>
+
+<blockquote>
+  <p>Понимаете, у любой гидропоники есть один единственный камень преткновения. Для того, чтобы вырастить в ней что то, нужно хотя бы немного понимать, как это делать. А это подразумевает знания и умения, а для их получения нужно время и желание. Как вы понимаете, большинство не имеет ни того ни другого, ведь, намного проще пойти и купить огурец, чем потратить месяцы на самообразование и опыты, чтобы этот огурец вырастить. От сюда следует вывод, - домашнее гидропонное выращивание останется уделом избранных до тех пор пока, либо, технология дорастёт до уровня работы с дебилами (положил семечко томата и выросли помидоры гроздями), либо у людей возникнет острая нужда кушать вкусные овощи зимой. К сожалению в гидре нет и не будет решений, проще горшка с землёй.</p>
+</blockquote>
+
+<p>подпор проще горшка с землей</p>
+
+<p><strong>mykynovner</strong> 18-01-2022</p>
+
+<p>http://ogorodnikov-rs.ru/info.php?id=45</p>
+
+<p>http://vihrclub.ru/turniry/kubok-gubernatora/</p>
+
+<p>http://vskarate.ru/napisat-nam/</p>
+
+<p>http://basket-team.ru/page/7.html</p>
+
+<p>http://zolotoy-duplet.ru/</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

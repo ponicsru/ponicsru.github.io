@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Вопрос про помидоры, огурчики и удобрения. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Вопрос про помидоры, огурчики и удобрения.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Вопрос про помидоры, огурчики и удобрения.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>seg4</strong> 24-11-2010</p>
+
+<p>И так вопросы:</p>
+
+<p>1 Сколько нужно времени от посева до первых спелых плодов, если выращивать в закрытом грунте с хорошим освещением ДНаТ 600, система периодического затапливания, субстра керамзит ( этот вопрос как к томатам так и к огурцам в целом).</p>
+
+<p>2 Сколько по времени плодоносят помидорки и огурчики</p>
+
+<p>3 Сколько можно собрать при таких условиях с одного куста</p>
+
+<p>4 Этот вопрос касается удобрений. Скажите, что лучше покупать уже готовые удобрения как например в здешнем магазине (Покупаешь бутыль и разводишь с водой по инструкции) или покупать отдельно соли и смешивать самому?</p>
+
+<p><strong>Tony_85</strong> 24-11-2010</p>
+
+<p>А сколько времени растут бананы? : ;)</p>
+
+<p>Ну у Вас и вопросики. Каждый сорт имеет свою агротехнику. Есть ранние сорта, есть поздние. Количество плодов также будет зависит от очень многих факторов. Какой сорт, как много растений Вы насадите на кв.м., какие условия Вы им сделаете.</p>
+
+<p>У Валерия огурцы кажется растут больше года.</p>
+
+<p>На счет растворов, так это зависит от вашего опыта. Если вы хорошо разбираетесь в химии, имеете возможность купить чистые соли и хелаты металлов, тогда конечно выгоднее самому делать. Если опита мало, тогда разумнее взять готовые концентраты.</p>
+
+<p><strong>seg4</strong> 24-11-2010</p>
+
+<p>Tony_85, спасибо что еще на один вопрос меня надоумили. Рациональнее будет посадить сколько кустов огурцов и томатов на м2? Или такой вопрос тоже не уместен тк зависит от сортов?</p>
+
+<p><strong>Mole_Garden</strong> 24-11-2010</p>
+
+<blockquote>
+  <p>Tony_85, спасибо что еще на один вопрос меня надоумили. Рациональнее будет посадить сколько кустов огурцов и томатов на м2? Или такой вопрос тоже не уместен тк зависит от сортов?</p>
+</blockquote>
+
+<p>:D Мдя и вправду вопросы на пол часа ответов. Если у вас буду мелкоплодные и низкорослые сорта то будет одно количество растений на кв метр, если буду крупноплодные и высокорослые сорта то другое количество. Это все равно что спросить сколько людей залезет в лифт. Толстяков будет одно количество, дистрофиков другое, это же вроде очевидно.</p>
+
+<p>А вообще такого рода вопросы не новы и специально для вас и других интересующихся создан небольшой фак</p>
+
+<p>http://forum.ponics.ru/index.php/topic,430.msg16600.html#msg16600</p>
+
+<p><strong>valery</strong> 24-11-2010</p>
+
+<p>Ну если уж ОЧЕНЬ ОЧЕНЬ грубо “прицелиться” можно для томата-огурца ориентироваться примерно на цифру от 2 до 4 (но, согласен с Константином, это - пальцем в небо) …</p>
+
+<p><strong>ProRus</strong> 25-11-2010</p>
+
+<blockquote>
+  <p>В среднем если не глядеть на урожайность и состояние растений, хотя с предыдущими ораторами согласен.</p>
+
+  <ol>
+    <li>
+      <p>90 дней.</p>
+    </li>
+    <li>
+      <p>11 мес.</p>
+    </li>
+    <li>
+      <p>35 кг. м2.</p>
+    </li>
+    <li>
+      <p>лучше покупное, но может быть очень дорого (где искать)… :)</p>
+    </li>
+  </ol>
+</blockquote>
+
+<p><strong>seg4</strong> 26-11-2010</p>
+
+<blockquote>
+  <ol>
+    <li>
+      <p>11 мес.</p>
+    </li>
+    <li>
+      <p>35 кг. м2.</p>
+    </li>
+  </ol>
+</blockquote>
+
+<p>Как я понял эти 35 кг с м2 можно собрать за 11 месяцев</p>
+
+<p><strong>ProRus</strong> 26-11-2010</p>
+
+<blockquote>
+  <p>Как я понял эти 35 кг с м2 можно собрать за 11 месяцев</p>
+</blockquote>
+
+<p>Да, правильно поняли… Я даже встречал в прессе результат огурцов в 100 кг с м2 за цикл роста, но насколько это реально сложно сказать, ведь кроме этой цифры больше ничего не афишировалось. Очень много побочных факторов, которые очень сложно обеспечить.</p>
+
+<p><strong>seg4</strong> 26-11-2010</p>
+
+<p>А вот по поводу удобрений, посоветуйте на ваш взгляд лучшие. И что скажите о удобрениях HESI посмотреть можно тут http://www.hesi.biz/. и GHE (GENERAL HYDROPONICS EUROPE) тут смотреть http://www.eurohydro.com/home.php . Хотя я читал что эти удобрения больше подходят для выращивание смешной зелени. Посоветуйте.</p>
+
+<p><strong>WERDNA</strong> 26-11-2010</p>
+
+<p>Хорошие удобрения. Но лучше оставьте их гроверам… Ибо золотые огурчики у Вас получатся.</p>
+
+<p><strong>seg4</strong> 26-11-2010</p>
+
+<p>Так если они хорошие, значит и результат хороший будет. Я так понимаю, что хорошие удобрения уменьшают время, от проращевания семяни и до первых плодов?</p>
+
+<p><strong>Mole_Garden</strong> 26-11-2010</p>
+
+<blockquote>
+  <p>Так если они хорошие, значит и результат хороший будет. Я так понимаю, что хорошие удобрения уменьшают время, от проращевания семяни и до первых плодов?</p>
+</blockquote>
+
+<p>:D Нет, иначе бы все комплексы выращивали на них.</p>
+
+<p><strong>valery</strong> 26-11-2010</p>
+
+<blockquote>
+  <p>Я так понимаю, что хорошие удобрения уменьшают время, от проращевания семяни и до первых плодов?</p>
+</blockquote>
+
+<p>:D</p>
+
+<p>Ну не совсем так … Европейцы вполне нормально кушают, а семьи создают (женятся, замуж выходят, ну и деток плодят) около 28-29 лет …</p>
+
+<p>В некоторых голодных странах - где время на еду меньше тратят, и других развлечний - мало, умеют делать детей гораздо раньше …</p>
+
+<p>:)</p>
+
+<p><strong>ProRus</strong> 27-11-2010</p>
+
+<blockquote>
+  <p>Хорошие удобрения. Но лучше оставьте их гроверам… Ибо золотые огурчики у Вас получатся.</p>
+</blockquote>
+
+<p>Это точно. Я хоть и пользуюсь только покупными, но это только на стадии экспериментов. Когда освою для себя технику выращивания, обязательно буду пробовать перейти на самостоятельные растворы.</p>
+
+<p><strong>WERDNA</strong> 27-11-2010</p>
+
+<p>Баловство все это. Уже не помню, где прочитал, но идея такая: скорость развития растения и количество/качество плодов всегда отпределяется самым дефицитным ресурсом: у нас это ВСЕГДА СВЕТ, так что лишнее деньги имеет смысл вложить в хороший ЭПРА и хорошую лампу.</p>
+
+<p>Я конечно любитель, не более того, но пришел к одному выводу касаемо удобрений: растение будет хорошо расти в очень широком диапазоне N-P-K. То есть нет смысла стремиться выдержать рекомендованный (кем? когда? для какоко сорта и каких условий выращивания?) N-P-K до единиц. Процентов на 5-10% думаю смело можно ошибаться.</p>
+
+<p><strong>WERDNA</strong> 27-11-2010</p>
+
+<p>ProRus, купите любое доступное по деньгам комплексное удобрение с более-менее подходящим балансом элементов. С помощью кальциевой селитры, монофосфата калия и сульфата калия Вы смешаете себе более чем приличный раствор. А если еще купить аммиачную селитру, калийную селитру, сульфат магния и микроэлементы - вообще любой раствор. Экономия в разы, а по сравнению с тем же GHE - на порядок…</p>
+
+<p><strong>ProRus</strong> 27-11-2010</p>
+
+<blockquote>
+  <p>Экономия в разы, а по сравнению с тем же GHE - на порядок…</p>
+</blockquote>
+
+<p>На данной время у меня есть готовые удобрения из серии Flora и FloraNova с помощью которых я доказываю себе что с остальным у меня все в порядке. Если я начну еще и химичить, то приобрету еще одну дополнительную проблему с которой на данное время нет желания сталкиваться (другие цели). Когда все остальные вопросы интересующие меня на данное время будут решены, то следующий этап полностью или частичный отказ от готовый решений. Например на данный момент у меня получение хорошего урожая при полном искусственном освещении на разных типах установок и отработка производственного цикла.</p>
+
+<p><strong>Andry</strong> 07-12-2010</p>
+
+<p>Подскажите пожалуйста. При выращивании гидропонным методом удобрением etisso hydro недостаток раствора нужно пополнять водой или приготовлением нового раствора?</p>
+
+<p><strong>Coccinella</strong> 07-12-2010</p>
+
+<p>В любом случае (независимо от марки удобрения) пополняют новым раствором. Он может быть приготовлен заранее в баке, может дозироваться разведением концентрата, но если Вы будете добавлять только воду, в питательном растворе упадет ЕС. Чем при этом бедные растения питаться будут?</p>
+
+<p><strong>ProRus</strong> 07-12-2010</p>
+
+<blockquote>
+  <p>В любом случае (независимо от марки удобрения) пополняют новым раствором. Он может быть приготовлен заранее в баке, может дозироваться разведением концентрата, но если Вы будете добавлять только воду, в питательном растворе упадет ЕС. Чем при этом бедные растения питаться будут?</p>
+</blockquote>
+
+<p>Добавлю еще, что его через определенное время желательно полностью поменять, а то может быть передоз по одному из составляющих. Когда? Зависит от растений, удобрений, освещения и т.д.</p>
+
+<p><strong>Mole_Garden</strong> 07-12-2010</p>
+
+<p>Берем TDS метр, замеряем ppm если он ниже изначального, то добавляем удобрения, если выше, то воду. Раз в полтора или два месяца меняем полностью раствор.</p>
+
+<p><strong>Andry</strong> 08-12-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>Добавлю еще, что его через определенное время желательно полностью поменять, а то может быть передоз по одному из составляющих. Когда? Зависит от растений, удобрений, освещения и т.д.</p>
+  </blockquote>
+
+  <p>А периодически полив обычной водой нужен?</p>
+</blockquote>
+
+<p><strong>ProRus</strong> 08-12-2010</p>
+
+<blockquote>
+  <p>А периодически полив обычной водой нужен?</p>
+</blockquote>
+
+<p>Для чего? Никакого полива водой не нужно. Единственное, в идеале уменьшают дозировку раствора перед снятием урожая за несколько дней, но для помидоров и огурца это не актуально.</p>
+
+<p><strong>Mole_Garden</strong> 08-12-2010</p>
+
+<blockquote>
+  <p>Для чего? Никакого полива водой не нужно. Единственное, в идеале уменьшают дозировку раствора перед снятием урожая за несколько дней, но для помидоров и огурца это не актуально.</p>
+</blockquote>
+
+<p>Сразу видно начитались веселых форумов :D</p>
+
+<p><strong>ProRus</strong> 09-12-2010</p>
+
+<blockquote>
+  <p>Сразу видно начитались веселых форумов :D</p>
+</blockquote>
+
+<p>Да вроде нет… :) На таких форумах нужно регистрироваться чтобы почитать, я по ним даже и не ходил ни разу… Это из какой то книги или может брошюры про салат. Сейчас уже и не вспомню. :-[</p>
+
+<p><strong>seg4</strong> 09-12-2010</p>
+
+<blockquote>
+  <p>уменьшают дозировку раствора перед снятием урожая за несколько дней, но для помидоров и огурца это не актуально.</p>
+</blockquote>
+
+<p>Разъясните, почему для одних культур это актуально, а для других нет.</p>
+
+<p><strong>seg4</strong> 09-12-2010</p>
+
+<p>Читал, что перед самым снятием урожая дня за 4-7 вобще, раствор меняют на воду. Такое практикуется ребята? Или я сказок новых начитался? :-\</p>
+
+<p><strong>ProRus</strong> 09-12-2010</p>
+
+<blockquote>
+  <p>Разъясните, почему для одних культур это актуально, а для других нет.</p>
+
+  <p>Читал, что перед самым снятием урожая дня за 4-7 вобще, раствор меняют на воду. Такое практикуется ребята? Или я сказок новых начитался?</p>
+</blockquote>
+
+<p>Не актуально для плодоносящих растений. Ведь они плодоносят практически весь срок жизни.</p>
+
+<p>Чтоб поливали только водой, да еще такой большой срок не слыхал. Читал, что за два дня до снятия урожая салата снижают уровень концентрации в два раза (но это в идеале).</p>
+
+<p>Для больших потоковых линий это практически невозможно осуществить.</p>
+
+<p><strong>seg4</strong> 09-12-2010</p>
+
+<p>ProRus спасибо. <em>8)</em></p>
+
+<p><strong>Mole_Garden</strong> 09-12-2010</p>
+
+<blockquote>
+  <p>Читал, что перед самым снятием урожая дня за 4-7 вобще, раствор меняют на воду. Такое практикуется ребята? Или я сказок новых начитался? :-\</p>
+</blockquote>
+
+<p>Практикуется, только, повторюсь, не при выращивании овощей. Это чаще всего используют люди, которые выращивают траву. А делается это для того, что бы очистить растений от передоза удобрений, которые они качают в елку, что бы она выдала максимальный урожай. Потом то они же ее срубают. А как можно сделать передоз для огурца? он потом месяц будет приходить в себя после такой терапии. Таким может заниматься только профессиональный агроном, при наличии спец оборудования, для отслеживания состояния растения. По моему вот эта статься как раз про это http://www.greentalk.ru/node/1649</p>
+
+<blockquote>
+  <p>Да вроде нет… На таких форумах нужно регистрироваться чтобы почитать, я по ним даже и не ходил ни разу… Это из какой то книги или может брошюры про салат. Сейчас уже и не вспомню.</p>
+</blockquote>
+
+<p>Кстати, зря, если не считать, что там написано про траву, то очень много полезной инфы и идей реализации установок, а так же автоматики. К примеру, тут у нас был товарищ с форума олк, так вот он собрал автоматизированный растворный узел. Изначально собирал его для елки, а потом, после того как я запостил его самоделку на нашем форуме, ему сделали заказ для овощной теплицы.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

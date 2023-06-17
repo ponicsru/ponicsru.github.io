@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Очередная тумбочка для растений | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Очередная тумбочка для растений">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Очередная тумбочка для растений</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Coccinella</strong> 06-11-2015</p>
+
+<p>Посмотрите, какую прелестную конструкцию создала группа молодых людей</p>
+
+<p><a href="http://www.treehugger.com/gadgets/grove-smart-indoor-garden-lets-you-grow-lettuce-year-round.html" target="_blank">http://www.treehugger.com/gadgets/grove-smart-indoor-garden-lets-you-grow-lettuce-year-round.html</a></p>
+
+<p>Если лень читать на английском, посмотрите видео</p>
+
+<p><a href="https://d2pq0u4uni88oo.cloudfront.net/projects/2047202/video-604419-webm.webm" target="_blank">https://d2pq0u4uni88oo.cloudfront.net/projects/2047202/video-604419-webm.webm</a></p>
+
+<p>Очень хорошо сделанная реклама :)</p>
+
+<p>Единственное, что огорчает - цена этой тумбочки, начинали с 2700 долларов, а сейчас уже 4500 :(.</p>
+
+<p><strong>cpf</strong> 06-11-2015</p>
+
+<p>Отличная вещь! Только нужно уметь ещё ухаживать за рыбами… :D</p>
+
+<p>Считаю, что изготовление подобных устройств - перспективный бизнес (я удивляюсь, что всякие мебельно-кухонные фабрики ещё “не прочухали” эту тему :-X)</p>
+
+<p><strong>n72black</strong> 06-11-2015</p>
+
+<p>Наверное ещё не придумали как доставлять такое чудо. :D</p>
+
+<p><strong>lidia</strong> 06-11-2015</p>
+
+<p>Цена действительно запредельная. Но вещица милая и ведь… всё так просто :)</p>
+
+<p><strong>Komar_off</strong> 06-11-2015</p>
+
+<p>Интересно, как в такой системе контролировать состав воды, те же PH и EC? Тем более, что для каждого растения они свои.</p>
+
+<p><strong>lidia</strong> 06-11-2015</p>
+
+<blockquote>
+  <p>Интересно, как в такой системе контролировать состав воды, те же PH и EC? Тем более, что для каждого растения они свои.</p>
+</blockquote>
+
+<p>Для аквариумов есть специальные понизители РН. И для аквариумных растений есть удобрения и витамины специальные, думаю они и травкам-приправкам подойдут.</p>
+
+<p><em>**</em> 06-11-2015</p>
+
+<p>Боюсь вызвать негодование форумчан, но мне кажется, что аквапоника тупиковая ветвь гидропоники, правда если выращивать самые простые растения может служить неплохим живым уголком для детишек. Просто сколько я не видел видео, растения себя чувствуют не очень хорошо, уж не знаю как там рыбки. <em>???</em></p>
+
+<p><strong>lidia</strong> 06-11-2015</p>
+
+<blockquote>
+  <p>… правда если выращивать самые простые растения может служить неплохим живым уголком для детишек.</p>
+</blockquote>
+
+<p>:) И это уже хорошо.</p>
+
+<p>Вот где-то были видео о плотах с салатом на реке… Может правда.., может миф… :-\</p>
+
+<p><strong>n72black</strong> 06-11-2015</p>
+
+<p>Наверное, скорее всего эта установка так - маркетинг. :)</p>
+
+<p>Либо в аквариуме живут специальные выносливые рыбки. :D</p>
+
+<p><strong>Vad</strong> 06-11-2015</p>
+
+<p>:-\</p>
+
+<p>меня напрягает в этом цикле … “bacteria”</p>
+
+<p><img src="http://media.treehugger.com/assets/images/2015/11/d905fc5ad6a412f6bb807456a69f4344_original.jpg.650x0_q70_crop-smart.jpg" alt="" /></p>
+
+<p>мало ли какая bacteria там заведется…</p>
+
+<p>и рыба подохнет и растюхи офигнеют :D</p>
+
+<p><em>**</em> 06-11-2015</p>
+
+<p>В центральном офисе GHE стоит побольше аквариум с петрушкой, по моему у них тиляпии.</p>
+
+<p><strong>orgail</strong> 06-11-2015</p>
+
+<p>обычная рекламная тумбочка. никакого отношения к реальности не имеет. это как food-foto - красивая обманка. имхо.</p>
+
+<p><strong>cpf</strong> 06-11-2015</p>
+
+<p>В любом аквариумном фильтре живет “bacteria” (хотите вы этого или нет).</p>
+
+<p>В серьёзных аквариумах, специально делают целые “реакторы” (биофильтры с бактериями), которые “перерабатывают рыбьи азотные экскрименты” в пригодные для питания растений соединения. :D</p>
+
+<p>В данной “тумбочке”, роль такого биофильтра, полагаю, выполняет субстрат с растениями (и бактериями), в котором и происходит очистка воды от механических и химических загрязнений, вредных для рыб.</p>
+
+<p>Как пример такого: <a href="https://www.youtube.com/watch?v=CLpNXVwp40w" target="_blank">https://www.youtube.com/watch?v=CLpNXVwp40w</a></p>
+
+<p><strong>orgail</strong> 06-11-2015</p>
+
+<p>в особо солнечные дни bacteria выкапывают из тумбочки томат и выносят его на улицу … либо ходят на рынок за готовыми и развешивают плоды, как на ёлку :D :D :D</p>
+
+<p><strong>lidia</strong> 06-11-2015</p>
+
+<p>Ну вот, опять всё обхохотали :). А аквариумисты всерьёз фитофильтры ляпают :-\, вроде и растёт там что-то, так почему бы не минитоматы с базиликами :D</p>
+
+<p>PS. Только они неправильно делают, “сифонить” надо…</p>
+
+<p><strong>Gnevko</strong> 06-11-2015</p>
+
+<p>Аквариумистика весьма разнообразна, в травниках сифонить нельзя, в аквариумах без растений - нужно. Так что не все так просто, плоско и однозначно в этом мире.</p>
+
+<p><strong>lidia</strong> 06-11-2015</p>
+
+<blockquote>
+  <p>, в травниках сифонить нельзя, в аквариумах без растений - нужно.</p>
+</blockquote>
+
+<p>А почему? Разве лучше, если корни постоянно в воде? Или что я не понимаю? Рыбам будет хуже?</p>
+
+<p>Кстати, в обсуждаемом устройстве <a href="https://d2pq0u4uni88oo.cloudfront.net/projects/2047202/video-604419-webm.webm" target="_blank">https://d2pq0u4uni88oo.cloudfront.net/projects/2047202/video-604419-webm.webm</a> как раз сифон ведь…</p>
+
+<p>А наши делают постоянный слой воды на пол ящика <a href="https://www.youtube.com/watch?v=CLpNXVwp40w" target="_blank">https://www.youtube.com/watch?v=CLpNXVwp40w</a></p>
+
+<p><strong>Алексей Ильин</strong> 15-11-2015</p>
+
+<p>Вот он видосик про аквапонную установку в офисе GHE, перепутал, не тиляпии у них, а карпы декоративные.</p>
+
+<p><a href="http://www.youtube.com/watch?v=8DzAqf5koOc#" target="_blank">! No longer available</a></p>
+
+<p><em>**</em> 28-11-2015</p>
+
+<p>Тут рыл инфу по водяному крессу и наткнулся на вот такой вот видосик, мужичок выращивает кресс на аквапонике вполне успешно. Вот в такой симбиоз я верю. :)</p>
+
+<p><a href="http://www.youtube.com/watch?v=8NecivLVV50#" target="_blank">! No longer available</a></p>
+
+<p><strong>tokmo</strong> 29-11-2015</p>
+
+<blockquote>
+  <p>мужичок выращивает</p>
+</blockquote>
+
+<p>Ещё один мужичёк хорошо устроился</p>
+
+<p><a href="https://www.youtube.com/watch?v=Du6Z8p71eys" target="_blank">https://www.youtube.com/watch?v=Du6Z8p71eys</a></p>
+
+<p><strong>Алексей Ильин</strong> 29-11-2015</p>
+
+<p>Молодец дядька, главное наш человек, все своими руками! Дай Бог чтоб все получалось! Нам бы такой климат как в L.A.</p>
+
+<p>Посмотрел этот канал классные ролики попадаются, вообще популярна гидропоника и аквапоника в южных штатах.</p>
+
+<p><strong>tokmo</strong> 29-11-2015</p>
+
+<p>Присмотрел у этого дядьки то, что гидропонные низкопрофильные ёмкости можно укрывать от непогоды с помощью простых дуг для парников ) .</p>
+
+<p><strong>Алексей Ильин</strong> 29-11-2015</p>
+
+<p>А вот парнишка преимущественно на аэропонике все растит. Толково, все овощи неплохо выглядят. Но у них в южных штатах опять же такое солнышко, что само все растет. А что раствор палкой мешает, прикололо. И tds-метр использует. Валерия на него нету. :D</p>
+
+<p><a href="https://www.youtube.com/watch?v=H4gsnFJRAB0" target="_blank">https://www.youtube.com/watch?v=H4gsnFJRAB0</a></p>
+
+<p><strong>Алексей Ильин</strong> 29-11-2015</p>
+
+<p>Даже африканцы подхватили идею аквапоники. :o</p>
+
+<p>Эрик из Кении. :)</p>
+
+<p><a href="https://www.youtube.com/watch?v=3IryIOyPfTE" target="_blank">https://www.youtube.com/watch?v=3IryIOyPfTE</a></p>
+
+<p><strong>Алексей Ильин</strong> 29-11-2015</p>
+
+<p>Еще один темнокожий последователь аквапонного движения. Я так понял из Танзании. Толковый парень по моему.</p>
+
+<p><a href="https://www.youtube.com/watch?v=z0qw8v_ss0s" target="_blank">https://www.youtube.com/watch?v=z0qw8v_ss0s</a></p>
+
+<p><strong>Coccinella</strong> 25-05-2016</p>
+
+<p>Вот еще одна замечательная игрушка, все та же NGS в любительском исполнении</p>
+
+<p>Hydroponic agriculture is already possible at home</p>
+
+<p>This month, a new hydroponic cultivation system will be launched which will make it possible to cultivate a wide range of fresh vegetables or flowers for decoration at home.</p>
+
+<p>It is called MINICAMP, developed by the company NGS, which is devoted to the development and manufacture of advanced solutions for high performance horticulture.</p>
+
+<p>MINICAMP consists of a hydroponic cultivation table which doesn't need any kind of substrate, as the nutrients needed by the plants are supplied by means of a closed loop system that goes through a tank containing the nutrient solution; the nutrients then go through the crop lines feeding the root system and return to the deposit by gravity back into the tank.</p>
+
+<p>“Assembling it is very simple and, once built, it's just up to us to decide what we're going to grow,” explains Carla Ramos, of the Export Department at NGS.</p>
+
+<p>“Given that it doesn't use substrate, it is a clean system, suitable to have at home. Also, irrigation is controlled automatically and does not require any physical effort to treat the soil.”</p>
+
+<p>“You can cultivate without having to rely on the weather, as the nutrients are in continuous recirculation. Furthermore, it saves a considerable amount of water, since it is a closed loop system,” he adds.</p>
+
+<p>According to Carla Ramos, this mini system of hydroponic farming makes it possible to have an orchard or garden at home without the need for extensive knowledge in agriculture and can be adapted to any type of space, producing also in the off-season thanks to the precocity of the plants' growth.</p>
+
+<p>MINICAMP is intended for crops such as vegetables (lettuce, chard, spinach, celery, etc.), herbs (mint, peppermint, thyme, parsley, cilantro, chamomile, etc.) or flowering plants (carnation, gerbera, etc.).</p>
+
+<p>“The whole family can become involved in the use of this simple system, which makes MINICAMP a very advantageous product that allows for the cultivation of both edible and ornamental crops in an easy and environmentally friendly way.”</p>
+
+<p><a href="http://www.ngsystem.com" target="_blank">www.ngsystem.com</a></p>
+
+<p>Publication date: 5/25/2016</p>
+
+<p>источник: <a href="http://www.freshplaza.com/article/158397/Hydroponic-agriculture-is-already-possible-at-home" target="_blank">http://www.freshplaza.com/article/158397/Hydroponic-agriculture-is-already-possible-at-home</a></p>
+
+<p>Посмотрите по ссылке, там замечательные картинки, которые здесь не отобразились :(</p>
+
+<p><strong>Cyclamech</strong> 25-05-2016</p>
+
+<blockquote>
+  <p>Посмотрите по ссылке, там замечательные картинки, которые здесь не отобразились :(</p>
+</blockquote>
+
+<p><em>8)</em></p>
+
+<p>Ваятелям столов на заметку! <em>crazy</em></p>
+
+<p><strong>tokio</strong> 25-05-2016</p>
+
+<blockquote>
+  <p>Ваятелям столов на заметку!</p>
+</blockquote>
+
+<p>Не! Покупателям. А изготовить подобное, при наличии современных материалов и технологий, проблем не составляет.</p>
+
+<p><strong>tokio</strong> 25-05-2016</p>
+
+<p>Правда, если делать конструкцию таким образом, как по ссылке, похоже из толстенного ПВХ-профиля, то дорого выйдет для покупателя.</p>
+
+<p><strong>Cyclamech</strong> 25-05-2016</p>
+
+<p>Красивый фокус-покус разевает рот и кошелёк! <em>crazy</em></p>
+
+<p><strong>tokio</strong> 25-05-2016</p>
+
+<blockquote>
+  <p>Красивый фокус-покус разевает рот и кошелёк!</p>
+</blockquote>
+
+<p>Ну откроет он кошелёк… хы… а там пусто :'(…</p>
+
+<p><strong>penutavlad</strong> 14-01-2022</p>
+
+<p>http://www.olimpshop.ru/price/</p>
+
+<p>http://paravia.ru/photo/paragliding/labinsk/</p>
+
+<p>http://www.trek.org.ru/osobennosti-trenirovochnoy-i-sorevnovatelnoy-deyatelnosti.html</p>
+
+<p>https://unicarve.ru/golovkin-alvares-video-boya/</p>
+
+<p>http://nskvmf.ru/velo1/samostoiatelnaiakomponovkavelos.htm</p>
+
+<p><strong>kozlykas</strong> 21-01-2022</p>
+
+<p>http://stadiums.at.ua/news/2017-07-11-32577</p>
+
+<p>http://naduvnushka.ru/ustroistvo-naduvnoi-lodki.html</p>
+
+<p>http://chess-krm.pp.ua/</p>
+
+<p>http://body-life.ru/contacts/</p>
+
+<p>http://www.kulturizm63.ru/category/zhenshchiny</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Не получается подключить рутер | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Не получается подключить рутер">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Не получается подключить рутер</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Coccinella</strong> 11-02-2013</p>
+
+<p>Господа, извините за вопрос немного не по теме, но больше некого спросить. Подарили мы дочке планшетник с Андроидом и пытаемся подключить его к домашнему рутеру. Инструкцию от рутера где-то задевали, найти не можем. Когда мы пытаемся подсоединить сеть (я наверно неправильно термины перевожу, я с латышского дословно), он от нас требует SSID. А где нам его искать? Посоветуйте, пожалуйста!</p>
+
+<p><strong>orgail</strong> 11-02-2013</p>
+
+<p>SSID это название вашей беспроводной сети, вы его выбираете в списке доступных беспроводных сетей на планшете,</p>
+
+<p>а требует сеть уже при подключении обычно секретный ключ, который должен быть где-то у Вас записан :)</p>
+
+<p><strong>Coccinella</strong> 11-02-2013</p>
+
+<p>Если Вы имеете в виду пароль к рутеру, то получается такая ерунда. Пока он не введен, планшетник уверяет, что сигнал отличный, как только вводим пароль от рутера, сигнал сразу становится “слабый” и …. ничего не происходит. А нас уверяют, что он дескать ищет в сети IP адрес</p>
+
+<p><strong>Vad</strong> 11-02-2013</p>
+
+<p>а что еще через роутер подключено?</p>
+
+<p>какой там IP? (другие устройства получают автоматически или….?)</p>
+
+<p>может в роутере не настроен DHCP и нужно ручками прописать параметры сети?</p>
+
+<p><strong>Coccinella</strong> 11-02-2013</p>
+
+<p>Через рутер подключен станционарный комп, с которого я сейчас общаюсь и ноутбук, уже довольно старый. Их к рутеру подключали с помощью инсталяционного диска. Мне он (планшетник) только что заявил, что предотвращено некачественное подключение к нету. Может, он где-то “заперт” ? Там символ замочка закрытого рядом с символом силы сигнала</p>
+
+<p><strong>Vad</strong> 11-02-2013</p>
+
+<p>а можно модельку роутера узнать?</p>
+
+<p><strong>mitrotech</strong> 11-02-2013</p>
+
+<p>Ну и ещё как вариант договорится о времени и по скайпу попробовать настроить. Если конечно камера хорошая, а то через 0.3 мп не разобрать будет.</p>
+
+<p><strong>Vad</strong> 11-02-2013</p>
+
+<p>да там и в “картинках “ будет понятно ))</p>
+
+<p>3 нопки.. 12 цифр ))</p>
+
+<p><strong>orgail</strong> 11-02-2013</p>
+
+<p>замочек это значит что сеть закрытая,</p>
+
+<p>а ищет ищет и не найдет IP это таки наверное на роутере DHCP (который эти IP адреса и раздавать должен) не включен, как Vad говорит</p>
+
+<p>можно конечно и ручками прописать, если на роутер не зайти</p>
+
+<p><strong>artmaximus</strong> 11-02-2013</p>
+
+<p>Coccinella , а к провайдеру позвонить нельзя? Что бы они пошагово решили эту проблему.</p>
+
+<p>У нас как какие то проблемы, я звоню и они пошагово помогают или присылают сервис менеджера (бесплатно) и он решает все проблемы.</p>
+
+<p><strong>Vad</strong> 11-02-2013</p>
+
+<p>судя по долгому молчанию.. до роутера всетаки добрались :-\</p>
+
+<p><strong>artmaximus</strong> 11-02-2013</p>
+
+<p>…видимо :)</p>
+
+<p><strong>Coccinella</strong> 11-02-2013</p>
+
+<p>Спасибо, господа, никуда мы не добрались, стол дочке на 18 лет накрывали :) Проблема так и висит нерешенная. Идея со скайпом хорошая, только на микрофон кто-то нечаянно сел :( и в ходу только камера :)</p>
+
+<p>Рутер TP-Link. С провайдером связываться не очень хочется, он к рутеру относится неодобрительно :(</p>
+
+<p>А как этот DHCP включается (что это вообще за зверьтакой?)</p>
+
+<p><strong>Vad</strong> 11-02-2013</p>
+
+<p>Наши поздравления дочке!</p>
+
+<p>Пусть растет умничкой, хорошо учится и слушается родителей.. $) $) $)</p>
+
+<p>Откройте браузер Internet Explorer и укажите адрес 192.168.1.1 (на компе который ранее подключен к роутеру)</p>
+
+<p>В появившемся окне вводим имя пользователя admin и пароль admin.</p>
+
+<p>если все хорошо то попадаем приблизительно сюда</p>
+
+<p><img src="http://www.technotrade.com.ua/Images/tp-link_router_setup/quicksetup.png" alt="" /></p>
+
+<p>находим слева строчку DHCP</p>
+
+<p>жмем .. попадаем сюда</p>
+
+<p><img src="http://www.technotrade.com.ua/userfiles/images/how_to_tl-wa5210g_ap_mode/dhcp_settings.png" alt="" /></p>
+
+<p>делаем все как на картинке :)</p>
+
+<p>только в в дефолт гейтвей пишем 192.168.1.1 и в DNS тоже</p>
+
+<p>как то странно.. устроен этот тплинк.. )) он сам догадывается чтоль? :-\</p>
+
+<p>жмем сейв.. .. и пробуем с планшетником..</p>
+
+<p><strong>Vad</strong> 11-02-2013</p>
+
+<p>DHCP - Dynamic Host Configuration Protocol</p>
+
+<p>это такая штука.. которая раздает сетевые параметры всяким устройствам.. :-X</p>
+
+<p>но ее саму сперва нужно настроить.. чтоб она знала что раздавать))</p>
+
+<p><strong>Coccinella</strong> 11-02-2013</p>
+
+<p>Дочка просила передать СПАСИБО, но я не поняла, а что именно надо вводить в браузере Эксплорера? Если я иду на страницу TP-Link,там много всего чего, но не то, что Вы показываете</p>
+
+<p><strong>Vad</strong> 11-02-2013</p>
+
+<p>ой..</p>
+
+<p><em>???</em></p>
+
+<p>а можно скриншот?</p>
+
+<p>(выводм на экран что хотим показать, жмем клавишу принтскрин в правом углу клавиатуры, потом открываем редактор картинок (например paint) там в верхнем меню “правка” и в нем “вставить” появляется картинка с экрана в окне. сохраняем .. и сюда.)</p>
+
+<p><strong>Coccinella</strong> 11-02-2013</p>
+
+<p>Трудно инженеру с бестолковым агрономом :(. Vad, скриншот чего? На этом компе у меня открывается их стартовая страница со всякой рекламой, а не планшетнике не открывается ничего :(</p>
+
+<p><strong>Vad</strong> 11-02-2013</p>
+
+<p>а.. )) понял.. то сайт Тплинки.. ))</p>
+
+<p>вот где вверху щас у вас написано “ <a href="http://forum.ponics.ru/index.php?action=post;topic=1638.15;last_msg=58121" target="_blank">http://forum.ponics.ru/index.php?action=post;topic=1638.15;last_msg=58121</a>”</p>
+
+<p>все стереть.. и набрать 192.168.1.1</p>
+
+<p>и нажать клавишу энтер.</p>
+
+<p>спросит пароль и логин</p>
+
+<p>и пароль - admin</p>
+
+<p>и логин - admin</p>
+
+<p>далее по тексту выше :)</p>
+
+<p><strong>Coccinella</strong> 11-02-2013</p>
+
+<p>Спасибо, но не получилось. Возможно, дело в том, что на экране планшетника светится немного не та модель рутера, что стоит у нас. Впечатление, что он его опознает неотчетливо :)</p>
+
+<p>Но придется откладывать решение проблемы на завтра, меня запрягают в домашнюю работу по ликвидации последствий праздника :)</p>
+
+<p><strong>Vad</strong> 11-02-2013</p>
+
+<p>не не.. это надо делать с компютера который раньше был.. не с нового</p>
+
+<p>(например с того компьюера, на котором вы сейчас видите это сообщение :))</p>
+
+<p><strong>artmaximus</strong> 11-02-2013</p>
+
+<p>Присоединяюсь…к поздравлениям $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $)…миллион,миллион,миллион…алых роз $) $) $) $)</p>
+
+<p>…как говорил Спортакус…“всё получится” (с)</p>
+
+<p>…только завтра на свежую голову ;) :D (я о роуторе)</p>
+
+<p><strong>Coccinella</strong> 12-02-2013</p>
+
+<p>Спасибо, господа, за поздравления, но планшетник продолжает упираться</p>
+
+<p><strong>Al-nikoly</strong> 12-02-2013</p>
+
+<p>Может сфотографировать экран планшетника на фотоаппарат :-[, ситуацию когда он запрашивает код, тогда профессионалам будет проще понять в чем проблема. Скриншоты ведь с планшета не получится выложить <em>???</em></p>
+
+<p><strong>Coccinella</strong> 12-02-2013</p>
+
+<p>Экран блестит, мое отражение видно едва ли не лучше, чем надписи. Язык мы ему переставили на английский</p>
+
+<p><a href="https://t.me/ponics_ru_files/9784" target="_blank"><img src="/attachimages/12393_P1090311.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9785" target="_blank"><img src="/attachimages/12395_P1090316.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9786" target="_blank"><img src="/attachimages/12397_P1090317.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 12-02-2013</p>
+
+<p>Он этот Wi-Fi чувствует во множестве, но не подключается :(</p>
+
+<p><strong>Vad</strong> 12-02-2013</p>
+
+<p>множество wi-fi роутеров… это роутеры соседей.. :D было бы не плохо.. убелиться что вы видите именно свой роутер ;)</p>
+
+<p>не не не.. так дело не пойдет:)</p>
+
+<p>оставте планшет в покое.. отложите его в сторонку. он тут не причем. :)</p>
+
+<p>нужно с другого, подключенного к роутеру компа.. зайти в настройки роутера…</p>
+
+<p>для этого нужно .. там .. “выше” .. написал ))</p>
+
+<p>все сделать.. и только тогдааааа.. брать в руки планшет :)</p>
+
+<p>возьмите в руки сам рутер, снизу на наклейке прочитайте цифры (уточнить модеть рутера.. хочется)</p>
+
+<p>(а внем вообще есть wi-fi? :o антенна торчит? ;))</p>
+
+<p><strong>Coccinella</strong> 12-02-2013</p>
+
+<p>Антенна торчит :):):) На наклейке TL-WR340 GD</p>
+
+<p><strong>Vad</strong> 12-02-2013</p>
+
+<p>ага.. олично.</p>
+
+<p>а остальные компьютеры подключены проводами к нему? или без проводов?</p>
+
+<p><strong>daemon</strong> 12-02-2013</p>
+
+<p>На любом компьютере в сети, который видит инет через этот роутер:</p>
+
+<p>Кликнуть “пуск”(если не windows 8 :)), в строке поиска набрать cmd, нажать enter.</p>
+
+<p>Откроется “чёрное окно”, в котором нужно ввести команду “ipconfig”, нажать enter.</p>
+
+<p>Среди всего безобразия будет одна строчка (возможно несколько, но вряд ли), похожая на:</p>
+
+<p>Основной шлюз. . . . . . . . . : fe80::1e7e:e5ff:fe39:544%15</p>
+
+<p>192.168.0.1</p>
+
+<p>“Основной шлюз”(конечно же на вашем языке) ключевые слова.</p>
+
+<p>192.168.0.1 - искомые цифры, это адрес, который нужно ввести в строке браузера.</p>
+
+<p>Дальше попробовать по схеме, которую описывал vad выше.</p>
+
+<p>Судя по скриншотам, у вас не включен dhcp на роутере. Если, конечно это вы к вашему роутеру подключаетесь.</p>
+
+<p>Если это так, то либо его включить, либо вручную прописать на планшете ip адрес.</p>
+
+<p>P.S. Если к сети через роутер до сих пор был подключен только один компьютер, при помощи логина и пароля, которые выдал провайдер(чаще всего в таком случае для подключения к интернету необходимо запустить специальный ярлык на рабочем столе), то дальше лучше не заморачиваться, а найти специалиста, который смог бы разобраться “на месте”.</p>
+
+<p><strong>Vad</strong> 12-02-2013</p>
+
+<p>как вариант, если остальные по проводам работают.. то может и wi-fi быть не настроенным..</p>
+
+<p>а видятся соседские сети )) (SSID) нужно еще свой SSID знать.. :)</p>
+
+<p>а пароль для доступа к беспроводной сети вместо WPA\WPA2 , подозреваю, вводится “от PPPoE” провайдера..</p>
+
+<p>так что.. щас соберем информацию.. и начнем…</p>
+
+<p><strong>Coccinella</strong> 12-02-2013</p>
+
+<p>Бррр, возникает языковая проблема, я не все понимаю, что мне говорят… :-[ К роутеру через провод подключен один комп, а ноутбук работает через антенну.</p>
+
+<p>Где у него кнопка пуск? У меня сейчас часть кнопок на английском, часть на русском и часть на латышском - полный кошмар (муж с приятелем, когда последний раз Виндовс переинсталлировали, на язык внимания не обратили, а когда я заметила и возмутилась, было поздно - приятель уже откланялся :))</p>
+
+<p>Господа, извините, но темная я в этих делах, увы!</p>
+
+<p><strong>Vad</strong> 12-02-2013</p>
+
+<p>все все.. выяснили)</p>
+
+<p>переходите к компьютеру который подключен проводом к роутеру.</p>
+
+<p>запускайте internet explorer</p>
+
+<p>в строку “адрес” набирайте 192.168.1.1 и нажмите “enter”</p>
+
+<p>если спросит пароль и логин - попали куда надо..</p>
+
+<p>если напишет “невозможно отобразить страницу”</p>
+
+<p>тогда в строку “адрес” набирайте 192.168.0.1 и нажмите “enter”</p>
+
+<p>должен спросить пароль и логин.</p>
+
+<p>это мы попадаем на страничку настройки ВАШЕГО роутера.. (из которго торчит антенна :))</p>
+
+<p>пробуйте! :)</p>
+
+<p>а мы ждем.. ;)</p>
+
+<p><strong>Coccinella</strong> 12-02-2013</p>
+
+<p>Я этим еще с утра развлекалась :). Сделала все, как Вы вчера говорили, но планшетник упорно не реагирует :(</p>
+
+<p><strong>Vad</strong> 12-02-2013</p>
+
+<p>планшетник выключить и отожить в сторону )) он не должен реагировать)) забудем пока про него.. как будто его нет ))</p>
+
+<p>вернемся к .. компьютеру..</p>
+
+<p>окошко с запросом пароля и логина есть? :)</p>
+
+<p><strong>Coccinella</strong> 12-02-2013</p>
+
+<p>Да и уже введены.</p>
+
+<p><strong>Vad</strong> 12-02-2013</p>
+
+<p>отлично..</p>
+
+<p>на страничку настройки DHCP попали, и все сделали как на картинке?</p>
+
+<p>нажали кнопочку - save.</p>
+
+<p>(я не зануда, это я уточняю :))</p>
+
+<p><strong>Coccinella</strong> 12-02-2013</p>
+
+<p>Да! (уже третий раз :))</p>
+
+<p><strong>daemon</strong> 12-02-2013</p>
+
+<p>Vad, c teamviewer проще и быстрее будет :)</p>
+
+<p><strong>Coccinella</strong> 12-02-2013</p>
+
+<p>Daemon, а доступно для агрономов?</p>
+
+<p><strong>Vad</strong> 12-02-2013</p>
+
+<p>теперь снова зайдите на страничку настройки (как и раньше) и сделайте вот так.</p>
+
+<p><a href="https://t.me/ponics_ru_files/9787" target="_blank"><img src="/imagehost/thumbs/tplinktlwr340gwifisetup.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 12-02-2013</p>
+
+<p>после удачной настройки…</p>
+
+<p>включаете планшетник.. и пытаетесь найти SSID который тлько что сами придумали.</p>
+
+<p>подключаетесь к этому SSID, планшетник спросит пароль. вводите тот что придумали :)</p>
+
+<p>наступает счастье ))</p>
+
+<p><strong>Coccinella</strong> 12-02-2013</p>
+
+<p>Нет, он чем-то недоволен Authentication problem. Интересно, что придуманный мной SSID, он тоже не отображает</p>
+
+<p><strong>Vad</strong> 12-02-2013</p>
+
+<p>вот в том и фишка!</p>
+
+<p>это вы пытаетесь подключиться к чужому(соседскому) роутеру.. естественно, пароль к нему не подходит.. вот он и возмутился)) аутификайшен пробоемм :)</p>
+
+<p>нужно искать свой! возможно он прячется на другой страничке(ниже)… полистайе список найденных сетей на планшетнике.. возможно придется несколько раз пытаться …</p>
+
+<p>по крайней мере, вы теперь знаете что искать! :)</p>
+
+<p>(кстати.. на ноутбуке, тоже прийдется найти теперь новый (придуманный) SSID и ввести новый пароль)</p>
+
+<p><strong>Vad</strong> 12-02-2013</p>
+
+<p>должен отобразиться именно ВАШ SSID</p>
+
+<p>И в таком виде, в котором вы его ввели на странице настроек</p>
+
+<p>возле “Enable SSID Broadcast” стоит галочка?</p>
+
+<p>(зеленым обвел)</p>
+
+<p><a href="https://t.me/ponics_ru_files/9788" target="_blank"><img src="/imagehost/thumbs/tplinktlwr340gwifisetupxrx.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 12-02-2013</p>
+
+<p>Vad, спасибо, на планшетнике интернет появился, зато исчез с ноутбука. Кстати, он, было, исчез и с большого компа, но там я его заново инсталлировала с диска. Может, мне и на ноутбуке его с диска попробовать?</p>
+
+<p><strong>Coccinella</strong> 12-02-2013</p>
+
+<p>С диска не получилось :(</p>
+
+<p><strong>Coccinella</strong> 12-02-2013</p>
+
+<p>Не очень понимаю, что именно потыкала :-[, но кажется, сейчас интернет есть во всех трех компах УРААА!!!</p>
+
+<p>Большое СПАСИБО всем и Vad-у отдельно!!! $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $) $)</p>
+
+<p><strong>Vad</strong> 12-02-2013</p>
+
+<p>тююю блин :-[</p>
+
+<p>тока отвлекся… и всё у всех само получилось <em>???</em></p>
+
+<p>я там предупреждал.. что пропадет ..)) что нужно будет новый SSID на остальных найти ))</p>
+
+<p>Получилось и славно.</p>
+
+<p>вы дольше со мной няньчитесь $)</p>
+
+<p>теперь запомните свой SSID и пароль к нему..</p>
+
+<p>на случай если… (ну вдруг :-) еще появятся какие нибудь .. устройства для интернета :)</p>
+
+<p><strong>Coccinella</strong> 10-04-2013</p>
+
+<p>Господа IT-ишники, у меня опять проблема. Надо переслать в редакцию 70 фото (ваших, между прочим, фото к моей статье :)) и они мне предложили разместить их напрямую на их сервере, чтобы не тратить 2 часа на дорогу. Прислали мне пароли, а я на сервер войти не могу, не получается. Что-то не так делаю.</p>
+
+<p>Что именно?</p>
+
+<p>Как на них вообще правильно входят?</p>
+
+<p><strong>Vad</strong> 10-04-2013</p>
+
+<p>Маловато информаци… что именно не получается? зайти или загрузить?</p>
+
+<p>Попробую догадаться..</p>
+
+<p>Ох, до-сих-поррр любят СМИ такую штуку как FTP? :D</p>
+
+<p>Если прислали адрес вида “ftp://tra-la-la.com/” то предстоит попасть на их ftp сервер.</p>
+
+<p>тут несколько ньансов… ;)</p>
+
+<p>редактор сказал ИТшникам месным -“надо чтоб загрузили статью…”</p>
+
+<p>те ответили -“АГА…” дали пароль, логин … и … и забыли ;D</p>
+
+<p>соответсвенно - войти не получается <em>???</em></p>
+
+<p>или дали действующий пароль-логин.. но забыли разрешить заходить на сервер из внешнего мира…</p>
+
+<p>в общем, админ может забыть все что угодно, доказываю пользователю, что все работает :-\</p>
+
+<p>а пользователь,….. пользователь должен доказать обратное… :D - Что он делает все правильно.. но ничего не получается :D</p>
+
+<p>Может что-то другое не получается? :-\</p>
+
+<p><strong>Alex123</strong> 10-04-2013</p>
+
+<blockquote>
+  <p>Господа IT-ишники, у меня опять проблема. Надо переслать в редакцию 70 фото (ваших, между прочим, фото к моей статье :)) и они мне предложили разместить их напрямую на их сервере, чтобы не тратить 2 часа на дорогу. Прислали мне пароли, а я на сервер войти не могу, не получается. Что-то не так делаю.</p>
+
+  <p>Что именно?</p>
+
+  <p>Как на них вообще правильно входят?</p>
+</blockquote>
+
+<p>У редакции есть свой сайт в интернете ? Если есть, то там где-то предусмотрена возможность загружать файлы - по типу того, как, например, вы выкладываете свои фотки в социальных сетях - в одноклассниках :D :D :D Зайти на эту хитрую страницу можно введя логин и пароль.</p>
+
+<p><strong>Vad</strong> 10-04-2013</p>
+
+<p>СМИ … они тащатся по ftp <em>crazy</em></p>
+
+<p><strong>Alex123</strong> 10-04-2013</p>
+
+<blockquote>
+  <p>СМИ … они тащатся по ftp <em>crazy</em></p>
+</blockquote>
+
+<p>Да, скорее всего по фтп. Сисадмин просто адресок забыл дать.</p>
+
+<p>Вот, кстати, несколько вариантов, как работать с FTP-сервером.</p>
+
+<p><strong>Coccinella</strong> 10-04-2013</p>
+
+<p>Именно FTP они мне и дали. Я тоже в конце концов решила, что он только для их внутреннего пользования, там здоровенное издательство, а редактор возможно и не в курсе. Спасибо за отзывчивость $), я эти 70 картинок на флешке отвезла, решила, что так проще :) Посмотрим, что в конце концов из всего этого получится, мне и самой интересно :)</p>
+
+<p><strong>Vad</strong> 10-04-2013</p>
+
+<p>Воооот! Это самое простое решение :D</p>
+
+<p>Мне в свое время понадобилось 3 суток переговоров(!) чтоб попасть на ftp одной крупной СМИ ;D</p>
+
+<p>Но у меня выбора не было <em>???</em> между нами 2000 км… и двумя часами не обойдется :D</p>
+
+<p>Причем я не старался их “сломать”… я законным путем туда должен был попасть <em>crazy</em></p>
+
+<p>ждем статью $)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

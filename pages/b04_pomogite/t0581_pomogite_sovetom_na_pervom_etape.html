@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Помогите советом на первом этапе | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Помогите советом на первом этапе">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Помогите советом на первом этапе</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>антон ходов</strong> 12-07-2010</p>
+
+<p>Дорогие друзья! Много всего перечитал по гидропонике, и решил попробовать в ней свои силы. В итоге как не пытаюсь прорастить семена в минеральной вате для последующей высадки в установку - все заканчивается крахом. Вот пара примеров:</p>
+
+<ol>
+  <li>
+    <p>Взошли ростки, относительно быстро тянулись, начала формироваться вторая пара листьев, но тут бах, и начали по очереди зачахать. Сначала чуть листья сворачивались, затем как бы высыхал ствол в центре, в итоге растение падало и умирало окончательно. В итоге из 6 посадок (два сорта базилика, руккола, мята, розмарин и майоран) все погибло :-(. Да, семена предварительно не змамчивал, не барбатировал, сразу посеял в выдеражнную в растворе половинной концентрации минвату и присыпал вермикулитом сверху. Все это поставил в минитепличку. После того, как появились ростки, сначала ставил в комнате под лампу дневного света, после (как наступили солнечные дни) вынес на балкон на солнце.</p>
+  </li>
+  <li>
+    <p>Неудачи нас не останавливают, так что решил взяться за второй опыт. На этот раз посадил мяту из семян. Предварительно отправил семена на барбатирование (примерно сутки), затем положил их в салфетку бумажную на проращивание. Через сутки-двое все семена проклюнулись, после чего были пересажены в минвату. Половину посадил в вату, выдержанную в обычной воде, половину - в вату, выдержанную в растворе половинной концентрации. Через несколько дней семена взошли, зеленые ростки стали тянутся к свету. Но, о ужас, через два-три дня после появления всходов заметил, что у двух ростков листья свернулись и потемнели, а сами ростки упали и зачахли :-( В итоге они были удалены. Боюсь, как не повторился печальный итог первого опыта.</p>
+  </li>
+</ol>
+
+<p>Так вот, вопрос собственно говоря в том, что же я здесь делаю не так? Ну и, конечно же, буду очень благодарен тем, кто поделится, как именно он проращивает семена и выгоняет рассаду для последующей ее пересадки в гидропонную установку.</p>
+
+<p>P.S. Фотоотчет по выращиванию мяты веду тут: <a href="http://forum.ponics.ru/index.php/topic,578.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,578.0.html</a></p>
+
+<p>P.P.S. Опыт номер три будет посвящен выгонке розмарина. Семена уже прошли барботирование, сейчас лежат на проращивании. Уже сутки лежат, пока шевеления не видно :-)</p>
+
+<p><strong>Sliva</strong> 12-07-2010</p>
+
+<p>я рекомендую начать с чего-нибудь, что имеет относительно крупные семена и не заморачиватся с барботированием и прочими сложностями по началу. Самый надежный способ для новичка просто кинуть семку в землю и полить ;)</p>
+
+<p>конечно лучше семечку прорастить, а потом уже в субстрат.</p>
+
+<p>“раствор половинной концентрации” с этого места поподробнее.</p>
+
+<p><strong>orgail</strong> 12-07-2010</p>
+
+<p>кроме стимулирования семян полезно также проводить их обеззараживание</p>
+
+<p><strong>антон ходов</strong> 12-07-2010</p>
+
+<p>“просто кинуть семечку в землю” это уже пройденный и неинтересный этап. Таких штук пара ящиков растет на балконе с базиликом и тому подобное. Так что интересна именно гидра и именно эфирномасляничные и пряные :-). Ну и розмарина семена более или менее крупные, вот щас лежат на проращивании. правда пока движения нет, и они покрылись чем-то типа пленки все. вот не знаю чтобы это значило :-(</p>
+
+<p>по поводу раствора. использую etisso. см. фото ниже</p>
+
+<p><a href="https://t.me/ponics_ru_files/4236" target="_blank"><img src="/attachimages/2596_DSC_2357.png" alt="" /></a></p>
+
+<p><strong>антон ходов</strong> 12-07-2010</p>
+
+<blockquote>
+  <p>кроме стимулирования семян полезно также проводить их обеззараживание</p>
+</blockquote>
+
+<p>имеется ввиду замачивание в растворе марганцовки?</p>
+
+<p><strong>orgail</strong> 12-07-2010</p>
+
+<p>и марганцовка тоже, тока не пожгите семена</p>
+
+<p><strong>антон ходов</strong> 12-07-2010</p>
+
+<blockquote>
+  <p>и марганцовка тоже, тока не пожгите семена</p>
+</blockquote>
+
+<p>а можно чуть подробнее о том, как обеззараживать семена, пожалуйста</p>
+
+<p><strong>orgail</strong> 12-07-2010</p>
+
+<p>искренне советую сходить в магазин огородный и купить что-нибудь для протравливания что у них есть</p>
+
+<p>там инструкция будет</p>
+
+<p>а с марганцем лучше не мучьтесь</p>
+
+<p><strong>антон ходов</strong> 12-07-2010</p>
+
+<blockquote>
+  <p>искренне советую сходить в магазин огородный и купить что-нибудь для протравливания что у них есть</p>
+
+  <p>там инструкция будет</p>
+
+  <p>а с марганцем лучше не мучьтесь</p>
+</blockquote>
+
+<p>спасибо. как думаете, причина гибели ростков - зараза в семенах?</p>
+
+<p><strong>Mole_Garden</strong> 12-07-2010</p>
+
+<blockquote>
+  <p>После того, как появились ростки, сначала ставил в комнате под лампу дневного света, после (как наступили солнечные дни) вынес на балкон на солнце.</p>
+</blockquote>
+
+<p>Как вариант, если вынести младенца на солнышко на балкон, он может умереть. Есть подозрение, что после лампы и режима 12/12 солнышко и балкон это как камера пыток. Если возможно вы бы еще параметры писали. Ну типо под лампой влажность и температура такая то, на болконе под солнышком, такая то. Кстати, откуда такой интересный световой режим?</p>
+
+<blockquote>
+  <p>Через сутки-двое все семена проклюнулись, после чего были пересажены в минвату. Половину посадил в вату, выдержанную в обычной воде, половину - в вату, выдержанную в растворе половинной концентрации</p>
+</blockquote>
+
+<p>А что за раствор то в итоге выдается растениям, параметры его в студию (NPK pH и так далее)</p>
+
+<blockquote>
+  <p>Так вот, вопрос собственно говоря в том, что же я здесь делаю не так? Ну и, конечно же, буду очень благодарен тем, кто поделится, как именно он проращивает семена и выгоняет рассаду для последующей ее пересадки в гидропонную установку.</p>
+</blockquote>
+
+<p>Могу привести пример выращивания салата и перца. Все банально просто. Борбатирование, выложил на мокрую пробку, присыпал вермикулитом, обрызгал водой, закрыл в тепличку, как появились всходы начинаю проветривание, в начале раз в день по 10 минут, через денек другой раз в день на 30 минут, через 4 примерно дня, на пол дня оставляю на воздухе не закрывая крышку, при этом слежу что бы пробки всегда были влажные. В ночь закрываю крышку.</p>
+
+<p><strong>Sliva</strong> 12-07-2010</p>
+
+<blockquote>
+  <p>Как вариант, если вынести младенца на солнышко на балкон, он может умереть. Есть подозрение, что после лампы и режима 12/12 солнышко и балкон это как камера пыток.</p>
+</blockquote>
+
+<p>Я тоже склоняюсь к этому мнению. молодые ростки это не то, что взрослое растение, а это нехилый стресс даже для взрослого растения. кроме того сейчас лето - солнце жарит огого.</p>
+
+<p><strong>Mole_Garden</strong> 12-07-2010</p>
+
+<p>Вот именно, в солнце гораздо больше всего, и УФ и инфракрасные, да еще балкон, там нет ветра, короче жесть.</p>
+
+<p><strong>Sliva</strong> 12-07-2010</p>
+
+<blockquote>
+  <p>покрылись чем-то типа пленки все. вот не знаю чтобы это значило :-(</p>
+</blockquote>
+
+<p>сложно сказать без фото, но это может быть плесень! бывает если семена мертвые или сильно высокая влажность без доступа кислорода. более менее серьезные семеноводческие фирмы обрабатывают семена фунгицидами и появление плесени на семенах при проращивании исключено.</p>
+
+<p>Кстати, как у вас дела с ПШ обстоят?</p>
+
+<p><strong>Sliva</strong> 12-07-2010</p>
+
+<blockquote>
+  <p>Вот именно, в солнце гораздо больше всего, и УФ и инфракрасные, да еще балкон, там нет ветра, короче жесть.</p>
+</blockquote>
+
+<p>Такие трюки с маленькими ростками можно проводить только с серьезным притенением ИМХО</p>
+
+<p><strong>orgail</strong> 13-07-2010</p>
+
+<p>Попробуйте фитоспорином если найдете семена протравить, он вроде как против всяких плесеней и грибков</p>
+
+<p>Старайтесь не переувлажнять вату</p>
+
+<p>Свет может и стресс, но тогда температуру сбивайте</p>
+
+<p><strong>антон ходов</strong> 13-07-2010</p>
+
+<p>а вот, собственно говоря, и семена розмарина в этой самой пленке. Может кто знает, нормально ли это???</p>
+
+<p><a href="https://t.me/ponics_ru_files/4237" target="_blank"><img src="/attachimages/2724_DSC_2362.png" alt="" /></a></p>
+
+<p><strong>антон ходов</strong> 13-07-2010</p>
+
+<blockquote>
+  <p>Могу привести пример выращивания салата и перца. Все банально просто. Борбатирование, выложил на мокрую пробку, присыпал вермикулитом, обрызгал водой, закрыл в тепличку, как появились всходы начинаю проветривание, в начале раз в день по 10 минут, через денек другой раз в день на 30 минут, через 4 примерно дня, на пол дня оставляю на воздухе не закрывая крышку, при этом слежу что бы пробки всегда были влажные. В ночь закрываю крышку.</p>
+</blockquote>
+
+<p>Скажите, в среднем борбатирование в течение суток - нормально, или может быть перебор? ну и чем чреват перебор?</p>
+
+<p><strong>Rossich</strong> 13-07-2010</p>
+
+<blockquote>
+  <p>а вот, собственно говоря, и семена розмарина в этой самой пленке. Может кто знает, нормально ли это???</p>
+</blockquote>
+
+<p>Эти семена по виду были обработаны специальным составом и не нуждались в замачивании и барботировании. Семена с оболочкой для прямого посева. У меня такие же только Базилик. Они просто высеваются и до всходов поливаются просто водой.</p>
+
+<p><strong>антон ходов</strong> 13-07-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>а вот, собственно говоря, и семена розмарина в этой самой пленке. Может кто знает, нормально ли это???</p>
+  </blockquote>
+
+  <p>Эти семена по виду были обработаны специальным составом и не нуждались в замачивании и барботировании. Семена с оболочкой для прямого посева. У меня такие же только Базилик. Они просто высеваются и до всходов поливаются просто водой.</p>
+</blockquote>
+
+<p>спасибо большое! тогда отправлю их на пророст. А вот куда: в вату или торф? вы что думаете?</p>
+
+<p><strong>Rossich</strong> 13-07-2010</p>
+
+<blockquote>
+  <p>А вот куда: в вату или торф? вы что думаете?</p>
+</blockquote>
+
+<p>У меня все в торфосмеси (с вермикулитом), ватой не пользуюсь.</p>
+
+<p><strong>антон ходов</strong> 13-07-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>А вот куда: в вату или торф? вы что думаете?</p>
+  </blockquote>
+
+  <p>У меня все в торфосмеси (с вермикулитом), ватой не пользуюсь.</p>
+</blockquote>
+
+<p>попробую так. первый блин будет тогда в торфе. но такой момент - у меня торфяные таблетки, тк что вермикулитом только сверху присыпать получится.</p>
+
+<p><strong>Batat</strong> 13-07-2010</p>
+
+<blockquote>
+  <p>Скажите, в среднем борбатирование в течение суток - нормально, или может быть перебор? ну и чем чреват перебор?</p>
+</blockquote>
+
+<p>На сколько я знаю, в зависимости от вида культуры, барботирование длится от 8 до 15 часов.</p>
+
+<p><strong>антон ходов</strong> 13-07-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>Скажите, в среднем борбатирование в течение суток - нормально, или может быть перебор? ну и чем чреват перебор?</p>
+  </blockquote>
+
+  <p>На сколько я знаю, в зависимости от вида культуры, барботирование длится от 8 до 15 часов.</p>
+</blockquote>
+
+<p>есть и дольше. я таблицу с одной книжке срисовал. там есть и сутки, и 10 часов и даже 48 часов (дыня по-моему)</p>
+
+<p><strong>Mole_Garden</strong> 13-07-2010</p>
+
+<p>Вот что написано у нас по барботированию</p>
+
+<p><a href="http://www.ponics.ru/2009/03/barb/" target="_blank">http://www.ponics.ru/2009/03/barb/</a></p>
+
+<p><strong>антон ходов</strong> 18-07-2010</p>
+
+<p>И вот пять это случилось. Проводя повторные эксперименты с мятой столкнулся с тем, что чуть более чем через неделю после появления всходов ростки гибнут!!!!!! Утром встал, подхожу проверить малышей и, о ужас, один упал и зачах, у второго свернулась половина листочков и, чую, что скоро и он упадет :-( Ниже фотографии, может кто знает, в чем дело??????????</p>
+
+<p>Да, увядающие ростки высажены в минвату пропитанную водой. Плюс еще одна фотография ростка, который хорошо прогрессирует, но взгляните на его листья, что-то не нравятся мне пятна на них. Может кто скажет, что это? Ну и плюс тут же фотография того, какие именно семена высаживал.</p>
+
+<p><a href="https://t.me/ponics_ru_files/4238" target="_blank"><img src="/attachimages/2846_DSC_2381.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4239" target="_blank"><img src="/attachimages/2848_DSC_2382.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4240" target="_blank"><img src="/attachimages/2849_DSC_2384.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4241" target="_blank"><img src="/attachimages/2851_DSC_2386.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 18-07-2010</p>
+
+<p>А зачем два раза повторять повторять одно и тоже в разных топиках?</p>
+
+<p><strong>антон ходов</strong> 18-07-2010</p>
+
+<blockquote>
+  <p>А зачем два раза повторять повторять одно и тоже в разных топиках?</p>
+</blockquote>
+
+<p>так пересекаются темы. здесь я конкретно обращаюсь за помощью к форумчанам, а в другом топике у меня идет отчет о выращивании. Там как бы сам бог велел размещать эти снимки и сообщать о возникшей проблеме.</p>
+
+<p><strong>Oxy</strong> 18-07-2010</p>
+
+<p>Вата гроверская или строительная?</p>
+
+<p>Сколько источников света(ламп) над растишками?</p>
+
+<p><strong>антон ходов</strong> 18-07-2010</p>
+
+<blockquote>
+  <p>Вата гроверская или строительная?</p>
+
+  <p>Сколько источников света(ламп) над растишками?</p>
+</blockquote>
+
+<p>вата обычная минвата агрос</p>
+
+<p>источник света один, стандартная лампа дневного света</p>
+
+<p><strong>Mole_Garden</strong> 18-07-2010</p>
+
+<blockquote>
+  <p>источник света один, стандартная лампа дневного света</p>
+</blockquote>
+
+<p>Как далеко от растений?</p>
+
+<blockquote>
+  <p>так пересекаются темы. здесь я конкретно обращаюсь за помощью к форумчанам, а в другом топике у меня идет отчет о выращивании. Там как бы сам бог велел размещать эти снимки и сообщать о возникшей проблеме.</p>
+</blockquote>
+
+<p>Это хорошо, так в какую тему тогда писать ответы? В обе?</p>
+
+<p><strong>антон ходов</strong> 18-07-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>источник света один, стандартная лампа дневного света</p>
+  </blockquote>
+
+  <p>Как далеко от растений?</p>
+
+  <blockquote>
+    <p>так пересекаются темы. здесь я конкретно обращаюсь за помощью к форумчанам, а в другом топике у меня идет отчет о выращивании. Там как бы сам бог велел размещать эти снимки и сообщать о возникшей проблеме.</p>
+  </blockquote>
+
+  <p>Это хорошо, так в какую тему тогда писать ответы? В обе?</p>
+</blockquote>
+
+<p>По поводу света - была лампа на расстоянии примерно 15-20 сантиметров, сейчас поднял выше, плюс сделал по совету россича полутень.</p>
+
+<p>по поводу ответов - можно, думаю, писать в одну, в которую удобнее. Во вторую все-равно сам буду отписывать о том, удалось ли избавиться от проблемы, и если да, то как.</p>
+
+<p><strong>Mole_Garden</strong> 18-07-2010</p>
+
+<p>Попробуйте открывать тепличку больше чем на час, на 3-4 часа думаю уже можно. По виду вата у вас ооочень мокрая. А есть ли дренажные отверстия в кассете?</p>
+
+<p><strong>антон ходов</strong> 18-07-2010</p>
+
+<blockquote>
+  <p>Попробуйте открывать тепличку больше чем на час, на 3-4 часа думаю уже можно. По виду вата у вас ооочень мокрая. А есть ли дренажные отверстия в кассете?</p>
+</blockquote>
+
+<p>Да, вата довольно мокрая. Она стоит в стандартном салатном стакане, где есть отверстия. Стаканчик чуть подвешен, так что вода может стекать, но как-то не стекает. А что, загибаться ростки могут из-за высокой влажности? Как можно чуть подсушить вату?</p>
+
+<p><strong>Mole_Garden</strong> 18-07-2010</p>
+
+<p>А не стекает, потому что вата у агрос такая хорошая. Подсушить можно проветриванием.</p>
+
+<p><strong>антон ходов</strong> 18-07-2010</p>
+
+<blockquote>
+  <p>А не стекает, потому что вата у агрос такая хорошая. Подсушить можно проветриванием.</p>
+</blockquote>
+
+<p>спасибо попробую проветрить подольше. а вообще стоит ли заморачиваться с ватой, или лучше сажать во что-то другое, например, в торф?</p>
+
+<p><strong>Mole_Garden</strong> 18-07-2010</p>
+
+<p>Вата это один из лучших субстратов.</p>
+
+<p><strong>антон ходов</strong> 19-07-2010</p>
+
+<p>чтож, дополнительное проветривание и перевод рассады в полутень помогли частично. Так, рассада, что сидит в кубике, вымоченном в растворе, радует глаз, тьфу тьфу тьфу. В кубиках же, вымоченных в воде, все чуть плачевнее. В частности, падеж продолжился, да и оставшиеся ростки выглядят как-то вяло и не жизнеутверждающе :-( все, опять же, видно на фото</p>
+
+<p><a href="https://t.me/ponics_ru_files/4242" target="_blank"><img src="/attachimages/2943_DSC_2387.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4243" target="_blank"><img src="/attachimages/2945_DSC_2392.png" alt="" /></a></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Несколько вопросов по приборам и устройствам | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Несколько вопросов по приборам и устройствам">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Несколько вопросов по приборам и устройствам</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><em>**</em> 22-08-2015</p>
+
+<p>Здравствуйте, у меня возникло несколько небольших вопросов касаемо приобретаемой техники:</p>
+
+<p>1) Посоветуйте не очень дорогую, но хорошо себя зарекомендовавшую модель кондуктомера (EC).</p>
+
+<p>2) Вопрос по поводу люксметра, как Вы думаете, можно ли за место оного использовать неплохой фотоэкспанометр или приложение люксметр для айфона? :D</p>
+
+<p>3) Как Вы думаете с ДНАТ-ом обязательно использовать стабилизатор напряжения (дело будет происходить в квартире, особых скачков напряжения вроде не бывает, бывают изредка небольшие мигания ламп), может можно обойтись сетевым фильтром?</p>
+
+<p>Заранее спасибо за ответы!</p>
+
+<p><strong>Cyclamech</strong> 22-08-2015</p>
+
+<blockquote>
+  <p>3) Как Вы думаете с ДНАТ-ом обязательно использовать стабилизатор напряжения (дело будет происходить в квартире, особых скачков напряжения вроде не бывает, бывают изредка небольшие мигания ламп), может можно обойтись сетевым фильтром?</p>
+</blockquote>
+
+<p>Если у ДНаТа будут электронные “мозги”, то им безразличны скачки напряжения.</p>
+
+<p><a href="http://www.youtube.com/watch?v=B53QI1cFqAg#" target="_blank">http://www.youtube.com/watch?v=B53QI1cFqAg#</a></p>
+
+<p><strong>n72black</strong> 23-08-2015</p>
+
+<p>А если не охота тратиться( а качественные эпра недешевые, например тот же люматек), то ставте обычный ЭмПРА и на входе незабедьте поставить компенсационный конденсатор. :-[</p>
+
+<p>По поводу люксметра, я на планшете самсунг использую( заводской), только понадобилось время что бы руку набить(сначала пришлось обращать внимание на реакцию растений при изменении освещенности). Так что сойдет на первое время пока нормальный не найдете.</p>
+
+<p>ЕС, вроде неплохие отзывы про НМ-digital. Сам использую прстенький тдс-метр(коэф. пересчета ЕС в ррм 0.5 по NaCl), китайский. :D</p>
+
+<p><em>**</em> 23-08-2015</p>
+
+<p>Спасибо за ответы!</p>
+
+<p>Gordian knot-скажите пожалуйста, у Вас TDS-метр не TDS-3 случайно?</p>
+
+<p>Дело в том что TDS-метр у меня уже есть, но почитав форум заметил, что мнения по поводу этого прибора разделились, одни говорят что это тот же кондуктомер с другой ценой деления, как Вы сказали есть таблица пересчета ppm в ес, другие не менее уважаемые люди утверждают что это “не наш прибор” и использование его при приготовлении и коррекции питательных растворов неизменно ведет к ошибкам и неразберихе. Даже и не знаю как мне быть, пользоваться им или на EC-метр раскошелиться. :( <em>???</em></p>
+
+<p><strong>ihands</strong> 23-08-2015</p>
+
+<p>Купил вот такой прибор, по-моему, вполне бюджетная цена <a href="http://ru.aliexpress.com/item/TDS-EC-Meter-Temperature-Tester-3-In1-Function-Conductivity-Water-Measurement-Tool-TDS-EC-Tester-0/32323022027.html" target="_blank">http://ru.aliexpress.com/item/TDS-EC-Meter-Temperature-Tester-3-In1-Function-Conductivity-Water-Measurement-Tool-TDS-EC-Tester-0/32323022027.html</a></p>
+
+<p>Правда на калибровочных растворах не проверял, про достоверность показаний сказать ничего не могу… Верю на слово, так сказать :)</p>
+
+<p><strong>n72black</strong> 23-08-2015</p>
+
+<blockquote>
+  <p>Спасибо за ответы!</p>
+
+  <p>Gordian knot-скажите пожалуйста, у Вас TDS-метр не TDS-3 случайно?</p>
+
+  <p>Дело в том что TDS-метр у меня уже есть, но почитав форум заметил, что мнения по поводу этого прибора разделились, одни говорят что это тот же кондуктомер с другой ценой деления, как Вы сказали есть таблица пересчета ppm в ес, другие не менее уважаемые люди утверждают что это “не наш прибор” и использование его при приготовлении и коррекции питательных растворов неизменно ведет к ошибкам и неразберихе. Даже и не знаю как мне быть, пользоваться им или на EC-метр раскошелиться. :( <em>???</em></p>
+</blockquote>
+
+<p>У меня похожий на TDS-3(проверял его самостоятельно с помощью физрастворва :D ).</p>
+
+<p>Если вам нужен нормальный кондуктометр, то придеться раскошелиться(всмысле не искать че подешевле китайское) и желательно 1в1. :)</p>
+
+<p><strong>Алексей Ильин</strong> 24-08-2015</p>
+
+<p>Спасибо!</p>
+
+<p><strong>Алексей Ильин</strong> 24-08-2015</p>
+
+<blockquote>
+  <p>Купил вот такой прибор, по-моему, вполне бюджетная цена <a href="http://ru.aliexpress.com/item/TDS-EC-Meter-Temperature-Tester-3-In1-Function-Conductivity-Water-Measurement-Tool-TDS-EC-Tester-0/32323022027.html" target="_blank">http://ru.aliexpress.com/item/TDS-EC-Meter-Temperature-Tester-3-In1-Function-Conductivity-Water-Measurement-Tool-TDS-EC-Tester-0/32323022027.html</a></p>
+
+  <p>Правда на калибровочных растворах не проверял, про достоверность показаний сказать ничего не могу… Верю на слово, так сказать :)</p>
+</blockquote>
+
+<p>Он 2 в одном, а они похуже говорят, тем более TDS у меня и так есть :)</p>
+
+<p><strong>Алексей Ильин</strong> 24-08-2015</p>
+
+<p>Gordian knot- Подскажите или поправьте меня пожалуйста! Вы своим люксметром штатным из планшета как пользуетесь? Я так понимаю нужно положить что-то белое, например лист бумаги на промеряемый участок, или я не прав? :)</p>
+
+<p><strong>n72black</strong> 25-08-2015</p>
+
+<p>Напрямую приходится, иначе показания совсем другие(намного меньше).</p>
+
+<p><strong>Islam9998</strong> 17-09-2015</p>
+
+<p>Здравствуйте! Перелопатил ваш форум, но не нашел ответа на вопрос. Выращиваю огурцы 2 года на гидропонике. Все было хорошо. Но как знакомый агроном рассказал что питательный раствор нужно держать в 2х емкостях (сера с чем то реагирует и выпадает в осадок) меня начали мучать сомнения. Знающие люди, подскажите, стоит ли заморачиватся на емкостьях?</p>
+
+<p><strong>Borodach1</strong> 18-09-2015</p>
+
+<p>Ионы Кальция такие гады, что очень любят встречаться с сульфат ионами и выпадать в осадок в виде гипса. Поэтому концентраты питательного раствора держат в двух емкостях так, чтобы разделить кальций и сульфаты. Если Вы делаете раствор который будете использовать сразу, то такой необходимости нет.</p>
+
+<p><strong>Islam9998</strong> 18-09-2015</p>
+
+<p>Насколько сразу? 1т раствора стоит у меня дней 10 пока не закончится. Действительно осадок похож на гипс. Но в осадок уходит грамм 50-100, не больше.</p>
+
+<p><strong>valery</strong> 18-09-2015</p>
+
+<p>Тоже не готовлю концентратов, только нормальные готовые растворы.</p>
+
+<p>10 дней абсолютно не критично. Специальных замеров по времени, конечно, не делал и по паре месяцев рабочий раствор не держал, но 2-3 недели готовый раствор в бочках стоит совершенно спокойно.</p>
+
+<p>Особенно, если Ваша емкость/бочка/цистерночка/еврокуб прикрыта крышкой от пыли и на раствор не попадают прямые солнечные лучи.</p>
+
+<p>Если позволите себе эту тонну время от времени непродолжительно продувать самым дешевым аквариумным аэратором - и вовсе красота.</p>
+
+<p>Собственно, и эта аэрация не особенно-то нужна … Так, чтобы не собиралась на поверхности бактериальная или пылевая пленка.</p>
+
+<p>Чтобы окончательно успокоить свою совесть, проверьте ЕС свежеприготовленного раствора (через пару-тройку часов после изготовления, когда все положенные реакции в основном пройдут) и через искомые 10 дней (при одинаковой температуре).</p>
+
+<p>Если изменений в показаниях не будет, или они будут незначительны (в пределах погрешности измерений), то и не парьтесь больше этой проблемой.</p>
+
+<p><strong>Strangeman</strong> 21-09-2015</p>
+
+<blockquote>
+  <p>Дело в том что TDS-метр у меня уже есть, но почитав форум заметил, что мнения по поводу этого прибора разделились, одни говорят что это тот же кондуктомер с другой ценой деления, как Вы сказали есть таблица пересчета ppm в ес, другие не менее уважаемые люди утверждают что это “не наш прибор” и использование его при приготовлении и коррекции питательных растворов неизменно ведет к ошибкам и неразберихе.</p>
+</blockquote>
+
+<p>А Вы еще раз прочитайте и поймете, что одно другому не противоречит. ;) Если Вы выясните коэффициент пересчета Вашего солемера и будете каждый раз пересчитывать значение и оперировать электропроводностью при общении с коллегами - солемер вполне пригоден. Это не вопрос пригодности прибора, это вопрос подхода.</p>
+
+<p>Да, линейность в рабочем диапазоне не забудьте проверить - зачастую у солемеров с этим плохо.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

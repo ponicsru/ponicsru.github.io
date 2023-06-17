@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Работа над ошибками | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Работа над ошибками">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Работа над ошибками</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Dezero</strong> 31-01-2014</p>
+
+<p>Доброго времени суток, уважаемые форумчане</p>
+
+<p>читал-читал форум и решил попробовать повыращивать растюхи….время пока есть, площадь позволяет, постоянно дома пока - идеальные обстоятельства…</p>
+
+<p>посадил помидорки…..вроде росли понемногу, но в последние дни чахнут совсем….22 янв. семена были посажены на поролон, 27 янв. пересажены в установку и залит раствор…..к сожалению ЕС померить нечем пока, единственное, что знаю точный состав исходной воды.</p>
+
+<p>капельный полив 15 минут через паузу в 1 час…</p>
+
+<p>субстрат - 70% горшка керамзит, выше до верха - фильтрационный гравий (балласт) для систем очистки воды….по большому счету просто гравий хорошо отмытый и нейтральный…</p>
+
+<p>РН 6.5 - снижал электролитом</p>
+
+<p>температура в комнате 23</p>
+
+<p>досветка осрам флуора - работает с 7 утра до 01 ночи</p>
+
+<p>влажность померить тоже пока нечем</p>
+
+<p>анализ воды</p>
+
+<p><a href="https://t.me/ponics_ru_files/11731" target="_blank"><img src="/imagehost/thumbs/img0736.jpg" alt="" /></a></p>
+
+<p>удобрения на 5 литров воды</p>
+
+<p>GreenWorld Spezialdunger Hydrokultur - 25 мл</p>
+
+<p>кальциевая селитра буйские удобрения - 9 гр</p>
+
+<p>сульфат магния аптечный - 9 мл</p>
+
+<p>удобрения брал из grohelper - выбрал профиль томаты готовый, посмотрел что есть в леруамерлен и подбирал уже в кальккулятор из того, что есть</p>
+
+<p>потихоньку читаю форумы, отчеты, статьи….понимаю что нужен ЕС метр, но он еще не приехал…жду….</p>
+
+<p>фото помидорок</p>
+
+<p>сорт ямал</p>
+
+<p><a href="https://t.me/ponics_ru_files/11732" target="_blank"><img src="/imagehost/thumbs/img3409.jpg" alt="" /></a></p>
+
+<p>сорт балконное чудо</p>
+
+<p><a href="https://t.me/ponics_ru_files/11733" target="_blank"><img src="/imagehost/thumbs/img3411.jpg" alt="" /></a></p>
+
+<p>сорт полярник</p>
+
+<p><a href="https://t.me/ponics_ru_files/11734" target="_blank"><img src="/imagehost/thumbs/img3416.jpg" alt="" /></a></p>
+
+<p>совсем все плохо или еще можно попытаться как то оживить?</p>
+
+<p>28 января положил в те-же емкости по кругу семена тех же помидорок - почти все взошли, сейчас торчат по паре мм</p>
+
+<p><strong>taram</strong> 31-01-2014</p>
+
+<p>Вы зря сразу в установку семена высадили, нужно было прорастить сначала в ёмкостях поменьше 100-150-200 мл. Подождать , пока корни в этих ёмкостях освоют субстрат, а потом уже в установку.</p>
+
+<p>Для простоты проращивания купите грунт, типо Тера вита. Я в такой грунт добавляю ещё вермикомпост до 25-30%.</p>
+
+<p><strong>Dezero</strong> 31-01-2014</p>
+
+<p>так они с 22 по 27 и росли “в поменьше”….просто начали вытягиваццо вот и пересадил их в установку….испугался - вдруг “еды” не хватит</p>
+
+<p>они просто на поролоне в баночках до этого были…на чистой воде</p>
+
+<p><strong>Coccinella</strong> 31-01-2014</p>
+
+<p>Ну и поливали бы раствором тот поролон :) Вы их еще не утопили? По 15 мин через час? Они же ничего еще не пьют.</p>
+
+<p><strong>Dezero</strong> 31-01-2014</p>
+
+<blockquote>
+  <p>Ну и поливали бы раствором тот поролон :) Вы их еще не утопили? По 15 мин через час? Они же ничего еще не пьют.</p>
+</blockquote>
+
+<p>незнаю(((( не плавают…раствор стекает обратно и в емкости не застаивается</p>
+
+<p><strong>Dezero</strong> 07-02-2014</p>
+
+<p>выяснилось…рн метр безбожно врет…хотя калиброван….купил лакмус - рн 4 !!! бедные растюхи….70% погибло….слил раствор. пролил чистой водой с рн 6.5 ….развел новый раствор, рн 6.5, 1700 ррм…..3й день….вроде выжившие отходят…</p>
+
+<p><strong>diman73rus</strong> 07-02-2014</p>
+
+<p>1700 ppm (EC 3.4) им пока много.</p>
+
+<p>500 ppm (EC 1.0) в самый раз.</p>
+
+<p><strong>Dezero</strong> 07-02-2014</p>
+
+<blockquote>
+  <p>1700 ppm (EC 3.4) им пока много.</p>
+
+  <p>500 ppm (EC 1.0) в самый раз.</p>
+</blockquote>
+
+<p>разбавить раствор просто водой? считал по калькулятору удобрения с концентрацией в 50%</p>
+
+<p><strong>Vad</strong> 07-02-2014</p>
+
+<p>томат - культура “вечноголодная” :D</p>
+
+<p>и каким-то несчастным pH ее не угробить :D</p>
+
+<p>pH4 не смертелен… по крайней мере, не столь сметрелен, чтоб 70% растюх вымерло…</p>
+
+<p>причина другая..</p>
+
+<p>перелив более смертелен..</p>
+
+<p>Стартовый EC для томата 2.5mS и ВЫШЕ..(с возрастом, и по “условиям”)</p>
+
+<p><strong>Dezero</strong> 07-02-2014</p>
+
+<blockquote>
+  <p>томат - культура “вечноголодная” :D</p>
+
+  <p>и каким-то несчастным pH ее не угробить :D</p>
+
+  <p>pH4 не смертелен… по крайней мере, не столь сметрелен, чтоб 70% растюх вымерло…</p>
+
+  <p>причина другая..</p>
+
+  <p>перелив более смертелен..</p>
+
+  <p>Стартовый EC для томата 2.5mS и ВЫШЕ..(с возрастом, и по “условиям”)</p>
+</blockquote>
+
+<p>полив тоже убавил….15 через 2.5 часа….может и это помогло…</p>
+
+<p>спасибо….будем ждать )</p>
+
+<p><strong>Седой</strong> 07-02-2014</p>
+
+<blockquote>
+  <p>выяснилось…рн метр безбожно врет…хотя калиброван….купил лакмус - рн 4 !!!</p>
+</blockquote>
+
+<p>Я бы не стал так доверять лакмусу.</p>
+
+<p><strong>Borodach1</strong> 07-02-2014</p>
+
+<blockquote>
+  <p>анализ воды</p>
+
+  <p><img src="/imagehost/thumbs/img0736.jpg" alt="" /></p>
+</blockquote>
+
+<p>Вы сами воду из крана отбирали или это результаты анализа очистных сооружений?</p>
+
+<p>Дело в том, что на очистных вода одна, а в квартирах совсем другая. И чем дальше вы находитесь от очистных, тем более другая будет у вас вода. Сети водоснабжения в нашей стране практически везде ещё с советских времён. Вкладываться в замену не выгодно. Ждут когда полностью выйдут из строя и только после этого начинают латать. И поэтому они страшно <del>заср</del> загажены. :(</p>
+
+<p><strong>Borodach1</strong> 07-02-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>выяснилось…рн метр безбожно врет…хотя калиброван….купил лакмус - рн 4 !!!</p>
+  </blockquote>
+
+  <p>Я бы не стал так доверять лакмусу.</p>
+</blockquote>
+
+<p>Согласен. Лакмус в печь! &gt;:D</p>
+
+<p><strong>Dezero</strong> 07-02-2014</p>
+
+<blockquote>
+  <p>Вы сами воду из крана отбирали или это результаты анализа очистных сооружений?</p>
+
+  <p>Дело в том, что на очистных вода одна, а в квартирах совсем другая. И чем дальше вы находитесь от очистных, тем более другая будет у вас вода. Сети водоснабжения в нашей стране практически везде ещё с советских времён. Вкладываться в замену не выгодно. Ждут когда полностью выйдут из строя и только после этого начинают латать. И поэтому они страшно <del>заср</del> загажены. :(</p>
+</blockquote>
+
+<p>нет, это мой анализ после моих фильтров - собственная скважина</p>
+
+<p><strong>Dezero</strong> 07-02-2014</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>выяснилось…рн метр безбожно врет…хотя калиброван….купил лакмус - рн 4 !!!</p>
+    </blockquote>
+
+    <p>Я бы не стал так доверять лакмусу.</p>
+  </blockquote>
+
+  <p>Согласен. Лакмус в печь! &gt;:D</p>
+</blockquote>
+
+<p>ну теперь с рн метром старым уже ничего не сделаешь…..он немного того….сломался .. :-[</p>
+
+<p>заказал новый на али….ждемс…</p>
+
+<p><strong>Седой</strong> 07-02-2014</p>
+
+<blockquote>
+  <p>ну теперь с рн метром старым уже ничего не сделаешь</p>
+</blockquote>
+
+<p>Видимо вылечил его об стенку.</p>
+
+<p><strong>Dezero</strong> 07-02-2014</p>
+
+<p>ога..)</p>
+
+<p><strong>Dezero</strong> 10-02-2014</p>
+
+<p>итак прошло несколько дней…за это время к выжившим приехал дополнительный свет в виде ЭСЛ 85 Вт (6400) и ДРЛ-150</p>
+
+<p>чемпион выживания</p>
+
+<p><a href="https://t.me/ponics_ru_files/11735" target="_blank"><img src="/imagehost/thumbs/img3418.jpg" alt="" /></a></p>
+
+<p>остальные</p>
+
+<p><a href="https://t.me/ponics_ru_files/11736" target="_blank"><img src="/imagehost/thumbs/img3419.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11737" target="_blank"><img src="/imagehost/thumbs/img3420dgd.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11738" target="_blank"><img src="/imagehost/thumbs/img3421.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11739" target="_blank"><img src="/imagehost/thumbs/img3422.jpg" alt="" /></a></p>
+
+<p>освещение - 10800 лк</p>
+
+<p>температура в среднем 23</p>
+
+<p>влажность неизвестна -((</p>
+
+<p>можете прокомментировать состояние растений….по мне - неочень</p>
+
+<p><strong>taram</strong> 10-02-2014</p>
+
+<blockquote>
+  <p>можете прокомментировать состояние растений</p>
+</blockquote>
+
+<p>Коментирую - И на камнях растут деревья! :D</p>
+
+<p><strong>Dezero</strong> 10-02-2014</p>
+
+<p>ну там под камнями керамзит )))) хотя…тоже своеобразные камни )))</p>
+
+<p><strong>taram</strong> 10-02-2014</p>
+
+<p>Вроде кущать хотят, бледненькие какието. На последней фоте, ростку чегото не хватает точно.</p>
+
+<p><strong>Vad</strong> 10-02-2014</p>
+
+<p>смею предположить..</p>
+
+<p>им нехватает воздуха… перелиты как будто…</p>
+
+<p>а что за раствор?</p>
+
+<p><strong>Dezero</strong> 10-02-2014</p>
+
+<blockquote>
+  <p>смею предположить..</p>
+
+  <p>им нехватает воздуха… перелиты как будто…</p>
+
+  <p>а что за раствор?</p>
+</blockquote>
+
+<p>на 5 литров воды:</p>
+
+<p>GreenWorld Spezialdunger Hydrokultur - 17,5 мл</p>
+
+<p>кальциевая селитра буйские удобрения - 5 гр</p>
+
+<p>сульфат магния аптечный - 7,5 мл</p>
+
+<p>N 312,5</p>
+
+<p>P 68,67</p>
+
+<p>K 174,3</p>
+
+<p>Ca 190</p>
+
+<p>Mg 45,6773</p>
+
+<p>S 39,9</p>
+
+<p>B 0,35</p>
+
+<p>Fe 1,19</p>
+
+<p>Mn 0,63</p>
+
+<p>Zn 0,63</p>
+
+<p>Cu 0,315</p>
+
+<p>Mo 0,035</p>
+
+<p>Содержание из калькулятора, без учета воды….но в воде нет ничего почти…анализ в 1 сообщении….</p>
+
+<p>1620 ррм</p>
+
+<p>6.35 рн</p>
+
+<p>полив - капля 15 мин через 2.5 часа</p>
+
+<p>ведро 4 л., заполнено на 80% керамзитом, сверху балласт водоочистительный (гравий). снизу в ведре кабельный зажим для слива раствора обратно в систему. доступ воздуха сверху через субстрат</p>
+
+<p><strong>Vad</strong> 10-02-2014</p>
+
+<p>да что вы… эти “травинки”, сейчас.. едят 0.15 грамм в сутки :)</p>
+
+<p>сократите поливы.. до 1-1.5 минуты, каждые 8-00 утра по”ихнему” времени(через час после рассвета)</p>
+
+<p>азота перебор :-\</p>
+
+<p><strong>Dezero</strong> 10-02-2014</p>
+
+<blockquote>
+  <p>да что вы… эти “травинки”, сейчас.. едят 0.15 грамм в сутки :)</p>
+
+  <p>сократите поливы.. до 1-1.5 минуты, каждые 8-00 утра по”ихнему” времени(через час после рассвета)</p>
+
+  <p>азота перебор :-\</p>
+</blockquote>
+
+<p>блин…таймер с шагом в 15 минут(((( придеццо прицеплять ардуинку….</p>
+
+<p>1 раз в день в 8 утра и все?</p>
+
+<p><strong>Vad</strong> 10-02-2014</p>
+
+<p>на данном этапе - все..</p>
+
+<p>потом добавится полив в “обед” и “полдник”</p>
+
+<p><strong>diman73rus</strong> 10-02-2014</p>
+
+<p>определять по состоянию.</p>
+
+<p>будут листья опускать - можно по капельке из пипетки капнуть. :)</p>
+
+<p><strong>Vad</strong> 10-02-2014</p>
+
+<p>при таком объеме ведра… они начнут опускаться через неделю :D</p>
+
+<p><strong>Dezero</strong> 10-02-2014</p>
+
+<p>спасибо, буду попробовать)))</p>
+
+<p><strong>Dezero</strong> 10-02-2014</p>
+
+<p>чтобы не мудрить с ардуиной, прицепил поливочный контроллер….в 8 утра 2 минуты</p>
+
+<p><strong>Dezero</strong> 14-02-2014</p>
+
+<p>Прошло неск. дней</p>
+
+<p>особо подвижек незаметно…динамики роста никакой…</p>
+
+<p>специально поставил вебкамеру - снять видео - почти сутки и никакой активности….просто листиками туда-сюда шевелит…в чем может быть затык?</p>
+
+<p>[flash=640,390]http://www.youtube.com/v/gf0brAdgAyY[/flash]</p>
+
+<p><strong>Vad</strong> 14-02-2014</p>
+
+<p>;) а чего вы от них хотите?</p>
+
+<p>5 см в сутки? .. ну через 30-50 дней так и будет.. не будете знать куда от них деваться ))</p>
+
+<p><strong>Седой</strong> 14-02-2014</p>
+
+<p>Не чахнет,и то ладно. Может наращивает корневую массу.</p>
+
+<p><strong>Dezero</strong> 14-02-2014</p>
+
+<p>понятно…..буду выжидать )</p>
+
+<p>вчера намешал новый раствор на базе етиссо гидро, рокон регена вот и подумал - мож накосячил чего…..1640 ррм</p>
+
+<p>переживаю просто…..гидропервенец))))</p>
+
+<p><strong>Седой</strong> 14-02-2014</p>
+
+<p>Интересно,почему мы новички чаще всего покупаем ТДС метры,а не ЕС ? Мистика какая то.</p>
+
+<p><strong>Vad</strong> 14-02-2014</p>
+
+<p>Dezero, все будет… ;)</p>
+
+<p>Седой, это не мистика, посто они чаще мелькают <em>???</em></p>
+
+<p><strong>Седой</strong> 14-02-2014</p>
+
+<p>То то и оно,что лично я сначала достаточно долго читал этот и иже с ним форумы,прежде чем делать какие то покупки. Может действительно на главной странице красными буквами написать лозунг: Вход с ТДС метрами запрещен!</p>
+
+<p><strong>Dezero</strong> 14-02-2014</p>
+
+<p>тдс был в наличии в городе….хоть какая то информация от него….а ес уже больше месяца путешествует…даже не трекаеццо…(((( поэтому пока так</p>
+
+<p><strong>Седой</strong> 14-02-2014</p>
+
+<p>Да я сам до сих пор с ТДСом. Просто интересно.</p>
+
+<p><strong>Dezero</strong> 25-02-2014</p>
+
+<p>Прошло 10 дней….после убавления частоты полива, смены раствора, установки увлажнителя, увеличения освещения - стала заметна положительная динамика развития растений….даже и не знаю что именно помогло, но рост стал заметен глазу ))))</p>
+
+<p>сорт Балконное чудо (чемпион выживаемости -)))) ) семена 22.01.2014</p>
+
+<p><a href="https://t.me/ponics_ru_files/11740" target="_blank"><img src="/imagehost/thumbs/img3427.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11741" target="_blank"><img src="/imagehost/thumbs/img3430.jpg" alt="" /></a></p>
+
+<p>сорт свит черри, семена 06.02.2014</p>
+
+<p><a href="https://t.me/ponics_ru_files/11742" target="_blank"><img src="/imagehost/thumbs/img3429.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11743" target="_blank"><img src="/imagehost/thumbs/img3431.jpg" alt="" /></a></p>
+
+<p>раствор из расчета на литр</p>
+
+<p><a href="https://t.me/ponics_ru_files/11744" target="_blank"><img src="/imagehost/thumbs/111111.jpg" alt="" /></a></p>
+
+<p>t - 20-22 С</p>
+
+<p>рн 6,2</p>
+
+<p>влажность 55-70</p>
+
+<p>2200 ррм</p>
+
+<p>осв. 12000 lx</p>
+
+<p>как думаете - стоит ли сменить раствор на такой-</p>
+
+<p><a href="https://t.me/ponics_ru_files/11745" target="_blank"><img src="/imagehost/thumbs/2222ldl.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 25-02-2014</p>
+
+<p>Стоит, в первом неверные соотношения элементов.</p>
+
+<p><strong>Dezero</strong> 25-02-2014</p>
+
+<blockquote>
+  <p>Стоит, в первом неверные соотношения элементов.</p>
+</blockquote>
+
+<p>Спасибо.</p>
+
+<p>Единственное, что из того что есть у меня, точно такой сварить не выходит (</p>
+
+<p>чуть другой получится (по калькулятору)</p>
+
+<p><a href="https://t.me/ponics_ru_files/11746" target="_blank"><img src="/imagehost/thumbs/33xtx.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 25-02-2014</p>
+
+<p>В этом тоже неверное соотношение - калия относительно много, кальция относительно мало. Будут проблемы с поступлением кальция.</p>
+
+<p><strong>Dezero</strong> 25-02-2014</p>
+
+<blockquote>
+  <p>В этом тоже неверное соотношение - калия относительно много, кальция относительно мало. Будут проблемы с поступлением кальция.</p>
+</blockquote>
+
+<p>а к какому рецепту стремиться тогда?</p>
+
+<p>нашел только рекомендации по соотношению азота к калию в виде - от 1 к 1.5 в период веги до 1 к 2-2.5 на период цветения</p>
+
+<p><strong>Coccinella</strong> 25-02-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>В этом тоже неверное соотношение - калия относительно много, кальция относительно мало. Будут проблемы с поступлением кальция.</p>
+  </blockquote>
+
+  <p>а к какому рецепту стремиться тогда?</p>
+
+  <p>нашел только рекомендации по соотношению азота к калию в виде - от 1 к 1.5 в период веги до 1 к 2-2.5 на период цветения</p>
+</blockquote>
+
+<p>Это для какого растения такие рекомендации? <em>???</em> И чьи? :-[</p>
+
+<p><strong>Dezero</strong> 25-02-2014</p>
+
+<blockquote>
+  <p>Это для какого растения такие рекомендации? <em>???</em> И чьи? :-[</p>
+</blockquote>
+
+<p>для томата…к сожалению сейчас не найду ссылку, но какой то сайт по агротехнике томата</p>
+
+<p>а можете посоветовать какое нибудь соотношение (рецепт) для моих помидрок?</p>
+
+<p><strong>Dezero</strong> 02-03-2014</p>
+
+<p>добрый вечер</p>
+
+<p>какая то беда приключилась с томатом</p>
+
+<p>последние сутки начал вянуть…но не весь а только одна веточка….прямо целиком потихоньку в течении дня увядала и вообще чуть не скрутилась к вечеру</p>
+
+<p>в последние 3 дня все было без изменений…полив, климат….</p>
+
+<p><a href="https://t.me/ponics_ru_files/11747" target="_blank"><img src="/imagehost/thumbs/img3449.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11748" target="_blank"><img src="/imagehost/thumbs/img3446.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11749" target="_blank"><img src="/imagehost/thumbs/img3447.jpg" alt="" /></a></p>
+
+<p>что может быть? подскажете?</p>
+
+<p><strong>Coccinella</strong> 02-03-2014</p>
+
+<p>Этот лист именно увял, то есть стал мягким, пониклым… или просто скрутился?</p>
+
+<p>В первом случае что-то неладно с корнями, во втором стоит посмотреть, не сидит ли кто-то посторонний внутри скрученного листа.</p>
+
+<p><strong>Dezero</strong> 02-03-2014</p>
+
+<blockquote>
+  <p>Этот лист именно увял, то есть стал мягким, пониклым… или просто скрутился?</p>
+
+  <p>В первом случае что-то неладно с корнями, во втором стоит посмотреть, не сидит ли кто-то посторонний внутри скрученного листа.</p>
+</blockquote>
+
+<p>в том то и дело что не лист а вся веточка с листьями вместе скрутилась. т.е. сам стебель (ответвление…не хватает знаний назвать правильно) скручивается а не листья по отдельности…он не мягкий…достаточно плотный…без приложения усилий не даеццо раскрутить обратно….</p>
+
+<p>хотя…изменение было….днат 250 в 120 см от него появился…но 3 дня как…а крутить утром сегодгя начало</p>
+
+<p><strong>Coccinella</strong> 02-03-2014</p>
+
+<p>Это не веточка, а именно лист, он у томата такой :). Если упругий и никаких поселенцев внутри нет, то и пусть… Это, скорее всего, реакция на повышенную освещенность, ничего страшного.</p>
+
+<p><strong>Dezero</strong> 03-03-2014</p>
+
+<blockquote>
+  <p>Это не веточка, а именно лист, он у томата такой :). Если упругий и никаких поселенцев внутри нет, то и пусть… Это, скорее всего, реакция на повышенную освещенность, ничего страшного.</p>
+</blockquote>
+
+<p>Спасибо</p>
+
+<p>развернул потихоньку, проверил с лупой - никого )</p>
+
+<p>фотка развернутого стебля</p>
+
+<p><a href="https://t.me/ponics_ru_files/11750" target="_blank"><img src="/imagehost/thumbs/img3451.jpg" alt="" /></a></p>
+
+<p>там это……….десяток листьев в этой скрутке…крутит именно ствол (</p>
+
+<p><strong>Coccinella</strong> 03-03-2014</p>
+
+<p>Еще раз говорю, что это лист :), уж поверьте :)</p>
+
+<p>Скорее всего, это реакция растения на перемены, именно на сами изменения в освещении.</p>
+
+<p><strong>Dezero</strong> 03-03-2014</p>
+
+<blockquote>
+  <p>Еще раз говорю, что это лист :), уж поверьте :)</p>
+
+  <p>Скорее всего, это реакция растения на перемены, именно на сами изменения в освещении.</p>
+</blockquote>
+
+<p>спасибо огромное…</p>
+
+<p><strong>Vad</strong> 03-03-2014</p>
+
+<p>лист</p>
+
+<p>:)</p>
+
+<p><a href="https://t.me/ponics_ru_files/11751" target="_blank"><img src="/imagehost/thumbs/tomatlist.jpg" alt="" /></a></p>
+
+<p><strong>Dezero</strong> 06-03-2014</p>
+
+<p>Добрый день</p>
+
+<p>С питанием разобрался - пришел к выводу, что с сухими солями все гораздо проще и эффективнее…..точно знаешь что получится…..в пень годовые удобрения (разве что микро)…</p>
+
+<p>томаты пошли в рост…приятно…</p>
+
+<p>появилась болячка на баклажане…( живет в торфе верховом нейтрализованном с вермикулитом….</p>
+
+<p><a href="https://t.me/ponics_ru_files/11752" target="_blank"><img src="/imagehost/thumbs/img3454.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11753" target="_blank"><img src="/imagehost/thumbs/img3452.jpg" alt="" /></a></p>
+
+<p>как будто кто то слопал зеленую массу с листа оставив только сеточку-основу</p>
+
+<p>на помидорке тоже такое начало появляться….пока в 1 месте….</p>
+
+<p><a href="https://t.me/ponics_ru_files/11754" target="_blank"><img src="/imagehost/thumbs/img3453.jpg" alt="" /></a></p>
+
+<p>Уважаемые - что это?</p>
+
+<p><strong>Coccinella</strong> 06-03-2014</p>
+
+<p>Такие вещи бывают при резком падении относительной влажности воздуха, отдельные участки листа теряют воду больше, чем другие, вот и результат.</p>
+
+<p>Еще это может быть результатом острого дефицита фосфора. Вэтом торфе, кроме известкового материала ничего больше не было?</p>
+
+<p><strong>Dezero</strong> 06-03-2014</p>
+
+<blockquote>
+  <p>Такие вещи бывают при резком падении относительной влажности воздуха, отдельные участки листа теряют воду больше, чем другие, вот и результат.</p>
+
+  <p>Еще это может быть результатом острого дефицита фосфора. Вэтом торфе, кроме известкового материала ничего больше не было?</p>
+</blockquote>
+
+<p>нет. торф верховой нейтрализованный Vetorf + вермикулит…все новое….из упаковки…</p>
+
+<p>томат на керамзите…..керамзит вымочен в суперфосфате двойном сутки….потом для гарантии вскипячен в растворе серной кислоты….часа 2…промыт после всего естественно ) РН не плавал</p>
+
+<p><strong>Coccinella</strong> 06-03-2014</p>
+
+<p>А корни томата из этого торфа питаются только раствором?</p>
+
+<p><strong>Dezero</strong> 07-03-2014</p>
+
+<blockquote>
+  <p>А корни томата из этого торфа питаются только раствором?</p>
+</blockquote>
+
+<p>томат растет в установке на керамзите без торфа…просто на нем тоже появилось такое…….только маааленькое пятнышко - живет на растворе…помимо него в этой установке еще 6 томатов - с ними все ок…</p>
+
+<p>а в торфе баклажан…и он на раствор\вода….он просто в контейнере пластиковом а не в установке….отдельное, самостоятельное растение</p>
+
+<p><strong>Coccinella</strong> 08-03-2014</p>
+
+<p>Проверьте содержание фосфора в растворе и относительную влажность воздуха в зоне растений.</p>
+
+<p>Кстати, если проблема остановилась, то и делать ничего не надо (условия, которые ее вызвали, уже изменились). Плохо, если она прогрессирует.</p>
+
+<p><strong>Dezero</strong> 08-03-2014</p>
+
+<blockquote>
+  <p>Проверьте содержание фосфора в растворе и относительную влажность воздуха в зоне растений.</p>
+
+  <p>Кстати, если проблема остановилась, то и делать ничего не надо (условия, которые ее вызвали, уже изменились). Плохо, если она прогрессирует.</p>
+</blockquote>
+
+<p>спасибо</p>
+
+<p>нет, болячка остановилась и дальше не развивается….ни в грунте, не на гидропонике</p>
+
+<p><strong>Dezero</strong> 07-05-2014</p>
+
+<p>Уважаемые форумчане</p>
+
+<p>а можно вопрос не совсем по гидре но по выращиванию )))</p>
+
+<p>пришла пора переселять томаты из подвала на улицу, заодно и родителям понадобилась теплица…..</p>
+
+<p>построил из стекла 12х3х3…..встал вопрос с грядками….на данный момент насыпан ПГС на дне….родители просят сделать высокие грядки….задумался над опалубкой для грядок и тут пришла идея….</p>
+
+<p>не могу найти где тут читал - выращивать томат, огурец, перец в мешках из агроволокна…..просто сделать мешки литров по 20 например, насыпать обычного чернозема из огорода и туда высадить рассаду…т.е. теплица будет просто укрытием для растений….</p>
+
+<p>в связи с этим вопрос….достаточно ли будет 20 литров и нужно ли будет проводить фертигацию…..или уже проще сделать обычные грядки и не думать…просто родителям доставляет удовольствие самим ухаживать..поливают просто водой из лейки…вмешиваццо “с вашими там новыми технологиями” не дают ))))…отказываются от капли, автополива и прочего, хотя уже весь материал на весь участок есть…..2й год не могу уговорить….</p>
+
+<p><strong>андрей п</strong> 07-05-2014</p>
+
+<p>Вполне достаточно и можно поливать просто из лейки, если в огороде у Вас действительно чернозем :)</p>
+
+<p><strong>Dezero</strong> 07-05-2014</p>
+
+<blockquote>
+  <p>Вполне достаточно и можно поливать просто из лейки, если в огороде у Вас действительно чернозем :)</p>
+</blockquote>
+
+<p>ну “чернозем” который продают машинами я видел - вот прям 1 в 1 ))))) от котлована дома остался “плодородный слой”….его снимали при рытье - 40 см и складировали отдельно….никаких глиняных включений и прочего….обычная черная земля….суглинки у нас начинаются с 60-70 см….так что с запасом</p>
+
+<p>уточню - из лейки обычной водой без удобрений? ) а то они не осилят…вернее не захотят )</p>
+
+<p><strong>Coccinella</strong> 07-05-2014</p>
+
+<p>Какое-то время в этом черноземе все будет расти, пока все питательные элементы не кончатся. Я только боюсь, что всякая инфекция в нем накопится раньше.</p>
+
+<p><strong>Dezero</strong> 07-05-2014</p>
+
+<blockquote>
+  <p>Какое-то время в этом черноземе все будет расти, пока все питательные элементы не кончатся. Я только боюсь, что всякая инфекция в нем накопится раньше.</p>
+</blockquote>
+
+<p>а можно примерно узнать насколько быстро произойдет истощение? на сезон я так понимаю не хватит? наверное глупость сейчас спрошу - на грядках же не кончаются ))))</p>
+
+<p>а с инфекциями в земле разобраццо не проблема - на работе есть камера для порошковых эмалей….280С….прогрею</p>
+
+<p>ув. Кокцинелла - а что вы в целом про эту идею думаете7</p>
+
+<p><strong>diman73rus</strong> 07-05-2014</p>
+
+<p>20л мешки - хорошо.</p>
+
+<p>в середине лета все равно придется подкармливать минеральными удобрениями (суперфосфат и сульфат калия) т.к. грунт истощится.</p>
+
+<p>в конце сезона грунт вынуть и раскидать по участку. весной - в мешки новый грунт.</p>
+
+<p>и добавить в него перлит/вермикулит в качестве разрыхлителя. опилки в крайнем случае.</p>
+
+<p><strong>Dezero</strong> 07-05-2014</p>
+
+<blockquote>
+  <p>20л мешки - хорошо.</p>
+
+  <p>в середине лета все равно придется подкармливать минеральными удобрениями (суперфосфат и сульфат калия) т.к. грунт истощится.</p>
+
+  <p>в конце сезона грунт вынуть и раскидать по участку. весной - в мешки новый грунт.</p>
+
+  <p>и добавить в него перлит/вермикулит в качестве разрыхлителя. опилки в крайнем случае.</p>
+</blockquote>
+
+<p>спасибо</p>
+
+<p><strong>Coccinella</strong> 07-05-2014</p>
+
+<p>Вот опилки в него добавлять не стоит, на их минерализацию бактерии используют азот, который иначе достался бы растениям. Да и насчет фосфора я не так уж уверена, может, да, может, нет. Это ведь без анализа почвы определить невозможно, а кто его будет делать (и где?) для таких масштабов?</p>
+
+<p><strong>Седой</strong> 07-05-2014</p>
+
+<p>Сам заболел этой темой по переводу растений в теплице на гидру. Опыты с огурцами показали хороший результат. С томатами планировал на будущий год,но решил уже нынче попробовать. Конечно боязно вот так сразу все перевести. А вдруг не получится. Потому и решил в виде эксперимента четыре огурца посадить. А теперь еще и четыре томата посажу. Единственная проблема на сегодняшний день,это своевременный полив. Емкости у меня пяти литровые и потому запаса влаги для взрослых растений практически нет. Приходится осваивать авто полив. И вам советую посадить часть растений на гидре,и воочию убедиться что лучше.</p>
+
+<p><strong>Dezero</strong> 08-05-2014</p>
+
+<blockquote>
+  <p>Сам заболел этой темой по переводу растений в теплице на гидру. Опыты с огурцами показали хороший результат. С томатами планировал на будущий год,но решил уже нынче попробовать. Конечно боязно вот так сразу все перевести. А вдруг не получится. Потому и решил в виде эксперимента четыре огурца посадить. А теперь еще и четыре томата посажу. Единственная проблема на сегодняшний день,это своевременный полив. Емкости у меня пяти литровые и потому запаса влаги для взрослых растений практически нет. Приходится осваивать авто полив. И вам советую посадить часть растений на гидре,и воочию убедиться что лучше.</p>
+</blockquote>
+
+<p>спасибо. попробую по 5 кустов томата и огурца. может понравится) но грядки насыпать придеццо-вчера попытался уговорить на мешки-получил категорический отказ….типа хватит читать всякое в своих интернетах)))))и томат на гидре раскритиковали…как в магазине говорят…сорт балконное чудо..ну и досталось ему конечно, пока подбирал свои грабельки))) сегодня вечером попробую отчитаццо</p>
+
+<p><strong>Coccinella</strong> 08-05-2014</p>
+
+<p>А зачем им высокие гряды понадобились? Наклоняться трудно или какая-то иная причина?</p>
+
+<p><strong>Dezero</strong> 08-05-2014</p>
+
+<blockquote>
+  <p>А зачем им высокие гряды понадобились? Наклоняться трудно или какая-то иная причина?</p>
+</blockquote>
+
+<p>наклонятся трудно…</p>
+
+<p>и когда заливал фундамент под теплицу, не хотелось копать траншею под ленту…..трактором снял слой, засыпал ПГСом, выставил опалубку, залил бетон. Теперь на дне теплички чистый ПГС, земли нет…вот буду насыпать грядки</p>
+
+<p><strong>Coccinella</strong> 08-05-2014</p>
+
+<p>А что значит ПГС?</p>
+
+<p><strong>Dezero</strong> 08-05-2014</p>
+
+<blockquote>
+  <p>А что значит ПГС?</p>
+</blockquote>
+
+<p>Песчано-гравийная смесь</p>
+
+<p>песок с гравием, основа для бетона</p>
+
+<p><strong>Coccinella</strong> 08-05-2014</p>
+
+<p>А вот на такой вариант <a href="http://www.foto.greentalk.ru/v/20100307/MG_271110/gurku+rene.JPG.html" target="_blank">http://www.foto.greentalk.ru/v/20100307/MG_271110/gurku+rene.JPG.html</a> они тоже не вдохновляются?</p>
+
+<p>Жалко ведь хороший пол этим черноземом портить. А так бы вся лишняя вода в эту смесь уходила, никаких луж и грязи.</p>
+
+<p><strong>Dezero</strong> 08-05-2014</p>
+
+<blockquote>
+  <p>А вот на такой вариант <a href="http://www.foto.greentalk.ru/v/20100307/MG_271110/gurku+rene.JPG.html" target="_blank">http://www.foto.greentalk.ru/v/20100307/MG_271110/gurku+rene.JPG.html</a> они тоже не вдохновляются?</p>
+
+  <p>Жалко ведь хороший пол этим черноземом портить. А так бы вся лишняя вода в эту смесь уходила, никаких луж и грязи.</p>
+</blockquote>
+
+<p>неа, никак не хотят кроме как грядками ((((( уже 2й день уговариваю попробовать ) нивкакую )</p>
+
+<p>вот так…..</p>
+
+<p><a href="https://t.me/ponics_ru_files/11755" target="_blank"><img src="/imagehost/thumbs/img20140508172753.jpg" alt="" /></a></p>
+
+<p>поставлю опалубку и насыплю грядки по краям землей 40 см в высоту…..а проход так и останется на уровне “пола”…..плитку тротуарную туда и все….сухо и чисто</p>
+
+<p><strong>Coccinella</strong> 08-05-2014</p>
+
+<p>Дело хозяйское. А как они думают томаты в таком случае подвязывать? Огурцы-то можно и врасстил выращивать…</p>
+
+<p><strong>Dezero</strong> 08-05-2014</p>
+
+<blockquote>
+  <p>Дело хозяйское. А как они думают томаты в таком случае подвязывать? Огурцы-то можно и врасстил выращивать…</p>
+</blockquote>
+
+<p>под крышей будет трос для подвязок по всей длине</p>
+
+<p><strong>Vad</strong> 08-05-2014</p>
+
+<p>не оборвется? крышу не сломает?</p>
+
+<p>томаты весят не кисло :-X</p>
+
+<p>у меня один стволик тянет за веревку 4-5-6 кг</p>
+
+<p>если из будет 20.. то вертикальная нагрузка будет 80-100 кг.. А нагрузка “на растяжение” и на столбы..*«передаточное число» усилия дуги на тетиву… :o</p>
+
+<p><strong>Coccinella</strong> 08-05-2014</p>
+
+<p>Меня больше волновало, как они так высоко взбираться будут? Или, если делать шпалеру на высоте поднятой руки, то на рост самого томата мало места остается при высоких-то грядах. У приспускание в таких условиях придется проводить чуть не через 2-3 дня, а это физически тяжелая работа.</p>
+
+<p>Хотя Вадим тоже прав, конструкция может не выдержать хорошего урожая. Хотя лично у нас на даче обычно обрывается проволока. И не под томатами, а под огурцами.</p>
+
+<p><strong>Dezero</strong> 08-05-2014</p>
+
+<blockquote>
+  <p>не оборвется? крышу не сломает?</p>
+
+  <p>томаты весят не кисло :-X</p>
+
+  <p>у меня один стволик тянет за веревку 4-5-6 кг</p>
+
+  <p>если из будет 20.. то вертикальная нагрузка будет 80-100 кг.. А нагрузка “на растяжение” и на столбы..*«передаточное число» усилия дуги на тетиву… :o</p>
+</blockquote>
+
+<p>думаю нет….фотка не законченного строительства….под крышей ставил через 2 м поперечины из бруса - на 3х висели по человеку - ничего не похрустывает даже…</p>
+
+<p>спасибо за подсказку, это я уже учел….в подвале мелкие дюбеля томат выдергивал из стен в 6 кустов )))))</p>
+
+<p><strong>Dezero</strong> 08-05-2014</p>
+
+<blockquote>
+  <p>Меня больше волновало, как они так высоко взбираться будут? Или, если делать шпалеру на высоте поднятой руки, то на рост самого томата мало места остается при высоких-то грядах. У приспускание в таких условиях придется проводить чуть не через 2-3 дня, а это физически тяжелая работа.</p>
+
+  <p>Хотя Вадим тоже прав, конструкция может не выдержать хорошего урожая. Хотя лично у нас на даче обычно обрывается проволока. И не под томатами, а под огурцами.</p>
+</blockquote>
+
+<p>от поверхности грядки до крыши (если грядку делать 40 см) остается 2.5 м….</p>
+
+<p>маловато да?</p>
+
+<p><strong>Coccinella</strong> 08-05-2014</p>
+
+<p>Тут важно не столько расстояние до крыши, сколько - до шпалеры. Для растений важно, чтобы между векрхушкой и крышей было какое-то свободное пространство, чем больше, тем лучше. Редис в грунте выращивают в теплицах высотой 4-6 м :)</p>
+
+<p>Да и при выращивании огурца или томата на высокой шпалере от верхушки до крыши не менее 2 м остается. А в Вашем случае сколько? 20-40 см? Перегревы будут очень сильные.</p>
+
+<p>Но дело не только в этом. В зависимости от высоты человека, стоя на полу, вытянутой рукой можно достать на высоту 2-2,2 м, баскетболисты достают выше.. Иначе для ухода за растениями нужна лесенка, скамеечка, ящик и т.д. Это неудобно. Особенно в узких проходах между коробами. Так-то и на грядку наступить случается, хотя и не хорошо это…</p>
+
+<p>Ну и вот. Высота гряды 40 см, до шпалеры 220, на само растение остается 180. Немало, но, если бы растения были на земле или в пресловутых “колбасках”, удалось бы получить на одну (или даже две) кисть больше. Но этим можно, конечно, и пренебречь, ведь не на рынок растить будут, а для себя и так хватит :)</p>
+
+<p><strong>Vad</strong> 08-05-2014</p>
+
+<p>а если их “по кругу” запустить?</p>
+
+<p>приспускать и укладывать в бок.. :-\</p>
+
+<p>там и правда.. высоко для человека среднего роста.. обслуживать будет невозможно <em>???</em></p>
+
+<p>я сегодня..</p>
+
+<p>на табуреточку- с табуреточки..</p>
+
+<p>на табуреточку- с табуреточки..</p>
+
+<p>на табуреточку- с табуреточки..</p>
+
+<p>на табуреточку- с табуреточки..</p>
+
+<p>на табуреточку- с табуреточки..</p>
+
+<p>наскакался так, что… проклял тот день, когда кум приперся в гости со словами “Вад, а ты знаешь.. что такое гидропрника? Я тут почитал.. вот.. форум нашел.. :D”</p>
+
+<p>а у меня ТРИ томата на лоджии..:D</p>
+
+<p>ТРИ! <em>Wall</em></p>
+
+<p><strong>Dezero</strong> 08-05-2014</p>
+
+<blockquote>
+  <p>А в Вашем случае сколько? 20-40 см? Перегревы будут очень сильные.</p>
+
+  <p>Ну и вот. Высота гряды 40 см, до шпалеры 220, на само растение остается 180. Немало, но, если бы растения были на земле или в пресловутых “колбасках”, удалось бы получить на одну (или даже две) кисть больше. Но этим можно, конечно, и пренебречь, ведь не на рынок растить будут, а для себя и так хватит :)</p>
+</blockquote>
+
+<p>27см в самом низком месте от шпалеры((((</p>
+
+<p>спасибо большущее…выпрошу пару квадратов площади, сделаю колбаски, каплю в них и продемонстиирую..может вживую увидят и поверят…все легче будет им в дальнейшем….а урожай да…не особо востребован…много все вместе все равно не сьедаем, но какая радость когда все получаеццо и вырастает прям много..столько положительных эмоций…одно это чего стоит..</p>
+
+<p>такой вопрос-а колбаски поливают водой и периодически подкармливают -я правильно понимаю?</p>
+
+<p><strong>Coccinella</strong> 09-05-2014</p>
+
+<blockquote>
+  <p>такой вопрос-а колбаски поливают водой и периодически подкармливают -я правильно понимаю?</p>
+</blockquote>
+
+<p>Да! Если у Вас действительно чернозем, то в первый год, видимо, много подкормок не потребуется. Мы для моей мамы капельный полив только в прошлом году сделали, до этого она раз в неделю посыпала удобрением (она это любит, ей нравится наблюдать отзывчивостть растений на подкормку :)) и поливала спринклерами.</p>
+
+<p><strong>Dezero</strong> 09-05-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>такой вопрос-а колбаски поливают водой и периодически подкармливают -я правильно понимаю?</p>
+  </blockquote>
+
+  <p>Да! Если у Вас действительно чернозем, то в первый год, видимо, много подкормок не потребуется. Мы для моей мамы капельный полив только в прошлом году сделали, до этого она раз в неделю посыпала удобрением (она это любит, ей нравится наблюдать отзывчивостть растений на подкормку :)) и поливала спринклерами.</p>
+</blockquote>
+
+<p>спасибо</p>
+
+<p><strong>Седой</strong> 11-05-2014</p>
+
+<blockquote>
+  <p>спасибо</p>
+</blockquote>
+
+<p>С вопросами по конструктиву теплицы тебе лучше на форум Дом и Дача. Теперь о своих наблюдениях относительно теплицы. Высокие грядки,это хорошо(у меня 50см). Во первых быстрый прогрев почвы по весне,во вторых при обработке меньше наклон. Не знаю зачем Вад скакал на табурет и обратно столько раз,по мне так нечего там на верху так часто делать. Теперь про минусы. Во первых,что бы заполнить такой объем грядок землей,придется хорошо потрудиться. Во вторых, Леди Со права,съедаем высоту,а она очень важна и нужна. Если теплица ниже трех метров,то проблемы и с размещением растений и с перегревом,однозначно. И еще,мне кажется,что угол уклона твоей крыши мал. Как со снеговой нагрузкой?</p>
+
+<p>Теперь за посадки. Ежели твои родители придерживаются столь радикальных взглядов. Бог с ними. Посади в уголке два томата в гидру,будет с чем сравнить результаты. Наглядный результат всегда лучше слов.</p>
+
+<p><strong>Dezero</strong> 11-05-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>спасибо</p>
+  </blockquote>
+
+  <p>С вопросами по конструктиву теплицы тебе лучше на форум Дом и Дача. Теперь о своих наблюдениях относительно теплицы. Высокие грядки,это хорошо(у меня 50см). Во первых быстрый прогрев почвы по весне,во вторых при обработке меньше наклон. Не знаю зачем Вад скакал на табурет и обратно столько раз,по мне так нечего там на верху так часто делать. Теперь про минусы. Во первых,что бы заполнить такой объем грядок землей,придется хорошо потрудиться. Во вторых, Леди Со права,съедаем высоту,а она очень важна и нужна. Если теплица ниже трех метров,то проблемы и с размещением растений и с перегревом,однозначно. И еще,мне кажется,что угол уклона твоей крыши мал. Как со снеговой нагрузкой?</p>
+
+  <p>Теперь за посадки. Ежели твои родители придерживаются столь радикальных взглядов. Бог с ними. Посади в уголке два томата в гидру,будет с чем сравнить результаты. Наглядный результат всегда лучше слов.</p>
+</blockquote>
+
+<p>пасиб за советы</p>
+
+<p>форумхаус искатал вдоль и поперек ))))</p>
+
+<p>за день засыпал примерно половину грунтом…..тот еще был денек ))) это даааа)))</p>
+
+<p>со снегом - не лень почистить….теплица около дома постоянного проживания…..все сказали - ну его делать больший наклон - будем чистить……..посмотрим )))))</p>
+
+<p>в связи с пришедшим теплом не стал монтировать на крышу пленку……до осени будет нетканка 60ка белая…..там поглядим…или пленка или СПК</p>
+
+<p>гидра в подвале на светокультуре…..сорт балконное чудо отвергли сразу - как грят в магазине…..фигня эта ваша гидропоника..)))) подоспел ямал 200 - вот грят более менее…)))) ждемс скиф, евпатор, полбиг )))))</p>
+
+<p><strong>Dezero</strong> 12-05-2014</p>
+
+<p>Как и обещал - фотоотчет</p>
+
+<p><a href="https://t.me/ponics_ru_files/11756" target="_blank"><img src="/imagehost/thumbs/img20140512102859.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11757" target="_blank"><img src="/imagehost/thumbs/img20140512102906.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11758" target="_blank"><img src="/imagehost/thumbs/img20140512102909.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11759" target="_blank"><img src="/imagehost/thumbs/img20140512102920.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11760" target="_blank"><img src="/imagehost/thumbs/img20140512102923.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11761" target="_blank"><img src="/imagehost/thumbs/img20140512102928.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11762" target="_blank"><img src="/imagehost/thumbs/img20140512102935.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11763" target="_blank"><img src="/imagehost/thumbs/img20140512102938.jpg" alt="" /></a></p>
+
+<p>все живет в подвале…освещение Днат 250 , Днат 150, МГЛ 400, КЛЛ 100 + 4 осрам флуора на стене вертикально за томатами</p>
+
+<p>томатам на переднем ряду 3 мес, на заднем 4 мес</p>
+
+<p>задний ряд на керамзите, передний на кокосе</p>
+
+<p>попробовал спопугайничать у Вада Евпатор на ДВЦ….3 недели…..полет нормальный…</p>
+
+<p>сорт томата балконное чудо - вкуса никакого…так…побаловаццо если только</p>
+
+<p>ну и плюсом поселилась рассада родителей в стаканчиках ))))</p>
+
+<p>проба выращивания клубники из семян на перлите\керамзите\кокосе оказалась вполне успешной…победил микс кокоперлита с каплей…но очень важно качество кокоса….весь, который есть в магазинах - б\у….начинаешь промывать - куча листьев, корней…жесть….половина в нем загибаеццо даже после 6-7 промывок….в условиях нашего города лучший вариант - Икея….на нем погибших не было даже без промывки</p>
+
+<p>часть уехала на грядки в землю, часть на балконе…..часть дает усы, часть цветет….непонятно…семена из одного пакетика, условия одинаковые</p>
+
+<p><strong>Vad</strong> 12-05-2014</p>
+
+<blockquote>
+  <p>ну и плюсом поселилась рассада родителей в стаканчиках ))))</p>
+</blockquote>
+
+<p>тут поаккуратнее..</p>
+
+<p>всякий раз, как на мою лоджию попадали растения в горшках, стаканах, конвертах… обязательно разводилась какая нибудь гадость!</p>
+
+<p>клещи, дрыщи, мухи и прочая нечесть &gt;:D</p>
+
+<p><strong>Dezero</strong> 12-05-2014</p>
+
+<blockquote>
+  <blockquote>
+    <p>ну и плюсом поселилась рассада родителей в стаканчиках ))))</p>
+  </blockquote>
+
+  <p>тут поаккуратнее..</p>
+
+  <p>всякий раз, как на мою лоджию попадали растения в горшках, стаканах, конвертах… обязательно разводилась какая нибудь гадость!</p>
+
+  <p>клещи, дрыщи, мухи и прочая нечесть &gt;:D</p>
+</blockquote>
+
+<p>на днях все уедет на улицу….да и мои деревья тоже…..под навес из агроспана их поставлю наверное и пусть продолжают уже на улице…</p>
+
+<p>грунт в стаканчиках покупной…пока вроде ничего не вылезало )))</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

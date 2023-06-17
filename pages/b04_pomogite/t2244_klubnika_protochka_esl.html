@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Клубника, проточка, ЭСЛ | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Клубника, проточка, ЭСЛ">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Клубника, проточка, ЭСЛ</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Oddler</strong> 12-04-2015</p>
+
+<p>Здравствуйте уважаемые форумчане. Сделали с другом установку для клубники. Хотелось бы услышать советы и получить помощь в некоторых вопросах :-[</p>
+
+<p>Итак, как выглядит:</p>
+
+<p><a href="https://t.me/ponics_ru_files/14347" target="_blank"><img src="/imagehost2/thumbs/dsc0095.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/14348" target="_blank"><img src="/imagehost2/thumbs/dsc0142.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/14349" target="_blank"><img src="/imagehost2/thumbs/dsc0173.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/14350" target="_blank"><img src="/imagehost2/thumbs/dsc0176.jpg" alt="" /></a></p>
+
+<p>Свет: 3 ЭСЛ 85 Ватт 2700К. На одном этаже 3 ЭСЛ 85 Ватт 2700К + 3 ЭСЛ 30 Ватт 6400К. Света на этаж - примерно 12К Лм, в “слепых зонах” 8К Лм(ниже лампы уже не опустишь). Световой режим - 18/6.</p>
+
+<p>Температура: 20 С днем, 17С ночью. Температура раствора - 20-21 С.</p>
+
+<p>Раствор:</p>
+
+<p>Что есть в наличии(я тут выложил мои подсчеты элементов на всякий случай):</p>
+
+<p>Калий азотнокислый - KNO3 - 39+14+16<em>3=101. 14/101</em>100=14(N). 39/101*100=39(K)</p>
+
+<p>Кальций азотнокислый</p>
+
+<p>Кальций фосфорнокислый - Ca3(PO4)2 - 40<em>3+31</em>2+16<em>8=310. 120/310</em>100=39(Ca). 62/310*100=20(P)</p>
+
+<p>Нитрат кальция - Ca(NO3)2 - 40+14<em>2+16</em>6=146. 40/146<em>100=27(Ca). 28/146</em>100=19(N)</p>
+
+<p>Магний азотнокислый - Mg(NO3)2</p>
+
+<p>Аммоний азотнокислый - NH4NO3 - 14+1<em>4+14+16</em>3=80. 14/80*100%=17.5(N)</p>
+
+<p>МФК - P2O5-50%, K2O-33%. 31<em>2+80=142. 62/142</em>100=44<em>0.5=21(P). 39</em>2+16=94.78/94<em>100=83</em>0.33=27(K)</p>
+
+<p>Железо сернокислое закисное - FeSO4 x 7H2O - 56+32+16<em>4+18</em>7=278. 56/278*100=20</p>
+
+<p>Борная к-та - H3BO3</p>
+
+<p>Марганец сернокислый - MnSO4 x H2O</p>
+
+<p>Цинк сернокислый - ZnSO4 x 7H2O</p>
+
+<p>Медь сернокислая - CuSO4 x 5H2O</p>
+
+<p>Аммоний молибденовокислый - (NH4)6Mo7O24•4H2O</p>
+
+<p>Азотная к-та - HNO3 - 1+14+16<em>3=63.14/63</em>100 = 22 (N)</p>
+
+<p>О-фосфорная к-та - H3PO4 - 3+31+16<em>4=98. 31/98</em>100= 32 (P)</p>
+
+<p>Серная к-та - H2SO4 - 1<em>2+32+64=98. 32/98</em>100= 33 (S)</p>
+
+<p>Калий едкий - KOH</p>
+
+<p>Трилоб Б - C10H18N2Na2O10</p>
+
+<p>Рецепт раствора:</p>
+
+<p>До плодоношения - NPK-196/46,5/214,5, Ca-170, Mg-30</p>
+
+<p>Аммоний азотнокислый 0.1гр/л, Калий азотнокислый 0.4гр/л, Сульфат магния 0.35гр/л, МФК 0,23, Кальциевая селитра 0,8гр/л, Азотная кислота - 0,14гр/л.</p>
+
+<p>Азотную кислоту использую для снижения пш, решил поменять на Серную.</p>
+
+<p>Цветение/плодоношение - NPK-200/110/140, Ca-280, Mg-50</p>
+
+<p>Аммоний азотнокислый 0.1гр/л, Сульфат магния 0.52гр/л, МФК 0,53, Кальциевая селитра 1,3гр/л, Азотная кислота - 0,14гр/л.</p>
+
+<p>Азотную кислоту использую для снижения пш, решил поменять на Серную. Не получается добрать кальций до нужной величины</p>
+
+<p>Микроэлементы (концентрат 1к1000) - железо сернокислое - 5гр Трилон Б + 5 гр железа/1л воды</p>
+
+<p>Цинк сернокислый -0.23г/л</p>
+
+<p>Борная к-та - 0,85г/л</p>
+
+<p>Медь сернокислая -0.25г/л</p>
+
+<p>марганец сернокислый -1.65г/л</p>
+
+<p>аммоний молибденовокислый -0.27г/л</p>
+
+<p>Я не считал Азот, содержащийся в Трилоне Б и Аммонии молибденовокислом. Микроэлементы даю 1мл/1л раствора</p>
+
+<p>Навязчивое чувство, что начудил с микроэлементами <em>???</em></p>
+
+<p>Развожу все отдельно в воде, после чего смешиваю в растворном баке с водой. Железо добавляю последним. Вода из крана - 200 ппм, анализ на хим. состав не делали.</p>
+
+<p>Раствор аэрируется, компрессор 400л/ч на 50л воды.</p>
+
+<p>Общие моменты: ПШ - 6. Влажность - 50%. В стаканчиках с рассадой керамзит (промывали в воде). Расстояние от нижнего края стаканчика до раствора - 3-4см, хотим уменьшить до 1-2 см. Опыляем кисточкой. Сорта клубники: названия к сожалению потерялись, но скажу точно - она не ремонтантная. Думаем сажать все же ремонтантную, как я понимаю, она урожая больше дает. Хотим сменить пластик на крышке, ибо просвечивает немного.</p>
+
+<p>Насущные вопросы <em>sos</em>:</p>
+
+<p>Пересадка - пересаживаю рассаду в систему после земли. Много растишек погибает, даже если корневая до раствора достает. Может их на ДВЦ недельку-две держать, чтоб корни отпустили?</p>
+
+<p>Листья - листья со временем скручиваются внутрь и начинают отмирать с краев. Грешу на азотную к-ту, т.к. не учитывал ее в растворе, сегодня осенило :-\ Может еще в чем причина?</p>
+
+<p>Сера - подскажите, сколько Серы должно быть в растворе?</p>
+
+<p><strong>Coccinella</strong> 12-04-2015</p>
+
+<p>Боюсь, что у в растворе избыток бора, лень считать, но 0,83 г борной к-ты/л, это чуть больше половины от дозы нитрата кальция, посчитайте сами, пожалуйста, какое содержание микроэлементов в растворе по каждому элементу?</p>
+
+<p>А побурение краев листа как раз заставляет подозревать избыток бора.</p>
+
+<p>Серная кислота не лучший вариант, лучше часть кальция вносить хлористым кальцием.</p>
+
+<p>Кроме того, зачем в период плодоношения так много фосфора?</p>
+
+<p><strong>Oddler</strong> 12-04-2015</p>
+
+<p>Coccinella, спасибо за помощь :)</p>
+
+<p>По микроэлементам получилось - Железо сернокислое закисное 0,02г/л; Борная к-та 0,003г/л; Марганец сернокислый 5-водный 0,0022г/л; Цинк сернокислый 7-водный 0,00045гр/л; Медь сернокислая 5-водная 0,0004гр/л; Аммоний молибденовокислый 0,0001гр/л.</p>
+
+<p>Серную кислоту хочу использовать для понижения пш вместо Азотной, чтоб азот не “гулял” в растворе. На форуме почитал, что вроде лучше серу добавлять, чем азот.</p>
+
+<p>Кальций да, докуплю хлористый. А вообще Хлор не вреден для растений? Я понимаю, вы ерунду не посоветуете, просто слышал про вред Хлора и стараюсь не использовать его, хотелось бы прояснить :-[</p>
+
+<p>На счет раствора на плодоношение. Может посоветуете, где поискать? Нашел в сети вот такой вариант, можно использовать его для плодоношения?</p>
+
+<p>Период	 N	P	K	Ca	Mg	S</p>
+
+<p>Вегетация	 150	70	140	200	50	50-110</p>
+
+<p>Плодоношение 80	70	350	260	50	50-110</p>
+
+<p>Закладка плодов 80	45	100	200	50	50-110</p>
+
+<p>Хотелось бы еще прояснить для себя на счет ЕС и ппм, может я чего не так понимаю :-\</p>
+
+<p>1 ЕС = 640 ппм</p>
+
+<p>К примеру: рекомендации для раствора ЕС:1,98 (на форуме нашел) - это 1267 ппм.</p>
+
+<p>Развожу по калькулятору все элементы и получается например ппм 300 у раствора. Т.е. можно увеличить концентрацию в 4 раза? <em>???</em></p>
+
+<p>И еще вопрос на эту тему. Вода из под крана 200 ппм, раствор 500 ппм. То, что в воде было тоже считать в итоге или только то, что я сам добавил - 300 ппм?</p>
+
+<p><strong>Borodach1</strong> 13-04-2015</p>
+
+<blockquote>
+  <p>Кальций фосфорнокислый - Ca3(PO4)2 - 40<em>3+31</em>2+16<em>8=310. 120/310</em>100=39(Ca). 62/310*100=20(P)</p>
+</blockquote>
+
+<p>Каким образом Вы собираетесь его использовать? :-\ Он же в воде не растворим. :(</p>
+
+<p>С ложечки будете кормить? ;)</p>
+
+<blockquote>
+  <p>Хотелось бы еще прояснить для себя на счет ЕС и ппм, может я чего не так понимаю :-\</p>
+
+  <p>1 ЕС = 640 ппм</p>
+</blockquote>
+
+<p>1 ЕС = 1 миллисименс. Это проводимость. Абсолютно физическая величина.</p>
+
+<p>ППМ - абсолютно условная еденица измерения. Приборы показывающие ппм могут калиброваться по разным величинам и 1 ЕС может соответствовать 500, 640, 700 ppm. Или, как в последнее время у китайцев, вообще никак не калиброваться и соответственно ничему не соответствовать и показывать скорость ветра на Марсе.</p>
+
+<p>Берёте 1 грамм NaCl, она же поваренная соль. Разводите в литре воды. Меряете. Из полученного показания вычитаете ppm исходной воды. Делите остаток на 2. Это и будет коэффициент пересчёта для Вашего прибора.</p>
+
+<p><strong>Coccinella</strong> 13-04-2015</p>
+
+<p>Одни из наиболее разумных рекомендаций по питанию земляники (клубники) здесь (на английском)</p>
+
+<p><a href="http://www.haifa-group.com/knowledge_center/crop_guides/strawberry/fertilization_recommendations_for_strawberries/#{BFB420EF-8798-4AEC-ACFF-8D9C0A0FF608}" target="_blank">http://www.haifa-group.com/knowledge_center/crop_guides/strawberry/fertilization_recommendations_for_strawberries/#{BFB420EF-8798-4AEC-ACFF-8D9C0A0FF608}</a></p>
+
+<p><strong>Вик</strong> 13-04-2015</p>
+
+<blockquote>
+  <p>Серную кислоту хочу использовать для понижения пш вместо Азотной, чтоб азот не “гулял” в растворе. На форуме почитал, что вроде лучше серу добавлять, чем азот.</p>
+</blockquote>
+
+<p>тут это Вы зря… лейте и азотку и серную. на одной только серной у Вас серы будет огого…..(хотя не смертельно но всё же…), а азотка ваш HCO3 (который в воде, (явно водопроводной)) мягенько раздербанивает и растение радуется :D</p>
+
+<p>простите за такой слог, но если начинаю писать нормальным языком то начинаю лезть в научные дебри…. а по клавишам стучать так лень……</p>
+
+<p>да и корректировку HNO3 азоткой (в НЕБОЛЬШИХ пределах) делать удобно</p>
+
+<p><strong>Oddler</strong> 13-04-2015</p>
+
+<blockquote>
+  <p>Каким образом Вы собираетесь его использовать? :-\ Он же в воде не растворим. :(</p>
+
+  <p>С ложечки будете кормить? ;)</p>
+</blockquote>
+
+<p>Про Кальций фосфорнокислый я понял после покупки :-[ Сразу открыл для себя таблицу растворимости и Кальциевую селитру.</p>
+
+<blockquote>
+  <p>Берёте 1 грамм NaCl, она же поваренная соль. Разводите в литре воды. Меряете. Из полученного показания вычитаете ppm исходной воды. Делите остаток на 2. Это и будет коэффициент пересчёта для Вашего прибора.</p>
+</blockquote>
+
+<p>Понял… примерно очень понял пока :) Сегодня вечером помучаю ТДС-метр солью и вообще подробнее изучу его. Спасибо, Borodach1 :)</p>
+
+<blockquote>
+  <p>Одни из наиболее разумных рекомендаций по питанию земляники (клубники) здесь (на английском)</p>
+
+  <p><a href="http://www.haifa-group.com/...FF-8D9C0A0FF608}" target="_blank">www.haifa-group.com/…FF-8D9C0A0FF608}</a></p>
+</blockquote>
+
+<p>Coccinella, спасибо большое. Сегодня пересажу цветущие кустики отдельно, сделаю для них новый р-р: NPK-134/46/250, Ca-125, Mg-30, S-50-70. Микроэлементы Fe-1.5, Mn-0.8, Zn-0.5, B-0.15, Cu-0.15, Mo-0.05.</p>
+
+<blockquote>
+  <p>тут это Вы зря… лейте и азотку и серную. на одной только серной у Вас серы будет огого…..(хотя не смертельно но всё же…), а азотка ваш HCO3 (который в воде, (явно водопроводной)) мягенько раздербанивает и растение радуется :D</p>
+</blockquote>
+
+<p>Вик, спасибо за совет :) Да, я посчитал, не очень много азота получается с Азотной к-ты, тем более, если ее еще и разбавлять Серной.</p>
+
+<p><strong>Вик</strong> 13-04-2015</p>
+
+<p>да и…. всё что пересаживаете с земли на гидру после промывки корневой обрабатывайте фунгицидами.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

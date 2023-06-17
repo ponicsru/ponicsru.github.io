@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Аэропоника | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Аэропоника">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Аэропоника</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>wizar</strong> 18-07-2011</p>
+
+<p>Здраствуйте,хотелось бы уточнить пару вопросов по аэропонике.Сам я никогда дела не имел ни с аэропоникой,ни с гидропоникой.Хочу вот начать.И именно с аэропоники.Так вот,вопросы:</p>
+
+<p>1)Насколько часто нужно будет менять раствор?</p>
+
+<p>2)Как сложно следить за раствором?</p>
+
+<p>3)Выдерживают ли ультразвуковые увлажнители режим 24\7?Или такой режим соблюдать не обязательно?</p>
+
+<p>4)Какова сложность аэропоники относительно других систем,для новичка?</p>
+
+<p>Спасибо за ответы)</p>
+
+<p>P.S</p>
+
+<p>Собираюсь использовать вот такой увлажнитель <a href="http://cgi.ebay.com/NEW-12-Lights-LED-MIST-MAKER-MACHINE-POND-FOGGER-MISTER-/280705405786?pt=LH_DefaultDomain_0&amp;hash=item415b58935a#ht_2132wt_1135" target="_blank">http://cgi.ebay.com/NEW-12-Lights-LED-MIST-MAKER-MACHINE-POND-FOGGER-MISTER-/280705405786?pt=LH_DefaultDomain_0&amp;hash=item415b58935a#ht_2132wt_1135</a></p>
+
+<p>Единственное,что приемлимо по цене и отправляется в Россию.Остальное либо дорого,либо в Россию не отправляют</p>
+
+<p><strong>gena1</strong> 18-07-2011</p>
+
+<blockquote>
+  <p>Собираюсь использовать вот такой увлажнитель <a href="http://cgi.ebay.com/NEW-12-Lights-LED-MIST-MAKER-MACHINE-POND-FOGGER-MISTER-/280705405786?pt=LH_DefaultDomain_0&amp;hash=item415b58935a#ht_2132wt_1135" target="_blank">http://cgi.ebay.com/NEW-12-Lights-LED-MIST-MAKER-MACHINE-POND-FOGGER-MISTER-/280705405786?pt=LH_DefaultDomain_0&amp;hash=item415b58935a#ht_2132wt_1135</a></p>
+</blockquote>
+
+<p>Не мучайтесь, все уже “отстрадали” этим за вас :) , вот пример : <a href="http://www.gidroponika.su/gidroponika-svoimi-rukami/myopit/ultrazvukovaja-ajeroponika-prichiny-neudach.html" target="_blank">http://www.gidroponika.su/gidroponika-svoimi-rukami/myopit/ultrazvukovaja-ajeroponika-prichiny-neudach.html</a></p>
+
+<p><strong>wizar</strong> 18-07-2011</p>
+
+<p>Хм…как всё печально,особенно про корни,остальные то проблемы решаемы.Ну да ладно.Тогда остаётся использовать только форсунки?Что ещё можете посоветовать начинающему…ммм…гидропонику?)</p>
+
+<p><strong>nonpro</strong> 19-07-2011</p>
+
+<blockquote>
+  <p>Хм…Что ещё можете посоветовать начинающему…ммм…гидропонику?)</p>
+</blockquote>
+
+<p>Экспериментируйте, ошибайтесь, достигайте результатов.</p>
+
+<p>Расслабтесь и наслаждайтесь вновь приобретенным хобби.</p>
+
+<p>Приветствую Вас в наших рядах!!!!! :)</p>
+
+<p><strong>Oxy</strong> 19-07-2011</p>
+
+<blockquote>
+  <p>Что ещё можете посоветовать начинающему…ммм…гидропонику?)</p>
+</blockquote>
+
+<p>Советую не заниматься <del>ерундой</del> аэропоникой, а построй себе нормальную, проверенную, надежную установку и радуйся жизни.</p>
+
+<p>Какие цели ты ставишь перед собой собираясь заняться аэропоникой? Урожай нормальный ты не получишь, если гонишся за простотой и надежностью установки, то это не про аэропонику. Просто есть деньги, время и хочеться побаловаться с хитромудрыми штучками?</p>
+
+<p><strong>wizar</strong> 19-07-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Хм…Что ещё можете посоветовать начинающему…ммм…гидропонику?)</p>
+  </blockquote>
+
+  <p>Экспериментируйте, ошибайтесь, достигайте результатов.</p>
+
+  <p>Расслабтесь и наслаждайтесь вновь приобретенным хобби.</p>
+
+  <p>Приветствую Вас в наших рядах!!!!! :)</p>
+</blockquote>
+
+<p>Спасибо за тёплый приём)</p>
+
+<blockquote>
+  <blockquote>
+    <p>Что ещё можете посоветовать начинающему…ммм…гидропонику?)</p>
+  </blockquote>
+
+  <p>Советую не заниматься <del>ерундой</del> аэропоникой, а построй себе нормальную, проверенную, надежную установку и радуйся жизни.</p>
+
+  <p>Какие цели ты ставишь перед собой собираясь заняться аэропоникой? Урожай нормальный ты не получишь, если гонишся за простотой и надежностью установки, то это не про аэропонику. Просто есть деньги, время и хочеться побаловаться с хитромудрыми штучками?</p>
+</blockquote>
+
+<p>В том то и дело, что аэропоника с использованием ультразвука мне казалась идеальным вариантом-минимум затрат,много преимуществ(конечно же потом выяснилось,что всё наоборот).Денег и времени не особо много,но побаловаться всегда люблю)</p>
+
+<p>P.S</p>
+
+<p>Видимо,буду делать либо питательный слой(сколько,кстати живут в таком режиме насосы,например,для декоративных фонтанов?).Либо периодического затопления-тут уже простора больше,можно микроконтроллеры цеплять)</p>
+
+<p><strong>orgail</strong> 19-07-2011</p>
+
+<p>Зачем так себя поначалу мучить? Может стоит попробовать обычный подпор, а потом и с аэрацией побаловаться?</p>
+
+<p>Это самые простые установки для начала, но эффект при должном подходе Вам понравится очень</p>
+
+<p><strong>nonpro</strong> 19-07-2011</p>
+
+<blockquote>
+  <p>(сколько,кстати живут в таком режиме насосы,например,для декоративных фонтанов?)</p>
+</blockquote>
+
+<p>Для любителя хороши аквариумные помпы. В моих аквариумах работают неостанавливаясь около 5-6 лет, и сколько еще проработают неизвестно.</p>
+
+<p>Из промышленных мне нравятся итальянские “Педролло”, название по русски звучит не очень, зато в числе мировых лидеров в насосах.</p>
+
+<p><strong>wizar</strong> 19-07-2011</p>
+
+<blockquote>
+  <p>Зачем так себя поначалу мучить? Может стоит попробовать обычный подпор, а потом и с аэрацией побаловаться?</p>
+
+  <p>Это самые простые установки для начала, но эффект при должном подходе Вам понравится очень</p>
+</blockquote>
+
+<p>Вы правы(хотя не вижу особых сложностей с тем же питательным слоем).Пожалуй да,ведь придётся ещё научиться делать правильные растворы,а учиться лучше на чём-то простом. Просто изначально в планах была клубника,а она,если я не ошибаюсь,не особо растёт на подпоре.</p>
+<blockquote>
+  <blockquote>
+    <p>(сколько,кстати живут в таком режиме насосы,например,для декоративных фонтанов?)</p>
+  </blockquote>
+
+  <p>Для любителя хороши аквариумные помпы. В моих аквариумах работают неостанавливаясь около 5-6 лет, и сколько еще проработают неизвестно.</p>
+
+  <p>Из промышленных мне нравятся итальянские “Педролло”, название по русски звучит не очень, зато в числе мировых лидеров в насосах.</p>
+</blockquote>
+
+<p>Надо же,не думал,что у аквариумных помп такой ресурс(ещё было подумывал о самодельном насосе на нитиноловой нити.Но не уверен в надёжности конструкции,зато уровень шума нулевой)</p>
+
+<p><strong>Лина</strong> 25-01-2018</p>
+
+<p>Аэропоника для новичков &lt;p&gt;Симонова Е.С. АЭРОПОНИКА КАК СОВРЕМЕННЫЙ И НАИБОЛЕЕ РАЦИОНАЛЬНЫЙ СПОСОБ БЕСПОЧВЕННОГО ВЫРАЩИВАНИЯ РАСТЕНИЙ // Материалы VIII Международной студенческой электронной научной конференции «Студенческий научный форум» URL: &lt;a href=”http://www.scienceforum.ru/2018/2856/105”&gt;<a href="http://www.scienceforum.ru/2018/2856/105" target="_blank">www.scienceforum.ru/2018/2856/105</a>&lt;/a&gt; (дата обращения: 25.01.2018).&lt;/p&gt;</p>
+
+<p><strong>cpf</strong> 25-01-2018</p>
+
+<blockquote>
+  <p>Аэропоника для новичков &lt;p&gt;Симонова Е.С. АЭРОПОНИКА КАК СОВРЕМЕННЫЙ И НАИБОЛЕЕ РАЦИОНАЛЬНЫЙ СПОСОБ БЕСПОЧВЕННОГО ВЫРАЩИВАНИЯ РАСТЕНИЙ // Материалы VIII Международной студенческой электронной научной конференции «Студенческий научный форум» URL: &lt;a href=”http://www.scienceforum.ru/2018/2856/105”&gt;<a href="http://www.scienceforum.ru/2018/2856/105" target="_blank">www.scienceforum.ru/2018/2856/105</a>&lt;/a&gt; (дата обращения: 25.01.2018).&lt;/p&gt;</p>
+</blockquote>
+
+<p>Где ж Вы раньше были? :D (Материалы, по которым был написан сей “опус” датируются 1960-2010 гг.)</p>
+
+<p><strong>Brastil</strong> 23-04-2018</p>
+
+<p>Здравствуйте. Ращу томаты на аэропонике в горизонтальном лотке с небольшим уклоном. Корни всех растений давно переплелись опасно ли это? На дне лотка ( лоток у меня канализационная труба диаметром 160мм) получился ковёр из корней толщиной 2-3см через который стекает раствор подаваемый форсунками каждые 10мин по 30сек. Не теряется ли смысл аэропоники от того что слой корней почти всегда в воде?</p>
+
+<p>P.S.</p>
+
+<p>Из проблем периодически появляется вершинная гниль, лечу внекорневой нитратом кальция</p>
+
+<p><a href="https://t.me/ponics_ru_files/6044" target="_blank"><img src="/imagehost2/thumbs/img23372304180359hdh.png" alt="" /></a></p>
+
+<p><strong>VVS_</strong> 23-04-2018</p>
+
+<p>Есть смысл переключить в режим проточки, добавить аэратор в основной бак. Будет меньше шума и больше пользы.</p>
+
+<p>А что мешает увеличить уровень нитрата кальция в питательном растворе?</p>
+
+<p>Еще хлорид кальция очень хорошо помогает.</p>
+
+<p>Если аптечный в ампулах, то 10 мл на ведро. Там как раз кальций и хлор. Томату дают хлор 40ппм штатно, но выдерживает до 60 легко.</p>
+
+<p>Хлорид кальция + нитрат кальция, в итоге общий уровень кальция равен азоту и все хорошо. + сам по себе хлор улучшает прохождение кальция</p>
+
+<p><strong>Brastil</strong> 02-05-2018</p>
+
+<p>Думаю уровень кислорода в растворе достаточный ведь раствор распыляется форсунками, проверю на всякий случай. сократил интервалы между поливами до 5мин, полив 10сек и увеличил наклон лотка, динамика роста немного прибавила.</p>
+
+<p>хлор не добавлял ни разу, очень редко где его рекомендуют и в малых количествах. думал того что в воде хватает. если хлорид кальция аптечный 10мл на ведро это для опрыскивания или в раствор??</p>
+
+<p><strong>VVS_</strong> 02-05-2018</p>
+
+<p>Это в раствор.</p>
+
+<p>Посчитайте в npk калькуляторе точнее, хлора нужно 40 ppm.</p>
+
+<p>Я сейчас даю такое значение клубнике и картофелю, все они отозвались положительно и лист куполиться перестал. Ранее давал столько же томату и колоновидной яблоне, все было хорошо.</p>
+
+<p>Без хлорида кальция это было бы сложнее, пришлось бы высокий уровень сульфатов держать, а это серы больше 100ppm выйдет, мало хорошего.</p>
+
+<p><strong>allex_step</strong> 02-05-2018</p>
+
+<p>вроде как для томата в профилях серы порядка 140 ppm..?</p>
+
+<p><strong>siv237</strong> 02-05-2018</p>
+
+<blockquote>
+  <p>Без хлорида кальция это было бы сложнее, пришлось бы высокий уровень сульфатов держать, а это серы больше 100ppm выйдет, мало хорошего.</p>
+</blockquote>
+
+<p>Чем плоха сера?</p>
+
+<p><strong>VVS_</strong> 03-05-2018</p>
+
+<blockquote>
+  <p>Чем плоха сера?</p>
+</blockquote>
+
+<p>Обычно подкисляют серной кислотой, в итоге превысить содержание серы легко.</p>
+
+<p>На гринтолке читал что повышенное содержание серы на различных культурах ведет к некоторым проблемам.</p>
+
+<p>По своему опыту заметил, что если серы больше 110 ппм(в расчетах) то ничего хорошего. Когда часть кальция стал вносить хлоридом, уровень сульфата калия стал ниже, а нитрат кальция и нитрат калия удалось приподнять, серы было 90. Что томатики хорошо оценили.</p>
+
+<p>Valery предоставлял данные, что сам по себе хлор так же позитивно влияет и необходим на уровне 40 ппм. Хлор каким-то образом помогает доставлять кальций в растение.</p>
+
+<p>Лист стал плоский, ровный.. что и нужно.</p>
+
+<p><strong>allex_step</strong> 03-05-2018</p>
+
+<p>не все серной кислят.</p>
+
+<p>для разных культур показатели разные, а серу очень часто ваще пропускают т.к. именно ее в куркуляторах пользуют как “свободный” элемент чтобы было возможно ваще посчитать раствор под профиль (во-первых - потому что множество представлено сульфатами, во-вторых - потому что от избытка серы еще никто практически не пострадал)</p>
+
+<p>и хлор необходим далеко не всем растихам, а некоторым даже особо противен</p>
+
+<p><strong>VVS_</strong> 03-05-2018</p>
+
+<p>По моему скромному опыту, излишнее баловство сульфатами приводит к торможению роста, сульфат калия использую только как необходимую добавку по калию, когда остальными солями предел достигнут.</p>
+
+<p>Хлор 40ппм был опробован на: Огурец 2 сорта, 3 сорта клубники, 2 сорта томата, яблоня колоновидная. Все прекрасно, никаких аварий.</p>
+
+<p><strong>siv237</strong> 03-05-2018</p>
+
+<p>Говорят еще йод выполняет функцию усилителя усваивания, но как микроэлемент. Ёдида калия спиртового 1 капля на 3 литра.</p>
+
+<p><strong>Coccinella</strong> 03-05-2018</p>
+
+<p>Сера потенциально опасна тем, что связывает кальций и он оседает в недоступной растению форме, особенно при высоком рН.</p>
+
+<p>В разумных количествах сера повышает сопротивляемость растений мучнистой росе. Хлор сам по себе не так и опасен, он конкурирует с нитрат-ионом и частично повышает сопротивляемость растений к серой гнили.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

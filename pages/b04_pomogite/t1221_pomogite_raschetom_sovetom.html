@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Помогите расчётом, советом. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Помогите расчётом, советом.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Помогите расчётом, советом.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Genia10</strong> 25-10-2011</p>
+
+<p>Насколько целесообразно(Рентабельно(может кто просчитывал или пробовал))выращивать укроп и петрушку на полной светокультуре????Знаю про УФ для укропа…но всё же есть ли смысл выращивать эти культуры при искуственном освещении, не будет ли затратная часть выше доходной??????</p>
+
+<p>Также интересен опыт выращивания корнюшёнов и томатов чери при полной светокультуре.</p>
+
+<p>Кто владеет информацией, поделитесь….плизззззззз <em>sos</em> :) <em>Bos</em></p>
+
+<p><strong>Mole_Garden</strong> 25-10-2011</p>
+
+<p>На севере точно выгодно, в Сочи нет. Все зависит от региона и цены на продукцию. Даже в средней полосе будет не выгодно. Из узбекистана зелень везут вагонами и цена на нее нормальная. Это она в магазине так стоит, у оптовиков раза 2,5 дешевле.</p>
+
+<p><strong>Genia10</strong> 25-10-2011</p>
+
+<p>У нас укроп 3,7дол за кг</p>
+
+<p>Петрушка 3,1 дол за кг Это оптовые цены</p>
+
+<p>Цена за 1кВТ электричества 0,05 цента….а полоса наверное средняя <em>???</em> север Украины :)</p>
+
+<p><strong>Coccinella</strong> 25-10-2011</p>
+
+<p>Укроп обычно получается трава-травой, без аромата. Петрушку из семян или выгонкой вырастить не очень трудно. Томаты черри в Украине выращивает Уманский тепличный комбинат, похоже, им это не слишком выгодно. (Как-то был разговор на Гринтолке, их представитель отмолчался.) Огурцы-корнишоны очень светотребовательны. В принципе вырастить можно, но боюсь, нерентабельно.</p>
+
+<p><strong>Genia10</strong> 26-10-2011</p>
+
+<p>Для укропа планировал дополнительно к ДНаТ, УФ лампу.</p>
+
+<p>А если использовать Систему с замкнутым круговым периметром….коогда лампа внутри?????Это я о вопросе о рентабельности)))))</p>
+
+<p><strong>Coccinella</strong> 26-10-2011</p>
+
+<p>Genia, а Вы, когда просто что-нибудь выращивали, какой урожай получали? Тут ведь дело не только и не столько в затратах на электричество, сколько в общем объеме урожая, который удастся получить. И если опыта выращивания нет, то сразу на прибыль нацеливаться рискованно. Попробуйте начать с петрушки, поторговать ей одну зиму на рынке, и увидите - выгодно Вам это или нет. Сразу связываться с огурцами-томатами, пожалуй, рискованно. Растут долго, высокие требования к условиям среды (в комплексе), конкуренция на рынке высокая, опять же импорт поступает…</p>
+
+<p><strong>Genia10</strong> 26-10-2011</p>
+
+<p>Хочу обьяснить свою ситуацию….у меня есть помещение площадью около 400м2 бетон потолки от 3 до 3,5 м высотой здание вообще без окон(бункер блин :D) Разбито колоннами на сектора по 30 м2</p>
+
+<p>Так вот Я сейчас заканчиваю строить установку “Луковое ГОРЕ <em>8)</em>” надеюсь на следующей неделе посажу первый лук :-[</p>
+
+<p>Я просто привык смотреть немного вперёд….лук луком но хотелось бы создать ассортимент тем более помещение имеется для производства.Вот собственно заранее и начинаю выискивать подводные камни сложности….варианты….</p>
+
+<p>Насчёт сбыта….есть у меня надёжный и очень толковый оптовик обещал со сбытом помочь)))))реально помочь а не на словах))))</p>
+
+<p>Вот и выискиваю перспективные направления на будующее….ну и естественно как человек с экономическим образованием начинаю с рентабельности производства :-[</p>
+
+<p><strong>Coccinella</strong> 26-10-2011</p>
+
+<p>Это все правильно, только я уже зареклась консультировать буржуйских инвесторов-экономистов. (ничего личного!) Глобальные расчеты, это они умеют, а на необходимейших удобрениях экономят. Или на семенах. Или еще на чем-нибудь жизненно важном именно для рентабельности производства.</p>
+
+<p>Поэтому начните с выращивания. Попробуйте сами что-то вырастить. И только потом сможете квалифицированно посчитать, насколько Ваши планы могут быть выгодны именно Вам, именно в Ваших условиях.</p>
+
+<p>Может, в этом бункере выгоднее оборудовать хорошее овощехранилище, а сами овощи выращивать в открытом грунте.</p>
+
+<p><strong>valery</strong> 26-10-2011</p>
+
+<blockquote>
+  <p>потолки от 3 до 3,5 м высотой</p>
+</blockquote>
+
+<p>Эх … как раз хорошая высота для “шпалерки” <em>8)</em> ( а мне не хватает всего-то с полметра :'( ) …</p>
+
+<p>Я б длинноплодный огурец посадил <em>Dance</em> Но не для коммерции, в смысле “рентабельности”, а так … Что б - рос …</p>
+
+<p>(к Вашим задачам отношения не имеет )</p>
+
+<p><strong>Genia10</strong> 26-10-2011</p>
+
+<p>Для оборудования хорошего овощехранилища нужны хорошие деньги :'( а их нет….на хорошее овощехранилище :)</p>
+
+<p>Да и подьезд-подход не самый удобный…</p>
+
+<p>Может подскажите культуру которая пользуется спросом и которую можно выращивать в моих условиях :-\ ???? :-[</p>
+
+<p><strong>Coccinella</strong> 26-10-2011</p>
+
+<p>Что в Украине пользуется спросом и какие обычно цены в разных местах в разное время года, знает АПК Информ: Овощи и Фрукты (<a href="http://www.lol.org.ua" target="_blank">www.lol.org.ua</a>), но бесплатно они такой информацией не делятся, увы.</p>
+
+<p>А выращивать-то можно практически все, что выращивают завсегдатаи этого форума. Проблема не в этом! Вам лично надо сначала научиться выращивать. Вы начинаете с лука и правильно, это сравнительно быстрая культура. Попробуйте петрушку, она тоже довольно быстро растет. Можно пробовать салат, тоже скороспелый. Все эти культуры не требуют высоких температур, длительного выращивания рассады, мирятся с косяками в питании (это, конечно, только по сравнению с огурцами-томатами, а так-то салату тоже раствор надо правильный).</p>
+
+<p>Да если так уж хочется, можно и укроп выращивать ,хотя лучше бы базилик или мяту :)</p>
+
+<p><strong>Coccinella</strong> 26-10-2011</p>
+
+<p>Еще редис забыла :)</p>
+
+<p><strong>Genia10</strong> 26-10-2011</p>
+
+<p>Я вас понял…я и не хватаюсь сразу за сложные вещи….так и планировал сначала лук потом укроп, петрушка….вопрос был в том что это будет полная светокультура….очень не хотелось бы всё оборудовать потратить деньги а потом окажется что затраты превышают цену реализации(за счёт светокультуры)….либо рентабельность настолько мала что и связываться не стоит….</p>
+
+<p>Вот в чём основной вопрос)))))))))</p>
+
+<p><strong>Coccinella</strong> 26-10-2011</p>
+
+<p>Поскольку Вы - первопроходец, то и обосновать расчеты нечем. Просто не надо сразу вкладывать большие средства на большую (для Вас) площадь. Начинайте с малого и сами увидите. Да, и не забудьте, что этот сезон для торговли овощами в Украине нехарактерен. То есть не расстраивайтесь, если луководство кончится убытком (а может и не кончится, может, я и ошибаюсь). В следующую зиму малодушные (недостаточно заработавшие) отпадут и ситуация изменится.</p>
+
+<p>Да и не надо ждать очень высокой рентабельности, лучше деньги небольшие, но стабильные.</p>
+
+<p><strong>Genia10</strong> 27-10-2011</p>
+
+<p>Что вы имеете в виду о нехарактерности сезона???????</p>
+
+<p>У нас очень сильно покупательная способность снизилась….рынки стоят….</p>
+
+<p><strong>Coccinella</strong> 27-10-2011</p>
+
+<p>Вот именно это и имею в виду :). Цены этого года для Украины ненормально низкие (перепроизводство! покупательная способность тут вообще не при чем!). Для Украины пока (только пока!) характерно чередование сезонов с высокими и низкими ценами. Это не совсем качели каждого второго года, но раз в 2-3 года случается скачок цен едва ли не на все. Это соблазняет людей кажущейся возможностью легкой наживы и в отрасль периодически вливается какое-то количество случайной публики. Людей жалко, поскольку имено из-за их неоправданного энтузиазма на следующий сезон цены падают, случайные люди разоряются, а постоянные, профессиональные производители терпят убытки.</p>
+
+<p>Поэтому я и предупреждаю Вас лично (и молчаливых читателей :)) не ориентироваться на цены этого сезона, а смотреть на ситуацию более глобально. Если честно, то прогнозы рынка, которые делает АПК Информ для овощного рынка, не имеют аналогов в мире.</p>
+
+<p>По сути - цена на посадочный лук в этом году ненормально низкая, поэтому на выгонку его не посадит только ленивый. Соответственно цена на перо будет ниже средней многолетней, да и спрос соответственный (плохой). С другой стороны, как раз поэтому текущий сезон очень хорош для того, чтобы набить руку. Если что, убытки невелики, а опыт дорогого стоит!</p>
+
+<p>Итак, я считаю, что Ваша задумка имеет шансы на успех, но нельзя обольщаться. Надо осваивать технологии постепенно, и параллельно, постепенно зарабатывать деньги на расширение производства.</p>
+
+<p><strong>Genia10</strong> 27-10-2011</p>
+
+<p>В прошлом году была аномально низкая цена на зелёный лук…12-15 грн за кг., в этом году пока цена держится в диапазоне 25-35 грн…это всё опт….в маркетах лук стоит40-50 грн за кг….</p>
+
+<p><strong>Садовник</strong> 27-10-2011</p>
+
+<blockquote>
+  <p>Для оборудования хорошего овощехранилища нужны хорошие деньги :'( а их нет….на хорошее овощехранилище :)</p>
+
+  <p>Да и подьезд-подход не самый удобный…</p>
+
+  <p>Может подскажите культуру которая пользуется спросом и которую можно выращивать в моих условиях :-\ ???? :-[</p>
+</blockquote>
+
+<p>Сомневаюсь, что на нормальную светокультуру потребуется меньше денег, чем на овощехранилище.</p>
+
+<p>Может попробовать шампиньоны? Бункер - самое то.</p>
+
+<p><strong>Coccinella</strong> 27-10-2011</p>
+
+<p>Неее, Садовник, шампиньоны - это не для начинающих. Там бункера мало! Самый “дуракоустойчивый” (простите все!, ничего личного!, всего лишь термин!) овощ - это именно лук на перо!</p>
+
+<p><strong>Садовник</strong> 27-10-2011</p>
+
+<blockquote>
+  <p>Неее, Садовник, шампиньоны - это не для начинающих. Там бункера мало! Самый “дуракоустойчивый” (простите все!, ничего личного!, всего лишь термин!) овощ - это именно лук на перо!</p>
+</blockquote>
+
+<p>Нисколько не спорю.</p>
+
+<p>Я о перспективе развития.</p>
+
+<p><strong>Genia10</strong> 27-10-2011</p>
+
+<p>Может я ошибаюсь….но мне кажется что рынок по выращиванию грибов переполнен….кто-то говорил что вешенки студенты у себя на подоконниках выращивают…исправьте если я ошибаюсь :)</p>
+
+<p>Садовник, прав на 150% луковая ферма достраивается :D и я уже ломаю голову о дальнейшем развитии….это конечно глупо ещё толком ничего не попробовав заглядывать в будующее….но бывает очень полезно переспать с какой нибудь новой “МЫСЛИШКОЙ” ;D</p>
+
+<p>Расширяет кругозор….и даёт возможность по новому взглянуть на старые проблеммы….чёт я увлёкся)))))</p>
+
+<p>Ну если не сложно несколько слов о выращивании грибов :-[ Для общего развития….а там кто его знает)))))</p>
+
+<p><strong>Coccinella</strong> 28-10-2011</p>
+
+<p>Для начала, почитайте здесь (статью и комментарии)</p>
+
+<p>[iurl=http://www.lol.org.ua/rus/showart.php?id=20522&amp;sid=771838&amp;markup=0&amp;?&amp;search=]выращивание шампиньонов [/iurl]</p>
+
+<p><strong>Genia10</strong> 28-10-2011</p>
+
+<p>Спасибо за статью, изучил….только не понял одного….если не 10 млн евро то и заниматься не стоит??????????</p>
+
+<p>Как-то чрезмерно крут ценник….не может компьтеризированная система контроля микроклимата стоить так дорого…я так понимаю что это самая затратная часть вложения….</p>
+
+<p><strong>Coccinella</strong> 29-10-2011</p>
+
+<p>Заниматься не стоит, если негде купить готовый пророщенный субстрат и покровную землю. Если не можете обеспечить стерильность выше, чем в операционном зале. Если не можете обеспечить стабильную температуру.</p>
+
+<p><strong>Genia10</strong> 29-10-2011</p>
+
+<p>Ну с покровной землёй я так понял особых проблемм нет….а вот пророщенный компост….это да….но вроде появились в Украине производители прошитого компоста. А каким образом обеспечивается стерильность в грибнице???? В операционной влажной уборкой с дезсредствами и облученеием….а здесь как?????С температурой тоже не архисложно….</p>
+
+<p>Сегодня был на рынке хотел килограмм 200 лука прикупить….я бы даже сказал что нет лука….остались какие-то крохи…и говорят что ВСЁ!!!! :o больше лука не будет…..а где же перепроизводство???????????? Чёт я запутался :(</p>
+
+<p><strong>Coccinella</strong> 30-10-2011</p>
+
+<p>Стерильность в грибнице обеспечивается чистотой :) А что касается лука, то и в Украине, и в мире его в этом году, как гуталина у кота Матроскина. В понедеьник-вторник на рынок завезут :)</p>
+
+<p><strong>Genia10</strong> 31-10-2011</p>
+
+<p>Завтра посмотрю привезли или нет ;)</p>
+
+<p>Ещё у меня вопросик по поводу грибов….есть такой гриб Шиитаке(надеюсь правильно написал)</p>
+
+<p>Если рассматривать с экономической точки зрения что приоритетней(перспективней) выращивать шампиньон или шиитаке????</p>
+
+<p><strong>Coccinella</strong> 31-10-2011</p>
+
+<p>Вешенку!</p>
+
+<p><strong>Genia10</strong> 31-10-2011</p>
+
+<p>На сколько я понял из предоставленных вами статей, то вешенку просто проще выращивать…но на шампиньон спрос больше…везде читал что шампьона выращивается больше чем вешенки….у неё товарный вид не столь красивый как шампиньона….да и там моменты есть со спорами…вредные очень они….</p>
+
+<p><strong>Садовник</strong> 31-10-2011</p>
+
+<p>Знаю ребят в Краснодаре, занимаются шампиньоном, не бедствуют.</p>
+
+<p>В подробности не вдавался, но субстрат ферментируют сами, из конского и птичьего навоза.</p>
+
+<p>ИХ грибы нарасхват на всех выставках.</p>
+
+<p>На месте жарят, дают пробовать. Постоянно у них на стенде очередь. Тётки без полных пакетов не уходят. На опте тоже долго не засиживаются.</p>
+
+<p>В отличии от широко представленных польских шампиньонов у них грибы имеют аромат и вкус.</p>
+
+<p>У вешенки технология гораздо проще. Но нужен свет, хоть и не такой как для зелени.</p>
+
+<p>Надо смотреть на сбыт и возможность переработки (и сбыта переработанного) нестандарта и непрданных остатков.</p>
+
+<p>Спорами вешенки в своё время надышался… жесть.</p>
+
+<p>Но говорят, у современных штаммов споры не аллергенные (может врут, а может и правда).</p>
+
+<p><strong>Aleksey Kurenin</strong> 01-11-2011</p>
+
+<p>Всё дело как раз в подробностях. :)</p>
+
+<p>А на выставке у всех всё хватают. <em>crazy</em></p>
+
+<p>Шампиньоны - достаточно сложный бизнес, в данный момент. Не знаю как в Краснодаре, но в других регионах, особенно близких к западу, конкуренция оОчень сильная.</p>
+
+<p><strong>Genia10</strong> 01-11-2011</p>
+
+<p>А гриб Шиитаке????????</p>
+
+<p><strong>gena1</strong> 01-11-2011</p>
+
+<blockquote>
+  <p>А гриб Шиитаке????????</p>
+</blockquote>
+
+<p>А прочитать в инете ? Информации полно.</p>
+
+<p><strong>Mole_Garden</strong> 01-11-2011</p>
+
+<p>Медленно но верно, посты уходят далеко в сторону от начального названия темы, если вопрос исчерпан, то предлагаю закрыть тему и начать другую с другим названием.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Пожелтение листьев Томата и Огурца | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Пожелтение листьев Томата и Огурца">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Пожелтение листьев Томата и Огурца</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Likl</strong> 10-03-2018</p>
+
+<p>Всем привет.</p>
+
+<p>Подскажите как излечить мои огурцы и помидоры.</p>
+
+<p>Томат Лукошко на окошке. Возраст 14 дней от всхода. DWC. Температура +27 днем, +23 ночью. Влажность 40-60%. Светокультура Led, 10000 лк.</p>
+
+<p>Раствор</p>
+
+<p>Раствор стартовый (до 1-ой кисти)</p>
+
+<p>NH4+	NO3-	N	P	K	Mg	Ca	Fe	Mn	B	Zn	Cu	Mo</p>
+
+<p>17.5	206.5	224	39	302	61	190	2	0.55	0.27	0.33	0.05	0.05</p>
+
+<p>KH2PO4 (Калия монофосфат) = 17.1 g – 1,71гр.</p>
+
+<p>Ca(NO3)2*4H2O (Кальциевая селитра, нитрат кальция) = 111.9 g – 11,19гр.</p>
+
+<p>KNO3 (Калиевая селитра, нитрат калия) = 65.4 g – 6,54гр.</p>
+
+<p>NH4NO3 (Аммиачная селитра, нитрат аммония) = 0.2 g – 0,02гр.</p>
+
+<p>MgSO4*7H2O (Сульфат магния, магний сернокислый) = 61.8 g – 6,18гр.</p>
+
+<ul>
+  <li>аквамикс 0,5гр на 10л.</li>
+</ul>
+
+<p>По внешним признакам решил, что нехватка Mg, увеличил на 50%, т.е. стало 92 Mg.</p>
+
+<p>Но терзают сомнения, т.к. рядом другой томат Москвич, на таком же растворе и у него нет таких пятен.</p>
+
+<p>Лукошко на окошке</p>
+
+<p><a href="https://t.me/ponics_ru_files/19131" target="_blank"><img src="/imagehost2/thumbs/photo20180310155920.jpg" alt="" /></a></p>
+
+<p>Москвич</p>
+
+<p><a href="https://t.me/ponics_ru_files/19132" target="_blank"><img src="/imagehost2/thumbs/photo20180310155924.jpg" alt="" /></a></p>
+
+<p>Вот сейчас смотрю на фото Москвича и кажется, что тоже желтеть собрался</p>
+
+<p><strong>Likl</strong> 10-03-2018</p>
+
+<p>Огурец F1 Китайский жароустойчивый. Возраст 16 дней от всхода. DWC. Температура +27 днем, +23 ночью. Влажность 40-60%. Светокультура Led, 10000 лк.</p>
+
+<p>Первые поливы. (После всходов и на стадии рассады - до 4-5 недель)</p>
+
+<p>N	P	K	Mg	Ca	Fe	Mn	B	Zn	Cu	Mo</p>
+
+<p>218	39	274	34	180	2	0.55	0.27	0.33	0.05	0.05</p>
+
+<p>KH2PO4 (Калия монофосфат) = 17.1 g -0,26гр – 1,71гр.</p>
+
+<p>Ca(NO3)2*4H2O (Кальциевая селитра, нитрат кальция) = 106.1 g -1,58гр – 10,61гр.</p>
+
+<p>K2SO4 (Сульфат калия, калий сернокислый) = 50.1 g -0,75гр – 5,01гр.</p>
+
+<p>NH4NO3 (Аммиачная селитра, нитрат аммония) = 26.3 g -0,39гр – 2,63 гр.</p>
+
+<p>MgSO4*7H2O (Сульфат магния, магний сернокислый) = 34.5 g -0,51гр – 3,45 гр.</p>
+
+<ul>
+  <li>аквамикс 0,5гр на 10л.</li>
+</ul>
+
+<p>Тут снова нехватка Mg ? но опять рядом другой огурец F1 Оконно-балконный без таких пятен.</p>
+
+<p>F1 Китайский жароустойчивый</p>
+
+<p><a href="https://t.me/ponics_ru_files/19133" target="_blank"><img src="/imagehost2/thumbs/photo20180310160716.jpg" alt="" /></a></p>
+
+<p>F1 Оконно-балконный</p>
+
+<p><a href="https://t.me/ponics_ru_files/19134" target="_blank"><img src="/imagehost2/thumbs/photo20180310160724.jpg" alt="" /></a></p>
+
+<p><strong>Likl</strong> 10-03-2018</p>
+
+<p>Вот я попал. :'(</p>
+
+<p>Начал проверять все удобрения и обнаружил, что вместо калиевой селитры положил сульфат калия.</p>
+
+<p>Теперь изучаю калькуляторы и пробую понять чего и сколько добавить, что бы получить исходную формулу раствора.</p>
+
+<p><strong>Vad</strong> 10-03-2018</p>
+
+<p>какую “исходную”?</p>
+
+<p>проще заново все замешать…</p>
+
+<p>да и… отравить калием томат?… :-\</p>
+
+<p>не верю..</p>
+
+<p>что-то там еще не так.. и прям СИЛЬНО “не так”..</p>
+
+<p><strong>Likl</strong> 10-03-2018</p>
+
+<p>Наверно действительно не стоит пытаться исправить. Лучше новый замешать.</p>
+
+<p>По калию вроде не особо перебор прошел, а вот по азоту недобор был, это наверно и пожелтило листья.</p>
+
+<p>Еще перелив был, дно горшка в воде было. Сейчас заметил, корни хорошо отросли, опущу уровень раствора.</p>
+
+<p>Пока разбирался с калькуляторами увидел, что они показывают разные навески простых солей на 10-20%, каким пользоваться?</p>
+
+<p><strong>Vad</strong> 10-03-2018</p>
+
+<p>любым, к которому привыкли/нравится.</p>
+
+<p>5,10, 15% расхождения это из за “не чистоты” солей..</p>
+
+<p>по большому счету.. мы вообще не знаем что сыплем..</p>
+
+<p>написано “калий сернокислый”… а по факту “калий двууглекислый” или “калий сернокислый кислый”</p>
+
+<p>но мы этого не узнаем <em>???</em></p>
+
+<p>по этому, отклонения от калькулятора и межкалькуляторные отклонения - не имеют значения <em>???</em></p>
+
+<p>увы :-\</p>
+
+<p>но стараться считать и сыпать нужно точнее…</p>
+
+<p>недостаток азота - это просто фантастическая штука..</p>
+
+<p>тут уже не знаешь что выкинуть чтоб азота стало меньше ))</p>
+
+<p>так что не переживайте..</p>
+
+<p>если на фото это их реальный цвет, то это перелив и задохнувшиеся растения!</p>
+
+<p>просто добавить воздуха.. сами увидите как все изменится.</p>
+
+<p><strong>Likl</strong> 10-03-2018</p>
+
+<p>Отлил раствор, так что бы было 2 см между дном горшка и зеркалом раствора.</p>
+
+<p>Думал он сам испарится и опустится уровень, но мало еще пьют растишки.</p>
+
+<p>Возьму тогда калькулятор <a href="http://forum.ponics.ru/index.php?topic=2286.msg105444#msg105444" target="_blank">http://forum.ponics.ru/index.php?topic=2286.msg105444#msg105444</a></p>
+
+<p>А в этом калькуляторе <a href="http://forum.ponics.ru/index.php?topic=711.0" target="_blank">http://forum.ponics.ru/index.php?topic=711.0</a> у меня не используемый Сульфат калия остается, зря что ли покупал, и от этого и путаница вышла у меня , надо же на кого нибудь свалить свои промахи :)</p>
+
+<p>Завтра намешаю новый раствор.</p>
+
+<p>“Покажи мне реальный цвет”, после этих слов у фотографов начинается нервный тик.</p>
+
+<p>Взял большой фотоаппарат, без специальной подготовки это наверно самый похожий цвет.</p>
+
+<p><a href="https://t.me/ponics_ru_files/19135" target="_blank"><img src="/imagehost2/thumbs/img3062hgh.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/19136" target="_blank"><img src="/imagehost2/thumbs/img3063.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/19137" target="_blank"><img src="/imagehost2/thumbs/img3064.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/19138" target="_blank"><img src="/imagehost2/thumbs/img3066.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 10-03-2018</p>
+
+<p>Фотограф, блин… :D</p>
+
+<p>выкладывает “аватаров” и говорит, что.. типа покраснения кожи… ХЗ, на синих тушках покраснения искать :D</p>
+
+<p>можно не показывать цвет… а просто описать… что реальный цвет не желтый, а филетово-красный, с лазурным оттенком ржавой меди. :D</p>
+
+<p>раз фотограф, и раз нервный тик… ты фоткаешь, выкладываешь, видишь “что-то не то”, несовпадушки по цвету… ну исправь! а то как нам понимать…</p>
+
+<p>так ты по этому цвету диагноз предлагаешь поставить ))</p>
+
+<p>старайтесь фоткать максимально похоже… цвет очень важен, если нужен результат ))</p>
+
+<p>на фото выше был адский хлороз…</p>
+
+<p>на поздних фото цвет нормальный… просто нехватка воздуха.</p>
+
+<p>Аэратор в корнях есть?</p>
+
+<p><strong>Likl</strong> 10-03-2018</p>
+
+<p>Да я сам в шоке.</p>
+
+<p>Без искусственного освещения листья и не видел.</p>
+
+<p>Под цветными Led листья непонятного серого цвета.</p>
+
+<p>Если бы не пятна и необходимость фото , так и не узнал бы истинный цвет. ;D</p>
+
+<p>Аэратор стоит.</p>
+
+<p>Если бы не цвел раствор, можно было бы сделать шикарный светильник в прозрачном ведре.</p>
+
+<p><strong>siv237</strong> 11-03-2018</p>
+
+<p>Огурцам явно кальция не хватает, магний наверно нужно снизить.</p>
+
+<p><strong>Likl</strong> 11-03-2018</p>
+
+<p>По огурцам в раствор нужно было с Сульфатом калия делать, т.е. намешал его правильно.</p>
+
+<p>Ca 180 и Mg 34 теоретически должны быть в растворе.</p>
+
+<p>siv237 по каким внешним признакам определили, что нужно изменить их содержание?</p>
+
+<p><strong>Likl</strong> 11-03-2018</p>
+
+<p>й</p>
+
+<p><strong>siv237</strong> 11-03-2018</p>
+
+<blockquote>
+  <p>По огурцам в раствор нужно было с Сульфатом калия делать, т.е. намешал его правильно.</p>
+
+  <p>Ca 180 и Mg 34 теоретически должны быть в растворе.</p>
+
+  <p>siv237 по каким внешним признакам определили, что нужно изменить их содержание?</p>
+</blockquote>
+
+<p>Когда у листиков огурца появляется куполение, исчезает на краю фактура (края как бы сглаживаются), явно выраженная измятость листа и как у вас множество выпуклостей, то вероятно имеется нарушение по кальцию.</p>
+
+<p>Правильный лист практически плоский, плоскостью направлен перпендикулярно к источнику света, с резными краями.</p>
+
+<p>Но и в целом огурец выглядит не очень, слишком низкий. Может слишком высокий ЕС?</p>
+
+<p>На этой стадии не больше ЕС 1-1,5 и побольше долю азота к калию. Сульфат калия полностью замените на нитрат калия.</p>
+
+<p>в граммах на литр</p>
+
+<p>Сульфат магния	MgSO4 (MgO: 16,9% S:13,5%)				0,24</p>
+
+<p>Сульфат калия	K2SO4 (K2O: 50%)				0,00</p>
+
+<p>Селитра калиевая	KNO3 (K2O: 46% N:13,7%)				0,43</p>
+
+<p>Монофасфат калия	KH2PO4 (P2O5: 50% K2O:33,2%)				0,20</p>
+
+<p>Селитра кальциевая	Ca(NO3)2 (CaO: 27% N:14,9%)				0,57</p>
+
+<p>Селитра аммиачная	NH4NO3 (N: 34%)				0,03</p>
+
+<p>N:155 (NO3:145 NH4:10) P:43 K:220 Ca:110 Mg:24 S:33 Fe:2 Mn:0,55 B:0,35 Zn:0,33 Cu:0,05 Mo:0,05 EC=1,5 мСм/см</p>
+
+<p><strong>Likl</strong> 11-03-2018</p>
+
+<p>Заменил раствор томатам на</p>
+
+<p><a href="https://t.me/ponics_ru_files/19139" target="_blank"><img src="/imagehost2/thumbs/1bkb.jpg" alt="" /></a></p>
+
+<p>а огурцам на рекомендованный siv237</p>
+
+<p>Сульфат магния MgSO4 (MgO: 16,9% S:13,5%) 0,24</p>
+
+<p><del>Сульфат калия K2SO4 (K2O: 50%) 0,00</del></p>
+
+<p>Селитра калиевая KNO3 (K2O: 46% N:13,7%) 0,43</p>
+
+<p>Монофасфат калия KH2PO4 (P2O5: 50% K2O:33,2%) 0,20</p>
+
+<p>Селитра кальциевая Ca(NO3)2 (CaO: 27% N:14,9%) 0,57</p>
+
+<p>Селитра аммиачная NH4NO3 (N: 34%) 0,03</p>
+
+<p>и к нему + аквамикс 0,5гр на 10л.</p>
+
+<p>По результатам замены отпишусь что получилось.</p>
+
+<p><strong>Vad</strong> 11-03-2018</p>
+
+<blockquote>
+  <p>siv237 по каким внешним признакам определили, что нужно изменить их содержание?</p>
+</blockquote>
+
+<p>:D “пальцем в небо” в основном :D</p>
+
+<p><strong>Vad</strong> 11-03-2018</p>
+
+<blockquote>
+  <p>Когда у листиков огурца появляется куполение, исчезает на краю фактура (края как бы сглаживаются), явно выраженная измятость листа и как у вас множество выпуклостей, то вероятно имеется нарушение по кальцию.</p>
+</blockquote>
+
+<p>такие же симптомы при влажности меньше 50% :D</p>
+
+<p>но лучше верить в то, что кальция в растворе нет?</p>
+
+<p>да есть он там, и его хватает… просто огурец его взять не может.. устьица - ХЛОП… и все.. из за адской транспирации…</p>
+
+<p>от того и куполится.. а не от недостатка 15 мг кальция в растворе :D</p>
+
+<p><strong>siv237</strong> 12-03-2018</p>
+
+<blockquote>
+  <blockquote>
+    <p>Когда у листиков огурца появляется куполение, исчезает на краю фактура (края как бы сглаживаются), явно выраженная измятость листа и как у вас множество выпуклостей, то вероятно имеется нарушение по кальцию.</p>
+  </blockquote>
+
+  <p>такие же симптомы при влажности меньше 50% :D</p>
+
+  <p>но лучше верить в то, что кальция в растворе нет?</p>
+
+  <p>да есть он там, и его хватает… просто огурец его взять не может.. устьица - ХЛОП… и все.. из за адской транспирации…</p>
+
+  <p>от того и куполится.. а не от недостатка 15 мг кальция в растворе :D</p>
+</blockquote>
+
+<p>Про влажность для растений вообще сильно преувеличено. Если есть доступ к воде и раствор не сильно соленый то и 10% влажности огурец прекрасно переносит, проверено. Важна не сама влажность, а баланс прихода и расхода воды.</p>
+
+<p><strong>Vad</strong> 12-03-2018</p>
+
+<p>то есть…?</p>
+
+<p>ты считаешь что в растворе нет кальция? :D</p>
+
+<p><strong>siv237</strong> 12-03-2018</p>
+
+<blockquote>
+  <p>то есть…?</p>
+
+  <p>ты считаешь что в растворе нет кальция? :D</p>
+</blockquote>
+
+<p>Скорее нарушено усвоение.</p>
+
+<p><strong>Vad</strong> 12-03-2018</p>
+
+<p>из за чего? :D</p>
+
+<p><strong>Likl</strong> 16-03-2018</p>
+
+<p>Прошо 5 дней (возраст огурцов 22 дня, томатов 20 дней)</p>
+
+<p>Томаты и огурцы пошли в рост. Стали больше пить. Томатам добавлял по 2 литра раствора в ведро, огурцам по 1,5 л в ведро. У огурцов начал ослеплять пазухи, пытаются цвести, томаты тоже цвет набирают. Добавил МГЛ светильник 400Вт на высоте 1,5 метра над основанием растений, на вырост такт сказать, что примерно 5000 лк на верхушках томата дало. На стене растянул фольгу, что бы когда огурцы вырастут, им и с другой стороны свела добавляло.</p>
+
+<p>Но что то внешний вид некоторых мне все равно не нравится.</p>
+
+<p>F1 Оконно-балконный вроде замечательно.</p>
+
+<p>Старый лист внизу скукожился, его обрывать?</p>
+
+<p><a href="https://t.me/ponics_ru_files/19140" target="_blank"><img src="/imagehost2/thumbs/img3070.jpg" alt="" /></a></p>
+
+<p>F1 Китайский жароустойчивый нижние листья куполение вниз, а верхние куполение вверх.</p>
+
+<p>Возможно это ожог термический, т.к. очень быстро растет и касался стекла лампы Led светильника.</p>
+
+<p><a href="https://t.me/ponics_ru_files/19141" target="_blank"><img src="/imagehost2/thumbs/img3071.jpg" alt="" /></a></p>
+
+<p>Лукошко на окошке листья заворачивает, особенно правый экземпляр, цвет изнаночной стороны листа в фиолетовый уходит.</p>
+
+<p><a href="https://t.me/ponics_ru_files/19142" target="_blank"><img src="/imagehost2/thumbs/img3074.jpg" alt="" /></a></p>
+
+<p>Москвич получше выглядит, но тоже цвет изнаночной стороны листа в фиолетовый уходит.</p>
+
+<p>Левый экземпляр отрастил пасынок от коней, его убирать?</p>
+
+<p><a href="https://t.me/ponics_ru_files/19143" target="_blank"><img src="/imagehost2/thumbs/img3080pcp.jpg" alt="" /></a></p>
+
+<p>Томаты много пасынков выпустили. Сорта детерминантные. Пасынки убирать которые внутрь куста растут, а которые наружу оставлять, правильно?</p>
+
+<p>P.S.: У меня монитор калиброванный по цвету и сравнить даже могу цвет с оригиналом (если провод дотянется :D). А вот как остальные на своих мониторах видят?</p>
+
+<p><strong>Likl</strong> 17-03-2018</p>
+
+<p>Сегодня замерил Ph и EC.</p>
+
+<p>Ph от 5,7 до 6,0 , так и оставил.</p>
+
+<p>EC у огурцов 1,5, так и оставил.</p>
+
+<p>У томата Лукошко на окошке который листья заворачивает EC 3,4, добавил воды 1 л , снизилось до 3,0.</p>
+
+<p>У томата Москвич EC 3,0 добавил воды 0,8 л , не снизилось почти, уменьшение (до 2,9) в пределах разницы показаний нескольких замеров. Как такое может быть?</p>
+
+<p><strong>Vad</strong> 17-03-2018</p>
+
+<p>вы не указываете исходный объем раствора.</p>
+
+<p>может вы в 10 литров льете 0.8… так эффекта не будет почти)</p>
+
+<p>а если 0.8 влить в литр.. это эффект будет куда ярче</p>
+
+<p><strong>allex_step</strong> 17-03-2018</p>
+
+<p>Tomato		pH 5.5-6.5	EC 2.0-5.0</p>
+
+<p><strong>Likl</strong> 17-03-2018</p>
+
+<p>В обоих ведрах объем примерно одинаковый 5-6 литров.</p>
+
+<p>Доливал воды до уровня, чтобы зеркало раствора было на 1 см ниже дна горшочка.</p>
+
+<p>Т.е. ориентировочно в первом случае раствора было 5,5 л , добавил 1,0 л ЕС снизилось с 3,4 до 3,0</p>
+
+<p>во втором случае раствора было 5,7 л , добавил 0,8 л ЕС снизилось с 3,0 до 2,95</p>
+
+<p>Мне казалось что линейная зависимость должна быть.</p>
+
+<p>А по посту с фотографиями кто нибудь, Пожалуйста :-[, ответе на мои вопросы.</p>
+
+<p><strong>Likl</strong> 26-03-2018</p>
+
+<p>БЛАГОДАРЮ всех за помощь.</p>
+
+<p>Томаты и огурцы перешли в стадию цветения. <em>8)</em></p>
+
+<p>В общем перестал сильно заморачиваться и трястись над растениями.</p>
+
+<p>Смело все что не нравится отрезал.</p>
+
+<p>Раствор готовлю точно по рецепту, а в ведре контролирую ЕС и Ph, но ни чего не корректирую, пока все в рабочем диапазоне.</p>
+
+<p>Параллельно вырастил редис и укроп, просто в субстрате, поливал лейкой.</p>
+
+<p>В возрасте 32 дней съел. <em>Dance</em></p>
+
+<p>Готовлюсь к новому эксперименту , капля на вате, но это уже другая история …</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

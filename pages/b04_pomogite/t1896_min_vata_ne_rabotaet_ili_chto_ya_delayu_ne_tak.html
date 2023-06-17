@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Мин. Вата не работает или что я делаю не так? | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Мин. Вата не работает или что я делаю не так?">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Мин. Вата не работает или что я делаю не так?</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>Собрал гидропонику. Таз на 25 литров. Сверху крышка. В ней отверстия под горшочки. В тазу налит раствор, который закрывает собой примерно 1 см горшочка со дна. В тазу есть и помпа и распылитель. Так вот. Вопрос. У меня в горшочках субстрат мин вата. Я думал что затопленная снизу на 1 см мин вата смочится сама до самого верха. А нет. Вата сверху на половину сухая. Как сделать что бы вата влажная от раствора была? У меня такое растение в нем, что корни очень не глубоко растут, а мин. Вата там сухая… Пришлось полить ее сверху. Так как обеспечить обмен растворы во всем кубике ваты при моей системе гидропонику? Пока вижу только выход в переходе на периодику. Но не хотелось бы</p>
+
+<p><strong>Klubnikov</strong> 12-11-2013</p>
+
+<p>rzhev-city, поливать через верх пока корни не достигнут середины кубика. или никогда не достигнут влажной области?</p>
+
+<p><strong>Klubnikov</strong> 12-11-2013</p>
+
+<p>чтобы не пересыхал быстро верх кубика, нужно чем то закрыть. например мелким керамзитом или пленкой какой нибудь желательно не пропускающей свет, фольгой</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>Верх не пересыхает. Он не намокает. Я думал если раствором смачивать низ ваты - она вся намокнет до верха. Но так не выходит. Он намокает меньше середины. А растение у меня такое, что корни растут только в верхних 1-1.5 см…. Если я залью всю вату выше чем на 1 см до дна, переживают что корням не хватит воздуха….. Хотя хз… Там же и помпа и компрессор работают</p>
+
+<p><strong>Klubnikov</strong> 12-11-2013</p>
+
+<p>разрезать кубик поплам по высоте и посадить на место. уровень раствора не обязательно делать по касанию с горшком, если будет хороший компрессор и равномерное распределение пузырей, то брызги будут хорошо смачивать низ горшков.</p>
+
+<p>но в идеале нужна другая система, двс подразумевает нахождение корней в растворе</p>
+
+<p><strong>Oxy</strong> 12-11-2013</p>
+
+<p>а зачем вы смешали несовместимые вещи? это типа как строить пенопластовый дом на песке :o</p>
+
+<p>замените минвату на кокос и будет вам щастя <em>8)</em> высота осмотического подьема 15 см - легко!</p>
+
+<p>Вата заточена под капельный полив сверху, и дренаж снизу.</p>
+
+<p><strong>Vad</strong> 12-11-2013</p>
+
+<p>Кубики изначально напитывают раствором <em>8)</em></p>
+
+<p>потом уже.. “все движения”..</p>
+
+<p>пока корни внутри кубика.. его нужно поливать <em>???</em></p>
+
+<p><strong>Oxy</strong> 12-11-2013</p>
+
+<p>другими словами - вата - заточена под верхний полив.</p>
+
+<p><strong>Klubnikov</strong> 12-11-2013</p>
+
+<p>корни на 1.5 сантиметра в вате… наверное свет проходит через такой небольшой слой субстрата. Для корней свет негативно влияет</p>
+
+<p><strong>taram</strong> 12-11-2013</p>
+
+<p>Есть такой субстрат - Мапито. Это кубики минваты , 1 на 1 см., перемешанные с такими же по размеру кубиками поролона.</p>
+
+<p>Вот такая минвата очень хорошо подходит для периодики.</p>
+
+<p>Затапливают его не выше половины горшка.</p>
+
+<p><strong>Klubnikov</strong> 12-11-2013</p>
+
+<p>taram, да у него там корни меньше чем кубики мапито)</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>А если я пока с утра и вечером буду поливать вату тем же раствором? И вопрос … Имеется в виду кокосовая крошка?</p>
+
+<p><strong>Klubnikov</strong> 12-11-2013</p>
+
+<p>rzhev-city, хотя о каких кубиках я говорю?)) у вас похоже вата строительная. Ничего хорошего в ней не вырастет, по крайней мере замучаете и себя и растения. Поищите информацию насчет grodan</p>
+
+<p>кокос это волокна, продаются прессованые в блоках, либо без пресса но очень малыми количествами и с высокой стоимостью</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>Так как поступить? Переоборудовать под периодику, поливать раствором два раза вдень на вату, или все оставить как есть, но пересадить в кокосовую крошку? ( тут возникает вопрос - у горошка дольно большие отверстия… Крошка вся будет высыпаться из горшка в таз… Как быть?</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>Вату я покупал в гидропоническом интернет магазине… Должна ж подходить… В соседнем магазине продают брикеты с кокосовой крупной стружкой, кокосовым пере гноем и кокосовой крошкой…</p>
+
+<p><strong>Klubnikov</strong> 12-11-2013</p>
+
+<p>нужно чтобы система сама все поливала. зачем себя утруждать. На вашем месте я бы купил кубики гродан, и поставил их в поддон с периодическим затоплением</p>
+
+<p>а кокос это не крошка и не стружка, это кокосовое волокно. Крошка это дополнение к кокосовому волокну либо к другому субстрату, например для земли и торфа</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>Глянут сейчас на упаковку от своей ваты… Написано by grodan… Так у меня то?</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>Значит мне все же пере делать на периодику? Опыт выращивания на периодике этого растения у меня есть… Рос на этой же мин вате… Хотел сейчас упростить.. Без периодике, просто на компрессоре</p>
+
+<p><strong>Klubnikov</strong> 12-11-2013</p>
+
+<p>видимо да, то что нужно. Только почему не запитывается вата, не понятно. Может все таки пересыхает верх?</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>Он не пересыхает… Он не намокает выше уровня воды… Вода по сухой вате не идет вверх…. Я вот думаю, если вату принудительно намочить, и залить опять раствором на 1 см снизу… Вдруг пойдет водо обмен в вате? Или она высохнет и опят станет сухой?</p>
+
+<p><strong>begunok</strong> 12-11-2013</p>
+
+<p>не мучайтесь дурью</p>
+
+<p>что сделать</p>
+
+<ol>
+  <li>
+    <p>купить погружной насосик в любом аквариумном магазине <a href="http://chinawebshop.ru/product_76129.html" target="_blank">http://chinawebshop.ru/product_76129.html</a></p>
+  </li>
+  <li>
+    <p>от насосика сделать отведение с капельницами под каждый куст - вот такие <a href="http://www.growlight.ru/kapelniypoliv/475--mod.html" target="_blank">http://www.growlight.ru/kapelniypoliv/475–mod.html</a></p>
+  </li>
+  <li>
+    <p>включать несколько раз в день</p>
+  </li>
+</ol>
+
+<p><strong>Klubnikov</strong> 12-11-2013</p>
+
+<p>rzhev-city, сделайте слой ваты меньше, так чтобы намокал полностью. но все равно не нужно чтобы касался он раствора. Может опустить раствор и будет нормально все, попробуйте. вдруг там эффект пробки от переувлажнения низов. Если не поможет сделайте меньше толщину ваты, опять же с зазором в сантиметр до раствора</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>Глупый вопрос.. Как вата будет намокать не соприкасаясь с раствором? От брызг. Распылителя?</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>И подскажите подробнее о сборе капельного полива… Такая помпа у меня есть.. А как от нее отводы сделать и подводы к растениями с помощью тех капельниц по ссылке?</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>Сделал на работе эксперимент… Намочил кубик ваты минеральной… Отжал его… И опустил в стакан на 1 см…. И вода по кубику дошла до самого верха…даже видно было</p>
+
+<p><strong>Coccinella</strong> 12-11-2013</p>
+
+<p>Да запитайте кубик раствором! Почитайте тему “Минеральная вата Гродан” <a href="http://forum.ponics.ru/index.php?topic=18.0" target="_blank">http://forum.ponics.ru/index.php?topic=18.0</a></p>
+
+<p>ведь специально для таких вопросов ее и создавали :)</p>
+
+<p>Вату невозможно залить раствором настолько, чтобы в ней воздуха не осталось, это же не песок. И поливайте сверху.</p>
+
+<p>И вообще, почему сначала ткнут растение во что-нибудь, а потом <del>в реанимации или даже в морге</del> :'( :'( :'( спрашивают “а как надо было?” :-\</p>
+
+<p><strong>begunok</strong> 12-11-2013</p>
+
+<p>вам не нужно, чтобы кубик был все время 100 процентно влажный. Вам нужно, чтобы корни активно росли, для этого они должны быть где-то 70% от полного кубика. Замерять очень просто. Полный кубик весит в районе 550 гр. Сухой 200 гр. Растение выпивает на ранних стадиях допустим 200 мл в день. Потом, когда растение будет большое, корни у него уже будут лежать в ДВС, вы можете убрать тогда капельницы</p>
+
+<p>По поводу капли очень просто. Втыкаете в насосик толстый шланг, в него тоненькие и в них капельницы. Замеряете сколько у вас поливается в 1 минуту. В зависимости от вашего растения поливаете от 3 до 5 раз в день по 5 мин скажем. За раз по 50-100 мл прокапать.</p>
+
+<p>Но реально это все индивидуально</p>
+
+<p><strong>Klubnikov</strong> 12-11-2013</p>
+
+<p>rzhev-city за счет брызг. попробуйте</p>
+
+<p>запитку тоже попробуйте сделать как советуют</p>
+
+<p>если ничего не получится придется применять капельницы</p>
+
+<p>на работе вата не та, воздух не проводит</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>Не, на работе я опробовал именно гродан)</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>Такой еще вопрос… У меня есть пару растений, которым нужна высокая влажность… Я их накрыл пластиковыми стаканчиками - имитировал тепличку.. Нужно в стаканчики сделать дырочки для вентиляции, или оставить так, просто иногда при открывать растение и проветривать?</p>
+
+<p><strong>valery</strong> 12-11-2013</p>
+
+<p>Кубик - не пересыхает сверху, не нужно закрывать его керамзитами-фольгами и прочим. В прикорневой зоне и в районе “подсемядольного колена” - не должно быть никаких “застойных зон” - воздух должен также свободно “вентилироваться” (или как там правильно “сказать” :-\ ), как и в районе листьев и тэ дэ …</p>
+
+<p>Так же кубик и не должен намокать-напитываться снизу - это не входит в его “обязанности”, это же “управляемый субстрат”.</p>
+
+<p>Конечно, кубик первоначально “запитывается” - полным погружением в раствор. В этом случае он равномерно увлажнен и нормально работает как с капельницей, так и при “подтоплении” (если очень сильно захотелось … на мой взгляд - лишнее).</p>
+
+<p>Запитать кубик “обратным образом” - сложно, а мат - почти невозможно. Для этого при запитке мата используется “рубашка” - герметичное пластиковое покрытие, которое удерживает раствор при “запитке” (до полного насыщения).</p>
+
+<p>Излишне пересушенный мат (как выражался А.Куренин - “всклянь”) - обычным поливом уже не восстановить (не вернуть на место “влажность”, если мы упали сильно “ниже” допустимых пределов) - мы будем получать неравномерные зоны - “прошитые” насквозь переувлажненные участи в непосредственной близости от капельнцы и “пересушенные” - на удалении. Чтобы “перезапитать” такой (загубленный) мат - нужно “заклеивать” дренажные отверстия рубашки и вновь запитывать его (мат) капельницами до полного насыщения.</p>
+
+<p>Если в мате при этом живые растения - им не понравится.</p>
+
+<p>Поэтому, конечно, капельница и, конечно, тема А.Куренина в разделе “Субстраты”.</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>Пока я не собрал капельницу, заменит ли ее утренний и вечерний полив лейкой аккуратно сверху ваты?</p>
+
+<p><strong>valery</strong> 12-11-2013</p>
+
+<p>Заменит, а почему же нет.</p>
+
+<p>Не обязательно леечкой, можно пластиковой бутылкой с вставленным в пробку тонким аквариумным шлангом (или иной “микро-трубкой”).</p>
+
+<p>Если не выплескивать порцию “разом” (не “прошивать” поливом сверху донизу), а более-менее не спеша … равномерно по поверхности … вполне нормально получается.</p>
+
+<p>А может и леечкой можно, если совсем-совсем маленькая. Не пробовал.</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>Спасибо за советы.. Что скажете на счет моего вопроса о тепличках из стаканчика? Нужны ли дырочки для вентиляции в таких стаканчиках , или достаточно раз в день просто стаканчик снимать и ставить назад? Стаканчики такие нужны, тк как есть два растения, которые без стаканчика просто высыхают напрочь…</p>
+
+<p><strong>valery</strong> 12-11-2013</p>
+
+<p>Я бы не делал, но точно не знаю. Подождем тех, кто подскажет.</p>
+
+<p><strong>андрей п</strong> 12-11-2013</p>
+
+<p>Что за растения у Вас с такими странными симптомами? <em>???</em> За какой период времени они высыхают “напрочь”. :-\ Имейте в виду, что в ограниченном пространстве при интенсивном свете может быстро образоваться перегрев. Может при определённых условиях возникнуть чрезмерная влажность. :o</p>
+
+<p>Может быть просто чаще уделять внимание этим специфическим растениям. :)</p>
+
+<p><strong>Klubnikov</strong> 12-11-2013</p>
+
+<p>похоже на кактусы :)</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>У меня растут: хеммиантус куба - растет нормально. Глоссостигма - растет лучше всех, гидрокотила вертицилата - растет, ста уродин репенс - без стаканчика через 2е суток напрочь высыхает, потом заново из корневища вырастает, погостепон хельфере - за 2е суток без стакана исчез как вид вместе с корнями… В стаканчики 2ой день сидит живой.</p>
+
+<p><strong>Coccinella</strong> 12-11-2013</p>
+
+<p>Если эти ругательства под стаканчиками живут нормально, то не мешайте им. Если очень боязно, раз-два в сутки проветривайте. :)</p>
+
+<p>У нас нет опыта выращивания таких растений, поэтому остается метод проб и ошибок :(</p>
+
+<p><strong>rzhev-city</strong> 12-11-2013</p>
+
+<p>Это растения, которые чаще всего выращивают в аквариумах и полюдариумах) есть одна организация в Дании, которая с успехом культивируем их на гидропонике…. 100 процентов в мин. Вате выращивают. В тех же горшках… Правда не знаю каким методом гидропоники… Вот и я решил попробовать их культивировать. На периодике худо бедно некоторые виды поддались</p>
+
+<p><strong>Klubnikov</strong> 13-11-2013</p>
+
+<p>ну что, не заработало?</p>
+
+<p>может уровень в системе поднять до середины ваты, чтобы до корней доходил раствор</p>
+
+<p><strong>rzhev-city</strong> 13-11-2013</p>
+
+<p>Вечером и сегодня утром просто продлил леечкой с раствором все растения… Вроде чувствуют себя растения нормально. А если я высоко подниму воду в вате, будет ли обмен веществ нормальный в кубике ваты? Будет ли кислород доходить до корней?</p>
+
+<p><strong>valery</strong> 13-11-2013</p>
+
+<p>Кислород - дойдет и какой-никакой “обмен” тоже будет.</p>
+
+<p>Нормальный ? Нет …</p>
+
+<p>При поливах сверху мы помогаем этому обмену (как раствором, так и воздухом) физически, как бы “продавливая” раствором верхние слои - замещаем старый (частично отработанный раствор - уходит в дренаж) - свежим (в том числе и с нормальным содержанием кислорода).</p>
+
+<p>Одновременно “выдавливая” и воздух с “уменьшенным” содержанием кислорода и “втягивая” новый …</p>
+
+<p>При подтоплении снизу ( тем более “высоком” по уровню ) обновление будет идти только за счет естественной “диффузии” и “миграции” растворенного кислорода и пит/веществ по градиенту концентрации (в сторону мЕньших концентраций)</p>
+
+<p>Насколько это скажется на Ваших растениях … и скажется ли ВООБЩЕ … а кто его знает. В целом - должно быть хуже.</p>
+
+<p>А в действительности … я, к примеру, даже названий таких диковинных растений и не слышал вовсе … :-\</p>
+
+<p>Пробуйте.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

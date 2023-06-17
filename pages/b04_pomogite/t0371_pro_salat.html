@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Про салат | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Про салат">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Про салат</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>shaggyone</strong> 23-12-2009</p>
+
+<p>Зашёл в магазин и увидел круглый кабель канал диаметром 50мм по смешной цене в 40р. за 3 метра.</p>
+
+<p>Сразу в голове нарисовалась компактная установочка… но вопрос, хватит ли в таком тонком канале места корням.</p>
+
+<p><strong>Mole_Garden</strong> 23-12-2009</p>
+
+<blockquote>
+  <p>Зашёл в магазин и увидел круглый кабель канал диаметром 50мм по смешной цене в 40р. за 3 метра.</p>
+
+  <p>Сразу в голове нарисовалась компактная установочка… но вопрос, хватит ли в таком тонком канале места корням.</p>
+</blockquote>
+
+<p>:D Над этим вопросом так же бьется orgail, итог один, надо купить и попробовать. По моим прикидкам хватить должно. А что это за такой круглый да еще кабель канал?</p>
+
+<p><strong>Tony_85</strong> 23-12-2009</p>
+
+<p>У меня каналы 60*40 что дает 24 кв. см сечения. У вас 50 мм диаметра дает 19.625 кв. см.</p>
+
+<p>Под конец роста салата корней конечно же многовато, но раствор проходит нормально и растения чувствуют себя хорошо. Думаю и у Вас расти должны. Но есть и другие НО</p>
+
+<p>С круглим кабель каналом будет больше проблем. Он же не открывается. Как Вы его будете чистить после снятия урожая? В прямоугольном крышку снял, и почистил где от оставшихся корней, где от зелени. И с креплением просто. Поставил, и он стоит, а круглый надо закреплять.</p>
+
+<p><strong>shaggyone</strong> 23-12-2009</p>
+
+<p>Ну, почистить такой канал – дело техники. Причём не особо хитрой. Я задумываю такую установку, где труба свободно снимается и чистится обычным ёршиком.</p>
+
+<p>Ещё вопрос… А какая плотность растений будет норм?</p>
+
+<p><strong>Mole_Garden</strong> 23-12-2009</p>
+
+<p>А еще, если у вас уже много установок и все из труб то можно разориться и купить мини мойку высокого давления типо керхер и промывать, думаю, можно будет без проблем. Стоит от 3500 тыщей врубелей</p>
+
+<p><img src="http://img704.imageshack.us/img704/6656/karcherk201plus5934965.th.jpg" alt="" /></p>
+
+<p><strong>Neos</strong> 23-12-2009</p>
+
+<p>Народ,а может сэкономить денюжку на всяких Кёрхерах и просто погуглить как это делается у буржуев? ;)</p>
+
+<p>[youtube]http://www.youtube.com/watch?v=IWRy6dpQyqY[/youtube] как вариант 8)</p>
+
+<p><strong>Tony_85</strong> 23-12-2009</p>
+
+<p>:o А как оно едет? Вроде бы никакого шнурка не видно.</p>
+
+<p><strong>orgail</strong> 24-12-2009</p>
+
+<p>На батарейках наверно :)</p>
+
+<p><strong>Neos</strong> 24-12-2009</p>
+
+<p>нуууу,мужики….. ;D вы чего? :D</p>
+
+<p>“оно” плывёт за счёт потока воды который специально усиливают, чтоб толкать эту болванку по трубе. 8) отакая идея</p>
+
+<p><strong>Mole_Garden</strong> 24-12-2009</p>
+
+<blockquote>
+  <p>Народ,а может сэкономить денюжку на всяких Кёрхерах и просто погуглить как это делается у буржуев? ;)</p>
+
+  <p>как вариант 8)</p>
+</blockquote>
+
+<p>Когда вчера выкладывал видео на форум, видел этот ролик. Единственное, что может убрать такая штуковина, это какой то большой мусор, грязь или что то в этом роде, а если у вас там слизь или что то более приставучее вы заемучаетесь катать брусок туда сюда. По мне так керхер за 4000 тыщи и кислую воду, вот и все что нужно для чистоты и порядка, ну и брусок на всякий случай. :D</p>
+
+<p><strong>mdima</strong> 03-01-2010</p>
+
+<p>Намекну: Состав на основе щавелевый кислоты спасет отца русской демократии. :)</p>
+
+<p><strong>ХеН</strong> 04-01-2010</p>
+
+<p>по мне так там просто подняли один конец трубы повыше и самотёком скатилось)</p>
+
+<p><strong>Mole_Garden</strong> 04-01-2010</p>
+
+<blockquote>
+  <p>по мне так там просто подняли один конец трубы повыше и самотёком скатилось)</p>
+</blockquote>
+
+<p>Это возможно не во всех случаях.</p>
+
+<p><strong>valeraZ</strong> 08-01-2010</p>
+
+<p>Подскажите, пожалуйста какое соотношение NPKCaMg в зимнее время для салата???</p>
+
+<p><strong>valeraZ</strong> 17-01-2010</p>
+
+<p>подскажите пожалуйста с чем может быть связано пожелтение и увядание нижних(старых) листьев салата ????</p>
+
+<p><strong>Mole_Garden</strong> 17-01-2010</p>
+
+<blockquote>
+  <p>Подскажите, пожалуйста какое соотношение NPKCaMg в зимнее время для салата???</p>
+</blockquote>
+
+<p>Вы что издеваетесь, за последнюю неделю это уже второй раз :D</p>
+
+<p>Поиск вам в помощь</p>
+
+<p><a href="http://www.ponics.ru/2009/05/lettuce/" target="_blank">http://www.ponics.ru/2009/05/lettuce/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/04/agro_trip1/" target="_blank">http://www.ponics.ru/2009/04/agro_trip1/</a> - смотрите внизу перед большой таблицей</p>
+
+<p><strong>Mole_Garden</strong> 17-01-2010</p>
+
+<blockquote>
+  <p>подскажите пожалуйста с чем может быть связано пожелтение и увядание нижних(старых) листьев салата ????</p>
+</blockquote>
+
+<p>Какой возраст у салата? Температура и влажность?</p>
+
+<p><strong>valeraZ</strong> 17-01-2010</p>
+
+<p>температура+10+12; влажность 80-85% …</p>
+
+<p><strong>Mole_Garden</strong> 17-01-2010</p>
+
+<blockquote>
+  <p>температура+10+12; влажность 80-85% …</p>
+</blockquote>
+
+<p>Конечно, для салата такая температура не критична, но и не фонтан. А какой возраст у него ? Какой свет и световой режим? Какая система полива ну и т.д. Словом чуть подробней обо всем.</p>
+
+<p><strong>valeraZ</strong> 18-01-2010</p>
+
+<p>cалату 1.5 месеца система вот такая:подскажите как отправить фотки и Вы поймете ,бы я не могу их отправить.</p>
+
+<p><strong>Mole_Garden</strong> 18-01-2010</p>
+
+<blockquote>
+  <p>cалату 1.5 месеца система вот такая:подскажите как отправить фотки и Вы поймете ,бы я не могу их отправить.</p>
+</blockquote>
+
+<p>Когда пишите сообщение, с левой стороны над полем куда вы его вводите написано Вставить изображение, нажимаете на ссылку и думаю у вас все получиться. Еще как вариант внизу, под тем же полем, куда вы в водите сообщениме с левой стороны есть кнопка Выберите файл нажимаете, а дальше уже поймете.</p>
+
+<p>По салату. Так 1,5 месяца он уже у вас старый, вот видимо и желтеют листья внизу.</p>
+
+<p><strong>valeraZ</strong> 18-01-2010</p>
+
+<p>вот эта моя гидропонная система раствор подается из резервуара на верхний стилаж и обратно самотеком в резервуар .</p>
+
+<p><a href="http://s3.postimage.org/1OeIV9.jpg" target="_blank"><img src="http://s3.postimage.org/1OeIV9.jpg" alt="" /></a></p>
+
+<p><a href="http://s1.postimage.org/aOi60.jpg" target="_blank"><img src="http://s1.postimage.org/aOi60.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 18-01-2010</p>
+
+<p>:o Ну что же, браво ! 8)</p>
+
+<p>А откуда вы? и Как давно занимаетесь выращиванием салата? На сколько большие у вас объемы?</p>
+
+<p>В общем, чуть подробней о том как вы докатились до такой салатной жизни :D</p>
+
+<p><strong>ХеН</strong> 18-01-2010</p>
+
+<p>Судя по фотам нам ламерам тут делать нефиг :D</p>
+
+<p><strong>valery</strong> 18-01-2010</p>
+
+<p>Кхм, кхм, это типа я “прокашливаюсь” …</p>
+
+<p>Действительно, Валера … Как-то Вы …</p>
+
+<p>С такими “робкими” и, можно сказать, “наивными” вопросами …</p>
+
+<p>Может лучше наоборот, мы Вас порасспрашиваем, а Вы нам - порасскажете ?</p>
+
+<p><strong>valeraZ</strong> 19-01-2010</p>
+
+<p>Я из КИШИНЕВА (Молдова) теплица не моя я работаю агрономом уодного чювака работаю только пол года все это что Вы видели на фото благодоря этому сайту ,но со временем появлются все новые и новые проблемы .но если есть вопросы и я смогу на них ответить С УДОВОЛЬСТВИЕМ !!!</p>
+
+<p><strong>Mole_Garden</strong> 19-01-2010</p>
+
+<blockquote>
+  <p>Я из КИШИНЕВА (Молдова) теплица не моя я работаю агрономом уодного чювака работаю только пол года все это что Вы видели на фото благодоря этому сайту ,но со временем появлются все новые и новые проблемы .но если есть вопросы и я смогу на них ответить С УДОВОЛЬСТВИЕМ !!!</p>
+</blockquote>
+
+<p>:( Вот так вот, оказывается наш ресурс очень круто помогает людям, а элементарных слов благодарности ни от кого не дождешься. Очень многие читаю наши работы и работы постояльцев, но лишь исключительно единицы, в основном, старожилы говорят спасибо и поддерживают ресурс своими материалами и наработками…</p>
+
+<p>Вот вы бы рассказали нам подробней как все начиналось, как человек построивший теплицу оказалась на форуме, как он решил растить салат, как строилась теплица, что за оборудование используется, какой раствор дается, кто его делает, где он храниться. Словом, сделали бы небольшую фото экскурсию по теплице с рассказом.</p>
+
+<p><strong>sturgeon</strong> 26-01-2010</p>
+
+<p>Вопрос про салат =) точнее про его семена</p>
+
+<p>Вижу 2 типа семян - 1) нормальные семена и - 2)дражированные семена.. разница в стоимости в 4 раза..</p>
+
+<p>Кто знает чем они реально отличаются? дражированные просто технологичней/удобней, или в оболочке какието питательные вещества для быстрого старта заложены? по всходам будет ли зарница?</p>
+
+<p><strong>Mole_Garden</strong> 26-01-2010</p>
+
+<blockquote>
+  <p>Вопрос про салат =) точнее про его семена</p>
+
+  <p>Вижу 2 типа семян - 1) нормальные семена и - 2)дражированные семена.. разница в стоимости в 4 раза..</p>
+
+  <p>Кто знает чем они реально отличаются? дражированные просто технологичней/удобней, или в оболочке какието питательные вещества для быстрого старта заложены? по всходам будет ли зарница?</p>
+</blockquote>
+
+<p>В оболочке содержаться минеральные вещества и витамины, а еще она долго удерживает влагу. Но если вы выращиваете на гидропонике, а проращиваете в вате, то по сути она вам ни к чему, ну разве что удобней считать количество семян :D Я сажал обычные семена салата, не дражированные и они проклюнулись через день -полтора.</p>
+
+<p><strong>mdima</strong> 26-01-2010</p>
+
+<blockquote>
+  <p>дражированные просто технологичней/удобней</p>
+</blockquote>
+
+<p>При автоматической посадке гектарами он просто не заменимы.</p>
+
+<p><strong>ХеН</strong> 26-01-2010</p>
+
+<p>Насчет минералов и витаминов не уверен но могу сказать што оболочка состоит в основном из глины. Она действительно удерживает влагу в семенах.</p>
+
+<p><strong>Mole_Garden</strong> 26-01-2010</p>
+
+<p>Дражирование семян, приём предпосевной подготовки семян путём обволакивания их защитной питательной оболочкой шаровидной формы в специальном аппарате - дражираторе. Дражирование семян обеспечивает более равномерный их высев, облегчает высев мелких шероховатых семян (морковь, петрушка и др.), сокращает затраты труда на прорывку посевов, способствует экономии посевного материала, улучшает условия роста растений и повышает урожай (лука, моркови, огурцов, петрушки, томатов, столовой свёклы на 20-25%). Для Дражирование семян применяют смесь нейтрализованного торфа и перегноя (высушенного, измельчённого и просеянного через сито с отверстиями 0,25-0,5 мм), в которую добавляют клеящие вещества (коровяк или полиакриламид), суперфосфат, азотные, калийные и бактериальные удобрения, микроэлементы, стимуляторы роста и др. Дражированные семена могут храниться 6-9 мес, не теряя всхожести. Перед посевом их увлажняют до 40-60%.</p>
+
+<p><strong>sturgeon</strong> 27-01-2010</p>
+
+<p>valeraZ подскажи, плиз, какие сорта салата на твоем супер-космическом стеллаже, какое расстояние между стаканчиками?</p>
+
+<p><strong>valeraZ</strong> 05-02-2010</p>
+
+<p>у меня сорта FUNWAY,FUNTIME,REDFUN,CONSTANCE расстояние 25х30</p>
+
+<p><strong>Mole_Garden</strong> 05-02-2010</p>
+
+<blockquote>
+  <p>у меня сорта FUNWAY,FUNTIME,REDFUN,CONSTANCE расстояние 25х30</p>
+</blockquote>
+
+<p>Видимо какие-то голландцы ?</p>
+
+<p><strong>Mole_Garden</strong> 05-02-2010</p>
+
+<blockquote>
+  <p>Я из КИШИНЕВА (Молдова) теплица не моя я работаю агрономом уодного чювака работаю только пол года все это что Вы видели на фото благодоря этому сайту ,но со временем появлются все новые и новые проблемы .но если есть вопросы и я смогу на них ответить С УДОВОЛЬСТВИЕМ !!!</p>
+</blockquote>
+
+<p>Как давно вы работает Агрономом? У вас спец образование ?</p>
+
+<p><strong>valery</strong> 05-02-2010</p>
+
+<p>Всякие “Фаны” это, наверное, Сингенты салаты.</p>
+
+<p><strong>valeraZ</strong> 05-02-2010</p>
+
+<p>я в этом году закончил с/х универ ,про гидропонику только по наслышке, агрономом работаю только пол года, по этому прошу вас о помощи ,да семена голандские (сангента).</p>
+
+<p><strong>Mole_Garden</strong> 05-02-2010</p>
+
+<blockquote>
+  <p>я в этом году закончил с/х универ ,про гидропонику только по наслышке, агрономом работаю только пол года,</p>
+</blockquote>
+
+<p>:D Вот дожили, агрономы спрашивают совета. Ну что же, для того мы здесь и собрались, что бы помогать друг другу. Но от вас в свою очередь хотелось бы получить чуть больше информации про теплицу и по возможности фоток побольше!</p>
+
+<p><strong>травка</strong> 05-02-2010</p>
+
+<blockquote>
+  <p>вот эта моя гидропонная система раствор подается из резервуара на верхний стилаж и обратно самотеком в резервуар .</p>
+
+  <p><a href="http://s3.postimage.org/1OeIV9.jpg" target="_blank"><img src="http://s3.postimage.org/1OeIV9.jpg" alt="" /></a></p>
+
+  <p><a href="http://s1.postimage.org/aOi60.jpg" target="_blank"><img src="http://s1.postimage.org/aOi60.jpg" alt="" /></a></p>
+</blockquote>
+
+<p>сам систему делал?покажи поближе куда стаканчики вставляутся?где рассаду ростишь и под чем ?как раствор делаешь ,из чего?</p>
+
+<p>на полу салаты в DWC?Почему салаты и на стелажах и на полу ?тренируешься ;)?</p>
+
+<p><strong>valeraZ</strong> 06-02-2010</p>
+
+<p>на следующей недели принисут мне ЮСБ кабель и подробнее расскажу, просто текстом мне тяжело с Русским языком если чтото не то поправите .</p>
+
+<p><a href="http://s3.postimage.org/KfypJ.jpg" target="_blank"><img src="http://s3.postimage.org/KfypJ.jpg" alt="" /></a></p>
+
+<p>здесь выращиваю рассаду на пенопласте в котором сделаны дырки ,они набиваются торфом потом сеем семена,на этих палетах растут до первой пересадки .</p>
+
+<p><strong>Batat</strong> 06-02-2010</p>
+
+<blockquote>
+  <p><a href="http://s3.postimage.org/KfypJ.jpg" target="_blank"><img src="http://s3.postimage.org/KfypJ.jpg" alt="" /></a></p>
+
+  <p>здесь выращиваю рассаду на пенопласте в котором сделаны дырки ,они набиваются торфом потом сеем семена,на этих палетах растут до первой пересадки .</p>
+</blockquote>
+
+<p>Очень понравилось, то чем Вы занимаетесь и как это выглядит!</p>
+
+<p>В каком возрасте пересаживаете салат и куда?</p>
+
+<p>Что значит “певая” пересадка?</p>
+
+<p>Есть еще и вторая, третья пересадка?</p>
+
+<p>Успехов Вам!</p>
+
+<p><strong>Mole_Garden</strong> 06-02-2010</p>
+
+<p>Какой свет у вас стоит в этом отделении?</p>
+
+<p>А вообще круто, что у нас появляется здесь все больше и больше фермеров и крупномасштабных строителей!</p>
+
+<p><strong>valeraZ</strong> 06-02-2010</p>
+
+<p>обо всем сделаю маленькую фотоэкскурсию по теплицэ на следующей недели…</p>
+
+<p><strong>Mole_Garden</strong> 06-02-2010</p>
+
+<blockquote>
+  <p>обо всем сделаю маленькую фотоэкскурсию по теплицэ на следующей недели…</p>
+</blockquote>
+
+<p>Договорились! 8)</p>
+
+<p><strong>Олеганос</strong> 06-02-2010</p>
+
+<p>Начало впечатляет 8). Продолжение, походу ,будет не менее интересным :-...</p>
+
+<p><strong>травка</strong> 07-02-2010</p>
+
+<blockquote>
+  <p>на следующей недели принисут мне ЮСБ кабель и подробнее расскажу, просто текстом мне тяжело с Русским языком если чтото не то поправите .</p>
+
+  <p><a href="http://s3.postimage.org/KfypJ.jpg" target="_blank"><img src="http://s3.postimage.org/KfypJ.jpg" alt="" /></a></p>
+
+  <p>здесь выращиваю рассаду на пенопласте в котором сделаны дырки ,они набиваются торфом потом сеем семена,на этих палетах растут до первой пересадки .</p>
+</blockquote>
+
+<p>что за торф:)?торф это органика.почему не в пробки?</p>
+
+<p><strong>Mole_Garden</strong> 07-02-2010</p>
+
+<blockquote>
+  <p>что за торф:)?торф это органика.почему не в пробки?</p>
+</blockquote>
+
+<p>Что то подсказывает, что это связанно с тем, что салат растет очень быстро 25-30 дней и с органикой за это время ничего не произойдет. Думаю, что это еще выходит и дешевле чем пробки. И когда продается салат, он продается в стаканчиках с влажным торфом, таки образом он не вянет еще как минимум пару дней на прилавке, хотя салат, один из тех, кто очень быстро теряет влагу.</p>
+
+<p><strong>травка</strong> 07-02-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>что за торф:)?торф это органика.почему не в пробки?</p>
+  </blockquote>
+
+  <p>Что то подсказывает, что это связанно с тем, что салат растет очень быстро 25-30 дней и с органикой за это время ничего не произойдет. Думаю, что это еще выходит и дешевле чем пробки. И когда продается салат, он продается в стаканчиках с влажным торфом, таки образом он не вянет еще как минимум пару дней на прилавке, хотя салат, один из тех, кто очень быстро теряет влагу.</p>
+</blockquote>
+
+<p>Константин вы лудший агроном :D ;)</p>
+
+<p>получается за месяц с раствором не чего не случится,?а если и случится то уже позно ,салат вырос?</p>
+
+<p><strong>Mole_Garden</strong> 07-02-2010</p>
+
+<blockquote>
+  <p>Константин вы лудший агроном :D ;)</p>
+
+  <p>получается за месяц с раствором не чего не случится,?а если и случится то уже позно ,салат вырос?</p>
+</blockquote>
+
+<p>Ого, :D Я и агроном!?</p>
+
+<p>Для меня агроном, это человек за плечами которого большая теплица и пару десятков удачных урожаев, при чем каждый лучше предыдущего. Я же не могу похвастаться пока ни тем, ни другим. :'(</p>
+
+<p>А про торф, там не с раствором нюанс, а именно с субстратом. За такой промежуток времени по идее с ним ничего не должно случиться, так как в основном все проблемы от субстрата, из-за органики. А тут из-за быстрого оборота с ним ничего не успевает случиться.</p>
+
+<p><strong>травка</strong> 07-02-2010</p>
+
+<blockquote>
+  <p>Константин вы лудший агроном :D ;)</p>
+
+  <p>Для меня агроном, это человек за плечами которого большая теплица и пару десятков удачных урожаев, при чем каждый лучше</p>
+</blockquote>
+
+<p>у вас практики и наглядных примеров гораздо больше чем у аграномов ;D а через пару лет</p>
+
+<p>что будет я вообще :-X онлайн аграном :Dсидя на” пляже “контралирует рост по просторам всей нашей необьятной родины, от севера до юга ;) ;D</p>
+
+<p><strong>Mole_Garden</strong> 07-02-2010</p>
+
+<p>:D Спасибо, будем стараться!</p>
+
+<p><strong>valery</strong> 07-02-2010</p>
+
+<p>“С агрономом я прошлась …</p>
+
+<p>Только ты не думай …</p>
+
+<p>Говорили цельный час</p>
+
+<p>Только про тебя …” /В.С.Высоцкий/</p>
+
+<p>Константин, а Владимир Семенович, оказывается, про Вас даже песню написал …</p>
+
+<p>:D :D :D</p>
+
+<p><strong>Mole_Garden</strong> 07-02-2010</p>
+
+<blockquote>
+  <p>“С агрономом я прошлась …</p>
+
+  <p>Только ты не думай …</p>
+
+  <p>Говорили цельный час</p>
+
+  <p>Только про тебя …” /В.С.Высоцкий/</p>
+
+  <p>Константин, а Владимир Семенович, оказывается, про Вас даже песню написал …</p>
+</blockquote>
+
+<p>:-[ от оно как!</p>
+
+<p><strong>ХеН</strong> 07-02-2010</p>
+
+<p>За смущали человека))</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

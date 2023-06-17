@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Не могу понизить Ph! | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Не могу понизить Ph!">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Не могу понизить Ph!</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>MadMax</strong> 24-08-2011</p>
+
+<p>Имеется система EBB &amp; flood такого плана <a href="http://fatalii.net/growing/index.php?option=com_content&amp;task=view&amp;id=118&amp;Itemid=69." target="_blank">http://fatalii.net/growing/index.php?option=com_content&amp;task=view&amp;id=118&amp;Itemid=69.</a> Субстрат керамзит. Ращу острый перец. Удобрения GHE Mato и Micro, Ph-корректор тоже фирменный GHE Ph-down. Вода у меня с уровнем Ph 6,5. Раствор также 6,5, постепенно может подняться до 6,6. Ph для перца находится на верхней допустимой границе, пробовал понижать, добавляя, как рекомендуется, по несколько мл ( на ёмкость 18 л ). Замерял на следующий день - никакого эффекта. И так несколько дней подряд. Думал может субстрат оказывает влияние или ещё что, в общем, взял просто отдельную ёмкость, залил в неё такой же раствор как и в систему, несколько дней добавлял по немногу GHE Ph-down и проводил замеры - 6,5 - 6,6, так же как и в системе - ноль эффекта.</p>
+
+<p>Спецы, помогите пожалуйста!</p>
+
+<p><strong>valery</strong> 24-08-2011</p>
+
+<p>Азотная кислота, ортофосфорная кислота, серная, аккумуляторный электролит (магазины автозапчастей).</p>
+
+<p><strong>ProRus</strong> 25-08-2011</p>
+
+<blockquote>
+  <p>несколько дней добавлял по немногу GHE Ph-down и проводил замеры - 6,5 - 6,6, так же как и в системе - ноль эффекта.</p>
+</blockquote>
+
+<p>Тоже пользовался ранее, приблизительно похожая ситуация была. Добавляешь, понижается… Проходит время все возвращается обратно и так без конца.</p>
+
+<p>Перешел на азотную, все стало намного лучше. Сейчас хочу использовать связку азотка + ортофосфорная.</p>
+
+<p><strong>MadMax</strong> 25-08-2011</p>
+
+<blockquote>
+  <p>Азотная кислота, ортофосфорная кислота, серная, аккумуляторный электролит (магазины автозапчастей).</p>
+</blockquote>
+
+<p>Спасибо за ответ, но разве GHE Ph-down не кислота?</p>
+
+<blockquote>
+  <p>Перешел на азотную, все стало намного лучше. Сейчас хочу использовать связку азотка + ортофосфорная.</p>
+</blockquote>
+
+<p>Спасибо, попробую!</p>
+
+<p><strong>Coccinella</strong> 25-08-2011</p>
+
+<p>GHE Ph-down - не кислота, а смесь солей, которые при растворении в воде обеспечивают определенный уровень рН. Точный состав искать лень, первые два ответа по запросу в гугле :) выдали вот такой ответ:</p>
+
+<p>Nitrates in a form slowly assimilated by the plant and harmless to the flowering process.</p>
+
+<p>Phosphates for flowering, but for healthy roots, lush foliage and harmonious growth too.</p>
+
+<p>Plus some magnesium, sulphur and microelements.</p>
+
+<p>Скорее всего нитрат аммония, нитрат магния и соответственно какие-то фосфаты .</p>
+
+<p><strong>ProRus</strong> 25-08-2011</p>
+
+<blockquote>
+  <p>Точный состав искать лень, первые два ответа по запросу в гугле :) выдали вот такой ответ:</p>
+</blockquote>
+
+<p>Я тоже в свое время искал, так ничего конкретного и не нашел.</p>
+
+<p>В основном описание содержало: Супер!!! Пупер !!! Лучше не найти.</p>
+
+<p>Плюнул и больше не пользуюсь.</p>
+
+<p><strong>MadMax</strong> 25-08-2011</p>
+
+<blockquote>
+  <p>GHE Ph-down - не кислота, а смесь солей…</p>
+</blockquote>
+
+<p>Уважаемая, Coccinella! Вы невнимательно погуглили. Не хочу ни в кой мере защищать продукцию GHE, тем более, что в ситуации так и не разобрался. В составе Ph-down смесь кислот, в основном фосфорная и дополнительно добавлены те элементы, которые Вы привели. На моей упаковке написано, что сделано во Франции, что в “концентрированном виде является сильной кислотой и может вызвать ожоги”. Кстати, на лёгкий лиз действительно сильная кислота.</p>
+
+<p>Достало всё это меня и взял я небольшую стеклянную банку, налил туда воды и добавил процентов 10 Ph-down. На вкус кислятина-кислятиной. Но Ph-метр как показывал Ph чистой воды 6,5, так и показывает этот же уровень для кислятины. Нонсенс. Может нужно сменить Ph-метр? Хотя по калибровочному раствору 6,86 он показывает свои 6,9. У кого-нибудь было такое, что Ph-метр глючил в одну сторону? Т.к. я чайник и это мой первый опыт с гидропоникой, может я чего то не то делаю?</p>
+
+<p><strong>ProRus</strong> 26-08-2011</p>
+
+<p>Спецификация мокрого <a href="http://www.generalhydroponics.com/genhydro_US/msds/pH_Down_Liquid.pdf" target="_blank">PH-Down</a></p>
+
+<p>Спецификация сухого <a href="http://www.generalhydroponics.com/genhydro_US/msds/pH_Down_Dry.pdf" target="_blank">PH-Down</a></p>
+
+<blockquote>
+  <p>Достало всё это меня и взял я небольшую стеклянную банку, налил туда воды и добавил процентов 10 Ph-down. На вкус кислятина-кислятиной. Но Ph-метр как показывал Ph чистой воды 6,5, так и показывает этот же уровень для кислятины. Нонсенс. Может нужно сменить Ph-метр? Хотя по калибровочному раствору 6,86 он показывает свои 6,9. У кого-нибудь было такое, что Ph-метр глючил в одну сторону? Т.к. я чайник и это мой первый опыт с гидропоникой, может я чего то не то делаю?</p>
+</blockquote>
+
+<p>У вас что-то не так с прибором точно. Решил проделать ваш опыт в моих условиях.</p>
+
+<p>Ph воды из под крана - 6,72</p>
+
+<p>Добавил на 200 мл - 0,08 гр сухой Ph-Down</p>
+
+<p>Получил Ph воды - 2,87</p>
+
+<p>Оставлю водичку на выходные, в понедельник сообщу о результате.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6269" target="_blank"><img src="/attachimages/8246_IMG0005A.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6270" target="_blank"><img src="/attachimages/8248_IMG0006A.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6271" target="_blank"><img src="/attachimages/8250_IMG0008A.jpg" alt="" /></a></p>
+
+<p><strong>MadMax</strong> 26-08-2011</p>
+
+<blockquote>
+  <p>У вас что-то не так с прибором точно.</p>
+</blockquote>
+
+<p>Спасибо ProRus! Вы скорее всего правы и тему можно закрывать. Последний вопрос. Какой Ph-метр Вы бы порекомендовали, чтобы не наколоться вторично?</p>
+
+<p>У меня вот такой</p>
+
+<p><img src="http://4.static.slando.com/photos/live/09/psh-metr-009-ph-metr-ph-009_31212609_1_F.jpg" alt="" /></p>
+
+<p>Спасибо.</p>
+
+<p><strong>koval.sergei</strong> 26-08-2011</p>
+
+<p>Нормальный рН метр , просто скорее всего у вас электрод находился в сухом виде, я свой таким макером угробил. :D</p>
+
+<p><strong>ProRus</strong> 26-08-2011</p>
+
+<blockquote>
+  <p>Какой Ph-метр Вы бы порекомендовали, чтобы не наколоться вторично?</p>
+</blockquote>
+
+<p>Действительно скорее всего электроду конец. Покупайте любой.</p>
+
+<p><strong>Coccinella</strong> 26-08-2011</p>
+
+<p>Джентльмены, Вы все-таки с пробованием кислоты на язык поосторожнее, пожалуйста. Даже уксусной кислотой можно очень серьезно повредить слизистые оболочки , а уж фосфорная или азотная… И к вопросу о кислотах :) Кто-нибудь видел азотную или фосфорную кислоту в сухом виде? :)</p>
+
+<p><strong>ProRus</strong> 26-08-2011</p>
+
+<blockquote>
+  <p>Джентльмены, Вы все-таки с пробованием кислоты на язык поосторожнее, пожалуйста. Даже уксусной кислотой можно очень серьезно повредить слизистые оболочки , а уж фосфорная или азотная… И к вопросу о кислотах :) Кто-нибудь видел азотную или фосфорную кислоту в сухом виде? :)</p>
+</blockquote>
+
+<p>А фосфорная еще говорят разъедает безболезнено. Один химик сказал, что капля оставшаяся незамеченной может прилично навредить без причинения боли.</p>
+
+<p><strong>MadMax</strong> 28-08-2011</p>
+
+<blockquote>
+  <p>Нормальный рН метр , просто скорее всего у вас электрод находился в сухом виде, я свой таким макером угробил. :D</p>
+</blockquote>
+
+<p>Что вы имеете в виду? Прибор нужно хранить погруженным в воду :o?</p>
+
+<blockquote>
+  <p>Джентльмены, Вы все-таки с пробованием кислоты на язык поосторожнее, пожалуйста.</p>
+</blockquote>
+
+<p>Спасибо, учтём. Злоупотреблять не будем! :D</p>
+
+<p><strong>ProRus</strong> 29-08-2011</p>
+
+<blockquote>
+  <p>Что вы имеете в виду? Прибор нужно хранить погруженным в воду :o?</p>
+</blockquote>
+
+<p>Ни в коем случае. В воде нельзя хранить, есть специальные растворы для хранения, но это только тогда, когда редко пользуетесь.</p>
+
+<p>Если используете ежедневно, то можно не заморачиваться. Как правило в колпачок прибора капается несколько капель жидкости для хранения, так и хранится.</p>
+
+<p><strong>MadMax</strong> 30-08-2011</p>
+
+<blockquote>
+  <p>Ни в коем случае. В воде нельзя хранить, есть специальные растворы для хранения, но это только тогда, когда редко пользуетесь.</p>
+</blockquote>
+
+<p>Никогда не думал, что всё так сложно! Нашёл вот такой измеритель <a href="http://www.moemgorod.com/index.php?productID=579," target="_blank">http://www.moemgorod.com/index.php?productID=579,</a> в комплекте и три калибровочных раствора, и жидкость для хранения, и погрешность всего 0,01. Смущает только то, что предлагает его только эта контора, и больше никто. И сайт производителя показался достаточно скромным. Кто что думает, может кто уже пользует, отпишитесь, пожалуйста.</p>
+
+<p><strong>ProRus</strong> 31-08-2011</p>
+
+<blockquote>
+  <p>Никогда не думал, что всё так сложно! Нашёл вот такой измеритель <a href="http://www.moemgorod.com/index.php?productID=579," target="_blank">http://www.moemgorod.com/index.php?productID=579,</a> в комплекте и три калибровочных раствора, и жидкость для хранения, и погрешность всего 0,01. Смущает только то, что предлагает его только эта контора, и больше никто. И сайт производителя показался достаточно скромным. Кто что думает, может кто уже пользует, отпишитесь, пожалуйста.</p>
+</blockquote>
+
+<p>Ну не знаю, хозяин конечно барин. Я бы не стал брать. По мне так лучше взять немного дороже HANNA (<a href="http://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=m570.l2736&amp;_nkw=Hanna+Hi98130" target="_blank">http://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=m570.l2736&amp;_nkw=Hanna+Hi98130</a>) который и электропроводность измеряет и качество известно во всем мире.</p>
+
+<p>А для измерения только кислотности, вполне достаточно прибора и за 30 рублей (<a href="http://www.ebay.com/itm/LCD-Monitor-Digital-pH-Meter-Tester-screwdriver-S900-/260765346407?pt=LH_DefaultDomain_0&amp;hash=item3cb6d36a67" target="_blank">http://www.ebay.com/itm/LCD-Monitor-Digital-pH-Meter-Tester-screwdriver-S900-/260765346407?pt=LH_DefaultDomain_0&amp;hash=item3cb6d36a67</a>). Почитайте - <a href="http://forum.ponics.ru/index.php?topic=618.0]Аукцион eBay - бесполезные чаще, а местами и полезные приблудки. Авось сгодятся[/url] и [url=http://www.hydo.ru/literatures/litnotes/85-pokupaem-tovary-dlya-gidroponiki-za-rubezhom.html" target="_blank">Покупаем товары для гидропоники за рубежом</a>.</p>
+
+<p><strong>valery</strong> 31-08-2011</p>
+
+<blockquote>
+  <p>Кто что думает, может кто уже пользует, отпишитесь, пожалуйста.</p>
+</blockquote>
+
+<p>А что здесь думать ? Никаких новых принципов измерения pH в данном приборе ведь не использовано, верно ?</p>
+
+<p>Либо дешевый китаец (с того же eBay) - ОЧЕНЬ дешево и вполне сердито. Качество - не супер, но и не жаль выбросить.</p>
+
+<p>Либо приличный бренд (но за другие деньги) типа той же Ханны (как советует Руслан). Либо близкий по цене/качеству аналог.</p>
+
+<p><strong>MadMax</strong> 31-08-2011</p>
+
+<p>ProRus, спасибо! Valery - принято, спасибо. Буду брать HANNA ( надеюсь ударение на первый слог :) ).</p>
+
+<p><strong>Mole_Garden</strong> 03-09-2011</p>
+
+<p>А керамзит у тебя откуда?</p>
+
+<p><strong>MadMax</strong> 03-09-2011</p>
+
+<blockquote>
+  <p>А керамзит у тебя откуда?</p>
+</blockquote>
+
+<p>&lt;yoda&gt;Знакомы мне проблемы которые может породить он.&lt;/yoda&gt;</p>
+
+<p><strong>Mole_Garden</strong> 03-09-2011</p>
+
+<p>Если к керамзитом все в порядке, тогда пользуйся азоткой и фосфорной кислотой.</p>
+
+<p><strong>MadMax</strong> 03-09-2011</p>
+
+<blockquote>
+  <p>тогда пользуйся азоткой и фосфорной кислотой</p>
+</blockquote>
+
+<p>Имеющуюся у меня GHE pH-down, что, сливанте? Подожду прибора Hanna с Ebay, уже проплатил - спасибо ProRus, подбросил ссылочек. Получу новый прибор, может жидкость GHE и не так безнадёжна, или Вы в принципе не рекомендуете использовать эти смеси капиталистов?</p>
+
+<p><strong>610</strong> 30-11-2011</p>
+
+<p>Состав GHE PH DOWN - H3PO4 - ортофосфорная кислота.</p>
+
+<p>Применять так (по инструкции из журналов и каталогов, каких не помню) - сначала добавить в воду (откалибровать PH), потом добавлять удобрения.</p>
+
+<p>в UP - KOH и K2CO3 - гидрооксид калия и карбонат калия.</p>
+
+<p>Все перед использованием встряхнуть.</p>
+
+<p><strong>мистер Green</strong> 30-11-2011</p>
+
+<p>А от GHE в жидком или порошковом виде? С жидким не работал, но знаю, что в порошковом более экономичней. Так мало ли, пригодится.</p>
+
+<p><strong>610</strong> 30-11-2011</p>
+
+<p>жидкие оба.</p>
+
+<p><strong>ALB</strong> 03-12-2011</p>
+
+<p>А разве азотная не будет «вытеснять» фосфорную из раствора если использовать их вместе ?</p>
+
+<p><strong>Borodach1</strong> 14-06-2013</p>
+
+<blockquote>
+  <p>А разве азотная не будет «вытеснять» фосфорную из раствора если использовать их вместе ?</p>
+</blockquote>
+
+<p>Азотная кислота “вытеснит” фосфорную сразу после того как соли азотной кислоты станут не растворимы в воде. ;)</p>
+
+<p>Но это не в нашем измерении… :o :D</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

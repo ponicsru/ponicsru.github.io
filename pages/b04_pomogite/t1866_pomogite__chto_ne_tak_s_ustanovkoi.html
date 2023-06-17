@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Помогите - что не так с установкой? | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Помогите - что не так с установкой?">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Помогите - что не так с установкой?</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>crazyleg11</strong> 15-10-2013</p>
+
+<p>Господа, прошу прощения за вопрос и подход новичка.</p>
+
+<p>Я настолько проникся идеей иметь зимой любую зелень, что собрал установку DWC и не совсем микро для первого раза.</p>
+
+<p>И вот результат - укроп падает, вкуса у него нет, базилик растет вяло, огурцы тоже. В общем все как-то вяло - я думаю правильная гидропоника должна быть в 5 раз шустрее.</p>
+
+<p>Предположений несколько - мало света, мало кислорода, не то-что то с температурой.</p>
+
+<p>Температура воздух/вода = 20 (комнатная). Свет - на каждый контейнер люстры <a href="http://www.aliexpress.com/item/New-20W-289PCS-chips-SMD-red-and-blue-light-LED-Grow-light-for-flowering-plant-spot/716229745.html" target="_blank">http://www.aliexpress.com/item/New-20W-289PCS-chips-SMD-red-and-blue-light-LED-Grow-light-for-flowering-plant-spot/716229745.html</a></p>
+
+<p>Компрессоры и трубки аквариумные, одна штука по длине контейнера.</p>
+
+<p>Контейнеры на фото.</p>
+
+<p>Удобрения - General Hydroponics по мануалу, pH 6.5, соли - 162 (это показания ручки, я не совсем уверен в единицах).</p>
+
+<p>Посморите на фотки, задайте наводящие вопросы, помогите понять, в чем проблема.</p>
+
+<p>Спасибо!</p>
+
+<p><a href="https://t.me/ponics_ru_files/11022" target="_blank"><img src="/attachimages/14028_IMG_0011.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11023" target="_blank"><img src="/attachimages/14030_IMG_0012.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11024" target="_blank"><img src="/attachimages/14032_IMG_0013.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11025" target="_blank"><img src="/attachimages/14034_IMG_0959.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 15-10-2013</p>
+
+<p>Жарко, темно, сухо..</p>
+
+<p>и показания ручки… она в чем показыват - то? а литрах ? в метрах? в граммах? в люксах?</p>
+
+<p>Вобще подход классный.. <em>8)</em></p>
+
+<p>Гидропоника это наука.. а не…</p>
+
+<p>налил, включил - чета не растет… &gt;:(</p>
+
+<p>температура вроде комнатная… ручка показывает 162…</p>
+
+<p>По поводу удобрений.. пусть другие прокоментируют )) у меня непереносимость “миксов” :-\</p>
+
+<p><strong>crazyleg11</strong> 16-10-2013</p>
+
+<p>Ручка показывает в микросименсах на сантиметр2 (μS/cm).</p>
+
+<p>Температура воды 20+-2 по показаниям термометра. Темпрература воздуха где-то та же, т.к. лампы не греют.</p>
+
+<p><strong>Nikolai</strong> 16-10-2013</p>
+
+<p>Какие именно удобрения GH и сколько их наливаете?</p>
+
+<p>Корни можете показать? (подозреваю перелив)</p>
+
+<p>Света в принципе достаточно, и температура сойдет.</p>
+
+<p><strong>Vad</strong> 16-10-2013</p>
+
+<p>а справа на фото… это не батарея?</p>
+
+<p>это жилое помещение?</p>
+
+<p>не верю я в 20 градусов <em>???</em></p>
+
+<p><strong>Nikolai</strong> 16-10-2013</p>
+
+<blockquote>
+  <p>а справа на фото… это не батарея?</p>
+
+  <p>это жилое помещение?</p>
+</blockquote>
+
+<p>научное :)</p>
+
+<p><strong>Vad</strong> 16-10-2013</p>
+
+<p>ну… я в “научном помещении” при 20 градусах и 65% влажности.. замерзну нафиг :D</p>
+
+<p>вот и не верится мне.. в 20 градусов <em>???</em></p>
+
+<p><strong>crazyleg11</strong> 18-10-2013</p>
+
+<p>Так а 20 это мало ?</p>
+
+<p>Вообще 20 - температура воды, но я думаю, что она равна температуре воздуха большую часть времени.</p>
+
+<p>GH - 3-х компонентное удобрение Flora (Bloom , Grow, Micro). Объем всех ванн (они зациркулированны насосом - 100 л), около 30 мл удобрения я вливаю раз в 2 недели, + 5 гр хелатированного железа.</p>
+
+<p>Да, фотки корней конечно сделаю!</p>
+
+<p><strong>gena1</strong> 18-10-2013</p>
+
+<p>А лампы - это не куча светодиодов по 20 мА ? Если “да”, то свет им нужен, его сейчас нет.</p>
+
+<p><strong>Nikolai</strong> 19-10-2013</p>
+
+<blockquote>
+  <p>Так а 20 это мало ?</p>
+
+  <p>Вообще 20 - температура воды, но я думаю, что она равна температуре воздуха большую часть времени.</p>
+
+  <p>GH - 3-х компонентное удобрение Flora (Bloom , Grow, Micro). Объем всех ванн (они зациркулированны насосом - 100 л), около 30 мл удобрения я вливаю раз в 2 недели, + 5 гр хелатированного железа.</p>
+
+  <p>Да, фотки корней конечно сделаю!</p>
+</blockquote>
+
+<p>Flora Series по норме должно быть порядка 1мл каждого компонента на литр раствора, точнее см. на этикетке.</p>
+
+<p>И в ней недостаточно кальция.</p>
+
+<p><strong>crazyleg11</strong> 21-10-2013</p>
+
+<p>Привет! Спасибо за советы!</p>
+
+<p>Да, лампы - это куча светодиодов. 200 штук. Производителем обещалось как эффективное решение. Он врал ? Наверно проблема в них….</p>
+
+<p>Еще аспект - те укропы и петрушки, что вырости не обладают выраженным запахом, вкусом и какбы “водянистые”.</p>
+
+<p>В приложении корни</p>
+
+<p><a href="https://t.me/ponics_ru_files/11026" target="_blank"><img src="/attachimages/14045_IMG_0979.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11027" target="_blank"><img src="/attachimages/14047_IMG_0982.jpg" alt="" /></a></p>
+
+<p><strong>crazyleg11</strong> 21-10-2013</p>
+
+<p>вот такие лампы</p>
+
+<p><a href="http://www.aliexpress.com/item/New-20W-289PCS-chips-SMD-red-and-blue-light-LED-Grow-light-for-flowering-plant-spot/716229745.html" target="_blank">http://www.aliexpress.com/item/New-20W-289PCS-chips-SMD-red-and-blue-light-LED-Grow-light-for-flowering-plant-spot/716229745.html</a></p>
+
+<p><strong>gena1</strong> 21-10-2013</p>
+
+<blockquote>
+  <p>вот такие лампы</p>
+
+  <p><a href="http://www.aliexpress.com/item/New-20W-289PCS-chips-SMD-red-and-blue-light-LED-Grow-light-for-flowering-plant-spot/716229745.html" target="_blank">http://www.aliexpress.com/item/New-20W-289PCS-chips-SMD-red-and-blue-light-LED-Grow-light-for-flowering-plant-spot/716229745.html</a></p>
+</blockquote>
+
+<p>Не гонялся бы ты поп за дешивизною :) (с) мультик</p>
+
+<p>Вам придётся их непосредственно в листовую пластинку воткнуть чтобы хоть какой-то эффект был :) Это вообще индикаторные светодиоды, у них другое назначение, к “освещению” они не имеют отношения.</p>
+
+<p>“InDoor Plant grow” - да, продавец врёт :)</p>
+
+<p><strong>Coccinella</strong> 21-10-2013</p>
+
+<blockquote>
+  <p>Еще аспект - те укропы и петрушки, что вырости не обладают выраженным запахом, вкусом и какбы “водянистые”.</p>
+</blockquote>
+
+<p>Если верить Vad-у и Валерию (лично я им верю $) $)), то “водянистый вкус” бывает при низком ЕС (я лично таким экстримом, как светокультура в домашних условиях, не увлекаюсь, но за чужими мнениями слежу :))</p>
+
+<p><strong>Vad</strong> 21-10-2013</p>
+
+<p>Подтверждаю <em>8)</em> Вкусный <em>8)</em></p>
+
+<p>меньше 2.5 не даю… иначе он хлипкий, длинный, и “падучий”</p>
+
+<p>старт 1.7, но в последние 2 раза стало лень.. и сразу с 2.5 стартуем ;)</p>
+
+<p><strong>Nikolai</strong> 22-10-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>вот такие лампы</p>
+
+    <p><a href="http://www.aliexpress.com/item/New-20W-289PCS-chips-SMD-red-and-blue-light-LED-Grow-light-for-flowering-plant-spot/716229745.html" target="_blank">http://www.aliexpress.com/item/New-20W-289PCS-chips-SMD-red-and-blue-light-LED-Grow-light-for-flowering-plant-spot/716229745.html</a></p>
+  </blockquote>
+
+  <p>Не гонялся бы ты поп за дешивизною :) (с) мультик</p>
+
+  <p>Вам придётся их непосредственно в листовую пластинку воткнуть чтобы хоть какой-то эффект был :) Это вообще индикаторные светодиоды, у них другое назначение, к “освещению” они не имеют отношения.</p>
+
+  <p>“InDoor Plant grow” - да, продавец врёт :)</p>
+</blockquote>
+
+<p>Поскольку gena1 вряд ли пользовался такой лампой, можете ему не верить.</p>
+
+<p>Я пользовался, и в этих условиях она эффект дает.</p>
+
+<p><strong>Borodach1</strong> 22-10-2013</p>
+
+<blockquote>
+  <p>вот такие лампы</p>
+
+  <p><a href="http://www.aliexpress.com/item/New-20W-289PCS-chips-SMD-red-and-blue-light-LED-Grow-light-for-flowering-plant-spot/716229745.html" target="_blank">http://www.aliexpress.com/item/New-20W-289PCS-chips-SMD-red-and-blue-light-LED-Grow-light-for-flowering-plant-spot/716229745.html</a></p>
+</blockquote>
+
+<p>А у меня чисто технический вопрос. Вы её не разбирали?</p>
+
+<p>Мне интересно как она внутри устроена. :)</p>
+
+<p>Там драйвер стоит, который стабильный ток делает? Или там просто выпрямитель и светодиоды включены последовательно двумя ветками?</p>
+
+<p>Станная цифра 289. Ни на 2 ни на 3 не делится.</p>
+
+<p>Если предположить, что там две ветки то 400/145 = 2,758620689655 вольта на каждый. Как раз чтоб засветились и не нужно никаких драйверов.</p>
+
+<p>Или всё таки драйвер?</p>
+
+<p><strong>gena1</strong> 22-10-2013</p>
+
+<blockquote>
+  <p>Поскольку gena1 вряд ли пользовался такой лампой, можете ему не верить.</p>
+
+  <p>Я пользовался, и в этих условиях она эффект дает.</p>
+</blockquote>
+
+<p>Гена НЕ пользовался такими лампами, это верно. Не серьёзно говорить про какой-либо “эффект” для растений, просто разделите на калькуляторе общую мощность (пусть даже заявленую производителем, а не реальную) на кол-во диодов (я не буду спорить , потому что каждый ждёт разного эффекта :) ).</p>
+
+<p>Драйвер там врядли есть (просто по размерам не войдёт), но здесь могу ошибаться - только разборка покажет это.</p>
+
+<p><strong>Borodach1</strong> 22-10-2013</p>
+
+<p>При толщине корпуса в 35 мм можно всунуть внутрь чего угодно. Есть у меня просто мысля слепить что то подобное только на 1W или 3W светодиодах. Но упёрся в драйвер. Дюже проблематично получается. А вот с последовательным включением вроде проще.</p>
+
+<p><strong>gena1</strong> 22-10-2013</p>
+
+<blockquote>
+  <p>При толщине корпуса в 35 мм можно всунуть внутрь чего угодно.</p>
+</blockquote>
+
+<p>У меня лампы от 50 до 600 Вт. Даже в 50 ваттной высота драйвера в корпусе около 5 см (на разный ток конструктив одинаковый). Но конечно, всё возможно, и , даже, слегка подумав, я всё же склоняюсь что он там обязан быть, иначе светильник стоил бы на много дешевле, т.к. кроме диодов там ничего не было бы :)</p>
+
+<p>П.С. удаляюсь из темы, т.к. она очень “трольная” :)</p>
+
+<p><strong>Nikolai</strong> 22-10-2013</p>
+
+<p>на 225 светодиодов выглядит так:</p>
+
+<p>15 параллельных цепочек по (1 резистор + 15 последовательно соединенных светодиодов)</p>
+
+<p><a href="https://t.me/ponics_ru_files/11028" target="_blank"><img src="/imagehost/thumbs/img8984.jpg" alt="" /></a></p>
+
+<p><strong>crazyleg11</strong> 22-10-2013</p>
+
+<p>нет, прекращайте :)</p>
+
+<p>я понял, лампы плохие. Куплю другие.</p>
+
+<p>2.5 - это речь шла о мл на литр питательного раствора?</p>
+
+<p><strong>crazyleg11</strong> 22-10-2013</p>
+
+<p>да, никто не хочет купить 4-ре такие лампы ?</p>
+
+<p><strong>Nikolai</strong> 22-10-2013</p>
+
+<p>можно еще фото вашей “ручки”, чтобы было понятно про единицы измерения?</p>
+
+<p>Подозреваю, что 2.5 о которых говорит Vad, соответствуют 1250 единицам вашей “ручки”</p>
+
+<p><strong>Vad</strong> 22-10-2013</p>
+
+<p>crazyleg11</p>
+
+<p>куплю по 8 долларов за штуку (по цене диодов)</p>
+
+<p><strong>Vad</strong> 22-10-2013</p>
+
+<p>Николай,</p>
+
+<blockquote>
+  <p>Ручка показывает в микросименсах на сантиметр2 (μS/cm).</p>
+</blockquote>
+
+<p>видимо точка там спряталась…… или если микро сименсы… тогда надо 250 или 2500 соответственно</p>
+
+<p><strong>valery</strong> 22-10-2013</p>
+
+<blockquote>
+  <p>2.5 - это речь шла о мл на литр питательного раствора?</p>
+</blockquote>
+
+<p>2.5 - это ЕС. Проводимость раствора, выраженная в миллиСименсах. Часто в наших кондуктометрах (ЕС-метрах) может отображаться как 2500 (то есть, может показываться в МИКРОсименсах).</p>
+
+<p>В некоторых приборах (с маленьким количеством окошек-индикаторов) может использоваться “множитель”, например 10.</p>
+
+<p>То есть, вполне возможно ( и даже скорее всего), что Ваша “ручка”, показывающая “125” (или сколько там Вы упоминали, не помню точно) - в действительности пытается показать 1250 (микросименсов) или (что одно и тоже) 1,25 миллисименсов.</p>
+
+<p>То есть (возможно) ЕС Вашего раствора - 1,25.</p>
+
+<p>(надо посмотреть, не горит ли там где-нибудь в уголочке что-нибудь типа “ х10 “ )</p>
+
+<p>А как на самом деле, шут его знает … :-\</p>
+
+<p><strong>Borodach1</strong> 22-10-2013</p>
+
+<blockquote>
+  <p>на 225 светодиодов выглядит так:</p>
+
+  <p>15 параллельных цепочек по (1 резистор + 15 последовательно соединенных светодиодов)</p>
+
+  <p><img src="/imagehost/thumbs/img8984.jpg" alt="" /></p>
+</blockquote>
+
+<p>Значит получается в такой схеме стоит просто стабилизатор напряжения. Но нам нужно это напряжение ещё понизить и выпрямить. Ставить импульсник?</p>
+
+<p>А всё таки, никто не пробовал собрать гирлянду последовательных светодиодов чтоб сразу питать от 400 выпрямленных вольт.</p>
+
+<p>Есть конечно минус - это фаза.</p>
+
+<p>Но есть и плюсы. Не нужно городить мощный драйвер. При обрыве хотя бы одного гаснут все. Нестабильность 220 В компенсируется колличеством светодиодов(На каждом из них будут уже минимальные изменения напряжения).</p>
+
+<p><strong>Nikolai</strong> 22-10-2013</p>
+
+<blockquote>
+  <p>да, никто не хочет купить 4-ре такие лампы ?</p>
+</blockquote>
+
+<p>“Хитрые горшки” в обмен?</p>
+
+<p><strong>Vad</strong> 22-10-2013</p>
+
+<p>светодиод потребитель ТОКА… напряжение продукт побочный.. и зависит от сопротивления кристалла.. а сопротивление кристалла зависит от температуры кристалла… чем температура ВЫШЕ, тем сопротивление НИЖЕ …</p>
+
+<p>что такое изменение напряжения на 0,3 вольта?</p>
+
+<p>Допустим, было 5 вольт при токе 0.1А (например) значит сопротивление цепи 50ом (5/0.1=50)</p>
+
+<p>если будет 5.3В то ток потечет 106ма(5.3/50=0.106)</p>
+
+<p>всего 6 процентов..</p>
+
+<p>но эти 6% приведут к выделению тепла на 6% больше…</p>
+
+<p>разогрев кристалла - снизит его сопротивление…</p>
+
+<p>снижение сопротивления вызовет рост тока..</p>
+
+<p>процесс лавинообразный..</p>
+
+<p><strong>Borodach1</strong> 22-10-2013</p>
+
+<p>:) Я знаю, что светодиод это токовый прибор. :)</p>
+
+<p>Да и вообще во всех полупроводниках процессы при нагревании идут лавинообразно. Мы для этого и ставим их на радиаторы, да ещё и вентиляторы приделываем. ;)</p>
+
+<p>Мощные ветодиоды ведь сами греются будь здоров даже в номинальном режиме. Поэтому в любом случае с мощными светодиодами прийдётся придумывать охлаждеие. Только в случае со стабилизатором тока прийдётся придумывать ещё и его охлаждение. А самое главное сам стабилизатор. И вот тут начинаются проблемы.</p>
+
+<p>Со стабилизатором тока параллельно включать светодиоды нельзя. Выходит один из строя = выходят из строя все.</p>
+
+<p>Остаётся только последовательно. Но тут сразу начинает расти напряжение. А стабилизировать токи на больших напряжениях мы чего то не привыкли. Вот и тупик.</p>
+
+<p>Делать секционные стабилизаторы тока? В принципе можно. Например 10 секций по 10 светодиодов. Значит нам нужно чтоб каждый секционный стабилизатор смог ещё 30 вольт выдавать. Прекрасно. Напруга удобоваримая. И ток тоже номинальный для 3W светодиода всего 750 мА. Тоже не космос.</p>
+
+<p>И тут мы вспоминаем, что у нас секций то 10. Значит источник питания у нас должен быть мало того что 30 В, но ещё и 7,5 А держать легко без напряга. Теперь нужно ещё и придумывать источник питания. &gt;:D</p>
+
+<p>А потом ещё и придумать куда всунуть всё то что мы напридумывали. :D</p>
+
+<p>Вот потому сижу, чешу репу и ничего толкового придумать не могу кроме варианта с гирляндой на 150 светодиодов. <em>???</em> :'(</p>
+
+<p><strong>Vad</strong> 22-10-2013</p>
+
+<p>усложнение какое то.. <em>???</em> зачем разделять стабилизатор и источник питания?</p>
+
+<p>почему не привыкли табилизировать ток при большом напряжении?</p>
+
+<p>берите AT блок питания.. на TL494 и переделывайте его в источник тока - какие проблемы??</p>
+
+<p>у шима 2 канала ошибки… на один повесить напржение на второй ток..</p>
+
+<p>если без нагрузки стартанет или диоды оборвутся то уйдет в стабилизацию напряжения, а так будет работать обеспечива заданный ток..</p>
+
+<p>фантазию включаем! ;)</p>
+
+<p><strong>Borodach1</strong> 22-10-2013</p>
+
+<p>О! А как переделать АТ БП чтоб он 300 В выдавал? (Это для последовательного включения)</p>
+
+<p>Или наоборот, ставить по одному АТ БП на каждые 5 светодиодов? Тогда где взять 20 АТ БП и куда их потом засовывать? &gt;:(</p>
+
+<p>Чегойто не включается фантазия. :'( :D</p>
+
+<p><strong>Vad</strong> 22-10-2013</p>
+
+<p>транс вырвать, вырвать всю “кашу” вторички.. выпрямители.. дроссели..</p>
+
+<p>и намотрать вторичку заново (там чета около 15 витков ) присобачить новый выпрямитель на высоковольтных диодах.. чегонить типа HER4007 (извините.. <em>crazy</em>)</p>
+
+<p>ну и.. завести сигнал о токе через оптопару..</p>
+
+<p>посчитать новый делитель напряжения для TL431 или просто делитель и обычный стабилитрон применить.. просто чтоб в разнос не ушел при обрыве в нагрузке и все.</p>
+
+<p><strong>Borodach1</strong> 22-10-2013</p>
+
+<p>Мысль конечно интересная. Но…</p>
+
+<p>Что то ваш извините за выражение HER4007 гуглиться не хочет. <em>crazy</em> :D</p>
+
+<p>Или имеете в виду 1N4007 ? этот не потянет.</p>
+
+<p>Вопрос вот ещё в чём. Ну допустим мы найдём подходящий диод. А первичка блока питания потянет 300W в нагрузке ? Я уж и не помню каких они мощностей то и были. &gt;:( Чего то мне кажется они за 300 не выходили.</p>
+
+<p><strong>Vad</strong> 22-10-2013</p>
+
+<p>странно гуглится вас )) я сразу нагуглил..</p>
+
+<p>ну не гуглится 4007</p>
+
+<p>попробуйте погуглить с 1 ноликом )) вот вам например</p>
+
+<p><a href="http://pdf1.alldatasheet.com/datasheet-pdf/view/35566/RECTRON/HER406.html" target="_blank">http://pdf1.alldatasheet.com/datasheet-pdf/view/35566/RECTRON/HER406.html</a></p>
+
+<p>вобще активнее поиск пользуем.. активнее..</p>
+
+<p>АТ не хватает?(были 300 ватт) Думаем, смотрим гугл, берем АТХ</p>
+
+<p>щас придется еще и схему рисовать )))</p>
+
+<p>включаем фантазию! <em>8)</em></p>
+
+<p><strong>Borodach1</strong> 22-10-2013</p>
+
+<p>:)</p>
+
+<p>Не. Схему пока рисовать не надо. Ну может быть в будущем… ;) Если уж совсем заклинит.</p>
+
+<p>Башка уже почти не варила. У нас разница в поясах 4 часа.</p>
+
+<p>Надо на <del>трезвую</del> свежую голову помозговать. Хотя я уже чувствую какая у меня сегодня на работе будет голова. <em>crazy</em></p>
+
+<p>:D</p>
+
+<p>Всё. Пойду на работу. Помозгую. <em>Wall</em></p>
+
+<p><strong>Borodach1</strong> 24-10-2013</p>
+
+<p>Ай какую я штуку нагуглил! :o :D</p>
+
+<p>Есть прикольная мелкосхема IRS2980S</p>
+
+<p>И на её основе демонстрационная плата IRPLLED7 (AN-1171).</p>
+
+<p>Как раз то очём я мечтал. То что доктор прописал! :D</p>
+
+<p>На ибее платки не нашёл, но микросхемка в наличии есть. И за такое удовольствие довольно бюджетно.</p>
+
+<p><a href="https://t.me/ponics_ru_files/11029" target="_blank">IRS2980S.pdf</a></p>
+
+<p><a href="https://t.me/ponics_ru_files/11030" target="_blank">an-1171.pdf</a></p>
+
+<p><strong>Vad</strong> 24-10-2013</p>
+
+<p>Ну вооот! <em>8)</em></p>
+
+<p>а то все.. где брать.. да.. где брать… не привыкли ;D</p>
+
+<p><strong>Borodach1</strong> 24-10-2013</p>
+
+<p>На то форум и существует. Научить. Подсказать. Ткнуть. Свежим взгядом взглянуть. Подтолкнуть. ;)</p>
+
+<p>Спасибо за пинок. :D</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

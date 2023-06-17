@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Проращивание семя в субстрате до установки в систему. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Проращивание семя в субстрате до установки в систему.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Проращивание семя в субстрате до установки в систему.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Sar</strong> 20-02-2019</p>
+
+<p>Добрый день, правильно ли я понимаю что могу прорастить семя в пластиковом стаканчике насыпав туда перлит и вермикулит 50/50. И полив водой. Что за семя - перец или помидор к примеру. Что за стакан, прозрачный минимальный. Субстрат надо промывать и выводить кислотность? Может гдето почитать можно? Поиском по форуму поискал - не нашел.</p>
+
+<p><strong>Wildcat</strong> 20-02-2019</p>
+
+<p>Что за установка?</p>
+
+<p><strong>Wildcat</strong> 20-02-2019</p>
+
+<blockquote>
+  <p>перлит и вермикулит 50/50</p>
+</blockquote>
+
+<p>С большой вероятностью растение загнется еще до пересадки. Один их худших, если не самый худший, вариант субстрата.</p>
+
+<p><strong>ivalera</strong> 20-02-2019</p>
+
+<p>А если в трубочку из минваты? Сам стакан на поддон с тонким слоем воды, в стакане на дне пара дырочек?</p>
+
+<p><strong>Wildcat</strong> 20-02-2019</p>
+
+<p>А с какой целью эти танцы с бубнами?</p>
+
+<p><strong>Sar</strong> 20-02-2019</p>
+
+<blockquote>
+  <p>Что за установка?</p>
+</blockquote>
+
+<p>Я собираю DWC. Встал вопрос как подготовить растение к посадке в систему. Планировл прорастить в земле и пересадить. Подсказали что так себе идея. Почитал - действительно не айс. Пытался найти на форуме - как правильно. Вариант с минеральным цилиндром - не не подходит. Надо ченить простое и топорное. До областного центра два часа пути. И не факт что я там ченить найду (типа кубов гродана или николя). Подумал про перлит с вермикулитом. Системы подтапливания к примеру на нем делают. Но мне без системы, мне надо прорастить семя до размеров чтобы его в горшок засунуть можно было.</p>
+
+<p><strong>siv237</strong> 20-02-2019</p>
+
+<p>Почему сразу в горшке не проращивать? Или что там за горшок?</p>
+
+<p><strong>Likl</strong> 20-02-2019</p>
+
+<blockquote>
+  <p>правильно ли я понимаю что могу прорастить семя в пластиковом стаканчике насыпав туда перлит и вермикулит 50/50.</p>
+</blockquote>
+
+<p>Прорастить (и растить) можно, только пересадить без травмирования корней не получится ;D</p>
+
+<blockquote>
+  <p>А если в трубочку из минваты?</p>
+</blockquote>
+
+<p>Что это такое? Надеюсь не строительную вату использовать будете ? :o</p>
+
+<blockquote>
+  <p>Я собираю DWC.</p>
+</blockquote>
+
+<p>Совсем недавно как раз такое обсуждали, вроде про томаты :)</p>
+
+<blockquote>
+  <p>Sar</p>
+</blockquote>
+
+<blockquote>
+  <p>ivalera</p>
+</blockquote>
+
+<p>Один человек или два? Нам тяжело ведь <em>crazy</em></p>
+
+<p>Делайте фото, картинки, что собираетесь делать, мы постараемся помочь. <em>Wall</em></p>
+
+<p><strong>Davey</strong> 20-02-2019</p>
+
+<p>Я сразу проращивал последний раз в стакане, в котором и планировал дальше растить. И в емкости той же. В стакан насыпал наполовину керамзит, щепотку кокосового субстрата и внутрь семечку. Можно не кокосовый, а что-нибудь другое. Воды наливал выше запланированного уровня, чтобы сантиметра 2-3 не доставало до семечки. На дня три накрывал темной крышкой, потом тоже дня три стаканчиком пластиковым, чтобы влажность побольше была. Взошли быстро. Потом уровень опускали потихоньку и подсыпал керамзит. Перед использованием керамзит заранее замачивал в воде с ph 5. Точней, сначала его сильно промывал обычной водой.</p>
+
+<p><strong>Sar</strong> 20-02-2019</p>
+
+<blockquote>
+  <p>Почему сразу в горшке не проращивать? Или что там за горшок?</p>
+</blockquote>
+
+<p>я думаю как семечко очнется без влаги. На солько уровень пьднять к примеру в керамзитка чтобы не заглино. Подумал есть техника простая потому и создал тему.</p>
+
+<p><strong>Wildcat</strong> 20-02-2019</p>
+
+<blockquote>
+  <blockquote>
+    <p>Почему сразу в горшке не проращивать? Или что там за горшок?</p>
+  </blockquote>
+
+  <p>я думаю как семечко очнется без влаги. На солько уровень пьднять к примеру в керамзитка чтобы не заглино. Подумал есть техника простая потому и создал тему.</p>
+</blockquote>
+
+<p>Простой вариант:</p>
+
+<p>Насыпаете в стаканчик керамзит, примерно полстакана. Кладете половину (просто разделите целый на два кружка) ватного диска. На него - сухую семечку. Ставите стаканчик в установку с раствором. Уровень раствора не должен доходить до диска.</p>
+
+<p>Дальше аккуратно сромочите ватный диск раствором. Стаканчик сверху закройте пленкой.</p>
+
+<p>Через полдня-день повторите процедуру смачивания диска раствором. Повторять ежедневно. После появления семядольных листьев пленку нужно убрать и включить круглосуточную подсветку. Все.</p>
+
+<p>Опционально: в раствор добавить таблетку Глиокладина (препарат триходермы) и добавлять ее при каждой смене раствора. Можно капнуть пару капель Эпина.</p>
+
+<p><strong>siv237</strong> 21-02-2019</p>
+
+<p>Да просто дырявый стакан с керамзитом мелким, ставим в контейнер с водой. Семечку кладем чуть выше уровня. Томаты с мелкими семенами на ура всходят, про огурцы вообще молчу. Да что говорить, так даже мята со своими семенами - пылинками всходит но тут уже как повезет :)</p>
+
+<p>Семенам не нужен контакт с водой, им нужен влажный воздух. Просто вода может даже ухудшить всходимость.</p>
+
+<p>Вариант с щепоткой кокоса вообще отличный, главное его выше уровня посыпать и сыпать именно влажным и хорошенько промытым от соли. Испарения воды и капиллярный эффект сделают свое дело и мелкие семена не провалятся. Для крупных, кокос не нужен.</p>
+
+<p>Вообще меньше заморочек с проращиванием. Хорошие сильные растения порастут и так, а слабые может и не стоит принуждать :) А вот в процессе пересадки нарушить развитие можно легко и не важно сильное или слабое. Покалечить в раннем возрасте можно любое. Меньше трогайте как говориться, стабильность условий - залог успеха.</p>
+
+<p><strong>Sar</strong> 21-02-2019</p>
+
+<p>:) Всё понял, всем спасибо. <em>Bravo</em></p>
+
+<p><strong>Wildcat</strong> 21-02-2019</p>
+
+<blockquote>
+  <p>Да просто дырявый стакан с керамзитом мелким, ставим в контейнер с водой. Семечку кладем чуть выше уровня. Томаты с мелкими семенами на ура всходят, про огурцы вообще молчу. Да что говорить, так даже мята со своими семенами - пылинками всходит но тут уже как повезет</p>
+
+  <p>Семенам не нужен контакт с водой, им нужен влажный воздух. Просто вода может даже ухудшить всходимость.</p>
+</blockquote>
+
+<p>Пробовал этот способ с салатами. На ватном диске всходит через сутки, по вашему методу - через трое-четверо и развиваются сильно медленнее. Но это только салаты, остальное не пробовал.</p>
+
+<p><strong>VVS_</strong> 21-02-2019</p>
+
+<p>Проращивал клубнику двумя способами.</p>
+
+<ol>
+  <li>
+    <p>Влажный ватный диск в закрытой емкости для бисера, семечка просто ложится на вату и ничем не укрывается сверху. Вместе с ватой переезжает в установку.</p>
+  </li>
+  <li>
+    <p>Семена, уложенные между двумя смоченными салфетками, которые размазаны по стакану, на дне которого есть немного воды (3-4 см). Стакан не был закрыт от атмосферы и пополнялся водой. Пересаживать вместе с остатком салфетки.</p>
+  </li>
+</ol>
+
+<p>Одинаково хорошо работало, но в первом способе следить за водой не надо было.</p>
+
+<p><strong>siv237</strong> 21-02-2019</p>
+
+<p>На всхожесть больше влияет температура и фаза сна семени, а для мелких семян еще и свет.</p>
+
+<p><strong>VVS_</strong> 21-02-2019</p>
+
+<p>Да, все конструкции были на свету.</p>
+
+<p><strong>Rus161</strong> 22-02-2019</p>
+
+<blockquote>
+  <p>Меньше трогайте как говориться, стабильность условий - залог успеха.</p>
+</blockquote>
+
+<p>У меня подготовка семян не много сложнее. Семена засыпаю в ковшик со слабыми раствором марганца, чуть розовым, с водой комнатной температуры, под аэрацией на пол часа. Затем, воду сливаю,заливаю новую с перекисью водорода , ещё пол часа. Перекиси надо пару капель на литр воды. Аэрация постоянная. Опять всё сливаю. В одном литре воды растворяю пару ложек столовых сока алоэ, из листьев цветка, и ложку столовую мёда. Оставляю на ночь, с постоянной аэрацией. Утром промываю. Беру кухонные салфетки, не губки, а есть салфетки для мытья посуды, продаются по три штуки в упаковке, хорошо смачиваю, отжимаю, и раскладываю семена. На одну раскладываю, другой накрываю, нижнюю салфетку на тарелку, верхнюю тарелкой накрываю. Всё в целлофан, и возле батареи… Всё, что может взойти- взойдет. Потом прямо на керамзит, и керамзитом присыпаю слегка. Всё, сразу на ДВС. Пару сантиметров до воды, всё влажное, и прорастает!!! <em>Dance</em></p>
+
+<p><strong>Rus161</strong> 22-02-2019</p>
+
+<p>Уже убедился, всё сразу в установку. Из грунта, из бумажных салфеток, из чего угодно,- будет головняк. А, так - сразу, все дома живут!!! :D</p>
+
+<p><strong>Rus161</strong> 22-02-2019</p>
+
+<blockquote>
+  <p>Планировл прорастить в земле и пересадить. Подсказали что так себе идея. Почитал - действительно не айс.</p>
+</blockquote>
+
+<p>Ощпе,- головня́к, не вздумай!!! Корни о́тмыть не возможно!!!</p>
+
+<p><strong>Wildcat</strong> 23-02-2019</p>
+
+<blockquote>
+  <blockquote>
+    <p>Меньше трогайте как говориться, стабильность условий - залог успеха.</p>
+  </blockquote>
+
+  <p>У меня подготовка семян не много сложнее. Семена засыпаю в ковшик со слабыми раствором марганца, чуть розовым, с водой комнатной температуры, под аэрацией на пол часа. Затем, воду сливаю,заливаю новую с перекисью водорода , ещё пол часа. Перекиси надо пару капель на литр воды. Аэрация постоянная. Опять всё сливаю. В одном литре воды растворяю пару ложек столовых сока алоэ, из листьев цветка, и ложку столовую мёда. Оставляю на ночь, с постоянной аэрацией. Утром промываю. Беру кухонные салфетки, не губки, а есть салфетки для мытья посуды, продаются по три штуки в упаковке, хорошо смачиваю, отжимаю, и раскладываю семена. На одну раскладываю, другой накрываю, нижнюю салфетку на тарелку, верхнюю тарелкой накрываю. Всё в целлофан, и возле батареи…</p>
+</blockquote>
+
+<p>Какого цвета должна быть одежда и какие молитвы в процессе нужно читать? Как с фазами Луны нужно это все соотносить? Мед гречишный пойдет?</p>
+
+<p>Тема не раскрыта… :D</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

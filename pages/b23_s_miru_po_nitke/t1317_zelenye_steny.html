@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Зеленые стены | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Зеленые стены">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Зеленые стены</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Coccinella</strong> 12-01-2012</p>
+
+<p>Примерно в то же время, когда Садовник познакомил нас с зелеными стенами буржуйского дизайнера (совершенно потрясающими!), в одном из наших журналов мне попалась заметка о похожих исканиях владельцев одного нашего ресторанчика. А сегодня я пробегала мимо него и не удержалась, зашла посмотреть зеленую стену живьем. Люди (владельцы заведения) совершенно потрясающие. Захотели чего-то особого и сами своими ручками сделали замечательную … вещь?… конструкцию?… словом, нечто.</p>
+
+<p>Я общалась с молодым человеком за стойкой, он был очень рад проявленному интересу, но мало, что знал конкретно о конструкции :) Тем не менее, что то рассказал. Вся площадь стены около 10 м2, она покрытя чем-то вроде войлока (подозреваю, что капиллярные маты). Между несущей стеной и декоративной оставлена некая щель (размеры неизвестны) для воздухообмена (не то стена сгниет). Из чего-то вроде синтепона сшили карманцы, наполнили их торфсмесью и посадили эпифиты. Резервуары для воды стоят внизу в деревянных ящиках, объем воды в них парень не знал, но сказал, что пополняют раз в 2-3 недели.</p>
+
+<p>Вода из резервуара насосом “ Ручеек” подается по шлангу наверх, а там разбрызгивается на растения из форсунок. Что-то типа естественного дождя в тропическом лесу. Что-то растения перехватывают, кому-то не хватает, избытки стекают по стене назад в резервуар. Перед насосом стоит фильтр, так как в резервуаре постепено накапливается всякий мусор. Досветка - две, всеми здесь любимые, 400 Вт натриевые лампы с параболическим отражателем (эта штука привлекла мое внимание в первую очередь! :))</p>
+
+<p>Лампы горят по 10-12 часов, точно парень не мог сказать. Полив идет с утра до открытия заведения и ввечеру после закрытия, насос шумный. Поливают по 12 минут. Подкормку дают по внешнему виду растений каким-нибудь жидким комплексным, у нас их много, а кальция, видимо, хватает из воды. Выглядят растения, как в природе. То есть не идеально, но естественно. Где-то дефицит кальция, где-то железа, кто-то под лампами подгорел, кому-то водицы не хватило (этих бедняг поливают вручную). Но антуриумы цветут! И вообще все это сооружение живет (подчеркиваю, ЖИВЕТ!) уже 9 месяцев. И в целом выглядит потрясающе!</p>
+
+<p>В журнале писали, что дизайнерские фирмы у нас за подобные пректы требуют порядка 600 евро/м2 (!). Хозяевам кафе это обошлось намного дешевле, главные затраты были на приобретение растений. Они сначала на эти 10 м2 посадили 200 растений, в живых осталась половина, но прогалин не видно.</p>
+
+<p>Интересно, что автор затеи по образованию IT-ишник :) (Предложить, что ли свои услуги местным IT курсам по обучению гидропонике? :), хотя бы по введению в предмет? :))</p>
+
+<p>Ну и картинки</p>
+
+<p><a href="https://t.me/ponics_ru_files/7086" target="_blank"><img src="/attachimages/9867_Рисунок1.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7087" target="_blank"><img src="/attachimages/9869_Рисунок2.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7088" target="_blank"><img src="/attachimages/9871_Рисунок3.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7089" target="_blank"><img src="/attachimages/9873_Рисунок4.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7090" target="_blank"><img src="/attachimages/9875_Рисунок5.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7091" target="_blank"><img src="/attachimages/9877_Рисунок6.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7092" target="_blank"><img src="/attachimages/9879_Рисунок7.jpg" alt="" /></a></p>
+
+<p><strong>Oxy</strong> 12-01-2012</p>
+
+<p>От блин, и Вы туда же :) Меня шеф прессует точно такой же фигней уже которую неделю, чтоб я изучал технологию. Я отмазываюсь как могу, потому что не актуальная штука. Но если актуальная хоть немного, то давайте прямо в этой ветке собирать всю попадающуюся инфу по технологиям.</p>
+
+<p><a href="https://t.me/ponics_ru_files/7093" target="_blank"><img src="/imagehost/thumbs/1omo.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7094" target="_blank"><img src="/imagehost/thumbs/5ksk.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7095" target="_blank"><img src="/imagehost/thumbs/6qeq.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7096" target="_blank"><img src="/imagehost/thumbs/058.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7097" target="_blank"><img src="/imagehost/thumbs/077.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7098" target="_blank"><img src="/imagehost/thumbs/greentablefreshome02.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7099" target="_blank"><img src="/imagehost/thumbs/lexuswallpreview.jpg" alt="" /></a></p>
+
+<p>Где то были еще фотки китайских пластиковых гидропонных систем для зеленых стен и потолков. Такие себе многоуровневые вертикалки со слегка наклонными горшочками. Ну типа соты. Если найду - выложу.</p>
+
+<p><strong>Coccinella</strong> 13-01-2012</p>
+
+<p>А представляете себе стрижку газона на столе? :) Или на вертикальной стене? Это только китайцы способны!</p>
+
+<p>Алексей Куренин еще когда кому-то предлагал пирамиды использовать для офисного озеленения.</p>
+
+<p><strong>valery</strong> 13-01-2012</p>
+
+<p>Голландцы тоже в похожем направлении движутся.</p>
+
+<p>Голландские исследователи считают (то ли сами по себе “считают”, то ли в “русле” всех прочих исследователей и исследований), что зеленый цвет - укрепляет здоровье,</p>
+
+<p>положительно действует на психику, позволяет легче переносить стрессы, справляться с депрессиями и прочее в этом духе.</p>
+
+<p>Словом, продвигают вертикальные декоративные стенки и зеленые зоны не только на улицы и фасады зданий, но и в помещения.</p>
+
+<p>Детские сады, школы, университеты, офисы компаний и учреждений.</p>
+
+<p>Небольшая заметка о таком “продвижении” в дома престарелых (или может у них по другому называются такие заведения, не знаю) …</p>
+
+<p>Хм … Где-то совсем недавно была ссылка … потерялась. Ну ладно.</p>
+
+<p><strong>SergF</strong> 13-01-2012</p>
+
+<p>Просто очередная “модная” фишка… подобного результата можно достичь пустив по стене лиану, которая будет сидеть в обычном горшке, “разбавить” немного другими растениями и все…</p>
+
+<p>десятки лет в Европе фасады заполняют плющем и пр. лианами и выглядит это замечательно, зачем на фасад тулить траву!? Вспоминается ослик из мультфильма, который хотел стать бабочкой и делал все наоборот… но это ИМХО…</p>
+
+<p>вот здесь заменить лиану травой допустим, что изменится? дикая стоимость + сложности ухода + еще много чего… интересно а как выглядят эти стены с травой зимой?! :-\</p>
+
+<p><a href="https://t.me/ponics_ru_files/7100" target="_blank"><img src="/attachimages/9881_green-wal.jpg" alt="" /></a></p>
+
+<p><strong>Садовник</strong> 13-01-2012</p>
+
+<blockquote>
+  <p>вот здесь заменить лиану травой допустим, что изменится? дикая стоимость + сложности ухода + еще много чего… интересно а как выглядят эти стены с травой зимой?! :-\</p>
+</blockquote>
+
+<p>“Раньше были времена,</p>
+
+<p>А сейчас - моменты…” (с)</p>
+
+<p>Вся разница в скорости реализации и возможности быстрой трансформации в новый ресунок.</p>
+
+<p>Плющ заплетает такую стену десятилетиями, а собрать рисунок из готовых панелей можно за ночь.</p>
+
+<p>Сейчас и газон для озеленения раскатывают готовыми рулонами.</p>
+
+<p>Вот, General Electric изобразил картину Винсента Ван Гога «Пшеничное поле с кипарисами», на стене Лондонской Национальной галереи, где сберегается и оригинальное полотно.</p>
+
+<p><a href="https://t.me/ponics_ru_files/7101" target="_blank"><img src="/imagehost/thumbs/hayalevicomwallpapers1280x960298.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7102" target="_blank"><img src="/imagehost/thumbs/livingwallvangoghpaintingans.jpg" alt="" /></a></p>
+
+<p>Вот как она строилась:</p>
+
+<p><a href="https://t.me/ponics_ru_files/7103" target="_blank"><img src="/imagehost/thumbs/kartinavangogaizrastenij3klk.jpg" alt="" /></a></p>
+
+<p>Использовалось более 8000 растений 26 разновидностей.</p>
+
+<p><strong>Coccinella</strong> 13-01-2012</p>
+
+<p>А как долго этот шедевр просуществовал?</p>
+
+<p><strong>SergF</strong> 13-01-2012</p>
+
+<p>Как разовая акция, рекламная или еще какая, может быть… хотя реализация так себе, я никогда бы не увидел без подсказки там «Пшеничное поле с кипарисами» :)</p>
+
+<p>но городить такую конструкцию!!! наши девченки из зеленхоза на клумбах делают более живописные работы :)</p>
+
+<p>это все из разряда “как бы еще выпендриццо чтоб такого раньше ни кто не делал” как в свежем стишке “Путин и мужик”</p>
+
+<p>…</p>
+
+<p>Просто, нынче за обедом,</p>
+
+<p>Доедая эскалоп,</p>
+
+<p>Мы подумали с Медведом,</p>
+
+<p>Замутить ещё бы чтоб?</p>
+
+<p>Всё мы делали, чего там,</p>
+
+<p>Забавляли всю страну:</p>
+
+<p>Управляли самолётом,</p>
+
+<p>Погружались в глубину,</p>
+
+<p>Нежной дружбы не таили,</p>
+
+<p>Пели рок, коров доили,</p>
+
+<p>Твиттер, свитер, Макинтош,</p>
+
+<p>Лыжи, танцы – всё, что хошь.</p>
+
+<p>И при звоне чашек чайных</p>
+
+<p>Был ответ произнесён:</p>
+
+<p>Мы ни разу на комбайнах</p>
+
+<p>Не играли в бадминтон!</p>
+
+<p>Ни в России, ни в Союзе</p>
+
+<p>Так не делали, скажи,</p>
+
+<p>И при этом – в кукурузе!</p>
+
+<p>Ведь смешней же, чем во ржи?»</p>
+
+<p>Совершенно оболванен</p>
+
+<p>от таких серьёзных тем,</p>
+
+<p>Тихо ахнул поселянин:</p>
+
+<p>«Вот же круто!.. А зачем?»</p>
+
+<p><strong>cpf</strong> 13-01-2012</p>
+
+<blockquote>
+  <p>Алексей Куренин еще когда кому-то предлагал пирамиды использовать для офисного озеленения.</p>
+</blockquote>
+
+<p>Это - к Египтянам :D (есть на чем технологию отработать, как раз -пустыня, пирамид - много, воды мало… гидропоника только и подходит,как в садах Семирамиды)</p>
+
+<p><strong>Oxy</strong> 13-01-2012</p>
+
+<p><a href="http://baijnathplastics.trustpass.alibaba.com/product/116896278-102955952/vertical_gardener_wall.html?edm_src=sys&amp;edm_type=fdbk&amp;edm_grp=88&amp;edm_cta=read_msg&amp;edm_time=realtime&amp;edm_ver=e" target="_blank">Ссылка для ознакомления</a>. Пишут, что легко монтируется и обслуживается. Насколько я понимаю, все равно все сводиться к мешочкам из агроволокна вставленным в ячейки на пластиковой стене. Но все равно очень смущает меня эта история, вот например как они косят ее?</p>
+
+<p>По поводу горшка внизу и лианы заплетенной по стене: Это наилучший вариант. Если плющ не очень, то есть например быстро растущие культуры - горох, огурец, томаты.</p>
+
+<p><strong>SergF</strong> 13-01-2012</p>
+
+<p>Эти вещи разовые, максимум сезонные, и не для всех районов, у нас например вся эта красота возможна в мае и сентябре-октябре, летом высохнет как ни поливай, что с этой стеной делать зимой ваще непонятно… а вечнозеленая лиана припорошеная зимой снежком, когда вокруг все серое и безлиственное <em>8)</em> часто в лесу любуюсь, снежок лежит а свол дерева весь зеленый, да еще и ягодки висят…:)</p>
+
+<p><strong>Oxy</strong> 13-01-2012</p>
+
+<p>Ну :) возможно, в ваших краях актуально изучать художественную резьбу бензопилой по льду :) но тем не менее есть в мире такая тема как зеленые стены, тема эта развивается и она гидропонная. Поэтому изучать этот вопрос нужно. Ты же видишь, кому мох на деревьях зимой, а кто-то платит по 600 евреев за метр квадратный. Так зачем тогда все эти луки на воде? На фоне таких финансовых раскладов и зеленые стены сразу смысл приобретают:)</p>
+
+<p>Плюс нужно мыслить шире, а не косно :) видно же на фотках, что применяют и внутри помещений. И в офисах, и в барах.</p>
+
+<p><strong>Coccinella</strong> 13-01-2012</p>
+
+<p>Вот и мне мнится, что плющ по стене и проще, и дешевле, но если таким производителям, как мои друзья или Садовник , или Оху богатый дядя готов платить монету за выращивание модулей, из которых потом хоть какие пейзажи сотворять можно… Глупо же упускать такую возможность! Побольше бы таких богатых дядей, а модули вырастим…</p>
+
+<p><strong>Садовник</strong> 13-01-2012</p>
+
+<blockquote>
+  <p>А как долго этот шедевр просуществовал?</p>
+</blockquote>
+
+<p>Подробностей не знаю.</p>
+
+<p>Знаю, что в европе сейчас принято использовать цветочные растения на пике декоративности, а потом заменять на другие.</p>
+
+<p>Не гуманно конечно по отношению к растениям, но очень неплохо для индустрии производства посадочного материала. :)</p>
+
+<p>А плющ не дешевле, принимая - что время - деньги.</p>
+
+<p>Плющ во всю стену- “изысканное ресторанное блюдо”. Тогда как гидропонная стена из травы - “фаст-фуд”. :)</p>
+
+<p><strong>Coccinella</strong> 13-01-2012</p>
+
+<p>Плющ во всю стену вырастает довольно быстро и создает кучу проблем. У меня на даче одна стена домика занята (полностью) виноградом, весь домик давно пора как следует покрасить, но этот виноград, знаете ли, жалко. Он урожай дает! :)</p>
+
+<p>Но это еще мелочи, плющ и виноград вообще-то портят гидроизоляцию стен (особенно, если ее изначально не было :)).</p>
+
+<p>В этом смысле готовые растительные модули намного выгоднее. Пусть они служат 3-5 месяцев (в зависимости от климата), да негуманно, но для производителей выгодно. И эстетически приятно! (Вы бы видели мои комнатные растения сегодня, при недостатке света! Одни эмоции, эстетически - тихий ужас! Придет лето - оклемаются:))</p>
+
+<p><strong>Садовник</strong> 13-01-2012</p>
+
+<p>Я вот раньше думал: “у нас такое не пойдет, слишком жарко, и в земле всё выгорает, а тут сварится нафик в гидропонном растворе…”</p>
+
+<p>Но смотрите, солнце летом в зените, на вертикальную плоскость падает под меньшим углом, чем на горизонтальную, плюс испарение капиллярного мата, и располагать на восточной стене, чтобы после полудня не жарило, можно в систему и чиллер для охлаждения раствора вставить,…</p>
+
+<p><strong>Oxy</strong> 14-01-2012</p>
+
+<p>Вот еще один интересный обзорчик, думаю не стоит сюда копипастить фотки, <a href="http://www.etoday.ru/2012/01/vertikal-nye-sady-v-parizhe.php" target="_blank">http://www.etoday.ru/2012/01/vertikal-nye-sady-v-parizhe.php</a></p>
+
+<p><strong>ALB</strong> 14-01-2012</p>
+
+<p>на работе восковой плющ подвязывали к потолку (потолочные панели с обрешёткой) - вымохал длиной более пяти метров - смотрелось давольно интересно</p>
+
+<p><strong>Coccinella</strong> 14-01-2012</p>
+
+<p>Вот еще на видео наткнулась</p>
+
+<p><a href="http://www.youtube.com/watch?v=XmdBFanFzbc#ws" target="_blank">http://www.youtube.com/watch?v=XmdBFanFzbc#ws</a></p>
+
+<p>здесь не стены, а крыши, но тоже неплохо :). Крыши, конечно, не так заметны, но в эксплуатации проще, чем зеленые стены.</p>
+
+<p><strong>ALB</strong> 14-01-2012</p>
+
+<p>просто страна хоббитов какая то :) но симптишно</p>
+
+<p><strong>Oxy</strong> 15-01-2012</p>
+
+<p><a href="https://t.me/ponics_ru_files/7104" target="_blank"><img src="/imagehost/thumbs/132635932710.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/7105" target="_blank"><img src="/imagehost/thumbs/132635932711.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/7106" target="_blank"><img src="/imagehost/thumbs/13263593288.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/7107" target="_blank"><img src="/imagehost/thumbs/13263593707.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/7108" target="_blank"><img src="/imagehost/thumbs/13263593716.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/7109" target="_blank"><img src="/imagehost/thumbs/13263593721.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/7110" target="_blank"><img src="/imagehost/thumbs/13263593742.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/7111" target="_blank"><img src="/imagehost/thumbs/132635937512.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/7112" target="_blank"><img src="/imagehost/thumbs/13263593764.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/7113" target="_blank"><img src="/imagehost/thumbs/132635938413.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/7114" target="_blank"><img src="/imagehost/thumbs/13263593985.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/7115" target="_blank"><img src="/imagehost/thumbs/13263594049.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/7116" target="_blank"><img src="/imagehost/thumbs/13263594153.jpg" alt="" /></a></p>
+
+<p><strong>Никита</strong> 08-06-2012</p>
+
+<p>Хочу сделать зеленую стену, подскажите что нибудь !</p>
+
+<p>:(</p>
+
+<p>Знаю сайт O2wall.ru, что нибудь знаете про него ?</p>
+
+<p><strong>Oxy</strong> 08-06-2012</p>
+
+<p>Так а что тебе подсказать? Хотеть что - либо, легче всего на природе возле водоема. Или в приятной обстановке под спокойную музыку. Также можно хотеть во время приема вкусной пищи или просмотра интересного фильма. Правила формулирования и визуализации желаний нужно смотреть на форумах поиска духовных путей. Например, желание должно соответствовать формату SMART, то есть быть измеримым, актуальным, конкретным, труднодостижимым и определенным во времени. Хотеть сделать что-либо, так же просто хотеть как и хотеть вообще. Так что проблем не вижу :) Если че еще подсказать - спрашивай :)</p>
+
+<p><strong>artmaximus</strong> 19-06-2012</p>
+
+<p>клёвая тема <em>8)</em></p>
+
+<p>как говорится…3d во флористике, да если готовы платить ( учитывая, что натуральная зелень, а не пластмасса)</p>
+
+<p>пусть даже не 600 евро, а деревянные, да поменьше…всё равно есть “поле деятельности”.</p>
+
+<p>У нас в городе я чего то и не видал такого :D <em>8)</em> кругом “папье маше” :D да фрукты пластиковые :D</p>
+
+<p>давайте, давайте… :D кто чего знает и видел :D <em>8)</em></p>
+
+<p><strong>Oxy</strong> 20-06-2012</p>
+
+<p>Еще немного.</p>
+
+<p><a href="https://t.me/ponics_ru_files/7117" target="_blank"><img src="/imagehost/thumbs/wateringsystemjkj.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7118" target="_blank"><img src="/imagehost/thumbs/watering1fkf.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7119" target="_blank"><img src="/imagehost/thumbs/watering2vdv.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7120" target="_blank">Wallgarden-Tech-Specs.pdf</a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7121" target="_blank">X3319(Green Wall-2) (1).ppt</a></p>
+
+<p><strong>maikl25</strong> 20-06-2012</p>
+
+<p>Ш И К А Р Н А Я В Е Щ Ь!!!!!!!!!!!!!!!</p>
+
+<p>С У П Е Р Р Р Р Р Р Р Р Р Р !!!!!!!!!!!!!!!</p>
+
+<p>Точно такую сделаю (может правда не себе <em>Bos</em>)…</p>
+
+<p><strong>artmaximus</strong> 23-06-2012</p>
+
+<p><em>8)</em></p>
+
+<p><strong>maikl25</strong> 24-06-2012</p>
+
+<p>вчера показал фото богатым мира сего, уже есть два заказа на следующее лето, так что зимой буду ломать голову… <em>Wall</em></p>
+
+<p><strong>artmaximus</strong> 24-06-2012</p>
+
+<blockquote>
+  <p>Вот еще один интересный обзорчик, думаю не стоит сюда копипастить фотки, <a href="http://www.etoday.ru/2012/01/vertikal-nye-sady-v-parizhe.php" target="_blank">http://www.etoday.ru/2012/01/vertikal-nye-sady-v-parizhe.php</a></p>
+</blockquote>
+
+<p>…присядешь так на скамеечку, а там какая -нибудь ящерка к тебе приползёт :D</p>
+
+<p><strong>artmaximus</strong> 24-06-2012</p>
+
+<blockquote>
+  <p>вчера показал фото богатым мира сего, уже есть два заказа на следующее лето, так что зимой буду ломать голову… <em>Wall</em></p>
+</blockquote>
+
+<p>во <em>8)</em> :D :D :D</p>
+
+<p>пока мы тут разглагольствуем…</p>
+
+<p>…некоторые…делом занимаются :D</p>
+
+<p>а где хотят? интерьер или экстерьер?</p>
+
+<p><strong>maikl25</strong> 25-06-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>вчера показал фото богатым мира сего, уже есть два заказа на следующее лето, так что зимой буду ломать голову… <em>Wall</em></p>
+  </blockquote>
+
+  <p>во <em>8)</em> :D :D :D</p>
+
+  <p>пока мы тут разглагольствуем…</p>
+
+  <p>…некоторые…делом занимаются :D</p>
+
+  <p>а где хотят? интерьер или экстерьер?</p>
+</blockquote>
+
+<p>Кафе банкетный зал ниши в стенах и частный дом гостиная высокая с переходом на второй этаж примерная стоимость около 100 штук наших родных…</p>
+
+<p><strong>Rossich</strong> 25-06-2012</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>вчера показал фото богатым мира сего, уже есть два заказа на следующее лето, так что зимой буду ломать голову… <em>Wall</em></p>
+    </blockquote>
+
+    <p>во <em>8)</em> :D :D :D</p>
+
+    <p>пока мы тут разглагольствуем…</p>
+
+    <p>…некоторые…делом занимаются :D</p>
+
+    <p>а где хотят? интерьер или экстерьер?</p>
+  </blockquote>
+
+  <p>Кафе банкетный зал ниши в стенах и частный дом гостиная высокая с переходом на второй этаж примерная стоимость около 100 штук наших родных…</p>
+</blockquote>
+
+<p>Я делаю за 300 уе 1м2</p>
+
+<p><strong>maikl25</strong> 25-06-2012</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <p>вчера показал фото богатым мира сего, уже есть два заказа на следующее лето, так что зимой буду ломать голову… <em>Wall</em></p>
+      </blockquote>
+
+      <p>во <em>8)</em> :D :D :D</p>
+
+      <p>пока мы тут разглагольствуем…</p>
+
+      <p>…некоторые…делом занимаются :D</p>
+
+      <p>а где хотят? интерьер или экстерьер?</p>
+    </blockquote>
+
+    <p>Кафе банкетный зал ниши в стенах и частный дом гостиная высокая с переходом на второй этаж примерная стоимость около 100 штук наших родных…</p>
+  </blockquote>
+
+  <p>Я делаю за 300 уе 1м2</p>
+</blockquote>
+
+<p>это затраты на материал, оплата договорная, меня больше интересует данный проект как рекламный ход, там будет мой лейбл</p>
+
+<p><strong>artmaximus</strong> 29-06-2012</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <p>вчера показал фото богатым мира сего, уже есть два заказа на следующее лето, так что зимой буду ломать голову… <em>Wall</em></p>
+        </blockquote>
+
+        <p>во <em>8)</em> :D :D :D</p>
+
+        <p>пока мы тут разглагольствуем…</p>
+
+        <p>…некоторые…делом занимаются :D</p>
+
+        <p>а где хотят? интерьер или экстерьер?</p>
+      </blockquote>
+
+      <p>Кафе банкетный зал ниши в стенах и частный дом гостиная высокая с переходом на второй этаж примерная стоимость около 100 штук наших родных…</p>
+    </blockquote>
+
+    <p>Я делаю за 300 уе 1м2</p>
+  </blockquote>
+
+  <p>это затраты на материал, оплата договорная, меня больше интересует данный проект как рекламный ход, там будет мой лейбл</p>
+</blockquote>
+
+<p>правильно, правильно <em>8)</em>…сначала опыт и “образец” <em>8)</em> а потом всё пойдёт… <em>8)</em></p>
+
+<p>потом и цены можно “регулировать” вверх…или так оставить :)</p>
+
+<p><strong>maikl25</strong> 02-07-2012</p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <p>вчера показал фото богатым мира сего, уже есть два заказа на следующее лето, так что зимой буду ломать голову… <em>Wall</em></p>
+          </blockquote>
+
+          <p>во <em>8)</em> :D :D :D</p>
+
+          <p>пока мы тут разглагольствуем…</p>
+
+          <p>…некоторые…делом занимаются :D</p>
+
+          <p>а где хотят? интерьер или экстерьер?</p>
+        </blockquote>
+
+        <p>Кафе банкетный зал ниши в стенах и частный дом гостиная высокая с переходом на второй этаж примерная стоимость около 100 штук наших родных…</p>
+      </blockquote>
+
+      <p>Я делаю за 300 уе 1м2</p>
+    </blockquote>
+
+    <p>это затраты на материал, оплата договорная, меня больше интересует данный проект как рекламный ход, там будет мой лейбл</p>
+  </blockquote>
+
+  <p>правильно, правильно <em>8)</em>…сначала опыт и “образец” <em>8)</em> а потом всё пойдёт… <em>8)</em></p>
+
+  <p>потом и цены можно “регулировать” вверх…или так оставить :)</p>
+</blockquote>
+
+<p>я тоже так думаю… :)</p>
+
+<p><strong>artmaximus</strong> 07-11-2012</p>
+
+<p>ну как дела на фронте вертикальных полей?)))</p>
+
+<p><strong>acg</strong> 10-11-2012</p>
+
+<p>Не знаю на сколько “жизнеспособно” и не вертикальные сады, конечно, но… декор</p>
+
+<p><a href="https://t.me/ponics_ru_files/7122" target="_blank"><img src="/attachimages/11857_1.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7123" target="_blank"><img src="/attachimages/11859_2.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7124" target="_blank"><img src="/attachimages/11861_3.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7125" target="_blank"><img src="/attachimages/11863_4.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7126" target="_blank"><img src="/attachimages/11865_5.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7127" target="_blank"><img src="/attachimages/11867_6.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7128" target="_blank"><img src="/attachimages/11869_7.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7129" target="_blank"><img src="/attachimages/11871_8.jpg" alt="" /></a></p>
+
+<p><strong>acg</strong> 10-11-2012</p>
+
+<p>То же при помощи метода описанного выше</p>
+
+<p><a href="https://t.me/ponics_ru_files/7130" target="_blank"><img src="/attachimages/11873_10.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 10-11-2012</p>
+
+<p>Интересно, как долго это держится? Кефир же однажды кончится… :'(</p>
+
+<p><strong>orgail</strong> 10-11-2012</p>
+
+<p>да, хороший “рецептик” :)</p>
+
+<p>а может потом еще кефиром можно подкормить? :)</p>
+
+<p><strong>artmaximus</strong> 10-11-2012</p>
+
+<p>…интересно <em>8)</em></p>
+
+<p>…скорее не кефир , а шаловливые (или любопытные) пальчики…расковыряют</p>
+
+<p>а идея интересная <em>8)</em></p>
+
+<p>а мох будет расти на других сторонах (кроме южной…. с ней всё понятно) ?</p>
+
+<p><strong>artmaximus</strong> 10-11-2012</p>
+
+<p>надо будет весной попробовать на доме цифру сделать мховую :D<em>8)</em></p>
+
+<p><strong>Coccinella</strong> 10-11-2012</p>
+
+<p>Про мох не знаю, но на днях в Брюсселе пробегала мимо вот такого дома</p>
+
+<p><a href="https://t.me/ponics_ru_files/7131" target="_blank"><img src="/attachimages/11876_P1080969.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7132" target="_blank"><img src="/attachimages/11878_P1080970.jpg" alt="" /></a></p>
+
+<p><strong>artmaximus</strong> 10-11-2012</p>
+
+<blockquote>
+  <p>Про мох не знаю, но на днях в Брюсселе пробегала мимо вот такого дома</p>
+</blockquote>
+
+<p>приятно посмотреть :)</p>
+
+<p>в Венло на Флориаде голландцы извращались (в хорошем смысле слова) по разному <em>8)</em></p>
+
+<p>там и диваны и столы были зелёные :D и ещё куча всего <em>8)</em></p>
+
+<p>в общем впечатлили… :D</p>
+
+<p><strong>acg</strong> 10-11-2012</p>
+
+<p>Да…здорово, ничего не скажешь.</p>
+
+<p>И ведь, наверняка, есть человек который следит за этим, ухаживает.</p>
+
+<p>У нас просто помыть (не то что уж украшать) стёкла в подобных зданиях - уже праздник для глаз.</p>
+
+<p>А с мхом тоже хочется попробовать. На даче слово какое написать чтоли :-\ как на картинке, только красивое какое-нибудь…</p>
+
+<p><strong>иванстародубцев</strong> 30-12-2012</p>
+
+<p>Ну а можно вот так. Дешево и сердито.</p>
+
+<p><a href="https://t.me/ponics_ru_files/7133" target="_blank"><img src="/attachimages/12119_Фото0156.jpg" alt="" /></a></p>
+
+<p><strong>Oxy</strong> 21-02-2013</p>
+
+<p>Э-ээ… Как-то по мне совсем дешево…</p>
+
+<p>Кстати буквально сегодня читал на эту тему статью, уже не вспомню где, так вот там писалось о интересной технологии - буржуи создали специальный бетон не на основе портланд цемента, а на основе какой-то другой фигни, которая закисливает сам бетон, но самое главное - делает его пористым и шершавым. Стену строят из т рех слоев. Первый слой - не пропускает воду и влагу. Второй слой бетона удерживает влагу, а третий(наружный) пропускает воду внутрь, но не выпускает наружу. Практика показала, что за пол-года год, стена самостоятельно и успешно зарастает разными мелкими растюхами, лишаями и другой подобной растительностью. При этом производители заявляют, что в зависимости от возраста и погодных нюансов дизайн стены самостоятельно меняет расцветку и все такое.</p>
+
+<p>В общем, еще несколько лет экспериментов, и можно будет выращивать прямо на бетоне, без всяких дополнительных пластиков и трубок.</p>
+
+<p><strong>Coccinella</strong> 21-02-2013</p>
+
+<p>Сорняки будут счастливы :) , а вообще, с точки зрения очистки воздуха в мегаполисах, это было бы очень здорово. И сердито!</p>
+
+<p><strong>artmaximus</strong> 22-02-2013</p>
+
+<blockquote>
+  <p>Сорняки будут счастливы :) , а вообще, с точки зрения очистки воздуха в мегаполисах, это было бы очень здорово. И сердито!</p>
+</blockquote>
+
+<p>…а главное эстетично <em>8)</em></p>
+
+<p>Только графитисты уже не краской будут рисовать, а царапать :D</p>
+
+<p><strong>Coccinella</strong> 22-02-2013</p>
+
+<p>Можно и семенами подсевать… :)</p>
+
+<p><strong>Oxy</strong> 22-02-2013</p>
+
+<p>Судя по описанию первых экспериментов - там некуда подсеивать. Наружный слой хоть и пористый, но все же бетон. И пористость эта больше научное определение а не разговорное. Не специалист видимо не увидит разницу между бетонами.</p>
+
+<p>И разработчики делают ставку именно на сорняки, то есть даже не поливают эти стены. Чего попрорастает, то и дизайн. В статье упоминалось, что в любой климатической зоне найдутся желающие потусить на бетоне. Причем царапай, и шкрябай сколько хочешь - они все равно сами отмирают, заселяються новые и т.д. Поэтому написали, что типа автоматически меняеться дизайн стен по цветовым пятнам в первую очередь</p>
+
+<p>А графити….. Иногда они бывают получше, чем некоторые советские панно на девятиэтажках из мозаики.</p>
+
+<p><strong>Coccinella</strong> 22-02-2013</p>
+
+<p>Я в свое время была знакома с одной, забытой строителями кучей бетона. Она сиротливо проживала на краю березовой рощи (и при этом на обочине дороги) на территории нашего тепличного хозяйства. Обычный, строительный бетон, уж не знаю, как он туда попал, в хозяйстве все время что-то строили… Короче, через пару лет одиночество кучи решила скрасить ежевика. Сначала один побег, затем еще… лет через 5 только местные “жители” знали, что на этот зеленый кустик автомобилем лучше не наезжать :)</p>
+
+<p>Сегодня того хозяйства уж нет, я там периодически бываю на территории, а куча бетона и ныне зеленеет :)</p>
+
+<p><strong>maikl25</strong> 22-02-2013</p>
+
+<blockquote>
+  <p>Я в свое время была знакома с одной, забытой строителями кучей бетона. Она сиротливо проживала на краю березовой рощи (и при этом на обочине дороги) на территории нашего тепличного хозяйства. Обычный, строительный бетон, уж не знаю, как он туда попал, в хозяйстве все время что-то строили… Короче, через пару лет одиночество кучи решила скрасить ежевика. Сначала один побег, затем еще… лет через 5 только местные “жители” знали, что на этот зеленый кустик автомобилем лучше не наезжать :)</p>
+
+  <p>Сегодня того хозяйства уж нет, я там периодически бываю на территории, а куча бетона и ныне зеленеет :)</p>
+</blockquote>
+
+<p>Природу не победить!!! <em>8)</em></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

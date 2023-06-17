@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>shop.ponics.ru | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="shop.ponics.ru">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">shop.ponics.ru</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>lapin</strong> 30-11-2011</p>
+
+<p>помогите пож-та, сделал заказ в том магазине, оплатил, в ответ полная тишина. недели две прошло уже, кто пользовался услугами этого магазина, кто знает как до них достучаться?</p>
+
+<p><strong>Mole_Garden</strong> 30-11-2011</p>
+
+<p>Возникающие вопросы, можно разрешить по ICQ 40498931, по электронной почте alecr@mail.ru</p>
+
+<p>или попробуй через обратную связь на том же магазине.</p>
+
+<p><strong>lapin</strong> 30-11-2011</p>
+
+<p>обратная связь там не фунциклирует, попробую почту</p>
+
+<p><strong>Mole_Garden</strong> 30-11-2011</p>
+
+<blockquote>
+  <p>обратная связь там не фунциклирует, попробую почту</p>
+</blockquote>
+
+<p>попробуй. Напомню, что магазин не имеет ни какого отношения к сайту и форуму.</p>
+
+<p><strong>lapin</strong> 02-12-2011</p>
+
+<p>спасибо, владельцы отозвались, обещали что все будет хорошо :) ждем.</p>
+
+<p><strong>lapin</strong> 03-12-2011</p>
+
+<p>а как вы думаете на счет того чтобы создать тему по поводу добросовестности инет магазинов низких ценах и т.д (может быть и есть такая но не нашел)</p>
+
+<p><strong>Mole_Garden</strong> 03-12-2011</p>
+
+<blockquote>
+  <p>а как вы думаете на счет того чтобы создать тему по поводу добросовестности инет магазинов низких ценах и т.д (может быть и есть такая но не нашел)</p>
+</blockquote>
+
+<p>Нет такой нет, да и реклама магазинов играет им на руку, а форум падает в выдачи поисковиков. Т.е. ничего хорошего нам не сулит.</p>
+
+<p><strong>lapin</strong> 16-12-2011</p>
+
+<p>вчера мне позвонили из транспортной компании сказали что необходимо оплатить 6100руб за доставку, на сайте заказал на 700руб + 150 руб за что то. так что вот так :)</p>
+
+<p><strong>koval.sergei</strong> 16-12-2011</p>
+
+<p>чёта очень круто берет транспортная компания, скорей всего они ошиблись уточняй, на 1200км я плачу за товар 5350руб при это что груз весит 500кг. :D</p>
+
+<p><strong>gena1</strong> 16-12-2011</p>
+
+<p>Да, это скорее всего ошибка.</p>
+
+<p>Только если Вы не на острове живёте :)</p>
+
+<p><strong>lapin</strong> 16-12-2011</p>
+
+<p>сейчас еще раз связался с тр кампанией все верно 6 тыш и груз отправляют, а весу там сами прикиньте 100 пробок для сеянцев 100 стаканов пластиковых и литр удобрения ;) другой магазин мне почти аналогичную посылку прислал за 300 руб почтой</p>
+
+<p><strong>koval.sergei</strong> 16-12-2011</p>
+
+<p>lapin,что за транспортная компания.</p>
+
+<p>У была подобная ситуация однофамилец мой получал оборудование и меня доставали смс-ками, что груз пришёл в мой адрес и всё выяснилось что оператор прошляпил (с будуна был поди ) ;D</p>
+
+<p><strong>SergF</strong> 16-12-2011</p>
+
+<p>развод какой-то! за 6 штук можно самому съездить на поезде забрать :)</p>
+
+<p><strong>Alex123</strong> 16-12-2011</p>
+
+<blockquote>
+  <p>развод какой-то! за 6 штук можно самому съездить на поезде забрать :)</p>
+</blockquote>
+
+<p>Согласен, разводилово. :'( :'( :'(</p>
+
+<p><strong>lapin</strong> 16-12-2011</p>
+
+<p>Деловые Линии, транспортно-экседиторская компания</p>
+
+<p><strong>SergF</strong> 16-12-2011</p>
+
+<p>Глянул их тарифы для интереса, если авиаотправка то легко и 6 тыс и больше может быть, там такие минимумы нехилые :-\ вот только на кой пробки и стаканчики самолетом везти?!</p>
+
+<p>а кто выбирал эту компанию и способ доставки, магазин сам что ли? обычно в магазинах все подробно расписано…</p>
+
+<p><strong>Садовник</strong> 16-12-2011</p>
+
+<p>У “Деловых линий” максимум такая посылка автотранспортом обойдётся 300 (триста) рублей. Сам регулярно ею пользуюсь. Вообше “Деловые линии” - компания с одними из самых низких тарифов, особенно для объёмных лёгких грузов.</p>
+
+<p>Ну а если АВИА - то вас богатых не понять.</p>
+
+<p><strong>ProRus</strong> 16-12-2011</p>
+
+<blockquote>
+  <p>У “Деловых линий” максимум такая посылка автотранспортом обойдётся 300 (триста) рублей.</p>
+</blockquote>
+
+<p>Везет вам. У меня посылка в 25 кг обошлась в 15-ть т.р. и ничего. Я считаю дешево обошлось… :(</p>
+
+<p><strong>lapin</strong> 17-12-2011</p>
+
+<blockquote>
+  <p>Глянул их тарифы для интереса, если авиаотправка то легко и 6 тыс и больше может быть, там такие минимумы нехилые :-\ вот только на кой пробки и стаканчики самолетом везти?!</p>
+
+  <p>а кто выбирал эту компанию и способ доставки, магазин сам что ли? обычно в магазинах все подробно расписано…</p>
+</blockquote>
+
+<p>компанию выбрал сам магазин, когда заказывал там выбора не было, было что то про почту , ну как зачем я живу в далеке от цивилизации у нас жд дороги нет зимой только авиа доставки и морем, а стаканы и пробки потому что первая пробная закупка не буду же заказывать в незнакомом магазине на 10 т.р</p>
+
+<p><strong>koval.sergei</strong> 17-12-2011</p>
+
+<p>Тогда правильно подсчитали Вам. <em>Bos</em></p>
+
+<p><strong>lapin</strong> 17-12-2011</p>
+
+<p>да бредятина, я себе шуруповерт из москвы заказывал доставка 1000руб вес 7 кг, а тут из самары кг и шесть тыщ</p>
+
+<p><strong>Coccinella</strong> 17-12-2011</p>
+
+<p>Lapin, а где Вы обитаете, если не секрет?</p>
+
+<p><strong>gena1</strong> 17-12-2011</p>
+
+<blockquote>
+  <p>да бредятина, я себе шуруповерт из москвы заказывал доставка 1000руб вес 7 кг, а тут из самары кг и шесть тыщ</p>
+</blockquote>
+
+<p>Зависит от их логистики.</p>
+
+<p>Возможно они сначала из Самары в Москву (авиа) повезут, а уже оттуда авиа к Вам. Отсюда и цена :)</p>
+
+<p><strong>valery</strong> 17-12-2011</p>
+
+<p>Можно только посочувствовать. ( … лучше не забирать, плюнуть на эти пробки-стаканчики) …</p>
+
+<p>А кроме сочувствия можно выразить и удивление.</p>
+
+<p>Помнится, часть посетителей “возмущалась” - на электронный балласт (несколько килограмм) - доставка из США - 40 баксов … дескать - “дорого” :o</p>
+
+<p>Зачем искать “приключений” в этих наших “услугах-перевозках” ?</p>
+
+<p>Вот, первый попавшийся (не искал специально) запрос в eBay (видимо, можно порыться и найти дешевле) …</p>
+
+<p><a href="http://www.ebay.com/itm/GRODAN-MACRO-PLUG-STARTER-PLUG-40-CT-ROCKWOOL-HYDROPONICS-MACROPLUG-EZ-CLONE-/230691146487?pt=LH_DefaultDomain_0&amp;hash=item35b6438af7#ht_823wt_905" target="_blank">http://www.ebay.com/itm/GRODAN-MACRO-PLUG-STARTER-PLUG-40-CT-ROCKWOOL-HYDROPONICS-MACROPLUG-EZ-CLONE-/230691146487?pt=LH_DefaultDomain_0&amp;hash=item35b6438af7#ht_823wt_905</a></p>
+
+<p>40 пробок “Гродан” - 10.99$ (340 рублей) плюс доставка в Россию - 5,2$ (161 рубль).</p>
+
+<p>161 рубль - международная посылка-доставка с другого континента через океан … Так зачем козе баян ? (это я про себя … )</p>
+
+<p>Несколько комплектов - в доставке обойдутся дешевле. Тем более - это известный брэнд “Гродан”, а Вам дали (я так думаю) “Комат-Агро”.</p>
+
+<p><strong>lapin</strong> 01-01-2012</p>
+
+<blockquote>
+  <p>Можно только посочувствовать. ( … лучше не забирать, плюнуть на эти пробки-стаканчики) …</p>
+
+  <p>А кроме сочувствия можно выразить и удивление.</p>
+
+  <p>Помнится, часть посетителей “возмущалась” - на электронный балласт (несколько килограмм) - доставка из США - 40 баксов … дескать - “дорого” :o</p>
+
+  <p>Зачем искать “приключений” в этих наших “услугах-перевозках” ?</p>
+
+  <p>Вот, первый попавшийся (не искал специально) запрос в eBay (видимо, можно порыться и найти дешевле) …</p>
+
+  <p><a href="http://www.ebay.com/itm/GRODAN-MACRO-PLUG-STARTER-PLUG-40-CT-ROCKWOOL-HYDROPONICS-MACROPLUG-EZ-CLONE-/230691146487?pt=LH_DefaultDomain_0&amp;hash=item35b6438af7#ht_823wt_905" target="_blank">http://www.ebay.com/itm/GRODAN-MACRO-PLUG-STARTER-PLUG-40-CT-ROCKWOOL-HYDROPONICS-MACROPLUG-EZ-CLONE-/230691146487?pt=LH_DefaultDomain_0&amp;hash=item35b6438af7#ht_823wt_905</a></p>
+
+  <p>40 пробок “Гродан” - 10.99$ (340 рублей) плюс доставка в Россию - 5,2$ (161 рубль).</p>
+
+  <p>161 рубль - международная посылка-доставка с другого континента через океан … Так зачем козе баян ? (это я про себя … )</p>
+
+  <p>Несколько комплектов - в доставке обойдутся дешевле. Тем более - это известный брэнд “Гродан”, а Вам дали (я так думаю) “Комат-Агро”.</p>
+</blockquote>
+
+<p>естественно плюнул на все это дело, буду осваивать ебай ;)</p>
+
+<p><strong>gorby777</strong> 02-01-2012</p>
+
+<blockquote>
+  <p>естественно плюнул на все это дело, буду осваивать ебай ;)</p>
+</blockquote>
+
+<p>Лучше “ибей”. Благозвучнее и правильнее</p>
+
+<p><strong>lapin</strong> 15-02-2012</p>
+
+<blockquote>
+  <p>Lapin, а где Вы обитаете, если не секрет?</p>
+</blockquote>
+
+<p>в Магадане.</p>
+
+<p>в общем история закончилась так, владелец магазина вышел на связь объяснил отправку тр.компанией из за того что он думал! что почтой жидкости не отправляют, после того как я предоставил вырезку из правил авиадоставки жидкостей промолчал. вот так я лишился аш 800 руб :)</p>
+
+<p><strong>lapin</strong> 07-03-2012</p>
+
+<p>итак продолжение, владелец магазина изъявил желание вернуть деньги, т.к не смог отправить жижу, попросил его на сумму раствора доложить кубики, жду.</p>
+
+<p><strong>artmaximus</strong> 23-03-2012</p>
+
+<p>Ну как?</p>
+
+<p>Удалось получить груз?</p>
+
+<p>Что , прям совсем так плохо?( в смысле с магазином?)</p>
+
+<p><strong>lapin</strong> 06-04-2012</p>
+
+<p>на сегодняшний день 06 апреля посылку не получил, ща отпишусь ему на почту, наверное посылка пешком идет ;)</p>
+
+<p><strong>artmaximus</strong> 09-04-2012</p>
+
+<p>:o во блин…</p>
+
+<p>я в шоке.</p>
+
+<p>Хотел тоже воспользоваться этим магазинчиком :(</p>
+
+<p>печально…</p>
+
+<p>…видать самому придётся растворчики мутить :D</p>
+
+<p>Мне казалось что там Дмитрий (тутошний) имеет отношение к магазинчику. Это так или нет?</p>
+
+<p><strong>Mole_Garden</strong> 09-04-2012</p>
+
+<p>В сотый раз повторюсь, магазин не имеет отношения ни к форуму ни к ресурсу, ни к администрации никакого отношения</p>
+
+<p><strong>artmaximus</strong> 09-04-2012</p>
+
+<p>ну …извиняюсь.</p>
+
+<p>думал исходя из прошлых сообщений (читая прошлые года)</p>
+
+<p>Никого не хотел обидеть !</p>
+
+<p>как говорится…пардон муа :D</p>
+
+<p><strong>kirill78</strong> 28-01-2013</p>
+
+<p>Если бы увидел эту тему раньше, заказ бы не делал. Обратная связь видимо не работает. Аська указанная здесь не активна. Написал на почту, в ответе был предложен более свежий адресс godlike.88@mail.ru и доставка транспортной компанией. Что очень хреново, потому что Калининградская область - не самое дешовое место.</p>
+
+<p>Попросил вернуть деньги.</p>
+
+<p>Раз такая задница с химимей, пересчитаю реактивы еще раз и сделаю заказ на несколько тысяч в Вектоне.</p>
+
+<p>PS. Запись третьего уровня невозможна без ведома владельца домена. Общий IP. Тут бесполезно рассказывать что магазин не имеет отношения. Для меня такое соседство намного хуже чем внешние ссылки на проверенные магазины.</p>
+
+<p><strong>mdima</strong> 29-01-2013</p>
+
+<p>Вы меня пытаетесь на чем-то поймать? Я еще раз расскажу историю создания и работы магазина. Я лично не имею возможности изготавливать питательные растворы - да и не интересно мне это, у меня хорошая работа. Разработать и проверить было интересно, а замешивать по рецепту без творчества - нет. У меня есть друг. А у друга есть сын. Так вот, сын под контролем друга (он по образованию химик) изготавливает концентраты для того, чтобы все имели возможность растить. Я в этом никак не участвую, для друга этот проект убыточный, для сына друга там что-то перепадает за работу (замесить, разлить, нафильтровать, натитровать, до транспортной компании довезти и т.д.) на бензин и пиво сигареты.</p>
+
+<p>Как-то так…</p>
+
+<p>:)</p>
+
+<p><strong>AlecR</strong> 29-01-2013</p>
+
+<p>Кирилл! Ваше право делать заказы где угодно и на любые суммы. Ответили Вам в тот же день. С таким же успехом мы могли бы пообщаться и до перечисления средств. Адрес постоянно работающий и телефоны тоже. Сам проверял.</p>
+
+<p>Деньги Вам верну сразу, как только укажете реквизиты для отправки.</p>
+
+<p>Не наша вина, что Почта России не принимает к пересылке жидкости, а отправка транспортной компанией будет стоить 1500р.</p>
+
+<p><strong>kerimgel</strong> 15-04-2013</p>
+
+<p>просьба к администраторам сайта написать что Вы не имеете отношение к магазину в <a href="http://forum.ponics.ru/index.php?topic=98.0" target="_blank">http://forum.ponics.ru/index.php?topic=98.0</a> .</p>
+
+<p>я тоже открыв ее решил что mdima и 	Mole_Garden имеют прямое отношение к shop.ponics.ru, да и адрес для связи там order@ponics.ru</p>
+
+<p><strong>Strangeman</strong> 15-04-2013</p>
+
+<p>А толку? Ту тему могут и не прочитать, а по домену второго уровня ресурсы связаны и пока человек не прочтет историю <a href="http://forum.ponics.ru/index.php?topic=1268.msg57745#msg57745" target="_blank">http://forum.ponics.ru/index.php?topic=1268.msg57745#msg57745</a> - будет думать, что это один ресурс.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>не настет | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="не настет">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">не настет</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>guma</strong> 08-08-2016</p>
+
+<p>Ребят здравствуйте. Почему то не растёт помидоры, все роди бы как положено: температура 33-34 в помещении, температура воды 20 градуса влажность 75-80% использую питательный раствор Flora по 0,3/1л, свет let 4шт и 2 ospam на 1,5квмертра, вытяжка, единственное у меня нет вытяжке свежего воздуха. Ситуация в том что растишек подросли до появления первых двух малых листьев и остановили свой рост при включении света 18/4. Ребят подскажите что не таки все подлема в вытяжке свежего воздуха или нет?</p>
+
+<p><strong>guma</strong> 08-08-2016</p>
+
+<p>Ещё pH 5.5 EC 0.8</p>
+
+<p><strong>Borodach1</strong> 08-08-2016</p>
+
+<p>Флора - фигня полная.</p>
+
+<p>ЕС раствора слабый. Им есть нечего.</p>
+
+<p>Какая система? Фото покАжите?</p>
+
+<p><strong>guma</strong> 08-08-2016</p>
+
+<p>Не могу загрузить фото, разве на флоре не вырастить не чего?ес делаю как по стандарту</p>
+
+<p><strong>Borodach1</strong> 08-08-2016</p>
+
+<p>Жмите “Добавить изображение “. Жмакалка выше окошка в котором пишете сообщение.</p>
+
+<p>Какая система?</p>
+
+<p><strong>Borodach1</strong> 08-08-2016</p>
+
+<blockquote>
+  <p>разве на флоре не вырастить не чего?</p>
+</blockquote>
+
+<p>Вам нужно чего нибудь или помидоры? ;)</p>
+
+<blockquote>
+  <p>ес делаю как по стандарту</p>
+</blockquote>
+
+<p>А какие у Вас стандарты? ;)</p>
+
+<p><strong>guma</strong> 08-08-2016</p>
+
+<p>Ведро с субтрактом и подача кислорода в корни, а изображение не залезет в сайт, могу вам на почту прислать</p>
+
+<p><strong>guma</strong> 08-08-2016</p>
+
+<p>Терпение на исходе, второй раз уже пытаюсь вырастить и все бестолковый и ещё финансово затратился :( :(</p>
+
+<p><strong>siv237</strong> 08-08-2016</p>
+
+<p>34 градуса? воздух. 20 градусов раствор?</p>
+
+<p>Мне кажется, это эксперимент по садиским методам выращивания.</p>
+
+<p>Растения в таком режиме только и могут, что тратить воду на охлаждение, но охладиться не могут. Влажность высокая.</p>
+
+<p>При этом корневая не может при такой низкой температуре, да и еще наверняка высокий ЕС раствора прокачать воду.</p>
+
+<p>Единственное, что их спасает - это высокая влажность. Она не дает листьям потерять влагу. В итоге растения впадают в “анабиоз” и ждут чуда от хозяина.</p>
+
+<p>Принципы такие:</p>
+
+<p>Выше температура воздуха - больше испарения листями.</p>
+
+<p>Больше испарения - больше потребление жидкости корнями</p>
+
+<p>Выше соленость воды - хуже всасывание</p>
+
+<p>Ниже температура - больше всасывания</p>
+
+<p>Больше листьев - больше всасывания</p>
+
+<p>Больше света - больше всасывания и питания</p>
+
+<p>Выше влажность - ниже испарение</p>
+
+<p>Тут по выбору или сбавляйте температуру или уменьшайте питания вплоть до воды. Рост восстановится но без питания будет очень медленный.</p>
+
+<p><strong>guma</strong> 08-08-2016</p>
+
+<p>Что мне делать?(((</p>
+
+<p><strong>Borodach1</strong> 08-08-2016</p>
+
+<p>А как Вы умудряетесь так охлаждать раствор?</p>
+
+<p>Горшок с субстратом погружен в раствор или есть некоторое расстояние?</p>
+
+<p><strong>guma</strong> 08-08-2016</p>
+
+<p>Я ошибся, температура воздуха 26градусов))</p>
+
+<p><strong>guma</strong> 08-08-2016</p>
+
+<p>Погружен в раствор на половину, корни в керомзите</p>
+
+<p><strong>siv237</strong> 08-08-2016</p>
+
+<blockquote>
+  <p>Я ошибся, температура воздуха 26градусов))</p>
+</blockquote>
+
+<p>Какой ЕС раствора? И подробнее по лампам. Что за лампы, какая реальная мощность. Какое расстояние от поверхности листьев.</p>
+
+<p><strong>Borodach1</strong> 08-08-2016</p>
+
+<p>Вы утопили растение. Дно горшка должно быть на пару сантиметров ВЫШЕ уровня раствора.</p>
+
+<p><strong>guma</strong> 08-08-2016</p>
+
+<p>Может вечером по сайту свяжемся?</p>
+
+<p><strong>Borodach1</strong> 08-08-2016</p>
+
+<p>Вечер понятие растяжимое. :)</p>
+
+<p>У меня уже пол восьмого. :)</p>
+
+<p><strong>guma</strong> 08-08-2016</p>
+
+<p>По скайпу хотел написать, вечером как вам удобно, я с семи свободен</p>
+
+<p><strong>Borodach1</strong> 08-08-2016</p>
+
+<p>Понизьте уровень раствора. Между раствором и дном горшка должно быть 1 - 2 сантиметра. Керамзит будет смачиваться брызгами от лопающихся пузырьков. А потом корни прорастут в раствор.</p>
+
+<p>ЕС должен быть выше. Я не помидорщик, но думаю, что около 2,5. Но не как не 0.8.</p>
+
+<p>0.8 это слишком жидко. Вы как минимум в три раза недокармливаете.</p>
+
+<p>Флора.. .. Это хорошо раскрученый бренд для вытягивания денег. Купите обычных удобрений ( уже 1000 раз обсуждали какие нужно) они обойдутся Вам раз в десять дешевле чем Флора. Да и хватит их раз в десять на дольше чем этих бутылочек.</p>
+
+<p>Свет тоже важен. Не совсем понятно что вы придумали со светом.</p>
+
+<p><strong>guma</strong> 08-08-2016</p>
+
+<p>Я думаю по скайпу я вас намного лучше пойму и вы меня, если вам не затруднит</p>
+
+<p><strong>Borodach1</strong> 09-08-2016</p>
+
+<blockquote>
+  <p>По скайпу хотел написать, вечером как вам удобно, я с семи свободен</p>
+</blockquote>
+
+<p>У меня красноярское время. Если у вас московское, то в ваши после семи меня жена тыкает в бок чтобы я не в кресле возле телевизора спал, а шёл в кровать. :D</p>
+
+<blockquote>
+  <p>Я думаю по скайпу я вас намного лучше пойму и вы меня, если вам не затруднит</p>
+</blockquote>
+
+<p>Вы думаете я по скайпу скажу Вам что то другое? ;)</p>
+
+<p>Вроде ж всё понятно написал? <em>???</em></p>
+
+<p>Ну… :-\ Попробую ещё раз. :)</p>
+
+<p>1) Если у Вас DWC, это там где через раствор пропускаете пузырьки воздуха, то снизьте уровень раствора. Горшок не должен быть погруженным в жидкость. Он не должен быть погружен в жидкость ни на половину, ни на треть, ни на сантиметр. Горшок должен быть выше уровня жидкости.</p>
+
+<p>2) Флора - очень хорошо разрекламированное и потому очень дорогое удобрение на которое клюют все начинающие. Даже у меня есть бутылка флоры микро. :-[ Была куплена в поисках микры. :)</p>
+
+<p>Для чего разрабатывалась эта серия Флора вместе с их рекомендациями никто не знает. <em>???</em> Если хотите чтобы выросло абы что, то пойдёт. Если хотите получить результат, то переходите на нормальные удобрения.</p>
+
+<p>3) ЕС=0,8 - это очень жидкий раствор. Ну это всё равно если бы Вас не три раза в день кормить, а один. Только завтрак. Кружка чая с бутербродом. Для фигуры конечно полезно, но… Вы так долго протяните? ;)</p>
+
+<p><strong>siv237</strong> 09-08-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>По скайпу хотел написать, вечером как вам удобно, я с семи свободен</p>
+  </blockquote>
+
+  <p>У меня красноярское время. Если у вас московское, то в ваши после семи меня жена тыкает в бок чтобы я не в кресле возле телевизора спал, а шёл в кровать. :D</p>
+
+  <blockquote>
+    <p>Я думаю по скайпу я вас намного лучше пойму и вы меня, если вам не затруднит</p>
+  </blockquote>
+
+  <p>Вы думаете я по скайпу скажу Вам что то другое? ;)</p>
+
+  <p>Вроде ж всё понятно написал? <em>???</em></p>
+
+  <p>Ну… :-\ Попробую ещё раз. :)</p>
+
+  <p>1) Если у Вас DWC, это там где через раствор пропускаете пузырьки воздуха, то снизьте уровень раствора. Горшок не должен быть погруженным в жидкость. Он не должен быть погружен в жидкость ни на половину, ни на треть, ни на сантиметр. Горшок должен быть выше уровня жидкости.</p>
+
+  <p>2) Флора - очень хорошо разрекламированное и потому очень дорогое удобрение на которое клюют все начинающие. Даже у меня есть бутылка флоры микро. :-[ Была куплена в поисках микры. :)</p>
+
+  <p>Для чего разрабатывалась эта серия Флора вместе с их рекомендациями никто не знает. <em>???</em> Если хотите чтобы выросло абы что, то пойдёт. Если хотите получить результат, то переходите на нормальные удобрения.</p>
+
+  <p>3) ЕС=0,8 - это очень жидкий раствор. Ну это всё равно если бы Вас не три раза в день кормить, а один. Только завтрак. Кружка чая с бутербродом. Для фигуры конечно полезно, но… Вы так долго протяните? ;)</p>
+</blockquote>
+
+<p>Если я правильно понял, у него керамзит в стаканах. Если он снизит уровень ниже дна стакана - получит пересыхания керамзита (если корни не вылезли еще)</p>
+
+<p>Если он только начал выращивание, только пошли настоящие листья, то раствор до ЕС=1 вполне оправдан, не питание их рост ограничивает. Чем меньше корней - тем меньше нужно концентрация питания.</p>
+
+<p><strong>Borodach1</strong> 09-08-2016</p>
+
+<blockquote>
+  <p>Если я правильно понял, у него керамзит в стаканах. Если он снизит уровень ниже дна стакана - получит пересыхания керамзита (если корни не вылезли еще)</p>
+</blockquote>
+
+<p>Не получит. Брызг от лопающихся пузырьков вполне достаточно чтобы смочить керамзит снизу. Вот туда корни сразу и рванут. За сутки вылезут из горшка.</p>
+
+<blockquote>
+  <p>Если он только начал выращивание, только пошли настоящие листья, то раствор до ЕС=1 вполне оправдан, не питание их рост ограничивает. Чем меньше корней - тем меньше нужно концентрация питания.</p>
+</blockquote>
+
+<p>Вот это правильно! <em>8)</em> Как в концлагере. Чего зря кормить? Всё равно же сдохнет! :D :D :D</p>
+
+<p>Вас в детстве и юношестве тоже ограничивали в еде? ;)</p>
+
+<p><strong>guma</strong> 09-08-2016</p>
+
+<p>У меня сейчас, вылезли два листа как говорится первые, больше не растут, а вот корни растут, мои предположим что после сформированых корней пойдут и листья, я заблуждаюсь?))</p>
+
+<p><strong>Cyclamech</strong> 09-08-2016</p>
+
+<blockquote>
+  <p>Как в концлагере. Чего зря кормить? Всё равно же сдохнет! :D :D :D</p>
+</blockquote>
+
+<p>:-\</p>
+
+<blockquote>
+  <p>Идея создания лагерных борделей принадлежала рейхсфюреру СС Генриху Гиммлеру. Данные исследователей говорят, что он был впечатлен системой стимулов, применявшейся в советских исправительно-трудовых лагерях с целью повышения производительности труда заключенных.</p>
+</blockquote>
+
+<p><strong>Borodach1</strong> 09-08-2016</p>
+
+<p>Пардон, но причём тут “лагерные бордели”???</p>
+
+<p>Просто не о чем было написать?</p>
+
+<p>Да и хрен с пальцем сравнивать не нужно. Это любимая песня либерастов - показать какой же был зайка партайгеноссе Гиммлер. Вы что, совсем цикламенов обнюхались???</p>
+
+<p><strong>guma</strong> 09-08-2016</p>
+
+<p>Замерил раствор показывает 3,2пш и солимер 668ррн было 5,5 пш почему пш падает?</p>
+
+<p><strong>guma</strong> 09-08-2016</p>
+
+<p>Может мне кто поможет по скайпу((</p>
+
+<p><strong>Borodach1</strong> 09-08-2016</p>
+
+<p>Вы пишите в никому неизвестных единицах измерения. Про солИмер я вообще молчу.</p>
+
+<p><strong>guma</strong> 09-08-2016</p>
+
+<p>Почему электропроводность такая большая.</p>
+
+<p><strong>Borodach1</strong> 09-08-2016</p>
+
+<p>О! У меня есть более интересный вопрос : Почему небо такое высокое?</p>
+
+<p>:)</p>
+
+<p>Вам никто не сможет помочь. Вы оперируете то ЕС-ами, то неизвестными ррн-ами. Как вас понимать?</p>
+
+<p>Представьте, что свой рост вы пытаетесь донести к нам то в сантиметрах, то в локтях, а потом вдруг в кокосовых орехах. Очень сложно поддерживать разговор.</p>
+
+<p>Давайте оперировать всем понятными единицами измерения системы СИ. ;)</p>
+
+<p>Для упрощения написания 1 миллисимменс мы называем 1 ЕС.</p>
+
+<p>Поймите, чему равен ваш 1ррн никто не знает.</p>
+
+<p><strong>siv237</strong> 09-08-2016</p>
+
+<blockquote>
+  <p>Замерил раствор показывает 3,2пш и солимер 668ррн было 5,5 пш почему пш падает?</p>
+</blockquote>
+
+<p>Сколько у вас азота в форме амония NH4 и сколько в нитратной NO3?</p>
+
+<p>Перед использованием вашего “солимера” определите сколько ЕС это составляет:</p>
+
+<p>Замерьте свою воду и запишите сколько она ppm</p>
+
+<p>Налейте 10 литров воды 25 градусов температуры и растворите в ней 5 грамм поваренной соли марки Экстра.</p>
+
+<p>Замерьте ppm полученного раствора и отнимите от них исходное значение ppm воды.</p>
+
+<p>Полученное число - это коэффициент преобразования вашего прибора в ЕС</p>
+
+<p>Теперь любые показания прибора делите на это число и уже его сюда пишите.</p>
+
+<p><strong>Cyclamech</strong> 09-08-2016</p>
+
+<blockquote>
+  <p>Перед использованием вашего “солимера” определите сколько ЕС это составляет:</p>
+
+  <p>Замерьте свою воду и запишите сколько она ppm</p>
+
+  <p>Налейте 10 литров воды 25 градусов температуры и растворите в ней 5 грамм поваренной соли марки Экстра.</p>
+
+  <p>Замерьте ppm полученного раствора и отнимите от них исходное значение ppm воды.</p>
+
+  <p>Полученное число - это коэффициент преобразования вашего прибора в ЕС</p>
+
+  <p>Теперь любые показания прибора делите на это число и уже его сюда пишите.</p>
+</blockquote>
+
+<p>Скоро как частушка… <em>crazy</em> <em>Dance</em></p>
+
+<p>Кстати, это интересно… не просто словом, но поэтическим: ведь ритм и дополнительное воспоминание-ассоциация рифмы будут обращаться к древнеглубинному… Ведь язык, наверняка, “изобрели” не для передачи информации, а эмоций; как средство самовыражения - типа, “щас спою!” <em>crazy</em></p>
+
+<p>И чтобы ненавязчиво, как у А.С.</p>
+
+<blockquote>
+  <p>Три девицы под окном</p>
+
+  <p>Пряли поздно вечерком.</p>
+
+  <p>“Кабы я была царица, -</p>
+
+  <p>Говорит одна девица, -</p>
+
+  <p>То на весь крещеный мир</p>
+
+  <p>Приготовила б я пир”.</p>
+
+  <p>“Кабы я была царица, -</p>
+
+  <p>Говорит ее сестрица, -</p>
+
+  <p>То на весь бы мир одна</p>
+
+  <p>Наткала я полотна”.</p>
+
+  <p>“Кабы я была царица, -</p>
+
+  <p>Третья молвила сестрица, -</p>
+
+  <p>Я б для батюшки-царя</p>
+
+  <p>Родила богатыря”.</p>
+</blockquote>
+
+<p>Детям такое точно нельзя! <em>crazy</em> <em>Dance</em> <em>Bravo</em> А “Сказку о попе…” уже запретили, не?</p>
+
+<p>Поговаривают, что когда “В начале было Слово”, то, вероятнее всего, оно было магическим, т.е. “в нашей семейной исто'гии” Бог творил мир “банальным” заклинанием…</p>
+
+<p>Частушка, заклинание, мантра, ну или молитва на худой конец - вот подходящий продукт для топикстартера! <em>crazy</em></p>
+
+<p>Всё ж лучше “Флоры”! :D</p>
+
+<p><strong>guma</strong> 09-08-2016</p>
+
+<p>Спасибо попробую.</p>
+
+<p><strong>guma</strong> 13-08-2016</p>
+
+<p>Ребят поменял раствор 5.5 pH и 0.9EC через три дня пш упал до 3,2 почему, чем можно сделать стабильный pH чтоб так сильно не скачал? Спасибо</p>
+
+<p><strong>Cyclamech</strong> 13-08-2016</p>
+
+<blockquote>
+  <p>Ребят поменял раствор 5.5 pH и 0.9EC через три дня пш упал до 3,2 почему, чем можно сделать стабильный pH чтоб так сильно не скачал? Спасибо</p>
+</blockquote>
+
+<p>Динамика pH зависит от неравномерности потребления растением катионов и анионов.</p>
+
+<p>Стоит использовать растворы, изготовленные по “сбалансированным” профилям питания.</p>
+
+<p>В нашем случае существует уникальная возможность регулировать динамику pH использованием различных соотношений форм азота. Больше аммиачной формы - раствор будет закисляться со временем, больше нитратной формы - защелащиваться. Подобрав правильное соотношение этих форм, мы можем получить нулевую динамику pH, т.е. стабилизировать кислотность раствора во времени.</p>
+
+<p>Вам стоит отказаться от “Флоры” и научиться изготавливать удобрения самостоятельно - тогда возможен предметный разговор “по понятиям”. :)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

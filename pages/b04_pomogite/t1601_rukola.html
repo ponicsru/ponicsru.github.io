@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Рукола | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Рукола">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Рукола</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Mastodont</strong> 08-12-2012</p>
+
+<p>Здравствуйте…</p>
+
+<p>Кто нибудь знает какая минерализация и световой режим необходимы для руколы?</p>
+
+<p>Есть на сайте одна сомнительная таблица минерализации ,там для горчицы 840-1680 ррм,а вот для руколы годятся ли такие значения…</p>
+
+<p><strong>mitrotech</strong> 08-12-2012</p>
+
+<p>Ну вот я на земле в ящике дома выращивал рукколу под светодиодами - сделал вывод - светить её надо хорошо, но наверное не более 12 часов. Иначе становится грубой и вкус немного теряется. Я поднимал освещение до 16 и даже 18 часов - листья становились рубиновые и твёрдые. Убрал на 12 часов - новые листья уже не становились такими.</p>
+
+<p>И ещё по рукколе - я понял, что снимать её надо молодую (сантиметров до 10), потом у меня она такая, не очень как то. Есть можно, но вкус не тот, что у молодой. У молодой вкус такой…. ореховый что ли….с горчинкой. Короче обалденный. А постарше она уже как салат, есть горчинка, но не та, и ореховый у меня пропал вкус.</p>
+
+<p>А, ещё добавлю: ящик на балконе под солнцем стоял - там руккола вытянулась и в цвет ушла. Если и мелкие листочки и цветки. Короче не похожа на ту, которая на картинках. Под светодиодами похоже спектр не давал уйти в цвет, поэтому ушла в лист, и не тянулась особо вверх.</p>
+
+<p>По раствору: если я буду когда то ещё выращивать её - наверное какой-нибудь “салатный” раствор наведу. Трава то она наверное не привередливая, если в некоторых районах как сорняк растёт.</p>
+
+<p><strong>Mastodont</strong> 09-12-2012</p>
+
+<p>Спасибо , у меня тоже день 12 часов ,правда не в ящике с землей на балконе , а на периодике под днат, диодоами не пользуюсь, пока тепличные диодные панели близкие по характеристикам к днатам очень дорогие,конечно многое зависит от сорта , субстрата , способа выращивания, пока придерживаюсь ррм для горчицы,вот хорошая статья о руколе и ее сортах, правда там забыли указать какая минерализация у руколы на проточке…</p>
+
+<p><a href="http://yandex.ru/clck/redir/AiuY0DBWFJ4ePaEse6rgeAjgs2pI3DW99KUdgowt9XvqxGyo_rnZJn897aIXcYNxxfWmndaIGQsyGdgEKG5IIkoXrLtzqVjsgJNHSyV8XQdJ9uSDX_q41dpZwNGE-KE-hntqk8Z81hwj9XNVNHhdzBZor1ZYLa79azWQ9iapL02u0A_lvmFsUQr2ppoyNmaRDFH4ttKoUCY?data=UlNrNmk5WktYejR0eWJFYk1LdmtxanBqV0FxZE1WOHFMczhDeVE0dUtsT1V4aFBscV8tM3B0QjJLZXRaQ3lTd09CZl9NeU1wX0tPbXQwcEpCT1BRU2hWSUtMREVPTktSYWh3Y0VJTWt5UjFaQXFwNjM3U3NFX1FCak1kZVF1T2h4eXktbGdKeld5enJaYy1HUGZienJ3&amp;b64e=2&amp;sign=67cef2203ac5d22d0081536605b90bed&amp;keyno=8&amp;l10n=ru&amp;i=3" target="_blank">http://yandex.ru/clck/redir/AiuY0DBWFJ4ePaEse6rgeAjgs2pI3DW99KUdgowt9XvqxGyo_rnZJn897aIXcYNxxfWmndaIGQsyGdgEKG5IIkoXrLtzqVjsgJNHSyV8XQdJ9uSDX_q41dpZwNGE-KE-hntqk8Z81hwj9XNVNHhdzBZor1ZYLa79azWQ9iapL02u0A_lvmFsUQr2ppoyNmaRDFH4ttKoUCY?data=UlNrNmk5WktYejR0eWJFYk1LdmtxanBqV0FxZE1WOHFMczhDeVE0dUtsT1V4aFBscV8tM3B0QjJLZXRaQ3lTd09CZl9NeU1wX0tPbXQwcEpCT1BRU2hWSUtMREVPTktSYWh3Y0VJTWt5UjFaQXFwNjM3U3NFX1FCak1kZVF1T2h4eXktbGdKeld5enJaYy1HUGZienJ3&amp;b64e=2&amp;sign=67cef2203ac5d22d0081536605b90bed&amp;keyno=8&amp;l10n=ru&amp;i=3</a></p>
+
+<p><strong>mitrotech</strong> 09-12-2012</p>
+
+<p>Что то разманили меня. Посажу на неделе.</p>
+
+<p><strong>Alex123</strong> 11-12-2012</p>
+
+<p>Интересно, а какие импортные профессиональные сорта руколы существуют ?</p>
+
+<p><strong>Coccinella</strong> 11-12-2012</p>
+
+<p>Да нет пока сортов, есть виды. Не так ее еще много выращивают, чтобы всерьез селекцией заниматься. Но через какое-то время, видимо, появятся.</p>
+
+<p><strong>Mastodont</strong> 11-12-2012</p>
+
+<p>к сожалению спецов по руколе у нас на форуме нет :(, будем искать , в московском мне сказали , что выращивают сорт рококо, на ввц взял немного семечек сорта семко, порекомендовали как ресторанный сорт с хорошими вкусовыми качествами,семки посадил 18 ноября, сегодня 23 день со дня посадки, по моему растут медленно , но уже приятный орехово-гочичный вкус :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/9676" target="_blank"><img src="/attachimages/11980_DSC_0551.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/9677" target="_blank"><img src="/attachimages/11982_DSC_0553.jpg" alt="" /></a></p>
+
+<p><strong>Anton1977</strong> 02-01-2013</p>
+
+<p>mitrotech, загадочные вещи ты говоришь по поводу руколы и фотопериодизма. Не пойму, может просто сильное освещение и много синего, поэтому такая зависимость от якобы фотопериодизма.</p>
+
+<p>Я , правда салаты, ращу с круглосуточным светом, жёсткости не ощущаю.</p>
+
+<p><strong>alexxx</strong> 02-01-2013</p>
+
+<blockquote>
+  <p>Я , правда салаты, ращу с круглосуточным светом, жёсткости не ощущаю.</p>
+</blockquote>
+
+<p>А для чего вы электричество понапрасну жгете? Или так они созревают быстрее?</p>
+
+<p><strong>Anton1977</strong> 03-01-2013</p>
+
+<p>Замечаю рост почти в два раза быстрый!</p>
+
+<p><strong>Mastodont</strong> 04-01-2013</p>
+
+<p>Речь идет о руколе и ничего общего с листовыми салатами ,которЫе могут расти под круглосуточнЫм светом у нее нет, световой день для руколы должен длиться 12 часов, так как при более длительном свете она начинает цвести раньше и вообще здесь есть свои тонкости в технологии выращивания, посмотрите на репорты форумчан которые пытались ее вырастить на гидропонике и вы увидите, что у них ничего не получилось, не простой это сорняк, но ответы на многие свои вопросы я нашел в этой статье <a href="http://yandex.ru/clck/redir/AiuY0DBWFJ4ePaEse6rgeAjgs2pI3DW99KUdgowt9XtO8xHuNro5yZmnfAM-5RtYXpjSkoKP1r9LdWOqj7UmCKomGBSIUE-1NGwD42qs9r4Wtz-ab5SDH_ybww-cnsuX2FREPKl7LkMMwNjLB6I-yXsyuaFIJXT9e30IdhKwvdVEgH7fCCBTPMHXJqWjIYgpyBF-VLf4f7s?data=UlNrNmk5WktYejR0eWJFYk1LdmtxcXVuN3lHWjBIWDZ2UU5Yb28zRmR1SEItYUFZc3A3S3M2V3VsMUx1cmFJb2tiRXBkTEdPVWNvWnlVckl0akE2bmJVZ09VVkpIZTEtVWcxS1NhY3poNGphNWdBbmd4MmREQzVZXzEwMmlaNUs&amp;b64e=2&amp;sign=bf1e49b8b9deb655b5bcbd0f5d07a417&amp;keyno=8&amp;l10n=ru" target="_blank">http://yandex.ru/clck/redir/AiuY0DBWFJ4ePaEse6rgeAjgs2pI3DW99KUdgowt9XtO8xHuNro5yZmnfAM-5RtYXpjSkoKP1r9LdWOqj7UmCKomGBSIUE-1NGwD42qs9r4Wtz-ab5SDH_ybww-cnsuX2FREPKl7LkMMwNjLB6I-yXsyuaFIJXT9e30IdhKwvdVEgH7fCCBTPMHXJqWjIYgpyBF-VLf4f7s?data=UlNrNmk5WktYejR0eWJFYk1LdmtxcXVuN3lHWjBIWDZ2UU5Yb28zRmR1SEItYUFZc3A3S3M2V3VsMUx1cmFJb2tiRXBkTEdPVWNvWnlVckl0akE2bmJVZ09VVkpIZTEtVWcxS1NhY3poNGphNWdBbmd4MmREQzVZXzEwMmlaNUs&amp;b64e=2&amp;sign=bf1e49b8b9deb655b5bcbd0f5d07a417&amp;keyno=8&amp;l10n=ru</a></p>
+
+<p><strong>taram</strong> 29-07-2013</p>
+
+<blockquote>
+  <p>не простой это сорняк, но ответы на многие свои вопросы я нашел в этой статье <a href="http://yandex.ru/clck/redir/AiuY0DBWFJ4ePaEse6rgeAjgs2pI3DW99KUdgowt9XtO8xHuNro5yZmnfAM-5RtYXpjSkoKP1r9LdWOqj7UmCKomGBSIUE-1NGwD42qs9r4Wtz-ab5SDH_ybww-cnsuX2FREPKl7LkMMwNjLB6I-yXsyuaFIJXT9e30IdhKwvdVEgH7fCCBTPMHXJqWjIYgpyBF-VLf4f7s?data=UlNrNmk5WktYejR0eWJFYk1LdmtxcXVuN3lHWjBIWDZ2UU5Yb28zRmR1SEItYUFZc3A3S3M2V3VsMUx1cmFJb2tiRXBkTEdPVWNvWnlVckl0akE2bmJVZ09VVkpIZTEtVWcxS1NhY3poNGphNWdBbmd4MmREQzVZXzEwMmlaNUs&amp;b64e=2&amp;sign=bf1e49b8b9deb655b5bcbd0f5d07a417&amp;keyno=8&amp;l10n=ru" target="_blank">http://yandex.ru/clck/redir/AiuY0DBWFJ4ePaEse6rgeAjgs2pI3DW99KUdgowt9XtO8xHuNro5yZmnfAM-5RtYXpjSkoKP1r9LdWOqj7UmCKomGBSIUE-1NGwD42qs9r4Wtz-ab5SDH_ybww-cnsuX2FREPKl7LkMMwNjLB6I-yXsyuaFIJXT9e30IdhKwvdVEgH7fCCBTPMHXJqWjIYgpyBF-VLf4f7s?data=UlNrNmk5WktYejR0eWJFYk1LdmtxcXVuN3lHWjBIWDZ2UU5Yb28zRmR1SEItYUFZc3A3S3M2V3VsMUx1cmFJb2tiRXBkTEdPVWNvWnlVckl0akE2bmJVZ09VVkpIZTEtVWcxS1NhY3poNGphNWdBbmd4MmREQzVZXzEwMmlaNUs&amp;b64e=2&amp;sign=bf1e49b8b9deb655b5bcbd0f5d07a417&amp;keyno=8&amp;l10n=ru</a></p>
+</blockquote>
+
+<p>Чёт сылка не работает <em>???</em>. Что там за статья была интересая?</p>
+
+<blockquote>
+  <p>Замечаю рост почти в два раза быстрый!</p>
+</blockquote>
+
+<p>Тоесть он у вас созревает дней за 15?</p>
+
+<p><strong>Anton1977</strong> 29-07-2013</p>
+
+<p>Тоесть он у вас созревает дней за 15?</p>
+
+<p>:-[ Нет, не за 15 конечно… а хотелось бы. Поэкспериментировать попробую на сей счёт. В пики энергооплаты (высокий тариф) не очень уже хочется светить…</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

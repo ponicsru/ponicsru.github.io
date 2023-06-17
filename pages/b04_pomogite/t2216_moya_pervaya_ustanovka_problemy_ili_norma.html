@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Моя первая установка. Проблемы или норма? | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Моя первая установка. Проблемы или норма?">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Моя первая установка. Проблемы или норма?</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>ranger</strong> 24-02-2015</p>
+
+<p>Всем привет! Я новичок в сельском хозяйстве, я больше по тематике электровелосипедов. Чтобы были силы на покатушки, решил засеять квартиру луком, и жрать его ведрами. К сожалению собрал всего 100 грамм и задумался, о том, что я делаю не правильно.</p>
+
+<p>Купил в китае свет, компрессоры, камни. Накопил пенопласта. К сожалению результата пока нету. Засеял 25 луковиц в заводское луковое счастье, недельки три они росли при естественном свете под потолком кухни. Собрал на миску салата. Часть собрал. Поставил свет, уже стоит порядка 3 недель, результат на лицо, собрал еще грамм 60. Пару луковиц выкинул - уже пустые внутри и начало сохнуть.</p>
+
+<p>Воды долил… некоторые луковицы пустили корни за все время.. до неприличия небольшие… Луковицы из магазина, половина красный, половина белый. Часть обрезана сверху</p>
+
+<p>Все ли я делаю правильно и какой я должен был получить результат? Сейчас свечу круглосуточно, но особого роста не вижу. Может надо по таймеру?</p>
+
+<p>по плану уже должен был наделать новых установок, но смысл если растет плохо <em>sos</em></p>
+
+<p><a href="https://t.me/ponics_ru_files/13704" target="_blank"><img src="/imagehost2/thumbs/p2240057.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/13705" target="_blank"><img src="/imagehost2/thumbs/p2240058.jpg" alt="" /></a></p>
+
+<p><strong>orgail</strong> 24-02-2015</p>
+
+<p>Читали? <a href="http://www.ponics.ru/2009/06/onion/" target="_blank">http://www.ponics.ru/2009/06/onion/</a></p>
+
+<p><strong>ranger</strong> 24-02-2015</p>
+
+<p>да, конечно. Ко мне обращяется куча новичков по моему хобби, у которых в голове каша. Постоянно тыкаю их, а они не видят в упор. Уверен что я идут тем же путем и все уже смеются над моими ошибками :-( Но проштудировал все статьи, форум, все прочитал внимательно. Сверял по пунктам. Но наверное я делаю ошибки, которые не считаю ошибками и не вижу их. Может света много? Может холодно? На кухне в районе 20-25 гр, если что подогрев аквариумов уже заказал несколько штук…</p>
+
+<p>в общем эта статья и вдохновила меня… только там где там 13 дней, у меня наверное уже месяц.. и не растет ничего.. насколько важно все делать в точности так? Температура, свет… в детстве на окне росло чуть ли не лучше…</p>
+
+<p><strong>barmaley66kv</strong> 24-02-2015</p>
+
+<p>Свет игрушечный, поверьте, сам прошел через это года 3 назад.</p>
+
+<p>5мм диоды для растений это как слону дробина, хоть 1000шт. их будет. Лучше на подоконник поставьте, там света гораздо больше</p>
+
+<p><strong>ranger</strong> 24-02-2015</p>
+
+<blockquote>
+  <p>Свет игрушечный, поверьте, сам прошел через это года 3 назад.</p>
+
+  <p>5мм диоды для растений это как слону дробина, хоть 1000шт. их будет.</p>
+</blockquote>
+
+<p>я читал умные статьи, где писалось что важен какой свет. Растения усваивают до неприличня мало света, и если диоды разного цвета, то вроде они получают света больше, чем от мощной лампы, т.к спектр другой…</p>
+
+<p>Мощность панели 15W (225LED * 0.06W)</p>
+
+<p>значит в статьях ерунду пишут.. Есть такая вторая, повесить? Будет 30вт и 550 диодов.. Или смысла нету? Чем заменить?</p>
+
+<p><strong>orgail</strong> 24-02-2015</p>
+
+<p>с луком я бы не на свет много внимания обращал</p>
+
+<p>за месяц в прохладном подвале на подоконнике у меня рос месяц, как раз в декабре в горшок на воду посадили, правда сильно не будили :)</p>
+
+<p>сорт, температуры, влажность, ну и в конце свет, у меня так.</p>
+
+<p><strong>ranger</strong> 24-02-2015</p>
+
+<p>то есть зимой он растет не 2 недели а месяц, и это почти нормально? А если поду подогреть будет быстрей расти? Я жене гарантировал салат в обмен на нишу в туалете…</p>
+
+<p><strong>orgail</strong> 24-02-2015</p>
+
+<p>:D ну гарантировать я бы не стал</p>
+
+<p>поймите, очень много зависит от сорта, когда лук заснул, как “пробудили”, температура конечно и влажность.</p>
+
+<p>бывает такой лук, что и до весны будет торчать в горшке и пера не выпустит :))</p>
+
+<p>с салатом больше предсказуемость :) там из спячки никого выводить не надо, были бы семена хорошие - остальное расписано на форуме на один десяток раз</p>
+
+<p>все, кто выгоняет лук на зелень в больших объемах - знают его “родословную”, иначе - русская рулетка</p>
+
+<p><strong>ranger</strong> 24-02-2015</p>
+
+<p>а где можно достать проверенный лук? Есть ли признаки его качества? Я когда покупал он даже перья уже пустил зеленые…</p>
+
+<p>Еще жена купила лук севок, маленький.. его туда есть смысл досадить или он на воде не вырастит?</p>
+
+<p><strong>Ru7tam</strong> 24-02-2015</p>
+
+<blockquote>
+  <p>Еще жена купила лук севок, маленький.. его туда есть смысл досадить или он на воде не вырастит?</p>
+</blockquote>
+
+<p>Мне кажется, севок не стоит пускать на перо.</p>
+
+<p><strong>orgail</strong> 24-02-2015</p>
+
+<p>я бы взял такой, что уже перо пустил, как-никак хороший признак.</p>
+
+<p>дальше - хорошие процедуры по пробуждению, температура и влажность. свет обычный :) люмка или подоконник, вообщем строго по инструкции Валерия, это не сказки и не выдумки - это его реальный метод, который многих тут на форуме “подстегнул” в свое время.</p>
+
+<p>с севком бы не связывался, уж больно дорогой получится</p>
+
+<p><strong>barmaley66kv</strong> 24-02-2015</p>
+
+<blockquote>
+  <p>я читал умные статьи, где писалось что важен какой свет. Растения усваивают до неприличня мало света, и если диоды разного цвета, то вроде они получают света больше, чем от мощной лампы, т.к спектр другой…</p>
+
+  <p>Мощность панели 15W (225LED * 0.06W)</p>
+
+  <p>значит в статьях ерунду пишут.. Есть такая вторая, повесить? Будет 30вт и 550 диодов.. Или смысла нету? Чем заменить?</p>
+</blockquote>
+
+<p>А на мой взгляд растения “усваивают” до неприличия много света, лук конечно меньше.</p>
+
+<p>У вас синий+красный и это правильно, но вот какая длина волны каждого? Не любой синий и красный подойдёт для нормального развития растения. Да даже не это главное в вашем случае. У вас 15Вт это мощность электрическая, т.е. сколько эти диоды потребляют. А вот световая мощность у 5мм диодов мизерная. Они подойдут максимум для доп. боковой подсветки скажем томата, огурца, да в принципе любого куста, при условии что диоды будут развешены как гирлянда на ёлке. Другими словами диоды в непосредственной близости от листа. Но я бы этим не стал заморачиватся.</p>
+
+<p>15Вт люм.лампа на порядок даст лучший результат, чем такой светильник.</p>
+
+<p>Где то в форуме есть тема по светодиодному освещению, почитайте, многие вопросы отпадут.</p>
+
+<p>По агротехнике лука ничего не скажу, не выращивал.</p>
+
+<p><strong>Coccinella</strong> 25-02-2015</p>
+
+<p>Orgail дело говорит, диоды можно убрать подальше и озаботиться посадочным материалом. Луковицы с проросшим пером зачастую ничего хорошего не дают (такая реакция бывает у гнилых внутри луковиц, а снаружи не видно), лучше выбирать луковицы с проросшими корнями.</p>
+
+<p>Если речь идет о паре десятков растений, то севок не так уж дорог, зато можно быть уверенным в том, что севок прорастет, он в продажу поступает уже “проснувшийся” :)</p>
+
+<p>Я как-то общалась с одним турецким агрономом, он как раз на столах с подтоплением выращивал перо из севка, сажал севок в рассадные кассеты. Но в таком случае потребуется свет, лучше естественный, чем эти диоды, и питание.</p>
+
+<p>При выгонке из репки достаточно воды, а свет и вовсе…</p>
+
+<p><em>**</em> 25-02-2015</p>
+
+<p>ranger <em>Wall</em></p>
+
+<p>Вы пишете то что читали как Валерий лук растил, проштудировали все статьи, форум, все прочитал внимательно - не верю!!!</p>
+
+<p>По Вашим фото видно что лук не барбатировали, верхушку не подрезали, (пузырей от компресора не видно).</p>
+
+<p>Наверху воздух всегда суше.</p>
+
+<p>Света вроде хватает, зеленый.</p>
+
+<p>И Coccinella верно говорит что лучше озаботиться посадочным материалом.</p>
+
+<p>Между делом: Производители лука обрабатываеют “жопки” луковиц чем то специальным что бы корни не проростали и он сохронял долгое время товарный вид! Поэтому луку из магазина нужно чуть-чуть срезать “жопку” (совсем чуть-чуть).</p>
+
+<p>Все довольно нудно просто: Купили лук, очистели от шелухи (хорошенько, возможно даже убрать всю) промыли, налили в ведерко воды прям из крана горячей, холодной, ну чтоб сильно тепленькая была (можно поставить аква. нагреватель, можно просто раз в час горячей подливать - чтоб не остывала), на дно камень для аэрации, у лука слегка слегка подрезали “жопку” и в ведрко с водой, пускай булькает часиков 5, появятся небольшие корешки (непременно), вытаскиваете луковицу вытираете, подрезаете верхушку чуток и в свою установку раставляете.</p>
+
+<p>Товарищи форумчане завязывайте Вы с луком голову морочить.</p>
+
+<p>Читайте внимательно отчет Валерия еще раз повторю ссылку <a href="http://www.ponics.ru/2009/06/onion/" target="_blank">http://www.ponics.ru/2009/06/onion/</a> - ну это же полная инструкция!!!</p>
+
+<p><strong>Gamelander</strong> 25-02-2015</p>
+
+<p>По поводу “Так что, после долгих экспериментов, был найден лучший раствор для выгонки – это вода”.</p>
+
+<p>Человек сажал 2 группы луковиц в одинаковых условиях, досветки не было. Одну на воду, другую на раствор.</p>
+
+<p>На растворе высота и масса зелени на день сбора были больше, с луковиц сняли 2 урожая, верхушки после среза затянулись.</p>
+
+<p>Человека знаю, посадки видел сам )</p>
+
+<p><strong>ranger</strong> 25-02-2015</p>
+
+<p>бульбулировал сутки, в теплой воде. Шалуха не отвалилась, руками не снимал. Есть 2-3 луковицы замененные, их не барировал. Жопки резал у половины луковиц, разницы особой нету. Половину не резал вдруг испорчу ;) Новую посадку буду резать.. и добавлю подогрев..</p>
+
+<p><strong>Coccinella</strong> 25-02-2015</p>
+
+<p>Господа, чтобы предохранить от прорастания, лук опрыскивают в поле за месяц до уборки, срезанием донца влияние гидразида малеиновой кислоты удалить невозможно, она действует на точку роста.</p>
+
+<p>Подрезание донца мне лично очень не нравится, так и все зачатки корней удалить недолго.</p>
+
+<p>Удаление шелухи, как и срезание верхшки луковицы ведет к потере массы и повышает риск развития инфекций.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

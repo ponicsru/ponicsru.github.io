@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Проблема с помидором. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Проблема с помидором.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Проблема с помидором.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>AJIeKc</strong> 15-04-2010</p>
+
+<p>Вобщем листья у растения куполообразные, края верхних листьев вообще висят, но тем не менее растение выглядит здоровым. Нижний лист вообще какой то темно зеленый у него сворачиваются края и давно остановился рост. Подскажите что это может быть?</p>
+
+<p><img src="http://www.7image.ru/pics/0410/29128217.jpg" alt="" /> <img src="http://www.7image.ru/pics/0410/2913094.jpg" alt="" /></p>
+
+<p><strong>Mole_Garden</strong> 15-04-2010</p>
+
+<p>Пишем состав раствора, условия окружающей среды, свет, режим. А там уже будет видно.</p>
+
+<p><strong>AJIeKc</strong> 15-04-2010</p>
+
+<p>Раствор - N140 P50 K350 Ca150 Mg50, микроудобрения унифлор микро 0.5 мл\л. свет 20 ВТ сберегающая, 14 часов работает. Ppm раствора 1150. Ph 5.8. Вроде бы все в норме, но нет.. По описанию похоже на недостаток калия, но его и так больше некуда…Температура 19 ночь и 23-26 день…Не понимаю, вроде все как должно быть…</p>
+
+<p><strong>Mole_Garden</strong> 16-04-2010</p>
+
+<p>Ну да, с первого взгляда все хорошо. А сколько выходит в итоге железа в этом унифлор?</p>
+
+<p>Так понимаю система DWC Как корневая? Керамзит, в котором сидит растение проходил подготовку?</p>
+
+<p><strong>AJIeKc</strong> 16-04-2010</p>
+
+<p>Корневая огромная идеально белая…DWC керамзит лечил…Железа получается 1.6 мг\л.</p>
+
+<p><strong>orgail</strong> 16-04-2010</p>
+
+<p>свет 20 ВТ сберегающая?</p>
+
+<p>Раствор - N140 P50 K350 Ca150 Mg50 - из каких компонент получили?</p>
+
+<p><strong>AJIeKc</strong> 16-04-2010</p>
+
+<p>Да 20 Вт сберегающая, но т.к растение ещё не большое и лампа не нагревается, ёё можно приближать довольно близко, поэтому думаю пока что освещения достаточно. Раствор получил из монофосфата калия, кальциевой селитры, аммиачной селитры, сульфата магния и, да, хлорид калия, но проблема в том что если использовать нитрат калия, то будет недобор по кальцию, ибо нитрат кальция единственный источник кальция пока что, а хелата нету, и вроде как не предвидится. Тем более, где-то читал, что хлор в умеренных количествах придает вкус томатам. Сульфат калия использовать не хочется потому как будет много серы…это моё интуитивное, ни на чем не основанное предположение, если я ошибаюсь, скажите, буду использовать его…</p>
+
+<p>И ещё по теме растение подвергалось этакой пересадке: по мере роста я приподнимал томат и досыпал керамзит, тем не менее корни себя чувствуют хорошо, как мне кажется …не думаю что это могло явиться причиной, но вдруг…</p>
+
+<p>Подумывал о минеральном отравлении, потому что растение скручивается снизу, т.е. самый нижний настоящий лист скручен и темно-зеленого цвета, второй снизу нормального цвета, но тоже начинает скручиваться. И ко всему такую концентрацию я использовал давненько, прям как появились листа 4.</p>
+
+<p>Ещё в комнате бывает довольно душно…</p>
+
+<p>И раз уж заговорил про хелат кальция, может кто-нибудь знает где его достать, или хотя бы назовите какой-нибудь альтернативный источник кальция…</p>
+
+<p>Вот вроде и вся биография…</p>
+
+<p><strong>orgail</strong> 16-04-2010</p>
+
+<p>душно это сколько по цельсию?</p>
+
+<p><strong>AJIeKc</strong> 16-04-2010</p>
+
+<p>По цельсию 26 максимум что я видел…Но на самом деле я имел немного другое: душно всмысле низкая влажность…</p>
+
+<p><strong>valery</strong> 17-04-2010</p>
+
+<p>Вроде бы наоборот - калия безбожно много. Кальция очень мало. И Азота очень мало.</p>
+
+<p>Соотношение азот/калий чуть ли не 1 к 3. Это очень большая разница. В “генеративном” растворе - возможно, столько калия и позволительно, но это когда томат уже вовсю “помидорами” стреляется.</p>
+
+<p>Но скорее всего до “проблем” с раствором дело еще и не дошло …</p>
+
+<p>Мне кажется - света крайне мало. Можно сказать, что и нет совсем. И температура для такого света высоковата - это температура для яркокого солнца - летнего дня.</p>
+
+<p>Мнение. (Некомпетентное).</p>
+
+<p>Усилить освещение, немного сбить температуру. Выровнять влажность к “рекомендованной”.</p>
+
+<p>Раз корни, говорите, хорошие - все должно “поправиться” и “ожить”.</p>
+
+<p>Потом уже - разбираться с раствором.</p>
+
+<p><strong>AJIeKc</strong> 17-04-2010</p>
+
+<p>Ну о лампе нормальной давно подумываю…это может объяснить форму листьев, а темно-зеленый цвет…?</p>
+
+<p><strong>Mole_Garden</strong> 17-04-2010</p>
+
+<p>Что-то мне подсказывает, что частично все решиться, но такой вид это по всей видимости все же проблема с питанием.</p>
+
+<p><strong>VVS_</strong> 15-06-2010</p>
+
+<p>У меня аналогичная проблема но на грунте.</p>
+
+<p>Края листиков загнуты вниз, центральная жила мощно горбом выпирает вверх дугой.</p>
+
+<p>но сами растения мощно растут и светут есть завязи</p>
+
+<p><strong>WERDNA</strong> 15-06-2010</p>
+
+<p>Загнутые вниз края, бугристость и темно-зеленая окраска - похоже азота много</p>
+
+<p><strong>VVS_</strong> 15-06-2010</p>
+
+<p>Действительно, спасибо. 2 дня назад уменьшил как раз количество азота в связи с обильным завязыванием и цветением, посмотрим на новые листики.</p>
+
+<p>Получается гидропоника на обычном грунте, кормежка та же, земли всего 10 литров а кусты больше метра в высоту и полметра в ширь…(не пасынковал)</p>
+
+<p><strong>Mole_Garden</strong> 16-06-2010</p>
+
+<blockquote>
+  <p>Действительно, спасибо. 2 дня назад уменьшил как раз количество азота в связи с обильным завязыванием и цветением, посмотрим на новые листики.</p>
+
+  <p>Получается гидропоника на обычном грунте, кормежка та же, земли всего 10 литров а кусты больше метра в высоту и полметра в ширь…(не пасынковал)</p>
+</blockquote>
+
+<p>Ээээ, что значит кормешка та же? Поливать можно тем же раствором, но не часто раз в неделю, при обильном плодоношение, и раз в две недели в стадии роста. Остальное время водой. В противном случае может быть засаливание и передозик.</p>
+
+<p><strong>VVS_</strong> 17-06-2010</p>
+
+<p>Они осушают землю по страшной силе, поэтому на 1 подкормку приходится 2-3 полива обычной водой и по частоте получается что раз в неделю кормлю. А сейчас вообще перестану пока, на месяц, потому что обнаружил причину снижения роста - банально воздуха нехватало. Теперь поставил новую помпу вместо 1.5 литра в минуту 4 литра в минуту и все быстро (за ночь) исправилось, росту еще 3 см прибавили. Итого непосредственно в центр корневой системы каждого куста дует 2 л/мин.</p>
+
+<p><strong>VVS_</strong> 18-06-2010</p>
+
+<p>Снова пришлось добавить воздуха.. уже 3 л/мин в корень дует…</p>
+
+<p>Если так дальше пойдет, придется закапывать новые распылители в землю т.к. через имеющися уже давления не хватит… А змли в горшке почти нет, сплошной комок корней. Как закопать новые я даж понятия не имею. Аквариумные помпы уже не способны развивать бОльшее давление чтоб продавить больший расход.</p>
+
+<p>Есть небольшая проблемка, молодые листики с подогнутыми вниз краями, некоторые кисти с листьями свисают вниз и в плоскости закручиваются винтом, напоминает штопор. Но выглядят упруго, насыщенно, как будь-то они по собственному желанию растут вниз. Цвет листьев здоровый, количество кистей с цветами на каждый корень 9 штук. уже 5 помидорок наливается.</p>
+
+<p>Посажены были в конце апреля. Сорт Буденовка.</p>
+
+<p><strong>Mole_Garden</strong> 18-06-2010</p>
+
+<p>Боюсь, что с решением проблемы с зарыванием распылителей, вам никто не подскажет, вы первопроходец :D</p>
+
+<p><strong>Oxy</strong> 18-06-2010</p>
+
+<p>А как вы определяете, что воздуха корням не хватает?</p>
+
+<p><strong>VVS_</strong> 19-06-2010</p>
+
+<blockquote>
+  <p>А как вы определяете, что воздуха корням не хватает?</p>
+</blockquote>
+
+<p>При неизменном режиме полива и кормления фиксирую что рост остановился (делаю замер рулеткой каждый день по определенным местам + замер плодов).</p>
+
+<p>Добавляю воздуха, через сутки замер показывает продвижение.</p>
+
+<p>В случае остановки, снова добавляю воздуха.</p>
+
+<p>Пока все хорошо, но резервы по добавлению воздуха исчерпаны…</p>
+
+<p>Плоды наливаются, цвет пока не опадает, размер самой большой помидорки 3.5 см.</p>
+
+<p>Если рост остановится, придется видимо прищипывать или пасынки с цветочками убирать :(</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

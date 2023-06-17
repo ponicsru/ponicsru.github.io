@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Помогите с салатом | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Помогите с салатом">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Помогите с салатом</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>ASK</strong> 10-02-2011</p>
+
+<p>Возникла проблема с салатом не могу понять в чем дело.</p>
+
+<p>Салат на проточке, 25 дней от посадки. На некоторых растениях листья обвисли и обмякли, стали дряблыми, а маленькие вообще как сопли.</p>
+
+<p>Сидят в горщочках в торфе. Освещение данат 400 на 20 растений 14/10 ч., минерализация 1400, Ph -6</p>
+
+<p><strong>Coccinella</strong> 10-02-2011</p>
+
+<p>Покажите, пожалуйста, картинку и сообщите название сорта. Подозреваю, что растения заболели, либо черной ножкой, либо бактериозом (“сопли “ очень характерны именно для бактериоза), либо ложной мучнистой росой. Только по словесному описанию сказать трудно.</p>
+
+<p><strong>ASK</strong> 10-02-2011</p>
+
+<p>Вечером попробую выложить фото.</p>
+
+<p>Как бороться с бактериозом?</p>
+
+<p><strong>Mole_Garden</strong> 10-02-2011</p>
+
+<p>На какой высоте висит лампа, покажите фото корневой. Так же более подробно про температуру раствора.</p>
+
+<p>А 400 ватт на 20 растений очень круто!!! :D</p>
+
+<p><strong>ASK</strong> 10-02-2011</p>
+
+<blockquote>
+  <p>На какой высоте висит лампа, покажите фото корневой. Так же более подробно про температуру раствора.</p>
+
+  <p>А 400 ватт на 20 растений очень круто!!! :D</p>
+</blockquote>
+
+<p>Для своих подопечных ничего не жалко :)</p>
+
+<p>Высота около 80 см.</p>
+
+<p>Корневую и листья сфоткаю вечером.</p>
+
+<p>Вообще про торф для салата, как показалось, отзывы не очень. А крупные тепличные комбинаты в нем ростят… :(</p>
+
+<p><strong>Mole_Garden</strong> 10-02-2011</p>
+
+<blockquote>
+  <p>Высота около 80 см.</p>
+
+  <p>Корневую и листья сфоткаю вечером.</p>
+
+  <p>Вообще про торф для салата, как показалось, отзывы не очень. А крупные тепличные комбинаты в нем ростят… :(</p>
+</blockquote>
+
+<p>А температура какая? Так же какая температура раствора?</p>
+
+<p>Для такой лампы высота в 80 см слишком мало, как минимум метр, а лучше наверно 1,2 метра.</p>
+
+<p>Кто вам такое сказал про торф? Я выращивал в торфе, все даже очень круто растет, просто надо выбирать правильный торф.</p>
+
+<p><strong>ASK</strong> 10-02-2011</p>
+
+<blockquote>
+  <p>А температура какая? Так же какая температура раствора?</p>
+
+  <p>Для такой лампы высота в 80 см слишком мало, как минимум метр, а лучше наверно 1,2 метра.</p>
+
+  <p>Я выращивал в торфе, все даже очень круто растет, просто надо выбирать правильный торф.</p>
+</blockquote>
+
+<p>Темпиратура воздуха высокая - 26-27 но ничего с ней не поделать :(</p>
+
+<p>раствор - 23</p>
+
+<p>А вот какой нормальный?</p>
+
+<p>Вот и фото</p>
+
+<p><a href="https://t.me/ponics_ru_files/4846" target="_blank"><img src="/attachimages/5727_GEDC0416.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4847" target="_blank"><img src="/attachimages/5729_GEDC0421.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4848" target="_blank"><img src="/attachimages/5731_GEDC0423.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4849" target="_blank"><img src="/attachimages/5733_GEDC0424.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4850" target="_blank"><img src="/attachimages/5735_GEDC0426.jpg" alt="" /></a></p>
+
+<p><strong>ASK</strong> 10-02-2011</p>
+
+<p>Сорт салата “гранд”</p>
+
+<p><strong>Mole_Garden</strong> 10-02-2011</p>
+
+<blockquote>
+  <p>Темпиратура воздуха высокая - 26-27 но ничего с ней не поделать :(</p>
+
+  <p>раствор - 23</p>
+
+  <p>А вот какой нормальный?</p>
+</blockquote>
+
+<p>Нормальная температура раствора 18-20 градусов, а вот воздуха для салата 20 плюс минус. Жесть, а не салаты.</p>
+
+<p>Есть подозрение, что они у вас зажарились</p>
+
+<p><strong>ASK</strong> 10-02-2011</p>
+
+<blockquote>
+  <p>Есть подозрение, что они у вас зажарились</p>
+</blockquote>
+
+<p>Тогда бы они окрылись золотистой корочкой :)</p>
+
+<p>А если серьезно, то я конечно понимаю, что тепиратура мягко говоря высокая, но пока с ней ничего не сделать. Другой вопрос, что еще 2 дня назад салаты и в таких условиях росли нормально, тянулись конечно, но в целом и лист был нормальный и прирост. А тут вот буквально 2 дня вот такие проблемы, при том, что изменений в окружающих условиях нет.</p>
+
+<p><strong>valery</strong> 10-02-2011</p>
+
+<p>В чем причина - не знаю, но температура “нехорошая” …</p>
+
+<p>Цитата из “Райк Цваан”-овского описания</p>
+
+<p>Охлаждение питательного раствора</p>
+
+<p>При теплом климате экономически эффективным является</p>
+
+<p>охлаждение питательного раствора, так как это позволяет избежать</p>
+
+<p>более дорогих способов охлаждения всей теплицы. Температура</p>
+
+<p>питательного раствора выше 20°С провоцирует цветение салата.</p>
+
+<p>Также такая высокая температура угнетает рост корневой системы,</p>
+
+<p>так как в растворе снижается содержание кислорода. Охлаждение</p>
+
+<p>раствора не только уменьшает стрелкование салата, но также сдер-</p>
+
+<p>живает развитие питиума, который приводит к увяданию растений.</p>
+
+<p>Охлаждение питательного раствора очень эффективно умень-</p>
+
+<p>шает температурный стресс при невозможности поддержания</p>
+
+<p>требуемой температуры воздуха в теплице летом.</p>
+
+<p><strong>ASK</strong> 10-02-2011</p>
+
+<blockquote>
+  <p>В чем причина - не знаю, но температура “нехорошая” …</p>
+</blockquote>
+
+<p>Как вариант попробую тару с раствором ставить в таз со снегом…</p>
+
+<p>Но все же думаю, что тут более глобальная причина :(</p>
+
+<p><strong>Coccinella</strong> 11-02-2011</p>
+
+<p>А проветривать никак невозможно? Самая последняя картинка мне очень не понравилась. Возможно там и не Bremia (толком не разглядеть), но явная инфекция.</p>
+
+<p>Словом, салату жарко!</p>
+
+<p><strong>Mole_Garden</strong> 12-02-2011</p>
+
+<blockquote>
+  <p>Словом, салату жарко!</p>
+</blockquote>
+
+<p>Я бы сказал он почти зажарился. Да еще небось обдува то нет, что бы листья охлаждались и лучше испаряли.</p>
+
+<p><strong>ASK</strong> 13-02-2011</p>
+
+<p>Поставил обдув, некоторым салатам стало лучше, а некоторые так и не оправились. Выкинул те что не восстановились.</p>
+
+<p><strong>ASK</strong> 13-02-2011</p>
+
+<p>Хм… А как же летом его растить в теплице? На улице же летом 25 -30…. :(</p>
+
+<p>Тут уж проветривание очно не поможет.</p>
+
+<p><strong>Mole_Garden</strong> 13-02-2011</p>
+
+<blockquote>
+  <p>Хм… А как же летом его растить в теплице? На улице же летом 25 -30…. :(</p>
+
+  <p>Тут уж проветривание очно не поможет.</p>
+</blockquote>
+
+<p>А летом салат как правило в теплицах и не выращивают, а если и выращивают, то используют системы охлаждения и зашторивания.</p>
+
+<p>Вот такие системы охлаждения</p>
+
+<p>Картонные радиаторы, по которым стекает вода и через них в теплицу затягивается воздух с улицы.</p>
+
+<p><img src="/wp-content/uploads/2010/03/evap_cooling_pad_thumb.jpg" alt="" /></p>
+
+<p>Вентиляторы в конце теплицы, размером примерно по росту человека, они затягивают воздух в теплицу с улицы.</p>
+
+<p><img src="/wp-content/uploads/2010/03/initial_spacing_thumb.jpg" alt="" /></p>
+
+<p><strong>ASK</strong> 22-02-2011</p>
+
+<p>Посадил новых подопытных.</p>
+
+<p>Вот фотографии 3 дня после всходов.</p>
+
+<p>Что-то мне кажется что растюшки очень вытянутые…</p>
+
+<p>Почему так, досветка с первого дня данат 400 круглосуточно с расстояния 1 м.</p>
+
+<p>Может опять темпиратура виновата, удалось сбить до 23 гр, но все равно выше рекомендаций</p>
+
+<p>Или я параною уже?</p>
+
+<p><a href="https://t.me/ponics_ru_files/4851" target="_blank"><img src="/attachimages/5939_GEDC0031.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4852" target="_blank"><img src="/attachimages/5941_GEDC0034.jpg" alt="" /></a></p>
+
+<p><strong>Tony_85</strong> 22-02-2011</p>
+
+<p>На втором снимке салат явно тянется к свету. А Лампа ДНАТ у Вас с отражателем? Новая или старая? Если нет отражателя то 1 м довольно далеко, тем более для рассады. У меня на установке расстояние до среднего ряда 1 м. и когда там был ДНАТ400 (простой не тепличный, без дополнительного синего спектра) то даже взрослые растения тянулись. Так что растюхам не хватает света.</p>
+
+<p><strong>Coccinella</strong> 22-02-2011</p>
+
+<p>Да и жарко им :)</p>
+
+<p><strong>ASK</strong> 09-03-2011</p>
+
+<blockquote>
+  <p>На втором снимке салат явно тянется к свету. А Лампа ДНАТ у Вас с отражателем? Новая или старая? Если нет отражателя то 1 м довольно далеко, тем более для рассады. У меня на установке расстояние до среднего ряда 1 м. и когда там был ДНАТ400 (простой не тепличный, без дополнительного синего спектра) то даже взрослые растения тянулись. Так что растюхам не хватает света.</p>
+</blockquote>
+
+<p>Уменьшил расстояние снизил темпиратуру обдувом. Тянуться перестали.</p>
+
+<p>Вот еще вопрос: Почему салат плохо развивает корневую. Очередная партия высунула корни из расскадной кассеты только через 2,5 недели…</p>
+
+<p>Может потому что полив сверху и им всего хватает? Но развитие зелени явно отстает от идеала…</p>
+
+<p>Или наоборот не хватает?</p>
+
+<p><strong>Mole_Garden</strong> 09-03-2011</p>
+
+<p>Посмотрел фото твоего стаканчика для салата. Так там же прорезь только на дне и то не прорезь, а отверстием мелкое. Потому и вылазят корни так долго. А ты вытаскивал салат из стаканчика? Какое состояние дел там? Просто в тех стаканчиках которые использовал я и многие другие, прорези по всем сторонам, что несомненно дает лучшую возможность для выхода корней к питательному раствору. И почему полив с верху? Прям по листве салата что ли?</p>
+
+<p><strong>ASK</strong> 10-03-2011</p>
+
+<blockquote>
+  <p>Посмотрел фото твоего стаканчика для салата.</p>
+</blockquote>
+
+<p>Стаканчики я уже распластал. Теперь у каждого есть 4 вертикальных щели.</p>
+
+<p>Салат вытащил сегодня тот который самый тугодум. Корней мало и короткие…</p>
+
+<p>Поливаю под корень. Вот думаю что когда растят на стелаже то питание идет снизу вот корни к нему и тянуться. А у меня сверху льется, вот они и сидят в горшке… :)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

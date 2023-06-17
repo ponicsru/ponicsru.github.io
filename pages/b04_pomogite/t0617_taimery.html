@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Таймеры | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Таймеры">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Таймеры</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Tony_85</strong> 20-09-2010</p>
+
+<p>Есть несколько механических таймеров, и все после некоторого времени начинают останавливаться. Их как будто клинит, циферблат не движется и таймер перестает выключать или включать в нужное время. Если его прокрутить немного то он начинает дальше работать, но потом на том же месте или уже в другом снова клинит. Разбирал такой девайс, проверял все шестеренки, все в порядке, сломанных зубцов нигде нет. Вот не могу понять что с ними. В магазине при покупке тоже не провереш.</p>
+
+<p>У кого то били такие проблемы с таймерами?</p>
+
+<p>С электронными тоже не все хорошо. Если он в режиме АВТО включил свет, а потом из-за сбоя электричества ток выключался, то он дальше ток не пропускает, даже если свет появится. Интересно почему? В механике ток идет, наверное потому что там цепь замыкается механически, а электронных таймерах не пропускает. Как исправить такую проблему?</p>
+
+<p><strong>Mole_Garden</strong> 20-09-2010</p>
+
+<p>:-\ Что -то у тебя все там сложно.</p>
+
+<p>У меня ни разу еще не было такой проблемы ни с механическим ни с электронным. В электронном может быть стоит защита, но по идее через некоторое время он все равно должен врубаться.</p>
+
+<p>Даже и не знаю, что тут можно предложить <em>???</em></p>
+
+<p><strong>Юка</strong> 20-09-2010</p>
+
+<p>Останавливаются новые китайской сборки (механические). Если разобраться и не “перемешать” ноль с фазой , то их можно просто запараллелить уменьшив тем самым вероятность отказа в несколько раз.</p>
+
+<p><strong>Oxy</strong> 20-09-2010</p>
+
+<p>У меня были такие же проблемы с таймерами механическими, такая же песня и такой же гемор. Носил и мастерам на ремонт, и сам перебирал, и самые разные танцы с бубном выполнял,реально помогает только покупка таких же новых, и желательно из другой партии - спустя пол-года например. Также себя оправдали электронные, но опять же, возможно попалась “удачная” партия. Любой ремонт механических таймеров это в большинстве случаев пустая потеря времени</p>
+
+<p><strong>Tony_85</strong> 21-09-2010</p>
+
+<p>Спасибо всем за ответы. У меня наверное бракованная партия попалась. Интересно, есть ли что-то на нашем ринке не китайское. Постараюсь найти. :)</p>
+
+<p><strong>maxsoft</strong> 21-09-2010</p>
+
+<blockquote>
+  <p>есть ли что-то на нашем ринке не китайское.</p>
+</blockquote>
+
+<p>Duwi вроде как немецкие</p>
+
+<p><strong>WERDNA</strong> 22-09-2010</p>
+
+<p>Есть. Таймеры на DIN-рейку. Немецкие ABB например и механические и электрические и с запасом хода и без . Ну очень качественные. Дорого.</p>
+
+<p><a href="https://t.me/ponics_ru_files/4287" target="_blank"><img src="/attachimages/3420_Таймер.png" alt="" /></a></p>
+
+<p><strong>WERDNA</strong> 22-09-2010</p>
+
+<p>Duwi тож китайской сборки. Правда достаточно качественные. 20 программный электорнный от Duwi все лето работал в теплице и на открытом воздухе - не одного сбоя.</p>
+
+<p><strong>maxsoft</strong> 22-09-2010</p>
+
+<blockquote>
+  <p>Duwi тож китайской сборки. Правда достаточно качественные. 20 программный электорнный от Duwi все лето работал в теплице и на открытом воздухе - не одного сбоя.</p>
+</blockquote>
+
+<p>сборка то может и китайская (равно как и те же ABB), да отк немецкий</p>
+
+<p><strong>valery</strong> 22-09-2010</p>
+
+<p>А что значит таймер на ДИН-рейку, как это перевести на язык доступный неграмотному обывателю ?</p>
+
+<p>Допустим я хочу “прилепить” себе такой … Что для этого нужно ?</p>
+
+<p><strong>Tony_85</strong> 22-09-2010</p>
+
+<blockquote>
+  <p>А что значит таймер на ДИН-рейку, как это перевести на язык доступный неграмотному обывателю ?</p>
+</blockquote>
+
+<p>Это значит что он крепится на специальную реку в распределительный шкаф, как современные автоматические предохранители. И у него нет розетки. Только зажимы на контакты. Стандартную розеточную вилку в него не засунешь.</p>
+
+<p><strong>Oxy</strong> 22-09-2010</p>
+
+<p>На самом деле зажимы удобнее, чем вилка. Хотя бы тем, что не занимают розетку и контакт плотнее. Дин рейка тоже обалденное решение, в идеале всю автоматику нужно вешать на дин рейки. В любом электрическом магазине покажут как выглядит и крепиться дин-рейка. Это у них основной расходник.</p>
+
+<p>Но такие автоматы стоят как 10-15 простых механических. Даже если из 15 купленных 10 штук вылетят, оставшиеся пять будут работать так же надежно как один немецкий.</p>
+
+<p>У производителей этих немецких автоматов есть в прайсе масса всякой всячины, например вкусняшка с датчиком освещения. Очень удобно для досветки. Стоимость такая же - дороже самого освещения :)</p>
+
+<p><strong>WERDNA</strong> 22-09-2010</p>
+
+<p>Например, Вы решили подключить через таймер мощную нагрузку, скажем несколько Днат. В этом случае, настоятельно рекомендуется подключаться не через таймер, а пользоваться магнитным пускателем, да еще и автомат поставить неплохо бы очень. Удобно собрать все в шитке (коробке) на DIN рейку. Красиво и удобно получается…</p>
+
+<p><strong>WERDNA</strong> 22-09-2010</p>
+
+<p>Фото Шиток с рейкой и рейка отдельно.</p>
+
+<p><strong>valery</strong> 22-09-2010</p>
+
+<p>Спасибо, но к сожалению фото - не увеличивается. Не понял ничего. Ну может, как-нибудь еще раз, со второй попытки. Или с третьей …</p>
+
+<p><strong>Mole_Garden</strong> 22-09-2010</p>
+
+<blockquote>
+  <p>Спасибо, но к сожалению фото - не увеличивается. Не понял ничего. Ну может, как-нибудь еще раз, со второй попытки. Или с третьей …</p>
+</blockquote>
+
+<p>Валерий, все просто</p>
+
+<p><img src="http://www.degson.net/page/i/din_rail.jpg" alt="" /><img src="http://img.nag.ru/images/16637/cisco1.jpg" alt="" /></p>
+
+<p><strong>valery</strong> 22-09-2010</p>
+
+<p>Да … Красивенько …</p>
+
+<p>Самому такую штуку не осилить, жалко. Током еще убьет …</p>
+
+<p>Здесь наверное просто нужен нормальный профессиональный электрик, да и все.</p>
+
+<p><strong>maxsoft</strong> 22-09-2010</p>
+
+<blockquote>
+  <p>И у него нет розетки. Только зажимы на контакты. Стандартную розеточную вилку в него не засунешь.</p>
+</blockquote>
+
+<p>есть ДИН-розетка</p>
+
+<p><strong>Oxy</strong> 22-09-2010</p>
+
+<blockquote>
+  <p>Да … Красивенько …</p>
+
+  <p>Самому такую штуку не осилить, жалко. Током еще убьет …</p>
+
+  <p>Здесь наверное просто нужен нормальный профессиональный электрик, да и все.</p>
+</blockquote>
+
+<p>Валер, поэтому и пришла промышленность к таким удобным и простым вещам как на фотографии, потому что током поубивало всех проф.электриков :)</p>
+
+<p>Самому, руками монтировать такое оборудование легче чем лего складывать. В Лего - деталей может быть больше сотни :) Никаких сварочных работ, никаких клемм на болтовых зажимах, все просто, комфортно и полностью безопасно. На каждый канал ставиш себе автомат на ампер-полтора, и горя не знаешь.</p>
+
+<p>Это оборудование расчитано, что его монтировать будут люди которые первый раз в глаза видят такое оборудование :)</p>
+
+<p>На самом деле, в одиночном частном случае все происходит как с книжным шкафом - сначала находишь место под ящик, вешаешь его на стену. Вставляеш внутрь одну дин-рейку и два-три устройства типа счетчика и пару автоматов. И потом потихоньку оно наполниться разной другой всячиной. И через год любой кто увидит начинку, скажет как там все сложно и трудно :)</p>
+
+<p><strong>valery</strong> 22-09-2010</p>
+
+<p>Видать и вправду надо попробовать.</p>
+
+<p>Хорошо смотрится.</p>
+
+<p>И порядку больше.</p>
+
+<p>А то у меня все в удлинителях. То ногой заденешь - упадешь, то головой - свалишь/оборвешь что-нибудь …</p>
+
+<p>Утомительно.</p>
+
+<p>Решено. Надо потренироваться. Для начала - без тока. Просто рейки прибивать.</p>
+
+<p><strong>valery</strong> 22-09-2010</p>
+
+<p>А зачем железный ящик ?</p>
+
+<p>И нельзя ли без него ?</p>
+
+<p>Просто так, на стенку ?</p>
+
+<p><strong>Садовник</strong> 22-09-2010</p>
+
+<blockquote>
+  <p>А зачем железный ящик ?</p>
+
+  <p>И нельзя ли без него ?</p>
+
+  <p>Просто так, на стенку ?</p>
+</blockquote>
+
+<p>Нельзя.</p>
+
+<p>И обязательно должен быть знак:</p>
+
+<p><img src="http://mmb.ucoz.ru/FienD/avatar.jpg" alt="" /></p>
+
+<p><strong>valery</strong> 22-09-2010</p>
+
+<p>Не поймешь как дальше жить.</p>
+
+<p>По новому закону у меня на сигаретах почти такой же знак нарисовали …</p>
+
+<p><strong>Oxy</strong> 23-09-2010</p>
+
+<blockquote>
+  <p>А зачем железный ящик ?</p>
+
+  <p>И нельзя ли без него ?</p>
+
+  <p>Просто так, на стенку ?</p>
+</blockquote>
+
+<p>Без него - можно :) Даже видел кучу фоток когда висит кусок фанеры, а на нем куча всякой всячины. У самого был типа такой же:) только без компьютера и контроллеров.</p>
+
+<p>Просто потом, ты все равно захочешь ящик. И перемонтировать это все оборудование в ящик будет большим головняком, с нехваткой длинн кабеля на 1 см и всякой другой фигней которую можно избежать начав сразу с монтажного ящика.</p>
+
+<p>Конечно дин-рейка крепиться саморезами на любую поверхность. Это ее назначение.</p>
+
+<p><strong>valery</strong> 23-09-2010</p>
+
+<p>Вроде бы теперь яснее …</p>
+
+<p>То есть сама эта рейка никаких токонесущих функций не несет ? Никакой там “земли” или “фазы” ? По большому счету - просто как удобное “основание-крепеж”, да ?</p>
+
+<p>На нее нанизываются эти самые - “переключатели” (типа старых “пакетников - автоматов” ), да ?</p>
+
+<p>А затем, все таки нужны обычные “разводки”, провода и розетки ?</p>
+
+<p>Ну в принципе, все равно удобно и аккуратно …</p>
+
+<p><strong>Oxy</strong> 23-09-2010</p>
+
+<blockquote>
+  <p>Вроде бы теперь яснее …</p>
+
+  <p>То есть сама эта рейка никаких токонесущих функций не несет ? Никакой там “земли” или “фазы” ? По большому счету - просто как удобное “основание-крепеж”, да ?</p>
+
+  <p>На нее нанизываются эти самые - “переключатели” (типа старых “пакетников - автоматов” ), да ?</p>
+
+  <p>А затем, все таки нужны обычные “разводки”, провода и розетки ?</p>
+
+  <p>Ну в принципе, все равно удобно и аккуратно …</p>
+</blockquote>
+
+<p>Именно так, это просто удобный универсальный крепеж. Ток к нему не подводиться. Даже больше, находясь в металлическом ящике, он учавствует в общем заземлении.</p>
+
+<p><strong>WERDNA</strong> 26-09-2010</p>
+
+<p>Сегодя разбирал механичекий китайский таймер (вопрос А что там внутри? - покоя не давал). Так вот: на девайсе написано, что ток нагрузки 16 А. А контакты… Ну если не из фольги- то из двухслойной фольги :D. Так что всем настоятельно рекомендую юзать магнитные пускатели, особенно на Днат, особенно на мощные, особенно если их несколько…</p>
+
+<p><strong>Mole_Garden</strong> 27-09-2010</p>
+
+<blockquote>
+  <p>Сегодя разбирал механичекий китайский таймер (вопрос А что там внутри? - покоя не давал). Так вот: на девайсе написано, что ток нагрузки 16 А. А контакты… Ну если не из фольги- то из двухслойной фольги :D. Так что всем настоятельно рекомендую юзать магнитные пускатели, особенно на Днат, особенно на мощные, особенно если их несколько…</p>
+</blockquote>
+
+<p>Расскажи принцип работы этих пускателей, а то мне скоро уже лампы запускать, а таймеры только те что в икеи купил.</p>
+
+<p><strong>WERDNA</strong> 28-09-2010</p>
+
+<p>Все очень просто: магнитный пускатель это самое обычное реле. Принцип такой: при срабатывании таймера на катушку пускателя подается напряжение и реле срабатывает - мощные контакты замыкают цепь нагрузки.</p>
+
+<p>Т.е через таймер идет слабый управляющий ток - только на катушку реле, а нагрузка подключается через мощные контакты пускателя.</p>
+
+<p>Щас схему нарисую.</p>
+
+<p><a href="https://t.me/ponics_ru_files/4288" target="_blank"><img src="/attachimages/3444_МП1.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4289" target="_blank"><img src="/attachimages/3445_МП2.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 28-09-2010</p>
+
+<p>Все понял, спасибо! Буду брать магнитный пускатель.</p>
+
+<p><strong>студент</strong> 24-11-2010</p>
+
+<p>ссори. на счёт магнитных пускателей согласен. А на счёт таймеров можно посмотреть в мастер кит. там есть такое устройство BM8036 - 8-ми канальный микропроцессорный таймер, термостат, часы. ооочень хораошая штука</p>
+
+<p><strong>akatana</strong> 24-11-2010</p>
+
+<blockquote>
+  <p>ссори. на счёт магнитных пускателей согласен. А на счёт таймеров можно посмотреть в мастер кит. там есть такое устройство BM8036 - 8-ми канальный микропроцессорный таймер, термостат, часы. ооочень хораошая штука</p>
+</blockquote>
+
+<p>Штука, может и хорошая, но её ещё собрать и запустить надыть.</p>
+
+<p>BM8036 - это название микросхемы, там ещё много чего нужно, чтоб заработало.</p>
+
+<p>Потом всё это собрать и запустить, человеку сведущему - несложно, но надо иметь опыт</p>
+
+<p>общения с цифровой техникой, да и оборудование иметь для проверки, ежели не заработает.</p>
+
+<p>Лучше готовыми устройствами пользоваться.</p>
+
+<p><strong>otec</strong> 24-11-2010</p>
+
+<p>В данном случае это готовое устройство.Обычно запаяная плата без корпуса и блока питания.Сам иногда пользуюсь готовыми узлами при макетировании.Ссылка на BM8036</p>
+
+<p><img src="http://&quot;E:\фитотрон\BM8036.jpg&quot;" alt="" /></p>
+
+<p>http://www.kosmodrom.com.ua/el.php?name=BM8036</p>
+
+<p><a href="https://t.me/ponics_ru_files/4290" target="_blank"><img src="/attachimages/3766_BM8036.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 24-11-2010</p>
+
+<blockquote>
+  <p>В данном случае это готовое устройство.Обычно запаяная плата без корпуса и блока питания.Сам иногда пользуюсь готовыми узлами при макетировании.Ссылка на BM8036</p>
+</blockquote>
+
+<p>Ну да, про такое устройство слышал и видел, но думал, что в мастерките продают просто платы и детали, которые нужно будет самому припаивать, а тут написано, что устройство готовое. На базе этой железки люди такие вещи собирают <em>8)</em></p>
+
+<p><strong>akatana</strong> 24-11-2010</p>
+
+<blockquote>
+  <p>В данном случае это готовое устройство.Обычно запаяная плата без корпуса и блока питания.</p>
+</blockquote>
+
+<p>В таком варианте вполне приемлемо. Смутило название “Кит”</p>
+
+<p>В обычно понимании - набо деталей “собери сам”.</p>
+
+<p><strong>студент</strong> 24-11-2010</p>
+
+<p>ещё в мастер кит есть циклический таймер времени. который я там уже приобрёл. вполне доволен время включенного так и выключенного состояний от 1 до 180 мин(сек). которым и пользуюсь в своей аэропонной установке от Валеры</p>
+
+<p><em>8)</em></p>
+
+<p><strong>otec</strong> 24-11-2010</p>
+
+<p>Собственно тема про электронные таймеры которые при отключении питания глючат.Обратите внимание при покупке, в таймере должна быть такая вещь</p>
+
+<ol>
+  <li>Энергонезависимые часы реального времени (полный календарь с учетом високосных лет) до 2099 г.</li>
+</ol>
+
+<p>как в данном наборе.Для сравнения :такие часы стоят во всех компьютерах.</p>
+
+<p><strong>студент</strong> 25-11-2010</p>
+
+<p>но в ВМ8036 присутствуют эти энергонезависимые часы реального времени, а для циклического таймера перебой электроенергии вообще побарабану. Он построен на счётчике времени, т.е. после подачи электроенергии он просто начнет работу с самого начала.</p>
+
+<p><strong>otec</strong> 25-11-2010</p>
+
+<blockquote>
+  <p>но в ВМ8036 присутствуют эти энергонезависимые часы реального времени, а для циклического таймера перебой электроенергии вообще побарабану. Он построен на счётчике времени, т.е. после подачи электроенергии он просто начнет работу с самого начала.</p>
+</blockquote>
+
+<p>Про часы это как раз из документации на ВМ8036.У меня Аэрогарден после выключения питания потом светит до середины ночи,и включается в обед.</p>
+
+<p>Что ни есть гуд.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

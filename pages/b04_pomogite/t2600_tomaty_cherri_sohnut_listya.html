@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Томаты черри, сохнут листья... | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Томаты черри, сохнут листья...">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Томаты черри, сохнут листья...</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>fastfood</strong> 05-02-2017</p>
+
+<p>Доброго дня, уважаемые форумчане!</p>
+
+<p>Вот уже как месяц у меня длится эксперимент по выращиванию Томатов Черри в проточной системе из кабель канала 110/60. В установке 5 растений сортов балконное чудо, вишня красная, вишня желтая. Питаются готовым раствором, PH на уровне 5,5-6. Днат 250Вт</p>
+
+<p>Хочу спросить у опытных гроверов с чем может быть связана проблема с подсыханием и потемнением листьев и как с ним бороться.</p>
+
+<p>Примерно 1-1,5 недели назад заметил что нижние листья слегка подсохли и потемнели по краю листа. Сначала подумал что это ожог от ДНАТА, отодвинув подальше от лампы понял что дело не в ожогах. Симптомы распространялись на более молодые листья. 2 дня назад полностью сменил раствор, отрегулировал PH, промыл бак и всю установку…</p>
+
+<p>Но помоему легче растишкам не стало подскажите как понять что происходит и чем исправить.</p>
+
+<p><img src="https://cloclo28.cloud.mail.ru/thumb/xw1/image2.JPG?x-email=av.konovalova85%40list.ru" alt="" /></p>
+
+<p>Папка upload заполнена при попытке выложить фото сообщает форум. Как выложить фото?</p>
+
+<p><strong>Jackie</strong> 05-02-2017</p>
+
+<p>Нажми добавить изображение</p>
+
+<p><a href="https://t.me/ponics_ru_files/18157" target="_blank"><img src="/imagehost2/thumbs/screenshot20170205123354zgz.png" alt="" /></a></p>
+
+<p><strong>fastfood</strong> 05-02-2017</p>
+
+<p><a href="https://t.me/ponics_ru_files/18158" target="_blank"><img src="/imagehost2/thumbs/image1cxc.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18159" target="_blank"><img src="/imagehost2/thumbs/image2wnw.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18160" target="_blank"><img src="/imagehost2/thumbs/image3rvr.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18161" target="_blank"><img src="/imagehost2/thumbs/image4lxl.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18162" target="_blank"><img src="/imagehost2/thumbs/image5jfj.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/18163" target="_blank"><img src="/imagehost2/thumbs/image6.jpg" alt="" /></a></p>
+
+<p><strong>fastfood</strong> 05-02-2017</p>
+
+<p>На втором фото виден лист он такой пока один на котором четко видны какие то светлые пятна, больше похожие на маленькие волдыри.</p>
+
+<p>Так же на фото есть низкорослый куст который живет с великанами в одной и той же системе но он прекрасно себя чувствует и не проявляет никаких симптомов недомогания, а наоборот очень активно развивается.</p>
+
+<p>Так же можно увидеть прозрачный силиконовый шланг подачи раствора, он почему то в первые 1-1,5 недели изнутри покрылся светлоо-коричневым налетом, который при мойке системы мне удалось частично смыть раствором соды.</p>
+
+<p><strong>Cyclamech</strong> 05-02-2017</p>
+
+<blockquote>
+  <p>Питаются готовым раствором…</p>
+</blockquote>
+
+<p>Интересно было бы узнать.</p>
+
+<p><strong>Gamelander</strong> 05-02-2017</p>
+
+<p>Судя по посту, раствору уже месяц жизни, много.</p>
+
+<p>Любое попадание света на раствор это очень плохо - зарождается живность, а ее быть не должно. Шланги обмотайте чем-нибудь светонепрозрачным.</p>
+
+<p>А что у Вас с влажностью?</p>
+
+<p><strong>Jackie</strong> 05-02-2017</p>
+
+<p>Влажность у Вас какая? Как растение питается, не смотрели? Если Ес повышается, значит есть какой-то косяк в микроклимате.</p>
+
+<p><strong>fastfood</strong> 05-02-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Питаются готовым раствором…</p>
+  </blockquote>
+
+  <p>Интересно было бы узнать.</p>
+</blockquote>
+
+<p>Состав готового питательного раствора:</p>
+
+<p>Макроэлементы: (мг/литр):</p>
+
+<p>N: 224, P: 39, K: 302, Ca: 175, Mg: 61</p>
+
+<p>Микроэлементы (мг/литр):</p>
+
+<p>Fe(хелат): 2,5, B: 0.3, Zn(хелат): 0.33, Mn(хелат): 0.6, Cu(хелат): 0.05, Mo(хелат): 0.04</p>
+
+<p><strong>fastfood</strong> 05-02-2017</p>
+
+<blockquote>
+  <p>Судя по посту, раствору уже месяц жизни, много.</p>
+
+  <p>Любое попадание света на раствор это очень плохо - зарождается живность, а ее быть не должно. Шланги обмотайте чем-нибудь светонепрозрачным.</p>
+
+  <p>А что у Вас с влажностью?</p>
+</blockquote>
+
+<p>Месяц это продолжительность эксперимента, раствору до смены было порядка 3-х недель, с частичной заменой.</p>
+
+<p>По поводу прозрачности шланга, спасибо за замечание, всегда об этом помнил но внимание не обратил в связи с тем что он очень короткий.</p>
+
+<p>Влажность комнатная скорее всего пониженная, пока еще не замерял…эксперимент домашний…</p>
+
+<p><strong>fastfood</strong> 05-02-2017</p>
+
+<blockquote>
+  <p>Влажность у Вас какая? Как растение питается, не смотрели? Если Ес повышается, значит есть какой-то косяк в микроклимате.</p>
+</blockquote>
+
+<p>Я как и все начинающие гроверы стал жертвой интернета и пользуюсь на данном этапе китайским тдс метром, теперь уже понимаю что это как гадание на кофейной гуще, но пока обхожусь чем есть и подыскиваю EC прибор на рынке.</p>
+
+<p>Так вот китайкая волшебная палочка показывает то что ppm раствора уменьшается крайне медленно, правда у меня бак порядка 5 литров на 5 растений может в этом причина.</p>
+
+<p>Еще заметил что при отладке PH азотной кислотой наблюдается резкий скачок ppm при замере…потом падает но не к первоначальному значению, это нормально?</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

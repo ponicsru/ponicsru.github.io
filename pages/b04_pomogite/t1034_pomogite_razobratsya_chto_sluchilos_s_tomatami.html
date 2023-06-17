@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Помогите разобраться что случилось с томатами!? | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Помогите разобраться что случилось с томатами!?">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Помогите разобраться что случилось с томатами!?</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Contas</strong> 05-06-2011</p>
+
+<p>Что это? Поражены только самые верхние части растений.</p>
+
+<p>Прошу прощения за вопрос на этом форуме поскольку томаты у меня грунтовые а не гидропонные.Признаки на растениях одинаковы в открытом грунте и в теплице.</p>
+
+<p><a href="https://t.me/ponics_ru_files/5436" target="_blank"><img src="/imagehost/thumbs/img2321.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5437" target="_blank"><img src="/imagehost/thumbs/img2324.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5438" target="_blank"><img src="/imagehost/thumbs/img2326.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5439" target="_blank"><img src="/imagehost/thumbs/img2322gjg.jpg" alt="" /></a></p>
+
+<p><strong>VVS_</strong> 05-06-2011</p>
+
+<p>сгорели?</p>
+
+<p><strong>Contas</strong> 05-06-2011</p>
+
+<blockquote>
+  <p>сгорели?</p>
+</blockquote>
+
+<p>В смысле на солнце? В прошлом году не так жарило и ничего подобного не было.</p>
+
+<p><strong>VVS_</strong> 05-06-2011</p>
+
+<p>Паутинный клещ?</p>
+
+<p><strong>Contas</strong> 05-06-2011</p>
+
+<blockquote>
+  <p>Паутинный клещ?</p>
+</blockquote>
+
+<p>От клеща все обработано,самого клеща обнаружено не было.</p>
+
+<p><strong>VVS_</strong> 05-06-2011</p>
+
+<p>Видел очень сильно похожее буквально на днях, но там забыли открыть теплицу и сожгли помидоры таким вот образом как на фото.</p>
+
+<p>Аналогичное бывает если по жаре побрызгать на листья чем-либо.</p>
+
+<p>Если нет и если это не обдоз чем-то, сложно вообще что-то сказать, вероятно зараза какая-то. Расскажите предысторию всего этого?</p>
+
+<p>Может что-то злое попало в воду которой поливаете?</p>
+
+<p><strong>Contas</strong> 05-06-2011</p>
+
+<blockquote>
+  <p>Видел очень сильно похожее буквально на днях, но там забыли открыть теплицу и сожгли помидоры таким вот образом как на фото.</p>
+
+  <p>Аналогичное бывает если по жаре побрызгать на листья чем-либо.</p>
+
+  <p>Если нет и если это не обдоз чем-то, сложно вообще что-то сказать, вероятно зараза какая-то. Расскажите предысторию всего этого?</p>
+
+  <p>Может что-то злое попало в воду которой поливаете?</p>
+</blockquote>
+
+<p>Ожег исключается поскольку основная масса растений сидит в открытом грунте и уже две недели ничем не закрывается.В теплицах форточки уже тоже открыты круглые сутки.Опрыскивания действительно проводятся регулярно и довольно часто но только не в жару,утром или вечером.Обдоз также маловероятен поскольку кроме основной заправки почвы проводилась только одна подкормка азотная малой концентрации.Поливаю питьевой водой из скважины.Поражены далеко не все растения.Всего у меня 1000 корней,а поражение заметно примерно на 20-30.И распределены они более-менее равномерно по всей площади как в теплицах так и на воздухе.</p>
+
+<p><strong>VVS_</strong> 05-06-2011</p>
+
+<p>Прям чудеса какие-то. Ну что, расследованию совсем не за что зацепиться? Может гены у этих 30 растений отказали?:)</p>
+
+<p><strong>Contas</strong> 05-06-2011</p>
+
+<blockquote>
+  <p>Прям чудеса какие-то. Ну что, расследованию совсем не за что зацепиться? Может гены у этих 30 растений отказали?:)</p>
+</blockquote>
+
+<p>Если бы не чудеса я бы Вас и беспокоить не стал,сам бы разобрался.Предлагаете провести генетическую экспертизу? :D :D</p>
+
+<p>Оно вроде как 20-30 штук потерять и не жалко,однако страшит что все это может пойти и дальше.А этого ох как не хочется! :( :( :(</p>
+
+<p><strong>valery</strong> 05-06-2011</p>
+
+<p>Сказать бы чего “умного” :-\ , но в голове только глупое … :-\</p>
+
+<p>Странно, что поражаются так “выборочно”, не дай бог, зараза какая-нибудь … Вертициллезное увядание или там листовая плесень …</p>
+
+<p>(наобум, конечно, для разговора. Вроде вертициллез должен снизу распространяться …)</p>
+
+<p>Или может кальций ?</p>
+
+<p>Подождите до понедельника. Должна появиться Coccinella и, возможно, подскажет что-нибудь внятное …</p>
+
+<p><strong>Contas</strong> 05-06-2011</p>
+
+<blockquote>
+  <p>Сказать бы чего “умного” :-\ , но в голове только глупое … :-\</p>
+
+  <p>Странно, что поражаются так “выборочно”, не дай бог, зараза какая-нибудь … Вертициллезное увядание или там листовая плесень …</p>
+
+  <p>(наобум, конечно, для разговора. Вроде вертициллез должен снизу распространяться …)</p>
+
+  <p>Или может кальций ?</p>
+
+  <p>Подождите до понедельника. Должна появиться Coccinella и, возможно, подскажет что-нибудь внятное …</p>
+</blockquote>
+
+<p>Лично мои подозрения падали на кальций и бор.Кроме того поковырялся в инете и нашел очень схожие признаки при заражении томата вирусом огуречной мозаики(симптом шнурка).Но очень хотелось бы все-таки узнать мнение специалистов.Coccinellu жду с нетерпением,на нее и надеялся в основном,тем более что она уже однажды помогла мне.Но и всем остальным премного благодарен за неравнодушие.</p>
+
+<p><strong>Rossich</strong> 06-06-2011</p>
+
+<blockquote>
+  <p>Подождите до понедельника.</p>
+</blockquote>
+
+<p>Тупо, перегрев…..</p>
+
+<p><strong>Coccinella</strong> 06-06-2011</p>
+
+<p>Contas, а что за сорт? Очень похоже на начало табачной мозаики, но многие гибриды к ней устойчивы. Однако, если за растениями ухаживают курильщики, то возможно инфекция из табачного пепла, который остается на пальцах, в разбросанных окурках и т.д. В пепле вирус сохраняет жизнеспособность. Кроме того в южных краях вирусы интенсивно разносят тли, белокрылки, комарики, цикадки и подобные вредители.</p>
+
+<p>Но помимо этого похожая картина бывает при дефиците цинка на фоне избытка фосфора.</p>
+
+<p>А жара и прочие стрессы эти вещи усугубляет.</p>
+
+<p><strong>Contas</strong> 06-06-2011</p>
+
+<blockquote>
+  <p>Contas, а что за сорт? Очень похоже на начало табачной мозаики, но многие гибриды к ней устойчивы. Однако, если за растениями ухаживают курильщики, то возможно инфекция из табачного пепла, который остается на пальцах, в разбросанных окурках и т.д. В пепле вирус сохраняет жизнеспособность. Кроме того в южных краях вирусы интенсивно разносят тли, белокрылки, комарики, цикадки и подобные вредители.</p>
+
+  <p>Но помимо этого похожая картина бывает при дефиците цинка на фоне избытка фосфора.</p>
+
+  <p>А жара и прочие стрессы эти вещи усугубляет.</p>
+</blockquote>
+
+<p>Сорта разные.Точно поражен “Ваше благородие”.Признаки и на высокорослых и на низких гибридах.</p>
+
+<p>И что мне сейчас предпринять?Можно ли излечить уже болеющие и что предпринять для профилактики распространения.Понятно что с насекомыми нужно воевать,этим мы занимаемся неустанно,а что еще?</p>
+
+<p><strong>Coccinella</strong> 06-06-2011</p>
+
+<p>Я бы опрыснула по листьям каким-то комплексным с микроэлементами - Акварином, Мастером, Кристаллином - чем-то таким, где-то 20-30 г/10 л, а затем срезала всю деформированную часть растений до здоровых листьев. И отрастила бы новые верхушки из пасынков. А микроэлементами обработала бы повторно еще пару раз с интервалом в 7 дней. А в промежутке еще пару раз опрыснула бы снятым молоком. Если это вирус, то белок вызовет его инкапсуляцию.</p>
+
+<p><strong>ProRus</strong> 06-06-2011</p>
+
+<blockquote>
+  <p>Однако, если за растениями ухаживают курильщики, то возможно инфекция из табачного пепла, который остается на пальцах, в разбросанных окурках и т.д. В пепле вирус сохраняет жизнеспособность.</p>
+</blockquote>
+
+<p>Пора завязывать с курением… :o Ладно свое здоровье не жалко, но растишек своих подводить не хочется, вдруг заболеют “детишки”.</p>
+
+<p><strong>VVS_</strong> 06-06-2011</p>
+
+<blockquote>
+  <p>. А в промежутке еще пару раз опрыснула бы снятым молоком. Если это вирус, то белок вызовет его инкапсуляцию.</p>
+</blockquote>
+
+<p>Это как? Каким молоком?</p>
+
+<p><strong>Coccinella</strong> 06-06-2011</p>
+
+<p>Снятым! После сепарации молока получаются сливки и снятое молоко. У нас его сквашивают, как простоквашу, и в магазине продают. (При Сталине колхозники детей им поили, потому что другого ничего не было.)</p>
+
+<p>Многие любят, особенно в жару жаду хорошо утоляет. В свое время в совхозе мы его цистернами с фермы привозили для опрыскивания :)). Расход-то большой. Если снятое молоко взять негде, можно обычное водой развести. Можно и обычным молоком опрыскивать, но ведь пищевой продукт, кощунственно как-то, в больших масштабах дорого. Можно сухое молоко развести, буржуи даже что-то типа быстрорастворимых молочных гранул для этой цели производят, но я о них только читала, сама не видела.</p>
+
+<p>Все дело в реакции вирусов на животный белок, он их на какое-то время “дезактивирует” :)</p>
+
+<p><strong>Contas</strong> 06-06-2011</p>
+
+<blockquote>
+  <p>Я бы опрыснула по листьям каким-то комплексным с микроэлементами - Акварином, Мастером, Кристаллином - чем-то таким, где-то 20-30 г/10 л, а затем срезала всю деформированную часть растений до здоровых листьев. И отрастила бы новые верхушки из пасынков. А микроэлементами обработала бы повторно еще пару раз с интервалом в 7 дней. А в промежутке еще пару раз опрыснула бы снятым молоком. Если это вирус, то белок вызовет его инкапсуляцию.</p>
+</blockquote>
+
+<p>Кемира-люкс подойдет?Или Нутрисол?Микроэлементами уже обработали,ждем результатов,времени прошло мало.С молоком мысль интересная,однако много мне его потребуется.Но ничего,по амбарам пометем,по сусекам поскребем,глядишь и обработаем! Спасибо большое уважаемая Coccinella!Будем пробовать выжить! :) :) :)</p>
+
+<p><strong>Coccinella</strong> 07-06-2011</p>
+
+<p>А результатов так сразу не увидите, если это вирус, то инфекция распространяется с соком растения. Поэтому очень важно удалить поврежденную часть до здоровых листьев и пустить здоровый пасынок. Микроэлементы всего лишь повышают иммунитет растения, оно само успешнее борется с инфекцией.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

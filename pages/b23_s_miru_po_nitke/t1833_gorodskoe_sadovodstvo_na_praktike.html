@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Городское садоводство на практике | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Городское садоводство на практике">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Городское садоводство на практике</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Coccinella</strong> 19-08-2013</p>
+
+<p>Дома я эту статью опубликовала еще весной, но давно хотела поделиться с местной публикой. Городское садоводство (urban farming) это то, чем Вы все занимаетесь. О нем много говорят на некоторых сайтах, но в жизни это все еще экзотика. Вот, как это выглядит в жизни, не как хобби, а как бизнес.</p>
+
+<p>Крестьянское хозяйство «Вецапени» было основано еще в середине девяностых, но сейчас им руководит сын основателей, совсем еще молодой мужчина, по основной специальности маркетолог. (Что и помогает ему успешно все выращенное продавать.) Поначалу хозяйство выращивало всякую зелень и салаты для ресторанов, пока один из наших ведущих шеф-поваров не порекомендовал им заняться микрозеленью и проростками.</p>
+
+<p>Все производство расположено почти в центре Риги, в офисно складском здании, внутри помещения, то есть окон в нем вообще нет. Общая площадь 180 м2, под выращивание используют меньше половины, а также хранят в нем мешки с торфом и семенами, запасы упаковки, тут же холодильник для готовой продукции, письменный стол с накладными и еще какой-то учетностью… Да, еще куча ламп SON-T 400 в углу. Когда-то купили, сейчас столько не надо, вот и лежат.</p>
+
+<p>Рабочее освещение обеспечивают несколько ламп дневного света под потолком, для растений горят все те же SON-T 400. Выращивают на стеллажах (на этажерках!) и раньше использовали люмки, но затем перешли на правильные источники света. Что интересно, люксметра и прочих измкрительных приборов нигде не заметно (только термометр), хозяин просто ориентируется на состояние растений. Главный у него базилик, под его дудку все и пляшут. А всего около 20 наименований.</p>
+
+<p>Для проростков используют, в основном, семена пшеницы, бобы Мунго, люцерну, чечевицу, листовой редис, лук, брокколи и даже коноплю из местных семян. У нас выращивают продовольственную коноплю (под строгим контролем и только в открытом грунте) и ее семена используют в пищу. Микрозелень – это растения в возрасте сеянцев, уже не проростки, еще не рассада – выращивают из красного и зеленого базилика, руколы, гороха, подсолнуха, краснокочанной капусты, листовой петрушки, мангольда и брокколи. По заказу ресторанов выращивают пшеничные дернинки, из этой «травы» выжимают сок, многим (даже детям!) нравится. Из одного ящичка зелени получаются две рюмашки сока. Еще он экспериментирует с бегониями, их цветы тоже идут в рестораны.</p>
+
+<p>На все эти микрорастения отведено 72 м2 пола, освещается 6 лампами SON-T 400. растениям хватает, и так электричество дорого стоит, у него уходит больше 200 евро в месяц. Светит круглые сутки, заодно и обогревает лампами. Внутреннее помещение, теплопотери невелики, специального отопления просто не требуется. Температура воздуха (дело было в марте) 26оС, относительная влажность 55-65%. Если влажность растет, он ее корректирует с помощью аппарата „Ecodry PRO”. Летом только ради циркуляции воздуха включает вентилятор.</p>
+
+<p>Микро-зелень растет на стеллажах по периметру помещения, часть ящичков в металлических ванночках (противнях) стоит на полу на поддоне посередине помещения. Если надо, стеллажами можно занять все помещение, но спрос пока не достаточен. Выращивают зелень в пищевых одноразовых пластмассовых коробочках в торфяном субстрате.</p>
+
+<p>Непротравленные, специально для этой цели предусмотренные семена покупает в одной из наших торговых фирм, главным образом, итальянские от „Galassi Sementi”, зерновые и горох – от местных крестьян. Процесс очень простой: в коробочки насыпают торф, не жалея посыпают семенами, поливают чистой, питьевой водой из шланга. В зависимости от культуры проростки вырастают за 3-8 дней, быстрее всего пшеница, бобы Мунго и чечевица, немного дольше лук, дольше всех (4 недели) петрушка.</p>
+
+<p>Проростки занимают отдельную «выгородку» (перегородка не доходит до потолка) тоже на стеллажах в стеклянных банках или пластмассовых мисках. Тоже все очень просто – насыпали семена, полили, когда проросло, на пару дней помещают в холодильник, где поддерживают 4-8oC. При этом рост останавливается и проростки можно фасовать и отправлять в магазины. Работают две женщины, шофер и сам хозяин. Очень строго с гигиеной, раз в неделю все дизинфицируют, питьевую воду для полива дополнительно фильтруют, несколько раз в год их проверяет санитарная служба (те еще зануды, я с некоторыми знакома, и взяток они не берут!)</p>
+
+<p>Сейчас попробую картинки вставить</p>
+
+<p><strong>valery</strong> 19-08-2013</p>
+
+<p>:o :o :o</p>
+
+<p>$) $) $) $) $)</p>
+
+<p>Здорово ! <em>8)</em> ( от слова “хорошо”, конечно, <em>8)</em>, а не от слова “здрасьте” :-[ )</p>
+
+<p><strong>Coccinella</strong> 19-08-2013</p>
+
+<p>Вот в этом здании все и происходит, а с виду и не подумаешь</p>
+
+<p><a href="https://t.me/ponics_ru_files/10925" target="_blank"><img src="/attachimages/13772_Picture1.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 19-08-2013</p>
+
+<p>Вид изнутри при полном освещении</p>
+
+<p><a href="https://t.me/ponics_ru_files/10926" target="_blank"><img src="/attachimages/13774_Picture2.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 19-08-2013</p>
+
+<p>Часть растений посередине комнаты, на полу</p>
+
+<p><a href="https://t.me/ponics_ru_files/10927" target="_blank"><img src="/attachimages/13776_Picture3.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 19-08-2013</p>
+
+<p>Система вентиляции</p>
+
+<p><a href="https://t.me/ponics_ru_files/10928" target="_blank"><img src="/attachimages/13778_Picture4.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 19-08-2013</p>
+
+<p>Вентилятор</p>
+
+<p><a href="https://t.me/ponics_ru_files/10929" target="_blank"><img src="/attachimages/13780_Picture5.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 19-08-2013</p>
+
+<p>Семена</p>
+
+<p><a href="https://t.me/ponics_ru_files/10930" target="_blank"><img src="/attachimages/13782_Picture6.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 19-08-2013</p>
+
+<p>Осушитель воздуха „Ecodry PRO”</p>
+
+<p><a href="https://t.me/ponics_ru_files/10931" target="_blank"><img src="/attachimages/13784_Picture7.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 19-08-2013</p>
+
+<p>Проростки подсолнуха</p>
+
+<p><a href="https://t.me/ponics_ru_files/10932" target="_blank"><img src="/attachimages/13788_Picture8.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 19-08-2013</p>
+
+<p>Вот оно, сырье для двух рюмок полезного сока</p>
+
+<p><a href="https://t.me/ponics_ru_files/10933" target="_blank"><img src="/attachimages/13790_Picture9.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 19-08-2013</p>
+
+<p>В таком виде продукция поступает в магазины</p>
+
+<p><a href="https://t.me/ponics_ru_files/10934" target="_blank"><img src="/attachimages/13792_Picture10.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 19-08-2013</p>
+
+<p>Sorry, лучше с картинками у меня не получилось, картинки с подписями так и норовили перемешаться.:)</p>
+
+<p>Подозреваю, что у Валерия огород в чем-то подобном находится, только выбор растений иной и цели-задачи…</p>
+
+<p><strong>diman73rus</strong> 19-08-2013</p>
+
+<p>простите за дилетантство, но как от торфа отчищать ? или в пищу употребляется только зеленая масса ? <em>???</em> или они ножницами .. чик-чик ?</p>
+
+<p>и как, простите, использовать проростки подсолнуха ? там же шелухи полно.. <em>???</em></p>
+
+<p><strong>Coccinella</strong> 19-08-2013</p>
+
+<p>Их не очищают, просто перед употреблением состригают зелень, а коробочку с торфом выбрасывают.</p>
+
+<p>Это тем и удобно, что в процессе выращивания никакой “химии” вообще не надо, все удобрения уже в торфе заложены, а продукт не теряет свежести на прилавке несколько дней.</p>
+
+<p><strong>diman73rus</strong> 19-08-2013</p>
+
+<p>ага. значит, продают вместе с торфом. ;)</p>
+
+<p><strong>Nikolai</strong> 19-08-2013</p>
+
+<p>Мои знакомые выращивают проростки и зелень пшеницы для сока. И проростки и пшеница обходятся без торфа.</p>
+
+<p>Сбыт этой продукции дело непростое, при том что город у нас немаленький.</p>
+
+<p>Здание, где выращивают, примерно такое же, только страшнее :)</p>
+
+<p>В своем горшке тоже пробовал выращивать зелень пшеницы, с некоторыми ухищрениями получилось, и сок делал (крошил траву в блендере с добавлением воды).</p>
+
+<p><a href="https://t.me/ponics_ru_files/10935" target="_blank"><img src="/imagehost/thumbs/img7693.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10936" target="_blank"><img src="/imagehost/thumbs/img7694.jpg" alt="" /></a></p>
+
+<p><strong>taram</strong> 19-08-2013</p>
+
+<blockquote>
+  <p>В таком виде продукция поступает в магазины</p>
+</blockquote>
+
+<p>Вместе с семенами томатов, заказал семена кресс -салат . Тоже хочу к нему приноровиться и на при лавки в подобной упаковке. Очень мне его вкус понравился, и растёт быстро.</p>
+
+<p>Ещё на днях мысль посетила- БЕРЁМ тепличные круглые коричневые горшки 0.2-0.4, засыпаем в них торф, выращиваем в них петрушку и укроп ( можно наверное вместе). Впродажу выставляем в полузрелости вместе с горшками.</p>
+
+<p>Тоесть, хозяйка покупает горшочек с зеленью, ставит на поддоконник и срывает зелень по мере необходимости. Сорта укропа и петрушки должны бьть кустистые, скорее всего. Можно даже сеть ларьков открыть “Свежая зелень”.</p>
+
+<p>Спасибо, Coccinella $), вдохновляете!</p>
+
+<p><strong>Nikolai</strong> 19-08-2013</p>
+
+<p>В ларьках не пойдет. Целевая аудитория более узкая - “здоровое питание”.</p>
+
+<p><strong>taram</strong> 19-08-2013</p>
+
+<blockquote>
+  <p>В ларьках не пойдет. Целевая аудитория более узкая - “здоровое питание”.</p>
+</blockquote>
+
+<p>Без проблем <em>Bos</em> , назывваем сеть “Здоровое питание”.:) и ставим их возле каждого рынка. :D</p>
+
+<p><strong>Nikolai</strong> 19-08-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>В ларьках не пойдет. Целевая аудитория более узкая - “здоровое питание”.</p>
+  </blockquote>
+
+  <p>Без проблем <em>Bos</em> , назывваем сеть “Здоровое питание”.:) и ставим их возле каждого рынка. :D</p>
+</blockquote>
+
+<p>и торгуем шаурмой :)</p>
+
+<p><strong>taram</strong> 19-08-2013</p>
+
+<blockquote>
+  <p>и торгуем шаурмой :)</p>
+</blockquote>
+
+<p>Нет уж! “Здоровое питание” отдельно, &gt;:Dшаурма отдельно. А почему на входе - чтоб целевая аудитория мимо не прошла :D</p>
+
+<p><strong>gardener</strong> 19-08-2013</p>
+
+<blockquote>
+  <p>и торгуем шаурмой :)</p>
+</blockquote>
+
+<p>Из овощей. <em>8)</em></p>
+
+<p><strong>valery</strong> 19-08-2013</p>
+
+<p>Бросьте ребята … Хорошая тема, ну к чему ее шаурмой гваздать…</p>
+
+<p><strong>taram</strong> 19-08-2013</p>
+
+<p>Кто нибуть или где нибуть пробывали укроп или петрушку “живьём” продавать?</p>
+
+<p>В тепличных горшках выращивать удобно ( на подтоплении) и фасовать не надо.</p>
+
+<p><strong>taram</strong> 19-08-2013</p>
+
+<blockquote>
+  <p>Опять же … в стоимость кустика укропа (кустиков) нужно будет включить и стоимость горшка, субстрата … :-\ :-\ :-\</p>
+
+  <p>А там … шут его знает. Может, на самом деле, и с руками оторвут. В смысле, с горшком и с ларьком вместе… :o</p>
+</blockquote>
+
+<p>Ассортимент нужен и хорошая реклама… и…и пулемёт, чтоб отбиваться!</p>
+
+<p><strong>Coccinella</strong> 19-08-2013</p>
+
+<p>Наша с Валерием дружба началась с того, что я его интенсивно отговаривала от выращивания укропа :) немного тогда не поняла, о чем речь идет, и предостерегала от финансовых ошибок :)</p>
+
+<p>Так вот, пробовали крупные хозяйства выращивать укроп вместе с салатом на одной линии по салатному режиму климата и питания - трава травой. Вырастить можно, продать… не берут хозяйки этот обман населения.</p>
+
+<p>Опыты Валерия и Vad-a доказывают, что качественный укроп в помещении (даже полностью закрытом) вырастить можно, но не по салатной технологии, а по укропной :).</p>
+
+<p>Укроп растет быстрее петрушки, поэтому комбинированные посевы вряд ли получатся, но использование стандартных салатных горшочков для этого вполне возможно.</p>
+
+<p>У меня один коллега годами весной предлагает рассаду кустового укропа. Народ берет, я для матушки покупаю (у нее укроп - предмет культа :)) Выращивает в кассетах с диаметром ячейки меньше 3 см (наверно 1 дюйм).</p>
+
+<p>Так что сама по себе идея реальная, остается немного поработать над агротехникой и маркетингом.</p>
+
+<p><strong>taram</strong> 19-08-2013</p>
+
+<blockquote>
+  <p>У меня один коллега годами весной предлагает рассаду кустового укропа. Народ берет, я для матушки покупаю (у нее укроп - предмет культа :)) Выращивает в кассетах с диаметром ячейки меньше 3 см (наверно 1 дюйм).</p>
+
+  <p>Так что сама по себе идея реальная, остается немного поработать над агротехникой и маркетингом.</p>
+</blockquote>
+
+<p>Я про такие горшки</p>
+
+<p><a href="https://t.me/ponics_ru_files/10937" target="_blank"><img src="/imagehost/thumbs/0010wjw.jpg" alt="" /></a></p>
+
+<p>Для периодики само то <em>8)</em> и в меру симпатичны :-[.</p>
+
+<p>Ха-ха! Можно организовать возрат тары! ;D</p>
+
+<p><strong>Coccinella</strong> 19-08-2013</p>
+
+<p>Возврат тары - сложно. Мой коллега предлагает продукт вот так (выдергивает из ячейки, таких кассет у нас уже не производят)</p>
+
+<p><a href="https://t.me/ponics_ru_files/10938" target="_blank"><img src="/attachimages/13794_Picture1.jpg" alt="" /></a></p>
+
+<p><strong>taram</strong> 20-08-2013</p>
+
+<blockquote>
+  <p>Так что сама по себе идея реальная, остается немного поработать над агротехникой и маркетингом.</p>
+</blockquote>
+
+<blockquote>
+  <p>Можно организовать возрат тары! ;D</p>
+</blockquote>
+
+<p>:D “Возврат”, вернее обмен тары и будет маркетинговым ходом! Принимать тару нужно, только в обмен . Тоесть не покупать обратно б\у тару, а только обменивать на горшочек со свежей зеленью, с вычетом цены тары.</p>
+
+<p>Вот :-[.</p>
+
+<p><strong>Nikolai</strong> 20-08-2013</p>
+
+<blockquote>
+  <p>:D “Возврат”, вернее обмен тары и будет маркетинговым ходом! Принимать тару нужно, только в обмен . Тоесть не покупать обратно б\у тару, а только обменивать на горшочек со свежей зеленью, с вычетом цены тары.</p>
+
+  <p>Вот :-[.</p>
+</blockquote>
+
+<p>И еще при покупке надо будет исполнить какой-нибудь номер художественной самодеятельности - спеть, сплясать, рассказать стишок!</p>
+
+<p><strong>taram</strong> 20-08-2013</p>
+
+<p>Ищу эффективный и простой способ выращивания пряных трав на гидропонике в помещениях и прихожу к выводу, что проще всего это делать на тепличных столах подтопления или столах с капилярными матами и светильников над ними. Только столы должны смыкаться, что бы не было проходов и свет от ламп полнее использовался. Есть способы эффективнее, универсальные и проще?</p>
+
+<p><strong>Nikolai</strong> 12-10-2013</p>
+
+<p>Видел в Риге, как в ресторане используют проростки - срезают вершки и посыпают блюдо как зеленью, в основном в качестве украшения. На тарелку попало штук 20 листиков непонятно чего - было темновато, а по вкусу не определить.</p>
+
+<p>Очевидцы говорят что в магазинах эта зелень продается не в торфе, а на решеточке.</p>
+
+<p><strong>Coccinella</strong> 14-10-2013</p>
+
+<p>В торфе ее выращивают, на решеточке мне не попадалась, на этих днях посмотрю попристальнее, может, импорт не заметила.</p>
+
+<p><strong>Oxy</strong> 11-11-2013</p>
+
+<p>Не нашел тему с домиками на крыше - втыкаю сюда.</p>
+
+<p>Интересненько: [font=Verdana][size=78%]<a href="http://za-y-ac.livejournal.com/933213.html" target="_blank">http://za-y-ac.livejournal.com/933213.html</a>[/size][/font]</p>
+
+<p><strong>SergF</strong> 26-03-2014</p>
+
+<p>Вот вроде по теме: <a href="http://fakty.ictv.ua/ru/index/read-news/id/1509438" target="_blank">http://fakty.ictv.ua/ru/index/read-news/id/1509438</a> :D</p>
+
+<p>Надо ребятам про гидропонику рассказать, а то грунт в центре города на клумбах и так не айс а после горелых покрышек просто яд… полягут от редиски такой…</p>
+
+<p>…а хрюшки это хорошо, по европейски, в Амстердаме уточки гуляют по городу, в Брюсселе кроликов видел на клумбе у главного НАТОвского домика, а в Киеве свинки будут, ИМХО очень в тему к тому антуражу…</p>
+
+<p><strong>valery</strong> 26-03-2014</p>
+
+<p>Мне кажется, с редиской они что-то напутали … :-\</p>
+
+<p>Не очень похоже.</p>
+
+<p><strong>SergF</strong> 26-03-2014</p>
+
+<p>Не-не, действительно редиска, на других сайтах видел фотки крупным планом, она тока проклюнулась, просто по контуру чета еще посадил, они ж там и лучок и петрушку…</p>
+
+<p><strong>Coccinella</strong> 26-03-2014</p>
+
+<p>Больше всего этот “контур” похож на кукурузу. Вот не люблю такое ребячество… редис на газоне, свинки в метро… детский лепет…</p>
+
+<p>Когда в блокадном Ленинграде на газонах редис выращивали, в этом был смысл, а в этой ерунде…</p>
+
+<p><strong>SergF</strong> 17-06-2014</p>
+
+<p>В Анталии в центре города на пересечении двух крупных магистралей стоит рекламная тепличка, даже не пустая :)</p>
+
+<p>Назначение панелей на самой тепличке понятно, это стандартное решение по нагреву воды у них, на всех домах так, здесь видимо как отопление идет не в сезон, а вот солнечные батареи не знаю что делают, может на полив работают, Днаты явно не потянут, да и золотая установка будет с такими мощными инверторами, аккумуляторами ИМХО…</p>
+
+<p><a href="https://t.me/ponics_ru_files/10939" target="_blank"><img src="/imagehost/thumbs/737m.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10940" target="_blank"><img src="/imagehost/thumbs/741m.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10941" target="_blank"><img src="/imagehost/thumbs/742m.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10942" target="_blank"><img src="/imagehost/thumbs/739m.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10943" target="_blank"><img src="/imagehost/thumbs/740m.jpg" alt="" /></a></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Гидропоника для чайников | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Гидропоника для чайников">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Гидропоника для чайников</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Юлия</strong> 03-07-2011</p>
+
+<p>Доброго всем времени суток! Я не знаю, может такая тема уже есть, но я пока не разобралась здесь. Боюсь заблудиться :) Помогите пожалуйста! Пытаюсь найти дело для души, ну и по возможности, чтобы ещё и доход приносило. О гидропонике услышала пару недель назад впервые. Пыталась разобраться самостоятельно, что это такое и с чем его едят- не вышло. Поэтому просьба-помогите разобраться с самых азов. Живу я в Восточном Казахстане. Земля у нас для овощеводства не пригодна. Может кто-то может на примере одной теплицы дать расчёты. Интересует всё: от постройки самой теплицы до сбора урожая. Также интересует литература, где понятным языком даются основы. Заранее спасибо всем, кто откликнется!</p>
+
+<p><strong>Юрий Иваныч</strong> 03-07-2011</p>
+
+<blockquote>
+  <p>Интересует всё: от постройки самой теплицы до сбора урожая. Также интересует литература, где понятным языком даются основы. Заранее спасибо всем, кто откликнется!</p>
+</blockquote>
+
+<p>Юлия, здравствуйте. От постройки теплицы до урожая - целая наука. Литературы на сайте и форуме просто уйма. Мой совет - начинайте внимательно и последовательно изучать вышеуказанные ресурсы. Если появятся (а они обязательно появятся) конкретные вопросы тогда уже и зададите их. А так ответить на Ваш вопрос - это все равно, что по телефону за один день научить играть на скрипке. Не обижайтесь если что не так. Просто по другому не получится к сожалению. :)</p>
+
+<p><strong>Acc</strong> 03-07-2011</p>
+
+<p>Заблудиться не бойтесь, информации конечно много :) Рекомендую кроме нашего этот сайт изучить обстоятельно <a href="http://www.greentalk.ru/" target="_blank">http://www.greentalk.ru/</a> а на нашем сайте литературы море <a href="http://www.ponics.ru/2009/06/lib/" target="_blank">http://www.ponics.ru/2009/06/lib/</a> Ну и Вашу работу за Вас никто делать не будет :D. А на конкретные вопросы с удовольствием ответят участники форума, удачи Вам</p>
+
+<p><strong>Юлия</strong> 03-07-2011</p>
+
+<p>Спасибо за ответы! Я ведь не прошу делать мою работу за меня. Меня интересует с чего начать. Например, какую книгу или статью прочитать первой? Именно из-за того, что информации море, я немного растерялась :-\</p>
+
+<p><strong>Юрий Иваныч</strong> 03-07-2011</p>
+
+<p>На форуме например очень рекомендую посмотреть “Домики пользователей”, “Отчеты о выращивании” да все подряд читайте, а в голове оно со временем все по полочкам расставится. Сайт и форум я например прочел, как говорится, от корки до корки и все равно вопросов непонятных еще масса <em>???</em>. Век живи …… :D</p>
+
+<p><strong>Юлия</strong> 03-07-2011</p>
+
+<p>Ок! Спасибо! Будем распихивать по полочкам :)</p>
+
+<p><strong>caiman</strong> 04-07-2011</p>
+
+<p>Юля, а у Вас практический опыт выращивания растений есть??? Овощей в частности?</p>
+
+<p>Как на меня то гидропоника это: выращивание растений в неестественных для них условиях произрастания с применением принудительного “кормления”…. :D Думаю как-то так.</p>
+
+<p>Удачи Вам…. И еще, чтобы было быстрее, вы расставьте вопросы в приоритетном порядке, это как план к сочинению, и ищите ответы на вопросы в литературе на сайте….. <em>8)</em></p>
+
+<p><strong>Юлия</strong> 04-07-2011</p>
+
+<p>Добрый день! Практического опыта маловато. Свёкры живут в деревне. Приходилось заниматься огородом. Но там Краснодарский край. Про тамошнию почву говорят: “Посади палку-выростит дерево”, поэтому особых проблем не было. А здесь у нас степь переходящая в пустыню. Своих овощей-фруктов нет. Всё привозное. Отсюда и возникла идея теплицы, а от неё до гидропоники добралась. Вот как-то так :) Спасибо за советы! Буду дерзать!</p>
+
+<p><strong>caiman</strong> 04-07-2011</p>
+
+<p>А что собираетесь выращивать в тепличке???</p>
+
+<p>Какой состав грунта в вашей местности???</p>
+
+<p><strong>Юлия</strong> 04-07-2011</p>
+
+<p>Выращивать планирую огурцы, помидоры и зелень. А состав грунта-известняк и ракушечник. Мы на берегу моря находимся. Ну и песок со скалами присутствует. Вот такой весёлый грунт :)</p>
+
+<p><strong>caiman</strong> 04-07-2011</p>
+
+<p>нормальный грунт :D Набери в гугле капельный полив, фертигация и смотри. Набери агротехника томата на песчанных грунтах с фертигацией и т.д.</p>
+
+<p>Удачи…Посмотри тему ОХУ про африку, там есть очень познавательные фоты и коменты….</p>
+
+<p><strong>Юлия</strong> 04-07-2011</p>
+
+<p>Спасибо, учту все советы. А Вы сами давно этим занимаетесь?</p>
+
+<p><strong>Mole_Garden</strong> 04-07-2011</p>
+
+<p>И так по очереди:</p>
+
+<p>1) как уже советовали, самое банальное это прочитать книгу из библиотеки, хотя бы одну, которая рекомендуется для новичков - <a href="http://www.ponics.ru/2009/06/lib/" target="_blank">http://www.ponics.ru/2009/06/lib/</a></p>
+
+<p>2) после того как определишься окончательно с культурами почитать агротехнику - <a href="http://www.ponics.ru/2009/05/pepper/]Перец[/url], [url=http://www.ponics.ru/2009/05/tomat/]Томат[/url], [url=http://www.ponics.ru/2009/05/cucumber/" target="_blank">Огурец</a></p>
+
+<p>3) Затем для первых тестов прикупить минимальный набор новичка - <a href="http://forum.ponics.ru/index.php?topic=430.msg25452#msg25452" target="_blank">http://forum.ponics.ru/index.php?topic=430.msg25452#msg25452</a></p>
+
+<p>4) Понять на чем ты будешь выращивать и в чем, скорее всего это будет капельный полив и маты, но кто знает, может захочешь трубы и переодику.</p>
+
+<p>5) Затем попробовать самой все это вырастить в масштабе 1-10 растений</p>
+
+<p>6) А потом уже будешь думать о теплице и ее масштабах.</p>
+
+<p>Ну не бывает так, что бы без опыта вот так вот наскоком построить хорошую теплицу, получить отличный урожай и за год все наладить. Тут либо надо нанимать спеца в этом деле и платить ему зарплату, что бы он все это дело поднял, либо учиться всему самой, но это будет не быстрый процесс.</p>
+
+<p>А вообще, внимательно по изучай сайт и статьи на нем <a href="http://www.ponics.ru/" target="_blank">http://www.ponics.ru/</a> Затем, как уже советовали, форум.</p>
+
+<p>Потом появится еще куча вопросов, но 90% из них уже точно обсуждалась здесь, по этому не ленись пользоваться поиском - <a href="http://forum.ponics.ru/index.php?action=search" target="_blank">http://forum.ponics.ru/index.php?action=search</a> Если ничего не найдешь, спрашивай, направим, расскажем и даже покажем!</p>
+
+<p><strong>Юлия</strong> 04-07-2011</p>
+
+<p>Спасибо за подробный план на ближайшее время! Обязательно воспользуюсь. Понятно, что сразу не получится, я на это и не рассчитываю. Буду учиться.</p>
+
+<p><strong>caiman</strong> 04-07-2011</p>
+
+<blockquote>
+  <p>Спасибо, учту все советы. А Вы сами давно этим занимаетесь?</p>
+</blockquote>
+
+<p>Года три думаю уже есть….</p>
+
+<p><strong>Юлия</strong> 04-07-2011</p>
+
+<blockquote>
+  <p>Года три думаю уже есть….</p>
+</blockquote>
+
+<p>И как успехи?</p>
+
+<p><strong>caiman</strong> 04-07-2011</p>
+
+<p>Зайди в мою хижину caimana и посмотри успехи :D</p>
+
+<p>Особых успехов нет, так, зарисовки на тему…… Вот думаю на “землю” перебираться, серьезно заняться гидропоникой на селе. вот только инвесторов найду….. ;D ;D ;D</p>
+
+<p><strong>Mole_Garden</strong> 04-07-2011</p>
+
+<blockquote>
+  <p>Спасибо за подробный план на ближайшее время! Обязательно воспользуюсь. Понятно, что сразу не получится, я на это и не рассчитываю. Буду учиться.</p>
+</blockquote>
+
+<p>Это даже не план, а примерная последовательность более менее правильного начинающего. :)</p>
+
+<p><strong>Юлия</strong> 04-07-2011</p>
+
+<p>Будем становиться “правильными “, хотя с этим всегда были проблемки :)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

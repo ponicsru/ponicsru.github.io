@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>помогите | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="помогите">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">помогите</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><em>**</em> 19-03-2014</p>
+
+<p>Уважаемые форумчане, помогите. У меня периодика: томаты и перец, росли нормально, но несколько дней назад корни стали желтеть а кончики корней гибнут по маленьку. на вид не похожа на корневую гниль. Внутренний голос говорит, что это или нехватка какого то элемента, или переизбыток. Заранее благодарен.</p>
+
+<p><strong>Vad</strong> 19-03-2014</p>
+
+<p>подробнее.</p>
+
+<p>о температурах и периодах затопления (время и частота)</p>
+
+<p>Ph, EC.. ну.. и состав раствора…</p>
+
+<p>В основном корни гниют от инфекции и/или нехватки воздуха</p>
+
+<p><strong>Айк Геворгян</strong> 20-03-2014</p>
+
+<p>спасибо за отклик. температура раствора-20 ночь -24 день, периодичность 1.5 часа покой, 15 минут кормление. температура воздуха 23-27 день, 19-22 ночь. ес-3, ph-5.5, раствор профессиональный- &lt;питательный раствор Давтяна&gt;-разработка института гидропоники АН Армении. раствор постоянно аэрируется. сорта томатов детерминанты- сумоист, анаит…</p>
+
+<p><strong>Vad</strong> 20-03-2014</p>
+
+<p>Пару слов о субстрате :-[</p>
+
+<p><strong>Айк Геворгян</strong> 20-03-2014</p>
+
+<p>штук 10 были укоренены в минватных шариках, 10 в торфяных таблетках, 10- в перлите, 10 перлит+кубики оазиса…. во всех они укоренились быстро и быстро пошли в рост, где то месяц все было в порядке- корни белые эластичные, но уже несколько дней стоят желтые- не эластичные…</p>
+
+<p><strong>Coccinella</strong> 20-03-2014</p>
+
+<p>Откуда вода? и покажите фото, пожалуйста.</p>
+
+<p><strong>Айк Геворгян</strong> 20-03-2014</p>
+
+<p>вода дисцилированная, а фотки скоро будут. спасибо</p>
+
+<p><strong>Coccinella</strong> 20-03-2014</p>
+
+<p>Что-то мне не удалось найти внятного ответа, каков состав Давтяна? <em>???</em> Все ссылки в основном о выращивании моркови в гидропонике :-[</p>
+
+<p>Что входит в рецепт?</p>
+
+<p><strong>Vad</strong> 20-03-2014</p>
+
+<p><a href="http://www.dissercat.com/content/kharakter-izmeneniya-sostava-pitatelnogo-rastvora-pri-vyrashchivanii-nekotorykh-selskokhozya" target="_blank">http://www.dissercat.com/content/kharakter-izmeneniya-sostava-pitatelnogo-rastvora-pri-vyrashchivanii-nekotorykh-selskokhozya</a></p>
+
+<p>тут какие то обрывки.. :-\</p>
+
+<p><strong>Coccinella</strong> 20-03-2014</p>
+
+<p>Это я смотрела по диагонали, изумилась необычному способу измерения концентрации раствора, и пошла искать дальше.</p>
+
+<p><strong>Айк Геворгян</strong> 20-03-2014</p>
+
+<p>фотки готовы, но не знаю как их выложить сюда, я первый день здесь</p>
+
+<p><strong>Айк Геворгян</strong> 20-03-2014</p>
+
+<p>оппаа, догадался, вот фотки, на 11 какими были, на 22 какими стали</p>
+
+<p><a href="https://t.me/ponics_ru_files/12499" target="_blank"><img src="/attachimages/15535_11.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/12500" target="_blank"><img src="/attachimages/15537_22.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 20-03-2014</p>
+
+<p>Почитайте вот эту тему <a href="http://www.greentalk.ru/node/1789" target="_blank">http://www.greentalk.ru/node/1789</a> и внесите перекись</p>
+
+<p><strong>Айк Геворгян</strong> 20-03-2014</p>
+
+<p>раствор Давтяна действительно хорош, но в безсубстратной гидропонике его не применяли. я думаю можно попробовать следующее- убрать раствор на 1-2 дня, и применять только чистую воду. профессионалам это наверное покажется смешной затеей, но я просто инженер и это мой первый опыт в агрономии:)</p>
+
+<p><strong>Vad</strong> 20-03-2014</p>
+
+<p>А они случайно не подсыхали? когда-нибудь.. случайно?(запитка пропущена.. температура подскочила?)</p>
+
+<p>(ну так, в качестве предположения)</p>
+
+<p><strong>Айк Геворгян</strong> 20-03-2014</p>
+
+<p>вряд ли. дело в том, что я сделал автоматику и 2 раза в день иду в гости к моим растениям. до сих пор не замечал ни каких склонений в автоматике. но вот что я заметил на фотках. на первой корни по бокам уже желтоватые. когда делал фото, на это я внимания не обращал. т.е. этот процесс шел медленно и долго. а если это все таки корневая гниль? Вам профессионалам как кажется?</p>
+
+<p><strong>Vad</strong> 20-03-2014</p>
+
+<p>Я - нет, не профи :-[ я так.. с боку.. :-[</p>
+
+<p>Валерий, Кокцинеллочка.. вот они.. - ДА <em>8)</em></p>
+
+<p>на второй фотке, внизу, есть вполне здоровые корни..</p>
+
+<p>а вот те, которые желтенькие.. у меня так было,когда их подсушивал случайно.. они деревенели.. но расли новые ниже.</p>
+
+<p>просто предположение</p>
+
+<p>профи скажут куда копать ;)</p>
+
+<p><strong>Айк Геворгян</strong> 20-03-2014</p>
+
+<p>то есть ест шанс, что пронесет?:) Значит мне подождать несколько дней и нечего не предпринять?</p>
+
+<p><strong>Coccinella</strong> 20-03-2014</p>
+
+<p>Ни в коем случае нельзя поливать чистой водой, только раствором. О пользе перекиси я уже высказалась…</p>
+
+<p><strong>Айк Геворгян</strong> 20-03-2014</p>
+
+<p>Спасибо большое за советы. Наверное подожду день два, если будут изменения напишу. А если возникнут вопросы к инженеру (довольно к неплохому и скромному:) инженеру) в решении практических задач технического характера, буду рад помочь.</p>
+
+<p><strong>mitrotech</strong> 21-03-2014</p>
+
+<blockquote>
+  <p>Ни в коем случае нельзя поливать чистой водой, только раствором. О пользе перекиси я уже высказалась…</p>
+</blockquote>
+
+<p>Кстати, а почему нельзя водой?</p>
+
+<p><strong>Coccinella</strong> 21-03-2014</p>
+
+<p>А Вадим где-то у себя в домике уже однажды очень правильно и доходчиво объяснил - растение и так в стрессе, а если мы эти стрессы будем один за другим увеличивать, то никакой сорняк не выдержит. :(</p>
+
+<p>Вот человека, случись что с желудком или кишечником - переел, перепил, много жирного, мучного, шпроты с молоком… - можно посадить на Ессентуки или Боржоми, да и то не на дистиллированную воду (кто-нибудь у Боржоми ЕС измерял?, купить, что ли?)</p>
+
+<p>Растение в гидропонике - нельзя. Оно начнет загибаться, есть-то надо. Если и не умрет, то все равно, настрадается так, что потом все хвори и вредители скопом налетят :(</p>
+
+<p><strong>mitrotech</strong> 22-03-2014</p>
+
+<p>А, ну да, вообще то логично.</p>
+
+<blockquote>
+  <p>шпроты с молоком…</p>
+</blockquote>
+
+<p>Может “огурцы с молоком”? Шпроты с молоком вроде нормально :-\ … и вкусно.</p>
+
+<p><strong>cpf</strong> 22-03-2014</p>
+
+<p>Выскажу еще предположение: высокое содержание железа в растворе - может привести к такому окрашиванию корней…</p>
+
+<p>Банальная ржавчина… :)</p>
+
+<p><strong>koval.sergei</strong> 22-03-2014</p>
+
+<p>А мы просто капнули бы в растратчик Давтяна, Байкал м1 из расчёта 1мл.. на 10литр раст.., и был бы гут.</p>
+
+<p><strong>Айк Геворгян</strong> 23-03-2014</p>
+
+<blockquote>
+  <p>Выскажу еще предположение: высокое содержание железа в растворе - может привести к такому окрашиванию корней…</p>
+
+  <p>Банальная ржавчина… :)</p>
+
+  <p>Ваше продположение очень близко к душе:) дело в том, что в моем растворе железо пылью оседает. его немного, но все же. и раствор цвета ржавой воды. даже пытался растварить железо понижая ph. железо растворяется при ph 3,5-4. Раствор становится празрачным как родниковая вода. но таким раствором не кормить же томаты. может дело в растворе? состава раствора я незнаю, если это не секрет фирмы- института гидропоники Армении, то попробую узнать. Но этим раствором лет 30-40 назад они такие уражаи помидоров получали, что нам и не снилась. Но они используют субстрат- вулканические отложения и никогда не использовали его в аэропонике или безсубстратной переодике. Сейчас они переключились на лекарственные растения и черенкуют особо ценные сорта винаградов. томаты для них долеко прошедший этап.</p>
+</blockquote>
+
+<p><strong>Айк Геворгян</strong> 23-03-2014</p>
+
+<p>Ваше продположение очень близко к душе:) дело в том, что в моем растворе железо пылью оседает. его немного, но все же. и раствор цвета ржавой воды. даже пытался растварить железо понижая ph. железо растворяется при ph 3,5-4. Раствор становится празрачным как родниковая вода. но таким раствором не кормить же томаты. может дело в растворе? состава раствора я незнаю, если это не секрет фирмы- института гидропоники Армении, то попробую узнать. Но этим раствором лет 30-40 назад они такие уражаи помидоров получали, что нам и не снилась. Но они используют субстрат- вулканические отложения и никогда не использовали его в аэропонике или безсубстратной переодике. Сейчас они переключились на лекарственные растения и черенкуют особо ценные сорта винаградов. томаты для них долеко прошедший этап.</p>
+
+<p><strong>Айк Геворгян</strong> 23-03-2014</p>
+
+<p>VAD предположил, что корни подсыхали. у меня стоит аквариумная помпа, и с трудом поднимает воду, может быть на несколко часов раствор не подовался корням. На всякий случай поменял насос на более мощный.</p>
+
+<p><strong>Coccinella</strong> 24-03-2014</p>
+
+<blockquote>
+  <p>состава раствора я незнаю, если это не секрет фирмы- института гидропоники Армении, то попробую узнать. Но этим раствором лет 30-40 назад они такие уражаи помидоров получали, что нам и не снилась.</p>
+</blockquote>
+
+<p>Это они преувеличивают :). Если бы это было правдой, то сегодня состав этого раствора был бы опубликован в каждом справочнике по выращиванию томатов :) Темнят они там что-то…</p>
+
+<p><strong>Vad</strong> 24-03-2014</p>
+
+<blockquote>
+  <p>(кто-нибудь у Боржоми ЕС измерял?, купить, что ли?)</p>
+</blockquote>
+
+<p>Ну, если Ваш кондуктометр сможет такое измерить..</p>
+
+<p>минерализация у Есентуков 9-15 грамм на литр… Боржоми 5-10… Меркурий 3-6 ;)</p>
+
+<p><strong>valery</strong> 24-03-2014</p>
+
+<blockquote>
+  <p>(кто-нибудь у Боржоми ЕС измерял?, купить, что ли?)</p>
+</blockquote>
+
+<p>:D :D :D</p>
+
+<p>Не поленился :-[</p>
+
+<p>Измерил :o :o :o</p>
+
+<p>Боржоми … ЕС=5,94-5,96 mS…</p>
+
+<p>Однако :-\ :-\ :-\</p>
+
+<p><strong>Vad</strong> 24-03-2014</p>
+
+<p>мне казалось больше должно быть :-\</p>
+
+<p>Валерий, может у Вас “неправильные пчелы”…</p>
+
+<p>которые дают “неправильный боржом”? :-\</p>
+
+<p><strong>valery</strong> 25-03-2014</p>
+
+<p>:-\</p>
+
+<p>Да кто его знает. Может быть, давно ничего не калибровал …</p>
+
+<p>Но мне показалось и этого много.</p>
+
+<p><strong>Айк Геворгян</strong> 25-03-2014</p>
+
+<p>Уважаемая Coccinella. Если Вам нетрудно, такому чайнику как я объясните пожалуйста в двух словах что дает перекись растению. это только для дезинфекции?. Дело в том, что в форумах много противоречивых соображений на этот счет. Спасибо</p>
+
+<p><strong>Borodach1</strong> 25-03-2014</p>
+
+<p>Перекись - сильный, но довольно быстро разлагающийся окислитель. На всякую “мелочь” действует убийственно, в тоже время не успевая причинить особого вреда макро объектам. Ну… в разумных концентрациях конечно. Лили когда нибудь перекись на порез на пальце? Вся гадость умерла. Кровь быстрее свернулась. А пальцу хоть бы хны. :D</p>
+
+<p>И в отличие например от перманганата калия после разложения в остатке имеем просто воду.</p>
+
+<p><strong>Gamelander</strong> 26-03-2014</p>
+
+<blockquote>
+  <p>Перекись - сильный, но довольно быстро разлагающийся окислитель. На всякую “мелочь” действует убийственно, в тоже время не успевая причинить особого вреда макро объектам. Ну… в разумных концентрациях конечно. Лили когда нибудь перекись на порез на пальце? Вся гадость умерла. Кровь быстрее свернулась. А пальцу хоть бы хны. :D</p>
+
+  <p>И в отличие например от перманганата калия после разложения в остатке имеем просто воду.</p>
+</blockquote>
+
+<p>Подскажите, пожалуйста, в какие сроки перекись, добавленная в раствор из расчета 1 мл\литр, разложится полностью? Хотя бы приблизительно.</p>
+
+<p><strong>а-ну-ка</strong> 26-03-2014</p>
+
+<p>…думаю ,минут за двадцать…</p>
+
+<p><strong>Borodach1</strong> 26-03-2014</p>
+
+<p>Если приблизительно, то быстро. :D</p>
+
+<p>Чёрт знает чего в растворе есть с чем перекись очень захочет “подружиться”. ;) Да и чёрт знает что может послужить катализатором для разложения этой самой перекиси. <em>???</em></p>
+
+<p><strong>Айк Геворгян</strong> 26-03-2014</p>
+
+<p>У меня 33 процентный перекись, в каких пропорциях его надо использовать?</p>
+
+<p><strong>Айк Геворгян</strong> 26-03-2014</p>
+
+<p>с использованием перекиси как поведет себя PH?</p>
+
+<p><strong>Coccinella</strong> 26-03-2014</p>
+
+<blockquote>
+  <p>с использованием перекиси как поведет себя PH?</p>
+</blockquote>
+
+<p>Да никак существенно не изменится.</p>
+
+<p>Там же простая реакция: 2Н2О2 -&gt; 2H2O + O2 , если в процессе два свободных иона кислорода не окислят что-нибудь.</p>
+
+<p>на рН это не влияет</p>
+
+<p>Скорость разложения перекиси в растворе зависит от наличия в нем органики, чем ее больше, тем скорее все разлагается.</p>
+
+<p>Главный плюс - прочищает систему и капельницы от водорослей и снижает наличие патогенной микрофлоры в корневой зоне. На практике это иногда выглядит, как ростостимулирующее действие, хотя сама по себе перекись стимулятором роста не является.</p>
+
+<p><strong>Айк Геворгян</strong> 26-03-2014</p>
+
+<p>спасибо за ответ Coccinella. Даже мне стало понятно. и сколько же мне налить на 100 л раствора 33 %-ной перекиси.</p>
+
+<p><strong>Coccinella</strong> 26-03-2014</p>
+
+<p>1 мл/л</p>
+
+<p><strong>Айк Геворгян</strong> 26-03-2014</p>
+
+<p>Вот теперь ясно все. Спасибо. К стати корни у некоторых томатов оживают медленно но верно. все больше склоняюсь к мнению Vad-a - насос подвел и долгое время корни не получали раствор.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Томаты не цветут | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Томаты не цветут">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Томаты не цветут</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><em>**</em> 01-02-2016</p>
+
+<p>Всем Здравствуйте !</p>
+
+<p>В начале лета 2015 г. собрал систему для двух томатов. Система состоит из 2-х горшков большего и меньшего,в большом питательный раствор+подача воздуха, в меньшем керамзит. Летом и осенью система стояла на балконе и был небольшой урожай. Сейчас система стоит на подоконнике солнечного окна+подсветка лед лампой (световой день 10-12 часов), но в течении 3-х последних месяцев отмирают соцветия.</p>
+
+<p>С чем это может быть связано ?</p>
+
+<p>Питательный раствор делаю растворяя удобрение КРИСТАЛОН Скарлет 5-7 гр на 5 л воды.</p>
+
+<p>ЕС и Рн не измеряю т.к нечем.</p>
+
+<p><strong>Север</strong> 01-02-2016</p>
+
+<p>Не могу добавить фото ! Почему ?</p>
+
+<p><strong>Север</strong> 01-02-2016</p>
+
+<p>Состав Скарлет</p>
+
+<p>Азот общий 7,5%</p>
+
+<p>Фосфор 12%</p>
+
+<p>Калий 36%</p>
+
+<p>Магний 4,5%</p>
+
+<p>Сера 10%</p>
+
+<p>Железо 0,15%</p>
+
+<p>Марганец 0,06%</p>
+
+<p>Бор 0,026%</p>
+
+<p>Медь 0,004%</p>
+
+<p>Молибден 0,004%</p>
+
+<p>Цинк 0,027%</p>
+
+<p><strong>lidia</strong> 01-02-2016</p>
+
+<p>1) Удобрение Ваше в калькулятор не “засовывала”, но, по ощущению, жидковато для томатов 1 гр на литр. (Могу ошибаться, надо через калькулятор проверять)</p>
+
+<p>2) РН - важный показатель. Могут элементы быть недоступны для растений.</p>
+
+<p>3) И очень важно - Что за томаты выращиваете? Если требовательны к свету, то урожая и не будет сейчас. Тем более под люмками. Маловато света.</p>
+
+<p>Фотки добавляем через ссылку “ • Добавить изображение” НАД окошком, где сообщение пишите.</p>
+
+<p><strong>Север</strong> 01-02-2016</p>
+
+<p><a href="https://t.me/ponics_ru_files/17109" target="_blank"><img src="/imagehost2/thumbs/img20160201185835.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/17110" target="_blank"><img src="/imagehost2/thumbs/img20160201185656.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/17111" target="_blank"><img src="/imagehost2/thumbs/img20160201185736.jpg" alt="" /></a></p>
+
+<p><strong>Север</strong> 01-02-2016</p>
+
+<p>Сорт томата Балконное чудо . Лампа светит 1700-2000 Люкс, этого не достаточно ?</p>
+
+<p><strong>Север</strong> 01-02-2016</p>
+
+<p>Ещё добавляю 3-5 гр кальциевой селитры.</p>
+
+<p><strong>n72black</strong> 01-02-2016</p>
+
+<p>Хотя-бы в 5-6 раз больше света нужно (над верхушками от 15000 люкс).</p>
+
+<p><strong>Север</strong> 01-02-2016</p>
+
+<p>:o</p>
+
+<p><strong>Coccinella</strong> 01-02-2016</p>
+
+<p>У одного растения листьев вообще нет, у другого тьма пасынков. 2000 люкс мало, надо хотя бы 10 000 лк</p>
+
+<p><strong>Север</strong> 02-02-2016</p>
+
+<p>Если освещать вот такой лампой <a href="http://gidroponik.com/osvewenie/led_svetilniki/led_svetilniki5/easygrow_bar_slim_72w3," target="_blank">http://gidroponik.com/osvewenie/led_svetilniki/led_svetilniki5/easygrow_bar_slim_72w3,</a> состоящей из красных и синих диодах, света будет достаточно ?</p>
+
+<p><strong>Borodach1</strong> 02-02-2016</p>
+
+<blockquote>
+  <p>Если освещать вот такой лампой <a href="http://gidroponik.com/osvewenie/led_svetilniki/led_svetilniki5/easygrow_bar_slim_72w3," target="_blank">http://gidroponik.com/osvewenie/led_svetilniki/led_svetilniki5/easygrow_bar_slim_72w3,</a> состоящей из красных и синих диодах, света будет достаточно ?</p>
+</blockquote>
+
+<p>Не-а! Это так, баловство для рассады. Там же ясно это написано:</p>
+
+<p>“светодиодная лампа для освещения рассады и вытянутых зон”</p>
+
+<p>Да и описание странное. Вначале пишут, что потребляемая мощность 20W, а чуть ниже уже 10W. :-\</p>
+
+<p>И опять же 20 светодиодов по 1W. <em>???</em></p>
+
+<p>Для 10W радиатор ещё потянет. А вот для 20W по моему нет. Кипеть будет.</p>
+
+<p><strong>n72black</strong> 02-02-2016</p>
+
+<blockquote>
+  <p>Если освещать вот такой лампой <a href="http://gidroponik.com/osvewenie/led_svetilniki/led_svetilniki5/easygrow_bar_slim_72w3," target="_blank">http://gidroponik.com/osvewenie/led_svetilniki/led_svetilniki5/easygrow_bar_slim_72w3,</a> состоящей из красных и синих диодах, света будет достаточно ?</p>
+</blockquote>
+
+<p>Если хотите на светодиодах, возьмите обычные, тёпло-белого свечения. Ватт эдак на 80-100 светильник сделайте и будет нормально для начала, позже добавите света ещё.</p>
+
+<p><strong>Borodach1</strong> 02-02-2016</p>
+
+<p>Вернёмся к раствору.</p>
+
+<blockquote>
+  <p>Питательный раствор делаю растворяя удобрение КРИСТАЛОН Скарлет 5-7 гр на 5 л воды.</p>
+</blockquote>
+
+<blockquote>
+  <p>Ещё добавляю 3-5 гр кальциевой селитры.</p>
+</blockquote>
+
+<p>Вы чайной ложкой отмеряете? ;) :D</p>
+
+<p>Рассмотрим два крайних результата. Вбил в калькулятор. Вот что получилось.</p>
+
+<p>При 5 гр Кристалона и 3 гр кальциевой селитры на 5 литров раствора, в одном литре имеем:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17112" target="_blank"><img src="/imagehost2/thumbs/screenhunter26feb021308.jpg" alt="" /></a></p>
+
+<p>А при 7 гр Кристалона и 5 гр селитры на 5 литров раствора, в одном литре имеем:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17113" target="_blank"><img src="/imagehost2/thumbs/screenhunter27feb021309.jpg" alt="" /></a></p>
+
+<p>Ждём замечаний томатоводов, но я бы сказал, что Вы недодаёте азот и кальций, и злостно перекармливаете калием.</p>
+
+<p><strong>n72black</strong> 02-02-2016</p>
+
+<p>И на таких растворах будет расти, даже при завышенной концентрации. Света мало и скорее всего рН завышен.</p>
+
+<p>5 гр кристалона нормально(просто отличный состав удобрения, мне б такое), а вот про кальциевую селитру бы поподробнее - состав. И какая вода используется?</p>
+
+<p>рН метр обязательно нужен, ну и ЕС метр, разумеется.</p>
+
+<p><strong>n72black</strong> 02-02-2016</p>
+
+<p>Ещё раз про кристалон, просто находка. Только кальц. селитру расчитать и отличный раствор для томатов будет. :D <em>8)</em></p>
+
+<p><strong>Borodach1</strong> 02-02-2016</p>
+
+<blockquote>
+  <p>И на таких растворах будет расти…</p>
+</blockquote>
+
+<p>Ну так ОНО и растёт. :D</p>
+
+<p>А передоз калия чего нам блокирует? :-\ Не помню что-то… :-\ Случайно не магний с кальцем? А кальция и так не хватает. :(</p>
+
+<blockquote>
+  <p>Света мало и скорее всего рН завышен.</p>
+</blockquote>
+
+<p>Это точно. И аммонийной составляющей в растворе нет. 100% рН уплыл. :(</p>
+
+<blockquote>
+  <p>Ещё раз про кристалон, просто находка.</p>
+</blockquote>
+
+<p><em>8)</em></p>
+
+<blockquote>
+  <p>Только кальц. селитру расчитать и отличный раствор для томатов будет. :D <em>8)</em></p>
+</blockquote>
+
+<p>По грамму того и того на литр… ну может аммиачки 0,1-0,2 гр на литр… где то что то удобоваримое выйдет.</p>
+
+<p>Даже наверное кальциевой селитры по 1,2 на литр. :-\</p>
+
+<p><strong>Borodach1</strong> 02-02-2016</p>
+
+<p>Ой! Я накосячил! Не туда азот вбил. :-[</p>
+
+<blockquote>
+  <p>Питательный раствор делаю растворяя удобрение КРИСТАЛОН Скарлет 5-7 гр на 5 л воды.</p>
+</blockquote>
+
+<blockquote>
+  <p>Ещё добавляю 3-5 гр кальциевой селитры.</p>
+</blockquote>
+
+<p>Исправляемся! :D</p>
+
+<p>Рассмотрим два крайних результата. Вбил в калькулятор. Вот что получилось.</p>
+
+<p>При 5 гр Кристалона и 3 гр кальциевой селитры на 5 литров раствора, в одном литре имеем:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17114" target="_blank"><img src="/imagehost2/thumbs/screenhunter28feb021656.jpg" alt="" /></a></p>
+
+<p>А при 7 гр Кристалона и 5 гр селитры на 5 литров раствора, в одном литре имеем:</p>
+
+<p><a href="https://t.me/ponics_ru_files/17115" target="_blank"><img src="/imagehost2/thumbs/screenhunter29feb021658.jpg" alt="" /></a></p>
+
+<p>Кальций как был так и остался в некотором недостатке. С азотом стало получше, но с калием так ничего и не изменилось. Всё так же зашкаливает. :(</p>
+
+<p><strong>Север</strong> 02-02-2016</p>
+
+<p>Селитра кальциевая (буйские удобрения) N 14,9% СаО 27%. Скарлет очень хорошо растворяется в воде (из под крана), чем и понравился, но зачем там так много серы 10% и совсем нет кальция (первые плоды были с гнилью).</p>
+
+<p><strong>Coccinella</strong> 02-02-2016</p>
+
+<p>Господа, а зачем вы считаете содержание макроэлементов после запятой? Да еще до 3-4 знака? Из-за микроэлементов?</p>
+
+<p><strong>Borodach1</strong> 02-02-2016</p>
+
+<blockquote>
+  <p>Господа, а зачем вы считаете содержание макроэлементов после запятой? Да еще до 3-4 знака? Из-за микроэлементов?</p>
+</blockquote>
+
+<p>Это не я. :-[ Это калькулятор так считает. :-X</p>
+
+<p>Что ж, я совсем больной что-ли стотысячные гонять? :-\</p>
+
+<p>:D</p>
+
+<p><strong>Север</strong> 25-04-2016</p>
+
+<p>А если взять за основу вот такой раствор :</p>
+
+<p>Культура:</p>
+
+<p>Томат</p>
+
+<p>Раствор:</p>
+
+<p>ООО АФ «Украина» Стандартный</p>
+
+<p>NH4+	NO3—	N	 P	 K	 Mg	 Ca	 Fe	 Mn	 B	 Zn	Cu	 Mo</p>
+
+<p>17.5 	192.5	210	38.5	 340	 49	 170 2	 0.5	 0.5	 0.1 0.1	 0.05</p>
+
+<p>pH: 5.5 EC: 1.5 — 2.0 mS</p>
+
+<p>0,9 гр/л Кальциевой селитры</p>
+
+<p>1 гр/л Кристалон Скарлет показывают очень неплохие цифры в калькуляторе ! ;)</p>
+
+<p>Что скажут томатоведы ? :-\</p>
+
+<p><strong>Coccinella</strong> 25-04-2016</p>
+
+<p>Кальция маловато и ЕС может быть и выше.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Сердце разрывается, гибнет перец. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Сердце разрывается, гибнет перец.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Сердце разрывается, гибнет перец.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Antmurm</strong> 06-06-2011</p>
+
+<p>Никак не могу вырастить перец.</p>
+
+<p>Он просто не растёт, сначала все хорошо, а на 2-3 неделе рост останавливается, листья светлеют и начинают опадать.</p>
+
+<p>Раствор сделал сам такой: <a href="http://www.greentalk.ru/system/files/18.pdf" target="_blank">http://www.greentalk.ru/system/files/18.pdf</a></p>
+
+<p>Вот из чего (на 100 л): Ca(NO3)2 - 78 г, KNO3 - 53 г, NH4NO3 - 8 г, КН2РО4 - 17 г, МgSO4 - 37 г</p>
+
+<p>Может с микроэлементами туго, я просто насыпал чуть “БУТОНА” для комнатных растений ?</p>
+
+<p>Ph держу 5,5 - 6,0, Правда раз в два дня капаю 5-6 капель раствора серной кислоты, т.е. pH медленно растёт.</p>
+
+<p>И ещё, живу за полярным кругом, сейчас полярный день. Все время солнце и светло. Это может как-то повлиять ?</p>
+
+<p><strong>VVS_</strong> 06-06-2011</p>
+
+<p>У меня жена выращивала перец в земле в горшке на балконе. Создалось такое впечатление что гидропоника ему ни к чему :)</p>
+
+<p>По теме, я бы добавил стандартных микроэлементов типа буйского “Аква микс”. Проблема имеет накопительный характер, то есть чего-то явно не хватает к концу 3 недель.</p>
+
+<p><strong>Antmurm</strong> 06-06-2011</p>
+
+<p>Да, контрольный перец в земле растёт, но не плодоносит, а хочется большего.</p>
+
+<p><strong>VVS_</strong> 06-06-2011</p>
+
+<p>Растишкам нужна ночь по расписанию</p>
+
+<p><strong>ProRus</strong> 06-06-2011</p>
+
+<blockquote>
+  <p>Может с микроэлементами туго, я просто насыпал чуть “БУТОНА” для комнатных растений ?</p>
+</blockquote>
+
+<p>А состав “БУТОНА” можно?</p>
+
+<p>Еще сообщите температуру воздуха днем и ночью, влажность, какое проветривание. Температуру раствора тоже полезно знать.</p>
+
+<blockquote>
+  <p>И ещё, живу за полярным кругом, сейчас полярный день. Все время солнце и светло. Это может как-то повлиять ?</p>
+</blockquote>
+
+<p>Не думаю, я тоже с него. Перец не растил, но все остальное растет нормально. Откуда если не секрет?</p>
+
+<p><strong>Coccinella</strong> 06-06-2011</p>
+
+<p>Я не думаю, что проблема может быть в полярном дне. Скорее в переливах и… возможно… в питании. Видите ли, от нехватки микроэлементов листья обычно не опадают, они пестрыми становятся, пятнистыми…</p>
+
+<p>Опадают от переливов и от засухи (то есть, скачки ЕС тоже могут быть причиной).</p>
+
+<p><strong>Antmurm</strong> 06-06-2011</p>
+
+<blockquote>
+  <p>А состав “БУТОНА” можно?</p>
+</blockquote>
+
+<p>Бутон, П – регулятор роста растений (20 г/кг гиббереллиновых кислот натриевые соли).</p>
+
+<blockquote>
+  <p>Еще сообщите температуру воздуха днем и ночью, влажность, какое проветривание. Температуру раствора тоже полезно знать.</p>
+
+  <p>Не думаю, я тоже с него. Перец не растил, но все остальное растет нормально. Откуда если не секрет?</p>
+</blockquote>
+
+<p>Я из Мурманска.</p>
+
+<p>Температура ночью и ночью +24…26, днём на солнце бывает до +40, но это не всегда, только когда солнце сильное.</p>
+
+<p>Проветриваю вечером после работы. Температура раствора порядка 22.</p>
+
+<p>Влажность не мерил, но дума, что сухо.</p>
+
+<blockquote>
+  <p>Я не думаю, что проблема может быть в полярном дне. Скорее в переливах и… возможно… в питании. Видите ли, от нехватки микроэлементов листья обычно не опадают, они пестрыми становятся, пятнистыми…</p>
+
+  <p>Опадают от переливов и от засухи (то есть, скачки ЕС тоже могут быть причиной).</p>
+</blockquote>
+
+<p>Микроэлементов мало, это может быть, я только чуть Mn и Сu только добавил.</p>
+
+<p>ЕС, это ppm ? Если да, то где-то 300 было, сейчас 900 сделал.</p>
+
+<p>А перлива вроде нет, один корешёк в воде держу (длинный самый), это на 1 см ниже дна стаканчика.</p>
+
+<p><strong>ProRus</strong> 06-06-2011</p>
+
+<blockquote>
+  <p>Бутон, П – регулятор роста растений (20 г/кг гиббереллиновых кислот натриевые соли).</p>
+</blockquote>
+
+<p>Это оно?</p>
+
+<p><img src="http://www.floriculture.ru/rast/yhod/care/pic/buton.gif" alt="" /></p>
+
+<p>И зачем оно вам? Состав вроде у вас ничего так, но микра все же нужна.</p>
+
+<blockquote>
+  <p>Я из Мурманска.</p>
+</blockquote>
+
+<p>Ну не самый север. :)</p>
+
+<blockquote>
+  <p>Температура ночью и ночью +24…26, днём на солнце бывает до +40, но это не всегда, только когда солнце сильное.</p>
+
+  <p>Проветриваю вечером после работы. Температура раствора порядка 22.</p>
+
+  <p>Влажность не мерил, но дума, что сухо.</p>
+</blockquote>
+
+<p>Ну в принципе не самый плохой вариант.</p>
+
+<blockquote>
+  <p>Микроэлементов мало, это может быть, я только чуть Mn и Сu только добавил.</p>
+</blockquote>
+
+<p>Поищите микру на будущее…</p>
+
+<blockquote>
+  <p>ЕС, это ppm ? Если да, то где-то 300 было, сейчас 900 сделал.</p>
+
+  <p>А перлива вроде нет, один корешёк в воде держу (длинный самый), это на 1 см ниже дна стаканчика.</p>
+</blockquote>
+
+<p>Вот и думай теперь как перевести ваши PPM на мои EC. :(</p>
+
+<p>Перцу нужно EC 2.5 – 3.0 mS, но это уже для взрослого.</p>
+
+<p>Какая аэрация раствора? Керамзит готовили?</p>
+
+<p><strong>Antmurm</strong> 06-06-2011</p>
+
+<p>Аэрация через компрессор от аквариума. Керамзит готовил, но pH раствора всё равно растёт с 5,5 до 6,0 за 2 дня.</p>
+
+<p>Т.е. стоит купить микро элементы и добавить в раствор, да ?</p>
+
+<p>Надо попробовать.</p>
+
+<p>А Бутон похоже без микро - <a href="http://www.floriculture.ru/rast/yhod/care/buton.shtml" target="_blank">http://www.floriculture.ru/rast/yhod/care/buton.shtml</a></p>
+
+<p>Только гибберлиновые кислоты.</p>
+
+<p><strong>ProRus</strong> 06-06-2011</p>
+
+<blockquote>
+  <p>Аэрация через компрессор от аквариума. Керамзит готовил, но pH раствора всё равно растёт с 5,5 до 6,0 за 2 дня.</p>
+</blockquote>
+
+<p>Ну микру нужно хоть немного, поищите хотя бы Флорист микро или Унифлор микро.</p>
+
+<p><strong>ProRus</strong> 06-06-2011</p>
+
+<p>Влажность нужна около 75%.</p>
+
+<p>Я бы попробовал так:</p>
+
+<ol>
+  <li>
+    <p>Опустил стаканчик на 0,5 см в раствор (но аэрация должна быть хорошей, одного стандартного камешка не достаточно).</p>
+  </li>
+  <li>
+    <p>Добавить капельницу и сверху. Может быть верх подсыхает, где на данное время корневая система и находится.</p>
+  </li>
+  <li>
+    <p>Попробовать опрыскивать в утреннее время.</p>
+  </li>
+  <li>
+    <p>Ну и добавить микры.</p>
+  </li>
+</ol>
+
+<p>Для перца состав примерно такой:</p>
+
+<p>NO3-N 	190</p>
+
+<p>NH4-N 	18</p>
+
+<p>P 	40</p>
+
+<p>K 	340</p>
+
+<p>Ca 	170</p>
+
+<p>Mg 	50</p>
+
+<p>SO4 	360</p>
+
+<p>Fe 	1.5-3.0</p>
+
+<p>Mn 	0.55</p>
+
+<p>Zn 	0.33</p>
+
+<p>B 	0.33</p>
+
+<p>Cu 	0.05</p>
+
+<p>Mo 	0.05</p>
+
+<p><strong>Antmurm</strong> 06-06-2011</p>
+
+<p>Спасибо, попробую. А вот какая производительность компрессора нужна ?</p>
+
+<p>У меня компрессор на 100 л аквариум 3 ведра обслуживает.</p>
+
+<p>А стаканчик в раствор опустить - не затоплю корни ?</p>
+
+<p><strong>Mole_Garden</strong> 06-06-2011</p>
+
+<blockquote>
+  <p>Спасибо, попробую. А вот какая производительность компрессора нужна ?</p>
+
+  <p>У меня компрессор на 100 л аквариум 3 ведра обслуживает.</p>
+
+  <p>А стаканчик в раствор опустить - не затоплю корни ?</p>
+</blockquote>
+
+<p>При хорошей аэрации затопление корней не страшно, главное не топить само растение, то место откуда растет корневая. 100 литрового на 3 ведра должно хватить, но лучше больше чем меньше.</p>
+
+<p><strong>Antmurm</strong> 09-06-2011</p>
+
+<p>Нашёл только вот такую штуку:</p>
+
+<p>Гумат + 7 микоэлементов масса 50 г.</p>
+
+<p>Состав (в %): Гумат 40; Азот 1,5; К 5,0; Cu 0,2; Mn 0,17; Zn 0,2; Mo 0,018; Co 0,02; B 0,2; Fe 0,4.</p>
+
+<p>Я так понимаю 3 г на 10 литров добавить ?</p>
+
+<p><strong>nadnab</strong> 29-06-2011</p>
+
+<p>незнаю, может поможет на будущее.</p>
+
+<p><a href="https://t.me/ponics_ru_files/5440" target="_blank"><img src="/attachimages/7521_Таблица дефецита микроэлементов.png" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 30-06-2011</p>
+
+<p>Nadnab! А автор таблицы в источнике не указывался? Там некоторые утверждения спорные.</p>
+
+<p>Antmurm! Как дела у перца?</p>
+
+<p><strong>nadnab</strong> 30-06-2011</p>
+
+<p>Автор не указан, а может и я не досмотрел, но первоисточник, откуда взята сама таблица - <a href="http://www.ponics.ru/2009/03/micro-def-table/" target="_blank">http://www.ponics.ru/2009/03/micro-def-table/</a></p>
+
+<p>Если вам кажется, что есть что то спорное, может создадут новую тему по поводу этой таблицы и вы или еще кто-то сможет помочь довести ее до ума. Т.к. я ,и возможно кто-то еще , отталкиваются от нее.</p>
+
+<p><strong>Coccinella</strong> 30-06-2011</p>
+
+<p>Мне вот эта схема кажется точнее</p>
+
+<p><a href="http://www.greentalk.ru/v/20100307/mikroelementi.png.html?g2_GALLERYSID=d53bb539db5300638894fed381c7cee5" target="_blank">http://www.greentalk.ru/v/20100307/mikroelementi.png.html?g2_GALLERYSID=d53bb539db5300638894fed381c7cee5</a></p>
+
+<p><strong>nadnab</strong> 30-06-2011</p>
+
+<p>Кстати говоря, по поводу таблицы, рисунок которой я выложил идентична этой - <a href="http://www.rollitup.org/marijuana-plant-problems/435987-plant-troubleshooter-chart-nutrient-deficiency.html" target="_blank">http://www.rollitup.org/marijuana-plant-problems/435987-plant-troubleshooter-chart-nutrient-deficiency.html</a></p>
+
+<p>Но первое, что кинулось в глаза - для какого именно растения. Скорее всего поэтому вам, Coccinella, она показалась спорной.</p>
+
+<p><strong>Coccinella</strong> 30-06-2011</p>
+
+<p>Я по сайтам такого рода специально не брожу, но иногда случайно натыкаюсь. В выращивании именно этого растения я не специалист, но честно говоря, некоторые агротехнические рекомендации, которые там попадаются, с точки зрения общей агрономии наводят на мысль о несколько нетрезвом состоянии авторов в момент написания.</p>
+
+<p>Возможно, отсюда и спорность утверждений :)</p>
+
+<p><strong>nadnab</strong> 30-06-2011</p>
+
+<p>Я не хотел указывать именно на растение, о котором “там” идет речь, и позиционировать его с вами…</p>
+
+<p>О том как и кто его использует… (сам случайно попал на этот сайт)</p>
+
+<p>Просто именно эта табличкая, в иной интерпретации, используемая для определения дефицита элементов других культур и указана на сайте ponics.ru. Поэтому, спасибо, что выложили дополнительный материал по недостаче элементов!</p>
+
+<p><strong>Antmurm</strong> 04-07-2011</p>
+
+<blockquote>
+  <p>Nadnab! А автор таблицы в источнике не указывался? Там некоторые утверждения спорные.</p>
+
+  <p>Antmurm! Как дела у перца?</p>
+</blockquote>
+
+<p>Дала такие - 2 выросли до 15 см в высоту и цветут, 2 так себя, 2 загнулись.</p>
+
+<p>Думаю, что у них у всех не развилась корневая система, т.к. я боялся залить корни - держал маленький уровень жидкости.</p>
+
+<p>Скоро уеду в отпуск - следить не кому.</p>
+
+<p>Но вообще с перцем не выходит у меня. Приеду, попробую с огурцом, помидором. Возможно, я в чём-то ошибаюсь, но в чём, не пойму, вроде всё по науке, но контрольный перец в земле вырос точно-таким же как и на понике.</p>
+
+<p><strong>valery</strong> 04-07-2011</p>
+
+<blockquote>
+  <p>Дала такие - 2 выросли до 15 см в высоту и цветут, 2 так себя, 2 загнулись.</p>
+</blockquote>
+
+<p>Про формирование перцев ничего не знаю, но с 15-ти сантиметрового растеньица я бы лично цветочки - удалил. Ну куда ему плодоносить, он же маленький совсем …</p>
+
+<blockquote>
+  <p>Но вообще с перцем не выходит у меня. Приеду, попробую с огурцом, помидором. Возможно, я в чём-то ошибаюсь, но в чём, не пойму, вроде всё по науке, но контрольный перец в земле вырос точно-таким же как и на понике.</p>
+</blockquote>
+
+<p>Ну почему же “не выходит”. Если не хуже, чем в земле - уже значительный успех. Значит Вы умудрились обеспечить ему условия НЕ ХУЖЕ, чем в почве …</p>
+
+<p>Они же в гидропонике ЛУЧШЕ растут (если “растут” и если “лучше”) - не от СЛОВА “ПОНИКА”, и не от того, что мы их из привычной среды “выдернули” …</p>
+
+<p>А от того, что мы можем (если можем и хотим) - обеспечить им ЛУЧШУЮ среду обитания и уход … Значит, в следующий раз Вы сделаете лучше и “обгоните” почву … :)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

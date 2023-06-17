@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Первый опыт. Масса проблем с клубникой. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Первый опыт. Масса проблем с клубникой.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Первый опыт. Масса проблем с клубникой.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Chemist</strong> 06-08-2018</p>
+
+<p>Здравствуйте! Посадил клубнику на DWC (субстрат - керамзит, он желтый потому что посыпан силикатной глиной, она помогла частично от плесени), изначально пришла зараженная, много болела, много кустов погибло от грибковых инфекций, кое-как откачал своими силами 3 куста, они дали корни, пытались цвести, первые цветоносы удалил, вроде бы кусты стали более менее живыми, но есть 4 проблемы:</p>
+
+<p>1) Листья куполообразные на всех кустах</p>
+
+<p>2) Стебли, на мой взгляд тонике очень</p>
+
+<p>3) Корни двух кустов из трех очень сильно пострадали изначально, и листья были очень маленькие, неправильной формы, сейчас, вроде, стало нормализоваться, но вот цветоносы образуются на коротких ножках, это нормально?</p>
+
+<p>4) Неделю назад на молодых листьях начался хлороз (как я <del>понял</del> думаю, что это дефицит железа, сменил вчера раствор, в растворе повысил количество солей в 2 раза (до этого побоялся, мало ли, корней мало, на улице жарко), с утра смотрю на корни, они стали светло-коричневыми, вокруг корней пена. Что это за пена, это уже не первый раз, выделяют корни? <del>Этилен?</del>. От корней странный запах, пахнет не грибками, а чем-то непонятным, он не неприятный, но и приятным это назвать точно нельзя, он другой, вчера корни не пахли (сейчас хочу промыть корни 40-45 градусной водой)</p>
+
+<p>Буду рад, если подскажете как быть и что делать, и да, цветоносы обрезать, пока силу кусты не наберут? Или оставить их в покое?</p>
+
+<p>Система на GHE (да, я уже заказал весы и присматриваю магазин, где есть сухие соли, скоро избавлюсь от готовых растворов). Освещение светодиодное в перемешку фулл-спектр с кучей других диодов. Суммарно 60 Вт плюс редкий солнечный свет из окна. Планирую уйти с DWC, либо доработать, сейчас изучаю форум и опыт других людей.</p>
+
+<p>P.s. На фото можно увидеть жженые краешки у листьев, это самые первые листья, я тогда чем-то сжег их, пытаясь справиться с грибками</p>
+
+<p><a href="https://t.me/ponics_ru_files/19486" target="_blank"><img src="/attachimages/19112_KOeethBeRGc.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/19487" target="_blank"><img src="/attachimages/19114_jOqZX8V-Z54.jpg" alt="" /></a></p>
+
+<p><strong>VVS_</strong> 07-08-2018</p>
+
+<p>У здоровых корней запах как у свежей моркови, купать в воде 45.0С 1 мин, при 40 без толку. Лист для мелких почти в норме, магния бы прибавить. Ну и керамхит, что с ним? У него две судьбы, быть прокипяченным в воде, подкисленной до 3 с дальнейшим полосканием, или уйти в мусор освободив место для корней) зараза, запах в корнях и насекомые периодически появляются, керамзит будет мешать обработке.</p>
+
+<p>Есть еще весомый фактор, качество посадочного материала. У меня рассада кимберли и флорентина 50% сдохло. Просто на ровном месте, был зеленый кустик все хорошо, потом бац, корни почернели, рост остановился, все. Купание не помогало.</p>
+
+<p><strong>Chemist</strong> 14-08-2018</p>
+
+<p>А почему магния? Листья же молодые страдали, обычно от магния старые покрываются пятнами, нет? Смена раствора помогла, цвет стал нормальным. А почему листья куполом?</p>
+
+<p><strong>Chemist</strong> 14-08-2018</p>
+
+<p>Может кто-то еще подскажет, сегодня уходил с утра, был 1 листик вялый, пришел с работы, можно сказать, что куст лежит, листья вялые, мягкие, но корни не выглядят больными… Что это может быть, если идеи? Остальные кусты нормальные.</p>
+
+<p><strong>VVS_</strong> 14-08-2018</p>
+
+<p>Вянет - мало поступает воды. Надо понизить ЕС чуток. процентов на 10 вниз. И притенить от солнца, очухается.</p>
+
+<p>Больше про GHE сказать нечего… не бывает универсальных растворов. Каждый сворт свое требует.</p>
+
+<p>Лист куполом - мало кальция или много калия.</p>
+
+<p><strong>Chemist</strong> 14-08-2018</p>
+
+<p>Спасибо, попробую разбавить дистиллятом, хотя ЕС 1,7. Прямые солнечные лучи не попадают, деревья закрывают окно сильно, да и сторона северная.</p>
+
+<p><strong>Chemist</strong> 14-08-2018</p>
+
+<p>рН раствора был 5. Меньше чем за неделю упал на 1, раньше было все стабильно. Почему рН может падать вообще?</p>
+
+<p><strong>Cyclamech</strong> 14-08-2018</p>
+
+<blockquote>
+  <p>рН раствора был 5. Меньше чем за неделю упал на 1, раньше было все стабильно. Почему рН может падать вообще?</p>
+</blockquote>
+
+<p>Разве не потому, что говнюки из GHE не умеют изготавливать удобрения? <em>???</em></p>
+
+<p><strong>VVS_</strong> 14-08-2018</p>
+
+<p>Да, потому что говнюки… непостоянное качество видимо. No3:Nh4 не соблюдают.</p>
+
+<p>В моей установке Ph как был 6.2 при заливке 2 недели назад, так до сих пор и стоит 6.2.</p>
+
+<p><strong>Cyclamech</strong> 14-08-2018</p>
+
+<blockquote>
+  <p>No3:Nh4 не соблюдают.</p>
+</blockquote>
+
+<p>Отчего “не соблюдают”? <em>crazy</em></p>
+
+<p>Просто, видать, бУхают “аммиачки” под завязку - и похер им на соотношение азотных форм! <em>???</em></p>
+
+<p><strong>siv237</strong> 15-08-2018</p>
+
+<blockquote>
+  <blockquote>
+    <p>рН раствора был 5. Меньше чем за неделю упал на 1, раньше было все стабильно. Почему рН может падать вообще?</p>
+  </blockquote>
+
+  <p>Разве не потому, что говнюки из GHE не умеют изготавливать удобрения? <em>???</em></p>
+</blockquote>
+
+<p>Просто делают они удобрения исключительно для травокуров. Даже компания Scotts Miracle-Gro Company выкупила компанию GHE именно для выхода на рынок по производству марихуаны после её частичной легализации в некоторых странах.</p>
+
+<blockquote>
+  <p>2015 - Scotts Miracle-Gro buys General Hydroponics and Vermicrop Organics to move into the marijuana market, under the name Hawthorne Gardening Company</p>
+</blockquote>
+
+<p>https://en.wikipedia.org/wiki/Scotts_Miracle-Gro_Company</p>
+
+<p>И кстати теперь даже бренда GHE такого похоже нет, и что продают под этой маркой наркоманам вообще не понятно. Но даже если и предположить, что компания еще существует самостоятельно, дистрибуцией свей продукции в страны бывшего совка нет https://generalhydroponics.com/distributors-list . Что продают тут под этой маркой вообще трудно представить, но наркоманы очень удобный покупатель, жаловаться не пойдут, проблемы спишут на себя.</p>
+
+<p><strong>Cyclamech</strong> 15-08-2018</p>
+
+<blockquote>
+  <p>…наркоманам…наркоманы…</p>
+</blockquote>
+
+<p>:-\</p>
+
+<p><strong>VVS_</strong> 15-08-2018</p>
+
+<p>Где-то в гугле натыкался что это все калужского розлива. По франшизе.</p>
+
+<p><strong>allex_step</strong> 15-08-2018</p>
+
+<blockquote>
+  <p>дистрибуцией свей продукции в страны бывшего совка нет <a href="http://forum.ponics.ru/go.php?url=aHR0cHM6Ly9nZW5lcmFsaHlkcm9wb25pY3MuY29tL2Rpc3RyaWJ1dG9ycy1saXN0" target="_blank">generalhydroponics.com/…ributors-list</a></p>
+</blockquote>
+
+<p>судя по той инфе - там и Япония[font=verdana] находится[/font] в Южной Америке <em>crazy</em></p>
+
+<blockquote>
+  <p>[font=Verdana]Где-то в гугле натыкался что это все калужского розлива. По франшизе.[/font]</p>
+</blockquote>
+
+<p>[font=Verdana]даже видос в ютрубе был ;) [/font]</p>
+
+<p><strong>Cyclamech</strong> 15-08-2018</p>
+
+<blockquote>
+  <p>Где-то в гугле натыкался что это все калужского розлива. По франшизе.</p>
+</blockquote>
+
+<p><del>Подвал</del> Бомбоубежище в Перми. Видос на канале “горшкоффа”. Познавательный для поклонников “флоры”: я “как-то где-то” давал на него ссылку. Впрочем, может ещё в каких подвалах бутилируют: Россия большая, барыг и дураков немеряно.</p>
+
+<p><a href="https://t.me/ponics_ru_files/19488" target="_blank"><img src="/imagehost2/thumbs/iexe.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/19489" target="_blank"><img src="/imagehost2/thumbs/img2178.jpg" alt="" /></a></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

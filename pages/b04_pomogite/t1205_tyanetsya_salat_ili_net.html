@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Тянется салат или нет? | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Тянется салат или нет?">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Тянется салат или нет?</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>vd</strong> 10-10-2011</p>
+
+<p>Подскажите это нормальный салат или тянется? Срок ему 2 недели от посадки.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6489" target="_blank"><img src="/attachimages/8712_07-10-11_1346.jpg" alt="" /></a></p>
+
+<p><strong>Oxy</strong> 10-10-2011</p>
+
+<p>Как по мне, так не тянеться. А если и тянеться, то только-только начал. Придвиньте ближе лампу и делов-то.</p>
+
+<p><strong>vd</strong> 10-10-2011</p>
+
+<p>Лампа Днат 400 расстояние 80 см, ближе опасно, температуру еле держу ниже 22 градусов</p>
+
+<p>За последние 2 дня очень сильно вырос, но при этом многие растут полу лёжа., думаю не поднимутся :(</p>
+
+<p><strong>valery</strong> 10-10-2011</p>
+
+<p>Наверное, это - неправильно. Но у меня ВСЕГДА полулежа растут … а то и лежа …</p>
+
+<p>А потом - ничего, оклемываются …</p>
+
+<p>Свет - светом, но и температуру бы снизить все равно, будет лучше. ( хотя у меня тоже обычно не получается с температурой :( )</p>
+
+<p><strong>vd</strong> 10-10-2011</p>
+
+<p>Валерий спасибо, успокоил <em>8)</em></p>
+
+<p><strong>ProRus</strong> 11-10-2011</p>
+
+<blockquote>
+  <p>Подскажите это нормальный салат или тянется? Срок ему 2 недели от посадки.</p>
+</blockquote>
+
+<p>По мне так тянется, хотя в дальнейшем действительно окрепнет.</p>
+
+<p>А что по одному на горшочек? По 4-5 на стакан лучше.</p>
+
+<p>На фото как раз 14 дней от посева и совсем не тянется.</p>
+
+<p>Освещение две люмки на расстоянии 1-2 см.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6490" target="_blank"><img src="/attachimages/8728_salad14day.jpg" alt="" /></a></p>
+
+<p><strong>Oxy</strong> 11-10-2011</p>
+
+<p>Ребята, ну чего тут лукаквить. Мы ведь все прекрасно знаем, что люмка на расстоянии 1-2см, это намного круче чем ДНАТ400 на расстоянии 80см. Потому что ДНАТ400 хочет как МАКСИМУМ - 40 см.</p>
+
+<p>Соответственно - салат тянеться. Даже не тянеться, а только начал. И тут как я говорил, или лампу опустить - тогда култюб.</p>
+
+<p>Или деньги вместо култюба потратить на люмки и установить расстояние 1-2см. А через недульку наружная температура упадет настолько, что еще и подогревать этот салат придеться :)</p>
+
+<p>А если просто с улицы закачивать воздух и дуть прямо на салаты, а ДНАТ опустить все таки до 30 см?</p>
+
+<p>Вентиляцию дешевле всего мне кажеться организовать.</p>
+
+<p>Вот как у меня например тянулись под солнцем при температуре воздуха 29С:</p>
+
+<p><a href="https://t.me/ponics_ru_files/6491" target="_blank"><img src="/imagehost/thumbs/1368.jpg" alt="" /></a></p>
+
+<p>Вот как выпрямились эти же растюхи:</p>
+
+<p><a href="https://t.me/ponics_ru_files/6492" target="_blank"><img src="/imagehost/thumbs/2240fwf.jpg" alt="" /></a></p>
+
+<p><strong>ProRus</strong> 11-10-2011</p>
+
+<blockquote>
+  <p>Ребята, ну чего тут лукаквить. Мы ведь все прекрасно знаем, что люмка на расстоянии 1-2см, это намного круче чем ДНАТ400 на расстоянии 80см. Потому что ДНАТ400 хочет как МАКСИМУМ - 40 см.</p>
+</blockquote>
+
+<p>Мне кажется, что практичнее при замкнутом цикле выращивания салата сделать отдельное рассадное отделение с люмками. И места меньше занимает и эффективность при проращивании повышается. Хорошая, мощная рассада, залог раннего и шикарного урожая. Например по моей практике, задержка в два дня на рассаде приводит мнимум к недельной задержке в урожае.</p>
+
+<p><strong>Oxy</strong> 11-10-2011</p>
+
+<p>Ну так это понятно:) Кто бы спорил.</p>
+
+<p>это уже сам вопрошающий будет определяться. Конечно же рассадное отделение обязалово, без него никак. Но на первых этапах….</p>
+
+<p><strong>ProRus</strong> 11-10-2011</p>
+
+<blockquote>
+  <p>Ну так это понятно:) Кто бы спорил.</p>
+
+  <p>это уже сам вопрошающий будет определяться. Конечно же рассадное отделение обязалово, без него никак. Но на первых этапах….</p>
+</blockquote>
+
+<p>Ну дак на фото совсем не любительское количество стаканчиков. Да и любители не станут покупать “проф” стаканчики для экспериментов. :)</p>
+
+<p><strong>Oxy</strong> 11-10-2011</p>
+
+<p>Согласен с выводами по фото :) Но вопрос ведь был задан - любительский :)</p>
+
+<p><strong>ProRus</strong> 11-10-2011</p>
+
+<blockquote>
+  <p>Но вопрос ведь был задан - любительский :)</p>
+</blockquote>
+
+<p>Ну в принципе тоже верно. ;)</p>
+
+<p><strong>Mole_Garden</strong> 11-10-2011</p>
+
+<p>Моя рассада из прошлого</p>
+
+<p>Возраст 9 дней с момента проклевки.</p>
+
+<p><img src="http://img64.imageshack.us/img64/8548/dsc00665qn.th.jpg" alt="" /><img src="http://img529.imageshack.us/img529/5800/dsc00661p.th.jpg" alt="" /><img src="http://img121.imageshack.us/img121/1757/dsc00660ub.th.jpg" alt="" /></p>
+
+<p>Висел ДНАЗ 250 ватт, на высоте 60 см. Тут же еще важно понимать, какую площадь может освещать лампа, да так, что бы салату хватало света.</p>
+
+<p>И конечно, как обычно, главная ошибка начинающих, одно растение в горшок. Сам так делал в первый раз, но если бы ты прочитал репорты, то не сделал бы такой ошибки. Ни раз уже обсуждалось, что 3-4 семечки лучше чем одно. И рассада лучше растет и урожай лучше и больше будет.</p>
+
+<p>Мой диагноз, салат тянется, обрызгай его раствором кальциевой силитры, что бы немного укрепить растения. 1 грамм на литр.</p>
+
+<p><strong>ProRus</strong> 11-10-2011</p>
+
+<blockquote>
+  <p>Моя рассада из прошлого</p>
+
+  <p>Возраст 9 дней с момента проклевки.</p>
+</blockquote>
+
+<p><em>8)</em> Ну дак у тебя там было как раз рассадное отделение с достаточной влажностью, хорошим светом, отражающими стенами.</p>
+
+<p><strong>valery</strong> 11-10-2011</p>
+
+<p>Ни разу не сажал по нескольку семечек …</p>
+
+<p>Упрямо сажаю по одной &gt;:(</p>
+
+<p>Надо махнуть рукой на “принципы” … :D и тоже попробовать по нескольку …</p>
+
+<p><strong>ProRus</strong> 11-10-2011</p>
+
+<blockquote>
+  <p>Ни разу не сажал по нескольку семечек …</p>
+
+  <p>Упрямо сажаю по одной &gt;:(</p>
+
+  <p>Надо махнуть рукой на “принципы” … :D и тоже попробовать по нескольку …</p>
+</blockquote>
+
+<p>Я крайний раз вообще сажал по 5-7 (не в гранулах) потом прореживал до 4-х самых сильных.</p>
+
+<p><strong>Oxy</strong> 11-10-2011</p>
+
+<p>А как же тогда чистота эксперимента? Типа вот кустик салата весит 100 грамм за столько-то дней. А ежели показывают кустик на 150 грамм, а там 4 семечка? Тогда как-то нечестно получаеться :)</p>
+
+<p><strong>Coccinella</strong> 11-10-2011</p>
+
+<blockquote>
+  <p>….</p>
+
+  <p>Надо махнуть рукой на “принципы” … :D …</p>
+</blockquote>
+
+<p>Джентльмены, салат и все прочие сеянцы и рассада тянется не столько потому, что ему света не хватает, сколько потому, что возникает “неправильное” соотношение освещенности и температуры. Вы все упрямо стараетесь приблизить источник света к растению, но это вообще-то вызывает неравномерность в освещении. Я не абсолютизирую, иногда такое решение бывает единственно верным, но на практике, еще на ДРЛФ-400 (совсем древность, ртутные лампы :)) было установлено, что зачастую лучше поднять лампы повыше. Освещенность снижается, действительно, но и температура воздуха снижается (отдаляется источник тепла - лампа), при этом возрастает равномерность распределения света. “В древности” наши электрики весь рассадный период занимались перевешиванием ламп на разную высоту и расстояние (а я ругалась, что они рассаду при этом топчут), но в результате рассада была вполне приличная. Только затраты на досвечивание были выше, чем у натриевых ламп. Сегодня, когда SON-T 600 висят довольно высоко над растениями, вся эта суета с перевешиванием отпала (и славненько!), а освещенность значительно улучшилась. Посмотрите лишний раз альбомы Алексея Куренина на гринтолке, очень интересно и поучительно!</p>
+
+<p><a href="http://www.greentalk.ru/v/111_003/111_008/111_001/P1020041.JPG.html" target="_blank">http://www.greentalk.ru/v/111_003/111_008/111_001/P1020041.JPG.html</a></p>
+
+<p><strong>Coccinella</strong> 11-10-2011</p>
+
+<p>Оху, а тут дело не в честности, а в урожайности. В кг/м2. И если при этом немного возрастают затраты на семена, то это на самом деле мелочи.</p>
+
+<p><strong>ProRus</strong> 11-10-2011</p>
+
+<blockquote>
+  <p>А как же тогда чистота эксперимента? Типа вот кустик салата весит 100 грамм за столько-то дней. А ежели показывают кустик на 150 грамм, а там 4 семечка? Тогда как-то нечестно получаеться :)</p>
+</blockquote>
+
+<p>Ну ………..</p>
+
+<p>Я не выращивал по одному… :-\ Мне нужен был большой куст из одного стакана за более кроткое время.</p>
+
+<p>Он ведь из одного стакана, значит салат один. %)</p>
+
+<p>Фото тепличного комбината. Сколько семян? :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/6493" target="_blank"><img src="/attachimages/8732_DSC04562.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6494" target="_blank"><img src="/attachimages/8734_DSC04680.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 11-10-2011</p>
+
+<p>Все &gt;:( Буду пробовать по три &gt;:(</p>
+
+<p><strong>Mole_Garden</strong> 11-10-2011</p>
+
+<blockquote>
+  <p><em>8)</em> Ну дак у тебя там было как раз рассадное отделение с достаточной влажностью, хорошим светом, отражающими стенами.</p>
+</blockquote>
+
+<p>Там больше наверно сама теплица способствовала, в рассаднике даже крыши не было. А стенки из пенафола были с огромными щелями.</p>
+
+<p><strong>vd</strong> 19-10-2011</p>
+
+<p>Добрый день всем!</p>
+
+<p>И так, салату 25 дней от момента посадки… Света оказалось более чем достаточно, проблема только в температуре, а точнее в балансе температуры и света. Растения оклемались, и давно пора бы их рассадить. Скажите какое минимально необходимое пространство для одного стаканчика?</p>
+
+<p><a href="https://t.me/ponics_ru_files/6495" target="_blank"><img src="/attachimages/8785_18-10-11_1045.jpg" alt="" /></a></p>
+
+<p><strong>Tony_85</strong> 19-10-2011</p>
+
+<blockquote>
+  <p>Добрый день всем!</p>
+
+  <p>Скажите какое минимально необходимое пространство для одного стаканчика?</p>
+</blockquote>
+
+<p>20 см между стаканчиками</p>
+
+<p><strong>Mole_Garden</strong> 19-10-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Добрый день всем!</p>
+
+    <p>Скажите какое минимально необходимое пространство для одного стаканчика?</p>
+  </blockquote>
+
+  <p>20 см между стаканчиками</p>
+</blockquote>
+
+<p>Согласен, если розетка компактная, то можно скинуть до 18см.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

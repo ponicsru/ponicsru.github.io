@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Салат.. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Салат..">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Салат..</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Richy</strong> 21-11-2011</p>
+
+<p>Доброго времени.</p>
+
+<p>Подскажите что может быть и как исправить:</p>
+
+<p>Салат закинут 16.11.2011 в минватные пробки, вымоченные комплексным GHE (2,5 мл/л каждого, 250 ЕС вышло). Вылез бодренький 17-го. Кресс-салат начал сильно тянутся (20го был точно таким же как на фото в теме “тянется ли салат?”). К вечеру заметил что начали подвядать листья (пробки влажные, сверху присыпаны вермикулитом). Второй салат “Королева” начал “закрываться” (склеивать только что распустившиеся семядольные листики).</p>
+
+<p>Температура была 22-24. Вытащил из теплички, опутисл ниже лампу. Температура упала до 20,5-21. Периодически включаю увлажнитель.</p>
+
+<p>Сегодня после полудня часть кресс-салата просто лягла :o</p>
+
+<p>У некоторых растих корни уже повылазили из пробок, по этому думал перемещать на систему а тут такое… С чем может быть связанно? и встанет ли?</p>
+
+<p>Спасибо.</p>
+
+<p><strong>Richy</strong> 21-11-2011</p>
+
+<p>1 фото - лег кресс :o</p>
+
+<p>2 фото - закрывается “королева”</p>
+
+<p>3 фото - вянет другой кресс</p>
+
+<p>4 фото - вроде как нормальная “королева” но я за нее уже боюсь!</p>
+
+<p><a href="https://t.me/ponics_ru_files/6731" target="_blank"><img src="/attachimages/9039_IMG_2550.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6732" target="_blank"><img src="/attachimages/9041_IMG_2551.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6733" target="_blank"><img src="/attachimages/9043_IMG_2552.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6734" target="_blank"><img src="/attachimages/9045_IMG_2554.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 21-11-2011</p>
+
+<p>Вытянулись от перегрева и недостатка освещения, потому и полегли. Короче подсемядольное колено уже не станет, остается надеяться, что обойдется.</p>
+
+<p><strong>Richy</strong> 21-11-2011</p>
+
+<p>Блин почти зима.. Салат вытянулся от перегрева.. Я еще думал чем его греть, оказывается нужно думать чем охлаждать..</p>
+
+<p>Со светом это эксперимент с 90w LED (<a href="http://growpro.com.ua/index.php?productID=363" target="_blank">http://growpro.com.ua/index.php?productID=363</a>) в буржуйнете писали что и для рассады и для растихи его достаточно повесить под потолком S - M бокса. Собсно первые пару дней под потолком и висел, сейчас опустил до 20 см. над семядольными листиками..</p>
+
+<p><strong>Эд76</strong> 21-11-2011</p>
+
+<blockquote>
+  <p>Доброго времени.</p>
+
+  <p>Подскажите что может быть и как исправить:</p>
+
+  <p>Салат закинут 16.11.2011 в минватные пробки, вымоченные комплексным GHE (2,5 мл/л каждого, 250 ЕС вышло). Вылез бодренький 17-го. Кресс-салат начал сильно тянутся (20го был точно таким же как на фото в теме “тянется ли салат?”). К вечеру заметил что начали подвядать листья (пробки влажные, сверху присыпаны вермикулитом). Второй салат “Королева” начал “закрываться” (склеивать только что распустившиеся семядольные листики).</p>
+
+  <p>Температура была 22-24. Вытащил из теплички, опутисл ниже лампу. Температура упала до 20,5-21. Периодически включаю увлажнитель.</p>
+
+  <p>Сегодня после полудня часть кресс-салата просто лягла :o</p>
+
+  <p>У некоторых растих корни уже повылазили из пробок, по этому думал перемещать на систему а тут такое… С чем может быть связанно? и встанет ли?</p>
+
+  <p>Спасибо.</p>
+</blockquote>
+
+<p>А можно полюбопытствовать как они у тебя поливались? А что за система такая?</p>
+
+<p><strong>Mole_Garden</strong> 21-11-2011</p>
+
+<p>А сейчас какая концентрация и pH раствора? Да, салат от перегрева тянется, ему надо 18-20 градусов, если тепло, то нужно больше света.</p>
+
+<p><strong>Richy</strong> 21-11-2011</p>
+
+<blockquote>
+  <p>А сейчас какая концентрация и pH раствора? Да, салат от перегрева тянется, ему надо 18-20 градусов, если тепло, то нужно больше света.</p>
+</blockquote>
+
+<p>Дык они сейчас же еще стоят просто как бы в тепличке - я крышку откинул, что бы температуру снизить и все.. Пробки просто сразу в керамзит и корзинки загрузил - что бы удобней было (по опыту форумчан). Так что раствора нет - измерять нечего..</p>
+
+<blockquote>
+  <p>А можно полюбопытствовать как они у тебя поливались? А что за система такая?</p>
+</blockquote>
+
+<p>Поливались пипеткой за все это время 1 раз (смотрел что бы сухими пробки не были) 2-3 мл. Тем же раствором в котором вымачивал пробки (GHE 2,5/2,5/2,5) PH-6,1 EC~250</p>
+
+<p>В систему они еще не переехали, вот только сегодня собираюсь переместить в связи с тем что корни повылазили из корзинок. GHE RainForest 2 36.</p>
+
+<p><strong>Эд76</strong> 21-11-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>А сейчас какая концентрация и pH раствора? Да, салат от перегрева тянется, ему надо 18-20 градусов, если тепло, то нужно больше света.</p>
+  </blockquote>
+
+  <p>Дык они сейчас же еще стоят просто как бы в тепличке - я крышку откинул, что бы температуру снизить и все.. Пробки просто сразу в керамзит и корзинки загрузил - что бы удобней было (по опыту форумчан). Так что раствора нет - измерять нечего..</p>
+
+  <blockquote>
+    <p>А можно полюбопытствовать как они у тебя поливались? А что за система такая?</p>
+  </blockquote>
+
+  <p>Поливались пипеткой за все это время 1 раз (смотрел что бы сухими пробки не были) 2-3 мл. Тем же раствором в котором вымачивал пробки (GHE 2,5/2,5/2,5) PH-6,1 EC~250</p>
+
+  <p>В систему они еще не переехали, вот только сегодня собираюсь переместить в связи с тем что корни повылазили из корзинок. GHE RainForest 2 36.</p>
+</blockquote>
+
+<p>Может быть мой опыт будет полезен , у меня клубника 3раза в квартире погибала с признаками краевого ожога, как выяснилось впоследствии причина оказалась в низкой влажности воздуха в квартире (меньше 40%)купил электронный влагомер и дошло.Соорудил что-то наподобие теплицы с полиетилена влагомер показывает 60-80% и пока тьху-тьху все нормально растет. Сам говоришь убрал колпак с мини теплицы и начали вянуть.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6735" target="_blank"><img src="/attachimages/9047_IMAG0057.jpg" alt="" /></a></p>
+
+<p><strong>Richy</strong> 21-11-2011</p>
+
+<blockquote>
+  <p>Может быть мой опыт будет полезен , у меня клубника 3раза в квартире погибала с признаками краевого ожога, как выяснилось впоследствии причина оказалась в низкой влажности воздуха в квартире (меньше 40%)купил электронный влагомер и дошло.Соорудил что-то наподобие теплицы с полиетилена влагомер показывает 60-80% и пока тьху-тьху все нормально растет. Сам говоришь убрал колпак с мини теплицы и начали вянуть.</p>
+</blockquote>
+
+<p>Сенкс, полезен будет в любом случае.. Гигрометр в боксе висит с момента сборки.. 55-60 поддерживает маленький Boneco под 0,5л бутылочку.</p>
+
+<p><strong>Richy</strong> 02-12-2011</p>
+
+<p>В общем 14 дней вроде как прошло с момента посадки маленького семечкО в минвату.. Несмотря ни на какие трудности распирает чувство обладания сакральной информацией :D Салат зимой это все таки необычно ага..</p>
+
+<p>В общем Королева чувствует себя вроде бы ничего.</p>
+
+<p>Температуру ровной держать так и не удается - утром 26/22 (бокс/раствор), открываю окно к вечеру пока вернусь 18,5/18.. (закрываю окно и по кругу).</p>
+
+<p>По этому Она то вянет чуть-чуть, то снова поднимается.</p>
+
+<p>А вот с кресс-салатом кажется эксперимент не удался.. Он хоть и растет (медленно и не уверенно), но все листья скрутил и не собирается видимо их расправлять..</p>
+
+<p>У кого какие мысли?</p>
+
+<p><a href="https://t.me/ponics_ru_files/6736" target="_blank"><img src="/attachimages/9156_IMG_2569.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6737" target="_blank"><img src="/attachimages/9158_IMG_2571.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 02-12-2011</p>
+
+<p>Мне на этом фото уже ложная мучнистая роса на кресс-салате мнится, но у меня последнее время зрение садится, так что не пугайтесь :).</p>
+
+<p>Но ведь кресс-салат выращивают ради всходов. Его в норме высевают очень густо на что-нибудь (хоть на фильтровальную бумагу, одна моя знакомая - на неиспользованные памперсы) и поедают вытянувшиеся стебельки (подсемядольные колена, иначе гипокотили :)) с толком не развернувшимися семядольными листьями. Зачем Вы его так долго выращиваете? У него вкус испортится.</p>
+
+<p><strong>SergF</strong> 02-12-2011</p>
+
+<blockquote>
+  <p>Со светом это эксперимент с 90w LED (<a href="http://growpro.com.ua/index.php?productID=363" target="_blank">http://growpro.com.ua/index.php?productID=363</a>) в буржуйнете писали что и для рассады и для растихи его достаточно повесить под потолком S - M бокса.</p>
+</blockquote>
+
+<p>Да не обращайте вы внимания на эти рекомендации!!! Мало кто пишет реальную площадь освещения, в 99% случаев реклама, иногда мелким шрифтом внизу написано что площадь указана для досветки, но чаще берут эти цифры площади для досветки и рекомендуют их для полной светокультуры… врут короче :) для салата и LED минимум 50 Вт/м2 должно быть, и то при прочих идеальных условиях…</p>
+
+<p><strong>Юка</strong> 11-12-2011</p>
+
+<p>Подскажите, пожалуйста, что за бяка покушается на Новогодний урожай салата?? (Нижние листья в крапинку). Раствор “огуречный” из калькулятора, свет 16+8 люмки Osram., плавающая платформа…. <em>???</em></p>
+
+<p><a href="https://t.me/ponics_ru_files/6738" target="_blank"><img src="/imagehost/thumbs/dsc04156.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 11-12-2011</p>
+
+<p>При таком освещении мне трудно разобрать, но … Вы листья из пульверизатора не опрыскивали? Похоже на нечаянный оптический ожог.</p>
+
+<p><strong>valery</strong> 11-12-2011</p>
+
+<p>А выглядит и впрям как новогодняя “бяка” … Весьма неприятно. :(</p>
+
+<p>А что за салатик ?</p>
+
+<p><strong>Юка</strong> 11-12-2011</p>
+
+<p>Пульверизатором не опрыскивал, хотя лампы опускал почти вплотную….</p>
+
+<p><a href="https://t.me/ponics_ru_files/6739" target="_blank"><img src="/imagehost/thumbs/dsc04157.jpg" alt="" /></a></p>
+
+<p><strong>Юка</strong> 11-12-2011</p>
+
+<p>В установке три сорта салата, руккола и базилик…. беда у всех одна где больше, где меньше.</p>
+
+<p><strong>Coccinella</strong> 11-12-2011</p>
+
+<p>У меня это зрелище вызывает размышления на тему дефицита магния, но в моем атласе Бергмана, именно для салата дефицит магния не представлен, зато на совершенно крохотной (не углядеть!) картинке есть что-то похожее на Ваш салатик при дефиците молибдена (содержание в листьях 0,20 ппм) Это значит, что в растворе его должно быть больше (кто бы знал, сколько?). А сколько молибдена в Вашем случае должно быть по расчету?</p>
+
+<p><strong>Юка</strong> 11-12-2011</p>
+
+<p>По расчёту магния 55 мг/л, а молибдена 0,04 мг/л, как проверить не знаю.</p>
+
+<p><strong>Coccinella</strong> 11-12-2011</p>
+
+<p>Проверить только анализом, но в данном случае это не реально… :( А что с соотношением Са:Mg? и с содержанием иона аммония? Они могут препятствовать поступлению магния.</p>
+
+<p>А с практической точки зрения проще всего все убрать, съесть, сменить раствор и посеять вновь.</p>
+
+<p><strong>valery</strong> 11-12-2011</p>
+
+<p>Юка, а что вообще за “состав” … ?</p>
+
+<p>По Вашим данным магния вполне изрядно … но ведь он действительно может кем-то/чем-то “тормозиться” …</p>
+
+<p>Посмотрите какие любопытные данные по Афициону (может это и другой “тип” - но внешне немного похож :) ) дает Rijk Zwaan для “проточных” лотков -</p>
+
+<p>Mg++ = 1 mmol (24) … а аммоний НУ ОЧЕНЬ низко - NH4+ = 0.35 mmol (примерно 4-5 как N или около 6 как NH4+ …) Всего-то !</p>
+
+<p>В растворе для огурцов у Вас (возможно) аммония побольше …</p>
+
+<p><strong>ProRus</strong> 12-12-2011</p>
+
+<blockquote>
+  <p>Посмотрите какие любопытные данные по Афициону (может это и другой “тип” - но внешне немного похож :) ) дает Rijk Zwaan для “проточных” лотков -</p>
+
+  <p>Mg++ = 1 mmol (24) … а аммоний НУ ОЧЕНЬ низко - NH4+ = 0.35 mmol (примерно 4-5 как N или около 6 как NH4+ …) Всего-то !</p>
+</blockquote>
+
+<p>Это откуда взято? Можно источник? Все их брошюры прочел, но не видел про питание.</p>
+
+<p><strong>valery</strong> 12-12-2011</p>
+
+<p>Руслан, “ссылки” - нет. Просто печатная листовка.</p>
+
+<p><strong>aivar</strong> 12-12-2011</p>
+
+<blockquote>
+  <p>Руслан, “ссылки” - нет. Просто печатная листовка.</p>
+</blockquote>
+
+<p>Валерий, я это :-[ :-[ :-[ издалека начну…</p>
+
+<p>а нет ли у Вас сканера?</p>
+
+<p><strong>valery</strong> 12-12-2011</p>
+
+<p>Отвечу издалека … :D Есть.</p>
+
+<p><strong>Mole_Garden</strong> 13-12-2011</p>
+
+<blockquote>
+  <p>Руслан, “ссылки” - нет. Просто печатная листовка.</p>
+</blockquote>
+
+<p>Я в свое время запрашивал у них схему кормления салата, но мне так ничего и не сказали и не прислали. Так что, просим скан!</p>
+
+<p><strong>ProRus</strong> 13-12-2011</p>
+
+<blockquote>
+  <p>Я в свое время запрашивал у них схему кормления салата, но мне так ничего и не сказали и не прислали. Так что, просим скан!</p>
+</blockquote>
+
+<p>Не просим, а с великим нетерпением ждем. :-[</p>
+
+<p><strong>Richy</strong> 13-12-2011</p>
+
+<p>О и я про новогоднюю бяку спрошу..</p>
+
+<p>Это нормальные листья салата? А то мне уже мерещиться “мозаика салата”. И если это все таки мозаика, то его отведать можно будеть или не стоит? :'(</p>
+
+<p>И сразу же еще пара моментов:</p>
+
+<ol>
+  <li>
+    <p>Как то он мало кушает - банка 45 литров за все время его жизни практически не меняется уровен ЕС (уровнял до 1200 в самом начале)</p>
+  </li>
+  <li>
+    <p>Нужно ли проверять на нитраты перед употреблением? Все таки експеримент с LED-лампой = нет гарантии что ему хватало света, что в свою очередь могло повлечь накопление нитратов в листьях как я понял из инфы в нете..</p>
+  </li>
+</ol>
+
+<p><a href="https://t.me/ponics_ru_files/6740" target="_blank"><img src="/attachimages/9408_IMG_9537m.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6741" target="_blank"><img src="/attachimages/9410_IMG_9548m.jpg" alt="" /></a></p>
+
+<p><strong>ProRus</strong> 13-12-2011</p>
+
+<blockquote>
+  <p>О и я про новогоднюю бяку спрошу..</p>
+
+  <p>Это нормальные листья салата?</p>
+</blockquote>
+
+<p>А где вы чего увидели? Или разрешение мало, либо я слеп. Нормальный вроде салат.</p>
+
+<ol>
+  <li>
+    <p>45 литров на сколько растений?</p>
+  </li>
+  <li>
+    <p>Хотите, проверяйте. Можно еще почитать статьи про нитратный бред который искусственно раздут.</p>
+  </li>
+</ol>
+
+<p><strong>Coccinella</strong> 13-12-2011</p>
+
+<p>Нормальный салат, наверняка очень вкусный :). Насчет нитратов, у нас в ЕС только что (неделю назад) нормы повысили, зимой допускаются 5000 мг/кг, столько у Вас быть не может даже в теории :)</p>
+
+<p>Поздравляю с урожаем!</p>
+
+<p><strong>Coccinella</strong> 13-12-2011</p>
+
+<p>Даже в кошмарном сне столько нитратов в салате не бывает! :)</p>
+
+<p><strong>valery</strong> 13-12-2011</p>
+
+<p>:( и мне … цвет/внешний вид понравились … :( &gt;:D</p>
+
+<p>Неужто на светодиоде ? &gt;:D</p>
+
+<p>Все <em>crazy</em> <em>Wall</em> Ломаю ~~подкидную доску, ухо … ~~ ухожу из под больших ламп под маленькие … <em>crazy</em> <em>crazy</em> <em>crazy</em></p>
+
+<p><strong>valery</strong> 13-12-2011</p>
+
+<p>Отдельно поставлю. Типа - ссылка … <a href="http://forum.ponics.ru/index.php?topic=52.msg43994#msg43994" target="_blank">http://forum.ponics.ru/index.php?topic=52.msg43994#msg43994</a></p>
+
+<p><strong>Richy</strong> 13-12-2011</p>
+
+<p>Всем спасибо за ответы.</p>
+
+<p>Меня смутила “курчавость” что ли? Такие вот вздутия посредине листьев как волдырики. Они не на всех листьях и не у всего салата (хотя сорт один и тот же). Поиском в гугле нашел курчавость дает только “мозаика”, но она дает и некроз - которого пока ттт нет. Потому и спросил..</p>
+
+<p>На вкус не пробовали еще.. ждем как подрастет.. Сейчас пока ему 27 дней. Из отчетов понял что народ срывает обычно в среднем на 34-ый.</p>
+
+<p>Я думаю может немного даже потянуть с обрывом - может удасться дотянуть до НГ его :)</p>
+
+<p>Касательно света - только светодиод (эксперимент).. Пришлось правда опускать его (сейчас висит на 40 см от верхушек). 18-ти часовой день у нас.</p>
+
+<p>Гораздо сложнее оказалось с температурой. Думал нужно будет греть - а приходится открывать окно постоянно. При +25 С салатиГ опускает листья. Ему подавай 22…</p>
+
+<p>По нитратам тоже сенкс. 5к точно не собереться там.. неоткуда :)</p>
+
+<p><strong>Richy</strong> 13-12-2011</p>
+
+<p>К слову сказать.. Написал пост, спустился глянуть на салат “в ночи”.. В общем теперь мне начала мерешиться “Серая гниль” &gt;:D</p>
+
+<p>Не нужно было читать “советских газет” (с).</p>
+
+<p>Написанно что развивается при высокой влажности и пасмурной погоде.. На всякий случай вырубил увлажнитель.. На 3х из 6ти кустов на новых молодых листьях серая или бурая кайомка (местами и на старых).. Что скажете?</p>
+
+<p><a href="https://t.me/ponics_ru_files/6742" target="_blank"><img src="/attachimages/9416_IMG_2581.jpg" alt="" /></a></p>
+
+<p><strong>aivar</strong> 14-12-2011</p>
+
+<p>Точно, она самая, “серая гниль”. Из “советских газет”, видать повлезала :( :(</p>
+
+<p>Надо чаще макулатуру сдавать…</p>
+
+<p>На самом деле, очень похоже на не поступление кальция в организм… (хм… а куст салата это организм?)</p>
+
+<p>Причем не обязательна нехватка Са в растворе, не поступление может быть обусловлено рядом причин.</p>
+
+<p>В общем <a href="http://forum.ponics.ru/index.php?topic=1215.msg41828#msg41828][color=red" target="_blank">ВОТ</a>[/color]</p>
+
+<p>А “в ночи” так светло :o :o потому что луна светит?</p>
+
+<p><strong>Coccinella</strong> 14-12-2011</p>
+
+<p>Айвар прав, это дефицит кальция. Здесь возник как раз оттого, что периодически “уши опускаются”.</p>
+
+<p><strong>Coccinella</strong> 14-12-2011</p>
+
+<p>В смысле, у салата “уши”…</p>
+
+<p><strong>Richy</strong> 14-12-2011</p>
+
+<blockquote>
+  <p>Айвар прав, это дефицит кальция. Здесь возник как раз оттого, что периодически “уши опускаются”.</p>
+</blockquote>
+
+<p>Про Са понял, спасибо Айвару.</p>
+
+<p>Про уши не понял причинно-следственной связи. Они опускаются из за Са? Или они опускаются и поэтому нехватка Са? Или это сленг? Буду признателен, если просвятите.. На будущее.</p>
+
+<p>По поводу “светло ночью” - фонариком подсвечивал, что бы фотку сделать. Никакой мистики :)</p>
+
+<p><strong>Coccinella</strong> 14-12-2011</p>
+
+<p>Листья привядают, поэтому кальций не поступает в лист и уж, тем паче, в его кромку.</p>
+
+<p><strong>Richy</strong> 15-12-2011</p>
+
+<p>Не нашел кнопки “Спасибо” и смайлика “пиво” :)</p>
+
+<p>Выключил увлажнитель, вроде бы чуть полегчало.. И главное влажность не сильно падает (54-60). А купил то я его и поставил потому что при старте было 40. Видимо листики испаряют.</p>
+
+<p><strong>Mole_Garden</strong> 23-12-2011</p>
+
+<blockquote>
+  <p>Не нашел кнопки “Спасибо” и смайлика “пиво” :)</p>
+
+  <p>Выключил увлажнитель, вроде бы чуть полегчало.. И главное влажность не сильно падает (54-60). А купил то я его и поставил потому что при старте было 40. Видимо листики испаряют.</p>
+</blockquote>
+
+<p>Так и есть, чем больше растений, тем больше испаряют. Иногда так бывает, что на старте очень сухо, а потом, во время активного роста даже приходится проветривать, что бы влажность сбить.</p>
+
+<p><strong>Richy</strong> 03-01-2012</p>
+
+<p>Салат как и предполагалось собрали и съели на 34-ый день с момента окончания барботирования семян. Всем сенкс за помощь и поддержку! <em>8)</em></p>
+
+<p>С тестовой посадки получилось 240 грамм вкусного, аппетитного домашнего салатика зимой. Экспериментом доволен. Поехали дальше!</p>
+
+<p><a href="https://t.me/ponics_ru_files/6743" target="_blank"><img src="/attachimages/9801_IMG_9690m.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6744" target="_blank"><img src="/attachimages/9803_IMG_9697m.jpg" alt="" /></a></p>
+
+<p><strong>юля</strong> 22-01-2012</p>
+
+<p>у меня тоже такая проблема я опрыскивала через опрыскиватель решила подкормить во таким способом и они стали потихонечку края коричневеть засыхать и не знаю что делать теперь, может кто подскажет решение проблемки заранее спаибо</p>
+
+<p><strong>Coccinella</strong> 22-01-2012</p>
+
+<p>Юля, я чем Вы опрыскивали?</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

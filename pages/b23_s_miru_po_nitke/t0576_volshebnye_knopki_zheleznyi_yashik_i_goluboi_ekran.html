@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Волшебные кнопки, железный ящик и голубой экран. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Волшебные кнопки, железный ящик и голубой экран.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Волшебные кнопки, железный ящик и голубой экран.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Batat</strong> 07-07-2010</p>
+
+<p>Друзья!</p>
+
+<p>Уже никто из нас не представляет свою жизнь без компьютера.</p>
+
+<p>Но знания этого устройства каждый из нас получал как мог.</p>
+
+<p>Не сильно ошибусь, если предположу, что основная масса пользователей осваивала “Комп” самостоятельно и хорошо, если кто-то прочитал какую-нибудь книгу типа самоучителя.</p>
+
+<p>В основном это знания полученные от друга, соседа, коллег по работе.</p>
+
+<p>В этой теме, с вашей помощью, я хочу собрать , отрывочные сведения периодически проскакивающие на форуме о том, как сделать активную ссылку, как вставить изображение, как сделать СкринШот и т.д. и т.п..</p>
+
+<p>Может кто-то порекомендует литературу, может, полезные программы, расскажет о нехитрых и полезных “примочках”, т.е. все то, что позволит всем нам лучше освоить железный ящик и облегчит общение как с ним, так и между нами.</p>
+
+<p>Я в свою очередь очень рекомендую пройти программу <a href="http://ergosolo.ru/" target="_blank">“Соло на клавиатуре” </a>, прекрасный клавиатурный тренажер, с помощью которого я освоил десятипальцевый набор текста на клавиатуре в слепую.</p>
+
+<p>Не могу похвастать супер большой скоростью набора текста, но то, что постоянно не отвлекаюсь от клавиатуры на монитор и обратно, мне очень нравится.</p>
+
+<p>Среди нас есть люди, которые очень хорошо владеют компьютером.</p>
+
+<p>Уверен, что они будут основными поставщиками полезных советов, ну а мы все, будем “давить” на кнопочки улучшая им репутацию.</p>
+
+<blockquote>
+  <p>:D О! Уважаемые друзья, вы даже и не подозреваете сколько еще есть в этих чудо машинках волшебного и не обычного…</p>
+</blockquote>
+
+<p><strong>orgail</strong> 07-07-2010</p>
+
+<p>Чем смогу, помогу!</p>
+
+<p>А насчет соло, сразу анекдот вспомнился :)</p>
+
+<p>Освоил слепой метод набора - печатаю со скоростью 3000 знаков в минуту! Правда такая фигня получается :D</p>
+
+<p><strong>Batat</strong> 07-07-2010</p>
+
+<blockquote>
+  <p>Чем смогу, помогу!</p>
+
+  <p>А насчет соло, сразу анекдот вспомнился :)</p>
+
+  <p>Освоил слепой метод набора - печатаю со скоростью 3000 знаков в минуту! Правда такая фигня получается :D</p>
+</blockquote>
+
+<p>Скорость уже есть, все остальное придет! :D :D :D</p>
+
+<p>Спасибо!</p>
+
+<p><strong>Mole_Garden</strong> 08-07-2010</p>
+
+<p>:D</p>
+
+<p>Немного истории, если это конечно кому нибудь интересно.</p>
+
+<p>Первое мое знакомство с компьютером произошло когда я еще учился в школе, наверно классе в 9. Тогда компьютер появился у моего друга и первое что мы сделали поставили игрушку, но как оказалось, на вторую места на жестком диске уже не хватает. Мы решили почистить винт и ничего не нашли кроме диска С Через 15 минут нашей чистки места оказалось достаточно и мы даже поставили игрушку, но после установки компьютер попросил перегрузиться и все, больше он не работал, вот тут и заканчивается моя история ;D</p>
+
+<p>Мораль: Не электрик, нехер лезть</p>
+
+<p>А теперь чуток по делу. По поводу соло, хочу поддержать. Тоже в свое время от безделья освоил эту программу, много чего я еще делал от безделья, например поддержал Дмитрия и так сказать ресурс пережил второе рождение и так он приобрел свое лицо, а все от чего? от лени :D. Может всем так лениться и по чаще, как вы считаете? Так о чем это я? Ах да, про соло, но не хватило времени и терпения пройти все 100 уроков, о чем чуток жалею, но должен сказать, она реально работает и помогает. Если активно заниматься, то за неделю, две можете овладеть этим методом набора. Поверьте это просто! 8)</p>
+
+<p>Едем дальше. Если умеем печатать уже хорошо, а если умеем печатать по русски и английски с закрытыми глазами, так это высший пилотаж.</p>
+
+<p>Хотел бы все так же порекомендовать приучить себя к HotKey (горячим клавишам), очень облегчают жизнь, тем более если в какой нибудь программе не знаете где же находится кнопка вставить, закрыть или отменить. Хоткеи работают почти во всех программах одинаково.</p>
+
+<p>Вот к примеру ссылка на распространенные хоткеи для Windows Xp <a href="http://allhotkeys.ru/windows-xp" target="_blank">http://allhotkeys.ru/windows-xp</a></p>
+
+<p>Так же на этом сайте найдете хоткеи для различных программ, с которыми почти все часто работают.</p>
+
+<p>Задавайте конкретные вопросы, виндус это бездонная бочка :D С литературой не подскажу, сам изучал методом тыка, а так очень часто ищу ответы на вопросы в инете, он всемогущ, главное правильно сделать запрос, а это тоже целая наука. Хотя вопросы у меня раньше были больше по работе, а они специфичны и рядовому пользователю не скажут ни о чем. В общем спрашивайте.</p>
+
+<p>Кстати, Максим у нас юниксойд, так что по юниксу можно к нему. :-X</p>
+
+<p><strong>valery</strong> 08-07-2010</p>
+
+<blockquote>
+  <p>Мораль: Не электрик, нехер лезть</p>
+</blockquote>
+
+<p>8) 8) 8)</p>
+
+<p>Сказано верно 8)</p>
+
+<p>Но ведь все равно ж - хочется. Мы и лезем :D</p>
+
+<p><strong>Mole_Garden</strong> 08-07-2010</p>
+
+<blockquote>
+  <p>8) 8) 8)</p>
+
+  <p>Сказано верно 8)</p>
+
+  <p>Но ведь все равно ж - хочется. Мы и лезем :D</p>
+</blockquote>
+
+<p>Это была мораль лично для меня, не для вас, не подумайте. Лезть можно и нужно, но только осторожно и не на диск С</p>
+
+<p><strong>Batat</strong> 08-07-2010</p>
+
+<p>Константин, к Вам просьба пренести подробные инструкции из : <a href="http://forum.ponics.ru/index.php/topic,52.975.html] Ваш Ответ №958 [/url] и [url=http://forum.ponics.ru/index.php/topic,565.msg19152.html#msg19152" target="_blank"> инструкцию от Оху</a> в эту ветку, чтобы все в одном месте было.</p>
+
+<p>Может Вы вспомните еще какие-нибудь сообщения на других ветках по этой теме, то тоже переносите сюда.</p>
+
+<p>Думаю, так будет удобнее подглядывать в конспект. :)</p>
+
+<p><strong>Batat</strong> 08-07-2010</p>
+
+<blockquote>
+  <p>Мораль: Не электрик, нехер лезть</p>
+</blockquote>
+
+<p>По этому поводу есть еще, на мой взгляд интересные поговорки.</p>
+
+<p>“Не лезь, не сунь, не высовывай!” :D</p>
+
+<p>И ещё:</p>
+
+<p>“Не сунь свой нос, куда собака свой х… (хвост) не сует!” :D :D :D</p>
+
+<p>Все они касаются ТБ (техники безобасности), т.е. выполнению производственных заданий приемами, исключающими травматизм при работе с механизмами и электрическим током. :D</p>
+
+<p>Константин, большое спасибо за ссылки.</p>
+
+<p><strong>Mole_Garden</strong> 08-07-2010</p>
+
+<p>Для того что бы у вас была красивая и аккуратная ссылка, а не кракозябры длиной в метр, нужно сделать так</p>
+
+<p>1) копируем ссылку</p>
+
+<p>2) пишем код или нажимаем третью иконку между шрифтами и смайлами и у вас получается примерно вот так [code][url][/url][/code]</p>
+
+<p>3) правим этот код и делаем его вот таким[code]<a href="ваша ссылка" target="_blank"> Здесь ваш текст, название например ссылки </a></p>
+
+<p>И получится красивушая такая ссылочка.[/code]</p>
+
+<p>Урок по созданию скрин шотов от Oxy</p>
+
+<p>В любой момент работы на компъютере иногда возникает необходимость сделать снимок экрана, то есть того что на нем происходит в момент снимка. На стандартной клавиатуре после клавиши F12 идет клавиша PrtScr. “Принт-скрин” если озвучить. В любой момент времени нажимаете на эту кнопку, и ничего не произойдет. Но снимок экрана попадает в буферную память и там находится. Необходимо открыть документ Ворд или Пайнт-Браш и нажать комбинацию кнопок Ctrl+V(Вставить из буфера). Затем “Сохранить как..” и после этого изображение можно редактировать графическим редактором.</p>
+
+<p>Вставленное изображение и называется Скрин-шотом.</p>
+
+<p><strong>Mole_Garden</strong> 08-07-2010</p>
+
+<p>А если Валерий поделится, то может опубликует инструкцию по выкладыванию файлов PDF и других форматов на сервер гугла, гугл документс вроде так зовется, которую я ему как то писал.</p>
+
+<p><strong>Batat</strong> 08-07-2010</p>
+
+<p>Спасибо!</p>
+
+<p>Будем ждать.</p>
+
+<p>Так гляди и наполним тему полезной информацией. <em>Dance</em></p>
+
+<p><strong>Mole_Garden</strong> 08-07-2010</p>
+
+<p>А потом из одной темы, можно будет сделать одно сообщение, что бы по всем страницам этой темы не рыться!</p>
+
+<p><strong>Batat</strong> 08-07-2010</p>
+
+<p>Можно и так.</p>
+
+<p><strong>травка</strong> 08-07-2010</p>
+
+<p>здраствуйте Константин .подскажите пожалуста ,как правельно задавать вопрос в поисковике ,как правельно искать .что бы потом кучу ненужной информации не перечитывать?</p>
+
+<p><strong>orgail</strong> 08-07-2010</p>
+
+<p>Константин уже поди спит :) попробую я ответить со своей “башни”</p>
+
+<p>Правильный вопрос должен учитывать специфику предполагаемого ответа. Попробуйте найти такие ключевые слова, которые смогут максимально сузить результат выдачи поисковика. Полезно употреблять специфические термины, иногда при поиске полезно использовать данные из известных источников (что угодно типа - названия книг из списка литературы уже прочитанных книг, названия аппаратуры, сделанной конкретно для нужных целей и тд, даже названия учреждений типа институтов и универститетов помогают)</p>
+
+<p>имея такие хорошие “крючки-зацепки” из уже известных вам материалов вы сможете выудить очень много открытой информации из сети</p>
+
+<p>Возможно поможет использование расширенных запросов в поисковых машинах, как например <a href="http://www.google.ru/advanced_search?hl=ru" target="_blank">http://www.google.ru/advanced_search?hl=ru</a> у гугла</p>
+
+<p>По теме гидропоники громаднейшее количество материалов можно найти только на иностранных языках, так что старайтесь и тут находить и спрашивать специфику, которая сможет вывести вас на неплохие источники</p>
+
+<p>От себя все, может кто еще чего добавит</p>
+
+<p><strong>valery</strong> 09-07-2010</p>
+
+<p>Искать в иностранных источниках (если не знакомы с языком) удобно с помощью переводчика того же Гугла.</p>
+
+<p>Формулируете вопрос на русском, переводите переводчиком и запускаете в поиск. Лучше ходить по сайтам серьезных компаний, университетов и прочих исследовательских учреждений, там много интересных и серьезных материалов.</p>
+
+<p>Канада, Дораис, АктаХорта, всякие Хортикультуры, Нидерланды, Новая Зеландия и все, что попало.</p>
+
+<p>Лучше всего - регистрироваться, где только можно и где регистрируют бесплатно. Можно дальше пролезть.</p>
+
+<p>Многие компании, вернее сайты - информацию чуток припрятывают. По заголовкам не поймешь и ничего не найдешь.</p>
+
+<p>Лучше покопаться в карте сайта и тупо поперебирать самые невзрачные файлы, без “внятных” заголовков. Там обычно много интересного.</p>
+
+<p>Хы. Днями залез в какие-то импортные дебри и заумную хрень, куда именно так и не понял :) Поиск выдал “знакомых” - среди них оказались Алексей Куренин и генеральный директор ООО “Компас”. С Алексеем знаком - по форуму. В Компасе - удобрения покупал, и про их гендиректора “слыхом не слыхивал” …</p>
+
+<p>Но оказывается - “знаком” !!! Сразу подрос в собственных глазах :D :D :D</p>
+
+<p><strong>травка</strong> 09-07-2010</p>
+
+<blockquote>
+  <p>Искать в иностранных источниках (если не знакомы с языком) удобно с помощью переводчика того же Гугла.</p>
+
+  <p>Формулируете вопрос на русском, переводите переводчиком и запускаете в поиск. Лучше ходить по сайтам серьезных компаний, университетов и прочих исследовательских учреждений, там много интересных и серьезных материалов.</p>
+
+  <p>Канада, Дораис, АктаХорта, всякие Хортикультуры, Нидерланды, Новая Зеландия и все, что попало.</p>
+
+  <p>Лучше всего - регистрироваться, где только можно и где регистрируют бесплатно. Можно дальше пролезть.</p>
+
+  <p>Многие компании, вернее сайты - информацию чуток припрятывают. По заголовкам не поймешь и ничего не найдешь.</p>
+
+  <p>Лучше покопаться в карте сайта и тупо поперебирать самые невзрачные файлы, без “внятных” заголовков. Там обычно много интересного.</p>
+
+  <p>Хы. Днями залез в какие-то импортные дебри и заумную хрень, куда именно так и не понял :) Поиск выдал “знакомых” - среди них оказались Алексей Куренин и генеральный директор ООО “Компас”. С Алексеем знаком - по форуму. В Компасе - удобрения покупал, и про их гендиректора “слыхом не слыхивал” …</p>
+
+  <p>Но оказывается - “знаком” !!! Сразу подрос в собственных глазах :D :D :D</p>
+</blockquote>
+
+<p>:D 8)</p>
+
+<p><strong>orgail</strong> 09-07-2010</p>
+
+<p>А еще очень много информации в Австралии</p>
+
+<p><strong>valery</strong> 09-07-2010</p>
+
+<p>Точно, совсем забыл …</p>
+
+<p>“Звезда Аделаида …”</p>
+
+<p>Куда ж без нее.</p>
+
+<p><strong>akatana</strong> 13-07-2010</p>
+
+<blockquote>
+  <p>Урок по созданию скрин шотов от Oxy</p>
+
+  <p>В любой момент работы на компъютере иногда возникает необходимость сделать снимок экрана, то есть того что на нем происходит в момент снимка. На стандартной клавиатуре после клавиши F12 идет клавиша PrtScr. “Принт-скрин” если озвучить. В любой момент времени нажимаете на эту кнопку, и ничего не произойдет. Но снимок экрана попадает в буферную память и там находится. Необходимо открыть документ Ворд или Пайнт-Браш и нажать комбинацию кнопок Ctrl+V(Вставить из буфера). Затем “Сохранить как..” и после этого изображение можно редактировать графическим редактором.</p>
+
+  <p>Вставленное изображение и называется Скрин-шотом.</p>
+</blockquote>
+
+<p>А ежели нажать сначала клавишу Alt, а потом, не отпуская Alt, нажать PrtScn, то в буферную память будет помещен снимок активного окна, а не всего экрана. Удобно, когда надо сделать снимок отдельного окна, не нужно дополнительно обрезать в графическом редакторе.</p>
+
+<p>На первом рисунке результат PrtScn.</p>
+
+<p>На втором - Alt-PrtScn</p>
+
+<p><a href="https://t.me/ponics_ru_files/4218" target="_blank"><img src="/attachimages/2621_1.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/4219" target="_blank"><img src="/attachimages/2623_2.png" alt="" /></a></p>
+
+<p><strong>Batat</strong> 13-07-2010</p>
+
+<p>Спасибо, akatana!</p>
+
+<p><strong>Batat</strong> 11-10-2010</p>
+
+<p>Братья и сестры!</p>
+
+<p>Кто и как переводит с английского на русский интернет страницы, тексты и pdf. файлы?</p>
+
+<p><strong>valery</strong> 11-10-2010</p>
+
+<p>А ведь все слова в мире абсолютно одинаковые, поэтому “литературные” переводы обычно автоматически выскакивают, главное - слово прочитать и “прожевать” на слух, на написание и на ассоциации. Затруднения - могут быть с иероглифами, там смысл другой.</p>
+
+<p>А для “нелитературного” - прекрасно Гуглевский переводчик помогает, можно ставить в любые браузеры, но в Гугли Хром, он по-моему по умолчанию сидит …</p>
+
+<p>Большие ПДФ-ы не всегда берет и иногда “смещает” картинки, в этом случае ПДФ лучше в Ворлд переконвентировать, хотя обычно и этого не нужно делать.</p>
+
+<p><strong>Oxy</strong> 11-10-2010</p>
+
+<p>PDF файлы вряд ли можно перевести, но как-то возможно, я видел людей которые умели вырывать текст из ПДФ. А все остальное, особенно веб-страницы отлично переводяться самими броузерами. В мозилле нужно добавить аддон, а я только ради этого и перешел на Гугл-Хром. Он автоматически все всегда переводит, я иногда даже не замечаю что сайт не на русском</p>
+
+<p><strong>valery</strong> 11-10-2010</p>
+
+<p>Почему “вряд ли” ? Вполне спокойно переводятся. Можно положить “документом”, можно “ссылкой”. Если возникают проблемы - лучше этот ПДФ файл скачать - положить на компьютер, а потом в переводчик. И все. Проблемы могут возникнуть - если ПДФ файл - ОЧЕНЬ большой.</p>
+
+<p>Тогда его либо переконвертируем в Ворлд - и переводим уже Ворлдовский документ. Если подходящего конвертера нет, можно ПДФ файл разбить на более маленькие кусочки и переводить кусочками. “Разбить” можно тем же “Нитро ПДФ” к примеру.</p>
+
+<p><strong>Batat</strong> 11-10-2010</p>
+
+<p>Спасибо, ребята!</p>
+
+<p>Я понял, что сильно торможу в этом вопросе.</p>
+
+<p>По страринке пользуюсь браузером MyIE2.</p>
+
+<p>Будем исправляться.</p>
+
+<p><strong>Mole_Garden</strong> 13-10-2010</p>
+
+<p>ПДФ файл можно перевести с помощью того же гугл транслейт. Там у них есть даже такая функция перевести документ</p>
+
+<p>Вот ссылка для перевода файла <a href="http://translate.google.ru/?tr=f&amp;hl=ru" target="_blank">http://translate.google.ru/?tr=f&amp;hl=ru</a></p>
+
+<p><strong>Svyatoy_nv</strong> 16-10-2010</p>
+
+<p>А я бы сказал, что соло на клавиатуре - лажа :-X.. Только нервы треплет (наверно кто пробовал проходить - знает о чем речь <em>Wall</em>). Другое дело VerseQ. Я на нем уже через час отключил вспомогательную картинку клавы. Сначала скорость была в районе 85 знаков, сейчас и 450 выдать могу (уровень хорошей секретарши - 300). А позже минут за сорок освоил английскую раскладку (ну тут легче ибо в играх все обозначения на английской раскладке, а когда играешь на клаву не смотришь :D)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

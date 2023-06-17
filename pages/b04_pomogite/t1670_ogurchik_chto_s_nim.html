@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>огурчик что с ним? | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="огурчик что с ним?">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">огурчик что с ним?</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>timoha</strong> 13-03-2013</p>
+
+<p>Всем приветы!</p>
+
+<p>просим помочь, поставьте диагноз</p>
+
+<p>растем в тепличке днем тепло бывает до +30 ночью меньше 17 не падает, влажность меньше 50 не роняем</p>
+
+<p>кормим так ph 6, tds 1600, N240 P60 K300 Ca180 Mg54 +micro(Tenso Coctail) 4 раза в день</p>
+
+<p>первое фото 12/03 второе 13/03</p>
+
+<p><a href="https://t.me/ponics_ru_files/10153" target="_blank"><img src="/attachimages/12665_120320131915o.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10154" target="_blank"><img src="/attachimages/12667_130320131928o.jpg" alt="" /></a></p>
+
+<p><strong>Oxy</strong> 13-03-2013</p>
+
+<p>Это же им не меньше трех недель? Какой субстрат? Новый, юзаный? У меня похожая фигня была на песке - пересолил. В смысле в песке перед этим больше 6 месяцев росли томаты, и песок засолился.</p>
+
+<p>Возможно и с питанием чего-то не так, но это уже другие подскажут. Но проверь ЕС в корневой.</p>
+
+<p><strong>timoha</strong> 17-03-2013</p>
+
+<p>думаю с EC порядок рядом огурчики получше</p>
+
+<p>а вот фото от 17/03</p>
+
+<p><a href="https://t.me/ponics_ru_files/10155" target="_blank"><img src="/attachimages/12696_160320131968n.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10156" target="_blank"><img src="/attachimages/12698_160320131969n.jpg" alt="" /></a></p>
+
+<p><strong>valery</strong> 17-03-2013</p>
+
+<p>ЕС ли, рН или что-то еще … сложно сказать.</p>
+
+<p>Но о ЕС - лучше не “думать”, надежней - измерить.</p>
+
+<p><strong>timoha</strong> 19-03-2013</p>
+
+<p>Всем приветы!</p>
+
+<p>еще пару фоток у кого какое мнение?</p>
+
+<p><a href="https://t.me/ponics_ru_files/10157" target="_blank"><img src="/attachimages/12718_180320132012n.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10158" target="_blank"><img src="/attachimages/12720_190320132016n.jpg" alt="" /></a></p>
+
+<p><strong>Oxy</strong> 19-03-2013</p>
+
+<p>Мнение все то же - растюхе чего-то не хватает, и она в попытках выжить оттягивает питательные вещества с нижних листьев и с кончиков, грубо говоря концентрируется :) это возможно по миллиону причин, но самая легкая что приходит в голову - перекос по хавчику в зоне корневой, также возможен высокий ЕС в зоне корневой.</p>
+
+<p>В любом случае - огурец пораженными листьями пользоваться уже не будет, это не томат. Он их сбросит, так что можно смело их отрезать и посмотреть сколько останется. Понимаю, резать жалко. Понимаю тебя - посмотри какие у меня были потери:</p>
+
+<p>Как говориться начало - и конец.</p>
+
+<p><a href="https://t.me/ponics_ru_files/10159" target="_blank"><img src="/imagehost/thumbs/4947mzm.jpg" alt="" /></a><a href="https://t.me/ponics_ru_files/10160" target="_blank"><img src="/imagehost/thumbs/5357.jpg" alt="" /></a></p>
+
+<p>Это кстати были мои последние посадки в африке, с тех пор не посадил ни одного семечка.</p>
+
+<p><strong>Вик</strong> 20-03-2013</p>
+
+<p>доброго времени суток.</p>
+
+<p>может я и не прав, но очень похоже на нехватку калия, магния и переизбыток аммиачной селитры (азота).</p>
+
+<p><strong>а-ну-ка</strong> 20-03-2013</p>
+
+<p>В чем растет мы так и не услышали</p>
+
+<p><strong>Strangeman</strong> 20-03-2013</p>
+
+<blockquote>
+  <p>Понимаю тебя - посмотри какие у меня были потери:</p>
+
+  <p>Как говориться начало - и конец.</p>
+</blockquote>
+
+<p>Это песок, я правильно понял?</p>
+
+<p><strong>Вик</strong> 20-03-2013</p>
+
+<blockquote>
+  <p>В чем растет мы так и не услышали</p>
+</blockquote>
+
+<p>судя по фото или лотки из сотового поликарбоната + стаканы, или минвата :-\</p>
+
+<p><strong>mav</strong> 20-03-2013</p>
+
+<p>Я думаю передоз калия и нехватка азота. У меня вот недавно такой же почти случай с перцем был. Посмотрел PH низкий и на тебе КОН а листья давай светлеть и кончики чернеть. Так я ливанул азота и разбавил водой вроде оклимались.</p>
+
+<p><strong>Coccinella</strong> 21-03-2013</p>
+
+<p>Скорее высокая ЕС или вообще поврежденные корни. Там посмотреть надо в районе корневой шейки. Никаких трещин, гнилей, покусов не наблюдается?</p>
+
+<p><strong>timoha</strong> 21-03-2013</p>
+
+<p>Всех с праздником!</p>
+
+<p>и снова фото</p>
+
+<p><a href="https://t.me/ponics_ru_files/10161" target="_blank"><img src="/attachimages/12738_21032013id s leava.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10162" target="_blank"><img src="/attachimages/12740_21032013vid s prava.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10163" target="_blank"><img src="/attachimages/12742_1.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10164" target="_blank"><img src="/attachimages/12744_2.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10165" target="_blank"><img src="/attachimages/12746_3.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10166" target="_blank"><img src="/attachimages/12748_4.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 21-03-2013</p>
+
+<p>Историю болезни, пожалуйста. Сорт, состав субстрата, проведенные подкормки.</p>
+
+<p><strong>timoha</strong> 21-03-2013</p>
+
+<p>Сорт Limbo. субстрат мин вата, подкормка вне корневая 10 процентным р-ром (которым поливаем) на дождевой воде.</p>
+
+<p>история болезни … сам не знаю, есть мнение засоленность субстрата.</p>
+
+<p>недостаток или избыток не так страшен.</p>
+
+<p>боюсь что вирус грибок или еще какая болячка.</p>
+
+<p><strong>Strangeman</strong> 21-03-2013</p>
+
+<p>Пятнышки очень похожи на мою проблему, но такого хлороза, как на фото№2 у меня не было. Мне кажется, что у Вас 2 разные проблемы.</p>
+
+<p>После добавления фосфора света и влажности скорость распространения пятен стала меньше, даже появились плоды, но полностью проблема не решена. На листьях, появившихся после изменений таких пятен практически нет.</p>
+
+<p>Второй огурец питается тем же раствором, но микроклимат прежний - пятна появляются, но менее интенсивно. Следует учесть, что сорта разные.</p>
+
+<p><strong>Coccinella</strong> 21-03-2013</p>
+
+<p>То, что наблюдается на последних фото - гарантированно не заболевание. Это проблемы питания и корневой системы.</p>
+
+<p>Кто мне может объяснить - зачем огурцу в минвате в это время года проводить внекорневые подкормки? Правда, не понимаю! :o <em>???</em></p>
+
+<p>Погода - хорошая, климат - плоский (хотя бы возможен в это время года), растение должно питаться корнями, а не листьями.</p>
+
+<p>Либо проблемы с корневой системой, либо ожоги от внекорневой подкормки.</p>
+
+<p><strong>Oxy</strong> 22-03-2013</p>
+
+<p>И тут же - нелогичный вопрос: если вдруг, (хтя вилами по воде) засоленность субстрата, это все равно, что нет воды - он пытается чего-то там может через листья хапнуть, а вы ему <del>в морду</del> по листьям - еще раствора. Я не понимаю, зачем ему вообще что-то по листу давать, ну кроме может превентивно фунгицидом пройтись против ложной мучнистой. Но все эти фунгициды и прочее - раз в две недели. Остальное как бэ - не в пользу. Не то чтоб во вред, но и не в пользу.</p>
+
+<p>Блин, с этими огурцами всегда так - или все ок, не знаешь куда девать, или не знаешь за что хвататься, с чем бороться.</p>
+
+<p><strong>а-ну-ка</strong> 22-03-2013</p>
+
+<p>Прошу прощения за дотошность…</p>
+
+<p>Какая минвата?ну не вижу ничего похожего,узнаваемого…</p>
+
+<p>Рассада в чем росла?</p>
+
+<p>Мож предистория в других темах?</p>
+
+<p><strong>Tony_85</strong> 22-03-2013</p>
+
+<p>Что-то подсказывает мне что обычная строительная замотана в черную пленку. Аля самодельный мат ГроРу :)</p>
+
+<p><strong>а-ну-ка</strong> 22-03-2013</p>
+
+<p>,..и с обычной капельной лентой внутри?</p>
+
+<p>Капельницы не забиты в очагах пожухлых растений?</p>
+
+<p><strong>valery</strong> 22-03-2013</p>
+
+<p>Что-то автор “вопросов” совсем неразговорчив …</p>
+
+<p>При большом увеличении снимка в прорезях пленки действительно видно нечто “продольное” напоминающее капельную ленту …</p>
+
+<p><strong>Вик</strong> 22-03-2013</p>
+
+<p>а не может ли так быть, что корешкам жарко (и итоге недостаток кислорода???</p>
+
+<p>если не трудно попробуйте в полдень между поливами померить…</p>
+
+<p>а что за вата? гродан или агрос вроде пошире будут (а мож обман зрения).</p>
+
+<p><strong>valery</strong> 22-03-2013</p>
+
+<p>При дневных температурах в 30 градусов … да под черной пленкой … может быть и жарко.</p>
+
+<p>На снимках вдоль рядов - посадки выглядят достаточно “густыми”, а на снимках с “проблемными” растениями - есть</p>
+
+<p>впечатление, что черная пленка не особенно-то и “затенена” … если “прямое” солнце падает на нее … :-\ перегревы могут быть.</p>
+
+<p>В таком случае, не совсем ясно, почему “локально”. Местами растения выглядяд совсем неплохо, местами … очень уж неважно.</p>
+
+<p><strong>Вик</strong> 22-03-2013</p>
+
+<p>а локально скорей всего из за того что дырдАчки заросли солью :D</p>
+
+<p><strong>timoha</strong> 24-03-2013</p>
+
+<p>Все приветы!</p>
+
+<p>субстрат - минвата с завода сандвич панелий 100 % чистая без яда и клея (хорошо попросили) маты самодельные завернуты в пленку</p>
+
+<p>капельница с компенсацией давления два ряда на мат по 5см через отверстия (забить трудно насос очень мощный)</p>
+
+<p>на счет засолённости есть такое завтра польем половинной концентрацией (а может и пару дней)</p>
+
+<p>и еще сегодня заметил пару белокрылок (их не хватало)</p>
+
+<p><a href="https://t.me/ponics_ru_files/10167" target="_blank"><img src="/attachimages/12853_aVotMiDorosliDoSpaleri.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10168" target="_blank"><img src="/attachimages/12855_a.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10169" target="_blank"><img src="/attachimages/12857_b.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10170" target="_blank"><img src="/attachimages/12859_c.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10171" target="_blank"><img src="/attachimages/12861_d.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10172" target="_blank"><img src="/attachimages/12863_i.jpg" alt="" /></a></p>
+
+<p><strong>Oxy</strong> 25-03-2013</p>
+
+<p>У меня в Африке,на другом континенте, в другом полушарии, на песке, совершенно в других условиях микроклимата, на ЮАРовский семенах, совершенно с другой системой ирригации - точно так же погибла плантация. А вы тем не менее продолжаете - прольем половинной концентрации.</p>
+
+<p>Я в том смысле, что тут возможны два варианта - или в наших с вами случаях просто очень похожа симптоматика, но причины на самом деле разные. Или это одна и та же причина, при прочих совершенно разных условиях. Я в песке - действительно,физически не мог проверить вытяжку или дренаж. Мог проверить только Пш, он был в корневой зоне - 8-10.</p>
+
+<p>Конкретные данные измерений ЕС в корневой зоне - какие?</p>
+
+<p><strong>андрей п</strong> 25-03-2013</p>
+
+<p>Минвата с завода сендвичпанелей- не лучшее решение. Маты для выращивания специальным образом структурированы для оптимального распределения влаги и воздуха. Да и быть уверенным на 100%, что она чистая- рискованная доверчивость. :-\</p>
+
+<p><strong>андрей п</strong> 25-03-2013</p>
+
+<p>Ещё по фото не понятно, есть ли в Ваших матах прорези для дренажа. Что то подозрительно сухо возле них. <em>???</em></p>
+
+<p><strong>timoha</strong> 25-03-2013</p>
+
+<p>сегодня все проверим.</p>
+
+<p>Окси в вашей плантации насколько я понял засоленность в корневой зоне?</p>
+
+<p>а лить с половинной концентрацией в целях хоть как то вымыть соль.</p>
+
+<p><strong>Oxy</strong> 25-03-2013</p>
+
+<p>Чтобы промыть засолененность - нужно лить чистой водой! Чтобы снизить концентрацию. Проливать даже 10% раствором уже засоленный субстрат - это только повышать засоленность.</p>
+
+<p>НО!</p>
+
+<p>это нужно провести расследование! В моем случае, я -лишь подозреваю. Поскольку в моих пакетах с песком 8 месяцев росли томаты, я фигачил явный перерасход по кол-ву раствора, плюс вы же понимаете, томаты - 3500 ППМ во время плодоношения. Потом два месяца я лил салатную концентрацию - 1200.</p>
+
+<p>К тому моменту, когда я кинулся разбираться, что с огурцами - в районе корневой шейки песок превратился в банальные булыжники, которые руками разламывались с большим трудом. То есть по тактильным и логическим анализам - ну что еще может превратить песок в камень, как не кальциево-магниевые соли?</p>
+
+<p>Но опять же, повторюсь, в последние дни жизни огурцов у меня появился китайский приборчег с двумя жалами, который нужно втыкать в грунт и он показал ПШ от 8 до 10. (Он не очень точный). Добиться слабокислой среды в самом пакете, проливом сильно закисленной водой, мне не удалось - потому что песок мля.</p>
+
+<p>Поэтому: Или Пш в зоне корневой, или Ес. Нужны точные измерения, чтоб не получилось как в традиционной медицине - болит горло, а лечим пятку:)</p>
+
+<p>В моем примере, я запускал плантацию исключительно с целью выяснить - научился я бороться с ложной мучнистой росой или нет. Потому что к тому времени уже было ясно, что моя деятельность в Африке - закончилась, и эксперимент я проводил только с целью самообразования, а не получения урожая. Другими словами - отсутствие урожая меня никак не тронуло, поскольку главная цель была достигнута - мучнистую росу удалось инфицировать, подождать неделю и затем остановить. А дальше мне уже было на все наплевать.</p>
+
+<p>Поэтому никакой эффективной борьбы с засоленностью и повторных запусков я не предпринимал.</p>
+
+<p><strong>timoha</strong> 30-03-2013</p>
+
+<p>Приветы!</p>
+
+<p>питание? или …</p>
+
+<p><a href="https://t.me/ponics_ru_files/10173" target="_blank"><img src="/attachimages/12915_11.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10174" target="_blank"><img src="/attachimages/12917_12.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10175" target="_blank"><img src="/attachimages/12919_13.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 30-03-2013</p>
+
+<p>Какая температура в зоне корней? И сколько фосфора дается в подкормку?</p>
+
+<p><strong>timoha</strong> 30-03-2013</p>
+
+<p>в обед градусов 28 а так все в тени</p>
+
+<p>P-40мг/л</p>
+
+<p><strong>Coccinella</strong> 30-03-2013</p>
+
+<p>А ночью?</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

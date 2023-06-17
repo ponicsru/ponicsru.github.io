@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Изменятся ли свойства | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Изменятся ли свойства">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Изменятся ли свойства</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>mr.maloi84</strong> 20-03-2016</p>
+
+<p>Давненько был приобретен Сульфат калия не помню производителя (50%). Так вот грязный он. Заметил это после того как концентрат набодяжил.</p>
+
+<p>Решил отфильтровать косметическим ватным диском и задался вопросом, а не потеряет ли он свойства после фильтрации? Фото прилагается.</p>
+
+<p><a href="https://t.me/ponics_ru_files/17303" target="_blank"><img src="/imagehost2/thumbs/cimg4659.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/17304" target="_blank"><img src="/imagehost2/thumbs/cimg4660.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/17305" target="_blank"><img src="/imagehost2/thumbs/cimg4661.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/17306" target="_blank"><img src="/imagehost2/thumbs/cimg4662.jpg" alt="" /></a></p>
+
+<p><strong>Oxy</strong> 20-03-2016</p>
+
+<p>Механическая фильтрация не влияет на растворенные ионы солей в воде. Именно поэтому человечество трахалось многие десятилетия над проблемой питьевой воды в океане. Потом изобрели мембрану обратного осмоса и все облегченно вздохнули :)</p>
+
+<p><strong>mr.maloi84</strong> 20-03-2016</p>
+
+<p><em>8)</em> про осмос знаю не по наслышке,пару раз пользовал не понравилось. Не зря ведь 4-5 фильтроом идет минерализатор. Я остановился на мембране ультрофильтрации, так как не надо ждать пока бак наполниться ;)</p>
+
+<p><strong>Oxy</strong> 20-03-2016</p>
+
+<p>Лично мое мнение про слово “минерализатор” - крайне негативное. Это классический маркетинговый ход, специально для тех медиков и биологов которые купили себе диплом в переходе к ЖД вокзалу. Однажды в гостях у родителей была мамина подружка, практикующий врач. И громко заявила, что дистиллированная вода вредна для организма, посольку вымывает кальций из костей. Я тут-же громко заявил, что она может смело выбросить свой диплом и никогда никому не заикаться, что она каким-то боком имеет отношение к знаниям о человеческом организме.</p>
+
+<p>В фильтрующей установке - три пред.фильтра стоят только для того, чтобы защитить осмотическую мембрану от механических повреждений всяким песком. Сама мембрана дает на выходе дистиллят отделенный от минерализированной воды, причем стерильный. Мембрана, это уже по счету - четвертый фильтр.</p>
+
+<p>Зачем после этого опять минерализировать(по сути портить)? Чем? Какими минералами? В какой форме? В какой концентрации? Для чего мне лично минерализатор, если двух крупных огурцах содержится суточная норма всех солей и минералов для моей тушки? Включая кстати и поваренную соль. В одном сыром яйце содержиться максимально полный для меня комплект витаминов и микрухи. Взрослому мужчине-качку в сутки нужно 50 грамм творога для обеспечения себя запасом белка. Вот примерно такие у меня взгляды, основанные на научном подходе.</p>
+
+<p>Для меня осмос дает стерильный дисстилят, именно то, что нужно. Все остальные примочки - от лукавого.</p>
+
+<p><strong>Cyclamech</strong> 20-03-2016</p>
+
+<blockquote>
+  <p>…пару раз пользовал не понравилось.</p>
+</blockquote>
+
+<p>Ммм… Проясните, пожалуйста, это “не понравилось”.</p>
+
+<p><strong>mr.maloi84</strong> 20-03-2016</p>
+
+<p>Здесь я с вами полностью соглашусь. Я как-то давно где-то в конце 90 начале 2000-х вычитал о споре врачей и ученых на эту тему,т.к как раз в то время уже озадачился очисткой воды. И я уверен что они до сих пор так и не договорились ;D. Я до сих пор встречаю мнения и статьи о живой и мертвой воде. Но мне лично осмос не по душе по вкусу.</p>
+
+<p>У меня на данный момент стоит</p>
+
+<p>1 Вспененый полипропилен.</p>
+
+<p>2.Арагон</p>
+
+<p>3.Ионообменка</p>
+
+<p>4.Мембрена ультрафильтрации(правда заменить пора)</p>
+
+<p>5.Уголь</p>
+
+<p><strong>Vad</strong> 20-03-2016</p>
+
+<p>нам ее не пить, нам на ней готовить раствор.. тут одни плюсы осмоса, кроме фиговой буфферности .. но и это поправимо.. если осмос чутка разбавлять исходной водой.. до 0.2-0.4 mS</p>
+
+<p><strong>mr.maloi84</strong> 20-03-2016</p>
+
+<p>:D :D :D :D</p>
+
+<p><strong>cpf</strong> 20-03-2016</p>
+
+<blockquote>
+  <p>Лично мое мнение про слово “минерализатор” - крайне негативное. Это классический маркетинговый ход, специально для тех медиков и биологов которые купили себе диплом в переходе к ЖД вокзалу. Однажды в гостях у родителей была мамина подружка, практикующий врач. И громко заявила, что дистиллированная вода вредна для организма, посольку вымывает кальций из костей. Я тут-же громко заявил, что она может смело выбросить свой диплом и никогда никому не заикаться, что она каким-то боком имеет отношение к знаниям о человеческом организме.</p>
+
+  <p>В фильтрующей установке - три пред.фильтра стоят только для того, чтобы защитить осмотическую мембрану от механических повреждений всяким песком. Сама мембрана дает на выходе дистиллят отделенный от минерализированной воды, причем стерильный. Мембрана, это уже по счету - четвертый фильтр.</p>
+
+  <p>Зачем после этого опять минерализировать(по сути портить)? Чем? Какими минералами? В какой форме? В какой концентрации? Для чего мне лично минерализатор, если двух крупных огурцах содержится суточная норма всех солей и минералов для моей тушки? Включая кстати и поваренную соль. В одном сыром яйце содержиться максимально полный для меня комплект витаминов и микрухи. Взрослому мужчине-качку в сутки нужно 50 грамм творога для обеспечения себя запасом белка. Вот примерно такие у меня взгляды, основанные на научном подходе.</p>
+
+  <p>Для меня осмос дает стерильный дисстилят, именно то, что нужно. Все остальные примочки - от лукавого.</p>
+</blockquote>
+
+<p>+100 <em>8)</em> <em>8)</em> <em>8)</em></p>
+
+<p>Тоже настороженно отношусь к пост-фильтрам/минерализаторам (особенно, с добавками “полезных” ионов серебра, йода и т.п.)</p>
+
+<p>Пользуюсь Осмосом уже больше 10 лет, постоянно, - кости пока целы :D</p>
+
+<p>Уверен, что на сегодня, фильтры на принципе обратного Осмоса - единственные, которые способны обеспечивать приемлемую фильтрацию в течение длительного времени.</p>
+
+<p><strong>Oxy</strong> 20-03-2016</p>
+
+<blockquote>
+  <p>[font=verdana]Но мне лично осмос не по душе по вкусу.[/font]</p>
+</blockquote>
+
+<blockquote>
+  <p>[font=verdana]нам ее не пить[/font]</p>
+</blockquote>
+
+<p>[font=verdana]</p>
+
+<p>На самом деле действительно, вкус у осмоса - непривычный. Когда-то в глубоком детстве отец мне предложил хлебнуть дистиллированной воды для аккумулятора. Я сильно стремался, для аккумулятора же, но когда попробовал, понял что со вкусом что-то не так, но что именно не понял.[/font]</p>
+
+<p>[font=verdana]Дело в том, что с точки зрения наших вкусовых рецепторов, у осмоса вкус…. воды. Именно вкус молекулы Н2О. Вся остальная вода, нами ощущается как вкус того, что в ней растворено, но ассоциативно подсознание фиксирует как вкус воды. При этом якоряться ассоциации с понятиями “вкусный-невкусный”. [/font]</p>
+
+<p>[font=verdana]Осмотическая вода вкуса не имеет, и вот это и есть непривычная организму непонятка :) подсознание получает от рецепторов сигнал - пошла в горло вода. Сразу в базах данных начинается перебор ассоциаций вкусов… и ничего не подходит - нет такого вкуса. Обратный сигнал в сознание поступает тревожный - “соответствий не найдено, попробуйте обновить ваши базы до актуальной версии”. [/font]</p>
+
+<p>[font=verdana]Далее сознание перерабатывает совокупную инфу и формирует отклик телу, эмоцию: - не нравится мне что-то. А давайте-ка добавим поваренной соли чутаху - о! так это же вода! а давайте ка проминерализируем еще как-то, -О! Опять вода! [/font]</p>
+
+<p>[font=verdana]Короче осутствие вкуса у осмоса это как обратный пример наличию вкуса и запаха сигаретного дыма, для всех он есть а для курильщика его нет - потому что рецепторы давно отмершие и данный момент просто нечем фиксировать :) [/font]</p>
+
+<p>[font=verdana]Курить нужно бросать, осмос пить можно, осмос абсолютно безвреден, это ровно 70% массы нашего[/font]</p>
+
+<p>мужского тела. Вкуса у осмоса нет. :)</p>
+
+<p><strong>Vad</strong> 20-03-2016</p>
+
+<p>что-то с форматированием ))</p>
+
+<p>нифига не понятно, это ты похвалил или поругал))</p>
+
+<p><strong>Oxy</strong> 20-03-2016</p>
+
+<p>У меня всегда автоматически подставляются теги на уменьшение шрифта, причем только на этом форуме, с какого бы компа я не пробовал :) И мне всегда приходиться вручную менять шрифт. Причем этих тегов я в редактировании не вижу вообще :)</p>
+
+<p><strong>Gnevko</strong> 20-03-2016</p>
+
+<p>Оху, а вы на две последних иконки внимание не обращали?</p>
+
+<p><a href="https://t.me/ponics_ru_files/17307" target="_blank"><img src="/imagehost2/thumbs/20160320171158.png" alt="" /></a></p>
+
+<p><strong>Oxy</strong> 20-03-2016</p>
+
+<blockquote>
+  <p>Оху, а вы на две последних иконки внимание не обращали?</p>
+
+  <p><img src="/imagehost2/thumbs/20160320171158.png" alt="" /></p>
+</blockquote>
+
+<p><del>Вы что предлагаете, на людях иконки рассматривать это же неприлично!</del></p>
+
+<p>Не обращал честноговоря. Даже не задумывался. Но действительно, полезные <em>Bravo</em></p>
+
+<p><strong>Vad</strong> 20-03-2016</p>
+
+<p>:-\ :-\</p>
+
+<p>это как это?</p>
+
+<p>это не правильно.. :-\</p>
+
+<p>Относительно “пить-не пить”..</p>
+
+<p>тыж знаешь, что переубедить кого-то в его собственной истине нет возможности :D</p>
+
+<p>по этому проще согласиться.. ни вреда в этом ни особой пользы… нарвится сидеть на игле маркетологов - пусть сидят.. ))</p>
+
+<p>реминерализатор - ну круто ведь? разве нет?</p>
+
+<p>почти как домашний синхрофазотрон…</p>
+
+<p>я не считаю опасным осмос… он был бы опасен, если бы мы питались ТОЛЬКО водой… а так.. электролиты мы получаем с тарелкой борща.. на годы вперед :D а если еще котлетку запихать .. или кусок колбасы ))</p>
+
+<p>и с кальцием нет проблем…. пол стакана молока или кисломолочки… и все дела.. ;)</p>
+
+<p>надеяться на воду не стоит… :D</p>
+
+<p>а вот такой факт, что дистиллятом фиг напьешься - это факт ))</p>
+
+<p>не утоляет жажду зараза… литр воды могу выпить из под фильра… и никак… и пузо булькает и пить все еще хочется ))</p>
+
+<p>но это … возможно… индивидуальная реакция моего организма ))</p>
+
+<p><strong>Oxy</strong> 20-03-2016</p>
+
+<p>На самом деле - нет, далеко не индивидуальная. Тут опять же, работает банальная химия. Нам пить хочеться не потому что воды в организме не хватает, а потому что ЕС тушки изменился. А изменяется он, когда мы с потом и мочей выводим из организма электролиты(соли).</p>
+
+<p>Например спортсменам бегунам об этом рассказывают в первый день тренировок - вода для питья должна быть только подсоленная.</p>
+
+<p>Попробуй добавлять в стакан осмоса поваренную соль(там ее пару крупиц надо), и опытным путем подберешь для себя норму. Стакан электролита выпил - жажду как рукой сняло. В сильную жару пару огурцов могут легко сбить жажду.</p>
+
+<p>если же соли выводить из организма, а доливать обессоленную воду - пить будет хотеться сильнее, что логично - концентрация еще сильнее падает. И чувствуешь себя как олень у мюнхаюзена - пьешь, пьешь, а лампочка жажды не тухнет :)</p>
+
+<p><strong>Cyclamech</strong> 20-03-2016</p>
+
+<blockquote>
+  <p>а вот такой факт, что дистиллятом фиг напьешься - это факт ))</p>
+</blockquote>
+
+<p>Воду как напиток тоже готовить надо : чай, кофе, лимонад или изотоник.</p>
+
+<p>…</p>
+
+<p>Почитал какую-то рекламу про “мембрану ультрафильтрации” и не понял, в чём отличие от обратноосмотической? :-\</p>
+
+<p><strong>mr.maloi84</strong> 20-03-2016</p>
+
+<p>И сново я с вами соглашусь ибо на вкус и цвет… Приведу анологию по жесткости которую заметил я у себя. Для кого-то вода после ионно и катионнообменных смол сладкая, с горечью и т.д. А H2O это H2O.</p>
+
+<p><strong>mr.maloi84</strong> 20-03-2016</p>
+
+<blockquote>
+  <blockquote>
+    <p>а вот такой факт, что дистиллятом фиг напьешься - это факт ))</p>
+  </blockquote>
+
+  <p>Воду как напиток тоже готовить надо : чай, кофе, лимонад или изотоник.</p>
+
+  <p>…</p>
+
+  <p>Почитал какую-то рекламу про “мембрану ультрафильтрации” и не понял, в чём отличие от обратноосмотической? :-\</p>
+</blockquote>
+
+<p>Вот примерно так <a href="http://katalog.vodcenter.ru/promo_uf_5.html" target="_blank">http://katalog.vodcenter.ru/promo_uf_5.html</a></p>
+
+<p><strong>Vad</strong> 20-03-2016</p>
+
+<p>господа, нам не пить ее… нам раствор готовить! <em>Dance</em></p>
+
+<p><strong>Vad</strong> 20-03-2016</p>
+
+<p>окси, :) я честно говоря не совсем понимаю процесс жаждоутоления..</p>
+
+<p>медики говорят, что лампочка жажды загорается при высоком ЕС…</p>
+
+<p>значит, с точки зрения организма… его надо снижать.. и по идее.. при употреблении обессоленной воды она должна быстро потухнуть. <em>???</em></p>
+
+<p>а не тухнет… <em>???</em></p>
+
+<p>я думаю, потому, что организм в дикой природе… никогда не встречался с такой сверхчистой водой.. и не может вьехать… что это за жидкость?</p>
+
+<p>Это не вода, точно… <em>???</em> вода должна содержать кальций, магний, бор, бром, железо, кобальт, кишечную палочку, сальмонеллу, кремний, углерод, в твердой взвеси….. а раз всего этого нет :-\ организм пьет не воду! <em>???</em></p>
+
+<p>:-\ Значит не тушим лампочку, пусть организм мечется и найдет себе такую жидкость, в которой будет все или частично из перечисленного списка :D</p>
+
+<p><strong>Oxy</strong> 20-03-2016</p>
+
+<p>ты же понимаешь, что не все так просто в нашей деревне. За все отвечает не тупо влажность тушки, а электролиты и их баланс. Сами по себе мы также - большие электромагнитные катушки. Нужно пополняться электролитами, осмос такой услуги не предоставляет :)</p>
+
+<p>Но в принципе - да, раствор делать :)</p>
+
+<p><strong>Vad</strong> 20-03-2016</p>
+
+<blockquote>
+  <p>ты же понимаешь, что не все так просто в нашей деревне.</p>
+</blockquote>
+
+<p>так ото-ж <em>???</em></p>
+
+<p><strong>Cyclamech</strong> 21-03-2016</p>
+
+<p>Тут уж до логического завершения хотелось бы пользователю “осмоса”… :-[</p>
+
+<ol>
+  <li>
+    <p>Т.к. для создания буферности в гидропонике мы можем “портить” осмос не только исходной водой (величины озвучены - 0,2-0,4 микросименса), но любым веществом, то хотелось бы узнать оптимальный вариант.</p>
+  </li>
+  <li>
+    <p>Понятно, что если на велике или пешком много, то лучше изотоник приготовить, а какой вариант будет простейшим в изготовлении для “стакана воды на тумбочке на ночь”?</p>
+  </li>
+</ol>
+
+<p><strong>cpf</strong> 21-03-2016</p>
+
+<blockquote>
+  <p>Тут уж до логического завершения хотелось бы пользователю “осмоса”… :-[</p>
+
+  <ol>
+    <li>
+      <p>Т.к. для создания буферности в гидропонике мы можем “портить” осмос не только исходной водой (величины озвучены - 0,2-0,4 микросименса), но любым веществом, то хотелось бы узнать оптимальный вариант.</p>
+    </li>
+    <li>
+      <p>Понятно, что если на велике или пешком много, то лучше изотоник приготовить, а какой вариант будет простейшим в изготовлении для “стакана воды на тумбочке на ночь”?</p>
+    </li>
+  </ol>
+</blockquote>
+
+<p>Предлагаю на выбор:</p>
+
+<ul>
+  <li>
+    <p>апельсиновый сок/вода(осмос) 1/5</p>
+  </li>
+  <li>
+    <p>вино сухое/вода (осмос) 1/10</p>
+  </li>
+  <li>
+    <p>сами можете придумать что-нибудь интересное (и поделиться опытом) :)</p>
+  </li>
+</ul>
+
+<p>Кстати, даже вкус чая на осмотической воде ощущается по-другому (более “контрастно” что-ли)</p>
+
+<p><strong>Vad</strong> 21-03-2016</p>
+
+<p>по 2 вопросу десяток капель лимонного сока.. будет оптимальной дозой.</p>
+
+<p>напиться позволит )</p>
+
+<p>для велопрогулок и прочего спорта - нужна бОльшая концентрация электролитов</p>
+
+<p><img src="https://i.gyazo.com/c2cf11c409ae6ab5ddf77347151d3be4.png" alt="" /></p>
+
+<p>а вот по первому вопросу - черти его знает <em>???</em></p>
+
+<p>нужно что нибудь бесполезное и не вредное ))</p>
+
+<p><strong>Cyclamech</strong> 21-03-2016</p>
+
+<blockquote>
+  <p>а вот по первому вопросу - черти его знает <em>???</em></p>
+
+  <p>нужно что нибудь бесполезное и не вредное ))</p>
+</blockquote>
+
+<p>Или буфер обязательно должен быть гидрокарбонатным и мы надеемся из водопроводной воды “уловить” именно его? :-\</p>
+
+<p><strong>Cyclamech</strong> 21-03-2016</p>
+
+<blockquote>
+  <p>Кстати, даже вкус чая на осмотической воде ощущается по-другому (более “контрастно” что-ли)</p>
+</blockquote>
+
+<p>Да, согласен: я употребляю более года и не особо вникаю, но люди отмечают, что даже вкус супа улучшился. А по мне так расход соли больше стал. <em>crazy</em></p>
+
+<p>…</p>
+
+<p>Кстати, вот вам и толк от минерализаторов - если профиль изотонический… <em>crazy</em></p>
+
+<p><strong>Cyclamech</strong> 21-03-2016</p>
+
+<p>.</p>
+
+<p><em>**</em> 22-03-2016</p>
+
+<p><em>8)</em> Это не вода, точно… <em>???</em> вода должна содержать кальций, магний, бор, бром, железо, кобальт, кишечную палочку, сальмонеллу, кремний, углерод, в твердой взвеси….. а раз всего этого нет :-\ организм пьет не воду! <em>???</em></p>
+
+<p>:-\ Значит не тушим лампочку, пусть организм мечется и найдет себе такую жидкость, в которой будет все или частично из перечисленного списка :D</p>
+
+<p><strong>n72black</strong> 22-03-2016</p>
+
+<p>Ну тогда холодное молоко. :D</p>
+
+<p><strong>Vad</strong> 22-03-2016</p>
+
+<p>холестерин! &gt;:(</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Совет по установки | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Совет по установки">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Совет по установки</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Daraku</strong> 13-09-2011</p>
+
+<p>Собираюсь сделать простую установку для гидропоники (схема в аттаче).</p>
+
+<p>Раствор будет подоваться постояным потоком 2-3л/ч на горшок.</p>
+
+<p>Субстрат - аквариумная галька.</p>
+
+<p>Подайдет такая установка для помидоров и огурцов?</p>
+
+<p><a href="https://t.me/ponics_ru_files/6428" target="_blank"><img src="/attachimages/8459_1.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 13-09-2011</p>
+
+<p>Для огурцов и томатов нормальная поливная норма 2-2,5 л /м2 в сутки.</p>
+
+<p><strong>Юка</strong> 13-09-2011</p>
+
+<p>Добавьте таймер для периодического включения помпы и продумайте досвечивание. Удачи.</p>
+
+<p><strong>ALB</strong> 22-10-2011</p>
+
+<p>Думал сделать похожую установку, но вместо гальки мелкий керамзит – по моему дилетантскому разумению должно работать ка DWC – раствор обтекает керамзит и насыщается кислородом , корни постоянно в растворе – где я ошибаюсь и почему оно не сработает?</p>
+
+<p>PS фото от 15–го числа – растение «свежее» недавно с грядки.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6429" target="_blank"><img src="/attachimages/8799_IMG_20111015_144910.jpg" alt="" /></a></p>
+
+<p><strong>Юка</strong> 22-10-2011</p>
+
+<p>Можно чуть поподробнее: что за растение, чем поливаете, что с освещением, почему “корни постоянно в растворе” и т.д. ?</p>
+
+<p><strong>Mole_Garden</strong> 22-10-2011</p>
+
+<p>Где то Валерий уже писал об этом.</p>
+
+<p>Примерные слова были вроде такие:</p>
+
+<p>А если тебя поливать постоянно водой, как долго ты протянешь?</p>
+
+<p><strong>ALB</strong> 22-10-2011</p>
+
+<p>Но салат и тому подобное на плавающих платформах же выращивают?</p>
+
+<p>Корни «постоянно в растворе» потому что подача раствора постоянная.</p>
+
+<p>Мята , пока просто на воде, свет лампа дневного света 18 ватт.</p>
+
+<p>Пробовал добавить совсем немного удобрения «кемира люкс» в воду , но что то оно им не понравилось (разбулькал в мензурке до 2000 ррм и разбавил до двух литров примерно).</p>
+
+<p>Фото сегодня:</p>
+
+<p>PS пока ещё думаю какую установку собирать.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6430" target="_blank"><img src="/attachimages/8807_IMG_20111022_105109.jpg" alt="" /></a></p>
+
+<p><strong>Юка</strong> 22-10-2011</p>
+
+<p>Я не агроном , но полагаю, что мята это далеко не салат поливайте её 2-3 раза в сутки и будет у Вас “махито”.</p>
+
+<p><strong>Coccinella</strong> 23-10-2011</p>
+
+<p>Помнится, во времена Великой Французской революции какого-то вражину народ утопил в бочке с вином :( (Дикие нравы!)</p>
+
+<p>Полного затопления даже рис не любит, да и клюква на кочках растет…</p>
+
+<p>Салат на плотах сидит в специальных держателях, которые как раз и обеспечивают доступ воздуха к корням. Непосредственно в растворе полощется только нижняя часть корневой системы.</p>
+
+<p>Так что я тоже считаю, что растения достаточно поливать время от времени (в зависимости от растения, субстрата и условий), а топить (утапливать) их незачем.</p>
+
+<p><strong>Mole_Garden</strong> 23-10-2011</p>
+
+<p>Да салат не весь сидит по уши в воде, а только корневая, а ты поливаешь прямо с верху. Там где находится точка роста.</p>
+
+<p><strong>ALB</strong> 23-10-2011</p>
+
+<p>Ну вот и начались проблемы – кончики листьев чернеют.</p>
+
+<p>Заменил воду (130ррм из под крана) на очень слабый раствор (280ррм) удобрения «Кемира люкс».</p>
+
+<p>В той же установке сидел арбуз – убрал его , а то он пахнет как не очень.</p>
+
+<p>Завтра буду , наверное, делать другую установку – периодический полив или подтопление.</p>
+
+<p>Пока развернул трубочки подющие раствор так что он льётся не под корни , а на край стаканчика.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6431" target="_blank"><img src="/attachimages/8814_IMG_20111023_153419.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6432" target="_blank"><img src="/attachimages/8816_IMG_20111023_153457.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 24-10-2011</p>
+
+<p>Еще раз.</p>
+
+<p>Перестань лить в стакан, раз у тебя есть трубы, сделай NFT</p>
+
+<p>О том, что это такое почитай здесь</p>
+
+<p><a href="http://www.ponics.ru/2009/11/lactuca_mole_report/" target="_blank">http://www.ponics.ru/2009/11/lactuca_mole_report/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/09/my_nft_system/" target="_blank">http://www.ponics.ru/2009/09/my_nft_system/</a></p>
+
+<p><a href="http://www.ponics.ru/2009/03/nft/" target="_blank">http://www.ponics.ru/2009/03/nft/</a></p>
+
+<p>Второе, кемира люкс, это не лучший вариант для растений, если интересно почему, то ответ есть на форуме. Воспользуйся поиском.</p>
+
+<p>И последнее. А они у тебя, что на воде растут? Сделай им раствор как минимум 500-600 ppm.</p>
+
+<p><strong>Coccinella</strong> 24-10-2011</p>
+
+<p>А кальций бедным растениям дается? Это почернение листьев наводит на мысль о дефиците кальция.</p>
+
+<p><strong>valery</strong> 24-10-2011</p>
+
+<p>Скорее всего и впрямь … не дается.</p>
+
+<p>Если верить тексту, похоже, что и вообще ничего не давалось … лишь сейчас чуть-чуть Кемиры-Люкс …</p>
+
+<p>В ней, кстати, еще и магний отсутствует.</p>
+
+<p>.</p>
+
+<p><strong>Mole_Garden</strong> 24-10-2011</p>
+
+<blockquote>
+  <p>Скорее всего и впрямь … не дается.</p>
+
+  <p>Если верить тексту, похоже, что и вообще ничего не давалось … лишь сейчас чуть-чуть Кемиры-Люкс …</p>
+
+  <p>В ней, кстати, еще и магний отсутствует.</p>
+
+  <p>.</p>
+</blockquote>
+
+<p><em>crazy</em></p>
+
+<p><strong>ALB</strong> 24-10-2011</p>
+
+<p>Почитал <em>Wall</em></p>
+
+<p>Кемира люкс это самое приемлимое что пока нашёл в магазине - остальное “супер пупер гипер экстракт навоза с органическими включениями”.</p>
+
+<p>У мяты слабо развитая мочковатая корневая - с NFT может не получится.</p>
+
+<p>Хм, сейчас возникла мысля <em>crazy</em> в лоток насыпать керамзита или ещё чего , а по дну пустить поток раствора - сейчас почти так и работает - стаканчики то все в дырках.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6433" target="_blank"><img src="/attachimages/8821_IMG_20111024_154131.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6434" target="_blank"><img src="/attachimages/8823_IMG_20111024_153909.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 24-10-2011</p>
+
+<p>Да не так у тебя работает.</p>
+
+<p>Ты льешь прямо на растение, на точку роста, тем более такой струей. Проточка же, это 1-2 мм раствора только по корням, не задевая ствол, точку роста.</p>
+
+<p><strong>ALB</strong> 24-10-2011</p>
+
+<p>Как уже писал выше - направил поток жидкости вдоль стенки стаканчика - теперь раствор не попадает на растения , а стекает по стенке стаканчика.</p>
+
+<p>Заменил раствор - примерно 650ррм делал на основе кемиры люкс с калциевой селитрой и сульфатом магния (нашёл в магазине последний пакетик) - эта кемира действительно гадость - азота много получилось :( .</p>
+
+<p>Подождём пару дней посмотрим что будет дальше.</p>
+
+<p><strong>Mole_Garden</strong> 24-10-2011</p>
+
+<p>У тебя таймер есть? Кстати, контролируешь ли pH?</p>
+
+<p>Судя по этому фото</p>
+
+<p><img src="http://forum.ponics.ru/index.php?action=dlattach;topic=1185.0;attach=8824;image" alt="" /></p>
+
+<p>у тебя там бассейн.</p>
+
+<p><strong>ALB</strong> 24-10-2011</p>
+
+<p>Таймер на свет , можно и на полив добавить .</p>
+
+<p>РН пока на воде сидели не контролировал , есть только аквариумный капельный тест на РН - раствор сейчас мутный и самую малость (если знать что оно есть) розовый - померять наверное не получится <em>???</em> .</p>
+
+<p>Бассейн на фото - там пустой стаканчик и точным позиционированием трубки зоморачиваться не стал, в других поток касается стенки стакана - неужели так страшно :o а то я раньше только аквариумом занимался и на мой взгляд всё очень даже ничего .</p>
+
+<p><strong>valery</strong> 24-10-2011</p>
+
+<p>Да нет же, друзья… Ну зачем …</p>
+
+<p>Кемира - вовсе не гадость. Просто “Кемира-Люкс” никем и никогда НЕ ПРЕДНАЗНАЧАЛАСЬ для гидропонных растворов … Производитель - “не виноват”, что мы ее с упорством льем в “установки” …</p>
+
+<p>Ну представьте.</p>
+
+<p>Мы ж не ругаем молоток “плохим”, только потому что им маникюр неудобно делать … :o</p>
+
+<p>Производитель рассчитывал, что мы этим молотком будем просто по пальцам шандарахать … а ногти - не будем подрезать (для этого - рубанок существует ).</p>
+
+<p><strong>ALB</strong> 25-10-2011</p>
+
+<p>Со вчерашнего дня Ph не изменился - примерно 7,0-7,2 .</p>
+
+<p>Листики у мяты вроде начали выпрямляться и набирать тёмно зелёный цвет .</p>
+
+<p>фото выложить ?</p>
+
+<p><strong>Coccinella</strong> 25-10-2011</p>
+
+<p>Выкладывайте! А рН надо бы снизить…</p>
+
+<p><strong>ALB</strong> 25-10-2011</p>
+
+<p>Рн снизить – кислоты добавить ? Лимонная я так пологаю не пойдёт потому что органика?</p>
+
+<p>На фото не очень хорошо видно - вдоль жилок цвет листьев становится темнее.</p>
+
+<p><a href="https://t.me/ponics_ru_files/6435" target="_blank"><img src="/attachimages/8841_IMG_20111025_135831.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6436" target="_blank"><img src="/attachimages/8843_IMG_20111025_140026.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/6437" target="_blank"><img src="/attachimages/8845_IMG_20111025_140057.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 25-10-2011</p>
+
+<p>Лимонная, если совсем ничего под рукой нет, тоже пойдет, только она более слабая (менее кислая :)), чем азотная или ортофосфорная. Ее больше надо, чтобы получить требуемое значение рН. А то, что мы наблюдаем на фото - не потемнение жилок, а посветление пластинки между жилками - начало проблем с микроэлементами. Поэтому я и рекомендовала понизить рН, ожидала скорого появления такой проблемы.</p>
+
+<p><strong>ALB</strong> 25-10-2011</p>
+
+<p>Хм , вроде вчера весь лист был светлее, а сегодня как раз жилки темнее становится начали – подождём ещё немного.</p>
+
+<p>Ортофосфорная кислота вроде есть в магазине радиодеталей, насчёт её качества не уверен.</p>
+
+<p><strong>Mole_Garden</strong> 25-10-2011</p>
+
+<blockquote>
+  <p>Хм , вроде вчера весь лист был светлее, а сегодня как раз жилки темнее становится начали – подождём ещё немного.</p>
+
+  <p>Ортофосфорная кислота вроде есть в магазине радиодеталей, насчёт её качества не уверен.</p>
+</blockquote>
+
+<p>Необходимо убедиться, что она без добавок. А что мешает купить бутылку электролита в магазине запчастей?</p>
+
+<p><strong>ALB</strong> 25-10-2011</p>
+
+<p>Как то побаиваюсь я серной.</p>
+
+<p>Завтра почитаю что на этикетке ортофосфорной написано – вроде без добавок должна быть.</p>
+
+<p><strong>Mole_Garden</strong> 25-10-2011</p>
+
+<blockquote>
+  <p>Как то побаиваюсь я серной.</p>
+</blockquote>
+
+<p>А чего именно побаиваешься? Это вполне обычная практика. Я уже не одно растение вырастил используя именно электролит. Подчеркиваю, здоровое, вкусное растение.</p>
+
+<p><strong>ALB</strong> 25-10-2011</p>
+
+<p>:D не одни штаны уже поменял после работы с электролитом.</p>
+
+<p>ортофосфорная вроде не такая едкая.</p>
+
+<p><strong>ProRus</strong> 25-10-2011</p>
+
+<blockquote>
+  <p>не одни штаны уже поменял</p>
+</blockquote>
+
+<p>От страха? ;D ;D</p>
+
+<p>Не в обиду, это так…….. :-\</p>
+
+<p>В голову пришло…</p>
+
+<p>До этого вы про страх писали. ;)</p>
+
+<p><strong>ALB</strong> 25-10-2011</p>
+
+<p>Ну фигня случается - пара капель электролита на штаны и …</p>
+
+<p>И даже паров кислоты достаточно что бы текстиль начал расползаться - кто заряжал кислотные аккумуляторы тот знает.</p>
+
+<p><strong>orgail</strong> 25-10-2011</p>
+
+<p>от ортофосфорной Вашим штанам лучше не будет :D</p>
+
+<p><strong>valery</strong> 25-10-2011</p>
+
+<p>Серная кислота - едкая, но ведь электролит существенно “разбавлен” …</p>
+
+<p>А ортофосфорную 80% - очень сложно тянуть и отмерять шприцем, густая она как кисель, плохо набирается - нужно обязательно разбавлять изначально.</p>
+
+<p><strong>ALB</strong> 26-10-2011</p>
+
+<blockquote>
+  <p>Лимонная, если совсем ничего под рукой нет, тоже пойдет, только она более слабая (менее кислая :)), чем азотная или ортофосфорная. Ее больше надо, чтобы получить требуемое значение рН.</p>
+</blockquote>
+
+<p>У меня объём раствора всего два литра в “установке”.</p>
+
+<p>Разведённый раствор, с немного большим ррм (814 вместо 600), оставался - попробовал понизить его рН лимонной кислотой - понадобилось всего несколько кристаликов на два литра и рН упал до 6,0 - странно это <em>???</em> я думал буферность раствора будет больше.</p>
+
+<p>PS пакетик с лимонной кислотой большой - за электролитом не пойду :)</p>
+
+<p><strong>valery</strong> 26-10-2011</p>
+
+<p>Если Ваша исходная водичка “безбуферная” или буфер крайне мал (невелико количество бикарбонатов, которые нужно “нейтрализовть”) и рН смещается легко …</p>
+
+<p>Лимонной кислотой воспользоваться … можно.</p>
+
+<p>Правда, не сильно увлекаясь и не забывая, что лимонная кислота - органическая. Со временем (или с избытком) - могут случаться неприятности с раствором …</p>
+
+<p>А так, в общем … как “выход” вполне ничего.</p>
+
+<p>Ортофосфорная и азотная “полезней”, в частности тем, что мы с ними вносим “нужные” макроэлементы (азот или фосфор), а с лимонной … шут его знает. :-\</p>
+
+<p><strong>Coccinella</strong> 26-10-2011</p>
+
+<p>Да никто просто всерьез такой вариант не изучал :)! Для промышленного производства лимонная кислота не годится именно потому, что 1) слабая, 2) относительно дорогая 3) “бесполезная” в смысле питательных элементов.</p>
+
+<p>А с другой стороны во всех странах сейчас очень интенсивно работают над внедрением всяких полезных микроорганизмов, в т.ч. на минвате. Так вот, доказано (хотя механизм и не изучен), что инокуляция корней растений определенными видами микроорганизмов среди всего прочего повышает доступность фосфора растеням (в частности луку). А за счет чего это вообще может быть? Насколько я понимаю, за счет того, что все эти микробы выделяют какое-то количество органических кислот, которые и растворяют фосфаты, фосфиты и прочие фос-…</p>
+
+<p><strong>GEORGE BOND</strong> 25-11-2011</p>
+
+<p>ОТКАЖИТЕСЬ ОТ КЕМИРЫ! ЭТО НЕ ПРОСТО НЕ ЛУЧШИЙ ВАРИАНТ- ЭТО ВООБЩЕ НЕ ВАРИАНТ! НА САЙТЕ ЕСТЬ ПРОСТЕЙШИЕ ПИТАТЕЛЬНЫЕ РАСТВОРЫ!</p>
+
+<p><strong>utyv</strong> 25-11-2011</p>
+
+<blockquote>
+  <p>Ну фигня случается - пара капель электролита на штаны и …</p>
+
+  <p>И даже паров кислоты достаточно что бы текстиль начал расползаться - кто заряжал кислотные аккумуляторы тот знает.</p>
+</blockquote>
+
+<p>Как химик говорю, что у серной кислоты паров нет. А вот любая капелька, или там брызги даже разбавленной кислоты рано или поздно обернутся дырками на штанах. Может после стирки проявится. Есть такое.</p>
+
+<p>Поэтому предельно аккуратно все делать и сразу же мыть посуду и руки после того как.</p>
+
+<p><strong>valery</strong> 25-11-2011</p>
+
+<blockquote>
+  <p>ОТКАЖИТЕСЬ ОТ КЕМИРЫ!</p>
+</blockquote>
+
+<p>Здрасьте вам … Откажитесь от “еды” - это не вариант … Кушайте “корм” - его полно … Так что ли ? Глупость какая-то.</p>
+
+<p><strong>Aleksey Kurenin</strong> 25-11-2011</p>
+
+<p>:D это глупость заглавными буквами ;D ;D ;D</p>
+
+<p><strong>valery</strong> 25-11-2011</p>
+
+<blockquote>
+  <p>Поэтому предельно аккуратно все делать и сразу же мыть посуду и руки после того как.</p>
+</blockquote>
+
+<p>Ну … “аккуратно” … это не про нас … :(</p>
+
+<p>Да еще и руки мыть :o (ну что ж мы … совсем белоручки какие … )</p>
+
+<p>Эх … Придется штаны снимать … :(</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

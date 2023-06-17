@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Что с томатами, не пойму... | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Что с томатами, не пойму...">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Что с томатами, не пойму...</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>chip</strong> 03-10-2011</p>
+
+<p>Всем привет. Вообщем решил попробовать вырастить томаты балконнные. Нарезал пробки, пропитал раствором Нутривант 19-19-19</p>
+
+<ul>
+  <li>кальцинит яровский. Сделал 300 PPM ( никак не перейду на EC) Вода у меня осмос (где-то 18 PPM) PH 5.6. Положил семена и поставил в тепличку. Как раскрылись семядоли, крышку открыл. Стоят сейчас на стелаже у окна. Начали появляться первые листики и начались проблемы… Листья начали вянуть с краев. Фото прилагаются. И не растут совсем ведь, затормозились… Может кто подскажет что не так <em>???</em></li>
+</ul>
+
+<p><a href="https://t.me/ponics_ru_files/6458" target="_blank"><img src="/imagehost/thumbs/dscf4043thumbmfm.jpg" alt="" /></a></p>
+
+<p>Вот пострадавший</p>
+
+<p><a href="https://t.me/ponics_ru_files/6459" target="_blank"><img src="/imagehost/thumbs/dscf4045thumbhth.jpg" alt="" /></a></p>
+
+<p>А это новая партия, но мне кажется что листья по краям загнулись, посмотрим как дальше будет</p>
+
+<p>Добавлю фото, еще томатик из первой партии</p>
+
+<p><a href="https://t.me/ponics_ru_files/6460" target="_blank"><img src="/imagehost/thumbs/dscf4041thumb.jpg" alt="" /></a></p>
+
+<p><strong>Юка</strong> 03-10-2011</p>
+
+<p>По Вашим фото ничего не видно (возможно только у меня), но похожая проблема была и решение самое простое - сначала только простая водичка.. остальное (раствор) чуть позднее.</p>
+
+<p><strong>chip</strong> 03-10-2011</p>
+
+<p>Извините, исправил фото. Слишком уменьшил :) Тоесть думаете передоз?</p>
+
+<p><strong>gorby777</strong> 04-10-2011</p>
+
+<p>Не думаю, что передоз. Я пробки для огурцов такой концентрацией запитываю. Живут и радуются. ИМХО слишком сыро, если с микроэлементами порядок.</p>
+
+<p><strong>Coccinella</strong> 04-10-2011</p>
+
+<p>Джентльмены, у вас сеянцы всегда за таким забором сидят? Я имею в виду, что они находятся внутри стаканчика и над верхушкой растения еще больше сантиметра стенки. Они же нисколько не проветриваются. И транспирация не идет и для инфекций условия очень благоприятные.</p>
+
+<p>Вы вот здесь у Алексея Куренина посмотрите, как рассаду томата выращивают в промышленной гидропонике</p>
+
+<p><a href="http://www.greentalk.ru/v/111_003/111_008/20070214/4.JPG.html" target="_blank">http://www.greentalk.ru/v/111_003/111_008/20070214/4.JPG.html</a></p>
+
+<p>Большую часть этого в домашних условиях не воплотить, но знать полезно.</p>
+
+<p><strong>gorby777</strong> 04-10-2011</p>
+
+<blockquote>
+  <p>Вы вот здесь у Алексея Куренина посмотрите, как рассаду томата выращивают в промышленной гидропонике</p>
+</blockquote>
+
+<p>Поучительно, познавательно <em>8)</em></p>
+
+<p>Спасибо :)</p>
+
+<p><strong>valery</strong> 04-10-2011</p>
+
+<p>Тоже есть ощущения, что возможно “перелито” …</p>
+
+<p>Там на дне стаканчиков раствора случаем нет ?</p>
+
+<p><strong>chip</strong> 04-10-2011</p>
+
+<blockquote>
+  <p>Тоже есть ощущения, что возможно “перелито” …</p>
+
+  <p>Там на дне стаканчиков раствора случаем нет ?</p>
+</blockquote>
+
+<p>Нету. я их по чуть чуть поливал, и излишки сливал.</p>
+
+<p><strong>chip</strong> 04-10-2011</p>
+
+<blockquote>
+  <p>Джентльмены, у вас сеянцы всегда за таким забором сидят?</p>
+</blockquote>
+
+<p>они стояли в такой же емкости как и вторая партия. А как им поплохело решил пересадить по разным.</p>
+
+<p><strong>chip</strong> 04-10-2011</p>
+
+<blockquote>
+  <p>Не думаю, что передоз. Я пробки для огурцов такой концентрацией запитываю. Живут и радуются. ИМХО слишком сыро, если с микроэлементами порядок.</p>
+</blockquote>
+
+<p>А вот это вопрос….. Что то я не подумал про микроэлементы. Считал что они в Нутриванте есть. Сейчас пойду гляну…</p>
+
+<p>Поглядел . Вот состав.</p>
+
+<p>Нутривант Дрип 19-19-19+3MgO+0.15Fe+0.075Mn+0.038Zn+0.006Cu+0.006Mo . Выходит есть Микроэлементы.</p>
+
+<p><strong>Coccinella</strong> 04-10-2011</p>
+
+<p>Нет, господа, микроэлементы обычно так рано, на семядолях, не проявляются. Это либо повышенная влажность субстрата, либо воздуха.</p>
+
+<p><strong>chip</strong> 04-10-2011</p>
+
+<blockquote>
+  <p>Нет, господа, микроэлементы обычно так рано, на семядолях, не проявляются. Это либо повышенная влажность субстрата, либо воздуха.</p>
+</blockquote>
+
+<p>А могла повлиять температура? На корни или листья, У меня полки на окне закреплены, а там форточка бывает открыта. Могло надуть ? Или ночью поддувало где нить …</p>
+
+<p><strong>valery</strong> 04-10-2011</p>
+
+<p>Могло ли “надуть” Вам виднее, Вы же рядом с ними … Видимо, могло … Может даже и холодно из форточки …</p>
+
+<p>Но вот обратите внимание на</p>
+
+<blockquote>
+  <p>… либо повышенная влажность субстрата, либо воздуха.</p>
+</blockquote>
+
+<p>С точки зрения “воздуха” … в таком стаканчике у Вас полный застой, воздух совершенно не вентилируется … - за этим “пластиковым забором”.</p>
+
+<p>С точки зрения “субстрата” … обратите внимание на Ваш снимок в центре под полным увеличением (в прозрачной емкости) - пробка в центре просто СОЧИТСЯ раствором, напоминает “жидкий холодец” …</p>
+
+<p>И слово “поливал” настораживает … Вряд ли в этом возрасте уже появилась необходимость поливать, они совсем крохи, не похоже, что успели что-то испарить …</p>
+
+<p>Хотя с моей стороны, это только возможное “рассуждение”, что там с ними случилось понятия не имею … всякое может быть … (но для себя обратил бы внимание именно на это).</p>
+
+<p>И не подскажете, а что это за пробки квадратной формы ?</p>
+
+<p><strong>chip</strong> 04-10-2011</p>
+
+<p>Это я промыл пробки дистилятом, на всякий случай. А про поливал, они подсохли я и покапал немного. Пробки сделал из бывшего мата Агрос :)</p>
+
+<p><strong>gorby777</strong> 05-10-2011</p>
+
+<blockquote>
+  <p>Нет, господа, микроэлементы обычно так рано, на семядолях, не проявляются.</p>
+</blockquote>
+
+<p>Спасибо за информацию. Просто у меня случай был (растение взрослое). В баночке с микроэлементами появился какой-то кисельный сгусток, и на дне немного осадка было. Сам раствор стал тёмно-рыжим. Понятно, что железо выпало (раствору три месяца). Ну и, наверное, что-то ещё. Поленился, не сделал новый. Так вот отдельные листья вянули и засыхали почти не меняя цвета</p>
+
+<p><strong>chip</strong> 07-10-2011</p>
+
+<p>Вести с полей. Вообщем ростки окончательно засохли кроме одного… Вскрытие показало, что Valery, Coccinella, gorby777 были правы! Часть стебля и корни сгнили. Буду знать , а вторую партию я не поливаю теперь :) Пока все в порядке :)</p>
+
+<p><strong>valery</strong> 07-10-2011</p>
+
+<p><em>8)</em> <em>8)</em> <em>8)</em></p>
+
+<p>Пока проросточек совсем маленький … он еще почти ничего не испаряет (чего там - пол квадратного сантиметра площади …) и мало кушает - есть еще необходимый стартовый запас в семядолях …</p>
+
+<p>Главное, что бы в пробке в это время была близкая к оптимальной температура и ВЛАЖНОСТЬ (не “мокрость”, а влажность) и сохранялась способность АКТИВНОГО ДЫХАНИЯ … “Поливать” начнем чуть позже, когда уже действительно они начнут заметно “пить” и “кушать” …</p>
+
+<p>Алексей Куренин где-то описывает (возможно, в теме “Гродан”) - в кассетных ящиках с пробками начинают первые (пока еще “скудные” и редкие) поливы, когда крайние всходы начинаяют явно ПОДВЯДАТЬ … - то есть уже явно показывают, что нуждаются во влаге …</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

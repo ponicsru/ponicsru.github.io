@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Проблема с салатом!!! | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Проблема с салатом!!!">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Проблема с салатом!!!</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>LaCoste</strong> 15-03-2011</p>
+
+<p>Проблема с выращиванием салата.</p>
+
+<p>Дано: салат растет на столах. гидропоника питательного слоя. Удобрения Акварин 6, концентрация 1000-1200 ppm, темп. воды +18+20, воздух не выше +22, в солнечную погоду проветривание. досветка дназ 400 на высоте 2 метра.</p>
+
+<p>Неликвидируемые проблемы: конденсат на потолке, капающий на растения. водоросли сине-зеленые на освещенных участках.</p>
+
+<p>итого - часть кустов выглядят отлично, часть имеет гниль по краю молодого листа. возникает только у относительно взрослого растения. также у части растений возникает морщинистость похожая на стекловидность.</p>
+
+<p>С рукколой другая проблема. на одном столе растения чувствуют себя по-разному. одно вовсю колосится, второе угнетено, листья краснеют, желтеют, слабо развиваются</p>
+
+<p>фото ниже</p>
+
+<p><a href="https://t.me/ponics_ru_files/5072" target="_blank"><img src="/attachimages/6257_IMG0029A.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5073" target="_blank"><img src="/attachimages/6259_IMG0030A.jpg" alt="" /></a></p>
+
+<p><strong>Tony_85</strong> 15-03-2011</p>
+
+<p>Гниль скорее всего от влажности. У меня такое было. И на похожем листовом салате. А у вас теплица? На какую площадь одна лампа ДНАЗ 400? Неравномерный рост может быть из-за недостатка света?</p>
+
+<p><strong>Coccinella</strong> 15-03-2011</p>
+
+<p>Салат на фотографии однозначно испытывает резкий недостаток кальция, хотя избытычная влажность тоже нехороша.</p>
+
+<p>В Акварине , насколько я знаю, кальция же нет.</p>
+
+<p>Стекловидность на салате бывает среди прочего, в том числе от повышенной концентрации СО2.</p>
+
+<p>О рукколе ничего сказать не могу, таким образом не выращивала. Впечатление, будто ей тесно и азота не хватает. Была бы на почве, сказала бы - перелили :)</p>
+
+<p><strong>LaCoste</strong> 15-03-2011</p>
+
+<blockquote>
+  <p>Салат на фотографии однозначно испытывает резкий недостаток кальция, хотя избытычная влажность тоже нехороша.</p>
+
+  <p>В Акварине , насколько я знаю, кальция же нет.</p>
+
+  <p>Стекловидность на салате бывает среди прочего, в том числе от повышенной концентрации СО2.</p>
+
+  <p>О рукколе ничего сказать не могу, таким образом не выращивала. Впечатление, будто ей тесно и азота не хватает. Была бы на почве, сказала бы - перелили :)</p>
+</blockquote>
+
+<p>Варианты: внести кальций (нитрат кальция) в питательный раствор или опрыскивать сверху? что быстрее скажется?</p>
+
+<p><strong>LaCoste</strong> 15-03-2011</p>
+
+<blockquote>
+  <p>Гниль скорее всего от влажности. У меня такое было. И на похожем листовом салате. А у вас теплица? На какую площадь одна лампа ДНАЗ 400? Неравномерный рост может быть из-за недостатка света?</p>
+</blockquote>
+
+<p>Теплица площадью 140 кв.м. Одна лампа освещает 2,5-3 метра в диаметре. Влажность регулируем вентиляцией.</p>
+
+<p>Проблема неравномерности роста возникает на соседствующих растениях. То есть условия идентичны. Генетический фактор семян отбрасывается, поскольку семян в стаканчике несколько. Основное предположение, что руккола угнетается салатом. Но тогда почему рядом стоящий себя отлично чувствует?</p>
+
+<p><strong>Mole_Garden</strong> 15-03-2011</p>
+
+<p>Как правило растворы для салата и рукколы разные. Салат лучше опрыскать кальциевой селитрой, быстрее подействует, а потом и внести ее в раствор.</p>
+
+<p>То что на фотках называется краевой ожог, а не гниль.</p>
+
+<p><strong>LaCoste</strong> 15-03-2011</p>
+
+<blockquote>
+  <p>Как правило растворы для салата и рукколы разные. Салат лучше опрыскать кальциевой селитрой, быстрее подействует, а потом и внести ее в раствор.</p>
+
+  <p>То что на фотках называется краевой ожог, а не гниль.</p>
+</blockquote>
+
+<p>селитра тот же самый нитрат. опрыскивание производим - понять адекватную реакцию растения пока не получается. В раствор вносить маловероятно, поскольку возможна реакция - нитрат кальция с фосфатом аммония и получится фосфат кальция в осадке и аммиак в воздухе</p>
+
+<p><strong>Mole_Garden</strong> 15-03-2011</p>
+
+<blockquote>
+  <p>селитра тот же самый нитрат. опрыскивание производим - понять адекватную реакцию растения пока не получается. В раствор вносить маловероятно, поскольку возможна реакция - нитрат кальция с фосфатом аммония и получится фосфат кальция в осадке и аммиак в воздухе</p>
+</blockquote>
+
+<p>А откуда там этот фосфат аммония? Лучше все же написать состав раствора, гадать тяжко!</p>
+
+<p><strong>Rossich</strong> 15-03-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Гниль скорее всего от влажности. У меня такое было. И на похожем листовом салате. А у вас теплица? На какую площадь одна лампа ДНАЗ 400? Неравномерный рост может быть из-за недостатка света?</p>
+  </blockquote>
+
+  <p>Теплица площадью 140 кв.м. Одна лампа освещает 2,5-3 метра в диаметре. Влажность регулируем вентиляцией.</p>
+
+  <p>Проблема неравномерности роста возникает на соседствующих растениях. То есть условия идентичны. Генетический фактор семян отбрасывается, поскольку семян в стаканчике несколько. Основное предположение, что руккола угнетается салатом. Но тогда почему рядом стоящий себя отлично чувствует?</p>
+</blockquote>
+
+<p>Подтверждаю однозначно Кальциевый дефицит, и предположу повышенная температура при недостаточной освещенности, кальций +магний+ микро по листу. Руккола рядом с салатом расти не будет, и довольно сложно ведет себя при повышенных температурах и концентрации питательного раствора выше 700ррм. Хороша среда при 18 градусов раствора и 17-19 воздуха.</p>
+
+<p><strong>orgail</strong> 15-03-2011</p>
+
+<p>кальций, а со светом думаю нормально, хотя и трудно оценить, но по логике вещей именно при текущем освещении и вызванном им росте кальция и не хватает молодым листьям.. как добавите кальций, так и свет добавить можно. ну если капает с потолка рискуете получить болезни конечно, вы кажется упомянули что такая гниль-ожоги и болячки не у сплошь всех растений, а только у части?</p>
+
+<p>Ну и вентиляция обязательно! Чтобы кальций транспортировался лучше, растение должно “дышать”</p>
+
+<p><strong>Aleksey Kurenin</strong> 15-03-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>селитра тот же самый нитрат. опрыскивание производим - понять адекватную реакцию растения пока не получается. В раствор вносить маловероятно, поскольку возможна реакция - нитрат кальция с фосфатом аммония и получится фосфат кальция в осадке и аммиак в воздухе</p>
+  </blockquote>
+
+  <p>А откуда там этот фосфат аммония? Лучше все же написать состав раствора, гадать тяжко!</p>
+</blockquote>
+
+<p>Моноаммоний фосфат вполне можно использовать как источник фосфора. Но думаю ЛаКоста немного не в теме. Никакого осадка при таких концентрациях быть не должно. Это раз. И два это то, что остаётся вопрос о уровне аммиачного азота и кальция. Кальций только из воды. Его мало там обычно. аммиачный азот, к тому же - антагонист кальция. В 6ом акваарине его около 4% . это достаточно много.</p>
+
+<p><strong>LaCoste</strong> 15-03-2011</p>
+
+<p>ВСЕМ БОЛЬШОЕ СПАСИБО ЗА ОТВЕТЫ И СОВЕТЫ!!!</p>
+
+<p>Будем чаще кальция вносить наружно, чаще проветривать. О результатах сообщу.</p>
+
+<p><strong>Mole_Garden</strong> 15-03-2011</p>
+
+<blockquote>
+  <p>ВСЕМ БОЛЬШОЕ СПАСИБО ЗА ОТВЕТЫ И СОВЕТЫ!!!</p>
+
+  <p>Будем чаще кальция вносить наружно, чаще проветривать. О результатах сообщу.</p>
+</blockquote>
+
+<p>Ты видимо немного не понял. Мало того что надо кальций вносить, так надо еще что то делать с амонием, его слишком много.</p>
+
+<p><strong>LaCoste</strong> 16-03-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>ВСЕМ БОЛЬШОЕ СПАСИБО ЗА ОТВЕТЫ И СОВЕТЫ!!!</p>
+
+    <p>Будем чаще кальция вносить наружно, чаще проветривать. О результатах сообщу.</p>
+  </blockquote>
+
+  <p>Ты видимо немного не понял. Мало того что надо кальций вносить, так надо еще что то делать с амонием, его слишком много.</p>
+</blockquote>
+
+<p>вполне возможно что-то не понял.</p>
+
+<p>По пунктам:</p>
+
+<ul>
+  <li>
+    <p>перешел в акварина 2 на акварин 6. Концентрация выдаваемого на столы питания - 1,5 грамм на литр (по расчетам), что равно 800-1000 ppm (по прибору). Вернутся на акварин 2? или посоветуйте какой другой?</p>
+  </li>
+  <li>
+    <p>В акваринах содержатся ионы MgO, ни в одном удобрении нет совместного наличия и кальция, и магния (либо конфликтуют, либо по иной причине). Означает ли это невозможность использования акварина и нитрата кальция в маточном растворе?</p>
+  </li>
+</ul>
+
+<p>И есть еще один момент, почти поголовный. Подозреваю стекловидность.</p>
+
+<p><a href="https://t.me/ponics_ru_files/5074" target="_blank"><img src="/attachimages/6292_D900-0064.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/5075" target="_blank"><img src="/attachimages/6294_D900-0065.jpg" alt="" /></a></p>
+
+<p><strong>Aleksey Kurenin</strong> 16-03-2011</p>
+
+<p>1) В МАТОЧНОМ растворе нельзя смешивать фосфоро и серосодержащие удобрения (акварин) с нитратом кальция. Должны быть два маточных раствора.</p>
+
+<p>2) Я не знаю сколько аммонийного азота в акварине 2, но его количество надо обязательно контролировать. При выборе комплексного удобрения для гидропоники нужно отдавать предпочтение удобрениям его не содержащим (либо мало содержащим).</p>
+
+<p>Азот в удорениях бывает в разных формах. Обращайте на это внимание!!</p>
+
+<p><strong>Coccinella</strong> 16-03-2011</p>
+
+<p>Стекловидность может вызывать и повышенная до избыточной влажность воздуха.</p>
+
+<p><strong>LaCoste</strong> 18-04-2011</p>
+
+<p>ИТОГИ!!!</p>
+
+<p>Состоялся сбор салата. По итогам могу сказать, что многие были правы в том, что влажность повышена (собственно для меня это не новость была), а вот ГЛАВНУЮ причину так никто и не сказал.</p>
+
+<p>В данных я указал, что конденсат капает на растения. Все оценили сей факт лишь косвенно, никто не подумал о прямой угрозе растениям, а именно: капая на листья, вода создает пленку на листьях, что ухудшает испарение, что и вызывает “ожог”. Кроме того, капля воды имеет температуру ниже 5 градусов и, попадая на лист, вызывает местное переохлаждение, далее стекая к корням, также вызывает переохлаждение корней. Они в свою очередь хуже развиваются - итоговый результат ясен. Нитрат кальция существенного влияния не оказал, но подкормка кальцием тем не менее растению необходима.</p>
+
+<p>Аммония в Акварине и не так много, как говорилось. В любом случает растению необходим аммоний для более быстрого формирования белков.</p>
+
+<p>Далее. Руккола и салат вместе себя прекрасно чувствуют. Даже находясь рядом руккола пускает крепкие сильные листья выше салатных. В режиме ограниченного пространства растение становится крепче и бурно развивается (естественный отбор). Питательный раствор вполне походит. Причина покраснения лежит в другом, скорее всего в недостатке кислорода корням. Ответ на этот вопрос можно получить либо лабораторным исследованием, либо опытным путем, используя все варианты выращивания.</p>
+
+<p>В настоящее время конденсат на растения не капает - ожог не появляется</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

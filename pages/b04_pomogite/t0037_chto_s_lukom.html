@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Что с луком? | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Что с луком?">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Что с луком?</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Dorina</strong> 19-04-2009</p>
+
+<p>Здравствуйте!</p>
+
+<p>Подскажите, пожалуйста, что с луком: кончики побелели и сохнут?</p>
+
+<p>Субстракт - перлит с торфом</p>
+
+<p>Раствор - Унифлор “Рост” + кальциевая селитра</p>
+
+<p>Температура - 26-28</p>
+
+<p>Свет - ЭСЛ 250 ватт (6400) на 0,5 кв.м Круглосуточно.</p>
+
+<p>Полив капельный, примерно 150 мл в день на стаканчик</p>
+
+<p><a href="http://www.postimage.org/gx1tFHtS.jpg" target="_blank"><img src="http://www.postimage.org/gx1tFHtS.jpg" alt="" /></a></p>
+
+<p><strong>mdima</strong> 19-04-2009</p>
+
+<p>Сколько унифлора и силитры? в г/л</p>
+
+<p><strong>Mole_Garden</strong> 19-04-2009</p>
+
+<p>мда, а если вас гонять и заставлять работать круглосуточно, вы бы не устали?</p>
+
+<p>В природе же не зря, солнышко всходит и заходит.</p>
+
+<p>Как высоко лампа висит над растением?</p>
+
+<p>26-28 это прям над макушками растения?</p>
+
+<p><strong>Dorina</strong> 19-04-2009</p>
+
+<p>Унифлора 1,67 мг на литр</p>
+
+<p>Селитры - 4 г на 10 л</p>
+
+<p>Расстояние до лампы около 50 см.</p>
+
+<p><strong>mdima</strong> 19-04-2009</p>
+
+<p>В Сумме получается:</p>
+
+<p>N 179 (нормально)</p>
+
+<p>P 18 (очень, очень мало)</p>
+
+<p>K 97 (просто мало)</p>
+
+<p>Ca 75 (мало)</p>
+
+<p>Mg 5 (катострофически мало)</p>
+
+<p>Думаю поболение кончиков - это недостаток магния, и побеление краешков это один из симптомов нехватки магния или кальция. Но судя по составу: магний лимитирующий элемент.</p>
+
+<p><strong>Dorina</strong> 20-04-2009</p>
+
+<p>Спасибо Дмитрий!</p>
+
+<p>Добавить Сульфат магния? 0,8 г на литр?</p>
+
+<p>А остальное, чем?</p>
+
+<p>Вроде писали, что Унифлора достаточно, + селитра :-[</p>
+
+<p><strong>mdima</strong> 20-04-2009</p>
+
+<ol>
+  <li>
+    <p>Кто писал?</p>
+  </li>
+  <li>
+    <p>Для чего достаточно?</p>
+  </li>
+</ol>
+
+<p>Нужно добавлять фосфор, например калия монофосфат 0,2 г/л</p>
+
+<p>например:</p>
+
+<p>Унифлор Бутон 1,67</p>
+
+<p>калия монофосфат 0,2 г/л</p>
+
+<p>сульфат магния 0,8 г/л</p>
+
+<p>кальциевая 0,4 г/л</p>
+
+<p><strong>Dorina</strong> 20-04-2009</p>
+
+<p>На gidroponika.ru есть раздел про растворы, там дан этот рецепт (Унифлор + селитра)</p>
+
+<p>Дима, я все-таки хотела уточнить, при капельном поливе, какая примерно норма раствора в день на стаканчик 40 мл? Есть ощущение. что мы их заливаем.</p>
+
+<p><strong>mdima</strong> 20-04-2009</p>
+
+<p>Стакан должен хорошо дренироваться. Т.е. возможен даже не капельный, а струйный полив, но избыток раствора должен безпрепятственно вытекать.</p>
+
+<p><strong>Dorina</strong> 20-04-2009</p>
+
+<p>Стекает хорошо, но я уже пожалела, что используется тофр. Он очень влагоемкий и в результате все время сырой. На субстракте, который в дренажных отверстиях виден появился белый налет, по-моему плесень.</p>
+
+<p><strong>mdima</strong> 20-04-2009</p>
+
+<p>Да, торф - это не дело. Он богат органикой и будет кислить и засорять раствор. Плюс да, плесень. Обычно, что бы как-то скомпенсировать свойства торфа, в него добавляют перлит. Он делает торф легче, рыхлее и более дышащим.</p>
+
+<p><strong>Dorina</strong> 20-04-2009</p>
+
+<p>Да, у нас торф и перлит 50 на 50, но не спасает.</p>
+
+<p>Ну, ладно, первый блин комом.</p>
+
+<p>Дмитрий, а когда все-таки появятся в продаже ваши растворы?</p>
+
+<p><strong>mdima</strong> 20-04-2009</p>
+
+<p>Пока официально не открыл, но “подглядеть” можно тут: <a href="http://www.ponics.ru/catalog" target="_blank">http://www.ponics.ru/catalog</a></p>
+
+<p><strong>Dorina</strong> 20-04-2009</p>
+
+<p>А для зелени раствора нет пока?</p>
+
+<p><strong>mdima</strong> 20-04-2009</p>
+
+<p>http://www.ponics.ru/catalog/dlyatravzeleni-p-117.html</p>
+
+<p><strong>Dorina</strong> 20-04-2009</p>
+
+<p>Супер! ;D</p>
+
+<p>А сколько доставка до Москвы?</p>
+
+<p>И еще бы для салата….</p>
+
+<p><strong>mdima</strong> 20-04-2009</p>
+
+<p>И для салата там рядом. Доставка есть :)</p>
+
+<p><strong>Dorina</strong> 20-04-2009</p>
+
+<p>А доставка 5 рублей? серьезно? :o</p>
+
+<p><strong>mdima</strong> 20-04-2009</p>
+
+<p>неа, говорю же магазин еще не открыт. Можно только “подглядеть” (не все цены правильные если ровно 100р, то обычно не правильная) и т.п.</p>
+
+<p><strong>Dorina</strong> 20-04-2009</p>
+
+<p>Ой, а я уже заказ сделала и подтверждение пришло! :D</p>
+
+<p>Ну, ладно, жду :(</p>
+
+<p><strong>mdima</strong> 20-04-2009</p>
+
+<p>Извиняюсь….. постараюсь побыстрее все запустить.</p>
+
+<p><strong>Mendes</strong> 20-04-2009</p>
+
+<p>НУ,вот..очередная моя ошибка: засадил целую плантацию разных культур на торф! Они уже вылезли и ждут продолжения. Неужели, придется опять все начинать заново?!! А если и придется, то какой субстрат брать? Вата, как я понял, мне не светит. Всякие перлиты, вермикулиты сыпучи, и они вытекут из дренажных отверстий. Совет сеньора Олеганоса - вкладывать синтепоновый кружочек на дно горшка, мне не очень нравится. По-моему, он (кружочек) будет препятсвовать нормальной циркуляции раствора в горшке. Вобщем, за что ни возьмись, кругом беспросвет :(</p>
+
+<p>Господа, посоветуйте, а то энтузиазм иссякает :(</p>
+
+<p><strong>mdima</strong> 20-04-2009</p>
+
+<p>Можно и торф, но специальный - нейтральный. Можно керамзит (проверял, замечательный субстрат). Можно сентипон, кокос, вермикулит, перлит и т.п. Следует помнить, что почти все субстраты требуют подготовки</p>
+
+<ol>
+  <li>
+    <p>Маты напитывания</p>
+  </li>
+  <li>
+    <p>Кокос промывки от соли</p>
+  </li>
+  <li>
+    <p>Вермикулит и керамзит промывки подкисленной водой</p>
+  </li>
+</ol>
+
+<p><strong>Mendes</strong> 20-04-2009</p>
+
+<p>Да, кто ж его знает какой у меня торф?! Я купил специальный для рассады…брикеты торфяные с лунками. Проверить его никак?…хотя что бы с ним не делать, он не перстанет быть органикой:(</p>
+
+<p><strong>Mendes</strong> 20-04-2009</p>
+
+<p>глянте, пожалуйста, на мои помидорки и огручики. Только не говорите, что и им не хватает света!</p>
+
+<p><a href="http://www.postimage.org/aV2rG6n9.jpg" target="_blank"><img src="http://www.postimage.org/aV2rG6n9.jpg" alt="" /></a></p>
+
+<p><a href="http://www.postimage.org/gx1ykAUi.jpg" target="_blank"><img src="http://www.postimage.org/gx1ykAUi.jpg" alt="" /></a></p>
+
+<p><strong>mdima</strong> 20-04-2009</p>
+
+<p>тогда не скажу.. :-X хотя подозрение такое есть.</p>
+
+<p>Надо посмотреть как чуть попозже они себя поведут.</p>
+
+<p><strong>Dorina</strong> 20-04-2009</p>
+
+<p>Дмитрий, объясните, как в керамзит сажать? керамзит - крупный, семена - мелкие. Или сначала в минватные пробки, а потом их уже в керамзит?</p>
+
+<p><strong>mdima</strong> 20-04-2009</p>
+
+<p>Ответ тут №20 http://forum.ponics.ru/index.php/topic,30.msg846.html#msg846</p>
+
+<p><strong>Dorina</strong> 20-04-2009</p>
+
+<p>Понятно.</p>
+
+<p>Спасибо.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

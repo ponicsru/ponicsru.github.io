@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Помогите найти книжку | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Помогите найти книжку">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Помогите найти книжку</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Coccinella</strong> 11-01-2011</p>
+
+<p>Я уже говорила, что заказала книгу Ахатова “Мир томатов глазами фитопатолога”.</p>
+
+<p>А сейчас позвонили из магазина и спросили, готова ли я платить за нее 70 USD? Столько за книгу, из которой видела только две страницы и читала одну рецензию, нет не готова. А прочитать надо бы!</p>
+
+<p>Самой найти в интернете подешевле мне не удалось. Может, я неправильно искала? Помогите, пожалуйста!</p>
+
+<p><strong>Mole_Garden</strong> 11-01-2011</p>
+
+<p>:D тоже поискал, ничего хорошего не нашел!</p>
+
+<p><strong>otec</strong> 11-01-2011</p>
+
+<p>Может не видели по этой теме сайт <a href="http://www.pharmbiomed.ru/bak_bolezni_tomata_i_ogurtsa.php?PHPSESSID=a0d5aafe32476b3356934f3dee85f649" target="_blank">http://www.pharmbiomed.ru/bak_bolezni_tomata_i_ogurtsa.php?PHPSESSID=a0d5aafe32476b3356934f3dee85f649</a></p>
+
+<p><strong>Садовник</strong> 11-01-2011</p>
+
+<blockquote>
+  <p>Я уже говорила, что заказала книгу Ахатова “Мир томатов глазами фитопатолога”.</p>
+
+  <p>А сейчас позвонили из магазина и спросили, готова ли я платить за нее 70 USD? Столько за книгу, из которой видела только две страницы и читала одну рецензию, нет не готова. А прочитать надо бы!</p>
+
+  <p>Самой найти в интернете подешевле мне не удалось. Может, я неправильно искала? Помогите, пожалуйста!</p>
+</blockquote>
+
+<p>У Батата наверное есть. :-X</p>
+
+<p>Даже с автографом Автора.</p>
+
+<p><strong>valery</strong> 11-01-2011</p>
+
+<p>Есть опасность - тогда придется терпеть и автограф владельца … :(</p>
+
+<p>(немножко не понял. Это я - “пошутил” или “не пошутил” :-\ ничего не понятно. :o А-а…, не, похоже, что не пошутил … Вот же ж … )</p>
+
+<p><strong>Coccinella</strong> 11-01-2011</p>
+
+<p>Otec, спасибо, интересно, познавательно, но не совсем то. Но интересно.</p>
+
+<p>У Батата есть, но он же не будет сканировать всю книжку. Тем более для меня :). Нет, такие вещи надо иметь свои, но уж очень дорого!</p>
+
+<p>Как говорили классики, “Будем искать!” :)</p>
+
+<p><strong>valery</strong> 12-01-2011</p>
+
+<p>Вот здесь, компания Грифбук сообщает об этой книге как о новинке …</p>
+
+<p><a href="http://grifbook.narod.ru/books_17/b994.html" target="_blank">http://grifbook.narod.ru/books_17/b994.html</a></p>
+
+<p>Адреса магазинов - указаны (вроде бы это не вполне магазины, а киоски), указаны и телефоны.</p>
+
+<p>Если эта книга у них в наличии есть … Ну … не хотелось бы пообещать и не сделать, поэтому наверное лучше так сказать -</p>
+
+<p>“попробую попытаться что-нибудь узнать”, если для Вас время не очень критично, возможно и не придется столько переплачивать …</p>
+
+<p>Примерно в течение недели будет ясно - получится что-то или нет.</p>
+
+<p><strong>valery</strong> 12-01-2011</p>
+
+<p>В киоске павильона “Цветы” на ВВЦ, книга в наличии есть …</p>
+
+<p>Осталось поймать кого-то из знакомых со “свободным временем” :-\ :-\ :-\</p>
+
+<p><strong>Coccinella</strong> 12-01-2011</p>
+
+<p>Спасибо, Валерий, попытаюсь отловить своих друзей в Москве.</p>
+
+<p><strong>valery</strong> 12-01-2011</p>
+
+<p>Собственно, я не совсем для себя ее искал :), завтра человек будет там и должен купить. К сожалению, тут же уедет в Питер, вернется только после выходных и лишь тогда сможет выслать …</p>
+
+<p><strong>Олеганос</strong> 12-01-2011</p>
+
+<p>:D Во ты даешь, Лер! шерлок хомс блин :D</p>
+
+<p>Мож приезжай ко мне в Сызрань, а то у мня гараж в октябре выставили дома… тыщ на 10 баксов.</p>
+
+<p>До сих пор так и не пойму кто: бандиты или менты &gt;:( :Крайних естественно таки нету :D</p>
+
+<p><strong>Coccinella</strong> 12-01-2011</p>
+
+<p>Спасибо, Валерий, Вы и правда - Пуаро. :)</p>
+
+<p><strong>Садовник</strong> 12-01-2011</p>
+
+<blockquote>
+  <p>До сих пор так и не пойму кто: бандиты или менты &gt;:( :</p>
+</blockquote>
+
+<p>А у вас это до сих пор разные люди? :o</p>
+
+<p><strong>Олеганос</strong> 12-01-2011</p>
+
+<p>:D с виду вроде разные - шифруются походу</p>
+
+<p><strong>valery</strong> 12-01-2011</p>
+
+<blockquote>
+  <p>А у вас это до сих пор разные люди? :o</p>
+</blockquote>
+
+<p>:D</p>
+
+<p><strong>ProRus</strong> 14-01-2011</p>
+
+<blockquote>
+  <p>Нет, такие вещи надо иметь свои, но уж очень дорого!</p>
+</blockquote>
+
+<p>Может купить скопом и в закрытый раздел ее? :)</p>
+
+<p><strong>Олеганос</strong> 14-01-2011</p>
+
+<p>поддерживаю!</p>
+
+<p><strong>otec</strong> 14-01-2011</p>
+
+<p>Кто-нибудь пользовался этим сервисом <a href="http://www.worldcat.org" target="_blank">http://www.worldcat.org</a></p>
+
+<p>Хотел скачать книгу <a href="http://www.worldcat.org/title/rol-luchistoi-energii-v-vyiavlenii-potentsialnoi-produktivnosti-rastenii/oclc/12536973" target="_blank">http://www.worldcat.org/title/rol-luchistoi-energii-v-vyiavlenii-potentsialnoi-produktivnosti-rastenii/oclc/12536973</a> что то не получилось.</p>
+
+<p><strong>ProRus</strong> 14-01-2011</p>
+
+<blockquote>
+  <p>Кто-нибудь пользовался этим сервисом <a href="http://www.worldcat.org" target="_blank">http://www.worldcat.org</a></p>
+
+  <p>Хотел скачать книгу <a href="http://www.worldcat.org/title/rol-luchistoi-energii-v-vyiavlenii-potentsialnoi-produktivnosti-rastenii/oclc/12536973" target="_blank">http://www.worldcat.org/title/rol-luchistoi-energii-v-vyiavlenii-potentsialnoi-produktivnosti-rastenii/oclc/12536973</a> что то не получилось.</p>
+</blockquote>
+
+<p>А на каком это языке та?</p>
+
+<p><strong>otec</strong> 14-01-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Кто-нибудь пользовался этим сервисом <a href="http://www.worldcat.org" target="_blank">http://www.worldcat.org</a></p>
+
+    <p>Хотел скачать книгу <a href="http://www.worldcat.org/title/rol-luchistoi-energii-v-vyiavlenii-potentsialnoi-produktivnosti-rastenii/oclc/12536973" target="_blank">http://www.worldcat.org/title/rol-luchistoi-energii-v-vyiavlenii-potentsialnoi-produktivnosti-rastenii/oclc/12536973</a> что то не получилось.</p>
+  </blockquote>
+
+  <p>А на каком это языке та?</p>
+</blockquote>
+
+<p>На русском у них с кодировкой не все в порядке</p>
+
+<p><strong>Mole_Garden</strong> 14-01-2011</p>
+
+<blockquote>
+  <p>Кто-нибудь пользовался этим сервисом</p>
+
+  <p>Хотел скачать книгу что то не получилось.</p>
+</blockquote>
+
+<p>Это видимо Мошков Б.С.: “Роль лучистой энергии в выявлении потенциальной продуктивности растений”. Скачать можно здесь - <a href="http://depositfiles.com/ru/files/ata9wnchl" target="_blank">тыц</a></p>
+
+<p><strong>otec</strong> 14-01-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Кто-нибудь пользовался этим сервисом</p>
+
+    <p>Хотел скачать книгу что то не получилось.</p>
+  </blockquote>
+
+  <p>Это видимо Мошков Б.С.: “Роль лучистой энергии в выявлении потенциальной продуктивности растений”. Скачать можно здесь - <a href="http://depositfiles.com/ru/files/ata9wnchl" target="_blank">тыц</a></p>
+</blockquote>
+
+<p>Да она,скачал,спасибо.Не подскажите ссылку на ““ЛИСОВСКИЙ, ГЕНРИХ МИХАЙЛОВИЧ. ОЧЕРКИ ЧАСТНОЙ СВЕТОКУЛЬТУРЫ РАСТЕНИЙ / Г.М. ЛИСОВСКИЙ, В.А. ДОЛГУШЕВ ; АН СССР, СИБ. ОТД-НИЕ, ИН-Т БИОФИЗИКИ, КРАСНОЯР. ГОС. УН-Т”</p>
+
+<p><strong>Mole_Garden</strong> 15-01-2011</p>
+
+<p>Не, таких ссылок нет.</p>
+
+<p><strong>Coccinella</strong> 11-02-2011</p>
+
+<p>УРААААА!!!!! Сегодня книжка пришлааааа!!! Уже читаю и вообще - полностью счастлива !!!!!!!!!!!!</p>
+
+<p>Спасибо, Валерий!!!!!!!!!!!</p>
+
+<p>:-* :-* :-* :-* :-* :-* :-* :-* :-* :-* :-* :-*</p>
+
+<p>$) $) $) $) $) $) $)</p>
+
+<p><strong>valery</strong> 11-02-2011</p>
+
+<p>:-[</p>
+
+<p><strong>valery</strong> 01-04-2011</p>
+
+<p>:o :o :o :o :o :o :o :o :o</p>
+
+<p>А мне сегодня принесли квитанцию почтовую … :o :o :o :o :o</p>
+
+<p>Довольно неожиданно :o</p>
+
+<p>Пришлось идти на почту. А там … $) $) $) $)</p>
+
+<p>Ох.</p>
+
+<p>Уважаемая Coccinella, наверное, не стоило себя так обременять … даже неловко. :-[</p>
+
+<p>Хотя, конечно, крайне приятно <em>Dance</em> Просто огромное, огромное спасибо ! Практически - моя мечта <em>Dance</em></p>
+
+<p>Точнее даже - несколько “мечтов” … $) $) $) $) $) $) $) $) $) $)</p>
+
+<p><strong>Садовник</strong> 01-04-2011</p>
+
+<p>Опять интрига. :o</p>
+
+<p>Валерий, Выже перевоспитываетесь (в подписи) :-X</p>
+
+<p>Хвастайтесь же скорей подарками!!! <em>Bravo</em></p>
+
+<p>Упс!</p>
+
+<p>Впрочем если там что-то личное - то не надо :-[</p>
+
+<p><strong>valery</strong> 01-04-2011</p>
+
+<p>Ну прям, Андрей, Вы скажете - личное :-[ :-[ :-[ :-[ :-[</p>
+
+<p>Вполне даже “общественное”… :-[ :-[ :-[ :-[ :-[</p>
+
+<p>Мятка … (Вау-вау, шоколадки “шоко” …), Тимьян <em>Dance</em>, Розмарин <em>Dance</em> … … … и ДАЖЕ :o - Дынька и Декоративная Тыковка … <em>Dance</em></p>
+
+<p>Эх … Ну, травки-то еще, я, возможно, выращу … А вот тыковку бы в форуме показать, это да … (смайлик, с мечтательно глазами вверх ) … <em>Wall</em></p>
+
+<p>$) $) $) $) $)</p>
+
+<p><strong>valery</strong> 01-04-2011</p>
+
+<blockquote>
+  <p>Валерий, Выже перевоспитываетесь (в подписи) :-X</p>
+</blockquote>
+
+<p>Почему ж это “только в подписи” :( :( :( , я ж специально “ругаться” только на другие форумы хожу <em>Wall</em> Даже нехорошие слова забыл. Если нужно вспомнить - на руки гляжу (химическим карандашом на ладонях записываю :D )</p>
+
+<p><strong>Coccinella</strong> 01-04-2011</p>
+
+<p>Да ну вас, джентльмены! засмущали… :-[ Я боялась, не дойдет. А тыкву Вы еще на даче вырастить успеете, в “огороде” уже все томаты позабивали… :)</p>
+
+<p><strong>Oxy</strong> 31-05-2013</p>
+
+<p>Теперь помогите мне найти книжку, хоть в электронном виду(в электронном даже лучше):</p>
+
+<p>Копылов В.И. Земляника. Пособие</p>
+
+<p><strong>gardener</strong> 01-06-2013</p>
+
+<p>Можно у автора заказать <a href="http://zemlyanika-sad.com.ua/" target="_blank">http://zemlyanika-sad.com.ua/</a></p>
+
+<p><strong>mitrotech</strong> 01-06-2013</p>
+
+<blockquote>
+  <p>Можно у автора заказать</p>
+</blockquote>
+
+<p>Это слишком просто и не интересно, драйва нету.</p>
+
+<p><strong>Oxy</strong> 01-06-2013</p>
+
+<p>Попробуем созвонится :)</p>
+
+<p><strong>lemonia</strong> 10-09-2014</p>
+
+<blockquote>
+  <p>Это видимо Мошков Б.С.: “Роль лучистой энергии в выявлении потенциальной продуктивности растений”. Скачать можно здесь - <a href="http://depositfiles.com/ru/files/ata9wnchl" target="_blank">тыц</a></p>
+</blockquote>
+
+<p>Кто успел скачать, поделитесь пожалуйста, документа уже нет по ссылке.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

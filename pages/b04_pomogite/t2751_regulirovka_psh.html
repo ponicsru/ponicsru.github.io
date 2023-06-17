@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Регулировка пш | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Регулировка пш">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Регулировка пш</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>олег87</strong> 30-10-2017</p>
+
+<p>Подскажите что лучше использовать для регулировки пш. Уксусом можно? Или лучше электролит?</p>
+
+<p><strong>Evgeny41</strong> 30-10-2017</p>
+
+<p>Азотная кислота или ортофосфорная (она же преобразователь ржавчины). Можно серную, я пользуюсь ей. Уксусную незнаю, на форуме писали что лимонную можно, но не рекомендуется т.к. это органика.</p>
+
+<p><strong>Cyclamech</strong> 30-10-2017</p>
+
+<blockquote>
+  <p>Подскажите что лучше использовать для регулировки пш. Уксусом можно? Или лучше электролит?</p>
+</blockquote>
+
+<p>Ммм… А что Вы подразумеваете под регулировкой pH?</p>
+
+<p>…</p>
+
+<p>Есть мнение, что если растворить все ингредиенты в чистой (дистиллированной?) воде, то мы получим pH ~ 5.7-5.8. <em>???</em></p>
+
+<p><strong>Vad</strong> 30-10-2017</p>
+
+<p>всегда так и получалось..</p>
+
+<p>а вот в этом обороте (в нынешнем) ph получается 4.8…</p>
+
+<p>ахтунговато… уситывая что попрет вниз… из за кальциевой селитры с нитратом аммония..</p>
+
+<p>сижу думаю.. чем подымать ))</p>
+
+<p>кроме едкого натра ничего в голову не приходит..</p>
+
+<p>КОН чета не ищется в округе… <em>???</em></p>
+
+<p><strong>олег87</strong> 30-10-2017</p>
+
+<p>У меня изначально пш воды 7.2. После разведения получаеться 6.9. Может и не стоит понижать огурцам 6 недель?</p>
+
+<p><strong>Cyclamech</strong> 30-10-2017</p>
+
+<blockquote>
+  <p>У меня изначально пш воды 7.2. После разведения получаеться 6.9. Может и не стоит понижать огурцам 6 недель?</p>
+</blockquote>
+
+<p>Всё верно: ингредиенты должны немного “закислять”.</p>
+
+<p>Вы же должны производить водоподготовку: Вам нужно понизить кислотой pH воды до такого значения, чтобы при добавлении ингредиентов pH становился требуемым. Кислота не просто добавляется, но происходит реакция. Чтобы продукты реакции были растворимыми, то предпочтительно использовать азотную или ортофосфорную кислоты.</p>
+
+<p><strong>олег87</strong> 30-10-2017</p>
+
+<p>А что по насчёт уксуса?</p>
+
+<p><strong>Cyclamech</strong> 30-10-2017</p>
+
+<p>Уксус - органика. Электролит на худой конец - это серная кислота.</p>
+
+<p><strong>siv237</strong> 30-10-2017</p>
+
+<blockquote>
+  <p>А что по насчёт уксуса?</p>
+</blockquote>
+
+<p>Тоже, что и лимонный сок - органика. Прямой путь размножить живность.</p>
+
+<p><strong>Cyclamech</strong> 31-10-2017</p>
+
+<p>Закрепим материал. Вот из этой книжки текст</p>
+
+<p><a href="https://t.me/ponics_ru_files/18846" target="_blank"><img src="/imagehost2/thumbs/415.png" alt="" /></a></p>
+
+<p>с моим вольно-кривым переводом. <em>crazy</em></p>
+
+<p>Хочу заметить, что, на мой взгляд, неверно описанное ниже называть “регулировка pH”. Правильно будет - “водоподготовка”. “Регулировкой pH” я бы, скорее, назвал изменении соотношения нитратной и аммонийной форм азота в растворе. <em>???</em></p>
+
+<p>Temporary hardness is a type of water hardness caused by the presence of dissolved carbonate minerals (calcium carbonate and magnesium carbonate). When dissolved, these minerals deliver calcium and magnesium cations (Ca2+, Mg2+) and carbonate and bicarbonate anions (CO32-, HCO3-). The optimal pH level for hydroponics is 5.5. The pH of the water will be too high if the irrigation water contains substantial quantities of carbonate and bicarbonate (CO32-, HCO3-). This is often the case when well water is used. This water should therefore be treated with acid to neutralise the HCO3- and to lower the pH of the nutrient solution. The quantity of acid to be added is determined by the quantity of HCO3- present.</p>
+
+<p>[size=8pt]Временная жёсткость воды обусловлена присутствием в ней карбонатов кальция и магния, представленных в растворённом виде катионами кальция и магния, а также карбонат и бикарбонат анионами. Оптимальный pH для гидропоники ~ 5,5, однако при наличии достаточного количества карбонат и бикарбонат анионов в исходной воде её pH окажется чрезмерно велик. pH исходной воды можно понизить кислотой, нейтрализовав гидрокарбонатный анион. Количество потребной кислоты определяется количеством гидрокарбонатов в исходной воде.[/size]</p>
+
+<p>When an acid is added to the water, the bicarbonate will be neutralised by the proton of the acid and the pH of the solution will decrease. Calcium (or magnesium) will remain available for plant uptake, and the anion of the acid will remain dissolved in the water.</p>
+
+<p>Ca2+ + 2HCO3- + 2HNO3 ⇋ Ca2+ + 2CO2 + 2H2O + 2NO3-</p>
+
+<p>Nitric acid is commonly used for this purpose, but phosphoric acid and its derivatives like urea phosphate could also be used. With the addition of more acid, the concentration of acid associated anions in the solution, like nitrate and phosphate, will increase. However, these quantities should not exceed the desired concentrations for the nutrient solution. Since these anion concentrations in the nutrient solutions will limit the quantity of acid that can be added, the quantity of HCO3- that can be neutralised is limited. Consequently, the initial concentration of HCO3- in the irrigation water is a major quality issue. Treatment of bicarbonate with an acid releases carbon dioxide (CO2) and water. CO2 must be allowed to escape from the nutrient solution; if not, the pH of the solution will not be lowered and will fluctuate. This means that the reaction of acid and bicarbonate should take place in open systems, e.g. in an open mixing tank.</p>
+
+<p>[size=8pt]При добавлении в воду кислоты произойдёт реакция нейтрализации (см. уравнение), которая понизит pH. Для нейтрализации используется азотная или ортофосфорная кислоты. Стоит учитывать, что азотная кислота добавит в раствор нитрат-анионы, а ортофосфорная - фосфат-анионы. Их количество будет зависеть от количества гидрокарбонат-иона, присутствующего в исходной воде, потому качество исходной воды определяется количеством гидрокарбонатов, содержащейся в ней (чем меньше - тем лучше). Также растению окажутся доступны ионы кальция и магния, которые содержались в исходной воде, что тоже стоит учитывать. В результате реакции нейтрализации одним из продуктов получается углекислый газ, присутствие которого в растворе может привести к колебанию (флуктуациям) pH, потому нейтрализацию стоит производить в открытых ёмкостях для того, чтобы углекислый газ мог свободно уйти в атмосферу.[/size]</p>
+
+<p><strong>siv237</strong> 31-10-2017</p>
+
+<blockquote>
+  <p>Уксус - органика. Электролит на худой конец - это серная кислота.</p>
+</blockquote>
+
+<p>Мне показалось практичным, использовать паяльную ортофосфорную кислоту.</p>
+
+<p><a href="https://t.me/ponics_ru_files/18847" target="_blank"><img src="/imagehost2/thumbs/photo20171031185023.jpg" alt="" /></a></p>
+
+<p>Удобный объем и безопасная упаковка. Продается в магазинах радиодеталей.</p>
+
+<p>Одна-две капельки в 10 литрах снижают pH с 7 до 6 примерно.</p>
+
+<p><strong>олег87</strong> 31-10-2017</p>
+
+<p>Спасибо за Советы. Попробую ортофосфорную. Электролит не стабилен пш постоянно меняется.</p>
+
+<p><strong>андрей п</strong> 31-10-2017</p>
+
+<p>В стабильных температурных условиях электролит тоже стабилен. :)Нестабильный рН может быть вызван некорректной работой прибора по его измерению :-\</p>
+
+<p><strong>Cyclamech</strong> 31-10-2017</p>
+
+<blockquote>
+  <p>Удобный объем и безопасная упаковка. Продается в магазинах радиодеталей.</p>
+</blockquote>
+
+<p><em>8)</em></p>
+
+<p>Электролитом в пластиковой бутылке я испортил полку и несколько штанов… <em>Wall</em> Неудобно с ним обращаться, даже используя шприц.</p>
+
+<p>Да и серная кислота должна давать нерастворимый сульфат кальция, выпадающий в осадок. Что некошерно.</p>
+
+<p>…</p>
+
+<p>Впрочем, я снова решил отказаться от “буферизации” и растворяю соли просто в обратном “осмосе”. Совсем ленивый стал. pH чётко 5,7 получается. Всё равно в моём случае подоконникового цветоводства “буфер” не поможет. <em>crazy</em></p>
+
+<p><strong>олег87</strong> 31-10-2017</p>
+
+<p>Попробовал ортофосфорную кислоту. Начинал с 1 мл . Не работает дошол до 10 мл на 30 литров пш упал на 0.6 единиц. Не густо. Электролита уходит на 30 л 3 мл падает с 7.2 до 5.6</p>
+
+<p><a href="https://t.me/ponics_ru_files/18848" target="_blank"><img src="/attachimages/18232_IMG_5637.jpg" alt="" /></a></p>
+
+<p><strong>Vad</strong> 31-10-2017</p>
+
+<p>Электролит форевер! <em>Dance</em></p>
+
+<p>бутылку купил в 2012 году..</p>
+
+<p>за все время использовано 150 мл.. из 1000 ))</p>
+
+<p>для безопасности.. электролит разводится 1/10…</p>
+
+<p>прожечь штаны кокосника сложно..</p>
+
+<p>но можно, при желании ))</p>
+
+<p><strong>Cyclamech</strong> 31-10-2017</p>
+
+<blockquote>
+  <p>для безопасности.. электролит разводится 1/10…</p>
+
+  <p>прожечь штаны кокосника сложно..</p>
+
+  <p>но можно, при желании ))</p>
+</blockquote>
+
+<p>У меня так и “не сложилось” развести: использовал чистоганом… <em>crazy</em> <em>Wall</em></p>
+
+<p><strong>Vad</strong> 31-10-2017</p>
+
+<p>заставь дурака богу молиться, так он стеклянный <a href="https://ru.wiktionary.org/wiki/%D1%83%D0%B9" target="_blank">УЙ</a> сломает :D</p>
+
+<p><strong>siv237</strong> 31-10-2017</p>
+
+<blockquote>
+  <p>Попробовал ортофосфорную кислоту. Начинал с 1 мл . Не работает дошол до 10 мл на 30 литров пш упал на 0.6 единиц. Не густо. Электролита уходит на 30 л 3 мл падает с 7.2 до 5.6</p>
+</blockquote>
+
+<p>Вчера готовил на 10 литров раствор. Ph Готового был 6.8. Три капельки - 5.8</p>
+
+<p>Скорее всего буферность воды из-за наличия в ней гидрокарбонатов, оказывает основной эффект сопротивления закислению.</p>
+
+<p>Ну и может составы разные?</p>
+
+<p>Но в любом случае, серная всё-же лучше как мне кажется подходит для гидропоники, а мое предложение ортофосфорной, как доступная любому альтернатива уксусной или лимонной кислоты.</p>
+
+<p>Не каждый готов хранить у себя в квартире, стеклянную бутыль концентрированной кислоты.</p>
+
+<p><strong>Cyclamech</strong> 31-10-2017</p>
+
+<blockquote>
+  <p>Но в любом случае, серная всё-же лучше как мне кажется подходит для гидропоники…</p>
+</blockquote>
+
+<p>Вай?</p>
+
+<p>Серная при нейтрализации “губит” ионы кальция, содержащиеся в воде, в нерастворимый осадок… И каким образом происходит эта реакция во времени - нам не слишком понятно… Потому мануал советует именно такие кислоты, которые порождают растворимые соли…</p>
+
+<p><strong>Borodach1</strong> 01-11-2017</p>
+
+<p>Нерастворимость сульфата кальция понятие относительное. Для того количестве гипса, образующегося при капании серной кислотой, он вполне растворим. Посмотрите растворимость сульфата кальция.</p>
+
+<p><strong>allex_step</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>Электролитом в пластиковой бутылке я испортил полку и несколько штанов… <em>Wall</em> Неудобно с ним обращаться, даже используя шприц.</p>
+
+  <p>Да и серная кислота должна давать нерастворимый сульфат кальция, выпадающий в осадок. Что некошерно.</p>
+</blockquote>
+
+<p>[font=verdana]да ладно?!?!?[/font] :o</p>
+
+<p>у меня никаких затруднений не возникает однако…</p>
+
+<p><img src="http://i.piccy.info/i9/881460f9d4d963b0162730dfc0ed80d0/1509504300/52167/1149857/2017_10_31_19_53_58_800.jpg" alt="" /><img src="http://i.piccy.info/a3/2017-11-01-02-45/i9-11730319/566x755-r/i.gif" alt="" /></p>
+
+<p><strong>orgail</strong> 01-11-2017</p>
+
+<p>Всегда пользовался электролитом.. Пробовал и ортофосфорную одно время. Большой разницы не ощутил, кроме разницы в стоимости поллитры серной и 50 мл ортфосф или скока там)))</p>
+
+<p><strong>serge mat</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>Нерастворимость сульфата кальция понятие относительное. Для того количестве гипса, образующегося при капании серной кислотой, он вполне растворим. Посмотрите растворимость сульфата кальция.</p>
+</blockquote>
+
+<p>Проблема гипса в том, что если он выпал в осадок, то растворяется обратно очень медленно и неохотно.</p>
+
+<p>В готовом растворе он не образуется из-за низкой концентрации.</p>
+
+<p>Он может образоваться если раствор готовится в меньшем объеме, чтобы потом довести до нужного объема.</p>
+
+<p>рН мы контролируем не в концентрате, а уже в конечном разбавлении (в концентрате его выставлять бессмысленно, всё равно неизвестно, каким он станет после разбавления). В конечном разбавлении всё равно какой кислотой его доводить (органические кислоты, согласен, не желательны).</p>
+
+<p><strong>serge mat</strong> 01-11-2017</p>
+
+<blockquote>
+  <p><em>8)</em></p>
+
+  <p>Электролитом в пластиковой бутылке я испортил полку и несколько штанов… <em>Wall</em> Неудобно с ним обращаться, даже используя шприц.</p>
+</blockquote>
+
+<p>Испортить штаны можно любой кислотой, фосфорная ничуть не лучше.</p>
+
+<p>Если кислота попала на одежду (или предполагаете, что могла попасть на одежду) надо всю одежду застирать как можно быстрее. Тогда дырка получится не так быстро.</p>
+
+<p>Я своим школьникам говорю так, если не застираете одежду, дырка будет уже завтра, а если застираете как можно быстрее, то только через месяц. ;)</p>
+
+<p><strong>Cyclamech</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>рН мы контролируем не в концентрате, а уже в конечном разбавлении…</p>
+</blockquote>
+
+<p>А “умные книжки” говорят, что “править” нужно не раствор, а воду…</p>
+
+<p><strong>cpf</strong> 01-11-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>рН мы контролируем не в концентрате, а уже в конечном разбавлении…</p>
+  </blockquote>
+
+  <p>А “умные книжки” говорят, что “править” нужно не раствор, а воду…</p>
+</blockquote>
+
+<p>Это - “предварительно” (потом, всё равно надо надо править окончательный ph раствора, кислотой или “карбонатной” водой).</p>
+
+<p><strong>serge mat</strong> 01-11-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>рН мы контролируем не в концентрате, а уже в конечном разбавлении…</p>
+  </blockquote>
+
+  <p>А “умные книжки” говорят, что “править” нужно не раствор, а воду…</p>
+</blockquote>
+
+<p>Умные книжки тоже полны чепухи. В некоторых советуют делать раствор на дистиллированной воде… Урожай получится золотой. :o</p>
+
+<p>Желательно, конечно, иметь представление, что находится в исходной воде. Я для себя нашел информацию на сайте водоканала. :)</p>
+
+<p>А так… Если не жаль времени и тепла, то хорошо бы закипятить воду перед использованием, тогда карбонатов в ней не останется, пока вода остывает они все окажутся осадком на дне.</p>
+
+<p><strong>Cyclamech</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>А так… Если не жаль времени и тепла, то хорошо бы закипятить воду перед использованием, тогда карбонатов в ней не останется, пока вода остывает они все окажутся осадком на дне.</p>
+</blockquote>
+
+<p>Я ж писал выше, что использую “обратный осмос”. Водопроводная артезианская почти ЕС = 1, на выходе из самого примитивного и дешёвого (~3,5к рублей) прибора получаю ЕС = 0,056. <em>Bos</em> Употребляю в пищу - её показатели круче любой бутилированной! Забавно, что производитель озвучивает срок эксплуатации мембраны и фильтра до замены в 0,5-1 год(а) (у меня есть запасные), однако за 3 года эксплуатации показатели стабильны и замена пока не потребовалась. <em>???</em> Да, счётчика нет: расклад 1:3 где-то… Т.е. 75% уходит в канализацию. Впрочем, сильно зависит от качества водопроводной воды: у нас вода неплохая (артезианские скважины), но достаточно минерализована.</p>
+
+<p><strong>cpf</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>……….</p>
+
+  <p><em>???</em> Да, счётчика нет: расклад 1:3 где-то… Т.е. 75% уходит в канализацию. Впрочем, сильно зависит от качества водопроводной воды: у нас вода неплохая (артезианские скважины), но достаточно минерализована.</p>
+</blockquote>
+
+<p>Больше зависит от давления в водопроводе (или наличия повышающей давление помпы). Чем выше давление, тем меньше воды уходит в канализацию,и быстрее происходит процесс фильтрации (но мембрана быстрее изнашивается/забивается, нужна более прочная и дорогая).</p>
+
+<p><strong>Cyclamech</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>Чем выше давление, тем меньше воды уходит в канализацию,и быстрее происходит процесс фильтрации…</p>
+</blockquote>
+
+<p>Чойта не уловил логики… <em>???</em></p>
+
+<p>Выше давление - выше поток. И, думается, что качество очистки должно страдать, не?</p>
+
+<p><strong>allex_step</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>Желательно, конечно, иметь представление, что находится в исходной воде. Я для себя нашел информацию на сайте водоканала. :)</p>
+</blockquote>
+
+<p>тоже использую данный подход</p>
+
+<p><strong>vladindre</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>Чойта не уловил логики…</p>
+</blockquote>
+
+<p>Чем больше давление ,тем быстрей нафильтровывается чистая вода. А качество да , конечно , падает.</p>
+
+<p>У себя включаю на капельный набор вообще (фанатизм ). Литровая банка набирается где-то минут 20.</p>
+
+<p>Да и следить особо не надо , поскольку набор никакой. Если будет переливаться то чуток.</p>
+
+<p><strong>Cyclamech</strong> 01-11-2017</p>
+
+<p>vladindre, у Вас без минерализатора? В пищу употребляете?</p>
+
+<p><strong>cpf</strong> 01-11-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Чем выше давление, тем меньше воды уходит в канализацию,и быстрее происходит процесс фильтрации…</p>
+  </blockquote>
+
+  <p>Чойта не уловил логики… <em>???</em></p>
+
+  <p>Выше давление - выше поток. И, думается, что качество очистки должно страдать, не?</p>
+</blockquote>
+
+<p>Чегой-то: здесь ОБРАТНЫЙ осмос (т.е. осмотическое давление стремится “загнать” чистую воду в “грязную, чтобы разбавить и выровнять концентрацию), и фильтрация происходит ПРОТИВОДАВЛЕНИЕМ. Чем оно больше, тем больше воды удаётся протолкнуть через мембрану с теми же свойствами.</p>
+
+<p>Качество фильтрования зависит только от качества/состояния мембраны (размера пор, площади, прочности, износа/повреждений).</p>
+
+<p><strong>vladindre</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>у Вас без минерализатора?</p>
+</blockquote>
+
+<p>Да. Без минерализатора. Но это не счень страшно , так как минимум полгода использую изумительную воду прям сразу из скважины в нашем СНТ. Там всю жизнь даже бабушки тащат 5 л бутыли. А на машинах грузят бадьями как в пустыню. Вкус воды фантастика. Глотаешь и не можешь напиться.</p>
+
+<p><strong>Cyclamech</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>Там всю жизнь даже бабушки тащат 5 л бутыли. А на машинах грузят бадьями как в пустыню. Вкус воды фантастика. Глотаешь и не можешь напиться.</p>
+</blockquote>
+
+<p>Ога… измерял я TDS-метром иные “святые источники”… Ужос!</p>
+
+<p>Чистая вода не имеет вкуса - “вкус” ей придаёт минерализация. А вообще вкус чаю или кофе должны придавать чай или кофе, а никак не вода! <em>crazy</em></p>
+
+<p><strong>vladindre</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>Чистая вода не имеет вкуса</p>
+</blockquote>
+
+<p>Именно имеет. Не собственно вкус , а отсутствие всякой дряни в городской воде. Поэтому отличная чистая вода кажется очень именно вкусной. Была бы плохая никто не таскал бы на протяжении лет 50 точно. А насчет святых источников вполне возможно. Неподалеку от меня есть такой. Пробовал как-то - ничего особенно. Как дома из-под крана. А позже слышал новость , что в ем обнаружили какие-то недружественные нам микробы. Вот вам и святой источник. А с садов как волокли так и волокут каждый день. Бабушки и дедушки бывает тащат с собой по 3-4-5 бадеек ! Я товарищ из неслабых , но больше одной не таскал. Больше тяжеловато.</p>
+
+<p><strong>Cyclamech</strong> 01-11-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Чистая вода не имеет вкуса</p>
+  </blockquote>
+
+  <p>Именно имеет.</p>
+</blockquote>
+
+<p>Ммм… Вики пишет:</p>
+
+<blockquote>
+  <p>Вода́ (оксид водорода) — бинарное неорганическое соединение с химической формулой Н2O. Молекула воды состоит из двух атомов водорода и одного — кислорода, которые соединены между собой ковалентной связью. При нормальных условиях представляет собой прозрачную жидкость, не имеющую цвета (при малой толщине слоя), запаха и вкуса.</p>
+</blockquote>
+
+<p>У меня из крана - вкусная! Реально вкусная, особенно после московской (с привкусом хлора), ибо артезианская, с высокой минерализацией. А “осмос” на вкус - как “вату жевать” и “напиться” им сложно - артезианская намного лучше утоляет жажду.</p>
+
+<p>Я к тому, что лишь прибор покажет реальное качество воды, а все эти “ощущения” - простой (само)обман. Как раз-таки “плохая” (с высокой минерализацией) вода кажется вкуснее.</p>
+
+<p><strong>cpf</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>У меня из крана - вкусная! Реально вкусная, особенно после московской (с привкусом хлора), ибо артезианская, с высокой минерализацией. А “осмос” на вкус - как “вату жевать” и “напиться” им сложно - артезианская намного лучше утоляет жажду.</p>
+
+  <p>Я к тому, что лишь прибор покажет реальное качество воды, а все эти “ощущения” - простой (само)обман. Как раз-таки “плохая” (с высокой минерализацией) вода кажется вкуснее.</p>
+</blockquote>
+
+<p>Это точно. Воде вкус придают растворённые в ней соли (они же “утоляют жажду” :))</p>
+
+<p>Зато, используя осмос (уже лет 15), заметил, что намного сильнее воспринимаешь вкус чая, кофе, бульонов, приготовленных на такой воде. Минерализованная вода (не осмотическая), смягчает, и , как бы “приглушает” вкус продуктов,хотя кажется более вкусной.</p>
+
+<p>P\S Как человек, проживший большую часть жизни в Москве замечу: в Мск не используют хлорирование в водоподготовке (либо фторируют, либо ионизируют). Хлорируют в некоторых районах Подмосковья.</p>
+
+<p><strong>Cyclamech</strong> 01-11-2017</p>
+
+<blockquote>
+  <p>P\S Как человек, проживший большую часть жизни в Москве замечу: в Мск не используют хлорирование в водоподготовке (либо фторируют, либо ионизируют). Хлорируют в некоторых районах Подмосковья.</p>
+</blockquote>
+
+<p>“Привкус хлора” в моей фразе - это, скорее, синоним “привкуса дерьма”… <em>crazy</em> На самом деле я совсем не знаток, как пахнет хлор, - зато я спец по запаху аммиака! <em>crazy</em></p>
+
+<p><strong>serge mat</strong> 02-11-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Чистая вода не имеет вкуса</p>
+  </blockquote>
+
+  <p>Именно имеет. Не собственно вкус , а отсутствие всякой дряни в городской воде. Поэтому отличная чистая вода кажется очень именно вкусной. Была бы плохая никто не таскал бы на протяжении лет 50 точно. А насчет святых источников вполне возможно. Неподалеку от меня есть такой. Пробовал как-то - ничего особенно. Как дома из-под крана. А позже слышал новость , что в ем обнаружили какие-то недружественные нам микробы. Вот вам и святой источник. А с садов как волокли так и волокут каждый день. Бабушки и дедушки бывает тащат с собой по 3-4-5 бадеек ! Я товарищ из неслабых , но больше одной не таскал. Больше тяжеловато.</p>
+</blockquote>
+
+<p>Впервые я занялся очисткой воды вымораживанием, когда еще ничего не знал об обратном осмосе и ЕС. Делал это только зимой, когда на улице -10°С или ниже.</p>
+
+<p>Кто не в курсе, метод такой. Кипяченую воду в пластмассовом тазике выставляю на мороз. Вода начинает замерзать. Сквозь лед можно видеть какое количество воды успело замерзнуть. Задача в том, чтобы остановить процесс, когда замерзнет примерно половина воды. Тогда тазик заносится обратно домой, перевернув его пол струей горячей воды я заставляю лед выпасть из тазика и разбиваю его. Незамерзшая вода выливается, а растопленный лед - это очищенная вода.</p>
+
+<p>Этот метод позволяет попробовать получить разные степени очистки. Их можно различать по консистенции льда: кристально прозрачный лед, лед с пузырьками, матовый лед, желтый лед. Чтобы получить желтый лед надо заморозить всю воду. Желтый (самый грязный) лед будет в центре. Если не знаете, как пахнет хлор, можете познакомиться, желтый лед отчетливо пахнет хлором.</p>
+
+<p>По моим ощущениям чистую воду можно отличить на вкус. И, да, чистая вода - вкусная! <em>8)</em></p>
+
+<p><strong>Cyclamech</strong> 02-11-2017</p>
+
+<blockquote>
+  <p>Этот метод позволяет попробовать получить разные степени очистки. Их можно различать по консистенции льда: кристально прозрачный лед, лед с пузырьками, матовый лед, желтый лед.</p>
+</blockquote>
+
+<p>Ммм… У меня коллега вместе с женой увлекается замораживанием воды и “восстановлением её структуры”… <em>crazy</em> По-моему лженаукой попахивает, не? Я замораживал ради прикола и водопроводную и обратноосмотическую и даже коллеге давал на оценку… <em>crazy</em> Мне показалось, что матовость и пузырьковость зависят не от чистоты, а от условий заморозки (например, скорости заморозки) и наличия в воде растворённых газов. <em>???</em></p>
+
+<p><strong>serge mat</strong> 02-11-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Этот метод позволяет попробовать получить разные степени очистки. Их можно различать по консистенции льда: кристально прозрачный лед, лед с пузырьками, матовый лед, желтый лед.</p>
+  </blockquote>
+
+  <p>Ммм… У меня коллега вместе с женой увлекается замораживанием воды и “восстановлением её структуры”… <em>crazy</em> По-моему лженаукой попахивает, не? Я замораживал ради прикола и водопроводную и обратноосмотическую и даже коллеге давал на оценку… <em>crazy</em> Мне показалось, что матовость и пузырьковость зависят не от чистоты, а от условий заморозки (например, скорости заморозки) и наличия в воде растворённых газов. <em>???</em></p>
+</blockquote>
+
+<p>Насчет пузырьков - не берусь описать их возникновение.</p>
+
+<p>Научная база здесь называется перекристаллизация. Это довольно распространенный метод очистки веществ. Работает разными способами. Например, растворив вещество в воде и затем выпаривая мы получим меньше примесей в кристаллах и больше в растворе.</p>
+
+<p>Другое применение этого метода называется Зонная плавка. Так очищают металлы и кристаллы, например, рубины. Цилиндр вещества медленно движется через кольцеобразную печь. Внутри печи вещество находится в жидком состоянии, на выходе застывает. Примеси при этом скапливаются в жидкой фазе и в итоге окажутся на конце полученного цилиндра.</p>
+
+<p>От скорости процесса результат, несомненно, зависит. Скорость должна быть не слишком большой. В моей примере с тазиком процесс очистки не получался когда на улице было ниже -25°С - вода застывала по-другому и чистой фазы не удавалось найти.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

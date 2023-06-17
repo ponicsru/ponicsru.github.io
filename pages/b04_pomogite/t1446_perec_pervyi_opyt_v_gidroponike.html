@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Перец... Первый опыт в гидропонике. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Перец... Первый опыт в гидропонике.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Перец... Первый опыт в гидропонике.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Arael</strong> 11-05-2012</p>
+
+<p>Посадил я значит 4 семечка перца, все разных сортов(3 сладких, 1декоративный острый). Сегодня на одном из кустиков распустился бутон и у меня сразу возник вопрос, а надо ли его опылять? и если опылять то как, цветок то всего один на остальных кустиках бутоны только завязываются.</p>
+
+<p>И на будущее скажите как далеко нужно держать куст острого перца от кустов сладкого чтоб они не переопылились? :-\</p>
+
+<p>P.S. ни как не дотянутся руки до фотика чтоб показать мои растюхи…</p>
+
+<p><strong>Coccinella</strong> 11-05-2012</p>
+
+<p>Он сам опылится, как и томат :). Если пчелы-мухи не летают и сами кисточкой не размахиваете, то они переопылится-то и не могут. А в семеноводстве пространственная изоляция между сортами (чтобы случайно не переопылились) 500 м :)</p>
+
+<p><strong>Arael</strong> 11-05-2012</p>
+
+<p>То есть по идее из этого цветка должен получится перчик без чьей либо помощи и при условии что растению хорошо живётся :-\</p>
+
+<p>Пчёл за два года житья в квартире на 7м этаже не видел, а вот мухи и всякие мелкие летающие насекомые имеются :) благо живут они не долго (имеются в наличии два усатых-полосатых охотника которые в погоне за оными залезают куда угодно включая цветы на подоконнике <em>Wall</em>) так что придётся либо уносить острый перчик в другую комнату или играть в лотерею(угадай какой перчик на вкус :D)</p>
+
+<p><strong>artmaximus</strong> 11-05-2012</p>
+
+<p>а вот у меня на 1 этаже, всегда…“залётные” пчёлы да шмели залетали :D</p>
+
+<p>а вот как огурцы с арбузом зацвели…так второй день, ни одна…“зараза” не залетела, кроме мух &gt;:D</p>
+
+<p>…ничего…уже лилии “открываться” собираются с розами <em>8)</em> вот тогда по прилетают :D</p>
+
+<p>Arael…а мёдом…не пробовал ? :D…вдруг залетят :D</p>
+
+<p><strong>ALB</strong> 11-05-2012</p>
+
+<p>где то натыкался на рекомендацию постукивать по стеблю самоопыляющихся растений для лучшего опыления - свои перцы так постукивал - вроде нормально опылились</p>
+
+<p><strong>Arael</strong> 12-05-2012</p>
+
+<p>При постукивании пыльца из цветка сыпется это я думаю вполне нормально :)</p>
+
+<p>Сегодня при детальном рассмотрении кустиков обнаружил на листьях мелкие бледные точки, а так же мелкие тёмные точки и немного паутины. Погуглив понял что это путинный клещ <em>Wall</em></p>
+
+<p>Что с ним делать то, он же мне весь перец съест? <em>sos</em> <em>sos</em></p>
+
+<p><strong>Acc</strong> 12-05-2012</p>
+
+<p>Мочить гада-вредителя &gt;:( фитоверм, актеллик попеременно ну и климат поправить - сделать плохим для клеща, удачных сражений :)</p>
+
+<p><strong>Arael</strong> 12-05-2012</p>
+
+<p>А какой же климат плох для клеща?</p>
+
+<p><strong>Acc</strong> 12-05-2012</p>
+
+<p>Влажный, рекомендуют после обработки помещать в полиэтиленовый пакет, по возможности, конечно. Еще посмотрите на сайте Сингенты препараты <em>8)</em><a href="http://www.syngenta.com/country/ru/ru/crop-protection/products/insecticides/Pages/home.aspx" target="_blank">http://www.syngenta.com/country/ru/ru/crop-protection/products/insecticides/Pages/home.aspx</a> они крутые ребята в борьбе с ентими …<em>crazy</em></p>
+
+<p><strong>silver_jr</strong> 12-05-2012</p>
+
+<p>Arael, сколько прошло дней от посева до появления первого цветка?</p>
+
+<p><strong>Arael</strong> 13-05-2012</p>
+
+<p>Посажены были перцы 25го марта, цветок распустился 2 дня назад.</p>
+
+<p><strong>Arael</strong> 13-05-2012</p>
+
+<p>Нашёл я наконец все соли по отдельности так что буду делать раствор из них, но возник вопрос. На сайте я нашёл таблицу НПК для разных растений но вот сколько нужно микроэлементов ни где не написано.</p>
+
+<p>Так вот сколько и каких микроэлементов нужно для перцев и салата? Или их количество для всех растений одинаково?</p>
+
+<p><strong>Coccinella</strong> 13-05-2012</p>
+
+<p>Составы растворов посмотрите здесь</p>
+
+<p><a href="http://www.greentalk.ru/node/578?page=1" target="_blank">http://www.greentalk.ru/node/578?page=1</a></p>
+
+<p>Что касается клеща, попробуйте сделать мыльный раствор из любого шампуня или посудомоечного средства и ваткой протереть каждый листик снизу. Четыре растения - это не четыре сотни, справитесь. А насчет фитоверма и актеллика - мысль здравая, но не люблю я настолько серьезные средства в жилых помещениях. Начните с мыла пока найдете химию. Паутинный клещ на перце мне однажды наделал много хлопот, это серьезная проблема. Попробуйте поднять влажность воздуха.</p>
+
+<p><strong>Arael</strong> 13-05-2012</p>
+
+<p>Спасибо за ссылку $)</p>
+
+<p>Про мыльный раствор немного поздно, сегодня нашел и купил фитоверм и актеллик , и даже успел обработать фитовермом. Единственное что я не понял принцип работы химиката (он впитывается в листья или просто убивает на поверхности всю живность)?</p>
+
+<p>Для поднятия влажности для растений и в общем в квартире недавно купил увлажнитель воздуха, но вот не задача, за неделю, если не больше, почти беспрерывной работы, индикатор на приборе как показывал 30% так и показывает, максимум что видел 33% и то не на долго.</p>
+
+<p>Единственное изменение это белый налёт на поверхностях во всей квартире и если форточки прикрыты то стоит туман <em>crazy</em> Вот думаю всю влажность на улицу выносит что ли :-\</p>
+
+<p><strong>Coccinella</strong> 14-05-2012</p>
+
+<p>Вот именно, что всю влажность на улицу выносит.</p>
+
+<p>Фитоверм контактно-кишечного действия, чем больше вредитель его съест, тем скорее погибнет. Дней через 5 надо будет повторить обработку, чтобы убить молодые особи, которые к тому времени вылупятся из (возможно) отложенных яиц.</p>
+
+<p><strong>Arael</strong> 14-05-2012</p>
+
+<p>Повторять обработку обязательно фитовермом или можно актеликом?</p>
+
+<p><strong>Coccinella</strong> 14-05-2012</p>
+
+<p>Можно актелликом, даже лучше, на самом деле :)</p>
+
+<p><strong>Arael</strong> 24-05-2012</p>
+
+<p>С неделю назад вынес перчики на застеклённый балкон ибо в комнате им темно показалось и они начали вытягиваться, хотя окна в комнате и балкон выходят на одну сторону восток юго-восток.</p>
+
+<p>После нескольких дней на балконе на листьях начали появляться светлые сухие пятна, которых до этого не было, фотки прилагаю.</p>
+
+<p>Мелкая рябь на листьях это проделки клеща &gt;:D</p>
+
+<p>Хотелось бы узнать возможные причины данного явления, то ли это ожог от очень сильного солнца, то ли болезнь какая.. <em>sos</em></p>
+
+<p>P.S. фотки почему то выложить не удалось, чего я не так делаю? :-\</p>
+
+<p><strong>Arael</strong> 24-05-2012</p>
+
+<p>нашёл нужную кнопочку :)</p>
+
+<p><a href="https://t.me/ponics_ru_files/7816" target="_blank"><img src="/imagehost/thumbs/1tyt.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7817" target="_blank"><img src="/imagehost/thumbs/2znz.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7818" target="_blank"><img src="/imagehost/thumbs/3asa.jpg" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/7819" target="_blank"><img src="/imagehost/thumbs/4kqk.jpg" alt="" /></a></p>
+
+<p><strong>Coccinella</strong> 25-05-2012</p>
+
+<p>Думаю, что это от резкого падения относительной влажности воздуха.</p>
+
+<p><strong>Arael</strong> 25-05-2012</p>
+
+<p>К сожалению контролировать влажность на балконе нет ни какой возможности, там влажность такая же как и на улице :'(</p>
+
+<p><strong>rcl123</strong> 27-05-2012</p>
+
+<p>утром пока несветит солнце советую опрыскивать водой листья перчиков</p>
+
+<p><strong>artmaximus</strong> 25-07-2012</p>
+
+<p>чего там с перцами?</p>
+
+<p><strong>Arael</strong> 29-07-2012</p>
+
+<p>Перец растёт и плодоносит, к нему ещё и огурцы (китайские салатные “Зелёный поток”) присоединились посаженные 11 июня.</p>
+
+<p>Единственное что меня волнует это не убиваемый клещ паутинный <em>crazy</em>, бороться я с ним уже устал да и поверх плодов поливать химикатами не очень хочется, поэтому листья поеденные немного.</p>
+
+<p>Фотки прилагаю, дата съёмки 7.07.12г, последняя фотка с огурцами снята сегодня.</p>
+
+<p>Острый декоративный перец “Сюрприз” на заднем плане огурцы чуть меньше месяца отроду.</p>
+
+<p><a href="https://t.me/ponics_ru_files/7820" target="_blank"><img src="/imagehost/thumbs/img0078gog.jpg" alt="" /></a></p>
+
+<p>Собственно сами огурцы</p>
+
+<p><a href="https://t.me/ponics_ru_files/7821" target="_blank"><img src="/imagehost/thumbs/img0079.jpg" alt="" /></a></p>
+
+<p>Тут 3 сорта сладкого перца самый левый и почти не видный(ибо выглядит совсем плохо)сорт “ Бухарест”, по центру “Богатырь” и слева “Кубышка”</p>
+
+<p><a href="https://t.me/ponics_ru_files/7822" target="_blank"><img src="/imagehost/thumbs/img0081.jpg" alt="" /></a></p>
+
+<p>Огурцы на сегодняшний день(последние завязи) , по достижении определённого размера плетей подрезал им макушки и удалил все пасынки т.к. скоро в отпуск ехать, а заготовить раствора на 2 недели вперёд нет возможности, да и долго придётся объяснять человеку который будет приходить кормить домашнюю живность что и как наливать.</p>
+
+<p><a href="https://t.me/ponics_ru_files/7823" target="_blank"><img src="/imagehost/thumbs/img0141.jpg" alt="" /></a></p>
+
+<p>Вот такие дела :)</p>
+
+<p><strong>Coccinella</strong> 29-07-2012</p>
+
+<p>Нет предела народному творчеству! $)</p>
+
+<p>А всякие там литераторы бубнят про, дескать, “инертную массу” (это я вчера от жары и совершенно напрасно просмотрела русскоязычную прессу, вот и возмущаюсь псевдоинтелигенцией…)</p>
+
+<p>На Вашей лоджии Все просто замечательно!</p>
+
+<p><strong>Arael</strong> 29-07-2012</p>
+
+<p>Спасибо! :-[</p>
+
+<p>Большинство идей было почерпнуто на этом форуме :)</p>
+
+<p>Осталось только клеща задушить и будет совсем всё хорошо.</p>
+
+<p><strong>orgail</strong> 29-07-2012</p>
+
+<p>красивые китайчата :D</p>
+
+<p>в прошлом году тоже покушали, правда теща с женой их сначала испугались :)</p>
+
+<p>но мои были кажется “китайский болезнеусточивый”, хотя их там несколько и все на одно лицо</p>
+
+<p><strong>artmaximus</strong> 03-08-2012</p>
+
+<p>клёвые перчики <em>8)</em>…такие маленькие, а уже с плодами <em>8)</em></p>
+
+<p>а у меня уже 85 см, только начали расти перчики “американские какие то” :D</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

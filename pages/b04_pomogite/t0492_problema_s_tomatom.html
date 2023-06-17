@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Проблема с томатом | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Проблема с томатом">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Проблема с томатом</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>maratka</strong> 16-04-2010</p>
+
+<p>Стали загибаться томаты на подоконнике.</p>
+
+<p>Раствор приготовлен из жидкого удобрения для гидропоники по рецепту на бутылке.</p>
+
+<p>Свет подоконничный, температура комнатная.</p>
+
+<p>Можно поставить диагноз по фотографии??</p>
+
+<p><a href="https://t.me/ponics_ru_files/3726" target="_blank"><img src="/attachimages/1860_tomato2.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 16-04-2010</p>
+
+<p>:D Диагноз - ему плохо, может сдохнуть.</p>
+
+<p>Что за удобрение, параметры содержания элементов какие?</p>
+
+<p><strong>maratka</strong> 16-04-2010</p>
+
+<p>GreenWorld Hydrokultur</p>
+
+<p>Удобрение для декоративнолистных растений и гидропоники</p>
+
+<p>Массовая доля питательных веществ: N 4.5%: нитратный 2.4%, аммонийный 2.1%; фосфор (p2o5) 4.5%, калий (k2o) 6%; микроэлементы: В 0.01%, Са 0.009%, Fe 0.034% Mn 0.018 Mo 0.001 zn 0.018 ph 3.5-4.5</p>
+
+<p>3.5 мл на 2 л воды</p>
+
+<p><strong>Mole_Garden</strong> 17-04-2010</p>
+
+<p>И это все что есть из удобрений?</p>
+
+<p>Если по инструкции, то у вас получается недобор по основным элементам в 2-2,5 раза</p>
+
+<p>А еще в вашем растворе нет ни магния, ни кальция, очень мало железа.</p>
+
+<p><strong>maratka</strong> 18-04-2010</p>
+
+<p>То есть необходимо увеличить концентрацию в 2 раза?</p>
+
+<p>Сейчас попробую увеличить и добавить кальциевую селитру.</p>
+
+<p><strong>Mole_Garden</strong> 18-04-2010</p>
+
+<blockquote>
+  <p>То есть необходимо увеличить концентрацию в 2 раза?</p>
+
+  <p>Сейчас попробую увеличить и добавить кальциевую селитру.</p>
+</blockquote>
+
+<p>Да, примерно так.</p>
+
+<p><strong>Gidropont</strong> 18-04-2010</p>
+
+<p>Опишите подробнее возраст, условия, система. Я выращивал томат на этом удобрении с той же концентрацией. Все было нормально.</p>
+
+<p><strong>Alex123</strong> 19-04-2010</p>
+
+<p>Если в вашем растворе, как вы пишите ph 3.5-4.5, то нет ничего удивительного в том, что ваш томат дает дуба.</p>
+
+<p><strong>valery</strong> 19-04-2010</p>
+
+<p>Может он имеет в виду рН не рабочего раствора, а рН - “концентрата” ???</p>
+
+<p>Если “рабочего” - действительно нехорошо …</p>
+
+<p><strong>WERDNA</strong> 19-04-2010</p>
+
+<p>Корни постоянно в воде и без аэрации? Если да, то прибавьте сюда низкий PH - очень похоже на загнивание корней. Какое состояние у корней проверьте, если возможно.</p>
+
+<p><strong>WERDNA</strong> 19-04-2010</p>
+
+<p>Кстати на этом удобрении томаты отлично растут, надо только добавлять микроэлементы. Я пользуюсь Покон регенератор 0,3 мл/л</p>
+
+<p><strong>WERDNA</strong> 19-04-2010</p>
+
+<p>И сульфат магния из аптеки 25% (стоит копейки) 0,5-1 мл/л в зависимости от жесткости Вашей воды. А так - отличное удобрение. (Почему-то вспомнилась каша из топора :D)</p>
+
+<p><strong>valery</strong> 19-04-2010</p>
+
+<p>А я тоже одно время (поначалу) растил на Спешлдюнгер Гидрокультур ГринВорлд …</p>
+
+<p>Правда у меня были огурцы …</p>
+
+<p>Ну и ничего удобрение, мне нравилось. У огурцов - не спрашивал, но вроде росли.</p>
+
+<p>И тоже Покон добавлял, и магний…</p>
+
+<p>А ну да, и кальциевую селитру …</p>
+
+<p>И правда - каша из топора получилась :D :D :D</p>
+
+<p>Прикольно.</p>
+
+<p>Только сейчас дошло.</p>
+
+<p><strong>maratka</strong> 27-04-2010</p>
+
+<p>Вода - сильно мягкая, после осмоса. рН в районе 6-6.5.</p>
+
+<p>В итоге нужно увеличивать концентрацию удобрения или нет?</p>
+
+<p>Сколько добавлять селитры и сульфата магния?</p>
+
+<p>Вода регулярно аэрируется (компрессор EHEIM 100), по виду корни нормальные - признаков гниения нет - все беленькие, томаты сильно вытягиваются, а вот листочки становятся слабенькие как-будто воды не хватает (если бы на грядке росли) и снизу начинают листочик пятнами желтеть и увядать.</p>
+
+<p>Может быть им мала емкость для корней?? Объем раствора рабочий примерно 2 л. объем ведерка - ~3л (на 3 куста томатов).</p>
+
+<p><strong>Mole_Garden</strong> 27-04-2010</p>
+
+<blockquote>
+  <p>В итоге нужно увеличивать концентрацию удобрения или нет?</p>
+</blockquote>
+
+<p>А сколько в итоге у вас концентрация?</p>
+
+<p><strong>ALadin</strong> 27-04-2010</p>
+
+<p>Если топикстартер не обидится, то напишу здесь. У меня тоже проблема с томатом.</p>
+
+<p>Общий вид:</p>
+
+<p><a href="http://s1.postimage.org/vqLIJ.jpg" target="_blank"><img src="http://s1.postimage.org/vqLIJ.jpg" alt="" /></a></p>
+
+<p>Плоды:</p>
+
+<p><a href="http://s4.postimage.org/NHu9i.jpg" target="_blank"><img src="http://s4.postimage.org/NHu9i.jpg" alt="" /></a><a href="http://s3.postimage.org/5j5Sr.jpg" target="_blank"><img src="http://s3.postimage.org/5j5Sr.jpg" alt="" /></a> Снял уже пять таких плодиков :(</p>
+
+<p>Условия следующие: освещение естественное (подоконник южная сторона); субстрат кокос (промытый); питание ASB-Greenworld Spezialdunger Hydrokultur 3мл/литр, Унифлор - Микро 1мл/литр. Про ph и tds ничего сказать не могу т.к. пока не имею приборов.</p>
+
+<p>Т.к. в применяемых удобрениях нет кальция, приобрел кальциевую селитру (не на чем взвешивать поэтому добавил четверть чайной ложки на 2 литра) и уже 3дня поливаю с кальцием. Может у кого была такая проблема? Может какое грибковое заболевание и пора обрабатывать фунгицидом?</p>
+
+<p><strong>Aleksey Kurenin</strong> 27-04-2010</p>
+
+<p>:) гы. Обрабатывать фунгицидом безполезно, так как это не имеет никакого отношения :-X к грибным инфекиям. Это самая примитивная “вершинная гниль”. Вызывается недостатком кальция.</p>
+
+<p><strong>ALadin</strong> 27-04-2010</p>
+
+<p>Алексей большое спасибо за быстрый ответ! Я так понимаю, что все должно исправиться, после внесения кальция.</p>
+
+<p><strong>Mole_Garden</strong> 27-04-2010</p>
+
+<p>По хорошему, да.</p>
+
+<p><strong>ALadin</strong> 27-04-2010</p>
+
+<p>Ребят может тогда кто подскажет, вот я хочу добавить кальциевой селитры 2г/2литра, это примерно сколько, а то я насыпал четверть чайной ложки :-[. Электронные весы есть только на работе вот и приходиться колдовать :D.</p>
+
+<p>PS: Не много не в тему, но сегодня на работе вскрывал коробки с травителем. Открываю коробку, а там канистра пересыпанная вермикулитом. Эти коробки прилетели к нам из Шотландии лет 5 назад. Не знаю можно использовать этот вермикулит( если это он) или нет.</p>
+
+<p><strong>Mole_Garden</strong> 27-04-2010</p>
+
+<blockquote>
+  <p>PS: Не много не в тему, но сегодня на работе вскрывал коробки с травителем. Открываю коробку, а там канистра пересыпанная вермикулитом. Эти коробки прилетели к нам из Шотландии лет 5 назад. Не знаю можно использовать этот вермикулит( если это он) или нет.</p>
+</blockquote>
+
+<p>Я бы не советовал.</p>
+
+<p><strong>Aleksey Kurenin</strong> 27-04-2010</p>
+
+<blockquote>
+  <p>Алексей большое спасибо за быстрый ответ! Я так понимаю, что все должно исправиться, после внесения кальция.</p>
+</blockquote>
+
+<p>Как уже сказано выше. Возможно Да.</p>
+
+<p>Если хотите точно мерить и не имеете возможности точно отвесить небольшую дозу, то используйте способ маточных растворов.</p>
+
+<p>Разводите 100 гр или 500 гр ( в общем то, большое, количество, которое можете точно всзвесить) в подходящем количестве воды. Например в 1 литре или 5 литрах, и храните этот раствор. Берёте от туда определённый объём. Объём легче измерить, например шприцом или стаканом гранёным. 8)</p>
+
+<p>например. 100 гр разводите в воде, доводя объём до 1 литра. Берёте 20 мл (одноразовым шприцем) - получается, что Вы отмерили 2 грамма удобрения. И так можно “взвесить” сколько угодно грамм. Посчитайте сами. Учитывайте растворимость разных солей.</p>
+
+<p><strong>maratka</strong> 27-04-2010</p>
+
+<p>Концентрация была 3 мл на 2 л, сделал 5 мл на 2 л, помогло не особо. Также добавил кальциевой селитры - чайная ложка примерно на 2 л.</p>
+
+<p>Теперь похожая проблема с перцами: появились желтые сухие пятна на листьях. Раствор тот же.</p>
+
+<p><strong>Mole_Garden</strong> 27-04-2010</p>
+
+<blockquote>
+  <p>Также добавил кальциевой селитры - чайная ложка примерно на 2 л.</p>
+</blockquote>
+
+<p>А сколько это в граммах? :D</p>
+
+<p>Вот для информации - В одной спичечной коробке (емкостью 20 куб. см) содержится минеральных удобрений: Кальциевая селитра 18г</p>
+
+<p><strong>Mole_Garden</strong> 27-04-2010</p>
+
+<blockquote>
+  <p>Концентрация была 3 мл на 2 л, сделал 5 мл на 2 л, помогло не особо.</p>
+</blockquote>
+
+<p>А на каких листьях вы ожидали результата? На старых его уж точно не будет, надо наблюдать за новыми.</p>
+
+<p><strong>Aleksey Kurenin</strong> 27-04-2010</p>
+
+<p>Маратка. Я вряд ли могу предугадывать, как будут расти Ваши растения. Но к вершинной гнили плоды чувствительны (т е подвержены ей) в фазе горошины. То есть проблемы, которые Вы видите сейчас, появились когда Ваши плодики только только завязались, и ВСЕ плоды, которые завязались у Вас до того момента как Вы стали вносить кальций, возможно, будут поражены таким физиологическим недугом. ???</p>
+
+<p><strong>maratka</strong> 28-04-2010</p>
+
+<p>Спасибо Алексей за ответ, но это не мой был вопрос.</p>
+
+<p>Мой вопрос все тот же - мои 3 кустика помидоров сидят в трех литровом контейнере (с полезными веществами и аэрацией), нижние листики все так же покрываются желтыми пятнами и вянут, верхние листики еще пока зелененькие, но вялые, стебли тонкие и длинные. Какова причина и что делать - незнаю</p>
+
+<p><strong>Aleksey Kurenin</strong> 28-04-2010</p>
+
+<p>Оп. Извините, перепутал авторов.</p>
+
+<p>На Ваш вопрос ответить никак не могу, не знаю я. Причин может быть 1000+1.</p>
+
+<p><strong>WERDNA</strong> 29-04-2010</p>
+
+<p>Думается мне, что места катострофически мало. Где то читал, что при этом растения начинают конкурировать и угнетать рост друг друга. Думаю емкость имеет смысл увеличить а лучше разделить растения в отдельные емкости.</p>
+
+<p>Вода у Вас обратноосмотическая, то есть ни кальция ни магния в растворе НЕТ ВООБЩЕ. Попробуйте замешивать раствор на обычной воде из под крана (предварительно отстоянной), или всетаки добавьте кальциевую селитру. Сульфат магния (ампулы 25% продаются в любой аптеке) в раствор в любом случае 1 мл/л.</p>
+
+<p><strong>maratka</strong> 30-04-2010</p>
+
+<p>А какая емкость и объем раствора будут оптимальны для одного куста томата?</p>
+
+<p>А для трех? Разделить их проблематично - корневая система сильно сплетена.</p>
+
+<p><strong>Олеганос</strong> 30-04-2010</p>
+
+<p>Плоды гниют, таким вот образом у томата в грунте , обычно, при избытке влаги у нас( где живу то есть).</p>
+
+<p>Подозреваю - влага сама тут не при чем, она , лиш является препятствием поступлению кислорода к корням… ???</p>
+
+<p><strong>utyv</strong> 06-05-2010</p>
+
+<blockquote>
+  <p>Вода - сильно мягкая, после осмоса. рН в районе 6-6.5.</p>
+
+  <p>В итоге нужно увеличивать концентрацию удобрения или нет?</p>
+
+  <p>Сколько добавлять селитры и сульфата магния?</p>
+
+  <p>Вода регулярно аэрируется (компрессор EHEIM 100), по виду корни нормальные - признаков гниения нет - все беленькие, томаты сильно вытягиваются, а вот листочки становятся слабенькие как-будто воды не хватает (если бы на грядке росли) и снизу начинают листочик пятнами желтеть и увядать.</p>
+
+  <p>Может быть им мала емкость для корней?? Объем раствора рабочий примерно 2 л. объем ведерка - ~3л (на 3 куста томатов).</p>
+</blockquote>
+
+<p>Аэрация регулярно это значит не все время? Может кислорода все же не хватает? 2л раствора в 3л ведерке это серьезное затопление получается. А кислород быстро расходуется.</p>
+
+<p><strong>Юка</strong> 25-05-2010</p>
+
+<p>Если не возражаете вклинюсь с аналогичной проблемой. Помидорки высажены в минвату на подоконник и параллельно в теплицу с периодическим проливом. Питание Flora Seriec по инструкции на упаковке. На подоконнике появились плоды, но листья пытаются скручиваться, в теплице плодов нет и на листьях появляются бледные полупрозрачные пятна. Солнышка все получают одинаково, но в теплице по ночам +8 (в Питере ещё и заморозки обещают). Вопрос - кого чем подкормить или утепляться? Спасибо.</p>
+
+<p><strong>Mole_Garden</strong> 25-05-2010</p>
+
+<blockquote>
+  <p>Если не возражаете вклинюсь с аналогичной проблемой. Помидорки высажены в минвату на подоконник и параллельно в теплицу с периодическим проливом. Питание Flora Seriec по инструкции на упаковке.</p>
+</blockquote>
+
+<p>Какая минерализация у вас при этом получается? Сколько PPM в данный момент? Как нам известно, ГХЕ очень занижает требования растений в инструкции, в итоге требуется гораздо больше удобрений для достижения правильной концентрации раствора.</p>
+
+<p><strong>Tony_85</strong> 25-05-2010</p>
+
+<blockquote>
+  <p>Питание Flora Seriec по инструкции на упаковке.</p>
+</blockquote>
+
+<p>По рекомендациям на упаковке маловато будет. Я для салата лью в 2 раза больше чем по рекомендациям из упаковки. У вас TDS-метра нету чтобы замерять ppm?</p>
+
+<p>Помню и у меня били пятна на листьях томата. Думаю решающим фактором у меня била температура. Тоже ночью холодновато было. Ну и влажность тоже очень высокая (90-95%, подвал). А какая у вас в теплице влажность?</p>
+
+<p>И еще Вы ничего не написали за Ph.</p>
+
+<p><strong>Юка</strong> 25-05-2010</p>
+
+<p>Ph перепроверил 5,5 , TDS-метр приобрету завтра и доложусь. Из разницы в условиях существования растишек - в теплице по утрам роса на стекле днём проветривание, на подоконнике всё стабильно. Вопрос - что должен показать TDS-метр?</p>
+
+<p><strong>Mole_Garden</strong> 25-05-2010</p>
+
+<blockquote>
+  <p>Ph перепроверил 5,5 , TDS-метр приобрету завтра и доложусь. Из разницы в условиях существования растишек - в теплице по утрам роса на стекле днём проветривание, на подоконнике всё стабильно. Вопрос - что должен показать TDS-метр?</p>
+</blockquote>
+
+<p>По хорошему 1500 PPM если не ошибаюсь, дальше нужно будет больше.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 17, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+
