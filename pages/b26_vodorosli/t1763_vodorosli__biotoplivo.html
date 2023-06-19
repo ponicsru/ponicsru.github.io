@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Водоросли - биотопливо | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Водоросли - биотопливо">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Водоросли - биотопливо</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>psp</strong> 16-05-2013</p>
+
+<p>При одновременном увеличении интереса к биодизельному топливу, как к альтернативе нефтяного, в мире заговорили и о недостатках, появившихся в результате резкого перехода на производство биотоплива из зерновых масличных культур. Этот подход имеет два недостатка: во-первых, выращивание большого количества масличных культур вытеснит пищевые культуры, выращиваемые для удовлетворения пищевых потребностей человечества, во-вторых, традиционные масличные культуры оказались не самыми продуктивными или эффективными источниками растительного масла.</p>
+
+<p>В этой ситуации компромиссным решением может стать биотопливо, для производства которого используются микроводоросли.</p>
+
+<p>Микроводоросли являются типичными представителями растительных масличных культур. Они в 8-25 раз превосходят по потенциальному энергетическому выходу пальмовое масло и в 40-120 раз рапсовое масло. Масло из микроводорослей может служить сырьем для производства биодизельного топливо, которое является природным и восполняемым альтернативным топливом. Биодизельное топливо не содержит нефти, нетоксично и биоразлагаемо.</p>
+
+<p>КЛЮЧЕВЫЕ СВЕДЕНИЯ</p>
+
+<p>О МИКРОВОДОРОСЛЯХ</p>
+
+<p>Микроводоросли - это одноклеточные микроскопические организмы, которые, подобно растениям, используют фотосинтез для превращения солнечной энергии в химическую энергию. Как в жизни моря, так и в жизни пресноводных водоемов, микроводоросли, которые, в основном, населяют поверхностный слой воды, играют важнейшую роль. При этом микроводоросли морские и солоноватоводные отличаются от пресноводных наличием полиненасыщенных жирных кислот. Существует множество систематических групп микроводорослей, но наиболее значимыми принято считать диатомовые (Bacillariophyceac) и динофитовые (Dynophyceae), так как именно они формируют основную биомассу фитопланктона в морских и континентальных водах.</p>
+
+<p>Биохимический состав микроводорослей довольно хорошо изучен. Анализ литературных данных показал, что максимальное содержание общих липидов в расчете на сухую массу у микроводорослей, относящихся к классу диатомовых, а именно у изученных видов: Navicula составляет 35-44% и Navicula closterium - 24-28%.</p>
+
+<p>Более подробное рассмотрение состава этих двух микроводорослей показало, что Navicula closterium содержит 89, 7 % полярных липидов (фосфолипиды, гликолипиды, хлорофиллы) и всего 0,3% триацилглицеринов, в то же время Navicula содержит 50,1% полярных липидов и 47,7% триацилглицеринов. Также было установлено, что у диатомовых (Bacillariophyceae) микроводорослей среди насыщенных жирных кислот преобладает миристиновая кислота, и содержание ее колеблется от 20, 0% до 32,7%.</p>
+
+<p>Моноеновые жирные кислоты микроводорослей в сумме могут составлять до 46%. В зависимости от систематического положения микроводорослей, доминирующими могут быть разные жирные кислоты. Пальмитоолеиновая кислота, содержание которой может достигать 44,8% суммы жирных кислот, преобладает у диатомовых (Bacillariophyceac) микроводорослей.</p>
+
+<p>ПРОИЗВОДСТВО.</p>
+
+<p>ЭКСТРАКЦИЯ</p>
+
+<p>МАСЛА</p>
+
+<p>ИЗ ВОДОРОСЛЕЙ</p>
+
+<p>Микроводоросли можно выращивать в больших цистернах (биореакторах), которые обеспечивают все потребности водорослей, что позволяет максимизировать скорость роста и производство масла. Микроводоросли являются более эффективными конвертерами солнечной энергии, чем любые известные наземные растения. Они растут в суспензии, в которой имеют неограниченный доступ к воде, к СО2, а также к растворенным в воде питательным веществам. В результате микроводоросли способны производить более чем в 30 раз больше масла (в год с единицы площади земли), чем наземные масличные культуры.</p>
+
+<p>Существует два известных способа экстракции масла из масличных семян. Эти способы с тем же успехом можно применять к водорослям:</p>
+
+<ul>
+  <li>
+    <p>отжим шнековым прессом/давка;</p>
+  </li>
+  <li>
+    <p>экстракция масла гексаном.</p>
+  </li>
+</ul>
+
+<p>Отжим шнековым прессом / давка. Когда водоросли высушивают, все масло остается внутри них; это масло затем может быть “отжато” из них на масличном прессе. Многие коммерческие производители растительных масел используют сочетание механического отжима и химической экстракции масел растворителями. Несмотря на то что появляется все больше эффективных процессов, простым способом является использование пресса для извлечения больших количеств (70-75%) масла из водорослей.</p>
+
+<p>Экстракция гексаном. Масло из водорослей можно экстрагировать при помощи химических реактивов. Для этого использовались бензол и эфир, но наиболее распространенным реактивом для экстракции является гексан, который считается относительно недорогим растворителем.</p>
+
+<p>Недостатком использования растворителей для экстракции масел является опасность работы с химическими реактивами. Бензол считается канцерогенным материалом. Кроме того, химические растворители взрывоопасны.</p>
+
+<p>Экстракция гексаном может быть использована для отделения масла, или она может быть использована наряду с отжимом/шнековым прессованием. После того как масло было извлечено при помощи отжимного пресса, оставшаяся пульпа может быть смешана с циклогексаном для извлечения остаточного масла. Масло растворяют в циклогексане, после чего пульпу отфильтровывают от раствора. Масло извлекают из циклогексана перегонкой.</p>
+
+<p>Эти две стадии (холодное прессование и экстракция гексаном) суммарно позволяют извлекать более 95% всего масла, присутствующего в водорослях.</p>
+
+<p>КУЛЬТИВИРОВАНИЕ</p>
+
+<p>МИКРОВОДОРОСЛЕЙ</p>
+
+<p>Оптимизация получения масла из микроводорослей тесно связана с условиями культивирования, которые влияют на содержание липидов и состав жирных кислот. При культивировании микроводорослей для максимального получения жирных кислот можно выделить наиболее важные факторы.</p>
+
+<ol>
+  <li>
+    <p>Выбор вида.</p>
+  </li>
+  <li>
+    <p>Состав питательной среды, температура.</p>
+  </li>
+  <li>
+    <p>Фотопериод. Варьирование освещенности у некоторых микроводорослей может вызвать изменения в жирнокислотном составе липидов. Причем максимальная продуктивность наблюдается в различных фазах периода (максимальная освещенность или конец темнового периода).</p>
+  </li>
+  <li>
+    <p>Фаза роста. Во время стационарной фазы роста у многих микроводорослей возрастает содержание суммарных липидов.</p>
+  </li>
+  <li>
+    <p>Важными при культивировании являются также соленость, аэрация, тип культиватора и другие факторы, влияние которых предстоит установить в результате экспериментов.</p>
+  </li>
+</ol>
+
+<p>ИНФОРМАЦИЯ</p>
+
+<p>О ПРОДУКТИВНОСТИ</p>
+
+<p>МИКРОВОДОРОСЛЕЙ</p>
+
+<p>Любые вопросы интенсивного культивирования в лаборатории и на производстве связаны с прогностическими оценками. Важным, особенно на производстве, является прогноз того, какое количество и какое качество биомассы микроводорослей можно получить при тех или иных режимах культивирования.</p>
+
+<p>Наиболее информативными характеристиками культуры, выращенной при конкретных условиях, являются продуктивность и удельная скорость роста, определение которых является ключевым моментом в построении любых прогностических оценок.</p>
+
+<p>При создании оптимальных условий культивирования продуктивность микроводорослей составляет 30 - 50 г с 1 м2 в сутки. С одного гектара земли можно получить 630 л соевого масла или 1400 л рапсового масла, а с такой же площади водной поверхности можно производить до 45000 л масла водорослей и соответственно до 40000 л биотоплива.</p>
+
+<p>Этот текст привёл для того,кому может быть интересно работать в этом направлении…</p>
+
+<p><strong>annaionova</strong> 28-08-2013</p>
+
+<p>А возможен ли отжим масла из водорослей, которые не культивируются, а растут сами по себе в прудах?</p>
+
+<p><strong>Dzmitry-Minsk</strong> 12-03-2014</p>
+
+<p>тема интересна не только мне</p>
+
+<p><a href="https://t.me/ponics_ru_files/10560" target="_blank">Водоросли Био топлива.mht</a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10561" target="_blank">Водоросли ракетка Обамы.mht</a></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

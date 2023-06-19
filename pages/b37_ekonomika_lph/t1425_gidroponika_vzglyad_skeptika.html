@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Гидропоника. Взгляд скептика. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Гидропоника. Взгляд скептика.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Гидропоника. Взгляд скептика.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>David_Blane</strong> 18-04-2012</p>
+
+<p>На данный момент интернет пестрит сообщениями по продаже гидропонных систем обещающих фантастические урожаи и миллионные прибыли владельцу.</p>
+
+<p>Один из моих друзей, человек хороший но немногго наивный решил прикупить такую систему.</p>
+
+<p>Мой вопрос очень прост. Насколько выгодны такие системы?</p>
+
+<p>Я настроен более скептически чем он.</p>
+
+<p>Причины просты.</p>
+
+<p>На данный момент нет завален обьявлениями о продаже гидропонных систем, но я что то не слышал ни об одном миллионере составившим свое состояние на них.</p>
+
+<p>Историческая практика показала что если в каком то месте можно вырастить миллионы туда сбегуться сотни жадных Буратин.</p>
+
+<p>Однако поведение продавцов гидропонных систем больше похоже на Алису и Базилио из той же сказки. На вопрос “если гидропоника сулит миллионы, почему они не используют свои установки дли получения миллионов, а продают их другим” они не отвечают.</p>
+
+<p><strong>begunok</strong> 18-04-2012</p>
+
+<p>А чем гидропоника, по вашему, отличается от обычного сельского хозяйства?</p>
+
+<p>Вы можете получить миллионы на выращивании, скажем, томатов? Вряд ли. Но некоторые фермеры могут.</p>
+
+<p>Значит ли это, что сх это плохо? Или хорошо?</p>
+
+<p><strong>David_Blane</strong> 18-04-2012</p>
+
+<blockquote>
+  <p>Но некоторые фермеры могут.</p>
+</blockquote>
+
+<p>В ЭТОЙ стране фермеры почти вымерли.</p>
+
+<p>Очень уж трудно стало реализовать сх продукцию.</p>
+
+<p>Магазины завалены китайскими товарами. Пресловутая китайская халява слишклм дешева - проще привести из китая чем купиту фермеров.</p>
+
+<p>А ларьки и рынки давно поделены и забиты. Фермеров оттдуа бепощадно тюряют. Эт не значит что придут киллеры с пистолетом - это дорого да и 90 давно прошли.</p>
+
+<p>Техника борбы с фермерами проста и жестока - владельцв ларьков дают взятку сэс и та не дают сфермеру санталон.</p>
+
+<p>Попытка торговать без него кончится очень плохо</p>
+
+<p><strong>Vad</strong> 18-04-2012</p>
+
+<blockquote>
+  <p>На данный момент нет завален обьявлениями о продаже гидропонных систем, но я что то не слышал ни об одном миллионере составившим свое состояние на них.</p>
+</blockquote>
+
+<p>там каннабис надо растить, и он реально растет… если ютуб посмотреть - вообще можно подумать что гидропоника - чисто наркоманская задумка..</p>
+
+<p>и в установках все растет… получают миллионы и сроки по 15 лет…</p>
+
+<p>а дома.. томат в 2 ведрах. укроп в лукошке… и петрушка в стакане.. это хобби…</p>
+
+<p>тут миллионы не нужны.. хобби это … трата денег в удовольствие…</p>
+
+<p>а если это удовольствие можно потом еще и сьесть.. :-\</p>
+
+<p>Првильно выбрав культуру, вложившись и обустроив тепличку(темничку) думаю, если преодолеть “критическую массу капиталовложения”, то можно получать реальные деньги.</p>
+
+<p>если бы это было не так.. то не строили бы… <em>???</em></p>
+
+<p>мое частное ИМХО. ;)</p>
+
+<p><strong>Vad</strong> 18-04-2012</p>
+
+<blockquote>
+  <p>В ЭТОЙ стране фермеры почти вымерли.</p>
+
+  <p>Очень уж трудно стало реализовать сх продукцию.</p>
+
+  <p>Магазины завалены китайскими товарами. Пресловутая китайская халява слишклм дешева - проще привести из китая чем купиту фермеров.</p>
+</blockquote>
+
+<p>а знаете почему?</p>
+
+<p>потому что пресловутые лихие 90е… привили нашему бизнесмену жажду длинного рубля…</p>
+
+<p>и если прибыль не =100% то считай сделка не удалась..</p>
+
+<p>я с китайцами общаюсь много и часто… у них прибыль - 1-2% считается удачной… 2-3% это край……</p>
+
+<p>а наш (не только фермер, просто НАШ, мы все такие) хочет сразу ВСЕ..</p>
+
+<p>вырастил 1 картошину - продал СлУЧАЙНО за миллион… и все… радуется… :)</p>
+
+<p>(так все торгуют, свет, газ, нефть, … )</p>
+
+<p>кто мешает вырастить дешевле?(читай технологичнее) и продать с минимальной наценкой?</p>
+
+<ul>
+  <li>лихие 90е )))</li>
+</ul>
+
+<p><strong>Coccinella</strong> 19-04-2012</p>
+
+<p>Мне очень нравится вот эта тема на Гринтолке</p>
+
+<p><a href="http://www.greentalk.ru/node/1226" target="_blank">http://www.greentalk.ru/node/1226</a></p>
+
+<p>она длинная, но это реальная сегодняшняя жизнь. И заметьте, это РФ (ЮФО)</p>
+
+<p>и вот эти картинки тоже очень нравятся</p>
+
+<p><a href="http://foto.mail.ru/mail/vomov/376/" target="_blank">http://foto.mail.ru/mail/vomov/376/</a></p>
+
+<p>Станет ли автор темы миллионером на этих теплицах - пока неизвестно. Но прибыль он заработает. И заметьте, это гидропоника.</p>
+
+<p><strong>cpf</strong> 19-04-2012</p>
+
+<blockquote>
+  <p>Техника борбы с фермерами проста и жестока - владельцв ларьков дают взятку сэс и та не дают сфермеру санталон.</p>
+
+  <p>Попытка торговать без него кончится очень плохо</p>
+</blockquote>
+
+<p>Выращивать и торговать (на рынке или ларьках) - это “разный бизнес” :D</p>
+
+<p>Гидропонные установке в сети - как правило, либо для хобби (а это понятие, обратное бизнесу :)), либо для любителей конопли (а это продукт с другой “рентабельностью”), т.е. ,- для пользователей с другой мотивацией, отличной от прибыли.</p>
+
+<p>Гидропонные установки для бизнеса - индивидуальная вещь, для людей которые знают, что хотят (что выращивать, как на этом зарабытвать, куда реализовывать и т.д.), т.е. уже есть план бизнеса.</p>
+
+<p>Если такой план выглядит примерно так: 1. Купить установку 2. Остальное - разберемся позже…, то лучше сразу этот план переделать на такой: 1. Разберемся во всем по-максимуму 2. Купим установку (если не передумаем:) )</p>
+
+<p><strong>DVD</strong> 11-05-2012</p>
+
+<blockquote>
+  <blockquote>
+    <p>В ЭТОЙ стране фермеры почти вымерли.</p>
+
+    <p>Очень уж трудно стало реализовать сх продукцию.</p>
+
+    <p>Магазины завалены китайскими товарами. Пресловутая китайская халява слишклм дешева - проще привести из китая чем купиту фермеров.</p>
+  </blockquote>
+
+  <p>а знаете почему?</p>
+
+  <p>потому что пресловутые лихие 90е… привили нашему бизнесмену жажду длинного рубля…</p>
+
+  <p>и если прибыль не =100% то считай сделка не удалась..</p>
+
+  <p>я с китайцами общаюсь много и часто… у них прибыль - 1-2% считается удачной… 2-3% это край……</p>
+
+  <p>а наш (не только фермер, просто НАШ, мы все такие) хочет сразу ВСЕ..</p>
+
+  <p>вырастил 1 картошину - продал СлУЧАЙНО за миллион… и все… радуется… :)</p>
+
+  <p>(так все торгуют, свет, газ, нефть, … )</p>
+
+  <p>кто мешает вырастить дешевле?(читай технологичнее) и продать с минимальной наценкой?</p>
+
+  <ul>
+    <li>лихие 90е )))</li>
+  </ul>
+</blockquote>
+
+<p>Вы конечно загнули-за 1-2% никто не будет работать. т.к. тогда ты просто ничего не заработаешь-даже китайцы. Не знаю как в Китае а в Европе считается нормальная наценка 20-30%, если хочешь много продавать то можно и 10% но не меньше. Но правы вы в том, что у нас минимум 100% считается нормально-все что меньше в убыток. Потому что у нас никто не хочет работать и считает что лучше продать меньше но дороже.</p>
+
+<p><strong>DVD</strong> 11-05-2012</p>
+
+<blockquote>
+  <p>На данный момент интернет пестрит сообщениями по продаже гидропонных систем обещающих фантастические урожаи и миллионные прибыли владельцу.</p>
+
+  <p>Один из моих друзей, человек хороший но немногго наивный решил прикупить такую систему.</p>
+
+  <p>Мой вопрос очень прост. Насколько выгодны такие системы?</p>
+
+  <p>Я настроен более скептически чем он.</p>
+
+  <p>Причины просты.</p>
+
+  <p>На данный момент нет завален обьявлениями о продаже гидропонных систем, но я что то не слышал ни об одном миллионере составившим свое состояние на них.</p>
+
+  <p>Историческая практика показала что если в каком то месте можно вырастить миллионы туда сбегуться сотни жадных Буратин.</p>
+
+  <p>Однако поведение продавцов гидропонных систем больше похоже на Алису и Базилио из той же сказки. На вопрос “если гидропоника сулит миллионы, почему они не используют свои установки дли получения миллионов, а продают их другим” они не отвечают.</p>
+</blockquote>
+
+<p>Гидропоника-это всего лишь метод выращивания. И он более эффективен по сравнению с традиционными методами-сейчас весь мир так растит. А у нас тем более, т.к. выращивание в открытом грунте возможно только часть года(1 урожай) да и то не по всей стране. Даже в Краснодарском крае холоднее. чем в Италии, Испании.</p>
+
+<p><strong>Vad</strong> 11-05-2012</p>
+
+<p>я с китайцами работаю уже 5 лет.</p>
+
+<p>и им каким то чудным образом удается произвести прибор по цене комплектухи.</p>
+
+<p>тоесть если вы купите все детали для этого прибора - получится дороже или по цене готового устройства</p>
+
+<p>как?</p>
+
+<p>очень просто.</p>
+
+<p>комплекутуха покупается очень большим оптом…</p>
+
+<p>и делается очень очень много устройств :)</p>
+
+<p>и продается ТАК.. чтоб было не выгодно заниматься мелким тиражированием.</p>
+
+<p>живая прибыль (не наценка!)при этом составляет 2-3%</p>
+
+<p><strong>DVD</strong> 28-05-2012</p>
+
+<p>Даже теоретически не может быть 2-3%, т.к. рост экономики Китая выше в 4 раза. С учетом оборачиваемости 2 раза в год можн7о говорить о минимальной рентабельности 5%, да и то только в некоторых отраслях с низким риском. В с/х меньше чем за 20% никто не будет работать, т.к. риски высокие и низкая рентабельность при любом погодном явлении сделает бизнес убыточным. Также с/х не возможна без кредитов и т.д. Поэтому про 2-3% нереально совершенно-минимум в 2-3 раза выше. Да и сомневаюсь я, что вы знаете сколько они зарабатывают-не скажут.</p>
+
+<p><strong>Vad</strong> 28-05-2012</p>
+
+<p>а вот вам пример.</p>
+
+<p>это китайский(магазин, розница! с доставкой 2.85$)</p>
+
+<p><a href="http://www.ebay.com/itm/New-Character-LCD-Module-Display-LCM-1602-16X2-HD44780-Blue-Blacklight-/350499581767?pt=LH_DefaultDomain_0&amp;hash=item519b672f47" target="_blank">http://www.ebay.com/itm/New-Character-LCD-Module-Display-LCM-1602-16X2-HD44780-Blue-Blacklight-/350499581767?pt=LH_DefaultDomain_0&amp;hash=item519b672f47</a></p>
+
+<p><a href="http://www.melt.com.ru/shop/mt-16s2d-2klw.html" target="_blank">http://www.melt.com.ru/shop/mt-16s2d-2klw.html</a></p>
+
+<p>а это наш “производитель”…</p>
+
+<p>обратите внимание на разницу … цены розничной и опт ;D</p>
+
+<p>почему китайци могут дешевле и качественее?</p>
+
+<p>с МЕЛТом 1 раз связались - я чуть не поседел.. из 500 штук брак 80…. долгие разборки… отсыл назад.. замена… сроки сорваны.. короче ГЕ-МО-РОЙ &gt;:D</p>
+
+<p>у китайцев покупаем по 200-500шт в месяц…</p>
+
+<p>в упаковке по 60 штук… причем в каждой упаковке их 66… тоесть, это запас на брак <em>8)</em></p>
+
+<p>никаких проблемм…. брак бывает.. он он не заметен!</p>
+
+<p>ну выкинул да и все ))</p>
+
+<p><strong>DVD</strong> 29-05-2012</p>
+
+<p>Интересно а как вы их провозите через границу? Если по документам 60 а на самом деле 66-это контрабанда. Но сравнивать электронные отрасли Китая и РФ-это несерьезно. У нас НЕТ такой отрасли.</p>
+
+<p><strong>Vad</strong> 29-05-2012</p>
+
+<p>не 60, а 200-500.</p>
+
+<p>по всем правилам, договор, накладная, таможня…</p>
+
+<p>я не электронную промышленость сравниваю…</p>
+
+<p>а ценообразование.</p>
+
+<p><strong>Serg111</strong> 29-05-2012</p>
+
+<blockquote>
+  <p>а вот вам пример.</p>
+
+  <p>это китайский(магазин, розница! с доставкой 2.85$)</p>
+
+  <p><a href="http://www.ebay.com/itm/New-Character-LCD-Module-Display-LCM-1602-16X2-HD44780-Blue-Blacklight-/350499581767?pt=LH_DefaultDomain_0&amp;hash=item519b672f47" target="_blank">http://www.ebay.com/itm/New-Character-LCD-Module-Display-LCM-1602-16X2-HD44780-Blue-Blacklight-/350499581767?pt=LH_DefaultDomain_0&amp;hash=item519b672f47</a></p>
+
+  <p><a href="http://www.melt.com.ru/shop/mt-16s2d-2klw.html" target="_blank">http://www.melt.com.ru/shop/mt-16s2d-2klw.html</a></p>
+
+  <p>а это наш “производитель”…</p>
+
+  <p>обратите внимание на разницу … цены розничной и опт ;D</p>
+
+  <p>почему китайци могут дешевле и качественее?</p>
+
+  <p>с МЕЛТом 1 раз связались - я чуть не поседел.. из 500 штук брак 80…. долгие разборки… отсыл назад.. замена… сроки сорваны.. короче ГЕ-МО-РОЙ &gt;:D</p>
+
+  <p>у китайцев покупаем по 200-500шт в месяц…</p>
+
+  <p>в упаковке по 60 штук… причем в каждой упаковке их 66… тоесть, это запас на брак <em>8)</em></p>
+
+  <p>никаких проблемм…. брак бывает.. он он не заметен!</p>
+
+  <p>ну выкинул да и все ))</p>
+</blockquote>
+
+<p>Китай это</p>
+
+<p>1) Зарплаты ниже 2) Аренды ниже 3) Налоги ниже</p>
+
+<p>Россия = все выше + пошлины</p>
+
+<p>Отсюда и цены, кстати божеские.</p>
+
+<p>Насчет качества, может у Вас руки “кривые”? Я тоже покупал у них индикаторы, правда не по 500 штук, а 200. И не было ни одного бракованного.</p>
+
+<p>Так что зря Вы на них, наоборот продукт делают и отрасль развивают</p>
+
+<p><strong>valery</strong> 29-05-2012</p>
+
+<p>Надо активней бороться за низкие зарплаты (куда ж нам столько :o ) … Вот экономика и рванет <em>8)</em></p>
+
+<p><strong>Vad</strong> 29-05-2012</p>
+
+<blockquote>
+  <p>Насчет качества, может у Вас руки “кривые”?</p>
+</blockquote>
+
+<p>что есть - то есть )) кривыые… :D</p>
+
+<p><strong>artmaximus</strong> 29-05-2012</p>
+
+<p>на днях слышал на “Бизнес ФМ” , что китайский портал Али-баба.ком начинает работать в России…на русском языке :D</p>
+
+<p>вот вам и Али-баба :D конкуренты ебеям и др. :D …это не реклама , а так…к слову о Китайцах :)</p>
+
+<p><strong>Vad</strong> 29-05-2012</p>
+
+<p>уже половина магазинов китая на русском :)</p>
+
+<p><strong>cpf</strong> 29-05-2012</p>
+
+<blockquote>
+  <p>уже половина магазинов китая на русском :)</p>
+</blockquote>
+
+<p>у нас столько населения нет :))</p>
+
+<p>Некоторые в Китае даже не знают, где находится Россия (особенно на юге), можете себе представить?:)))</p>
+
+<p><strong>Vad</strong> 29-05-2012</p>
+
+<p><a href="http://www.hobbyking.com/hobbyking/store/index.rc" target="_blank">http://www.hobbyking.com/hobbyking/store/index.rc</a></p>
+
+<p>уже на русском )) давно..</p>
+
+<p><strong>cpf</strong> 29-05-2012</p>
+
+<p>И?… пацаны - балуются? (0.00…1 % от общего числа в Китайском нете)</p>
+
+<p>Вы хоть примерно представляете объем “Алибабы”, например? Можно посмотреть, сколько таких лабазиков только там “толчется”, а затем посчитать- в скольких из них присутствует РуссЯз :))) (кстати Алибаба - это еще сайт для “внешней торговли, есть такие же - для внутренней).</p>
+
+<p>Чтобы было понятно о чем я - гляньте официальные данные об объеме торговли с РФ в общем объеме внешней торговли Китая - не стройте иллюзий :)</p>
+
+<p><strong>valery</strong> 29-05-2012</p>
+
+<p>Ну вот … &gt;:D обломали … &gt;:D</p>
+
+<p>Только-только присмотрел себе заводной самолетик за 30 баксов …</p>
+
+<p>Ну ничего. Одно утешает. У нас тоже не все знают, где Китай. (признаться и сам тоже путаю … он сразу за Монголией, или потом :-\ )</p>
+
+<p><strong>valery</strong> 29-05-2012</p>
+
+<p>И вообще … У нас эта … духовность есть. И читать мы умеем. <em>Bos</em> Едим опять же много (ну русскому богатырю тазик холодца умять и что там еще на столе - смахнуть … как два … эта … как раз плюнуть.) Значит нам и зарплаты нужней (туловище ж у нас больше <em>Bos</em>, тремя семечками риса не прокормишь …).</p>
+
+<p>Тьфу ты … От зарплат - экономика страдает :-\ Беспросветность какая-то.</p>
+
+<p><strong>valery</strong> 29-05-2012</p>
+
+<p>Заколдованный круг.</p>
+
+<p><strong>Vad</strong> 29-05-2012</p>
+
+<blockquote>
+  <p>не стройте иллюзий :)</p>
+</blockquote>
+
+<p>а это понятно )) я знаю что на алибабе делается ))</p>
+
+<p>и для чего оно создано :)</p>
+
+<p>знаю 2 сайта …</p>
+
+<p>хоббикинг и алибаба…</p>
+
+<p>хоббикинг - на русском..</p>
+
+<p>значит… половина на русском! :)</p>
+
+<p>алибаба не станет конкурентом ебею… :)</p>
+
+<p>скорее помошником..</p>
+
+<p><strong>SergF</strong> 30-05-2012</p>
+
+<p>А еще китайцы детей едят… :o в прямом смысле…</p>
+
+<p><strong>valery</strong> 30-05-2012</p>
+
+<p><em>8)</em></p>
+
+<p>Да гады они! Ясен пень. Хунвейбины и эти … мракобесы! (чуть не ругнулся :-[ )</p>
+
+<p>И посматривают эдак с постоянным прищуром … Обращали внимание?</p>
+
+<p>Глаза - зеркало души. Раз они так щурятся, явно чтой-то нехорошее прячут … За пазухой. Или кукиш или что.</p>
+
+<p><strong>artmaximus</strong> 30-05-2012</p>
+
+<p>…да ладно… :D</p>
+
+<p>…неприятность эту, мы переживём…(с)</p>
+
+<p>как говорил когда-то один мудрый кот :D</p>
+
+<p><strong>Гидропоника</strong> 25-04-2013</p>
+
+<p>Автору темы, нужно сперва посетить агро фермы гидропоники которые выращивают салат и прочую живность. А там делать выводы :)</p>
+
+<p><strong>ded_pihto</strong> 28-10-2015</p>
+
+<p>Предупреждение: в данной теме не было сообщений более 120 дней.</p>
+
+<p>Если Вы не уверены, что хотите ответить, то лучше создайте новую тему.</p>
+
+<p>ответ в пустоту - может и пригодится кому нибудь пришедшему из пустоты.</p>
+
+<p>гидропоника как и другие поники.</p>
+
+<p>в нашей стране приживутся лет эдак через дцать. потому как слишком много фаторов нужно контролировать и поддерживать, Использовать нормальные хим кмпозиции из нормальных рекативов .</p>
+
+<p>Ибо из Г конфетку не сделаеш ни как. вот и не приживается поника - нету ни желания ни возможностей. т.е. - нет революционной ситуации.</p>
+
+<p>есть тольку кучка разночинцев со своими пирамидами и полупромышленными теплицами.</p>
+
+<p><strong>orgail</strong> 28-10-2015</p>
+
+<p>ну, нормальные реактивы - это вроде не из области фантастики… да и разве на них основные растраты?</p>
+
+<p>самая лучшая революция - это когда единицы начинают использовать то, что даёт большую выгоду и преимущества по-сравнению с большинством. И тогда к этому начинают переходить очень быстро. примеров в жизни - море.</p>
+
+<p>такое мое субъективное мнение :D</p>
+
+<p><strong>lidia</strong> 28-10-2015</p>
+
+<blockquote>
+  <p>гидропоника как и другие поники.</p>
+
+  <p>в нашей стране приживутся лет эдак через дцать. потому как слишком много фаторов нужно контролировать и поддерживать, Использовать нормальные хим кмпозиции из нормальных рекативов .</p>
+</blockquote>
+
+<p>Да уже прижились и отлично себя чувствуют. Агрокомплексы на гидропонике - уже не удивишь ими.</p>
+
+<p><strong>ded_pihto</strong> 28-10-2015</p>
+
+<p>узнаю брата Колю (с)</p>
+
+<p>как коснулось дело до дела . мес из германии везли чемоданной доставкой.</p>
+
+<p>потому как в РФ нету такого . точнее есть и все уверяют что есть но купить не возможно.</p>
+
+<p>лана. пойду в пустоте погуляю <em>crazy</em></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

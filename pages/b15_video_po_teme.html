@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Видео по теме | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Видео по теме">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Видео по теме</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><a href="b15_video_po_teme/t0072_video_roliki.html">Видео ролики.</a></p>
+
+<p><a href="b15_video_po_teme/t0081_samodelnaya_vertikalnaya_trehurovnevaya__gidroponnaya_ustanovka_na_160_mest.html">Самодельная вертикальная трех-уровневая  гидропонная установка на 160 мест</a></p>
+
+<p><a href="b15_video_po_teme/t0269_kto_pomozhet.html">Кто поможет?</a></p>
+
+<p><a href="b15_video_po_teme/t0373_znai_nashih_8.html">знай наших 8)</a></p>
+
+<p><a href="b15_video_po_teme/t0427_metod_mittlaidera.html">метод Миттлайдера</a></p>
+
+<p><a href="b15_video_po_teme/t0431_luchok.html">Лучок</a></p>
+
+<p><a href="b15_video_po_teme/t0446_snegopad_smert_teplicy.html">Снегопад, смерть теплицы</a></p>
+
+<p><a href="b15_video_po_teme/t0451_cvetochki_cvetochki_mnogo_cvetochkov.html">Цветочки, цветочки, много цветочков!</a></p>
+
+<p><a href="b15_video_po_teme/t0459_avtomatizaciya_ruchnogo_truda.html">Автоматизация ручного труда</a></p>
+
+<p><a href="b15_video_po_teme/t0460_vyrashivanie_salata_na_plotah.html">Выращивание салата на плотах</a></p>
+
+<p><a href="b15_video_po_teme/t0472_salatnaya_liniya_i_ne_tolko.html">Салатная линия и не только!</a></p>
+
+<p><a href="b15_video_po_teme/t0509_tyulpany.html">Тюльпаны.</a></p>
+
+<p><a href="b15_video_po_teme/t0518_aeroponika_vyrashivanie_kartoshki.html">Аэропоника: выращивание картошки</a></p>
+
+<p><a href="b15_video_po_teme/t0586_em__tehnologiya__chto_eto_yaponskoe_nouhau_permakultura.html">“ЭМ - технология - что это? Японское ноу-хау (пермакультура)”</a></p>
+
+<p><a href="b15_video_po_teme/t0597_nauchnopopulyarnye_sovetskie.html">Научно-популярные советские</a></p>
+
+<p><a href="b15_video_po_teme/t0615_em_tehnologiya.html">ЭМ технология.</a></p>
+
+<p><a href="b15_video_po_teme/t0631_zelenyi_korm_na_gidroponike.html">Зеленый корм на гидропонике</a></p>
+
+<p><a href="b15_video_po_teme/t0734_vyrashivanie_tyulpanov.html">Выращивание тюльпанов</a></p>
+
+<p><a href="b15_video_po_teme/t0779_vyrashivanie_perca_tomata_baklazhana_sovety_agrotehnika.html">Выращивание перца, томата, баклажана- советы, агротехника</a></p>
+
+<p><a href="b15_video_po_teme/t0969_sreda_obitaniya_ocherednaya_seriya_poznavatelnogo_materiala.html">Среда обитания, очередная серия познавательного материала!</a></p>
+
+<p><a href="b15_video_po_teme/t1127_seminar_sovremennye_podhody_k_vyrashivaniyu_kachestvennoi_rassady.html">Семинар “Современные подходы к выращиванию качественной рассады”</a></p>
+
+<p><a href="b15_video_po_teme/t1170_sbor_klubniki.html">Сбор клубники!</a></p>
+
+<p><a href="b15_video_po_teme/t1188_limon.html">лимон</a></p>
+
+<p><a href="b15_video_po_teme/t1494_istoriya_general_hydroponics.html">История General Hydroponics</a></p>
+
+<p><a href="b15_video_po_teme/t1575_rotating_gardens_o_kak.html">Rotating gardens… О как!</a></p>
+
+<p><a href="b15_video_po_teme/t1727_vot_i_ntv_dobralos_do_gidroponiki.html">Вот и НТВ добралось до гидропоники</a></p>
+
+<p><a href="b15_video_po_teme/t1615_dry_hydroponics.html">Dry Hydroponics</a></p>
+
+<p><a href="b15_video_po_teme/t1633_promyshlennyi_zelenyi_luk_iz_sevka_na_podtoplenii.html">Промышленный зеленый лук из севка на подтоплении</a></p>
+
+<p><a href="b15_video_po_teme/t1634_dushica_i_timyan_na_gidroponike.html">Душица и тимьян на гидропонике</a></p>
+
+<p><a href="b15_video_po_teme/t1644_amerikanskie_shkolniki_izuchayut_gidroponiku.html">Американские школьники изучают гидропонику</a></p>
+
+<p><a href="b15_video_po_teme/t1748_est_sushestvuet_rabotaet.html">Есть, существует, работает…</a></p>
+
+<p><a href="b15_video_po_teme/t1750_istoriya_kompanii_general_hydroponics.html">История компании GENERAL HYDROPONICS</a></p>
+
+<p><a href="b15_video_po_teme/t1754_promyshlennoe_vyrashivanie_salata_na_gidroponike.html">промышленное выращивание салата на гидропонике</a></p>
+
+<p><a href="b15_video_po_teme/t1755_gidroponika_i_promyshlennoe_vyrashivanie_zemlyaniki_v_polietilenovyh_lotkah.html">Гидропоника… и промышленное выращивание земляники в “полиэтиленовых” лотках</a></p>
+
+<p><a href="b15_video_po_teme/t1775_trubnye_piramidy.html">Трубные пирамиды</a></p>
+
+<p><a href="b15_video_po_teme/t1784_hai_tek_grinhausy_segodnya_grodan.html">Хай Тек Гринхаусы сегодня. Гродан.</a></p>
+
+<p><a href="b15_video_po_teme/t1962_gidroponika_v_plastikovyh_trubah_ili_na_plotah_chto_luchshe.html">Гидропоника в пластиковых трубах или на плотах что лучше???</a></p>
+
+<p><a href="b15_video_po_teme/t2112_tehnologicheskii_kompleks_dlya_vyrashivaniya_salata.html">Технологический комплекс для выращивания салата</a></p>
+
+<p><a href="b15_video_po_teme/t2125_poleznye_nasekomye_v_ogorode_teplice.html">Полезные насекомые в огороде, теплице!</a></p>
+
+<p><a href="b15_video_po_teme/t2656_govoryashie_rasteniya.html">“Говорящие растения”</a></p>
+
+<p><a href="b15_video_po_teme/t4646_novaya_tehnologiya_vyrashivaniya_zeleni_i_sama_zelen_kak_novyi_produkt.html">Новая технология выращивания зелени. И сама зелень как новый продукт.</a></p>
+
+<p><a href="b15_video_po_teme/t4656_bazilik_i_ukrop.html">Базилик и Укроп</a></p>
+
+<p><a href="b15_video_po_teme/t4891_perec_perlit.html">Перец (перлит).</a></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

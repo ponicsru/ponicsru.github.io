@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Общение | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Общение">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Общение</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><a href="b01_obshenie/t0002_proverka_foruma.html">Проверка форума</a></p>
+
+<p><a href="b01_obshenie/t0017_neskolko_voprosov.html">Несколько вопросов</a></p>
+
+<p><a href="b01_obshenie/t0025_poeziya.html">поэзия</a></p>
+
+<p><a href="b01_obshenie/t0055_est_predlozhenie.html">Есть предложение.</a></p>
+
+<p><a href="b01_obshenie/t0344_samodelnaya_vetryanaya_elektrostanciya.html">Самодельная ветряная электростанция</a></p>
+
+<p><a href="b01_obshenie/t0060_predlozheniya_i_pozhelaniya_po_rabote_plyusy_i_minusy_resursa.html">Предложения и пожелания по работе, плюсы и минусы ресурса.</a></p>
+
+<p><a href="b01_obshenie/t0123_temy_smezhnye_i_ne_ochen.html">Темы смежные и не очень.</a></p>
+
+<p><a href="b01_obshenie/t0146_osnovnaya_stranica_dostoinstva_i_nedostatki.html">Основная страница, достоинства и недостатки.</a></p>
+
+<p><a href="b01_obshenie/t0153_anekdot_o_semeinoi_zhizni.html">Анекдот о семейной жизни</a></p>
+
+<p><a href="b01_obshenie/t0176_bespardonnyi_no_vazhnyi_vopros.html">Беспардонный, но важный вопрос</a></p>
+
+<p><a href="b01_obshenie/t0213_dostupno_o_biznese.html">Доступно о бизнесе</a></p>
+
+<p><a href="b01_obshenie/t0227_bred_pro_gidroponiku_po_ort.html">Бред про гидропонику по ОРТ!</a></p>
+
+<p><a href="b01_obshenie/t0229_sinilnaya_kislota.html">Синильная кислота</a></p>
+
+<p><a href="b01_obshenie/t1018_popalsya_v_ruki_drevnii_zhurnalchik.html">Попался в руки древний журнальчик</a></p>
+
+<p><a href="b01_obshenie/t0243_ogorod_iz_kosmosa.html">Огород из космоса</a></p>
+
+<p><a href="b01_obshenie/t0244_stroitelstvo_zagorodnogo_doma__tehnologiya_ecopan.html">Строительство загородного дома - технология EcoPan</a></p>
+
+<p><a href="b01_obshenie/t0275_morkov.html">Морковь</a></p>
+
+<p><a href="b01_obshenie/t0323_help.html">HELP</a></p>
+
+<p><a href="b01_obshenie/t0347_vliyanie_luny_na_rasteniya_vyrashivaemye_na_gidroponike.html">Влияние луны на растения выращиваемые на гидропонике</a></p>
+
+<p><a href="b01_obshenie/t0377_pozdravleniya.html">Поздравления.</a></p>
+
+<p><a href="b01_obshenie/t0381_eto_dolzhen_znat_kazhdyi.html">Это должен знать каждый.</a></p>
+
+<p><a href="b01_obshenie/t0385_propal_moi_drug.html">Пропал, мой ДРУГ</a></p>
+
+<p><a href="b01_obshenie/t0391_trebuetsya_specialist_po_gidroponike_i_teplichnomu_hozyaistvu.html">Требуется специалист по гидропонике и тепличному хозяйству</a></p>
+
+<p><a href="b01_obshenie/t0401_nemnogo_yumora_na_temu_gidroponiki.html">Немного Юмора на тему гидропоники!</a></p>
+
+<p><a href="b01_obshenie/t0415_virusnaya_ataka.html">Вирусная атака</a></p>
+
+<p><a href="b01_obshenie/t0423_sertifikaciya_produkcii.html">Сертификация продукции</a></p>
+
+<p><a href="b01_obshenie/t0424_energen.html">Энерген</a></p>
+
+<p><a href="b01_obshenie/t0429_konkurs.html">Конкурс</a></p>
+
+<p><a href="b01_obshenie/t0465_105210721088107210791084_1082108810771087109510721083_108010831080_10861095_109110841077108310991077_10881091109510821080.html">Маразм крепчал или…. оч. умелые ручки</a></p>
+
+<p><a href="b01_obshenie/t0505_voruyut_chto_s_nimi_delat_bit.html">Воруют, что с ними делать? Бить?</a></p>
+
+<p><a href="b01_obshenie/t0508_sreda_obitaniya_ili_kakie_ovoshi_i_frukty_u_nas_prodayut_v_magazine.html">Среда обитания или какие овощи и фрукты у нас продают в магазине.</a></p>
+
+<p><a href="b01_obshenie/t0513_ustanovka_dmitriya_denisova.html">Установка Дмитрия Денисова</a></p>
+
+<p><a href="b01_obshenie/t0514_konkurs__golosovanie.html">Конкурс - Голосование!</a></p>
+
+<p><a href="b01_obshenie/t0545_spletni_nesuraznye_legendy_i_prochaya_chush.html">Сплетни, несуразные легенды и прочая чушь</a></p>
+
+<p><a href="b01_obshenie/t0546_o_zdorovoi_pishe_vyrashennoi_nami.html">О здоровой пище выращенной нами.</a></p>
+
+<p><a href="b01_obshenie/t0559_kartinki_s_vystavki.html">“Картинки с выставки”</a></p>
+
+<p><a href="b01_obshenie/t0563_innovacii_v_rastenievodstve_pofantaziruem.html">Инновации в растениеводстве. Пофантазируем?</a></p>
+
+<p><a href="b01_obshenie/t0565_forum_i_ego_obnovlenie.html">Форум и его обновление.</a></p>
+
+<p><a href="b01_obshenie/t0579_lyublyu_s_detstva_mashinki.html">Люблю с детства машинки</a></p>
+
+<p><a href="b01_obshenie/t0584_daunshifting__kak_on_v_realnosti.html">Дауншифтинг - как он в реальности?!</a></p>
+
+<p><a href="b01_obshenie/t0590_nemnogo_anekdotov_chtoby_otvlechsya_ot_krizisa.html">Немного анекдотов, чтобы отвлечься от кризиса…</a></p>
+
+<p><a href="b01_obshenie/t0614_spinning.html">Спиннинг.</a></p>
+
+<p><a href="b01_obshenie/t0628_gotovimsya_k_anomalno_holodnoi_zime.html">Готовимся к аномально холодной зиме.</a></p>
+
+<p><a href="b01_obshenie/t0638_cvety_na_gidroponike.html">Цветы на гидропонике.</a></p>
+
+<p><a href="b01_obshenie/t0667_zima_holoda_avtovladelcam_posvyashaetsya.html">Зима, холода, автовладельцам посвящается</a></p>
+
+<p><a href="b01_obshenie/t0668_pro_izmeriteli_i_tak_eshe.html">Про измерители и так еще</a></p>
+
+<p><a href="b01_obshenie/t0674_yad_iz_fruktov.html">яд из фруктов</a></p>
+
+<p><a href="b01_obshenie/t0676_tematicheskie_zhurnaly.html">Тематические журналы.</a></p>
+
+<p><a href="b01_obshenie/t0684_u_kogo_kruche_elka.html">У кого круче ЕЛКА!</a></p>
+
+<p><a href="b01_obshenie/t0690_okkultizm_v_vyrashivanii.html">Оккультизм в выращивании</a></p>
+
+<p><a href="b01_obshenie/t0692_novyi_god.html">Новый Год!</a></p>
+
+<p><a href="b01_obshenie/t0739_kazhdyi_uchastkovyi_vozzhelaet_uznat.html">Каждый участковый возжелает узнать!!!</a></p>
+
+<p><a href="b01_obshenie/t0751_ogurcy_v_kosmose.html">огурцы в космосе</a></p>
+
+<p><a href="b01_obshenie/t0760_nagrady_za_staraniya.html">Награды за старания</a></p>
+
+<p><a href="b01_obshenie/t0767_horosho_by_vstrechatsya_lichno.html">Хорошо бы встречаться лично</a></p>
+
+<p><a href="b01_obshenie/t0789_obsuzhdenie_statei_na_temu.html">Обсуждение статей на тему…</a></p>
+
+<p><a href="b01_obshenie/t1096_upominanie_pro_gidroponiku_v_filmah_igrah_i_drugih_ne_obychnyh_mestah.html">Упоминание про гидропонику в фильмах, играх и других не обычных местах.</a></p>
+
+<p><a href="b01_obshenie/t0959_moskva__daleko_ne_samyi_dorogoi_gorod_v_rossii.html">Москва – далеко не самый дорогой город в России</a></p>
+
+<p><a href="b01_obshenie/t0968_amerikancy_sozdayut_robotaperevodchika_kak_v_zvezdnyh_voinah.html">Американцы создают робота-переводчика, как в «Звездных войнах»</a></p>
+
+<p><a href="b01_obshenie/t0973_chto_budet_esli_posle_peresadki_srazu_na_rastvor.html">что будет если после пересадки сразу на раствор?</a></p>
+
+<p><a href="b01_obshenie/t0974_est_kto_iz_odessy__obmenivaemsya_gde_chto_dostat.html">Есть кто из одессы?  обмениваемся где что достать..</a></p>
+
+<p><a href="b01_obshenie/t1086_yapona_fermery_izgolyayutsya_s_risom.html">Япона фермеры изголяются с рисом</a></p>
+
+<p><a href="b01_obshenie/t1098_napadenie_na_mladencev_v_vorkute.html">Нападение на младенцев в Воркуте</a></p>
+
+<p><a href="b01_obshenie/t1496_raskroite_tainu_agropriema.html">Раскройте тайну агроприема?</a></p>
+
+<p><a href="b01_obshenie/t1125_i_eshe_pro_kitai_i_ekologicheski_chistuyu_produkciyu.html">И еще про китай и экологически чистую продукцию</a></p>
+
+<p><a href="b01_obshenie/t1129_post_nenavisti.html">Пост ненависти</a></p>
+
+<p><a href="b01_obshenie/t1137_breivik_vzorval_delovoi_kvartal_oslo.html">Брейвик взорвал деловой квартал Осло.</a></p>
+
+<p><a href="b01_obshenie/t1143_tomat_korol_ovoshei.html">Томат- король овощей</a></p>
+
+<p><a href="b01_obshenie/t1148_detskoe_kreslo.html">Детское кресло.</a></p>
+
+<p><a href="b01_obshenie/t1154_zhizn_kakaya_ona_u_vas.html">Жизнь, какая она у вас?!</a></p>
+
+<p><a href="b01_obshenie/t1214_zdravstvui_lyubimyi_forum.html">Здравствуй любимый форум</a></p>
+
+<p><a href="b01_obshenie/t1232_gugl.html">Гугл</a></p>
+
+<p><a href="b01_obshenie/t1240_rushimru_besplatno_razdaet_troyany.html">rushim.ru бесплатно раздаёт трояны :)</a></p>
+
+<p><a href="b01_obshenie/t1250_voprosy_ne_v_temu.html">Вопросы “не в тему” …</a></p>
+
+<p><a href="b01_obshenie/t1254_za_kogo_golosovat_budem.html">За кого голосовать будем ?</a></p>
+
+<p><a href="b01_obshenie/t1274_pepino_dynnaya_grusha_lat_solanum_muricatum.html">Пепино, Дынная груша (лат. Solanum muricatum)</a></p>
+
+<p><a href="b01_obshenie/t1282_pomogite_opoznat_rostenie.html">Помогите опознать ростение</a></p>
+
+<p><a href="b01_obshenie/t1297_a_ved_skoro_novyi_god.html">а ведь скоро новый год!</a></p>
+
+<p><a href="b01_obshenie/t1301_dengi_pod_nogami.html">Деньги под ногами</a></p>
+
+<p><a href="b01_obshenie/t1310_pokritikuite_moi_pervyi_proekt.html">Покритикуйте мой первый проект</a></p>
+
+<p><a href="b01_obshenie/t1311_pleistocenovyi_park.html">Плейстоценовый парк</a></p>
+
+<p><a href="b01_obshenie/t1320_ischeznovenie_presnoi_vody.html">Исчезновение пресной воды</a></p>
+
+<p><a href="b01_obshenie/t1324_pomogite_po_manna_nebesnaya___solod.html">помогите по “манна небесная” =  солод</a></p>
+
+<p><a href="b01_obshenie/t1326_nuzhno_uznat_vremya_goda_po_opisaniyu.html">Нужно узнать время года по описанию.</a></p>
+
+<p><a href="b01_obshenie/t1360_dostavka_semyan_pochtoi_pri_otricatelnoi_temperature.html">Доставка семян почтой при отрицательной температуре</a></p>
+
+<p><a href="b01_obshenie/t1362_yachmen_kto_znaet_sroki.html">ячмень, кто знает сроки?</a></p>
+
+<p><a href="b01_obshenie/t1363_pomogite_razobratsya_vybor_lyuminiscentnoi_lampy.html">Помогите разобраться. Выбор люминисцентной лампы.</a></p>
+
+<p><a href="b01_obshenie/t1392_vesna_adnako_oo.html">весна аднако оО</a></p>
+
+<p><a href="b01_obshenie/t1941_ogorod_v_shkafu.html">огород в шкафу</a></p>
+
+<p><a href="b01_obshenie/t1412_daunshifting2_ili_shilo_v_odnom_meste.html">Дауншифтинг-2 или шило в одном месте?!</a></p>
+
+<p><a href="b01_obshenie/t1427_lyubitelyam_sobak.html">Любителям собак</a></p>
+
+<p><a href="b01_obshenie/t1464_zhelayu_pobyvat_na_ekskursii.html">Желаю побывать на экскурсии</a></p>
+
+<p><a href="b01_obshenie/t1466_repelight_razvod_ili_net.html">Repelight развод или нет?</a></p>
+
+<p><a href="b01_obshenie/t1468_dikii_tomat.html">“Дикий” томат</a></p>
+
+<p><a href="b01_obshenie/t1521_ogo_dizain.html">Ого!!! дизайн</a></p>
+
+<p><a href="b01_obshenie/t1532_pivovarenie.html">Пивоварение</a></p>
+
+<p><a href="b01_obshenie/t1539_foto_po_teme_klubnika_na_gidroponike.html">Фото по теме: клубника на гидропонике</a></p>
+
+<p><a href="b01_obshenie/t1563_rossiya__rodina_slonov.html">Россия - родина слонов.</a></p>
+
+<p><a href="b01_obshenie/t1562_primorskii_krai.html">Приморский край</a></p>
+
+<p><a href="b01_obshenie/t1570_u_nas_teplichku_budut_stroit_kto_chto_slyshal_pro_nee.html">У нас тепличку будут строить… кто что слышал про нее?</a></p>
+
+<p><a href="b01_obshenie/t1584_chto_za_rastenie.html">Что за растение?</a></p>
+
+<p><a href="b01_obshenie/t1588_kak_cvetet_baobab.html">Как цветет баобаб</a></p>
+
+<p><a href="b01_obshenie/t1632_vopros_pro_perec.html">Вопрос про перец</a></p>
+
+<p><a href="b01_obshenie/t1639_na_urale_vse_zhivy.html">На урале все живы?</a></p>
+
+<p><a href="b01_obshenie/t1658_kavitaciya_v_rasteniyah.html">Кавитация в растениях</a></p>
+
+<p><a href="b01_obshenie/t1664_chainyi_kust.html">Чайный куст</a></p>
+
+<p><a href="b01_obshenie/t1665_cikly_opryskivaniya_v_aeroponike.html">Циклы опрыскивания в аэропонике</a></p>
+
+<p><a href="b01_obshenie/t1689_yabloni_kolonovidnye_realno_na_gidre.html">Яблони колоновидные, реально на гидре?</a></p>
+
+<p><a href="b01_obshenie/t1729_dlya_semok_syuzheta_na_pervom_kanale.html">для съёмок сюжета на Первом канале</a></p>
+
+<p><a href="b01_obshenie/t1702_samogonovarenie.html">самогоноварение</a></p>
+
+<p><a href="b01_obshenie/t1711_masshtaby.html">Масштабы</a></p>
+
+<p><a href="b01_obshenie/t1714_operativnyi_shtab_pochty_rossii_ostanavlivaet_pochtovyi_kollaps.html">ОПЕРАТИВНЫЙ ШТАБ ПОЧТЫ РОССИИ ОСТАНАВЛИВАЕТ ПОЧТОВЫЙ КОЛЛАПС</a></p>
+
+<p><a href="b01_obshenie/t1776_pomosh.html">помощь</a></p>
+
+<p><a href="b01_obshenie/t1745_nedopustimoe_povedenie_i_vopros_o_vynesenii_bana.html">Недопустимое поведение и вопрос о вынесении “бана”</a></p>
+
+<p><a href="b01_obshenie/t1746_pro_patent.html">Про патент</a></p>
+
+<p><a href="b01_obshenie/t1760_malenkie_domashnie_cvetochki.html">маленькие домашние цветочки</a></p>
+
+<p><a href="b01_obshenie/t1812_vrednost.html">Вредность</a></p>
+
+<p><a href="b01_obshenie/t1823_socialnuyu_normu_potrebleniya_elektroenergii_vvedut_v_2014_godu.html">Социальную норму потребления электроэнергии введут в 2014 году</a></p>
+
+<p><a href="b01_obshenie/t1855_chto_za_rastenie.html">Что за растение?</a></p>
+
+<p><a href="b01_obshenie/t1887_ves_semyan.html">вес семян</a></p>
+
+<p><a href="b01_obshenie/t1907_shedevry_ot_denisova.html">Шедевры от Денисова…</a></p>
+
+<p><a href="b01_obshenie/t1920_onlain_translyaciya_u_lesnoi_kormushki.html">онлайн трансляция у лесной кормушки</a></p>
+
+<p><a href="b01_obshenie/t1925_kartofel_svekla_i_drugoe.html">Картофель, свекла и другое=)</a></p>
+
+<p><a href="b01_obshenie/t1952_dopolnitelnaya_pribyl.html">дополнительная прибыль</a></p>
+
+<p><a href="b01_obshenie/t1973_russkii_yazyk.html">Русский язык</a></p>
+
+<p><a href="b01_obshenie/t2113_ovoshi_organik.html">Овощи органик</a></p>
+
+<p><a href="b01_obshenie/t2002_ot_hobbigidroponshika_do_agronoma_dolgo_topat.html">От хобби-гидропонщика до агронома, долго топать?</a></p>
+
+<p><a href="b01_obshenie/t2017_mnogo_sveta.html">Много света!</a></p>
+
+<p><a href="b01_obshenie/t2103_gmo_dozhdalis.html">ГМО… дождались?</a></p>
+
+<p><a href="b01_obshenie/t2172_voda.html">Вода</a></p>
+
+<p><a href="b01_obshenie/t2311_tri_semyadoli.html">Три семядоли</a></p>
+
+<p><a href="b01_obshenie/t2438_est_kto_s_krasnodara.html">Есть кто с Краснодара?</a></p>
+
+<p><a href="b01_obshenie/t2443_est_vozmozhnost_poluchit_horoshie_semena.html">Есть возможность получить хорошие семена</a></p>
+
+<p><a href="b01_obshenie/t2496_obrabotka_kipyatkom_semyan_pered_posadkoi_zemlyanika.html">Обработка кипятком семян перед посадкой. Земляника</a></p>
+
+<p><a href="b01_obshenie/t2497_gidroponika__chto_eto.html">Гидропоника - что это?</a></p>
+
+<p><a href="b01_obshenie/t2565_dns.html">DNS</a></p>
+
+<p><a href="b01_obshenie/t2646_salat_aficion.html">салат “Афицион”</a></p>
+
+<p><a href="b01_obshenie/t2649_otdyh_v_adlerevopros.html">Отдых в Адлере(вопрос)</a></p>
+
+<p><a href="b01_obshenie/t2669_iz_ege_2017_ochen_mnoga_bukaff.html">Из ЕГЭ 2017 (очень многа букафф :)</a></p>
+
+<p><a href="b01_obshenie/t2676_prostenkii_oscilograf.html">Простенький осцилограф.</a></p>
+
+<p><a href="b01_obshenie/t2714_novoe_issledovanie_teplichnogo_rynka_rossii.html">Новое исследование тепличного рынка России</a></p>
+
+<p><a href="b01_obshenie/t2721_muzyka_dlya_itshnikov.html">Музыка для IT-шников</a></p>
+
+<p><a href="b01_obshenie/t2765_pro_leningradgruppu.html">Про “Ленинград”(группу)</a></p>
+
+<p><a href="b01_obshenie/t2836_teplolyubivye_kultury.html">Теплолюбивые культуры</a></p>
+
+<p><a href="b01_obshenie/t2851_nakoplenie_nitratov_gde_pochitat_pro_eto.html">накопление Нитратов. Где почитать про это?</a></p>
+
+<p><a href="b01_obshenie/t2859_uvazhaemye_gospoda_i_damy_esli_est_kto_iz_pitera_otzovites_pliz.html">Уважаемые господа и дамы, если есть кто из Питера, отзовитесь, плиз…</a></p>
+
+<p><a href="b01_obshenie/t2895_perchiki.html">Перчики :)</a></p>
+
+<p><a href="b01_obshenie/t2876_inzhenernoekologicheskie_izyskaniya.html">Инженерно-экологические изыскания</a></p>
+
+<p><a href="b01_obshenie/t2885_ya_nikuda_ne_propal.html">Я никуда не пропал!</a></p>
+
+<p><a href="b01_obshenie/t2915_borba_s_nasekomymi.html">Борьба с насекомыми</a></p>
+
+<p><a href="b01_obshenie/t2924_esli_perekormit_tomaty.html">Если перекормить томаты…</a></p>
+
+<p><a href="b01_obshenie/t2953_chatik_v_telegrame.html">Чатик в телеграме</a></p>
+
+<p><a href="b01_obshenie/t2954_vybor_kultury_dlya_marafona.html">Выбор культуры для марафона</a></p>
+
+<p><a href="b01_obshenie/t2956_finalnoe_golosovanie.html">Финальное голосование</a></p>
+
+<p><a href="b01_obshenie/t2947_zimnii_percebattl_2018.html">Зимний перцебаттл 2018</a></p>
+
+<p><a href="b01_obshenie/t2949_redisomarafon.html">Редисо-марафон</a></p>
+
+<p><a href="b01_obshenie/t2969_faq_obsuzhdenie_napolneniya_faq_dlya_chainikov.html">FAQ: обсуждение наполнения FAQ для чайников.</a></p>
+
+<p><a href="b01_obshenie/t4725_kak_vyrashivat_raznye_kultury_podskazhite_novichku.html">Как выращивать разные культуры? Подскажите новичку</a></p>
+
+<p><a href="b01_obshenie/t5122_gerbera_na_ponikek_chemu_gotovitsya_nu_i_kakie_alternativy.html">Гербера на понике-к чему готовится? Ну и какие альтернативы?</a></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Немного анекдотов, чтобы отвлечься от кризиса... | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Немного анекдотов, чтобы отвлечься от кризиса...">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Немного анекдотов, чтобы отвлечься от кризиса...</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>wсodinnnn</strong> 28-07-2010</p>
+
+<p>Здравствуйте друзья!</p>
+
+<p>Я как многие другие пострадал от кризиса и потерял работу… сначало было тяжело<a href="http://kinovkontakte.ru],[/url] а теперь всё тихо тихо налаживается[url=http://dokumentalnoekino.ru" target="_blank">,</a> я нашел новую работу ближе к дому и лучше оплачиваемая!</p>
+
+<p>Сегодня у меня хорошее настроение и поэтому решил поделиться анегдотиками<a href="http://dlyafotoshopa.ru],[/url] если есть в запасе хорошие анегдоты кидайте их в эту тему[url=http://jurnal24.ru" target="_blank">,</a> посмеёмся вместе :)</p>
+
+<p>P<a href="http://ehointerneta.ru].[/url]S Ув. Модератор если тема не втом разделе, перенисите пожалуйста, спасибо за понимание[url=http://kataloggrupp.ru" target="_blank">.</a></p>
+
+<p>и так<a href="http://warezcity.ru/" target="_blank">,</a> начнём!!!</p>
+
+<p>Бизнесмен - психиатру:</p>
+
+<ul>
+  <li>
+    <p>Доктор<a href="http://sbornayarossii.ru" target="_blank">,</a> помните - прошлым летом вы посоветовали: чтобы отвлечься от работы нужно развлечься с девочками?</p>
+  </li>
+  <li>
+    <p>Да<a href="http://vgermanii.ru" target="_blank">.</a></p>
+  </li>
+  <li>
+    <p>Так посоветуйте, как мне теперь отвлечься от девочек и вернуться к работе!</p>
+  </li>
+</ul>
+
+<p>Занятие в анатомическом музее. Преподаватель<a href="http://websportnews.ru],[/url] окруженный толпой студентов[url=http://jirkov.ru" target="_blank">,</a> говорит:</p>
+
+<ul>
+  <li>Врач не должен быть брезгливым!</li>
+</ul>
+
+<p>И с этими словами погружает палец руки во внутренности трупа, затем демостративно облизывает и предлагает всем присутствующим повторить.</p>
+
+<p>Студенты морщатся и отворачиваются<a href="http://krugleshok.ru],[/url] однако делают то[url=http://dlyakompa.ru" target="_blank">,</a> что сказал преподаватель. После этого преподаватель поднимает руку вверх и сообщает:</p>
+
+<ul>
+  <li>Врач должен быть помимо этого внимательным! Я облизал указательный палец<a href="http://odnoklassniki.ws" target="_blank">,</a> а использовал средний!</li>
+</ul>
+
+<p>Звонок в скорую помощь:</p>
+
+<ul>
+  <li>
+    <p>Мой ребенок проглотил ручку!!!</p>
+  </li>
+  <li>
+    <p>Выезжаем<a href="http://avtobaza.net" target="_blank">.</a></p>
+  </li>
+  <li>
+    <p>А мне что делать?!</p>
+  </li>
+  <li>
+    <p>Пишите пока карандашом.</p>
+  </li>
+</ul>
+
+<p><strong>цветовод</strong> 15-10-2010</p>
+
+<p>Идет мужик по лесу … Дождь херачит, ветер, ночь … Он замерз весь, смотрит - машина стоит, он подошел, в окошко смотрит - там никого. Дверцу попробовал - открыта машина, ну он залез и сидит. Вдруг машина поехала … мужик офигел… Машина едет, он сзади сидит, за рулем никого… . Тут рука волосатая появляется откуда-то порулила и исчезла … Мужик ваще офигел… Тут деревня показалась, вот уже дома первые . . Машина останавливается, в салон другой мужик заглядывает и говорит :</p>
+
+<ul>
+  <li>
+    <p>А ты че тут делаешь???</p>
+  </li>
+  <li>
+    <p>Да вот, еду</p>
+  </li>
+  <li>
+    <p>Ох..еть просто!!! Я толкаю, а он, бл…ть, едет!</p>
+  </li>
+</ul>
+
+<p><strong>Mole_Garden</strong> 15-10-2010</p>
+
+<p>;D</p>
+
+<p><strong>дядя МИША</strong> 22-11-2010</p>
+
+<p>Маленькая старушка заходит в Национальный Банк, держа в руках мешок денег. Она настаивает, что должна говорить только с президентом банка по поводу открытия сберегательного счета, поскольку “Это очень много денег!” После изрядных пререканий и споров, персонал банка, наконец, проводил ее в офис президента (клиент всегда прав!). Президент банка затем спросил ее, какую сумму она желает положить на счет. Старушка ответила:</p>
+
+<ul>
+  <li>165 тысяч долларов! - и вывалила деньги из своего мешка на его стол.</li>
+</ul>
+
+<p>Президенту, естественно, было любопытно, откуда у нее вся эта наличка, и он задал ей вопрос:</p>
+
+<ul>
+  <li>Мадам, я удивлен, что Вы носите с собой столько наличных. Откуда у Вас столько денег?</li>
+</ul>
+
+<p>Старушка ответила:</p>
+
+<p>-Я заключаю пари.</p>
+
+<ul>
+  <li>
+    <p>Пари? Какого рода пари?</p>
+  </li>
+  <li>
+    <p>Ну, к примеру, я могу поспорить с Вами на 25 тыс. долларов, что у Вас квадратные яйца.</p>
+  </li>
+  <li>
+    <p>Ха, - засмеялся президент,- Это глупое пари. Такое пари Вы никогда не выиграете!</p>
+  </li>
+  <li>
+    <p>Так Вы принимаете мою ставку? - с вызовом спросила старушка.</p>
+  </li>
+  <li>
+    <p>Конечно, спорю на 25000 $, что мои яйца не квадратные!</p>
+  </li>
+  <li>
+    <p>Хорошо, однако, поскольку речь идет о большой сумме, я приведу с собой завтра в 10:00 своего адвоката как свидетеля?</p>
+  </li>
+  <li>
+    <p>Конечно, - ответил уверенный в себе президент.</p>
+  </li>
+</ul>
+
+<p>Этой ночью президент весьма разнервничался в связи с пари и провел много времени перед зеркалом, проверяя свои яйца, поворачиваясь из стороны в сторону, снова и снова. Он тщательно проверил их, пока не убедился, что ни при каких обстоятельствах его яйца нельзя было назвать квадратными, и он легко выиграет пари.</p>
+
+<p>На следующее утро, ровно в 10:00, старушка вместе со своим адвокатом были в офисе президента. Она представила адвоката президенту и повторила условия пари:</p>
+
+<ul>
+  <li>25000 $ против того, что яйца президента квадратные!</li>
+</ul>
+
+<p>Президент согласился снова с пари, и старушка попросила его спустить штаны, чтобы они смогли посмотреть. Президент исполнил просьбу. Старушка пристально взглянула на яйца и затем попросила, могла бы она их проверить на ощупь?</p>
+
+<ul>
+  <li>Ладно,- сказал президент, - 25000 - это много денег, и я думаю, Вы должны абсолютно удостовериться.</li>
+</ul>
+
+<p>В этот момент он заметил, что адвокат тихо бъется головой о стену.</p>
+
+<p>На вопрос президента “Что, черт возьми, творится с Вашим адокатом?” старушка ответила:</p>
+
+<p>“Ничего, кроме того, что я поспорила с ним на 100 тысяч долларов, что сегодня в 10:00 я буду держать за яйца президента Национального Банка”.</p>
+
+<p>Интилегентная семья. 17-летняя дочь беременна. Все в шоке, мама пьет валокордин и вытирает слезу кружевным платочком, папа угрюмо пьет Мартель двадцатилетней выдержки. Все ждут приезда виновника. У подъезда останавливается красный феррари, из него выходит степенный мужчина в костюме от кардена и туфлях из красного бегемота. Он поднимается в квартиру, останавливая все охи и ахи родителей говорит: - Значит так, я очень известный человек, у меня семья, я не могу их бросить. Однако и Вашу дочь я не оставлю. Я решил так. Если Ваша дочь родит мальчика, то он унаследует два моих завода, 20 миилионов долларов, образование в Гарварде, а Ваша дочь пожизненное содержание в размере 2 млн в год. Если она родит девочку, то она унаследует мою фабрику, 10 миллионов долларов, образование в Oxforde,Ваша дочь - пожизненное содержание в 1млн. . Ну а если у нее случится выкидыш … Тут встает отец, ставит рюмку на стол, подходит к мужику, кладет ему руку на плече и говорит: -Тогда ты тр…..шь ее еще раз!..</p>
+
+<p>Умер мужик. Предстал перед Господом и спрашивает его: “Господи для чего я жил? Для чего я терпел все эти тяготы и муки? Для чего мне на протяжении 80 лет приходилось приспосабливаться, терпеть, вкалывать, как лошадь? За что мне все это? Какая высшая цель моего воплощения на Земле? Для чего я жил?”</p>
+
+<p>Господь помолчал немного и говорит: “Ты помнишь, когда тебе было 22 года, и ты зашел в небольшую кафешку в центре своего города?”</p>
+
+<ul>
+  <li>
+    <p>Нет, не помню.</p>
+  </li>
+  <li>
+    <p>Ну ты еще сел за самый дальний столик и заказал, борщ и пельмени.</p>
+  </li>
+  <li>
+    <p>Не помню, Господи.</p>
+  </li>
+  <li>
+    <p>Ну ты еще только-только расстался со своей женой…</p>
+  </li>
+  <li>
+    <p>Ну и?</p>
+  </li>
+  <li>
+    <p>Напротив тебя сидела очаровательная девушка и постоянно улыбалась тебе.</p>
+  </li>
+  <li>
+    <p>Да, что-то припоминаю…</p>
+  </li>
+  <li>
+    <p>Она была в таком сиреневом коротком платье с глубоким декольте…</p>
+  </li>
+  <li>
+    <p>Да, да, да, вспоминаю, вспоминаю…</p>
+  </li>
+  <li>
+    <p>И еще она попросила тебя передать ей соль.</p>
+  </li>
+  <li>
+    <p>Да. Ну, конечно же! Конечно я вспомнил!</p>
+  </li>
+  <li>
+    <p>И ты ей её передал.</p>
+  </li>
+  <li>
+    <p>Точно! Именно так и было!</p>
+  </li>
+  <li>
+    <p>Так, вот!…</p>
+  </li>
+</ul>
+
+<p>В психбольнице больные смотрят утром по телику новости. Один вдруг</p>
+
+<p>хлопает себя по коленке:</p>
+
+<ul>
+  <li>Хорошо, что я в психушке!</li>
+</ul>
+
+<p>За его спиной санитары друг другу:</p>
+
+<ul>
+  <li>
+    <p>Да… Этот, кажись, выздоровел.</p>
+  </li>
+  <li>
+    <p>Доктор, когда я с женой, у меня член смотрит на ботинки.</p>
+  </li>
+  <li>
+    <p>Поставьте ботинки на шкаф! Следующий!</p>
+  </li>
+  <li>
+    <p>Доктор я беременна, а ребенок лежит как-то не так.</p>
+  </li>
+  <li>
+    <p>Национальность?</p>
+  </li>
+  <li>
+    <p>Еврейка.</p>
+  </li>
+  <li>
+    <p>Выкрутится! Следующий!</p>
+  </li>
+  <li>
+    <p>Доктор, у меня болит то голова, то задница.</p>
+  </li>
+  <li>
+    <p>Пейте эти таблетки, разломав их пополам. Следующий!</p>
+  </li>
+  <li>
+    <p>Доктор, я постоянно чего-то боюсь, без видимой причины.</p>
+  </li>
+  <li>
+    <p>Сестра, слабительное. Пейте, будет Вам причина. Следующий!</p>
+  </li>
+  <li>
+    <p>Доктор, у меня кашель.</p>
+  </li>
+  <li>
+    <p>Сестра, слабительное. Всё, теперь не кашлянёте. Следующий!</p>
+  </li>
+  <li>
+    <p>Доктор, у меня постоянный понос, в туалет по 10 раз в день бегаю.</p>
+  </li>
+  <li>
+    <p>Сестра, слабительное. Теперь не будете бегать, будете там жить. - Следующий!</p>
+  </li>
+  <li>
+    <p>Доктор, плохо срастается нога после перелома. Постоянно хожу на костылях.</p>
+  </li>
+  <li>
+    <p>Сестра, слабительное. Сейчас костылики-то бросите. И побежите. Следующий!</p>
+  </li>
+  <li>
+    <p>Доктор, я каждое утро во влагалище нахожу маленькую почтовую марку.</p>
+  </li>
+</ul>
+
+<p>Посмотрите, уже целый альбом набрала.</p>
+
+<ul>
+  <li>Это не марки, а наклейки от бананов. Вот вам направление к окулисту.</li>
+</ul>
+
+<p>Следующий!</p>
+
+<ul>
+  <li>
+    <p>Доктор, меня почему-то никто не замечает…</p>
+  </li>
+  <li>
+    <p>Следующий!</p>
+  </li>
+  <li>
+    <p>Доктор, я работаю как лошадь, ем как свинья, устаю как собака - что мне делать?</p>
+  </li>
+  <li>
+    <p>Не знаю, я не ветеринар… Следующий!</p>
+  </li>
+  <li>
+    <p>Доктор, помоги, я ссу кипятком!</p>
+  </li>
+  <li>
+    <p>Вынимайте пальцы из розетки.. Следующий!</p>
+  </li>
+  <li>
+    <p>Доктор у меня запор!</p>
+  </li>
+  <li>
+    <p>У меня тоже не шестисотый “Мерседес”, но я об этом на каждом углу не кричу! Следующий!</p>
+  </li>
+  <li>
+    <p>Доктор, у меня зубы пожелтели!</p>
+  </li>
+  <li>
+    <p>В таком случае вам пойдёт коричневый галстук… Следующий!</p>
+  </li>
+  <li>
+    <p>Доктор, у меня с ногами плохо!</p>
+  </li>
+  <li>
+    <p>С ногами хорошо, без ног плохо… Следующий!</p>
+  </li>
+  <li>
+    <p>Доктор, каждый раз, когда я чихаю, я испытываю оргазм. Что мне делать?</p>
+  </li>
+  <li>
+    <p>Гм… Нюхать табак! Следующий!</p>
+  </li>
+  <li>
+    <p>Доктор, помогите, мне уже 28 лет, а волосы на интимных местах так и не растут!</p>
+  </li>
+  <li>
+    <p>Скажите, а сколько раз в неделю Вы занимаетесь сексом?</p>
+  </li>
+  <li>
+    <p>Ну 30-40 раз…</p>
+  </li>
+  <li>
+    <p>На автобанах тоже трава не растёт. Следующий!</p>
+  </li>
+  <li>
+    <p>Утром не хочется идти на работу? Открой журнал “Форбс” и найди там свою фамилию.</p>
+  </li>
+  <li>
+    <p>Не нашел? Тогда чеши на работу…</p>
+  </li>
+</ul>
+
+<p><strong>akatana</strong> 22-11-2010</p>
+
+<ul>
+  <li>
+    <p>Доктор, у меня голова кружится…</p>
+  </li>
+  <li>
+    <p>Я вижу.</p>
+  </li>
+  <li>
+    <p>Доктор, меня вчера скорая помощь сбила…</p>
+  </li>
+  <li>
+    <p>Я знаю.</p>
+  </li>
+</ul>
+
+<p><strong>Mole_Garden</strong> 22-11-2010</p>
+
+<p>:D</p>
+
+<p><strong>студент</strong> 23-11-2010</p>
+
+<p>:D</p>
+
+<p>разница между женой и любовницей 20кг</p>
+
+<p>разница между мужем и любовником 20 мин</p>
+
+<p><strong>Олеганос</strong> 13-12-2010</p>
+
+<p>Если бы на медицинских форумах общались так же, как везде…</p>
+
+<p>Новичок: Ребят, у меня проблема - пришел пациент, один глаз работает, другой нет - что делать? Срочно!!</p>
+
+<p>Хирург (старожил): А-а-а-а!! Один глаз не работает, умора! (<em>ржет</em>)</p>
+
+<p>Скальпель (старожил): Блин, ламеры достали!</p>
+
+<p>Админ (администратор): Новичок, читайте правила форума, пользуйтесь поиском. Первое предупреждение.</p>
+
+<p>Доктор_Лектор (завсегдатай): Да ладно вам, помогите ему. Не видите - у человека горе.</p>
+
+<p>Гость1: Новичок, а чего ты хочешь-то? Формулируй вопрос правильно.</p>
+
+<p>Новичок: Гость1, я хочу чтобы оба галза видели. Можешь подсказать как это сделать?</p>
+
+<p>Гость1: А-а-а, чтобы оба видели - не знаю тогда. Я по иглоукалыванию специализируюсь.</p>
+
+<p>Новичок: Админ, я пользовался поиском, но ничего не нашел.</p>
+
+<p>Помогите кто-нибудь, пациент на столе лежит, я ему уже легкое вскрыл - не помогает!!</p>
+
+<p>Хирург (старожил): А-а-а!! Легкое вскрыл, я щас уссусь! (<em>ржет покатом</em>)</p>
+
+<p>Гость2: Новичок, глазной нерв проверял?</p>
+
+<p>Медбрат (опытный): Новичек, какой глаз не работает - левый или правый?</p>
+
+<p>Админ (администратор): В правилах форума написано, что здесь запрещено задавать вопросы про симметричные органы. Кроме того, по каким словам ты искал? По слову “глаз”? А надо было - по “бинокуларус окулярус”.</p>
+
+<p>Вот - [набор ссылок] почитай про то, как надо пользоваться поиском на форумах.</p>
+
+<p>Новичок: Гость2, а где искать глазной нерв? Поменял глаза местами, теперь оба не работают Срочно - что делать, скоро наркоз заканчивается.</p>
+
+<p>Гость3: А пациент какой расы - негроид или монголоид?</p>
+
+<p>Скальпель (старожил): Гость3, а какая разница?</p>
+
+<p>Гость3: Ты хочешь сказать, что между негроидом и монголоидом нет разницы?</p>
+
+<p>Еще Новичка ламером называл =)</p>
+
+<p>Доктор_Лектор (завсегдатай): Между негроидом и монголоидом есть разница, факт.</p>
+
+<p>Новичок: Как узнать расу?</p>
+
+<p>Скальпель (старожил): Спросить у пациента</p>
+
+<p>Новичок: Пациент без сознания. Может в паспорте записано?</p>
+
+<p>Скальпель (старожил): Гость3, разница есть, но какая разница в конкретном нашем случае??</p>
+
+<p>Гость3: Скальпель, очевидная. У негроидов глаза большие и навыкате, а у монголоидов щелки глаз узкие - может у пациента просто глазные щели заужены, их надрезать надо.</p>
+
+<p>Новичок: Спасибо, Гость3! Надрезал веки - легче стало вынимать глазные яблоки. Переставил еще раз, не рабоатают(IMG:http://board.teremki.net.ua/style_emoticons/default/icon_sad.gif)</p>
+
+<p>ПС: на всякий случай надрезал ноздри и анус.</p>
+
+<p>Новичок: Эй, есть кто-нибудь?</p>
+
+<p>Новичок: Что делать-то?</p>
+
+<p>Новичок: Все, тема закрыта, я его к окулисту направил.</p>
+
+<p>Скальпель (старожил): НОВИЧЕК, А ТЫ ЧТО - НЕ ОКУЛИСТ??? =8-0</p>
+
+<p>Новичок:Неа. Гинеколог.</p>
+
+<p>Админ (администратор): Новичек, второе предупреждение. Читай правила.</p>
+
+<p>Здесь форум окулистов. Еще одно предупреждение и - бан.</p>
+
+<p>Хирург (старожил): А-а-а-а!! Гинеколог!! Все, сливайте воду, я уссался!</p>
+
+<p>(<em>ржет</em>)</p>
+
+<p><strong>Садовник</strong> 13-12-2010</p>
+
+<p>;D ;D ;D :'( ;D</p>
+
+<p>А чем мы отличаемся от медиков?</p>
+
+<p>Да ничем!</p>
+
+<p>На кону то же самое - жизнь и здоровье живых существ.</p>
+
+<p><strong>valery</strong> 13-12-2010</p>
+
+<p>А хороший “рассказ”. Прям про наш форум, да и многие другие :D Один к одному.</p>
+
+<p><strong>orgail</strong> 13-12-2010</p>
+
+<p>:D ;D</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

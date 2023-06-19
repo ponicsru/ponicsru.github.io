@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>&#1056;&#1077;&#1082;&#1086;&#1084;&#1077;&#1085;&#1076;&#1072;&#1094;&#1080;&#1080; &#1087;&#1086; &#1072;&#1075;&#1088;&#1086;&#1089;&#1091; | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="&amp;#1056;&amp;#1077;&amp;#1082;&amp;#1086;&amp;#1084;&amp;#1077;&amp;#1085;&amp;#1076;&amp;#1072;&amp;#1094;&amp;#1080;&amp;#1080; &amp;#1087;&amp;#1086; &amp;#1072;&amp;#1075;&amp;#1088;&amp;#1086;&amp;#1089;&amp;#1091;">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">&#1056;&#1077;&#1082;&#1086;&#1084;&#1077;&#1085;&#1076;&#1072;&#1094;&#1080;&#1080; &#1087;&#1086; &#1072;&#1075;&#1088;&#1086;&#1089;&#1091;</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>mdima</strong> 16-05-2009</p>
+
+<p>Руководство по применению минераловатного субстрата «Агрос»</p>
+
+<p>на малообъемной гидропонике.</p>
+
+<p>Введение</p>
+
+<p>Сразу приведем выдержку из практикума «Субстраты и питание»:</p>
+
+<p>«По оценкам специалистов зарубежных химических корпораций и агрономов-консультантов степень влияния агрохимической составляющей на урожайность укладывается менее чем в 5% при условии использования стандартных субстратов и схем питания»</p>
+
+<p>Минеральная вата - самый распространенный субстрат для малообъемной гидропоники, имея ряд минусов по сравнению с идеальной моделью, она все же наиболее изучена и на данный момент позволяет получать максимально-возможные урожаи.</p>
+
+<p>В отличии от органических субстратов минеральная вата стерильна и инертна, что практически исключает заражение почвенными патогенами, а также позволяет снизить количество всевозможных корректировок раствора.</p>
+
+<p>Хорошие водопоглащающие свойства ваты позволяют свести объем субстрата к минимуму (до 3.75 л/раст.), это экономия, к тому же малым объемом легче управлять, конечно, если Ваша установка капельного полива позволяет вовремя дать необходимое количество раствора, но, как правило, производительность большинства установок подобрана как раз под минеральную вату.</p>
+
+<p>Химическая и механическая стабильность делает субстрат пригодным для 2-х летнего использования.</p>
+
+<p>Тем не менее, свойства субстрата обеспечивают лишь возможность оптимальных показателей в корневой среде. Саму же ситуацию в мате создает агроном. Очень важно верно выбрать стратегию полива и объективно контролировать показатели корневой среды. Также, от того как правильно и добросовестно Вы проведете подготовительные работы в теплице будет зависеть конечный результат.</p>
+
+<p>В данном руководстве приводятся основные инструкции по применению минеральной ваты (напитка матов и кубиков, поливы, растворы, контроль влажности и агрохимических показателей и т. д.).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&amp;#1057;&amp;#1083;&amp;#1077;&amp;#1076;&amp;#1091;&amp;#1077;&amp;#1090; &amp;#1086;&amp;#1090;&amp;#1084;&amp;#1077;&amp;#1090;&amp;#1080;&amp;#1090;&amp;#1100;, &amp;#1095;&amp;#1090;&amp;#1086; &amp;#1074;&amp;#1089;&amp;#1077; &amp;#1101;&amp;#1090;&amp;#1080; &amp;#1084;&amp;#1072;&amp;#1090;&amp;#1077;&amp;#1088;&amp;#1080;&amp;#1072;&amp;#1083;&amp;#1099; &amp;#1080;&amp;#1084;&amp;#1077;&amp;#1102;&amp;#1090; &amp;#1083;&amp;#1080;&amp;#1096;&amp;#1100; &amp;#1088;&amp;#1077;&amp;#1082;&amp;#1086;&amp;#1084;&amp;#1077;&amp;#1085;&amp;#1076;&amp;#1072;&amp;#1090;&amp;#1077;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1099;&amp;#1081; &amp;#1093;&amp;#1072;&amp;#1088;&amp;#1072;&amp;#1082;&amp;#1090;&amp;#1077;&amp;#1088;. &amp;#1055;&amp;#1088;&amp;#1080;&amp;#1084;&amp;#1077;&amp;#1085;&amp;#1103;&amp;#1090;&amp;#1100; &amp;#1090;&amp;#1077;&amp;#1093;&amp;#1085;&amp;#1086;&amp;#1083;&amp;#1086;&amp;#1075;&amp;#1080;&amp;#1095;&amp;#1077;&amp;#1089;&amp;#1082;&amp;#1080;&amp;#1077; &amp;#1087;&amp;#1088;&amp;#1080;&amp;#1077;&amp;#1084;&amp;#1099; &amp;#1085;&amp;#1077;&amp;#1086;&amp;#1073;&amp;#1093;&amp;#1086;&amp;#1076;&amp;#1080;&amp;#1084;&amp;#1086; &amp;#1080;&amp;#1085;&amp;#1076;&amp;#1080;&amp;#1074;&amp;#1080;&amp;#1076;&amp;#1091;&amp;#1072;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1086; &amp;#1074; &amp;#1082;&amp;#1072;&amp;#1078;&amp;#1076;&amp;#1086;&amp;#1084; &amp;#1082;&amp;#1086;&amp;#1085;&amp;#1082;&amp;#1088;&amp;#1077;&amp;#1090;&amp;#1085;&amp;#1086;&amp;#1084; &amp;#1089;&amp;#1083;&amp;#1091;&amp;#1095;&amp;#1072;&amp;#1077;. 
+</code></pre></div></div>
+
+<p>Более подробную информацию Вы можете получить по телефонам:</p>
+
+<p>(863) 278-71-25; моб. 8-9034046106.</p>
+
+<p>Наполнение матов.</p>
+
+<p>Любая минеральная вата подвержена гистерезису (т.е. при полном высушивании, одних лишь капиллярных сил для 100% смачивания недостаточно), поэтому она напитывается только при полном погружении, таким образом все работы необходимо проводить с учетом этой особенности. Мешки должны быть герметичны для того, чтобы уровень раствора в мешке был максимальным.</p>
+
+<p>Уже в теплице перед запиткой матов еще раз убедитесь, что мешки не повреждены. По опыту, заклеивания небольших дырок скотчем достаточно. Также при втыкании капельниц в маты не в коем случае не повредите низ мешка (не проткните мат насквозь). Помните, что вес минеральной ваты после полного ее насыщения влагой увеличивается почти в 10 раз поэтому, при любых попытках перемещения мокрого мата Вы повредите структуру волокон. Позаботьтесь о расположении матов в теплице когда они еще сухие, особенно это касается контрольных матов (дренажные маты, весовые маты и т.д.). На один метровый мат необходимо минимум 20л раствора (5л/капельницу). Запитывать субстрат необходимо сразу, не разбивая на циклы – это делается для того чтобы при наличии мелких отверстий в упаковке раствор не успел вытечь. Делать полив лучше по одному клапану, благодаря чему Вы сможете при включении следующего клапана допитать вручную незапитанные маты на предыдущем клапане. То есть на запитанном клапане Вы должны через байпас подключить необходимое количество шлангов (например, 2) и, во время работы следующих клапанов, запитать сухие маты (не страшно, если раствор из таких мешков со временем вытечет, для полного насыщения достаточно чтобы минеральная вата находилась при полном погружении около 3мин.). Делать это обязательно, так как, по опыту, обнаружить все мешки с дефектами, в промышленных условиях, практически невозможно.</p>
+
+<p>Маты считаются запитанными, если сухой слой ваты не превышает 1-2мм (визуально в теплице можно определить по изменению цвета ваты). Дренаж можно резать только после проверки всех матов. Обычно рекомендуют делать дренажные отверстия после посадки, однако, сделав их заблаговременно, Вы получаете возможность промыть субстрат (это позволит снизить рН). Достаточно 2-х разрезов на мат со стороны канавки, но также необходимо следить, чтобы лишний раствор вытекал из мешка весь без застаивания, поэтому иногда режут дренаж и с другой стороны (например, если мат наклонен).</p>
+
+<p>Летом, между первым и вторым оборотами не допускайте пересушивания субстрата (так как дренаж уже прорезан).</p>
+
+<p>Запитывание кубиков и пробок.</p>
+
+<p>Новые кубики и пробки «Агрос» обладают хорошей смачиваемостью, тем не менее необходимо тщательно контролировать качество запитки. Лучше это делать заблаговременно, а в день посева еще раз промыть субстрат ( это оптимизирует агрохимические показатели и снизит рН).</p>
+
+<p>Поливы. Основные положения.</p>
+
+<p>Очень важно выбрать правильную стратегию поливов, результатом которой будет развитие мощной, работоспособной корневой системы. Только здоровые корни могут снабжать растения водой и питательными элементами.</p>
+
+<p>Минеральная вата при полном насыщении содержит до 80 % воды, 5% от объема занимает само волокно, на воздух остается всего 15% -это мало для хорошей работы корневой системы. Поэтому для увеличения доли кислорода в корневой среде необходимо субстрат подсушивать. Мало того, в начальный период выращивания для стимулирования роста корней необходимо держать растения на грани увядания, а это 50-60% от НВ (наибольшей влагоемкости).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&amp;#1055;&amp;#1086;&amp;#1089;&amp;#1083;&amp;#1077; &amp;#1074;&amp;#1099;&amp;#1089;&amp;#1072;&amp;#1076;&amp;#1082;&amp;#1080; &amp;#1076;&amp;#1086; &amp;#1085;&amp;#1072;&amp;#1095;&amp;#1072;&amp;#1083;&amp;#1072; &amp;#1087;&amp;#1083;&amp;#1086;&amp;#1076;&amp;#1086;&amp;#1085;&amp;#1086;&amp;#1096;&amp;#1077;&amp;#1085;&amp;#1080;&amp;#1103; &amp;#1089;&amp;#1091;&amp;#1097;&amp;#1077;&amp;#1089;&amp;#1090;&amp;#1074;&amp;#1091;&amp;#1077;&amp;#1090; &amp;#1074;&amp;#1086;&amp;#1079;&amp;#1084;&amp;#1086;&amp;#1078;&amp;#1085;&amp;#1086;&amp;#1089;&amp;#1090;&amp;#1100; &amp;#1088;&amp;#1072;&amp;#1079;&amp;#1074;&amp;#1080;&amp;#1090;&amp;#1100; &amp;#1084;&amp;#1086;&amp;#1097;&amp;#1085;&amp;#1091;&amp;#1102; &amp;#1082;&amp;#1086;&amp;#1088;&amp;#1085;&amp;#1077;&amp;#1074;&amp;#1091;&amp;#1102; &amp;#1089;&amp;#1080;&amp;#1089;&amp;#1090;&amp;#1077;&amp;#1084;&amp;#1091; (&amp;#1084;&amp;#1086;&amp;#1078;&amp;#1085;&amp;#1086; &amp;#1073;&amp;#1077;&amp;#1079; &amp;#1086;&amp;#1089;&amp;#1086;&amp;#1073;&amp;#1086;&amp;#1075;&amp;#1086; &amp;#1088;&amp;#1080;&amp;#1089;&amp;#1082;&amp;#1072; &amp;#1079;&amp;#1085;&amp;#1072;&amp;#1095;&amp;#1080;&amp;#1090;&amp;#1077;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1086; &amp;#1089;&amp;#1085;&amp;#1080;&amp;#1078;&amp;#1072;&amp;#1090;&amp;#1100; &amp;#1074;&amp;#1083;&amp;#1072;&amp;#1078;&amp;#1085;&amp;#1086;&amp;#1089;&amp;#1090;&amp;#1100; &amp;#1089;&amp;#1091;&amp;#1073;&amp;#1089;&amp;#1090;&amp;#1088;&amp;#1072;&amp;#1090;&amp;#1072;, &amp;#1082; &amp;#1090;&amp;#1086;&amp;#1084;&amp;#1091; &amp;#1078;&amp;#1077;, &amp;#1074; &amp;#1101;&amp;#1090;&amp;#1086;&amp;#1090; &amp;#1087;&amp;#1077;&amp;#1088;&amp;#1080;&amp;#1086;&amp;#1076; &amp;#1080;&amp;#1076;&amp;#1077;&amp;#1090; &amp;#1086;&amp;#1090;&amp;#1090;&amp;#1086;&amp;#1082; &amp;#1076;&amp;#1086;&amp;#1089;&amp;#1090;&amp;#1072;&amp;#1090;&amp;#1086;&amp;#1095;&amp;#1085;&amp;#1086;&amp;#1075;&amp;#1086; &amp;#1082;&amp;#1086;&amp;#1083;&amp;#1080;&amp;#1095;&amp;#1077;&amp;#1089;&amp;#1090;&amp;#1074;&amp;#1072; &amp;#1072;&amp;#1089;&amp;#1089;&amp;#1080;&amp;#1084;&amp;#1080;&amp;#1083;&amp;#1103;&amp;#1085;&amp;#1090;&amp;#1086;&amp;#1074; &amp;#1082; &amp;#1082;&amp;#1086;&amp;#1088;&amp;#1085;&amp;#1103;&amp;#1084;). &amp;#1044;&amp;#1086; &amp;#1087;&amp;#1086;&amp;#1083;&amp;#1085;&amp;#1086;&amp;#1075;&amp;#1086; &amp;#1091;&amp;#1082;&amp;#1086;&amp;#1088;&amp;#1077;&amp;#1085;&amp;#1077;&amp;#1085;&amp;#1080;&amp;#1103; &amp;#1088;&amp;#1072;&amp;#1089;&amp;#1090;&amp;#1077;&amp;#1085;&amp;#1080;&amp;#1081; &amp;#1074; &amp;#1089;&amp;#1091;&amp;#1073;&amp;#1089;&amp;#1090;&amp;#1088;&amp;#1072;&amp;#1090;&amp;#1077; &amp;#1085;&amp;#1077;&amp;#1086;&amp;#1073;&amp;#1093;&amp;#1086;&amp;#1076;&amp;#1080;&amp;#1084;&amp;#1086; &amp;#1087;&amp;#1086;&amp;#1083;&amp;#1080;&amp;#1074;&amp;#1072;&amp;#1090;&amp;#1100; &amp;#1083;&amp;#1080;&amp;#1096;&amp;#1100; &amp;#1073;&amp;#1099; &amp;#1086;&amp;#1085;&amp;#1080; &amp;#1085;&amp;#1077; &amp;#1087;&amp;#1086;&amp;#1076;&amp;#1074;&amp;#1103;&amp;#1076;&amp;#1072;&amp;#1083;&amp;#1080;, &amp;#1087;&amp;#1086;&amp;#1089;&amp;#1090;&amp;#1077;&amp;#1087;&amp;#1077;&amp;#1085;&amp;#1085;&amp;#1086; &amp;#1089;&amp;#1085;&amp;#1080;&amp;#1078;&amp;#1072;&amp;#1103; &amp;#1085;&amp;#1086;&amp;#1088;&amp;#1084;&amp;#1091; &amp;#1087;&amp;#1086;&amp;#1083;&amp;#1080;&amp;#1074;&amp;#1072;. 
+</code></pre></div></div>
+
+<p>Как только кубики окончательно прирастут к мату можно полностью прекратить поливы, для того чтобы влажность мата снизилась до 50-60%. Старайтесь в этот период не поливать, помните, что увядание растений может вызывать не только низкая влажность или высокая концентрация (поражение корневой системы патогенами, низкая температура субстрата, резкая смена погоды и др.).</p>
+
+<p>Поддержание растений на грани увядания не только поможет сформировать хорошую корневую систему, но и позволит управлять ростом. Показателем правильной стратегии поливов может быть подвядание днем растений в самых теплых местах (местах наибольшего водопотребления). Сокращение поливов вызывает засоление субстрата, увеличение рН, а также некоторый дисбаланс элементов питания, но это в период интенсивного роста не представляет особой опасности. Засоление происходит постепенно, поэтому даже огурцы вполне легко переносят высокие концентрации.</p>
+
+<p>Но к началу плодоношения, когда растения будут испытывать «трудности» необходимо создать оптимальные условия в корневой среде (снижение ЕС до рекомендуемых значений, снижение рН до 5.8-6.0, увеличение влажности матов до 70-80% НВ (днем), а также создание оптимального соотношения элементов питания). Этого можно добиться только получением дренажа. Однако дренаж это 100% НВ, поэтому получать его можно только в дни с высоким водопотреблением, чтобы после иметь возможность подсушить субстрат на 15-20% до наступления ночи. 100%-я влажность во время поливов не опасна, потому что Вы подаете растворенный кислород с раствором. Проблемы могут возникнуть, в случае если такая влажность субстрата будет присутствовать долгое время, например в пасмурную погоду или если Вы поливали с дренажем до захода солнца.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &amp;#1050;&amp;#1072;&amp;#1078;&amp;#1076;&amp;#1086;&amp;#1077; &amp;#1093;&amp;#1086;&amp;#1079;&amp;#1103;&amp;#1081;&amp;#1089;&amp;#1090;&amp;#1074;&amp;#1086;, &amp;#1082;&amp;#1072;&amp;#1078;&amp;#1076;&amp;#1072;&amp;#1103; &amp;#1090;&amp;#1077;&amp;#1087;&amp;#1083;&amp;#1080;&amp;#1094;&amp;#1072; &amp;#1089;&amp;#1091;&amp;#1075;&amp;#1091;&amp;#1073;&amp;#1086; &amp;#1080;&amp;#1085;&amp;#1076;&amp;#1080;&amp;#1074;&amp;#1080;&amp;#1076;&amp;#1091;&amp;#1072;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1099;, &amp;#1087;&amp;#1086;&amp;#1101;&amp;#1090;&amp;#1086;&amp;#1084;&amp;#1091; &amp;#1089;&amp;#1090;&amp;#1088;&amp;#1072;&amp;#1090;&amp;#1077;&amp;#1075;&amp;#1080;&amp;#1102; &amp;#1087;&amp;#1086;&amp;#1083;&amp;#1080;&amp;#1074;&amp;#1086;&amp;#1074;, &amp;#1087;&amp;#1088;&amp;#1080;&amp;#1076;&amp;#1077;&amp;#1088;&amp;#1078;&amp;#1082;&amp;#1080;, &amp;#1085;&amp;#1086;&amp;#1088;&amp;#1084;&amp;#1099; &amp;#1080; &amp;#1090;. &amp;#1076;. &amp;#1085;&amp;#1077;&amp;#1086;&amp;#1073;&amp;#1093;&amp;#1086;&amp;#1076;&amp;#1080;&amp;#1084;&amp;#1086; &amp;#1088;&amp;#1072;&amp;#1079;&amp;#1088;&amp;#1072;&amp;#1073;&amp;#1072;&amp;#1090;&amp;#1099;&amp;#1074;&amp;#1072;&amp;#1090;&amp;#1100; &amp;#1086;&amp;#1090;&amp;#1076;&amp;#1077;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1086; &amp;#1076;&amp;#1083;&amp;#1103; &amp;#1082;&amp;#1072;&amp;#1078;&amp;#1076;&amp;#1086;&amp;#1075;&amp;#1086; &amp;#1082;&amp;#1086;&amp;#1085;&amp;#1082;&amp;#1088;&amp;#1077;&amp;#1090;&amp;#1085;&amp;#1086;&amp;#1075;&amp;#1086; &amp;#1089;&amp;#1083;&amp;#1091;&amp;#1095;&amp;#1072;&amp;#1103;. &amp;#1050;&amp;#1088;&amp;#1086;&amp;#1084;&amp;#1077; &amp;#1090;&amp;#1086;&amp;#1075;&amp;#1086;, &amp;#1074;&amp;#1089;&amp;#1077; &amp;#1087;&amp;#1086;&amp;#1079;&amp;#1085;&amp;#1072;&amp;#1077;&amp;#1090;&amp;#1089;&amp;#1103; &amp;#1074; &amp;#1089;&amp;#1088;&amp;#1072;&amp;#1074;&amp;#1085;&amp;#1077;&amp;#1085;&amp;#1080;&amp;#1080;, &amp;#1085;&amp;#1072; &amp;#1084;&amp;#1072;&amp;#1083;&amp;#1086;&amp;#1086;&amp;#1073;&amp;#1098;&amp;#1077;&amp;#1084;&amp;#1082;&amp;#1077; &amp;#1080;&amp;#1084;&amp;#1077;&amp;#1077;&amp;#1090;&amp;#1089;&amp;#1103; &amp;#1074;&amp;#1086;&amp;#1079;&amp;#1084;&amp;#1086;&amp;#1078;&amp;#1085;&amp;#1086;&amp;#1089;&amp;#1090;&amp;#1100; &amp;#1087;&amp;#1086;&amp;#1083;&amp;#1080;&amp;#1074;&amp;#1072;&amp;#1090;&amp;#1100; &amp;#1086;&amp;#1090;&amp;#1076;&amp;#1077;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1099;&amp;#1077; &amp;#1082;&amp;#1083;&amp;#1072;&amp;#1087;&amp;#1072;&amp;#1085;&amp;#1099; &amp;#1087;&amp;#1086;-&amp;#1088;&amp;#1072;&amp;#1079;&amp;#1085;&amp;#1086;&amp;#1084;&amp;#1091;. &amp;#1058;&amp;#1072;&amp;#1082;&amp;#1080;&amp;#1084; &amp;#1086;&amp;#1073;&amp;#1088;&amp;#1072;&amp;#1079;&amp;#1086;&amp;#1084;, &amp;#1084;&amp;#1086;&amp;#1078;&amp;#1085;&amp;#1086; &amp;#1087;&amp;#1088;&amp;#1086;&amp;#1073;&amp;#1086;&amp;#1074;&amp;#1072;&amp;#1090;&amp;#1100; &amp;#1088;&amp;#1072;&amp;#1079;&amp;#1083;&amp;#1080;&amp;#1095;&amp;#1085;&amp;#1099;&amp;#1077; &amp;#1087;&amp;#1086;&amp;#1083;&amp;#1080;&amp;#1074;&amp;#1085;&amp;#1099;&amp;#1077; &amp;#1085;&amp;#1086;&amp;#1088;&amp;#1084;&amp;#1099; &amp;#1080; &amp;#1088;&amp;#1072;&amp;#1079;&amp;#1083;&amp;#1080;&amp;#1095;&amp;#1085;&amp;#1099;&amp;#1077; &amp;#1087;&amp;#1088;&amp;#1080;&amp;#1076;&amp;#1077;&amp;#1088;&amp;#1078;&amp;#1082;&amp;#1080;. &amp;#1055;&amp;#1086;&amp;#1083;&amp;#1077;&amp;#1079;&amp;#1085;&amp;#1086; &amp;#1090;&amp;#1072;&amp;#1082;&amp;#1078;&amp;#1077; &amp;#1079;&amp;#1085;&amp;#1072;&amp;#1090;&amp;#1100; &amp;#1082;&amp;#1072;&amp;#1082;&amp;#1091;&amp;#1102; &amp;#1082;&amp;#1086;&amp;#1085;&amp;#1094;&amp;#1077;&amp;#1085;&amp;#1090;&amp;#1088;&amp;#1072;&amp;#1094;&amp;#1080;&amp;#1102; &amp;#1080; &amp;#1085;&amp;#1072;&amp;#1080;&amp;#1084;&amp;#1077;&amp;#1085;&amp;#1100;&amp;#1096;&amp;#1091;&amp;#1102; &amp;#1074;&amp;#1083;&amp;#1072;&amp;#1078;&amp;#1085;&amp;#1086;&amp;#1089;&amp;#1090;&amp;#1100; &amp;#1089;&amp;#1091;&amp;#1073;&amp;#1089;&amp;#1090;&amp;#1088;&amp;#1072;&amp;#1090;&amp;#1072; &amp;#1084;&amp;#1086;&amp;#1075;&amp;#1091;&amp;#1090; &amp;#1074;&amp;#1099;&amp;#1076;&amp;#1077;&amp;#1088;&amp;#1078;&amp;#1080;&amp;#1074;&amp;#1072;&amp;#1090;&amp;#1100; &amp;#1042;&amp;#1072;&amp;#1096;&amp;#1080; &amp;#1088;&amp;#1072;&amp;#1089;&amp;#1090;&amp;#1077;&amp;#1085;&amp;#1080;&amp;#1103; &amp;#1073;&amp;#1077;&amp;#1079; &amp;#1087;&amp;#1086;&amp;#1089;&amp;#1083;&amp;#1077;&amp;#1076;&amp;#1089;&amp;#1090;&amp;#1074;&amp;#1080;&amp;#1081;. 
+</code></pre></div></div>
+
+<p>Поливы. Особенности «Агроса».</p>
+
+<p>Особенности поливов на «Агросе» сводятся к тому, что этот субстрат немного влажнее классических минеральных ват (влагоемкость «Агроса»-80%), поэтому необходимо очень внимательно отнестись к поливам. Особенно если учесть, что в наших хозяйствах, как правило, субстраты переувлажняют.</p>
+
+<p>Из-за большей влагоемкости «Агроса» общепринятые рекомендации по поливам требуют небольшой коррекции, а именно:</p>
+
+<p>доза на один цикл может составлять 120-150мл/кап (что благоприятно отражается на равномерности расхода по капельницам);</p>
+
+<p>время начала поливов сместится на 30-40 мин. позже (не через 2ч. после восхода солнца, а через 2ч. 30мин.)</p>
+
+<p>время окончания поливов сместится на 30-40мин. раньше (не за 2ч. до захода солнца, а за 2ч. 30мин.)</p>
+
+<p>С агрохимией на минеральной вате обычно проблем не бывает. Недостаток элементов питания может проявиться при очень слабой корневой системе, но это результат грубого несоблюдения технологии и неправильного режима поливов.</p>
+
+<p>Современные питательные растворы содержат все необходимые макро- и микроэлементы в оптимальном соотношении, поэтому в случае возникновения дисбаланса элементов питания в субстрате достаточно просто увеличить % дренажа.</p>
+
+<p>Во-первых, Вы избавляетесь от необходимости пересчитывать раствор;</p>
+
+<p>во-вторых, достоверность анализов доморощенных агрохимлабораторий зачастую вызывает сомнения, причем балластные элементы, вызывающие засоление (натрий, хлор, сульфаты и др.), как правило, не определяются;</p>
+
+<p>в третьих, в большинстве хозяйств микроэлементы контролируются, в лучшем случае один раз год, и проводить корректировку элементов вслепую очень рискованно.</p>
+
+<p>Вообще % дренажа должен быть основополагающим показателем при выборе стратегии поливов. Причем, в районах с плохой водой в солнечную погоду необходимо получать не менее 25% дренажа.</p>
+
+<p>Контроль влажности.</p>
+
+<p>Самым дешевым и надежным методом определения влажности является весовой. Контроль по прибору вызывает сомнения, дело в том, что прибором измеряется только электропроводность, а потом пересчитывается во влажность субстрата. Но, в зависимости от ситуации (фазы роста, стратегии полива, свойств субстрата, места отбора и т. д.), при одной и той же электропроводности может быть различная влажность субстрата.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &amp;#1044;&amp;#1083;&amp;#1103; &amp;#1074;&amp;#1077;&amp;#1089;&amp;#1086;&amp;#1074;&amp;#1086;&amp;#1075;&amp;#1086; &amp;#1082;&amp;#1086;&amp;#1085;&amp;#1090;&amp;#1088;&amp;#1086;&amp;#1083;&amp;#1103; &amp;#1074;&amp;#1083;&amp;#1072;&amp;#1078;&amp;#1085;&amp;#1086;&amp;#1089;&amp;#1090;&amp;#1080; &amp;#1084;&amp;#1086;&amp;#1078;&amp;#1085;&amp;#1086; &amp;#1087;&amp;#1086;&amp;#1089;&amp;#1090;&amp;#1072;&amp;#1074;&amp;#1080;&amp;#1090;&amp;#1100; &amp;#1086;&amp;#1076;&amp;#1085;&amp;#1080; &amp;#1074;&amp;#1077;&amp;#1089;&amp;#1099; &amp;#1085;&amp;#1072; &amp;#1075;&amp;#1077;&amp;#1082;&amp;#1090;&amp;#1072;&amp;#1088; (&amp;#1093;&amp;#1086;&amp;#1090;&amp;#1103;, &amp;#1095;&amp;#1077;&amp;#1084; &amp;#1073;&amp;#1086;&amp;#1083;&amp;#1100;&amp;#1096;&amp;#1077; - &amp;#1090;&amp;#1077;&amp;#1084; &amp;#1083;&amp;#1091;&amp;#1095;&amp;#1096;&amp;#1077;). &amp;#1042;&amp;#1077;&amp;#1089;&amp;#1099; &amp;#1083;&amp;#1091;&amp;#1095;&amp;#1096;&amp;#1077; &amp;#1073;&amp;#1088;&amp;#1072;&amp;#1090;&amp;#1100; &amp;#1087;&amp;#1083;&amp;#1086;&amp;#1097;&amp;#1072;&amp;#1076;&amp;#1086;&amp;#1095;&amp;#1085;&amp;#1099;&amp;#1077;, &amp;#1089; &amp;#1074;&amp;#1086;&amp;#1079;&amp;#1084;&amp;#1086;&amp;#1078;&amp;#1085;&amp;#1086;&amp;#1089;&amp;#1090;&amp;#1100;&amp;#1102; &amp;#1074;&amp;#1079;&amp;#1074;&amp;#1077;&amp;#1096;&amp;#1080;&amp;#1074;&amp;#1072;&amp;#1085;&amp;#1080;&amp;#1103; &amp;#1085;&amp;#1077; &amp;#1084;&amp;#1077;&amp;#1085;&amp;#1077;&amp;#1077; 20 &amp;#1082;&amp;#1075; (&amp;#1086;&amp;#1076;&amp;#1080;&amp;#1085; &amp;#1084;&amp;#1077;&amp;#1090;&amp;#1088;&amp;#1086;&amp;#1074;&amp;#1099;&amp;#1081; &amp;#1084;&amp;#1072;&amp;#1090;, &amp;#1085;&amp;#1072;&amp;#1087;&amp;#1086;&amp;#1083;&amp;#1085;&amp;#1077;&amp;#1085;&amp;#1085;&amp;#1099;&amp;#1081; &amp;#1074;&amp;#1086;&amp;#1076;&amp;#1086;&amp;#1081;, &amp;#1074;&amp;#1077;&amp;#1089;&amp;#1080;&amp;#1090; &amp;#1076;&amp;#1086; 14 &amp;#1082;&amp;#1075;). &amp;#1057;&amp;#1090;&amp;#1072;&amp;#1074;&amp;#1080;&amp;#1090;&amp;#1100; &amp;#1074;&amp;#1077;&amp;#1089;&amp;#1099; &amp;#1085;&amp;#1077;&amp;#1086;&amp;#1073;&amp;#1093;&amp;#1086;&amp;#1076;&amp;#1080;&amp;#1084;&amp;#1086; &amp;#1074; &amp;#1090;&amp;#1080;&amp;#1087;&amp;#1080;&amp;#1095;&amp;#1085;&amp;#1086;&amp;#1084; &amp;#1084;&amp;#1077;&amp;#1089;&amp;#1090;&amp;#1077;, &amp;#1074; &amp;#1089;&amp;#1077;&amp;#1088;&amp;#1077;&amp;#1076;&amp;#1080;&amp;#1085;&amp;#1077; &amp;#1088;&amp;#1103;&amp;#1076;&amp;#1072;, &amp;#1087;&amp;#1088;&amp;#1080;&amp;#1095;&amp;#1077;&amp;#1084; &amp;#1085;&amp;#1077;&amp;#1086;&amp;#1073;&amp;#1093;&amp;#1086;&amp;#1076;&amp;#1080;&amp;#1084;&amp;#1086; &amp;#1080;&amp;#1093; &amp;#1085;&amp;#1077;&amp;#1084;&amp;#1085;&amp;#1086;&amp;#1075;&amp;#1086; &amp;#1079;&amp;#1072;&amp;#1075;&amp;#1083;&amp;#1091;&amp;#1073;&amp;#1080;&amp;#1090;&amp;#1100; &amp;#1076;&amp;#1083;&amp;#1103; &amp;#1090;&amp;#1086;&amp;#1075;&amp;#1086;, &amp;#1095;&amp;#1090;&amp;#1086;&amp;#1073;&amp;#1099; &amp;#1084;&amp;#1072;&amp;#1090;, &amp;#1083;&amp;#1077;&amp;#1078;&amp;#1072;&amp;#1097;&amp;#1080;&amp;#1081; &amp;#1085;&amp;#1072; &amp;#1074;&amp;#1077;&amp;#1089;&amp;#1072;&amp;#1093;, &amp;#1085;&amp;#1077; &amp;#1074;&amp;#1086;&amp;#1079;&amp;#1074;&amp;#1099;&amp;#1096;&amp;#1072;&amp;#1083;&amp;#1089;&amp;#1103; &amp;#1085;&amp;#1072;&amp;#1076; &amp;#1076;&amp;#1088;&amp;#1091;&amp;#1075;&amp;#1080;&amp;#1084;&amp;#1080; &amp;#1084;&amp;#1072;&amp;#1090;&amp;#1072;&amp;#1084;&amp;#1080;. &amp;#1055;&amp;#1088;&amp;#1086;&amp;#1074;&amp;#1077;&amp;#1088;&amp;#1100;&amp;#1090;&amp;#1077;, &amp;#1095;&amp;#1090;&amp;#1086;&amp;#1073;&amp;#1099; &amp;#1074;&amp;#1079;&amp;#1074;&amp;#1077;&amp;#1096;&amp;#1080;&amp;#1074;&amp;#1072;&amp;#1085;&amp;#1080;&amp;#1102; &amp;#1085;&amp;#1080;&amp;#1095;&amp;#1077;&amp;#1075;&amp;#1086; &amp;#1085;&amp;#1077; &amp;#1084;&amp;#1077;&amp;#1096;&amp;#1072;&amp;#1083;&amp;#1086;. &amp;#1042;&amp;#1083;&amp;#1072;&amp;#1078;&amp;#1085;&amp;#1086;&amp;#1089;&amp;#1090;&amp;#1100; &amp;#1084;&amp;#1072;&amp;#1090;&amp;#1072; &amp;#1074;&amp;#1099;&amp;#1095;&amp;#1080;&amp;#1089;&amp;#1083;&amp;#1103;&amp;#1077;&amp;#1090;&amp;#1089;&amp;#1103; &amp;#1074; &amp;#1087;&amp;#1088;&amp;#1086;&amp;#1094;&amp;#1077;&amp;#1085;&amp;#1090;&amp;#1072;&amp;#1093; &amp;#1086;&amp;#1090; &amp;#1084;&amp;#1072;&amp;#1082;&amp;#1089;&amp;#1080;&amp;#1084;&amp;#1072;&amp;#1083;&amp;#1100;&amp;#1085;&amp;#1086;&amp;#1081; &amp;#1074;&amp;#1083;&amp;#1072;&amp;#1075;&amp;#1086;&amp;#1077;&amp;#1084;&amp;#1082;&amp;#1086;&amp;#1089;&amp;#1090;&amp;#1080; &amp;#1079;&amp;#1072; &amp;#1074;&amp;#1099;&amp;#1095;&amp;#1077;&amp;#1090;&amp;#1086;&amp;#1084; &amp;#1074;&amp;#1077;&amp;#1089;&amp;#1072; &amp;#1088;&amp;#1072;&amp;#1089;&amp;#1090;&amp;#1077;&amp;#1085;&amp;#1080;&amp;#1081;, &amp;#1087;&amp;#1086;&amp;#1076;&amp;#1076;&amp;#1086;&amp;#1085;&amp;#1072;, &amp;#1089;&amp;#1091;&amp;#1093;&amp;#1086;&amp;#1081; &amp;#1074;&amp;#1072;&amp;#1090;&amp;#
+</code></pre></div></div>
+
+<p><a href="https://t.me/ponics_ru_files/1232" target="_blank">rukovodstvo-new.doc</a></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

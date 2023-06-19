@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Циклы опрыскивания в аэропонике | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Циклы опрыскивания в аэропонике">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Циклы опрыскивания в аэропонике</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>artmaximus</strong> 09-03-2013</p>
+
+<p>Уважаемые форумчане, возник вопрос о циклах (временных) в аэропонике. :-[</p>
+
+<p>Прочитал в книге ( Журбицкий З.И. О питании томатов, выращиваемых в аэропонике при искусственном освещении)</p>
+
+<p>об опрыскивании корней в аэропонике с цикличностью по 10-20сек. с интервалами в 20 мин.</p>
+
+<p>Вопрос ( кто знает или практиковал аэропонику ): какова цикличность на практике и уместно ли эта цикличность ночью (возможно ли не опрыскивать ночью?) ?</p>
+
+<p>Под аэропоникой подразумеваю полноценную аэропонику с туманообразователями (миниспринклеры) , а не крупной каплей или ручейками.</p>
+
+<p>Очень был бы рад любым советам и откликам. :-[</p>
+
+<p>P.S. Возможно где то не правильно или не понятно выразился :-[ …не со зла :D</p>
+
+<p><strong>orgail</strong> 09-03-2013</p>
+
+<p>есть одно место… только тихо.. :) ищите Мураша</p>
+
+<p><a href="http://fitopiramida.com/literatura/" target="_blank">http://fitopiramida.com/literatura/</a></p>
+
+<p>правда инфа старая немного</p>
+
+<p><strong>artmaximus</strong> 10-03-2013</p>
+
+<p>Спасибо огромное $)</p>
+
+<p>Практиков бы ещё :-[ послушать</p>
+
+<p><strong>artmaximus</strong> 10-03-2013</p>
+
+<blockquote>
+  <p>есть одно место… только тихо.. :) ищите Мураша</p>
+
+  <p><a href="http://fitopiramida.com/literatura/" target="_blank">http://fitopiramida.com/literatura/</a></p>
+
+  <p>правда инфа старая немного</p>
+</blockquote>
+
+<p>Вот печалька :'( пишет “Такого файла не существует, доступ к нему ограничен или он был удален из-за нарушения авторских прав. “</p>
+
+<p>Может у кого есть? Люди добрые :-[</p>
+
+<p>Я про книги “Мураш И.Г.: “Аэропоника в теплицах” “ и “ Мураш И.Г.: “Опыты по аэропонике в школе” “</p>
+
+<p>Эх…</p>
+
+<p><strong>artmaximus</strong> 10-03-2013</p>
+
+<p>Всё, нашёл в сети <em>8)</em></p>
+
+<p>orgail , Низкий поклон ;)</p>
+
+<p>Почитаю.</p>
+
+<p><strong>mav</strong> 10-03-2013</p>
+
+<p>А у меня тоже не работает, но очень хочется почитать.</p>
+
+<p>А насчет тумана я думаю надо все таки разбрызгивать т. к. при испарении соли ведь в туман не уходят.</p>
+
+<p><strong>artmaximus</strong> 10-03-2013</p>
+
+<blockquote>
+  <p>А у меня тоже не работает, но очень хочется почитать.</p>
+
+  <p>А насчет тумана я думаю надо все таки разбрызгивать т. к. при испарении соли ведь в туман не уходят.</p>
+</blockquote>
+
+<p><em>???</em> может быть.</p>
+
+<p>А Мураша я в поисковик забил и он выдал варианты, где я скачал.</p>
+
+<p><a href="https://t.me/ponics_ru_files/10142" target="_blank">Ae`roponika-v-teplitsah-1964.djvu_.zip</a></p>
+
+<p><a href="https://t.me/ponics_ru_files/10143" target="_blank">Opyityi-po-Ae`roponiki-v-shkole-1969.djvu_.zip</a></p>
+
+<p><strong>valery</strong> 10-03-2013</p>
+
+<blockquote>
+  <p>Спасибо огромное $)</p>
+
+  <p>Практиков бы ещё :-[ послушать</p>
+</blockquote>
+
+<p>Спросите у Gena1 - он много занимался аэропоникой. Возможно и до сих пор. Или здесь или на его сайте можно посмотреть.</p>
+
+<p><strong>valery</strong> 10-03-2013</p>
+
+<blockquote>
+  <p>А насчет тумана я думаю надо все таки разбрызгивать т. к. при испарении соли ведь в туман не уходят.</p>
+</blockquote>
+
+<p>Туманообразователи получают “туман” не испарением, а колебанием мембраны с достаточно высокой частотой.</p>
+
+<p><strong>Oxy</strong> 10-03-2013</p>
+
+<p>А чего это вы выпали в туманообразование опять. Мы же вроде пережевали эту тему, в аэропонике задействованы именно качественные форсунки(инжекторы,жиклеры, спринклеры) создающие определенный, четко заданный размер капельки путем разбрызгивания.</p>
+
+<p>Размер этой капельки настолько мал, что она не сразу падает вниз, а какое-то время “висит” или “парит” в объеме. Вот именно эту взвесь раствора и воздуха условно по аналогии называют “туманом”.</p>
+
+<p>Но нельзя создавать конкретно туман бытовыми туманообразователями. Это совершенно другие устройства, абсолютно для других целей.</p>
+
+<p>Вот к примеру все говорят “капельницы”. Существуют капельные ленты, капельные трубки, капельные наконечники, компенсированные капельницы. Но почему -то никто не юзает медицинскую капельницу для переливания крови.</p>
+
+<p>О, вспомнил умное слово - это синонимы. Нельзя косить траву женской косой. Армию обычной косой тоже не закосишь.</p>
+
+<p>Нужно покупать спринклеры, и не простые, а волшебные(высококачественные). Трубку к ним, способную выдержать высокое давление. И насос соответствующий. У меня где-то была масса ссылок на ЮАРовские системы для открытых пространств - кафешек, лоджей, кемпингов. Там эти системы очень популярны.</p>
+
+<p>На фотографиях и видео во время работы - действительно напоминают туман.</p>
+
+<p>Но это все таки очень мелкодисперсное распыление</p>
+
+<p><strong>valery</strong> 10-03-2013</p>
+
+<p>Никаких возражений.</p>
+
+<p><strong>artmaximus</strong> 10-03-2013</p>
+
+<blockquote>
+  <blockquote>
+    <p>Спасибо огромное $)</p>
+
+    <p>Практиков бы ещё :-[ послушать</p>
+  </blockquote>
+
+  <p>Спросите у Gena1 - он много занимался аэропоникой. Возможно и до сих пор. Или здесь или на его сайте можно посмотреть.</p>
+</blockquote>
+
+<p>Да , я смотрел его виодео.</p>
+
+<p>Хотелось бы его мнение услышать.</p>
+
+<p><strong>artmaximus</strong> 10-03-2013</p>
+
+<blockquote>
+  <p>А чего это вы выпали в туманообразование опять. Мы же вроде пережевали эту тему, в аэропонике задействованы именно качественные форсунки(инжекторы,жиклеры, спринклеры) создающие определенный, четко заданный размер капельки путем разбрызгивания.</p>
+
+  <p>Размер этой капельки настолько мал, что она не сразу падает вниз, а какое-то время “висит” или “парит” в объеме. Вот именно эту взвесь раствора и воздуха условно по аналогии называют “туманом”.</p>
+
+  <p>Но нельзя создавать конкретно туман бытовыми туманообразователями. Это совершенно другие устройства, абсолютно для других целей.</p>
+
+  <p>Вот к примеру все говорят “капельницы”. Существуют капельные ленты, капельные трубки, капельные наконечники, компенсированные капельницы. Но почему -то никто не юзает медицинскую капельницу для переливания крови.</p>
+
+  <p>О, вспомнил умное слово - это синонимы. Нельзя косить траву женской косой. Армию обычной косой тоже не закосишь.</p>
+
+  <p>Нужно покупать спринклеры, и не простые, а волшебные(высококачественные). Трубку к ним, способную выдержать высокое давление. И насос соответствующий. У меня где-то была масса ссылок на ЮАРовские системы для открытых пространств - кафешек, лоджей, кемпингов. Там эти системы очень популярны.</p>
+
+  <p>На фотографиях и видео во время работы - действительно напоминают туман.</p>
+
+  <p>Но это все таки очень мелкодисперсное распыление</p>
+</blockquote>
+
+<p>Ну я не спорю, всё верно.</p>
+
+<p>В прошлом году накупил спринклеров</p>
+
+<p><a href="http://i-villa.ru/p1803663-minisprinkler-1311.html" target="_blank">http://i-villa.ru/p1803663-minisprinkler-1311.html</a> таких</p>
+
+<p><a href="http://i-villa.ru/p2734984-minisprinkler-4ms-1312.html" target="_blank">http://i-villa.ru/p2734984-minisprinkler-4ms-1312.html</a> и таких</p>
+
+<p>Насос ULKA EP5 48 вт. “давит” 15 bar вроде хватает. Шумит только, зараза. <em>crazy</em></p>
+
+<p><a href="http://www.ceme.com/admin/moduli/m003_web/file/pag_ULKA_web.pdf" target="_blank">http://www.ceme.com/admin/moduli/m003_web/file/pag_ULKA_web.pdf</a></p>
+
+<p>Ящиков несколько 60х40х30 пластиковые с крышкой.</p>
+
+<p>Всё валялось, ну и вот решил сделать установочку, не выпиндрёжу ради. а науки ради :D .Ну не валяться же всему дальше.</p>
+
+<p>Ну получится или не получится-время покажет.</p>
+
+<p>Ввиду небольшого размера, понимаю что это для зелени или клонариума только подойдёт.</p>
+
+<p>Знаю что “гемора” с аэропоникой много и вопросов.</p>
+
+<p>Поэтому и обратился.</p>
+
+<p>Так -то , вроде бокс собрал. Давление нормально. Но это ещё не всё.</p>
+
+<p>Теперь с циклами определиться и с таймером.</p>
+
+<p>Вот со вторым проблемы.</p>
+
+<p>Таймер нужен с регулировкой задержек от 5 до 20 мин. ( в зависимости от возраста растений (исходя из книг)), а включение должно быть 20-30сек. (тоже из “книжных” источников).</p>
+
+<p>Кто бы мог помочь с таймером? Люди добрые. Схемку какую, но понятную делитанту в электронике или готовый вариант …за денежную компенсацию :-[</p>
+
+<p>И ещё вопросик. Нужно ли в таком боксе 60х30х40 принудительную вентиляцию ( как в больших установках) или можно обойтись… <em>???</em>…при таком мизерном размере ( приоткрывать крышечку иногда :D)</p>
+
+<p>Ну как то так.</p>
+
+<p><strong>Юка</strong> 10-03-2013</p>
+
+<p>Таймер РВЦ-П2-У решает проблему включения от десятых долей сек. до … часов. , но, вероятно, в течении суток периодичность включения не должна быть константой, поэтому любой суточный таймер плюс РВЦ-П2-У . Возможно есть решение и проще, но это исходя из того , что в “коробушке” валяется…</p>
+
+<p><strong>Coccinella</strong> 10-03-2013</p>
+
+<p>Не по теме, но на днях промелькнула информация, будто в Италии на аэропонике рапс намереваются выращивать на такой небольшой площади в 200 га :). Одна надежда, кто-то где-то запятую обронил… :-[</p>
+
+<p><strong>Oxy</strong> 10-03-2013</p>
+
+<p>Ну, если были все комплектующие, и уже собрал, тогда мой предыдущий пост к делу не относиться. Я грешным делом подумал, что вы собираетесь покупать туманообразователи - и сразу давай руками махать :) мол, фу-фу-у-у. Сорри.</p>
+
+<p>Мне кажется, таймер в вашем случае - это вообще не проблема, мне бы ваши заботы как говориться :)</p>
+
+<p>Но наверное требует уточнения, точнее меня несколько смущает факт, что голую корневую нужно держать целых 20 минут сухой. Чегой-то очкую я . При нормальной транспирации той влаги которая осядет на корнях на 20 минут не хватит. А это значит - стресс. Стрессовать каждых пол часа растюхи?</p>
+
+<p>Но я аэропоникой не занимался, а так, чисто эмпирически предполагаю. Инфа требует доп.изучения так сказать.</p>
+
+<p><strong>Vad</strong> 10-03-2013</p>
+
+<p>Да да.. Поддерживаю мысль.(догадка ;) на базе микроскопического опыта)</p>
+
+<p>Алексей дело говорит..</p>
+
+<p>Для мелкой(молодой) растительности куда ни шло..</p>
+
+<p>а вот если взрослая растюха… то.. может нехватить… влаги..</p>
+
+<p>теоретически, мне кажется.. нужно дуть весь день..</p>
+
+<p>воздуха в изобилии…</p>
+
+<p>брызгалка аэрирует раствор очень хорошо..</p>
+
+<p>на то оно и.. АЭРО <em>8)</em></p>
+
+<p><strong>orgail</strong> 10-03-2013</p>
+
+<p>да не так уж это и много - 20 минут, многое определяют все-таки еще условия в зоне корневой</p>
+
+<p>вон подтопление - раз в три часа и ничего… а вообщем то с аэропоникой я бы с мураша начал</p>
+
+<p>вот например “аэрокартошники” в перу говорят:</p>
+
+<p>“Timers and other components</p>
+
+<p>Timers exist that can be calibrated every 10 seconds. These digital timers are not readily available and are</p>
+
+<p>expensive. Furthermore, they require a complicated program process that may be altered by frequent</p>
+
+<p>power failures. At Huancayo we have used timers that can be manually calibrated every 15 minutes. In</p>
+
+<p>areas where no technical support is available, these timers should be considered. Farran and Mingo-</p>
+
+<p>Castell (2006) used timers calibrated so that the system can work for 10 seconds every 20 minutes.</p>
+
+<p>During cool nights it is only necessary to activate the system for 15 minutes every hour. During the</p>
+
+<p>day we need 15 min. after every 15 min. of inactive period.”</p>
+
+<p>а картоха жрет не меньше я думаю чем любой другой</p>
+
+<p><strong>Oxy</strong> 10-03-2013</p>
+
+<p>Насколько я понял последняя строчка - это 15 минут поливаем, 15 минут нет. Это больше похоже на реальность.</p>
+
+<p>А вообще, я бы начинал гонять установку без растюх в режиме 50\50. типа 5 минут льем, 5 минут нет. Подождал бы три -пять дней.</p>
+
+<p>Если вся система не закашляет(я про трубки-насосы), значит и меньшую нагрузку выдержит типа там 10 минут льем, 20 минут курим.</p>
+
+<p>А потом втыкаем растюхи в рабочую систему и дальше как всегда - листья расскажут :)</p>
+
+<p>Если им будет слишком хорошо - делаем полив реже.</p>
+
+<p>это же гидропоника - мы сами строим себе свои индивидуальные грабли, чтоб потом рассказать другим, что именно мои грабли лучше всех бьют в лоб. Меряемся шишками(на лбу). Потом появляется кто-то новенький, и решает, что все наши грабли стоптаны до швабр, и т.д. :)</p>
+
+<p>Я имел ввиду научный метод проб и ошибок :)</p>
+
+<p><strong>Oxy</strong> 10-03-2013</p>
+
+<blockquote>
+  <p>[size=78%]брызгалка аэрирует раствор очень хорошо..[/size]</p>
+
+  <p>на то оно и.. АЭРО</p>
+</blockquote>
+
+<p>Позволю себе с вас не согласиться несколько :) Оно то - аэро, но раствор там не аэрируеться, там это… сам воздух(АР) - увлажняется :)</p>
+
+<p>[size=1]Но это уже придирки с моей стороны.[/size]</p>
+
+<p><strong>Vad</strong> 11-03-2013</p>
+
+<p>ну.. от перемены мест <del>жительства</del> слагаемых сумма не меняется.. <em>???</em></p>
+
+<p>я для аэрирования раствор разбрызгиваю.. <em>crazy</em></p>
+
+<p>мелкая капля летит и… <em>Dance</em> ЗДАРОВА O2! <em>Dance</em> Полетели вместе, в низ! ;)</p>
+
+<p>и ведь летят <em>???</em></p>
+
+<p>это как бутерброд..</p>
+
+<p>если хлеба больше колбасы = бутерброд с кобасой…</p>
+
+<p>если колбасы больше = бутерброд с хлебом! :D</p>
+
+<p>(вообще .. как в бутерброд .. колбаса попала :-\ этож хлеб с маслом… butter bread :-)</p>
+
+<p><strong>artmaximus</strong> 29-03-2013</p>
+
+<p>Спасибо всем за советы и ответы.</p>
+
+<p>Действительно , вопросов больше, чем ответов.</p>
+
+<p>Совсем времени не хватает на всё . Коль уж начал, то продолжу…эксперименты.</p>
+
+<p>Понял одно, что запутался и нужно просто пробовать и экспериментировать.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Чайный куст | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Чайный куст">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Чайный куст</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>artmaximus</strong> 06-03-2013</p>
+
+<p>Всем привет.</p>
+
+<p>Сегодня был в магазине (Суперстрой ) , обнаружил стеллаж с семенами и обратил внимание на семена чайного кустика :o, купил непременно :D. Вопрос кто-нибудь, когда- нибудь не выращивал такое ? :-[</p>
+
+<p><a href="http://www.ncsemena.ru/shop/semena-russkiy-ogorod-2013/chaynyy-kust-kitayskaya-kameliya.html" target="_blank">http://www.ncsemena.ru/shop/semena-russkiy-ogorod-2013/chaynyy-kust-kitayskaya-kameliya.html</a></p>
+
+<p>На фотке… :o семена 2 шт. <em>crazy</em></p>
+
+<p><a href="https://t.me/ponics_ru_files/10141" target="_blank"><img src="/imagehost/thumbs/sam7886.jpg" alt="" /></a></p>
+
+<p>Прошу советы и высказывания…люди добрые <em>???</em></p>
+
+<p><strong>Oxy</strong> 06-03-2013</p>
+
+<p>Я очень хочу повыращивать чайный куст. Это у меня в планах. Но я бы хотел из черенка, а не из семян.</p>
+
+<p><strong>artmaximus</strong> 06-03-2013</p>
+
+<p>Где бы его ещё взять…этот черенок?</p>
+
+<p>Бросил я 2 этих …ореха <em>crazy</em> называемые семенами чая :D в воду с аэрацией.На пачке написано, что нужно замочить (2-3 суток).</p>
+
+<p>Всходы (обещают )через месяц <em>Wall</em>.</p>
+
+<p>…сбор листа рекомендуется начинать с 4-5 летнего куста :o (так написано)</p>
+
+<p><strong>orgail</strong> 06-03-2013</p>
+
+<p>у нас тут растет… тот самый самый северный :)</p>
+
+<p>выкорчевывать также трудно как лаврушку :D</p>
+
+<p>так что - будете у нас на Колыме … :D</p>
+
+<p><strong>Oxy</strong> 06-03-2013</p>
+
+<p>По поводу сбора, это правда. В этом отношении чайный куст совпадает с жизненным циклом человека, в дело его начинают запускать в 5-6 лет. И в 14-16 лет выкорчевывают, типа старый уже. Растение это - не теневыносливое. Любит хороший конкретный ДНАТ. По почве - рассказывать не буду, но ко всему прочему растение реагирует на атмосферное давление. Самый качественный лист собирают на высотах выше 1500м над уровнем моря. Самый армянский - до 500 м.</p>
+
+<p><strong>Coccinella</strong> 06-03-2013</p>
+
+<p>Что-то я сильно сомневаюсь, что именно с этого растения удастся набрать на кружечку чая. А вот на даму с камелиями - вполне возможно.</p>
+
+<p><strong>Oxy</strong> 06-03-2013</p>
+
+<p>так понятно :) Но не портить же человеку настроение на этапе замачивания семян?</p>
+
+<p><strong>artmaximus</strong> 07-03-2013</p>
+
+<p>Спасибо , Окси, за поддержку, но я уже в трансе… :(</p>
+
+<p>Не ради напитка, а ради растения хочется.</p>
+
+<p>На днях приобрёл лавр нобилис <em>8)</em> уже прёт во все стороны.</p>
+
+<p>Хотел так же чайный кустик выращивать, но где кустик-то взять, вот и купил семечки… &gt;:(</p>
+
+<p>А они засохшие…посмотрел на них, а они плавают.На форуме одном вычитал, что если семена плавают- в утиль их можно.</p>
+
+<p>В общем, Окси, тыбыл прав.Нужно из ветки выращивать…из семян нет шансов.(люди по 5раз пытались …ничего не вышло)</p>
+
+<p>Прям какая то мистика с чаем <em>???</em> Короче старые семена продают все…по ходу :(</p>
+
+<p>Вычитал, что из Сочей люди привозят кустики.</p>
+
+<p>А так хочется…прям навязчивая идея :-[</p>
+
+<p><strong>Coccinella</strong> 07-03-2013</p>
+
+<p>Ну плавают и плавают, может они так в природе распространяются (понятия не имею, как на самом деле…) А Вы их с влажным перлитом перемешайте, раз уж им во влажной среде несколько недель сидеть… Я так в свое время яблони проращивала в холодильнике, (им требуется период низких температур).</p>
+
+<p><strong>artmaximus</strong> 07-03-2013</p>
+
+<p>Несомненно…сдаваться не собираюсь &gt;:(</p>
+
+<p>Прикуплю ещё несколько, может кто и проклюнется.</p>
+
+<p>orgail :-[ нельзя ли как-нибудь…ну хотя бы подумать (а может и не просто подумать… :-[ по возможности…)</p>
+
+<p>я про небольшой кустик …или там веточку :-[…как-нибудь .</p>
+
+<p>Здесь кто-то куда-то пасынков “гоняли” как-то.</p>
+
+<p>Очень чайный кустик хочется :-[…за денежную компенсацию :-[</p>
+
+<p>Я понимаю, что не скромно. :-[</p>
+
+<p>Пока не знаю как, но охото. :-[</p>
+
+<p>Ну это я так…не обижусь за отказ :D</p>
+
+<p><strong>orgail</strong> 07-03-2013</p>
+
+<p>да куст достать не проблема Арт, как его передать то? Боюсь я с почтой России связываться :D</p>
+
+<p><strong>maikl25</strong> 07-03-2013</p>
+
+<blockquote>
+  <p>да куст достать не проблема Арт, как его передать то? Боюсь я с почтой России связываться :D</p>
+</blockquote>
+
+<p>транспортные компании в этом отношении не плохо работают, я из Сургута отправлял посылочку за неделю приехала в Саратов вес около 50 кг отдал 400 рублей, правда ящики нужно делать крепкие компания хорошая, грузчики хреновые, (наблюдал за разгрузкой офигел) но на много надежнее, быстрее и дешевле чем почтой.</p>
+
+<p><strong>hanurik</strong> 08-03-2013</p>
+
+<p>Нашел на одном из цветочных форумов, вроде он занимается продажей семян и сянцев Сочи - Иваненко Феликс, subplod1@mail.ru, можете ему постучаться.</p>
+
+<p>Насколько я знаю семена чая быстро теряют всхожесть, нормальные продавцы высылают свежие семена в каком либо влажном субстрате (опилки, мох) и бывает, что семена приходят уже проклюнувшиеся.</p>
+
+<p>Вот ссылка <a href="http://forum.homecitrus.ru/index.php?showtopic=838" target="_blank">http://forum.homecitrus.ru/index.php?showtopic=838</a> это ветка форума про него надо только зарегаться для картинок.</p>
+
+<p>Ну и почтой России мне черенки инжира пересылали в прошлом году из Краснодарского края, первым классом за 9 дней дошло (во Владивосток), они правда в гибернации были, но сейчас уже первый урожай созревает :)</p>
+
+<p><strong>artmaximus</strong> 08-03-2013</p>
+
+<blockquote>
+  <p>да куст достать не проблема Арт, как его передать то? Боюсь я с почтой России связываться :D</p>
+</blockquote>
+
+<p>Спасибо за отзывчивость <em>8)</em></p>
+
+<p>Попробую связаться с “отработанными” источниками в Сочи.</p>
+
+<p><strong>artmaximus</strong> 08-03-2013</p>
+
+<blockquote>
+  <p>Нашел на одном из цветочных форумов, вроде он занимается продажей семян и сянцев Сочи - Иваненко Феликс, subplod1@mail.ru, можете ему постучаться.</p>
+
+  <p>Насколько я знаю семена чая быстро теряют всхожесть, нормальные продавцы высылают свежие семена в каком либо влажном субстрате (опилки, мох) и бывает, что семена приходят уже проклюнувшиеся.</p>
+
+  <p>Вот ссылка <a href="http://forum.homecitrus.ru/index.php?showtopic=838" target="_blank">http://forum.homecitrus.ru/index.php?showtopic=838</a> это ветка форума про него надо только зарегаться для картинок.</p>
+
+  <p>Ну и почтой России мне черенки инжира пересылали в прошлом году из Краснодарского края, первым классом за 9 дней дошло (во Владивосток), они правда в гибернации были, но сейчас уже первый урожай созревает :)</p>
+</blockquote>
+
+<p>Спасибо большое.</p>
+
+<p>Попробую связаться с Феликсом.</p>
+
+<p>Начитался на этом форуме про чай… :o</p>
+
+<p>Получается “геморойная” :-[ культура для домашнего выращивания. Почти у всех помирают питомцы :'(</p>
+
+<p>Но ничего, пока сам не попробую…не поверю :D</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

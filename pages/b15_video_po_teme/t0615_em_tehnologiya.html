@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>ЭМ технология. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="ЭМ технология.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">ЭМ технология.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Mole_Garden</strong> 14-09-2010</p>
+
+<p>Пока особо еще не понял, что это за технология, но что-то определено интересное</p>
+
+<p><a href="http://www.youtube.com/watch?v=nlqNtV7u02g&amp;feature=related#" target="_blank">Приготовление ЭМ-компоста</a></p>
+
+<p><a href="http://www.youtube.com/watch?v=P1SROJA6WC4&amp;feature=related#" target="_blank">Выращивание культур в коробах</a></p>
+
+<p><a href="http://www.youtube.com/watch?v=EMH6Aq7Fzn4&amp;NR=1#" target="_blank">Выращивание картофеля</a></p>
+
+<p><a href="http://www.youtube.com/watch?v=aaIXRaSYVpU&amp;NR=1#" target="_blank">Результаты ЭМ-технологии, часть 1</a></p>
+
+<p><strong>maxsoft</strong> 14-09-2010</p>
+
+<p>органическое земледелие</p>
+
+<p>технология Эффективных Микроорганизмов</p>
+
+<p>емнип, пошло из японии</p>
+
+<p>препарат Сияние того же рода</p>
+
+<p><strong>Mole_Garden</strong> 14-09-2010</p>
+
+<p><a href="http://www.youtube.com/watch?v=YNgCnbotddY&amp;feature=related#" target="_blank">Результаты ЭМ-технологии, часть 2</a></p>
+
+<p><a href="http://www.youtube.com/watch?v=BDAZqztVPbk&amp;feature=related#" target="_blank">Результаты ЭМ-технологии, часть 3</a></p>
+
+<p><strong>Mole_Garden</strong> 14-09-2010</p>
+
+<blockquote>
+  <p>органическое земледелие</p>
+
+  <p>технология Эффективных Микроорганизмов</p>
+
+  <p>емнип, пошло из японии</p>
+
+  <p>препарат Сияние того же рода</p>
+</blockquote>
+
+<p>Ага, это я уже понял посмотрев еще несколько роликов.</p>
+
+<p><strong>Mole_Garden</strong> 15-09-2010</p>
+
+<p>Радует картошка, очень пышная. Вот сделал 3-4 таких грядки и на семью картошки нарастет. <em>8)</em></p>
+
+<p><strong>Svyatoy_nv</strong> 30-09-2010</p>
+
+<p>Да уж, для дачи - прям сказка <em>8)</em> По моему без вариантов все дачники должны поэкспериментировать на эту тему. :)</p>
+
+<p>2 maxsoft:</p>
+
+<p>А вы сами-то пробовали этот Байкал-М1, или может знакомые кто?</p>
+
+<p><strong>Садовник</strong> 30-09-2010</p>
+
+<p>Я использую для компостирования. Довольно успешно.</p>
+
+<p>Компост готовится гораздо быстрее. <em>8)</em></p>
+
+<p>На компост отправляю растительные остатки из теплицы, субстрат из-под погибших растений, пищевые кухонные отходы, птичий помёт от перепёлок.</p>
+
+<p>Что характерно, после применения ЭМ культур, запах от компостной кучи - не помоешно-гнилостный, а специфический запах брожения (близко к квашеной капусте, винной браге, квасу и т.п.).</p>
+
+<p>В теплице использовать пока этот компост не решаюсь, т.к. в растительных остатках могут быть патогены, а удалось ли ЭМ-организмам с ними справиться или нет - 100% гарантии у меня пока нет.</p>
+
+<p>Но тесты на уличной горшечной культуре вселяют оптимизм и по этому поводу.</p>
+
+<p>Правда этим летом в результате жары, похоже весь мой компост был стерилизован. :(</p>
+
+<p>Он тупо мумифицировался.</p>
+
+<p>Сейчас провожу повторное заселение его микрофлорой.</p>
+
+<p>Выращиваю культуру, кормлю натуральным пчелиным мёдом. <em>Bos</em></p>
+
+<p><strong>травка</strong> 30-09-2010</p>
+
+<p>всем привет .</p>
+
+<p>я читал на одном сайте .что и в гидропонике БАЙКАЛ используют .</p>
+
+<p><strong>Mole_Garden</strong> 30-09-2010</p>
+
+<blockquote>
+  <p>всем привет .</p>
+
+  <p>я читал на одном сайте .что и в гидропонике БАЙКАЛ используют .</p>
+</blockquote>
+
+<p>:D На нашем форуме вроде как тоже был товарищ, который его доливал в гидропонный раствор.</p>
+
+<p><strong>травка</strong> 04-10-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>всем привет .</p>
+
+    <p>я читал на одном сайте .что и в гидропонике БАЙКАЛ используют .</p>
+  </blockquote>
+
+  <p>:D На нашем форуме вроде как тоже был товарищ, который его доливал в гидропонный раствор.</p>
+</blockquote>
+
+<p>да, доливал :)вроде все нормально было .в кокогрунт точно должно пойти .</p>
+
+<p>или я не прав ?</p>
+
+<p><strong>Mole_Garden</strong> 05-10-2010</p>
+
+<p>Читал, что кто-то в теплице готовит землю по ЭМ технологии, кто нибудь в курсе данного вопроса? Как это делается?</p>
+
+<p>И еще такой вопрос, можно ли байкалом например поливать лучок?</p>
+
+<p><strong>Садовник</strong> 05-10-2010</p>
+
+<p>Поливаешь по инструкции 100 мл на 10 л воды.</p>
+
+<p>Для лука вряд ли будет сильно выраженный эффект, хотя определённый стимулирующее действие должно быть.</p>
+
+<p>Конкурентное подавление патогенов тоже будет.</p>
+
+<p>Попробуй на отдельных картах, отпишешься что выйдет.</p>
+
+<p><strong>Mole_Garden</strong> 05-10-2010</p>
+
+<blockquote>
+  <p>Поливаешь по инструкции 100 мл на 10 л воды.</p>
+
+  <p>Для лука вряд ли будет сильно выраженный эффект, хотя определённый стимулирующее действие должно быть.</p>
+
+  <p>Конкурентное подавление патогенов тоже будет.</p>
+
+  <p>Попробуй на отдельных картах, отпишешься что выйдет.</p>
+</blockquote>
+
+<p>Это видимо разбавленный ЭМ-1 На сколько понимаю есть еще концентрат</p>
+
+<p>Вот такой</p>
+
+<p><img src="http://baykal.argonet.ru/img/0260.jpg" alt="" /></p>
+
+<p>Осталось только его найти и купить для тестов. Так же планирую купить Рибав и проверить его на опилках.</p>
+
+<p><strong>Садовник</strong> 05-10-2010</p>
+
+<p>Из концентрата за неделю выращивают 3 литра препарата.</p>
+
+<p><strong>Mole_Garden</strong> 05-10-2010</p>
+
+<blockquote>
+  <p>Из концентрата за неделю выращивают 3 литра препарата.</p>
+</blockquote>
+
+<p>Вот как закуплюсь, буду изучать и тестить.</p>
+
+<p><strong>Oxy</strong> 05-10-2010</p>
+
+<blockquote>
+  <p>Из концентрата за неделю выращивают 3 литра препарата.</p>
+</blockquote>
+
+<p>А можно поподробней - как именно выращивают?</p>
+
+<p><strong>Svyatoy_nv</strong> 05-10-2010</p>
+
+<p>Полагаю разбодяжить в банку, подкармливаешь медком и ждешь, пока они там размножатся.</p>
+
+<p><strong>Садовник</strong> 05-10-2010</p>
+
+<blockquote>
+  <blockquote>
+    <p>Из концентрата за неделю выращивают 3 литра препарата.</p>
+  </blockquote>
+
+  <p>А можно поподробней - как именно выращивают?</p>
+</blockquote>
+
+<p>В 3л баллон налить тёплой нехлорированной воды 26-30 гр.С, добавить питательную среду (40-60 г патоки, варенья или мёда) добавлять дробно, по 1 ст. ложке в день 3 дня. Тщательно переещшать, закрыть крышкой, оставив под ней как можно меньше воздуха. Полученый раствор выдержать в темноте при температуре 26-30 гр.С в течение 4-6 дней.</p>
+
+<p><strong>Coccinella</strong> 08-01-2011</p>
+
+<p>А кто-нибудь задумывался о том, что мед обладает бактерицидными свойствами?</p>
+
+<p><strong>otec</strong> 08-01-2011</p>
+
+<blockquote>
+  <p>А кто-нибудь задумывался о том, что мед обладает бактерицидными свойствами?</p>
+</blockquote>
+
+<p>По этой причине мед не рекомендуется.Берем 2 столовых ложки патоки столько-же Байкала (я беру в фасовке 30гр) Растворяем патоку в кипяченой воде (температура 30градусов) в литровой банке ,после чего добавляем Байкал.Переливаем в баклажку из-под минеральной воды 1,5л доливаем под горлышко кипяченой воды.Обматываем черной пленкой (процесс должен проходить в темноте без доступа кислорода при температуре 20-30градусов) выпускаем газ раз в 2-3дня (по мере накопления газа) через неделю раствор готов.Светлокоричневая жидкость с запахом кефира .Хранил в холодильнике (3-5градусов)</p>
+
+<p><strong>otec</strong> 08-01-2011</p>
+
+<p>Несколько замечаний.Не используйте стеклянную посуду,может взорваться.Из 1,5литра получиться 1,5тонны готового раствора для использования (при 1:1000) вряд ли за один раз вы все используете,поэтому отливаете из баклажки сколько нужно и ОБЯЗАТЕЛЬНО выдавливаете воздух,перед тем как закрыть.По поводу дополнительной информации ,много специализированных сайтов есть журналы. Поиск- “ЭМ-технологии”</p>
+
+<p><strong>Coccinella</strong> 08-01-2011</p>
+
+<p>Ох, смущает меня эта технология! Ну Вы подумайте сами, логически! Препарат, в котором изначально должно содержаться 86 (если не ошибаюсь) видов и штаммов микроорганизмов, причем аэробов (которым воздух необходим) и анаэробов (которым воздух вреден) в одном флаконе разводится в разных там соотношениях. Причем, как я очень подозреваю разводится неоднократно! Как вы думаете, что в нем содержится в конечном итоге? Если для разведения бралась кипяченая вода, то (как мне кажется) выживают сильнейшие -5-10 видов. Если вода была из-под крана, то выживает гарантированно только сальмонелла и кишечная палочка!</p>
+
+<p>Короче, если этот препарат действительно стимулирует компостирование, то я только рада. Но, боюсь, что его эффект сильно варьирует в зависимости от поставщика (точнее от его честности).</p>
+
+<p>Зачем в одну упряжку взялись впрягать “коня и трепетную лань” (аэробов с анаэробами) я вообще не постигаю, но это уже мелочи…</p>
+
+<p><strong>Жекус</strong> 27-10-2011</p>
+
+<p>Здравствуйте.</p>
+
+<p>Так как тема умерла, а выводы не однозначны интересует мнение и результаты по поводу использования Эм технологий. На данный момент стоит вопрос использования Восток-ЭМ-1 в период проращивания (замачивание, бортирование), а также в дальнейшем, согласно инструкции. Есть еще янтарная кислота. Планируется использовать вермикулит вспученный+торф+перлит. Семена огурец + клубника</p>
+
+<p>Установку уже собрал.</p>
+
+<p><strong>Coccinella</strong> 27-10-2011</p>
+
+<p>Многолетний опыт (личный и чужой) показывает, что семена огурца лучше всего прорастают, если им не мешать всякими обработками. Все, что им требуется - достаточно влаги и температура 25оС.</p>
+
+<p>К янтарной кислоте вообще отношусь очень скептически, приходилось наблюдать некоторые опыты по ее применению…</p>
+
+<p><strong>Жекус</strong> 27-10-2011</p>
+
+<blockquote>
+  <p>К янтарной кислоте вообще отношусь очень скептически, приходилось наблюдать некоторые опыты по ее применению…</p>
+</blockquote>
+
+<p>В чем заключается результат и почему скептически?</p>
+
+<p><strong>Coccinella</strong> 27-10-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>К янтарной кислоте вообще отношусь очень скептически, приходилось наблюдать некоторые опыты по ее применению…</p>
+  </blockquote>
+
+  <p>В чем заключается результат и почему скептически?</p>
+</blockquote>
+
+<p>Да не было реального, статистически доказанного результата ,поэтому и скептически :)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

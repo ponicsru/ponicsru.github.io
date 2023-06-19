@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Простенький осцилограф. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Простенький осцилограф.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Простенький осцилограф.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Пресвятой_ДжимБим</strong> 19-07-2017</p>
+
+<p>Привет. Давно не виделись.</p>
+
+<p>Нужен простенький осцилограф. Хочу собрать из подручных средств.</p>
+
+<p>Вроде на базе ардуино кто-то собирал?</p>
+
+<p>Он нужен только для одной операции: Снять показания с лямбда-зондов авто.</p>
+
+<p>Есть у кого какие идеи?.. <em>???</em></p>
+
+<p><strong>Vad</strong> 19-07-2017</p>
+
+<p>звуковая карта</p>
+
+<p><a href="http://www.start-drive.com.ua/forum/index.php?topic=2637.0" target="_blank">http://www.start-drive.com.ua/forum/index.php?topic=2637.0</a></p>
+
+<p><a href="http://www.carhelp.info/forums/showthread.php?t=3815" target="_blank">http://www.carhelp.info/forums/showthread.php?t=3815</a></p>
+
+<p>или еще <a href="http://bfy.tw/CurJ" target="_blank">пошевелить интернет</a></p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 19-07-2017</p>
+
+<p>Шевелил.. да что-то все надо докупать. А у меня времени нет искать комплектующие.</p>
+
+<p>Я поэтому в сторону дуины смотрел.</p>
+
+<p>Вариант со звуковухой - не вариант</p>
+
+<p>Провожусь долго.</p>
+
+<p><strong>Vad</strong> 19-07-2017</p>
+
+<p>че там возиться?</p>
+
+<p>два провода и два резистора…</p>
+
+<p>вообще, из личного опыта ;)</p>
+
+<p>лямбда стоит копейки.. если ей больше 25 тыщ пробега(в даташитах именно такой ресурс часто указан) - смело меняем и забываем о ней <em>8)</em></p>
+
+<p>че ее мерить-то.. сдохла :-[</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 19-07-2017</p>
+
+<blockquote>
+  <p>че там возиться?</p>
+
+  <p>два провода и два резистора…</p>
+
+  <p>вообще, из личного опыта ;)</p>
+
+  <p>лямбда стоит копейки.. если ей больше 25 тыщ пробега(в даташитах именно такой ресурс часто указан) - смело меняем и забываем о ней <em>8)</em></p>
+
+  <p>че ее мерить-то.. сдохла :-[</p>
+</blockquote>
+
+<p>Лямбды рабочие. Иначе чек бы загорелся. Мне нужно проверять катализатор. Живой/неживой.</p>
+
+<p>Блинааа.. мне нужен двухканальный осцилограф.. чето я не предусмотрел.</p>
+
+<p>Т.е. Подключаешь один канал на первую лямбду, перед катализатором которая, а второй канал на вторую, которая после.</p>
+
+<p>Блин..</p>
+
+<p>Буду думать.</p>
+
+<p>А чего ты там говорил про два проводка и резистор? Это про звуковуху?</p>
+
+<p><strong>Vad</strong> 19-07-2017</p>
+
+<p>ссылки на звуковуху двумя сообщениями выше. ;)</p>
+
+<p>катализатор можно и тестером проверить..</p>
+
+<p>там никак не привязано к такту..</p>
+
+<p>катализатор работает.. или не работает, не обязательно “зубы” наблюдать чтоб понять, что оно померло.</p>
+
+<blockquote>
+  <p>Лямбды рабочие. Иначе чек бы загорелся.</p>
+</blockquote>
+
+<p>НО</p>
+
+<p>чек не будет гореть если лямбда просто вялая.. если опаздывает например, или у нее на выходе “похоже на правду”. Это конечно можно увидеть осциллом..</p>
+
+<p>а “двигатель убитый молнией” загорится .. когда уже ей совсем пиндык.</p>
+
+<p>да и оно надо?</p>
+
+<p>производители тачек рекомендуют менять каждые 50-100 тыс (не читают даташитов? или расчет на регулярное ТО и бензин из бензина? :D)</p>
+
+<p>Я сам 4 часа назад только вылез из под тачки :D</p>
+
+<p>свежО ;D</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 19-07-2017</p>
+
+<p>:D</p>
+
+<p>Я уже под тачку не лажу)</p>
+
+<p>Раньше, когда бездорожным экстримом увлекался, то там запросто)</p>
+
+<p>А теперь тока в сервисных сервисах.</p>
+
+<p>А катализатор решил проверить, т.к. тяга упала, а в сервисе ничего определенного сказать не смогли((</p>
+
+<p>Вот и проверяю:</p>
+
+<p>Давление в рампе(мало-ли бензанасос)?</p>
+
+<p>Лямбды</p>
+
+<p>Катализатор.</p>
+
+<p>Свечи, ВВ-провода, фильтры мне удобно поменяли.</p>
+
+<p>Если ничего не поможет, то вспомню молодость, и вскрою клапанную крышку на визуальный осмотр..</p>
+
+<p><strong>Vad</strong> 19-07-2017</p>
+
+<blockquote>
+  <p>А катализатор решил проверить, т.к. тяга упала, а в сервисе ничего определенного сказать не смогли((</p>
+</blockquote>
+
+<p>потому делаю все, что возможно сам.</p>
+
+<p>катализатор на оплавление и на кокс проверяют не лямбдами… в СЦ должен быть дифференциальный манометр… вкручивается вместо лямбд и смотрится какое сопротивление создает катализатор..</p>
+
+<p>или им лень или им пофиг.. видимо не делали..</p>
+
+<blockquote>
+  <p>Если ничего не поможет, то вспомню молодость, и вскрою клапанную крышку на визуальный осмотр..</p>
+</blockquote>
+
+<p>что в этом случае можно увидеть под клапанной крышкой? :D</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 19-07-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>А катализатор решил проверить, т.к. тяга упала, а в сервисе ничего определенного сказать не смогли((</p>
+  </blockquote>
+
+  <p>потому делаю все, что возможно сам.</p>
+
+  <p>катализатор на оплавление и на кокс проверяют не лямбдами… в СЦ должен быть дифференциальный манометр… вкручивается вместо лямбд и смотрится какое сопротивление создает катализатор..</p>
+
+  <p>или им лень или им пофиг.. видимо не делали..</p>
+
+  <blockquote>
+    <p>Если ничего не поможет, то вспомню молодость, и вскрою клапанную крышку на визуальный осмотр..</p>
+  </blockquote>
+
+  <p>что в этом случае можно увидеть под клапанной крышкой? :D</p>
+</blockquote>
+
+<p>Можно увидеть:</p>
+
+<p>Поступает ли масло в полном объеме(грешу на маслонасос).</p>
+
+<p>Износ распредвала(на него тоже грешу).</p>
+
+<p>Общее состояние внутренностей.</p>
+
+<p>Но это крайняя мера..</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 19-07-2017</p>
+
+<p>Ну а с Катализатором - видать и не проверяли, однако предложили сразу пламегаситель поставить с обманкой вместо второй лямбды. За хорошую сумму.</p>
+
+<p><strong>Vad</strong> 19-07-2017</p>
+
+<p>ну дык!</p>
+
+<p>самое “ТО” ;D</p>
+
+<p><strong>cpf</strong> 20-07-2017</p>
+
+<blockquote>
+  <p>Ну а с Катализатором - видать и не проверяли, однако предложили сразу пламегаситель поставить с обманкой вместо второй лямбды. За хорошую сумму.</p>
+</blockquote>
+
+<p>Катализаторы проверяют по “противодавлению” (вместо лямбды перед катами манометр специальный вкручивают). Можно просто лямбды перед ними выкрутить и прокатиться (звук, правда, будет аццкий), если тяга заметно возрастёт - значит это каты забиты. Осциллограф ничего криминального не покажет (если чекенджин не горит).</p>
+
+<p>Вообще, нормальный сервис легко определяет жив кат или нет (часто, правда “разводят”, сволочи, чтобы нажиться). Можно пройти диагностику в двух разных сервисах - всё равно дешевле, чем каты вырезать и пламегасители вваривать (ещё желательно программу движка перенастраивать, чтобы лишнюю горючку на разогрев катов не тратил).</p>
+
+<p><strong>cpf</strong> 20-07-2017</p>
+
+<blockquote>
+  <p>:D</p>
+
+  <p>Я уже под тачку не лажу)</p>
+
+  <p>Раньше, когда бездорожным экстримом увлекался, то там запросто)</p>
+
+  <p>А теперь тока в сервисных сервисах.</p>
+
+  <p>А катализатор решил проверить, т.к. тяга упала, а в сервисе ничего определенного сказать не смогли((</p>
+
+  <p>Вот и проверяю:</p>
+
+  <p>Давление в рампе(мало-ли бензанасос)?</p>
+
+  <p>Лямбды</p>
+
+  <p>Катализатор.</p>
+
+  <p>Свечи, ВВ-провода, фильтры мне удобно поменяли.</p>
+
+  <p>Если ничего не поможет, то вспомню молодость, и вскрою клапанную крышку на визуальный осмотр..</p>
+</blockquote>
+
+<p>На подсос воздуха ещё проверь (могли где нить накосячить при замене воздушного фильтра, например). Карбклинером побрызгай в возможных местах, при запущенном двигателе, сразу заметишь реакцию, если есть подсос воздуха.</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 20-07-2017</p>
+
+<p>Карбклинером проверял. Двигатель работает ровненько, никаких перепадов.</p>
+
+<p>Мне тут подсказали - замерить давление в рампе(и в движении тоже). Может банально забилась сеточка бензонасоса. И производительности насоса перестает хватать. Хотя по ощущениям - как будто суппорта клинят(( А сервисники в голос утверждают, что тормоза идеальны.</p>
+
+<p><strong>cpf</strong> 20-07-2017</p>
+
+<blockquote>
+  <p>Карбклинером проверял. Двигатель работает ровненько, никаких перепадов.</p>
+
+  <p>Мне тут подсказали - замерить давление в рампе(и в движении тоже). Может банально забилась сеточка бензонасоса. И производительности насоса перестает хватать. Хотя по ощущениям - как будто суппорта клинят(( А сервисники в голос утверждают, что тормоза идеальны.</p>
+</blockquote>
+
+<p>Достаточно замерить давление в рампе на ХХ. Если бензонасос- в порядке, то давление в рампе на ходу не изменится (производительности - хватает с многократным запасом). Сеточка - тоже имеет площадь сечения такую, что даже если забьётся половина отверстий, это ни на что не повлияет. В любом случае, по давлению в рампе на ХХ - будет сразу видно (если меньше нормы - тогда лезть в бн, фильтры или сеточки).</p>
+
+<p>Если суппорта клинят - будут сильно греться. Дотроньтесь аккуратно до колесных (не тормозных!) дисков, если горячие - значит надо смотреть суппорта (чаще всего, замена ремкомплекта и легкая полировка поршней для съёма ржавчины- решают проблему).</p>
+
+<p>P\S надо проверить ещё стояночный тормоз (у меня, например, это - отдельные колодки барабанного типа), может он - подтормаживает?</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 20-07-2017</p>
+
+<p>Колёсные диски тёплые(передние).</p>
+
+<p>Колодки стояночного тормоза осыпались.. недавно смотрел. Т.к. ручником никто никогда не пользовался.</p>
+
+<p>И да, поршни в суппортах у меня эбонитовые. Направляющие могут прикипеть. Поеду колодки менять на днях, и гляну, дабы исключить.</p>
+
+<p><strong>Vad</strong> 20-07-2017</p>
+
+<p>когда суппорта клинят выбег сокращается..</p>
+
+<p>как только на нейтраль - как будто “тачку держат сзади”..</p>
+
+<p>так что, клин суппорта можно еще выбегом проверить..</p>
+
+<p>Попробуйте, не сложно.. пусть и не на 100% достоверно <em>???</em></p>
+
+<p>особенно внимательно наблюдать в момент остановки..</p>
+
+<p><strong>cpf</strong> 20-07-2017</p>
+
+<blockquote>
+  <p>Колёсные диски тёплые(передние).</p>
+
+  <p>Колодки стояночного тормоза осыпались.. недавно смотрел. Т.к. ручником никто никогда не пользовался.</p>
+
+  <p>И да, поршни в суппортах у меня эбонитовые. Направляющие могут прикипеть. Поеду колодки менять на днях, и гляну, дабы исключить.</p>
+</blockquote>
+
+<p>Тёплые - это нормально (особенно передние). Направляющие - нипричём (клинить могут только поршни). Надо дальше искать причину…</p>
+
+<p>Можно вывесить на подъёмнике, и покрутить на нейтрали каждое колесо. Сразу будет видно - мешает что-то или нет…</p>
+
+<p>Думаю, в чём-то другом дело…</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 20-07-2017</p>
+
+<blockquote>
+  <blockquote>
+    <p>Колёсные диски тёплые(передние).</p>
+
+    <p>Колодки стояночного тормоза осыпались.. недавно смотрел. Т.к. ручником никто никогда не пользовался.</p>
+
+    <p>И да, поршни в суппортах у меня эбонитовые. Направляющие могут прикипеть. Поеду колодки менять на днях, и гляну, дабы исключить.</p>
+  </blockquote>
+
+  <p>Тёплые - это нормально (особенно передние). Направляющие - нипричём (клинить могут только поршни). Надо дальше искать причину…</p>
+
+  <p>Можно вывесить на подъёмнике, и покрутить на нейтрали каждое колесо. Сразу будет видно - мешает что-то или нет…</p>
+
+  <p>Думаю, в чём-то другом дело…</p>
+</blockquote>
+
+<p>О! Кстати! После подъемника авто едет как будто пушинка. как будто не 150 лошадей, а 300))</p>
+
+<p>Достаточно просто чтобы все колеса свесились.</p>
+
+<p>Педаль газа отзывчивая становится.</p>
+
+<p>Вопчем теряюсь я..</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 20-07-2017</p>
+
+<blockquote>
+  <p>когда суппорта клинят выбег сокращается..</p>
+
+  <p>как только на нейтраль - как будто “тачку держат сзади”..</p>
+
+  <p>так что, клин суппорта можно еще выбегом проверить..</p>
+
+  <p>Попробуйте, не сложно.. пусть и не на 100% достоверно <em>???</em></p>
+
+  <p>особенно внимательно наблюдать в момент остановки..</p>
+</blockquote>
+
+<p>Попробую. На автомате проблематично на ходу переключаться на нейтрал, но попытаюсь.</p>
+
+<p><strong>Vad</strong> 20-07-2017</p>
+
+<p>на автомате проблем нет на нейтраль, только скорость не выше 40..</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 14-01-2018</p>
+
+<p>Буду по всем эдаким вопросам писать сюда!</p>
+
+<p>Итак для индукционной плиты нужен IGBT транзистор.</p>
+
+<p>Маркировка: NGTB30N135IHR</p>
+
+<p>Но как водится нет его. И хоть ты тресни.</p>
+
+<p>Вернее есть. Но ценник конский, и поставка больше 2-х недель.</p>
+
+<p>Нашел аналог IHW30N135R3</p>
+
+<p>Всем меня устраивает по параметрам. Но, единственно ёмкость меньше в 2 раза. Т.е. если в оригинале 124pf, то в данном транзисторе 62pf.</p>
+
+<p>Собственно вопрос. Критичен ли этот показатель?</p>
+
+<p><strong>cpf</strong> 15-01-2018</p>
+
+<p>Если все остальные параметры - подходят, то “чем меньше ёмкость - тем лучше”.</p>
+
+<p>Главное, чтобы мощность переключения - подходила.</p>
+
+<p>Ещё вопрос (личный): какой фирмы индукционная плита? (собираю статистику, для себя…)</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 15-01-2018</p>
+
+<blockquote>
+  <p>Если все остальные параметры - подходят, то “чем меньше ёмкость - тем лучше”.</p>
+
+  <p>Главное, чтобы мощность переключения - подходила.</p>
+
+  <p>Ещё вопрос (личный): какой фирмы индукционная плита? (собираю статистику, для себя…)</p>
+</blockquote>
+
+<p>Спасибо за ответ!</p>
+
+<p>Плита Horpoint Ariston.</p>
+
+<p>Там не только транзюк погорел. Пару оптопар симисторных, сопротивление в обвязке оптопар, и мосфет в цепи вентилятора.</p>
+
+<p><em>**</em> 15-01-2018</p>
+
+<p>И ещё вопросец.</p>
+
+<p>Аналоги транзисторов нашел в Китае.</p>
+
+<p>Тоже ждать. Но зато ценник радует.</p>
+
+<p>Но!! Чето меня смущает. А будут ли характеристики такими-же как заявлено?</p>
+
+<p>Кто с высоковольтными транзисторами igbt Китайпрома сталкивался?</p>
+
+<p><strong>cpf</strong> 15-01-2018</p>
+
+<p>Думаю, что большая часть в “китайпроме” и делается. Технологии изготовления отдельных элементов - достаточно простые и уже отработаны. Главное, правильно подобрать аналог (в Вашем случае, наиболее важны мощность и теплоотвод).</p>
+
+<p>Можно пойти другим путём:</p>
+
+<p><a href="https://www.avito.ru/chelyabinsk/bytovaya_tehnika/induktsionnaya_plita_hotpoint_ariston_sio6_rfh_945888029" target="_blank">https://www.avito.ru/chelyabinsk/bytovaya_tehnika/induktsionnaya_plita_hotpoint_ariston_sio6_rfh_945888029</a></p>
+
+<p>Думаю, что это “добро” будет стоить не более 1000р+доставка. :)</p>
+
+<p>Удачи…</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 15-01-2018</p>
+
+<blockquote>
+  <p>Думаю, что большая часть в “китайпроме” и делается. Технологии изготовления отдельных элементов - достаточно простые и уже отработаны. Главное, правильно подобрать аналог (в Вашем случае, наиболее важны мощность и теплоотвод).</p>
+
+  <p>Можно пойти другим путём:</p>
+
+  <p><a href="https://www.avito.ru/chelyabinsk/bytovaya_tehnika/induktsionnaya_plita_hotpoint_ariston_sio6_rfh_945888029" target="_blank">https://www.avito.ru/chelyabinsk/bytovaya_tehnika/induktsionnaya_plita_hotpoint_ariston_sio6_rfh_945888029</a></p>
+
+  <p>Думаю, что это “добро” будет стоить не более 1000р+доставка. :)</p>
+
+  <p>Удачи…</p>
+</blockquote>
+
+<p>В моем случае аналог гораздо эффективнее получается.</p>
+
+<p>Покупать ещё плиту не хочу. Пусть и как донора.</p>
+
+<p>Прозвонил почти все силовые элементы, частично “срисовал” схему. Т.е. мне проще пару элементов заменить, чем с донором возиться.</p>
+
+<p>Кстати, оставлю на будущее, как установить работоспособность IGBT транзисторов:</p>
+
+<p><a href="https://t.me/ponics_ru_files/18612" target="_blank"><img src="/imagehost2/thumbs/igbttest.jpg" alt="" /></a></p>
+
+<p>Мультиметром затвор не открыть. А с этой схемой сразу понятно.</p>
+
+<p><strong>serge mat</strong> 16-01-2018</p>
+
+<p>Видел вот здесь:</p>
+
+<p><a href="http://arduino.ru/forum/proekty/vyzhimaem-maksimum-usb-ostsillograf-na-arduino" target="_blank">http://arduino.ru/forum/proekty/vyzhimaem-maksimum-usb-ostsillograf-na-arduino</a></p>
+
+<p>Сам пока не разбирался, там программирование на низком уровне, я еще не знаю этих тонкостей.</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 16-01-2018</p>
+
+<p>Да мне уже не надо осциллограф.</p>
+
+<p>Мне надо транзистор. В Питере беда просто с нужными компонентами.</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 25-01-2018</p>
+
+<blockquote>
+  <p>Видел вот здесь:</p>
+
+  <p><a href="http://arduino.ru/forum/proekty/vyzhimaem-maksimum-usb-ostsillograf-na-arduino" target="_blank">http://arduino.ru/forum/proekty/vyzhimaem-maksimum-usb-ostsillograf-na-arduino</a></p>
+
+  <p>Сам пока не разбирался, там программирование на низком уровне, я еще не знаю этих тонкостей.</p>
+</blockquote>
+
+<p>Ну раз я по воле спамера зашёл сюда, то напишу.</p>
+
+<p>По вашей ссылке осцилограф беден. Всем и вся.</p>
+
+<p>В данный момент разрабатываю карманный осцилограф на stm32, с максимальной частотой дискретизации до 6мГц. С входным сопротивлением 1мОм.</p>
+
+<p>С использованием внешнего АЦП и ОУ.</p>
+
+<p><em>**</em> 06-02-2018</p>
+
+<p>Выдалась свободная минутка. Отпишусь о успехах и неудачах в разработке осциллографа на stm32.</p>
+
+<p>Итак,</p>
+
+<p>Одноканальный осциллограф. Планируется максимальная частота дискретизации до 40мГц.</p>
+
+<p>Входная часть построена на ОУ OPA2354(частота до 250мГц, Rail-to-rail). На входе простецкий трехрежимный делитель.</p>
+
+<p>Далее сигнал приходит на внешний АЦП построенной на микрухе AD9280. Про эту микруху многое можно сказать, но проще прочесть даташит.</p>
+
+<p>Тактирование внешнего АЦП задаётся Контроллером stm32, и при помощи dma контроллера происходит считывание выборок с внешнего АЦП. Из dma информация буферизируется и подаётся потоком в юсб, либо на экранчик(это я ещё не решил).</p>
+
+<p>Камень контроллера планируется разогнать до 120мГц рабочего режима.</p>
+
+<p>Входная схема(До АЦП) уже имеется и протестирована на макетке.</p>
+
+<p>По мере дальнейшей разработки буду выкладывать схемы.</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 06-02-2018</p>
+
+<p>Неудачи: пока не удается разработать алгоритм забора с внешнего ацп по нужному прерыванию.</p>
+
+<p>Банально нет времени..</p>
+
+<p><strong>Пресвятой_ДжимБим</strong> 06-02-2018</p>
+
+<p>Забыл сказать.. благодаря высокоскоростному АЦП возможно будет делать до 20млн.выборок в сек.</p>
+
+<p>А это очень и очень неплохой результ.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

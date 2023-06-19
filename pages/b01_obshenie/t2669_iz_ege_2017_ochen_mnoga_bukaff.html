@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Из ЕГЭ 2017 (очень многа букафф :) | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Из ЕГЭ 2017 (очень многа букафф :)">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Из ЕГЭ 2017 (очень многа букафф :)</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>cpf</strong> 06-07-2017</p>
+
+<p>( А в подборке Сергей Шмидт использовал выдержки из работ 11-классников Москвы, Саратовской, Томской, Кемеровской областей и Приморского края</p>
+
+<p>Итак, к самому интересному. Улыбаемся!) типа копирайта</p>
+
+<p>1.Зачем человеку права, если ему есть нечего и жена из-за этого ему изменяет?</p>
+
+<p>2.В XIX веке все считали, что кризис это очень плохо. И только Карл Маркс написал большую книгу о том, что в кризис можно неплохо заработать.</p>
+
+<p>3.Жириновский не один такой. Свой Жириновский есть в каждом классе.</p>
+
+<p>4.Примером харизматичного политика был Ленин. Все прилипали к экранам, когда он выступал. Когда он входил, все вставали.</p>
+
+<p>5.Второй аргумент из настоящего времени. Макрон долго жал руку Трампа, чтобы показать, что он будет сопротивляться не только ему, но и самому Путину.</p>
+
+<p>6.Белка и Стрелка, слетав на Луну, вернулись без признаков жизни. А Юрий Гагарин, слетав на Луну, вернулся живым и невредимым.</p>
+
+<p>7.Истина это согласие интеллекта с действующим положением вещей.</p>
+
+<p>8.В детском саду я пробовал научить хомячка разговаривать. Никто не сказал мне, что это невозможно. Взрослые только смеялись и показывали на меня пальцем. Это выдавало в них плохих педагогов.</p>
+
+<p>9.Бывают справедливые войны, например, за наследство.</p>
+
+<ol>
+  <li>Экономическая ответственность это когда, например, кто-нибудь отравился от произведенного тобой товара, а ты взял на содержание его семью.</li>
+</ol>
+
+<p>11.Пример диалога культур — спросить, как пройти, в незнакомом месте.</p>
+
+<p>12.В качестве примера из собственного опыта приведу семью Рокфеллеров.</p>
+
+<ol>
+  <li>Водительскими правами обеспечена большая часть людей, но водят они как последние животные.</li>
+</ol>
+
+<p>14.Все меньше разногласий между мужчинами и женщинами. Скоро они даже перестанут различать друг друга.</p>
+
+<p>15.В СССР не все было хорошо, но хотя бы не было несчастных животных.</p>
+
+<p>16.Вред от американцев большой, а польза только от их айфонов.</p>
+
+<ol>
+  <li>Мы выбрали президентом Путина, а американцы бесятся, что их не спросили.</li>
+</ol>
+
+<p>18.Человек, конечно, может быть подопытным кроликом, но в отличие от кролика он не только умеет размножаться, но и может зубы выбить.</p>
+
+<ol>
+  <li>
+    <p>Чичиков скупал мертвые души, потому что государство платило по ним пенсии.</p>
+  </li>
+  <li>
+    <p>С автором этой цитаты я не знаком, в глаза бы ему высказался честнее, чем здесь. (о Плинии Младшем).</p>
+  </li>
+  <li>
+    <p>Не знаю, откуда автору пришла в голову такая бредовая мысль. Мой папа говорит, что в пустую голову мысли входят без стука.</p>
+  </li>
+</ol>
+
+<p>22.В спортивной школе меня окружали сплошные дебилы. Если бы я не сломал копчик, неизвестно, смог бы я поучиться с нормальными ребятами.</p>
+
+<ol>
+  <li>
+    <p>Пример источника экономического роста — на фабрике «Колобок» увеличили производство муки!</p>
+  </li>
+  <li>
+    <p>Как бы ни отмахиваться от ответственности за свою родину, она все равно заставит это сделать.</p>
+  </li>
+  <li>
+    <p>Древний спартанец – плохой пример для жителя Афин.</p>
+  </li>
+</ol>
+
+<p>26.Если бы Раскольников убил не старуху, а молодую девушку, он бы еще больше жалел убитую. Ведь старуха хотя бы родила.</p>
+
+<ol>
+  <li>
+    <p>Не убил бы Раскольников старуху, жил бы спокойно, учился. А так пришлось бросить учебу, влезть в долги, а потом и отправиться за каторгой.</p>
+  </li>
+  <li>
+    <p>Потребности бывают разные. Элен Безухова у Толстого испытывала потребность в разврате. Однако общество закрыло перед ней двери и как она не стучалась, не пустило ее обратно.</p>
+  </li>
+  <li>
+    <p>В ГУЛАГе декабристам сочувствовал простой народ.</p>
+  </li>
+  <li>
+    <p>Герцен, наверное, тоже был против однополых браков.</p>
+  </li>
+</ol>
+
+<p>31.Это хорошо, что у Герцена было свое мнение, но разве не было бы лучше, если бы он помалкивал.</p>
+
+<p>32.Надо расчистить свою жизнь от наследственности, иначе попадешь в тюрьму, если в ней уже были твои родственники.</p>
+
+<p>33.Такое чувство, что Макса Вебера много били в детстве непонятно за что. Иначе зачем он озаботился классификацией видов господства?</p>
+
+<ol>
+  <li>
+    <p>Если человек пьет на работе, значит, работа ему не интересна.</p>
+  </li>
+  <li>
+    <p>Когда-то человек с бородою считался грязнулей или преступником, а сейчас его могут уважать за то, что он похож на Филиппа Киркорова.</p>
+  </li>
+  <li>
+    <p>Последние деньги государство должно тратить на нищих, а не на военных.</p>
+  </li>
+  <li>
+    <p>Люди не ходят голыми по улицам и не только из-за того, что холодно или они некрасивые. Культура не позволяет снимать штаны или задирать юбку там, где хочется.</p>
+  </li>
+  <li>
+    <p>Сколько себя помню, меня заставляют учиться. Когда я вырасту и от меня отстанут, я всех заставлю переучиваться.</p>
+  </li>
+  <li>
+    <p>Пример социальной мобильности: Петр I выходит замуж за Екатерину II и встает на престол.</p>
+  </li>
+  <li>
+    <p>Билл Гейтс и Стив Джобс тоже голодали в детстве, но своей головой смогли стать президентами.</p>
+  </li>
+  <li>
+    <p>У создателя компании «Аппл» не было земли или наследственного титула. Но мозгами своими он распорядился как надо. Если бы не смерть от рака, мог бы завоевать всю землю и превратить нас в своих рабов. Такой он был чрезмерно умный человек.</p>
+  </li>
+  <li>
+    <p>Большинство населения питается из потребительской корзины.</p>
+  </li>
+  <li>
+    <p>Сторож склада, используя личное оружие, грабил ни в чем не повинных прохожих. А оружие ему выдали не для преступления, а для охраны склада.</p>
+  </li>
+  <li>
+    <p>Несоблюдение техники безопасности: сотрудник нефтяной компании полез на нефтяную вышку неодетым.</p>
+  </li>
+  <li>
+    <p>Наказания не смогли избежать ни Раскольников из «Преступления и наказания», ни мэр из города Усть-Илимска.</p>
+  </li>
+  <li>
+    <p>Секс не запрещен, но заниматься им рискованно.</p>
+  </li>
+  <li>
+    <p>Наказание не может быть полностью справедливым, иначе все преступники просили бы их наказать.</p>
+  </li>
+  <li>
+    <p>Причина увольнения – отклоняющееся поведение, например, работник все время приходит на работу голый.</p>
+  </li>
+  <li>
+    <p>Жить, соблюдая закон, скучно, но в тюрьме будет еще скучнее.</p>
+  </li>
+  <li>
+    <p>В древности люди делились на богатых и бедных. Сейчас мало что изменилось, разве что все стали грамотными.</p>
+  </li>
+  <li>
+    <p>Не стоит ждать от брака социальной мобильности, так как муж может оказаться сволочью или пьющий.</p>
+  </li>
+  <li>
+    <p>Если совсем не хочешь нарушать закон, сиди дома и читай книжки.</p>
+  </li>
+</ol>
+
+<p>53.Путин ввел комендантский час для детей, как в Америке при Гитлере.</p>
+
+<ol>
+  <li>
+    <p>Россия очень богата правами и обязанностями граждан.</p>
+  </li>
+  <li>
+    <p>Причина увольнения – измена мужу на рабочем месте.</p>
+  </li>
+  <li>
+    <p>Нас с детства приучают соблюдать законы, такие как воровство, убийство и половые нормы.</p>
+  </li>
+  <li>
+    <p>Неженатые контакты с женщинами.</p>
+  </li>
+  <li>
+    <p>Допустим, гражданин Российской Федерации убил гражданина другой Российской Федерации.</p>
+  </li>
+  <li>
+    <p>Если начнутся убийства из-за кредитов, банки не будут виноваты.</p>
+  </li>
+  <li>
+    <p>Посадить можно даже полицейского.</p>
+  </li>
+  <li>
+    <p>Дети это цветы на школьных грядках. Хулиганы с девиантным поведением это сорняки. А педагоги это фермеры.</p>
+  </li>
+  <li>
+    <p>У каждого чиновника где-нибудь зарыт кошелек с драгоценностями. За таких голосовать не нужно. С другой стороны, совсем бедные чиновники не удержатся от воровства. В общем, было бы честнее, если бы нами руководили какие-нибудь инопланетяне.</p>
+  </li>
+  <li>
+    <p>Василий Шуйский был уволен из-за частых опозданий на работу.</p>
+  </li>
+</ol>
+
+<p>Ну,как-то так! :D</p>
+
+<p><strong>orgail</strong> 06-07-2017</p>
+
+<p>:D <em>8)</em> <em>8)</em> спасибо</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

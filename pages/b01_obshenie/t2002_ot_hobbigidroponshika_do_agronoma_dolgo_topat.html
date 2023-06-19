@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>От хобби-гидропонщика до агронома, долго топать? | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="От хобби-гидропонщика до агронома, долго топать?">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">От хобби-гидропонщика до агронома, долго топать?</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>VVS_</strong> 31-03-2014</p>
+
+<p>Подскажите, насколько реально работать агрономом в производственной гидропонной теплице и поможет ли опыт по данному хобби? При этом образование у меня просто техническое. Какие подводные камни могут быть? Естественно придется учиться всему с нуля, дома в DWC/лотках это одно, а на производстве много новых факторов.</p>
+
+<p>Я уже давно размышляю, о смене профиля деятельности. Точнее одного из профилей. Интересно знать, с чем придется столкнуться, мой “домашний” опыт исключительно бессубстратный, в теплицах сплошняком субстраты и контроль климата.</p>
+
+<p>Расскажите про обязанности человека, который составляет растворы в теплицах, или чаще растворы какие-то покупные-готовые?</p>
+
+<p>К сожалению вакансий такого рода в своем регионе вообще не нашел и в целом видел мало. Не востребовано?</p>
+
+<p>Насколько утопична сама идея?</p>
+
+<p><strong>Vad</strong> 31-03-2014</p>
+
+<p>этому в институтах 5 лет учат.. <em>???</em></p>
+
+<p>каждый день..</p>
+
+<p><strong>VVS_</strong> 31-03-2014</p>
+
+<p>Ну если взять к примеру.. Томат. Под который у меня наработок в виде готовых растворов вагон.</p>
+
+<p>Рекомендации по климату на ГринТолке.. ?</p>
+
+<p>То есть - задача невыполнимая для хобби-гидропонщика?</p>
+
+<p><strong>Gnevko</strong> 31-03-2014</p>
+
+<p>Идея весьма приличная и хорошая, смена вида деятельности - оно всегда хорошо, если соблюдаются несколько условий: 1) у вас есть время на учебу 2) у вас нет семьи, зависящей от ваших постоянных доходов.</p>
+
+<p>Наилучший способ узнать о востребованности - найти таки гидропонную теплицу/ комбинат и спросить у них, есть ли вакансии и какие требования. Но, если теплицу вы еще может и найдете, то окажется ли она гидропонной - это большой вопрос. Если таковой по близости не окажется и вы легок на подъем, то … в любом случае придется вам в начале поехать учиться в сельскохозяйственный университет/институт/техникум. Форумы - это конечно супер, но вы ж понимаете. Причем придется найти именно такой университет, где есть упор на гидропонику вообще, возможно окажется, что придется ехать в Голландию - если вы уж серьезно взялись за эту идею и собираетесь работать в серьезных фирмах/комбинатах.</p>
+
+<p>Если же на подъем вы не легки и хозяйства у вас такого под боком нет, но у вас есть некий запас капитала, с которым не сильно жалко расстаться или же вдруг есть связи в банках и вам за глаза дадут кредит - то самый лучший способ в этом случае построить такую теплицу самому и нанять толкового агронома, у которого можно будет за одно и учиться. За одно и востребованность профессии подымите :)</p>
+
+<p>А вот если у вас семья, денег нет, и учиться негде, пусть хотя бы заочно - то … задумайтесь, а нужно ли оно вам? Возможно есть другой путь - стать бОльшим профессионалом в том, что вы уже умеете делать, а гидропонику оставить как хобби.</p>
+
+<p>Как то так, не сердитесь если что …</p>
+
+<p><strong>Vad</strong> 31-03-2014</p>
+
+<p>нет невыполнимого :-\</p>
+
+<p>но… агроном он как сапер… ошибается 1раз.. и часто с ощутимыми последствиями..</p>
+
+<p>ладно когда 2 помидора сдохли\не дали\дали мало урожая..</p>
+
+<p>а если это “плантация гектар”.. и убыки будут исчисляться не сотнями рублей.. а сотнями тысяч? <em>???</em></p>
+
+<p><strong>VVS_</strong> 31-03-2014</p>
+
+<p>Ну, да.. в общем я вас понял. 5 лет учебы - не вариант конечно.</p>
+
+<p>Ближайший вариант - попробовать на доступных участках поднимать свою теплицу. Но все это будет не более чем “для себя” в данный момент там и на земле “хватает”. О каком-то бизнесе думать страшно, как и куда это все продавать? Сейчас там отец с земли до 1 тонны томата снимает, и то проблема с реализацией…</p>
+
+<p>В этом плане работа в организации где такие вопросы давно решены чуть более интересна.</p>
+
+<p>Якори конечно же у меня имеются, и вид деятельности, приносящий доход, не позволяющий никуда сорваться тоже.</p>
+
+<p>Местные сельхоз учебные заведения вообще не заточены под гидропонику, однако продвинутые гидропонные хозяйства в области имеются (люди стажируются в Голландии постоянно), вряд-ли им нужен начинающий вроде меня.</p>
+
+<p><strong>Gnevko</strong> 31-03-2014</p>
+
+<blockquote>
+  <p>Местные сельхоз учебные заведения вообще не заточены под гидропонику, однако продвинутые гидропонные хозяйства в области имеются (люди стажируются в Голландии постоянно), вряд-ли им нужен начинающий вроде меня.</p>
+</blockquote>
+
+<p>А вы думаете есть много желающих? Может у них недобор? Позвоните туда, договоритесь о встрече и поговорите по душам … за это ж денег не возьмут. Скорее всего предложат по началу не большую зп, а там как пойдет. Вы ж вот о следующем подумайте (для самомотивации) - подавляющее большинство выпускников сельхозвузов может и слышали, что такое гидропоника, но и все, а тут вы приходите - про растворы рассказываете, опыт и все такое - такого человека выгодней в Голландию отправить на стажировку, он хоть будет понимать, что от него хотят :)</p>
+
+<p>А как у вас с английским?</p>
+
+<p>ЗЫ: по поводу 5 лет - базовое обучение у вас заняло бы 3 года, а это уже большое подспорье вообще в с/х.</p>
+
+<p><strong>Coccinella</strong> 01-04-2014</p>
+
+<p>Агрономии, да еще тепличной надо учиться довольно долго, но в современных высокотехнологичных теплицах острый дефицит технарей, понимающих не только в железе, но и в том, что растению требуется. Всякие инженеры-механики, киповцы и подобные… посмотрите на ГТ, сколько вопросов по Приве, сейчас один Хогендоорном интересуется, у многих серкомы стоят… Это же для тетенек-агрономов темный, непроходимый лес. Приходится нанимать еще и кого-то, кто по указанию агронома в кнопки тыкает. И практика показывает, что очень часто эти деятели, не понимая, что к чему, создают проблему, истоки которой могут так и остаться не установленными… Так что пообщайтесь в окрестных тепличных хозяйствах.</p>
+
+<p><strong>андрей п</strong> 01-04-2014</p>
+
+<p>Если не метить сразу в агрономы, а начать с освоения навыков простого овощевода или цветовода на ближайшем тепличном комплексе, то при наличии желания и амбиций( в хорошем смысле этого слова) вполне себе можно дорасти и до заветной агрономической должности :) Тому в истории мы тьму примеров видим. Например главный агроном Северной мечты, есть такое не хилое предприятие под Питером, начинал в Мокшане рабочим в бригаде по строительству теплицы в 2004г. В 2007 он уже работал там главным агрономом. Так что если есть желание- дерзайте <em>8)</em></p>
+
+<p><strong>VVS_</strong> 02-04-2014</p>
+
+<p>В общем спасибо, ввели меня в курс дела. Пораскинув мозгами понял, что лучше попытаться организовать свое дело на тех 15 сотках что имею, благо есть отец пенсионер, с хорошей хваткой. На счет продаж, ну.. просто клиентуру наработать надо.</p>
+
+<p>Своя система и своя автоматика мне более понятна, чем распространенная везде минвата, поэтому стать “главным агрономом” можно незамедлительно.</p>
+
+<p>Есть пара вопросов:</p>
+
+<p>Существуют ли гибриды по вкусу и размеру равные “буденовке”, но стойкие к фитофторе? Популярный у нас в теплицах “Жеронимо” по вкусу сильно проигрывает, хотя я не знаю спелым ли его снимают с кустов…</p>
+
+<p>И вопрос номер два. Имеет ли смысл гидропонная установка без теплицы с конца июня по конец августа, просто на улице? Томат в открытом грунте у нас показывает плохой результат, но имхо, прежде всего, плохо корешкам. В грунте холодно, обеспеченность кислородом плохая, корни подгнивают, слабые. В гидре приподнятой над землей этих проблем не должно быть. Планируется установка типа dwc или лотки (без субстратов, но с теплоизолированной емкостью).</p>
+
+<p><strong>Gnevko</strong> 02-04-2014</p>
+
+<p>По поводу второго вопроса - это тоже самое что и минвата на балконе, оно все хорошо, но как держать температуру корневой системы в районе оптимальных 20-21оС, если она не зарыта в землю? Что минвата, что любой раствор в трубах, что сами трубы на открытом пространстве да под солнышком будут прогреваться за 30оС как ты их не изолируй … В теплицах же климат регулируют, там перегреваний не должно быть <em>???</em></p>
+
+<p><strong>VVS_</strong> 02-04-2014</p>
+
+<p>Ну.. прогрев 16 литрового ведра до 32 градусов ни к какому криминалу у меня в лоджии не приводит. Ночью температура плавно до 22 градусов опускается. Наверное выручает теплоемкость и медленный перепад. От прямого солнца можно банально заслонить все эти ведерки + их собственная изоляция.</p>
+
+<p>Но если на улице днем +35С то тут никуда не денешься, но у меня на лоджии было днем +43 градуса, ничего, выжили.</p>
+
+<p>Имхо, лишь бы не резкое охлаждение корневой.</p>
+
+<p>Вопрос относится к “верхней” части растения и ее жизни без теплицы в сибирских условиях с дневными +32 и ночами в конце июня по +10-12 градусов (корневая конечно не успеет так остыть).</p>
+
+<p><strong>Coccinella</strong> 02-04-2014</p>
+
+<p>При 35оС на улице, какая будет относительная влажность воздуха? В теплице ее можно поднять, на улице это намного сложнее.</p>
+
+<p><strong>VVS_</strong> 02-04-2014</p>
+
+<p>На улице конечно же будет сухо. 20-30% от силы.</p>
+
+<p>Единственное, можно притенить от прямого солнца т.к. не редки случаи прямого сгорания листвы в открытом грунте. Хотя.. может на DWC воды хватит чтобы справиться.</p>
+
+<p>Однако, справедливости ради отмечу что в регионах чуть южнее дачники не знают что такое теплицы, все растет просто на улице и ничего. Другие сорта?</p>
+
+<p><strong>Coccinella</strong> 02-04-2014</p>
+
+<p>Другие требования к урожайности :)</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

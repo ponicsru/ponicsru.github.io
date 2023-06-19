@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Готовимся к аномально холодной зиме. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Готовимся к аномально холодной зиме.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Готовимся к аномально холодной зиме.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Rossich</strong> 04-10-2010</p>
+
+<p>Ну что братья Гроуверы, посмотрел последние новости и меня насторожили прогнозы на зимние аномальные температуры, которых не было 1000лет. Причем данные прогнозы совпадают с прогнозами западных агентств. Тем кто работает в теплицах или промпомещениях без возможности индивидуального отопления, советую подготовиться т.к. прогнозируемые температуры за минус 40, точно ввергнут в полный коллапс… или по русски пи…ец наши коммунальные службы, т.к. обычно начинается нехватка топлива или лопаются старые трубы… Поэтому, Други, советую прикупить буржуйку типа Булерьяна … береженого Бог-бережет, да будет у всех, все хорошо!</p>
+
+<p><a href="http://s1.postimage.org/DU26A.jpg" target="_blank"><img src="http://s1.postimage.org/DU26A.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 04-10-2010</p>
+
+<p>Тут кстати, на этот счет много мнений. Холод обещаю в европе так как у них гольфстрим тормозится, а у нас куй знает шо будет. Жару тоже никто не ожидал и никто не знал когда же она кончится. А запастись конечно стоит.</p>
+
+<p><strong>orgail</strong> 04-10-2010</p>
+
+<p>Кто чем запасаться будет? :)</p>
+
+<p><strong>Mole_Garden</strong> 04-10-2010</p>
+
+<blockquote>
+  <p>Кто чем запасаться будет? :)</p>
+</blockquote>
+
+<p>У меня стоит большой бранеран в запасе, дрова есть, скоро еще уголь должны подвезти</p>
+
+<p><strong>Rossich</strong> 04-10-2010</p>
+
+<p>Я подумаю по армейскому проекту на “отработке”, мы так в Монголии дотапливали боксы при минус 50.</p>
+
+<p>Труба аж гудела… отработки по гаражам думаю найти на халявку еще можно.</p>
+
+<p><strong>Садовник</strong> 04-10-2010</p>
+
+<blockquote>
+  <p>Я подумаю по армейскому проекту на “отработке”, мы так в Монголии дотапливали боксы при минус 50.</p>
+
+  <p>Труба аж гудела… отработки по гаражам думаю найти на халявку еще можно.</p>
+</blockquote>
+
+<p>В гаражах сейчас уже дураков на халявку нет, так разве канстру, на пол часа горения… :D</p>
+
+<p>я крайний раз брал по 2 рубля, и это было дёшево.</p>
+
+<p>Хотел уже выкидывать свои коптилки, пришел Россич и напужал.</p>
+
+<p>Неужели опять чумазым зиму ходить. :-\</p>
+
+<p><strong>valery</strong> 04-10-2010</p>
+
+<p>Да что они, синоптики эти, совсем обнаглели штоль …</p>
+
+<p>Это ж теперь шапку покупать новую, а у меня еще и старой нету …</p>
+
+<p>Итак прошлой зимой замерз, ххолодрыга была, как при Николай (отчество забыл, Николаич ? Иваныч ? ) Рыжкове …</p>
+
+<p>Ребят, Вы это дело бросьте … Нам теплая погода нужна. Вам там, поближе к югу - хорошо, а у нас и без заморозков холодно. На спирт штоль, теперь переходить …</p>
+
+<p>Курить - уже итак нельзя. Скоро за курево сажать будут. А как же растения выращивать ? Как главный агротехнический прием - “Сиди, кури …”</p>
+
+<p>Эх …</p>
+
+<p><strong>Oxy</strong> 05-10-2010</p>
+
+<blockquote>
+  <p>Грядущая зима, еще не начавшись, уже стала самой “раскрученной” за последние 1000 лет. Рекордно жаркое лето породило много домыслов, и теперь только ленивый не участвует в соревновании возможных «страшилок». Панику посеял якобы официальный прогноз, из контекста которого была выхвачена и растиражирована фраза о 20-градусных морозах в течение одной недели января.</p>
+</blockquote>
+
+<p>Взято с гисметео, полная статья тут: сайт://news.gismeteo.ru/news.n2?item=63421979859</p>
+
+<p>Я лично - склонен соглашаться с гисметео. Аномальные потепления зимой стали привычными и кажущейся “нормой”. В 80-х зимой снега было столько, что мы детьми туннели в снегу рыли. Снег лежал по 5-6 месяцев, а не по 2-3 дня. Сейчас снег если выпадет перед новым годом - это круто. Нифига не круто.Я хочу чтоб зима была как всегда, а не как при перестройке :)</p>
+
+<p><strong>Mole_Garden</strong> 05-10-2010</p>
+
+<p>Вот ближе к правде, в которую хочется верить :D</p>
+
+<p><strong>дядя МИША</strong> 21-11-2010</p>
+
+<p>Господа, байками об аномально холодной зиме, наряду с чморением Лукашенко и Лужкова,</p>
+
+<p>правительство, использую средства массовой информации, нас отвлекают от истиной сути происходящего в стране.</p>
+
+<p>Подорожание продуктов, в следствии засухи и прочих неприятностей.</p>
+
+<p><strong>valery</strong> 21-11-2010</p>
+
+<p>А в Воркуте, несмотря на “аномально холодную” зиму - теплынь.</p>
+
+<p>За ноябрь - всего “два” морозца - раз под 30 и раз 18. А так - минус пять. (Огурцы офигевают от жары и влажности)</p>
+
+<p>Сроду такого не было в ноябре …</p>
+
+<p>Какая такая аномальная зима ?</p>
+
+<p>22 декабря - уже начнет увеличиваться день. Новый год встретишь - через две недели проснешься, отмоешь стол от винегрета - уже поди пора встречать 8 марта …</p>
+
+<p>А там - и лето.</p>
+
+<p><strong>дядя МИША</strong> 21-11-2010</p>
+
+<blockquote>
+  <p>А в Воркуте, несмотря на “аномально холодную” зиму - теплынь.</p>
+
+  <p>За ноябрь - всего “два” морозца - раз под 30 и раз 18. А так - минус пять. (Огурцы офигевают от жары и влажности)</p>
+</blockquote>
+
+<p>А у вас типа форточек и фрамуг ни чё не предусмотрено?</p>
+
+<p>Я после жарюки сего года холодок уважаю лёгкий………..</p>
+
+<p><strong>valery</strong> 21-11-2010</p>
+
+<p>Прохладки у нас достаточно, как раз в августе после “пекла” возвращался из отпуска - надышаться не мог, красота …</p>
+
+<p>Нет, форточек, фрамуг, к сожалению - нет. Да и не знаю, можно ли было бы ими пользоваться - очень уж холодно за “бортом” бывает.</p>
+
+<p><strong>дядя МИША</strong> 22-11-2010</p>
+
+<p>Если подойти к оценке вашего климата, с оптимистической стороны, то обогреть дешевле чем охладить ;)</p>
+
+<p>А как вы свои помещения в жару охлаждаете? Расскажите, - и станет на много теплее, морально……</p>
+
+<p><strong>Oxy</strong> 29-12-2010</p>
+
+<p>Всех с наступающим!</p>
+
+<p>Как там у братьев-славян с аномальностью зимы? У нас на Украине - аномальность только в нормальности. Снег выпал точно в первый день зимы(не помню когда такое было), потеплений мало, на улицах пушистый снежок. Искриться и хрустит. Морозы - доступные, оптимально зимние. Жизнь - прекрасна!</p>
+
+<p><strong>Mole_Garden</strong> 29-12-2010</p>
+
+<blockquote>
+  <p>Всех с наступающим!</p>
+
+  <p>Как там у братьев-славян с аномальностью зимы? У нас на Украине - аномальность только в нормальности. Снег выпал точно в первый день зимы(не помню когда такое было), потеплений мало, на улицах пушистый снежок. Искриться и хрустит. Морозы - доступные, оптимально зимние. Жизнь - прекрасна!</p>
+</blockquote>
+
+<p>Если не считать, что не чистят дороги, то на данный момент зима в норме, на улице -10 -15 Иногда падает до -20 -25, пока все в приделах нормы, но это же пока только начало зимы <em>crazy</em></p>
+
+<p><strong>orgail</strong> 29-12-2010</p>
+
+<p>У нас тоже в норме :D</p>
+
+<p>Кажется дождь прошел ;D</p>
+
+<p><strong>Mole_Garden</strong> 21-02-2011</p>
+
+<p>Ну что! Как у кого “аномально” холодная зима прошла! :D</p>
+
+<p>Ну практически прошла, что то сильно сомневаюсь, что ща долбанут морозы до весны.</p>
+
+<p><strong>Oxy</strong> 23-02-2011</p>
+
+<p>На западной Украине были неприятные оттепели с лужами слякотью и грязью. Сейчас(23 февраля) снежок, белый и пушистый искриться и хрустит. Ничего аномального :) Очень красивая обалденная зима!</p>
+
+<p><strong>caiman</strong> 23-02-2011</p>
+
+<p>Поддерживаю категорически!!! <em>8)</em></p>
+
+<p><strong>Coccinella</strong> 23-02-2011</p>
+
+<p>Хорошо Вам! А у нас вторую неделю между -20 и -27оС, сегодня утром стращали -30оС, но обошлось. Три дня назвад вообще полярное сияние обещали, но обманули… :(</p>
+
+<p><strong>Oxy</strong> 23-02-2011</p>
+
+<p>Ну и что тут аномального в -20? Я родился в Хабаровске, а в садик ходил в Магадане :) Там люди при минус 40 ничего аномального не видят :) а при минус 20 дети свободно на улице играли :) не знаю, правда как сейчас…. Эх, ностальжи…. :'( я помню как выглядит полярное сияние….</p>
+
+<p><strong>caiman</strong> 23-02-2011</p>
+
+<blockquote>
+  <p>Хорошо Вам! А у нас вторую неделю между -20 и -27оС, сегодня утром стращали -30оС, но обошлось. Три дня назвад вообще полярное сияние обещали, но обманули… :(</p>
+</blockquote>
+
+<p>Откуда в Прибалтике северное сияние??? Чё в мире делается :-[</p>
+
+<p>В Сибири климат сухой. Поэтому и играют дети без боюсь при -25</p>
+
+<p><strong>valery</strong> 23-02-2011</p>
+
+<p>А у нас, вообще, лето скоро.</p>
+
+<p><strong>caiman</strong> 23-02-2011</p>
+
+<p>Да у вас там и зимы практически нет. лук, огурцы, помидоры, даже укроп круглый год :D :D :D</p>
+
+<p><strong>valery</strong> 23-02-2011</p>
+
+<p>:D</p>
+
+<p>И крапива !!! &gt;:( &gt;:( &gt;:(</p>
+
+<p>:D</p>
+
+<p><strong>orgail</strong> 23-02-2011</p>
+
+<p>сияние обещали из-за сильной магнитной бури, вспышки на солнце :D</p>
+
+<p>но обошлось</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

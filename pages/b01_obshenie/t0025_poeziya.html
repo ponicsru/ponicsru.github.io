@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>поэзия | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="поэзия">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">поэзия</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Олеганос</strong> 15-04-2009</p>
+
+<p>Вчера я ехал на работу</p>
+
+<p>В метель, туман и гололед,</p>
+
+<p>Вдруг мимо пронеслась Тойота,</p>
+
+<p>Взяла опасный поворот.</p>
+
+<p>Пересекая автостраду</p>
+
+<p>Там, где сплошная полоса,</p>
+
+<p>Водитель мазалась помадой</p>
+
+<p>И тушью красила глаза!</p>
+
+<p>Как тут от злости не беситься?</p>
+
+<p>Я в гневе бритву уронил</p>
+
+<p>(Я дома не успел побриться</p>
+
+<p>и по дороге щеки брил.</p>
+
+<p>Упала бритва в кофе прямо</p>
+
+<p>(Между колен стоял стакан -</p>
+
+<p>Мне вкусный кофе варит мама -</p>
+
+<p>Его я пью в такой туман).</p>
+
+<p>Когда предмет тяжелый падал,</p>
+
+<p>Крутой горячий кипяток</p>
+
+<p>Плеснул туда, куда не надо -</p>
+
+<p>Там третьей степени ожог.</p>
+
+<p>И вот от боли я подпрыгнул,</p>
+
+<p>И из моей руки другой</p>
+
+<p>Вдруг выпал телефон мобильный -</p>
+
+<p>И снова - в кофе по прямой.</p>
+
+<p>Не помню, что там дальше было…</p>
+
+<p>Открыл глаза: больница? морг?</p>
+
+<p>Теперь ни тачки, ни мобилы…</p>
+
+<p>Зато повязка между ног.</p>
+
+<p>Весь загипсован под завязку,</p>
+
+<p>без гипса только голова.</p>
+
+<p>А вот мораль у этой сказки -</p>
+
+<p>У ВСЕХ БЫ БАБ ЗАБРАТЬ ПРАВА</p>
+
+<p><a href="https://t.me/ponics_ru_files/768" target="_blank"><img src="/attachimages/103_1227261256_7.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 15-04-2009</p>
+
+<p>;D зачет</p>
+
+<p><strong>mdima</strong> 15-04-2009</p>
+
+<p>Красивой сказки легкой лжи</p>
+
+<p>Как иней на ветвях деревьев</p>
+
+<p>На нераспаханной межи</p>
+
+<p>Рассыпаны цепями звеньев</p>
+
+<p><strong>Олеганос</strong> 15-04-2009</p>
+
+<p>8) на бис</p>
+
+<p><strong>Hrun</strong> 21-06-2009</p>
+
+<p>“КАРТОШКА”</p>
+
+<p>Картошка-русская картошка</p>
+
+<p>Знакомы с ней и млад и стар,</p>
+
+<p>И любят её все, кто много, кто немножко,</p>
+
+<p>Но лично я картошку кушать не устал.</p>
+
+<p>А сколько блюд готовят из картошки,</p>
+
+<p>Готов попробовать хотя б полложки</p>
+
+<p>Всех блюд, что существуют в мире</p>
+
+<p>При этом сидя у себя в квартире.</p>
+
+<p>Картошку есть могу любую,</p>
+
+<p>Хоть жареную, хоть сырую.</p>
+
+<p>Пюре я больше всех люблю</p>
+
+<p>Об этом честно говорю.</p>
+
+<p>“Тяжелое дополнение”</p>
+
+<p>Огромный кризис сейчас в стране</p>
+
+<p>И рубль плавает в говне…</p>
+
+<p>Ведь если б не было картошки</p>
+
+<p>Давно бы сдохли мы, как кошки…</p>
+
+<p>При чём тут кошки, спросят у меня,</p>
+
+<p>Да так, для рифмы, скажу вам я.</p>
+
+<p><strong>Олеганос</strong> 14-07-2009</p>
+
+<p>Приемный покой районной больницы.</p>
+
+<p>Вызывают дежурного врача:привезли-мальчика с ожогом.</p>
+
+<p>В смотровой сидит мальчик лет 15(М), а в”предбаннике” приемного покоя встревоженные родители.</p>
+
+<p>Врач (В): - Что случилось?</p>
+
+<p>(М) - Бензин с другом в гараже отливали из канистры…</p>
+
+<p>(В) - Ну, и….</p>
+
+<p>(М ) - Там темно, не видно было… Ну, спичку зажгли, посмотреть сколько осталось…</p>
+
+<p>(В) … Увидел-сколько осталось?</p>
+
+<p>… Тут раздается крик отца этого недоросля из “предбанника” : - ДВА КВАРТАЛА, БЛ…ДЬ УВИДЕЛО!!!</p>
+
+<p><strong>Олеганос</strong> 19-11-2009</p>
+
+<p>Юный сын к отцу пришел И сказал, смущаясь:</p>
+
+<p>“Я любовь себе нашел, Часто с ней встречаюсь.</p>
+
+<p>Я дарю ей шоколад, Покупаю кексы,</p>
+
+<p>Но мой опыт маловат, Папа, в плане секса”</p>
+
+<p>У меня секретов нет. Слушайте, ребята,</p>
+
+<p>Папы этого ответ не витиеватый:</p>
+
+<p>“Не в подарках дело сын. Глупость И нелепость!</p>
+
+<p>Выход здесь всегда один. Женщина - как крепость.</p>
+
+<p>Эту крепость надо брать Нежностью и лаской.</p>
+
+<p>Силу можно применять, Но всегда с опаской.</p>
+
+<p>Ты садись, раз уж пришел, И послушай, кроха</p>
+
+<p>С сексом в жизни - хорошо! А без секса - плохо.</p>
+
+<p>Краткий экскурс в чудный мир- Мир противоречий</p>
+
+<p>Мы с тобою совершим В этот чудный вечер.</p>
+
+<p>Если девушка сама Задирает юбку</p>
+
+<p>И глядит на твой карман - Это проститутка.</p>
+
+<p>С ними лучше не ходить, Так как, между прочим,</p>
+
+<p>Мне за год не оплатить стоимости ночи.</p>
+
+<p>Если девушка с тобой, А потом с Андрюхой,</p>
+
+<p>А наутро с Мустафой - Это просто шлюха.</p>
+
+<p>С нею можно так, разок, Коль совсем тоскливо,</p>
+
+<p>Но не суйся к ней, сынок, Без презерватива.</p>
+
+<p>Если девушка с другой Даже на гулянке,</p>
+
+<p>Помни, сын мой дорогой - Это лесбиянки.</p>
+
+<p>Их тебе не возбудить, Здесь, сынок, другое.</p>
+
+<p>Лучше сразу обходить Лесбос стороною.</p>
+
+<p>Если ты ее ласкал, А она молчала.</p>
+
+<p>Если ты его достал, А она убрала,</p>
+
+<p>Участь женщины такой, Друг мой незавидна.</p>
+
+<p>Это подтвердит любой - Женщина фригидна.</p>
+
+<p>Если ходит за тобой Мальчик неотвязно,</p>
+
+<p>Этот мальчик голубой, Что весьма опасно.</p>
+
+<p>Прочь гони его скорей Без заездов пробных,</p>
+
+<p>Пусть бежит искать друзей Средь себе подобных.</p>
+
+<p>Если ты, Андрей, Иван С Тоней и Варюхой</p>
+
+<ul>
+  <li>Бей в зеленый барабан - Это групповуха.</li>
+</ul>
+
+<p>В этом есть какой-то смысл, Я не возражаю,</p>
+
+<p>Потому что даже мысль Эта возбуждает.</p>
+
+<p>Об одном тебя прошу, Обойдись без грязи.</p>
+
+<p>Я тебе не разрешу, Блин, случайных связей.</p>
+
+<p>Ты одну себе найди, Девку по приличней</p>
+
+<p>Познакомить приводи. Понял? Ну отлично!</p>
+
+<p>И, уж раз ты в это влез, Помни сын мой Сема</p>
+
+<p>Самый безопасный секс - Секс по телефону))</p>
+
+<p><strong>Mole_Garden</strong> 19-11-2009</p>
+
+<p>;D Забавный бред!</p>
+
+<p><strong>uskov_alexandr</strong> 20-11-2009</p>
+
+<p>Ребят зачёт!!! просто супер 8)!!!</p>
+
+<p>Лучшего форума нет!!!</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

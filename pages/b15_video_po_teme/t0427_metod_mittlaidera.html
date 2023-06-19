@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>метод Миттлайдера | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="метод Миттлайдера">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">метод Миттлайдера</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Mole_Garden</strong> 18-02-2010</p>
+
+<p>На одном очень интересном форуме нашел вот такие видео ролики. Не смотря на то что выращивают в земле, часть технологии может пригодиться, да и вообще, живя в своем доме не все же будешь выращивать на гидропонике.</p>
+
+<hr />
+
+<p>Ссылка для скачивания одним файлом - <a href="http://files.mail.ru/6FCSYW" target="_blank">Метод доктора Миттлайдера</a></p>
+
+<p>Ссылка для скачивания по сериям - http://ponics.file.qip.ru/</p>
+
+<p>Все серии:</p>
+
+<p><a href="http://file.qip.ru/file/120344300/458d5dd6/01_Metod_doktora_Mittlaindera.html" target="_blank">Metod_doktora_Mittlainder</a></p>
+
+<p><a href="http://file.qip.ru/file/120347007/cb1ad9c2/02_Obrabotka_semyan.html" target="_blank">Obrabotka_semyan</a></p>
+
+<p><a href="http://file.qip.ru/file/120348916/f2b4f3cc/03_Podgotovka_k_posevu.html" target="_blank">Podgotovka_k_posevu</a></p>
+
+<p><a href="http://file.qip.ru/file/120349451/b8d8575d/04_Zdorovaya_rassada.html" target="_blank">Zdorovaya_rassada</a></p>
+
+<p><a href="http://file.qip.ru/file/120350127/5859c07e/05_Teplica_po_vsem_pravilam.html" target="_blank">Teplica_po_vsem_pravilam</a></p>
+
+<p><a href="http://file.qip.ru/file/120351297/157c089/06_Uzkie_graydi.html" target="_blank">Uzkie_graydi</a></p>
+
+<p><a href="http://file.qip.ru/file/120351031/115f5958/07_Planirovanie_ushastka.html" target="_blank">Planirovanie_ushastka</a></p>
+
+<p><a href="http://file.qip.ru/file/120352048/3577d8d5/08_Visadka_v_grunt.html" target="_blank">Visadka_v_grunt</a></p>
+
+<p><a href="http://file.qip.ru/file/120352403/c1c06c85/09_Borba_s_sornikami.html" target="_blank">Borba_s_sornikami</a></p>
+
+<p><a href="http://file.qip.ru/file/120352754/2095b33a/10_Virashivanie_tomatov.html" target="_blank">Virashivanie_tomatov</a></p>
+
+<p><a href="http://file.qip.ru/file/120353043/1a196638/11_Virashivanie_ogurca.html" target="_blank">Virashivanie_ogurca</a></p>
+
+<p><a href="http://file.qip.ru/file/120353404/e7189e43/12_Virashivanie_kartofelya.html" target="_blank">Virashivanie_kartofelya</a></p>
+
+<p><a href="http://file.qip.ru/file/120353731/be198756/13_Klassifikatsiay_uddobrenij.html" target="_blank">Klassifikatsiay_uddobrenij</a></p>
+
+<p><a href="http://file.qip.ru/file/120354097/350de4d5/14_Organisheskie_udobreniya.html" target="_blank">Organisheskie_udobreniya</a></p>
+
+<p><a href="http://file.qip.ru/file/120354440/19cea7e7/15_Programma_podkormok.html" target="_blank">Programma_podkormok</a></p>
+
+<p><a href="http://file.qip.ru/file/120359261/aa18519c/16_Ovochi_bez_nitratov.html" target="_blank">Ovochi_bez_nitratov</a></p>
+
+<p><a href="http://file.qip.ru/file/120358699/9cee0ad8/17_Priznaki_istocheniay_pochvi.html" target="_blank">Priznaki_istocheniay_pochvi</a></p>
+
+<p><a href="http://file.qip.ru/file/120360541/a7c910c1/18_Lechenie_rastenij.html" target="_blank">Lechenie_rastenij</a></p>
+
+<p><a href="http://file.qip.ru/file/120351700/483a2c88/19_Rezultati.html" target="_blank">Rezultati</a></p>
+
+<hr />
+
+<p><strong>Mole_Garden</strong> 18-02-2010</p>
+
+<p><a href="http://www.youtube.com/watch?v=qFeB6Ln5rtQ#normal" target="_blank">http://www.youtube.com/watch?v=qFeB6Ln5rtQ#normal</a></p>
+
+<p><a href="http://www.youtube.com/watch?v=jZXQVR-aPj4#normal" target="_blank">http://www.youtube.com/watch?v=jZXQVR-aPj4#normal</a></p>
+
+<p><a href="http://www.youtube.com/watch?v=B3kFxX83vhA#normal" target="_blank">http://www.youtube.com/watch?v=B3kFxX83vhA#normal</a></p>
+
+<p><a href="http://www.youtube.com/watch?v=-FIHODfvdDg#normal" target="_blank">http://www.youtube.com/watch?v=-FIHODfvdDg#normal</a></p>
+
+<p><strong>Mole_Garden</strong> 18-02-2010</p>
+
+<p><a href="http://www.youtube.com/watch?v=xmaLT49G_Ko#normal" target="_blank">http://www.youtube.com/watch?v=xmaLT49G_Ko#normal</a></p>
+
+<p><a href="http://www.youtube.com/watch?v=m3r3KR5A8sg#normal" target="_blank">http://www.youtube.com/watch?v=m3r3KR5A8sg#normal</a></p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/229a37fc33cf920d448ab83f548533a2" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/229a37fc33cf920d448ab83f548533a2" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p><strong>Mole_Garden</strong> 18-02-2010</p>
+
+<p>о! нашел еще в лучшем качестве!</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/bd451ec1881930fac400364f34b727e6" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/bd451ec1881930fac400364f34b727e6" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p><strong>Mole_Garden</strong> 18-02-2010</p>
+
+<p>Вот продолжение</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/500452aee6bb8895a3068ba4cfaa2dea" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/500452aee6bb8895a3068ba4cfaa2dea" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/03bc859045cae5beb9f2b136f5db604a" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/03bc859045cae5beb9f2b136f5db604a" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/7b60c15b23753ed8bc78e04f0cd23855" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/7b60c15b23753ed8bc78e04f0cd23855" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/68392d8c3be7d92c8e1e99c445bbaee1" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/68392d8c3be7d92c8e1e99c445bbaee1" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/993bffe86a42acab02b846b21a0c13ff" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/993bffe86a42acab02b846b21a0c13ff" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p><strong>Mole_Garden</strong> 18-02-2010</p>
+
+<p>Продолжение</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/9f4a71479dd6f26208ff60d1f5c96a39" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/9f4a71479dd6f26208ff60d1f5c96a39" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/a77f5efcbb0d58bfaa4150e255ab2380" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/a77f5efcbb0d58bfaa4150e255ab2380" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/89064e58700e9435b94dbbca8babb127" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/89064e58700e9435b94dbbca8babb127" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/8bccc2c1dc999d07ea0aa340061ffbb5" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/8bccc2c1dc999d07ea0aa340061ffbb5" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p><strong>Mole_Garden</strong> 18-02-2010</p>
+
+<p>Далее</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/67123ec6b964bd56576867e7698deefa" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/67123ec6b964bd56576867e7698deefa" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/fa70996ad51bb9700aa1857fcd115e9d" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/fa70996ad51bb9700aa1857fcd115e9d" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/5dd83c0df98913c1baac9b0271d230d7" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/5dd83c0df98913c1baac9b0271d230d7" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/f5d71dfd3dc9db264a787564548a98ae" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/f5d71dfd3dc9db264a787564548a98ae" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p><strong>Mole_Garden</strong> 18-02-2010</p>
+
+<p>и последнее</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/77cf88ae75a048611ce4011389d42e54" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/77cf88ae75a048611ce4011389d42e54" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/d9d03b6cc63a09db142185eab7e60abe" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/d9d03b6cc63a09db142185eab7e60abe" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/efec3d29ea3e0aa66117e35786e843e0" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/efec3d29ea3e0aa66117e35786e843e0" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/38ed3027c90b51aef3a3ed273a655467" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/38ed3027c90b51aef3a3ed273a655467" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p>[html]<object width="470" height="353"><param name="movie" value="http://video.rutube.ru/e065463880c02209b92039f793a6ef3e" />&lt;/PARAM&gt;<param name="wmode" value="window" />&lt;/PARAM&gt;<param name="allowFullScreen" value="true" />&lt;/PARAM&gt;<embed src="http://video.rutube.ru/e065463880c02209b92039f793a6ef3e" type="application/x-shockwave-flash" wmode="window" width="470" height="353" allowfullscreen="true" />&lt;/EMBED&gt;</object>[/html]</p>
+
+<p><strong>Mole_Garden</strong> 19-02-2010</p>
+
+<p>Если вдруг, кому нибудь стало интересно и есть желание, то могу выложить все ролики одним архивом. Объем его примерно 700мб.</p>
+
+<p><strong>Alex123</strong> 19-02-2010</p>
+
+<blockquote>
+  <p>Если вдруг, кому нибудь стало интересно и есть желание, то могу выложить все ролики одним архивом. Объем его примерно 700мб.</p>
+</blockquote>
+
+<p>Интерес есть - хорошего интернета нету &gt;:( &gt;:( &gt;:(</p>
+
+<p>Если можно выложить файлы не одним архивом, а отдельно - было бы неплохо.</p>
+
+<p><strong>Mole_Garden</strong> 19-02-2010</p>
+
+<blockquote>
+  <p>Интерес есть - хорошего интернета нету &gt;:( &gt;:( &gt;:(</p>
+
+  <p>Если можно выложить файлы не одним архивом, а отдельно - было бы неплохо.</p>
+</blockquote>
+
+<p>Хорошо, сегодня выложу и одним архивом и по отдельности.</p>
+
+<p><strong>Hrun</strong> 19-02-2010</p>
+
+<p>Для меня одним архивом было бы хорошо, жаль качество видео плохое.</p>
+
+<p><strong>Mole_Garden</strong> 19-02-2010</p>
+
+<blockquote>
+  <p>Для меня одним архивом было бы хорошо, жаль качество видео плохое.</p>
+</blockquote>
+
+<p>ОК, сделаю отпишусь.</p>
+
+<p>Что уж нашел, говорят, что тем кто учился в этой академии дают DVD диски</p>
+
+<p><strong>Oxy</strong> 19-02-2010</p>
+
+<p>Я тоже могу скачать 700 метров.</p>
+
+<p><strong>Mole_Garden</strong> 19-02-2010</p>
+
+<p>через минут 40 все дольется.</p>
+
+<p><strong>Mole_Garden</strong> 19-02-2010</p>
+
+<p>И так, готовы ссылки на скачивания файлов по одиночке</p>
+
+<p>http://ponics.file.qip.ru/</p>
+
+<p><strong>Mole_Garden</strong> 19-02-2010</p>
+
+<p>Ссылка для скачивания видео одним файлом</p>
+
+<p><a href="http://files.mail.ru/6FCSYW" target="_blank">Метод доктора Миттлайдера</a></p>
+
+<p><strong>Alex123</strong> 20-02-2010</p>
+
+<blockquote>
+  <p>И так, готовы ссылки на скачивания файлов по одиночке</p>
+
+  <p>http://ponics.file.qip.ru/</p>
+</blockquote>
+
+<p>Что-то ни хрена не догоняю - открываю страницу, а там “голый Вася” - никаких сылок не вижу…</p>
+
+<p><strong>Mole_Garden</strong> 21-02-2010</p>
+
+<p>Ну раз голый вася то вот переделал :D</p>
+
+<p><a href="http://file.qip.ru/file/120344300/458d5dd6/01_Metod_doktora_Mittlaindera.html" target="_blank">Metod_doktora_Mittlainder</a></p>
+
+<p><a href="http://file.qip.ru/file/120347007/cb1ad9c2/02_Obrabotka_semyan.html" target="_blank">Obrabotka_semyan</a></p>
+
+<p><a href="http://file.qip.ru/file/120348916/f2b4f3cc/03_Podgotovka_k_posevu.html" target="_blank">Podgotovka_k_posevu</a></p>
+
+<p><a href="http://file.qip.ru/file/120349451/b8d8575d/04_Zdorovaya_rassada.html" target="_blank">Zdorovaya_rassada</a></p>
+
+<p><a href="http://file.qip.ru/file/120350127/5859c07e/05_Teplica_po_vsem_pravilam.html" target="_blank">Teplica_po_vsem_pravilam</a></p>
+
+<p><a href="http://file.qip.ru/file/120351297/157c089/06_Uzkie_graydi.html" target="_blank">Uzkie_graydi</a></p>
+
+<p><a href="http://file.qip.ru/file/120351031/115f5958/07_Planirovanie_ushastka.html" target="_blank">Planirovanie_ushastka</a></p>
+
+<p><a href="http://file.qip.ru/file/120352048/3577d8d5/08_Visadka_v_grunt.html" target="_blank">Visadka_v_grunt</a></p>
+
+<p><a href="http://file.qip.ru/file/120352403/c1c06c85/09_Borba_s_sornikami.html" target="_blank">Borba_s_sornikami</a></p>
+
+<p><a href="http://file.qip.ru/file/120352754/2095b33a/10_Virashivanie_tomatov.html" target="_blank">Virashivanie_tomatov</a></p>
+
+<p><a href="http://file.qip.ru/file/120353043/1a196638/11_Virashivanie_ogurca.html" target="_blank">Virashivanie_ogurca</a></p>
+
+<p><a href="http://file.qip.ru/file/120353404/e7189e43/12_Virashivanie_kartofelya.html" target="_blank">Virashivanie_kartofelya</a></p>
+
+<p><a href="http://file.qip.ru/file/120353731/be198756/13_Klassifikatsiay_uddobrenij.html" target="_blank">Klassifikatsiay_uddobrenij</a></p>
+
+<p><a href="http://file.qip.ru/file/120354097/350de4d5/14_Organisheskie_udobreniya.html" target="_blank">Organisheskie_udobreniya</a></p>
+
+<p><a href="http://file.qip.ru/file/120354440/19cea7e7/15_Programma_podkormok.html" target="_blank">Programma_podkormok</a></p>
+
+<p><a href="http://file.qip.ru/file/120359261/aa18519c/16_Ovochi_bez_nitratov.html" target="_blank">Ovochi_bez_nitratov</a></p>
+
+<p><a href="http://file.qip.ru/file/120358699/9cee0ad8/17_Priznaki_istocheniay_pochvi.html" target="_blank">Priznaki_istocheniay_pochvi</a></p>
+
+<p><a href="http://file.qip.ru/file/120360541/a7c910c1/18_Lechenie_rastenij.html" target="_blank">Lechenie_rastenij</a></p>
+
+<p><a href="http://file.qip.ru/file/120351700/483a2c88/19_Rezultati.html" target="_blank">Rezultati</a></p>
+
+<p><strong>Mole_Garden</strong> 22-02-2010</p>
+
+<p>Хочется отметить, что метод Миттлайдера в закрытом грунте очень близок к гидропонике. Тем более товарищ, который рассказывает про этот метод говорит, что у них субстрат (песок с опилками) уже не меняли (полностью не меняли) 12 лет. Просто каждый год добавляют, так подозреваю опилки, свежего субстрата до верха гряд.</p>
+
+<p><strong>anele29</strong> 10-05-2010</p>
+
+<blockquote>
+  <p>На одном очень интересном форуме нашел вот такие видео ролики, только обидно, что не все и в очень плохом качестве. Но суть понятна. Не смотря на то что выращивают в земле, часть технологии может пригодиться, да и вообще, живя в своем доме не все же будешь выращивать на гидропонике.</p>
+
+  <p>И так начинаю.</p>
+
+  <p><a href="http://www.youtube.com/watch?v=gEuKUq3NqI0#normal" target="_blank">http://www.youtube.com/watch?v=gEuKUq3NqI0#normal</a></p>
+
+  <p><a href="http://www.youtube.com/watch?v=LNOqDfrx0F0#normal" target="_blank">http://www.youtube.com/watch?v=LNOqDfrx0F0#normal</a></p>
+
+  <p><a href="http://www.youtube.com/watch?v=B2DwZ8yQgfQ#normal" target="_blank">http://www.youtube.com/watch?v=B2DwZ8yQgfQ#normal</a></p>
+
+  <p>p.s. если у кого то есть подобное видео, выкладывайте, будем очень признательны!</p>
+</blockquote>
+
+<p>$) На Моём сайте есть весь фильм , я в восторге! Это целый видеокурс . Метод Митлайдера пришёл в россию! К тому же Вы можете найти и книгу Технология изобилия, где описаны рецепты удобрений для посадки по Митлайдеру.</p>
+
+<p><strong>Mole_Garden</strong> 10-05-2010</p>
+
+<p>:D Это писалось до того как я все нашел, если глянете выше, то там уже выложена ссылка на все серии.</p>
+
+<p><strong>anele29</strong> 05-06-2010</p>
+
+<p>Вот ещё фильмы про сад, огород 8)</p>
+
+<p><strong>Mole_Garden</strong> 05-06-2010</p>
+
+<blockquote>
+  <p>Вот ещё фильмы про сад, огород 8)</p>
+</blockquote>
+
+<p>большая просьба, давать ссылки на конкретный материал, а не на сайт, где приходиться рыться до посинения в поисках нужного.</p>
+
+<p><strong>WERDNA</strong> 29-06-2010</p>
+
+<p>Пугает безумное количество удобрений. (Особенно после составления собственных растворов). Понимаю, что гидропоника и почва (пусть искусственная) не одно и тоже, но количество удобрений все равно какое-то заоблачное.</p>
+
+<p>Мне показалось? Кто в теме - расскажите.</p>
+
+<p><strong>Mole_Garden</strong> 29-06-2010</p>
+
+<blockquote>
+  <p>Пугает безумное количество удобрений. (Особенно после составления собственных растворов). Понимаю, что гидропоника и почва (пусть искусственная) не одно и тоже, но количество удобрений все равно какое-то заоблачное.</p>
+
+  <p>Мне показалось? Кто в теме - расскажите.</p>
+</blockquote>
+
+<p>Удобрений где? В методе Митлайдера? или в гидропонике?</p>
+
+<p><strong>WERDNA</strong> 29-06-2010</p>
+
+<p>В методе Митлайдера. Возможно это просто первое впечатление. Возможно за сезон в гидропонике (например, при капельном поливе) удобрений дается не меньше, и даже больше. Возможно показалось, что метод предполагает внесение очень существенного количества удобрений.</p>
+
+<p>Вот и попросил пролить свет, чтобы не казалось и чтоб знать наверняка.</p>
+
+<p><strong>Mole_Garden</strong> 29-06-2010</p>
+
+<blockquote>
+  <p>В методе Митлайдера. Возможно это просто первое впечатление. Возможно за сезон в гидропонике (например, при капельном поливе) удобрений дается не меньше, и даже больше. Возможно показалось, что метод предполагает внесение очень существенного количества удобрений.</p>
+
+  <p>Вот и попросил пролить свет, чтобы не казалось и чтоб знать наверняка.</p>
+</blockquote>
+
+<p>А вы можете посчитать сколько удобрений и каких именно получает растение при подкормке, к примеру, навозом? Сколько раз подкармливают растения этим чудо навозиком, а еще очень часто подсыпают другие веселые органические штучки и попробуй потом разбери, чего и сколько в земле, а сколько в растениях и в плодах. Так что зря волнуетесь, Митлайдер не лошара.</p>
+
+<p>А про капельный полив куда именно, в маты с ватой или куда? Не забывайте, что при выращивание в матах на капле еще замеряют TDS дренажа, а зная его примерно знают сколько и чего осталось и куды делось+ делают еще анализы этого же дренажа.</p>
+
+<p><strong>valery</strong> 29-06-2010</p>
+
+<p>Капельный полив (на почве) сам по себе сокращает не только водопотребление, но и (как ни странно) - количество вносимых удобрений.</p>
+
+<p>Для любителей ЭКОЛОГИЧЕСКИ чистого. При выращивании в полях, с поливом “дождеванием” и прочим, - по сравнению с каплей в почву вносится удобрений БОЛЬШЕ.</p>
+
+<p>В том числе и минеральных (не только “органики”).</p>
+
+<p>Происходит это потому, что удобряют “по площадям”, значительная часть удобрений поглощается ППК настолько “здорово”, что остается растению недоступно.</p>
+
+<p>Кроме этого, значительная часть удобрений - вымывается с дождями и поливами, уходит в нижние, недоступные корневой системе слои и так далее.</p>
+
+<p>Капля - дозирует точно и подает раствор именно в корневую зону. Поэтому толку от капли - больше, а вреда (засоления почвы, в частности) - значительно меньше.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

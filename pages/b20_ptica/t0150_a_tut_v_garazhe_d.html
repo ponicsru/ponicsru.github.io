@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>А тут в гараже :-D | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="А тут в гараже :-D">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">А тут в гараже :-D</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>mdima</strong> 31-05-2009</p>
+
+<p>Скопировал из форума:</p>
+
+<p>Занимаюсь небольшим бизнесом - разведение кур-несушек. Тему создал для поиска единомышленников и обсуждения рабочих моментов, которые мне пока не понятны или не известны</p>
+
+<p>Решил написать о том как все начиналось.</p>
+
+<p>После увольнения с хорошей работы (причины уточнять не буду) думал над вопросом, чем заниматься. Были небольшие накопления. Советовался с друзьями и знакомыми. Один знакомый проживающий в Украине посоветовал занятся “куриным” бизнесом. Сначала я не поверил в успех подобного предприятия, но съездив к нему в гости, изменил свое мнение на противоположное.</p>
+
+<p>Оказывается такой бизнес как разведение кур-несушек для производства яйца может быть не просто рентабельным, а даже очень доходным, даже при условии покупки готового корма.</p>
+
+<p>На сегодняшний день могу сказать, что рентабельность такого вида деятельности может достигать 100%, иногда даже больше (иногда меньше). Естественно, что я не плачу налоги и пр. вещи, так как заморачиватся на эти темы решил после того как расширю производство.</p>
+
+<p>Для пробы решил взять 480 кур несушек. 4 месячных. 80 штук хай-лайн, и 400 ламан браун.</p>
+
+<p>Брал по этапно, сначала 80 хай-лайн, через 2,5 месяца ломан-браун.</p>
+
+<p>Так-как проживаю в городской черте в частном секторе. Площадь участка небольшая. Для этих (и не только) целей строился гараж 6/6 м. Гараж разделили на две части, в одной ставлю машину, в другой находятся клетки с курами.</p>
+
+<p>Клетки делали с тестем сами. Оббили помещение внутри урсой с картоном сверху, для утепления помещения.</p>
+
+<p>Бизнес занимает немного времени:</p>
+
+<p>утром подъм для кур в 6 часов</p>
+
+<p>Завтрак в 9 часов (занимает 40 минут времени с учетом кормежки и “попойки”)</p>
+
+<p>В промежутке между завтраком и обедом проверка наличия воды</p>
+
+<p>Обед в 15 часов (занимает 1,5 часа с учетом кормежки, “попойки” и уборки помета).</p>
+
+<p>Отбой в 21,00 по Москве, для кур.</p>
+
+<p>Так как сам я ложусь около часа ночи (имею еще один виртуальный бизнес).</p>
+
+<p>Теперь стал вопрос по переработке помета, выношу ежедневно около 100 кг. Всех соседей завалил этим ценным удобрением.</p>
+
+<p>Приглашаю всех желающих принять участие в дискуссии.</p>
+
+<p>Это как мы строили клетки Времени ушло дней 20 (не было опыта).</p>
+
+<p><a href="http://www.postimage.org/Pq1fOu6r.jpg" target="_blank"><img src="http://www.postimage.org/Pq1fOu6r.jpg" alt="" /></a></p>
+
+<p><a href="http://www.postimage.org/gx1ta8wA.jpg" target="_blank"><img src="http://www.postimage.org/gx1ta8wA.jpg" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 31-05-2009</p>
+
+<p>интересно, а товарищ знает о таймерах и автоматизации процессов? :D</p>
+
+<p>А вот как падают яйца после того как куры их сносят? Как бизнес идея хорошая, но на сколько действительно прибыльная, вопрос.</p>
+
+<p><strong>mdima</strong> 31-05-2009</p>
+
+<p>яйца скатываются по наклонной сетке, а помет сквозь нее падает на тряпичную ленту.</p>
+
+<p><strong>Mole_Garden</strong> 01-06-2009</p>
+
+<p>8)</p>
+
+<p><strong>Mendes</strong> 18-06-2009</p>
+
+<p>Дмитрий, дайте ссылку, откуда этот пост.</p>
+
+<p><strong>Dorina</strong> 20-06-2009</p>
+
+<p><a href="http://www.biznet.ru/topic21831.html" target="_blank">http://www.biznet.ru/topic21831.html</a></p>
+
+<p><strong>Mendes</strong> 20-06-2009</p>
+
+<p>Спасибо.</p>
+
+<p><strong>Mole_Garden</strong> 20-06-2009</p>
+
+<p>почитал я по этой ссылке, много чего интересного пишут, но вот итог статьи, что человек отказался от этого дела. Интернет дает денег больше как оказалось :D</p>
+
+<p><strong>valery</strong> 20-06-2009</p>
+
+<p>Перепелки, и подобные мини-курочки - вещь хорошая в собственном загородном доме, на селе или прочее. Интересно в основном для личного потребления, когда на столе собственные полезный диетический продукт.</p>
+
+<p>Само по себе занятие хлопотное. Как бизнес - практически нерентабельное. Воронежская фабрика “давит” всех мало-мальски приличных производителей. А о мелко-частном производстве и говорить нечего.</p>
+
+<p>Стоимость кормов (комбикорма), сумасшедшая транспортная составляющая, делает это занятие близким к бессмысленному.</p>
+
+<p>Есть у меня перепелочка - Ряба. Дочке покупал. Ребенку нравится, погладишь - яичко снесет. Но в квартире держать - много грязи, так что она у меня сейчас на работе живет. Нестись уже перестала, живет на “пенсии”. Несутся они меньше года.</p>
+
+<p>Когда перестают нестись, их по-идее - забивают.</p>
+
+<p>Техника забоя - довольно любопытная - резать голову секатором.</p>
+
+<p>Как Вам такая перспектива ? Скотинке, которая Вашего ребенка радовала и яичками кормила - голову секатором ? А ?</p>
+
+<p>Замечательно. Что-то близкое к садизму.</p>
+
+<p><strong>valery</strong> 20-06-2009</p>
+
+<p>Наверное, я не в тему. Перечитал еще раз пост, там ведь вроде бы об обычным курах-несушках речь идет ?</p>
+
+<p>Не о маленьких ?</p>
+
+<p>Ну тогда пусть мое сообщение так будет, для “развития” темы.</p>
+
+<p><strong>Ozzy</strong> 02-07-2009</p>
+
+<p>Как-то держал в квартире перепёлок 10шт.</p>
+
+<p>Сначала по незнанию взял вместе с петушками. А они как подросли стали по утрам (с 4 часов) дико типа кукарекать.</p>
+
+<p>Когда стоял рядом от этого уши слегка закладывало. Пришлось от петушков избавиться.</p>
+
+<p>Оставшиеся 6 шт неслись исправно.</p>
+
+<p>Яйца у них очень вкусные.</p>
+
+<p>А брал я их у людей которые в 3х комнатной квартире держали:</p>
+
+<p>перепелов около 300 шт</p>
+
+<p>уток около 10 шт</p>
+
+<p>двух ротвейлеров, кошку, рыбок и козу на балконе. В общем зоопарк. Но всё как-то умещалось на удивление хорошо.</p>
+
+<p><strong>valery</strong> 02-07-2009</p>
+
+<p>Сильно похоже, как у меня. Только без козы.</p>
+
+<p>И вместо уток - попугай.</p>
+
+<p>И еще раки ползают. Хорошо не по квартире.</p>
+
+<p>А по огурцам - паучки какие-то приладились ходить. Еле-еле перевел. Хотя животных стараюсь не обижать.</p>
+
+<p><strong>valery</strong> 02-07-2009</p>
+
+<p>Еще в развитие темы.</p>
+
+<p>Некоторые породы перепелов (то ли таллинские. то ли эстонские. Эстонские по-моему) - курочки и петушки страшно похожи. Очень трудно по безграмотности отличить.</p>
+
+<p>Помню прочитал замечательный метод.</p>
+
+<p>Если несет яички - значит не петушок.</p>
+
+<p><strong>Ozzy</strong> 03-07-2009</p>
+
+<blockquote>
+  <p>Помню прочитал замечательный метод.</p>
+
+  <p>Если несет яички - значит не петушок.</p>
+</blockquote>
+
+<p>100% - проверено :D</p>
+
+<p>Породу своих не помню, какие то “яичные”, но знаю что есть мясные породы которые вырастают даже до 200-220 гр!</p>
+
+<p>Звучит это как-то смешно.</p>
+
+<p><strong>vladgord64</strong> 14-08-2009</p>
+
+<blockquote>
+  <p>Само по себе занятие хлопотное. Как бизнес - практически нерентабельное. Воронежская фабрика “давит” всех мало-мальски приличных производителей. А о мелко-частном производстве и говорить нечего.</p>
+
+  <p>Стоимость кормов (комбикорма), сумасшедшая транспортная составляющая, делает это занятие близким к бессмысленному.</p>
+</blockquote>
+
+<p>Занятие бизнесом предполагает:</p>
+
+<p>-производство и</p>
+
+<p>-реализация (успешная реализация)</p>
+
+<p>Допустим человек наладил производство, а с реализацией не получилось, потому и вышел бизнес не рентабельным.</p>
+
+<p>В наших краях мясо очень дорогое и проблем с реализацией нет, скупщики сами ездят, забирают живым весом.</p>
+
+<p>Потому я начал рассматривать такой бизнес как разведение вьетнамских травяных хрюшек. Поросята за три-четыре месяца выростают до кондиции. Корм покупать не надо, летом травку хавают, зимой установить производство зелени с помощью гидропоники (форум же по гидропонике).</p>
+
+<p>Установку видел в инете. Состоит из поддонов и стелажей, засыпается зерно тонким слоем, заливается раствором и оно проростает и растёт в поддонах, урожай три-четыре раза в месяц. Увеличение массы от зерна до урожая в 8-9 раз.</p>
+
+<p>Сами свиньи очень чистоплотные, какают в дальнем уголке, а там где живут, чистая подстилочка. Так что уход минимальный.</p>
+
+<p><strong>Mole_Garden</strong> 14-08-2009</p>
+
+<blockquote>
+  <p>Поросята за три-четыре месяца выростают до кондиции. Корм покупать не надо, летом травку хавают, зимой установить производство зелени с помощью гидропоники (форум же по гидропонике).</p>
+
+  <p>Установку видел в инете. Состоит из поддонов и стелажей, засыпается зерно тонким слоем, заливается раствором и оно проростает и растёт в поддонах, урожай три-четыре раза в месяц. Увеличение массы от зерна до урожая в 8-9 раз.</p>
+
+  <p>Сами свиньи очень чистоплотные, какают в дальнем уголке, а там где живут, чистая подстилочка. Так что уход минимальный.</p>
+</blockquote>
+
+<p>Так зачем далеко ходить за установкой, портатип есть у нас на сайте :D <a href="http://www.ponics.ru/2009/05/rostki/]http://www.ponics.ru/2009/05/rostki/[/url] и обсуждение на форуме [url=http://forum.ponics.ru/index.php/topic,40.0.html" target="_blank">http://forum.ponics.ru/index.php/topic,40.0.html</a></p>
+
+<p>а так же есть видео подборка(если скорость интернета позволяет) - <a href="http://forum.ponics.ru/index.php/topic,72.msg1618.html#msg1618" target="_blank">http://forum.ponics.ru/index.php/topic,72.msg1618.html#msg1618</a></p>
+
+<p><strong>vladgord64</strong> 14-08-2009</p>
+
+<p>Да я всё внимательно перечитал перед тем как зарегиться на форуме, гидропоникой занимаюсь два года с небольшим, но кустарным способом, вручную, установки что собой представляют представляю (извините за коламбур), сейчас пытаюсь начать заниматься зеленью :))), потому пришла анналогия про корма. А их кто ест? животные! Самые беспроблемные - травоядные, только коровы - большие и гадят под себя, а вьетнамки - культурный народ, им кино последние хиты рассказываешь, внимательно слушают, смотрят тебе в лицо, шо пёс домашний, а потом играют между собой в войнушку….</p>
+
+<p><strong>vladgord64</strong> 15-08-2009</p>
+
+<blockquote>
+  <p>Так зачем далеко ходить за установкой, портатип есть у нас на сайте</p>
+</blockquote>
+
+<p>:)))))</p>
+
+<p>Я ж имею ввиду не игрушки на поддоконниках, а реальный бизнес, с большим объёмом продуцирования зелёной массы. Вот система спроектированная “ДОНЕЦКОЕ РЕГИОНАЛЬНОЕ ОТДЕЛЕНИЕ АКАДЕМИИ ТЕХНОЛОГИЧЕСКИХ НАУК УКРАИНЫ”, так сказать достижение человеческой мысли и ещё (по-моему) запатентованная<img src="http://market20_2jpg&quot;" alt="" /></p>
+
+<p><img src="http://market20_1.jpg&quot;" alt="" /></p>
+
+<p>Круто!</p>
+
+<p>Из автоматики, как мы видим, применяется всего один мужик с ведром!!!!</p>
+
+<p>Хотя, если внимательно разглядеть поддоны, то в серёдке наблюдается нечто подобие ввода-вывода раствора, но патрубков не видно (может взяли часть поддонов из чего другова) :))))</p>
+
+<p><a href="https://t.me/ponics_ru_files/1426" target="_blank"><img src="/attachimages/328_market20_1.png" alt="" /></a></p>
+
+<p><a href="https://t.me/ponics_ru_files/1427" target="_blank"><img src="/attachimages/330_market20_2.png" alt="" /></a></p>
+
+<p><strong>Mole_Garden</strong> 16-08-2009</p>
+
+<blockquote>
+  <p>:)))))</p>
+
+  <p>Я ж имею ввиду не игрушки на поддоконниках, а реальный бизнес, с большим объёмом продуцирования зелёной</p>
+</blockquote>
+
+<p>Так а я и не шучу, портатип должен лишь подтолкнуть на мысли, как мы видим все очень просто, поддон, возможно даже с дренаже, даже лучше бы с дренажем и стеллажи, вот и вся конструкция. Как самая простейшая установка пришедшая в голову - это лотки для кошек(желательно новые, а не б.у.) с 10 мелкими отверстиями дренажа + стеллаж.</p>
+
+<p>Да и вы сами выложили фотки где все видно без лишних слов. А мужика с ведром можно заменить на таймер и насос.</p>
+
+<p><strong>koval.sergei</strong> 16-08-2009</p>
+
+<p>А мужик, кстати не правильно ведро держит :o, точно надо насос поставить типа Малыш 8)</p>
+
+<p><strong>vladgord64</strong> 16-08-2009</p>
+
+<blockquote>
+  <p>А мужик, кстати не правильно ведро держит :o, точно надо насос поставить типа Малыш 8)</p>
+</blockquote>
+
+<p>Впринципе насос не нужен как таковой, если есть давление в водоканале. Судя по буржуйским роликам, раствор подаётся фоггерами (сплиттерами), как и многая другая зелень, данная не любит откровеного полива, а система тумана - самое то. Отсюда вывод: вода из водопровода (возможно предварительно подогретая) подаётся к установке, ставим систему фертигации, за ней контроллер с электромагнитным клапаном ( устанавливаем режим полива каждые 30 мин. на 1-3 мин., для увлажнения), потом фильтр и затем над каждым поддоном по 2-4 распылителя, которые при водопроводном давлении успешно создают туман над зеленью, излишки жидкости собираются в ёмкость, что с ней делать? фиг его знает. Она как бы и не нужна уже, система не замкнутая. Вот мужик с ведром и пригодится, есть кому эти ёмкости опорожнять в унитаз :)</p>
+
+<p>У америкосов в одном из кадров я заметил сверху лампы досветки на самом потолке (хотя это может быть освещением как в холодильниках при открытии дверцы), но возможно контейнеры по мере созревания периодически подымаются к верху и на последнем этапе досвечиваются.</p>
+
+<p>Вообще, для успешного цикла, по-моему нужна установка проращивания. Дело в том, что для пророста зерну нужна температура 28-30 град и влажность 95%. А вот от туда контейнеры уже на общем основании попадают на плантацию.</p>
+
+<p><strong>Mendes</strong> 16-08-2009</p>
+
+<p>Кому скармливать в итоге эту зелень?!!!</p>
+
+<p>На днях слышал, что бычка на откорме кормить зеленью нельзя - будет поносить. (Хотя мне это показалось бредом).Тогда только молочную корову?</p>
+
+<p><strong>Mole_Garden</strong> 16-08-2009</p>
+
+<p>Корову, кроликов, кур, свиней, думаю овец и прочую домашнюю травоядную живность.</p>
+
+<p><strong>vladgord64</strong> 16-08-2009</p>
+
+<blockquote>
+  <p>Корову, кроликов, кур, свиней, думаю овец и прочую домашнюю травоядную живность.</p>
+</blockquote>
+
+<p>Дело в том, что вьетнамские, корейские травоядные свиньи в отличие от наших, германских, голландских и т.д. имеют отличие в пищеводе, чи как его там.</p>
+
+<p>Короче из-за этих особенностей они не могут переваривать ту байду которую скармливают наши крестьяне своим четвероногим с хвостиком друзьям, всякую дерть, грубую клетчатку и другую хорошую поносину..</p>
+
+<p>А вот травушка-муравушка самый лучший диетический продукт.</p>
+
+<p>Кстати раньше и у нас свиньи траву ели и были даже свинопасы (судя по мультфильмам и сказкам).</p>
+
+<p><strong>Mole_Garden</strong> 17-08-2009</p>
+
+<p>Да уж, хороши эти вислоухие свинки, по рассказам быстро размножаются и хорошо растут, без особых проблем ;)</p>
+
+<p><strong>vladgord64</strong> 17-08-2009</p>
+
+<blockquote>
+  <p>Да уж, хороши эти вислоухие свинки, по рассказам быстро размножаются и хорошо растут, без особых проблем ;)</p>
+</blockquote>
+
+<p>Надо им площади по 2-2,5 метра квадратных. Трахаются уже в три месяца, за год два опороса, первый 10-12 поросят, с каждым годом самка при опоросе даёт больше. Короче до 24 поросят за раз.</p>
+
+<p>Но десять штук тоже не плохо, хорошая прибавка к скудному столу :))</p>
+
+<p><strong>молчун</strong> 24-03-2010</p>
+
+<p>не может свинья в принципе быть полностью травоядной по умолчанию физиология не позволит физиология свиней очень близка к человеческой да питаться длительное время ростительной пищей может и при приминении некоторых приемов даже неплохо рости может но по умолчанию нужен животный белок ростительный содержит другие прпорции основных амино кислот по поволу плодовитости цифры не выдающиеся это норма для свиней пометы из 12-15 особей норма 18- 20 исключения но бывают довольно часто прикол в том что матка может прокормить одновремено до 16 поросят максимум кормление в ручную ОЧЕНЬ хлопотное дело каждые 2 часа по 25 начало и130 грамм конечная норма молока вобщем как ребенка каждый час потом 2 и 3 под конец вобщем приобретаете детей на пару месяцев случать в молодом возрасте свиней не стоит как минимум 8-12 месяцев не созревшее животное даст больше проблем чем приплода</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

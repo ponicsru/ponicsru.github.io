@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Исчезновение пресной воды | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Исчезновение пресной воды">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Исчезновение пресной воды</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>cpf</strong> 14-01-2012</p>
+
+<p>Глядя в свое окно, наблюдая как мелеет озерцо во дворе, и превращается в болото (кстати с утками :) )- приходит в голову грустная мысль: “А ведь те, кто говорит об исчезновении пресной воды - ПРАВЫ!”.</p>
+
+<p>В Нете - полно разной информации на эту тему (например: <a href="http://anvictory.org/blog/2011/09/21/25-priznakov-priblizheniya-uzhasayushhego-vodnogo-krizisa-globalnogo-masshtaba/" target="_blank">http://anvictory.org/blog/2011/09/21/25-priznakov-priblizheniya-uzhasayushhego-vodnogo-krizisa-globalnogo-masshtaba/</a>), и в связи с этим приходит уверенность в том, что Гидропоника будет единственно возможным способом получения сельхозпродукции. И это время - “не за горами”.</p>
+
+<p>Я думаю, любой, у кого рядом есть пресный водоем или река - могут в этом убедиться: уровень пресной воды в них падает год от года… Или я не прав? И не все так грустно? Что скажите, друзья?…</p>
+
+<p><strong>Coccinella</strong> 14-01-2012</p>
+
+<p>Это как где. Две предыдущие зимы у нас были снежными, так уровень грунтовых и поверхностных вод очень даже сильно поднялся.</p>
+
+<p>Кстати, таяние ледников, которого так боятся экологи, тоже увеличит количество доступной пресной воды. Испанцы, у которых с пресной водой довольно туго, несколько лет назад “катили бочку” на правительство, которое не строит ирригационных сооружений, включая водохранилища, и огромные количества пресной воды, которые выливаются на поля во время зимних бурь (у них такое бывает), бесхозно утекают в море или океан. Сейчас они такие водохранилищза строят потихоньку.</p>
+
+<p>Но по сути да, гидропоника дает возможность более рационально использовать пресную воду.</p>
+
+<p><strong>cpf</strong> 15-01-2012</p>
+
+<p>Сильно сомневаюсь, что уровень грунтовых вод где-то растет (например, целая система искусственых прудов в местечке, где я живу - подпитываются именно за счет грунтовых вод: все они сильно обмелели за последние 10 лет, а за последние 20 - вообще ОЧЕНЬ сильно, несмотря на различные по снежности зимы). Вот еще “оптимистическая” статейка на эту тему: <a href="http://www.aquaexpert.ru/analit/2007/11/27/water/." target="_blank">http://www.aquaexpert.ru/analit/2007/11/27/water/.</a> Даже в Сибири,в Братске - заметно падение уровня Ангары (фото Братского моря, 70км3 байкальской воды, снимал лично неск. лет назад:</p>
+
+<p><a href="https://t.me/ponics_ru_files/7183" target="_blank"><img src="/imagehost/thumbs/cimg1340.jpg" alt="" /></a></p>
+
+<p>и так - везде…</p>
+
+<p>А еще прочитал (на упаковке от рыбки к пиву :) ), что давнем-давно - весь Ледовитый океан был пресным (до соединения с Атлантикой)…</p>
+
+<p>По некоторым источникам - значительную часть европейской части России еще 1000-1500 лет назад занимало пресное море, подпитывающее все крупные реки Европы. Остатками его являются крупные озера Ладожское, Онежское, Селигер, Валдай, Ильмень и т.д.</p>
+
+<p>Да и вообще - уровень Мирового Океана падает:</p>
+
+<p><a href="http://meteoclub.ru/lite.php?id=710&amp;t=%EA%EB%E8%EC%E0%F2+%E8+%F3%F0%EE%E2%E5%ED%FC+%EC%E8%F0%EE%E2%EE%E3%EE+%EE%EA%E5%E0%ED%E0&amp;c=90" target="_blank">http://meteoclub.ru/lite.php?id=710&amp;t=%EA%EB%E8%EC%E0%F2+%E8+%F3%F0%EE%E2%E5%ED%FC+%EC%E8%F0%EE%E2%EE%E3%EE+%EE%EA%E5%E0%ED%E0&amp;c=90</a></p>
+
+<p>или НЕТ? <em>???</em></p>
+
+<p><strong>Садовник</strong> 15-01-2012</p>
+
+<p>“Процесс” действительно идёт и он похоже необратим.</p>
+
+<p>Достаточно сравнить пОйму любой реки с той, какая она была раньше и сейчас.</p>
+
+<p>В последние десятилетия активная добыча нефти тоже влияет. Образующиеся полости в земле тупо заполняются водой, которая соответственно изымается из “круговорота в природе”.</p>
+
+<p>И про загрязнения. Туда, где 20 лет назад мы детьми совершенно спокойно купались, сейчас я своих детей ни за что не пущу.</p>
+
+<p><strong>Coccinella</strong> 15-01-2012</p>
+
+<p>Пойма такой же живой биоценоз, как лес или луг. Она вполне естественно зарастает со временем и точно так же естественно реки меняют свои русла. И не менее естественно заросшая (и даже частично застроенная) пойма той же Вислы вдруг за пару ливневых дней может переполниться водой и посмывать все эти виллы с коттеджами.</p>
+
+<p>И с загрязнениями интересно, во многих местах реки действительно становятся все грязнее, а в некоторых - чище. В них появляются раки, бобры (те еще вредители!)…</p>
+
+<p>У нас на даче протекает небольшая такая речка (скорее большой ручей). В 2007 она внезапно пересохла, не у нашего дома, а за несколько километров повыше. Начисто пересохла, мы с дочкой еще эскурсию по ее высохшему руслу устроили. Так интересно было! И вот идем, мы идем и вдруг под ногами начинает появляться сырость, грязь, дальше-больше, пришлось выбираться на берег и продираться сквозь кусты, а когда мы добрались наконец до дома, речка была не менее полноводной, чем всегда :). У нас, правда, последнее время в окрестностях довольно много прудов нарыли, торф продавали. И такое впечатление, что эти пруды поддерживают уровень воды в речке тоже.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

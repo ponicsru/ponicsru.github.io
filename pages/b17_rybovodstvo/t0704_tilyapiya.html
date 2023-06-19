@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Тиляпия | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Тиляпия">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Тиляпия</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>zalcer</strong> 08-01-2011</p>
+
+<p>Супер рыба. Ест всё, живет в кислоте и щёлочи, может долго обходиться без воздуха. Очень вкусная, я пробовал )</p>
+
+<p>Есть дальняя мысль поставить узв(установку закрытого водоснабжения), только не знаю, где купить личинку. Одна беда - дохнет при 14 тепла, поэтому – только отопление.</p>
+
+<p><strong>Олеганос</strong> 09-01-2011</p>
+
+<p>а где живет сие чудо?</p>
+
+<p><strong>Coccinella</strong> 09-01-2011</p>
+
+<p>Во Вьетнаме, Таиланде и сопредельных краях.</p>
+
+<p><strong>Олеганос</strong> 09-01-2011</p>
+
+<p>:-\ по-моему нереальные задумки у товарисча … я хоть по натуре своей оптимист, но тем не менее :D</p>
+
+<p><strong>Alex123</strong> 09-01-2011</p>
+
+<p>Самое главное достоинство тиляпии заключается в том, что при ее выращивании отпадает проблема с ее размножением т.к. самка после оплодотворения икры собирает ее в рот и держит там пока не появятся мальки или личинки.</p>
+
+<p>Пару лет назад я находил инфу, что мальков тиляпии можно приобрести в подмосковном ВНИИРХ. Сегодня снова поискал, но не обнаружил даже малейших намеков на их сайт.</p>
+
+<p><strong>Олеганос</strong> 09-01-2011</p>
+
+<p>гыгыыыы ! знакомая ситуация :D</p>
+
+<p><strong>Олеганос</strong> 09-01-2011</p>
+
+<p>:D А ларчик то просто открывался!</p>
+
+<p>Этих рыбин уже где-то приобретал Мастадонт, то то я думаю: вроде уже был гразговор по этому поводу <em>???</em></p>
+
+<p><a href="http://forum.ponics.ru/index.php/topic,382.msg13262.html#msg13262" target="_blank">http://forum.ponics.ru/index.php/topic,382.msg13262.html#msg13262</a></p>
+
+<p><strong>Alex123</strong> 09-01-2011</p>
+
+<blockquote>
+  <p>:D А ларчик то просто открывался!</p>
+
+  <p>Этих рыбин уже где-то приобретал Мастадонт, то то я думаю: вроде уже был гразговор по этому поводу <em>???</em></p>
+
+  <p><a href="http://forum.ponics.ru/index.php/topic,382.msg13262.html#msg13262" target="_blank">http://forum.ponics.ru/index.php/topic,382.msg13262.html#msg13262</a></p>
+</blockquote>
+
+<p>Помню эту тему, но про тиляпию там вроде усё помэрло…</p>
+
+<p><strong>Олеганос</strong> 09-01-2011</p>
+
+<p>дак а источник преобретения малька может и не помэр исче?</p>
+
+<p><strong>Mastodont88</strong> 09-01-2011</p>
+
+<blockquote>
+  <p>:D А ларчик то просто открывался!</p>
+
+  <p>Этих рыбин уже где-то приобретал Мастадонт, то то я думаю: вроде уже был гразговор по этому поводу <em>???</em></p>
+
+  <p><a href="http://forum.ponics.ru/index.php/topic,382.msg13262.html#msg13262" target="_blank">http://forum.ponics.ru/index.php/topic,382.msg13262.html#msg13262</a></p>
+</blockquote>
+
+<p>Рыбой не было времени заниматься и я из аквариума выпустил ее в подвал, в бассейны с грунтовыми водами под фундаментом моей лаборатории,некоторые особи подохли, а остальные адаптировались и уже семь месяцев живут там и даже приплод дали, иногда ловлю ее на удочку,но отпускаю обратно, потому что туда всякие шлаки сливаются,кстати на червя очень хорошо клюет <em>8)</em></p>
+
+<p><strong>Олеганос</strong> 10-01-2011</p>
+
+<p>а температура воды какая там щас? насколько адаптировались? ;)</p>
+
+<p><strong>Mastodont88</strong> 10-01-2011</p>
+
+<blockquote>
+  <p>а температура воды какая там щас? насколько адаптировались? ;)</p>
+</blockquote>
+
+<p>Температура воздуха даже зимой там не падает ниже +18, так что температура воды сносная,судя по большому кол-ву появившегося малька рыба адаптировались и дала приплод, но думаю ей там не очень комфортно, потому как переодически вылавливаю некоторых особей плавающими брюшком к верху</p>
+
+<p><strong>Олеганос</strong> 10-01-2011</p>
+
+<p>;)мож света надо ей?</p>
+
+<p><strong>Coccinella</strong> 10-01-2011</p>
+
+<p>Аквакультура в овощных теплицах эффективна, но пока недостаточно рентабельна</p>
+
+<p>Идея разводить рыбу в теплицах параллельно с выращиванием овощей не нова, и серьезные промышленные испытания разных методов аквакультуры в Голландии ведутся уже несколько лет. В 2009 годы производители перца Стефан Дингемонс и Роп Петит объединили свои знания и усилия для выращивания тилапии в коридоре теплиц, для чего была организована дочерняя фирма «Vigour Fichion». Выращивание рыбы в закрытых садках позволяет рациональнее использовать тепло (теплица так и так отапливается) и воду, а значит снижает затраты на производство и рыбы, и овощей. Вода, в которой содержатся рыбы частично состоит из дренажной воды из-под выращивания перца. Каждую неделю 10% объема воды в садках заменяется новой порцией дренажной воды, в результате рыбы очищают 10% поливной воды в день и обогащают ее питательными веществами (главным образом, мочевиной). В баках поддерживается ЕС 1,5 мСм, трижды в час вода освежается – дезинфицируется ультрафиолетом, проходит через биофильтр и обогащается кислородом. СО2, который выделяется в биофильтре, также используется для подкормок растений. Для подогрева воды в садках используется возвратная вода из теплицы (ее температура 37-40оС), с помощью теплообменника в садках поддерживается постоянная температура 28оС, что позволяет ускорить рост рыб.</p>
+
+<p>После ряда экспериментов, начатых еще в 2007 году, в 2009 в коридоре теплиц были установлены 10 пластмассовых баков-садков (каждый объемом 4 куб.м.). Два – карантин для мальков, остальные для откорма подрастающих рыб. Кормление мальков производится вручную, во «взрослых» садках – автоматические кормушки. В начале откорма в каждом садке помещается 1800 рыб, после двух «пересадок» их число снижается до 900, в течение 5,5 месяцев рыбы вырастают с 1,2 г до 550 г. Интересно, что в традиционном рыбоводстве продуктивность намного ниже. Овощеводы-тепличники умеют работать с точной измерительной аппаратурой и применили это умение и к рыбоводству. В отличие от тепличного овощеводства в обычной аквакультуре не уделяется большого внимания таким параметрам, как температура воды в садках, ее рН и ЕС (концентрация содей), обогащение воды кислородом более дорогое. В обычной аквакультуре в 1 куб.м. воды производится 50-80 кг рыбы, в тепличной, благодаря оптимальным условиям – 150-180 кг.</p>
+
+<p>Выбор подходящей породы рыб имеет решающее значения в таком методе рыбоводства. Рыба должна быть неприхотливой, быстро набирать вес, переносить соленую воду, поскольку в баках частично используется дренажная вода из теплиц, кроме того, рыба должна быть хорошо знакома потребителям и пользоваться спросом. Тилапия отвечает всем этим условиям, но, к сожалению, ее в замороженном виде и в больших объемах импортируют их тропических стран. Для рентабельного производства рыбы в теплице необходима минимальная продажная цена 3 евро/кг, но оптовая цена мороженой тилапии на рынке не превышает 2 евро/кг. Потребитель не умеет отличить свежую рыбы на льду от размороженной, поэтому сейчас овощеводы-рыбоводы ищут иную, более конкурентноспособную породу рыб.</p>
+
+<p>По адресу</p>
+
+<p><a href="http://www.degroentenenfruit.nl/Home/Tilapia-en-paprika-gaan-goed-samen.htm" target="_blank">http://www.degroentenenfruit.nl/Home/Tilapia-en-paprika-gaan-goed-samen.htm</a> можно посмотреть фильм (на голландском языке) как это выглядит на практике.</p>
+
+<p>Источник: АПК-Информ</p>
+
+<p><strong>Mole_Garden</strong> 10-01-2011</p>
+
+<p>Спасибо за информацию! <em>8)</em></p>
+
+<p><strong>parent</strong> 24-02-2011</p>
+
+<p>Хорошая тема для Беларуси - у нас с этого года импорт теляпии запретили.</p>
+
+<p><strong>Skyport</strong> 31-07-2014</p>
+
+<p>“Аквакультура в овощных теплицах эффективна, но пока недостаточно рентабельна”</p>
+
+<p>:D</p>
+
+<p>такое впечатление,что эту первую строку Вы сами накатали</p>
+
+<p>кризис не особо тронул бизнесс на органической пище в Европе, они там такие бабулесы отдают за это!!! :o</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

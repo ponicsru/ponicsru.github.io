@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Деньги под ногами | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Деньги под ногами">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Деньги под ногами</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Coccinella</strong> 26-12-2011</p>
+
+<p>Не совсем понимаю, зачем :), но угораздило меня в линкедине зарегистрироваться в гидропонном сообществе :) Я там пока помалкиваю, но темки почитываю. Так вот, продвинутые буржуи организуют (уже годами!) платные курсы по аквапонике,</p>
+
+<p><a href="http://www.acsedu.co.uk/Courses/Hydroponics-Courses.aspx" target="_blank">http://www.acsedu.co.uk/Courses/Hydroponics-Courses.aspx</a></p>
+
+<p><a href="http://www.linkedin.com/groupItem?view=&amp;gid=1622317&amp;type=member&amp;item=63254909&amp;qid=1e8d87d8-89ae-4791-af69-4346a5c7629a&amp;trk=group_most_popular-0-b-ttl&amp;goback=%2Egmp_1622317" target="_blank">http://www.linkedin.com/groupItem?view=&amp;gid=1622317&amp;type=member&amp;item=63254909&amp;qid=1e8d87d8-89ae-4791-af69-4346a5c7629a&amp;trk=group_most_popular-0-b-ttl&amp;goback=%2Egmp_1622317</a></p>
+
+<p>а Валерий с Константином и сотоварищи по двадцать раз объясняют одно и то же совершенно бесплатно, да еще некоторые товарищи соли бесплатно раздают всем желающим :(</p>
+
+<p>Видимо, продолжается строительство коммунизма.</p>
+
+<p>Это я просто так, как тему для размышлений…</p>
+
+<p><strong>cpf</strong> 26-12-2011</p>
+
+<p>К счастью, не все в этом мире измеряется деньгами (а то, что измеряется - …. , это в гидропонике - не приветствуется, как нежелательные органические соединения :D)</p>
+
+<p><strong>Coccinella</strong> 26-12-2011</p>
+
+<p>Зато опыт показывает, что знания, полученные за деньги, садятся в память наиболее крепко :). Кстати, это не моя мысль, это Алексей Куренин на ГТ как-то сказал :).</p>
+
+<p><strong>cpf</strong> 26-12-2011</p>
+
+<p>Ммм… Возможно: как минимум остается в памяти “за скока” они получены :) Я бы сказал, что наиболее крепко сидят те знания, которыми регулярно пользуешься (а за деньги они были получены или еще как-то…, или зачем-то… - “эт дело 5-е” :))</p>
+
+<p><strong>gena1</strong> 26-12-2011</p>
+
+<p>То, что выше написано больше похоже на вредность :) или зависть к чужим знаниям … :)</p>
+
+<p>Ничего личного…</p>
+
+<p>Главное не как они (знания) приобретены, а для чего и в “какую голову”.</p>
+
+<p>И ещё, без опыта (который нереально купить) даже со светлой головой ничего сразу не получится.</p>
+
+<p>А “курсы”, “книги” и … своих “клиентов” получат в любом случае, не волнуйтесь.</p>
+
+<p><strong>orgail</strong> 26-12-2011</p>
+
+<p>ну знаниями по рыбоводству у нас никто шибко и не раскидывается и даже на спецфорумах молчком :D</p>
+
+<p>у них там обычно проблема биофильтр правильный построить, а запустить так вообще задача для Эйнштейна и сакральное знание</p>
+
+<p>вообщем для них рыба главное, а не поника :D</p>
+
+<p><strong>caiman</strong> 26-12-2011</p>
+
+<p>Я, грешным делом, Валере тоже намекал про патент на его метод, а ребята из Саратова кажется, взяли и сделали домашнюю установку….. и продают…. и никакого комунизма :D :D :D</p>
+
+<p><strong>cpf</strong> 27-12-2011</p>
+
+<blockquote>
+  <p>То, что выше написано больше похоже на вредность :) или зависть к чужим знаниям … :)</p>
+</blockquote>
+
+<p>Про вредность-возможно :D про зависть…- а смысл завидовать чужим знаниям? :-\</p>
+
+<p>Просто раздражает стремление некоторых ..мм.. как бы это сказать - “ГУРУ”, превратить любые свои “изыскания” в звонкую монету. Иногда это просто выглядит как “развод кроликов…”. Особенно, если учесть, что Знания имеют особенность “обесцениваться” со временем, ввиду появления новых.</p>
+
+<p>И еще: если поделиться знаниями - то “их не убудет”, даже могут прибавиться… :)</p>
+
+<p>Глубоко убежден, что те кто обладают реальными Знаниями - не стремяться их продать, а те, кто продают (знания, а не их результат) - это либо шарлатаны, либо идиоты… (тоже ничего личного, только “мысли вслух”) :)</p>
+
+<p>Еще “про платные курсы”: это знания “для ленивых”. В этом случае, наверное, оправдано - не хочешь тратить время и напрягать мозг для получения знаний - плати :D. Куда ты потом денешь полученное - параллельноабсолютно (главное -останется сертификат об окончании) :)</p>
+
+<p><strong>ProRus</strong> 27-12-2011</p>
+
+<blockquote>
+
+</blockquote>
+
+<p>Категорически с вами не согласен.</p>
+
+<p>В настоящее время практически все учебные заведения платные и по вашему там преподают идиоты или шарлатаны? Учатся только ленивые? :o</p>
+
+<p>Многочисленные IT курсы по цене 18000 ЕВРО и других направлений тоже читают идиоты? А учатся ленивые? :o</p>
+
+<p>Вот и тут я думаю как раз те самые курсы, знания с которых вы не получите нигде, а если и получите, то потратите на них пол жизни.</p>
+
+<p>Подобные курсы как раз для людей современных, кто хочет получить именно новейшие данные, а не полувековой давности с невероятными усилиями.</p>
+
+<p>Согласен лишь с одним, что есть шарлатаны цель которых выкачать деньги, но они есть везде (даже на этом форуме).</p>
+
+<p><strong>caiman</strong> 27-12-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>То, что выше написано больше похоже на вредность :) или зависть к чужим знаниям … :)</p>
+  </blockquote>
+
+  <p>Про вредность-возможно :D про зависть…- а смысл завидовать чужим знаниям? :-\</p>
+
+  <p>Просто раздражает стремление некоторых ..мм.. как бы это сказать - “ГУРУ”, превратить любые свои “изыскания” в звонкую монету. Иногда это просто выглядит как “развод кроликов…”. Особенно, если учесть, что Знания имеют особенность “обесцениваться” со временем, ввиду появления новых.</p>
+
+  <p>И еще: если поделиться знаниями - то “их не убудет”, даже могут прибавиться… :)</p>
+
+  <p>Глубоко убежден, что те кто обладают реальными Знаниями - не стремяться их продать, а те, кто продают (знания, а не их результат) - это либо шарлатаны, либо идиоты… (тоже ничего личного, только “мысли вслух”) :)</p>
+
+  <p>Еще “про платные курсы”: это знания “для ленивых”. В этом случае, наверное, оправдано - не хочешь тратить время и напрягать мозг для получения знаний - плати :D. Куда ты потом денешь полученное - параллельноабсолютно (главное -останется сертификат об окончании) :)</p>
+</blockquote>
+
+<p>а если изыскания окажутся полезными не у ГУРУ, то тогда можно в звонкую монету????</p>
+
+<p>как-то все у вас с обидой сказано про изыскания, похоже на то как ваши изыскания не нашли применения и вы обозлились на всех и вся…… Так жизнь из всего этого(г….а) и состоит……</p>
+
+<p>А без звонкой монеты мы вообще никуда…. а здесь клуб по итересам, и каждый делится чем может, хочет, желает….</p>
+
+<p><strong>glider</strong> 27-12-2011</p>
+
+<blockquote>
+  <p>Категорически с вами не согласен.</p>
+
+  <p>В настоящее время практически все учебные заведения платные и по вашему там преподают идиоты или шарлатаны? Учатся только ленивые? :o</p>
+
+  <p>Многочисленные IT курсы по цене 18000 ЕВРО и других направлений тоже читают идиоты? А учатся ленивые? :o</p>
+</blockquote>
+
+<p>У нас в городе полно курсов для программистов, не по 18 тыс евро конечно :). Больше половины это именно ШАРЛАТАНЫ! Возможно они и готовят продвинутых пользователей, но уж не программистов это точно.</p>
+
+<p>Возможно на дорогих курсах по другому. Меня все жаба душит это проверить на себе :). Я так думаю ценность зависит от преподавателя, а не от ценника или имени школы.</p>
+
+<p><strong>cpf</strong> 27-12-2011</p>
+
+<p>Не злюсь на жизнь абсолютно… (у меня - “все хорошо”:)). Если кого задел - “звиняйте” . :D</p>
+
+<p>Просто наполучался “много всяких” знаний, знаю много людей которые читают различные лекции, ведут курсы (в т.ч. друзья, однокашники, знакомые и т.п.), примерно представляю себе “кухню”. Я не против - получайте “платные” знание на здоровье. Про IT cкажу Вам следующее (поскольку сам имею в т.ч. IT образование, практику, и, наверное, сам мог бы вести “курсы”по некоторым направлениям): большинству людей на таких курсах нужны не столько знания, сколько сертификаты (для дальнейшего хорошего трудоустройства). Впрочем, всегда есть исключения…</p>
+
+<p>Большая часть знаний на этих курсах - начального уровня (или “слегка устаревшие”:)). Люди которые их организуют - точно знают “зачем” и далеко “не идиоты”, а те кто туда идут - не всегда это представляют (особенно, если за это платит работодатель:). Каких-то “передовых” знаний - Вы там не получите, но для “освоения ремесла” - вполне сойдет…:) Практически все знания из курсов за 18000E можно получить самому абсолютно бесплатно (только для этого надо найти время и напрячь себя любимого)- необходимо только четко ответить для себя на вопрос: “ДЛЯ ЧЕГО”…</p>
+
+<p>По поводу платных учебных заведений: сейчас практически по любой специальности можно поступить на “бюджетное” обучение (когда платит государство), надо только показать свою ммм… “пригодность”. Даже “в Америке” (куда я сдуру, чуть не сунулся сразу после окончания ВУЗа), есть возможность поступить в любой университет на бесплатной основе (даже стипендию будут платить), если Вы покажете достойные результаты на вступительных тестах. Самое главное понять: “чему учиться и для чего”. :)</p>
+
+<p>Все - дальше - не вижу смысла флэймить на эту тему… <em>crazy</em></p>
+
+<p>p/s о главном, чуть не забыл: БОЛЬШОЙ РЕСПЕКТ всем тем, кто БЕЗВОЗДМЕЗНО делится своими (честно заработанными) знаниями со всеми другими, кто жаждет их получить! Этот форум (и нетолько этот…) - яркое тому подтвержденье. Еще раз СПАСИБО организаторам (снимаю шляпу - такого “смайла” нет, к сожалению)</p>
+
+<p><strong>gena1</strong> 27-12-2011</p>
+
+<p>Курсы программистов :)</p>
+
+<p>Жесть :)</p>
+
+<p>В IT есть только консультации по узкой специфике (чем она уже, тем дороже в ней знания) , всё остальное - “курсы” для тех кто хочет корочку или сертификат (как правило, больше ничего курсант с них не получает). Большинство контор только и посылает своих спецов ради корочки на стенку для поднятия имиджа/цены за свои услуги.</p>
+
+<p>Кстати, думаю, это везде так, судя по форуму в гидре тоже.</p>
+
+<p><strong>intent</strong> 01-02-2012</p>
+
+<p>Знания и информация должны быть бесплатными и общедоступными,для того чтобы ими мог воспользоваться человек достойный их,т.к. никакие деньги и корочки об кончании не сделали еще ни одного талантливого(не побоюсь этого слова) профессионала,в то время как сплошь и рядом неординарные люди не имея доступ(в силу тех же материальных затруднений) вынуждены прозябать и вообще заниматься не своим делом(что для благоденствия людей равноущербно “дипломированному “профессионалу”</p>
+
+<p>Разделяю мнение CPF и не боясь повториться выражаю благодарность форуму за то что он есть,и людям свободно-искренне-открыто делящимся опытом и инфой с жаждущими.. <em>8)</em></p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

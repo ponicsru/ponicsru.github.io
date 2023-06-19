@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Конкурс | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Конкурс">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Конкурс</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Mole_Garden</strong> 19-02-2010</p>
+
+<p>И так, по предложению общественности объявляется конкурс</p>
+
+<p>На самую красивую гидропонщицу Ру-нета</p>
+
+<p>С 20 февраля по 20 мая</p>
+
+<p>Сроки проведения конкурса:Так как девушек на нашем ресурсе очень мало, а девушек выращивающих на гидропонике еще меньше, то предлагаю растянуть конкурс на 3 месяца.</p>
+
+<p>Условия конкурса:</p>
+
+<p>1) В конкурсе участвуют только девушки!</p>
+
+<p>2) Для участия в конкурсе всю информацию отправляете мне в личку или по почте, которую можно будет узнать тоже через личку, достаточно стукнуться и сказать, что желаете участвовать в конкурсе.</p>
+
+<p>Что требуется для участия:</p>
+
+<p>1) Собственно ваше фото, можно не в полный рост, но наличие лица обязательно.</p>
+
+<p>2) Просто смотреть на фото это очень здорово, но гораздо интересней оценивать не только внешность, но и человека в целом. По этому, при отправлении заявки будьте добры немного рассказать о себе, своих увлечениях, откуда Вы, чем занимаетесь и прочее, в общем, не большое описание что бы интересно было читать, разглядывать и голосовать.</p>
+
+<p>3) Желательно, что бы на фоне была гидропонная установка или растение, которое растет на гидропонике.</p>
+
+<p>4) Наличие на фото в месте с вами надписи подобной той, что на образце обязательно, можно на заднем фоне или на растение, в общем как будет удобней</p>
+
+<p>Это делается для того, что бы не было подставных личностей, типо нашел красавицу, скачал фотку, прислал и победил. Мы же за честную борьбу.</p>
+
+<p>Что же получит победительница?Спонсоров как таковых у нас нет, по этому все желающие мужчины могут принять участие в качестве спонсора. Мужчин на форуме много и у каждого свои мысли и идеи. Так что, в фонд победительницы принимаются призы от всех постояльцев. Т.е. если у кого-то есть желание поощрить победительницу призом, подарком он сообщает мне об этом желание и говорит, что именно будет в качестве приза. В свою очередь, я записываю его в список и уже после победы вы отправите подарки по адресу победительницы. Адрес победительницы сообщу отдельно после подведения итогов конкурса.</p>
+
+<p>Убидительная просьба, если обещали что-то подарить, то держим слово!</p>
+
+<p>На данный момент в призовом фонде имеется:</p>
+
+<p>Куст ампельной фуксии – от Садовника</p>
+
+<p>Оно же на главной странице <a href="http://www.ponics.ru/2010/02/wanted/" target="_blank">http://www.ponics.ru/2010/02/wanted/</a></p>
+
+<p>p.s. Конкурс проводится для привлечения девушек в наши ряды и веселья ради! Не относитесь к нему очень серьезно.</p>
+
+<p><strong>valery</strong> 19-02-2010</p>
+
+<p>Как же к девушкам не серьезно относиться ? ;)</p>
+
+<p>Я буду за Нику Добровски голосовать.</p>
+
+<p>И за других - тоже.</p>
+
+<p><strong>Mole_Garden</strong> 19-02-2010</p>
+
+<blockquote>
+  <p>Как же к девушкам не серьезно относиться ? ;)</p>
+
+  <p>Я буду за Нику Добровски голосовать.</p>
+
+  <p>И за других - тоже.</p>
+</blockquote>
+
+<p>Будем голосовать за тех кто пришлет хоть что нибудь! :D</p>
+
+<p><strong>Vezun</strong> 25-02-2010</p>
+
+<p>Здравствуйте! Давно слежу за форумом, решился написать :-[ Претенденты есть? ;)</p>
+
+<p><strong>Mole_Garden</strong> 26-02-2010</p>
+
+<blockquote>
+  <p>Здравствуйте! Давно слежу за форумом, решился написать :-[ Претенденты есть? ;)</p>
+</blockquote>
+
+<p>Вы имеете в виду претендентки? Конкурс для девушек :D</p>
+
+<p>Нет, никого, ни одной души. Но время еще есть и возможно, кто то и отважится.</p>
+
+<p><strong>Alyona</strong> 10-05-2010</p>
+
+<p>Я отважусь :-) Ещё есть пару дней?</p>
+
+<p><strong>Mole_Garden</strong> 10-05-2010</p>
+
+<blockquote>
+  <p>Я отважусь :-) Ещё есть пару дней?</p>
+</blockquote>
+
+<p>Дней аж целых еще десять. Только вот как то соревноваться с самой собой это наверно вам не очень понравиться. Тяжко будет победить саму себя :D</p>
+
+<p>Как я и думал, затея с конкурсом не наш формат.</p>
+
+<p><strong>Садовник</strong> 10-05-2010</p>
+
+<p>Алёна, судя по Аватару шансы на победу у Вас очень даже неплохие! :)</p>
+
+<p>Mole_Garden Алёна не только красивая, но также смелая и не глупая девушка.</p>
+
+<p>Стать победительницей Первого международного конкурса красоты среди представительниц гидропонного дела - это Вам не просто так!</p>
+
+<p>Тут главное - начать.</p>
+
+<p>После появления первой претендентки - уверен, появятся и другие. А десять дней для интернета - это далеко не малый срок.</p>
+
+<p>Ну а конкурс должен стать доброй традицией.</p>
+
+<p>А Первая победительница она всегда остаётся Первой.</p>
+
+<p>Алёна, Вы приняли верное решение. Я уже за Вас болею!</p>
+
+<p>PS: Приз ждет свою победительницу! :)</p>
+
+<p><strong>caiman</strong> 11-05-2010</p>
+
+<p>Победительнице из Украины приз гарантирую $)! Из других стран тоже, но только поздравления и поцелуи! Понаделали - таможни, границы, блин &gt;:(</p>
+
+<p>Ааааааааа, забыл написать, что за приз.</p>
+
+<p>ПРИЗ - упаковка кокоса (3кг)</p>
+
+<p><strong>valery</strong> 11-05-2010</p>
+
+<p>А я уже проголосовал !!!!!!!!!!!!!!!!!!!</p>
+
+<p>Покажите только, куда “голос” складывать ?</p>
+
+<p><strong>Mole_Garden</strong> 11-05-2010</p>
+
+<blockquote>
+  <p>А я уже проголосовал !!!!!!!!!!!!!!!!!!!</p>
+
+  <p>Покажите только, куда “голос” складывать ?</p>
+</blockquote>
+
+<p>:D Голосование начнется после 20 мая и будет длиться в течение недели. Пока еще не было получено ни одной работы. Так что ждем.</p>
+
+<p><strong>Oxy</strong> 11-05-2010</p>
+
+<p>Что-то слабовато - одна упаковка кокоса :-) А если фотографии участниц будут такими, что захочется распечатать плакатный формат и повесить на стену?</p>
+
+<p>Если Костя согласится, предлагаю к призу добавить СД с записанными материалами форума и сайта, ну там книги всякие, может фоток жменю.Может еще какой исклюзивчик. Диск можно использовать “принтейбл”. Если будет электронный образ в PNG или CDR, то можно изготовить полностью фирменный. Распечатать на месте, записать вручить(переслать).Обычно фирменные идут в коробочке с обложкой. Обложку Костя может распечатать сам и оставить на ней именной автограф. А распечатанный листок любой почтой переслать куда-угодно можно. И будет у человека полностью уникальный диск, с авторским автографом. Ну и пачка кокоса :-)</p>
+
+<p><strong>Mole_Garden</strong> 11-05-2010</p>
+
+<blockquote>
+  <p>Что-то слабовато - одна упаковка кокоса :-) А если фотографии участниц будут такими, что захочется распечатать плакатный формат и повесить на стену?</p>
+
+  <p>Если Костя согласится, предлагаю к призу добавить СД с записанными материалами форума и сайта, ну там книги всякие, может фоток жменю.Может еще какой исклюзивчик. Диск можно использовать “принтейбл”. Если будет электронный образ в PNG или CDR, то можно изготовить полностью фирменный. Распечатать на месте, записать вручить(переслать).Обычно фирменные идут в коробочке с обложкой. Обложку Костя может распечатать сам и оставить на ней именной автограф. А распечатанный листок любой почтой переслать куда-угодно можно. И будет у человека полностью уникальный диск, с авторским автографом. Ну и пачка кокоса :-)</p>
+</blockquote>
+
+<p>Диск с материалами сайта думаю без проблем, буду иметь в виду. А то что пачка какоса, должен сказать это уже очень ценный подарок, не везде его можно достать. От всех по возможностям.</p>
+
+<p><strong>sturgeon</strong> 11-05-2010</p>
+
+<p>с тремя кило кокса :D</p>
+
+<p><strong>Batat</strong> 11-05-2010</p>
+
+<blockquote>
+  <p>с тремя кило кокса :D</p>
+</blockquote>
+
+<p>Скорее всего caiman имел ввиду “Три кило “кокса”.</p>
+
+<p>Не зря же он сетовал на границу и таможню! :D :D :D</p>
+
+<p>Если так, то приз более чем достойный…</p>
+
+<p><strong>valery</strong> 11-05-2010</p>
+
+<p>Вот это да … :(</p>
+
+<p>А казалось - свой, простой рубаха-парень …</p>
+
+<p>Вона он какой хитрющий …</p>
+
+<p>То-то давеча в форуме все про какие-то порошки выспрашивал …</p>
+
+<p>И ведь - не девушка б в конкурсе, так бы и скрывался … :D</p>
+
+<p><strong>Mole_Garden</strong> 11-05-2010</p>
+
+<p>В таком случае, ждем еще добровольных пожертвований. ;)</p>
+
+<p><strong>caiman</strong> 12-05-2010</p>
+
+<blockquote>
+  <p>В таком случае, ждем еще добровольных пожертвований. ;)</p>
+</blockquote>
+
+<p>Ага! Значит, если 3кг кокоса, то маловато и парень свой в доску, вернее рубаха, а если 3кг кокса, то нормально - всем хватит, даже, чувствую, согласны приехать по “дороге” покататься :D ;D.</p>
+
+<p>А я думал, форум про растения разные полезные, а оно вона как, ага!!!!!!!!! :-[ :-[ :-[</p>
+
+<p>Так вот вам конкурс зачем - скучно без девченок с тремя то кило коксу :P ;D ;D ;D</p>
+
+<p><strong>Alyona</strong> 12-05-2010</p>
+
+<p>На аватаре не моё фото, просто картинка из инета :-)</p>
+
+<p>А про девушек даже странно - я всегда думала, что растения - женское дело. Когда поиском искала про гидропонику, видела их много на сайте про выращивание фиалок. Может, там вывесить объявление о вашем конкурсе? Чтобы здесь вам веселее было.</p>
+
+<p><strong>Mole_Garden</strong> 12-05-2010</p>
+
+<blockquote>
+  <p>На аватаре не моё фото, просто картинка из инета :-)</p>
+
+  <p>А про девушек даже странно - я всегда думала, что растения - женское дело. Когда поиском искала про гидропонику, видела их много на сайте про выращивание фиалок.</p>
+</blockquote>
+
+<p>Отчасти моя работа :D Этому способствовал ролик и то что одно время я отписывался на фиалочных форумах.</p>
+
+<p><strong>Mole_Garden</strong> 19-05-2010</p>
+
+<p>Началось голосование <a href="http://forum.ponics.ru/index.php/topic,514.msg16550.html#msg16550" target="_blank">http://forum.ponics.ru/index.php/topic,514.msg16550.html#msg16550</a></p>
+
+<p>Завтра конкурс заканчивается, так что ждем еще работ и голосуем.</p>
+
+<p>Так как работ мало, точнее одна, голосование продлиться неделю.</p>
+
+<p>Спонсоры готовим подарки! :D</p>
+
+<p><strong>Mole_Garden</strong> 19-05-2010</p>
+
+<p>Что-то не очень активно идет у нас голосование, так ребята, ноги в руки и бегом голосовать, для кого девушка старалась?</p>
+
+<p>Хочешь принять участие в голосование? Нажми <a href="http://forum.ponics.ru/index.php/topic,514.msg16550.html#msg16550" target="_blank">сюда</a></p>
+
+<p><strong>Mole_Garden</strong> 21-05-2010</p>
+
+<p>Конкурс закончился! В течение недели будет идти голосование, а затем будем дарить подарки!</p>
+
+<p>p.s. На данный момент лидером является работа номер 1 :D Есть подозрение, что она и победит :D Спонсоры, готовим подарки!</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

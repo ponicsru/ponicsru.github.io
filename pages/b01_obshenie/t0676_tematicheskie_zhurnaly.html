@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Тематические журналы. | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Тематические журналы.">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Тематические журналы.</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>Mole_Garden</strong> 12-12-2010</p>
+
+<p>Вот какая мысль пришла в голову. Как вы смотрите на то, что бы совместно подписать или покупать журналы связанные с гидропоникой, выращиванием овощей, с теплицами и прочими интересными материалами по тематике форума, может быть видео и прочее? Почему совместно, да потому что форум у нас на чистом энтузиазме живет, рекламы на форуме и на сайте нет, так что дохода с него нет абсолютна ни какого. Свои личные деньги вложить во все журналы которые нашел не могу, так как все они стоят хороших денег.</p>
+
+<p>Часть журналов можно будет получать в электронном виде, часть журналов на английском, часть в бумажном, которые будут сканироваться и тоже выкладываться. Понятно, что все на что подпишемся будет выкладываться в закрытом разделе форума, дабы ограничить поток нахлебников на халяву.</p>
+
+<p>Что скажите по поводу предложения?</p>
+
+<p>Слушаю все ЗА и ПРОТИВ.</p>
+
+<p>Пока как вариант это следующие журналы:</p>
+
+<p><a href="http://www.rusteplica.ru/journal.htm" target="_blank">Журнал «Теплицы России»</a></p>
+
+<p><a href="http://www.gavrish.ru/journals/" target="_blank">Журнал «ГАВРИШ»</a></p>
+
+<p><a href="http://www.rusogorod.ru/" target="_blank">Настоящий хозяин</a></p>
+
+<p>Материалы с сайта <a href="http://www.hydroponics.com.au" target="_blank">http://www.hydroponics.com.au</a> - правда все скорей всего на английском</p>
+
+<p>Список желающих подписаться:</p>
+
+<p>Mole_Garden - Журнал «Теплицы России» Журнал «ГАВРИШ» Настоящий хозяин</p>
+
+<p>Садовник - Журнал «Теплицы России» Журнал «ГАВРИШ» Настоящий хозяин</p>
+
+<p>Valery - Журнал «Теплицы России» Журнал «ГАВРИШ» Настоящий хозяин</p>
+
+<p>Orgai - «Теплицы России»</p>
+
+<p>ProRus - Журнал «Теплицы России» Журнал «ГАВРИШ» Настоящий хозяин</p>
+
+<p>Цветовод - Журнал «Теплицы России» Журнал «ГАВРИШ» Настоящий хозяин</p>
+
+<p>Leshiy - Журнал «Теплицы России» Журнал «ГАВРИШ» Настоящий хозяин</p>
+
+<p>p.s. если есть еще интересные журналы можно дополнять список, потом выберем то, что больше всего интересует большинство.</p>
+
+<p><strong>Садовник</strong> 12-12-2010</p>
+
+<p><em>8)</em> +1 За.</p>
+
+<p><strong>Mole_Garden</strong> 12-12-2010</p>
+
+<p>Добавил голосование, что бы было еще более наглядно, а в теме могут отписываться все потенциальные подписчики и все желающие сказать по этому поводу.</p>
+
+<p><strong>valery</strong> 12-12-2010</p>
+
+<blockquote>
+  <p><em>8)</em> +1 За.</p>
+</blockquote>
+
+<p><em>8)</em> <em>8)</em> +2</p>
+
+<p><strong>orgail</strong> 12-12-2010</p>
+
+<p>за</p>
+
+<p>единственное что не будут ли против сами журналы :D</p>
+
+<p><strong>valery</strong> 12-12-2010</p>
+
+<p>А мне как-то в Тепличных Технологиях понадавали старых подписок “Теплиц России” - замечательный журнал. А где взять свежие - непонятно…</p>
+
+<p>Вот на днях Алексей Куренин спрашивает - “Кто что думает по этому поводу …” А что за “повод-статья” - поди разберись. Взять негде.</p>
+
+<p>Порыскал-порыскал, все какой-то журнал “САМ” вместо теплиц вылезает. Скачал одну “теплицу” - а открывать не хочется, думаю - вирус там. Проверить пока нечем …</p>
+
+<p>В общем - подписываемся, ура !</p>
+
+<p><strong>valery</strong> 12-12-2010</p>
+
+<p>А мы им (журналам) - что-нибудь убедительного наврем. (А может они нам, как “недоразвитым” :) бесплатную подписку дадут ? :D )</p>
+
+<p>Скажем, там - “дети без ваших журналов спать не ложатся”, еще чего-нибудь …</p>
+
+<p>“Не почитал журнал - ходишь как без рук” …</p>
+
+<p>А давайте еще объявим конкурс на “жалостливое писмо” в редакцию ? :)</p>
+
+<p><strong>Mole_Garden</strong> 12-12-2010</p>
+
+<blockquote>
+  <p>за</p>
+
+  <p>единственное что не будут ли против сами журналы :D</p>
+</blockquote>
+
+<p>Тык говорю же, закрытый раздел, выложим где нить на рапиде или еще каки нить хостингах, в гугл боокс например, пущай разбираются кто это сделал. :D</p>
+
+<p>Фито то видимо не особо парится, что их прога за 20 тыщ, лежит в нете за бесплатно, думаешь за журналы будут биться?</p>
+
+<p><strong>orgail</strong> 12-12-2010</p>
+
+<p>Не ну так то конечно..</p>
+
+<p>Насчет жалостливых писем :) Некоторые журналы зарубежные мне разрешали статьи их переводить и публиковать</p>
+
+<p>А вот тот же Ховард Реш оказался акулой капитализма :D Разрешил только одну статью перевести, а на остальные отдельное разрешение просить :D Я наверное потому и ту не стал переводить даже ту что разрешил</p>
+
+<p><strong>Mole_Garden</strong> 12-12-2010</p>
+
+<blockquote>
+  <p>Не ну так то конечно..</p>
+
+  <p>Насчет жалостливых писем :) Некоторые журналы зарубежные мне разрешали статьи их переводить и публиковать</p>
+
+  <p>А вот тот же Ховард Реш оказался акулой капитализма :D Разрешил только одну статью перевести, а на остальные отдельное разрешение просить :D Я наверное потому и ту не стал переводить даже ту что разрешил</p>
+</blockquote>
+
+<p>Да клали мы на реша удобрений килограмм. :D</p>
+
+<p><strong>Mole_Garden</strong> 12-12-2010</p>
+
+<p>Так что еще насчет других журналов, может у кого есть какие нибудь пожелания?</p>
+
+<p><strong>Садовник</strong> 12-12-2010</p>
+
+<p><a href="http://www.rusogorod.ru" target="_blank">“Настоящий хозяин”</a> рассматриваются “полупрофессиональные” :D технологии.</p>
+
+<p><strong>Mole_Garden</strong> 12-12-2010</p>
+
+<blockquote>
+  <p><a href="http://www.rusogorod.ru" target="_blank">“Настоящий хозяин”</a> рассматриваются “полупрофессиональные” :D технологии.</p>
+</blockquote>
+
+<p>Эти я встречал в уже отсканеном виде, правда старые номера. Но тоже как вариант. Даже на их сайте есть старые номера.</p>
+
+<p><strong>ProRus</strong> 12-12-2010</p>
+
+<p>Growing Edge (http://www.growingedge.com/store/) можно покупать в электронном варианте. Возможно приобрести старые номера в электронке.</p>
+
+<p>Скоро ожидаю DVD - Millennium Collection 1991-2009 от www.hydroponics.com.au.</p>
+
+<p>Книгу Ховарда Реша “Hobby Hidroponics” перевел и потихоньку публикую у себя на сайте. Но только от перевода ничего не осталось, практически полностью ее переписал.</p>
+
+<p>Есть все книги Ховарда, кроме Hydroponic Tomatoes by Howard Resh.</p>
+
+<p><strong>Mole_Garden</strong> 12-12-2010</p>
+
+<p>Круто, так, а что про журналы то? Прошу прощения за нескромный вопрос, а к чему все это было сказано, я просто чуток не понял?</p>
+
+<p><strong>ProRus</strong> 12-12-2010</p>
+
+<blockquote>
+  <p>Круто, так, а что про журналы то? Прошу прощения за нескромный вопрос, а к чему все это было сказано, я просто чуток не понял?</p>
+</blockquote>
+
+<p>Я поставил голос в пользу покупки скопом. :)</p>
+
+<p>Все что у меня есть и будет в дальнейшем, доступно за символическую плату. :) Я к сожалению не сын миллионера.</p>
+
+<p>Для администрации данного ресурса все бесплатно и другу с севера тоже… :)</p>
+
+<p>Уточню: +3 за…</p>
+
+<p><strong>Mole_Garden</strong> 13-12-2010</p>
+
+<blockquote>
+  <p>Я поставил голос в пользу покупки скопом. :)</p>
+
+  <p>Все что у меня есть и будет в дальнейшем, доступно за символическую плату. :) Я к сожалению не сын миллионера.</p>
+
+  <p>Для администрации данного ресурса все бесплатно и другу с севера тоже… :)</p>
+
+  <p>Уточню: +3 за…</p>
+</blockquote>
+
+<p>:D А ну тогда все понятно! Яж спросил то не со зла, просто честно не понял.</p>
+
+<p><strong>Mole_Garden</strong> 13-12-2010</p>
+
+<p>Странно, проголосовало 6 человек, отписалось только 5 :D Где еще один?</p>
+
+<p><strong>Mole_Garden</strong> 15-12-2010</p>
+
+<p>Ну что желающих подписаться скопом на журналы оказалось мало и видимо больше не предвидятся.</p>
+
+<p>По этому переходим к дальнейшему обсуждению этого мероприятия. С электронными журналами понятно, можно получить на электронку, а вот что делать с бумажными? Я бы организовал подписку на себя, но я живу в съемной квартире и в любой момент могу поменять место дислокации. По этому, предлагаю оседлым и сознательным форумчанам взять на себя подписку на бумажные издания. Наличие сканера приветствуется :)</p>
+
+<p>Кто желает ?</p>
+
+<p>По поводу денег.</p>
+
+<p>Самый оптимальный вариант перевода это электронными деньгами. По этому человеку, который решится взять на себя ответственность и организовать подписку на бумажные издания потребуется иметь электронный кошелек. Что бы мы могли ему скинуть туда денег.</p>
+
+<p>По журналам.</p>
+
+<p>И так, на каких изданиях останавливаемся? После того, как определимся что будем выписывать будем узнавать и цену, хотя, лучше бы на оборот :D</p>
+
+<p>Все желающие отпишитесь о названиях журналов.</p>
+
+<p>Я буду первым и как пример</p>
+
+<p>Mole_Garden</p>
+
+<p>Журнал «Теплицы России»</p>
+
+<p>Журнал «ГАВРИШ»</p>
+
+<p>Настоящий хозяин</p>
+
+<p>С английским плохо, так что пока для начала остановлюсь на русскоязычных изданиях. Если все срастется, то тогда можно будет и расширить фронт подписки.</p>
+
+<p><strong>valery</strong> 15-12-2010</p>
+
+<p>“Теплицы Росси”</p>
+
+<p>“Гавриш”</p>
+
+<p><strong>Садовник</strong> 15-12-2010</p>
+
+<p>Журнал «Теплицы России»</p>
+
+<p>Журнал «ГАВРИШ»</p>
+
+<p>Настоящий хозяин</p>
+
+<p><strong>valery</strong> 15-12-2010</p>
+
+<p>Ну вот …</p>
+
+<p>Что ж я теперь, “бесхозяйственней” всех ?</p>
+
+<p>Ну давайте и я подпишусь …</p>
+
+<p>“Настоящий хозяин”</p>
+
+<p>“Гавриш”</p>
+
+<p>“Теплицы России”</p>
+
+<p>(Когда ж это все читать ?.. :-\ :-\ :-\ )</p>
+
+<p><strong>Mole_Garden</strong> 15-12-2010</p>
+
+<p>Да они выходят не так часто, так что успеем :D</p>
+
+<p><strong>ProRus</strong> 16-12-2010</p>
+
+<blockquote>
+  <p>По этому, предлагаю оседлым и сознательным форумчанам взять на себя подписку на бумажные издания. Наличие сканера приветствуется :)</p>
+
+  <p>Кто желает ?</p>
+</blockquote>
+
+<p>Могу и я. Сканер есть, опыт есть, а/я есть, но думаю не самый лучший вариант в связи с удаленностью региона. Долго будут идти эти самые журналы до меня. Ну на крайний случай можете иметь ввиду.</p>
+
+<blockquote>
+  <p>По поводу денег.</p>
+
+  <p>Самый оптимальный вариант перевода это электронными деньгами. По этому человеку, который решится взять на себя ответственность и организовать подписку на бумажные издания потребуется иметь электронный кошелек. Что бы мы могли ему скинуть туда денег.</p>
+</blockquote>
+
+<p>Это есть, Webmoney, Яндекс-деньги. Но можно ли подписываться на эти журналы с помощью кошельков? Потом, чтобы на кошелек WebMoney мог ложить денешку посторонний надо иметь статус продавца (у меня такого нет).</p>
+
+<blockquote>
+  <p>Все желающие отпишитесь о названиях журналов.</p>
+</blockquote>
+
+<p>Журнал «Теплицы России»</p>
+
+<p>Журнал «ГАВРИШ»</p>
+
+<p>Настоящий хозяин</p>
+
+<p><strong>ProRus</strong> 16-12-2010</p>
+
+<p>Электронная версия журнала “Гавриш”</p>
+
+<p>Вы можете получать по e-mail номера журнала “Гавриш” в формате .pdf (Acrobat Reader). Стоимость одного номера журнала - 200 руб. Заказы принимаются по e-mail: gavrish-info@list.ru, gavrish @ gavrish.ru или по факсу: (499) 760-84-75.</p>
+
+<p><strong>Mole_Garden</strong> 16-12-2010</p>
+
+<blockquote>
+  <p>Это есть, Webmoney, Яндекс-деньги. Но можно ли подписываться на эти журналы с помощью кошельков? Потом, чтобы на кошелек WebMoney мог ложить денешку посторонний надо иметь статус продавца (у меня такого нет).</p>
+</blockquote>
+
+<p>Электронные кошельки это не для подписки, а что бы мы могли скинуть деньги тому кто будет заниматься подпиской на печатные издания. ;)</p>
+
+<p><strong>ProRus</strong> 16-12-2010</p>
+
+<blockquote>
+  <p>Электронные кошельки это не для подписки, а что бы мы могли скинуть деньги тому кто будет заниматься подпиской на печатные издания. ;)</p>
+</blockquote>
+
+<p>Это понятно… Просто если ложить на WebMoney, то на кошельке должен быть статус продавца или нужно переводить с кошелька на кошелек, расчетных аппаратов. А что бы вывести денежку с кошелька для подписки нужно платить процент, потом процент за подписку и сроки вывода имеются. Удобно тогда, когда можно оформить подписку с кошелька. Хотя переводом на счет тоже время, тоже проценты еще и очередь с банке, если не пользоваться Интернет-банком. Хотя это все не существенно.</p>
+
+<p><strong>Mole_Garden</strong> 16-12-2010</p>
+
+<p>:D А можно ничего никуда не выводить, а просто оплатить телефон, интернет или еще чего нибудь. В общем понятно.</p>
+
+<p><strong>ProRus</strong> 16-12-2010</p>
+
+<blockquote>
+  <p>:D А можно ничего никуда не выводить, а просто оплатить телефон, интернет или еще чего нибудь. В общем понятно.</p>
+</blockquote>
+
+<p>А точно… Чет я про это и не подумал… <em>8)</em></p>
+
+<p><strong>Batat</strong> 16-12-2010</p>
+
+<blockquote>
+  <p>Электронная версия журнала “Гавриш”</p>
+
+  <p>Вы можете получать по e-mail номера журнала “Гавриш” в формате .pdf (Acrobat Reader). Стоимость одного номера журнала - 200 руб. Заказы принимаются по e-mail: gavrish-info@list.ru, gavrish @ gavrish.ru или по факсу: (499) 760-84-75.</p>
+</blockquote>
+
+<p>А ещё можно заказывать отдельные статьи.</p>
+
+<p>Раньше эта услуга была платная, и если не ошибаюсь, стоила одна статья 40 руб.(российских).</p>
+
+<p>Сейчас, если верить их <a href="http://www.gavrish.ru/journals/gavrish/podpiska.php" target="_blank">рекламе</a>, можно получить любую статью бесплатно.</p>
+
+<p>…“Отдельные статьи, опубликованные в журнале «Гавриш» в период с 2004 года по настоящее время, можно бесплатно получить по е-mail в формате .pdf.</p>
+
+<p>Для этого нужно прислать в редакцию заявку по адресу: greenz@list.ru</p>
+
+<p>В заявке необходимо указать:</p>
+
+<p>место работы, должность, тематику исследований (для научных работников), адрес е-mail,</p>
+
+<p>название статьи, год выпуска, номер журнала</p>
+
+<p>Статья будет выслана по указанному адресу в течение пяти дней со дня получения заявки”.</p>
+
+<p><strong>цветовод</strong> 17-12-2010</p>
+
+<p>Константин, а можно тоже подписаться? Не поздно?</p>
+
+<p>“Я как Герасим”.</p>
+
+<p>В общем, журналы те же.</p>
+
+<p>Вроде раньше был журнал “Тепличные технологии”, если есть и сейчас я ЗА!!!!!</p>
+
+<p><strong>Mole_Garden</strong> 17-12-2010</p>
+
+<blockquote>
+  <p>Константин, а можно тоже подписаться? Не поздно?</p>
+
+  <p>“Я как Герасим”.</p>
+
+  <p>В общем, журналы те же.</p>
+
+  <p>Вроде раньше был журнал “Тепличные технологии”, если есть и сейчас я ЗА!!!!!</p>
+</blockquote>
+
+<p>Еще не поздно, пока все еще в процессе обсуждения.</p>
+
+<p><strong>Leshiy</strong> 18-12-2010</p>
+
+<p>С большим желанием подписался бы, но боюсь стоимость доставки до меня будет выше, чем стоимоть подписки &gt;:(</p>
+
+<p><strong>Mole_Garden</strong> 18-12-2010</p>
+
+<blockquote>
+  <p>С большим желанием подписался бы, но боюсь стоимость доставки до меня будет выше, чем стоимоть подписки &gt;:(</p>
+</blockquote>
+
+<p>:D Вы не поняли, подписаться, это значит вступить в тайное сообщество и получать журналы в электронном виде :-X</p>
+
+<p><strong>orgail</strong> 18-12-2010</p>
+
+<p>я за Журнал «Теплицы России»</p>
+
+<p><strong>Mole_Garden</strong> 27-12-2010</p>
+
+<blockquote>
+  <p>С большим желанием подписался бы, но боюсь стоимость доставки до меня будет выше, чем стоимоть подписки &gt;:(</p>
+</blockquote>
+
+<p>Leshiy, вы в теме или ?</p>
+
+<p><strong>Mole_Garden</strong> 27-12-2010</p>
+
+<p>Обновил первый пост, все еще раз проверяем свой выбор, скоро уже начнем процесс.</p>
+
+<p>Вот только вопрос, когда лучше подписываться? Сейчас или уже в 2011 году?</p>
+
+<p><strong>Leshiy</strong> 28-12-2010</p>
+
+<blockquote>
+  <p>Leshiy, вы в теме или ?</p>
+</blockquote>
+
+<p>В теме :D</p>
+
+<p>“Настоящий хозяин”</p>
+
+<p>“Гавриш”</p>
+
+<p>“Теплицы России”</p>
+
+<p><strong>ProRus</strong> 28-12-2010</p>
+
+<p>Если что, свистните в личку, а то я могу упустить… :)</p>
+
+<p><strong>Aleksey Kurenin</strong> 02-01-2011</p>
+
+<p><a href="http://94.136.40.100/~church@actpub.co.uk/archives.php?category=GHG" target="_blank">http://94.136.40.100/~church@actpub.co.uk/archives.php?category=GHG</a></p>
+
+<p><a href="http://www.floraculture.eu/" target="_blank">http://www.floraculture.eu/</a></p>
+
+<p><strong>Mole_Garden</strong> 05-01-2011</p>
+
+<p>Написал запросы на подписку по журналам</p>
+
+<p>Журнал «Теплицы России»</p>
+
+<p>Журнал «ГАВРИШ»</p>
+
+<p>Настоящий хозяин</p>
+
+<p>Жду ответа.</p>
+
+<p><strong>Mole_Garden</strong> 06-01-2011</p>
+
+<p>Ну вот уже и первые результаты!</p>
+
+<p>Отписалась редакция компании Гавришь и редакция журнала Настоящий хозяин!</p>
+
+<p>В общем их уже можно брать!</p>
+
+<p>Настоящий Хозяин стоит 950 рублей на год</p>
+
+<p>Гавришь пока не знаю, но видимо надо ориентироваться что 200 рублей журнал! Этот момент еще уточню!</p>
+
+<p><strong>Садовник</strong> 07-01-2011</p>
+
+<p>Со мной еще 6 человек на “Настоящий хозяин” и 3 на “Гавриш”. Ждут команды к отправке денюх :D</p>
+
+<p>Еше есть предложение на журнал “Цветоводство”, со мной человека 4-5 уже есть.</p>
+
+<p><strong>Mole_Garden</strong> 07-01-2011</p>
+
+<p>Окончательный ответ по гавришу обещали дать после праздников. Так что ждем.</p>
+
+<p>С подпиской на Настоящего хозяина проблем нет.</p>
+
+<p>Пока только молчат Теплицы России.</p>
+
+<p><strong>цветовод</strong> 07-01-2011</p>
+
+<p>“Цветоводство” я за!!! <em>8)</em> <em>Bravo</em></p>
+
+<p><strong>Mole_Garden</strong> 08-01-2011</p>
+
+<blockquote>
+  <p>“Цветоводство” я за!!! <em>8)</em> <em>Bravo</em></p>
+</blockquote>
+
+<p>:D Кто бы сомневался!</p>
+
+<p><strong>Mole_Garden</strong> 11-01-2011</p>
+
+<p>Окончательный ответ пришел от редакции Гавриш</p>
+
+<p>1200 за годовую подписку, т.е. 200 рублей номер.</p>
+
+<p>Ждемс Теплицы России</p>
+
+<p><strong>ProRus</strong> 11-01-2011</p>
+
+<blockquote>
+  <p>Окончательный ответ пришел от редакции Гавриш</p>
+
+  <p>1200 за годовую подписку, т.е. 200 рублей номер.</p>
+</blockquote>
+
+<p>А можно ли купить электронные версии всех старых номеров Гавриш с скидкой? Я бы с удовольствием почитал. :)</p>
+
+<p><strong>Mole_Garden</strong> 11-01-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Окончательный ответ пришел от редакции Гавриш</p>
+
+    <p>1200 за годовую подписку, т.е. 200 рублей номер.</p>
+  </blockquote>
+
+  <p>А можно ли купить электронные версии всех старых номеров Гавриш с скидкой? Я бы с удовольствием почитал. :)</p>
+</blockquote>
+
+<p>Да можно, по 100 рублей за номер.</p>
+
+<p><strong>ProRus</strong> 12-01-2011</p>
+
+<blockquote>
+  <p>Да можно, по 100 рублей за номер.</p>
+</blockquote>
+
+<p>Нет желающих прикупить все номера с 2004-го года? 7х6х100=4200 руб.</p>
+
+<p><strong>Mole_Garden</strong> 18-01-2011</p>
+
+<p>И так, думаю не стоит уже более тянуть с подпиской и пора бы уже действовать.</p>
+
+<p>Вот первый журнал для подписки под названием Настоящий Хозяин - <a href="http://www.idrusogorod.ru/personal/subscribe/" target="_blank">http://www.idrusogorod.ru/personal/subscribe/</a></p>
+
+<p>Высылают только бумажные варианты, по этому как уже обсуждалось, нужен человек с постоянным местом жительством. ProRus, твое предложение про свою кандидатуру все еще в силе? Если да, то думаю уже можно запускать процесс, данные по кошельку лучше выслать лично через личку.</p>
+
+<p><strong>ProRus</strong> 19-01-2011</p>
+
+<blockquote>
+  <p>Если да, то думаю уже можно запускать процесс, данные по кошельку лучше выслать лично через личку.</p>
+</blockquote>
+
+<p>Я всегда готов. Что от меня надо? Кому Веб-мани кошелек слать?</p>
+
+<p><strong>Mole_Garden</strong> 19-01-2011</p>
+
+<blockquote>
+  <blockquote>
+    <p>Если да, то думаю уже можно запускать процесс, данные по кошельку лучше выслать лично через личку.</p>
+  </blockquote>
+
+  <p>Я всегда готов. Что от меня надо? Кому Веб-мани кошелек слать?</p>
+</blockquote>
+
+<p>Что требуется. Необходимо организовать подписку по ссылке, которую давал выше для журнала “Настоящий хозяин” <a href="http://www.idrusogorod.ru/personal/subscribe/" target="_blank">http://www.idrusogorod.ru/personal/subscribe/</a></p>
+
+<p>Номер кошелька(желательно яндекс деньги и веб мани) необходимо разослать всем кто указан и изъявил желание подписаться на журнал, ники указанны на первой странице.</p>
+
+<p>Mole_Garden</p>
+
+<p>Садовник</p>
+
+<p>Valery</p>
+
+<p>Цветовод</p>
+
+<p>Leshiy</p>
+
+<p>Но я думаю, что все это лучше уже делать после того, как подписка будет организованна.</p>
+
+<p><strong>Mole_Garden</strong> 21-02-2011</p>
+
+<p>Ха, ха. А вот и пришел первый номер журнала. Он выложен в закрытом доступе, те кто успел поучаствовать в подписке должны были получить информационное письмо. Для все у кого есть доступ могут пройти по ссылке - <a href="http://forum.ponics.ru/index.php?board=34.0" target="_blank">http://forum.ponics.ru/index.php?board=34.0</a></p>
+
+<p>Если ссылка не откроется, значит у вас доступа нет. Если вы участвовали в оплате подписки, а ссылка не открылась, пишите, будем разбираться.</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+

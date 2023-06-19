@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Прошу проверить | </title>
+<link rel="stylesheet" href="/css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="/css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/customstyles.css">
+<link rel="stylesheet" href="/css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="/css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Архив forum.ponics.ru</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://t.me/ponics_ru" target="_blank" rel="noopener">Чат в Telegram</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="/js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: '/search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Прошу проверить">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Разделы" href="#">Разделы</a>
+      <ul>
+          
+          
+          
+          <li><a title="Новости Ponics" href="/pages/b14_novosti_ponics.html">Новости Ponics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="С миру по нитке" href="/pages/b23_s_miru_po_nitke.html">С миру по нитке</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теория" href="/pages/b03_teoriya.html">Теория</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Помогите" href="/pages/b04_pomogite.html">Помогите</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Питательные растворы" href="/pages/b05_pitatelnye_rastvory.html">Питательные растворы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Субстраты" href="/pages/b10_substraty.html">Субстраты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Теплицы" href="/pages/b12_teplicy.html">Теплицы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Узлы, агрегаты, установки" href="/pages/b11_uzly_agregaty_ustanovki.html">Узлы, агрегаты, установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Реализованные установки" href="/pages/b29_realizovannye_ustanovki.html">Реализованные установки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Отчеты о выращивании" href="/pages/b02_otchety_o_vyrashivanii.html">Отчеты о выращивании</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Горе луковое!" href="/pages/b28_gore_lukovoe.html">Горе луковое!</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео" href="/pages/b31_video.html">Видео</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Домики пользователей" href="/pages/b13_domiki_polzovatelei.html">Домики пользователей</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Видео по теме" href="/pages/b15_video_po_teme.html">Видео по теме</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Общение" href="/pages/b01_obshenie.html">Общение</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рецепты" href="/pages/b30_recepty.html">Рецепты</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Экономика ЛПХ" href="/pages/b37_ekonomika_lph.html">Экономика ЛПХ</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Материалы и наработки" href="/pages/b16_materialy_i_narabotki.html">Материалы и наработки</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Журналы" href="/pages/b45_zhurnaly.html">Журналы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Настоящий Хозяин" href="/pages/b46_nastoyashii_hozyain.html">Настоящий Хозяин</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Сад/Огород/Дача" href="/pages/b22_sadogoroddacha.html">Сад/Огород/Дача</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Рыбоводство" href="/pages/b17_rybovodstvo.html">Рыбоводство</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Водоросли" href="/pages/b26_vodorosli.html">Водоросли</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Грибы" href="/pages/b18_griby.html">Грибы</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Пасека" href="/pages/b19_paseka.html">Пасека</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Птица" href="/pages/b20_ptica.html">Птица</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Кролики" href="/pages/b21_kroliki.html">Кролики</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Прошу проверить</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+
+});
+</script>
+
+<div id="toc"></div>
+
+
+
+    
+
+
+    
+
+   <p><strong>mdima</strong> 15-01-2011</p>
+
+<p>Уффф…. Вроде я его закончил… Прошу проверить :)</p>
+
+<p><a href="http://www.ponics.ru/cgi-bin/hydrocgi.cgi" target="_blank">http://www.ponics.ru/cgi-bin/hydrocgi.cgi</a></p>
+
+<p><strong>Coccinella</strong> 15-01-2011</p>
+
+<p>Кажется, считает, и вроде бы в таблице умножения не врет :)</p>
+
+<p>Вы - гений!</p>
+
+<p><strong>mdima</strong> 15-01-2011</p>
+
+<p>Русский вариант сделать? Или и так все в порядке. Мои расчеты проверял кто нибудь? :)</p>
+
+<p>P.S.</p>
+
+<p>Пока ждал ответов - сделал :D</p>
+
+<p><strong>mdima</strong> 15-01-2011</p>
+
+<p>Тест втыкания калькулятора:</p>
+
+<p>[html]&lt;iframe src="http://www.ponics.ru/cgi-bin/hydrocgi_ru.cgi" width="100%" height="700px" align="left" frameborder="0"&gt;Ваш браузер не поддерживает плавающие фреймы! &lt;/iframe&gt;[/html]</p>
+
+<p><strong>mdima</strong> 15-01-2011</p>
+
+<p>Англицкий вариант:</p>
+
+<p>[html]&lt;iframe src="http://www.ponics.ru/cgi-bin/hydrocgi.cgi" width="100%" height="700px" align="left" frameborder="0"&gt;Ваш браузер не поддерживает плавающие фреймы! &lt;/iframe&gt;[/html]</p>
+
+<p><strong>valery</strong> 15-01-2011</p>
+
+<p>Ух ты :o Все считается <em>8)</em></p>
+
+<p>Дмитрий, а есть ли возможность как-то влиять на состав-предпочтения к “исходным солям” ?</p>
+
+<p>Или они будут достаточно “жестко” привязаны ?</p>
+
+<p><strong>mdima</strong> 15-01-2011</p>
+
+<p>Пока привязал жестко, чтоб не городить огород. В противном случае идет комбинаторика</p>
+
+<p><strong>mdima</strong> 16-01-2011</p>
+
+<p>расчеты из составов/удобрений еще недоделаны <a href="http://www.ponics.ru/calc.php" target="_blank">http://www.ponics.ru/calc.php</a></p>
+
+<p><strong>valery</strong> 16-01-2011</p>
+
+<blockquote>
+  <p>Пока привязал жестко</p>
+</blockquote>
+
+<p>“Пока”… дает повод надеяться, что со временем (может быть) и такая функция добавится ?</p>
+
+<p>Не мне, конечно, искать ошибки в Ваших расчетах :), но я - пересчитываю. Пока ни на что тревожное не наткнулся, кальциевая селитра только не сошлась…</p>
+
+<p>Видимо потому, что в Вашем калькуляторе рассчитывается безаммиачная кальциевая селитра. Буду дальше “проверять” :D</p>
+
+<p>Дмитрий, подскажите, в калькуляторе рассчет на соли идет по точной формуле с ТОЧНЫМ весом или вносите какие-то коэффициенты-поправки на возможно не “химически чистую или чистую” соль или, возможно, какие-то поправки на ФИЗИЧЕСКИЙ вес соли (она ведь не стопроцентно “сухая”, а видимо с какой-то “влажностью”, влияющей на вес) …</p>
+
+<p>Есть такое или не учитываете ?</p>
+
+<p><strong>valery</strong> 16-01-2011</p>
+
+<p>И можно ли его будет просто скачать к себе на компьютер или только “онлайн” ?</p>
+
+<p><strong>valery</strong> 16-01-2011</p>
+
+<p>В еще “недоделанной” утилите, что такое d и b ?</p>
+
+<p><strong>mdima</strong> 16-01-2011</p>
+
+<p>Влажность учитывается, как кристаллогидрат. Соли предполагаются чистыми.</p>
+
+<blockquote>
+  <p>Не мне, конечно, искать ошибки в Ваших расчетах</p>
+</blockquote>
+
+<p>Конечно, Вам! Я же не безгрешен, мог где-то и ошибиться!</p>
+
+<p>Недоделаная потому и недоделанная :D</p>
+
+<p>я ее потом приглашу тестить и проверять</p>
+
+<p><strong>valery</strong> 16-01-2011</p>
+
+<p>Дмитрий, достаточно “честно” тестировал на разных рецептах, разных калькуляторах и “собственных расчетах” по всем макро- и микроэлементам (кроме кобальта).</p>
+
+<p>Ошибок-расхождений - не нашел (кто бы сомневался :) )</p>
+
+<p>Но меня больше порадовало, что значит в “моих удобрениях” - серьезных ошибок нет <em>Dance</em></p>
+
+<p>Сошлись сульфаты магния и кальциевая селитра (которые меня все время смущают, в “моих” рассчетах конечно же ), в очередной раз убедился, что НПК считает эти соли неверно, а стало быть и мои “поправки” в нем - не навредили <em>Dance</em></p>
+
+<p>Единственное, что молибдат аммония 4-водный у меня считался по этой формуле (NH4)6Mo7O24*4H2O - не уверен, откуда я ее раздобыл.</p>
+
+<p>Как ни странно - результат тоже оказался одинаковым, расхождение получилось, но “мизерное” …</p>
+
+<p>Мне кажется, без всяких сомнений можно выкладывать в “общий доступ” - полезная, удобная, никаких “переборов” - считай, разводи и наливай (чуть не сказал “наливай и пей” :D )</p>
+
+<p><em>8)</em> <em>8)</em> <em>8)</em></p>
+
+<p><strong>valery</strong> 16-01-2011</p>
+
+<p>Та-та=та <em>Dance</em> та-та-та <em>Dance</em></p>
+
+<p>Это я уже про “свои” растворы, а то, признаться, они меня все равно постоянно беспокоят …</p>
+
+<p>Теперь буду крепче спать … <em>Dance</em></p>
+
+<p><strong>mdima</strong> 16-01-2011</p>
+
+<p>Всем спасибо на добром слове $)</p>
+
+<p><strong>Mole_Garden</strong> 16-01-2011</p>
+
+<blockquote>
+  <p>И можно ли его будет просто скачать к себе на компьютер или только “онлайн” ?</p>
+</blockquote>
+
+<p>Ну вообще калькулятор задумывался как онлайн, для популяризации ресурса, что бы люди давали ссылки на него и все приходящие видели наш сайт и форум.</p>
+
+<p><strong>valery</strong> 16-01-2011</p>
+
+<p>Собственно говоря, я так и “сообразил” … Но - потом :D</p>
+
+<p>Ну и правильно. Все равно - удобный калькулятор.</p>
+
+<p><strong>mdima</strong> 16-01-2011</p>
+
+<p>Если честно, Валерий, Вы не представляете каких трудов мне стоило написать его именно под сайт. Я обычные программы пишу под винду - это легко, а под апач с линуксом пришлось повозиться.</p>
+
+<p><strong>mdima</strong> 22-01-2011</p>
+
+<p>Тест виджета для яндекса:</p>
+
+<p>[html]&lt;h3&gt;+ <a href="http://www.yandex.ru?add=46715&amp;from=promocode" target="_blank">Форум о гидропонике</a>&lt;/h3&gt;<a href="http://www.yandex.ru?add=46715&amp;from=promocode" target="_blank"><img style="float: left; padding: 0 10px 10px 0;" src="http://wimg.yandex.net/46/71/t-46715.png" alt="" border="0" /></a>&lt;p&gt;Последние сообщения с форума о гидропоники. Свежий огурчик и зелень круглый год. Дома и в теплице.&lt;/p&gt;<a style="display: block; margin-top: 0.5em;" target="_blank" href="http://www.yandex.ru?add=46715&amp;from=promocode"><img src="http://img.yandex.net/i/service/wdgt/yand-add-b.png" border="0" alt="добавить на Яндекс" /></a>[/html]</p>
+
+<p><strong>Mole_Garden</strong> 23-01-2011</p>
+
+<p>:o Крутотень! Теперь в яндексе можно читать не только всякую хрень, а еще и любимый форум <em>Dance</em></p>
+
+<p><strong>mdima</strong> 28-01-2011</p>
+
+<p>Сейчас Mole_Garden проводит наполнение базы</p>
+
+<p>http://www.ponics.ru/edit_base/</p>
+
+<p>Имя:editadmin</p>
+
+<p>Пароль:Htlfrnbhetv!&lt;fpe</p>
+
+<p>P.S.</p>
+
+<p>Прошу пароль не распространять. А то испортят или удалят базу и будет жалко….</p>
+
+<p><strong>Mole_Garden</strong> 28-01-2011</p>
+
+<p>Начала наполнять базу, мдя, потребуется время для этого дела <em>crazy</em></p>
+
+<p><strong>valery</strong> 29-01-2011</p>
+
+<p>Есть ощущение, что вообще может получиться ЗАМЕЧАТЕЛЬНЕЙШАЯ штука …</p>
+
+<p>А в чем можно “помощь”-то оказать ?</p>
+
+<p>Проверять, по мере наполнения базы, не “затесалась” ли где ошибка ?</p>
+
+<p><strong>valery</strong> 29-01-2011</p>
+
+<p>Что означает столбик “Подтверждено” и единички ?</p>
+
+<p>Нужно ли давать “знать”, если тоже какие-то удобрения пересчитал-перепроверил и хочется “подтвердить”, что все правильно ?</p>
+
+<p>Или есть смысл сообщать только тогда, когда возникли сомнения или попалась ошибка ?</p>
+
+<p><strong>mdima</strong> 29-01-2011</p>
+
+<p>Было бы здорово, если:</p>
+
+<ol>
+  <li>
+    <p>Проверили - поставили “1” в “Подтверждено”</p>
+  </li>
+  <li>
+    <p>Добавили своих удобрений</p>
+  </li>
+</ol>
+
+<p><strong>valery</strong> 29-01-2011</p>
+
+<p>Понятно … с удовольствием.</p>
+
+<p><strong>mdima</strong> 29-01-2011</p>
+
+<p>Не знаю насколько интересно, но вот робот, который ищет новости из мира гидропоники, фильтрует нелегальные, переводит и публикует тут: [html] <a href="http://www.ponics.ru/articles/">Статьи</a> [/html]</p>
+
+<p><strong>mdima</strong> 29-01-2011</p>
+
+<p>…к добавлению элементов….</p>
+
+<p>подсказка для перевода оксидов в чистые элементы:</p>
+
+<p>K = K2O * 0.829787</p>
+
+<p>P = P2O5 * 0.436382</p>
+
+<p>P = P2O2 * 0.659357</p>
+
+<p>Ca = CaO * 0.714683</p>
+
+<p>Mg = MgO * 0.602978</p>
+
+<p>S = SO4 * 0.333791</p>
+
+<p>S = SO3 * 0.400495</p>
+
+<p>Азот не переводится, даже если указан как ион, ибо это указывается форма азота, а не ион. Т.е. пример: 0.2 [NO3] = 0.2 [N]</p>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2023 . All rights reserved. <br />
+ Site last generated: Jun 19, 2023 <br />
+                </div>
+            </div>
+</footer>
+
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>
+
+
