@@ -168,7 +168,7 @@
   
   
   <li>
-      <a title="Разделы" href="#">Разделы</a>
+      <a title="Архив форума" href="#">Архив форума</a>
       <ul>
           
           
@@ -430,15 +430,15 @@ $('#toc').on('click', 'a', function() {
 
 <p>Приводится скетч для ардуино, там указано только:</p>
 
-<p>[code]#define SensorPin 0 //pH meter Analog output to Arduino Analog Input 0[/code]</p>
+<p>#define SensorPin 0 //pH meter Analog output to Arduino Analog Input 0</p>
 
 <p>А что именно надо подключить к этому пину не сказано. Зато в конце скетча есть такой момент:</p>
 
-<p>[code]digitalWrite(13, HIGH);</p>
+<p>digitalWrite(13, HIGH);</p>
 
 <p>delay(800);</p>
 
-<p>digitalWrite(13, LOW);[/code]</p>
+<p>digitalWrite(13, LOW);</p>
 
 <p>Это они для примера, что можно делать что-то еще?</p>
 
@@ -454,11 +454,11 @@ $('#toc').on('click', 'a', function() {
 
 <p><strong>allex_step</strong> 01-11-2017</p>
 
-<p>[size=1em]P0 - аналоговый вход[/size]</p>
+<p>P0 - аналоговый вход</p>
 
-<p>[font=verdana][size=1em]T0 - TempComp1 (NC)[/size][/font]</p>
+<p>T0 - TempComp1 (NC)</p>
 
-<p>[font=verdana][size=1em]D0 - TempComp2 (NC)[/size][/font]</p>
+<p>D0 - TempComp2 (NC)</p>
 
 <p><a href="http://iarduino.ru/shop/Sensory-Datchiki/datchik-kislotnosti-zhidkosti-rn-metr.html" target="_blank">http://iarduino.ru/shop/Sensory-Datchiki/datchik-kislotnosti-zhidkosti-rn-metr.html</a></p>
 
@@ -499,11 +499,11 @@ $('#toc').on('click', 'a', function() {
 <blockquote>
   <p>А что именно надо подключить к этому пину не сказано. Зато в конце скетча есть такой момент:</p>
 
-  <p>[code]digitalWrite(13, HIGH);</p>
+  <p>digitalWrite(13, HIGH);</p>
 
   <p>delay(800);</p>
 
-  <p>digitalWrite(13, LOW);[/code]</p>
+  <p>digitalWrite(13, LOW);</p>
 
   <p>Это они для примера, что можно делать что-то еще?</p>
 
@@ -535,11 +535,11 @@ $('#toc').on('click', 'a', function() {
 <p><strong>Пресвятой_ДжимБим</strong> 01-11-2017</p>
 
 <blockquote>
-  <p>[size=1em]P0 - аналоговый вход[/size]</p>
+  <p>P0 - аналоговый вход</p>
 
-  <p>[font=verdana][size=1em]T0 - TempComp1 (NC)[/size][/font]</p>
+  <p>T0 - TempComp1 (NC)</p>
 
-  <p>[font=verdana][size=1em]D0 - TempComp2 (NC)[/size][/font]</p>
+  <p>D0 - TempComp2 (NC)</p>
 
   <p><a href="http://iarduino.ru/shop/Sensory-Datchiki/datchik-kislotnosti-zhidkosti-rn-metr.html" target="_blank">http://iarduino.ru/shop/Sensory-Datchiki/datchik-kislotnosti-zhidkosti-rn-metr.html</a></p>
 </blockquote>
@@ -578,7 +578,7 @@ $('#toc').on('click', 'a', function() {
 
 <p>То есть если электрод показывает изменение рН на одну единицу, то на самом деле произошло изменение на две единицы с лишним!</p>
 
-<p>[code]const float k=2.236;</p>
+<p>const float k=2.236;</p>
 
 <p>float f;</p>
 
@@ -587,8 +587,6 @@ $('#toc').on('click', 'a', function() {
 <p>f = (float) Po;</p>
 
 <p>f <em>= k</em>14./1023.;</p>
-
-<p>[/code]</p>
 
 <p><strong>Vad</strong> 02-11-2017</p>
 
@@ -798,7 +796,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2023 . All rights reserved. <br />
- Site last generated: Jun 19, 2023 <br />
+ Site last generated: Jun 21, 2023 <br />
                 </div>
             </div>
 </footer>

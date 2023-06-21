@@ -168,7 +168,7 @@
   
   
   <li>
-      <a title="Разделы" href="#">Разделы</a>
+      <a title="Архив форума" href="#">Архив форума</a>
       <ul>
           
           
@@ -2176,7 +2176,7 @@ $('#toc').on('click', 'a', function() {
 
 <p><strong>allex_step</strong> 08-07-2017</p>
 
-<p>[code]Arduino: 1.8.3 Hourly Build 2017/06/23 05:12 (Mac OS X), Board: “Arduino/Genuino Mega or Mega 2560, ATmega2560 (Mega 2560)”</p>
+<p>Arduino: 1.8.3 Hourly Build 2017/06/23 05:12 (Mac OS X), Board: “Arduino/Genuino Mega or Mega 2560, ATmega2560 (Mega 2560)”</p>
 
 <p>EC-meter_and_water_leveler:80: error: pasting “/* Цифровой пин ЕС-электрода A*/” and “_Out” does not give a valid preprocessing token</p>
 
@@ -2538,11 +2538,9 @@ $('#toc').on('click', 'a', function() {
 
 <p>#define _A_Read(x) A##x##_Read</p>
 
-<p>[/code]</p>
-
 <p>и так далее - сюда всё и не влазит</p>
 
-<p>[font=verdana]эт шо как?[/font]</p>
+<p>эт шо как?</p>
 
 <p><strong>siv237</strong> 09-07-2017</p>
 
@@ -2597,8 +2595,6 @@ $('#toc').on('click', 'a', function() {
 <p>Без библиотек, потому без измерения температуры. Можете проверить на своей ардуине?</p>
 
 <p>Схема такая D11 соединяем с A0 и с электродом ЕС. D10 соединяем с электродом ЕС. D9 соединяем с электродом уровня.</p>
-
-<p>[code]</p>
 
 <p>void setup() {</p>
 
@@ -2712,15 +2708,13 @@ $('#toc').on('click', 'a', function() {
 
 <p>}</p>
 
-<p>[/code]</p>
-
 <p><strong>allex_step</strong> 10-07-2017</p>
 
-<p>[size=1em]работает (пины заюзал другие - 7,8,9 соответственно и переназначил как[/size][code] float x0=fConductivity(7,8,A1,50000);</p>
+<p>работает (пины заюзал другие - 7,8,9 соответственно и переназначил как float x0=fConductivity(7,8,A1,50000);</p>
 
 <p>и</p>
 
-<p>float l0=fConductivity(7,9,0,500);[/code]), в консоль выдает в виде[code]2032.63</p>
+<p>float l0=fConductivity(7,9,0,500);), в консоль выдает в виде2032.63</p>
 
 <p>99.907</p>
 
@@ -2732,11 +2726,11 @@ $('#toc').on('click', 'a', function() {
 
 <p>99.908</p>
 
-<p>52.76 ——–[/code]</p>
+<p>52.76 ——–</p>
 
 <p>[hr]</p>
 
-<p>накопал что скорее всего версии 1.6.5 и ниже должны отрабатывать код, выше уже не работают (что-то поменялось); но и 1.6.5 выдает ошибки[code]Arduino: 1.6.5 (Mac OS X), Board: “Arduino/Genuino Mega or Mega 2560, ATmega2560 (Mega 2560)”</p>
+<p>накопал что скорее всего версии 1.6.5 и ниже должны отрабатывать код, выше уже не работают (что-то поменялось); но и 1.6.5 выдает ошибкиArduino: 1.6.5 (Mac OS X), Board: “Arduino/Genuino Mega or Mega 2560, ATmega2560 (Mega 2560)”</p>
 
 <p>EC-meter_and_liquid_leveler.ino: In function 'void loop()':</p>
 
@@ -2838,8 +2832,6 @@ $('#toc').on('click', 'a', function() {
 
 <p>enabled in File &gt; Preferences.</p>
 
-<p>[/code]</p>
-
 <p>[hr]</p>
 
 <p>таки ошибся - скетч компилится на версии 1.0.6, а на 1.8.3 - тот же мульйон ошибок</p>
@@ -2883,8 +2875,6 @@ $('#toc').on('click', 'a', function() {
 <p>Непосредственно перевод уровня в литры требует учитывать форму емкости и потому расчет должен быть индивидуален, возможно добавлю позже, как наберу статистику использования в реальных условиях.</p>
 
 <p>код программы (из библиотек только библиотеки для датчиков температуры и влажности):</p>
-
-<p>[code]</p>
 
 <p>// Библиотека работы с DS18b20</p>
 
@@ -3318,8 +3308,6 @@ $('#toc').on('click', 'a', function() {
 
 <p>}</p>
 
-<p>[/code]</p>
-
 <p><strong>allex_step</strong> 12-07-2017</p>
 
 <blockquote>
@@ -3393,8 +3381,6 @@ $('#toc').on('click', 'a', function() {
 <p><strong>siv237</strong> 12-07-2017</p>
 
 <p>Вот убрал этот злосчастный датчик :). Попробуйте такой код.</p>
-
-<p>[code]</p>
 
 <p>// Библиотека работы с DS18b20</p>
 
@@ -3790,8 +3776,6 @@ $('#toc').on('click', 'a', function() {
 
 <p>}</p>
 
-<p>[/code]</p>
-
 <p><strong>allex_step</strong> 13-07-2017</p>
 
 <blockquote>
@@ -4053,10 +4037,10 @@ $('#toc').on('click', 'a', function() {
 <p>теперь в канцелярию за карандашами только с мультиметром?.. <em>crazy</em> :D</p>
 
 <blockquote>
-  <p>[font=Verdana]Во всяком случае я для себя буду делать ЕС метр на графите[/font]</p>
+  <p>Во всяком случае я для себя буду делать ЕС метр на графите</p>
 </blockquote>
 
-<p>[font=Verdana]держите нас в курсе - тоже интересно [/font] ;)</p>
+<p>держите нас в курсе - тоже интересно ;)</p>
 
 <p><strong>serge mat</strong> 14-10-2017</p>
 
@@ -4074,10 +4058,10 @@ $('#toc').on('click', 'a', function() {
   <p>теперь в канцелярию за карандашами только с мультиметром?.. <em>crazy</em> :D</p>
 
   <blockquote>
-    <p>[font=Verdana]Во всяком случае я для себя буду делать ЕС метр на графите[/font]</p>
+    <p>Во всяком случае я для себя буду делать ЕС метр на графите</p>
   </blockquote>
 
-  <p>[font=Verdana]держите нас в курсе - тоже интересно [/font] ;)</p>
+  <p>держите нас в курсе - тоже интересно ;)</p>
 </blockquote>
 
 <p>В советское время грифели различались по твердости от 3Т до 3М. Чем тверже грифель, тем меньше в нем глины. Глина добавляется собственно для мягкости.</p>
@@ -4454,9 +4438,9 @@ $('#toc').on('click', 'a', function() {
 
 <p><strong>allex_step</strong> 13-12-2018</p>
 
-<p>[size=2]каким макаром спицами уровень определяется?[/size]</p>
+<p>каким макаром спицами уровень определяется?</p>
 
-<p>[size=2]каким образом “[font=Verdana]полив сверху до переполнения горшка[/font][font=Verdana]” при керамзите?[/font][/size]</p>
+<p>каким образом “полив сверху до переполнения горшка” при керамзите?</p>
 
 <p><strong>VVS_</strong> 13-12-2018</p>
 
@@ -4548,7 +4532,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2023 . All rights reserved. <br />
- Site last generated: Jun 19, 2023 <br />
+ Site last generated: Jun 21, 2023 <br />
                 </div>
             </div>
 </footer>
